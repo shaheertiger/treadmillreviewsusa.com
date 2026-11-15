@@ -19,12 +19,6 @@ export default {
   ],
   tags: ['steps in a mile', 'steps per mile treadmill', 'stride length', 'steps walking vs running', '10000 steps'],
   stickyCta: { text: 'Count Your Own Steps', link: '#measure-your-own' },
-  note: `<strong class="text-gray-900">On the figures below.</strong> Step counts and stride
-          lengths are typical ranges and worked examples, not measurements of any individual.
-          Height-based formulas give a ballpark only; the figure you count yourself on your own
-          treadmill is the one to trust. This site reviews equipment and does not give medical
-          advice — step targets mentioned here are general context, and anyone with a health
-          condition should take activity guidance from their clinician.`,
   lead: `It sounds like a question with one answer, and it is not — because a mile is fixed but
           a step is not. Your step length changes with your height, your speed, whether you are
           walking or running, and even the incline. The good news is that the arithmetic is

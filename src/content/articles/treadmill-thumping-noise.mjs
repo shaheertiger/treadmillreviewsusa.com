@@ -23,11 +23,6 @@ export default {
           something, on a schedule — and that schedule is the most useful piece of evidence you
           will get. Most thumping treadmills can be diagnosed in ten minutes with a strip of tape
           and a watch, before a single bolt is turned.`,
-  note: `<strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
-          wall before touching the belt, deck, rollers or motor compartment. The safety key stops
-          the belt; it does not isolate the machine. If you smell burning, see sparking, notice
-          smoke, or the belt moves when the machine is off, stop using it and get it looked at —
-          those are not noise problems to diagnose at home.`,
   sections: [
     {
       id: 'thump-vs-squeak',

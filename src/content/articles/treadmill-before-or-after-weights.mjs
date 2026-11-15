@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['treadmill before or after weights', 'cardio before or after weights', 'run before or after lifting', 'treadmill and strength training', 'treadmill training'],
   stickyCta: { text: 'See the Sample Weeks', link: '#sample-weeks' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is a practical guide to fitting treadmill sessions around strength training — it is
-          not medical advice, physiotherapy or a coaching programme, and we are not qualified to
-          give any of those. Combining hard cardio with heavy lifting raises the demands on your
-          heart, joints and recovery. If you have a heart, blood-pressure, joint or other medical
-          condition, are pregnant, are returning from injury, or take medication that affects
-          heart rate or blood pressure, talk to a doctor or qualified coach before building a
-          combined programme. <strong class="text-gray-900">On the figures below:</strong>
-          durations, intensities and the sample weeks are typical starting points, not
-          prescriptions, and should be scaled to your own training history.`,
   lead: `Should the treadmill come before or after the weights? For most people the answer is: do
           first whichever matters more to you, keep the other one easy enough not to spoil it, and
           worry far more about turning up consistently than about the sequence. Strength or muscle

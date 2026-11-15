@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['how to turn on a treadmill', 'how to turn on nordictrack treadmill', 'how to start a treadmill', 'treadmill power switch', 'how to turn on peloton treadmill'],
   stickyCta: { text: 'See the Steps', link: '#short-answer' },
-  note: `<strong class="text-gray-900">Your manual is the authority.</strong> Treadmills differ in
-          where the switch is, how the console starts and what the start controls are called, and
-          the details change between models and console generations. This page describes the
-          general sequence and the arrangements common to many home machines; where your manual
-          says something different, follow the manual. Plug the treadmill directly into a
-          properly grounded wall outlet that meets the requirements in the manual. If you ever
-          need to look inside the machine — at the cord connection, the switch or the motor
-          compartment — switch off and unplug it at the wall first, and leave the controller and
-          its wiring to a technician.`,
   lead: `Turning on a treadmill should take ten seconds, and usually does. The reason people search
           for it is that the first attempt did nothing: the screen stayed dark, or it lit up and
           the belt would not move. Almost always, one step in a short sequence was missed — the

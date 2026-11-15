@@ -428,16 +428,6 @@ export default {
   ],
   tags: ['treadmill workout plan', 'treadmill routine for weight loss', 'treadmill cardio workout', 'treadmill training plan', '12-week treadmill plan'],
   stickyCta: { text: 'See the Week-by-Week Plan', link: '#foundation' },
-  note: `<strong class="text-gray-900">What this plan is, and is not.</strong> We review
-          treadmills. This is a general training structure for healthy adults, built on the US
-          physical activity guidelines; it is not medical advice, physiotherapy, coaching or
-          nutrition advice. If you have a heart, lung, metabolic or joint condition, take
-          medication that affects heart rate, are pregnant, or have been inactive for a long time,
-          talk to your doctor before starting. Stop and seek advice for chest pain, unusual
-          breathlessness, dizziness, an irregular heartbeat or pain that changes how you walk.
-          <strong class="text-gray-900">On the numbers:</strong> speeds and grades are typical
-          starting points for illustration. The effort column (RPE) is the instruction; the speed
-          column is a guess at where that effort usually sits.`,
   lead: `A treadmill workout plan is not a list of good sessions. It is a decision about
           order — which session comes first, what changes each week, how much, and when you
           deliberately do less. Get the order right and ordinary sessions add up to real fitness;

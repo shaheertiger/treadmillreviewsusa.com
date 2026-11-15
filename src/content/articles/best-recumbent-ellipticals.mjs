@@ -25,32 +25,6 @@ export default {
           "recumbent elliptical", "recumbent cross trainer", "seated stepper" and "recumbent stepper" are
           used for machines that move in noticeably different ways. This page names six that are on sale
           now, sorts out what each one actually does, and explains which details are worth paying for.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines, and no figure on this page is our own measurement. Each was confirmed on 19 October
-          2026 as currently sold on its maker's own US store (Teeter, NuStep, HCI Fitness and Sunny
-          Health &amp; Fitness), and its figures were checked on that date against at least one
-          independent source: a dealer or second retailer (Northern Fitness and Costco for Teeter, Tiger
-          Medical for NuStep and HCI, Overstock for Sunny), or the Amazon listing. Few independent
-          reviewers have published hands-on tests of this category, so most of our cross-checks are
-          against retailers' specification tables, which can repeat the maker's figures. Our checking
-          tools could not load Amazon's own pages on 19 October; search results showed current Amazon
-          listings for all three Teeter FreeStep models in Teeter's Amazon store, and Sunny sells through
-          its own Amazon store. We did not find the NuStep T5 or HCI PhysioStep LXT sold new on Amazon;
-          buy those from the maker or an authorized dealer. Confirm the exact model and seller on any
-          listing before you order. A figure appears in a product's specification line only where
-          sources agree; where they conflicted we left it off the card and say so in the text, and the
-          Sunny card is labelled as Sunny's own figures. Every brand was searched in the US Consumer
-          Product Safety Commission's recall database on 19 October 2026. Prices are those we saw on that
-          date and change often. We earn a commission if you buy through the Amazon links on this page;
-          it does not change which products we list or what we say about them.
-          <br><br>
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review exercise
-          equipment; we are not giving medical, physiotherapy or rehabilitation advice. Several of these
-          makers market their machines for rehabilitation, joint comfort or back pain; treat those as the
-          makers' claims, not ours. If you have a heart condition or take medication that affects your
-          heart rate or blood pressure, have balance problems, osteoporosis, a joint replacement or other
-          recent surgery, or are using a machine as part of rehabilitation, ask your doctor or
-          physiotherapist which machine suits you and how hard to work before you buy or start.`,
   sections: [
     {
       id: 'quick-picks',

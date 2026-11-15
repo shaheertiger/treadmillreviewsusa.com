@@ -19,17 +19,6 @@ export default {
   ],
   tags: ['how to start running on a treadmill', 'treadmill running for beginners', 'walk run intervals treadmill', 'beginner treadmill running speed', 'start running on treadmill'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is a general guide to starting a running habit on one — it is not medical,
-          physiotherapy or coaching advice, and we are not qualified to give any of those. If you
-          have a heart, lung, metabolic or joint condition, high blood pressure, take medication
-          that affects your heart rate, are pregnant, are recovering from injury, surgery or
-          illness, or have been inactive for a long time, talk to a doctor before you start
-          running. Stop at once for chest pain or pressure, unusual breathlessness, dizziness,
-          fainting or an irregular heartbeat, and get checked. Speeds on this page are typical
-          ranges for beginners, not targets, and the progression is one reasonable example rather
-          than an individual plan. Your treadmill's manual is the authority on its controls,
-          safety key and limits.`,
   lead: `Most people who start running on a treadmill already know how to use one. They walk on it,
           they know where the stop button is, and they want to turn the walk into a run without
           getting hurt or giving up in week three. That transition is mostly a question of

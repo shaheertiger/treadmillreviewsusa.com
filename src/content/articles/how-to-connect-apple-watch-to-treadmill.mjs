@@ -23,12 +23,6 @@ export default {
           the direct connection, which only some machines support, and there is the much more common
           situation of simply getting the watch to record a treadmill session accurately — which
           every treadmill supports, because it needs nothing from the treadmill at all.`,
-  note: `<strong class="text-gray-900">On the features below.</strong> Apple, Strava and
-          equipment makers change their software regularly, and what you see depends on your watch
-          model, your watchOS and iOS versions, the app version and the treadmill. We describe how
-          these features generally work rather than exact menu paths, which move between versions.
-          Where a setting is not where we say, check Apple's or the app maker's current support
-          pages, and check your treadmill's manual for what it supports.`,
   sections: [
     {
       id: 'short-answer',

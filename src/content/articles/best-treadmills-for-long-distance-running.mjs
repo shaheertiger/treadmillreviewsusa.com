@@ -28,16 +28,6 @@ export default {
           guide to the
           <a href="/best-treadmills-for-marathon-training/" class="text-[#0F62FE] font-medium">best treadmills for marathon training</a>
           covers six further machines and the long-run session itself; we have not repeated its picks here.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          treadmills. Motor ratings, deck sizes, speed and incline ranges, capacities and warranty terms
-          were checked on 6 November 2026 against each machine's Amazon US listing and, where the listing
-          did not give a figure, against the maker's own site or at least two retailer listings. Where
-          sources disagreed — on one machine's motor rating, and on another's warranty terms — we left the
-          figure out or say so on the card. None of these figures are our own measurements. Prices are the
-          Amazon prices we saw on that date and change often. This page is general buying information, not
-          training or medical advice; if you have a heart condition or an injury, talk to a doctor before
-          increasing your mileage. We earn a commission if you buy through the Amazon links on this page; it
-          does not change which products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

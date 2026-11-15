@@ -27,27 +27,6 @@ export default {
           figures agreed between the maker or listing and an independent source, sets out where those
           figures disagreed, and explains folded footprint, weight limits, seats, resistance and
           stability in plain terms.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          bikes, and no figure on this page is our own measurement. Each was confirmed on 19 October 2026
-          as currently sold — the Marcy on Marcy's own store, the others through Amazon and other large
-          retailers — and its figures were checked on that date against the maker's page or retailer
-          listings and at least one independent source: hands-on reviews from Garage Gym Reviews and
-          BarBend, and second retailers. Several of these brands sell mainly through Amazon, so their
-          specifications are listing claims, labeled as such. A figure appears in a product's
-          specification line only where sources agree; where they conflicted — on weight limits, folded
-          dimensions, seat adjustment and unit weights — we left the figure off the card and say so in the
-          text. Our checking tools could not load Amazon's own pages on 19 October, so Amazon availability
-          rests on makers' links to their Amazon stores and on independent reviewers' Amazon links;
-          confirm the seller and model on the listing. Folding bikes are an inexpensive category, and
-          plenty sell for under $100; the picks here run from about $130 to $230. On 9 November 2026 we replaced FitNation's Flex
-          Bike Ultra, which we could not find on Amazon US, with Marcy's NS-653, checked against
-          Marcy's page, its Amazon listing and Academy's, Dunham's, Buydig's and Costco's listings. Prices change often. We
-          earn a commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review equipment;
-          this is not medical or physiotherapy advice. Folding bikes are often bought for gentle exercise
-          or rehabilitation. If you have a heart, joint, back or balance condition, are recovering from
-          surgery or injury, or are unsure what exercise suits you, ask a doctor or physiotherapist first.`,
   sections: [
     {
       id: 'quick-picks',

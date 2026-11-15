@@ -19,21 +19,6 @@ export default {
   ],
   tags: ['walking pad for heavy person', 'high weight capacity walking pad', 'walking pad 400 lb capacity', 'walking pad 350 lb', 'heavy duty walking pad', 'under desk treadmill for heavy person', 'merach w50', 'lifespan tx6'],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          walking pads. The specifications on this page were checked on 13 October 2026 against
-          each brand's own product page (MERACH, LifeSpan, WalkingPad and UREVO), the retailer or
-          marketplace listing, and independent coverage — a long-running spec tracker that reads
-          owner's manuals and motor labels, published reviews, and specialist retailers' listings.
-          Weight capacity gets stricter treatment than any other figure here: it appears in a
-          product's specification line only where the brand and at least one other source give
-          the same number. Where they did not — and in this category they often do not — the
-          figure is left out of the specification line and the description says what each source
-          claims. None of these are our own measurements. Prices are those we saw on brand and
-          retailer sites on 13 October 2026 and change often, as do specifications under unchanged
-          product names, so confirm the price, the capacity and the warranty terms against the
-          exact unit before you order. Nothing on this page is medical advice. We earn a
-          commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.`,
   lead: `If you weigh 250 lb or more, most walking pads are not built for you, even when the
           listing says otherwise. The typical pad is rated somewhere between 220 and 265 lb, and the
           handful sold as heavy-duty quote figures — 300, 350, 400, occasionally 450 lb — that do

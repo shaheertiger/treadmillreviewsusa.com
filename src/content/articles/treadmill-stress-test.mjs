@@ -23,12 +23,6 @@ export default {
           anxiety around it comes from not knowing what happens in the room. The short version: you
           walk, the machine gets faster and steeper every few minutes, and trained staff watch your
           heart's electrical trace and your blood pressure the whole time.`,
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is general background on a common clinical test, written because the
-          medical treadmill is part of the machine's history — it is not medical advice, and we are
-          not qualified to give any. Why a test was ordered, how to prepare for yours, and what your
-          result means are questions for the clinician who requested it. Follow their instructions
-          over anything written here, particularly about medication.`,
   sections: [
     {
       id: 'what-it-shows',

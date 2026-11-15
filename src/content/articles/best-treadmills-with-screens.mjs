@@ -26,21 +26,6 @@ export default {
     'best touchscreen treadmill',
   ],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">What we checked, and when.</strong> On 5 November 2026 we read
-          the current US listings and prices on Sole's store (F80), Echelon's store (Stride-8s, checked 20 October),
-          Bowflex's treadmill page (T16) and Peloton's treadmill page (Tread Vision, and its membership
-          and Just Run wording). NordicTrack's site refused our requests that day, so the NordicTrack
-          prices are those its product pages showed on 28 October 2026, with a 14 October P.C. Richard
-          &amp; Son price where noted. Specifications are those already cross-checked on this site in
-          October 2026 — each maker's own page against at least one retailer listing or independent
-          review for the same model — and any figure that conflicted between sources is left off the
-          cards. Older NordicTrack models sold under the same names have different screens and figures;
-          the figures here are for the current model numbers we name. We searched the US Consumer Product
-          Safety Commission's recall database for every brand on this page; the recalls we found are
-          described below, and none affects a current model listed here. We have not tested these
-          treadmills, and none of the figures are our own measurements. Prices and membership terms
-          change often, so confirm them before you order. As an Amazon Associate we earn from qualifying
-          purchases; it does not change which treadmills we list or what we say about them.`,
   lead: `Most people who want a treadmill with a screen want one of three things: classes with a trainer
           who changes the speed and incline for them, something to watch while they walk, or simply a
           bigger, clearer console than a row of LEDs. The trouble is that the same touchscreen can do all

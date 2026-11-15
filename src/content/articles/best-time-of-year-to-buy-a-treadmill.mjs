@@ -22,12 +22,6 @@ export default {
           the swing is not small: the same machine routinely moves 20 to 35% across a year. The
           irony is that the period when most people decide to buy one is the period when they are
           most expensive.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> The percentages here
-          describe patterns we have observed across recent years in the US market, not
-          guarantees. Individual retailers and model-year transitions can break the pattern in
-          either direction, and the arrival of a new model is the single largest local
-          distortion. Track the specific machine you want rather than relying on the calendar
-          alone.`,
   sections: [
     {
       id: 'why-prices-move',

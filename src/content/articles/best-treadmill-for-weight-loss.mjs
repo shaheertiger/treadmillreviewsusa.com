@@ -19,14 +19,6 @@ export default {
   ],
   tags: ['best treadmill for weight loss', 'weight loss running machine', 'incline treadmill', 'walking treadmill', 'treadmill buying guide'],
   stickyCta: { text: 'What to Look For', link: '#what-to-look-for' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills, and this is a guide to choosing one for a regular walking or running routine.
-          It is not medical advice, nutrition advice or a weight-loss programme, and we are not
-          qualified to give any of those. If you have a health condition, take medication that
-          affects heart rate, are pregnant, are starting exercise after a long break, or have any
-          history of disordered eating, talk to a doctor or a registered dietitian first.
-          <strong class="text-gray-900">On the figures below:</strong> motor ratings, deck sizes
-          and incline ranges are typical ranges, not specifications for any particular machine.`,
   lead: `People searching for the best treadmill for weight loss are usually asking two questions
           at once: which machine should I buy, and will it work? This page answers the first
           properly and the second honestly. The machine is a tool for doing a lot of comfortable,

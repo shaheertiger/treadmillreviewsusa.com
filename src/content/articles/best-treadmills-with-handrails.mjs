@@ -27,20 +27,6 @@ export default {
           well. They are walking machines first, and the five picks below are chosen for the rails,
           the low starting speed and the simple controls that make them easy to use, not for running
           performance.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          treadmills. The five picks were confirmed on 6 November 2026 as currently sold on
-          Amazon US, and the figures on each card come from the Amazon listing's own specification
-          bullets; for the Sunny low-deck treadmill we also used Sunny's own store, as checked for our
-          low-ceiling treadmill guide. Clinical machines such as the Landice L7 Rehabilitation
-          Treadmill are sold through their makers and dealers, not on Amazon, so they are discussed but
-          not carded.
-          Where a listing left a figure out — most often the exact handrail length or the step-up
-          height — we say so rather than estimate it. Prices change often, so confirm the price,
-          specification and warranty on the exact listing before you order. Nothing on this page is
-          medical advice; if you have a health condition, a balance problem or are recovering from an
-          injury or surgery, ask your doctor or physiotherapist whether treadmill walking suits you
-          and how to start. We earn a commission if you buy through the Amazon links on this page; it
-          does not change which products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

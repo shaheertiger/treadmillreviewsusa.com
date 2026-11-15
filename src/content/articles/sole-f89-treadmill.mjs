@@ -27,17 +27,6 @@ export default {
           carried it, and it appeared with retailers in the UK and New Zealand — and as recently as
           the summer Sole was still promoting it. This review sets out what the F89 was, which of
           its published figures the sources agree on, and how to approach one now.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we checked Sole's US store and its product feed (the F89 is not listed,
-          and its product page returns "not found"), Sole's Canadian and UK sites (no F89 listed),
-          two of Sole's own articles about the F89 (October 2024 and July 2026), the product page
-          for the F89 on the site of Dyaco, Sole's parent company, and independent reviews from
-          RunToTheFinish (updated November 2025) and Treadmill Review Guru (2024). The figures on
-          this page are the ones on which Sole and at least one independent source agree. Where
-          they disagree — machine weight, frame material, the decline range — we say so rather than
-          choose. We found no announcement from Sole explaining the F89's removal. We have not
-          tested the F89; nothing here is our own measurement. Prices are past listings, not
-          current offers.`,
   products: [
     {
       id: 'sole-f89',

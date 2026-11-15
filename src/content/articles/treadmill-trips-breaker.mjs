@@ -24,12 +24,6 @@ export default {
           outlet shared with a freezer, a spare-room circuit with a space heater on it. Sometimes
           a trip is just arithmetic. Sometimes it is the only warning you will get. The work is
           telling the two apart.`,
-  note: `<strong class="text-gray-900">Safety first.</strong> Unplug the treadmill before
-          touching the cord, the inlet or anything under the motor hood. Do not open your
-          electrical panel or replace breakers or outlets yourself — that is work for a licensed
-          electrician. If you smell burning, see sparking, notice smoke, or the belt moves when
-          the machine is off, stop using it and get it looked at. And never reset a breaker
-          repeatedly into a fault to finish a workout.`,
   sections: [
     {
       id: 'what-tripped',

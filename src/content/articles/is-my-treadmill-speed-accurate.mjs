@@ -23,14 +23,6 @@ export default {
           the motor is turning, and works out belt speed from that. Most of the time that is a
           perfectly good estimate. When it is not, the reasons are mechanical and specific, and
           the check is simple enough to do in ten minutes without any special tools.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> The accuracy ranges on this
-          page are typical editorial guidance for home treadmills, not a manufacturer
-          specification or a measurement of any particular model, and the belt length in the
-          worked example is illustrative — measure your own. Unplug the treadmill at the wall
-          before measuring or marking the belt. During the running test, stand beside the
-          machine, keep hands, hair and loose clothing clear of the belt and rollers, keep
-          children and pets out of the room, and never reach under the belt or into the motor
-          compartment while it is moving.`,
   sections: [
     {
       id: 'short-answer',

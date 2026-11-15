@@ -26,24 +26,6 @@ export default {
           vest counts towards the machine's weight limit. This page names five vests that cover the
           main designs, says what each is honestly good and bad at, and then covers how to use one
           on a treadmill without turning a good idea into a sore back.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          vests, and no figure on this page is our own measurement. Each was confirmed as currently
-          sold on 15 October 2026 on the maker's own store (Hyperwear, REP Fitness and GORUCK), or,
-          for the ZELUS budget vest that replaced Fringe Sport's Amazon-less WODmaster, on its Amazon
-          listing on 9 November 2026, and its weight options, adjustability, materials and warranty terms were
-          checked on that date against at least one independent hands-on review. A figure appears
-          in a product's specification line only where the maker and an independent source agree;
-          where they conflicted — on one vest's warranty and another's fill material — we left it out
-          and say so on the card. Prices are those we saw on that date and change often. We earn a
-          commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
-          and the gear used on them; we are not giving medical, physiotherapy, coaching or nutrition
-          advice. Some vest makers market bone-density, weight-loss or other health benefits; we do
-          not make those claims, and they are questions for your doctor. A weighted vest adds load
-          to your spine, hips, knees, ankles and heart, so if you have a back, joint or heart
-          condition, are pregnant or recently postpartum, have osteoporosis or any other diagnosis,
-          or are returning from injury, talk to a qualified professional before you start.`,
   sections: [
     {
       id: 'quick-picks',

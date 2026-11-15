@@ -27,18 +27,6 @@ export default {
           unavailable. This review sets out what the FR20z is, which figures the official listings
           and independent reviewers agree on, where the sources conflict, and what to do if you are
           in the US and want one.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we checked the FR20z on Reebok Fitness's official UK and Australian
-          stores, Reebok's US fitness store, the listing of Lifespan Fitness (an Australian
-          retailer that stocks the Reebok range), Amazon's US listings, and independent reviews
-          from Home Treadmill (updated August 2026) and Gym Tech Review (December 2024), with other
-          UK reviews for context. The figures on this page are those on which the official listings
-          and at least one independent source agree. Where they disagree — the warranty, the
-          number of programmes, whether the incline levels are percentages, a continuous motor
-          rating — we say so rather than choose. We have not tested the FR20z; nothing here is our
-          own measurement. The product card shows the Horizon T101 Connect, with the figures and Amazon
-          price checked for our auto-incline treadmill guide on 6 November 2026. Prices are those shown
-          on the dates stated and change often.`,
   products: [
     {
       id: "horizon-t101-connect",

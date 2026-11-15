@@ -31,19 +31,6 @@ export default {
           articles — and those sources do not always agree with each other, most importantly on the
           maximum user weight. This page sets out what is listed, where the seller's documents conflict,
           how the CT700 differs from the cheaper CT550 we reviewed alongside it, and who it suits.`,
-  note: `<strong class="text-gray-900">What is claimed, what conflicts, and what we have not done.</strong>
-          On 14 October 2026 we read the CT700 listing, its scratch-and-dent listing, the CT700 owner's
-          manual and setup tips sheet, and the shipping and return policies on SB Fitness Equipment's own
-          store, together with the seller's CT700 comparison article, and compared them with an
-          independent walking-equipment catalogue that records the listing and manual, and with retailer
-          and review listings. The seller's product page and the independent catalogue agree on the
-          figures used on this page — the 19 x 66.6 in. running surface, eight magnetic resistance
-          levels, stainless steel track bearings, 308 lb machine weight, 13.5 in. step-up height and the
-          warranty shown on the product page. The maximum user weight conflicts across the seller's own
-          documents (400 lb on the product page, 475 lb in the manual, 350 lb in its comparison article),
-          and the manual gives a different running surface, length and warranty; we state each as a
-          conflict. We found no independent measurement or long-term review. We have not tested the CT700.
-          Prices change; confirm the price, specification and warranty before you order.`,
   products: [
     {
       id: 'sb-fitness-ct700',

@@ -28,22 +28,6 @@ export default {
           shoes below cover the main kinds of treadmill walker: everyday walkers, people who mix
           walking with jogging, incline walkers, wide feet, people who want a supportive leather
           walker, and anyone on a tight budget.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          shoes. Model versions, stack heights, drops, weights and list prices were checked on 14
-          October 2026 against each brand's published figures as given by the brand or its
-          retailers (Brooks, HOKA, Altra, On and ASICS, via Fleet Feet, Running Warehouse, Road
-          Runner Sports and fit2run) and cross-checked against at least one independent source —
-          Believe in the Run, Doctors of Running, RunRepeat, OutdoorGearLab, RunSpirited or
-          TrainingPlan. A figure appears in a specification line only where those sources agreed;
-          where they disagreed, usually on stack height, drop or weight, we left it out and the
-          card says so. None of these figures are our own measurements, and lab measurements often
-          differ from brand figures by a millimetre or more. Prices are the list prices and ranges
-          we saw on that date and change often. We searched cpsc.gov for each brand and found no
-          open recall or warning covering these shoes. This page is general buying information,
-          not medical or podiatry advice: if you have pain, an injury, a foot condition or
-          diabetes, talk to a doctor or podiatrist before changing shoes. We earn a commission if
-          you buy through the Amazon links on this page; it does not change which products we list
-          or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

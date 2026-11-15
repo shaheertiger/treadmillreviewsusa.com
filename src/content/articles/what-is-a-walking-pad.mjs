@@ -19,14 +19,6 @@ export default {
   ],
   tags: ['what is a walking pad', 'walking pad', 'walking pad vs treadmill', 'under desk treadmill', 'walking pad speed'],
   stickyCta: { text: 'See How It Differs', link: '#how-it-differs' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
-          and walking pads. This is a plain explanation of the category, not a product test or a
-          health recommendation. Figures for deck length, top speed and weight are typical ranges
-          for the category rather than the specification of any particular model, and individual
-          pads sit above and below them — the manufacturer's manual and listing are the authority
-          on any machine you are considering. If you have a balance, joint or heart condition, or
-          any concern about walking for long periods, talk to a doctor or physical therapist before
-          adding hours of walking to your day.`,
   lead: `A walking pad is the stripped-down end of the treadmill family: a motor, a short belt,
           a low deck and a remote control, with almost everything else taken away. No console arm,
           usually no handrail, no running speeds and, in most cases, no incline. What it gains in

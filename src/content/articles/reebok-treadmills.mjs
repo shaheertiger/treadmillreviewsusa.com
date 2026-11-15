@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['reebok treadmill', 'reebok i treadmill', 'reebok i-run treadmill', 'reebok fr30z treadmill', 'reebok treadmill usa'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What we checked, and what we could not.</strong> On 14 October
-          2026 we checked Reebok Fitness’s official product catalogue site and support numbers, its
-          official stores for the US, the UK and Australia, Lifespan Fitness Australia’s about page,
-          ICON’s 2004 annual report, Amazon’s US catalogue through its product search, independent
-          coverage of the current range (Garage Gym Reviews, updated May 2026, and UK retailer
-          listings) and the US Consumer Product Safety Commission’s recall database. Walmart, Academy
-          and Dick’s Sporting Goods blocked our automated checks, so we describe their listings from
-          search results and cannot confirm stock. Figures appear only where an official listing and
-          an independent source agree; conflicts are stated. We have not tested any Reebok treadmill.
-          Prices are those shown on this date and change often.`,
   lead: `A Reebok treadmill is a licensed product, and that one fact explains almost everything a
           buyer runs into: model names that differ by country, warranties set by the local
           distributor, an official US store with no treadmills in it, and a long list of older

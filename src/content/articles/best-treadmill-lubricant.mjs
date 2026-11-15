@@ -21,11 +21,6 @@ export default {
   lead: `There is less choice here than the shelf suggests. For the overwhelming majority of home
           treadmills the answer is 100% silicone, and the interesting decisions are how you apply
           it and whether your particular deck should receive it at all.`,
-  note: `<strong class="text-gray-900">Do this before buying anything.</strong> Find your manual
-          and check what lubricant the manufacturer specifies, and whether the deck is pre-waxed
-          or self-lubricating. Applying silicone to a pre-waxed deck contaminates it and the deck
-          then has to be replaced. This check takes two minutes and is the only irreversible
-          decision on this page.`,
   sections: [
     {
       id: 'deck-type',

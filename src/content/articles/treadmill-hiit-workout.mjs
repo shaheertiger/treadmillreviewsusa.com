@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['treadmill hiit workout', 'hiit on treadmill', 'treadmill hiit', 'hiit treadmill workout for beginners', 'treadmill intervals'],
   stickyCta: { text: 'See the Sessions', link: '#the-sessions' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is a practical guide to running hard intervals on one — it is not medical
-          advice, physiotherapy, coaching or a nutrition plan, and we are not qualified to give any
-          of those. HIIT takes the heart close to its limit on purpose. If you have a heart, lung or
-          circulation condition, high blood pressure, take medication that affects heart rate, are
-          pregnant, are recovering from an injury, or have not exercised hard for a long time, talk
-          to a doctor before trying it. Stop immediately for chest pain, dizziness, faintness or
-          breathlessness that feels wrong. <strong class="text-gray-900">On the figures below:</strong>
-          speeds are examples for one hypothetical intermediate runner, not targets, and work-to-rest
-          ratios are starting points to adjust by feel.`,
   lead: `A treadmill HIIT workout is a short session of very hard efforts — hard enough that you
           could not hold them for more than a minute or two — separated by easy recovery, repeated
           a handful of times. Most of what gets called HIIT on a treadmill is really moderate

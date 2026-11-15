@@ -24,11 +24,6 @@ export default {
           model can be worse than a rival's mid-range one. More, because what happens after the sale
           — warranty terms, who turns up to fix it, whether parts exist in eight years, and whether
           the console works without a subscription — is largely set at brand level.`,
-  note: `<strong class="text-gray-900">On what follows.</strong> These are general brand
-          profiles, deliberately without model specifications or prices, which change through the
-          year. Warranty terms, subscription policies and service arrangements also change and can
-          vary by model and retailer; confirm them for the specific machine before you buy. Each
-          profile links to our full brand guide, which carries the detail.`,
   sections: [
     {
       id: 'short-answer',

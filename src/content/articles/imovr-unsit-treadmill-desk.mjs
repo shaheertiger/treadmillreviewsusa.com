@@ -25,24 +25,6 @@ export default {
           a 162 lb steel frame, built for all-day walking rather than exercise. The desk is the part
           that decides whether it works for you. This review sets out what the set costs today, what
           we could confirm, where iMovR's own listing conflicts with itself, and who should pay for it.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we checked the Unsit and the Lander on iMovR's own store, including the
-          product data behind each listing, then against independent coverage: Treadmill Review
-          Guru's hands-on Unsit review (July 2024), an independent walking-pad tracker's Unsit page
-          (February 2026), and The Gadgeteer (January 2025). We also read WorkWhileWalking's
-          lab-tested review, but WorkWhileWalking was founded by Ron Wiener, who is also named as
-          iMovR's chief executive, so we do not count it as independent and say where we use it. The
-          card carries only figures that iMovR and at least one independent source agree on. iMovR's
-          own Unsit page gives three user weight limits (300, 350 and 400 lb), two motor ratings and
-          three warranty statements, and its Lander listings give different height ranges; we print
-          none of those as fact. We searched cpsc.gov for iMovR, InMovement and Unsit and found no
-          recall or warning. We have not tested the Unsit or the Lander. Prices are those listed on
-          14 October 2026 and change often. An independent tracker reported in February 2026 that the
-          Unsit is sold direct only, and we found no Unsit or Lander on Amazon US, so the product card
-          shows the closest office treadmill that is on Amazon, LifeSpan's TR5000B Pro+ GlowUp, checked
-          on 9 November 2026 against LifeSpan's store, its Amazon listing and independent reviews of the
-          TR5000 family. The Unsit's own figures are in the sections below. We earn a commission
-          if you buy through it; that does not change what we say.`,
   products: [
     {
       id: 'lifespan-tr5000b-pro-glowup',

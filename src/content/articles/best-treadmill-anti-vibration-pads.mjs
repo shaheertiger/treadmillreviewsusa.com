@@ -26,20 +26,6 @@ export default {
           absorb the full weight of a runner landing two or three times a second, and if it is too
           soft, too thick or uneven it will make the treadmill rock. This page picks the pads and
           mats worth buying and explains, in plain terms, what to expect from them.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          pads or mats. Sizes, thicknesses, materials, hardness options and pack counts were checked
-          on 15 October 2026 against each maker's own product page or published product guide where
-          one exists, and against at least one other retailer or distributor listing or independent
-          review. A figure appears on a card only where those sources agreed; where they disagreed —
-          load ratings on all three pads — we left it out and say so in the description. On 9 November
-          2026 we replaced three products Amazon US did not sell or had out of stock (DiversiTech's
-          MP-4C pad, FlooringInc's 3/8-inch rubber mat and Tractor Supply's stall mat) with a
-          PneumaticPlus rubber-cork pad, checked against its Amazon listing and a second retailer's,
-          and two Rubber-Cal products whose figures are those checked for our treadmill mat and gym
-          flooring guides. None of these figures are our own measurements. Prices are the ranges
-          we saw on that date and change often, so check the size, thickness and pack count on the
-          exact listing before you order. We earn a commission if you buy through the Amazon links on
-          this page; it does not change which products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

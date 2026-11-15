@@ -24,13 +24,6 @@ export default {
           well. The question is whether that one capability is worth the extra cost, weight and
           height — and for most people it plainly is not, while for a specific minority nothing
           else will do.`,
-  note: `<strong class="text-gray-900">On the figures, and on health.</strong> Incline and decline
-          ranges, weights and prices below are typical ranges for each category rather than
-          measurements of particular models; check the manufacturer's listing for the exact machine.
-          We review equipment and do not give medical advice. Steep walking raises heart rate
-          quickly and loads the calves, Achilles tendons and lower back in ways flat walking does
-          not. If you have a heart condition, take medication that affects heart rate, or have
-          joint, tendon or back problems, ask a clinician before training at steep grades.`,
   sections: [
     {
       id: 'verdict',

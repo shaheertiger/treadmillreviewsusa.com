@@ -19,29 +19,6 @@ export default {
   ],
   tags: ['best dog treadmill', 'dog treadmill', 'treadmill for large dogs', 'treadmill for small dogs', 'dogpacer', 'dog slatmill'],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">On the products below, and what this page is not.</strong>
-          We have not tested these dog treadmills. The specifications on this page were checked on
-          13 October 2026 against the manufacturer's own listing where one could be read,
-          specialist dog-equipment retailers that publish full specification tables (including Ray
-          Allen Manufacturing, J&amp;J Dog Supplies and Canine Athletes), and independent coverage
-          including a Whole Dog Journal comparison published in January 2026. The GYMAX and Lifepro
-          cards, which replace GoPet machines not sold on Amazon, were checked on 9 November 2026
-          against their Amazon listings and the sources used for our small-dog guide (Costway's
-          store and FactoryPure; Whole Dog Journal and Target). A figure appears in a
-          product's specification line only where those sources agree; where they disagreed — on
-          weight capacity, top speed, folding or deck size — we left it out and say so in the
-          text. None of these are our own measurements. Prices are those listed on 13 October 2026
-          and change often, several of these machines ship by freight with no returns once
-          dispatched, and stock comes and goes, so confirm the price, the specification, the
-          warranty and the returns terms with the seller before ordering. This page is about
-          equipment; it is not veterinary advice. Speak to your vet before putting any dog on any
-          treadmill, and stop at the first sign of distress, lameness, overheating or laboured
-          breathing. We earn a commission if you buy through the Amazon links on this page; it
-          does not change which products we list or what we say about them. On 9 November 2026 the
-          dogPACER, Dog Runner and Dog Trotter cards were replaced by the closest machines sold on
-          Amazon US (SereneLife, GYMAX, Xoiasth and PawPaw's); their figures are the sellers' listing
-          claims, which we could not confirm independently, except the GYMAX's, checked for our
-          small-dog guide. We searched the CPSC database for each of those brands.`,
   lead: `A dog treadmill is a simple machine with one job, and the way to get it wrong is to buy
           one that is too short. Everything else — speed, incline, an app — matters less than
           whether your dog can stretch out fully on the belt without its back feet running out of

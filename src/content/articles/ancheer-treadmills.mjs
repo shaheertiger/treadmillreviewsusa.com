@@ -19,22 +19,6 @@ export default {
   ],
   tags: ['ancheer treadmill', 'ancheer treadmills', 'ancheer folding treadmill', 'ancheer treadmill manual', 'ancheer walking pad', 'is ancheer a good brand'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we tried every web address we could find for ANCHEER (ancheer.com, ancheersport.com and
-          ancheer.shop): the first two would not open with a valid security certificate, and ancheer.shop sells
-          only e-bikes. Amazon’s pages would not load for us that day, so we could not confirm which ANCHEER
-          treadmill listings were live or what they cost. Instead we relied on independent records of ANCHEER’s
-          Amazon listings: OCDevel’s walking-pad tracker (data checked 7 February 2026), PriceHistory’s tracking
-          of ANCHEER listings (most recent price changes June and July 2026), Fitness Volt’s ANCHEER roundup
-          (updated May 2026), third-party copies of ANCHEER manuals, and a Walmart marketplace listing; we also
-          searched the US Consumer Product Safety Commission’s recall database. ANCHEER has no maker’s site to
-          cross-check against, so ANCHEER figures on this page are the listing’s own claims as those sources
-          recorded them; where a listing contradicts itself we say so and leave the figure off the card. The
-          Sunny card uses figures and prices from Sunny's own store on 5 November 2026. On 9 November 2026 the
-          ANCHEER TR6056 and UREVO SpaceWalk 3S cards, which did not come up on Amazon US, became the UREVO Strol 2E
-          Pro and UREVO CyberPad, with the figures checked for our 2-in-1 folding and auto incline treadmill guides. We
-          have not tested an ANCHEER machine. Prices change often, so confirm them before you order. As an
-          Amazon Associate we earn from qualifying purchases.`,
   lead: `ANCHEER treadmills turn up on Amazon at prices that make other walking pads look expensive: a pad
           with a handlebar and a 12% incline for well under $200, a "6-in-1" pad with a vibration plate for not
           much more. People searching for them usually want to know three things: whether ANCHEER still sells

@@ -27,27 +27,6 @@ export default {
     'trueform curved treadmill',
   ],
   stickyCta: { text: 'Compare the Machines', link: '#machines' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read TrueForm's US store (trueformrunner.com), including the product
-          data behind the TRUEFORM.RUNNER, TRUEFORM.TRAINER and TRUEFORM.ENDURO listings and every
-          price option on them, its Runner-versus-Trainer comparison page, its warranty page and its
-          Performance Adapter listing. We cross-checked the figures against Rogue Fitness's US
-          listings for the Trainer and the Runner, Sorinex's Runner listing, and independent coverage
-          from TreadmillReviews.com (Runner, updated March 2024), Garage Gym Lab (Trainer, December
-          2023) and an October 2026 curved-treadmill comparison on ocdevel.com. We searched the US
-          Consumer Product Safety Commission's recall database for TrueForm and True Form and found no
-          recall. Figures on the product cards are those on which TrueForm or an official dealer and at
-          least one independent source agree; where they disagree, we say so in the text and leave the
-          figure off the card. TrueForm and the AssaultRunner Pro are not sold on Amazon, so the
-          product cards show the nearest curved trainers that are: the Pro 6 Arcadia Air Runner, SB
-          Fitness CT700, Tru Grit Runner and SOLE C80, whose figures are those checked for our curved
-          treadmill guides in October and November 2026. We have
-          not tested any TrueForm treadmill, and none of these figures are our own measurements. Prices
-          and lead times are what the sellers showed on 5 November 2026 and change often, so confirm
-          them for your exact configuration before you order. TrueForm sells direct and through
-          dealers, not on Amazon, so the product buttons below go to those Amazon alternatives, not
-          to a TrueForm. As an Amazon Associate we earn from qualifying purchases; it does not change
-          which machines we list or what we say about them.`,
   lead: `If you have searched for a TrueForm treadmill you have probably seen one in a pro team's
           training video or a physical-therapy clinic before you saw a price. TrueForm builds curved,
           non-motorized treadmills whose belt moves only when you push it, and it markets them on one

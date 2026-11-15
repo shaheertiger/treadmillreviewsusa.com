@@ -31,21 +31,6 @@ export default {
           which do not appear on nordictrack.com at all. And the older T 6.5 S, T 8.5 S and similar
           names still turn up on the used market. This page sorts them out, gives the figures we could
           confirm for each current model, and says plainly where the sources disagree.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we read NordicTrack's US treadmill category and its product pages for the
-          T Series 10 (SKU NTL15425) and T Series 16 (NTL16426), including the specification blocks,
-          warranty text and FAQs, and cross-checked them against P.C. Richard &amp; Son's listings for
-          the same model numbers and Treadmill Review Guru's reviews of each (updated January 2025 and
-          January 2026). The T Series 8 (NTL10425) is not sold on nordictrack.com; for it we read
-          NordicTrack's syndicated product sheet for that model number and Abt Electronics' listing,
-          and we give only the figures both state, with the rest labelled as retailer-listing claims.
-          The T Series 5 (NTL17624) appeared in the text only at first, because we could not load a US
-          retailer listing for it on the day; because the T Series 8 is not sold on Amazon, the third
-          card now shows the T Series 5, with the figures checked for our iFIT treadmill guide. Where sources conflict — the T Series 10's motor description, the
-          T Series 16's labour term, the T Series 8's motor and dimensions — we say so rather than pick
-          a number. We have not tested any of these machines, and none of the figures are our own
-          measurements. Prices are those shown on 14 October 2026 and change constantly. We earn a
-          commission if you buy through the Amazon links on this page; it does not change what we say.`,
   products: [
     {
       id: 'nordictrack-t-series-10',

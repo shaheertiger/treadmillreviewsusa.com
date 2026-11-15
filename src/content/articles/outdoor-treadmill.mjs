@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['treadmill outdoor', 'treadmill outside', 'treadmill on covered patio', 'treadmill on porch', 'outdoor treadmill gfci'],
   stickyCta: { text: 'What the Manuals Say', link: '#what-manuals-say' },
-  note: `<strong class="text-gray-900">Electrical safety first.</strong> A mains-powered treadmill
-          outdoors combines electricity, moisture and a sweating person on a metal frame. Follow your
-          owner's manual — the manuals we checked say not to use the treadmill outdoors. Never bypass
-          or remove a GFCI, never use the treadmill if it, the cord or the outlet is wet, never run a
-          cord through standing water or a doorway where it can be crushed, unplug before any cleaning
-          or inspection, and have a licensed electrician assess any outdoor outlet or circuit. Electrical
-          codes vary by jurisdiction; this page describes general principles, not code compliance.
-          <strong class="text-gray-900">On manufacturer statements:</strong> quotations are from
-          manuals we checked on 14 October 2026; your model's manual is the authority.`,
   lead: `Searches for "treadmill outdoor" usually come from one of three places: someone with a
           covered porch or patio and no spare room, someone who misses running outside but not the
           weather, and someone who wants to put the treadmill on the deck for the summer. The short

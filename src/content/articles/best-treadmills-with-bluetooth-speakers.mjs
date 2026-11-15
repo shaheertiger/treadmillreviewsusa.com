@@ -26,15 +26,6 @@ export default {
           folding machines on Amazon US, from the budget Goplus models behind most "folding treadmill
           with Bluetooth speaker" searches to the Horizon T101 and Sole F63, and it is straight with
           you about the limits of a small speaker mounted next to a motor and a moving belt.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          treadmills or listened to their speakers. Each was confirmed as currently sold on Amazon US
-          on 6 November 2026, and every figure on a card comes from the Amazon listing's own bullet
-          points. Where a listing leaves out a basic figure, such as belt size or weight limit, the
-          card says so rather than filling the gap from a reseller. None of these figures are our own
-          measurements, and no listing publishes speaker wattage or sound-level data, so nothing on
-          this page ranks speaker quality. Prices are those Amazon showed on 6 November 2026 and change
-          often. We earn a commission if you buy through the Amazon links on this page; it does not
-          change which products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

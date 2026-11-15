@@ -24,11 +24,6 @@ export default {
           simply lost track of where the deck is, lost power at the wrong moment, or met something
           underneath it. Work through the causes in order and you will usually find it before you
           find a part number.`,
-  note: `<strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
-          wall before touching the frame, wiring or anything under the deck, and never reach under
-          a treadmill while the incline can move — the lift mechanism closes with real force. If you
-          smell burning, see sparking, notice smoke, or the belt moves when the machine is off, stop
-          using it and get it looked at.`,
   sections: [
     {
       id: 'how-incline-works',

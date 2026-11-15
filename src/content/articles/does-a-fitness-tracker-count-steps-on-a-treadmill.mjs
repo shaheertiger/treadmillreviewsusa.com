@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['does fitbit count steps on treadmill', 'does apple watch count steps on treadmill', 'does phone count steps on treadmill', 'does strava track treadmill', 'treadmill step count'],
   stickyCta: { text: 'See Which Number to Trust', link: '#what-to-trust' },
-  note: `<strong class="text-gray-900">A note on tracker data.</strong> We review treadmills, not
-          wearables, and we have not tested specific watches, bands or phones for this page. What
-          follows describes how wrist and phone step counting generally works and the patterns
-          owners commonly report. Devices, apps and their software differ and change with updates,
-          so feature names, menu locations and whether an option exists at all should be checked
-          in your own device's documentation. <strong class="text-gray-900">On the numbers:</strong>
-          step counts, distances and calories from any tracker are estimates from motion sensors
-          and models, as are many treadmill consoles' readings; neither is a precise measurement,
-          and a tracker is not a medical device.`,
   lead: `If you walk on a treadmill wearing a fitness tracker, a smartwatch or with a phone in your
           pocket, will the steps count? In most cases, yes. Wrist trackers do not need you to move
           across the ground; they count steps from the rhythmic swing of your arm, which happens on

@@ -24,17 +24,6 @@ export default {
           $300. The expensive one is a curved, slatted trainer built for sprinting, sold for $2,000
           to $3,500 and up. Most disappointment in this category comes from buying the first while
           expecting the second, so this page covers both and says plainly what each does well.`,
-  note: `<strong class="text-gray-900">On the numbers below.</strong> The specifications on this
-          page were checked on 13 October 2026 against each manufacturer's own product page
-          (Sunny Health &amp; Fitness, SOLE, Tru Grit via its US dealers and SB Fitness) and cross-checked against
-          at least one major retailer listing and independent review coverage. Where sources
-          disagreed — most often on a weight capacity or an incline figure given in degrees by one
-          source and percent by another — we left that figure out of the spec line rather than
-          guess. None of these are our own measurements: we have not tested these machines. Prices
-          are the ranges we saw across retailers on 13 October 2026 and change often, as does
-          stock on the curved models, so confirm the price, specification and warranty for the
-          exact unit before you order. We earn a commission if you buy through the Amazon links on
-          this page; it does not change which products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

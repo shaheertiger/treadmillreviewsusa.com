@@ -24,14 +24,6 @@ export default {
           a missing or erratic number as a broken machine, it helps to know what each method can
           realistically do, because a good share of "not working" is a sensor being asked for more
           than it was ever capable of.`,
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is a guide to getting equipment to read heart rate reliably — it is not
-          medical advice, and none of these devices is a medical instrument. A treadmill console,
-          strap or watch cannot tell you whether a reading is safe for you. If you have a heart
-          condition, take medication that affects heart rate, or have been given heart-rate limits
-          by a clinician, follow their guidance rather than a console. Stop exercising and seek
-          medical help for chest pain, unusual breathlessness, dizziness, fainting or palpitations,
-          whatever any monitor says.`,
   sections: [
     {
       id: 'short-answer',

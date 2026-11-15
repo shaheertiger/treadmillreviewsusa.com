@@ -26,23 +26,6 @@ export default {
           what you eat, and whether your training plan gives your body a chance to adapt. This page
           names six tools that cover the common categories, says plainly what each one is good for,
           and explains how to fit them around lifting without expecting them to do a job they cannot.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          products, and no figure on this page is our own measurement. Each was confirmed as
-          currently sold on 16 October 2026 on the maker's own store or a major retailer, and its
-          figures were checked on that date against the maker's product page and at least one
-          independent source — a second retailer or a hands-on review. A figure appears in a
-          product's specification line only where those sources agree; where they conflicted — on
-          the massage gun's weight, the foam roller's load rating, the strap's length and the ball's
-          diameter — we left it out and say so on the card. Prices are those we saw on
-          that date and change often. We earn a commission if you buy through the Amazon links on
-          this page; it does not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home gym
-          equipment; we are not giving medical, physiotherapy, coaching or nutrition advice, and we
-          make no claim that any tool here speeds healing, prevents injury or improves performance.
-          Some makers market those benefits; treat them as marketing. Percussive massage and air
-          compression are not suitable for everyone — see the safety section below — and if you
-          have a medical condition, an injury, pain that does not settle, or you are pregnant, talk
-          to a doctor or a qualified physiotherapist before you use them.`,
   sections: [
     {
       id: 'quick-picks',

@@ -24,10 +24,6 @@ export default {
           would be out of date before you read it. It is the method for judging any treadmill
           deal you see between mid-November and Cyber Monday, so you can tell a genuine
           reduction from a big red percentage in a few minutes.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Discount ranges, delivery
-          costs and retailer policies here are typical patterns, not quotes. They vary by brand,
-          retailer and year, and the only figures that count are the ones on the order page in
-          front of you — including the delivery tier and the return terms.`,
   sections: [
     {
       id: 'short-answer',

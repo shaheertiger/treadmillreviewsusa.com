@@ -19,20 +19,6 @@ export default {
   ],
   tags: ['mini treadmill', 'mini treadmill for desk', 'mini treadmills for home', 'aibi mini treadmill', 'urevo foldi mini treadmill', 'smallest walking pad', 'lightest walking pad'],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines. On 5 November 2026 we read each maker’s US product page (WalkingPad, UREVO) and
-          checked footprint, folded size, unit weight, belt and capacity against at least one
-          independent source: Tom’s Guide’s hands-on Z1 review, Live Science’s and T3’s Strol 2E
-          reviews, and an independent walking-pad spec tracker that reads manuals and listings (pages
-          for the E1L, C2 and Egofit dated February to October 2026). Where sources disagree, the
-          figure is left off the card and the description gives each one. Egofit’s own site would not
-          load for us, so the Walker Pro M1’s figures come from the tracker’s record of Egofit’s
-          site and manual, and we could not confirm its price on the day; its card carries no price.
-          The UREVO Smart Walking Pad card, which stands in for the E1L on Amazon, carries the
-          figures checked against its Amazon listing on 6 November 2026. We searched the CPSC recall database for each brand and found no recall; Sperax pads are
-          excluded after the CPSC’s April 2026 warning. Prices are those shown on 5 November 2026 and
-          change often. We earn a commission if you buy through the Amazon links on this page; it does
-          not change which products we list or what we say about them.`,
   lead: `“Mini treadmill” is not a category with a definition. Sellers use it for anything from a
           16-inch walking pad to a folding running treadmill, and the word on the box tells you nothing
           about whether it fits your room. What decides that is two numbers: how much floor the

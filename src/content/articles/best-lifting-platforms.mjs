@@ -27,27 +27,6 @@ export default {
           you lift and who is underneath. The five picks below cover a bolt-together deadlift
           platform, a budget version, a complete Olympic platform, drop pads for noise and the
           stall-mat DIY route, and the guide after them covers when each makes sense.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          platforms or pads, and no figure on this page is our own measurement. Each was confirmed
-          as currently sold on 16 October 2026 on the maker's or retailer's own site (Titan Fitness
-          and Valor Fitness), or on 9 November 2026 on Amazon and the maker's site for the
-          replacement drop pads and tiles, and its
-          dimensions, layers, thickness and materials were checked on that date against at least
-          one independent review. A figure appears on a card only where the maker or retailer and
-          an independent source agree; where they conflicted — on the drop pads' weight and the
-          tile packs' coverage — we left it out and say so on the
-          card. Prices are those we saw on that date and change often; several of these are sold
-          as a frame with optional tiles, so the total depends on what you add. We earn a
-          commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review
-          equipment; we are not giving medical, physiotherapy, coaching or structural engineering
-          advice. Heavy lifting and dropping weights carry a real risk of injury and of damage to
-          a building. A platform protects a floor; it does not make every floor suitable for heavy
-          lifting. If you plan to lift heavy or drop weights in an upstairs room, an apartment or
-          on any unusual floor, ask a structural engineer or builder to check the floor first. If
-          you have an injury, a back, joint or heart condition, are pregnant, or are new to
-          lifting, talk to a qualified professional before you start.`,
   sections: [
     {
       id: 'quick-picks',

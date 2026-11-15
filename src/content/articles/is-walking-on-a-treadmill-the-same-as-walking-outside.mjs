@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['is walking on a treadmill the same as walking outside', 'treadmill walking vs outdoor walking', 'is walking on a treadmill good for you', 'treadmill vs outdoor walking', 'treadmill walking benefits'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is a practical comparison of walking on a belt and walking outdoors — it is not
-          medical, physiotherapy or coaching advice, and we are not qualified to give any of
-          those. How much and how fast you should walk depends on your health, history and goals;
-          if you have a heart, lung, joint or balance condition, have had falls, are pregnant or
-          recovering from injury or surgery, or have any concern about exercise, talk to a doctor
-          or physical therapist first. <strong class="text-gray-900">On the claims below:</strong>
-          where something is a convention or a typical pattern rather than a measured fact we say
-          so, and we do not quote research figures we cannot stand behind.`,
   lead: `For walking, a treadmill and a pavement are closer than most people expect. The biggest
           difference between treadmill running and road running — air resistance — hardly applies
           at 3 or 4 mph. What remains is a set of smaller differences: the ground moves under you

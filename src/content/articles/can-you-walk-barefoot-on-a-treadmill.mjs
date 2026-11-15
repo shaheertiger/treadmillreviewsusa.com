@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['can you walk on a treadmill barefoot', 'barefoot treadmill', 'treadmill in socks', 'treadmill shoes', 'treadmill safety'],
   stickyCta: { text: 'See What to Wear Instead', link: '#what-shoes' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is general guidance on using the machine safely — it is not medical, podiatry or
-          physiotherapy advice, and we are not qualified to give any of those. If you have
-          diabetes, peripheral neuropathy, poor circulation, a foot deformity, a skin condition, an
-          open wound on your feet, or any problem with sensation or balance, talk to a doctor or
-          podiatrist about footwear before walking on a treadmill, and follow their advice over
-          anything here. <strong class="text-gray-900">On manuals:</strong> treadmills differ and
-          so do their instructions. We describe what many manuals say rather than what every one
-          says; your own owner's manual is the authority for your machine, including on footwear
-          and on anything that might affect the warranty.`,
   lead: `Can you walk barefoot on a treadmill? Physically, yes — the belt does not know what is on
           your feet, and the machine will run. Whether you should is a different question, and for
           most people the answer is no. Many treadmill manufacturers' manuals tell you to wear

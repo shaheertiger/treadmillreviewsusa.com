@@ -22,11 +22,6 @@ export default {
           you the expensive one is eight times better is selling something. The honest answer is
           that six components differ, three of them matter to a home user, and the rest is
           durability you will only meet in year seven.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Component specifications
-          are typical of each price band rather than universal — a well-specified budget machine
-          can beat a poorly-specified mid-range one, and outgoing model years blur the boundaries
-          further. Use these as a guide to what to look for, and check the actual specifications
-          of the machine in front of you.`,
   sections: [
     {
       id: 'verdict-up-front',

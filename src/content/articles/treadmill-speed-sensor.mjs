@@ -26,15 +26,6 @@ export default {
           to be safe or chases a signal it cannot trust. Most of the resulting faults are
           cheap to fix, and a handful of checks with the machine unplugged will usually tell you
           whether the sensor, its wiring or the controller is to blame.`,
-  note: `<strong class="text-gray-900">Unplug before you touch anything.</strong> The speed sensor
-          sits under the motor hood, next to the drive belt, the front roller and the controller
-          board. Unplug the treadmill at the wall before removing the hood, and keep fingers and
-          tools clear of the belt and pulleys when you do plug it back in to test. If the belt
-          <strong class="text-gray-900">surges or changes speed on its own</strong>, stop using the
-          machine until the fault is found and fixed — a belt that accelerates without being asked
-          is one of the few treadmill faults that can throw a user off the back. Your manual is
-          the authority on your model, including where the sensor is and what any error message
-          means.`,
   sections: [
     {
       id: 'short-answer',

@@ -21,12 +21,6 @@ export default {
   lead: `The question is not whether a treadmill has a subscription. It is what the machine
           becomes when you stop paying — and the answers range from "exactly the same treadmill"
           to "a frame with a dark screen on it".`,
-  note: `<strong class="text-gray-900">How we assessed this.</strong> We have not tested these
-          machines ourselves. We compared what each one does with its subscription cancelled or
-          declined, using manufacturer documentation and published specifications; the NordicTrack T Series 5's
-          figures are those checked for our iFIT treadmill guide against its Amazon listing and NordicTrack's specification. Subscription pricing and what each tier unlocks change frequently and
-          vary by region; the figures below are indicative and should be confirmed with the
-          manufacturer before you buy.`,
   sections: [
     {
       id: 'three-tiers',

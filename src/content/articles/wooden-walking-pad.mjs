@@ -33,20 +33,6 @@ export default {
           change the things that decide whether a walking pad suits you — belt length, weight capacity,
           speed range and the warranty behind it. This guide explains each type, what it costs in the US,
           and when a standard walking pad is the better buy.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          20 October 2026 we read the Walkolution 1 and Walkolution 2 listings and the shipping policy on
-          Walkolution's USA and Canada store, including the store's product data for every configuration,
-          and compared them with Woodway USA's Walkolution Wanderlust page and an independent walking-desk
-          review site (OCDevel, last checked by its author on 11 October 2026). We read the NOHrD Citius
-          listings at two US dealers, Recovery For Athletes and Fitness Supply, because NOHrD's own US site
-          did not load for us that day; Sprintbok figures come from our own review of 14 October 2026 and a
-          US dealer listing checked on 20 October. We read the Office Walker site and OCDevel's page on it,
-          and wood-grain walking pad listings at FlexiSpot, Best Buy and in independent reviews. Where these
-          sources disagree, we say so below rather than choosing a figure. We searched the US Consumer
-          Product Safety Commission's recall database for Walkolution, Woodway, NOHrD, WaterRower, Office
-          Walker, Urevo, FlexiSpot, Redliro and Maksone and found no recalls. We have not tested any machine
-          on this page. Prices are as shown on 20 October 2026 and change. This page is equipment advice,
-          not medical advice. As an Amazon Associate we earn from qualifying purchases.`,
   sections: [
     {
       id: 'short-answer',

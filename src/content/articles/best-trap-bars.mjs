@@ -26,31 +26,6 @@ export default {
           The five bars below cover open and closed designs from about $300 to about $465, and the
           guide after them explains the measurements that matter: handle height, sleeve length, the
           weight of the empty bar, whether it rests in your rack, and how much floor it needs.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          bars, and no figure on this page is our own measurement. On 19 October 2026 we confirmed
-          each bar as currently sold on its maker's own store (REP Fitness, Rogue Fitness, Titan
-          Fitness and Bells of Steel) and checked its weight, length, sleeve length, handle layout and
-          weight rating against at least one independent source: Garage Gym Reviews' and BarBend's
-          trap bar guides and their individual reviews of the REP, Rogue and Titan bars. A figure appears on a card only where the maker and an independent source agree, or
-          is labelled as the maker's own; where they conflicted we left it out and say so on the card.
-          Weight ratings are the makers' figures, not load tests. On Amazon, we found the Bells of
-          Steel bar listed on Amazon US at $299.99 on that date. We could not find the REP, Rogue or
-          Titan bars on Amazon US: Rogue sells only through its own store, and REP and Titan list
-          these bars on their own stores, so their buttons run an Amazon search that may show similar
-          bars rather than the exact one. On 9 November 2026 we also replaced the Titan Rackable Hex Trap Bar card with CAP's
-          combo-grip Olympic trap bar, checked against CAP's Amazon listing and retailer listings. On 9 November 2026 we replaced the Rogue TB-2 card, because Rogue sells only through its own
-          store, with Marcy's HTB-6921 closed hex bar, checked against Marcy's listing, the Amazon
-          listing and two US retailers. Every brand was checked against the US Consumer Product
-          Safety Commission's recall database on the same date, along with trap bars, hex bars and
-          barbells as a category. Prices are those we saw on that date and change often. We earn a
-          commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
-          exercise equipment; we are not giving medical, physiotherapy or coaching advice, and nothing
-          here is a training programme. Deadlifts and carries load the back, hips and grip heavily.
-          If you have a back, hip, knee or heart condition, are pregnant or postpartum, or are
-          returning from injury, talk to a qualified professional before starting or changing a
-          lifting programme, and treat every weight rating as the maker's claim.`,
   sections: [
     {
       id: 'quick-picks',

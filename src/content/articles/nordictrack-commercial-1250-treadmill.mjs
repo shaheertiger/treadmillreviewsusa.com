@@ -32,21 +32,6 @@ export default {
           and that P.C. Richard &amp; Son and Nebraska Furniture Mart repeat for the same model
           number. Where the older figures still circulate, we say where they came from rather than
           mixing them in.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we read NordicTrack's US product page for the Commercial 1250 (SKU
-          NTL14125), including its specification block, warranty text, FAQ and footnotes, and
-          cross-checked it against P.C. Richard &amp; Son's and Nebraska Furniture Mart's listings
-          for the same model number, plus independent reviews from Treadmill Review Guru (updated
-          March 2025) and BarBend (updated December 2024). NordicTrack and P.C. Richard agree on the
-          3.6 CHP motor rating, the 22 x 60 in. belt, the 400 lb maximum user weight, 0-12 mph, the
-          77.3 x 37 x 59.5 in. footprint and two years of parts and one year of labour cover;
-          NordicTrack and Nebraska Furniture Mart agree on the 10 in. tilting screen, the -3% to 12%
-          incline range, the 400 lb rating and the footprint. BarBend's review describes the earlier
-          machine (3.0 CHP, 20 x 60 in., 300 lb), and we treat it as such. Figures that appear in a
-          single source are labelled. We have not tested the Commercial 1250, and none of these
-          numbers are our own measurements. Prices are those shown on 14 October 2026 and change
-          constantly. We earn a commission if you buy through the Amazon link on this page; it does
-          not change what we say about the machine.`,
   products: [
     {
       id: 'nordictrack-commercial-1250',

@@ -27,26 +27,6 @@ export default {
           mini-trampolines also point at the same risky moment — folding and unfolding the frame.
           The six rebounders below cover the main choices, and the guide after them explains each
           one.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not used or tested
-          these rebounders, and no figure on this page is our own measurement. Each was confirmed as
-          currently sold on 19 October 2026 on the maker's own store or, for bellicon and BCAN, on
-          a major US retailer's listing, and each brand had Amazon US listings for the model in
-          Amazon's listing data, several from the brand's own Amazon store. Figures were checked against at
-          least one independent source — a second retailer's listing or an independent review — and
-          appear on a card only where the sources agreed; where they conflicted, mostly on
-          warranties, spring counts and one model's weight rating, we left the figure off and say
-          so on the card. We could not open Amazon's product pages directly on that date, so
-          Amazon prices and stock are from listing data and may differ. Every brand was searched in
-          the US Consumer Product Safety Commission's recall database. Prices change often. We earn
-          a commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.
-          <br><br>
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
-          exercise equipment; we are not giving medical, physiotherapy or nutrition advice.
-          Health benefits mentioned on this page are the sellers' claims unless we say otherwise.
-          If you are pregnant or postpartum, have a balance disorder, osteoporosis, a pelvic floor,
-          joint, back or heart condition, or are returning from injury or surgery, talk to a
-          qualified professional before starting to rebound.`,
   sections: [
     {
       id: 'quick-picks',

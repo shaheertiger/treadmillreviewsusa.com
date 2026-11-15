@@ -24,11 +24,6 @@ export default {
           same in outline on most home machines. What goes wrong is rarely the fitting. It is a
           belt ordered by guesswork, a worn deck left in place, or tension and tracking set by feel
           and never checked again.`,
-  note: `<strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
-          wall and remove the safety key before you start, and keep it unplugged for every step
-          except the final test runs. The safety key stops the belt; it does not isolate the
-          machine. If you smell burning, see sparking, notice smoke, or the belt moves when the
-          machine is off, stop and get it looked at — a new belt will not fix any of those.`,
   sections: [
     {
       id: 'signs',

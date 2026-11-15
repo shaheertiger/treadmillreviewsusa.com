@@ -25,15 +25,6 @@ export default {
           describe the product, which describe the marketing, and which one independent report has
           already called into question. This page does that reading, and then says plainly who
           the TM037 is for.`,
-  note: `<strong class="text-gray-900">What is claimed, what is disputed, and what we have not done.</strong>
-          Every specification on this page — belt size, speed range, incline, the 320 lb capacity,
-          the 3.0 HP peak motor rating, the brushless motor and the under-40 dB noise figure — is the
-          seller's claim, taken from the Wellfit brand page and the Amazon listing, which agree with
-          each other. They have not been independently verified. One independent reviewer has
-          reported a teardown in which the motor label read "permanent magnet DC", contradicting the
-          brushless claim, and derived a continuous rating of roughly 0.75 HP; we have not verified
-          that report either. The warranty terms differ between the two listings. We have not tested
-          the TM037 ourselves. Checked 8 October 2026.`,
   products: [
     {
       id: 'wellfit-tm037',

@@ -26,26 +26,6 @@ export default {
           several feet long. This guide covers the five sets we would consider on Amazon today,
           how to compare them fairly by price per pound, and what the coating, the handles and the
           rack mean in a real room.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          dumbbells, and no figure on this page is our own measurement. Each set was confirmed as
-          listed and in stock on Amazon US on 19 October 2026 — CAP Barbell's sets sold and shipped
-          by Amazon, REP Fitness's sets sold through REP's own Amazon store — and on the maker's own
-          store the same day. Contents, handle sizes, rack dimensions and warranties were checked
-          against the maker and at least one other source: Garage Gym Reviews' dumbbell reviews, or
-          the Amazon listing where no independent review covered the exact set. A figure appears on a
-          card only where those sources agree; where a figure came from one source only we say whose
-          figure it is, and where sources conflicted we left it out. Every brand was checked against
-          the US Consumer Product Safety Commission's recall database on 19 October 2026. Prices are
-          those we saw that day and change often; cost-per-pound figures are our arithmetic from
-          those prices. We earn a commission if you buy through the Amazon links on this page; it does
-          not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
-          exercise equipment; we are not giving medical, physiotherapy, structural engineering or
-          coaching advice. Weights are manufacturer figures, not a guide to what you should lift. If
-          you have a back, shoulder, joint or heart condition, are pregnant or postpartum, or are
-          returning from injury, talk to a qualified professional before starting a strength
-          programme, and ask a qualified professional about your floor before putting a heavy rack
-          upstairs.`,
   sections: [
     {
       id: 'quick-picks',

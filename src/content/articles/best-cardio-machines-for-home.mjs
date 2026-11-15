@@ -19,28 +19,6 @@ export default {
   ],
   tags: ['cardio machines', 'best cardio machines for home', 'cardio machines at gym', 'home cardio equipment', 'best home exercise machine', 'air bike', 'stepper machine'],
   stickyCta: { text: 'See Our Top Picks', link: '#quick-picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines. Each was confirmed on 16 October 2026 as currently sold on its maker's own store
-          (BowFlex, Schwinn, Concept2, Sole and UREVO), and its figures were checked on that date
-          against the maker's product page and at least one independent source — published
-          hands-on reviews and, for the walking pad, an independent tracker that reads owner's
-          manuals. A figure appears in a product's specification line only where those sources
-          agree; where they conflicted — on motor type, unit weights, dimensions after a model
-          refresh and some warranty terms — we left the figure out and say so in the text. None of
-          these are our own measurements. The exception to those dates is the stepper: the Bells of
-          Steel Blitz Stepper’s figures are those checked on 19 October 2026 for our vertical climber
-          guide, against Bells of Steel and Garage Gym Reviews. The Sole F63 and MERACH W50 TrekPad
-          replace a BowFlex treadmill and a UREVO pad that Amazon US does not sell; their figures
-          are those checked for our Sole treadmill guide and, for the MERACH, against MERACH's
-          page and its Amazon listing on 5 November 2026. Prices are those we saw on 16 October 2026; the cardio
-          market runs on constant sales, so confirm the price, the seller and the specification
-          against the exact listing before you order. We earn a commission if you buy through the
-          Amazon links on this page; it does not change which products we list or what we say about
-          them. <strong class="text-gray-900">What this page is, and is not.</strong> This site
-          reviews equipment and is not giving medical, physiotherapy or coaching advice. If you have
-          a heart, joint, back or balance condition, are pregnant, are returning from injury, or
-          are unsure whether vigorous exercise is right for you, talk to a doctor or another
-          qualified professional before you start.`,
   lead: `"Cardio machines" covers at least seven quite different pieces of equipment, and the best
           one for your home depends more on how you like to move than on any specification. This
           page is the product roundup: one machine of each type whose published figures held up

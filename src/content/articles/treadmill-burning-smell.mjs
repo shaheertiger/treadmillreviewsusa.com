@@ -23,12 +23,6 @@ export default {
           is not diagnosis but stopping. After that, the smell itself is surprisingly
           informative: rubber, hot plastic, scorched dust and the faint chemical note of a new
           machine come from different places and mean very different things.`,
-  note: `<strong class="text-gray-900">Stop first, diagnose later.</strong> If you smell burning,
-          stop the belt, switch the machine off and unplug it at the wall if you can do so safely.
-          Let it cool fully before touching the belt, deck or motor hood. If there is smoke, visible
-          sparking, or the belt moves when the machine is off, do not use it again until it has
-          been inspected. If there is flame or smoke you cannot account for, get everyone out and
-          call 911.`,
   sections: [
     {
       id: 'stop-rule',

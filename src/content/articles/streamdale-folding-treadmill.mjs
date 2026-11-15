@@ -32,15 +32,6 @@ export default {
           appear on marketplace storefronts at department-store sites. This page explains who
           Streamdale is, what its treadmill listings say and do not say, what its return and
           shipping terms mean for a heavy machine, and how to decide whether one is worth buying.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we read Streamdale Furniture’s website, including its treadmill collection,
-          refund, shipping and contact policies, and recorded the title, price, listed weight and
-          claims for every treadmill shown. We compared those with Streamdale listings on two
-          department-store marketplaces, the seller’s Better Business Bureau profile, and the CPSC
-          recall database. We found no independent review of any Streamdale treadmill, so no
-          specification on this page is confirmed: every figure quoted is the seller’s claim, and we
-          give none as a fact about the machine. We have not tested any Streamdale treadmill. The
-          catalogue changes, and prices and listings may differ by the time you read this.`,
   sections: [
     {
       id: 'short-answer',

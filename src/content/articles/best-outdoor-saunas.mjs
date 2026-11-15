@@ -26,31 +26,6 @@ export default {
           The five saunas below, all sold on Amazon, are traditional, stove-heated
           barrels and cabins from makers who publish their specifications and manuals, and this guide
           walks through the site work each one assumes.`,
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review home gym and
-          recovery equipment; this is not medical, electrical or building advice. Sauna sellers market
-          circulation, detox, sleep and recovery benefits; on this page those are reported as the
-          sellers' claims. The makers' manuals tell anyone with a health condition to consult a doctor
-          before using a sauna, and pregnant women in particular to check with a physician first —
-          see the safety section below. All electrical work for these saunas must be done by a
-          licensed electrician, and your local building and fire codes decide what you may build and
-          where; check with your building department before you order.
-          <strong class="text-gray-900">On the products below.</strong> We have not tested these
-          saunas, and no temperature or heat-up figure here is our own measurement. On 19 October 2026
-          we confirmed the three SaunaLife saunas as listed and available to order on Amazon US (the E7
-          showed as usually shipping in 9 to 10 days) — two sold by
-          Accurate Steam &amp; Sauna, a SaunaLife dealer, and one by BathingBrands, SaunaLife's parent
-          company. The Almost Heaven and Redwood Outdoors saunas have Amazon listings that showed as
-          currently unavailable that day, so on 9 November 2026 we replaced their cards with two saunas
-          listed and in stock on Amazon US, a EuroSauna two-person barrel and SaunaLife's GL4 cabin,
-          whose figures we checked against the Amazon listing and Wayfair or SaunaLife dealers; the
-          guide still uses Almost Heaven's manuals and Garage Gym Reviews' Redwood test as sources. We
-          checked dimensions, capacity, heater, electrical requirements and warranty against the
-          maker's product page or manual and at least one other source: the Amazon listing, a second
-          dealer, or Garage Gym Reviews' hands-on coverage. A figure appears on a card only where those
-          sources agree; where they conflicted, we left it off and say so. Every brand was checked
-          against the US Consumer Product Safety Commission's recall database. Prices are those we saw
-          on that date and change often. We earn a commission if you buy through the Amazon links on
-          this page; it does not change which products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

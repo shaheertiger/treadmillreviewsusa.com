@@ -25,16 +25,6 @@ export default {
           is a good buy: who is actually selling it to you, which brands Walmart itself carries, how
           to read a listing, and what Walmart's return policy means for a machine that weighs more
           than you can carry back to the store.`,
-  note: `<strong class="text-gray-900">On the details below.</strong> This site is independent and
-          not affiliated with Walmart. On 18 October 2026 we read Walmart's return and price-match
-          policies on corporate.walmart.com (the return policy was marked "Updated: October 9,
-          2026"), Walmart's Marketplace seller documentation on Walmart Fulfillment Services, and the
-          US Consumer Product Safety Commission's recall database. Walmart.com showed an automated
-          "robot or human" check to our tools, so we could not load its treadmill listings directly;
-          where we describe what Walmart lists, we rely on search-engine copies of Walmart.com pages
-          and independent buying guides, and say so. Return windows, fees, delivery options and the
-          treadmills offered change often and differ by listing. Check the current terms on the
-          product page before you buy. Prices are not quoted as current.`,
   sections: [
     {
       id: 'short-answer',

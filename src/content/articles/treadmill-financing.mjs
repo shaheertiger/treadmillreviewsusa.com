@@ -23,13 +23,6 @@ export default {
           comfortably, and you would have bought the same machine with cash. It becomes a trap when
           the offer is deferred interest rather than true 0%, when it nudges you up a price tier,
           or when a subscription is folded into the monthly figure so the real cost disappears.`,
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills;
-          this is a plain-English guide to the financing offers you will meet when buying one. It
-          is not financial advice, and we do not recommend any lender. Every dollar figure below is
-          an illustration with round numbers, chosen to show how the arithmetic works — not a quote
-          or a rate from any provider. Terms, rates and eligibility vary and change. Read the
-          written disclosures for any plan you are offered, and if borrowing is a stretch, it is
-          worth talking to a non-profit credit counsellor before taking on more.`,
   sections: [
     {
       id: 'short-answer',

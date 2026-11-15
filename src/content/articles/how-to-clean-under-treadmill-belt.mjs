@@ -22,10 +22,6 @@ export default {
           cannot see: between the belt and the deck. Dust, carpet fibre, hair and shed belt
           material combine there into a mildly abrasive paste, and it works against the deck on
           every rotation.`,
-  note: `<strong class="text-gray-900">Unplug the machine at the wall before starting.</strong>
-          Not the safety key — the plug. A treadmill motor can turn under stored energy and you
-          will have your hands under a belt. Also find your manual before you begin, because the
-          deck type determines what you can safely apply afterwards.`,
   sections: [
     {
       id: 'why-it-matters',

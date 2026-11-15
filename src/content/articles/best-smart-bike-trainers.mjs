@@ -25,20 +25,6 @@ export default {
           questions — will it fit your bike's axle and drivetrain, how accurate and responsive does it need
           to be, and how will it connect to the app you use. The five trainers below cover the main types
           with products on sale now, and the guide after them works through those questions in order.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          trainers, and no figure on this page is our own measurement. Each was confirmed as currently
-          sold on 19 October 2026 on its maker's US store (Wahoo, Garmin and Saris) and in Amazon US search
-          results, and its power, grade, axle, cassette and connectivity figures were checked on that date
-          against at least one independent source — chiefly OutdoorGearLab's bike trainer comparison,
-          updated 8 October 2026, and DC Rainmaker's in-depth Tacx NEO 2T review. A figure appears in a
-          product's specification line only where the maker and an independent source agree; where they
-          conflicted — most often on unit weight, and once on warranty length — we left it out and say so
-          on the card. Prices are those we saw on 19 October 2026 and change often, especially in the
-          autumn sales. We earn a commission if you buy through the Amazon links on this page; it does
-          not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review equipment; this
-          is not medical or coaching advice. If you have a heart condition or are returning from injury,
-          ask a doctor what kind of training suits you before starting high-intensity indoor workouts.`,
   sections: [
     {
       id: 'quick-picks',

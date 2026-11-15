@@ -22,11 +22,6 @@ export default {
   lead: `Buying a treadmill is worth it if you will use it at least a couple of times a week for
           a few years, and if the treadmill is the main thing you were paying the gym for. Miss
           either condition and the gym — or a cheaper gym — usually wins.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Gym prices vary enormously by
-          city, chain and contract, and treadmill prices move with sales and model years. Every
-          dollar figure on this page is either a typical range or an example chosen to make the
-          arithmetic easy to follow, and is labelled as such. Put your own membership fee and the
-          machine you are actually considering into the same sums before deciding anything.`,
   sections: [
     {
       id: 'short-answer',

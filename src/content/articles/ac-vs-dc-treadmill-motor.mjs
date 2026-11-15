@@ -23,11 +23,6 @@ export default {
           useful to a home buyer. Nearly every machine you will be choosing between at home uses the
           same kind of motor, and the differences that decide whether it lasts are in the numbers
           printed next to the word "DC", not the word itself.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Lifespans, circuit ratings and
-          price points here are typical ranges drawn from how the category is built, not
-          measurements of any particular machine. The manual and the electrical label on your
-          treadmill rule on what circuit it needs, and anything inside the motor hood should be
-          done with the machine unplugged at the wall.`,
   sections: [
     {
       id: 'short-answer',

@@ -19,24 +19,6 @@ export default {
   ],
   tags: ['walking pad with incline', 'incline walking pad', 'under desk treadmill with incline', 'auto incline walking pad', 'walking pad incline', 'urevo spacewalk 3s', 'merach w60 plus'],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          walking pads. The specifications on this page were checked on 13 October 2026 against
-          each brand's own product page or press release (MERACH, DeerRun and
-          Egofit), the Amazon or brand-store listing, and independent coverage — a long-running
-          spec tracker that reads owner's manuals and motor labels, and, for the DeerRun Z10, a
-          hands-on review that measured the incline. The MERACH W50 TrekPad, UREVO Strol 2E Pro and
-          DeerRun A6 Plus replace pads Amazon US does not sell in the version we listed; their
-          figures are those checked against the maker and the Amazon listing on 5 and 6 November
-          2026 for our walking-pad and 2-in-1 guides. A figure appears in a product's
-          specification line only where those sources agree. Budget walking pad listings
-          disagree with each other often, and where they did — on motor horsepower, weight
-          capacity, maximum incline, unit weight and warranty — we left the figure out and say
-          so in the text. None of these are our own measurements. Prices are those we saw on
-          brand and retailer sites on 13 October 2026 and change often, as do specifications
-          under unchanged product names, so confirm the price, the specification and the warranty
-          terms against the exact unit before you order. We earn a commission if you buy through
-          the Amazon links on this page; it does not change which products we list or what we
-          say about them.`,
   lead: `Most walking pads are flat, and a flat pad that stops at 4 mph runs out of ways to make
           your walk harder within a few weeks. Incline is the fix. The catch is that the word covers
           three quite different things on a pad — a motor that tilts the deck while you walk, a

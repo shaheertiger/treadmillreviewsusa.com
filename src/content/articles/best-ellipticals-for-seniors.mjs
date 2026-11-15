@@ -26,31 +26,6 @@ export default {
           long way off the floor. This guide names six machines whose figures held up when we checked
           them, explains which details matter most for an older body, and says plainly when a seated
           machine is the better choice.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines, and no figure on this page is our own measurement. Each was confirmed on 19 October
-          2026 as currently sold on its maker's own US store (SOLE, Horizon, Schwinn, Teeter and
-          NuStep), and its figures were checked on that date against at least one independent source:
-          Garage Gym Reviews' hands-on reviews, the Amazon listing, or a second retailer or dealer
-          (Northern Fitness for the Teeter, Tiger Medical for the NuStep). Our checking tools could not
-          load Amazon's own pages on 19 October. SOLE and Teeter sell through their own Amazon stores,
-          and search results showed current Amazon listings for the SOLE E25 and the FreeStep range;
-          Schwinn's 411 was listed on Amazon when our main elliptical guide checked it on 16 October.
-          We did not find the Horizon EX-59 or the NuStep T5 sold new on Amazon; buy those from the
-          maker or an authorized dealer. Confirm the exact model and seller on any listing before you
-          order. A figure appears in a product's specification line only where sources agree; where
-          they conflicted we left it off the card and say so in the text. Every brand was searched in
-          the US Consumer Product Safety Commission's recall database on 19 October 2026. Prices are
-          those we saw on that date and change often. We earn a commission if you buy through the
-          Amazon links on this page; it does not change which products we list or what we say about
-          them.
-          <br><br>
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review exercise
-          equipment; we are not giving medical, physiotherapy or rehabilitation advice, and nothing here
-          says an elliptical will treat or prevent any condition. If you have a heart condition or take
-          medication that affects your heart rate or blood pressure, have balance problems, dizziness,
-          osteoporosis, a joint replacement or other recent surgery, or an implanted medical device,
-          ask your doctor or physiotherapist whether an elliptical suits you, and whether a standing or
-          seated machine is safer, before you buy or start.`,
   sections: [
     {
       id: 'quick-picks',

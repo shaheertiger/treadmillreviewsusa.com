@@ -29,16 +29,6 @@ export default {
           healthy dog, our guide to the
           <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">best dog treadmills</a>
           is the page you want.`,
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is an equipment explainer, not veterinary or medical advice, and we are not qualified
-          to give any. Whether hydrotherapy suits your dog, when it should start after surgery, at
-          what water depth and for how long, is for your veterinarian or a veterinary
-          rehabilitation professional to decide after examining the dog; the same applies to people
-          and their doctor or physical therapist for the human aquatic treadmills mentioned below.
-          <strong class="text-gray-900">On the figures below:</strong> session prices are examples
-          published by individual US clinics and reported in veterinary trade coverage, checked on
-          14 October 2026; equipment prices are dated trade figures, not current quotes. We have not
-          used or tested any equipment or service described here.`,
   sections: [
     {
       id: 'short-answer',

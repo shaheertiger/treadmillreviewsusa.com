@@ -23,12 +23,6 @@ export default {
           choice between two price ladders built by the same company, running the same software,
           and aimed at slightly different buyers. Once you see it that way, the decision gets
           simpler — and it usually comes down to two specific models rather than two brands.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Both brands revise their
-          lineups frequently, often keeping a model name while changing what is underneath it. We
-          have deliberately kept this comparison at the level of how the brands are positioned
-          rather than quoting model specifications, which date quickly. Motor ratings, deck sizes,
-          incline ranges, screen sizes and warranty terms should be checked on the current
-          manufacturer listing for the exact model you are considering.`,
   sections: [
     {
       id: 'verdict',

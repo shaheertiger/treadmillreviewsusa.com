@@ -26,14 +26,6 @@ export default {
           is a millimetre out of place. The real faults — a dry deck, a slipping belt, an incline
           that has lost calibration, a controller that has given up — follow a predictable
           sequence, and this page works through it in the order that finds the cause fastest.`,
-  note: `<strong class="text-gray-900">The manual is the authority for your model.</strong>
-          ProForm has sold a great many models over the years, and reset sequences, calibration
-          modes and error messages differ between them. This page describes each procedure in
-          general terms and tells you when to confirm the exact steps for your machine in its manual
-          or on the ProForm support site. Unplug the treadmill at the wall before any inspection
-          under the motor hood. Stop using the machine for a burning smell, a breaker that trips on
-          start-up, a belt that surges on its own or a belt that does not stop when the safety key is
-          pulled. Check your warranty document before opening anything.`,
   sections: [
     {
       id: 'short-answer',

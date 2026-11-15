@@ -24,19 +24,6 @@ export default {
           makers’ own stores. Sam’s Club is a reasonable place to buy one of them if you are already a member, but
           it is not a place with its own range: the value is in the price, the return policy and the delivery,
           and each needs checking against the alternatives.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> This site is
-          independent and not affiliated with Sam’s Club, Walmart, Costco or iFIT. On 5 November 2026 samsclub.com
-          and Sam’s Club’s help centre refused automated access with a bot check, so we could not read live
-          listings, stock or member prices that day. Instead we read Sam’s Club’s own treadmill category and
-          product pages and its returns, membership and warranty help pages as search engines had indexed them,
-          and compared them with independent reporting on Sam’s Club’s 2026 membership fees and return policy, the
-          makers’ specifications as this site verified them in October 2026, and retailer listings for the
-          NordicTrack Commercial LE at Abt, Best Buy and Nebraska Furniture Mart. The T 6.5 S card’s figures are those checked for our T 6.5 S review. The product cards show models
-          Sam’s Club has listed, not models confirmed in stock on the day, and carry no prices because Sam’s
-          showed none we could confirm. We also searched the US Consumer Product Safety Commission’s recall
-          database. We have not bought a treadmill from Sam’s Club. Prices, stock, membership terms and return
-          rules change, so check the product page before buying. As an Amazon Associate we earn from qualifying
-          purchases.`,
   products: [
     {
       id: 'nordictrack-commercial-1250',

@@ -19,17 +19,6 @@ export default {
   ],
   tags: ['treadmill decline', 'what is treadmill decline good for', 'downhill running training', 'decline walking', 'eccentric quad training'],
   stickyCta: { text: 'See How to Start', link: '#introducing' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is a guide to what a treadmill setting does and how people commonly use it — it is
-          not medical, physiotherapy or coaching advice, and we are not qualified to give any of
-          those. Downhill walking and running load the front of the knee and the thigh muscles in a
-          way flat and uphill work do not. If you have knee pain, a knee, hip or ankle condition, a
-          recent injury or surgery, a balance problem, or any concern about exercise, talk to a
-          doctor or physical therapist before using decline, and stop for sharp or joint pain.
-          <strong class="text-gray-900">On the figures below:</strong> grade conversions and
-          height-per-mile figures are arithmetic; session lengths and progressions are illustrations
-          rather than prescriptions; and the decline ranges quoted for named machines are the
-          manufacturers' figures as listed on our roundup.`,
   lead: `Treadmill decline is good for one thing above all: preparing your legs for going downhill.
           That matters to runners with a hilly or net-downhill race, to hikers heading somewhere with
           long descents, and to anyone who has finished a hilly event with thighs that hurt for days.

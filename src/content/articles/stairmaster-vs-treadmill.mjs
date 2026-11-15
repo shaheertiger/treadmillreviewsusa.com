@@ -23,12 +23,6 @@ export default {
           usually generates more heat than light because the two sides are answering different
           questions. One is asking which machine works the legs harder for twenty minutes; the other
           is asking which machine they could live with for ten years.`,
-  note: `<strong class="text-gray-900">On the figures, and on health.</strong> Sizes, weights and
-          prices below are broad typical ranges for each category, not measurements of particular
-          models, and they vary considerably — check the manufacturer's listing before planning
-          around any of them. We review equipment and do not give medical advice; if you have a
-          joint problem, a heart condition or are returning from injury, ask a clinician or
-          physiotherapist which kind of exercise suits you.`,
   sections: [
     {
       id: 'verdict',

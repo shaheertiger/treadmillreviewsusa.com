@@ -26,21 +26,6 @@ export default {
           on the frame and on the shock absorbers under the deck. It does not fold, it has no
           touchscreen and it asks for no membership. This review sets out what we could confirm,
           what the sources disagree on, and who should spend this much on it.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we checked the Run CX on Life Fitness's own US consumer store
-          (shop.lifefitness.com), then against two authorised US dealer listings (The Fitness Outlet
-          and Fitness Supply) and two independent reviews (Treadmill Review Guru, September 2024, and
-          Active.com, May 2023). The figures on the card — running area, motor rating, speed, incline,
-          maximum user weight, footprint, unit weight, step-up height and the warranty terms — agree
-          across Life Fitness and at least one independent source. Where sources disagreed, we say so
-          rather than choose: older reviews describe a console with different program counts from the
-          current Track Connect 2.0 version, and Life Fitness's own listing says both that a chest
-          strap is included and that it is optional. We searched cpsc.gov for Life Fitness treadmill
-          recalls; the only one we found dates from 2003 and covered three older club models, not the
-          Run CX. We have not tested the Run CX. Prices are those listed on 14 October 2026 and change
-          often, so confirm the price, the specification and the warranty against the unit you are
-          buying. We earn a commission if you buy through the Amazon link on this page; it does not
-          change what we say about the machine.`,
   products: [
     {
       id: 'life-fitness-run-cx',

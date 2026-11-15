@@ -24,11 +24,6 @@ export default {
           which it only partly is. The honest version is more useful: a mat protects the floor,
           protects the motor, and takes the edge off vibration — and on some floors it is close to
           essential.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Thicknesses and sizes are
-          typical ranges for mats sold for home treadmills, not measurements of any specific
-          product. Check your treadmill's manual before buying: some manufacturers specify or
-          recommend a mat, some state clearance requirements around the machine, and those
-          instructions take precedence over anything general here.`,
   sections: [
     {
       id: 'what-a-mat-does',

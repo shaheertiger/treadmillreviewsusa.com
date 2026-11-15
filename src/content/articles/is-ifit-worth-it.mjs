@@ -22,11 +22,6 @@ export default {
   lead: `iFIT is the reason a NordicTrack or ProForm console looks the way it does, and the reason
           the machine was priced the way it was. Whether it is worth paying for depends far less
           on the content than on how you actually train — and on a sum most buyers never do.`,
-  note: `<strong class="text-gray-900">On the figures.</strong> iFIT's plans, prices and what each
-          tier includes change over time and vary by region, and what a machine does without a
-          membership varies by model and firmware. Prices quoted below are described as historical
-          or illustrative, and the long-run sums are arithmetic rather than quotes. Check iFIT's
-          current plan prices and the specific model's documentation before relying on any of it.`,
   sections: [
     {
       id: 'short-answer',

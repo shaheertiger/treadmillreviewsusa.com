@@ -24,12 +24,6 @@ export default {
           belt and in the motor's cooling air. A few minutes of the right kind of cleaning keeps
           both in check, and the wrong kind — a spray bottle aimed at the console, or a polish on
           the belt — can do more harm than the dirt it removes.`,
-  note: `<strong class="text-gray-900">Unplug before cleaning.</strong> Switch off and unplug the
-          treadmill at the wall before any cleaning beyond a quick after-session wipe — not just
-          the safety key, the plug. Never wipe the belt while it is moving, because the rollers
-          are pinch points. Never spray liquid onto the console, into vents or toward the motor
-          compartment at the front of the machine, and check your manual for the cleaners your
-          manufacturer approves; where it differs from the general advice here, the manual wins.`,
   sections: [
     {
       id: 'short-answer',

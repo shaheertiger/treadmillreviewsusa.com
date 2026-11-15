@@ -26,21 +26,6 @@ export default {
     'club series+ sl console',
   ],
   stickyCta: { text: 'See the Verdict', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we checked the Club Series+ on Life Fitness's US consumer store
-          (shop.lifefitness.com: the product page and the treadmill collection, which was running a
-          Black Friday sale of up to 20% off), two authorised US dealer listings (Abt and The Fitness
-          Outlet), BarBend's Club Series+ review, Life Fitness's business store listing in search
-          results, the Run CX product page on Life Fitness's store, and the US Consumer Product Safety
-          Commission's recall database. The Life Fitness T3 card's figures are those checked for our
-          T3 review and non-folding treadmill guide. Figures on the product card are those on which Life Fitness
-          and at least one independent source agree; where they disagree (display size on one dealer
-          listing, warranty wording, older console prices) we say so in the text and leave the figure
-          off the card. Independent hands-on reviews of the Club Series+ are scarce, and the one we
-          read relies largely on published specifications. We have not tested the Club Series+.
-          Prices are what each seller showed on 5 November 2026, during a sale; they change often, so
-          confirm the price, console and warranty against the unit you are buying. As an Amazon
-          Associate we earn from qualifying purchases; that does not change what we say.`,
   lead: `The Life Fitness Club Series+ is a fixed-frame treadmill built on a club chassis and sold
           for the home: a 22 by 60-inch running surface, a 4.0 HP continuous AC motor, 12 mph,
           15% incline and a 400 lb rating, on a frame that weighs about 434 lb with its console.

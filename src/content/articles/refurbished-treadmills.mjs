@@ -22,11 +22,6 @@ export default {
   lead: `A refurbished treadmill is usually worth buying when it comes from the manufacturer or an
           established dealer with a written warranty and a list of what was replaced. Without
           those two things, it is a used treadmill at a higher price.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Discounts and warranty terms on
-          refurbished equipment vary by manufacturer, dealer, model and how much stock happens to
-          be available. The percentages and periods on this page are typical ranges we use to frame
-          the decision, not quotes. Always get the actual warranty terms in writing for the unit
-          you are buying.`,
   sections: [
     {
       id: 'short-answer',

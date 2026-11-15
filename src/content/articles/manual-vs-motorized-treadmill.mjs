@@ -25,11 +25,6 @@ export default {
           looking at decides whether the answer is "avoid" or "excellent, for the right person". For
           current machines of both kinds, see our
           <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">best manual treadmills</a>.`,
-  note: `<strong class="text-gray-900">On the figures.</strong> Prices and specifications below
-          are broad typical ranges for each category rather than measurements of particular
-          models, and they move with promotions and model years. Check the manufacturer's current
-          listing — in particular the deck size, the user weight limit and the warranty — before
-          treating any figure here as a benchmark for a specific machine.`,
   sections: [
     {
       id: 'verdict-up-front',

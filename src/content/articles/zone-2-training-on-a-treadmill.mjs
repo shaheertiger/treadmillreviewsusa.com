@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['zone 2 treadmill', 'zone 2 walking', 'zone 2 training', 'incline walking', 'heart rate training'],
   stickyCta: { text: 'Find Your Zone 2', link: '#finding-it' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is a practical guide to easy aerobic training on one — it is not
-          medical advice, and the heart-rate figures below are generic estimates, not targets for
-          you. If you have a heart or lung condition, high blood pressure, or take medication that
-          affects heart rate — beta blockers in particular make percentage-based zones meaningless
-          — your training ranges should come from your doctor. Stop and seek advice for chest
-          pain, dizziness, unusual breathlessness or an irregular heartbeat.
-          <strong class="text-gray-900">On the figures below:</strong> speeds, grades,
-          percentages and durations are typical ranges that vary widely between individuals.`,
   lead: `Zone 2 training means spending a good stretch of time at an easy, steady effort — the
           pace at which you can still talk in full sentences, but are clearly exercising rather
           than strolling. On a treadmill that is usually a brisk walk on a moderate incline, or a

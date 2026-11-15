@@ -23,11 +23,6 @@ export default {
           that range and premium and commercial machines well above it. The spread is wide because
           "treadmill" covers several genuinely different machines, and the price tracks the motor,
           the frame and the warranty far more than it tracks the screen.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> These are typical US retail
-          ranges as of late 2026, not quotes for any particular model. Treadmill prices move with
-          sales, tariffs, freight costs and model-year changes, and the same machine can sit
-          several hundred dollars apart depending on the week you look. Use the tiers to calibrate
-          what a price should buy, then check the current figure with the seller.`,
   sections: [
     {
       id: 'short-answer',

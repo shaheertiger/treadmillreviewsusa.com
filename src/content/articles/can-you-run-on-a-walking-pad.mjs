@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['can you run on a walking pad', 'can you jog on a walking pad', 'walking pad running', 'walking pad top speed', '2 in 1 walking pad'],
   stickyCta: { text: 'What to Buy Instead', link: '#buy-instead' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
-          and walking pads. This page explains what walking pads are and are not built to do; it is
-          not medical, coaching or physical therapy advice, and we are not qualified to give any of
-          those. If you have a joint, heart or balance condition, an injury, or any concern about
-          running, talk to a doctor or physical therapist before starting. Speed and belt-length
-          figures here are typical ranges for the category, not the specification of any particular
-          model. <strong class="text-gray-900">The manual is the authority:</strong> if it states a
-          maximum speed, a running restriction, a weight limit or a continuous running time for your
-          pad, follow it, and never use a pad faster than its rail position or mode allows.`,
   lead: `Walking pads are sold on being small, quiet and cheap, and running is the first thing
           many owners wonder about once the box is open. The short version is that a standard flat
           walking pad cannot be run on because it does not go fast enough, and that the 2-in-1

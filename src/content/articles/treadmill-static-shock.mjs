@@ -24,13 +24,6 @@ export default {
           textbook setup for building charge on your body. The good news is that the causes are
           few and the fixes are cheap. The important caveat is knowing the difference between a
           static zap and an electrical fault.`,
-  note: `<strong class="text-gray-900">Safety first.</strong> A static shock is a single sharp
-          snap when your hand approaches metal, and it is gone instantly. A tingle, buzz or
-          continuing sensation while you hold the rails or touch the frame is not static. If you
-          feel that, see sparks or smoke, smell burning, or the shock happens when you have not
-          been walking at all, stop, unplug the treadmill at the wall and have it checked before
-          using it again. Unplug at the wall before cleaning or servicing anything, and never
-          spray anything near the motor compartment.`,
   sections: [
     {
       id: 'short-answer',

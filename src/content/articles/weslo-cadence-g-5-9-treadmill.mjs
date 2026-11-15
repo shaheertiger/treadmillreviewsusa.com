@@ -24,13 +24,6 @@ export default {
           every big-box retailer in the country, and has now been discontinued. If you are
           searching for it, you are almost certainly looking at a used listing — so that is what
           this page is written for.`,
-  note: `<strong class="text-gray-900">On the numbers below and the model name.</strong> These
-          are the published figures for the Cadence G 5.9, cross-checked in September 2026 against
-          retailer listings and independent review coverage. They are not our own measurements.
-          Weslo sold several closely named variants — the G 5.9i among them — with different
-          consoles and occasionally different specifications, so figures quoted against one are
-          not reliable for another. Verify against the sticker on the frame of the actual machine
-          you are looking at.`,
   products: [
     {
       id: "xterra-trx1000",

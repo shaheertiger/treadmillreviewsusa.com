@@ -25,23 +25,6 @@ export default {
           flat therapy band is what a physical therapist hands you for shoulder rehab. Below are six bands
           sold on Amazon, one for each of those jobs, followed by the things most listings will not tell
           you: what the pound ratings really mean, which bands contain latex, and how to anchor them safely.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          bands, and no figure on this page is our own measurement. On 19 October 2026 we confirmed that
-          each product has a live Amazon US listing under its brand's name and checked its figures against
-          the maker's own store or listing and at least one independent source: Garage Gym Reviews' current
-          resistance band and glute band guides, Live Science's resistance band guide, Active.com's
-          Bodylastics review, Fitness Volt's band roundups, and a second retailer listing. Whatafit sells
-          mainly through Amazon, so its figures are the listing's claims, cross-checked against two
-          reviews. A figure appears on a card only where sources agree; where they conflicted we left it off
-          and say so. We could not load Amazon's prices reliably on the day, so price ranges come from
-          maker stores and recent independent coverage; Amazon's price, stock and seller change often. Every
-          brand was checked against the US Consumer Product Safety Commission's recall database, and the
-          recalled bands we found are excluded. We earn a commission if you buy through the Amazon links on
-          this page; it does not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home exercise
-          equipment; we are not giving medical, physiotherapy or coaching advice. If you are using bands
-          for rehabilitation, have a joint, back or heart condition, are pregnant or postpartum, or have a
-          latex allergy, follow the advice of a qualified professional about which bands and exercises to use.`,
   sections: [
     {
       id: 'quick-picks',

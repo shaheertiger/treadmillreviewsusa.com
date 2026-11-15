@@ -34,24 +34,6 @@ export default {
           different versions, with different consoles and different warranties, so much of what you
           will read about it describes a machine Sole no longer sells. This page separates the two
           and tells you what to do while it is out of stock.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read Sole’s US product page for the TT8 (soletreadmills.com), including
-          its specification table, warranty block, delivery options and comparison table, and
-          Sole’s pages for the F80 and F85. We cross-checked the figures against TreadmillReviews.com’s
-          review of the current touchscreen version (updated 5 November 2023, whose reviewer says
-          they had not run on the TT8), FitRated’s review of the earlier LCD version (updated
-          October 2022), a Canadian retailer’s listing and Sole’s own 2025 comparison article. Sole
-          and the current-version review agree on the 4.0 HP motor, 22 x 60 in. deck, 12 mph top
-          speed, 15 incline and 6 decline levels, 400 lb capacity, 81 x 38 x 66 in. size, 319 lb
-          weight, 15.6 in. touchscreen and the lifetime frame and motor, 1-year labour warranty.
-          Sole’s specification table leaves the labour row blank while its warranty block says one
-          year; we give one year, consistent with the rest of this site. Older-version figures that
-          differ are set out as such, not mixed in. We searched the US Consumer Product Safety
-          Commission’s recall database for Sole and found no Sole treadmill recall. We have not
-          tested the TT8, and none of these figures are our own measurements. Prices and stock are
-          those shown on soletreadmills.com and checkout.nordictrack.com on 5 November 2026 and
-          change often. We earn a commission if you buy through an Amazon link on this page; it does
-          not change what we say about the machine.`,
   products: [
     {
       id: 'sole-tt8',

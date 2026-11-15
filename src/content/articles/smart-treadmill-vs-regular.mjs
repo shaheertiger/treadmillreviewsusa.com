@@ -23,10 +23,6 @@ export default {
           talks to your phone to a large touchscreen that streams live classes and changes your
           speed for you. The useful question is not whether smart features are good, but which ones
           you would pay for twice: once in the purchase price, and again every month.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Subscription prices, feature
-          sets and what works without a membership change often and differ by brand, model and
-          firmware. Where this page gives typical ranges or general patterns, check the specific
-          machine's current terms before you buy.`,
   sections: [
     {
       id: 'short-answer',

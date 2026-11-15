@@ -25,22 +25,6 @@ export default {
           machine clean. Surge protection sits in its own category, because whether you should use
           one at all depends on what your manual says. One product per category is below, with the
           reasons and the caveats.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> Specifications, prices and
-          warranty terms were checked on 13 October 2026 against each maker's own product page,
-          at least one major retailer, and independent reviews where we could find them. Where
-          sources disagreed on a figure, we left it out of the specification line. None of these
-          figures are our own measurements; we have not tested these products. Prices are the
-          ranges we saw on that date and change often, so confirm the price and specification
-          against the exact listing before ordering. The Stryd 5.0 foot pod we first carded is sold on
-          Stryd's own store rather than on Amazon, so on 9 November 2026 we replaced it with the Garmin
-          HRM 600, whose figures are those checked for our treadmill foot pod guide. The Panamax MD2
-          surge protector we first carded could not be found on Amazon US, so we replaced it with the
-          Tripp Lite SPIKECUBE, whose figures are those checked for our guide to the best surge protectors for treadmills. The heart-rate monitor is a training tool, not
-          a medical device, and nothing here is medical advice. The surge protector section is
-          general information, not electrical advice: your treadmill's manual takes precedence,
-          and wiring questions are for a licensed electrician. We earn a commission if you buy
-          through the Amazon links on this page; it does not change which products we list or what
-          we say about them.`,
   sections: [
     {
       id: 'quick-picks',

@@ -19,20 +19,6 @@ export default {
   ],
   tags: ['zofdim treadmill', 'zofdim walking pad', 'zofdim under desk treadmill', 'is zofdim a good brand', 'zofdim treadmill reviews'],
   stickyCta: { text: 'See Checked Alternatives', link: '#alternatives' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we searched for Zofdim treadmills and walking pads with several web search
-          queries (the brand alone, with “treadmill”, “walking pad”, “under desk treadmill” and with
-          Amazon, Walmart, Temu and eBay), tried to open the brand’s likely website (zofdim.com, which
-          did not resolve for us), and tried Amazon and Walmart search and product pages, which
-          returned errors or bot checks rather than listings. We found no maker’s site, no independent
-          review, no spec tracker entry and no retailer listing we could read that carried the Zofdim
-          name, so this page gives no specifications or prices for any Zofdim product. We searched the
-          CPSC recall database for Zofdim and found no recall. The alternatives were checked the same
-          day against UREVO’s, WalkingPad’s and MERACH’s US stores and independent reviews, except the
-          UREVO Smart Walking Pad, whose figures are those of its Amazon listing as checked on 6
-          November for our low-ceiling treadmill guide; figures that conflict are kept off the cards. We have not tested any of these machines. Prices change
-          often. We earn a commission if you buy through the Amazon links on this page; it does not
-          change what we say.`,
   lead: `A Zofdim treadmill is most likely something you saw on a marketplace: a walking pad or a
           small folding treadmill with a remote, a horsepower badge and a price well under the brands
           you have heard of. A lot of people search for the name, which usually means the listings are

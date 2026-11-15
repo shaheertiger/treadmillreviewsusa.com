@@ -24,12 +24,6 @@ export default {
           repair costs you. What decides it is the labour term, whether service is in-home, and
           the handful of exclusions buried in the small print. Read those first and a warranty
           becomes a useful buying signal rather than a slogan.`,
-  note: `<strong class="text-gray-900">On the terms below.</strong> This page describes how treadmill
-          warranties are typically structured in the US, not the terms of any particular brand or
-          model. Warranty terms vary between manufacturers, change between model years, and can
-          differ by retailer and country. The warranty document for your machine — usually in the
-          manual or on the manufacturer's website — is the only authority on what you are covered
-          for. Nothing here is legal advice.`,
   sections: [
     {
       id: 'short-answer',

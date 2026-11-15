@@ -24,12 +24,6 @@ export default {
           an entry-level folding treadmill for walking and light jogging — it is a reasonable
           machine. Judged against the brand's marketing, which is built around running, it is
           not.`,
-  note: `<strong class="text-gray-900">On the numbers below.</strong> These are the
-          manufacturer's published figures, cross-checked in September 2026 against the
-          NordicTrack listing, major retailer listings and independent review coverage, which
-          agree. They are not our own measurements. Note that NordicTrack sells closely named
-          variants of this machine with different consoles, so confirm the display, the motor
-          rating and the warranty against the exact model you are ordering.`,
   products: [
     {
       id: 'nordictrack-t-6-5-s',

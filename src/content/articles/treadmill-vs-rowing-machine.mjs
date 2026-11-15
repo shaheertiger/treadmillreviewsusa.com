@@ -24,12 +24,6 @@ export default {
           is largely true, with qualifications. Whether it makes a rower the better buy than a treadmill
           depends on your joints, your back, your space and — more than people expect — whether you are
           willing to learn a technique.`,
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review exercise
-          equipment. This is a comparison of two machines, not medical or physiotherapy advice. Rowing
-          places specific demands on the lower back, and walking and running load the legs and joints in
-          their own ways. If you have back, hip or knee problems, a heart condition, or are returning from
-          injury or surgery, ask a doctor or physiotherapist which suits you. Sizes and prices below are
-          typical ranges for each category, not measurements of particular models.`,
   sections: [
     {
       id: 'verdict',

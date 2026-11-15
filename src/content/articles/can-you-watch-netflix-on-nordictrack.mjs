@@ -19,17 +19,6 @@ export default {
   ],
   tags: ['nordictrack netflix', 'nordictrack treadmill netflix', 'nordictrack screen netflix', 'ifit streaming apps', 'nordictrack privileged mode', 'watch tv on nordictrack'],
   stickyCta: { text: 'See Which Apps Work', link: '#which-apps' },
-  note: `<strong class="text-gray-900">What this page is based on.</strong> On 20 October 2026 we
-          read iFIT's equipment-membership page, its iFIT 2.0 release notes and its April 2026
-          feature update, NordicTrack's own iFIT pages, the iFIT Terms of Use (last updated 9
-          December 2025) and the warranty printed in two current NordicTrack manuals. We
-          cross-checked what they say against iFIT's own answers on retailer question pages,
-          independent reviews, and reporting on the 2021 privileged-mode change. We have not
-          used the streaming apps on a NordicTrack ourselves. iFIT describes the feature as
-          available on "select" machines without listing them, and its app line-up has changed
-          twice in two years, so treat this as the position on that date and confirm it for your
-          exact model before you pay for a plan. This page does not explain how to unlock or
-          modify a console, and it will not.`,
   lead: `Most people who type this question have just bought a NordicTrack, or are about to, and
           are looking at a large, sharp touchscreen that seems perfectly capable of showing a film.
           For years the honest answer was "not officially". That has changed: iFIT, the software

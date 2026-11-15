@@ -19,17 +19,6 @@ export default {
   ],
   tags: ['are treadmills hsa eligible', 'are treadmills fsa eligible', 'buy treadmill with hsa', 'letter of medical necessity treadmill', 'walking pad fsa eligible'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">This is not tax advice.</strong> We review treadmills. We
-          are not accountants, tax advisers, benefits specialists or clinicians, and nothing on
-          this page is tax, legal, financial or medical advice. It is a plain-English explanation
-          of how the general rule is commonly understood, written so you know which questions to
-          ask. Plan rules differ, IRS guidance changes, and your own circumstances decide the
-          answer. <strong class="text-gray-900">Before you spend a dollar of FSA or HSA money on a
-          treadmill,</strong> check with your plan administrator (for an FSA or HRA) or your HSA
-          custodian and a qualified tax professional (for an HSA), and talk to your doctor about
-          whether a treadmill is genuinely part of treating a condition you have. IRS Publication
-          502 is the official reference on what counts as medical care; read the current edition
-          rather than relying on anyone's summary of it, including this one.`,
   lead: `"Can I buy a treadmill with my HSA?" is one of the most common money questions people ask
           before buying a home machine, and it gets confidently wrong answers in both directions.
           Some retail listings imply that a treadmill is simply eligible; some forum replies say it

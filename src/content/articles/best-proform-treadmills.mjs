@@ -27,24 +27,6 @@ export default {
           machines, the 505 CST — were not on that list. Choosing well comes down to three
           questions: whether you need a 60-inch deck, whether you want a built-in screen or are
           happy to use your own tablet, and how much of an iFIT membership you will actually use.`,
-  note: `<strong class="text-gray-900">What we checked, and what we left out.</strong> On 13 October
-          2026 we checked the current lineup and every model's specification on proform.com —
-          the treadmill category, both series pages and each product page — then cross-checked
-          the figures against independent review coverage of each model and, where one existed,
-          a US retailer listing. The spec lines below carry only figures ProForm confirms and that
-          agree with at least one independent source. Some do not. ProForm's own pages give the
-          Carbon TLX and TLS a two-year motor warranty in one place and a one-year motor warranty
-          in another, and independent reviews quote shorter parts cover than ProForm's series page
-          does; the Carbon Pro 2000's product page gives a 3.0 CHP motor in its specification
-          table and a 3.6 CHP motor in its feature copy; and one independent source quotes a
-          different motor rating and maximum incline for the Carbon TLS. Those figures are left
-          out of the spec lines and explained on each card. None of these figures are our own
-          measurements; we have not tested these machines. Price bands are prices seen on 13
-          October 2026 and change often, and ProForm runs near-permanent promotions, so confirm
-          the price, the specification and the warranty for the exact unit before you order. iFIT
-          membership prices are not quoted because they change. We earn a commission if you buy
-          through the Amazon links on this page; it does not change which products we list or
-          what we say about them.`,
   products: [
     {
       id: 'proform-carbon-pro-2000',

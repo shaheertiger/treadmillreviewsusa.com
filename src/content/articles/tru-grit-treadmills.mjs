@@ -29,23 +29,6 @@ export default {
     'curved manual treadmill',
   ],
   stickyCta: { text: 'See the Treadmills', link: '#models' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we tried Tru Grit Fitness's website (trugritfitness.com redirected to a domain-sale
-          page) and read the Grit Runner and Grit Runner Elite listings of US dealers The Fitness Outlet,
-          iSellFitness, Push Pedal Pull, American Fitness, Select Fitness and Total Fitness USA, including their
-          live prices and stock status. We also used Garage Gym Reviews' and TreadmillReviews.com's coverage
-          (the latter read directly, the former through search results), Fitness Factory's and other dealer
-          listings seen in search results, the San Diego Business Journal's profile of the company, Tru Grit's
-          Amazon listing title as matched by our product pipeline, and the US Consumer Product Safety
-          Commission's recall database. Scheels refused our request and Dick's Sporting Goods was seen only in
-          search results. Figures on the product cards are those on which at least two dealers or a dealer and
-          an independent review agree; conflicts are set out in the text and kept off the cards. Prices change
-          often. On 9 November 2026 we replaced the Grit Runner Elite, AssaultRunner Pro and TrueForm Trainer cards,
-          which are not sold on Amazon US, with Amazon-listed curved treadmills; the Sunny SF-X7110's figures were
-          checked against its Amazon listing, Sunny's store, Dick's Sporting Goods and Nebraska Furniture Mart, and
-          the SB Fitness figures are those checked for our curved treadmill guides. We have not tested any Tru Grit
-          treadmill and have no relationship with the company. As an
-          Amazon Associate we earn from qualifying purchases; that does not change what we say.`,
   lead: `Tru Grit treadmills come up whenever someone shops for a curved treadmill under $2,500, because the Grit
           Runner is one of very few at that price with heavy resistance settings for sled-push work. Tru Grit
           Fitness is a Southern California equipment company — a 2021 San Diego Business Journal profile placed

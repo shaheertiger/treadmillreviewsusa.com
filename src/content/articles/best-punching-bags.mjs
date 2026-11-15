@@ -29,30 +29,6 @@ export default {
           want the whole home boxing setup — gloves, wraps, a double-end bag and a rope — our
           <a href="/best-boxing-equipment-for-home/" class="text-[#0F62FE] font-medium">home boxing equipment guide</a>
           covers the rest of the kit.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          bags, and no figure on this page is our own measurement. On 19 October 2026 we confirmed
-          each bag as currently sold on its maker's US store (Outslayer, Ringside, Hayabusa, Century
-          and Everlast), and we found Amazon US listings for the Century Wavemaster XXL, the Everlast
-          Powercore and Outslayer's heavy bags. Amazon's pages would not load for us directly that
-          day, and we could not confirm a current Amazon listing for the Ringside bag, so each button
-          is a tagged Amazon search for the exact model; check that the seller is Amazon or the
-          brand's own store, or buy direct. Each figure was checked against the maker's page plus at
-          least one independent source — Garage Gym Reviews' and BarBend's hands-on coverage, the
-          Amazon listing, or a second retailer. A figure appears in a card's specification line only
-          where those sources agree; where they conflicted — on filled base weight, bag dimensions
-          and height settings — we left it out and say so. The Century Original Wavemaster and the
-          Hayabusa bag also appear in our boxing equipment guide with the same figures. Every brand
-          was checked against the US Consumer Product Safety Commission's recall database. Prices
-          are those we saw on that date and change often. We earn a commission if you buy through the
-          Amazon links on this page; it does not change which products we list or what we say about
-          them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
-          training equipment; this is not boxing coaching and not medical advice. Hitting a bag loads
-          the hands, wrists, shoulders and heart, and poor technique can injure them. Learn the basics
-          from a qualified coach where you can, and if you have a heart, joint, wrist or other medical
-          condition, an injury, or you are pregnant, talk to a doctor before you start. Whether a
-          ceiling, beam, wall or floor can carry a bag is a question for a qualified builder or
-          structural engineer, not for us.`,
   sections: [
     {
       id: 'quick-picks',

@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['treadmill water damage', 'how much to repair a treadmill water damage', 'flooded treadmill', 'treadmill got wet', 'water spilled on treadmill'],
   stickyCta: { text: 'What to Do First', link: '#first-steps' },
-  note: `<strong class="text-gray-900">Electrical safety comes before the treadmill.</strong> Water
-          and mains electricity are a dangerous combination. Do not switch on a treadmill that
-          has got wet. If the outlet, the plug, the cord or the floor around them is wet, do not
-          touch them: switch off the circuit at the breaker panel first, and only if you can reach
-          the panel without standing in water. If water has reached your electrical panel, or the
-          room has flooded, keep out and call an electrician or your utility. Once the power is
-          off, leave the treadmill unplugged until it is completely dry and has been checked.
-          Capacitors on the motor control board can hold a charge after the power is removed; do
-          not touch the board. We review treadmills and are not electricians — where this page
-          and your manual or a qualified electrician disagree, follow them.`,
   lead: `Water reaches treadmills in more ways than people expect: a basement flood, a burst pipe,
           a roof leak above a garage, a knocked-over bottle on the console, years of sweat
           dripping onto the same spot on the frame. The question that brings most people here is

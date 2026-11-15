@@ -19,24 +19,6 @@ export default {
   ],
   tags: ['ajoosos 2 in 1 under desk treadmill', 'ajoosos treadmill', 'ajoosos walking pad', 'ajoosos treadmill review', 'is ajoosos a good brand'],
   stickyCta: { text: 'See Checked 2-in-1 Pads', link: '#alternatives' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read the full product catalogue of AJOOSOS’s own US web store
-          (ajoosos.com, 74 products: electric scooters, e-bike kits, wheelchairs, kids’ ride-ons and
-          parts, and no treadmill or walking pad), ran several web searches for AJOOSOS with
-          “treadmill”, “walking pad”, “2 in 1” and “under desk”, and tried to open the AJOOSOS walking
-          pad listing on Amazon (ASIN B0GLNJTVH4, which search engines index under the title “AJOOSOS
-          Foldable Walking Pad Treadmill for Home with Incline &amp; Handle Bar, 2 in 1 Portable Under Desk,
-          2.0 HP Low Noise Treadmill with Remote Control”) and AJOOSOS-titled eBay listings. Amazon
-          returned a server error and eBay a block, so we could read neither, and we found no
-          independent review, manual or spec-tracker entry for an AJOOSOS treadmill. The AJOOSOS card
-          therefore repeats only the listing title and carries no price. We searched the CPSC recall
-          database for AJOOSOS by title and by manufacturer and found no recall. The alternatives were
-          checked the same day: UREVO’s prices on its own US store, with the other figures as checked
-          against the makers and independent reviews for our other guides on 5 November 2026, except
-          the UREVO Strol 2E Pro, whose figures and prices are those of its Amazon listings as checked
-          on 6 November; figures that conflict are kept off the cards. We have not tested any of
-          these machines. Prices change often. We earn a commission if you buy through the Amazon
-          links on this page; it does not change what we say.`,
   lead: `The AJOOSOS 2-in-1 under desk treadmill is a walking pad with a fold-up handle bar, sold on
           Amazon under a name that most people know, if they know it at all, from fast electric
           scooters. The search volume says a lot of people have seen the listing. What we could not

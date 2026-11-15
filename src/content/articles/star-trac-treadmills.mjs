@@ -19,17 +19,6 @@ export default {
   ],
   tags: ['star trac treadmill', 'star trac treadmills', 'used star trac treadmill', 'star trac freerunner', 'star trac e-trx treadmill'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we checked the Star Trac treadmills listed by Core Health &amp; Fitness, the
-          brand's owner, including its product descriptions and a launch product sheet; Core's own
-          history of the brand; trade and finance coverage of the 2010 change of ownership;
-          specialist retailer and remanufacturer listings for new and used Star Trac treadmills;
-          Zwift's published list of manufacturers with confirmed compatible models; and the US
-          Consumer Product Safety Commission's recall database, which lists no Star Trac treadmill
-          recall (a 2017 recall of Star Trac-branded cable machines did not involve treadmills).
-          Figures on this page are the ones on which Core and at least one independent source agree.
-          Used and remanufactured prices are the listings we saw that day, not market data. We have
-          not tested any Star Trac treadmill.`,
   lead: `If you have searched for a Star Trac treadmill, you have probably run on one — at a gym, a
           hotel or a university rec centre — and wondered whether you could have one at home. You
           can, but not in the way you buy most treadmills. Star Trac does not make a home range in the

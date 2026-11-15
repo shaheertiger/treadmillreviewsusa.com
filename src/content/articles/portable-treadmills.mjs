@@ -23,11 +23,6 @@ export default {
           walking pad that slides under a sofa and to a 200 lb folding machine with two small wheels
           at the front, and those are not the same kind of portable. Working out which one you need
           starts with being honest about how often the machine will actually move.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Weights, speeds and dimensions
-          here are typical ranges for each type, not specifications of any particular model. Check
-          the assembled weight, the folded dimensions and the maximum user weight on the spec sheet
-          of the machine you are considering, and unplug any motorized treadmill before folding,
-          moving or storing it.`,
   sections: [
     {
       id: 'short-answer',

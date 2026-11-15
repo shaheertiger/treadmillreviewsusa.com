@@ -19,17 +19,6 @@ export default {
   ],
   tags: ['how long do walking pads last', 'walking pad lifespan', 'walking pad warranty', 'under desk treadmill lifespan', 'walking pad repair'],
   stickyCta: { text: 'See Lifespan by Use', link: '#lifespan-by-use' },
-  note: `<strong class="text-gray-900">Where these numbers come from.</strong> We review
-          treadmills and walking pads. The lifespans on this page are estimates, consistent with
-          the ranges used across this site and drawn from warranty terms, manufacturer guidance
-          and owner reports — not from a controlled study and not from our own long-term testing
-          of every pad. The spread is wide, and how a pad is used and looked after moves the
-          result more than which brand made it. The hour and cost tables are arithmetic from the
-          stated assumptions. <strong class="text-gray-900">On repairs:</strong> unplug the pad
-          at the wall before opening, adjusting or cleaning anything, and treat your owner's
-          manual as the authority for your model; if a pad smells of burning, sparks or trips a
-          breaker, stop using it and contact the seller rather than investigating the
-          electronics yourself.`,
   lead: `Walking pads are sold as small, cheap and easy, and they are all three. What the listings
           rarely say is that they are also worked far harder than most treadmills. A treadmill in
           a spare room might run for two or three hours a week; a pad under a desk can run for

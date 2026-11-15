@@ -21,12 +21,6 @@ export default {
   lead: `Above six feet the treadmill market shrinks fast, and it shrinks for two reasons rather
           than one. Most decks are too short for your stride, and once you raise the front of a
           deck on incline, a surprising number of rooms are too low for your head.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> We have not tested or
-          measured these machines. Belt lengths, widths and motor ratings are the manufacturers'
-          published figures. Usable deck length — the flat surface between the front roller
-          housing and the point where the rear roller becomes a hazard — is always shorter than
-          the advertised belt length and is rarely published, so ask the retailer for it and
-          verify against the exact model year you are buying.`,
   sections: [
     {
       id: 'stride-arithmetic',

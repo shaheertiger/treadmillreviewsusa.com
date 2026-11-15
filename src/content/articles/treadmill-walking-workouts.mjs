@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['treadmill walking workout', 'incline walking workout', 'walking intervals', 'treadmill walking plan', 'brisk walking'],
   stickyCta: { text: 'See the Six Sessions', link: '#the-sessions' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. These sessions are general examples of how people structure walking on a
-          treadmill — this site reviews equipment and does not give medical advice, and nothing
-          here is a personal training prescription. If you have a heart, lung, joint or balance
-          condition, take medication that affects heart rate, are pregnant, or are returning to
-          exercise after a long break, check with a doctor or physical therapist first.
-          <strong class="text-gray-900">On the figures below:</strong> speeds and inclines are
-          typical ranges for adults of ordinary fitness, not targets. Your numbers will differ,
-          and effort is the thing to match, not the console.`,
   lead: `Most people walk on a treadmill the same way every time: same speed, same grade, same
           thirty minutes, until it stops doing anything and starts feeling like a chore. Walking
           is a genuinely good form of exercise, but it rewards a little structure — some variety

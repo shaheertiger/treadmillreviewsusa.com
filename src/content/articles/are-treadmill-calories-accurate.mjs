@@ -19,13 +19,6 @@ export default {
   ],
   tags: ['treadmill calories', 'are treadmill calories accurate', 'calories burned on treadmill', 'treadmill calorie counter', 'METs'],
   stickyCta: { text: 'See Calories per 30 Minutes', link: '#calorie-table' },
-  note: `<strong class="text-gray-900">On the figures below, and what this page is not.</strong>
-          We review treadmills; this site does not give medical, nutrition or weight-loss advice.
-          Every calorie figure here is an estimate calculated from published average values, not
-          a measurement, and real expenditure varies between individuals by a meaningful margin.
-          If you are managing a health condition, an eating disorder, diabetes or a prescribed
-          diet, please take calorie questions to a doctor or registered dietitian rather than a
-          treadmill console — or a review site.`,
   lead: `Treadmill calorie readouts are estimates, and in practice they tend to run high —
           commonly by something like 10 to 20%, and by more if you hold the handrails or never
           entered your weight. The console calculates energy use from belt speed, incline,

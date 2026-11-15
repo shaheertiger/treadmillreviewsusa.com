@@ -25,22 +25,6 @@ export default {
           review is not a feature list but a reading of the listings: which Redliro pad you are
           looking at, which numbers repeat across sellers, which conflict, and what the brand itself
           commits to. This page does that reading, and then says plainly who a Redliro pad suits.`,
-  note: `<strong class="text-gray-900">What is claimed, what conflicts, and what we have not done.</strong>
-          On 14 October 2026 we checked Redliro's own website (redliro.com), including its product
-          catalogue, warranty terms and refund policy, and found that it listed four handrail walking
-          treadmills and no flat under-desk walking pad. The under-desk Redliro pads we found were on
-          marketplace and retailer listings — Best Buy in the US and Canada, Walmart and, earlier in
-          2026, Target — and we compared those listings with independent coverage: Treadmill Review
-          Guru's hands-on review of the Redliro 2-in-1 (July 2024), Garage Gym Reviews' Redliro entry,
-          and TODAY's walking-pad roundup (February 2026). Every Redliro specification we give is a
-          listing claim that recurs across more than one listing; none has been independently
-          verified. We did not find a Redliro under-desk pad sold on Amazon US, so the product card
-          shows the closest pad that is, the UREVO Smart Walking Pad, with the figures checked for
-          our low-ceiling treadmill guide. Speed range, weight capacity, motor rating and machine weight differ between
-          Redliro listings and between models, and we present those differences as conflicts rather
-          than choosing. We searched cpsc.gov for Redliro and found no recall or warning. We have not
-          tested a Redliro pad. Prices change daily on marketplaces. We earn a commission if you buy
-          through the Amazon link on this page; it does not change what we say.`,
   products: [
     {
       id: 'urevo-smart-walking-pad',

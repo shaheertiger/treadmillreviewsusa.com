@@ -26,23 +26,6 @@ export default {
           counting from a part of you that is still moving — the waist, the foot — or using the
           pad's own figures. This page names five devices that do that, says plainly which ones only
           half-solve the problem, and explains how to get a count you can trust.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          trackers, pedometers or the foot pod, and nothing on this page is our own measurement. Each
-          product was confirmed as currently sold on 15 October 2026, and its specifications were
-          checked on that date against the maker's own store or product page (Google Store for
-          Fitbit, 3DActive, Realalt, COROS and Oura) and at least one independent source — a second
-          retailer, a hands-on review or a price tracker. A figure appears in a product's
-          specification line only where those sources agree; where they conflicted we left the
-          figure out and say so in the description. Prices are the ranges we saw on that date and
-          change often; membership and subscription prices are not quoted, so check them yourself.
-          We earn a commission if you buy through the Amazon links on this page; it does not change
-          which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
-          and the gear around them; we are not giving medical, coaching or nutrition advice. Step
-          counts, distances and calorie figures from any of these devices are estimates, and none
-          of them is a medical device. If you are counting steps because of a health condition, an
-          injury or a target someone has set for you, talk to a qualified professional about what
-          to measure and how.`,
   sections: [
     {
       id: 'quick-picks',

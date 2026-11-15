@@ -45,20 +45,6 @@ export default {
           have gone, yet WalkingPad’s own US store still lists it, at $499 on 5 November 2026. This page
           sets out what that means for a buyer, which figures you can rely on, and how it compares with
           the cheaper and newer pads in WalkingPad’s own range.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read WalkingPad’s two US product pages for the A1 Pro and its store’s live
-          product data (price, compare-at price, stock flag and SKU), and WalkingPad’s store listings for
-          the Z1, C2 and R3. We cross-checked the A1 Pro’s figures against Treadmill Review Guru’s review
-          (last updated July 2024), an independent price-and-spec tracker updated in August 2026, and Best
-          Buy’s product listing. WalkingPad and those sources agree on the 47 x 16.5 in. walking area, the
-          0.5-3.75 mph speed range (some round it to 3.7 mph), the roughly 62-63 lb weight, the 56.5 x 21.5
-          x 5 in. footprint and the one-year warranty. They do not agree on the motor rating, so it is left
-          off the product card. The Z1 and C2 figures on their cards were checked for our Z1 review and our
-          quiet walking pad roundup in October 2026; their prices were checked on 5 November. We searched
-          the US Consumer Product Safety Commission’s recall database for WalkingPad and KingSmith and
-          found no recall. We have not tested the A1 Pro, and none of these figures are our own
-          measurements. Prices change often, especially in November. We earn a commission if you buy
-          through an Amazon link on this page; it does not change what we say about the machine.`,
   products: [
     {
       id: "walkingpad-z1r",

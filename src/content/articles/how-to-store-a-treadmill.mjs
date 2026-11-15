@@ -23,11 +23,6 @@ export default {
           They were damaged by where they were kept — a damp garage, a hot attic, a storage unit
           shared with mice — or by being switched on and run hard the moment they came back.
           Storage itself is easy. The location and the restart are where the care goes.`,
-  note: `<strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the wall
-          and remove the safety key before cleaning, adjusting or covering it. The procedures here
-          are general; your owner's manual is the authority on lubrication, belt adjustment and
-          whether your machine may be stored folded or on end. Where the manual and this page
-          differ, follow the manual.`,
   sections: [
     {
       id: 'short-answer',

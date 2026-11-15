@@ -23,12 +23,6 @@ export default {
           lighter, at roughly 45 to 75 lb, and commercial gym machines far heavier, at roughly 350
           to 500 lb or more. The weight is not an accident of design: on a treadmill, mass is
           largely what buys stability and quiet.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> These are typical ranges by
-          type, not specifications for any particular model, and individual machines fall outside
-          them. For your treadmill, use the assembled and shipping weights published by the
-          manufacturer. The floor-load figures are general US residential guidance, not an
-          assessment of your building; if you have any doubt about a floor, especially an older
-          or upper floor, ask a structural engineer.`,
   sections: [
     {
       id: 'short-answer',

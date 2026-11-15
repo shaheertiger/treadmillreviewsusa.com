@@ -24,12 +24,6 @@ export default {
           it, and at any given budget part of the price is going into the fold rather than into the
           parts you run on. Whether that is a good trade depends almost entirely on how often you
           will actually fold it.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Deck lengths, weights,
-          footprints and lift forces are typical ranges for each category, not measurements of
-          particular models, and they vary considerably. Check the manufacturer's listing — including
-          the folded dimensions and the in-use dimensions — for the exact machine you are considering.
-          Always unplug a treadmill before folding or unfolding it, and keep children and pets clear
-          of the hinge and the underside of the deck.`,
   sections: [
     {
       id: 'verdict',

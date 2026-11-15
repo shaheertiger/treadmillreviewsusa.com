@@ -19,18 +19,6 @@ export default {
   ],
   tags: ['curved treadmill workouts', 'curved treadmill sprints', 'curved treadmill sled push', 'non-motorized treadmill workout', 'self-powered treadmill training'],
   stickyCta: { text: 'See the Six-Week Plan', link: '#progression' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is a guide to structuring sessions on a type of equipment — it is not medical,
-          physiotherapy or coaching advice, and we are not qualified to give any of those. Sprinting
-          and resisted pushing put high forces through the hamstrings, calves and Achilles tendons,
-          and a curved treadmill's forefoot-led stride loads the lower leg more than most runners
-          are used to. If you have a heart, lung or circulation condition, take medication that
-          affects heart rate, are pregnant, have a history of hamstring, calf or Achilles injury, or
-          have balance problems, talk to a doctor or physical therapist before starting. Stop for
-          chest pain, dizziness or any sharp pain. <strong class="text-gray-900">On the figures
-          below:</strong> durations, rep counts and progressions are illustrations rather than
-          prescriptions, and curved trainers differ in curve depth and resistance, so the same
-          session can feel different from one machine to the next.`,
   lead: `Most treadmill workouts are written for a motorised belt: set a speed, hold it, change it on
           the button. A curved treadmill has no buttons for any of that. You speed up by moving
           forward on the curve and slow down by drifting back, so sessions are defined by effort and

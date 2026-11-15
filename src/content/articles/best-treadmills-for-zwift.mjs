@@ -19,28 +19,6 @@ export default {
   ],
   tags: ['best treadmill for zwift', 'zwift compatible treadmill', 'ftms treadmill', 'treadmill for zwift running', 'zwift treadmill incline', 'wahoo kickr run', 'stryd footpod zwift'],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          treadmills or the sensor with Zwift. Compatibility claims on this page come only from
-          the manufacturer or from Zwift's own support documentation: Zwift's "Compatible Running
-          Hardware" list (which names manufacturers rather than models), its "Connecting Your
-          Treadmill" and "Treadmill Incline Control" articles, and each maker's product page or
-          help centre. Specifications were checked on 13 October 2026 against those manufacturer
-          pages and at least one independent review or retailer listing; a figure appears in a
-          product's specification line only where the sources agree, and where they disagreed —
-          most often on motor horsepower — we left it out. The Bowflex T6 figures match our own
-          review of that machine; the T6 and the Horizon 7.8 AT are not sold on Amazon US, so in November
-          2026 their cards became the Schwinn 815 and Horizon 7.4 AT, with the figures checked for our
-          Schwinn and Horizon guides. The Stryd 5.0 Footpod is sold direct rather than on Amazon, and no pod on Zwift's list was on
-          Amazon, so its card became the Garmin HRM 600 with the figures checked for our foot pod guide;
-          it is not a Zwift speed source, and its card says so. The Spirit XT485, which replaced the Wahoo KICKR RUN card in November
-          2026 because the KICKR RUN is not sold on Amazon, carries the figures checked for our heavy
-          duty treadmill guide, and its Zwift support was checked on Spirit's Zwift pages on
-          9 November 2026. None of these are our own measurements. Prices are those we saw
-          on manufacturer sites on 13 October 2026, except where a description says otherwise, and
-          change often; Zwift compatibility can also change with firmware on either side. Confirm
-          the price, the specification and Zwift support for the exact model and production year
-          before you order. We earn a commission if you buy through the Amazon links on this page;
-          it does not change which products we list or what we say about them.`,
   lead: `"Zwift compatible" is a phrase that does a lot of work on treadmill listings, and much
           less than it suggests. What Zwift needs is a reliable speed signal. A treadmill that
           broadcasts its belt speed over the standard Bluetooth fitness-machine protocol provides

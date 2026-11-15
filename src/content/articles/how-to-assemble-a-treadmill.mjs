@@ -24,12 +24,6 @@ export default {
           up the uprights, connect the console and fit the handrails. What makes it hard is weight,
           a wiring cable that is easy to pinch, and the temptation to tighten everything as you go.
           Get those right and a first-timer with a helper can do it in an afternoon.`,
-  note: `<strong class="text-gray-900">Safety, and the figures below.</strong> Keep the treadmill
-          unplugged until assembly is complete and every bolt is tight, and treat the base unit as a
-          two-person lift. Assembly sequences differ between models — follow your manual's steps and
-          hardware labels, not ours. Times and costs on this page are typical ranges for US home
-          treadmills as of late 2026, not quotes; check current prices with the retailer or
-          installer.`,
   sections: [
     {
       id: 'short-answer',

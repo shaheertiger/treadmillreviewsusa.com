@@ -25,13 +25,6 @@ export default {
           return window and what it excludes, and the price-match conditions — and what you still need
           to ask before paying. It does not list current prices for individual models, because those
           change weekly; it gives the range we saw instead.`,
-  note: `<strong class="text-gray-900">On the details below.</strong> This site is independent and not
-          affiliated with Scheels or any brand it sells. Brands, policies and figures were checked on
-          scheels.com on 14 October 2026, with company facts and policy summaries cross-checked against
-          independent sources; where an independent source disagreed with Scheels' own pages, we say so
-          and follow Scheels. Ranges, fulfilment options and policies change and can differ by product
-          and store, so confirm the current terms on the product page or with the store before you buy.
-          We have not tested the machines mentioned here.`,
   sections: [
     {
       id: 'short-answer',

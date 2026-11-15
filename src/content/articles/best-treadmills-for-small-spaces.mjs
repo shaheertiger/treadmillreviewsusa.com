@@ -22,15 +22,6 @@ export default {
           specification that decides whether a machine works in a small room is not its folded
           dimensions — it is how much effort the fold takes, because a fold that is any trouble
           at all tends to stop happening after the first few weeks.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> We have not tested or
-          measured these machines. Fold types, deck lengths and weights are the manufacturers'
-          published specifications, and what we say about fold effort is inferred from the
-          mechanism and the machine's weight. Manufacturer folded dimensions can quote the deck
-          alone, so measure against the widest and deepest points — including any protruding
-          console or wheels — before you order. The Sunny, Horizon, NordicTrack T Series 10 and
-          ProForm cards carry the figures checked against their Amazon listings and makers for our
-          low-ceiling, auto-incline and iFIT guides on 6 November 2026; the machines they replace
-          are not sold on Amazon US.`,
   sections: [
     {
       id: 'fold-effort',

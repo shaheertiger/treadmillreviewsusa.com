@@ -26,22 +26,6 @@ export default {
     'nordictrack t series 5 black friday',
   ],
   stickyCta: { text: 'See the Six Machines', link: '#picks' },
-  note: `<strong class="text-gray-900">On the prices and products below.</strong> We have not
-          tested these machines. On 28 October 2026 we checked current prices on the makers' own
-          stores (UREVO and WalkingPad) and read independent price trackers and deal listings for
-          the others; where we could not see a current price, we give the most recent dated figure
-          from this site's own roundups (13 October to 6 November 2026) or from the tracker, with its date.
-          The UREVO Strol 2E Pro, added on 9 November, carries the figures and prices of its Amazon
-          listings as checked on 6 November for our 2-in-1 treadmill guide.
-          Specifications are the figures already cross-checked between the maker or the Amazon
-          listing and an independent source for those roundups; where sources disagreed, the figure
-          is left out and the description says so. Black Friday 2026 prices had not been published
-          when this was written, and prices at this end of the market change weekly, sometimes
-          daily. The "good Black Friday price" for each machine is our own judgement of where a
-          genuine reduction starts, not a prediction of what any retailer will charge. Confirm the
-          price, the seller, the model number and the warranty on the exact listing before you
-          order. We earn a commission if you buy through the Amazon links on this page; it does not
-          change which products we list or what we say about them.`,
   lead: `Black Friday is Friday 27 November this year, and the cheap end of the treadmill market
           is already running "sales". This page is a watch list for the under-$500 tier: six
           machines we could verify on Amazon, the price each one actually sells for when nothing

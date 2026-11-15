@@ -26,24 +26,6 @@ export default {
           — a free-standing bag, a hanging bag, gloves, wraps, a double-end bag, a rope and a
           connected system — and the guide after them covers mounting, noise, glove sizing and the
           safety basics that matter before your first round.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested this
-          equipment, and no figure on this page is our own measurement. Each item was confirmed as
-          currently sold on 16 October 2026 on the maker's own store, and its sizes, weights and
-          construction were checked on that date against at least one independent source — a
-          second retailer or a hands-on review. A figure appears in a product's specification line
-          only where those sources agree; where they conflicted — on the free-standing bag's filled
-          weight and diameter, and on the hand wraps' fabric — we left it out and say so on the
-          card. Prices are those we saw on that date and change often; we do not quote membership
-          prices for the connected system, so check the current price. We earn a commission if you
-          buy through the Amazon links on this page; it does not change which products we list or
-          what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
-          training equipment; this is not boxing coaching and not medical advice. Punching a bag
-          loads the wrists, hands, shoulders and heart, and poor technique can injure them. Learn
-          the basics from a qualified coach where you can, and if you have a heart, joint, wrist or
-          other medical condition, an injury, or you are pregnant, talk to a doctor or qualified
-          professional before you start. Questions about whether a ceiling, wall or floor can take
-          a bag are for a qualified builder or structural engineer, not for us.`,
   sections: [
     {
       id: 'quick-picks',

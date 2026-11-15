@@ -26,16 +26,6 @@ export default {
           treadmill inside a sealed, inflatable chamber that lifts you by part of your body weight.
           This page explains how it works, who uses one, how to get access, what sessions and
           machines typically cost, and the home options for people who cannot get to a clinic.`,
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is an equipment explainer, not medical, physical therapy or rehabilitation advice,
-          and we are not qualified to give any of those. Whether reduced-body-weight walking or
-          running is appropriate for you, at what level and for how long, depends on your
-          condition, surgery or injury; if you are recovering from an operation or injury, or have
-          a heart, joint, neurological or other condition, follow the plan of your surgeon, doctor
-          or physical therapist. <strong class="text-gray-900">On the figures below:</strong>
-          session prices and company details were checked on 14 October 2026 on the providers' and
-          manufacturers' own pages and an independent source; purchase prices are historical press
-          figures, not current quotes. We have not used or tested any machine described here.`,
   sections: [
     {
       id: 'short-answer',

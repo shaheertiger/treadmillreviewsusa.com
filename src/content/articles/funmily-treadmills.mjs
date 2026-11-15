@@ -19,22 +19,6 @@ export default {
   ],
   tags: ['funmily treadmill', 'funmily walking pad treadmill', 'funmily treadmill manual', 'funmily treadmill with desk', 'funmily treadmill review'],
   stickyCta: { text: 'See the Models', link: '#models' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read FUNMILY’s official website (thefunmily.com), which lists its range
-          with specifications and links each product to Amazon but shows no prices, plus its FAQ and
-          warranty statement. We cross-checked individual models against a May 2026 Slickdeals post that
-          quotes the Amazon listing, ShopSavvy’s aggregated review page for the FUNMILY treadmill desk,
-          and listing summaries and manuals indexed by search engines. Amazon, Walmart and the manuals
-          site we tried (manuals.plus) returned errors, bot checks or security checks, so we could not
-          read a current FUNMILY listing, price or manual directly on 5 November; only the treadmill desk card, updated on 9 November, carries a price. We found no
-          hands-on review we could rely on. Figures that conflict are stated as conflicts and kept off
-          the cards. We searched the CPSC recall database for FUNMILY by title and manufacturer and
-          found no recall. The UREVO and MERACH alternatives were checked against their makers’ US
-          stores the same day. On 9 November 2026 the treadmill desk card was changed to the
-          desk-equipped FUNMILY treadmill that Amazon lists; its price and figures are the seller's
-          listing claims, which we could not confirm independently. We have not tested any of these machines. Prices change often. We earn
-          a commission if you buy through the Amazon links on this page; it does not change what we
-          say.`,
   lead: `A FUNMILY treadmill is most likely something you found on Amazon: a walking pad with an
           incline and a handle bar, a treadmill with a desk on top, or a small folding treadmill, at a
           price well under the brands you have heard of. FUNMILY is a little more substantial than many

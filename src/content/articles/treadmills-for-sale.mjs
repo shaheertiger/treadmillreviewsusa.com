@@ -23,11 +23,6 @@ export default {
           that list hides the thing that decides whether the purchase goes well. A treadmill is not
           one market. It is four, they carry different prices for the same machine, and they differ
           far more in what happens after the sale than in what happens at checkout.`,
-  note: `<strong class="text-gray-900">On prices.</strong> Every figure below is a typical street
-          price band rather than a live quote, and this category discounts hard and often, so
-          treat the bands as what to expect rather than what you will be charged. We do not carry
-          live pricing, and any page that claims to is reading a feed that updates less often than
-          it implies.`,
   sections: [
     {
       id: 'four-markets',

@@ -31,17 +31,6 @@ export default {
           like a product category. This review pins down which machine that title usually means,
           sets out the figures that the brand and independent reviewers agree on, flags the ones
           they do not, and says plainly who should buy it and who should spend more.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we checked the Goplus 2-in-1 listings on Amazon (brand, model numbers,
-          weights, warranty field and current seller), the same machine’s listing on Costway’s own
-          store, and four independent reviews of the SuperFit 2-in-1 that report hands-on use, then
-          compared them with the figures already on our walking pad and low-profile roundups. The
-          card below gives only figures on which the brand’s listings and at least one independent
-          review agree. Where sources conflict — the machine’s weight, the top speed, and above all
-          the warranty — this page says so rather than choosing. We also searched the CPSC recall
-          database for Goplus and Costway. We have not tested the Goplus 2-in-1 ourselves. Prices
-          are those shown on the day we checked and change often. We earn a commission if you buy
-          through the Amazon link on this page; it does not change what we say about the machine.`,
   products: [
     {
       id: 'goplus-superfit-2-in-1',

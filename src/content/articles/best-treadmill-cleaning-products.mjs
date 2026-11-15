@@ -26,16 +26,6 @@ export default {
           vacuum with a crevice tool, with gym wipes as an optional extra for shared machines. The
           five picks below cover those jobs, and the guide after them explains which product goes
           where, and which ones never belong on a treadmill at all.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          products. On 15 October 2026 we checked each one in two places — the maker's own site and
-          the Amazon listing for the same product — confirming that both showed it on sale and
-          comparing every size, count, specification and claim on its card. A figure or claim
-          appears only where the two agree; where they did not, or where only one source gave it, we
-          left it out. Prices are the ones we saw on that date, they differ between sellers, and they
-          change often. Your treadmill's manual is the authority on what is safe for your machine's
-          console, screen and belt, and where it names a cleaner, use that. We earn a commission if
-          you buy through the Amazon links on this page; it does not change which products we list
-          or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

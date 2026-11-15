@@ -25,10 +25,6 @@ export default {
           buyer, gives you a ten-minute test to run on any floor model, and lists the questions that
           decide how the purchase goes after you leave. For prices and the wider market, our
           treadmills for sale guide covers the numbers.`,
-  note: `<strong class="text-gray-900">On the details below.</strong> This site is independent and
-          not affiliated with any retailer. Store ranges, delivery and assembly services, return
-          policies and warranty terms vary by store and region and change over time. Treat this page
-          as a guide to what to check, and confirm the current terms with the store before you buy.`,
   sections: [
     {
       id: 'short-answer',

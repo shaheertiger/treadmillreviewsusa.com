@@ -21,15 +21,6 @@ export default {
   lead: `Under $500 the useful question is not which treadmill is best. It is which compromises
           you can live with — because at this price every machine has made the same three, and
           pretending otherwise is how people end up disappointed six weeks in.`,
-  note: `<strong class="text-gray-900">On the machines below.</strong> This tier changes faster
-          than any other: models are discontinued, rebadged and revised constantly, and
-          specifications shift under unchanged product names. We describe the specifications to
-          look for as much as individual machines, because the model on sale when you read this
-          may have been revised. The named picks are machines sold on Amazon US, and their figures
-          are the ones their listings and makers stated when we checked them in November 2026.
-          We have not tested these machines; what follows is drawn from published specifications
-          and what they imply, not from our own measurements. Verify the motor rating, deck size and weight capacity for
-          the exact unit before ordering.`,
   sections: [
     {
       id: 'what-you-cannot-get',

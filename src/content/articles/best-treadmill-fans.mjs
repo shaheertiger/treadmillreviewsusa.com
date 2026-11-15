@@ -26,21 +26,6 @@ export default {
           quietly enough to live with, and stay off the treadmill's outlet. The five picks below
           cover a dedicated training fan, two room circulators and two fans built for garages and
           home gyms, and the guide after them covers placement, noise and power.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          fans. Speeds, features, warranty terms and airflow claims were checked on 15 October 2026
-          against each maker's own product page or store and at least one independent review or
-          major retailer listing. A figure appears on a card only where those sources agree. Fan
-          airflow figures disagreed more often than not — sometimes by a factor of two or more —
-          so we have printed an airflow claim only where the maker publishes it and an
-          independent source repeats it, and described the rest in plain terms. None of these
-          figures are our own measurements. Prices are the ranges we saw on maker stores and
-          retailer listings on or shortly before that date, and they change often, so confirm the
-          model number and price before ordering. We earn a commission if you buy through the
-          Amazon links on this page; it does not change which products we list or what we say
-          about them. <strong class="text-gray-900">What this page is, and is not.</strong> This
-          site reviews equipment. It is not giving medical or exercise advice about heat, and a
-          fan is not a safeguard against heat illness. If you have a condition affected by heat,
-          or you feel unwell while exercising, stop and talk to a qualified professional.`,
   sections: [
     {
       id: 'quick-picks',

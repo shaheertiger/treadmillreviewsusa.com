@@ -19,21 +19,6 @@ export default {
   ],
   tags: ['best heart rate monitor for treadmill', 'chest strap heart rate monitor', 'treadmill heart rate strap', 'polar h10', 'bluetooth heart rate monitor', 'arm band heart rate monitor'],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          heart rate monitors. The specifications on this page were checked on 13 October 2026
-          against each manufacturer's own product page or press release (Polar, Garmin, Wahoo and
-          COOSPO), at least one major retailer listing, and independent review coverage where it
-          exists; a figure appears in a product's specification line only where those sources
-          agree, and where they disagreed we left it out and say so in the text. None of these are
-          our own measurements. Prices are those we saw on manufacturer and retailer sites on
-          13 October 2026 and change often, as do specifications under unchanged product names,
-          so confirm the price, the specification and the battery and warranty terms against the
-          exact unit before you order. A heart rate monitor is a training tool, not a medical
-          device, and nothing on this page is medical advice: if you have a heart condition, take
-          medication that affects heart rate, or have been told to keep your heart rate below a
-          limit, follow your doctor's guidance rather than a number on a strap. We earn a
-          commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.`,
   lead: `A treadmill's handrail grips can tell you roughly what your heart is doing while you
           walk slowly and hold on. They cannot tell you while you run, and holding them changes the
           workout. If heart rate is going to steer your training, you need a sensor on your body —

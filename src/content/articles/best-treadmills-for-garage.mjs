@@ -19,25 +19,6 @@ export default {
   ],
   tags: ['best treadmill for garage', 'garage treadmill', 'treadmill for garage gym', 'treadmill cold garage warranty', 'treadmill gfci garage', 'spirit xt685', 'non folding treadmill garage'],
   stickyCta: { text: 'See Our Top Picks', link: '#quick-picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          treadmills, in a garage or anywhere else. On 15 October 2026 we read the current owner's
-          manuals Spirit Fitness links from its product pages (revisions dated December 2025 to June
-          2026), Spirit's specification sheets and product pages, Life Fitness's Run CX specification
-          sheet, and, for comparison, the 2026 owner's manual for the Sole F80, the Bowflex T6 and T9
-          owner's manuals and a TRUE Fitness Performance series manual. We cross-checked every
-          figure against a large US retailer's listing (Abt), and for the Run CX against an independent
-          review as well. A figure appears in a product's specification line only where the sources
-          agree; where they disagreed — on incline ranges, belt widths, chest straps, weights and
-          dimensions — we left it out and say so. We quote warranty and environment language only
-          where we read it ourselves, and only for the model named. The Spirit XT485 card, which
-          stands in for the dealer-only XT685, carries the figures checked for our heavy-duty
-          treadmill guide on 6 November 2026, and the Horizon T101 Connect card, which stands in for the
-          dealer-sold XT185, carries the figures checked for our auto incline guide; we did not read a
-          Horizon manual. Prices are those we saw on 15
-          October 2026 and change often, and manuals are revised; confirm the price, the specification
-          and the current warranty terms for the exact unit — ideally in writing — before you order.
-          We earn a commission if you buy through the Amazon links on this page; it does not change
-          which products we list or what we say about them.`,
   lead: `Garages are hard on treadmills. They swing between cold and hot, they get damp, they are
           dusty, and their outlets are often shared or protected in ways a treadmill motor dislikes. A
           lot of buyers put a treadmill there anyway and only discover the problem when they make a

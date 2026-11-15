@@ -26,23 +26,6 @@ export default {
     'kickr run zwift',
   ],
   stickyCta: { text: 'See the Verdict', link: '#who-should-buy' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read Wahoo's US KICKR RUN product and purchase page, including its
-          technical specifications, power requirements, delivery and returns terms and FAQ, and
-          Wahoo's June 2026 guide to KICKR RUN app compatibility. We cross-checked the figures against
-          Run to the Finish's hands-on review (updated August 2025), Treadmill Review Guru's pre-release
-          overview (August 2024), TechRadar's review and Zwift Insider's article on Zwift's incline
-          control (updated February 2025). We searched the US Consumer Product Safety Commission's recall
-          database for Wahoo and found no recall. Figures we give for the KICKR RUN are those on which Wahoo
-          and at least one independent source agree; where sources disagree, the text says so. The
-          NordicTrack Commercial 2450, 1750 and Horizon 7.0 AT cards use
-          specifications already cross-checked on this site in October 2026; Horizon's price was read on
-          5 November, while NordicTrack's site refused our requests that day, so its price is the one
-          NordicTrack showed on 28 October 2026. We have not tested the KICKR RUN or any treadmill on this
-          page. Prices change often, so confirm them before you order. Wahoo sells the KICKR RUN direct
-          with mandatory in-home setup, not on Amazon, so the first card shows the closest treadmill sold
-          there, the NordicTrack Commercial 2450. As an Amazon Associate we earn from qualifying purchases; it does not change what
-          we say.`,
   lead: `Wahoo made its name with smart bike trainers, and the KICKR RUN is what happens when that
           company builds a treadmill. It is not a connected-fitness treadmill in the Peloton or iFIT mould:
           there is no screen and no class library built in. Instead it is a running machine designed to

@@ -36,22 +36,6 @@ export default {
           motor, the capacity rating, the decline and the weight while keeping the 22 by 60-inch deck
           and the 15.6-inch screen. This review covers that current machine, and states a figure only
           where Sole's listing and an independent source agree.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we read Sole's US product page and product feed for the F85 (listed as new
-          for 2026, item F85-2026), including its specification, warranty and delivery tables. We
-          cross-checked each figure against Garage Gym Reviews' F85 review, which describes the 2026
-          brushless model and was last updated on 17 August 2026, and against the Flex Marks the Spot
-          product listing, a third-party price-tracking site. We also read the Sole-branded
-          specification sheet on the site of Dyaco, Sole's parent company, Sole's own F80 versus F85
-          article (dated May 2024), and roundups from Home Gym Verdict, Big Guy Treadmill Review and
-          Garage Gym Reviews' 2024 comparison to identify which figures belong to earlier F85s. Every
-          figure on this page is one that Sole's current listing and at least one independent source
-          agree on; where sources disagree, we state both figures and where each comes from rather
-          than choosing. We have not tested the F85, and nothing here is our own measurement. Prices
-          are those shown on 14 October 2026 and change often, so confirm the price, the
-          specification and the warranty for the exact unit before you order. We earn a commission if
-          you buy through the Amazon link on this page; it does not change what we say about the
-          machine.`,
   products: [
     {
       id: 'sole-f85',

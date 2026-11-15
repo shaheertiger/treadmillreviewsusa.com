@@ -26,15 +26,6 @@ export default {
           manual treadmills, and each gives up something to get there. This guide names five whose
           weight is stated by the Amazon listing or the maker, explains what each gives up, and shows
           how to read the weight figures in a listing so you can judge one that is not on this list.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested or weighed
-          these treadmills. Each was confirmed as currently sold on Amazon US on 6 November 2026. Unit
-          weights and other figures on each card come from the Amazon listing's own bullet points or
-          the maker's website, and we say which. Where the listing and the maker disagreed — on the
-          Sunny manual treadmill's weight limit, for example — we left the figure off the card and
-          explain the difference in the text. None of these figures are our own measurements. Prices
-          are those Amazon showed on 6 November 2026 and change often. We earn a commission if you buy
-          through the Amazon links on this page; it does not change which products we list or what we
-          say about them.`,
   sections: [
     {
       id: 'quick-picks',

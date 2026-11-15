@@ -28,14 +28,6 @@ export default {
           delivered, the assembly offer, the return window and its conditions, the price-match rules
           and the store credit card — with company facts cross-checked against independent sources.
           Individual prices change weekly, so treat the figures as a dated snapshot rather than a quote.`,
-  note: `<strong class="text-gray-900">On the details below.</strong> This site is independent and not
-          affiliated with Academy Sports + Outdoors or any brand it sells. Brands, prices and policies
-          were read on academy.com on 20 October 2026, and store, return, price-match and card details
-          were cross-checked against independent reporting and the card issuer's announcement. Where we
-          could find no independent source, we say the detail comes from Academy alone. Ranges,
-          fulfilment options and policies change and can differ by product, store and ZIP code, so
-          confirm the current terms on the product page or with the store before you buy. We have not
-          tested the machines mentioned here.`,
   sections: [
     {
       id: 'short-answer',

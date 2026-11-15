@@ -24,12 +24,6 @@ export default {
           the right order it is safe and quick. Done in the wrong order — incline still raised,
           cord in the hinge, latch half-seated — it is how decks get bent, struts get ruined and
           folded machines come down when nobody expects them to.`,
-  note: `<strong class="text-gray-900">Safety first.</strong> Stop the belt, remove the safety key and
-          unplug the treadmill before you fold or unfold it. Keep children and pets well clear
-          while the deck is moving, never stand or reach underneath a raised deck, and if the
-          latch will not hold the deck securely, leave the machine down and flat. Fold mechanisms
-          differ between models, so your owner's manual is the authority on where to lift and how
-          the release works — the steps below are the general pattern, not a substitute for it.`,
   sections: [
     {
       id: 'short-answer',

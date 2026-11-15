@@ -45,24 +45,6 @@ export default {
           sell at. On 5 November 2026 the T202 was $899 on Horizon’s store and expected to ship the week of
           16 November. This page reads the specifications properly, explains what the one-year parts
           warranty means, and shows where the T202 sits between Horizon’s T101 and 7.0 AT.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read Horizon’s US product page for the T202 (SKU HTM1386-01), including its
-          full machine and console specification table, warranty, electrical requirements, delivery and
-          30-day guarantee, and Horizon’s pages for the T101 Connect and 7.0 AT for the comparison. We
-          cross-checked the T202 figures against Treadmill Review Guru’s review (updated June 2024) and
-          TreadmillReviews.com’s review (updated September 2023). Horizon and those reviews agree on the
-          20 x 60 in. running area, 0.5-12 mph, the 325 lb maximum user weight, 187 lb weight, 76 x 34 x
-          57 in. assembled size and the lifetime frame and motor, one-year parts and one-year labour
-          warranty; Horizon and Treadmill Review Guru also agree on the 1.4 mm belt, 7.25 in. step-on
-          height and 48 x 34 x 62 in. folded size. Horizon lists 12 incline levels, which both reviews give
-          as 0-12%. Horizon does not publish a motor rating; both reviews give 2.75 HP or CHP, so it stays
-          off the card. Regional versions sold outside the US (T202-05, T202-26, AtZone) have different
-          specifications and are not covered here. We searched the US Consumer Product Safety
-          Commission’s recall database for Horizon and found no T202 recall; Horizon’s one recent
-          treadmill recall covers T101-05 units. We have not tested the T202, and none of these figures
-          are our own measurements. Prices are those shown on horizonfitness.com on 5 November 2026 and
-          change often. We earn a commission if you buy through an Amazon link on this page; it does not
-          change what we say about the machine.`,
   products: [
     {
       id: 'horizon-t202',

@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['treadmill calories burned', 'calories burned walking on treadmill', 'calories burned on treadmill 30 minutes', 'treadmill calorie estimate', 'treadmill training'],
   stickyCta: { text: 'See the Estimates', link: '#estimate-table' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is a reference page about how calorie estimates are produced and how far to trust
-          them — it is not medical, nutrition or coaching advice, and we are not qualified to give
-          any of those. If you have a heart, metabolic or other medical condition, are pregnant,
-          are managing an eating disorder, or are using exercise alongside medication or a
-          prescribed diet, talk to a doctor or registered dietitian before relying on any calorie
-          figure. <strong class="text-gray-900">On the numbers below:</strong> every calorie figure
-          is a rounded estimate from standard metabolic-equivalent arithmetic, not a measurement of
-          you. Individual variation is substantial, and the real figure for any one person on any
-          one day can differ from the table by a meaningful margin in either direction.`,
   lead: `A treadmill does not burn calories; you do, and the machine is a convenient place to do it
           at a known speed and grade. How many calories you burn in a session depends mostly on
           how much you weigh, how far you travel, how steep the belt is and whether you are

@@ -21,19 +21,6 @@ export default {
   lead: `There is a threshold in the treadmill market somewhere around $700, and it is the most
           consequential one in the whole category. Below it you are buying a walking appliance.
           Above it you are buying a machine, and the difference is larger than the $300 suggests.`,
-  note: `<strong class="text-gray-900">On the prices below.</strong> Street prices in this band
-          move constantly — machines listed at $899 sell at $699 several times a year, which is
-          why some picks here carry a higher list price. The bands given are typical selling
-          prices rather than list, and the section on buying at the right time of year explains
-          when the reductions actually happen. We have not tested these machines: the
-          specifications are the manufacturers' published figures, and judgements on how they run
-          come from what those figures imply, not from our own measurements. A used mid-range machine
-          is discussed below as an alternative, but it cannot be bought new on Amazon, so on 9 November
-          2026 the value card became Sunny's Auto Incline Treadmill, whose figures are those checked
-          for our auto incline treadmill guide. The same day the NordicTrack C 700, ProForm Power 995i
-          and Horizon T101 cards, which Amazon US does not sell, became the NordicTrack T Series 5,
-          NordicTrack T 6.5 S and Horizon T101 Connect; their figures are those checked for our iFIT,
-          NordicTrack C950i and auto incline treadmill guides.`,
   sections: [
     {
       id: 'what-changes',

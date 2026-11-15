@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['treadmill marathon training', 'long run on treadmill', 'marathon training', 'treadmill running', 'running indoors'],
   stickyCta: { text: 'Long Runs Indoors', link: '#long-runs' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This page is about the practical side of doing marathon training on one — it
-          is not a coaching plan, medical advice or nutrition advice. Marathon training is a large
-          load on the body; if you have a heart condition, a history of stress fractures or
-          tendon injuries, or are new to running, talk to a doctor before starting, and consider a
-          qualified running coach for the plan itself. Fuelling questions belong with a registered
-          or sports dietitian.
-          <strong class="text-gray-900">On the figures below:</strong> distances, durations,
-          temperatures and motor ratings are typical ranges, not prescriptions or specifications
-          for any particular machine.`,
   lead: `You can train for a marathon on a treadmill, and many people do most of their training
           indoors. The belt handles easy runs, tempo work and controlled hills extremely well. What
           it handles badly is everything that makes a road marathon a road marathon — downhills,

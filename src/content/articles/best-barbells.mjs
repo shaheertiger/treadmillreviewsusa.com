@@ -29,33 +29,6 @@ export default {
           known home gym bars, REP's Colorado, Rogue's Ohio Bar and Fringe Sport's Wonder Bar, are
           sold on their makers' own stores rather than on Amazon, so they are discussed in the guide
           but not carded.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          barbells, and no figure on this page is our own measurement. On 19 October 2026 we
-          confirmed the Synergee Games, Titan and CAP Beast bars on their makers' own stores and
-          checked their weight, shaft diameter, tensile strength, sleeve rotation, knurl and warranty
-          against at least one independent source: Garage Gym Reviews' Olympic, budget and women's
-          barbell guides and its equipment page for the CAP bar, BarBend's barbell guide, and an
-          independent review of the Titan bar. On 9 November 2026 we replaced four bars that are not
-          sold on Amazon US (REP's 20 kg and 15 kg Colorado bars, the Rogue Ohio Bar and the Fringe
-          Sport Wonder Bar V2) with the REP Delta Basic Bar, CAP's Rebel power bar and Synergee's
-          20 kg and 15 kg Regional bars, all listed on Amazon US that day. Their figures were checked
-          against REP's own pages and GymCrafter's review (Delta), CAP's page, the Amazon listing and
-          the retailer Iron Company (Rebel), and Living.Fit's listing, the Amazon listings and Garage
-          Gym Reviews (Regional). A figure appears on a card only where two sources agree; where they
-          conflicted, or only one source gave a figure, we left it out and say so on the card.
-          Tensile strength and weight ratings are the makers' own claims, not independent tests.
-          <strong class="text-gray-900">Where to buy.</strong> Every card links to the bar's Amazon
-          listing. Every brand was checked against the US Consumer Product Safety Commission's recall
-          database, along with barbells as a category. CAP's own store showed the Beast as sold out on
-          19 October. Prices are those we saw on the dates given and change often. We earn a
-          commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
-          exercise equipment; we are not giving medical, physiotherapy or coaching advice, and nothing
-          here is a training programme. Barbell training carries a real risk of injury: lift inside a
-          rack with the safeties set, and treat every weight rating as the maker's claim. If you have
-          a back, shoulder, joint or heart condition, are pregnant or postpartum, or are new to
-          lifting or returning from injury, talk to a qualified professional before you start.`,
   sections: [
     {
       id: 'quick-picks',

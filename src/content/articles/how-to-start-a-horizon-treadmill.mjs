@@ -19,22 +19,6 @@ export default {
   ],
   tags: ['how to start horizon treadmill', 'how to turn on horizon treadmill', 'horizon treadmill safety key', 'horizon treadmill not turning on', 'horizon treadmill power switch'],
   stickyCta: { text: 'See the Steps', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          18 October 2026 we read the "Getting Started", console, safety-key, power and
-          troubleshooting sections of four Horizon owner’s manuals hosted on Horizon’s help centre
-          and Johnson Health Tech’s document server — the T101-08 (sold as the T101 Connect), the
-          7.0AT-05, the 7.4AT-04 and the T202-06 — plus the separate Horizon "Treadmill Guide"
-          that ships with the 7.0 AT, 7.4 AT and T202, Horizon’s help-centre articles on powering
-          up, safety-key messages, blank consoles and error codes, and Horizon’s current general
-          information pages for each model. We cross-checked the safety-key and error-code points
-          against BarBend’s independent Horizon troubleshooting guide, and the T101 recall against
-          the CPSC’s own recall record. We did not find a current 7.8 AT owner’s manual on Horizon’s
-          help centre, so 7.8 AT notes are limited to what Horizon’s product information says. We
-          have not tested these treadmills. Horizon revises consoles between versions, so read the
-          version on your serial label and follow the manual for that exact version where it
-          differs from this page. Never remove the motor cover or console faceplate with the
-          machine plugged in; for anything inside the machine, unplug it and contact Horizon or a
-          technician.`,
   lead: `Horizon treadmills are simple to start once you know where three things are: the power
           switch, which is down at the front of the frame next to the cord rather than on the
           console; the safety key, without which the machine will not start at all; and the Start

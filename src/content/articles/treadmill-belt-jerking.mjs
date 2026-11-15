@@ -24,13 +24,6 @@ export default {
           jerk almost always keeps a rhythm, and the rhythm points at the part. The less useful
           thing is that one of the rhythms is no rhythm at all, and that one is a safety problem
           rather than a maintenance one.`,
-  note: `<strong class="text-gray-900">Before anything else.</strong> If the speed rises or
-          falls on its own without anyone pressing a button, stop using the machine, unplug it and
-          contact the manufacturer or a technician — that is one of the four symptoms our
-          troubleshooting guide treats as stop-now. For everything else, unplug the treadmill at
-          the wall before touching the belt, rollers or motor compartment. The safety key stops the
-          belt; it does not isolate the machine, and controller boards can hold a charge after
-          disconnection. Diagnose at walking speed, standing on the side rails where you can.`,
   sections: [
     {
       id: 'short-answer',

@@ -27,12 +27,6 @@ export default {
           with a leaderboard. Neither is objectively better. The right one depends on what you want
           a treadmill session to feel like, how much you mind being tied to a brand, and whether
           you want a subscription at all.`,
-  note: `<strong class="text-gray-900">On prices and tiers.</strong> We do not quote membership
-          prices or tier names on this page, because both platforms change them regularly and a
-          figure written today would mislead someone reading next year. Check the current pricing
-          on each platform directly, including whether a membership is required or bundled with
-          the hardware, before you commit. The hardware prices are discussed only in general
-          terms for the same reason.`,
   sections: [
     {
       id: 'short-answer',

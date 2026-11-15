@@ -34,25 +34,6 @@ export default {
           a child died. This guide explains how to tell which machine you are looking at, how to
           confirm the recall remedy, what activation and the membership add, what to check in
           person, what to pay and where to look.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read the US Consumer Product Safety Commission’s two May 2021 Peloton
-          treadmill recall notices (21-128 and 21-129, the latter updated August 2021) and its May
-          2023 announcement of the Tread+ rear-guard repair, and searched its recall database for
-          later Peloton treadmill recalls. We read Peloton’s US Tread shop and Tread Flex pages for
-          current new prices and its used-bike page for its stated activation-fee terms. Peloton’s
-          own fee and membership pages did not display a figure when we looked, so the fee is taken
-          from Peloton’s 2024 announcement as reported by TechCrunch, NBC News and Pelo Buddy, whose
-          March 2026 report of a waiver to 31 March we also read, and the Repowered terms from
-          CNBC’s June 2025 report. Used prices are from Commonplace, a resale marketplace with a
-          commercial interest in the figures, dated 7 October 2026; we found no independent used-price
-          index for Peloton treadmills, so treat them as one marketplace’s asking prices. The
-          fair-price guidance is our editorial judgement, not a valuation. We have not inspected or
-          tested any used Peloton treadmill. Prices change often. On 9 November 2026 we replaced the cards for the used TR02 Tread and TR01 Tread+, which
-          are not sold on Amazon, with the new Cross Training Tread, checked against its Amazon listing,
-          Johnson Fitness and another retailer, and the Tread Vision, whose figures are those checked
-          for our smart treadmill guide. We earn a commission if you buy
-          through an Amazon link on this page; it does not change what we say. This site is not
-          affiliated with Peloton or any marketplace mentioned.`,
   products: [
     {
       id: "peloton-cross-training-tread",

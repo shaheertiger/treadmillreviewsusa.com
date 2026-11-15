@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['nordictrack t series vs commercial', 'nordictrack t series', 'nordictrack commercial series', 'nordictrack t series 10 vs commercial 1250', 'which nordictrack to buy'],
   stickyCta: { text: 'See Who Should Buy Which', link: '#who-buys-which' },
-  note: `<strong class="text-gray-900">Where the figures come from.</strong> Every figure on this
-          page is taken from our
-          <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack range guide</a>,
-          which checked NordicTrack's own listings against a major US retailer and independent
-          review coverage on 13 October 2026, and carries only figures those sources agree on.
-          Where they disagree — the motor ratings of the T Series 10 and of the Commercial 1250
-          and 1750, and the deck width and maximum user weight of the 1750 — we say so rather
-          than pick a number. We have not tested these machines. NordicTrack keeps model names
-          while changing the hardware underneath, so confirm the specification and warranty for
-          the exact unit and model year before you order.`,
   lead: `NordicTrack sells two series of folding treadmills, and shoppers usually arrive at this
           comparison with a T Series 16 and a Commercial 1250 or 1750 open in two tabs, a few
           hundred dollars apart on sale and with screens that look much the same. The question is

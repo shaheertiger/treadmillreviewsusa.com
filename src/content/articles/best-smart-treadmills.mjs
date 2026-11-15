@@ -25,23 +25,6 @@ export default {
           does mean the right question is not which screen is biggest. It is which ecosystem you
           want to live in for the next several years, and what the hardware is worth on the day
           you stop paying for it.`,
-  note: `<strong class="text-gray-900">How we built this list.</strong> On 13 October 2026 we
-          checked each machine against its manufacturer's current product or specification page,
-          at least one major retailer listing, and independent review coverage. Only figures that
-          agreed across those sources appear in the spec lines; where they conflicted — motor
-          ratings on the NordicTrack machines, top speed and warranty on the Echelon, motor rating
-          on the Horizon — we left the figure out. The Echelon Stride-8s, Bowflex T16 and Horizon 7.4 AT,
-          which replace machines Amazon US does not sell, carry the figures checked for our
-          <a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium">Echelon guide</a>,
-          treadmills-with-screens guide and Horizon guide between 13 October and 5 November 2026. The Peloton Tread Vision went on sale on
-          1 October 2026, so its figures come from Peloton's specification page and launch
-          coverage only; there is no long-term independent coverage of it yet. None of this is our
-          own measurement — we have not tested these machines. Price bands reflect prices seen on
-          13 October 2026 and change often. Subscription prices are deliberately not quoted
-          because they change. Confirm the specification, the warranty and what works without a
-          membership for the exact unit before you order. We earn a commission if you buy through
-          the Amazon links on this page; it does not change which products we list or what we say
-          about them.`,
   products: [
     {
       id: 'nordictrack-commercial-1750',

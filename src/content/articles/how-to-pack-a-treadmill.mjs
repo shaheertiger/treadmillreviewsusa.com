@@ -26,14 +26,6 @@ export default {
           things in the right order. This guide covers packing for a house move, for storage and
           for a return to the seller, and links to our separate guides for the physical jobs of
           moving and dismantling the machine rather than repeating them.`,
-  note: `<strong class="text-gray-900">Unplug first, and do not lift alone.</strong> Every step on
-          this page is done with the treadmill unplugged at the wall and the safety key removed.
-          Most home treadmills weigh well over 100 lb and carry most of that weight at the motor
-          end, so treat lifting, tilting and loading as a two-person job, and use a dolly rather
-          than your back. Your owner's manual is the authority on your model: if it says how the
-          machine should be folded, locked, laid down or transported, follow it over anything
-          here. Carrier weight limits and seller return terms quoted below were checked on 14
-          October 2026 and can change; confirm them with the carrier or seller before you book.`,
   sections: [
     {
       id: 'short-answer',

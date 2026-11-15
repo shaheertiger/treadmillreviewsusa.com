@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['dog treadmill vs human treadmill', 'can a dog use a human treadmill', 'dog treadmill belt length', 'dog treadmill side panels', 'dog treadmill buying'],
   stickyCta: { text: 'Compare the Differences', link: '#at-a-glance' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
-          for people. This page compares two kinds of equipment — it is not veterinary advice,
-          dog-training advice or a recommendation to exercise any particular dog on any machine, and
-          we are not qualified to give any of those. Speak to your vet before putting any dog on any
-          treadmill, human or dog-specific, and stop at the first sign of distress, lameness,
-          overheating or laboured breathing. Never tether a dog to a treadmill and never leave one on a
-          moving belt unsupervised. <strong class="text-gray-900">On the figures below:</strong> belt
-          sizes for dog treadmills are the figures stated on our dog treadmill roundup; human
-          treadmill sizes are typical ranges rather than any one model; and the sizing rule of thumb
-          is exactly that — a widely used convention, not a measurement of your dog.`,
   lead: `If you already own a treadmill and have a dog with energy to spare, it is natural to wonder
           what a dog treadmill actually adds. The answer is less about the motor and more about the
           shape of everything around it: how long the belt is against a four-legged stride, what

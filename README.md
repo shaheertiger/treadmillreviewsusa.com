@@ -41,8 +41,7 @@ articles, `site-*`/`navstrip`/`card` for chrome), with the colours as CSS variab
 
 - **Spec-generated articles** (`scripts/build-articles.mjs`, `data-template="editorial"`): breadcrumb,
   headline and italic dek, byline with a "View products" button, the affiliate disclosure, a collage of
-  the products' Amazon photos, "Our top picks" with an Amazon button per pick, a "What we checked"
-  note, numbered product blocks (award, name, photo, buy button, pros and cons, why we picked it,
+  the products' Amazon photos, "Our top picks" with an Amazon button per pick, numbered product blocks (award, name, photo, buy button, pros and cons, why we picked it,
   features at a glance), common mistakes, the bottom line, a FAQ accordion (`<details>`), "Why trust
   us" with the author card, "More in" links from the page's hub group and a "Readers also read" grid.
   On phones a sticky bar links the top pick on Amazon.

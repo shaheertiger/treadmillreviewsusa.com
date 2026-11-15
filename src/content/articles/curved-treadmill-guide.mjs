@@ -25,14 +25,6 @@ export default {
           sorting into what is physics, what is commonly reported and what is salesmanship. The
           short version is that a curved treadmill is a superb tool for a particular kind of
           running and a poor choice for most of what people buy treadmills to do.`,
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is a guide to how a type of equipment works and who it suits — it is
-          not medical, physiotherapy or coaching advice, and we are not qualified to give any of
-          those. Claims about energy cost, foot strike and injury on curved treadmills are reported
-          by manufacturers, coaches and owners; we have not measured them ourselves and we label
-          them accordingly. If you have an injury, a condition affecting your heart, joints or
-          balance, or any concern about sprint training, talk to a doctor or physical therapist
-          before using one.`,
   sections: [
     {
       id: 'short-answer',

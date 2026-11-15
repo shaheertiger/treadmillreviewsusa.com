@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['how long should i run on a treadmill', 'how long should you run on a treadmill', 'treadmill running time', 'treadmill run length', 'how long to run on treadmill for beginners'],
   stickyCta: { text: 'See Lengths by Goal', link: '#by-goal' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is a general guide to session length — it is not medical, coaching or nutrition
-          advice, and we are not qualified to give any of those. How long you should run depends
-          on your health, history, current fitness and goals; if you have a heart, lung, joint or
-          other condition, an injury, are pregnant, or have not exercised for a long time, talk
-          to a doctor or physical therapist before you start, and stop and get checked if
-          something hurts or feels wrong. <strong class="text-gray-900">On the figures below:</strong>
-          the weekly activity amounts are the US physical activity guidelines; session lengths and
-          progression rates are typical starting points and rules of thumb, not prescriptions.`,
   lead: `How long you should run on a treadmill depends on two things: what you are running for,
           and how much running your body is used to. A complete beginner and someone training for a
           half marathon need very different answers, and the same person needs different answers

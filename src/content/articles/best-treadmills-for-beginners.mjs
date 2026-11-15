@@ -21,15 +21,6 @@ export default {
   lead: `A first treadmill has one job that matters more than every specification combined: it
           has to still be in use in month three. Almost everything that determines whether that
           happens is decided before you ever press start.`,
-  note: `<strong class="text-gray-900">A note on starting out.</strong> This is an equipment
-          guide, not a training programme. If you have been inactive for a long time, have a
-          heart condition, or are carrying an injury, it is worth speaking to your doctor before
-          beginning regular exercise. What follows is about which machine makes starting easier,
-          not about whether you should. We have not tested these machines: what follows is drawn
-          from published specifications and what they imply for a first-time owner, not from our
-          own measurements. On 9 November 2026 four cards were changed to machines sold on Amazon (the
-          NordicTrack T Series 5, T Series 10 and T Series 16 and the ProForm Carbon TLX); their figures
-          are those checked for our iFIT, auto incline and NordicTrack treadmill guides.`,
   sections: [
     {
       id: 'why-abandoned',

@@ -24,12 +24,6 @@ export default {
           still. The question is whether yours moves more than it should, or in a way it did not
           used to. Usually the answer is in the four corners and the bolts, and the fix takes a
           spanner and a spirit level.`,
-  note: `<strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
-          wall before adjusting feet, tightening bolts or reaching under the deck. The safety key
-          stops the belt; it does not isolate the machine. Stop using the treadmill and get it
-          looked at if the vibration appeared suddenly and is severe, comes with a burning smell,
-          grinding or a new knock from the motor area, or if any part of the frame, an upright or a
-          folding latch moves at a joint when it should not.`,
   sections: [
     {
       id: 'short-answer',

@@ -26,14 +26,6 @@ export default {
           adapters out of it. This page explains the reasoning honestly, sets out what a cord would
           need to be if there is genuinely no alternative, and covers the related questions about
           circuits, GFCI outlets and replacement power cords.`,
-  note: `<strong class="text-gray-900">The manual is the authority, and some faults mean stop.</strong>
-          Your treadmill's manual states the outlet, circuit and cord requirements for your model,
-          and where it disagrees with the general guidance on this page, follow the manual. Unplug
-          the machine before inspecting any cord or inlet. Stop using the treadmill entirely for a
-          burning smell, a plug or cord that is hot to the touch, a breaker that trips on start-up,
-          speed that surges on its own, or a belt that does not stop when the safety key is pulled.
-          We review treadmills; we are not electricians. Anything involving house wiring, a new
-          circuit or a replacement outlet is a job for a licensed electrician.`,
   sections: [
     {
       id: 'short-answer',

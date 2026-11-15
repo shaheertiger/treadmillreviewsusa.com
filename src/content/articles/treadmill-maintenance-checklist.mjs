@@ -21,10 +21,6 @@ export default {
   lead: `Most treadmill maintenance advice is organised by component, which is useless when you
           are standing in front of the machine wondering what is due. This is organised by
           interval instead — work down it, and everything gets done at the right frequency.`,
-  note: `<strong class="text-gray-900">Before every task below.</strong> Unplug the treadmill at
-          the wall. A treadmill motor can turn under stored energy, and the safety key is not an
-          isolator. Also check your manual for deck type before any lubrication — pre-waxed decks
-          must never receive silicone, and that is the one mistake here that cannot be undone.`,
   sections: [
     {
       id: 'how-to-use',

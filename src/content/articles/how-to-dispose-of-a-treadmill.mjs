@@ -24,11 +24,6 @@ export default {
           is the one where somebody else does the lifting. A broken one is scrap steel, a motor, a
           circuit board and a belt, and the job is getting each to somewhere that will take it.
           Either way, there is a little preparation that makes the whole thing faster and safer.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Resale values, haul-away fees and
-          junk removal prices are typical ranges, not quotes. They vary a great deal by region, by
-          the machine, and by whether there are stairs involved. Charity and municipal rules are
-          set locally and change; call before you assume anyone will take it. And before moving or
-          dismantling anything, unplug the treadmill at the wall and take out the safety key.`,
   sections: [
     {
       id: 'short-answer',

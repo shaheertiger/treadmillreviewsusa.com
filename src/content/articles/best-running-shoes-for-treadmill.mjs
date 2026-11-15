@@ -27,20 +27,6 @@ export default {
           you are worth more than features. The seven shoes below cover the main needs: cushioned
           daily trainers, a lighter tempo shoe, a stability shoe, and a high-cushion shoe for
           incline walkers.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> Model names, stack heights,
-          drops, weights and list prices were checked on 13 October 2026 against each brand's
-          published figures as repeated by retailers, and cross-checked with at least one
-          independent review — RunRepeat, Believe in the Run, Doctors of Running, Road Trail Run or
-          Fleet Feet. The specification lines give the brand's published figures, for a men's
-          size where weight is quoted. Lab measurements often differ from them by a millimetre or
-          more, and we mention that where it matters. Where sources disagreed on a figure,
-          usually weight, we left it out. None of these figures are our own measurements; we have
-          not tested these shoes. Prices are the list prices and ranges we saw on that date and
-          change often, and two models have successors due within weeks, as their cards explain.
-          This page is general buying information, not medical or podiatry advice: if you have
-          pain, an injury, a foot condition or diabetes, talk to a doctor or podiatrist before
-          changing shoes. We earn a commission if you buy through the Amazon links on this page; it
-          does not change which products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

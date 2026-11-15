@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['how long is a mile on a treadmill', 'treadmill mile time', '10000 steps on treadmill', '5k on treadmill', 'treadmill distance'],
   stickyCta: { text: 'See the Time Table', link: '#time-per-mile' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is a distance-and-time reference built from simple arithmetic — it is not medical,
-          coaching or nutrition advice, and we are not qualified to give any of those. How long a
-          mile should take you, and how many miles you should walk or run, depends on your health,
-          history and goals; if you have a heart, joint or other condition, an injury, or any
-          concern about exercise, talk to a doctor, physical therapist or qualified coach before
-          setting a target. <strong class="text-gray-900">On the figures below:</strong> times are
-          pure arithmetic from the stated speed, step counts are typical ranges rather than
-          measurements, and treadmill consoles vary in how accurately they report both.`,
   lead: `How long a mile is on a treadmill has two answers. In distance, it is exactly a mile: the
           console counts belt travel and a mile of belt is a mile of ground. In time, it is
           whatever the speed makes it — thirty minutes at a slow 2 mph walk, twenty minutes at 3

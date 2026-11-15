@@ -19,27 +19,6 @@ export default {
   ],
   tags: ['black friday elliptical deals', 'elliptical black friday 2026', 'elliptical sale', 'cyber monday elliptical deals', 'sole e35 black friday', 'schwinn 411 deal', 'teeter freestep sale'],
   stickyCta: { text: 'See the Six Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">On the prices and products below.</strong> We have not tested
-          these machines, and no figure on this page is our own measurement. On 28 October 2026 we
-          checked each maker's own US store page — SOLE for the E35 and E25, Schwinn for the 411 and
-          490, and Teeter for the FreeStep range — for the current price, any list or "was" price,
-          sale messaging and published weights. Amazon's own pages did not show prices to our checking
-          tools that day, so Amazon prices quoted here are the ones our earlier elliptical guides
-          recorded on 16 and 19 October 2026, and are labelled with their dates; the Cubii Move price
-          is the one Garage Gym Reviews gave in its June 2026 roundup, because Cubii's site publishes
-          none. Specification lines carry only figures that our existing roundups had already
-          cross-checked between the maker or Amazon listing and at least one independent source;
-          where sources conflicted, the figure is left off the card and the conflict is explained.
-          The "good Black Friday price" for each machine is our judgement of a price worth acting
-          on, not a prediction of what any retailer will charge. Prices change often, sometimes
-          daily, and Black Friday 2026 prices had not been published when this was written. We earn
-          a commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.
-          <br><br>
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review exercise
-          equipment. Nothing here is medical or physiotherapy advice. If you are buying an
-          elliptical because of a joint, heart or balance condition, or after an injury or surgery,
-          ask your doctor or physiotherapist which machine suits you before you buy.`,
   lead: `Ellipticals are one of the categories where Black Friday can genuinely save you money,
           and also one where a good-looking discount can hide a machine you will not enjoy using.
           A short stride, a vague flywheel claim or a 230 lb freight box with expensive delivery

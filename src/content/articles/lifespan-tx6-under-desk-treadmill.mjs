@@ -33,24 +33,6 @@ export default {
           motor figure that would settle it. This review sets out what we could confirm on 5 November
           2026, what we could not, what the TX6 costs, and when one of LifeSpan’s other desk
           treadmills, or a far cheaper pad, is the better buy.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read LifeSpan’s US product page for the TX6-GlowUp, including its
-          specification table, warranty, delivery and return banners, and LifeSpan’s full US product
-          list with each machine’s price and stock status that day. We cross-checked the figures
-          against an independent walking-pad spec tracker that reads manuals and Amazon data (page
-          dated February 2026), the TX6 listing of an authorised dealer, 360 Fitness Superstore, and
-          the TX6’s Amazon listing title. They agree on the 20-inch belt width, the 0.4 to 6.0 mph
-          speed range, the 400 lb maximum user weight, the lack of incline, the 10-year frame, 2-year
-          parts and 1-year labour warranty, and the 4 mph cap when the optional Omni Hub console is
-          used. They disagree on unit weight (98.5 or 88 lb), step-up height (5.8, 5 or 4.6 inches),
-          belt length (48 or 48.8 inches) and motor (4.5 HP peak or 3 HP); those figures are set out
-          as conflicts and kept off the card. We searched the CPSC recall database for LifeSpan and
-          found no recall. We have not tested the TX6, and none of these figures are our own
-          measurements. Prices are those LifeSpan showed on 5 November 2026 and change often. We earn a
-          commission if you buy through the Amazon links on this page; it does not change what we
-          say about any machine. On 9 November 2026 we also read LifeSpan’s TR5000B Pro+ page and the
-          same tracker’s TR5000 page for the TR5000B card; the UREVO card repeats figures checked for
-          our auto incline treadmill guide.`,
   products: [
     {
       id: 'lifespan-tx6-glowup',

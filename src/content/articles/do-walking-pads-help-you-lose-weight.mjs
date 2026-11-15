@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['do walking pads help lose weight', 'walking pad weight loss', 'walking pad calories', 'under desk treadmill weight loss', 'NEAT walking'],
   stickyCta: { text: 'See the Calorie Table', link: '#calories-per-hour' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
-          and walking pads. This page explains the energy arithmetic behind slow walking — it is
-          not medical, coaching or nutrition advice, and we are not qualified to give any of
-          those. Weight is affected by diet, sleep, medication, hormones and health conditions as
-          well as activity; if you are trying to lose a significant amount of weight, have a
-          heart, joint, metabolic or other condition, are pregnant, or have any concern about
-          exercise, talk to a doctor or registered dietitian before setting a plan.
-          <strong class="text-gray-900">On the figures below:</strong> calorie numbers are
-          rounded estimates from standard MET arithmetic, not measurements, and individuals can
-          differ from them considerably.`,
   lead: `Walking pads are sold with a lot of quiet promise: walk while you work and the weight takes
           care of itself. The honest version is less exciting and more useful. A walking pad
           lets you replace some sitting with slow walking, and slow walking costs more energy

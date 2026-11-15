@@ -19,20 +19,6 @@ export default {
   ],
   tags: ['how to build a dog treadmill', 'diy dog treadmill', 'diy slatmill', 'homemade dog treadmill', 'carpet mill for dogs'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
-          for people. This page explains how home-built, dog-powered treadmills work and what can go
-          wrong with them, from the equipment side. It is not veterinary advice, dog-training advice,
-          a set of build plans, or a recommendation to exercise any particular dog on any machine, and
-          we are not qualified to give any of those. Check with your vet before starting a dog on any
-          treadmill, homemade or bought — especially a puppy, a senior dog, a flat-faced
-          (brachycephalic) breed, or any dog with a heart, breathing or joint condition — and stop at
-          the first sign of distress, lameness, overheating or laboured breathing. Never tether a dog
-          to a treadmill and never leave one on it unsupervised. <strong class="text-gray-900">On the
-          figures below:</strong> commercial prices are the ranges our dog treadmill roundups list,
-          checked on 13 October 2026, and a Ray Allen Manufacturing listing we read on 18 October 2026;
-          DIY costs are reports from individual builders on an owners’ forum, not quotes, and will vary
-          with your materials and local prices. We have not built or tested a slatmill or carpet mill
-          ourselves.`,
   lead: `People search for how to build a dog treadmill for good reasons: a high-drive dog that never
           seems tired, a winter that makes long runs impossible, and a price tag on commercial dog
           treadmills that can run well into four figures. The honest answer starts with what "dog

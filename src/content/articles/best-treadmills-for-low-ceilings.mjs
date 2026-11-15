@@ -26,15 +26,6 @@ export default {
           you between 2.76 and about 5.7 inches up, by their makers' figures. This guide names them,
           explains the arithmetic that tells you how much ceiling you need, and shows how to measure a
           room so that the arithmetic is honest.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          treadmills or measured their decks. Each was confirmed as currently sold on Amazon US on
-          6 November 2026. Deck heights come from the Amazon listing's own bullet points or from the
-          maker's own store, and we say which on each card; where a listing gave a deck height and the
-          maker did not, or the reverse, the card names the source. Other figures come from the same
-          two places, and where they disagreed we left the figure off. None of these figures are our
-          own measurements. Prices are those Amazon showed on 6 November 2026 and change often. We earn
-          a commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

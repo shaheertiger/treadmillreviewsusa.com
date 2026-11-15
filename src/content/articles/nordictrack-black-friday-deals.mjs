@@ -33,22 +33,6 @@ export default {
           treadmill prices we had recorded there on 14 October had not moved. Black Friday 2026
           prices had not been published by NordicTrack or Amazon when we wrote this. What follows is
           the baseline to measure them against, and the price at which we would buy each machine.`,
-  note: `<strong class="text-gray-900">What we checked, and when.</strong> On 28 October 2026 we read
-          NordicTrack's US product pages for the Commercial 1250, 1750 and 2450 and the T Series 10
-          and 16, including the prices in each page's product data, the delivery options, the
-          30-day trial and return terms, the price-match terms and the iFIT membership terms shown
-          at checkout. The same day we loaded Amazon's listing for the Commercial 1250, which showed
-          its price, list price, seller and delivery date; Amazon would not load for the other
-          models, so their Amazon prices are not quoted, and the T Series 5 price comes from our
-          Amazon check on 13 October 2026. Specifications are those already cross-checked on this
-          site — NordicTrack's own pages against P.C. Richard &amp; Son, Costco or Nebraska
-          Furniture Mart listings for the same model numbers on 13 and 14 October 2026 — and figures
-          that did not agree are left off. Earlier sale prices come from NordicTrack's own Labor Day
-          2025 and Black Friday 2025 sale posts. Prices change, often daily, and Black Friday 2026
-          prices had not been published when this page was written; every "worth buying at" figure
-          is our judgement, not a prediction or a quote. We have not tested these treadmills. We earn
-          a commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

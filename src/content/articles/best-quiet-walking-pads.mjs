@@ -27,23 +27,6 @@ export default {
           or independent coverage gives a real reason to expect less noise, it explains where
           walking-pad noise actually comes from, and it sets out the set-up choices that matter
           more than which pad you buy.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines and have not measured their noise. Each was confirmed on 15 October 2026 as
-          currently sold on the maker's own store, and its specifications were checked on that
-          date against the maker's product page and at least one independent source — a published
-          hands-on review or a second retailer. A figure appears in a product's specification line
-          only where those sources agree; where they did not — on motor ratings, user weight
-          limits, speed ranges and warranty terms — we left the figure out and say so in the text.
-          Any decibel figure on this page is what a listing claims, not a measurement, and is
-          quoted only to show how little such figures can be compared. Prices are those we saw on
-          that date and change often, so confirm the price and specification against the exact
-          listing before you order. The two office treadmills we first carded, the LifeSpan
-          TR1200Pro Glow-Up and the iMovR Unsit, are sold mainly through their makers' own stores
-          rather than on Amazon, so on 9 November 2026 we replaced them with LifeSpan's TX6 and
-          TR5000B Pro+, checked against LifeSpan's store, their Amazon listings, Decathlon and
-          independent reviews of the TR5000 family. The WalkingPad A1 Pro card, not sold on Amazon US, became the
-          WalkingPad Z1R the same day, with the figures checked for our lightweight treadmill guide. We earn a commission if you buy through the Amazon links on
-          this page; it does not change which products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

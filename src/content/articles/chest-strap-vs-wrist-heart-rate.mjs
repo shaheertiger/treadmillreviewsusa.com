@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['chest strap vs wrist heart rate', 'optical heart rate accuracy', 'heart rate arm band', 'cadence lock', 'treadmill heart rate monitor'],
   stickyCta: { text: 'Compare the Sensors', link: '#comparison-table' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
-          and the equipment used with them, and we have not run our own accuracy tests on heart
-          rate sensors. This page explains how the different sensor types work and the
-          trade-offs commonly reported between them; it is not medical, coaching or cardiology
-          advice, and none of these consumer devices is a medical instrument. If you have a heart
-          condition, take medication that affects heart rate, or have been given a heart-rate
-          limit, follow your doctor's or cardiac rehabilitation team's guidance rather than any
-          number on a strap or watch. Chest pain, unusual breathlessness, dizziness or
-          palpitations are reasons to stop the belt and seek advice, whatever the device
-          reads.`,
   lead: `Chest strap or wrist: which heart rate reading should you trust on a treadmill? For
           steady walking and easy running, a well-fitted watch is often close enough. For
           intervals, hill repeats and anything where the effort changes quickly, a chest strap is

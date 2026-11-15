@@ -19,25 +19,6 @@ export default {
   ],
   tags: ['peloton treadmill', 'peloton tread', 'peloton tread vs tread+', 'peloton tread flex', 'peloton tread vision', 'peloton tread recall'],
   stickyCta: { text: 'Compare the Three Treads', link: '#lineup' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          20 October 2026 we checked Peloton's US pages for the Tread Flex, Tread Vision and Tread+
-          Vision (product, shop and specification pages), its membership page, which did not
-          display a membership price when we looked, its refurbished-equipment page, its
-          22 September 2026 launch press release and its fiscal 2026 results. We cross-checked the
-          figures against John Lewis's Tread Vision listing, launch coverage from Pelo Buddy, The
-          Gadgeteer and The Clip Out, and Precor's US site, and we read the US Consumer Product
-          Safety Commission's two 2021 Peloton treadmill recall notices, its 2022 and 2023
-          updates and its January 2023 civil-penalty announcement. Figures on the product cards
-          are ones on which Peloton and at least one independent source agree; where sources, or
-          Peloton's own pages, disagree we say so. We have not tested any Peloton treadmill.
-          Prices are what onepeloton.com showed on the day we checked (20 Oct 2026) and change
-          often. Peloton sells the Tread Flex and Tread+ Vision on its own site rather than on Amazon,
-          so the first card shows the nearest folding class-screen treadmill Amazon sells, the
-          NordicTrack Commercial 2450, with the figures checked for our heavy-duty treadmill guide;
-          Amazon sells no motorised slat-belt treadmill, so the second card shows the nearest Amazon
-          machine to the Tread+ Vision's slat belt and Free Mode, Sole's self-powered C80, with the
-          figures checked for our Sole treadmill guide; the text below still covers the Tread+ Vision
-          itself, which you buy from Peloton. As an Amazon Associate we earn from qualifying purchases.`,
   lead: `Searches for a Peloton treadmill have climbed through 2026, and anyone who last looked a
           year ago will find a different lineup. On 1 October Peloton stopped selling its Cross
           Training Tread and Tread+ directly and replaced them with three machines: the folding

@@ -24,11 +24,6 @@ export default {
           It covers how to judge whatever is on offer when you look: what the model number means,
           what the return policy does and does not do for you, and how Costco compares with the
           other places you could buy the same kind of machine.`,
-  note: `<strong class="text-gray-900">On the details below.</strong> This site is independent and
-          not affiliated with Costco. Membership terms, return rules, delivery options and the
-          treadmills offered change over time and can differ by region and channel. Where this page
-          describes how things typically work, check the current policy on the product page or with
-          the warehouse before you buy.`,
   sections: [
     {
       id: 'short-answer',

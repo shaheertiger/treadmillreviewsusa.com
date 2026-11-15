@@ -24,12 +24,6 @@ export default {
           swings, condensation, dust, damp concrete, shared circuits and, sometimes, a car. None of
           them rules a garage out. All of them need dealing with, and one of them — what your
           manual says about the operating environment — needs checking before anything else.`,
-  note: `<strong class="text-gray-900">Before you commit.</strong> Read the installation and safety
-          sections of your owner's manual. Many treadmill manuals specify indoor use in a
-          climate-controlled environment, and some name garages, porches or outdoor spaces as
-          unsuitable; damage caused by the environment may not be covered. Unplug the treadmill
-          before any cleaning or inspection, never bypass a GFCI outlet, and never exercise in a
-          garage where a vehicle engine is running.`,
   sections: [
     {
       id: 'short-answer',

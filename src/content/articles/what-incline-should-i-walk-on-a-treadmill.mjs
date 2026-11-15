@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['treadmill incline', 'incline walking', 'best incline for walking', '12-3-30', 'incline vs speed'],
   stickyCta: { text: 'Find Your Incline', link: '#incline-by-goal' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This page explains how incline changes the work of walking so you can use
-          the setting sensibly — it is not medical advice or a training prescription. Steep
-          incline walking loads the calves, Achilles tendons and lower back; if you have a history
-          of problems there, a heart or lung condition, or balance issues, check with a doctor or
-          physical therapist before using high grades.
-          <strong class="text-gray-900">On the figures below:</strong> incline ranges and
-          energy-cost comparisons are typical values from standard exercise-science estimation
-          equations, not measurements of any individual.`,
   lead: `Incline is the most under-used button on most home treadmills, and also the one people
           most often misuse — either ignoring it entirely or cranking it to the maximum and
           hanging on to the rails. Used well, it is the simplest way to make walking a genuinely

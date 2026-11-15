@@ -27,27 +27,6 @@ export default {
     'precor treadmill parts',
   ],
   stickyCta: { text: 'Where to Buy Parts', link: '#where-to-buy' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong>
-          On 5 November 2026 we read, where they would load, the parts and support pages of iFIT (NordicTrack
-          and ProForm), Sole, Life Fitness and Precor, those brands’ owner’s manuals, and the catalogues of
-          three independent parts sellers (FitnessRepairParts, Sears PartsDirect and Sportsmith). NordicTrack’s
-          and ProForm’s own parts pages returned “too many requests” errors and iFIT’s returned not found, so
-          what we say about ordering their parts comes from their manuals and support material rather than
-          a live parts store; Life Fitness’s and Sportsmith’s support pages were read through search results.
-          The part prices we quote are one seller’s listed prices for one model on that day, to show the
-          scale of costs, not quotes for your machine. Amazon’s pages would not load for us, so most product
-          cards are generic parts with tagged Amazon searches and no prices; on 9 November 2026 the generic
-          lubricant card was replaced by the Lube-N-Walk kit, with figures and prices as checked for our
-          treadmill accessories guide, and the safety key card links a specific universal key. On the same day the generic walking
-          belt, drive belt and motor brush cards, which could only ever be searches, were replaced with three
-          universal accessories, a mat, a surge protector and a hex key set; the mat and surge protector carry
-          the figures checked for our mat and surge protector guides, and the hex key set’s figures are
-          Amazon’s listing claims. We have not fitted these parts.
-          We searched the CPSC recall database for NordicTrack, ProForm, Sole, Life Fitness and Precor: none
-          has a current treadmill recall (iFIT’s, Life Fitness’s and Precor’s recalls since 2015 are of rowers,
-          dumbbells, a climber and a cable station). Repairs involve mains electricity: unplug the treadmill
-          before opening any cover, and if you are unsure, use a technician. Prices change often. We earn a
-          commission if you buy through the Amazon links on this page; it does not change what we say.`,
   lead: `Treadmill parts are not hard to buy. They are easy to buy wrong. The same model name can cover
           several versions built years apart with different motors, belts and boards, and the only reliable
           way to tell them apart is the model and serial number on the frame. Find that first, and the rest

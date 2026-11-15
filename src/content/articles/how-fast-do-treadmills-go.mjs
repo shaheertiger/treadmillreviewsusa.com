@@ -23,12 +23,6 @@ export default {
           4 to 6 mph, and commercial gym treadmills typically reach 12 to 15 mph. Almost every
           motorized machine starts at around 0.5 mph. For nearly everyone, the top speed is not the
           specification that decides whether a treadmill suits them.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> These are typical speed ranges
-          by machine type, not specifications for any particular model, and individual treadmills
-          fall outside them in both directions. Check the manufacturer's spec sheet for the exact
-          minimum and maximum speed of a machine you are considering. If you are new to exercise or
-          have a health condition, build speed gradually and check with a clinician first — we
-          review equipment and do not give medical advice.`,
   sections: [
     {
       id: 'short-answer',

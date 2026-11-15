@@ -25,23 +25,6 @@ export default {
           equipment? A bench, a pull-up bar, resistance bands, proper flooring, barbell collars and a
           jump rope pass that test for most people. The six picks below are each matched to a job,
           and the guide after them covers what order to buy them in and what to skip entirely.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          accessories, and no figure on this page is our own measurement. Each was confirmed as
-          currently listed for sale on 16 October 2026 on the maker's or seller's own site (REP
-          Fitness and Lock-Jaw), and its key figures were checked on
-          that date against at least one independent source, usually a Garage Gym Reviews test or a
-          second retailer. A figure appears on this page only where the maker and an independent
-          source agree; where they conflicted — on one mat's weight and on resistance figures for
-          individual bands — we left the number out and say so on the card. Rated capacities are the
-          makers' own figures. Every brand and product type was checked against the US Consumer
-          Product Safety Commission's recall database. Prices are those we saw on that date and change
-          often. We earn a commission if you buy through the Amazon links on this page; it does not
-          change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
-          exercise equipment; we are not giving medical, physiotherapy, coaching or nutrition advice.
-          If you have a back, shoulder, joint or heart condition, are pregnant or postpartum, or are
-          returning from injury, talk to a qualified professional before starting or changing a
-          strength programme.`,
   sections: [
     {
       id: 'quick-picks',

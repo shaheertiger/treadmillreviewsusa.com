@@ -25,13 +25,6 @@ export default {
           deck turned out to be worn as well. All three are correct. This page separates them,
           labels every figure as the typical range it is, and walks through the decision that
           matters more than any of them — whether this machine is worth the money at all.`,
-  note: `<strong class="text-gray-900">Unplug before you touch anything.</strong> Every check on
-          this page that involves lifting the belt edge, feeling the deck or looking at the rollers
-          is done with the treadmill unplugged at the wall, not merely switched off. Stop using the
-          machine entirely for a burning smell, a breaker that trips on start-up, speed that surges
-          on its own, or a belt that does not stop when the safety key is pulled. Your manual is
-          the authority on your model; where it disagrees with the general guidance here, follow
-          the manual.`,
   sections: [
     {
       id: 'short-answer',

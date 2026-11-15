@@ -25,16 +25,6 @@ export default {
           the figures that disagree from one source and one model year to the next. This page keeps
           to what NordicTrack itself confirms, shows the conflicting figures openly as conflicting,
           and tells you how to pin them down for the machine you are actually buying.`,
-  note: `<strong class="text-gray-900">What we checked, and what we could not confirm.</strong> On
-          8 October 2026 we checked NordicTrack's product pages for both machines and NordicTrack's
-          syndicated product-content spec sheet for the Commercial 1250 (SKU NTL14125). From those,
-          the confirmed differences are the screen (10 in. tilting on the 1250, 16 in. pivoting on
-          the 1750), the motor warranty (2 years on the 1250, lifetime on the 1750) and the price;
-          the speed range, the incline and decline range, folding and iFIT compatibility are the
-          same on both. The motor ratings, the deck widths and the 1750's maximum user weight
-          conflict across sources and model years, so we list them as unconfirmed and do not state
-          them as fact. We have not tested either machine; none of the figures here are our own
-          measurements.`,
   products: [
     {
       id: 'nordictrack-commercial-1250',

@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['how to stay cool on a treadmill', 'treadmill fan', 'running indoors heat', 'treadmill sweating', 'treadmill room temperature'],
   stickyCta: { text: 'Set Up the Fan', link: '#fans' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
-          and the equipment around them. This is practical set-up advice for keeping a training
-          space and a session cool — it is not medical, coaching or nutrition advice, and we are
-          not qualified to give any of those. How much heat you can safely train in, and how much
-          and what you should drink, depend on your health, medication and history; if you have a
-          heart, kidney or other condition, are pregnant, take medication that affects heat
-          tolerance or fluid balance, or have had a heat illness before, ask a doctor before
-          training in a warm room. <strong class="text-gray-900">On the warning signs below:</strong>
-          they summarise widely published public-health guidance, such as the CDC's, and are not a
-          substitute for it. Heat stroke is a medical emergency — call 911.`,
   lead: `How do you stay cool on a treadmill? Move air across your upper body with a proper fan,
           start in a cool, dry room, wear as little and as light as you comfortably can, keep water
           within reach, and schedule the hard sessions for the coolest part of the day. Those five

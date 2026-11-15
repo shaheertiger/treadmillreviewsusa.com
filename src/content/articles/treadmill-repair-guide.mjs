@@ -25,14 +25,6 @@ export default {
           alone can cost a meaningful fraction of the machine. The expensive mistake is not paying
           for a repair — it is paying for the wrong one, or paying to repair a machine that was
           already worth less than the bill. This guide is about avoiding both.`,
-  note: `<strong class="text-gray-900">Unplug before you open anything.</strong> Every check on
-          this page that involves the motor hood, the belt or the wiring is done with the treadmill
-          unplugged at the wall. Stop using the machine entirely for a burning smell, a breaker that
-          trips on start-up, a belt that surges on its own or a belt that does not stop when the
-          safety key is pulled. Every cost figure here is a labelled estimate — "in the region of"
-          — not a quote; parts prices vary by brand and model, and labour varies by area. Check your
-          warranty document before paying for anything, because a part still under cover is a
-          support call rather than a bill.`,
   sections: [
     {
       id: 'short-answer',

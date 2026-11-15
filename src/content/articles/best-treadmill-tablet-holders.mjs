@@ -26,20 +26,6 @@ export default {
           where you want it and stays there. This page lists five holders whose screen sizes and
           bar diameters we could match between the maker and a major retailer, and explains how to
           choose the spot to mount one, which matters more than the holder itself.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          holders. On 15 October 2026 we checked each one against two sources: the maker's own
-          store (arkon.com) and the Amazon listing for the same model number, confirming that both
-          showed it on sale and comparing every screen range, bar range and price. A figure appears
-          on this page only where those sources agree; where they disagreed or described the fit
-          differently, we left the figure out and say so on the card. Prices are the ones we saw on
-          that date and change often. A holder's published range is a starting point, not a
-          guarantee: measure your bar and your device in its case before ordering. We earn a
-          commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> This site reviews
-          equipment. The notes on screen height and neck position are general set-up guidance,
-          not medical or physiotherapy advice; if you have neck, back or balance problems, talk to
-          a qualified professional about how you should use a treadmill.`,
   sections: [
     {
       id: 'quick-picks',

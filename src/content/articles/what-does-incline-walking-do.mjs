@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['what does incline walking do', 'is incline walking good cardio', 'does incline walking burn fat', 'does incline walking build muscle', 'incline walking benefits'],
   stickyCta: { text: 'See Calories by Incline', link: '#calories' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This page explains, in general terms, what walking on an incline does — it is not
-          medical, physiotherapy, coaching or nutrition advice, and we are not qualified to give
-          any of those. Incline walking raises heart rate and loads the calves, Achilles tendons
-          and lower back; if you have a heart, lung, joint, tendon or back condition, are
-          pregnant, are recovering from injury, or have any concern about exercise, talk to a
-          doctor or physical therapist before starting.
-          <strong class="text-gray-900">On the figures below:</strong> calorie numbers are rounded
-          estimates from standard MET arithmetic, not measurements, and incline ranges are common
-          rules of thumb rather than prescriptions.`,
   lead: `Incline walking has gone from a niche treadmill setting to one of the most-searched ways to
           exercise, largely because it seems to offer something rare: a hard workout that does
           not feel like running. That turns out to be broadly true. Walking uphill makes the

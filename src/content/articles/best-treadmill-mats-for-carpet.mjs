@@ -27,14 +27,6 @@ export default {
           motor and static. If you have a hard floor, our main guide to the
           <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">best treadmill mats</a>
           covers that case.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these mats.
-          Sizes, thicknesses and materials were checked on 6 November 2026 against each mat's Amazon US
-          listing and, where the listing did not give a figure, against the maker's site or at least two
-          retailer listings. Where sources disagreed on a figure we left it out of the specification
-          line. None of these figures are our own measurements. Prices are the Amazon prices we saw on
-          that date; several mats come in more than one size, and prices change often, so check the size
-          and price against the exact listing before ordering. We earn a commission if you buy through the
-          Amazon links on this page; it does not change which products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

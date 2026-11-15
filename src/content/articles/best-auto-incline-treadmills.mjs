@@ -26,16 +26,6 @@ export default {
           is now common on machines from about $400, but what the listings say about it varies a
           great deal — percentages, levels and degrees, often mixed in one title — so this guide pairs
           six picks with a plain explanation of what to look for.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          treadmills. Each was confirmed on 6 November 2026 as currently sold on Amazon US, and the
-          figures on each card come from the Amazon listing's own specification bullets or from the
-          maker's published specifications, several of which earlier guides on this site checked
-          against independent sources. Where the sources disagreed on a figure — most often weight
-          ratings and motor horsepower — we left it off the card and say so in the text. Prices are
-          Amazon's on 6 November 2026 and change often, so confirm the price, specification and
-          warranty on the exact listing before you order. We earn a commission if you buy through
-          the Amazon links on this page; it does not change which products we list or what we say
-          about them.`,
   sections: [
     {
       id: 'quick-picks',

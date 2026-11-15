@@ -19,18 +19,6 @@ export default {
   ],
   tags: ['what are mets on a treadmill', 'what is mets in treadmill', 'treadmill mets', 'met minutes', 'mets to calories'],
   stickyCta: { text: 'See the MET Table', link: '#met-table' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is an explanation of a number on the console, built from published standard
-          equations and simple arithmetic — it is not medical, coaching or nutrition advice, and we
-          are not qualified to give any of those. If you have a heart, lung, metabolic, joint or
-          other condition, are recovering from illness or injury, or have been given a MET or
-          heart-rate limit by a clinician, follow their advice on intensity rather than anything
-          here, and talk to a doctor before starting or stepping up an exercise programme.
-          <strong class="text-gray-900">On the figures below:</strong> MET values are estimates
-          calculated from the ACSM walking and running metabolic equations for an average person at
-          the stated speed and grade; calorie figures are arithmetic from those estimates. They
-          assume hands-free walking or running and an accurate speed and incline display, and real
-          individuals can differ from them meaningfully.`,
   lead: `If your treadmill console shows a figure labelled METs, it is telling you how hard the
           current speed and incline are, expressed as a multiple of the energy a person uses at
           rest. One MET is sitting quietly; three METs is roughly an easy walk; ten METs is a

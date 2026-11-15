@@ -19,14 +19,6 @@ export default {
   ],
   tags: ['walking pad vs folding treadmill', 'folding treadmill or walking pad', 'walking pad or treadmill for small space', 'under desk treadmill vs folding treadmill', '2 in 1 walking pad'],
   stickyCta: { text: 'Compare Side by Side', link: '#side-by-side' },
-  note: `<strong class="text-gray-900">How to read the figures.</strong> The ranges on this
-          page are typical figures for each category, consistent with the ranges used across this
-          site and with published specifications; they are not our own measurements, and
-          individual models fall outside them in both directions. Prices are typical bands, not
-          quotes for any product, and change often. Where a product is named, the figures are the
-          ones given in our roundups, which say where they come from. Nothing here is medical
-          advice: if you are choosing a machine because of a balance, joint, heart or other
-          condition, talk to your doctor or physiotherapist about what suits you.`,
   lead: `People choosing between a walking pad and a folding treadmill are usually short of the
           same thing: floor space. Both machines are sold as the answer, and both can be. But they
           solve the space problem in opposite ways, and the way each one folds decides how long

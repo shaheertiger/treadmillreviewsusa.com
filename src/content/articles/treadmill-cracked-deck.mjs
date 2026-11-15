@@ -28,14 +28,6 @@ export default {
           replacement procedure, see our guide to
           <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">treadmill deck replacement</a>,
           which this page builds on rather than repeats.`,
-  note: `<strong class="text-gray-900">Stop using a treadmill with a cracked deck, and unplug it
-          before you look.</strong> A cracked board can give way under a footstrike, and the belt
-          can catch on a raised edge. Inspect only with the treadmill unplugged at the wall and the
-          safety key removed, and get help to lift or tilt the machine. Stop using it entirely for a
-          burning smell, a breaker that trips, a belt that surges or does not stop when the safety
-          key is pulled, or any crack in the steel frame. Your manual is the authority on your
-          model's deck and its removal. Every cost figure here is a labelled estimate, "in the
-          region of", consistent with our deck replacement and repair guides, not a quote.`,
   sections: [
     {
       id: 'short-answer',

@@ -27,15 +27,6 @@ export default {
           steady your dog by hand while it learns, with you beside it the whole time. This page lists five
           harnesses that suit that job and covers fitting and introduction. For the machines themselves, see
           our guide to the <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">best dog treadmills</a>.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          harnesses. Adjustment points, attachment points, materials and sizes were checked on 6 November
-          2026 against each harness's Amazon US listing. None of these figures are our own measurements, and
-          we have not fitted these harnesses to dogs. Prices are the Amazon prices we saw on that date for the
-          size and colour we checked; they vary by size and change often. This page is general information,
-          not veterinary advice: before starting treadmill work, ask your vet whether it suits your dog's age,
-          breed, weight and health, especially for puppies, older dogs, flat-faced breeds and dogs with joint,
-          heart or breathing problems. We earn a commission if you buy through the Amazon links on this page;
-          it does not change which products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

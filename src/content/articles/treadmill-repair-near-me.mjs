@@ -28,15 +28,6 @@ export default {
           technicians, and what to ask before anyone comes to the house. For the repairs
           themselves and the full cost table, see our
           <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>.`,
-  note: `<strong class="text-gray-900">Unplug before you look, and know when to stop.</strong> Any
-          check on this page that involves the motor hood, the belt or the wiring is done with the
-          treadmill unplugged at the wall. Stop using the machine entirely and book a technician for
-          a burning smell, a breaker that trips on start-up, a belt that surges on its own, or a
-          belt that does not stop when the safety key is pulled. <strong class="text-gray-900">On
-          the figures and brand routes below:</strong> every cost is a labelled typical range, "in
-          the region of", not a quote; labour varies by area and parts by brand. The manufacturer
-          service routes were checked on each brand's own support or terms pages on 14 October
-          2026 and can change. We have not used or tested any repair service named here.`,
   sections: [
     {
       id: 'short-answer',

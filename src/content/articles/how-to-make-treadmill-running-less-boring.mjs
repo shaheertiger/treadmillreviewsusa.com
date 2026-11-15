@@ -19,11 +19,6 @@ export default {
   ],
   tags: ['treadmill boring', 'treadmill motivation', 'make treadmill fun', 'treadmill entertainment', 'treadmill running tips'],
   stickyCta: { text: 'See the Fixes', link: '#structure' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. These are practical suggestions for making sessions more enjoyable — this
-          site reviews equipment and does not give medical or coaching advice. If you have a heart
-          condition or any health concern about exercising, check with a doctor before raising your
-          intensity, and keep the safety key clipped on whatever you are watching.`,
   lead: `Almost everyone who owns a treadmill has had the experience: a run that would fly by
           outdoors feels endless indoors, and the clock seems to slow down the more you look at
           it. That is not a character flaw. There are real reasons a treadmill run feels longer,

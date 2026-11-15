@@ -23,11 +23,6 @@ export default {
           white glove — and the difference between them is who carries a very heavy crate the last
           fifty feet. Choosing the right one is mostly a question of stairs, helpers and building
           rules, and it is worth settling before you order rather than on the doorstep.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Delivery prices on this page are
-          typical US ranges as of late 2026, not quotes from any seller or carrier. Delivery
-          services are named inconsistently, priced differently by region, and often bundled or
-          discounted during promotions. Read exactly what the tier on your order includes, in
-          writing, before you pay for it.`,
   sections: [
     {
       id: 'short-answer',

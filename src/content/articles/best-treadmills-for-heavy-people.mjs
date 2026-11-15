@@ -22,13 +22,6 @@ export default {
           the manufacturer will honour the warranty up to that figure. Those are different
           claims, and the gap between them is where most disappointing purchases in this
           category happen.`,
-  note: `<strong class="text-gray-900">On the numbers below.</strong> Capacities, roller
-          diameters and motor ratings are manufacturers' published figures. Weight capacity in
-          particular is a warranty term set by the manufacturer rather than a measured
-          engineering limit, and it varies between model years under the same product name.
-          Confirm it for the exact unit you are buying, in writing, before ordering. We have not
-          tested these machines; what we say about how they behave under load is inferred from
-          those published specifications, not from our own measurements.`,
   sections: [
     {
       id: 'capacity-myth',

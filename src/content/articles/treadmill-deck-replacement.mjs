@@ -25,13 +25,6 @@ export default {
           deck is the usual culprit. Many decks can be flipped once to present a fresh face; the
           rest need replacing. This page explains how to tell which you have, what the job
           involves, and whether it is worth doing on your machine.`,
-  note: `<strong class="text-gray-900">Unplug before you touch anything, and get help to lift.</strong>
-          Every inspection and every step described here is done with the treadmill unplugged at
-          the wall. A deck is a large, heavy, awkward board and removing it means partly dismantling
-          the machine; treat it as a two-person job. Stop using the treadmill entirely for a
-          burning smell, a breaker that trips on start-up, speed that surges on its own, or a belt
-          that does not stop when the safety key is pulled. Your manual is the authority on your
-          model: it says whether the deck is reversible and in what order the parts come off.`,
   sections: [
     {
       id: 'short-answer',
