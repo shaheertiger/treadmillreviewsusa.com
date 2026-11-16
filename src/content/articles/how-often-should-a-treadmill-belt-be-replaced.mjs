@@ -223,7 +223,7 @@ export default {
           <p>
             Whichever route, the last step matters most: set tension with the lift test and then
             check tracking on a slow unloaded run. Our
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">tension guide</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">tension guide</a>
             and <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring guide</a>
             cover both.
           </p>`,

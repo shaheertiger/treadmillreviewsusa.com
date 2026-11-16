@@ -304,7 +304,7 @@ export default {
             <li><strong>Check the basics first.</strong> Our
             <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
             covers the checks a support agent will ask about anyway — safety key, outlet, breaker,
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>.</li>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>.</li>
             <li><strong>Gather the paperwork:</strong> serial number, model, proof of purchase and
             date, and your maintenance notes.</li>
             <li><strong>Contact the manufacturer,</strong> not the retailer, unless you are still
@@ -426,7 +426,7 @@ export default {
     `<strong class="text-white">Extended cover is rarely worth it on budget machines</strong> and
             only sometimes on mid-range ones. Regular maintenance prevents the same failures for far
             less — our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#5AA9FF] font-bold no-underline">maintenance checklist</a>
+            <a href="/treadmill-maintenance/" class="text-[#5AA9FF] font-bold no-underline">maintenance checklist</a>
             is the cheaper insurance.`,
   ],
 };

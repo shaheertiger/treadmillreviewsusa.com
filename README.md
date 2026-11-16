@@ -138,6 +138,60 @@ Ecosia, Copilot), so the on-page rules follow what Bing rewards. `npm run build 
 - **Bing Webmaster Tools**: set `PUBLIC_BING_SITE_VERIFICATION` in Vercel to the `msvalidate.01` code
   to add the tag to every page, unless the site is verified by DNS. Submit `/sitemap-index.xml` there.
 
+## One URL per search (2026-11-16)
+
+Applied from the ranking method (`research/` holds the inputs; the method itself was supplied as a
+document). Google picks one URL per search, and several pages here competed for the same query, so
+each group was merged into one page and the rest **301-redirected** in `vercel.json` (`redirects`,
+three entries per URL: with and without the slash, and the `.md` copy). Every internal link, hub
+entry, sitemap priority and interlink anchor now points straight at the kept URL.
+
+| Redirected | Now served by | What moved across |
+|---|---|---|
+| `/best-treadmill-for-home-reviews/`, `/home-treadmills/` | `/best-treadmills-for-home/` | The seven-machine home roundup moved to the kept URL; "Which type of home buyer are you?" table; the Sole F80 / iFIT answer as an FAQ. The Commercial 1750 card now uses the NTL17125 figures from its own review. |
+| `/best-folding-treadmill-reviews/` | `/best-folding-treadmills/` | The seven-machine folding roundup moved to the kept URL. |
+| `/black-friday-treadmill-deals-2026/` | `/treadmill-black-friday-deals/` | The seven-machine watch list, dates, target prices and Amazon notes, on top of the deal-judging method. |
+| `/treadmill-buyers-guide/` | `/treadmill-buying-guide-2026/` | The eight-step purchase checklist and the showroom test-drive checks. |
+| `/portable-treadmills/`, `/best-lightweight-treadmills/` | `/best-portable-treadmills/` | What counts as portable, what it gives up, the five lightest machines and how to read listed weights. |
+| `/treadmill-maintenance-checklist/` | `/treadmill-maintenance/` | Extra schedule rows (cord and bolts, safety key and incline, deck and rollers) and record-keeping. |
+| `/how-tight-should-treadmill-belt-be/` | `/how-to-adjust-treadmill-belt/` | Retitled "How to Tighten a Treadmill Belt"; the lift test is its "How tight should it be?" section. |
+| `/nordictrack-new-commercial-1750-treadmill/` | `/nordictrack-commercial-1750-treadmill/` | The 1750 review already covered the refresh; its section is now "The 2026 Refresh: What Changed". |
+
+Kept but split cleanly: `/treadmill-troubleshooting/` (diagnosis by symptom) and
+`/treadmill-repair-guide/` (parts, costs, calling a tech); `/folding-treadmills/` is now "How Do
+Folding Treadmills Work?"; `/what-treadmill-should-i-buy/` stays as the pick-by-use page;
+`/best-treadmills/` is the category hub and links to every category roundup.
+
+**Before adding a page, check no page already targets the search.** If one does, improve it instead.
+
+### Template fingerprint
+
+Generated pages no longer share one block of boilerplate word for word. `pageType()` in
+`scripts/build-articles.mjs` (roundup, review, brand, compare, price, fix, maintenance, training,
+guide) picks the byline **method line** ("Based on manufacturer manuals…", "Not tested hands-on"),
+the **disclosure** (pages with no affiliate links now say so instead of claiming commission), the
+contents label, the closing heading ("Our verdict", "The fix, in short", "Which one to buy"…) and a
+rotation of the mistakes heading. The site-wide "Buy the right treadmill once." band is gone. The
+format audit now checks these blocks by structure, not by their old fixed wording.
+
+### Honest headings
+
+Spec-only model reviews no longer use testing language in headings: "Performance Deep Dive",
+"Assembly and Setup" and "Long-Term Durability Notes" became "What the Specs Mean for Running",
+"What Assembly Involves (per the Manual)" and "What Owners Report After a Year". Hub cards that said
+"tested over six months", "measured" or "Noise tested" were reworded to what the pages contain.
+
+### Original charts
+
+`public/charts/` holds SVG charts drawn from each page's own table or arithmetic (pace by mph,
+incline percent to degrees, electricity cost, belt length by height, footprint by type), embedded
+with descriptive alt text. Regenerate them if the underlying table changes.
+
+### Not done, deliberately
+
+Off-topic pruning (method §1b) was **not** applied: the home-gym pages stay indexed by the owner's
+decision. `/sole-f80-treadmill/` stays a draft until its specification conflicts are resolved.
+
 ## Information architecture
 
 Nine section hubs sit above the article pages and group them by the decision a reader is
@@ -165,7 +219,7 @@ is derived in `astro.config.mjs` from the subdirectories of `src/pages`, so it c
 
 All 66 article pages are reachable from a hub, and `npm run validate:ia` fails the build if one
 is not. Each article sits in exactly one topical hub, with three deliberate exceptions:
-`/tools/` also points at `/home-treadmills/`, `/treadmill-dimensions-space-requirements/` and
+`/tools/` also points at `/what-treadmill-should-i-buy/`, `/treadmill-dimensions-space-requirements/` and
 `/treadmill-electricity-usage/` as the interim answers to its three planned calculators. The
 validator prints those three so the list stays intentional.
 
@@ -192,9 +246,12 @@ and are held to the same three build gates.
 
 Flagship long-form review pages (2,500+ words each, tested via `npm run validate:words`):
 
-- `/best-treadmill-for-home-reviews`
-- `/best-folding-treadmill-reviews`
+- `/best-treadmills-for-home` (absorbed `/best-treadmill-for-home-reviews` and `/home-treadmills` on 2026-11-16)
+- `/best-folding-treadmills` (absorbed `/best-folding-treadmill-reviews` on 2026-11-16)
 - `/best-treadmill-under-1000-reviews`
+
+Sections below describe pages as they were written; the merges in "One URL per search" further
+down supersede any mention of a redirected URL.
 
 Long-form blog/editorial pages (also 2,500+ words, same validator):
 

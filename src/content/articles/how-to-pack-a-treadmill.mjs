@@ -487,7 +487,7 @@ export default {
           <p>
             When the treadmill comes out of storage, check it before using it: look for damp or
             corrosion on the deck and the electronics, lubricate the deck if the manual calls for
-            it, check <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> and tracking, and run it slowly with nobody on it before you
+            it, check <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> and tracking, and run it slowly with nobody on it before you
             step on.
           </p>`,
     },

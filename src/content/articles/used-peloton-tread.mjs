@@ -377,7 +377,7 @@ export default {
             the market, which should push asking prices down; the August sale figure predates it. And
             Peloton was offering to match a better Tread Flex offer on its own site for purchases from 1
             to 11 November, so check the new price on the day you negotiate. Our
-            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a>
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a>
             page tracks the new market through November.
           </p>`,
     },

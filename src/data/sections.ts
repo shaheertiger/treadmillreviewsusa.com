@@ -53,7 +53,7 @@ export const SECTIONS: Section[] = [
     tagline: 'Ranked picks for a specific person, room and running style.',
     title: 'Best Treadmills by Use Case (2026)',
     metaDescription:
-      'Every Treadmill Reviews USA roundup, grouped by who the machine is for — home, folding, walking, incline and low-impact picks, all independently tested.',
+      'Every Treadmill Reviews USA roundup, grouped by who the machine is for — home, folding, walking, incline and low-impact picks, checked against published specs.',
     heading: 'Best treadmills, sorted by',
     highlight: 'who is using them',
     standfirst:
@@ -61,7 +61,7 @@ export const SECTIONS: Section[] = [
     intro: [
       'Most treadmill rankings answer a question nobody asks: which machine is best in the abstract. In practice the constraint is almost never quality — it is a ceiling height, a stride length, a neighbour below, or a budget that will not move. Every guide in this section starts from one of those constraints and works back to the hardware.',
       'That is also why the same machine appears near the top of one list and not at all in another. The NordicTrack Commercial 1750 is our default recommendation for a dedicated home gym and a poor suggestion for a shared flat, because the thing that makes it good — a heavy deck on a rigid frame — is exactly what carries impact into the floor below.',
-      'Each guide states the conditions it was tested under. Where a pick depends on a measurement you can take at home, such as belt length against your stride or clearance behind the deck, the guide says what to measure before you compare models at all.',
+      'Each guide states what its picks were checked against. Where a pick depends on a measurement you can take at home, such as belt length against your stride or clearance behind the deck, the guide says what to measure before you compare models at all.',
     ],
     groups: [
       {
@@ -74,24 +74,11 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills/',
           },
           {
-            title: 'Best Treadmills for Home Use',
-            description:
-              'Seven premium and mid-range machines tested over six months for motor strength, cushioning and connectivity.',
-            badge: 'Flagship guide',
-            url: '/best-treadmill-for-home-reviews/',
-          },
-          {
             title: 'Best Treadmills for Home',
             description:
-              'A focused home-treadmill comparison, including a direct answer on the Sole F80 and iFit.',
-            badge: 'Roundup',
+              'Seven home treadmills ranked on motor, deck, incline and warranty, and which type of home buyer you are.',
+            badge: 'Flagship guide',
             url: '/best-treadmills-for-home/',
-          },
-          {
-            title: 'Home Treadmills: Which Buyer Are You?',
-            description: 'A routing guide that sends you to the right specialised guide for your situation.',
-            badge: 'Router',
-            url: '/home-treadmills/',
           },
           {
             title: 'Best Non-Folding Treadmills',
@@ -122,7 +109,7 @@ export const SECTIONS: Section[] = [
           {
             title: 'Best Treadmills for Tall Runners',
             description:
-              'Usable deck length measured rather than quoted, plus the ceiling height nobody checks before buying.',
+              'Usable deck length, not just the quoted belt size, plus the ceiling height nobody checks before buying.',
             badge: 'Over 6 ft',
             url: '/best-treadmills-for-tall-runners/',
           },
@@ -159,16 +146,10 @@ export const SECTIONS: Section[] = [
         name: 'Folding & small spaces',
         pages: [
           {
-            title: 'Best Folding Treadmills',
+            title: 'Best Compact Folding Treadmills',
             description:
-              'Space-saving picks tested for real folded footprint, fold time and hinge durability.',
+              'Seven folding treadmills ranked on fold design, deck size and warranty, from ultra-compact to full-size.',
             badge: 'Flagship guide',
-            url: '/best-folding-treadmill-reviews/',
-          },
-          {
-            title: 'Best Folding Treadmills by Use Case',
-            description: 'Fast picks for apartments, tall runners, tight budgets and families.',
-            badge: 'Roundup',
             url: '/best-folding-treadmills/',
           },
           {
@@ -180,8 +161,8 @@ export const SECTIONS: Section[] = [
           {
             title: 'Quiet Treadmills for Apartments',
             description:
-              'Measured beside the deck and in the room below — the two rankings did not match.',
-            badge: 'Noise tested',
+              'Airborne versus structure-borne noise, and why the quietest deck is not always the quietest room below.',
+            badge: 'Noise',
             url: '/quiet-treadmills/',
           },
           {
@@ -194,34 +175,21 @@ export const SECTIONS: Section[] = [
           {
             title: 'Best Treadmills for Small Spaces',
             description:
-              'Folded footprints measured at the widest point, and why fold effort decides this rather than fold size.',
+              'Folded footprints at the widest point, and why fold effort decides this rather than fold size.',
             badge: 'Compact',
             url: '/best-treadmills-for-small-spaces/',
           },
           {
-            title: "Best Lightweight Treadmills",
-            description: "Five folding treadmills from 44 to 66 lb, each with a weight stated by the listing or maker.",
-            badge: "Lightweight",
-            url: '/best-lightweight-treadmills/',
+            title: "Best Portable and Lightweight Treadmills",
+            description: "Six portable treadmills sorted by unit weight, the five lightest under 70 lb, and what portability gives up.",
+            badge: "Portable",
+            url: '/best-portable-treadmills/',
           },
           {
             title: "Best Treadmills for Low Ceilings",
             description: "Low-deck treadmills from 2.76 in. and the step-up + height + clearance maths for basements.",
             badge: "Low Ceilings",
             url: '/best-treadmills-for-low-ceilings/',
-          },
-          {
-            title: 'Portable Treadmills',
-            description:
-              'Walking pads, folding treadmills on wheels and manual machines: weights, trade-offs, storage and moving.',
-            badge: 'Portable',
-            url: '/portable-treadmills/',
-          },
-          {
-            title: 'Best Portable Treadmills',
-            description: 'Six portable treadmills sorted by checked unit weight, from a 43 lb pad to a 182 lb folder.',
-            badge: 'Portable',
-            url: '/best-portable-treadmills/',
           },
           {
             title: 'Best Low-Profile Treadmills',
@@ -245,7 +213,7 @@ export const SECTIONS: Section[] = [
           {
             title: 'Best Walking Treadmills',
             description:
-              'Six machines tested for eight weeks at 2.5–4 mph — the speeds most treadmills are actually used at.',
+              'Six machines judged at 2.5–4 mph, the speeds most treadmills are actually used at.',
             badge: 'Pillar guide',
             url: '/best-walking-treadmills/',
           },
@@ -272,7 +240,7 @@ export const SECTIONS: Section[] = [
           {
             title: 'Best Treadmills for Bad Knees',
             description:
-              'Deck give and rebound measured. The softest deck is not the kindest — incline is the real tool.',
+              'Deck give and rebound explained. The softest deck is not the kindest — incline is the real tool.',
             badge: 'Low impact',
             url: '/best-treadmills-for-bad-knees/',
           },
@@ -684,9 +652,9 @@ export const SECTIONS: Section[] = [
             url: '/buying-a-treadmill-at-costco/',
           },
           {
-            title: 'Treadmill Black Friday Deals',
+            title: 'Treadmill Black Friday Deals 2026',
             description:
-              'Spot inflated list prices, bundled subscriptions and delivery fees, and run every deal through a checklist.',
+              'Seven treadmills worth watching with our target prices, and how to spot inflated list prices and bundles.',
             badge: 'Deals',
             url: '/treadmill-black-friday-deals/',
           },
@@ -884,7 +852,7 @@ export const SECTIONS: Section[] = [
             description:
               'The treadmills worth watching this Black Friday in every tier, what each normally sells for, and the price we would wait for.',
             badge: 'Start here',
-            url: '/black-friday-treadmill-deals-2026/',
+            url: '/treadmill-black-friday-deals/',
           },
           {
             title: 'Cyber Monday Treadmill Deals 2026',
@@ -1343,12 +1311,6 @@ export const SECTIONS: Section[] = [
             description: 'Our pick for most home users who want commercial-grade durability.',
             badge: 'Top pick',
             url: '/nordictrack-commercial-1750-treadmill/',
-          },
-          {
-            title: 'NordicTrack New Commercial 1750',
-            description: 'What changed in the current model-year refresh.',
-            badge: 'Review',
-            url: '/nordictrack-new-commercial-1750-treadmill/',
           },
           {
             title: 'NordicTrack Commercial 2450',
@@ -2049,12 +2011,6 @@ export const SECTIONS: Section[] = [
             description: 'A decision table: from how you’ll use it to the type, minimum specs and roundup.',
             badge: 'Decision',
             url: '/what-treadmill-should-i-buy/',
-          },
-          {
-            title: 'Treadmill Buyer’s Purchase Checklist',
-            description: 'A step-by-step, eight-stage checklist from budget to long-term ownership.',
-            badge: 'Checklist',
-            url: '/treadmill-buyers-guide/',
           },
           {
             title: 'Treadmill Reviews 2026',
@@ -2758,13 +2714,6 @@ export const SECTIONS: Section[] = [
             badge: 'Pillar guide',
             url: '/treadmill-maintenance/',
           },
-          {
-            title: 'Treadmill Maintenance Checklist',
-            description:
-              'Every task organised by interval — after each session, monthly, every 40-50 hours, annually.',
-            badge: 'Checklist',
-            url: '/treadmill-maintenance-checklist/',
-          },
         ],
       },
       {
@@ -2828,16 +2777,9 @@ export const SECTIONS: Section[] = [
             url: '/how-to-center-treadmill-belt/',
           },
           {
-            title: 'How Tight Should a Treadmill Belt Be?',
-            description: 'The two-to-three-inch lift test, and why over-tightening costs motors and bearings.',
+            title: 'How to Tighten a Treadmill Belt',
+            description: 'Quarter turns on the rear bolts, the two-to-three-inch lift test, and why over-tightening costs motors.',
             badge: 'Adjustment',
-            url: '/how-tight-should-treadmill-belt-be/',
-          },
-          {
-            title: 'How to Adjust a Treadmill Belt',
-            description:
-              'Tension vs. tracking, the quarter-turn method on the rear bolts, and when tightening is the wrong fix.',
-            badge: 'How-to',
             url: '/how-to-adjust-treadmill-belt/',
           },
         ],
@@ -4026,7 +3968,7 @@ export const SECTIONS: Section[] = [
             description:
               'The routing guide that narrows the field by budget, room, stride and how you will actually use it.',
             badge: 'Selector → guide',
-            url: '/home-treadmills/',
+            url: '/what-treadmill-should-i-buy/',
           },
         ],
       },

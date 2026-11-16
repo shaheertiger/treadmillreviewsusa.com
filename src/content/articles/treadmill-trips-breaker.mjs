@@ -299,7 +299,7 @@ export default {
             <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
             covers the procedure. Check that the belt is not over-tightened, since an over-tight
             belt adds load in the same way; the
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">belt tension guide</a>
             covers the check. Then vacuum the motor compartment with the machine unplugged, because
             a motor smothered in dust runs hotter and less efficiently.
           </p>

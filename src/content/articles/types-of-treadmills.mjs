@@ -405,7 +405,7 @@ export default {
             sets out the numbers, and the
             <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a>
             covers motor, deck, cushioning and warranty once you know the type. If you are still
-            undecided, the <a href="/portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills</a>
+            undecided, the <a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills</a>
             guide compares the space-saving types side by side.
           </p>
           <p>

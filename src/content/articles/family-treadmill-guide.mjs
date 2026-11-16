@@ -220,7 +220,7 @@ export default {
       id: 'durability',
       heading: 'Durability and Maintenance Under Shared Use',
       html: `          <p>
-            More users means more hours, and more hours means the <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a> arrives
+            More users means more hours, and more hours means the <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a> arrives
             sooner. Most manufacturers tie belt lubrication to hours of use, typically every 40 to 50
             hours on decks that need it. One person walking half an hour a day reaches that every few
             months; a household of runners can reach it in a few weeks. Belt tension and tracking

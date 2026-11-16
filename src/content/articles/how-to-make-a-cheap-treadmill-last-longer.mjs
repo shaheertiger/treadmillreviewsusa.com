@@ -228,7 +228,7 @@ export default {
             <strong>Adjust in small, equal steps.</strong> Most budget machines have two hex bolts at the
             rear roller. Turn both by the same amount — a quarter-turn at a time — with the machine
             unplugged between checks, then run it slowly to test. Our guide to
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
             explains the lift test most manuals describe.
           </p>
           <p>

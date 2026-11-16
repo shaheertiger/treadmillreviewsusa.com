@@ -1,8 +1,7 @@
 export default {
   slug: 'how-much-does-a-treadmill-cost',
   title: 'How Much Does a Treadmill Cost? (2026): Prices by Type and Tier',
-  description:
-    'Treadmills run from about $200 for a walking pad to $10,000+ for a gym machine. Here is what each price tier buys, the hidden costs, and what used ones go for.',
+  description: `Treadmills run from about $200 for a walking pad to $10,000+ for a gym machine. Here is what each price tier buys, the hidden costs, and what used ones go for.`,
   crumbLabel: 'How Much Does a Treadmill Cost?',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
@@ -11,13 +10,18 @@ export default {
   published: '2026-10-06',
   socialProof: '2.1k',
   h1: ['How Much Does', 'a Treadmill Cost?'],
-  standfirst:
-    'Anywhere from about $200 to well over $10,000, which is not a useful answer until you know what the money buys at each step. Here are the tiers, what changes between them, and the costs that arrive after checkout.',
+  standfirst: `Anywhere from about $200 to well over $10,000, which is not a useful answer until you know what the money buys at each step. Here are the tiers, what changes between them, and the costs that arrive after checkout.`,
   ctas: [
     { label: 'Prices by Tier', href: '#price-tiers' },
     { label: 'The Hidden Costs', href: '#hidden-costs' },
   ],
-  tags: ['treadmill cost', 'treadmill prices', 'how much is a treadmill', 'running machine cost', 'peloton treadmill price'],
+  tags: [
+    'treadmill cost',
+    'treadmill prices',
+    'how much is a treadmill',
+    'running machine cost',
+    'peloton treadmill price',
+  ],
   stickyCta: { text: 'See Prices by Tier', link: '#price-tiers' },
   lead: `A new home treadmill typically costs between about $400 and $2,000, with walking pads below
           that range and premium and commercial machines well above it. The spread is wide because
@@ -135,7 +139,9 @@ export default {
             <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
             covers what separates the good ones, and
             <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs. treadmill</a>
-            covers when a pad stops being enough.
+            covers when a pad stops being enough. If you want a slope as well, compare the
+            <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pad with incline</a>
+            options, which range from fixed-incline decks to powered incline.
           </p>`,
     },
     {
@@ -183,7 +189,9 @@ export default {
             the house, this is usually the tier to start in. Our guide to the
             <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">best treadmills under $1,000</a>
             covers the machines at the bottom edge of this band, which is where the best value
-            usually sits.
+            usually sits, and our ranking of the
+            <a href="/best-treadmills-for-home/" class="text-[#0F62FE] font-medium">best treadmill for home</a>
+            use is drawn mostly from this tier.
           </p>`,
     },
     {
@@ -391,91 +399,91 @@ export default {
   ],
   products: [
     {
-      id: "walkingpad-z1r",
-      name: "WalkingPad Z1R",
-      category: "Best Pick: Walking Pad ($200–$700)",
-      badge: "Walking Pad Tier",
-      priceRange: "About $359 (Amazon, 6 Nov 2026)",
-      specs: "57.7 lb net (WalkingPad) · 47.6 x 15.7 in. walking area · 1–5 mph · 242 lb capacity · removable handle · folds in half",
+      id: 'walkingpad-z1r',
+      name: 'WalkingPad Z1R',
+      category: 'Best Pick: Walking Pad ($200–$700)',
+      badge: 'Walking Pad Tier',
+      priceRange: 'About $359 (Amazon, 6 Nov 2026)',
+      specs: `57.7 lb net (WalkingPad) · 47.6 x 15.7 in. walking area · 1–5 mph · 242 lb capacity · removable handle · folds in half`,
       pros: [
-        "A 47.6-inch walking area, long enough for a natural stride at a brisk walk",
-        "Folds 180 degrees, so it stores in half the length of a flat pad",
-        "A removable handle for steadier walking, and a 5 mph top speed for a brisk walk or light jog",
-        "Capacity and speed agree between the Amazon listing and WalkingPad’s site",
+        'A 47.6-inch walking area, long enough for a natural stride at a brisk walk',
+        'Folds 180 degrees, so it stores in half the length of a flat pad',
+        `A removable handle for steadier walking, and a 5 mph top speed for a brisk walk or light jog`,
+        'Capacity and speed agree between the Amazon listing and WalkingPad’s site',
       ],
       cons: [
-        "WalkingPad’s own pages give two different motor ratings, so we have not printed one",
-        "A 242 lb limit leaves little margin for heavier walkers",
-        "No incline",
+        'WalkingPad’s own pages give two different motor ratings, so we have not printed one',
+        'A 242 lb limit leaves little margin for heavier walkers',
+        'No incline',
       ],
-      bottomLine: "The walking pad to buy if you want one machine that suits most people and most rooms: a long belt, a handle when you want it and a fold that makes it easy to put away.",
-      description: "WalkingPad’s A1 Pro, long the reference folding pad, could not be matched to a current Amazon US listing, so the walking-pad pick is its fold-in-half sibling that Amazon does sell, at the middle of the $200 to $700 walking-pad tier. The Z1R is WalkingPad’s Z1 with a handle. WalkingPad’s product page gives a net weight of 57.7 lb, a 47.6 by 15.7-inch walking area and a 242 lb maximum user weight, and the Amazon listing gives the same capacity, a speed range of 1 to 5 mph from a brushless motor, an eight-layer belt, a 180-degree fold and a handle bar that installs or comes off in seconds. A belt of nearly 48 inches is long for a pad, enough for a natural walking stride for most people and an easy jog at the top of the speed range. Folded in half, it slides under a bed. The figure we have not printed is the motor: WalkingPad’s specification table lists 0.75 HP while its marketing copy says 1.5 HP. There is no incline, and the 242 lb limit is lower than the A1 Pro’s 300 lb. Amazon showed it at $359.00 on 6 November 2026.",
+      bottomLine: `The walking pad to buy if you want one machine that suits most people and most rooms: a long belt, a handle when you want it and a fold that makes it easy to put away.`,
+      description: `WalkingPad’s A1 Pro, long the reference folding pad, could not be matched to a current Amazon US listing, so the walking-pad pick is its fold-in-half sibling that Amazon does sell, at the middle of the $200 to $700 walking-pad tier. The Z1R is WalkingPad’s Z1 with a handle. WalkingPad’s product page gives a net weight of 57.7 lb, a 47.6 by 15.7-inch walking area and a 242 lb maximum user weight, and the Amazon listing gives the same capacity, a speed range of 1 to 5 mph from a brushless motor, an eight-layer belt, a 180-degree fold and a handle bar that installs or comes off in seconds. A belt of nearly 48 inches is long for a pad, enough for a natural walking stride for most people and an easy jog at the top of the speed range. Folded in half, it slides under a bed. The figure we have not printed is the motor: WalkingPad’s specification table lists 0.75 HP while its marketing copy says 1.5 HP. There is no incline, and the 242 lb limit is lower than the A1 Pro’s 300 lb. Amazon showed it at $359.00 on 6 November 2026.`,
     },
     {
-      id: "horizon-t202",
-      name: "Horizon T202",
-      category: "Best Pick: Budget Full-Size ($400–$1,000)",
-      badge: "Budget Tier",
-      amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+T202+Treadmill&tag=sktiger-20",
-      priceRange: "Around $899",
-      specs: "20 x 60 in. deck · 0.5–12 mph · 0–12% incline · 325 lb capacity · hydraulic fold",
+      id: 'horizon-t202',
+      name: 'Horizon T202',
+      category: 'Best Pick: Budget Full-Size ($400–$1,000)',
+      badge: 'Budget Tier',
+      amazonUrl: 'https://www.amazon.com/s?k=Horizon+Fitness+T202+Treadmill&tag=sktiger-20',
+      priceRange: 'Around $899',
+      specs: '20 x 60 in. deck · 0.5–12 mph · 0–12% incline · 325 lb capacity · hydraulic fold',
       pros: [
-        "A full 60-inch deck and 12 mph top speed, which most machines under $1,000 do not offer",
-        "Lifetime frame and motor warranty from Horizon",
-        "Horizon and two independent reviews agree on the deck, speed, incline, capacity and 187 lb weight",
-        "Hand-grip dial controls and Bluetooth speakers, with no subscription needed"
+        'A full 60-inch deck and 12 mph top speed, which most machines under $1,000 do not offer',
+        'Lifetime frame and motor warranty from Horizon',
+        `Horizon and two independent reviews agree on the deck, speed, incline, capacity and 187 lb weight`,
+        'Hand-grip dial controls and Bluetooth speakers, with no subscription needed',
       ],
       cons: [
-        "Only one year on parts and one year on labour once the frame and motor are set aside",
-        "Horizon does not publish a motor rating; the figure reviewers quote is not the maker’s",
-        "Incline stops at 12%, and the console is a small LCD with LED windows"
+        'Only one year on parts and one year on labour once the frame and motor are set aside',
+        'Horizon does not publish a motor rating; the figure reviewers quote is not the maker’s',
+        'Incline stops at 12%, and the console is a small LCD with LED windows',
       ],
-      bottomLine: "The best everyday-price treadmill under $1,000 for walking, jogging and some running. Buy the Bowflex T6 instead if it is on sale at the same price.",
-      description: "The T202 is what a budget treadmill should be: a full-size deck, a sensible top speed and a frame warranty you will not outgrow, at a price that does not need a sale to reach. Horizon lists a 20 by 60-inch three-zone cushioned deck, 0.5 to 12 mph, 0 to 12% powered incline, a 325 lb maximum user weight, hydraulic folding and a machine weight of 187 lb, and two independent reviews agree on each. That 60-inch deck is the important figure: it is the length most runners need, where the cheaper T101 has a 55-inch deck. Horizon’s warranty is lifetime on the frame and motor and one year on parts and labour, and the short parts cover is the main reason to look at the Bowflex T6 when it is discounted. Horizon does not publish a motor rating, and its page says the machine is not compatible with GFCI outlets. Horizon had it in stock at $899 on 15 October, against a $1,299 compare-at price."
+      bottomLine: `The best everyday-price treadmill under $1,000 for walking, jogging and some running. Buy the Bowflex T6 instead if it is on sale at the same price.`,
+      description: `The T202 is what a budget treadmill should be: a full-size deck, a sensible top speed and a frame warranty you will not outgrow, at a price that does not need a sale to reach. Horizon lists a 20 by 60-inch three-zone cushioned deck, 0.5 to 12 mph, 0 to 12% powered incline, a 325 lb maximum user weight, hydraulic folding and a machine weight of 187 lb, and two independent reviews agree on each. That 60-inch deck is the important figure: it is the length most runners need, where the cheaper T101 has a 55-inch deck. Horizon’s warranty is lifetime on the frame and motor and one year on parts and labour, and the short parts cover is the main reason to look at the Bowflex T6 when it is discounted. Horizon does not publish a motor rating, and its page says the machine is not compatible with GFCI outlets. Horizon had it in stock at $899 on 15 October, against a $1,299 compare-at price.`,
     },
     {
-      id: "sole-f63",
-      name: "SOLE F63",
-      category: "Best Pick: Mid-Range ($1,000–$2,000)",
-      badge: "Mid-Range Tier",
-      amazonUrl: "https://www.amazon.com/s?k=SOLE+F63+Treadmill&tag=sktiger-20",
-      reviewUrl: "/sole-f63-treadmill/",
-      priceRange: "$1,100–$1,200",
-      specs: "20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 325 lb capacity · folds",
+      id: 'sole-f63',
+      name: 'SOLE F63',
+      category: 'Best Pick: Mid-Range ($1,000–$2,000)',
+      badge: 'Mid-Range Tier',
+      amazonUrl: 'https://www.amazon.com/s?k=SOLE+F63+Treadmill&tag=sktiger-20',
+      reviewUrl: '/sole-f63-treadmill/',
+      priceRange: '$1,100–$1,200',
+      specs: '20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 325 lb capacity · folds',
       pros: [
-        "The same core figures as the Horizon 7.0 AT at a similar price",
-        "Lifetime frame and motor warranty, two years on parts",
-        "No monthly subscription; SOLE’s app is free",
-        "SOLE and an independent review agree on deck, speed, incline, capacity and warranty"
+        'The same core figures as the Horizon 7.0 AT at a similar price',
+        'Lifetime frame and motor warranty, two years on parts',
+        'No monthly subscription; SOLE’s app is free',
+        'SOLE and an independent review agree on deck, speed, incline, capacity and warranty',
       ],
       cons: [
-        "Two years on parts is a year shorter than the Horizon 7.0 AT and Bowflex T6",
-        "No touchscreen, and the independent review notes it is a heavy machine",
-        "Labour and deck terms are worth confirming with SOLE for the current model year"
+        'Two years on parts is a year shorter than the Horizon 7.0 AT and Bowflex T6',
+        'No touchscreen, and the independent review notes it is a heavy machine',
+        'Labour and deck terms are worth confirming with SOLE for the current model year',
       ],
-      bottomLine: "A sound alternative to the Horizon 7.0 AT for runners at the top of a budget; choose on price on the day and which controls you prefer.",
-      description: "The F63 is SOLE’s entry running treadmill and the 7.0 AT’s closest rival on paper. SOLE lists a 20 by 60-inch running surface, 0.5 to 12 mph, 0 to 15% incline, a 325 lb maximum user weight and a 3.0 HP motor, and an independent review agrees on all of them. The warranty is lifetime on frame and motor and two years on parts, as SOLE’s own comparison table and the independent review both state; the review adds two years on the deck and wear items and one year of labour. That two-year parts term is the one place it falls behind the Horizon and BowFlex machines, which offer three. It folds, and there is no subscription: SOLE’s app is free and the console works on its own. SOLE had it at $1,099.99 against a $1,199.99 regular price on 15 October, with a 30-day satisfaction guarantee and curbside delivery. If the 7.0 AT and F63 are the same price on the day you buy, either is a good choice."
+      bottomLine: `A sound alternative to the Horizon 7.0 AT for runners at the top of a budget; choose on price on the day and which controls you prefer.`,
+      description: `The F63 is SOLE’s entry running treadmill and the 7.0 AT’s closest rival on paper. SOLE lists a 20 by 60-inch running surface, 0.5 to 12 mph, 0 to 15% incline, a 325 lb maximum user weight and a 3.0 HP motor, and an independent review agrees on all of them. The warranty is lifetime on frame and motor and two years on parts, as SOLE’s own comparison table and the independent review both state; the review adds two years on the deck and wear items and one year of labour. That two-year parts term is the one place it falls behind the Horizon and BowFlex machines, which offer three. It folds, and there is no subscription: SOLE’s app is free and the console works on its own. SOLE had it at $1,099.99 against a $1,199.99 regular price on 15 October, with a 30-day satisfaction guarantee and curbside delivery. If the 7.0 AT and F63 are the same price on the day you buy, either is a good choice.`,
     },
     {
-      id: "nordictrack-commercial-1750",
-      name: "NordicTrack Commercial 1750",
-      category: "Best Pick: Upper Mid-Range ($1,800–$2,300)",
-      badge: "Premium Edge",
-      reviewUrl: "/nordictrack-commercial-1750-treadmill/",
-      priceRange: "$1,799-$2,299",
-      specs: "60 x 22 in. deck · 3.5 CHP · -3% to 12% · ~340 lbs · subscription-oriented",
+      id: 'nordictrack-commercial-1750',
+      name: 'NordicTrack Commercial 1750',
+      category: 'Best Pick: Upper Mid-Range ($1,800–$2,300)',
+      badge: 'Premium Edge',
+      reviewUrl: '/nordictrack-commercial-1750-treadmill/',
+      priceRange: '$1,799-$2,299',
+      specs: '60 x 22 in. deck · 3.5 CHP · -3% to 12% · ~340 lbs · subscription-oriented',
       pros: [
-        "Full 60 x 22-inch deck with room for a long stride and wandering feet",
-        "Roughly 340 lbs assembled — the mass that keeps a frame still at 10 mph",
-        "Heavier deck construction of the kind built to keep its feel with mileage",
-        "Decline included, and genuinely useful for downhill race preparation"
+        'Full 60 x 22-inch deck with room for a long stride and wandering feet',
+        'Roughly 340 lbs assembled — the mass that keeps a frame still at 10 mph',
+        'Heavier deck construction of the kind built to keep its feel with mileage',
+        'Decline included, and genuinely useful for downhill race preparation',
       ],
       cons: [
-        "Console built around a subscription with constant prompting",
-        "Five-year cost roughly triples if you pay for that subscription"
+        'Console built around a subscription with constant prompting',
+        'Five-year cost roughly triples if you pay for that subscription',
       ],
-      bottomLine: "The best running hardware in this band. Buy it for the deck and frame, and decide about the subscription separately.",
-      description: "Judged purely as a running machine this is the strongest thing under $2,000, and the specifications are consistent about why. Its 60 x 22-inch deck is the full running size, and the 22-inch width gives a taller runner margin against rail strikes on runs past the hour as foot placement wanders. At roughly 340 lbs assembled it has the frame mass that keeps a machine still at 10 mph, and heavier deck construction of this kind is what keeps cushioning from softening with mileage the way cheaper decks tend to. Decline is a real bonus if you race anything with descent. The reservation is entirely about software: the console is built to sell a subscription and will remind you regularly, and paying it takes the five-year cost from roughly $1,900 to over $4,100. The hardware case is unaffected by that; the value case is not."
+      bottomLine: `The best running hardware in this band. Buy it for the deck and frame, and decide about the subscription separately.`,
+      description: `Judged purely as a running machine this is the strongest thing under $2,000, and the specifications are consistent about why. Its 60 x 22-inch deck is the full running size, and the 22-inch width gives a taller runner margin against rail strikes on runs past the hour as foot placement wanders. At roughly 340 lbs assembled it has the frame mass that keeps a machine still at 10 mph, and heavier deck construction of this kind is what keeps cushioning from softening with mileage the way cheaper decks tend to. Decline is a real bonus if you race anything with descent. The reservation is entirely about software: the console is built to sell a subscription and will remind you regularly, and paying it takes the five-year cost from roughly $1,900 to over $4,100. The hardware case is unaffected by that; the value case is not.`,
     },
     {
       id: 'life-fitness-t3',
@@ -485,9 +493,9 @@ export default {
       amazonUrl: 'https://www.amazon.com/dp/B006BE6HW4?tag=sktiger-20',
       reviewUrl: '/life-fitness-t3-treadmill/',
       priceRange: '$3,499–$3,999',
-      specs: '3.0 CHP AC motor · 0.5–12 mph · 0–15% incline · 20 x 60 in. deck · 400 lb capacity · fixed frame, does not fold',
+      specs: `3.0 CHP AC motor · 0.5–12 mph · 0–15% incline · 20 x 60 in. deck · 400 lb capacity · fixed frame, does not fold`,
       pros: [
-        'A commercial-style AC motor and fixed frame, the construction the commercial tier is paying for',
+        `A commercial-style AC motor and fixed frame, the construction the commercial tier is paying for`,
         'No required subscription; the Track Connect app is optional',
         'Lifetime frame and motor warranty for residential use',
         'A 400 lb capacity, higher than the other picks on this page',
@@ -497,10 +505,8 @@ export default {
         'Basic console compared with the touchscreens in the premium tier',
         'More machine than a walker or occasional jogger needs',
       ],
-      bottomLine:
-        'The commercial-tier machine for buyers who run often, share the treadmill and want it to last, and have the floor space for a fixed frame.',
-      description:
-        'The Life Fitness T3 is the entry point to commercial construction. It pairs a 3.0 CHP AC motor with a fixed steel frame, a 20 by 60-inch deck, 15% incline and a 400 lb capacity, and Life Fitness backs it with a lifetime warranty on the frame and motor for residential use. Our full review covers the details. At roughly $3,500 to $4,000 it sits at the bottom of this tier, so it shows what the step up from the mid-range buys: build quality and longevity rather than a bigger screen. Check the current price, seller and delivery terms on the listing before you order, since heavy machines vary a lot in what shipping includes.',
+      bottomLine: `The commercial-tier machine for buyers who run often, share the treadmill and want it to last, and have the floor space for a fixed frame.`,
+      description: `The Life Fitness T3 is the entry point to commercial construction. It pairs a 3.0 CHP AC motor with a fixed steel frame, a 20 by 60-inch deck, 15% incline and a 400 lb capacity, and Life Fitness backs it with a lifetime warranty on the frame and motor for residential use. Our full review covers the details. At roughly $3,500 to $4,000 it sits at the bottom of this tier, so it shows what the step up from the mid-range buys: build quality and longevity rather than a bigger screen. Check the current price, seller and delivery terms on the listing before you order, since heavy machines vary a lot in what shipping includes.`,
     },
   ],
   faqs: [
@@ -530,24 +536,23 @@ export default {
     },
   ],
   mistakesHeading: 'Common Mistakes When Comparing Treadmill Prices',
-  mistakesIntro:
-    'Most overspending and underspending on treadmills comes from comparing the wrong numbers. These are the four we see most.',
+  mistakesIntro: `Most overspending and underspending on treadmills comes from comparing the wrong numbers. These are the four we see most.`,
   mistakes: [
     {
       title: 'Comparing sticker prices instead of delivered prices',
-      body: 'A machine that is $200 cheaper online can cost the same or more once curbside delivery is upgraded to room-of-choice and assembly is added. Always compare the price of the treadmill standing assembled in the room where it will live.',
+      body: `A machine that is $200 cheaper online can cost the same or more once curbside delivery is upgraded to room-of-choice and assembly is added. Always compare the price of the treadmill standing assembled in the room where it will live.`,
     },
     {
       title: 'Forgetting the subscription',
-      body: 'A touchscreen treadmill whose best features need a monthly membership has a five-year cost far above its sticker price. Work out what the machine does without the membership, and add the subscription over your expected ownership to the purchase price before comparing.',
+      body: `A touchscreen treadmill whose best features need a monthly membership has a five-year cost far above its sticker price. Work out what the machine does without the membership, and add the subscription over your expected ownership to the purchase price before comparing.`,
     },
     {
       title: 'Buying budget for running',
-      body: 'A budget machine bought for regular running often fails within a few years, and replacing it costs more than buying the right tier once. If you will run more than occasionally, the cheapest machine is frequently the most expensive option per year.',
+      body: `A budget machine bought for regular running often fails within a few years, and replacing it costs more than buying the right tier once. If you will run more than occasionally, the cheapest machine is frequently the most expensive option per year.`,
     },
     {
       title: 'Paying premium for walking',
-      body: 'The opposite error. A walker does not need a 4 CHP motor, a 22-inch deck or a 15 mph top speed. Spending on those buys capacity that will never be used; a solid mid-range or good walking-focused machine serves the same purpose for far less.',
+      body: `The opposite error. A walker does not need a 4 CHP motor, a 22-inch deck or a 15 mph top speed. Spending on those buys capacity that will never be used; a solid mid-range or good walking-focused machine serves the same purpose for far less.`,
     },
   ],
   relatedHeading: 'Related Price Guides',

@@ -390,7 +390,7 @@ export default {
             running the wrong way; forgetting to lubricate; and giving up on tracking after two
             adjustments. None of these is a reason not to try, but all are reasons to read the
             procedure through before starting. Our guide to
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
             covers the lift test that stops the first one.
           </p>`,
     },

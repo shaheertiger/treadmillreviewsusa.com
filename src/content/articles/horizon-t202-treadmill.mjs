@@ -304,7 +304,7 @@ export default {
             main thing the 7.0 AT buys you, with three years of parts. Our
             <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
             explains how to read the split, and Horizon ties cover to home use, the right electrical supply
-            and the <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a> in its manuals.
+            and the <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a> in its manuals.
           </p>
           <p>
             We searched the US Consumer Product Safety Commission’s recall database on 5 November 2026 and

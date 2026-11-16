@@ -61,8 +61,8 @@ const PRIORITY_TIERS = [
     priority: 0.9,
     changefreq: 'monthly',
     paths: [
-      '/best-treadmill-for-home-reviews',
-      '/best-folding-treadmill-reviews',
+      '/best-treadmills-for-home',
+      '/best-folding-treadmills',
       '/best-treadmill-under-1000-reviews',
     ],
   },
@@ -73,7 +73,6 @@ const PRIORITY_TIERS = [
     paths: [
       '/treadmill-reviews-2026',
       '/treadmill-buying-guide-2026',
-      '/treadmill-buyers-guide',
     ],
   },
   {
@@ -92,7 +91,7 @@ const PRIORITY_TIERS = [
       '/treadmill-troubleshooting',
       '/how-long-do-treadmills-last',
       '/how-often-to-lubricate-treadmill',
-      '/how-tight-should-treadmill-belt-be',
+      '/how-to-adjust-treadmill-belt',
       '/how-to-center-treadmill-belt',
       '/treadmill-on-carpet',
     ],
@@ -154,12 +153,9 @@ const PRIORITY_TIERS = [
       '/best-incline-treadmills',
       '/commercial-treadmills',
       '/best-treadmills',
-      '/best-folding-treadmills',
       '/folding-treadmills',
       '/treadmills-under-1500',
       '/treadmills-over-2500',
-      '/home-treadmills',
-      '/best-treadmills-for-home',
     ],
   },
   {
@@ -170,7 +166,6 @@ const PRIORITY_TIERS = [
       '/nordictrack-commercial-1750-treadmill',
       '/nordictrack-commercial-2450-treadmill',
       '/nordictrack-commercial-2950-treadmill',
-      '/nordictrack-new-commercial-1750-treadmill',
       '/nordictrack-c-700-treadmill',
       '/nordictrack-c-990-treadmill',
       '/nordictrack-c-1650-treadmill',

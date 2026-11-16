@@ -236,9 +236,9 @@ export default {
           </p>
           <p>
             Budget for immediate maintenance regardless of how it presents. A used machine of
-            unknown history should get a deck lubrication and a <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> check the week it
+            unknown history should get a deck lubrication and a <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> check the week it
             arrives, and the
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
             is the ten minutes that decides whether you got a bargain. Assume the previous owner
             did none of it, because statistically they did not.
           </p>`,

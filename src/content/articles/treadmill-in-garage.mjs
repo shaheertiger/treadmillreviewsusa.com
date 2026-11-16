@@ -102,7 +102,7 @@ export default {
             and lubricant warm and loosen. Then walk before you run. If the garage is below freezing,
             the honest advice is to raise the temperature of the space before using the machine at
             all, or to accept that you are operating outside what most manuals intend. Our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
             also suggests halving the <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>lubrication interval</a> for machines kept in garages and unheated
             rooms.
           </p>`,
@@ -423,7 +423,7 @@ export default {
             the garage as such.`,
     `<strong class="text-white">Mat, cover, stable temperature, proper outlet, warm-up.</strong>
             Those five deal with most of it. Lubricate and vacuum more often than indoors, and see our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#5AA9FF] font-bold no-underline">maintenance checklist</a>
+            <a href="/treadmill-maintenance/" class="text-[#5AA9FF] font-bold no-underline">maintenance checklist</a>
             for how the schedule changes in a garage.`,
   ],
 };

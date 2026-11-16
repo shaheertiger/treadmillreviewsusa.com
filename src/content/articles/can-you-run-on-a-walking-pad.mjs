@@ -321,7 +321,7 @@ export default {
             Our guide to the
             <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">best treadmills for running</a>
             covers machines built for regular running. If storage is the constraint, our guide to
-            <a href="/portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills</a>
+            <a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills</a>
             explains the three kinds of compact machine — flat pads, 2-in-1 pads and compact folding
             treadmills — and which of them can genuinely be run on.
           </p>
@@ -426,7 +426,7 @@ export default {
       kicker: 'Compact',
       title: 'Portable Treadmills',
       blurb: 'Flat pads, 2-in-1 pads and compact folders, and what each one gives up.',
-      url: '/portable-treadmills/',
+      url: '/best-portable-treadmills/',
     },
   ],
   bottomLine: [

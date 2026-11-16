@@ -275,7 +275,7 @@ export default {
             <strong>Check belt tension.</strong> Unplugged, you should be able to lift the belt
             about two to three inches at the centre of the deck. If it lifts much more and slips
             under load, it may need tightening a little, evenly on both sides. Our guide to
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
             covers the test and the adjustment. Over-tightening to cure slip is its own mistake.
           </p>
           <p>
@@ -474,7 +474,7 @@ export default {
             under load tends to make them read fast. Count belt revolutions over three minutes,
             multiply by the loop length, and you have the real speed: rpm × feet × 60 ÷ 5,280.`,
     `If it is off only under load, fix
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#5AA9FF] font-bold no-underline">tension</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#5AA9FF] font-bold no-underline">tension</a>
             and lubrication before anything else. If it is off empty too,
             <strong class="text-white">follow the manual's calibration procedure</strong> or ask the
             manufacturer — never guess a service-menu sequence.`,

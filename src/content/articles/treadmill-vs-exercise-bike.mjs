@@ -232,7 +232,7 @@ export default {
             is mostly keeping it clean and checking that bolts and pedals are tight.
           </p>
           <p>
-            A treadmill asks more. Its deck needs periodic lubrication, its <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> and tracking need
+            A treadmill asks more. Its deck needs periodic lubrication, its <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> and tracking need
             checking, and its motor and controller board are the expensive components if something goes
             wrong. None of that is onerous — our
             <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>

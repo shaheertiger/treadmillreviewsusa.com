@@ -253,7 +253,7 @@ export default {
           </p>
           <p>
             <strong>Keep the belt correctly tensioned.</strong> Over-tightening increases contact
-            pressure and therefore current draw; under-tensioning causes slip and heat. The <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>lift
+            pressure and therefore current draw; under-tensioning causes slip and heat. The <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>lift
             test</a> settles it.
           </p>
           <p>

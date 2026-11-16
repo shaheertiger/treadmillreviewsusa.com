@@ -334,7 +334,7 @@ export default {
             For a folding treadmill you can jog on, start with our
             <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">best treadmills under $500</a>
             and
-            <a href="/best-folding-treadmill-reviews/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
+            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
             pages, and read our
             <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmill primer</a>
             on how the fold mechanisms differ. If walking is the main use, a walking pad is smaller and
@@ -413,7 +413,7 @@ export default {
       kicker: 'Roundup',
       title: 'Best Folding Treadmills',
       blurb: 'Folding machines from makers that publish their specifications.',
-      url: '/best-folding-treadmill-reviews/',
+      url: '/best-folding-treadmills/',
     },
     {
       kicker: 'Where to Buy',
@@ -432,6 +432,6 @@ export default {
             writing first. Otherwise, buy a folding treadmill you can identify — start with
             <a href="/best-treadmills-under-500/" class="text-[#5AA9FF] font-bold no-underline">our under-$500 roundup</a>
             or the
-            <a href="/best-folding-treadmill-reviews/" class="text-[#5AA9FF] font-bold no-underline">best folding treadmills</a>.`,
+            <a href="/best-folding-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best folding treadmills</a>.`,
   ],
 };

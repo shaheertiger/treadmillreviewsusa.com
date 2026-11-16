@@ -347,7 +347,7 @@ export default {
             <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">best treadmills for heavy people</a>
             covers machines rated well above 325 lb. For more options in the same price band, see our
             <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">best treadmills under $1,000</a>
-            and <a href="/best-folding-treadmill-reviews/" class="text-[#0F62FE] font-medium">best folding treadmills</a>.
+            and <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a>.
           </p>`,
     },
     {

@@ -432,7 +432,7 @@ export default {
             need an <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium" data-autolink>incline calibration</a> after being moved or reassembled; the manual describes
             how.</li>
             <li><strong>Walk on it slowly</strong> for a few minutes before using it normally, and
-            check the <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> and tracking again afterwards.</li>
+            check the <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> and tracking again afterwards.</li>
           </ul>
           <p>
             If the console stays dark after reassembly, the cable connection is the first suspect.

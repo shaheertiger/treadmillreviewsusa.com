@@ -222,7 +222,7 @@ export default {
           </p>
           <p>
             Our roundups of
-            <a href="/best-folding-treadmill-reviews/" class="text-[#0F62FE] font-medium">folding treadmills</a>,
+            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmills</a>,
             <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">treadmills under $500</a>
             and the <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium">best treadmills on Amazon</a>
             cover the field, and the three alternatives below are the ones we would compare an OMA with first.
@@ -412,7 +412,7 @@ export default {
       kicker: 'Roundup',
       title: 'Best Folding Treadmills',
       blurb: 'Folding treadmills compared on deck, motor, fold and warranty.',
-      url: '/best-folding-treadmill-reviews/',
+      url: '/best-folding-treadmills/',
     },
     {
       kicker: "Brand Guide",
@@ -437,6 +437,6 @@ export default {
     `If the price gap is small, the <strong class="text-white">Sunny Active 300 (SF-T724011)</strong> at about $600 or
             the <strong class="text-white">XTERRA TRX1200</strong> at $549.99 gives you the same format from a
             brand with a US store. For more, see our
-            <a href="/best-folding-treadmill-reviews/" class="text-[#5AA9FF] font-bold no-underline">folding treadmill roundup</a>.`,
+            <a href="/best-folding-treadmills/" class="text-[#5AA9FF] font-bold no-underline">folding treadmill roundup</a>.`,
   ],
 };

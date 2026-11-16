@@ -226,7 +226,7 @@ export default {
             and write down precisely what you did. On the way back, reverse it exactly, then confirm
             with the lift test. On virtually every home treadmill, lifting the belt edge at the
             middle of the deck should open a gap of two to three inches; under two is over-tight.
-            Our guide to <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
+            Our guide to <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
             covers the full check.
           </p>
           <p>
@@ -418,7 +418,7 @@ export default {
       kicker: 'Routine',
       title: 'Treadmill Maintenance Checklist',
       blurb: 'What to do after each session, monthly, every 40-50 hours and yearly.',
-      url: '/treadmill-maintenance-checklist/',
+      url: '/treadmill-maintenance/',
     },
   ],
   bottomLine: [

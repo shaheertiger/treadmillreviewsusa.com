@@ -467,7 +467,7 @@ export default {
       kicker: 'Buying Guide',
       title: "Best Lightweight Treadmills",
       blurb: "Five lightweight folding treadmills from 44 to 66 lb, each with a weight stated by the listing or the…",
-      url: '/best-lightweight-treadmills/',
+      url: '/best-portable-treadmills/',
     },
   ],
   bottomLine: [

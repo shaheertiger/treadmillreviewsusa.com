@@ -294,7 +294,7 @@ export default {
             Popular colours and versions can sell out at a good price, which is another reason to
             have more than one pad on your list. For the whole market, including full-size machines,
             see our
-            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals 2026</a>
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals 2026</a>
             page.
           </p>`,
     },

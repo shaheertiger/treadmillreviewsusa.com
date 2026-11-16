@@ -332,7 +332,7 @@ export default {
       heading: 'When to Look',
       html: `          <p>
             Sam’s Club runs member promotions through the year, and fitness equipment draws the most attention in
-            the weeks around Black Friday and the new year. <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium" data-autolink>Black Friday 2026</a> is 27 November. NordicTrack and
+            the weeks around Black Friday and the new year. <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium" data-autolink>Black Friday 2026</a> is 27 November. NordicTrack and
             ProForm also run their own sales at those times, so the same machine is likely to be discounted in
             several places at once.
           </p>

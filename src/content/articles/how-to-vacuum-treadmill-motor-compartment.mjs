@@ -247,7 +247,7 @@ export default {
       html: `          <p>
             <strong>Annually</strong> for a machine in a normal heated room on a hard floor. That is
             the baseline in our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a>.
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance checklist</a>.
           </p>
           <p>
             <strong>Every six months</strong> if the machine sits on carpet, lives in a garage,
@@ -371,7 +371,7 @@ export default {
       kicker: 'Schedule',
       title: 'Treadmill Maintenance Checklist',
       blurb: 'Every task by interval, including this one.',
-      url: '/treadmill-maintenance-checklist/',
+      url: '/treadmill-maintenance/',
     },
     {
       kicker: 'Deck',

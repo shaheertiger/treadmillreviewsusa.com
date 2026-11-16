@@ -136,7 +136,7 @@ export default {
             fold it if the design allows and look at the underside. Cracks often show more clearly
             there, and you can see the cushions and the frame at the same time.</li>
             <li><strong>Check around the bolt holes.</strong> Cracks sometimes start at the mounting
-            bolts, especially if they were <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>over-tightened</a>.</li>
+            bolts, especially if they were <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>over-tightened</a>.</li>
           </ol>
           <p>
             Photograph anything you find, with something for scale. You will want the pictures for

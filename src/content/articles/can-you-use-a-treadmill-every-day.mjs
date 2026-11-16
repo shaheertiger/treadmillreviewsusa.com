@@ -357,7 +357,7 @@ export default {
             in the motor compartment, and the interval between lubrications.
           </p>
           <p>
-            Three practical points for shared machines. First, base the <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a> on the
+            Three practical points for shared machines. First, base the <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a> on the
             combined hours and the heaviest regular user, not the lightest. Second, if the manual
             suggests a rest period between long sessions, build it into the household routine
             rather than letting one person start the moment another finishes. Third, if the

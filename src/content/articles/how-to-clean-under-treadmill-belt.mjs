@@ -211,7 +211,7 @@ export default {
             Then <strong>retension</strong>: turn each rear roller bolt clockwise by exactly the
             number of turns you loosened. Check with the lift test — the belt should rise about two
             to three inches at the centre of the deck. Our
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">tension guide</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">tension guide</a>
             covers it.
           </p>
           <p>
@@ -240,7 +240,7 @@ export default {
             lubrication includes a wipe of the deck and belt underside, which handles ordinary
             accumulation. This deeper clean — belt fully slackened, vacuumed, both surfaces done
             end to end — is the annual version of that. Our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
             sets out which tasks belong to which interval.
           </p>`,
     },
@@ -356,13 +356,13 @@ export default {
       kicker: 'Tension',
       title: 'How Tight Should a Treadmill Belt Be?',
       blurb: 'The lift test, for getting tension right after retensioning.',
-      url: '/how-tight-should-treadmill-belt-be/',
+      url: '/how-to-adjust-treadmill-belt/',
     },
     {
       kicker: 'Schedule',
       title: 'Treadmill Maintenance Checklist',
       blurb: 'Which tasks belong to which interval, across the whole year.',
-      url: '/treadmill-maintenance-checklist/',
+      url: '/treadmill-maintenance/',
     },
     {
       kicker: 'Cleaning',

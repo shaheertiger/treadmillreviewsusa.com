@@ -262,7 +262,7 @@ export default {
             That is perhaps forty minutes of work and it materially changes the machine's remaining
             life. Our
             <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>,
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">belt tension guide</a>
             and
             <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">belt centring guide</a>
             cover each step, and the

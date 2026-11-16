@@ -363,7 +363,7 @@ export default {
             Outside the family, the <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium">Horizon 7.0 AT</a>
             (also Johnson Health Tech) and the machines in our
             <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">best treadmills under $1,000</a>
-            and <a href="/best-folding-treadmill-reviews/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
+            and <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
             roundups cover the same budget.
           </p>`,
     },

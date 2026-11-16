@@ -149,7 +149,7 @@ export default {
             There is also a middle category worth knowing about. Compact <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a> keep a
             short upright and handrails but fold flat-ish for storage, and many reach running
             speeds. Our guide to
-            <a href="/portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills</a>
+            <a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills</a>
             sets out the three kinds of compact machine — flat pads, 2-in-1 pads with a folding rail,
             and compact folding treadmills — and what each gives up to be movable.
           </p>`,

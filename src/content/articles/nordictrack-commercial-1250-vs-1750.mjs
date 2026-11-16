@@ -532,7 +532,7 @@ export default {
             For the 1750 in more depth, we have a full
             <a href="/nordictrack-commercial-1750-treadmill/" class="text-[#0F62FE] font-medium">Commercial 1750 review</a>
             and a separate page on the
-            <a href="/nordictrack-new-commercial-1750-treadmill/" class="text-[#0F62FE] font-medium">refreshed Commercial 1750</a>.
+            <a href="/nordictrack-commercial-1750-treadmill/" class="text-[#0F62FE] font-medium">refreshed Commercial 1750</a>.
             Where any figure on those pages differs from the verified list here, treat it as one of
             the conflicting reports described above and confirm it for your SKU.
           </p>`,

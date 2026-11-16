@@ -3,9 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
-const title = "Treadmill Maintenance: The Complete Owner's Schedule";
+const title = "Treadmill Maintenance: Checklist and Schedule by Interval";
 const description =
-  "The jobs that decide whether a treadmill lasts four years or twelve — belt lubrication, tension, tracking and motor care — with a schedule and honest time costs.";
+  "Treadmill maintenance takes under an hour a year: wipe after each run, vacuum weekly, check the belt monthly, lube every 3–6 months. The full checklist.";
 
 const SCHEDULE = [
   {
@@ -27,10 +27,22 @@ const SCHEDULE = [
     why: "A drifting belt destroys its own edge against the frame within weeks.",
   },
   {
+    when: "Monthly",
+    job: "Check the power cord, plug and frame bolts by hand",
+    time: "3 minutes",
+    why: "A pinched cord or a warm plug is a stop-and-investigate sign; a loose bolt is the usual rattle.",
+  },
+  {
     when: "Every 3-6 months",
     job: "Lubricate the deck with 100% silicone",
     time: "10 minutes",
     why: "A dry deck multiplies motor load. This is the job that kills treadmills.",
+  },
+  {
+    when: "Quarterly",
+    job: "Test the safety key and run the incline through its full range",
+    time: "3 minutes",
+    why: "Pulling the key should stop the belt promptly. Grinding or hesitation on incline is easier to fix early.",
   },
   {
     when: "Every 6 months",
@@ -43,6 +55,12 @@ const SCHEDULE = [
     job: "Open the motor hood and vacuum the compartment",
     time: "20 minutes",
     why: "Unplug first. Dust on the motor and controller board traps heat.",
+  },
+  {
+    when: "Annually",
+    job: "Inspect the deck for shine or grooves and turn each roller by hand",
+    time: "10 minutes",
+    why: "A polished deck can often be flipped; a gritty roller warns of bearing wear before it fails.",
   },
 ];
 
@@ -116,7 +134,7 @@ const schema = {
       description: description,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-09-03",
-      dateModified: "2026-09-03",
+      dateModified: "2026-11-16",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
   ],
@@ -129,7 +147,7 @@ const schema = {
   ogType="article"
   article={{
     publishedTime: "2026-09-03",
-    modifiedTime: "2026-09-03",
+    modifiedTime: "2026-11-16",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
@@ -160,7 +178,7 @@ const schema = {
             Owner's Guide
           </span>
           <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated September 2026
+            Updated November 2026
           </span>
         </div>
         <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
@@ -193,7 +211,7 @@ const schema = {
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">September 3, 2026</strong>
+          Last Updated: <strong class="text-gray-700">November 16, 2026</strong>
         </p>
         <div class="ml-auto">
           <SocialProof users="4.7k" />
@@ -221,7 +239,7 @@ const schema = {
         </h2>
         <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <a href="#why" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why Maintenance Decides Lifespan</a>
-          <a href="#schedule" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Complete Schedule</a>
+          <a href="#schedule" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Maintenance Checklist by Interval</a>
           <a href="#lubrication" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Lubrication: The Job That Matters Most</a>
           <a href="#tension" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Belt Tension and Tracking</a>
           <a href="#cleaning" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Cleaning, Dust and Sweat</a>
@@ -281,12 +299,19 @@ const schema = {
         </div>
 
         <div id="schedule" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Complete Schedule</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Treadmill Maintenance Checklist: Every Task by Interval</h2>
           <p>
             Intervals below assume normal home use — roughly three to five
             sessions a week. Halve them if the machine runs several hours a day
             or lives somewhere dusty like a garage or a carpeted room.
           </p>
+                <p>
+          <strong>Keep a simple record.</strong> Tape an index card to the frame and write the date and the
+          console hours each time you lubricate or adjust the belt. It tells you when the next job is due
+          without guessing, it answers a warranty claim where a maker asks whether the deck was ever
+          lubricated, and it raises what the machine fetches if you sell it, because that is the first
+          thing an informed buyer asks.
+        </p>
         </div>
       </div>
 

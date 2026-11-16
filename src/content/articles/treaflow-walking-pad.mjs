@@ -313,7 +313,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Delivery and setup</h3>
           <p>
             At 37 lb the 3100W arrives as an ordinary parcel and is sold pre-assembled, so setup
-            means unboxing, placing it, and checking <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> and tracking before first use. No
+            means unboxing, placing it, and checking <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> and tracking before first use. No
             subscription or app is involved. Use the first days of the return window to walk on it at
             your real desk speed for your real session length; problems with budget pads tend to show
             up under sustained use, not in a five-minute trial.

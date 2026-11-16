@@ -361,7 +361,7 @@ export default {
           <p>
             Steep, slow walking is also gentle on the machine compared with fast running, but the
             incline motor and mechanism are extra moving parts. Keep them clean and follow the
-            manual's <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a>.
+            manual's <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a>.
           </p>`,
     },
     {

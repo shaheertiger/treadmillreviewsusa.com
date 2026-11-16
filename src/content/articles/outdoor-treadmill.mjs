@@ -323,7 +323,7 @@ export default {
             <li><strong>Inspect more often.</strong> Check under the motor hood for debris, insects
             and corrosion with the machine unplugged, and check the belt and deck more often than
             the indoor schedule in our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
             suggests.</li>
           </ul>
           <p>

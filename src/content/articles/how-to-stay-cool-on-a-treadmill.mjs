@@ -412,7 +412,7 @@ export default {
           <p>
             The last point protects the machine rather than you, and it is worth keeping
             separate in your mind. A runner overheating and a treadmill overheating have different
-            causes and different fixes; the machine's version is about lubrication, <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>,
+            causes and different fixes; the machine's version is about lubrication, <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>,
             dust in the motor compartment and electrical supply, and it is covered in our
             overheating guide linked at the top of this page.
           </p>`,

@@ -206,7 +206,7 @@ export default {
             some are extended and a few improve. Limited-time and limited-quantity deals on Amazon
             can sell out in hours; if a machine already on your shortlist hits your target price,
             there is little to gain from waiting for Cyber Monday. Our
-            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday 2026 treadmill deals hub</a>
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday 2026 treadmill deals hub</a>
             follows the whole market across those four days.
           </p>
           <p>

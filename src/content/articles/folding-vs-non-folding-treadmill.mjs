@@ -286,7 +286,7 @@ export default {
             most days or weeks; you rent and expect to move; or the treadmill has to be out of the way for
             household reasons. If you run, choose a folding model with a full-length deck and a
             hydraulic lift and accept that it costs more. Our
-            <a href="/best-folding-treadmill-reviews/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
+            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
             are tested with daily folding in mind.
           </p>
           <p>
@@ -358,7 +358,7 @@ export default {
       kicker: 'Best List',
       title: 'Best Folding Treadmills',
       blurb: 'Folding models tested for daily use in real apartments and small rooms.',
-      url: '/best-folding-treadmill-reviews/',
+      url: '/best-folding-treadmills/',
     },
     {
       kicker: 'Planning',
@@ -373,7 +373,7 @@ export default {
             expect, and none at all while the machine is in use.`,
     `If the treadmill can stay set up, <strong class="text-white">buy non-folding</strong>. If the
             room has to do another job and you will fold it often, buy a well-built folder — our
-            <a href="/best-folding-treadmill-reviews/" class="text-[#5AA9FF] font-bold no-underline">folding treadmill picks</a>
+            <a href="/best-folding-treadmills/" class="text-[#5AA9FF] font-bold no-underline">folding treadmill picks</a>
             are the place to start.`,
   ],
 };

@@ -353,7 +353,7 @@ export default {
             cross-trainer, see
             <a href="/black-friday-elliptical-deals/" class="text-[#0F62FE] font-medium">Black Friday elliptical deals</a>.
             Treadmills are covered in our
-            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals for 2026</a>.
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals for 2026</a>.
           </p>`,
     },
   ],

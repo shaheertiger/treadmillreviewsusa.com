@@ -243,7 +243,7 @@ export default {
             People over-tighten belts to cure slipping, and the result can be a machine that no
             longer slips but now stops on overload. A belt that is too loose causes a different
             problem — slipping and hesitation rather than shutdowns. Our guide to
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
             covers the standard lift test.
           </p>
           <p>

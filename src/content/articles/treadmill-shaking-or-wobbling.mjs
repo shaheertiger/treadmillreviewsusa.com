@@ -320,7 +320,7 @@ export default {
             <strong>Worn bearings.</strong> A roller bearing with play lets the roller move under
             load and rumbles when empty. The commonest avoidable cause is a belt tensioned well
             past the two-to-three-inch lift test described in
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>.
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>.
           </p>
           <p>
             <strong>A loose front pulley.</strong> The front roller carries the pulley the motor's

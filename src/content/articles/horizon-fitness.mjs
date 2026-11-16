@@ -158,7 +158,7 @@ export default {
             Two clauses are worth finding: whether service is in-home or return-to-base, and
             whether documented maintenance is required. Some manufacturers can decline a motor
             claim on a deck that was clearly never lubricated, which is another reason to keep to
-            the <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
+            the <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
             and note the dates.
           </p>`,
     },

@@ -69,7 +69,7 @@ export default {
           </table></div>
           <p>
             Shopping every category at once? Our
-            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals 2026</a>
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals 2026</a>
             page covers the whole market, and if a flat pad is all you have room for, the
             <a href="/black-friday-walking-pad-deals/" class="text-[#0F62FE] font-medium">walking pad deals</a>
             page goes deeper on that segment than the single compact pick here.
@@ -552,7 +552,7 @@ export default {
             delivered. Our
             <a href="/treadmill-black-friday-deals/" class="text-[#5AA9FF] font-bold no-underline">Black Friday method guide</a>
             covers how to judge any deal, and the
-            <a href="/black-friday-treadmill-deals-2026/" class="text-[#5AA9FF] font-bold no-underline">2026 Black Friday treadmill deals</a>
+            <a href="/treadmill-black-friday-deals/" class="text-[#5AA9FF] font-bold no-underline">2026 Black Friday treadmill deals</a>
             page covers the rest of the market.`,
   ],
 };

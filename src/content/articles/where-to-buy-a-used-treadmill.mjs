@@ -306,7 +306,7 @@ export default {
             the manual calls for it, check belt tension and tracking, and vacuum around and under the
             machine. Our guides to
             <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication</a>,
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">belt tension</a>
             and <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring the belt</a>
             cover each step, and the
             <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance guide</a>
