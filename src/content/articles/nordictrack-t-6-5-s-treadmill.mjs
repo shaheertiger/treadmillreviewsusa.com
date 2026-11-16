@@ -245,7 +245,7 @@ export default {
             covers the most common way people damage one.
           </p>
           <p>
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>Belt tension</a> and tracking come next, and they are distinct faults. A belt that hesitates
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>Belt tension</a> and tracking come next, and they are distinct faults. A belt that hesitates
             under a footfall is slipping; one that drifts toward a rail is mistracking, and the
             adjustments are different.
             <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">Our diagnosis order</a>

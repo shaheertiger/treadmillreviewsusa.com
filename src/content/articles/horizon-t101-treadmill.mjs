@@ -1,14 +1,14 @@
 export default {
   slug: 'horizon-t101-treadmill',
-  title: 'Horizon T101 Treadmill Review (2026): Connect, Manual and Recall',
+  title: 'Horizon T101 Treadmill Review (2026): A Walker, Not a Runner',
   description:
-    'The Horizon T101 Connect checked against Horizon’s listing: a 20 x 55 in. deck, 10 mph, 10% incline and 300 lb rating, sold out on 14 October 2026. Plus where to get the T101 manual and how to check a T101-05 for the 2022 recall.',
+    'The Horizon T101 is a sound no-subscription walking treadmill with lifetime frame and motor cover: 20 x 55 in. deck, 10 mph, 10% incline. Recall and manual.',
   crumbLabel: 'Horizon T101 Treadmill',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-15',
-  modified: '2026-10-14',
+  modified: '2026-11-16',
   socialProof: '2.7k',
   h1: ['Horizon T101', 'Treadmill Review'],
   standfirst:
@@ -18,6 +18,7 @@ export default {
     { label: 'The T101 Manual', href: '#manual' },
   ],
   tags: [
+    'horizon t101 treadmill review',
     'horizon treadmill t101',
     'horizon t101 treadmill manual',
     'horizon t101 connect',
@@ -64,15 +65,25 @@ export default {
   sections: [
     {
       id: 'short-answer',
-      heading: 'Horizon Treadmill T101: The Short Answer',
+      heading: 'Horizon T101: The Short Answer',
       products: true,
       html: `          <p>
-            <strong>The Horizon treadmill T101, now sold as the T101 Connect, is a well-judged walking
-            treadmill with no subscription, a lifetime frame and motor warranty and a 300 lb rating —
-            but it was sold out on Horizon’s US store on 14 October 2026, and it is not built for
-            regular running.</strong> When it is in stock at around $700, it remains one of the simplest
-            ways to buy a full-size folding treadmill that asks nothing of you after delivery.
+            <strong>The Horizon T101, now sold as the T101 Connect, is a well-judged walking treadmill
+            with no subscription, a lifetime frame and motor warranty and a 300 lb rating, and it is
+            not built for regular running.</strong> At around $700 it is one of the simplest ways to buy a
+            full-size folding treadmill that asks nothing of you after delivery. The catch is stock: on
+            14 October 2026 Horizon’s US store showed it sold out at $699, so check availability before you
+            plan around it.
           </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Verdict</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A subscription-free walking and incline-walking treadmill with unusually long frame and motor cover</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Buy it if…</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">You walk or incline-walk most days, jog only now and then, want a console that works without any account, and value a lifetime motor warranty</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Skip it if…</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">You plan to run regularly (55-inch deck, 10 mph), want 12% incline for the 12-3-30 workout, or want an app that changes speed and incline for you</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Price band</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$699 at Horizon against a $999 reference price (14 October 2026, sold out; still listed at $699 on 5 November 2026)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Closest rival</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon T202: 60-inch deck and 12 mph for $200 more</td></tr>
+            </tbody>
+          </table></div>
           <p>
             Its limits are the ones on the specification sheet. A 55-inch deck suits walking, incline
             walking and gentle jogging, and becomes cramped at a running stride. A 10 mph ceiling and
@@ -85,7 +96,7 @@ export default {
             <a href="#manual" class="text-[#0F62FE] font-medium">where to get the T101 manual</a>
             for your version, and
             <a href="#recall" class="text-[#0F62FE] font-medium">how to check a T101-05 against the 2022 recall</a>.
-            If you are buying, read the deck section before anything else. We have not tested the
+            If you are buying, read the running-or-walking section before anything else. We have not tested the
             T101; what follows is what Horizon’s published figures, its support documents and
             independent coverage show.
           </p>`,

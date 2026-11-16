@@ -212,7 +212,7 @@ export default {
             <strong>Console calibration drift.</strong> Belt speed is generally accurate but can
             drift with <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>belt wear</a> and tension. If your treadmill pace and your GPS watch disagree
             consistently, the machine may need attention — our
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">belt tension guide</a>
             covers the most common cause.
           </p>
           <p>

@@ -1,32 +1,32 @@
 export default {
   slug: 'peloton-tread',
-  title: 'Peloton Treadmill (2026): Tread Flex, Vision and Tread+ Compared',
+  title: 'Peloton Tread Review (2026): Tread Flex, Vision and Tread+',
   description:
-    'Peloton’s three new Treads checked against its own pages and independent coverage: delivered prices, All-Access, Just Run, the 2021 recalls, space needs and used buys.',
+    'A Peloton Tread is worth it only if you keep All-Access: Tread Vision $3,495, folding Tread Flex $2,195, slat-belt Tread+ Vision $6,695. Costs and recalls.',
   crumbLabel: 'Peloton Tread',
   breadcrumb: { name: 'Brands', url: '/brands/' },
-  kicker: 'Buyer’s Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 20, 2026',
+  kicker: 'Model Review',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-20',
+  modified: '2026-11-16',
   socialProof: '1.4k',
-  h1: ['Peloton Treadmill:', 'Tread vs Tread+, Costs and Recalls'],
+  h1: ['Peloton Treadmill Review:', 'Tread Flex, Tread Vision and Tread+ Vision'],
   standfirst:
     'Peloton replaced its whole treadmill line on 1 October 2026. This guide sets out what the Tread Flex, Tread Vision and Tread+ Vision cost delivered, what the membership adds and what the machine does without it, what changed after the 2021 recalls, and who would be better served by a different treadmill.',
   ctas: [
     { label: 'The Short Answer', href: '#short-answer' },
     { label: 'Compare the Three Treads', href: '#lineup' },
   ],
-  tags: ['peloton treadmill', 'peloton tread', 'peloton tread vs tread+', 'peloton tread flex', 'peloton tread vision', 'peloton tread recall'],
+  tags: ['peloton treadmill review', 'peloton tread review', 'peloton treadmill', 'peloton tread', 'peloton tread vs tread+', 'peloton tread flex', 'peloton tread vision', 'peloton tread recall'],
   stickyCta: { text: 'Compare the Three Treads', link: '#lineup' },
-  lead: `Searches for a Peloton treadmill have climbed through 2026, and anyone who last looked a
-          year ago will find a different lineup. On 1 October Peloton stopped selling its Cross
-          Training Tread and Tread+ directly and replaced them with three machines: the folding
-          Tread Flex, the Tread Vision and the slat-belt Tread+ Vision. They share one thing that
-          matters more than any specification — they are built to be used with a paid All-Access
-          Membership. This guide works through what each costs once it is in your house, what you
-          get with and without the membership, how the 2021 recalls changed the machines, what
-          space and power they need, whether a used Tread is a sensible buy, and when a different
+  lead: `A Peloton Tread is worth buying only if Peloton classes are what keep you running and you
+          will pay for the All-Access Membership for as long as you own it, because the machine is
+          built around it. Anyone who last looked a year ago will find a different lineup: on
+          1 October 2026 Peloton replaced its Cross Training Tread and Tread+ with the folding Tread
+          Flex ($2,195), the Tread Vision ($3,495) and the slat-belt Tread+ Vision ($6,695). This
+          review covers what each costs delivered, what works without the membership, what changed
+          after the 2021 recalls, the space and power they need, used buys, and when a different
           treadmill is the better use of the money.`,
   products: [
     {
@@ -136,7 +136,7 @@ export default {
     },
     {
       id: 'lineup',
-      heading: 'The Current Peloton Treads: Flex, Vision and Tread+ Vision',
+      heading: 'Which Peloton Treadmills Can You Buy Now?',
       navLabel: 'The Current Peloton Treads',
       products: true,
       html: `          <p>
@@ -228,7 +228,7 @@ export default {
     },
     {
       id: 'delivered-cost',
-      heading: 'What a Peloton Tread Costs Delivered, and Over Three Years',
+      heading: 'How Much Does a Peloton Tread Really Cost?',
       navLabel: 'What It Costs Delivered',
       html: `          <p>
             The list price is the smallest part of the decision, because the membership runs for
@@ -281,9 +281,14 @@ export default {
     },
     {
       id: 'membership',
-      heading: 'What All-Access Adds, and What the Tread Does Without It',
+      heading: 'Do You Need a Peloton Membership to Use the Tread?',
       navLabel: 'Membership and Just Run',
       html: `          <p>
+            <strong>Not to run on it, but for almost everything that justifies the price, yes.</strong>
+            Without a membership the Tread works in Just Run mode, with manual speed and incline and
+            basic metrics; the classes, programmes and Peloton IQ features all need All-Access.
+          </p>
+          <p>
             Peloton states that an All-Access Membership is required to access all Peloton content
             and applicable features on its hardware. One membership covers the whole household,
             with a profile for each person, and covers one of each Peloton product type in the home.
@@ -326,7 +331,8 @@ export default {
     },
     {
       id: 'recalls',
-      heading: 'The 2021 Recalls and What Changed',
+      heading: 'Is the Peloton Tread Safe After the 2021 Recalls?',
+      navLabel: 'The 2021 Recalls',
       html: `          <p>
             Peloton recalled both of its treadmills on 5 May 2021, and the details matter if you are
             buying a used one or simply want to know how the current machines got to where they are.
@@ -376,7 +382,7 @@ export default {
     },
     {
       id: 'space-and-delivery',
-      heading: 'Space, Weight, Power and Delivery',
+      heading: 'How Much Space Does a Peloton Tread Need?',
       navLabel: 'Space, Weight and Delivery',
       html: `          <p>
             A Peloton Tread is a heavy, tall machine, and Peloton's clearance figures are larger
@@ -422,7 +428,7 @@ export default {
     },
     {
       id: 'used-and-refurbished',
-      heading: 'Buying a Used or Previous-Generation Peloton Tread',
+      heading: 'Is a Used or Previous-Generation Peloton Tread Worth Buying?',
       navLabel: 'Used and Refurbished Treads',
       html: `          <p>
             The new lineup has made the second-hand market more interesting, because the previous
@@ -469,7 +475,7 @@ export default {
     },
     {
       id: 'peloton-and-precor',
-      heading: 'Peloton and Precor: Who Makes What',
+      heading: 'Who Makes the Peloton Tread, and Is It Precor?',
       html: `          <p>
             Peloton owns Precor, the commercial gym-equipment maker. It bought Precor from Amer
             Sports for $420 million in a deal completed on 1 April 2021. In 2022 Peloton explored
@@ -497,7 +503,7 @@ export default {
     },
     {
       id: 'alternatives',
-      heading: 'Who Should Buy Something Else',
+      heading: 'Who Should Skip the Peloton Tread?',
       html: `          <p>
             A Peloton Tread is a good fit for a narrow buyer and an expensive mismatch for several
             others. These are the cases where we would look elsewhere first.
@@ -540,6 +546,10 @@ export default {
     },
   ],
   faqs: [
+    {
+      q: 'Is the Peloton Tread worth it?',
+      a: `Only if Peloton classes are what keep you running and you will keep the membership. The Tread Vision costs $3,495 and roughly $5,400 over three years with All-Access at the October 2025 rate of $49.99 a month. Without the membership it is a screen-heavy manual treadmill, and its warranty is short for the price.`,
+    },
     {
       q: 'What is the difference between the Peloton Tread and Tread+?',
       a: `The current Tread Vision has a conventional 59 by 20-inch belt, 12.5% incline and costs $3,495. The Tread+ Vision has a 67 by 20-inch slat belt, 15% incline, Free Mode and Sled Mode, weighs 460 lb and costs $6,695 plus a required $299 assembly fee. Both have the same 23.8-inch screen, camera, top speed and 300 lb user limit.`,

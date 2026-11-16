@@ -1,30 +1,31 @@
 export default {
   slug: 'wellfit-tm037-treadmill',
-  title: 'Wellfit TM037 Review (2026): A Budget Walking Pad, Read Carefully',
+  title: 'Wellfit Treadmill Reviews (2026): Is the TM037 Legit?',
   description:
-    'The Wellfit TM037 is a $140-$260 two-in-one walking pad. What its listed specs mean, the disputed motor and warranty terms, and who it suits for light walking.',
+    'The Wellfit TM037 is a real $140-$260 walking pad, not a scam, but its 3.0 HP brushless motor claim is disputed and motor cover is one year. Who it suits.',
   crumbLabel: 'Wellfit TM037',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-08',
+  modified: '2026-11-16',
   socialProof: '1.9k',
-  h1: ['Wellfit Treadmill Review:', 'The TM037 Walking Pad'],
+  h1: ['Wellfit Treadmill Reviews:', 'The TM037 Walking Pad'],
   standfirst:
     'The TM037 is the machine most Wellfit treadmill searches land on: a cheap, light, two-in-one walking pad with a fold-up handrail. At its price it can be a sensible buy for light walking — provided you read its listing as a set of claims rather than a set of facts.',
   ctas: [
-    { label: 'The Listed Specifications', href: '#listed-specifications' },
+    { label: 'Is Wellfit Legit?', href: '#is-wellfit-legit' },
     { label: 'Who It Suits', href: '#who-it-suits' },
   ],
-  tags: ['wellfit treadmill', 'wellfit treadmill reviews', 'wellfit walking pad', 'wellfit tm037', 'tm037 folding treadmill'],
+  tags: ['wellfit treadmill reviews', 'wellfit walking pad scam', 'wellfit treadmill', 'wellfit walking pad', 'wellfit tm037', 'tm037 folding treadmill'],
   stickyCta: { text: 'See Who It Suits', link: '#who-it-suits' },
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
-  lead: `Almost every figure attached to the Wellfit TM037 comes from the people selling it. That is
-          normal for a budget walking pad, and it does not make the machine a bad one. It does mean
-          the useful review is not a list of features but a reading of the listing: which numbers
-          describe the product, which describe the marketing, and which one independent report has
-          already called into question. This page does that reading, and then says plainly who
-          the TM037 is for.`,
+  lead: `The Wellfit TM037 is a real budget walking pad, not a scam, and at $140 to $260 it is a
+          plausible buy for light desk walking. The catch is that almost every figure attached to it
+          comes from the people selling it, and one independent report has already called the motor
+          claim into question. That is normal for a budget walking pad and does not make the machine a
+          bad one. This review reads the listing line by line, sets out what owners have complained
+          about, and says plainly who the TM037 is for.`,
   products: [
     {
       id: 'wellfit-tm037',
@@ -83,8 +84,61 @@ export default {
           </p>`,
     },
     {
+      id: 'is-wellfit-legit',
+      heading: 'Is Wellfit Legit, or a Scam?',
+      html: `          <p>
+            <strong>Nothing we have found suggests the Wellfit walking pad is a scam: it is a real product,
+            sold under a real listing, that people receive and use.</strong> What it is not is a product
+            whose listing you can take at face value. The honest description is a legitimate budget pad
+            sold with one disputed claim, one set of conflicting terms and a page of figures nobody
+            independent has confirmed.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What points to a real product</h3>
+          <ul>
+            <li><strong>It ships and it exists.</strong> The TM037 is sold on Amazon and through the Wellfit
+            brand site, at street prices of roughly $140 to $260. An independent reviewer has opened one up
+            and read the motor label, which is about as concrete as evidence of a delivered product gets.</li>
+            <li><strong>The listings agree with each other on the core figures.</strong> The brand page and
+            the Amazon listing give the same belt, speed, incline, capacity and weight figures. Consistency
+            is not verification, but a seller making things up at random would not manage it.</li>
+            <li><strong>Wellfit sells more than one machine.</strong> The brand also lists a larger Heavy
+            Duty Auto Incline Foldable Treadmill on Amazon, which our
+            <a href="/best-heavy-duty-treadmills/" class="text-[#0F62FE] font-medium">heavy duty treadmill guide</a>
+            covers. It is a range, not a single product page that might vanish.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Why some buyers end up calling it a scam</h3>
+          <ul>
+            <li><strong>The motor claim.</strong> The listing says 3.0 HP peak and brushless. One independent
+            teardown reported a brushed permanent magnet DC motor of roughly 0.75 HP continuous. We have not
+            verified it, but a buyer who reads that after paying for a “brushless” motor may well feel misled.
+            The details are in the motor section below.</li>
+            <li><strong>The warranty terms.</strong> The Amazon listing claims three years on the frame and one
+            year on the motor and parts; the brand page says “1-Year Warranty”. A buyer who remembers “three
+            years” and then has a motor fail will discover the shorter term applies.</li>
+            <li><strong>Reported owner complaints.</strong> One independent review documents returns that were
+            difficult to complete, belts that shifted to one side and a motor failure at around five to six
+            months. These are reported experiences rather than established facts.</li>
+            <li><strong>Listing-only figures.</strong> The 320 lb capacity, the under-40 dB noise figure and
+            the belt specification are all the seller’s claims. None is fraudulent on the evidence we have;
+            none has been independently confirmed either.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What we do not know</h3>
+          <p>
+            This page does not establish who manufactures the TM037 or which company stands behind the
+            warranty, and we have no count or summary of owner ratings to give you. If that matters to you,
+            ask the seller on the listing you are buying from who handles warranty claims, and get the
+            answer in writing. Check, too, that the seller named on the listing is the one you expect,
+            because on a marketplace that decides who handles a return.
+          </p>
+          <p>
+            The practical verdict: buy the TM037 as what it is, a cheap light-walking pad, from a listing
+            whose return window you have read, and keep use light. Read that way, the risks are those of
+            any budget pad rather than those of a scam.
+          </p>`,
+    },
+    {
       id: 'what-it-is',
-      heading: 'What the TM037 Actually Is',
+      heading: 'What Is the Wellfit TM037?',
       html: `          <p>
             Wellfit sells a small range of walking pads, and the TM037 — sometimes written TM-037 —
             is the one most "Wellfit treadmill" and "Wellfit walking pad" searches end up on. It is a
@@ -118,7 +172,7 @@ export default {
     },
     {
       id: 'listed-specifications',
-      heading: 'The Listed Specifications, and How to Read Them',
+      heading: 'What Are the TM037’s Specs, and Can You Trust Them?',
       html: `          <p>
             The Wellfit brand page and the Amazon listing agree on the core figures. That agreement
             tells you the seller is consistent; it does not tell you the figures have been checked by
@@ -172,7 +226,7 @@ export default {
     },
     {
       id: 'motor-question',
-      heading: 'The Motor Question: Peak Horsepower, Brushless Claims and One Teardown',
+      heading: 'Is the Wellfit Motor Really 3.0 HP and Brushless?',
       html: `          <p>
             The TM037 is advertised with a 3.0 HP peak motor, described as quiet and brushless. Both
             parts of that description deserve a closer look, and one independent report has
@@ -229,7 +283,7 @@ export default {
     },
     {
       id: 'weight-capacity',
-      heading: 'Reading the 320 lb Capacity Claim Sensibly',
+      heading: 'Can the Wellfit TM037 Really Hold 320 lb?',
       html: `          <p>
             The seller claims a 320 lb maximum user weight. That figure appears on a machine listed
             at about 42 lb, with a low-profile deck a few inches thick. It is worth thinking about
@@ -264,7 +318,7 @@ export default {
     },
     {
       id: 'noise',
-      heading: 'Noise: The Under-40 dB Claim',
+      heading: 'Is the Wellfit TM037 Quiet? The Under-40 dB Claim',
       html: `          <p>
             The listing describes the TM037 as quiet and puts its noise below 40 dB. That figure is a
             manufacturer claim and we have not seen it independently verified. It also does not say
@@ -295,7 +349,7 @@ export default {
     },
     {
       id: 'apps-and-controls',
-      heading: 'Controls, Apps and What They Cost',
+      heading: 'Does the Wellfit TM037 Need an App or a Subscription?',
       html: `          <p>
             The seller lists four ways to control the TM037: buttons on the handlebar, a handheld
             remote, an app and voice control. For under-desk use the remote is the one most owners
@@ -328,7 +382,7 @@ export default {
     },
     {
       id: 'warranty-and-service',
-      heading: 'Warranty, Returns and Seller Service',
+      heading: 'What Warranty Does Wellfit Give, and What Do Owners Complain About?',
       html: `          <p>
             This is the section that should decide whether you buy, because on a machine at this
             price the support behind it matters as much as the hardware.
@@ -374,7 +428,7 @@ export default {
     },
     {
       id: 'desk-use-and-maintenance',
-      heading: 'Daily Under-Desk Use and Keeping It Running',
+      heading: 'How Do You Make a Wellfit Walking Pad Last Under a Desk?',
       html: `          <p>
             Most TM037 owners will use it the same way: handrail down, deck under a standing desk,
             walking slowly for long stretches while working. That use is gentle on the legs and
@@ -419,7 +473,7 @@ export default {
     },
     {
       id: 'who-it-suits',
-      heading: 'Who It Suits, and Who Should Buy Something Else',
+      heading: 'Who Should Buy the Wellfit TM037, and Who Should Skip It?',
       html: `          <p>
             <strong>It suits light daily walking at a desk.</strong> If the plan is to walk slowly
             while working for an hour or two a day, the TM037's format, weight and size fit that well,
@@ -468,6 +522,10 @@ export default {
   ],
   faqs: [
     {
+      q: 'Is the Wellfit walking pad a scam?',
+      a: `Nothing we found suggests a scam: the TM037 is sold on Amazon and the Wellfit brand site, and an independent reviewer has opened one up. The concerns are a motor advertised as 3.0 HP brushless that a teardown reported as a brushed motor of about 0.75 HP continuous, warranty terms that conflict, and figures only the seller has published.`,
+    },
+    {
       q: 'Is the Wellfit walking pad worth buying?',
       a: `It can be, for light daily walking at a desk on a tight budget. It is cheap, light and folds flat. The caveats are a motor whose brushless, 3.0 HP peak claim has been disputed by one independent teardown, effective motor cover of one year, and reported complaints about returns. Buy near the bottom of its price range with the warranty and return terms confirmed in writing.`,
     },
@@ -486,6 +544,10 @@ export default {
     {
       q: 'What warranty does the Wellfit TM037 have?',
       a: `The sources disagree. The Amazon listing claims three years on the frame and one year on the motor and parts, while the Wellfit brand page says 1-Year Warranty. Either way, the motor and parts are covered for about a year, so plan around that. Ask the seller you are buying from for the terms in writing, including who pays shipping on a claim.`,
+    },
+    {
+      q: 'Does Wellfit make other treadmills?',
+      a: `Yes. Besides the TM037, Wellfit lists a Heavy Duty Auto Incline Foldable Treadmill on Amazon, with a claimed 400 lb capacity, an 18 by 43-inch belt, 0.6 to 8.8 mph, a 0-15% powered incline, and three years on the frame and one year on the motor and parts. It was about $400 on 6 November 2026. It is a walking machine, not a runner.`,
     },
     {
       q: 'Is the Wellfit TM037 quiet enough for an office or flat?',

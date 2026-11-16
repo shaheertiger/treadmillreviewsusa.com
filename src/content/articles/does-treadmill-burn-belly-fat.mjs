@@ -2,13 +2,14 @@ export default {
   slug: 'does-treadmill-burn-belly-fat',
   title: 'Does a Treadmill Burn Belly Fat? The Honest Answer',
   description:
-    'A treadmill cannot target belly or thigh fat — nothing can. It does help with whole-body fat loss, including the visceral kind. Here is what actually works, and why.',
+    'No, a treadmill cannot target belly fat, and nothing can. Yes, it helps you lose fat overall, including deep visceral belly fat. What works, and how long.',
   crumbLabel: 'Does a Treadmill Burn Belly Fat?',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-06',
+  modified: '2026-11-16',
   socialProof: '2.1k',
   h1: ['Does a Treadmill', 'Burn Belly Fat?'],
   standfirst:
@@ -19,15 +20,17 @@ export default {
   ],
   tags: ['treadmill belly fat', 'spot reduction', 'visceral fat', 'incline walking thigh fat', 'treadmill fat loss'],
   stickyCta: { text: 'See a Realistic Plan', link: '#realistic-plan' },
-  lead: `It is one of the most searched questions in home fitness, and it deserves a straight
-          answer: no machine burns fat from a particular body part. A treadmill helps you lose fat
-          from your whole body, and your belly is part of your whole body. That distinction sounds
+  lead: `No, a treadmill cannot burn fat from your belly specifically, because no exercise can
+          spot-reduce fat; yes, it helps you lose fat from your whole body, including the deep
+          visceral fat around your organs. It is one of the most searched questions in home
+          fitness, and your belly is part of your whole body. That distinction sounds
           pedantic. It is actually the difference between a plan that works and one that ends in
           frustration around week six.`,
   sections: [
     {
       id: 'short-answer',
-      heading: 'The Short Answer',
+      navLabel: 'The Short Answer',
+      heading: 'Does a Treadmill Burn Belly Fat? The Short Answer',
       html: `          <p>
             <strong>A treadmill does not burn belly fat specifically, but it can help you lose
             belly fat as part of losing fat overall.</strong> Fat loss is a whole-body process.
@@ -47,11 +50,20 @@ export default {
             The same logic answers the related question about incline and thighs. Incline walking
             works your glutes, hamstrings and calves harder, and that is worth having. It does not
             preferentially strip fat from your thighs. Nothing does.
-          </p>`,
+          </p>
+          <div class="not-prose my-6 bg-amber-50 border border-amber-200 rounded-2xl p-5 text-sm text-gray-700 leading-relaxed">
+            <strong class="text-gray-900">Health note.</strong> This is general information, not
+            medical advice. If you have a heart or blood pressure condition, diabetes, joint
+            problems, are pregnant, or have been inactive for a long time, check with your doctor
+            before starting a new exercise plan. And if weight stays hard to shift despite
+            consistent effort, talk to a doctor or dietitian: there are medical and
+            medication-related reasons that can happen.
+          </div>`,
     },
     {
       id: 'spot-reduction',
-      heading: 'Why Spot Reduction Does Not Work',
+      navLabel: 'Why Spot Reduction Does Not Work',
+      heading: 'Why Can\'t You Spot-Reduce Belly Fat?',
       html: `          <p>
             Spot reduction is the idea that exercising a body part burns the fat sitting on top of
             it — crunches for the stomach, leg raises for the thighs, incline walking for the
@@ -83,7 +95,8 @@ export default {
     },
     {
       id: 'how-fat-loss-works',
-      heading: 'How Fat Loss Actually Happens',
+      navLabel: 'How Fat Loss Actually Happens',
+      heading: 'How Does Fat Loss Actually Happen?',
       html: `          <p>
             Strip away the marketing and fat loss comes down to sustained energy balance. Over
             weeks and months, if you consistently use more energy than you take in, your body makes
@@ -118,7 +131,8 @@ export default {
     },
     {
       id: 'visceral-fat',
-      heading: 'Belly Fat Is Really Two Kinds of Fat',
+      navLabel: 'Belly Fat Is Really Two Kinds of Fat',
+      heading: 'What Are the Two Kinds of Belly Fat?',
       html: `          <p>
             "Belly fat" covers two different tissues, and the distinction matters more than almost
             anything else on this page.
@@ -153,7 +167,8 @@ export default {
     },
     {
       id: 'what-treadmill-does',
-      heading: 'What Treadmill Exercise Actually Contributes',
+      navLabel: 'What Treadmill Exercise Contributes',
+      heading: 'What Does Treadmill Exercise Actually Do for Belly Fat?',
       html: `          <p>
             A treadmill is not magic, but it is unusually well suited to the job. Three things
             make it useful for fat loss specifically.
@@ -261,7 +276,8 @@ export default {
     },
     {
       id: 'realistic-plan',
-      heading: 'What a Realistic Plan Looks Like',
+      navLabel: 'What a Realistic Plan Looks Like',
+      heading: 'What Does a Realistic Treadmill Plan Look Like?',
       html: `          <p>
             This is a framework rather than a programme — the detailed sessions live in our
             <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workouts for weight loss</a>
@@ -305,7 +321,8 @@ export default {
     },
     {
       id: 'sleep-and-diet',
-      heading: 'Diet, Sleep and Stress Matter More Than the Machine',
+      navLabel: 'Diet, Sleep and Stress',
+      heading: 'Do Diet, Sleep and Stress Matter More Than the Machine?',
       html: `          <p>
             It is slightly awkward for a treadmill review site to say so, but for abdominal fat in
             particular the treadmill is one lever among several, and not always the largest.
@@ -337,7 +354,8 @@ export default {
     },
     {
       id: 'timeline',
-      heading: 'How Long Before You See a Difference',
+      navLabel: 'How Long Before You See a Difference',
+      heading: 'How Long Before You See a Difference?',
       html: `          <p>
             Expect this to be measured in months rather than weeks. Mainstream public-health
             guidance generally describes a loss of around 1 to 2 pounds a week as a sustainable
@@ -365,7 +383,8 @@ export default {
     },
     {
       id: 'tracking',
-      heading: 'How to Track Progress Without Obsessing Over the Scale',
+      navLabel: 'How to Track Progress',
+      heading: 'How Should You Track Progress Without Obsessing Over the Scale?',
       html: `          <p>
             Because the question is specifically about belly fat, the scale is the wrong primary
             measure. Body weight lumps together fat, muscle, water and everything else, and it says

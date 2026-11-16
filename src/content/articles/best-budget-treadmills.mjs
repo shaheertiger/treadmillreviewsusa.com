@@ -1,25 +1,29 @@
 export default {
   slug: 'best-budget-treadmills',
-  title: 'Best Budget Treadmills (2026): The Best Pick at Every Price Band',
+  title: 'Best Affordable Treadmills (2026): Under $300, $500 and $1,000',
   description:
-    'The best budget treadmill at each realistic price, from a $300 walking pad to a $1,100 running machine, with what each band gives up and where cheap costs more.',
+    'The best affordable treadmills: the MERACH W50 pad at $299.99, a Goplus folder with 15% incline at about $430 and the 60-inch-deck Horizon T202 at $899.',
   crumbLabel: 'Best Budget Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 15, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-15',
+  modified: '2026-11-16',
   socialProof: '2.2k',
-  h1: ['Best Budget Treadmills', 'at Every Realistic Price'],
+  h1: ['Best Affordable Treadmills:', 'Budget Picks Under $300, $500 and $1,000'],
   standfirst:
     '"Budget" means something different at $300 and at $1,100, and the best cheap treadmill depends on which of those you can spend. Here is the machine worth buying in each band, what each band quietly gives up, and the places where a cheap treadmill ends up costing more than it should.',
   ctas: [
     { label: 'See the Picks', href: '#quick-picks' },
     { label: 'What Budget Gives Up', href: '#what-budget-sacrifices' },
   ],
-  tags: ['best budget treadmill', 'best cheap treadmill', 'best affordable treadmill', 'cheap treadmill', 'budget treadmill', 'horizon t202', 'bowflex t6'],
+  tags: ['affordable treadmill', 'budget friendly treadmills', 'best inexpensive treadmill', 'best reasonably priced treadmill', 'best budget treadmill', 'best cheap treadmill', 'best affordable treadmill', 'cheap treadmill', 'budget treadmill', 'horizon t202', 'bowflex t6'],
   stickyCta: { text: 'See the Best Pick for Your Budget', link: '#quick-picks' },
-  lead: `There is no single best budget treadmill, because a budget is not one number. Somebody
+  lead: `The best affordable treadmill depends on your budget: under $300 it is the MERACH NovaWalk
+          W50 TrekPad walking pad, under $500 the Goplus 3.75HP folding treadmill with a 15% incline,
+          and under $1,000 the Horizon T202, the cheapest full-size 60-inch deck we could verify.
+          There is no single best budget treadmill, because a budget is not one number. Somebody
           with $300 and somebody with $1,100 are both shopping cheap, and the right machine for one
           is useless to the other. So this page does not rank six treadmills against each other.
           It names the best machine we could verify in each realistic price band — a walking pad, a
@@ -30,34 +34,39 @@ export default {
   sections: [
     {
       id: 'quick-picks',
-      heading: 'Our Picks at a Glance',
+      heading: 'Best Budget-Friendly Treadmills: The Short Answer',
+      navLabel: 'The short answer',
       html: `          <p>
-            One or two machines for each budget. The short version: at about $300, buy a walking pad
-            with incline; at about $900, buy a full-size treadmill with a 60-inch deck; and if you can
-            stretch to about $1,100, buy a machine with a 15% incline and a longer parts warranty.
-            The middle band — a folding treadmill with side rails and a full deck for under $500 — is
-            where we could verify the least, and the reasons are set out below.
+            One or two affordable machines for each budget. The short version: under $300, buy a
+            walking pad with incline; under $500, a compact folding treadmill with rails and a 52-inch
+            belt is the most you can verify; under $1,000, buy a full-size treadmill with a 60-inch
+            deck; and if you can stretch to about $1,100, buy a machine with a 15% incline and a longer
+            parts warranty. A full-size folding treadmill with a 55-inch or longer deck for under $500
+            is what we could not verify, and the reasons are set out below.
           </p>
-          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[640px] w-full text-sm border-collapse">
             <thead>
               <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Budget</th>
                 <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
-                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price checked</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Belt or deck</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Incline</th>
                 <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
               </tr>
             </thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">MERACH NovaWalk W50 TrekPad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking pad, around $300</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered incline, 400 lb rating, 1.25 HP continuous</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Goplus 3.75HP Folding Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Compact folding machine, under $500</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rails and a 1–15% powered incline for about $430</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon T202</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Full-size jogging, $800–$1,000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 60-inch deck and 12 mph for $899</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack T Series 10</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The same band, with a touchscreen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 in. screen and iFIT on a 60-inch deck for about $999</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.0 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running, $1,000–$1,500</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% incline, quick dials, three years on parts</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE F63</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running with no subscription</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Same core figures, about $1,100 direct from SOLE</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under $300</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">MERACH NovaWalk W50 TrekPad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$299.99 (MERACH, 5 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">41.3 x 16.5 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking pad: 400 lb rating, 1.25 HP continuous</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under $500</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Goplus 3.75HP Folding Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $430 (Amazon, 6 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">52 x 17 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1–15% powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Compact folder with rails and a console</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under $1,000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon T202</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$899 (Horizon, 15 Oct)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 60 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–12%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Full-size jogging deck and 12 mph</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under $1,000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack T Series 10</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $999 (Amazon, 6 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 60 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–12%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The same band, with a 10 in. touchscreen and iFIT</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $1,100</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.0 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,099 (Horizon, 15 Oct)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 60 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–15%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running: quick dials, three years on parts</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $1,100</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE F63</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,099.99 (SOLE, 15 Oct)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 60 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–15%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running with no subscription, two years on parts</td></tr>
             </tbody>
           </table></div>
           <p>
             Each band has its own, deeper guide on this site, and they are linked in
-            <a href="#budget-bands" class="text-[#0F62FE] font-medium">what each budget band buys</a>.
+            <a href="#budget-bands" class="text-[#0F62FE] font-medium">what a reasonably priced treadmill gets you</a>.
             If you have not yet decided how much to spend at all, start with our guide to
             <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much you should spend on a treadmill</a>
             and come back.
@@ -65,7 +74,7 @@ export default {
     },
     {
       id: 'picks',
-      heading: 'The 6 Best Budget Treadmills, Band by Band',
+      heading: 'The 6 Best Inexpensive Treadmills, Band by Band',
       products: true,
       html: `          <p>
             The cards run from the cheapest band to the most expensive. The specification line on
@@ -86,15 +95,26 @@ export default {
       id: 'how-we-chose',
       heading: 'How We Chose These Machines',
       html: `          <p>
-            We have not tested these machines. The picks were made from published specifications,
-            maker and retailer listings, warranty terms and independent coverage, all checked on 15
-            October 2026. Two of them have their own pages on this site — our reviews of the
+            We have not tested these machines, and nothing on this page should be read as if we had.
+            This is a spec-based roundup. The picks were made from published specifications, maker and
+            retailer listings, warranty terms and independent coverage, first checked on 15 October
+            2026. The MERACH price was re-checked on MERACH's own store on 5 November 2026, and the
+            Goplus and NordicTrack machines were checked on their Amazon listings on 6 November 2026.
+            Two of the machines have their own pages on this site — our reviews of the
             Horizon 7.0 AT and the SOLE F63 — and those are readings of the specifications and owner
             reports, not hands-on tests either.
           </p>
           <p>
-            Four rules decided the list. <strong>On sale now:</strong> each machine had to be in stock
-            on its maker's own store on 15 October 2026, under that name, at a price inside its band.
+            We did not run or walk on any of these treadmills, measure a deck, time an incline change
+            or assemble one. The prices are the ones shown on the dates given, not prices we paid,
+            and they will move. The Goplus card is the thinnest: its figures come from its Amazon
+            listing, which leaves out the top speed, so the card says so rather than filling the gap.
+          </p>
+          <p>
+            Four rules decided the list. <strong>On sale now:</strong> each machine had to be listed
+            in stock under that name, at a price inside its band, on the day we checked it — on the
+            maker's own store for the Horizon, MERACH and SOLE machines, and on Amazon for the Goplus
+            and NordicTrack.
             <strong>Agreement:</strong> deck or belt size, speed range, incline and weight capacity had
             to match between the maker and at least one source that does not make the machine.
             <strong>A real warranty:</strong> written terms from a brand with its own store and support
@@ -122,7 +142,7 @@ export default {
     },
     {
       id: 'budget-bands',
-      heading: 'What Each Budget Band Buys',
+      heading: 'What Does a Reasonably Priced Treadmill Get You?',
       html: `          <p>
             This page gives you the one or two machines we would buy in each band. Each band also has
             a full guide on this site with more options, so treat the links below as the deeper read
@@ -171,7 +191,7 @@ export default {
     },
     {
       id: 'choosing-your-band',
-      heading: 'Choosing Your Band in Four Questions',
+      heading: 'Which Budget Band Is Right for You?',
       html: `          <p>
             Most people pick a budget first and a machine second. It works better the other way
             round: decide what the machine has to do, and the band follows. Four questions settle it
@@ -214,7 +234,7 @@ export default {
     },
     {
       id: 'what-budget-sacrifices',
-      heading: 'What "Budget" Sacrifices: Motor, Deck and Warranty',
+      heading: 'What Do You Give Up With a Cheap Treadmill?',
       html: `          <p>
             Every step down in price removes something. Screens and app features are the visible
             cuts, and the least important. Three less visible ones matter more, and they are worth
@@ -264,7 +284,7 @@ export default {
     },
     {
       id: 'where-cheap-gets-expensive',
-      heading: 'Where Cheap Gets Expensive',
+      heading: 'When Does a Cheap Treadmill End Up Costing More?',
       html: `          <p>
             The purchase price is only the first cost of a treadmill. A cheap machine can end up
             costing more than a slightly dearer one in four predictable ways, and our comparison of
@@ -307,7 +327,7 @@ export default {
     },
     {
       id: 'reading-budget-prices',
-      heading: 'How to Tell a Real Budget Price From a Fake One',
+      heading: 'Is a Budget Treadmill "Sale" Price Real?',
       html: `          <p>
             Budget treadmills are sold almost permanently "on sale", which makes it hard to know what
             a good price is. A few habits help.
@@ -343,7 +363,7 @@ export default {
     },
     {
       id: 'used-and-refurbished',
-      heading: 'Used and Refurbished: The Other Budget Route',
+      heading: 'Is a Used or Refurbished Treadmill a Better Deal?',
       html: `          <p>
             If the band you can afford does not buy the machine you need, a second-hand or
             manufacturer-refurbished treadmill can move you up a band for the same money. A used
@@ -372,7 +392,7 @@ export default {
     },
     {
       id: 'who-should-spend-differently',
-      heading: 'Who Should Spend More, and Who Should Spend Less',
+      heading: 'Who Should Spend More, and Who Should Spend Less?',
       html: `          <p>
             The bands above suit most buyers. Some should deliberately move up or down one.
           </p>
@@ -392,7 +412,8 @@ export default {
           </p>
           <p>
             <strong>Spend more if you are near a weight limit.</strong> Every full-size machine on this
-            page is rated to 325 lb, and the walking pads to 265 lb. If you are within about 50 lb of
+            page is rated to 325 lb and the Goplus compact folder to 265 lb; the MERACH walking pad is
+            rated to 400 lb, but it is a walking machine only. If you are within about 50 lb of
             those figures, look at the
             <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity guide</a>
             instead of stretching a budget machine.
@@ -546,7 +567,7 @@ export default {
       bottomLine:
         'A sound alternative to the Horizon 7.0 AT for runners at the top of a budget; choose on price on the day and which controls you prefer.',
       description:
-        'The F63 is SOLE’s entry running treadmill and the 7.0 AT’s closest rival on paper. SOLE lists a 20 by 60-inch running surface, 0.5 to 12 mph, 0 to 15% incline, a 325 lb maximum user weight and a 3.0 HP motor, and an independent review agrees on all of them. The warranty is lifetime on frame and motor and two years on parts, as SOLE’s own comparison table and the independent review both state; the review adds two years on the deck and wear items and one year of labour. That two-year parts term is the one place it falls behind the Horizon and BowFlex machines, which offer three. It folds, and there is no subscription: SOLE’s app is free and the console works on its own. SOLE had it at $1,099.99 against a $1,199.99 regular price on 15 October, with a 30-day satisfaction guarantee and curbside delivery. If the 7.0 AT and F63 are the same price on the day you buy, either is a good choice.',
+        'The F63 is SOLE’s entry running treadmill and the 7.0 AT’s closest rival on paper. SOLE lists a 20 by 60-inch running surface, 0.5 to 12 mph, 0 to 15% incline, a 325 lb maximum user weight and a 3.0 HP motor, and an independent review agrees on all of them. The warranty is lifetime on frame and motor and two years on parts, as SOLE’s own comparison table and the independent review both state; the review adds two years on the deck and wear items and one year of labour. That two-year parts term is the one place it falls behind the Horizon 7.0 AT, which offers three. It folds, and there is no subscription: SOLE’s app is free and the console works on its own. SOLE had it at $1,099.99 against a $1,199.99 regular price on 15 October, with a 30-day satisfaction guarantee and curbside delivery. If the 7.0 AT and F63 are the same price on the day you buy, either is a good choice.',
     },
   ],
   faqs: [
@@ -561,6 +582,10 @@ export default {
     {
       q: 'How much should I spend on a budget treadmill?',
       a: `Spend enough to buy the right kind of machine for your most demanding weekly use. For walking, about $300 buys a good pad. For jogging and some running, about $900 is the realistic floor for a full-size deck. For running most days, about $1,100 buys steeper incline and longer parts cover. Spending less than your use needs usually means buying twice.`,
+    },
+    {
+      q: 'What is the best inexpensive treadmill with incline?',
+      a: `Under $500, the Goplus 3.75HP Folding Treadmill lists a 1 to 15% automatic incline on a 52-inch belt for about $430 on Amazon, though its listing gives no top speed. For walking only, the MERACH NovaWalk W50 TrekPad adds a powered incline for $299.99. On a full 60-inch deck, the Horizon T202 offers 0 to 12% for $899.`,
     },
     {
       q: 'Are cheap treadmills worth it?',
@@ -581,7 +606,7 @@ export default {
   mistakes: [
     {
       title: 'Buying for your gentlest use',
-      body: 'People buy for the walk they do most days and then want to jog. A walking pad or a 42-inch compact folder will not cope with regular jogging, and replacing it within the year costs more than buying the right machine first. Buy for the most demanding session you expect each week, and you will rarely need to buy again.',
+      body: 'People buy for the walk they do most days and then want to jog. A walking pad or a 52-inch compact folder will not cope with regular jogging, and replacing it within the year costs more than buying the right machine first. Buy for the most demanding session you expect each week, and you will rarely need to buy again.',
     },
     {
       title: 'Comparing headline horsepower',
@@ -641,7 +666,7 @@ export default {
             best everyday price, and the NordicTrack T Series 10 adds a touchscreen for about
             $100 more.</strong> If you can reach about $1,100 and will run regularly, the Horizon 7.0 AT
             or SOLE F63 buys 15% incline and longer parts cover.`,
-    `The biggest single step on this page is from a 42-inch belt to a 60-inch deck, and it
+    `The biggest single step on this page is from a 41- or 52-inch belt to a 60-inch deck, and it
             happens between $500 and $900. Decide which side of it your use falls on before
             anything else, then read the
             <a href="/how-to-make-a-cheap-treadmill-last-longer/" class="text-[#5AA9FF] font-bold no-underline">guide to making a cheap treadmill last longer</a>
