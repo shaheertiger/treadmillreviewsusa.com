@@ -186,7 +186,12 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 
         <div id="the-chart" class="scroll-mt-24">
           <h2>Speed, Pace and km/h</h2>
-<div class="overflow-x-auto my-8 not-prose">
+<figure class="not-prose my-8">
+            <img src="/charts/treadmill-pace-chart.svg" width="720" height="420" loading="lazy" decoding="async" class="w-full h-auto border border-gray-200 rounded-xl"
+              alt="Line chart of treadmill speed against pace per mile: 3 mph is a 20:00 mile, 6 mph is 10:00, 7.5 mph is 8:00 and 10 mph is 6:00." />
+            <figcaption class="text-sm text-gray-500 mt-2">Pace per mile against speed from 3 to 12 mph. Pace = 60 ÷ mph.</figcaption>
+          </figure>
+          <div class="overflow-x-auto my-8 not-prose">
             <table class="min-w-[520px] w-full text-sm border-collapse">
               <thead>
                 <tr class="bg-gray-900 text-white text-left">

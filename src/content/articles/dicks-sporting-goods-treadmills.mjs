@@ -1,16 +1,20 @@
+const th = 'text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4';
+const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
+
 export default {
   slug: 'dicks-sporting-goods-treadmills',
-  title: "Dick's Sporting Goods Treadmills (2026): Know Before You Buy",
+  title: "Dick's Sporting Goods Treadmills (2026): What's Worth Buying",
   description:
-    "Buying a treadmill at Dick's Sporting Goods: how to test one in store, what range to expect, delivery and assembly, returns, price matching and how to compare.",
+    "Dick's sells mainstream home treadmills: we have seen XTERRA, LifeSmart, Horizon, Sole, Schwinn and WalkingPad listed there. Delivery, returns, price match.",
   crumbLabel: "Dick's Sporting Goods Treadmills",
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-06',
+  modified: '2026-11-16',
   socialProof: '1.3k',
-  h1: ["Treadmills at", "Dick's Sporting Goods"],
+  h1: ["Dick's Sporting Goods", "Treadmills"],
   standfirst:
     "The best reason to shop for a treadmill at a sporting goods chain is that you can stand on one. Used well, that ten minutes on the floor model is worth more than any listing — as long as you check the delivery, assembly and return terms before you pay.",
   ctas: [
@@ -19,8 +23,10 @@ export default {
   ],
   tags: ["dick's sporting goods treadmills", "dick's treadmills", "treadmills at dick's", 'sporting goods treadmill', 'where to buy a treadmill'],
   stickyCta: { text: 'How to Test In Store', link: '#in-store-testing' },
-  lead: `This page does not list which treadmills Dick's Sporting Goods is selling right now. The
-          range changes through the year, floor models differ from store to store, and the website
+  lead: `Dick's Sporting Goods sells mainstream home treadmills: across this site's brand and model
+          guides we have seen XTERRA, LifeSmart, Horizon, Sole, Schwinn, WalkingPad and Sunny Health
+          &amp; Fitness machines listed there, mostly folding treadmills for walkers, joggers and
+          recreational runners. This page does not track live stock, because the range changes through the year, floor models differ from store to store, and the website
           usually carries more than any single shop. Instead it covers what a sporting goods chain is
           good at, what to check on delivery, assembly and returns, and how to compare a price there
           with what the same kind of machine costs elsewhere.`,
@@ -51,7 +57,8 @@ export default {
     },
     {
       id: 'in-store-testing',
-      heading: 'The In-Store Testing Advantage',
+      navLabel: 'The In-Store Testing Advantage',
+      heading: "Can You Try a Treadmill at Dick's Before You Buy?",
       html: `          <p>
             Most treadmills are bought without the buyer ever standing on one. A store with machines
             on the floor removes that guess, and it is worth planning the visit so you get real
@@ -90,13 +97,45 @@ export default {
     },
     {
       id: 'selection',
-      heading: 'What Selection to Expect',
+      navLabel: "What Dick's Stocks",
+      heading: "What Treadmills Does Dick's Sporting Goods Sell?",
       html: `          <p>
             Sporting goods chains typically carry mainstream home <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium" data-autolink>treadmill brands</a> — the kind of
             folding and non-folding machines aimed at walkers, joggers and recreational runners —
             alongside other cardio equipment. Exactly which brands and models are available varies
             by store, by region and over the year, and it is common for the website to list more
             than any individual store has on the floor.
+          </p>
+          <p>
+            These are the treadmill brands this site has recorded at Dick's while researching its
+            brand and model guides. It is a list of what we have seen listed, with the date where we
+            have one, not a confirmation of current stock.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Brand</th>
+                <th class="${th}">What we have seen at Dick's</th>
+                <th class="${th}">Our guide</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">XTERRA</td><td class="${td}">Treadmills listed in search results on 5 Nov 2026, including the TR75 folder (between $1,099.99 and $1,299.99 across sellers that day) and the TR95H Hiker desk treadmill</td><td class="${td}"><a href="/xterra-treadmills/" class="text-[#0F62FE] font-medium">XTERRA treadmills</a></td></tr>
+              <tr><td class="${td}">LifeSmart</td><td class="${td}">The self-folding TM3000 and TM4000 (5 Nov 2026); LifeSmart lists them at $999 and $1,199</td><td class="${td}"><a href="/lifesmart-treadmills/" class="text-[#0F62FE] font-medium">LifeSmart treadmills</a></td></tr>
+              <tr><td class="${td}">Horizon</td><td class="${td}">A T101 Connect listing on 14 Oct 2026, stock and price unconfirmed; advertised there at $599.99 in August 2025</td><td class="${td}"><a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101 review</a></td></tr>
+              <tr><td class="${td}">Sole</td><td class="${td}">Sold through large retailers including Dick's; Dick's carried the now-discontinued F89, catalogued as "F89-2023"</td><td class="${td}"><a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole Fitness</a></td></tr>
+              <tr><td class="${td}">Schwinn</td><td class="${td}">Schwinn treadmills appear there at times (5 Nov 2026)</td><td class="${td}"><a href="/schwinn-treadmills/" class="text-[#0F62FE] font-medium">Schwinn treadmills</a></td></tr>
+              <tr><td class="${td}">WalkingPad</td><td class="${td}">An X25 double-fold running treadmill listing, which gives a 2.0 HP motor against WalkingPad's own 4.5 HP</td><td class="${td}"><a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">Portable treadmills</a></td></tr>
+              <tr><td class="${td}">Sunny Health &amp; Fitness</td><td class="${td}">The SF-X7110 self-powered curved treadmill; the older SF-T7603 showed out of stock (Nov 2026)</td><td class="${td}"><a href="/sunny-health-fitness-treadmills/" class="text-[#0F62FE] font-medium">Sunny treadmills</a></td></tr>
+              <tr><td class="${td}">Reebok</td><td class="${td}">FR30z and Jet 100z have been listed; stock unconfirmed on 14 Oct 2026</td><td class="${td}"><a href="/reebok-treadmills/" class="text-[#0F62FE] font-medium">Reebok treadmills</a></td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            <strong>Price bands.</strong> The prices this site has recorded for treadmills Dick's lists
+            run from about $600, the Horizon T101 Connect's August 2025 advertised price, to about
+            $1,300 for XTERRA's TR75. A self-powered curved trainer such as Sunny's SF-X7110 sits well
+            above that band: Amazon and Sunny both showed it at $2,499.99 on 9 November 2026. Treat
+            every figure here as a dated snapshot and check the live price.
           </p>
           <p>
             <strong>Call ahead.</strong> If you want to try a particular machine, ask the store
@@ -123,7 +162,8 @@ export default {
     },
     {
       id: 'reading-specs',
-      heading: 'Reading the Spec Card on the Floor',
+      navLabel: 'Reading the Spec Card on the Floor',
+      heading: 'What Should You Check on the Spec Card?',
       html: `          <p>
             The sign on a floor model is a sales summary. Before you buy, translate it into the
             figures that actually decide whether the machine suits you.
@@ -148,13 +188,66 @@ export default {
           </p>`,
     },
     {
+      id: 'best-at-dicks',
+      navLabel: "Best Treadmill to Buy at Dick's",
+      heading: "Best Treadmill to Buy at Dick's: What to Look For There",
+      html: `          <p>
+            <strong>There is no single best treadmill at Dick's, but four machines from brands we have
+            seen there cover most buyers.</strong> None of these has been tested hands-on by us, and
+            stock varies by store and week, so treat this as a shortlist to check against the live
+            listing, using the published specifications on each linked page.
+          </p>
+          <p>
+            <strong>For jogging and running on a budget: XTERRA TR75.</strong> XTERRA lists a 3.25 HP
+            motor, 0.5 to 12 mph, 12 levels of electronic incline, a 20 by 60-inch running surface and
+            a 350 lb maximum user, on a folding frame with lift assist. The warranty is lifetime frame
+            and motor, two years' parts and one year's in-home labour. A 60-inch deck is the length our
+            belt size guide gives for taller runners. Our <a href="/xterra-treadmills/" class="text-[#0F62FE] font-medium">XTERRA treadmills guide</a> covers
+            the rest of the range and the figures XTERRA states two ways.
+          </p>
+          <p>
+            <strong>For small rooms and easy storage: LifeSmart TM3000 or TM4000.</strong> These are
+            the self-folding PowerTouch machines: the TM3000 has a 20 by 55-inch belt and 12.5 mph, the
+            TM4000 a 20 by 60-inch belt and 14 mph. The trade-off is LifeSmart's one-year warranty,
+            short for a motorised treadmill, which makes the return window at the store matter more.
+            See <a href="/lifesmart-treadmills/" class="text-[#0F62FE] font-medium">LifeSmart treadmills</a> for the conflicting
+            published figures.
+          </p>
+          <p>
+            <strong>For walkers: Horizon T101 Connect.</strong> Horizon's product page and independent
+            coverage agree on a 20 by 55-inch cushioned deck, 0.5 to 10 mph, 0 to 10% powered incline
+            and a 300 lb maximum user, with a hydraulic-assist fold. If you are offered an older or
+            open-box unit, check its serial number against the 2022 T101-05 recall first; our
+            <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101 review</a> explains how.
+          </p>
+          <p>
+            <strong>For serious runners: look at Sole.</strong> Sole sells through large retailers
+            including Dick's, but its warranty terms vary by model and have changed between model
+            years, so get the specific model's terms in writing. Our
+            <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">best Sole treadmills</a> roundup and the
+            <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole brand guide</a> set out the range. If the machine you
+            want is not on the floor, our <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running treadmill guide</a>
+            covers what to look for elsewhere.
+          </p>
+          <p>
+            Whatever you choose, apply the same tests: a deck long enough for your height and stride
+            (our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
+            gives lengths by use, with 60 inches for taller runners and interval training), a
+            continuous motor rating rather than a peak one, a weight limit comfortably above yours,
+            and a parts and labour warranty you have read.
+          </p>`,
+    },
+    {
       id: 'delivery-assembly',
-      heading: 'Delivery and Assembly Options',
+      navLabel: 'Delivery and Assembly',
+      heading: "Does Dick's Deliver and Assemble Treadmills?",
       html: `          <p>
             How a treadmill from a sporting goods chain gets into your home depends on the machine,
             the store and what you pay for. Retailers of this kind may offer some combination of
             take-home, home delivery and assembly, but the options and their prices vary, so ask
-            rather than assume.
+            rather than assume. We have not confirmed Dick's current delivery charges or assembly
+            service for treadmills, so this page does not quote them; the product page and the store
+            will give the terms for the machine you are buying.
           </p>
           <p>
             <strong>Take-home.</strong> Some compact or boxed machines can go home with you on the
@@ -183,11 +276,15 @@ export default {
     },
     {
       id: 'returns',
-      heading: 'Check the Return Policy for This Item',
+      navLabel: 'Return Window',
+      heading: "What Is Dick's Return Window for a Treadmill?",
       html: `          <p>
             Retailers commonly set specific return conditions for large fitness equipment, for
             delivered items and for machines that have been assembled, and the terms can change. Do
-            not rely on what you remember of the store's general policy.
+            not rely on what you remember of the store's general policy. We have not confirmed the
+            current return window Dick's applies to treadmills, so we do not quote a number of days
+            here: read it on the product page or the receipt for the specific machine, and if the
+            window is short, do your testing on the floor model before you buy.
           </p>
           <p>
             <strong>Ask four questions before paying.</strong> How long is the return window for
@@ -207,12 +304,21 @@ export default {
     },
     {
       id: 'price-matching',
-      heading: 'Price Matching and Promotions',
+      navLabel: 'Price Matching',
+      heading: "Does Dick's Price Match Treadmills?",
       html: `          <p>
             Many large retailers offer some form of price matching, and sporting goods chains run
             regular promotions on fitness equipment. Whether a particular treadmill qualifies, and
             against which competitors, depends on the current policy — so check it rather than
-            assuming.
+            assuming. We have not confirmed Dick's own current price-match terms.
+          </p>
+          <p>
+            <strong>A Dick's price can work in your favour elsewhere.</strong> Academy Sports +
+            Outdoors says it beats a qualifying competitor's current advertised price by 5% on an
+            identical, in-stock item with the same brand and model number, and its list of qualifying
+            online retailers includes Dick's; clearance, timed events, coupons and membership prices
+            are excluded. If both stores carry the identical model, our
+            <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium">Academy Sports guide</a> sets out how that works.
           </p>
           <p>
             <strong>Match like for like.</strong> Price-match policies typically require the same
@@ -239,7 +345,8 @@ export default {
     },
     {
       id: 'warranty-service',
-      heading: 'Warranty and Service',
+      navLabel: 'Warranty and Service',
+      heading: "Who Handles Warranty Claims on a Treadmill From Dick's?",
       html: `          <p>
             As with most retailers, warranty service on a treadmill bought at a sporting goods chain
             usually runs through the manufacturer. The store sells the machine; the manufacturer
@@ -261,7 +368,8 @@ export default {
     },
     {
       id: 'compare-channels',
-      heading: 'How It Compares With Other Places to Buy',
+      navLabel: 'Other Places to Buy',
+      heading: "Is Dick's Cheaper Than Other Places to Buy a Treadmill?",
       html: `          <p>
             A sporting goods chain sits in the middle of the market: more hands-on than an online
             marketplace, less specialist than a dedicated fitness store. Scheels works similarly in the Midwest and West; see <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">buying a treadmill at Scheels</a>. In Texas and the Southeast, Academy fills the same role; see <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium">buying a treadmill at Academy Sports</a>.
@@ -292,7 +400,8 @@ export default {
     },
     {
       id: 'who-suits',
-      heading: 'Who It Suits, and Who It Does Not',
+      navLabel: 'Who It Suits',
+      heading: "Who Should Buy a Treadmill at Dick's, and Who Should Not?",
       html: `          <p>
             <strong>A sporting goods chain suits</strong> first-time buyers who want to try a
             treadmill before spending money; walkers, joggers and recreational runners whose needs
@@ -334,11 +443,15 @@ export default {
   faqs: [
     {
       q: "Does Dick's Sporting Goods sell treadmills?",
-      a: `Yes, sporting goods chains like Dick's typically sell home treadmills, both in stores and online. Selection varies by store and over the year, and the website often lists more than any one store has on display. Call ahead if you want to try a specific machine.`,
+      a: `Yes. Dick's sells mainstream home treadmills in stores and online, and across this site's guides we have seen XTERRA, LifeSmart, Horizon, Sole, Schwinn, WalkingPad and Sunny Health & Fitness models listed there, mostly folding machines. Selection varies by store and over the year, so call ahead if you want to try a specific machine.`,
     },
     {
       q: "Are Dick's treadmills good?",
       a: `They are typically mainstream home treadmills, so quality depends on the specific model rather than the store. Judge each one on continuous horsepower, running surface, maximum user weight and warranty, and compare it line by line with the nearest mainstream model from the same manufacturer.`,
+    },
+    {
+      q: "What is the best treadmill to buy at Dick's?",
+      a: `It depends on use. From brands we have seen there: the XTERRA TR75 for jogging and running on a budget (20 by 60-inch deck, 350 lb limit), LifeSmart's self-folding TM3000 or TM4000 for small rooms, the Horizon T101 Connect for walking, and Sole for serious runners. None was tested hands-on by us; check stock and the warranty first.`,
     },
     {
       q: "Can you try treadmills at Dick's?",

@@ -1,13 +1,14 @@
 export default {
   slug: 'bowflex-treadmill-10',
-  title: 'Bowflex Treadmill 10 Review (2026): Specs and Buying Used',
+  title: 'Bowflex Treadmill 10 Review (2026): Is a Used One Worth It?',
   description:
-    'The Bowflex Treadmill 10 is discontinued. Its checked specs (22 x 60 in. deck, -5% to 15%, 400 lb), the Nautilus-era warranty, JRNY terms, buying one used, and the T9 or T16 instead.',
+    'Skip a used Bowflex Treadmill 10 unless it is cheap and you need -5% decline or a 400 lb rating; its warranty does not transfer. Specs, JRNY and the T9.',
   crumbLabel: 'Bowflex Treadmill 10',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 20, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-20',
+  modified: '2026-11-16',
   socialProof: '1.6k',
   h1: ['Bowflex Treadmill 10', 'Review'],
   standfirst:
@@ -72,6 +73,15 @@ export default {
             JRNY app. Independent reviewers liked the deck and the incline range and agreed it was
             enormous and heavy.
           </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Verdict</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A strong machine on paper, discontinued, and usually worse value used than a new T9</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Buy it if…</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">It is priced well below a new T9, you have run it through its whole -5% to 15% range, and you need decline or more than 375 lb of user rating</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Skip it if…</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">You want a warranty in your name, a machine you do not have to collect and move at 323 lb, or simply a good Bowflex for walking and running</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Price band</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Used only; $1,999 US list when sold. Our rule of thumb puts a fair used price at no more than about $1,000 for a two-year-old machine and $650-$700 for an older one</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Closest rival</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex T9: same 22 x 60 in. deck, $1,499 on sale at bowflex.com on 20 October 2026</td></tr>
+            </tbody>
+          </table></div>
           <p>
             Three things make a used Treadmill 10 harder to justify than its figures suggest. First, its
             warranty, issued by Nautilus, Inc., covered only the original purchaser, so a second owner
@@ -171,9 +181,10 @@ export default {
     },
     {
       id: 'on-the-belt',
-      heading: 'Deck, Decline, Motor and What Reviewers Reported',
+      heading: 'Is the Bowflex Treadmill 10 Good for Running or Only Walking?',
       html: `          <p>
-            The Treadmill 10’s running area is 22 by 60 inches, the same as Bowflex’s current T9 and T16 and
+            It is a running treadmill: a 22 by 60-inch deck, a 12 mph top speed and a 400 lb rating are
+            running figures, and it walks and inclines just as well. The Treadmill 10’s running area is 22 by 60 inches, the same as Bowflex’s current T9 and T16 and
             two inches wider than most <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a> near its old price. Sixty inches of length suits
             adult runners, and the extra width helps tall and broad users and anyone whose stride wanders as
             they tire.
@@ -209,25 +220,17 @@ export default {
             <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
             explains why a motor rating, when it exists, is less informative than its basis and its warranty.
           </p>
-          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What more than one reviewer reported</h3>
-          <ul>
-            <li><strong>It is very large and heavy.</strong> All three reviews make this the main drawback; Tom’s Guide suggests planning a 4 by 8 foot space.</li>
-            <li><strong>Assembly is long and fiddly.</strong> Tom’s Guide found bolt holes that did not line up, one bolt that never threaded, and about two and a half hours from unboxing to finished; Treadmill Review Guru recommends two or three people; BarBend says you need an extra pair of hands.</li>
-            <li><strong>Moving it is a struggle.</strong> Two reviews note you have to tip the whole machine back onto its wheels.</li>
-            <li><strong>The screen is small for streaming.</strong> Tom’s Guide and BarBend both say so.</li>
-            <li><strong>Content leaned on JRNY.</strong> All three reviews, written in 2024 and 2025, say streaming and most guided content needed a paid JRNY membership. Bowflex has since changed that, as the next section explains.</li>
-          </ul>
           <p>
-            The reviewers disagree about the cushioning, so we draw no conclusion from it. Points made by only one
-            reviewer, such as occasional <a href="/treadmill-static-shock/" class="text-[#0F62FE] font-medium" data-autolink>static shocks</a> on carpet without a mat, sticky side-handle buttons and
-            a tinny speaker, are worth knowing but are not patterns.
+            What it lacks for runners is not hardware but certainty: no published motor rating, and no
+            warranty for a second owner. The complaints reviewers raised are in the owner-complaints section below.
           </p>`,
     },
     {
       id: 'console-and-jrny',
-      heading: 'The Console, JRNY, and What Works Without a Subscription',
+      heading: 'Does the Bowflex Treadmill 10 Need a JRNY Subscription?',
       html: `          <p>
-            The Treadmill 10 is built around a 10-inch HD touchscreen running Bowflex’s JRNY software. Speed
+            Not to run, but it does need a JRNY account: the console has to be registered over Wi-Fi before
+            first use, and full coaching needs a paid All-Access membership. The Treadmill 10 is built around a 10-inch HD touchscreen running Bowflex’s JRNY software. Speed
             and incline can also be changed from buttons on the side and upper handlebars, and Bowflex’s
             manual describes preset speed and incline buttons, Bluetooth audio and a Bluetooth heart-rate
             receiver for the included armband. Tom’s Guide also describes a built-in fan and speaker.
@@ -269,10 +272,40 @@ export default {
           </p>`,
     },
     {
-      id: 'warranty-and-recalls',
-      heading: 'Warranty, the 2024 Ownership Change and Recalls',
+      id: 'owner-complaints',
+      heading: 'What Do Owners Complain About?',
       html: `          <p>
-            Bowflex’s owner’s manual for the Treadmill 10, issued by Nautilus, Inc., gives these US and Canada
+            Size, assembly and the screen. The complaints on record come from three independent reviews
+            written in 2024 and 2025 (Tom’s Guide, BarBend and Treadmill Review Guru) rather than from a count
+            of retailer owner reviews, which we have not compiled for a discontinued machine. Where two or
+            more of them agree, we treat it as a pattern.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What more than one reviewer reported</h3>
+          <ul>
+            <li><strong>It is very large and heavy.</strong> All three reviews make this the main drawback; Tom’s Guide suggests planning a 4 by 8 foot space.</li>
+            <li><strong>Assembly is long and fiddly.</strong> Tom’s Guide found bolt holes that did not line up, one bolt that never threaded, and about two and a half hours from unboxing to finished; Treadmill Review Guru recommends two or three people; BarBend says you need an extra pair of hands.</li>
+            <li><strong>Moving it is a struggle.</strong> Two reviews note you have to tip the whole machine back onto its wheels.</li>
+            <li><strong>The screen is small for streaming.</strong> Tom’s Guide and BarBend both say so.</li>
+            <li><strong>Content leaned on JRNY.</strong> All three reviews, written in 2024 and 2025, say streaming and most guided content needed a paid JRNY membership. Bowflex has since loosened that, as the JRNY section above explains.</li>
+          </ul>
+          <p>
+            The reviewers disagree about the cushioning, so we draw no conclusion from it. Points made by only one
+            reviewer, such as occasional <a href="/treadmill-static-shock/" class="text-[#0F62FE] font-medium" data-autolink>static shocks</a> on carpet without a mat, sticky side-handle buttons and
+            a tinny speaker, are worth knowing but are not patterns.
+          </p>
+          <p>
+            For a used buyer, two further complaints matter more than any of these, and both are in
+            Bowflex’s own documents rather than the reviews: the warranty does not pass to a second owner,
+            and the console must be registered to your own JRNY account before it will do anything. The JRNY
+            section above and the warranty section below cover both.
+          </p>`,
+    },
+    {
+      id: 'warranty-and-recalls',
+      heading: 'Warranty: What It Actually Covers',
+      html: `          <p>
+            For a second owner, nothing: the warranty covered only the original purchaser. For that first
+            owner, Bowflex’s owner’s manual for the Treadmill 10, issued by Nautilus, Inc., gives these US and Canada
             terms: 15 years on the frame, 15 years on the drive motor, 5 years on mechanical parts, 1 year on
             electronics and 2 years of labour. Labour does not cover fitting parts that are part of the initial
             assembly, and repairs under it had to be authorised in advance. Bowflex’s 2026 product page gives the
@@ -319,9 +352,10 @@ export default {
     },
     {
       id: 'space-and-moving',
-      heading: 'Footprint, Folding and Ceiling Height',
+      heading: 'How Big Is the Bowflex Treadmill 10, and Will It Fit?',
       html: `          <p>
-            Assembled, the Treadmill 10 is 85 inches long, 39.6 inches wide and 65.3 inches tall, which is about
+            It is very big: plan for about 23 square feet of floor, a 70-inch folded height and a 323 lb
+            machine. Assembled, the Treadmill 10 is 85 inches long, 39.6 inches wide and 65.3 inches tall, which is about
             23.4 square feet of floor. It folds with Bowflex’s SoftDrop system, which lowers the deck slowly, to
             44.5 inches long but 70 inches tall, so it stands taller folded than in use. At 323 lb it is about
             40 lb heavier than the T9.
@@ -381,7 +415,7 @@ export default {
     },
     {
       id: 'vs-current-range',
-      heading: 'Bowflex Treadmill 10 vs the T9, T16 and Treadmill 22',
+      heading: 'Bowflex Treadmill 10 vs T9 (and the T16)',
       html: `          <p>
             The Treadmill 10 and Treadmill 22 figures below are from Bowflex’s discontinued-product pages and
             the reviews named above. The T9 and T16 figures are from our
@@ -439,7 +473,7 @@ export default {
     },
     {
       id: 'who-should-buy',
-      heading: 'Who Should Buy a Bowflex Treadmill 10 Now',
+      heading: 'Who Should Buy It, and Who Should Skip It?',
       html: `          <p>
             <strong>Buy a used one if you want decline in a big, well-specified machine and the price is right.</strong>
             A -5% to 15% range on a 22 by 60-inch deck is not something Bowflex sells new any more.
@@ -483,6 +517,10 @@ export default {
     {
       q: 'What warranty did the Bowflex Treadmill 10 have?',
       a: 'Its owner’s manual gives 15 years on the frame and drive motor, 5 years on mechanical parts, 1 year on electronics and 2 years of labour in the US and Canada, valid only for the original purchaser. A used buyer should assume no warranty transfers.',
+    },
+    {
+      q: 'Is the Bowflex Treadmill 10 good for running?',
+      a: 'On its figures, yes: a 22 by 60-inch deck, a 12 mph top speed and a 400 lb rating suit adult runners, and decline to -5% lets you rehearse downhill running. What it lacks is a published motor rating, and a used one comes with no warranty for you, so run it hard before you pay.',
     },
     {
       q: 'Is a used Bowflex Treadmill 10 worth buying?',

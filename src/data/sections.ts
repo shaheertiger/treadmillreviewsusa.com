@@ -218,9 +218,16 @@ export const SECTIONS: Section[] = [
             url: '/best-walking-treadmills/',
           },
           {
-            title: 'Under-Desk Treadmills Tested',
+            title: 'Best Walking Pads on Amazon',
             description:
-              'Five walking pads through six weeks of real workdays, scored on noise, typing accuracy and storage.',
+              'Seven walking pads matched to their Amazon listings, from a $135 flat pad to 14% incline, with seller, return and warranty checks.',
+            badge: 'Amazon',
+            url: '/best-walking-pads-on-amazon/',
+          },
+          {
+            title: 'Best Under-Desk Walking Pads',
+            description:
+              'Five walking pads for a standing desk, compared on belt length, speed range, noise, capacity and storage.',
             badge: 'Walking pads',
             url: '/under-desk-treadmills/',
           },
@@ -561,7 +568,7 @@ export const SECTIONS: Section[] = [
           },
           {
             title: 'Best Treadmills Under $1,500',
-            description: 'The sweet spot between entry-level and commercial-grade — five tested picks.',
+            description: 'The sweet spot between entry-level and commercial-grade — five picks compared on specs and warranty.',
             badge: 'Mid tier',
             url: '/treadmills-under-1500/',
           },

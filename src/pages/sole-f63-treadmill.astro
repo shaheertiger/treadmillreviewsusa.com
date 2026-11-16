@@ -5,9 +5,9 @@ import { productImage } from "../data/product-images";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
-const title = "Sole F63 Treadmill Review (2026): The Honest Budget Entry Point";
+const title = "Sole F63 Treadmill Review (2026): Best Sole for Most People?";
 const description =
-  "We compared the Sole F63 on its published specs and warranty. Here's an honest look at the motor, deck, and console — and exactly who this budget-tier Sole is (and isn't) built for.";
+  "The Sole F63 is the best-value Sole for walking and jogging: 20 x 60 in. deck, 15% incline, 325 lb rating, lifetime frame and motor cover and no subscription.";
 
 const PRODUCT = {
   name: "Sole F63",
@@ -19,15 +19,17 @@ const PRODUCT = {
 const SPECS = [
   { label: "Motor", value: "3.0 CHP" },
   { label: "Running Surface", value: "20 x 60 inches" },
-  { label: "Incline", value: "0% to 15%, manual" },
-  { label: "Top Speed", value: "12 mph" },
-  { label: "Display", value: "LCD console (no touchscreen)" },
+  { label: "Incline", value: "0% to 15%" },
+  { label: "Speed", value: "0.5 to 12 mph" },
+  { label: "Display", value: "White LED console with dial controls (2026 model); older units have an LCD. No touchscreen" },
   { label: "Cushioning", value: "Cushion Flex Whisper Deck" },
   { label: "Weight Capacity", value: "325 lbs" },
   { label: "Folding", value: "Yes, folds for storage" },
+  { label: "In-Use Footprint", value: "About 75 x 34 inches (Sole)" },
   { label: "Folded Footprint", value: "35 x 76 inches (standing)" },
-  { label: "App / Ecosystem", value: "Sole+ app, optional, no required subscription" },
-  { label: "Warranty", value: "Lifetime frame and motor; check Sole for parts and labor" },
+  { label: "Machine Weight", value: "187 lbs (Sole, 2026 model)" },
+  { label: "App / Ecosystem", value: "Sole's app, free and optional; no subscription" },
+  { label: "Warranty", value: "Lifetime frame and motor; 2 yr deck, electronics and parts; 1 yr labor; 90 days cosmetic (Sole's 2026 listing)" },
 ];
 
 const COMPARISON = [
@@ -41,18 +43,18 @@ const COMPARISON = [
   },
   {
     name: "Sole F65",
-    motor: "3.5 CHP",
-    deck: "22 x 60 in.",
+    motor: "3.25 HP (Sole 2026); 3.5 CHP on older units",
+    deck: "20 x 60 in. (Sole 2026); 22 x 60 in. on older units",
     incline: "0% to 15%",
-    price: "$1,399-$1,599",
+    price: "About $200 more than the F63",
     highlight: false,
   },
   {
-    name: "NordicTrack T Series",
-    motor: "2.6-3.0 CHP",
-    deck: "20 x 55 in.",
-    incline: "0% to 10%",
-    price: "$600-$900",
+    name: "NordicTrack T Series 10",
+    motor: "3.0 CHP per NordicTrack (disputed)",
+    deck: "20 x 60 in.",
+    incline: "0% to 12%",
+    price: "$1,299 (P.C. Richard, Oct 14, 2026)",
     highlight: false,
   },
 ];
@@ -76,7 +78,7 @@ const schema = {
           name: "Is the Sole F63 worth the price?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "For walkers and casual joggers, yes. It gets you Sole's genuine build quality, a full-size 20 x 60-inch deck, and a lifetime frame warranty for under $1,200 with no subscription attached. If you plan to run regularly at faster paces, the step up to the F65 is worth the extra roughly $400 for the stronger motor and larger deck.",
+            text: "For walkers and joggers, yes. It is the cheapest Sole with a 60-inch deck, with 15% incline, a 325-lb rating and lifetime frame and motor cover for about $1,000 to $1,200, and no subscription attached. If you plan to run fast most days, a Sole with a 22-inch-wide deck, such as the F85, is the better long-term fit.",
           },
         },
         {
@@ -84,7 +86,7 @@ const schema = {
           name: "Is the Sole F63 good for running, or just walking?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "It's better suited to walking and light-to-moderate jogging than serious running. The 3.0 CHP motor and 12 mph top speed handle jogging comfortably, but faster interval training or regular running at a sub-8-minute-mile pace will push this motor closer to its limit than the F65's stronger 3.5 CHP unit.",
+            text: "It's better suited to walking and light-to-moderate jogging than serious running. The 3.0 CHP motor and 12 mph top speed handle jogging comfortably, and the 60-inch deck is full length, but faster interval training or regular running at a sub-8-minute-mile pace will push this motor closer to its limit than Sole's larger-motor models.",
           },
         },
         {
@@ -92,7 +94,7 @@ const schema = {
           name: "How does the Sole F63 compare to the Sole F65?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The F65 has a stronger 3.5 CHP motor versus the F63's 3.0 CHP, a larger 22 x 60-inch deck versus 20 x 60 inches, and a higher 375-lb weight capacity versus 325 lbs. Both share the same Cushion Flex Whisper Deck cushioning and lack of required subscription. The F63 is the better value for light users; the F65 is worth the upgrade for regular runners.",
+            text: "Less than it used to. Sole's 2026 listing gives the F65 a 3.25 HP motor, the same 20 x 60-inch deck and a 350-lb rating, for about $200 more. Older F65s, and our F65 review, describe a 3.5 CHP motor and a 22-inch-wide deck. Confirm the deck and rating for the unit you are buying before paying for the step up.",
           },
         },
         {
@@ -100,7 +102,7 @@ const schema = {
           name: "Does the Sole F63 require a subscription to use?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Every speed, incline, and built-in console program works fully without connecting to the optional Sole+ app, unlike touchscreen-first competitors that lock key features behind a required membership.",
+            text: "No. Speed, incline and the built-in programs all work from the console alone, and Sole describes its app as free with no monthly subscription. The 2026 console is a white LED display with dial controls rather than a touchscreen, so for video or classes you bring your own tablet.",
           },
         },
         {
@@ -108,7 +110,7 @@ const schema = {
           name: "Is the Sole F63's deck big enough for taller users?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The 20 x 60-inch deck has enough length for walking and moderate jogging strides for most users, including many over 6 feet tall. Taller runners moving at faster paces are the most likely to find the narrower 20-inch width tighter during full-stride running than the F65's 22-inch deck, which is worth considering if you're tall and plan to run rather than walk.",
+            text: "The 20 x 60-inch deck has enough length for walking and moderate jogging strides for most users, including many over 6 feet tall. Taller runners moving at faster paces are the most likely to find the 20-inch width tight during full-stride running, which is when a 22-inch deck such as the F85's is worth considering.",
           },
         },
         {
@@ -116,7 +118,15 @@ const schema = {
           name: "What warranty does the Sole F63 come with?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The F63 carries a lifetime warranty on the frame and motor. Parts and labor terms have been listed differently across sources and model years, so confirm Sole's current terms for the unit you buy. Lifetime frame and motor cover is stronger than the 5-to-10-year frame terms common on budget competitors.",
+            text: "Sole's 2026 listing gives lifetime cover on the frame and motor, two years on the deck, electronics and parts, one year on labor and 90 days on cosmetic items. Other sources quote different parts and labor terms for earlier versions, so confirm the terms for the unit you buy and keep a copy with your receipt.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much space does the Sole F63 need?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sole lists an in-use footprint of about 75 by 34 inches, and it folds to stand roughly 35 by 76 inches. Add about six feet of clear floor behind the belt and two feet on each side, and check your ceiling against your height plus the step-up, the extra lift at 15% incline and a margin for bounce.",
           },
         },
       ],
@@ -126,7 +136,7 @@ const schema = {
       headline: title,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-04-29",
-      dateModified: "2026-10-08",
+      dateModified: "2026-11-16",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
     {
@@ -146,10 +156,10 @@ const schema = {
   ogType="article"
   article={{
     publishedTime: "2026-04-29",
-    modifiedTime: "2026-10-08",
+    modifiedTime: "2026-11-16",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
-    tags: ["sole f63", "sole f63 review", "budget treadmill", "sole treadmill", "home gym"],
+    tags: ["sole f63 treadmill reviews", "sole f63", "sole f63 review", "budget treadmill", "sole treadmill", "home gym"],
   }}
   jsonLd={schema}
   stickyCta={{ text: "Check Price on Amazon", link: PRODUCT.amazonUrl }}
@@ -172,7 +182,7 @@ const schema = {
             Product Review
           </span>
           <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated April 2026
+            Updated November 2026
           </span>
         </div>
         <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
@@ -203,7 +213,7 @@ const schema = {
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
+          Last Updated: <strong class="text-gray-700">November 16, 2026</strong>
         </p>
         <div class="ml-auto">
           <SocialProof users="2.4k" />
@@ -240,16 +250,19 @@ const schema = {
           In This Guide
         </h2>
         <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <a href="#overview" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Overview and Who It's For</a>
-            <a href="#specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Full Spec Sheet</a>
-            <a href="#assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Assembly Involves (per the Manual)</a>
-            <a href="#performance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What the Specs Mean for Running</a>
-            <a href="#durability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What Owners Report After a Year</a>
-            <a href="#pros-cons" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Pros and Cons</a>
-            <a href="#comparison" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How It Compares</a>
-            <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Skip This Treadmill</a>
-            <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Final Verdict</a>
-            <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+            <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Sole F63: The Short Answer</a>
+            <a href="#overview" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Is the Sole F63 For?</a>
+            <a href="#specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Sole F63 Specifications</a>
+            <a href="#assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How Hard Is It to Assemble?</a>
+            <a href="#performance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Good for Running or Only Walking?</a>
+            <a href="#subscription" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Does It Need an App Subscription?</a>
+            <a href="#size" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How Big Is It, and Will It Fit?</a>
+            <a href="#durability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Do Owners Complain About?</a>
+            <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Warranty: What It Actually Covers</a>
+            <a href="#comparison" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Sole F63 vs NordicTrack T Series 10</a>
+            <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy It, and Who Should Skip It?</a>
+            <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Is the Sole F63 Worth It?</a>
+            <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
         </nav>
       </div>
     </div>
@@ -659,55 +672,43 @@ const schema = {
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the Sole F63 worth the price?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              For walkers and casual joggers, yes. It gets you Sole's
-              genuine build quality, a full-size 20 x 60-inch deck, and a
-              lifetime frame warranty for under $1,200 with no subscription
-              attached. If you plan to run regularly at faster paces, the
-              step up to the F65 is worth the extra roughly $400 for the
-              stronger motor and larger deck.
+              For walkers and joggers, yes. It is the cheapest Sole with a 60-inch deck, with 15% incline, a 325-lb rating and lifetime frame and motor cover for about $1,000 to $1,200, and no subscription attached. If you plan to run fast most days, a Sole with a 22-inch-wide deck, such as the F85, is the better long-term fit.
             </p>
           </div>
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the Sole F63 good for running, or just walking?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              It's better suited to walking and light-to-moderate jogging
-              than serious running. The 3.0 CHP motor and 12 mph top speed
-              handle jogging comfortably, but faster interval training or
-              regular running at a sub-8-minute-mile pace will push this
-              motor closer to its limit than the F65's stronger 3.5 CHP
-              unit.
+              It's better suited to walking and light-to-moderate jogging than serious running. The 3.0 CHP motor and 12 mph top speed handle jogging comfortably, and the 60-inch deck is full length, but faster interval training or regular running at a sub-8-minute-mile pace will push this motor closer to its limit than Sole's larger-motor models.
             </p>
           </div>
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How does the Sole F63 compare to the Sole F65?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              The F65 has a stronger 3.5 CHP motor versus the F63's 3.0 CHP,
-              a larger 22 x 60-inch deck versus 20 x 60 inches, and a higher
-              375-lb weight capacity versus 325 lbs. Both share the same
-              Cushion Flex Whisper Deck cushioning and lack of required
-              subscription. The F63 is the better value for light users; the
-              F65 is worth the upgrade for regular runners.
+              Less than it used to. Sole's 2026 listing gives the F65 a 3.25 HP motor, the same 20 x 60-inch deck and a 350-lb rating, for about $200 more. Older F65s, and our F65 review, describe a 3.5 CHP motor and a 22-inch-wide deck. Confirm the deck and rating for the unit you are buying before paying for the step up.
             </p>
           </div>
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Does the Sole F63 require a subscription to use?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              No. Every speed, incline, and built-in console program works
-              fully without connecting to the optional Sole+ app, unlike
-              touchscreen-first competitors that lock key features behind a
-              required membership.
+              No. Speed, incline and the built-in programs all work from the console alone, and Sole describes its app as free with no monthly subscription. The 2026 console is a white LED display with dial controls rather than a touchscreen, so for video or classes you bring your own tablet.
             </p>
           </div>
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the Sole F63's deck big enough for taller users?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              The 20 x 60-inch deck has enough length for walking and moderate jogging strides for most users, including many over 6 feet tall. Taller runners moving at faster paces are the most likely to find the narrower 20-inch width tighter during full-stride running than the F65's 22-inch deck, which is worth considering if you're tall and plan to run rather than walk.
+              The 20 x 60-inch deck has enough length for walking and moderate jogging strides for most users, including many over 6 feet tall. Taller runners moving at faster paces are the most likely to find the 20-inch width tight during full-stride running, which is when a 22-inch deck such as the F85's is worth considering.
             </p>
           </div>
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">What warranty does the Sole F63 come with?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              The F63 carries a lifetime warranty on the frame and motor. Parts and labor terms have been listed differently across sources and model years, so confirm Sole's current terms for the unit you buy. Lifetime frame and motor cover is stronger than the 5-to-10-year frame terms common on budget competitors.
+              Sole's 2026 listing gives lifetime cover on the frame and motor, two years on the deck, electronics and parts, one year on labor and 90 days on cosmetic items. Other sources quote different parts and labor terms for earlier versions, so confirm the terms for the unit you buy and keep a copy with your receipt.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+            <h3 class="font-bold text-gray-900 mb-2">How much space does the Sole F63 need?</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Sole lists an in-use footprint of about 75 by 34 inches, and it folds to stand roughly 35 by 76 inches. Add about six feet of clear floor behind the belt and two feet on each side, and check your ceiling against your height plus the step-up, the extra lift at 15% incline and a margin for bounce.
             </p>
           </div>
         </div>

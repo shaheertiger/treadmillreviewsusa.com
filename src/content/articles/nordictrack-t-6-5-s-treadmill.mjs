@@ -1,13 +1,14 @@
 export default {
   slug: 'nordictrack-t-6-5-s-treadmill',
-  title: 'NordicTrack T 6.5 S Review (2026): The Budget iFIT Treadmill',
+  title: 'NordicTrack T 6.5 S Treadmill Review (2026): Worth It on Sale?',
   description:
-    'A 2.6 CHP motor, a 20 x 55-inch deck and a five-inch screen attached to a content platform. What the T 6.5 S does well, what it does not do, and what it does without a membership.',
+    'Worth it on sale for walkers, not runners: the NordicTrack T 6.5 S has a 20 x 55 in. deck, 10 mph, 10% incline and 2.6 CHP. iFIT, size, warranty and rivals.',
   crumbLabel: 'NordicTrack T 6.5 S',
   kicker: 'Model Review',
-  updated: 'September 2026',
-  updatedLong: 'September 15, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-15',
+  modified: '2026-11-16',
   socialProof: '2.1k',
   h1: ['NordicTrack T 6.5 S', 'Treadmill Review'],
   standfirst:
@@ -16,14 +17,15 @@ export default {
     { label: 'The Specifications', href: '#nordictrack-t-6-5-s' },
     { label: 'Without a Membership', href: '#without-ifit' },
   ],
-  tags: ['nordictrack t 6.5 s', 'nordictrack t 6.5 s treadmill', 'nordictrack treadmill reviews', 'budget treadmill', 'ifit treadmill'],
+  tags: ['nordictrack t 6.5 s treadmill reviews', 'nordictrack t 6.5 s', 'nordictrack t 6.5 s treadmill', 'nordictrack treadmill reviews', 'budget treadmill', 'ifit treadmill'],
   stickyCta: { text: 'See the Verdict', link: '#nordictrack-t-6-5-s' },
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
-  lead: `The T 6.5 S is the machine that introduces most people to NordicTrack, because it sits
-          at the bottom of the range and turns up constantly in promotions. Judged as what it is —
-          an entry-level folding treadmill for walking and light jogging — it is a reasonable
-          machine. Judged against the brand's marketing, which is built around running, it is
-          not.`,
+  lead: `The NordicTrack T 6.5 S is worth buying on a good discount if you walk, and not worth
+          buying to run on: a 20 by 55-inch deck, a 10 mph ceiling and 10% incline make it an
+          entry-level folding walking treadmill with an iFit console. What changes the answer is
+          whether you want iFit, because without it better hardware costs the same. It has also dropped
+          off NordicTrack’s own site, so this review covers what it is, what it needs, and what to buy
+          instead.`,
   products: [
     {
       id: 'nordictrack-t-6-5-s',
@@ -51,10 +53,47 @@ export default {
   ],
   sections: [
     {
-      id: 'what-it-is',
+      id: 'short-answer',
       products: true,
-      heading: 'The Entry Machine in a Running Brand’s Lineup',
+      heading: 'NordicTrack T 6.5 S: The Short Answer',
       html: `          <p>
+            <strong>The NordicTrack T 6.5 S is a fair entry-level walking treadmill that is worth buying on
+            discount and not at list, and only if you want the iFit ecosystem.</strong> Its 2.6 CHP motor is
+            enough for long incline walks; its 55-inch deck and 10 mph ceiling rule out regular running; and
+            its five-inch screen is a small window onto content designed for much bigger displays. It runs
+            manually without a membership, which is the most important thing to know about it.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Verdict</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A competent walking treadmill with a small iFit screen; good value only on discount</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Buy it if…</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">You walk or incline-walk, want the cheapest way into iFit’s trainer-led sessions, can find it well below list, and have room for a vertical fold</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Skip it if…</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">You plan to run regularly, are over about 240 lb, will never use iFit, or want a long, published warranty</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Price band</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$649-$899, and heavily discounted; list price is close to meaningless</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Key figures</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 55 in. deck · 2.6 CHP · 0-10% incline · 0-10 mph · 300 lb capacity · 5 in. display · vertical fold</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Closest rival</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon T101: same deck and speed, no subscription, lifetime frame and motor warranty</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The rest of this review answers the questions that decide the purchase: what it does without a
+            membership, whether you can run on it, how much room it needs, what owners complain about, what the
+            warranty covers, and how it compares with the
+            <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101</a>.
+            We have not tested the T 6.5 S; what follows is based on its published specifications, retailer
+            listings and what is documented across our NordicTrack coverage.
+          </p>`,
+    },
+    {
+      id: 'what-it-is',
+      heading: 'Is the NordicTrack T 6.5 S Still Sold?',
+      html: `          <p>
+            Not by NordicTrack itself, but it is still widely stocked elsewhere. On 13 October 2026
+            NordicTrack’s own site listed seven treadmills, the T Series 10 and 16, the Commercial 1250, 1750
+            and 2450, and the X16 and X24, and the T 6.5 S was not among them. It remains a common listing at
+            third-party retailers, and our
+            <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium">T Series guide</a>
+            explains the naming: the current T Series 5 is a different, newer machine, not a renamed T 6.5 S.
+          </p>
+          <p>
             NordicTrack's identity is built on the Commercial series — heavy machines with 60-inch
             decks aimed at runners. The T 6.5 S sits several tiers below that and shares almost
             nothing with it structurally, which is worth stating plainly because the brand halo
@@ -65,13 +104,13 @@ export default {
             ceiling. That is a competent set of figures for walking and light jogging and an
             unremarkable one next to the rest of the market at the same money. The
             <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101</a>
-            is its closest direct rival and matches or beats it on every hardware line except motor
-            size, where the difference is a tenth of a horsepower and irrelevant.
+            is its closest direct rival and matches it on deck, speed, incline and capacity; the
+            comparison section below sets them side by side.
           </p>
           <p>
             Where the T 6.5 S separates itself is the ecosystem. If you want trainer-led sessions
-            that adjust the machine for you, NordicTrack is the brand built around that and this is
-            its cheapest entry point. If you do not, you are paying a platform premium for a screen
+            that adjust the machine for you, NordicTrack is the brand built around that and this has
+            long been its cheapest entry point. If you do not, you are paying a platform premium for a screen
             you will ignore, and the comparison shifts decisively.
           </p>
           <p>
@@ -84,9 +123,9 @@ export default {
     },
     {
       id: 'without-ifit',
-      heading: 'What It Does Without a Membership',
+      heading: 'Does the NordicTrack T 6.5 S Need an iFIT Subscription?',
       html: `          <p>
-            This is the question that decides the purchase, and the answer for the T 6.5 S is
+            No. This is the question that decides the purchase, and the answer for the T 6.5 S is
             better than people assume: it runs manually. You can set speed and incline by hand, the
             onboard programmes are available, and the machine does not become a paperweight when a
             trial lapses.
@@ -99,6 +138,14 @@ export default {
             quietly ends.
           </p>
           <p>
+            Expect some friction at setup all the same. Owners of connected NordicTrack consoles commonly
+            describe first-start screens that steer you towards signing in or starting a trial, and on
+            its current machines NordicTrack says a free iFit account is required to operate the equipment.
+            A free account and a paid membership are different things; our guide to
+            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using a NordicTrack without iFit</a>
+            explains the difference and why unofficial workarounds are not worth relying on.
+          </p>
+          <p>
             What you lose without a membership is the entire reason to choose this brand: the
             trainer-led sessions, the automatic incline and speed adjustment, and the content
             library. Bought without a subscription, the T 6.5 S is a five-inch display on an
@@ -107,19 +154,22 @@ export default {
             offers better hardware for the money.
           </p>
           <p>
-            So the honest framing is a fork. Buying into iFit? This is the cheapest way in, and the
+            So the honest framing is a fork. Buying into iFit? This is a cheap way in, and the
             small screen is the compromise — the content is designed for a display several times
             this size, and mirroring to a television or tablet is worth planning for rather than
-            discovering. Not buying into iFit? Buy something else, and our
+            discovering. Price the membership over the years you expect to keep the machine; our
+            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">is iFit worth it</a>
+            guide sets out that arithmetic. Not buying into iFit? Buy something else, and our
             <a href="/best-treadmills-under-800/" class="text-[#0F62FE] font-medium">under-$800 guide</a>
             covers the field.
           </p>`,
     },
     {
       id: 'deck-and-motor',
-      heading: 'The Deck Is the Ceiling, Not the Motor',
+      heading: 'Is the NordicTrack T 6.5 S Good for Running or Only Walking?',
       html: `          <p>
-            A 2.6 CHP motor is sufficient for what this machine is for. Sustained incline walking
+            Walking, incline walking and light jogging; not regular running. The deck is the ceiling, not
+            the motor. A 2.6 CHP motor is sufficient for what this machine is for. Sustained incline walking
             is the genuinely demanding use case at this level — an hour at 3 mph on a 10% grade
             loads the drive system harder than a short jog does — and 2.6 CHP has enough headroom
             for it. That is the right place for the money.
@@ -146,12 +196,20 @@ export default {
             times static weight. Under that rule the T 6.5 S suits users up to roughly 240 lb
             comfortably, and heavier users are better served by the machines in
             <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">our heavy-user guide</a>.
+            If running is the goal, 60 inches of deck is the target: NordicTrack’s current T Series 10 has
+            one, and our <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running guide</a>
+            covers the rest of the field.
           </p>`,
     },
     {
       id: 'folding',
-      heading: 'Folding, Noise and Where It Lives',
+      heading: 'How Big Is the NordicTrack T 6.5 S, and Will It Fit?',
       html: `          <p>
+            It fits most spare rooms in use and folds upright to reclaim floor space, but we have not
+            confirmed a manufacturer footprint for it, so measure against the listing for the exact model
+            number you are buying, in use and folded, before you commit to a room.
+          </p>
+          <p>
             The vertical fold is one of the T 6.5 S's better features. The deck lifts with
             assistance and locks upright, which reclaims real floor area in a shared room and makes
             it possible to clean underneath — the latter matters more than it sounds, because dust
@@ -161,10 +219,11 @@ export default {
             Upright, the machine is tall rather than small, which is the thing people get wrong
             when planning around a folding treadmill. Check ceiling clearance and check the space
             behind the deck, which is needed whether the machine folds or not because it is where
-            you go if you lose your footing.
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">Dimensions and space requirements</a>
-            has the numbers and
-            <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">the small-space guide</a>
+            you go if you lose your footing. The general rules from our
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">dimensions and space guide</a>
+            are about six feet of clear floor behind the belt and two feet on each side, and a ceiling at least
+            your height plus the deck height plus 12 inches, with extra allowance for the rise at 10% incline.
+            <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">The small-space guide</a>
             covers the trade-offs.
           </p>
           <p>
@@ -190,10 +249,61 @@ export default {
           </p>`,
     },
     {
-      id: 'buying-it',
-      heading: 'Buy It on Discount, Not at List',
+      id: 'owner-complaints',
+      heading: 'What Do Owners Complain About?',
       html: `          <p>
-            The T 6.5 S is discounted constantly — it is an entry machine in a range that uses
+            Mostly the screen, the setup prompts and buying the wrong variant. We have not compiled a count
+            of owner reviews for the T 6.5 S, so this section only gathers what is documented across our
+            NordicTrack coverage rather than presenting a tally.
+          </p>
+          <ul>
+            <li><strong>Sign-in and trial prompts at setup.</strong> Owners of connected NordicTrack consoles commonly report first-start screens that push towards an account or a trial, and describe different ways past them on different software versions. Some of those are unofficial workarounds that the next update can undo.</li>
+            <li><strong>A small screen for the content.</strong> The five-inch display is a poor vehicle for trainer-led video built for much larger screens, which is why so many buyers end up mirroring to a tablet or television. Our separate guide to <a href="/can-you-watch-netflix-on-nordictrack/" class="text-[#0F62FE] font-medium">watching Netflix on a NordicTrack</a> covers what the consoles will and will not do.</li>
+            <li><strong>The wrong model arriving.</strong> Closely named variants ship different consoles and occasionally different specifications, and retailer listings mix them up.</li>
+            <li><strong>A deck that runners outgrow.</strong> The 55-inch deck is ample for walking and short for a running stride, the same limit we flag on every machine of this length.</li>
+          </ul>
+          <p>
+            None of these is a fault in the usual sense, and all four are avoidable before you buy. The faults
+            that do end entry-level machines early, dry decks and slack belts, are covered in the maintenance
+            section below. If you want to check owner reviews yourself, our guide to
+            <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">reading treadmill reviews</a>
+            explains how to separate a pattern from noise.
+          </p>`,
+    },
+    {
+      id: 'warranty',
+      heading: 'Warranty: What It Actually Covers',
+      html: `          <p>
+            We have not been able to confirm the T 6.5 S’s current warranty terms, and they have changed
+            between model years while the name has not, so get them for your exact model number before you
+            order. Frame, motor, deck, parts and labour are separate terms, and the labour term decides what a
+            fault costs you later.
+          </p>
+          <p>
+            For context, NordicTrack’s current entry machine, the T Series 10, carries ten years on the frame
+            and two years on the motor and parts, according to our
+            <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack roundup</a>,
+            and our <a href="/sole-vs-nordictrack/" class="text-[#0F62FE] font-medium">Sole vs NordicTrack comparison</a>
+            notes that NordicTrack covers the motor for life only on the Commercial 1750, 2450 and X Series. If the
+            T 6.5 S you are offered carries a short motor term, that is the norm for the brand at this price,
+            not a red flag on its own. It is, however, the clearest difference from the
+            <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101</a>,
+            which publishes a lifetime frame and motor warranty with one year on parts and labour.
+          </p>
+          <p>
+            Two things to check alongside the warranty. First, what the bundled membership actually is: a
+            trial, a paid year, or a term that auto-renews at a rate you have not seen. Second, who honours the
+            warranty if you buy old stock from a third-party retailer, because a machine that has dropped off
+            the maker’s own site is the kind most likely to be sold as clearance. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
+            explains how to read frame, motor, parts and labour terms.
+          </p>`,
+    },
+    {
+      id: 'buying-it',
+      heading: 'Is the NordicTrack T 6.5 S Worth It at Full Price?',
+      html: `          <p>
+            Rarely. The T 6.5 S is discounted constantly — it is an entry machine in a range that uses
             promotional pricing as a standing strategy, and it is frequently bundled with a
             membership term that is worth something if you intend to use it and nothing if you do
             not.
@@ -209,14 +319,7 @@ export default {
             do.
           </p>
           <p>
-            Two things to confirm before ordering, both of which change between model years while
-            the name does not. First, the warranty split — frame, motor, deck, parts and labour are
-            separate terms, and the labour term decides what a fault costs you later. Second, what
-            the bundled membership actually is: a trial, a paid year, or a term that auto-renews at
-            a rate you have not seen.
-          </p>
-          <p>
-            And cross-shop it properly. Against the
+            Cross-shop it properly. Against the
             <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101</a>
             for the subscription-free alternative at the same money, against the machines in
             <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">under $1,000</a>
@@ -226,9 +329,48 @@ export default {
           </p>`,
     },
     {
-      id: 'ownership',
-      heading: 'Keeping It Alive',
+      id: 'vs-t101',
+      heading: 'NordicTrack T 6.5 S vs Horizon T101',
       html: `          <p>
+            On hardware they are close; the difference is philosophy. Both are 55-inch walking treadmills
+            rated to 300 lb, and the Horizon wins on warranty while the NordicTrack wins only if you want
+            iFit. The T101 figures are from our
+            <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101 review</a>,
+            checked against Horizon’s listing on 14 October 2026.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">NordicTrack T 6.5 S</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Horizon T101 Connect</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Deck</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 55 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 55 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Speed / incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-10 mph / 0-10%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.5-10 mph / 0-10%</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">User capacity</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motor</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.6 CHP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not published by Horizon</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Console</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 in. display, iFit-enabled</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4 LED windows, no subscription</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Warranty</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not confirmed; check your model number</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame and motor; 1 yr parts and labour</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$649-$899, often discounted</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$699 at Horizon (sold out on 14 Oct 2026)</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            <strong>Choose the T 6.5 S</strong> if guided, trainer-led sessions are what will get you on the
+            machine and you can buy it well below list. <strong>Choose the T101</strong> if you will set the
+            speed and incline yourself: it needs no account, and its lifetime frame and motor cover is the
+            stronger promise. If the T101 is out of stock, the
+            <a href="/horizon-t202-treadmill/" class="text-[#0F62FE] font-medium">Horizon T202</a>
+            adds a 60-inch deck for runners, and NordicTrack’s own current entry machines are compared in our
+            <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium">T Series guide</a>.
+          </p>`,
+    },
+    {
+      id: 'ownership',
+      heading: 'How Do You Keep a T 6.5 S Running?',
+      html: `          <p>
+            Lubricate the deck, keep the belt tensioned and tracked, and vacuum the motor compartment.
             Entry-level machines are not usually killed by their motors. They are killed by decks
             run dry, belts run slack and compartments never opened, and all three are cheap to
             prevent and expensive to fix.
@@ -252,6 +394,12 @@ export default {
             keeps you from over-tightening, which is how roller bearings die.
           </p>
           <p>
+            If the belt does wear out, replacements are easy to find because the machine has been so common:
+            our <a href="/best-treadmill-replacement-belts/" class="text-[#0F62FE] font-medium">replacement belt guide</a>
+            lists one sold for the T 6.5 S and T 6.5 Si at about $55 on Amazon on 6 November 2026, with its
+            dimensions published (127.56 by 20 inches) so you can measure your old belt against it first.
+          </p>
+          <p>
             Beyond that, vacuum the motor compartment periodically, keep it off a shared circuit,
             and unplug before servicing.
             <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">The full schedule</a>
@@ -262,8 +410,40 @@ export default {
             approaches half the discounted price of a comparable new machine, stop spending on it.
           </p>`,
     },
+    {
+      id: 'who-should-buy',
+      heading: 'Who Should Buy It, and Who Should Skip It?',
+      html: `          <p>
+            <strong>Buy it if you walk and want iFit cheaply.</strong> Daily walks and incline walks, the odd
+            light jog, and trainer-led sessions mirrored to a bigger screen are what the T 6.5 S does well, and
+            on a real discount it is fair value.
+          </p>
+          <p>
+            <strong>Buy it if floor space matters.</strong> The lift-assisted vertical fold reclaims real floor
+            area in a shared room.
+          </p>
+          <p>
+            <strong>Skip it if you run.</strong> The 55-inch deck and 10 mph ceiling are the limit. Look for a
+            60-inch deck in our <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running guide</a>.
+          </p>
+          <p>
+            <strong>Skip it if you will never use iFit.</strong> The
+            <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101</a>
+            matches its hardware with no subscription and a longer published warranty, and the
+            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">no-subscription roundup</a>
+            has the rest.
+          </p>
+          <p>
+            <strong>Skip it at list price, or if you are near its capacity.</strong> It is discounted as a
+            standing strategy, and users above roughly 240 lb are better served by a machine with more headroom.
+          </p>`,
+    },
   ],
   faqs: [
+    {
+      q: 'Is the NordicTrack T 6.5 S discontinued?',
+      a: `It is no longer on NordicTrack’s own site: on 13 October 2026 NordicTrack listed seven treadmills, and the T 6.5 S was not one of them. It is still sold by third-party retailers. The current T Series 5 is a different machine, so check the model number on any listing before relying on a review or a spec sheet.`,
+    },
     {
       q: 'Can you use the NordicTrack T 6.5 S without iFit?',
       a: `Yes. It runs in manual mode with speed and incline set by hand, and the onboard programmes are available without an active membership. What you lose is the reason to choose the brand — the trainer-led sessions and automatic adjustment. Bought without a subscription it is an ordinary entry-level treadmill with a small screen, and better hardware is available at the money.`,

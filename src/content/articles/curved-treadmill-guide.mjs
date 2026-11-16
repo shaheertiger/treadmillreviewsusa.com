@@ -1,23 +1,31 @@
 export default {
   slug: 'curved-treadmill-guide',
   title: 'Curved Treadmill Guide: Benefits, Drawbacks, Curved vs Flat',
-  description:
-    'How a curved manual treadmill works, which benefits are real, the drawbacks of price, no incline and the learning curve, and who should and should not buy one.',
+  description: `How a curved manual treadmill works, which benefits are real, the drawbacks of price, no incline and the learning curve, and who should and should not buy.`,
   crumbLabel: 'Curved Treadmill Guide',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   kicker: 'Comparison',
-  updated: 'October 2026',
-  updatedLong: 'October 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-08',
+  modified: '2026-11-16',
   socialProof: '1.6k',
-  h1: ['Curved Treadmills:', 'How They Work, Who They Suit and Who They Do Not'],
-  standfirst:
-    'A curved treadmill has no motor, no buttons and no set pace: the belt moves because you move it. That makes it brilliant for sprints and intervals and awkward for a long easy run. Here is how the design works, which of the claimed benefits are real, what it costs you in incline, space and money, and how to decide between curved, flat manual and motorised.',
+  h1: [
+    'Curved Treadmills:',
+    'How They Work, Who They Suit and Who They Do Not',
+  ],
+  standfirst: `A curved treadmill has no motor, no buttons and no set pace: the belt moves because you move it. That makes it brilliant for sprints and intervals and awkward for a long easy run. Here is how the design works, which of the claimed benefits are real, what it costs you in incline, space and money, and how to decide between curved, flat manual and motorised.`,
   ctas: [
     { label: 'Benefits: Real and Claimed', href: '#benefits' },
     { label: 'Who Should Not Buy One', href: '#who-should-not' },
   ],
-  tags: ['curved treadmill', 'curved manual treadmill', 'curved treadmill benefits', 'curved treadmill vs flat', 'non-motorised treadmill'],
+  tags: [
+    'curved treadmill',
+    'curved manual treadmill',
+    'curved treadmill benefits',
+    'curved treadmill vs flat',
+    'non-motorised treadmill',
+  ],
   stickyCta: { text: 'See the Buying Checklist', link: '#what-to-check' },
   lead: `Curved treadmills arrived in commercial gyms and sports facilities first and have been
           working their way into home gyms since. They look dramatic, they are usually expensive,
@@ -41,7 +49,9 @@ export default {
             It is <strong>worth it</strong> for sprint work, <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium" data-autolink>interval training</a>, athletes who want
             self-paced acceleration without a motor lagging behind them, gyms that need a machine
             with no electrical supply and little to go wrong, and people who actively want no
-            electronics. On those terms it is arguably the best treadmill there is.
+            electronics. On those terms it is arguably the best treadmill there is. If that sounds
+            like you, our <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">curved treadmill reviews</a>
+            compare the specific machines worth shortlisting.
           </p>
           <p>
             It is <strong>not worth it</strong> for walkers who want incline, beginners who want a
@@ -471,8 +481,7 @@ export default {
     },
   ],
   mistakesHeading: 'Common Mistakes When Buying a Curved Treadmill',
-  mistakesIntro:
-    'Curved treadmills disappoint when they are bought for the wrong job. These four cover most of the regrets owners describe.',
+  mistakesIntro: `Curved treadmills disappoint when they are bought for the wrong job. These four cover most of the regrets owners describe.`,
   mistakes: [
     {
       title: 'Buying one for walking or easy running',
@@ -514,7 +523,7 @@ export default {
     {
       kicker: 'Curved',
       title: 'SB Fitness CT550 Curved Treadmill',
-      blurb: 'A direct-sold budget curved trainer, its listing claims, the restocking fee and the sprinting caveat.',
+      blurb: `A direct-sold budget curved trainer, its listing claims, the restocking fee and the sprinting caveat.`,
       url: '/sb-fitness-ct550-curved-treadmill/',
     },
   ],
