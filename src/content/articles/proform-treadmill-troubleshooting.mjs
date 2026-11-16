@@ -1,8 +1,7 @@
 export default {
   slug: 'proform-treadmill-troubleshooting',
   title: 'ProForm Treadmill Troubleshooting: Reset, Belt and iFIT Fixes',
-  description:
-    'ProForm treadmill troubleshooting: the safety key, console reset, a frozen iFIT screen, a belt that will not move or slips, incline faults and calling support.',
+  description: `ProForm treadmill troubleshooting: the safety key, console reset, a frozen iFIT screen, a belt that will not move or slips, incline faults and calling support.`,
   crumbLabel: 'ProForm Treadmill Troubleshooting',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
@@ -11,13 +10,18 @@ export default {
   published: '2026-10-08',
   socialProof: '2.1k',
   h1: ['ProForm Treadmill Troubleshooting:', 'Reset, Belt, Incline and iFIT Problems'],
-  standfirst:
-    'Most ProForm faults are one of a short list: a safety key not seated, a console that needs a proper reset, an iFIT screen stuck on something, a belt that slips or will not move, or an incline that has lost its place. Here is the order to check them in, what to do yourself, and what to have ready before you call support.',
+  standfirst: `Most ProForm faults are one of a short list: a safety key not seated, a console that needs a proper reset, an iFIT screen stuck on something, a belt that slips or will not move, or an incline that has lost its place. Here is the order to check them in, what to do yourself, and what to have ready before you call support.`,
   ctas: [
     { label: 'How to Reset It', href: '#reset' },
     { label: 'Call Support: What to Have Ready', href: '#support' },
   ],
-  tags: ['proform treadmill troubleshooting', 'proform treadmill reset', 'proform treadmill not working', 'proform treadmill wont start', 'proform treadmill problems'],
+  tags: [
+    'proform treadmill troubleshooting',
+    'proform treadmill reset',
+    'proform treadmill not working',
+    'proform treadmill wont start',
+    'proform treadmill problems',
+  ],
   stickyCta: { text: 'Reset Your ProForm', link: '#reset' },
   lead: `ProForm treadmills are built by iFIT Health and Fitness, the same parent company as
           NordicTrack, and the two brands share consoles, controllers, incline systems and a great
@@ -326,7 +330,10 @@ export default {
           </p>
           <p>
             A belt that slips with the deck lubricated and the tension correct is a stretched belt,
-            a <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>worn deck</a> surface or a glazed drive belt. Our guide to a
+            a <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>worn deck</a> surface or a glazed drive belt. For the two fixes in order, see
+            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">how to lube a treadmill</a>
+            and
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">how to tighten a treadmill belt</a>. Our guide to a
             <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">treadmill belt that slips</a>
             goes through the sequence, including the lift test for tension and when a belt is past
             adjusting. Do not simply keep tightening: a drum-tight belt on a dry deck is one of the
@@ -485,8 +492,7 @@ export default {
     },
   ],
   mistakesHeading: 'Common Mistakes With ProForm Treadmill Troubleshooting',
-  mistakesIntro:
-    'Most ProForm faults are simple. These four are how owners make them take longer or cost more than they should.',
+  mistakesIntro: `Most ProForm faults are simple. These four are how owners make them take longer or cost more than they should.`,
   mistakes: [
     {
       title: 'Unplugging for ten seconds and calling it a reset',
@@ -515,7 +521,7 @@ export default {
     },
     {
       kicker: 'Diagnosis',
-      title: "Treadmill Won't Turn On",
+      title: 'Treadmill Won\'t Turn On',
       blurb: 'From the outlet to the console cable, in order.',
       url: '/treadmill-wont-turn-on/',
     },

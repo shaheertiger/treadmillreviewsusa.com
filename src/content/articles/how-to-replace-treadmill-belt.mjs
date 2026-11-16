@@ -305,7 +305,7 @@ export default {
             <strong>Tension.</strong> Tighten both rear bolts a quarter turn at a time, the same
             amount each side. With the machine off, you should be able to lift the belt roughly two
             to three inches at the centre of the deck. Our guide to
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
             covers the lift test and the walk test in full. A belt that is too tight loads the
             rollers, bearings and motor; one that is too loose slips under your foot.
           </p>
@@ -372,7 +372,7 @@ export default {
             helps tell a settling seam from a problem one.
           </p>
           <p>
-            After break-in, the belt joins the ordinary <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a>: periodic cleaning
+            After break-in, the belt joins the ordinary <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a>: periodic cleaning
             under the belt, lubrication at the interval the manual gives, and a tension and
             tracking check now and then. The
             <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a>
@@ -476,7 +476,7 @@ export default {
       kicker: 'How-To',
       title: 'How Tight Should a Treadmill Belt Be?',
       blurb: 'The lift test and walk test for setting tension correctly.',
-      url: '/how-tight-should-treadmill-belt-be/',
+      url: '/how-to-adjust-treadmill-belt/',
     },
     {
       kicker: 'Sizing',
@@ -498,7 +498,7 @@ export default {
             spent twice.`,
     `The fitting itself is an afternoon with basic tools and a helper. What makes it last is
             the setup:
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#5AA9FF] font-bold no-underline">tension by the lift test</a>,
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#5AA9FF] font-bold no-underline">tension by the lift test</a>,
             centre it on a slow empty run, follow the manual on lubrication, and
             <strong class="text-white">recheck both after break-in</strong>.`,
   ],

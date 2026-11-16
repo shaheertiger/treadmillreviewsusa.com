@@ -1,23 +1,27 @@
 export default {
   slug: 'how-to-adjust-treadmill-belt',
-  title: 'How to Adjust a Treadmill Belt: Tighten and Track It Properly',
-  description:
-    'How to adjust and tighten a treadmill belt: tension versus tracking, the quarter-turn method on the rear roller bolts, the lift test, and when tightening is wrong.',
-  crumbLabel: 'How to Adjust a Treadmill Belt',
+  title: 'How to Tighten a Treadmill Belt: Quarter Turns, Lift Test',
+  description: `Tighten a treadmill belt with equal quarter turns on both rear bolts until it lifts 2–3 in. at mid-deck. How tight it should be, tracking, and when not to.`,
+  crumbLabel: 'How to Tighten a Treadmill Belt',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Maintenance',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-06',
   socialProof: '2.4k',
-  h1: ['How to Adjust', 'a Treadmill Belt'],
-  standfirst:
-    'Two bolts, one hex key and about fifteen minutes. The job is easy; doing it in the right order is the part people get wrong. Here is the whole sequence — tension first, tracking second, and a check before either that saves most belts from being tightened at all.',
+  h1: ['How to Tighten', 'a Treadmill Belt'],
+  standfirst: `Two bolts, one hex key and about fifteen minutes. The job is easy; doing it in the right order is the part people get wrong. Here is the whole sequence — tension first, tracking second, and a check before either that saves most belts from being tightened at all.`,
   ctas: [
     { label: 'Tighten It Step by Step', href: '#tighten-step-by-step' },
     { label: 'Fix the Tracking', href: '#adjust-tracking' },
   ],
-  tags: ['how to adjust treadmill belt', 'how to tighten treadmill belt', 'treadmill belt tension', 'treadmill belt tracking', 'treadmill maintenance'],
+  tags: [
+    'how to adjust treadmill belt',
+    'how to tighten treadmill belt',
+    'treadmill belt tension',
+    'treadmill belt tracking',
+    'treadmill maintenance',
+  ],
   stickyCta: { text: 'Tighten It Step by Step', link: '#tighten-step-by-step' },
   lead: `Adjusting a treadmill belt means one of two things, and they use the same two bolts:
           changing its tension, so it grips the rollers without slipping, or changing its tracking,
@@ -27,7 +31,7 @@ export default {
   sections: [
     {
       id: 'short-answer',
-      heading: 'How to Adjust a Treadmill Belt: The Short Answer',
+      heading: 'How to Tighten a Treadmill Belt: The Short Answer',
       html: `          <p>
             To tighten a treadmill belt, unplug the machine, find the two adjustment bolts at the
             rear corners where the rear roller sits, and turn <strong>both</strong> a quarter turn
@@ -44,9 +48,8 @@ export default {
           <p>
             That is the whole job in two paragraphs. The rest of this page is about the order to
             do it in, the check that should come before any tightening, and the ways people turn a
-            five-minute adjustment into a damaged belt. If you only want the tension specification,
-            it is set out fully in
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>;
+            five-minute adjustment into a damaged belt. If you only want the tension specification, it is in the
+            <a href="#lift-test" class="text-[#0F62FE] font-medium">lift test section</a> below;
             if the belt is wandering and the tension is already right, go straight to
             <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">how to centre a treadmill belt</a>.
           </p>`,
@@ -176,7 +179,7 @@ export default {
     },
     {
       id: 'lift-test',
-      heading: 'The Lift Test: Measure Before and After',
+      heading: 'How Tight Should a Treadmill Belt Be? The Lift Test',
       html: `          <p>
             With the machine unplugged, stand at the side level with the middle of the deck. Get
             your fingers under the belt edge and lift straight up, firmly but without hauling on
@@ -195,8 +198,6 @@ export default {
             Write the number down. It is your starting point, and checking it again after each
             round of tightening is what stops you going past correct. There is nothing underfoot
             that tells you a belt is now too tight; the lift test is the only upper limit you have.
-            The full set of checks, including what a failure on each one means, is in our
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>.
           </p>`,
     },
     {
@@ -467,34 +468,27 @@ export default {
     },
   ],
   mistakesHeading: 'Common Mistakes When Adjusting a Treadmill Belt',
-  mistakesIntro:
-    'Each of these turns a fifteen-minute job into a damaged belt or an over-loaded motor, and the first one is by far the most common.',
+  mistakesIntro: `Each of these turns a fifteen-minute job into a damaged belt or an over-loaded motor, and the first one is by far the most common.`,
   mistakes: [
     {
       title: 'Tightening a belt that actually needs lubricating',
-      body: 'A dry deck makes the belt hesitate under load exactly as a slack one does. Tightening stops the symptom by giving the roller more grip, but adds a tension load on top of the friction load, and the motor and controller board carry both from then on. Feel the deck under the belt before you pick up the hex key.',
+      body: `A dry deck makes the belt hesitate under load exactly as a slack one does. Tightening stops the symptom by giving the roller more grip, but adds a tension load on top of the friction load, and the motor and controller board carry both from then on. Feel the deck under the belt before you pick up the hex key.`,
     },
     {
       title: 'Turning the bolts unequally',
-      body: 'Tension adjustments must be identical on both sides. A quarter turn on one side and a half on the other steers the belt, so you finish with the slip fixed and a tracking problem added. Count and write down every quarter turn on each side as you go.',
+      body: `Tension adjustments must be identical on both sides. A quarter turn on one side and a half on the other steers the belt, so you finish with the slip fixed and a tracking problem added. Count and write down every quarter turn on each side as you go.`,
     },
     {
       title: 'Tightening until it feels firm',
-      body: 'Nothing underfoot tells you when a belt has gone past correct, so tightening by feel has no upper limit. The lift test is the limit: if you cannot raise the belt two inches at the centre of the deck, it is over-tight, and the bearings, belt and motor will pay for it.',
+      body: `Nothing underfoot tells you when a belt has gone past correct, so tightening by feel has no upper limit. The lift test is the limit: if you cannot raise the belt two inches at the centre of the deck, it is over-tight, and the bearings, belt and motor will pay for it.`,
     },
     {
       title: 'Making tracking turns faster than the belt responds',
-      body: 'A quarter turn changes the direction the belt travels, not its position, and the migration takes around twenty to forty seconds at 3 mph. Turning again in that window stacks adjustments, and the belt ends up against the opposite rail. One quarter turn, wait thirty seconds, then decide.',
+      body: `A quarter turn changes the direction the belt travels, not its position, and the migration takes around twenty to forty seconds at 3 mph. Turning again in that window stacks adjustments, and the belt ends up against the opposite rail. One quarter turn, wait thirty seconds, then decide.`,
     },
   ],
   relatedHeading: 'Related Belt Guides',
   related: [
-    {
-      kicker: 'Specification',
-      title: 'How Tight Should a Treadmill Belt Be?',
-      blurb: 'The lift test, the foot-plant test and what over-tight costs.',
-      url: '/how-tight-should-treadmill-belt-be/',
-    },
     {
       kicker: 'How-To',
       title: 'How to Center a Treadmill Belt',
@@ -507,15 +501,27 @@ export default {
       blurb: 'Every cause of a slipping or drifting belt, and which ones bolts fix.',
       url: '/treadmill-belt-slipping/',
     },
+    {
+      kicker: 'Maintenance',
+      title: 'How to Lube a Treadmill',
+      blurb: 'Lubricate before you tighten: a dry deck is the commonest cause of a slipping belt.',
+      url: '/treadmill-belt-lubrication/',
+    },
+    {
+      kicker: 'Repairs',
+      title: 'How to Replace a Treadmill Belt',
+      blurb: 'When adjustment will not hold any more, and what a new belt involves.',
+      url: '/how-to-replace-treadmill-belt/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Lubricate before you tighten</strong>, then set tension with both
             rear bolts a quarter turn clockwise at a time, equally, testing at about 3 mph. Stop
-            when the slip stops and confirm the belt still lifts two to three inches —
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#5AA9FF] font-bold no-underline">the full tension spec</a>.`,
+            when the slip stops and confirm the belt still lifts two to three inches.`,
     `<strong class="text-white">Then correct tracking with one bolt</strong>: the side the belt
             drifts toward, a quarter turn clockwise, thirty seconds of waiting.
             <a href="/how-to-center-treadmill-belt/" class="text-[#5AA9FF] font-bold no-underline">Our centring guide</a>
             covers what to do if it will not stay put.`,
   ],
+  modified: '2026-11-16',
 };

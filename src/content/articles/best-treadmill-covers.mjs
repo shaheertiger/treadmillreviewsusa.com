@@ -355,7 +355,7 @@ export default {
           </p>
           <p>
             <strong>If the machine is going into long-term storage</strong>, a cover is part of the
-            job but not the main part. Cleaning, drying, <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>, the plug and the room matter
+            job but not the main part. Cleaning, drying, <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>, the plug and the room matter
             more, and our guide to
             <a href="/how-to-store-a-treadmill/" class="text-[#0F62FE] font-medium">storing a treadmill</a>
             covers them in order.

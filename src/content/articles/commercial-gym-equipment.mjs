@@ -220,7 +220,7 @@ export default {
           </p>
           <p>
             <strong>Maintenance is usually a condition.</strong> Commercial warranties typically
-            require the maker's <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a> to be followed and recorded. Keep a log from day
+            require the maker's <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a> to be followed and recorded. Keep a log from day
             one: date, machine, serial number, what was done and by whom.
           </p>`,
     },

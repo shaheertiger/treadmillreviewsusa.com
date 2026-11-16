@@ -393,6 +393,71 @@ const TRUST_BOX = `
 
 // Astro's HTML compression drops a line break between a word and an inline tag, so
 // "explained in\n<a ...>" rendered as "explained in<a>". Turn those breaks into real spaces.
+// ---------------------------------------------------------------------------
+// Page type. The method line, the disclosure, the contents label, the mistakes heading and
+// the closing heading follow it, so 440 pages built from one template do not all carry the
+// same boilerplate word for word (a template fingerprint search engines discount).
+function pageType(spec) {
+  const hub = (spec.breadcrumb ?? { url: '/best-of/' }).url;
+  if (hub === '/problems/') return 'fix';
+  if (hub === '/maintenance/') return 'maintenance';
+  if (hub === '/training/') return 'training';
+  if (hub === '/compare/') return 'compare';
+  if (hub === '/reviews/' || spec.products?.length === 1) return 'review';
+  if (hub === '/brands/') return 'brand';
+  if (spec.products?.length >= 3) return 'roundup';
+  if (hub === '/price/') return 'price';
+  return 'guide';
+}
+
+const METHOD = {
+  roundup: 'How we chose: makers’ published specifications and manuals, independent reviews and owner reports, cross-checked. Not tested hands-on.',
+  review: 'Based on the maker’s specification sheet and manual, retailer listings and owner reports. Not tested hands-on.',
+  brand: 'Based on the brand’s published specifications and warranty terms, retailer listings and owner reports.',
+  compare: 'Based on both makers’ published specifications and warranty terms, and owner reports.',
+  price: 'Based on retailer and maker listings, with prices checked on the dates shown.',
+  fix: 'Based on manufacturer manuals and service guidance, and the faults owners report most.',
+  maintenance: 'Based on manufacturer manuals, warranty terms and service guidance.',
+  training: 'Based on published exercise guidance. General information, not medical advice.',
+  guide: 'Based on manufacturer specifications and manuals, and independent sources.',
+};
+
+const TOC_LABEL = {
+  roundup: 'In this roundup', review: 'In this review', brand: 'In this brand guide', compare: 'In this comparison',
+  price: 'On this page', fix: 'Jump to', maintenance: 'Steps on this page', training: 'On this page', guide: 'In this guide',
+};
+
+const CLOSING = {
+  roundup: 'The bottom line', review: 'Our verdict', brand: 'Our verdict on the brand', compare: 'Which one to buy',
+  price: 'The bottom line', fix: 'The fix, in short', maintenance: 'In short', training: 'The takeaway', guide: 'The bottom line',
+};
+
+const affiliateLinks = (spec) => Boolean(spec.products?.length) || /amazon\.com/.test(JSON.stringify(spec));
+function disclosure(spec) {
+  const type = pageType(spec);
+  const how = '<a href="/editorial-standards/">How we review.</a>';
+  if (!affiliateLinks(spec)) return `Nothing on this page is a paid placement, and it carries no affiliate links. ${how}`;
+  if (type === 'roundup') return `We may earn a commission when you buy through the links below. It costs you nothing and never decides a ranking. ${how}`;
+  if (type === 'review') return `Nobody pays to be reviewed here. If you buy through our links we may earn a commission, at no cost to you. ${how}`;
+  if (type === 'price') return `Prices change daily, so check the live price before you buy. We may earn a commission on purchases through our links. ${how}`;
+  return `Some links on this page are affiliate links: we may earn a commission at no cost to you. ${how}`;
+}
+
+// "Common Mistakes Buying X" on 200 pages reads as a template. Keep the subject, vary the frame.
+function mistakesHeading(spec) {
+  const h = spec.mistakesHeading;
+  const n = spec.mistakes?.length;
+  let m;
+  const pick = (...frames) => frames[[...spec.slug].reduce((a, c) => a + c.charCodeAt(0), 0) % frames.length];
+  if ((m = h.match(/^Common Mistakes (?:When )?Buying (.+)$/)))
+    return pick(`Before You Buy ${m[1]}: ${n} Mistakes to Avoid`, `${n} Mistakes People Make Buying ${m[1]}`, `Buying ${m[1]}? Avoid These ${n} Mistakes`);
+  if ((m = h.match(/^Common Mistakes With (.+)$/))) return pick(`What Goes Wrong With ${m[1]}`, `Mistakes to Avoid With ${m[1]}`);
+  if ((m = h.match(/^Common Mistakes When (.+)$/))) return `Where People Go Wrong When ${m[1]}`;
+  if ((m = h.match(/^Common Mistakes Choosing (.+)$/))) return `Avoid These When Choosing ${m[1]}`;
+  if ((m = h.match(/^Common Mistakes (.+)$/))) return `${n} Mistakes ${m[1]}`;
+  return h;
+}
+
 const keepInlineSpaces = (html) =>
   html
     .replace(/([^\s>])\n\s*<(a|strong|em|b|i|code|span)\b/g, '$1 <$2')
@@ -479,13 +544,13 @@ ${shortAnswer(spec)}
         <img src="/authors/shaheer-ali-khan.png" alt="${AUTHOR}, PhD" width="44" height="44" />
         <div class="ed-byline-text">
           By <a href="${AUTHOR_PAGE}" rel="author">${AUTHOR}, PhD</a><br />
-          Updated ${spec.updatedLong} · ${AUTHOR_ROLE}
+          Updated ${spec.updatedLong} · ${AUTHOR_ROLE}<br />
+          <span class="ed-method">${METHOD[pageType(spec)]}</span>
         </div>
         <a href="${viewHref}" class="btn-ghost">${viewLabel}</a>
       </div>
       <p class="ed-disclosure">
-        We research every product on this page independently. If you buy through our links, we may earn a
-        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+        ${disclosure(spec)}
       </p>
 ${heroCollage(spec)}${spec.dataPending?.length ? DATA_PENDING_BANNER : ''}
       <div class="ed-body prose prose-lg">
@@ -493,8 +558,8 @@ ${heroCollage(spec)}${spec.dataPending?.length ? DATA_PENDING_BANNER : ''}
           ${spec.lead}
         </p>
 ${topPicksBox(spec)}
-        <nav class="ed-toc not-prose" aria-label="In this guide">
-          <h2>In this guide</h2>
+        <nav class="ed-toc not-prose" aria-label="${TOC_LABEL[pageType(spec)]}">
+          <h2>${TOC_LABEL[pageType(spec)]}</h2>
           <ol>
 ${contentsNav(spec)}
           </ol>
@@ -505,7 +570,7 @@ ${first === -1 ? '' : PRODUCT_CARDS}
 ${after.length ? renderSections(after) + '\n' : ''}
         <!-- Common mistakes -->
         <div id="common-mistakes" class="scroll-mt-24">
-          <h2>${spec.mistakesHeading}</h2>
+          <h2>${mistakesHeading(spec)}</h2>
           <p>${spec.mistakesIntro}</p>
           <ol class="ed-mistakes not-prose">
 ${spec.mistakes
@@ -521,7 +586,7 @@ ${spec.mistakes
 
         <!-- The bottom line -->
         <div id="bottom-line" class="ed-bottomline">
-          <h2>The bottom line</h2>
+          <h2>${CLOSING[pageType(spec)]}</h2>
 ${spec.bottomLine.map((p) => `          <p>\n            ${p}\n          </p>`).join('\n')}
         </div>
 

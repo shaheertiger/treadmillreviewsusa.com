@@ -157,7 +157,7 @@ export default {
       id: 'maintenance',
       heading: 'Maintenance Matters More at Higher Loads',
       html: `          <p>
-            Everything in our standard <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a> applies here on a shorter interval.
+            Everything in our standard <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a> applies here on a shorter interval.
             Friction between the belt and the deck is the primary cause of motor and controller
             failure, and load increases friction directly — so a heavier user generates the
             failure condition faster.

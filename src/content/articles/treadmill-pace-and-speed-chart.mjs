@@ -1,8 +1,7 @@
 export default {
   slug: 'treadmill-pace-and-speed-chart',
   title: 'Treadmill Pace & Speed Chart: mph, Pace and Incline',
-  description:
-    'Convert treadmill mph to minutes per mile and km/h, see what each speed actually feels like, and what an incline grade is worth in equivalent flat effort.',
+  description: `6 mph is a 10:00 mile, 7.5 mph is 8:00 and 10 mph is 6:00. The full mph-to-pace chart, km/h, how each speed feels, and what each incline grade is worth.`,
   crumbLabel: 'Treadmill Pace & Speed Chart',
   kicker: 'Reference',
   updated: 'September 2026',
@@ -10,13 +9,18 @@ export default {
   published: '2026-09-08',
   socialProof: '4.5k',
   h1: ['Treadmill Pace &', 'Speed Chart'],
-  standfirst:
-    'Your machine speaks mph. Your training plan speaks minutes per mile. Your running app speaks km/h. Here is the conversion, plus what each speed and grade actually demands.',
+  standfirst: `Your machine speaks mph. Your training plan speaks minutes per mile. Your running app speaks km/h. Here is the conversion, plus what each speed and grade actually demands.`,
   ctas: [
     { label: 'The Conversion Chart', href: '#the-chart' },
     { label: 'What Incline Is Worth', href: '#incline-equivalents' },
   ],
-  tags: ['treadmill pace chart', 'treadmill speed conversion', 'mph to minutes per mile', 'treadmill km/h', 'running pace'],
+  tags: [
+    'treadmill pace chart',
+    'treadmill speed conversion',
+    'mph to minutes per mile',
+    'treadmill km/h',
+    'running pace',
+  ],
   stickyCta: { text: 'See the Chart', link: '#the-chart' },
   lead: `Treadmills in the US display miles per hour. Training plans are written in minutes per
           mile. Most running apps and anyone outside the US think in kilometres. Three units for
@@ -50,7 +54,12 @@ export default {
     {
       id: 'the-chart',
       heading: 'Speed, Pace and km/h',
-      html: `          <div class="overflow-x-auto my-8 not-prose">
+      html: `          <figure class="not-prose my-8">
+            <img src="/charts/treadmill-pace-chart.svg" width="720" height="420" loading="lazy" decoding="async" class="w-full h-auto border border-gray-200 rounded-xl"
+              alt="Line chart of treadmill speed against pace per mile: 3 mph is a 20:00 mile, 6 mph is 10:00, 7.5 mph is 8:00 and 10 mph is 6:00." />
+            <figcaption class="text-sm text-gray-500 mt-2">Pace per mile against speed from 3 to 12 mph. Pace = 60 ÷ mph.</figcaption>
+          </figure>
+          <div class="overflow-x-auto my-8 not-prose">
             <table class="min-w-[520px] w-full text-sm border-collapse">
               <thead>
                 <tr class="bg-gray-900 text-white text-left">
@@ -212,7 +221,7 @@ export default {
             <strong>Console calibration drift.</strong> Belt speed is generally accurate but can
             drift with <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>belt wear</a> and tension. If your treadmill pace and your GPS watch disagree
             consistently, the machine may need attention — our
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">belt tension guide</a>
             covers the most common cause.
           </p>
           <p>
@@ -392,24 +401,23 @@ export default {
     },
   ],
   mistakesHeading: 'Common Mistakes Reading Treadmill Speeds',
-  mistakesIntro:
-    'Three of these come from treating a number on a console as though it meant the same thing every day.',
+  mistakesIntro: `Three of these come from treating a number on a console as though it meant the same thing every day.`,
   mistakes: [
     {
       title: 'Assuming 0.5 mph means the same thing at every speed',
-      body: 'The dial moves evenly and the effect does not. Adding 0.5 mph at walking pace changes your mile time by nearly two minutes; adding it at 9 mph changes it by about twenty seconds. Plans written in pace do not increment the way a speed dial does, which is why converting matters.',
+      body: `The dial moves evenly and the effect does not. Adding 0.5 mph at walking pace changes your mile time by nearly two minutes; adding it at 9 mph changes it by about twenty seconds. Plans written in pace do not increment the way a speed dial does, which is why converting matters.`,
     },
     {
       title: 'Running every session by the number rather than by feel',
-      body: 'The same mph sits at a different effort on different days depending on sleep, heat, fatigue and food. Use the chart to translate a plan into settings and your breathing to judge whether it is right today. Full sentences means easy; single words means hard. When they disagree, believe your breathing.',
+      body: `The same mph sits at a different effort on different days depending on sleep, heat, fatigue and food. Use the chart to translate a plan into settings and your breathing to judge whether it is right today. Full sentences means easy; single words means hard. When they disagree, believe your breathing.`,
     },
     {
       title: 'Holding the rails while using the incline equivalents',
-      body: 'Every incline comparison on this page assumes your hands are off the handrails, or resting lightly at most. Leaning transfers work to your arms and the frame while the console keeps reporting the same grade, so the equivalence stops holding. If you cannot walk the grade without gripping, lower it.',
+      body: `Every incline comparison on this page assumes your hands are off the handrails, or resting lightly at most. Leaning transfers work to your arms and the frame while the console keeps reporting the same grade, so the equivalence stops holding. If you cannot walk the grade without gripping, lower it.`,
     },
     {
       title: 'Expecting treadmill and road paces to match',
-      body: 'No air resistance, no terrain variation and poorer heat dissipation mean the two are genuinely different. Compare treadmill sessions to treadmill sessions and road runs to road runs. A 1% grade addresses part of the difference at faster paces and does not make them interchangeable.',
+      body: `No air resistance, no terrain variation and poorer heat dissipation mean the two are genuinely different. Compare treadmill sessions to treadmill sessions and road runs to road runs. A 1% grade addresses part of the difference at faster paces and does not make them interchangeable.`,
     },
   ],
   relatedHeading: 'Related Training Guides',

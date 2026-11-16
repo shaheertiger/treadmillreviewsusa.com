@@ -4,31 +4,32 @@ const row = (cells) => `<tr>${cells.map((c) => `<td class="${TD}">${c}</td>`).jo
 
 export default {
   slug: 'yesoul-treadmills',
-  title: 'Yesoul Treadmill Review Guide (2026): T3S Plus and T5 Series',
+  title: 'Yesoul Treadmill Review (2026): T3S Plus and T5, Worth It?',
   description:
-    'Yesoul sells the T3S Plus screen treadmill and the 30%-incline T5 Plus, Max and Ultra in the US. Prices on the day, which figures hold up, the 14 and 30-day trials, warranty and reviews.',
+    'Yesoul’s $799.99 T3S Plus suits walkers who want a free big screen; the T5 (from $1,399.99) adds a 30% incline. Which figures hold up, trials and warranty.',
   crumbLabel: 'Yesoul Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 5, 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-11-05',
+  modified: '2026-11-16',
   socialProof: '1.3k',
-  h1: ['Yesoul Treadmills:', 'A Buyer’s Guide to the T3S Plus and T5'],
+  h1: ['Yesoul Treadmill Review:', 'The T3S Plus and T5 Series'],
   standfirst:
     'Yesoul made its name with screen-equipped exercise bikes and now sells two quite different treadmill lines in the US: the folding T3S Plus with a 21.5-inch screen, and the new T5 series with a 60-inch deck and a 30% incline. This guide sets out what each costs on the day, which figures we could confirm, and what the trial, return and warranty terms actually say.',
   ctas: [
     { label: 'The Short Answer', href: '#short-answer' },
-    { label: 'The Current Range', href: '#current-range' },
+    { label: 'Why the Bad Reviews?', href: '#bad-reviews' },
   ],
-  tags: ['yesoul treadmill', 'yesoul treadmill review', 'yesoul treadmill reviews', 'yesoul t3s plus treadmill', 'yesoul treadmills', 'yesoul t5 max'],
+  tags: ['yesoul treadmill review', 'yesoul treadmill', 'yesoul bad reviews', 'yesoul treadmill reviews', 'yesoul t3s plus treadmill', 'yesoul treadmills', 'yesoul t5 max'],
   stickyCta: { text: 'See the Current Range', link: '#current-range' },
-  lead: `Most people searching for a "Yesoul treadmill review" have seen one of two machines: a folding
-          treadmill with a big screen on top, at a price far below a Peloton or NordicTrack with a similar
-          screen, or a new treadmill advertising a 30% incline and heart-rate-controlled Zone 2 training. Both
-          are Yesoul’s, they are aimed at different buyers, and they come with quite different return and
-          warranty terms. Independent hands-on reviews of either are still scarce, so this guide concentrates on
-          what can be checked: the published figures, where they agree, and the terms you would be buying under.`,
+  lead: `A Yesoul treadmill is a reasonable buy if you want a big, subscription-free screen for walking
+          (the $799.99 T3S Plus) or a 30% incline on a full-size deck (the T5 series, from $1,399.99), but
+          independent hands-on reviews of either are still scarce. The two lines are aimed at different buyers
+          and come with quite different return and warranty terms. This review concentrates on what can be
+          checked: the published figures, where they agree, the terms you would be buying under, and where the
+          complaints about Yesoul are likely to come from.`,
   products: [
     {
       id: 'yesoul-t3s-plus',
@@ -153,7 +154,7 @@ export default {
     },
     {
       id: 'who-yesoul-is',
-      heading: 'Who Yesoul Is, and Where It Sells',
+      heading: 'Who Is Yesoul, and Where Are Its Treadmills Sold?',
       html: `          <p>
             Yesoul is best known for its exercise bikes, the G1M Plus and G1M Max among them, which pair a
             budget-to-mid-price frame with a large screen. Its US store also sells a rower, a <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium" data-autolink>recumbent bike</a>,
@@ -180,11 +181,71 @@ export default {
           </p>`,
     },
     {
+      id: 'bad-reviews',
+      heading: 'Why Does Yesoul Have So Many Bad Reviews?',
+      html: `          <p>
+            <strong>We could not confirm that Yesoul treadmills have an unusual number of bad reviews, because
+            there is very little independent review evidence for them either way.</strong> What we can say is
+            where a Yesoul buyer is most likely to end up disappointed, because the published figures and terms
+            make those points clear. Most of them come down to buying the wrong Yesoul for the job, or not reading
+            the trial terms before ordering.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What the review record actually shows</h3>
+          <p>
+            When we checked on 5 November 2026, we found no full independent hands-on review of the T3S Plus or
+            any T5 model from a major outlet. Consumer Reports lists the T3S Plus in its treadmill ratings, but its
+            scores are for subscribers and we have not seen them. Search results for the Walmart marketplace
+            listing showed only a handful of mixed reviews, and one of Best Buy’s listings showed none. Yesoul’s
+            own page shows a large review count, but Yesoul collects and displays those reviews itself, so we do
+            not treat them as independent. The T5 series has only been on sale in the US since June 2026. We do
+            not have a count, average or summary of negative owner reviews, and we will not invent one.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Where disappointment is most likely to come from</h3>
+          <ul>
+            <li><strong>Running on the T3S Plus.</strong> Its 45.3 by 17.7-inch belt and 8.7 mph top speed suit
+            walking and jogging. A runner, or a tall walker with a long stride, will find the deck short and the
+            speed capped.</li>
+            <li><strong>A phone that will not mirror.</strong> The T3S Plus and T5 Plus screens show your phone by
+            cable and run no apps themselves. Android phones need DisplayPort output, and Yesoul lists some recent
+            iPhones as unsupported for wired mirroring. A buyer who did not check gets a large screen that stays
+            blank.</li>
+            <li><strong>A trial that costs money to use.</strong> The T3S Plus trial is 14 days, and a return that
+            is not a quality fault costs return shipping plus a $100 restocking fee, with the machine new, unused
+            and in its original packaging. On the T5, a non-quality return costs $300 in shipping, and paid
+            delivery and installation are not refunded.</li>
+            <li><strong>A one-year warranty on the T3S Plus.</strong> The T3S Plus is covered for 12 months.
+            Anything that fails after that is the owner’s cost, which is a shorter term than many buyers
+            expect at $800.</li>
+            <li><strong>Delivery to the door, not the room.</strong> Standard delivery stops at the first sheltered
+            place with no stairs. A T5 weighs about 222 lb assembled and 261 lb boxed, and white-glove delivery
+            with assembly is $299.99 extra where available.</li>
+            <li><strong>“Regular” prices that are not real.</strong> Yesoul shows a higher stated price beside
+            almost every product, and Best Buy had shown the T3S Plus at $699.99 in search results while Yesoul asked $799.99. A buyer
+            who later sees a lower price elsewhere can feel short-changed.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Which figures hold up</h3>
+          <p>
+            The T3S Plus’s screen size, incline range, top speed and motor figure agree between Yesoul and Best
+            Buy’s listings. The T5 series publishes a continuous motor rating, 2.0 HP, alongside the 4.5 HP peak,
+            which most budget brands do not, and its five-year frame, three-year motor and one-year parts and
+            labour warranty appears both on Yesoul’s specification page and in Sole’s comparison page (Sole is a rival brand).
+            Against that, the sold-out T3S Pro’s page gives its motor as both 3.0 and 3.5 HP, the T3S Plus motor
+            is rated only as a 3.0 HP maximum with no continuous figure, and the optional membership price quoted
+            by Sole could not be confirmed on Yesoul’s store.
+          </p>
+          <p>
+            The practical answer is to buy the Yesoul that matches what you will do on it, from Yesoul’s own
+            store or a retailer whose return terms you have read, and to check phone compatibility and the trial
+            costs before you order. Do that, and most of the ways a Yesoul purchase goes wrong are avoided.
+          </p>`,
+    },
+    {
       id: 'current-range',
-      heading: 'The Yesoul Treadmill Range on 5 November 2026',
+      heading: 'Which Treadmills Does Yesoul Sell?',
       products: true,
       html: `          <p>
-            The table lists every treadmill and walking pad in Yesoul’s US store on 5 November 2026, with the
+            Yesoul sells two treadmill lines, the compact T3S and the full-size T5, plus walking pads. The table
+            lists every treadmill and walking pad in Yesoul’s US store on 5 November 2026, with the
             figures Yesoul publishes and the price and stock status shown that day. Yesoul shows a higher "regular"
             price next to almost every product; we give the price you would pay, and the stated price in brackets.
             The product cards below carry the T3S Plus, which is sold on Amazon, and in place of the three T5
@@ -217,11 +278,11 @@ export default {
     },
     {
       id: 't3s-plus',
-      heading: 'Yesoul T3S Plus Review: What the Figures Say',
+      heading: 'Yesoul T3S Plus Review: Is It Good for Running or Only Walking?',
       html: `          <p>
-            The T3S Plus is the Yesoul with the most reviews on retailer sites, and the one most people mean by
-            "Yesoul treadmill". It is easiest to understand as a compact folding walking and jogging treadmill
-            with an unusually large screen.
+            It is a walking and jogging machine, not a running one. The T3S Plus is the Yesoul with the most
+            coverage, and the one most people mean by "Yesoul treadmill". It is easiest to
+            understand as a compact folding walking and jogging treadmill with an unusually large screen.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The screen is the point</h3>
           <p>
@@ -254,14 +315,15 @@ export default {
             its scores are for subscribers only and we have not seen them. Search results for Walmart’s marketplace
             listing showed only a handful of mixed reviews, and one of Best Buy’s listings showed none. Yesoul’s own page shows a large
             review count, but those reviews are collected and displayed by Yesoul, so we do not treat them as
-            independent evidence. If you want a machine with years of owner reports
+            independent evidence; the section on <a href="#bad-reviews" class="text-[#0F62FE] font-medium">why Yesoul gets bad reviews</a>
+            sets out what that leaves. If you want a machine with years of owner reports
             behind it, look at the established brands on our
             <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">under $1,000 list</a>.
           </p>`,
     },
     {
       id: 't5-series',
-      heading: 'The Yesoul T5 Series: Plus, Max and Ultra',
+      heading: 'Yesoul T5 Plus vs Max vs Ultra: What Is the Difference?',
       html: `          <p>
             The T5 series, added to Yesoul’s US store in June 2026, is a different kind of machine from the T3S.
             All three share the same frame, motor and deck: a 20 by 60-inch running surface, a brushless motor
@@ -300,7 +362,7 @@ export default {
     },
     {
       id: 'warranty-returns',
-      heading: 'Yesoul Warranty, Home Trial and Returns',
+      heading: 'What Warranty and Return Terms Does Yesoul Offer?',
       html: `          <p>
             Yesoul’s terms differ sharply between the T3S and T5 lines, and both depend on buying from Yesoul’s
             own store.
@@ -318,7 +380,7 @@ export default {
           <p>
             The T5 models carry a much longer warranty: five years on the frame, three on the motor and 12 months
             on parts and labour, according to Yesoul’s specification page, with the same five, three and one-year
-            split in Sole’s independent comparison. The home trial is 30 days from delivery, but a non-quality
+            split in Sole’s comparison page. The home trial is 30 days from delivery, but a non-quality
             return carries a $300 return shipping fee, and paid delivery and installation fees are not refunded.
             Keep the box and internal packaging until you are sure. If the T5’s price drops within 30 days of your
             order, Yesoul says it will refund the difference on request.
@@ -355,7 +417,7 @@ export default {
     },
     {
       id: 'safety',
-      heading: 'Recalls and Safety',
+      heading: 'Has Yesoul Had a Treadmill Recall?',
       html: `          <p>
             We searched the US Consumer Product Safety Commission’s recall database for Yesoul on 5 November 2026
             and found no recall of any Yesoul treadmill or other product. The treadmill recalls since 2015 concern
@@ -371,7 +433,7 @@ export default {
     },
     {
       id: 'who-should-buy',
-      heading: 'Who Should Buy a Yesoul Treadmill, and the Alternatives',
+      heading: 'Who Should Buy a Yesoul Treadmill, and What Are the Alternatives?',
       html: `          <p>
             <strong>The T3S Plus suits</strong> walkers and joggers who want a large screen for their own apps
             without a subscription, in a machine that folds, at a price below most screen treadmills. It suits
@@ -397,6 +459,14 @@ export default {
     {
       q: 'Is Yesoul a good treadmill brand?',
       a: 'Yesoul is a credible brand with published figures and terms, but its treadmills have little independent long-term coverage. The T3S Plus is a compact walking and jogging machine with a big screen and a one-year warranty; the T5 series, on sale since June 2026, is a full-size treadmill with a 30% incline and a five-year frame warranty.',
+    },
+    {
+      q: 'Why does Yesoul have so many bad reviews?',
+      a: 'We could not confirm that it does: independent reviews of Yesoul treadmills are scarce, and the reviews on Yesoul’s own site are collected by Yesoul. The likely sources of disappointment are running on the T3S Plus’s 45.3-inch belt, phones that cannot mirror to the screen, a 14-day trial with a $100 restocking fee, and a one-year warranty.',
+    },
+    {
+      q: 'Is the Yesoul T3S Plus good for running?',
+      a: 'Not really. Yesoul lists a 45.3 by 17.7-inch running surface and an 8.7 mph top speed, which suit walking and an easy jog. Most runners need a 55 to 60-inch belt and more speed. The T5 series, with a 20 by 60-inch deck and 12.4 mph, is the Yesoul built for running.',
     },
     {
       q: 'How much is the Yesoul T3S Plus treadmill?',

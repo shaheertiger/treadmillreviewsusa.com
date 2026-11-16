@@ -162,7 +162,7 @@ export default {
             and folded size. Wayfair’s structured fields do not always include these, so they are
             often in the description or bullet points. If they are missing, ask; if the title, bullets
             and specifications disagree, treat that as a reason to look elsewhere. Our
-            <a href="/treadmill-buyers-guide/" class="text-[#0F62FE] font-medium">treadmill buyer’s checklist</a>
+            <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buyer’s checklist</a>
             explains what each figure should be for your use.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Read the warranty fields</h3>

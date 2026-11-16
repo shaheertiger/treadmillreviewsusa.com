@@ -138,7 +138,7 @@ export default {
             This also explains a recurring confusion in model naming — machines like the
             <a href="/nordictrack-commercial-1750-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack Commercial 1750</a> and the "New" Commercial 1750 sit side by side at
             different prices. Our
-            <a href="/nordictrack-new-commercial-1750-treadmill/" class="text-[#0F62FE] font-medium">comparison of those two</a>
+            <a href="/nordictrack-commercial-1750-treadmill/" class="text-[#0F62FE] font-medium">comparison of those two</a>
             walks through exactly what changed, which is a useful template for evaluating any
             model-year decision.
           </p>`,

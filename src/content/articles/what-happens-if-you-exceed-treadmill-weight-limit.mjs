@@ -322,7 +322,7 @@ export default {
             <li><strong>Shorten sessions and rest the machine.</strong> Several shorter sessions with
             the machine cooling between them are kinder to the motor and board than one long one.</li>
             <li><strong>Keep friction down.</strong> Lubricate the deck on the manual's schedule or a
-            little more often, and check <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>. A dry deck under a heavy load is the fastest way
+            little more often, and check <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>. A dry deck under a heavy load is the fastest way
             to a failed board.</li>
             <li><strong>Inspect regularly.</strong> With the machine unplugged, check for cracks in the
             deck and frame, play in the handrails and uprights, loose bolts and wear on the belt edges.

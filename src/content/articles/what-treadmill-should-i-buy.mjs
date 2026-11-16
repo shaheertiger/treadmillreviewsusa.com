@@ -418,7 +418,7 @@ ${DECISION_TABLE}
             safe middle — enough for the jogging you might start, not so much that you pay for running
             hardware you never use. Our
             ${link('/best-treadmills-for-beginners/', 'best treadmills for beginners')} covers this
-            case, and the ${link('/treadmill-buyers-guide/', 'treadmill buyer’s checklist')} walks
+            case, and the ${link('/treadmill-buying-guide-2026/', 'treadmill buyer’s checklist')} walks
             through the purchase in eight steps.
           </p>`,
     },

@@ -197,7 +197,7 @@ export default {
           <p>
             <strong>What helps.</strong> Start on the steepest incline setting and the lowest
             magnetic level, then work down the slope and up the resistance as you get used to it.
-            Wear trainers with grip rather than walking in socks. Check the <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> and
+            Wear trainers with grip rather than walking in socks. Check the <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> and
             alignment against the manual after the first few sessions, because a belt that has
             drifted against one side rail feels dramatically heavier. And treat the handrails as
             part of the machine rather than a crutch to be ashamed of — on a flat manual, light

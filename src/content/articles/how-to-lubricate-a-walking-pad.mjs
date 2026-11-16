@@ -223,7 +223,7 @@ export default {
             Manuals describe the right tension in different ways — often as a small amount of lift
             available at the middle of the belt. Follow your manual's description if it has one. Our
             guide to
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
             explains the checks in more detail.
           </p>`,
     },

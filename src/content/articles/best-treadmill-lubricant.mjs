@@ -284,7 +284,7 @@ export default {
           </p>
           <p>
             Then retension the belt properly rather than by feel. Our
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">belt tension guide</a>
             covers the lift test, and the
             <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring guide</a>
             covers tracking, which is the step most likely to need attention after the belt has

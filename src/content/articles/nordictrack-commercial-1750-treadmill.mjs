@@ -1,17 +1,15 @@
 export default {
   slug: 'nordictrack-commercial-1750-treadmill',
   title: 'NordicTrack Commercial 1750 Review (2026): Specs and Verdict',
-  description:
-    'The NordicTrack Commercial 1750 treadmill as sold now: 16 in. pivoting screen, 22 x 60 in. deck, 400 lb rating, lifetime motor cover. What changed, and who should buy it.',
+  description: `The Commercial 1750 is the default NordicTrack for runners: 22 x 60 in. deck, -3% to 12% incline, 400 lb rating and a lifetime motor warranty, about $2,000.`,
   crumbLabel: 'NordicTrack Commercial 1750',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-14',
   socialProof: '1.9k',
   h1: ['NordicTrack Commercial 1750', 'Treadmill Review'],
-  standfirst:
-    'The Commercial 1750 is the NordicTrack most buyers end up considering, and the machine sold under that name today is not the one most older reviews describe. This review sets out the figures NordicTrack confirms for the current model, what they mean in use, and when the 1250, the 2450 or a T Series machine is the better buy.',
+  standfirst: `The Commercial 1750 is the NordicTrack most buyers end up considering, and the machine sold under that name today is not the one most older reviews describe. This review sets out the figures NordicTrack confirms for the current model, what they mean in use, and when the 1250, the 2450 or a T Series machine is the better buy.`,
   ctas: [
     { label: 'The Current Specs', href: '#current-specs' },
     { label: 'Who Should Buy It', href: '#who-should-buy' },
@@ -40,7 +38,7 @@ export default {
       badge: 'Current Model: NTL17125',
       amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+Commercial+1750+Treadmill&tag=sktiger-20',
       priceRange: '$1,999-$2,499',
-      specs: '22 x 60 in. belt · 4.25 CHP (NordicTrack lab rating) · -3% to 12% incline · 0-12 mph · 400 lb max user · 16 in. pivoting touchscreen',
+      specs: `22 x 60 in. belt · 4.25 CHP (NordicTrack lab rating) · -3% to 12% incline · 0-12 mph · 400 lb max user · 16 in. pivoting touchscreen`,
       pros: [
         'Lifetime motor warranty, which the Commercial 1250 and the T Series do not carry',
         '22 x 60 in. belt and a 400 lb maximum user weight on the current model',
@@ -51,13 +49,11 @@ export default {
       cons: [
         'Most of the screen’s value depends on a paid iFIT membership',
         'Parts are covered for two years and labour and the touchscreen for one',
-        'Older units sold under the same name have a smaller screen, a different motor rating and, in some listings, a lower weight limit',
-        'Large even when folded, and heavy to deliver: NordicTrack gives the boxed weight as 311.5 lb',
+        `Older units sold under the same name have a smaller screen, a different motor rating and, in some listings, a lower weight limit`,
+        `Large even when folded, and heavy to deliver: NordicTrack gives the boxed weight as 311.5 lb`,
       ],
-      bottomLine:
-        'The NordicTrack to start from for most buyers: a full-size folding deck, decline and lifetime motor cover, best bought on discount and with an honest view of how much iFIT you will use.',
-      description:
-        'The current Commercial 1750 (model NTL17125) has a 22 by 60-inch belt with RunFlex cushioning, a drive motor NordicTrack rates at 4.25 CHP in laboratory testing, a speed range of 0 to 12 mph and incline from -3% to 12%. Maximum user weight is 400 lb. The 16-inch HD touchscreen pivots for floor workouts and runs iFIT; full iFIT content needs a paid membership. It folds on NordicTrack’s SpaceSaver frame, has an AutoBreeze fan and two 2-inch speakers, and measures 77.3 by 37 by 59.5 inches. NordicTrack’s warranty is lifetime on the motor, ten years on the frame, two years on parts, one year on the touchscreen and one year of labour. On 14 October 2026 NordicTrack listed it at $1,999.99 against a $2,499.99 list price, and P.C. Richard at $1,999.',
+      bottomLine: `The NordicTrack to start from for most buyers: a full-size folding deck, decline and lifetime motor cover, best bought on discount and with an honest view of how much iFIT you will use.`,
+      description: `The current Commercial 1750 (model NTL17125) has a 22 by 60-inch belt with RunFlex cushioning, a drive motor NordicTrack rates at 4.25 CHP in laboratory testing, a speed range of 0 to 12 mph and incline from -3% to 12%. Maximum user weight is 400 lb. The 16-inch HD touchscreen pivots for floor workouts and runs iFIT; full iFIT content needs a paid membership. It folds on NordicTrack’s SpaceSaver frame, has an AutoBreeze fan and two 2-inch speakers, and measures 77.3 by 37 by 59.5 inches. NordicTrack’s warranty is lifetime on the motor, ten years on the frame, two years on parts, one year on the touchscreen and one year of labour. On 14 October 2026 NordicTrack listed it at $1,999.99 against a $2,499.99 list price, and P.C. Richard at $1,999.`,
     },
   ],
   sections: [
@@ -95,7 +91,7 @@ export default {
     },
     {
       id: 'which-1750',
-      heading: 'Which Commercial 1750? Why Older Reviews Disagree',
+      heading: 'The 2026 Refresh: What Changed From the Older Commercial 1750',
       html: `          <p>
             NordicTrack keeps model names while changing the hardware underneath, and the Commercial
             1750 is the clearest case in its range. That is not a criticism in itself — revising a
@@ -136,6 +132,7 @@ export default {
             If you are buying an older 1750 second-hand, the warranty position matters as much as the
             specification; we come back to that in the section on warranty and returns.
           </p>`,
+      navLabel: '2026 refresh: what changed',
     },
     {
       id: 'current-specs',
@@ -655,48 +652,47 @@ export default {
   faqs: [
     {
       q: 'Is the NordicTrack Commercial 1750 treadmill worth it?',
-      a: 'For most buyers who will run as well as walk, yes, at the discounted prices NordicTrack runs most of the year. The current model has a 22 by 60-inch belt, a 400 lb rating, -3% to 12% incline, 12 mph and a lifetime motor warranty. It is worth less if you will not keep an iFIT membership. We have not tested it.',
+      a: `For most buyers who will run as well as walk, yes, at the discounted prices NordicTrack runs most of the year. The current model has a 22 by 60-inch belt, a 400 lb rating, -3% to 12% incline, 12 mph and a lifetime motor warranty. It is worth less if you will not keep an iFIT membership. We have not tested it.`,
     },
     {
       q: 'What is the weight limit on the NordicTrack Commercial 1750?',
-      a: 'NordicTrack lists the current model, NTL17125, at a 400 lb (182 kg) maximum user weight, and P.C. Richard’s listing for the same model agrees. Older units sold under the same name have been listed at 300 lb in at least one US listing, so check the model number on a used or clearance machine.',
+      a: `NordicTrack lists the current model, NTL17125, at a 400 lb (182 kg) maximum user weight, and P.C. Richard’s listing for the same model agrees. Older units sold under the same name have been listed at 300 lb in at least one US listing, so check the model number on a used or clearance machine.`,
     },
     {
       q: 'What motor does the NordicTrack Commercial 1750 have?',
-      a: 'NordicTrack rates the current model’s motor at 4.25 CHP and covers it for life. Its footnote says the figure is a laboratory dynamometer rating that does not denote operational horsepower in household use. Earlier versions were listed at lower ratings, so the model number matters when comparing reviews.',
+      a: `NordicTrack rates the current model’s motor at 4.25 CHP and covers it for life. Its footnote says the figure is a laboratory dynamometer rating that does not denote operational horsepower in household use. Earlier versions were listed at lower ratings, so the model number matters when comparing reviews.`,
     },
     {
       q: 'Is the NordicTrack Commercial 1750 screen 14 or 16 inches?',
-      a: 'The current model has a 16-inch HD touchscreen that pivots. Earlier machines sold as the Commercial 1750 had a 14-inch screen, which is the quickest way to spot an older unit on a listing or the used market.',
+      a: `The current model has a 16-inch HD touchscreen that pivots. Earlier machines sold as the Commercial 1750 had a 14-inch screen, which is the quickest way to spot an older unit on a listing or the used market.`,
     },
     {
       q: 'Can you use the NordicTrack Commercial 1750 without iFIT?',
-      a: 'Yes, as a treadmill: the belt, incline and decline work without a membership. Most of the screen’s content, including trainer-led classes and automatic speed and incline control, needs a paid iFIT membership. Ask what the console does without one on the model you are buying.',
+      a: `Yes, as a treadmill: the belt, incline and decline work without a membership. Most of the screen’s content, including trainer-led classes and automatic speed and incline control, needs a paid iFIT membership. Ask what the console does without one on the model you are buying.`,
     },
     {
       q: 'What is the difference between the NordicTrack Commercial 1750 and 2450?',
-      a: 'NordicTrack lists the 2450 at 14 mph against 12 mph, with a 24-inch pivoting screen against 16 inches. Both have a lifetime motor warranty and -3% to 12% incline, and NordicTrack’s current listings give both a 4.25 CHP rating, a 22 by 60-inch belt and a 400 lb capacity. The 2450 typically costs a few hundred dollars more.',
+      a: `NordicTrack lists the 2450 at 14 mph against 12 mph, with a 24-inch pivoting screen against 16 inches. Both have a lifetime motor warranty and -3% to 12% incline, and NordicTrack’s current listings give both a 4.25 CHP rating, a 22 by 60-inch belt and a 400 lb capacity. The 2450 typically costs a few hundred dollars more.`,
     },
   ],
   mistakesHeading: 'Common Mistakes Buying a Commercial 1750',
-  mistakesIntro:
-    'Most bad purchases of this machine come from reading the wrong version’s figures or paying for a screen that will sit idle.',
+  mistakesIntro: `Most bad purchases of this machine come from reading the wrong version’s figures or paying for a screen that will sit idle.`,
   mistakes: [
     {
       title: 'Trusting a review of an older model',
-      body: 'Coverage of the 14-inch Commercial 1750 lists a different motor rating, in some cases a 20-inch belt, and in one US listing a 300 lb limit. Those may have been right for that machine. Check the model number — NTL17125 is the current one — and judge the machine in front of you on its own figures.',
+      body: `Coverage of the 14-inch Commercial 1750 lists a different motor rating, in some cases a 20-inch belt, and in one US listing a 300 lb limit. Those may have been right for that machine. Check the model number — NTL17125 is the current one — and judge the machine in front of you on its own figures.`,
     },
     {
       title: 'Paying for the pivoting screen and never pivoting it',
-      body: 'The 1750’s screen pivots so you can follow iFIT floor classes off the belt. That is only worth money if you keep a membership, do those classes and have clear floor beside the machine. If you only run on it, the cheaper 1250 does the same job on the belt.',
+      body: `The 1750’s screen pivots so you can follow iFIT floor classes off the belt. That is only worth money if you keep a membership, do those classes and have clear floor beside the machine. If you only run on it, the cheaper 1250 does the same job on the belt.`,
     },
     {
       title: 'Treating the 30-day trial as free',
-      body: 'NordicTrack’s in-home trial deducted a $249.99 return fee when we checked, and delivery and assembly costs were not refundable. Stand on one in a store if you can, measure the room and the ceiling first, and read the return terms of whichever seller you use.',
+      body: `NordicTrack’s in-home trial deducted a $249.99 return fee when we checked, and delivery and assembly costs were not refundable. Stand on one in a store if you can, measure the room and the ceiling first, and read the return terms of whichever seller you use.`,
     },
     {
       title: 'Forgetting the short terms in the warranty',
-      body: 'The lifetime cover is on the motor. Parts are covered for two years, the touchscreen and labour for one. From year two, a failed screen or a technician’s visit is likely to be on you, so price that before deciding whether an extended plan is worth it.',
+      body: `The lifetime cover is on the motor. Parts are covered for two years, the touchscreen and labour for one. From year two, a failed screen or a technician’s visit is likely to be on you, so price that before deciding whether an extended plan is worth it.`,
     },
   ],
   relatedHeading: 'Related Reviews &amp; Guides',
@@ -737,4 +733,5 @@ export default {
             does the same work on the belt for less. Whichever you choose, buy by model number, not by
             name — the figures that circulate for the 1750 describe more than one machine.`,
   ],
+  modified: '2026-11-16',
 };

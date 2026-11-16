@@ -72,7 +72,7 @@ export default {
             belt, where it raises friction, and some ends up in the motor compartment, where it
             reduces cooling. Friction and heat are what wear out motors and controller boards, which
             is why our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
             starts with a one-minute wipe after every session.
           </p>
           <p>
@@ -471,7 +471,7 @@ export default {
       kicker: 'Schedule',
       title: 'Treadmill Maintenance Checklist',
       blurb: 'Every task, in running hours, from one minute to one hour.',
-      url: '/treadmill-maintenance-checklist/',
+      url: '/treadmill-maintenance/',
     },
     {
       kicker: 'Cleaning',

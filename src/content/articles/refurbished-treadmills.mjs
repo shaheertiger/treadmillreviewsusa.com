@@ -243,7 +243,7 @@ export default {
             not dealt with.</li>
             <li><strong>Check tension.</strong> With the machine unplugged, the belt should lift
             roughly two to three inches at the centre of the deck, as our
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">belt tension guide</a>
             explains.</li>
             <li><strong>Check tracking</strong> over several minutes; the belt should stay
             centred.</li>

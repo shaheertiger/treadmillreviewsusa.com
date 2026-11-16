@@ -330,7 +330,7 @@ export default {
             covers the procedure.</li>
             <li><strong>Check belt tension</strong> with the machine unplugged: lifting the belt edge
             at the middle of the deck should open a gap of two to three inches on virtually every
-            home treadmill. Our <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
+            home treadmill. Our <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">belt tension guide</a>
             covers the full check.</li>
             <li><strong>Check tracking</strong> by running the belt empty at about 3 mph and watching
             it for a minute. If it drifts, our
@@ -445,7 +445,7 @@ export default {
       kicker: 'Routine',
       title: 'Treadmill Maintenance Checklist',
       blurb: 'The schedule to start on day one, from wipe-downs to lubrication.',
-      url: '/treadmill-maintenance-checklist/',
+      url: '/treadmill-maintenance/',
     },
   ],
   bottomLine: [

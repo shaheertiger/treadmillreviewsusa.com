@@ -163,7 +163,7 @@ export default {
             With the machine unplugged, lift the belt at the midpoint of one side. On most home
             machines you should be able to raise it a few centimetres off the deck without
             straining; if it feels like a drum skin, it is too tight. Our guide to
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
             goes through the lift test and the manual-specified method for the common brands.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The fix</h3>

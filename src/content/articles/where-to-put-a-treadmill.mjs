@@ -464,7 +464,7 @@ export default {
             If two rooms both pass, choose the one you will use, not the one that hides the
             machine best. And if none of them pass, the answer may be a different machine —
             smaller, quieter, folding, or a walking pad — rather than a different house. Our
-            <a href="/treadmill-buyers-guide/" class="text-[#0F62FE] font-medium">treadmill buyers guide</a>
+            <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buyers guide</a>
             starts from the room and works towards the machine, which is the right way round.
           </p>`,
     },

@@ -1,23 +1,27 @@
 export default {
   slug: 'treadmill-repair-guide',
-  title: 'Treadmill Repair Guide: DIY Fixes, Costs and Calling a Tech',
-  description:
-    'Which treadmill repairs you can do yourself, which need a technician, how to diagnose the component before paying, typical costs and the repair-or-replace rule.',
+  title: 'Treadmill Repair Guide: Parts, Costs and When to Call a Tech',
+  description: `Owner repairs cost tens of dollars in parts; a technician fixing a motor or control board is usually $350 to $700. What to fix yourself, and when to call.`,
   crumbLabel: 'Treadmill Repair Guide',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Maintenance',
-  updated: 'October 2026',
-  updatedLong: 'October 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-08',
   socialProof: '2.2k',
   h1: ['Treadmill Repair Guide:', 'What to Fix Yourself, What to Pay For'],
-  standfirst:
-    'Most treadmill repairs are either cheap and easy or expensive and specialised, with very little in between. Knowing which side of that line your fault falls on, before anyone is paid, is the whole game. Here is how to tell, what the common repairs cost, and when the honest answer is a new machine.',
+  standfirst: `Most treadmill repairs are either cheap and easy or expensive and specialised, with very little in between. Knowing which side of that line your fault falls on, before anyone is paid, is the whole game. Here is how to tell, what the common repairs cost, and when the honest answer is a new machine.`,
   ctas: [
     { label: 'Symptom to Component', href: '#diagnosis' },
     { label: 'What Repairs Cost', href: '#costs' },
   ],
-  tags: ['treadmill repair', 'treadmill repair cost', 'treadmill motor replacement cost', 'treadmill motor control board', 'treadmill repair near me'],
+  tags: [
+    'treadmill repair',
+    'treadmill repair cost',
+    'treadmill motor replacement cost',
+    'treadmill motor control board',
+    'treadmill repair near me',
+  ],
   stickyCta: { text: 'See the Costs', link: '#costs' },
   lead: `A treadmill is a motor, a controller, two rollers, two belts, a deck and a console, and
           nearly everything that goes wrong is one of those. Half of the list is owner-serviceable
@@ -500,7 +504,7 @@ export default {
             A treadmill looked after this way can run for many years with nothing more than
             lubricant, a belt and a set of brushes. One that is not will eventually present you with
             the repair-or-replace arithmetic above, usually at the worst time. Our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">treadmill maintenance checklist</a>
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance checklist</a>
             puts the routine on one page.
           </p>`,
     },
@@ -532,8 +536,7 @@ export default {
     },
   ],
   mistakesHeading: 'Common Mistakes With Treadmill Repair',
-  mistakesIntro:
-    'Repairs go wrong in predictable ways, and most of them happen before a part is ordered.',
+  mistakesIntro: 'Repairs go wrong in predictable ways, and most of them happen before a part is ordered.',
   mistakes: [
     {
       title: 'Replacing the controller on a guess',
@@ -573,9 +576,9 @@ export default {
       url: '/treadmill-warranty-guide/',
     },
     {
-      kicker: "Repairs",
-      title: "Treadmill Parts: Where to Buy",
-      blurb: "How to find your model and serial number, OEM against aftermarket, each brand's parts route, and when a.",
+      kicker: 'Repairs',
+      title: 'Treadmill Parts: Where to Buy',
+      blurb: `How to find your model and serial number, OEM against aftermarket, each brand's parts route, and when a.`,
       url: '/treadmill-parts/',
     },
   ],
@@ -591,4 +594,5 @@ export default {
             <a href="/treadmill-warranty-guide/" class="text-[#5AA9FF] font-bold no-underline">warranty guide</a>
             explains what is usually covered.`,
   ],
+  modified: '2026-11-16',
 };

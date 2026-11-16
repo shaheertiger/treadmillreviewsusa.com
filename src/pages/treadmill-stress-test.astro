@@ -2,9 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import { SECTIONS } from "../data/sections";
 
-const title = "Treadmill Stress Test: What It Shows, How It Works, How Long";
+const title = "What Does a Treadmill Stress Test Show? What Doctors Look For";
 const description =
-  "A plain-English explainer of the treadmill stress test: what the exercise ECG looks for, how the Bruce protocol works, how long it takes and how to prepare.";
+  "A treadmill stress test shows how your heart copes as effort rises: ECG signs of reduced blood flow, rhythm problems, blood pressure and exercise capacity.";
 
 const schema = {
   "@context": "https://schema.org",
@@ -76,7 +76,7 @@ const schema = {
       description: description,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-10-06",
-      dateModified: "2026-10-06",
+      dateModified: "2026-11-16",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
   ],
@@ -95,7 +95,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
   ogType="article"
   article={{
     publishedTime: "2026-10-06",
-    modifiedTime: "2026-10-06",
+    modifiedTime: "2026-11-16",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
@@ -116,7 +116,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         <span aria-hidden="true">›</span>
         <span>Explainer</span>
       </nav>
-      <h1 class="ed-title">Treadmill Stress Test: What It Shows</h1>
+      <h1 class="ed-title">What Does a Treadmill Stress Test Show?</h1>
       <p class="ed-dek">
         A treadmill stress test records your heart while you walk progressively faster and steeper, under supervision. Here is what it looks for, how the session runs, how long it takes, and what it cannot tell anyone on its own.
       </p>
@@ -126,37 +126,39 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
         <div class="ed-byline-text">
           By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
-          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
+          Updated November 16, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          <span class="ed-method">Based on published exercise guidance. General information, not medical advice.</span>
         </div>
         <a href="#what-it-shows" class="btn-ghost">What It Shows</a>
       </div>
       <p class="ed-disclosure">
-        We research every product on this page independently. If you buy through our links, we may earn a
-        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+        Nothing on this page is a paid placement, and it carries no affiliate links. <a href="/editorial-standards/">How we review.</a>
       </p>
 
       <div class="ed-body prose prose-lg">
         <p class="ed-lead">
-          A treadmill stress test is one of the most common heart tests there is, and most of the
-          anxiety around it comes from not knowing what happens in the room. The short version: you
+          A treadmill stress test shows how your heart responds when exercise makes it work
+          harder: ECG changes that can suggest reduced blood flow to the heart muscle, abnormal
+          rhythms, an unusual blood pressure response, and how much exercise you can manage. It is
+          one of the most common heart tests there is, and most of the anxiety around it comes from not knowing what happens in the room. The short version: you
           walk, the machine gets faster and steeper every few minutes, and trained staff watch your
           heart's electrical trace and your blood pressure the whole time.
         </p>
 
-        <nav class="ed-toc not-prose" aria-label="In this guide">
-          <h2>In this guide</h2>
+        <nav class="ed-toc not-prose" aria-label="On this page">
+          <h2>On this page</h2>
           <ol>
             <li><a href="#what-it-shows">What Does a Treadmill Stress Test Show?</a></li>
             <li><a href="#what-it-measures">The Things It Measures</a></li>
             <li><a href="#how-it-works">How Does a Treadmill Stress Test Work?</a></li>
             <li><a href="#bruce-protocol">The Bruce Protocol, Stage by Stage</a></li>
-            <li><a href="#target-heart-rate">Target Heart Rate and When the Test Stops</a></li>
+            <li><a href="#target-heart-rate">Target Heart Rate and When It Stops</a></li>
             <li><a href="#how-long">How Long Does a Treadmill Stress Test Take?</a></li>
-            <li><a href="#how-to-prepare">How People Are Usually Told to Prepare</a></li>
-            <li><a href="#variants">Stress Echo, Nuclear and Non-Treadmill Versions</a></li>
+            <li><a href="#how-to-prepare">How to Prepare</a></li>
+            <li><a href="#variants">Stress Echo, Nuclear and Other Versions</a></li>
             <li><a href="#limitations">What It Cannot Tell You on Its Own</a></li>
-            <li><a href="#safety">Is It Safe?</a></li>
-            <li><a href="#home-treadmill">The Treadmill Itself — and Why It Is Not a Home Test</a></li>
+            <li><a href="#safety">Is a Treadmill Stress Test Safe?</a></li>
+            <li><a href="#home-treadmill">Why It Is Not a Home Test</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
           </ol>
         </nav>
@@ -186,10 +188,18 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             mean the same basic procedure, though "stress test" is also used for the imaging
             versions covered further down.
           </p>
+          <div class="not-prose my-6 bg-amber-50 border border-amber-200 rounded-2xl p-5 text-sm text-gray-700 leading-relaxed">
+            <strong class="text-gray-900">Not medical advice.</strong> This page explains how the
+            test generally works so the appointment is less of an unknown. It cannot tell you what
+            your own result means: your cardiologist, or the clinician who ordered the test, reads
+            the ECG, blood pressure and symptoms together with your history and decides what happens
+            next. If you have chest pain, pressure or breathlessness now, contact a doctor or
+            emergency services rather than reading on.
+          </div>
         </div>
 
         <div id="what-it-measures" class="scroll-mt-24">
-          <h2>The Things It Measures</h2>
+          <h2>What Does a Stress Test Measure?</h2>
 <p>
             The test produces several kinds of information at once, and a clinician reads them
             together rather than individually.
@@ -260,7 +270,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         </div>
 
         <div id="bruce-protocol" class="scroll-mt-24">
-          <h2>The Bruce Protocol, Stage by Stage</h2>
+          <h2>What Is the Bruce Protocol?</h2>
 <p>
             The most widely <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>used treadmill</a> protocol is the Bruce protocol, named after the
             cardiologist Dr Robert Bruce, who developed it at the University of Washington in the
@@ -287,7 +297,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         </div>
 
         <div id="target-heart-rate" class="scroll-mt-24">
-          <h2>Target Heart Rate and When the Test Stops</h2>
+          <h2>What Heart Rate Do You Need to Reach, and When Does the Test Stop?</h2>
 <p>
             Clinics commonly aim for you to reach at least about 85% of your age-predicted maximum
             heart rate. The age-predicted maximum is usually estimated with the familiar formula of
@@ -333,7 +343,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         </div>
 
         <div id="how-to-prepare" class="scroll-mt-24">
-          <h2>How People Are Usually Told to Prepare</h2>
+          <h2>How Do You Prepare for a Treadmill Stress Test?</h2>
 <p>
             Clinics send their own instructions, and theirs take precedence over any general list.
             The common themes are these.
@@ -360,7 +370,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         </div>
 
         <div id="variants" class="scroll-mt-24">
-          <h2>Stress Echo, Nuclear and Non-Treadmill Versions</h2>
+          <h2>What Are Stress Echo, Nuclear and Non-Treadmill Stress Tests?</h2>
 <p>
             The basic exercise ECG is often the first test, but it is one member of a family, and
             your clinician may order a different version depending on the question being asked.
@@ -395,7 +405,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         </div>
 
         <div id="limitations" class="scroll-mt-24">
-          <h2>What It Cannot Tell You on Its Own</h2>
+          <h2>Can a Treadmill Stress Test Be Wrong?</h2>
 <p>
             The exercise ECG is useful, widely available and inexpensive compared with imaging, and
             it is also imperfect. That is not a flaw anyone hides; it is why the test is interpreted
@@ -422,7 +432,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2>Is It Safe?</h2>
+          <h2>Is a Treadmill Stress Test Safe?</h2>
 <p>
             For the great majority of people the test is very safe. Serious complications are rare,
             and the test is done precisely because it lets the heart be observed under exertion in a
@@ -443,7 +453,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         </div>
 
         <div id="home-treadmill" class="scroll-mt-24">
-          <h2>The Treadmill Itself — and Why It Is Not a Home Test</h2>
+          <h2>Can You Do a Stress Test on a Home Treadmill?</h2>
 <p>
             Since this is an equipment site, a few words on the machine. Clinical stress-test
             treadmills are medical devices built around a specific job: they need to hit precise
@@ -471,7 +481,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 
         <!-- Common mistakes -->
         <div id="common-mistakes" class="scroll-mt-24">
-          <h2>Common Mistakes People Make Around a Stress Test</h2>
+          <h2>4 Mistakes People Make Around a Stress Test</h2>
           <p>None of these are dangerous in themselves, but each can make the test less useful or the experience more stressful than it needs to be.</p>
           <ol class="ed-mistakes not-prose">
             <li>
@@ -495,7 +505,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 
         <!-- The bottom line -->
         <div id="bottom-line" class="ed-bottomline">
-          <h2>The bottom line</h2>
+          <h2>The takeaway</h2>
           <p>
             A treadmill stress test records your <strong class="text-white">ECG, blood pressure and
             symptoms</strong> while you walk progressively faster and steeper, usually in

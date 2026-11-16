@@ -1,16 +1,17 @@
 export default {
   slug: 'treadmill-stress-test',
-  title: 'Treadmill Stress Test: What It Shows, How It Works, How Long',
+  title: 'What Does a Treadmill Stress Test Show? What Doctors Look For',
   description:
-    'A plain-English explainer of the treadmill stress test: what the exercise ECG looks for, how the Bruce protocol works, how long it takes and how to prepare.',
+    'A treadmill stress test shows how your heart copes as effort rises: ECG signs of reduced blood flow, rhythm problems, blood pressure and exercise capacity.',
   crumbLabel: 'Treadmill Stress Test',
   kicker: 'Explainer',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-06',
+  modified: '2026-11-16',
   socialProof: '1.9k',
-  h1: ['Treadmill Stress Test:', 'What It Shows'],
+  h1: ['What Does a Treadmill', 'Stress Test Show?'],
   standfirst:
     'A treadmill stress test records your heart while you walk progressively faster and steeper, under supervision. Here is what it looks for, how the session runs, how long it takes, and what it cannot tell anyone on its own.',
   ctas: [
@@ -19,8 +20,10 @@ export default {
   ],
   tags: ['treadmill stress test', 'exercise stress test', 'bruce protocol', 'exercise ecg', 'stress echo'],
   stickyCta: { text: 'What the Test Shows', link: '#what-it-shows' },
-  lead: `A treadmill stress test is one of the most common heart tests there is, and most of the
-          anxiety around it comes from not knowing what happens in the room. The short version: you
+  lead: `A treadmill stress test shows how your heart responds when exercise makes it work
+          harder: ECG changes that can suggest reduced blood flow to the heart muscle, abnormal
+          rhythms, an unusual blood pressure response, and how much exercise you can manage. It is
+          one of the most common heart tests there is, and most of the anxiety around it comes from not knowing what happens in the room. The short version: you
           walk, the machine gets faster and steeper every few minutes, and trained staff watch your
           heart's electrical trace and your blood pressure the whole time.`,
   sections: [
@@ -49,11 +52,20 @@ export default {
             tolerance test, treadmill test or simply "stress test". In everyday use they usually
             mean the same basic procedure, though "stress test" is also used for the imaging
             versions covered further down.
-          </p>`,
+          </p>
+          <div class="not-prose my-6 bg-amber-50 border border-amber-200 rounded-2xl p-5 text-sm text-gray-700 leading-relaxed">
+            <strong class="text-gray-900">Not medical advice.</strong> This page explains how the
+            test generally works so the appointment is less of an unknown. It cannot tell you what
+            your own result means: your cardiologist, or the clinician who ordered the test, reads
+            the ECG, blood pressure and symptoms together with your history and decides what happens
+            next. If you have chest pain, pressure or breathlessness now, contact a doctor or
+            emergency services rather than reading on.
+          </div>`,
     },
     {
       id: 'what-it-measures',
-      heading: 'The Things It Measures',
+      navLabel: 'The Things It Measures',
+      heading: 'What Does a Stress Test Measure?',
       html: `          <p>
             The test produces several kinds of information at once, and a clinician reads them
             together rather than individually.
@@ -124,7 +136,8 @@ export default {
     },
     {
       id: 'bruce-protocol',
-      heading: 'The Bruce Protocol, Stage by Stage',
+      navLabel: 'The Bruce Protocol, Stage by Stage',
+      heading: 'What Is the Bruce Protocol?',
       html: `          <p>
             The most widely <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>used treadmill</a> protocol is the Bruce protocol, named after the
             cardiologist Dr Robert Bruce, who developed it at the University of Washington in the
@@ -155,7 +168,8 @@ export default {
     },
     {
       id: 'target-heart-rate',
-      heading: 'Target Heart Rate and When the Test Stops',
+      navLabel: 'Target Heart Rate and When It Stops',
+      heading: 'What Heart Rate Do You Need to Reach, and When Does the Test Stop?',
       html: `          <p>
             Clinics commonly aim for you to reach at least about 85% of your age-predicted maximum
             heart rate. The age-predicted maximum is usually estimated with the familiar formula of
@@ -202,7 +216,8 @@ export default {
     },
     {
       id: 'how-to-prepare',
-      heading: 'How People Are Usually Told to Prepare',
+      navLabel: 'How to Prepare',
+      heading: 'How Do You Prepare for a Treadmill Stress Test?',
       html: `          <p>
             Clinics send their own instructions, and theirs take precedence over any general list.
             The common themes are these.
@@ -229,7 +244,8 @@ export default {
     },
     {
       id: 'variants',
-      heading: 'Stress Echo, Nuclear and Non-Treadmill Versions',
+      navLabel: 'Stress Echo, Nuclear and Other Versions',
+      heading: 'What Are Stress Echo, Nuclear and Non-Treadmill Stress Tests?',
       html: `          <p>
             The basic exercise ECG is often the first test, but it is one member of a family, and
             your clinician may order a different version depending on the question being asked.
@@ -264,7 +280,8 @@ export default {
     },
     {
       id: 'limitations',
-      heading: 'What It Cannot Tell You on Its Own',
+      navLabel: 'What It Cannot Tell You on Its Own',
+      heading: 'Can a Treadmill Stress Test Be Wrong?',
       html: `          <p>
             The exercise ECG is useful, widely available and inexpensive compared with imaging, and
             it is also imperfect. That is not a flaw anyone hides; it is why the test is interpreted
@@ -291,7 +308,7 @@ export default {
     },
     {
       id: 'safety',
-      heading: 'Is It Safe?',
+      heading: 'Is a Treadmill Stress Test Safe?',
       html: `          <p>
             For the great majority of people the test is very safe. Serious complications are rare,
             and the test is done precisely because it lets the heart be observed under exertion in a
@@ -312,7 +329,8 @@ export default {
     },
     {
       id: 'home-treadmill',
-      heading: 'The Treadmill Itself — and Why It Is Not a Home Test',
+      navLabel: 'Why It Is Not a Home Test',
+      heading: 'Can You Do a Stress Test on a Home Treadmill?',
       html: `          <p>
             Since this is an equipment site, a few words on the machine. Clinical stress-test
             treadmills are medical devices built around a specific job: they need to hit precise

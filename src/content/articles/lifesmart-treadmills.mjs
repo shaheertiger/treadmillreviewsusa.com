@@ -369,7 +369,7 @@ export default {
           <p>
             None of those folds itself, and none offers LifeSmart's decline. If the PowerTouch fold is the reason you are
             looking, a LifeSmart is one of very few options at the price. If it is not, the alternatives give you more
-            protection for similar money. Our <a href="/best-folding-treadmill-reviews/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
+            protection for similar money. Our <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
             and <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">best treadmills under $1,000</a>
             compare more of them, and our <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">Dick's Sporting Goods treadmills</a>
             guide covers what that retailer carries.

@@ -260,7 +260,7 @@ export default {
     },
     {
       id: 'assembly',
-      heading: 'Assembly and Setup',
+      heading: 'What Assembly Involves',
       html: `          <p>
             Power towers are among the easier home gym assemblies, but how carefully you build one
             decides how steady it feels. We have not assembled these towers; this is what the makers

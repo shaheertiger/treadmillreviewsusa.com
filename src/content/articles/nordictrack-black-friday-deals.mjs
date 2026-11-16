@@ -79,7 +79,7 @@ export default {
             delivered cost — is covered in our
             <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill method guide</a>,
             and our
-            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday 2026 treadmill deals</a>
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday 2026 treadmill deals</a>
             page covers other brands. This page is the NordicTrack-specific version.
           </p>`,
     },

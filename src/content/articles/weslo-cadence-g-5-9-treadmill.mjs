@@ -174,8 +174,8 @@ export default {
           <p>
             Ask how it was stored and whether the deck was ever lubricated. The honest answer from
             most owners is no, which is not a reason to walk away but is a reason to budget for a
-            lubrication and a <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> check in the first week —
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">the maintenance checklist</a>
+            lubrication and a <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> check in the first week —
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">the maintenance checklist</a>
             is the ten minutes that decides whether you got a bargain.
           </p>
           <p>

@@ -1,14 +1,14 @@
 export default {
   slug: 'horizon-t101-treadmill',
-  title: 'Horizon T101 Treadmill Review (2026): Connect, Manual and Recall',
+  title: 'Horizon T101 Treadmill Review (2026): A Walker, Not a Runner',
   description:
-    'The Horizon T101 Connect checked against Horizon’s listing: a 20 x 55 in. deck, 10 mph, 10% incline and 300 lb rating, sold out on 14 October 2026. Plus where to get the T101 manual and how to check a T101-05 for the 2022 recall.',
+    'The Horizon T101 is a sound no-subscription walking treadmill with lifetime frame and motor cover: 20 x 55 in. deck, 10 mph, 10% incline. Recall and manual.',
   crumbLabel: 'Horizon T101 Treadmill',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-15',
-  modified: '2026-10-14',
+  modified: '2026-11-16',
   socialProof: '2.7k',
   h1: ['Horizon T101', 'Treadmill Review'],
   standfirst:
@@ -18,6 +18,7 @@ export default {
     { label: 'The T101 Manual', href: '#manual' },
   ],
   tags: [
+    'horizon t101 treadmill review',
     'horizon treadmill t101',
     'horizon t101 treadmill manual',
     'horizon t101 connect',
@@ -64,15 +65,25 @@ export default {
   sections: [
     {
       id: 'short-answer',
-      heading: 'Horizon Treadmill T101: The Short Answer',
+      heading: 'Horizon T101: The Short Answer',
       products: true,
       html: `          <p>
-            <strong>The Horizon treadmill T101, now sold as the T101 Connect, is a well-judged walking
-            treadmill with no subscription, a lifetime frame and motor warranty and a 300 lb rating —
-            but it was sold out on Horizon’s US store on 14 October 2026, and it is not built for
-            regular running.</strong> When it is in stock at around $700, it remains one of the simplest
-            ways to buy a full-size folding treadmill that asks nothing of you after delivery.
+            <strong>The Horizon T101, now sold as the T101 Connect, is a well-judged walking treadmill
+            with no subscription, a lifetime frame and motor warranty and a 300 lb rating, and it is
+            not built for regular running.</strong> At around $700 it is one of the simplest ways to buy a
+            full-size folding treadmill that asks nothing of you after delivery. The catch is stock: on
+            14 October 2026 Horizon’s US store showed it sold out at $699, so check availability before you
+            plan around it.
           </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Verdict</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A subscription-free walking and incline-walking treadmill with unusually long frame and motor cover</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Buy it if…</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">You walk or incline-walk most days, jog only now and then, want a console that works without any account, and value a lifetime motor warranty</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Skip it if…</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">You plan to run regularly (55-inch deck, 10 mph), want 12% incline for the 12-3-30 workout, or want an app that changes speed and incline for you</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Price band</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$699 at Horizon against a $999 reference price (14 October 2026, sold out; still listed at $699 on 5 November 2026)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Closest rival</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon T202: 60-inch deck and 12 mph for $200 more</td></tr>
+            </tbody>
+          </table></div>
           <p>
             Its limits are the ones on the specification sheet. A 55-inch deck suits walking, incline
             walking and gentle jogging, and becomes cramped at a running stride. A 10 mph ceiling and
@@ -85,7 +96,7 @@ export default {
             <a href="#manual" class="text-[#0F62FE] font-medium">where to get the T101 manual</a>
             for your version, and
             <a href="#recall" class="text-[#0F62FE] font-medium">how to check a T101-05 against the 2022 recall</a>.
-            If you are buying, read the deck section before anything else. We have not tested the
+            If you are buying, read the running-or-walking section before anything else. We have not tested the
             T101; what follows is what Horizon’s published figures, its support documents and
             independent coverage show.
           </p>`,
@@ -182,10 +193,10 @@ export default {
     },
     {
       id: 'the-deck-question',
-      heading: 'The 55-Inch Deck Decides Who It Suits',
+      heading: 'Is the Horizon T101 Good for Running or Only Walking?',
       html: `          <p>
-            Fifty-five inches is a common belt length at this price and it is enough for walking. It
-            becomes a constraint as your stride lengthens, and for most adults it becomes a problem
+            Mostly walking. Fifty-five inches is a common belt length at this price and it is enough for
+            walking, incline walking and easy jogging. It becomes a constraint as your stride lengthens, and for most adults it becomes a problem
             somewhere around a steady run.
           </p>
           <p>
@@ -214,9 +225,9 @@ export default {
     },
     {
       id: 'console-and-apps',
-      heading: 'Console, Apps and the No-Subscription Point',
+      heading: 'Does the Horizon T101 Need an App Subscription?',
       html: `          <p>
-            The T101 Connect has no subscription. The console is four LED windows showing speed,
+            No. The T101 Connect has no subscription and needs no account. The console is four LED windows showing speed,
             incline, time, distance, calories and heart rate, with six built-in programs, Bluetooth
             speakers, a USB charging port and a tablet holder, and it does the same job in year five as
             on day one with no account attached. That is worth real money and it is rarely priced into
@@ -286,7 +297,7 @@ export default {
     },
     {
       id: 'folding-and-space',
-      heading: 'Folding, Footprint and Setting It Up',
+      heading: 'How Big Is the Horizon T101, and Will It Fit?',
       html: `          <p>
             Using Horizon’s figures, the T101 Connect takes up about 16.4 square feet of floor in use
             (70.5 by 33.5 inches) and about 10.9 square feet folded (46 by 34 inches). It folds with
@@ -324,6 +335,31 @@ export default {
             base open, and they stay on until the step that tells you to remove them. Our guide to
             <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembling a treadmill</a>
             covers the general job.
+          </p>`,
+    },
+    {
+      id: 'owner-complaints',
+      heading: 'What Do Owners Complain About?',
+      html: `          <p>
+            The complaints on record for the T101 fall into four groups: the 2022 speed-change fault on
+            the T101-05, apps that read the treadmill but cannot drive it, a deck that runners outgrow,
+            and power faults that turn out to be the outlet. We have not compiled a count of retailer
+            owner reviews for the current T101 Connect, so this section is limited to what the CPSC
+            recall notice, two independent reviews and Horizon’s own documents record.
+          </p>
+          <ul>
+            <li><strong>Unexpected speed changes and stops (T101-05 only).</strong> The CPSC notice records at least 874 reports to Horizon of T101-05 treadmills changing speed or stopping on their own, including 71 reports of injury. That is the documented complaint behind the 2022 recall, and the fix is a software repair; the recall section below explains how to check a serial number.</li>
+            <li><strong>Apps that do not control it.</strong> The independent review of the current model found that JRNY could start and stop the belt but not set speed or incline, and that only Kinomap changed the incline. Buyers expecting an app to run their workout for them are the ones disappointed.</li>
+            <li><strong>Heart-rate strap and app at once.</strong> The same review reports that a Bluetooth chest strap pairs only when no app is connected, so you route the strap through the app instead.</li>
+            <li><strong>A deck too short for running.</strong> Both independent reviews we read describe it as a walking and light-jogging machine, and the 55-inch deck is where runners feel it first.</li>
+            <li><strong>"Belt stops" and "won’t start".</strong> The manual’s first checks for these are the circuit, not the treadmill: Horizon says the T101 is not compatible with GFCI outlets and asks for a dedicated 15-amp circuit with no extension cord or power strip.</li>
+          </ul>
+          <p>
+            The same sources record positives too: the reviews we read describe assembly as easy, the
+            2024 review found the cushioning comfortable, and one reviewer measured 57 dB at 3 mph without
+            a user on the belt. Our guide to
+            <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">reading treadmill reviews</a>
+            explains how to weigh retailer reviews if you want to check the pattern yourself.
           </p>`,
     },
     {
@@ -446,9 +482,10 @@ export default {
     },
     {
       id: 'ownership',
-      heading: 'Warranty and Keeping It Running',
+      heading: 'Warranty: What It Actually Covers',
       html: `          <p>
-            The warranty split tells you where to pay attention. Lifetime frame and motor cover reflects
+            Horizon covers the T101’s frame and motor for life and its parts and labour for one year,
+            for home use only. The warranty split tells you where to pay attention. Lifetime frame and motor cover reflects
             real confidence in those parts. One year of parts and labour is short, and it means that
             from year two the wear items are yours: the belt, the deck surface, the rollers and the
             console. Horizon’s help centre adds that the warranty covers home use only, and the manual
@@ -474,8 +511,54 @@ export default {
           </p>`,
     },
     {
+      id: 't101-vs-t202',
+      heading: 'Horizon T101 vs Horizon T202',
+      html: `          <p>
+            The T202 is the T101’s closest rival, and the choice between them comes down to the five inches
+            of deck. Both are Horizon Go Series folding treadmills with lifetime frame and motor cover, one
+            year of parts and labour and no subscription. The T202 adds the length and speed a runner needs
+            for about $200 more. The figures below are from this review and our
+            <a href="/horizon-t202-treadmill/" class="text-[#0F62FE] font-medium">Horizon T202 review</a>.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Published figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">T101 Connect</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">T202</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running area</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 55 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 60 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Top speed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">12 mph</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-10%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">12 levels</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Maximum user weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">325 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Machine weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">180 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">187 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Size in use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">70.5 x 33.5 x 59 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">76 x 34 x 57 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Console</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4 LED windows; lists JRNY</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 in. LCD with 3 LED windows and a fan; no JRNY</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Warranty</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame and motor; 1 yr parts and labour</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame and motor; 1 yr parts and labour</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Price at Horizon, 5 Nov 2026</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$699 ($999 reference)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$899 ($1,299 reference)</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            <strong>Pick the T101</strong> if you will only walk or incline-walk, are of average height, and
+            want the lighter, smaller machine and the lower price. <strong>Pick the T202</strong> if anyone in
+            the house will jog or run regularly or is over about 5 ft 8 in., or if you want 12% for the
+            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>.
+            Neither publishes a motor rating, and on both the lifetime motor warranty is the more useful signal.
+          </p>
+          <p>
+            Outside Horizon, the
+            <a href="/nordictrack-t-6-5-s-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack T 6.5 S</a>
+            is the usual cross-shop at similar money: the same 20 by 55-inch deck, 10 mph and 10% incline,
+            but built around iFIT rather than a plain console. The
+            <a href="/proform-carbon-tls-treadmill/" class="text-[#0F62FE] font-medium">ProForm Carbon TLS</a>
+            is the iFIT alternative with a narrower 18-inch belt and 12% incline.
+          </p>`,
+    },
+    {
       id: 'who-should-buy',
-      heading: 'Who Should Buy It, and Who Should Not',
+      heading: 'Who Should Buy It, and Who Should Skip It?',
       html: `          <p>
             <strong>Buy it if you are walking.</strong> Daily walking, incline walking and the odd easy
             jog in a spare room, on a machine that asks nothing of you afterwards, is what the T101 is
@@ -525,6 +608,10 @@ export default {
     {
       q: 'How often should I lubricate a Horizon T101?',
       a: 'The T101-08 owner’s manual says every three months or 150 miles, using 100% silicone; the 2018 T101-05 guide says every three months or 300 miles. The console shows "LUBE BELT" when it is due and will not run until you clear it by holding Speed Up and Stop for about five to seven seconds.',
+    },
+    {
+      q: 'Does the Horizon T101 need a subscription?',
+      a: 'No. The T101 Connect’s LED console, six programs and EasyDial speed and incline controls work with no account or membership. It can send speed and incline data over Bluetooth FTMS to optional apps such as JRNY, Peloton, Zwift and Kinomap, each priced separately, but those apps mostly read the treadmill rather than control it.',
     },
     {
       q: 'Is the Horizon T101 good for running?',

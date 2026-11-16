@@ -343,7 +343,7 @@ export default {
             <strong>For a folding treadmill you can jog on,</strong> start with our
             <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">treadmills under $500</a>
             and
-            <a href="/best-folding-treadmill-reviews/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
+            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
             pages, and use
             <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">our space requirements guide</a>
             to check that it fits the room with the clearance behind it.

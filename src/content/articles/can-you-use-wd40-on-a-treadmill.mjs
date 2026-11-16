@@ -164,7 +164,7 @@ export default {
             <strong>Apply the correct lubricant</strong>, retension the belt and check tracking.
             Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
             covers the full procedure, and the
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">belt tension guide</a>
             covers resetting tension correctly afterwards.
           </p>
           <p>

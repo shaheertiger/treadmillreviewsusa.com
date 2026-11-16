@@ -391,7 +391,7 @@ export default {
           <p>
             Prevention is cheaper than either. Most expensive failures start with friction: keep the belt
             lubricated, tensioned and centred, and the motor compartment clean. Our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">treadmill maintenance checklist</a>
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance checklist</a>
             sets out the routine.
           </p>`,
     },

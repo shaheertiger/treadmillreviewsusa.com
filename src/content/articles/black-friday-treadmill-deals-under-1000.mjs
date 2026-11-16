@@ -46,7 +46,7 @@ export default {
             forecast of what any retailer will charge. How we judge a deal in general is on our
             <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday method page</a>,
             and the full 2026 picture across every price band is in our
-            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals guide</a>.
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals guide</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[640px] w-full text-sm border-collapse">
             <thead>
@@ -561,7 +561,7 @@ export default {
       kicker: 'Black Friday 2026',
       title: 'Black Friday Treadmill Deals 2026',
       blurb: 'The full 2026 watch list across every price band, with dates and checks.',
-      url: '/black-friday-treadmill-deals-2026/',
+      url: '/treadmill-black-friday-deals/',
     },
     {
       kicker: 'Running',

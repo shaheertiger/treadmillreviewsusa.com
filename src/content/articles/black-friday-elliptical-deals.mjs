@@ -310,7 +310,7 @@ export default {
             <a href="/elliptical-vs-treadmill-calories/" class="text-[#0F62FE] font-medium">elliptical vs treadmill calories</a>
             guide explains why the numbers differ between machines and why comparing them across
             brands tells you little. If you are still deciding between the two, our
-            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals for 2026</a>
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals for 2026</a>
             page covers the treadmill side of the same sales.
           </p>`,
     },

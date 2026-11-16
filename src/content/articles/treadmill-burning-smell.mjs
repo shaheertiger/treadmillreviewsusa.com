@@ -137,7 +137,7 @@ export default {
             maintenance-free and must not be given silicone. Our
             <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>
             covers the procedure, and the
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">belt tension guide</a>
             covers the other half, since an over-tightened belt also increases drag. If the deck
             or belt has worn smooth or rough past the point where lubricant helps, replacement is
             the real repair.

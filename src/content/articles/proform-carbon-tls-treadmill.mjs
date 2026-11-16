@@ -1,23 +1,26 @@
 export default {
   slug: 'proform-carbon-tls-treadmill',
-  title: 'ProForm Carbon TLS Treadmill Review (2026): Specs, iFIT, Warranty',
+  title: 'ProForm Carbon TL & TLS Treadmill Review (2026): TL vs TLS',
   description:
-    'The ProForm Carbon TLS treadmill checked against ProForm’s listing, a retailer listing and independent coverage: an 18 x 55 in. folding deck, 10 mph, 12% incline and 300 lb rating, run through iFIT on your own device. Conflicting warranty terms explained.',
+    'The ProForm Carbon TLS is a compact walking treadmill, not a runner: 18 x 55 in. belt, 12% incline, 10 mph, 300 lb. The older Carbon TL is a different model.',
   crumbLabel: 'ProForm Carbon TLS Treadmill',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-14',
+  modified: '2026-11-16',
   socialProof: '1.4k',
   h1: ['ProForm Carbon TLS', 'Treadmill Review'],
   standfirst:
-    'The Carbon TLS is the cheapest treadmill ProForm sells and the smallest: a folding walking machine with a 12% incline and no built-in screen, designed to run iFIT workouts from your own phone or tablet. This review sets out what is confirmed, where ProForm’s own pages disagree with each other, and who it suits.',
+    'The Carbon TLS is the cheapest treadmill ProForm sells and the smallest: a folding walking machine with a 12% incline and no built-in screen, designed to run iFIT workouts from your own phone or tablet. This review sets out what is confirmed, where ProForm’s own pages disagree with each other, and who it suits. If you searched for the Carbon TL, that is an older, different ProForm, and the TL vs TLS section below explains what we can and cannot confirm about it.',
   ctas: [
     { label: 'The Specifications', href: '#specifications' },
     { label: 'Who Should Buy It', href: '#who-should-buy' },
   ],
   tags: [
+    'proform carbon tl treadmill reviews',
     'proform carbon tls treadmill',
+    'proform carbon tl vs tls',
     'proform carbon tls review',
     'proform carbon tls vs tlx',
     'proform carbon tls warranty',
@@ -62,7 +65,7 @@ export default {
   sections: [
     {
       id: 'short-answer',
-      heading: 'ProForm Carbon TLS Treadmill: The Short Answer',
+      heading: 'ProForm Carbon TLS: The Short Answer',
       products: true,
       html: `          <p>
             <strong>The ProForm Carbon TLS treadmill is a compact, folding walking treadmill with a 12%
@@ -71,6 +74,15 @@ export default {
             It is not a running treadmill: an 18 by 55-inch belt and a 10 mph ceiling are walking and
             light-jogging figures.
           </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Verdict</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A sensible small walking treadmill for iFIT users; a poor choice for runners</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Buy it if…</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">You walk or incline-walk, own a phone or tablet, want iFIT to steer the speed and incline, and need the smallest footprint ProForm lists</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Skip it if…</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">You will run, are tall or broad (18 x 55 in. belt), want no account or membership at all, or want a long motor warranty</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Price band</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$800-$1,100: Scheels $799.99 (14 October 2026), proform.com $1,099.99 (13 October 2026)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Closest rival</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ProForm Carbon TLX: 20 x 60 in. belt and 12 mph for about $200 more</td></tr>
+            </tbody>
+          </table></div>
           <p>
             Its strengths are size and incline. ProForm lists the smallest footprint in its range, a low
             step-up height and the same 12% maximum incline as its far more expensive models. Its
@@ -83,6 +95,41 @@ export default {
             an authorised retailer, at $799.99 on 14 October. ProForm offers a price guarantee against
             authorised retailers, covered below. We have not tested the Carbon TLS; what follows is what
             ProForm’s figures, a retailer listing and independent coverage show.
+          </p>`,
+    },
+    {
+      id: 'tl-vs-tls',
+      heading: 'ProForm Carbon TL vs TLS: What’s the Difference?',
+      html: `          <p>
+            <strong>The Carbon TL and the Carbon TLS are different machines, and only the TLS is sold by
+            ProForm today.</strong> Many searches for a "ProForm Carbon TL treadmill review" are looking for
+            the current TLS, because the names differ by one letter and some retailers still list the older
+            model alongside it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What is confirmed</h3>
+          <ul>
+            <li><strong>The TLS is the current model.</strong> On 13 October 2026 ProForm’s US site listed four treadmills: the Carbon Pro 2000, the Carbon Pro 9000, the Carbon TLX and the Carbon TLS. The Carbon TL was not among them.</li>
+            <li><strong>The TL is older and still on sale in places.</strong> Our ProForm roundup found the Carbon TL still appearing in a large US retailer’s listings in October 2026, and Academy Sports listed a Carbon TL alongside the TLS and TLX on 20 October 2026.</li>
+            <li><strong>The model number tells them apart.</strong> The Carbon TLS is PFTL79925. Any listing or review that gives a different model number, or calls the machine a "Carbon TL", is not describing the machine reviewed on this page.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What we could not confirm</h3>
+          <p>
+            We have not checked a manufacturer specification for the Carbon TL, so we do not publish its deck
+            size, motor rating, incline range, console or warranty, and we do not assume they match the TLS.
+            ProForm has reused and revised names before, which is exactly why a figure from a Carbon TL review
+            should not be read as a TLS figure, or the other way round.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">If you are looking at a Carbon TL</h3>
+          <p>
+            Treat it as discontinued stock. Ask the seller for the model number from the frame label, the
+            manufacturer’s specification sheet for that model number, how old the stock is, which console
+            software it runs and whether iFIT still fully supports it, and who honours the warranty. Our
+            <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm roundup</a>
+            covers the other retired names, and
+            <a href="/is-proform-a-good-brand/" class="text-[#0F62FE] font-medium">is ProForm a good brand</a>
+            explains why a review of a retired model tells you little about the current one. If the price is
+            close to a new TLS, buy the TLS: it comes with ProForm’s current warranty, the 30-day trial and
+            current iFIT support.
           </p>`,
     },
     {
@@ -131,9 +178,10 @@ export default {
     },
     {
       id: 'deck-and-size',
-      heading: 'An 18 by 55-Inch Belt: Who It Suits',
+      heading: 'Is the ProForm Carbon TLS Good for Running or Only Walking?',
       html: `          <p>
-            The belt is the specification that decides who the Carbon TLS is for. Fifty-five inches of
+            Walking, incline walking and light jogging; not regular running. The belt is the specification
+            that decides who the Carbon TLS is for. Fifty-five inches of
             length is enough for walking and gentle jogging; a full running stride for most adults wants
             sixty. Eighteen inches of width is two less than the common 20 inches and four less than the
             22 inches on wider decks, which matters to broad users, to anyone whose gait drifts sideways,
@@ -150,9 +198,19 @@ export default {
             <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running guide</a>,
             is the better buy.
           </p>
-          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The case for small</h3>
           <p>
-            The flip side is that the Carbon TLS is genuinely compact. In use it is 67.5 by 31.6 inches,
+            Where the TLS does suit hard work is incline. Its 12% ceiling matches ProForm’s far dearer
+            machines, and a long walk at steep incline is real training: it raises the effort without the
+            impact of running. If incline walking is the plan, the belt length matters much less, because a
+            walking stride is far shorter than a running one. The motor section below explains why a steep,
+            sustained walk is still the hardest job you can give a machine like this.
+          </p>`,
+    },
+    {
+      id: 'size-and-fit',
+      heading: 'How Big Is the ProForm Carbon TLS, and Will It Fit?',
+      html: `          <p>
+            It is one of the smallest full treadmills ProForm has listed. In use it is 67.5 by 31.6 inches,
             about 14.8 square feet. Folded with ProForm’s EasyLift design it is 32.9 inches long and
             65.7 inches tall, about 7.2 square feet. The step-up height of 7.75 inches is low for a folding
             treadmill, which helps anyone who finds stepping onto a deck awkward. For a spare room, an
@@ -160,6 +218,22 @@ export default {
             <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">small-space roundup</a>
             and <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad or folding treadmill</a>
             guide set out the alternatives.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Clearance and ceiling height</h3>
+          <p>
+            The machine’s own footprint is only part of the space you need. General safety guidance, set out
+            in our
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">dimensions and space guide</a>,
+            is about six feet of clear floor behind the belt and two feet on each side. For the ceiling, take
+            the tallest user’s height, add the 7.75-inch step-up height and at least 12 inches of head
+            clearance, and allow more for the rise of the deck at 12% incline. Folded, it stands 65.7 inches
+            tall, so check under any shelf or sloped ceiling where you plan to store it.
+          </p>
+          <p>
+            It ships in a box of about 77.8 by 32.3 by 11.3 inches weighing about 205 lb, so measure doorways
+            and stair turns as well as the room. If the room is tight in height rather than floor area, our
+            <a href="/best-treadmills-for-low-ceilings/" class="text-[#0F62FE] font-medium">low-ceiling roundup</a>
+            covers machines with lower decks.
           </p>`,
     },
     {
@@ -186,9 +260,10 @@ export default {
     },
     {
       id: 'ifit',
-      heading: 'iFIT on Your Own Device: What You Get With and Without It',
+      heading: 'Does the ProForm Carbon TLS Need an iFIT Subscription?',
       html: `          <p>
-            The Carbon TLS has no built-in touchscreen. Instead it has a 5-inch LCD for the basics and a
+            Not to walk on, but it needs a free iFIT account to activate, and almost everything beyond manual
+            speed and incline needs a paid membership. The Carbon TLS has no built-in touchscreen. Instead it has a 5-inch LCD for the basics and a
             shelf for your phone or tablet, which you connect to the treadmill over Bluetooth. With an
             iFIT membership running on that device, ProForm says the treadmill follows the trainer’s speed
             and incline changes automatically ("Follow Trainer"), and features called SmartAdjust and
@@ -228,9 +303,10 @@ export default {
     },
     {
       id: 'warranty',
-      heading: 'The Warranty: What ProForm Says, and Where It Disagrees',
+      heading: 'Warranty: What It Actually Covers',
       html: `          <p>
-            Every ProForm statement we found agrees on a ten-year frame warranty. Beyond that, ProForm’s
+            Ten years on the frame is the only term every source agrees on; the motor and parts cover is one
+            or two years depending on which ProForm page you read, and labour is one year. In detail, ProForm’s
             own pages, checked on 13 October 2026, say different things:
           </p>
           <ul>
@@ -296,9 +372,11 @@ export default {
     },
     {
       id: 'owner-reports',
-      heading: 'What Reviews and Owners Report',
+      heading: 'What Do Owners Complain About?',
       html: `          <p>
-            Independent coverage of the Carbon TLS is thinner than for most treadmills we review. The
+            Assembly, mostly: owner reviews on Scheels’ listing name two people and time as the commonest
+            complaint, and reviewers add the short deck, the lack of decline and the need to bring your own
+            device. Independent coverage of the Carbon TLS is thinner than for most treadmills we review. The
             review site we checked lists it with an easy-to-read LCD, SmartAdjust and iFIT compatibility as
             positives, and no decline, a shorter deck than other treadmills and the need to bring your own
             device as negatives. Those negatives follow directly from the specification, and every source
@@ -315,7 +393,7 @@ export default {
     },
     {
       id: 'alternatives',
-      heading: 'Carbon TLS vs Carbon TLX and the Alternatives',
+      heading: 'ProForm Carbon TLS vs Carbon TLX',
       html: `          <p>
             <strong>ProForm Carbon TLX.</strong> The TLS’s sibling adds a 20 by 60-inch belt, 12 mph and a
             7-inch LCD, with the same 12% incline and 300 lb capacity, and ProForm lists a 3.0 CHP motor for
@@ -348,7 +426,7 @@ export default {
     },
     {
       id: 'who-should-buy',
-      heading: 'Who Should Buy the ProForm Carbon TLS',
+      heading: 'Who Should Buy It, and Who Should Skip It?',
       html: `          <p>
             <strong>Buy it if you walk and want iFIT to drive the machine.</strong> Trainer-led walks and
             hikes that change the incline for you, on a compact folding frame with a 12% ceiling, is
@@ -359,11 +437,11 @@ export default {
             ProForm’s range.
           </p>
           <p>
-            <strong>Do not buy it to run on,</strong> or if you are broad or tall; the 18 by 55-inch belt
+            <strong>Skip it if you want to run on it,</strong> or if you are broad or tall; the 18 by 55-inch belt
             is the constraint. The Carbon TLX or a 60-inch machine is the better choice.
           </p>
           <p>
-            <strong>Do not buy it if you never want to deal with iFIT.</strong> Activation needs a free
+            <strong>Skip it if you never want to deal with iFIT.</strong> Activation needs a free
             account, and most of its value is in the paid content. A no-subscription walking treadmill
             from Horizon may suit you better; our
             <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">walking treadmill roundup</a>
@@ -380,6 +458,10 @@ export default {
     {
       q: 'Is the ProForm Carbon TLS treadmill good?',
       a: 'For walking and incline walking, on its published figures, yes: an 18 by 55-inch belt, 0 to 12% incline, 10 mph, a 300 lb capacity and a compact fold, with iFIT able to change speed and incline from your own device. It is not built for regular running, and its warranty terms are stated inconsistently. We have not tested it.',
+    },
+    {
+      q: 'Is the ProForm Carbon TL the same as the Carbon TLS?',
+      a: 'No. The Carbon TL is an older ProForm model that was not on ProForm’s US site on 13 October 2026, though some retailers still list it. The Carbon TLS, model PFTL79925, is the current entry model. We have not checked a specification for the TL, so do not assume its deck, motor or warranty match the TLS.',
     },
     {
       q: 'Can you use the ProForm Carbon TLS without iFIT?',

@@ -114,7 +114,7 @@ export default {
           <p>
             <strong>1. Check running belt tension.</strong> Unplugged, you should be able to lift the
             belt about two to three inches at the centre of the deck. Our guide to
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
             covers the test.
           </p>
           <p>
@@ -368,7 +368,7 @@ export default {
           </p>
           <p>
             Our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
             sets out all of these in running hours.
           </p>`,
     },

@@ -1,32 +1,37 @@
 export default {
   slug: 'best-portable-treadmills',
   title: 'Best Portable Treadmills (2026): 6 Reviews, Sorted by Weight',
-  description:
-    'Six portable treadmills, from a 43 lb pad to an auto-folding full-size runner, with unit weights checked against makers and independent reviews where published, and how each one moves.',
+  description: `The WalkingPad Z1 (51 lb, folds in half) is the best portable treadmill for most homes. Six picks from a 43 lb pad up, plus the lightest five under 70 lb.`,
   crumbLabel: 'Best Portable Treadmills',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 18, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-18',
   socialProof: '2.2k',
   h1: ['Best Portable Treadmills', 'Sorted by How They Move'],
-  standfirst:
-    'A portable treadmill is only as portable as the person moving it. These six picks run from a pad light enough to carry to a full-size folding treadmill that rolls, with the weight of each one checked against the maker and an independent source, so you can match the machine to your back, your floor and your storage space.',
+  standfirst: `A portable treadmill is only as portable as the person moving it. These six picks run from a pad light enough to carry to a full-size folding treadmill that rolls, with the weight of each one checked against the maker and an independent source, so you can match the machine to your back, your floor and your storage space.`,
   ctas: [
     { label: 'See the Picks', href: '#quick-picks' },
     { label: 'Compare the Weights', href: '#weights-compared' },
   ],
-  tags: ['best portable treadmill', 'portable treadmill reviews', 'lightweight treadmill', 'portable walking pad', 'folding treadmill with wheels', 'treadmill for rv'],
+  tags: [
+    'best portable treadmill',
+    'portable treadmill reviews',
+    'lightweight treadmill',
+    'portable walking pad',
+    'folding treadmill with wheels',
+    'treadmill for rv',
+  ],
   stickyCta: { text: 'See the Portable Picks', link: '#quick-picks' },
   lead: `"Portable" on a treadmill listing can mean a 43 lb pad you can lift with one hand or a
           180 lb machine with two small wheels at the front. This page sorts the best portable
           treadmills by how they actually move — carried, slid under furniture, tipped and rolled,
           or folded in place — and prints the unit weight of each one only where the maker and an
           independent source agreed on it. If you first want to know what the different kinds of
-          portable treadmill are and what each one gives up, our explainer on
-          <a href="/portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills</a>
-          covers that; this page is the shortlist.`,
+          portable treadmill are and what each one gives up, the section on
+          <a href="#what-is-portable" class="text-[#0F62FE] font-medium">what counts as a portable treadmill</a>
+          covers that before the reviews.`,
   sections: [
     {
       id: 'quick-picks',
@@ -131,6 +136,61 @@ export default {
           </p>`,
     },
     {
+      id: 'lightest',
+      heading: 'What Is the Lightest Treadmill? Five Under 70 lb',
+      html: `          <p>
+            <strong>For most people the best lightweight treadmill is the WalkingPad Z1R: 57.7 lb by
+            WalkingPad's figure, a 47.6-inch walking area, a removable handle and a deck that folds in
+            half, for about $359. The lightest motorized machine here is the UREVO Strol 2E Pro at
+            44 lb, and the lightest without a plug is Sunny's manual treadmill at 46.9 lb.</strong>
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead><tr>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Unit weight (source)</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price (6 Nov 2026)</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad Z1R</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">57.7 lb (WalkingPad)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $359</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Strol 2E Pro</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">44 lb (listing)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lightest motorized, with incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$198–$220</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Health &amp; Fitness Foldable Manual Walking Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">46.9 lb (Sunny)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No outlet needed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $200</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad C2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">55 lb (listing)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Smallest folded</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $399</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Health &amp; Fitness Treadpad Compact Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">66.1 lb (Sunny)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Light jogging under $300</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $290</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            For comparison, the lightest full-width running treadmill we found with a published unit
+            weight, Sunny's SF-T7718 with a 20-inch belt, is 117.9 lb by Sunny's own figure — twice the
+            weight of anything above. If carrying is the main problem, the machines on this page are the
+            realistic options. If you need to run properly, read the trade-offs below first, and see
+            our best portable treadmills guide for heavier
+            machines that still move easily on wheels.
+          </p>`,
+    },
+    {
+      id: 'weight-figures',
+      heading: 'How Accurate Are Treadmill Weights in Listings?',
+      html: `          <p>
+            Treadmill weights in listings are less reliable than they look, for three reasons.
+          </p>
+          <ul>
+            <li><strong>Unit weight or shipping weight.</strong> Amazon product data often gives the
+            packed weight, which can be 10 to 20 lb more than the machine. Look for a figure in the
+            bullet points or the maker's specification table described as product or net weight.</li>
+            <li><strong>One machine, several figures.</strong> The same machine can carry different
+            weights on different listings. Our <a href="/goplus-2-in-1-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Goplus 2-in-1</a> review found figures from 69.5 to 74 lb for
+            one model across Amazon, the maker's store and reviewers.</li>
+            <li><strong>Marketing language.</strong> "Lightweight", "featherlight" and "portable" have
+            no fixed meaning. One listing we checked called itself lightweight without giving any
+            weight at all.</li>
+          </ul>
+          <p>
+            The rule we used for this page is the one to use for any listing: no stated unit weight, no
+            claim to be lightweight. If two sources disagree, plan on the heavier figure.
+          </p>`,
+    },
+    {
       id: 'how-we-chose',
       heading: 'How We Chose These Portable Treadmills',
       html: `          <p>
@@ -173,12 +233,78 @@ export default {
           </p>`,
     },
     {
+      id: 'what-is-portable',
+      heading: 'What Counts as a Portable Treadmill?',
+      html: `          <p>
+            <strong>Walking pads.</strong> A flat motorized deck with no upright console, controlled by
+            a remote, an app or a small panel. Many fold in half or slide flat under furniture. They
+            typically top out around 3 to 4 mph, and so-called 2-in-1 models with a folding handrail
+            can reach around 6 mph with the rail raised. They are designed for walking, often at a
+            desk. Our
+            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
+            guide covers specific machines for that use.
+          </p>
+          <p>
+            <strong>Folding motorized treadmills with transport wheels.</strong> A conventional
+            treadmill whose deck folds up against the console and locks, with small wheels at the
+            front so it can be tilted and rolled. These range from budget walking machines to
+            running-capable models with powered incline. Folding reduces the footprint; it does not
+            make the machine light. Our
+            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
+            guide covers that category.
+          </p>
+          <p>
+            <strong>Flat manual treadmills.</strong> No motor; your stride drives the belt, usually
+            over rollers on a deck set at a fixed incline. They are often lighter and cheaper than a
+            motorized folding machine, need no outlet, and can fold. They are also the least pleasant
+            to use, for reasons our
+            <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual vs motorized</a>
+            comparison explains. Curved non-motorized trainers, by contrast, are heavy and not
+            portable in any useful sense.
+          </p>`,
+    },
+    {
+      id: 'what-it-costs',
+      heading: 'What Does a Portable Treadmill Give Up?',
+      html: `          <p>
+            Every portable design removes mass and size, and treadmills get much of their quality from
+            mass and size. The trade-offs are predictable.
+          </p>
+          <p>
+            <strong>A smaller motor.</strong> Light machines carry light motors, and the continuous
+            rating is often not stated at all. That is adequate for walking at a moderate pace, and
+            inadequate for sustained running or heavier users.
+          </p>
+          <p>
+            <strong>A shorter, narrower belt.</strong> A compact deck is the main way to save weight
+            and space, and it limits stride length — which matters more as speed and height increase.
+          </p>
+          <p>
+            <strong>Less stability.</strong> A lighter frame moves more under each footstrike and can
+            shift on the floor. Without an upright console or full handrails, there is less to steady
+            yourself on.
+          </p>
+          <p>
+            <strong>Less cushioning and more noise into the floor.</strong> Thin decks transmit more
+            impact into your joints and into the room below.
+          </p>
+          <p>
+            <strong>Fewer features.</strong> Many portable machines have no incline, a limited speed
+            range, and a lower maximum user weight.
+          </p>
+          <p>
+            None of this makes portable treadmills bad. It makes them specialised. A walking pad that is
+            used every workday is a better purchase than a full-size treadmill that is never unfolded
+            because it is too much trouble. The point is to accept the trade knowingly. Our
+            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill</a>
+            comparison works through the decision in detail.
+          </p>`,
+    },
+    {
       id: 'which-kind',
       heading: 'Which Kind of Portable Treadmill Do You Need?',
       html: `          <p>
-            The explainer on
-            <a href="/portable-treadmills/" class="text-[#0F62FE] font-medium">what portable means</a>
-            describes the three kinds of portable treadmill. For choosing between the picks above, a
+            The three kinds of portable treadmill are set out above. For choosing between the picks above, a
             simpler question works better: how often will the machine move, and where to?
           </p>
           <p>
@@ -208,7 +334,7 @@ export default {
           <p>
             If none of these sounds like your home and the treadmill will rarely leave the room it is
             in, a conventional folding treadmill is likely to suit you better. Our
-            <a href="/best-folding-treadmill-reviews/" class="text-[#0F62FE] font-medium">folding treadmill reviews</a>
+            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmill reviews</a>
             and our guide to
             <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">treadmills for small spaces</a>
             cover that route.
@@ -407,22 +533,20 @@ export default {
       badge: 'Best Overall',
       amazonUrl: 'https://www.amazon.com/s?k=WalkingPad+Z1+Foldable+Walking+Treadmill&tag=sktiger-20',
       priceRange: '$299–$329',
-      specs: '51 lb unit · 47.6 x 15.7 in. walking area · 242 lb capacity · folds in half to 31.8 x 22 x 5.4 in.',
+      specs: `51 lb unit · 47.6 x 15.7 in. walking area · 242 lb capacity · folds in half to 31.8 x 22 x 5.4 in.`,
       pros: [
         'A full 47.6-inch walking area in a pad that weighs 51 lb',
         'Folds in half to 5.4 inches high, low enough to slide under many beds and sofas',
-        'WalkingPad and an independent hands-on review agree on its weight, walking area, capacity and folded size',
+        `WalkingPad and an independent hands-on review agree on its weight, walking area, capacity and folded size`,
         'Arrives fully assembled and rolls on built-in wheels once tipped',
       ],
       cons: [
         'The same reviewer found it heavy to manage alone on stairs and noted a short power cord',
-        'WalkingPad lists a top speed of 4 mph and the review 3.7 mph; either way it is a walking machine',
+        `WalkingPad lists a top speed of 4 mph and the review 3.7 mph; either way it is a walking machine`,
         'A 242 lb limit leaves little headroom for heavier walkers',
       ],
-      bottomLine:
-        'The pad to buy if it has to disappear under the furniture every day and you want a belt long enough for a natural walking stride.',
-      description:
-        "The Z1 is the best balance of weight, belt length and storage on this page. WalkingPad lists a 51 lb net weight, a 47.6 by 15.7-inch walking area, a 242 lb maximum user weight and a folded size of 31.8 by 22 by 5.4 inches; Tom's Guide's hands-on review gives exactly the same figures. Folded in half it is about 32 inches long and 5.4 inches high, low enough to slide under many beds and sofas, and it rolls on wheels once tipped up. The reviewer found it easy to store and transport on the wheels, but heavy to carry up or down stairs alone at 51 lb, and noted a short power cord. Speed is the figure that differs: WalkingPad says 1 to 4 mph and the review 3.7 mph, so treat it as a walking pad. WalkingPad's page gives a 2.25 HP brushless motor while a retailer listing and an independent tracker give 0.75 HP, so we have not printed one. On 18 October 2026 WalkingPad listed the white Z1 at $299 against $329 and the standard Z1 at $329, both in stock. The warranty is one year.",
+      bottomLine: `The pad to buy if it has to disappear under the furniture every day and you want a belt long enough for a natural walking stride.`,
+      description: `The Z1 is the best balance of weight, belt length and storage on this page. WalkingPad lists a 51 lb net weight, a 47.6 by 15.7-inch walking area, a 242 lb maximum user weight and a folded size of 31.8 by 22 by 5.4 inches; Tom's Guide's hands-on review gives exactly the same figures. Folded in half it is about 32 inches long and 5.4 inches high, low enough to slide under many beds and sofas, and it rolls on wheels once tipped up. The reviewer found it easy to store and transport on the wheels, but heavy to carry up or down stairs alone at 51 lb, and noted a short power cord. Speed is the figure that differs: WalkingPad says 1 to 4 mph and the review 3.7 mph, so treat it as a walking pad. WalkingPad's page gives a 2.25 HP brushless motor while a retailer listing and an independent tracker give 0.75 HP, so we have not printed one. On 18 October 2026 WalkingPad listed the white Z1 at $299 against $329 and the standard Z1 at $329, both in stock. The warranty is one year.`,
     },
     {
       id: 'urevo-strol-2e-pro',
@@ -431,22 +555,20 @@ export default {
       badge: 'Lightest to Carry',
       amazonUrl: 'https://www.amazon.com/s?k=UREVO+Strol+2E+Pro+Treadmill&tag=sktiger-20',
       priceRange: '$178–$260',
-      specs: 'About 43 lb unit · about 36 x 15 in. running area · up to 6.2 mph with the handle up · handle folds flat',
+      specs: `About 43 lb unit · about 36 x 15 in. running area · up to 6.2 mph with the handle up · handle folds flat`,
       pros: [
-        'At about 43 lb, the lightest powered machine we could verify, and light enough for most adults to carry',
+        `At about 43 lb, the lightest powered machine we could verify, and light enough for most adults to carry`,
         'The handle folds down flat, so it stores like a plain pad',
         'Reaches 6.2 mph with the handle raised, for a brisk walk or short jog',
         'The least expensive pick here',
       ],
       cons: [
-        'A running area of about 36 inches is short for jogging, and for taller walkers at any speed',
-        'UREVO gives a 300 lb capacity while the Amazon listing gives 265 lb, and the incline figures also differ',
-        'We found no independent hands-on review; the 18-month warranty depends on registering in UREVO’s app',
+        `A running area of about 36 inches is short for jogging, and for taller walkers at any speed`,
+        `UREVO gives a 300 lb capacity while the Amazon listing gives 265 lb, and the incline figures also differ`,
+        `We found no independent hands-on review; the 18-month warranty depends on registering in UREVO’s app`,
       ],
-      bottomLine:
-        'For travel, an upstairs room or anyone who will genuinely carry the machine: the lightest pad here, as long as you walk rather than run.',
-      description:
-        "The Strol 2E Pro is the pick for the lightest machine to carry. UREVO's own specification table gives a product weight of 43.4 lb in one place and 43.6 lb in another, and markets it as a 44 lb frame; an independent specification tracker that reads the Amazon listing records 43 lb, so about 43 lb is a fair figure. UREVO and the tracker also agree on a running area of about 36 by 15 inches and a top speed of 6.2 mph with the handle raised. The handle folds down to deck height, so it stores like a plain pad. The figures that did not agree we have left off the card. UREVO lists a 300 lb maximum load while the Amazon listing gives 265 lb, so plan on the lower figure. UREVO advertises an incline of up to 12% and the Amazon table 11%, without saying clearly how it is set. We found no independent hands-on review, only owner ratings. UREVO's warranty is one year plus a 180-day extension that requires registering the machine in its app. UREVO listed it at $259.99 on 18 October 2026, and the tracker recorded $177.98 on Amazon on 14 October.",
+      bottomLine: `For travel, an upstairs room or anyone who will genuinely carry the machine: the lightest pad here, as long as you walk rather than run.`,
+      description: `The Strol 2E Pro is the pick for the lightest machine to carry. UREVO's own specification table gives a product weight of 43.4 lb in one place and 43.6 lb in another, and markets it as a 44 lb frame; an independent specification tracker that reads the Amazon listing records 43 lb, so about 43 lb is a fair figure. UREVO and the tracker also agree on a running area of about 36 by 15 inches and a top speed of 6.2 mph with the handle raised. The handle folds down to deck height, so it stores like a plain pad. The figures that did not agree we have left off the card. UREVO lists a 300 lb maximum load while the Amazon listing gives 265 lb, so plan on the lower figure. UREVO advertises an incline of up to 12% and the Amazon table 11%, without saying clearly how it is set. We found no independent hands-on review, only owner ratings. UREVO's warranty is one year plus a 180-day extension that requires registering the machine in its app. UREVO listed it at $259.99 on 18 October 2026, and the tracker recorded $177.98 on Amazon on 14 October.`,
     },
     {
       id: 'sunny-manual-walking',
@@ -454,7 +576,7 @@ export default {
       category: 'Folding manual treadmill that needs no outlet',
       badge: 'Best Manual',
       priceRange: 'About $200 (Amazon, 6 Nov 2026)',
-      specs: '46.9 lb (Sunny) · 42 x 13 in. deck · 14% fixed incline · non-electric · dual flywheel · Bluetooth to SunnyFit app',
+      specs: `46.9 lb (Sunny) · 42 x 13 in. deck · 14% fixed incline · non-electric · dual flywheel · Bluetooth to SunnyFit app`,
       pros: [
         'Needs no power at all, so it works in a garage, a cabin or anywhere without an outlet',
         'At 46.9 lb by Sunny’s figure, it folds and rolls away on transport wheels',
@@ -462,35 +584,33 @@ export default {
         'Bluetooth to the SunnyFit app and a device holder, unusual on a manual machine',
       ],
       cons: [
-        'A 13-inch belt is narrow, and like any flat manual it is a walking machine you will hold on to',
-        'Walking on a manual belt feels like hard uphill work and does not suit long, steady sessions',
-        'The weight limit is 300 lb in the title but 330 lb in the bullets and on Sunny’s site, so we have not printed one',
+        `A 13-inch belt is narrow, and like any flat manual it is a walking machine you will hold on to`,
+        `Walking on a manual belt feels like hard uphill work and does not suit long, steady sessions`,
+        `The weight limit is 300 lb in the title but 330 lb in the bullets and on Sunny’s site, so we have not printed one`,
       ],
-      bottomLine:
-        'The portable option for walking where there is no power, from a brand with a large retail presence. Expect to hold the rails.',
-      description:
-        "Sunny's foldable manual walking treadmill is the only machine here without a motor, and at 46.9 lb by Sunny's figure it is also one of the lightest. The Amazon listing describes a non-electric design driven by your steps, a 14% fixed incline, a dual flywheel for smoother movement, a 42 by 13-inch non-slip deck, an LCD monitor for time, speed, distance and calories, foam hand grips, a device holder, transport wheels and a fold for storage, plus Bluetooth to the SunnyFit app. Sunny's own store lists a matching smart manual walking treadmill with the same 46.9 lb weight, 42 by 13-inch running surface, an 8.7-inch deck-to-floor height and a 330 lb maximum user weight; the listing's title says 300 lb, so we have left the limit off the card. Your stride drives the belt, which is why a flat manual is always set on a slope, and you will hold the rails to walk on it: a walking machine, not a running one. Its portable case is simple: it folds, it rolls, and it needs no outlet. Amazon showed it at $199.99 on 6 November 2026. Stamina's Avari, a manual with three incline settings and magnetic resistance, is the alternative if you buy outside Amazon.",
+      bottomLine: `The portable option for walking where there is no power, from a brand with a large retail presence. Expect to hold the rails.`,
+      description: `Sunny's foldable manual walking treadmill is the only machine here without a motor, and at 46.9 lb by Sunny's figure it is also one of the lightest. The Amazon listing describes a non-electric design driven by your steps, a 14% fixed incline, a dual flywheel for smoother movement, a 42 by 13-inch non-slip deck, an LCD monitor for time, speed, distance and calories, foam hand grips, a device holder, transport wheels and a fold for storage, plus Bluetooth to the SunnyFit app. Sunny's own store lists a matching smart manual walking treadmill with the same 46.9 lb weight, 42 by 13-inch running surface, an 8.7-inch deck-to-floor height and a 330 lb maximum user weight; the listing's title says 300 lb, so we have left the limit off the card. Your stride drives the belt, which is why a flat manual is always set on a slope, and you will hold the rails to walk on it: a walking machine, not a running one. Its portable case is simple: it folds, it rolls, and it needs no outlet. Amazon showed it at $199.99 on 6 November 2026. Stamina's Avari, a manual with three incline settings and magnetic resistance, is the alternative if you buy outside Amazon.`,
     },
     {
-      id: "walkingpad-r3-hybrid-plus",
-      name: "WalkingPad R3 Hybrid+",
-      category: "Folding walk-and-jog treadmill with handrails",
-      badge: "Best for Small Apartments",
-      priceRange: "$799–$999",
-      specs: "47.2 x 17.3 in. running area · 1–7.5 mph · folding side handrails · 265 lb capacity · folds",
+      id: 'walkingpad-r3-hybrid-plus',
+      name: 'WalkingPad R3 Hybrid+',
+      category: 'Folding walk-and-jog treadmill with handrails',
+      badge: 'Best for Small Apartments',
+      priceRange: '$799–$999',
+      specs: `47.2 x 17.3 in. running area · 1–7.5 mph · folding side handrails · 265 lb capacity · folds`,
       pros: [
-        "A 47.2 by 17.3-inch running area and 7.5 mph, enough for walking and light jogging",
-        "Height-adjustable side handrails that fold down for desk use",
-        "Folds for storage, from a maker with a full published specification",
-        "A 265 lb capacity, agreed by WalkingPad and an independent walking-pad site",
+        'A 47.2 by 17.3-inch running area and 7.5 mph, enough for walking and light jogging',
+        'Height-adjustable side handrails that fold down for desk use',
+        'Folds for storage, from a maker with a full published specification',
+        'A 265 lb capacity, agreed by WalkingPad and an independent walking-pad site',
       ],
       cons: [
-        "We could not confirm a unit weight, so check it before planning to move it daily",
-        "One retailer listing says lowering the rails limits it to 4 mph",
-        "Expensive for a pad with no incline; one-year standard warranty",
+        'We could not confirm a unit weight, so check it before planning to move it daily',
+        'One retailer listing says lowering the rails limits it to 4 mph',
+        'Expensive for a pad with no incline; one-year standard warranty',
       ],
-      bottomLine: "For a small apartment where you want rails to hold and the option of a light jog, in a machine that folds away.",
-      description: "The R3 Hybrid+ is WalkingPad's folding 2-in-1 with side handrails, and it takes the slot the WalkingPad X21 held on this page; the X21 could not be found on Amazon US, and the R3 Hybrid+ offers the same walk-and-light-jog brief. WalkingPad lists a running area of 1,200 by 440 mm, or 47.2 by 17.3 inches, a speed range of 1 to 7.5 mph, a 265 lb maximum user weight and height-adjustable side handrails, and an independent walking-pad site gives the same length, speed and capacity. Those are almost exactly the X21's belt length and top speed, with 25 lb more capacity and rails you can hold. Be realistic about the jogging part: a 47-inch belt is enough for a tall person to walk naturally, but a running stride is far longer, so for anything more than a short jog the X25 below is the better machine. We could not confirm a unit weight or folded size for this model, which matters on a page about moving a treadmill, so check both with WalkingPad before you buy. WalkingPad's page lists several R3 versions with different capacities, so check you are buying the Hybrid+. It was $799 on sale from $999 when we checked for our tall walkers' guide.",
+      bottomLine: `For a small apartment where you want rails to hold and the option of a light jog, in a machine that folds away.`,
+      description: `The R3 Hybrid+ is WalkingPad's folding 2-in-1 with side handrails, and it takes the slot the WalkingPad X21 held on this page; the X21 could not be found on Amazon US, and the R3 Hybrid+ offers the same walk-and-light-jog brief. WalkingPad lists a running area of 1,200 by 440 mm, or 47.2 by 17.3 inches, a speed range of 1 to 7.5 mph, a 265 lb maximum user weight and height-adjustable side handrails, and an independent walking-pad site gives the same length, speed and capacity. Those are almost exactly the X21's belt length and top speed, with 25 lb more capacity and rails you can hold. Be realistic about the jogging part: a 47-inch belt is enough for a tall person to walk naturally, but a running stride is far longer, so for anything more than a short jog the X25 below is the better machine. We could not confirm a unit weight or folded size for this model, which matters on a page about moving a treadmill, so check both with WalkingPad before you buy. WalkingPad's page lists several R3 versions with different capacities, so check you are buying the Hybrid+. It was $799 on sale from $999 when we checked for our tall walkers' guide.`,
     },
     {
       id: 'walkingpad-x25',
@@ -499,7 +619,7 @@ export default {
       badge: 'Best for Running',
       amazonUrl: 'https://www.amazon.com/s?k=WalkingPad+X25+Double+Fold+Running+Treadmill&tag=sktiger-20',
       priceRange: '$899–$1,399',
-      specs: '104 lb unit · 51.9 x 19.6 in. running area · 1–10 mph · 300 lb capacity · folds to 10.1 x 30.4 x 40.3 in.',
+      specs: `104 lb unit · 51.9 x 19.6 in. running area · 1–10 mph · 300 lb capacity · folds to 10.1 x 30.4 x 40.3 in.`,
       pros: [
         'Reaches 10 mph on a 52-inch belt, the most running capability of any light machine here',
         'A 300 lb capacity, the joint-highest on this page',
@@ -507,36 +627,34 @@ export default {
         'An independent reviewer found it light enough for most people to move between rooms',
       ],
       cons: [
-        'At 104 lb it is a tip-and-roll machine, and the reviewer advised against carrying it on stairs often',
-        'Small wheels, no incline, a firm deck and beeps that cannot be turned off, per the same review',
-        'Motor ratings differ between WalkingPad, a retailer and the review; not built for high weekly mileage',
+        `At 104 lb it is a tip-and-roll machine, and the reviewer advised against carrying it on stairs often`,
+        `Small wheels, no incline, a firm deck and beeps that cannot be turned off, per the same review`,
+        `Motor ratings differ between WalkingPad, a retailer and the review; not built for high weekly mileage`,
       ],
-      bottomLine:
-        'The pick if you want to run on a treadmill that folds into a closet and that one person can roll there.',
-      description:
-        "The X25 is WalkingPad's double-fold running treadmill, and it is the lightest machine we could verify that reaches running speeds on a running-length belt. WalkingPad lists a 104 lb net weight, a 51.9 by 19.6-inch running area, 1 to 10 mph, a 300 lb capacity and a folded size of 10.1 by 30.4 by 40.3 inches, and Treadmill Review Guru's hands-on review gives the same weight, capacity, speed and folded size, with the belt rounded to 19.5 by 52 inches. One retailer quotes 128 lb, which is a boxed weight; WalkingPad gives 119 lb gross. The reviewer found it easy to roll on hard floors and mats but harder on thick carpet, and advised against carrying it up and down stairs often. They found it good for jogging and light running, not for race training or long daily runs, and noted no incline, a firm deck with little cushioning and beeps that cannot be silenced. Motor figures disagree: 4.5 HP from WalkingPad, 2.0 HP from Dick's and 1.5 HP from the review. WalkingPad listed the grey X25 at $899 against $1,399 on 18 October 2026; the separate X25+ is a different model.",
+      bottomLine: `The pick if you want to run on a treadmill that folds into a closet and that one person can roll there.`,
+      description: `The X25 is WalkingPad's double-fold running treadmill, and it is the lightest machine we could verify that reaches running speeds on a running-length belt. WalkingPad lists a 104 lb net weight, a 51.9 by 19.6-inch running area, 1 to 10 mph, a 300 lb capacity and a folded size of 10.1 by 30.4 by 40.3 inches, and Treadmill Review Guru's hands-on review gives the same weight, capacity, speed and folded size, with the belt rounded to 19.5 by 52 inches. One retailer quotes 128 lb, which is a boxed weight; WalkingPad gives 119 lb gross. The reviewer found it easy to roll on hard floors and mats but harder on thick carpet, and advised against carrying it up and down stairs often. They found it good for jogging and light running, not for race training or long daily runs, and noted no incline, a firm deck with little cushioning and beeps that cannot be silenced. Motor figures disagree: 4.5 HP from WalkingPad, 2.0 HP from Dick's and 1.5 HP from the review. WalkingPad listed the grey X25 at $899 against $1,399 on 18 October 2026; the separate X25+ is a different model.`,
     },
     {
-      id: "echelon-stride-s",
-      name: "Echelon Stride-S Auto-Fold Treadmill",
-      category: "Auto-folding full-size treadmill on wheels",
-      badge: "Best Full-Size Folding",
-      amazonUrl: "https://www.amazon.com/dp/B09C11NJWC?tag=sktiger-20",
-      priceRange: "About $1,427 (Amazon, 9 Nov 2026)",
-      specs: "20 x 55 in. deck · up to 12 mph · 10% incline · 300 lb capacity · auto-folds flat",
+      id: 'echelon-stride-s',
+      name: 'Echelon Stride-S Auto-Fold Treadmill',
+      category: 'Auto-folding full-size treadmill on wheels',
+      badge: 'Best Full-Size Folding',
+      amazonUrl: 'https://www.amazon.com/dp/B09C11NJWC?tag=sktiger-20',
+      priceRange: 'About $1,427 (Amazon, 9 Nov 2026)',
+      specs: '20 x 55 in. deck · up to 12 mph · 10% incline · 300 lb capacity · auto-folds flat',
       pros: [
-        "Folds itself flat at the touch of a button, with no lifting",
-        "Built-in transport wheels and a steel handle for rolling it across a level floor",
-        "A 20 by 55-inch deck, the longest on this page",
-        "A 10-inch HD touchscreen, powered incline to 10% and a 300 lb capacity",
+        'Folds itself flat at the touch of a button, with no lifting',
+        'Built-in transport wheels and a steel handle for rolling it across a level floor',
+        'A 20 by 55-inch deck, the longest on this page',
+        'A 10-inch HD touchscreen, powered incline to 10% and a 300 lb capacity',
       ],
       cons: [
-        "We could not confirm a unit weight; expect a two-person job on steps and stairs",
-        "Echelon sells its membership separately, and the listing says the unit needs a Wi-Fi update before first use",
-        "A 12-month parts and labour warranty, per the listing",
+        'We could not confirm a unit weight; expect a two-person job on steps and stairs',
+        `Echelon sells its membership separately, and the listing says the unit needs a Wi-Fi update before first use`,
+        'A 12-month parts and labour warranty, per the listing',
       ],
-      bottomLine: "For runners who need a longer deck but cannot leave a treadmill standing: it folds flat and rolls against a wall, though it will not go far.",
-      description: "The Stride-S shows what portable means at the heavy end. It takes the slot of Echelon's Stride-6s, which we could not find on Amazon US; the Stride-S is the Echelon auto-folding treadmill that is listed there. The Amazon listing describes a 20 by 55-inch running deck, a 12 mph top speed and a 10% maximum incline, a 10-inch HD touchscreen, handlebar heart-rate sensors, Bluetooth, a USB charging port, a safety lanyard, and Echelon's auto-fold, which it says folds the deck to about 10 inches with built-in transport wheels for horizontal and vertical moving; a retailer's specification gives the same deck, speed and incline, and Echelon's owner's manual sets a 300 lb user limit. Against the Stride-6s it has a 5-inch shorter deck, and Echelon's motor figures for it conflict between sources, so none is on the card. We could not confirm its weight either, but a full-size motorised treadmill is a level-floor roll, not a carry. The listing gives a 12-month limited parts and labour warranty, prices the membership separately, and warns that the unit needs a software update over Wi-Fi before it can be used. Amazon listed it at $1,427.13 on 9 November 2026.",
+      bottomLine: `For runners who need a longer deck but cannot leave a treadmill standing: it folds flat and rolls against a wall, though it will not go far.`,
+      description: `The Stride-S shows what portable means at the heavy end. It takes the slot of Echelon's Stride-6s, which we could not find on Amazon US; the Stride-S is the Echelon auto-folding treadmill that is listed there. The Amazon listing describes a 20 by 55-inch running deck, a 12 mph top speed and a 10% maximum incline, a 10-inch HD touchscreen, handlebar heart-rate sensors, Bluetooth, a USB charging port, a safety lanyard, and Echelon's auto-fold, which it says folds the deck to about 10 inches with built-in transport wheels for horizontal and vertical moving; a retailer's specification gives the same deck, speed and incline, and Echelon's owner's manual sets a 300 lb user limit. Against the Stride-6s it has a 5-inch shorter deck, and Echelon's motor figures for it conflict between sources, so none is on the card. We could not confirm its weight either, but a full-size motorised treadmill is a level-floor roll, not a carry. The listing gives a 12-month limited parts and labour warranty, prices the membership separately, and warns that the unit needs a software update over Wi-Fi before it can be used. Amazon listed it at $1,427.13 on 9 November 2026.`,
     },
   ],
   faqs: [
@@ -564,10 +682,17 @@ export default {
       q: 'Will a portable treadmill fit under my bed?',
       a: `Only if the gap is higher than the machine when stored. WalkingPad gives the Z1's folded height as 5.4 inches, so it needs a little more than that, measured at the lowest point of the bed frame. Double-fold treadmills are too thick for most beds and are designed to stand in a closet or corner instead. Always measure before you buy.`,
     },
+    {
+      q: 'Is a portable treadmill worth it?',
+      a: `It is worth it if the machine will genuinely need to move or be put away often, and you mainly walk. A walking pad used every day beats a full-size treadmill left folded. If the machine will stay in one room, a conventional folding treadmill usually offers more capability for the space.`,
+    },
+    {
+      q: 'Can you store a walking pad upright?',
+      a: `Only if the manufacturer says the model is designed for it. Some walking pads are built for vertical storage; many are not. If you do store one upright, make sure it cannot tip, keep it away from children, and store it unplugged with the cable coiled.`,
+    },
   ],
   mistakesHeading: 'Common Mistakes Buying a Portable Treadmill',
-  mistakesIntro:
-    'Each of these turns a portable treadmill into one that never moves, or one that is moved unsafely.',
+  mistakesIntro: `Each of these turns a portable treadmill into one that never moves, or one that is moved unsafely.`,
   mistakes: [
     {
       title: 'Trusting the word "portable" instead of the weight',
@@ -589,12 +714,6 @@ export default {
   relatedHeading: 'Related Buying Guides',
   related: [
     {
-      kicker: 'Explainer',
-      title: 'Portable Treadmills',
-      blurb: 'The three kinds of portable treadmill, typical weights and what portability costs you.',
-      url: '/portable-treadmills/',
-    },
-    {
       kicker: 'Comparison',
       title: 'Walking Pad vs Folding Treadmill',
       blurb: 'Flat under the furniture or upright against a wall: storage, speed, rails and price.',
@@ -607,9 +726,9 @@ export default {
       url: '/how-to-move-a-treadmill/',
     },
     {
-      kicker: "Roundup",
-      title: "Best Mini Treadmills",
-      blurb: "Five walking pads ranked by checked footprint and weight.",
+      kicker: 'Roundup',
+      title: 'Best Mini Treadmills',
+      blurb: 'Five walking pads ranked by checked footprint and weight.',
       url: '/best-mini-treadmills/',
     },
   ],
@@ -620,10 +739,8 @@ export default {
             want to jog or run and have a closet to roll it into, Sunny's manual walker if there is no outlet,
             and the Echelon Stride-S if you need a longer deck that still folds away.`,
     `Whichever you choose, judge it by its weight, the space it will be stored in and the route it
-            will travel, not by the word on the listing. For how the different kinds of portable treadmill
-            compare before you pick a model, read our explainer on
-            <a href="/portable-treadmills/" class="text-[#5AA9FF] font-bold no-underline">portable treadmills</a>,
-            and before the first move, our guide to
+            will travel, not by the word on the listing. Before the first move, read our guide to
             <a href="/how-to-move-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">moving a treadmill</a>.`,
   ],
+  modified: '2026-11-16',
 };

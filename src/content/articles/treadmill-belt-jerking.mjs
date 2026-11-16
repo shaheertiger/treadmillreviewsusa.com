@@ -189,7 +189,7 @@ export default {
             <strong>A rear roller that shifts.</strong> If the rear tension bolts have been backed
             off unevenly or one has come loose, the roller can move slightly in its brackets under
             load. Setting tension correctly and evenly is covered in
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>.
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>.
           </p>`,
     },
     {

@@ -77,7 +77,7 @@ const EDITORIAL_CHECKS = [
   { name: 'Editorial masthead (crumbs, title, dek)', test: (s) => s.includes('class="ed-crumbs"') && s.includes('<h1 class="ed-title">') && s.includes('class="ed-dek"') },
   { name: 'Byline with author link', test: (s) => s.includes('class="ed-byline"') && s.includes('rel="author"') },
   { name: 'Affiliate disclosure', test: (s) => s.includes('class="ed-disclosure"') },
-  { name: 'Contents ("In this guide")', test: (s) => s.includes('class="ed-toc not-prose"') && s.includes('In this guide') },
+  { name: 'Contents list', test: (s) => /<nav class="ed-toc not-prose" aria-label="[^"]+">\s*<h2>[^<]+<\/h2>/.test(s) },
   { name: 'FAQ block', test: (s) => s.includes('<section id="faq" class="ed-faq scroll-mt-24">') && s.includes('Frequently asked questions') && /<details[\s>]/.test(s) },
   {
     name: 'Common Mistakes (4 items)',
@@ -89,7 +89,7 @@ const EDITORIAL_CHECKS = [
     },
   },
   { name: 'Related reading (3+ cards)', test: (s) => (s.match(/class="card"/g) ?? []).length >= 3 },
-  { name: 'Closing "The bottom line"', test: (s) => s.includes('class="ed-bottomline"') && s.includes('<h2>The bottom line</h2>') },
+  { name: 'Closing verdict', test: (s) => /<div id="bottom-line" class="ed-bottomline">\s*<h2>[^<]+<\/h2>/.test(s) },
   { name: 'Why trust us + author card', test: (s) => s.includes('id="why-trust-us"') && s.includes('class="author-card"') },
   { name: 'jsonLd={schema} passed to Layout', test: (s) => s.includes('jsonLd={schema}') },
   { name: 'BreadcrumbList JSON-LD', test: (s) => s.includes('"BreadcrumbList"') },

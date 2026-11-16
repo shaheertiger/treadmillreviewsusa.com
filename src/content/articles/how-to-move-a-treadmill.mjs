@@ -326,7 +326,7 @@ export default {
             <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">belt centring guide</a>
             covers the quarter-turn adjustment at the rear roller. If the belt slips or hesitates
             when you step on, the
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">belt tension guide</a>
             explains how tight it should be and how to set it without over-tightening.
           </p>
           <p>
@@ -450,7 +450,7 @@ export default {
       kicker: 'How-To',
       title: 'How Tight Should a Treadmill Belt Be?',
       blurb: 'Setting tension so the belt grips without straining the motor and rollers.',
-      url: '/how-tight-should-treadmill-belt-be/',
+      url: '/how-to-adjust-treadmill-belt/',
     },
   ],
   bottomLine: [

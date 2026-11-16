@@ -173,7 +173,7 @@ export default {
             harmful on a treadmill. If you keep a small box of cloths, soap and screen cleaner next
             to the treadmill, the one-minute wipe after each
             session is easy enough to actually happen, which matters more than any product. Our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
             puts cleaning alongside lubrication and belt checks by running hours.
           </p>`,
     },

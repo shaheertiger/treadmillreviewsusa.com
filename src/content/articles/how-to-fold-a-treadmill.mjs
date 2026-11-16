@@ -370,7 +370,7 @@ export default {
             Pay attention to changes. A latch that used to click and now needs a second push, a
             deck that rocks slightly when folded, or a new creak at the hinge are all early warnings,
             and they are easier to deal with as a loose bolt than as a failed part. Our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
             folds these checks into a routine with everything else.
           </p>
           <p>

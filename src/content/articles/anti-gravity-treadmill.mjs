@@ -1,8 +1,7 @@
 export default {
   slug: 'anti-gravity-treadmill',
-  title: 'Anti-Gravity Treadmill (2026): AlterG, Costs and Home Options',
-  description:
-    'What an anti-gravity treadmill is, how AlterG differential air pressure works, who uses one, what clinic sessions and buying one typically cost, and home alternatives.',
+  title: 'Anti-Gravity Treadmill: AlterG, Costs and Home Options',
+  description: `Sessions cost about $12.50 to $75 at US clinics; press reports put a clinical machine at $35,000 to $75,000. How AlterG works, who uses one, home options.`,
   crumbLabel: 'Anti-Gravity Treadmill',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Explainer',
@@ -10,14 +9,22 @@ export default {
   updatedLong: 'October 14, 2026',
   published: '2026-10-14',
   socialProof: '1.4k',
-  h1: ['Anti-Gravity Treadmill:', 'What It Is, Who Uses One and What It Costs'],
-  standfirst:
-    'An anti-gravity treadmill lets you walk or run while carrying only part of your body weight, using air pressure rather than a harness. Here is how the AlterG and similar machines work, who they are for, how to get a session, what that costs, and what a home user can realistically do instead.',
+  h1: [
+    'Anti-Gravity Treadmill:',
+    'What It Is, Who Uses One and What It Costs',
+  ],
+  standfirst: `An anti-gravity treadmill lets you walk or run while carrying only part of your body weight, using air pressure rather than a harness. Here is how the AlterG and similar machines work, who they are for, how to get a session, what that costs, and what a home user can realistically do instead.`,
   ctas: [
     { label: 'The Short Answer', href: '#short-answer' },
     { label: 'What It Costs', href: '#session-costs' },
   ],
-  tags: ['anti-gravity treadmill', 'alter g treadmill', 'zero gravity treadmill', 'alterg', 'differential air pressure treadmill'],
+  tags: [
+    'anti-gravity treadmill',
+    'alter g treadmill',
+    'zero gravity treadmill',
+    'alterg',
+    'differential air pressure treadmill',
+  ],
   stickyCta: { text: 'What a Session Costs', link: '#session-costs' },
   lead: `The anti-gravity treadmill is one of the few pieces of rehabilitation equipment most
           people have heard of without ever seeing one. It appears in stories about professional
@@ -48,7 +55,7 @@ export default {
           <p>
             These machines are mainly found in rehabilitation hospitals, outpatient physical
             therapy clinics, university sports programmes and professional teams. Clinics that
-            sell sessions directly to the public commonly charge somewhere in the region of $15 to
+            sell sessions directly to the public commonly charge somewhere in the region of $12.50 to
             $75 per session on the US price lists we checked, depending on the package and the
             location. Buying a clinical machine costs tens of thousands of dollars. A small number
             of home-focused air-pressure treadmills now exist, and for most people the practical
@@ -411,8 +418,7 @@ export default {
     },
   ],
   mistakesHeading: 'Common Mistakes With Anti-Gravity Treadmills',
-  mistakesIntro:
-    'The machine is simple to use. The mistakes are about when, how much, and how it fits into a recovery.',
+  mistakesIntro: `The machine is simple to use. The mistakes are about when, how much, and how it fits into a recovery.`,
   mistakes: [
     {
       title: 'Booking sessions without your clinician',
@@ -454,7 +460,7 @@ export default {
     {
       kicker: 'History',
       title: 'History of the Treadmill',
-      blurb: 'From Roman treadwheels and the 1818 prison treadmill to the medical machine and the first home treadmill.',
+      blurb: `From Roman treadwheels and the 1818 prison treadmill to the medical machine and the first home treadmill.`,
       url: '/history-of-the-treadmill/',
     },
   ],

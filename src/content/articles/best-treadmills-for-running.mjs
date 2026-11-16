@@ -414,7 +414,7 @@ export default {
       kicker: 'Flagship Guide',
       title: 'Best Treadmills for Home Use',
       blurb: 'The general home ranking, across walking, jogging and running use.',
-      url: '/best-treadmill-for-home-reviews/',
+      url: '/best-treadmills-for-home/',
     },
     {
       kicker: 'Spec',

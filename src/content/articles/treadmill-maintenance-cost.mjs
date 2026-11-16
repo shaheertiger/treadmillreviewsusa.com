@@ -77,7 +77,7 @@ export default {
             that roughly doubles, it is the best-value hour anyone spends on a treadmill. Our
             <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
             lays out the full year, and the
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">printable checklist</a>
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">printable checklist</a>
             turns it into something you can work through.
           </p>`,
     },
@@ -205,7 +205,7 @@ export default {
             The split is reasonably clear, and it is drawn around the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a>.
           </p>
           <p>
-            <strong>Do yourself:</strong> lubrication, cleaning, <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> adjustment, belt
+            <strong>Do yourself:</strong> lubrication, cleaning, <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> adjustment, belt
             tracking and centring, vacuuming around and under the machine, and tightening frame
             fasteners. All are documented, none requires special tools, and all are done with the
             machine unplugged.

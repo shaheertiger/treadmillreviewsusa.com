@@ -122,7 +122,7 @@ export default {
             One complication worth knowing: a seam noise that appeared shortly after someone
             over-tightened the belt is sometimes the tension, not the seam. A belt pulled too tight
             bends the joint harder over the rollers. Check the lift test in our
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">belt tension guide</a>
             before ordering anything.
           </p>`,
     },

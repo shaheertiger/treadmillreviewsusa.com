@@ -362,7 +362,7 @@ export default {
             <strong>Keep the motor cool.</strong> Vacuum the motor compartment annually, or every six
             months on carpet or with pets, and keep the floor under the front of the machine clean.
             Our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
             puts both on a schedule.
           </p>
           <p>

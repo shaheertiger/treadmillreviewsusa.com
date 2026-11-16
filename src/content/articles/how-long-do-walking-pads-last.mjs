@@ -194,7 +194,7 @@ export default {
           </p>
           <p>
             <strong>4. Rollers and bearings.</strong> Usually long-lived, unless the belt has been
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>over-tightened</a>, which loads the bearings continuously. A rising whine or grinding that
+            <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>over-tightened</a>, which loads the bearings continuously. A rising whine or grinding that
             follows the belt speed, rather than the motor, often points here.
           </p>
           <p>

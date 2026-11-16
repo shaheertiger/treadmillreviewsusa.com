@@ -600,7 +600,7 @@ export default {
       kicker: 'Router',
       title: 'Home Treadmills: Which Buyer Are You?',
       blurb: 'A routing guide that sends you to the right specialised guide for your situation.',
-      url: '/home-treadmills/',
+      url: '/best-treadmills-for-home/',
     },
   ],
   bottomLine: [

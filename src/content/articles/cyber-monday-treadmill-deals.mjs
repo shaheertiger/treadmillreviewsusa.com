@@ -45,7 +45,7 @@ export default {
             bundles and delivered cost — read our guide to
             <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">treadmill Black Friday deals</a>.
             For the whole market rather than the online-friendly end of it, see the
-            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals 2026</a>
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals 2026</a>
             pillar.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[620px] w-full text-sm border-collapse">
@@ -609,7 +609,7 @@ export default {
             Our guide to
             <a href="/treadmill-black-friday-deals/" class="text-[#5AA9FF] font-bold no-underline">judging a treadmill deal</a>
             covers the method, and the
-            <a href="/black-friday-treadmill-deals-2026/" class="text-[#5AA9FF] font-bold no-underline">Black Friday 2026 pillar</a>
+            <a href="/treadmill-black-friday-deals/" class="text-[#5AA9FF] font-bold no-underline">Black Friday 2026 pillar</a>
             covers the rest of the market.`,
   ],
 };

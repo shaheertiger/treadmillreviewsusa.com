@@ -479,7 +479,7 @@ export default {
   related: [
     { kicker: 'Troubleshooting', title: 'Treadmill Safety Key Not Working', blurb: 'Cords, clips, reed switches and when the key is not the fault.', url: '/treadmill-safety-key-not-working/' },
     { kicker: 'Safety', title: 'Treadmill Safety Tips', blurb: 'The key, clearance, children, and getting on and off.', url: '/treadmill-safety-tips/' },
-    { kicker: 'Maintenance', title: 'Treadmill Maintenance Checklist', blurb: 'What to check weekly, monthly and yearly.', url: '/treadmill-maintenance-checklist/' },
+    { kicker: 'Maintenance', title: 'Treadmill Maintenance Checklist', blurb: 'What to check weekly, monthly and yearly.', url: '/treadmill-maintenance/' },
   ],
   bottomLine: [
     `<strong class="text-white">Match the part number, then test the key.</strong> Find your

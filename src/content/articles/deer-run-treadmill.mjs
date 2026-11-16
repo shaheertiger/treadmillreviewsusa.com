@@ -1,31 +1,31 @@
 export default {
   slug: 'deer-run-treadmill',
-  title: 'Deer Run Treadmill Guide (2026): Models, Claims and Warranty',
+  title: 'Deer Run Treadmill Reviews (2026): Is DeerRun Legit?',
   description:
-    'DeerRun sells walking pads and folding treadmills mainly through its own store. The current range, where its figures contradict each other, the real warranty and return terms, and what to buy instead.',
+    'DeerRun is a real seller, not a scam, but its pads carry a 1-year warranty, a 60-day trial limited to unused machines and motor claims a teardown disputes.',
   crumbLabel: 'Deer Run Treadmill',
   breadcrumb: { name: 'Brands', url: '/brands/' },
-  kicker: 'Buyer\'s Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 20, 2026',
+  kicker: 'Brand Guide',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-20',
+  modified: '2026-11-16',
   socialProof: '1.2k',
-  h1: ['Deer Run Treadmill:', 'What the Listings Claim'],
+  h1: ['Deer Run Treadmill Reviews:', 'Is DeerRun Legit?'],
   standfirst:
     'DeerRun is a direct-to-consumer brand of cheap walking pads and folding treadmills tied to the PitPat app. Some of its machines can be sensible buys for walking, provided you read every figure as the seller’s claim, know what the “risk-free trial” really allows, and compare it with better-documented pads first.',
   ctas: [
-    { label: 'The Short Answer', href: '#short-answer' },
-    { label: 'Warranty and Returns', href: '#warranty-and-returns' },
+    { label: 'Is DeerRun Legit?', href: '#is-deerrun-legit' },
+    { label: 'Owner Complaints', href: '#owner-complaints' },
   ],
-  tags: ['deer run treadmill', 'deer run treadmill reviews', 'deerrun walking pad', 'deerrun treadmill', 'deerrun q2 urban', 'deerrun z10'],
+  tags: ['deer run treadmill reviews', 'deerrun treadmill reviews', 'deer run treadmill', 'is deerrun legit', 'deerrun walking pad', 'deerrun treadmill', 'deerrun q2 urban', 'deerrun z10'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  lead: `If you searched for a Deer Run treadmill, you probably saw a pastel walking pad with a 7% or
-          12% incline badge and a price that looked half off. The brand behind it, written DeerRun, is
-          real: it has a Texas showroom, a large catalogue and its own app. What it does not have is
-          much independent evidence for what its machines are built from, and its own pages disagree
-          with each other on several figures that matter. This guide sets out who DeerRun is, what it
-          sells now, which claims hold up and which do not, what the warranty and returns really
-          cover, and how its pads compare with the ones we already recommend.`,
+  lead: `DeerRun, the brand most people type as Deer Run, is a real seller rather than a scam: a
+          Houston company sells its walking pads through its own store and on Target.com, and runs a
+          showroom in Katy, Texas. What it lacks is independent evidence for its specifications. Its
+          motor and noise claims are disputed, its own pages contradict each other, the warranty is
+          one year and the “60-day risk-free trial” is limited to unused machines. This review sets out
+          which claims hold up, what owners complain about, and which pads to compare it with first.`,
   sections: [
     {
       id: 'short-answer',
@@ -54,6 +54,57 @@ export default {
             the machine to be unused and in its <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a>. None of that makes a DeerRun pad
             dangerous or useless. It does mean the useful way to judge one is as a set of claims with a
             price attached, which is how the rest of this page reads it.
+          </p>`,
+    },
+    {
+      id: 'is-deerrun-legit',
+      heading: 'Is Deer Run a Legit Brand?',
+      html: `          <p>
+            <strong>Yes, in the sense that matters most: DeerRun is a real business that sells and ships
+            real machines under a named US company, with written warranty and refund terms.</strong> It
+            is not a brand whose claims you can take on trust, though, and the closest thing to a scam in
+            its story is the copycat websites that impersonate it, not DeerRun itself.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What points to a legitimate seller</h3>
+          <ul>
+            <li><strong>A named company and address.</strong> The contact page on DeerRun’s US store names
+            JOYFIT INC on Harwin Drive in Houston, and the Better Business Bureau’s directory lists DeerRun
+            at the same address and phone number.</li>
+            <li><strong>A place you can visit.</strong> The store advertises a flagship showroom in Katy,
+            Texas, where machines can be tried in person.</li>
+            <li><strong>A major-retailer listing.</strong> Target.com carries at least one DeerRun machine
+            as a marketplace listing, sold and shipped by DeerRun, with a 30-day return by mail or in
+            store.</li>
+            <li><strong>Written terms.</strong> There is a warranty page, a refund policy updated on
+            7 October 2026 that charges no restocking fee and promises refunds within 72 hours of
+            inspection, and support by email and a US phone line six days a week.</li>
+            <li><strong>A clean safety record.</strong> We found no CPSC recall or warning for any DeerRun
+            product when we searched on 20 October 2026.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What should make you careful</h3>
+          <ul>
+            <li><strong>Specifications that do not survive checking.</strong> DeerRun advertises brushless
+            motors, and the one independent teardown of a Q2 Urban we found reported a brushed motor. The
+            Z10 page gives two noise figures 20 dB apart. The details are in the section on DeerRun’s
+            figures below.</li>
+            <li><strong>Terms narrower than the headlines.</strong> The “60-day risk-free trial” sits on
+            top of a refund policy that requires an unused machine in its original packaging, and the
+            warranty has fallen from the two years described in 2023 and early 2025 to one year now.</li>
+            <li><strong>Discounts that are hard to read.</strong> Most listings show a struck-through “was”
+            price close to double the current one, and the same model appears at different prices on
+            different listings.</li>
+            <li><strong>An unclear ownership chain.</strong> A trade-fair profile names a Chinese company
+            behind the brand and app, while the store names a Texas company. We could not establish how
+            they relate.</li>
+            <li><strong>Impostor stores.</strong> DeerRun’s own consumer-protection page warns that
+            criminals have copied its website and taken orders without delivering, and names
+            deerruntreadmill.com as its only official domain.</li>
+          </ul>
+          <p>
+            Put together, DeerRun is legitimate as a seller and doubtful as a source of figures. If you
+            search for “Deer Run scam”, the realistic risks are buying from a look-alike site, relying on
+            a trial the written policy does not promise, and choosing a pad on a motor or noise claim that
+            may not hold. The checks at the end of this page deal with all three.
           </p>`,
     },
     {
@@ -108,7 +159,7 @@ export default {
     },
     {
       id: 'current-range',
-      heading: 'The Current DeerRun Range',
+      heading: 'What Treadmills Does DeerRun Sell?',
       html: `          <p>
             These are the treadmills and walking pads in DeerRun’s US store on 20 October 2026, grouped
             the way the store groups them, with the figures each listing gives and the price shown that
@@ -159,10 +210,11 @@ export default {
     },
     {
       id: 'listing-contradictions',
-      heading: 'Where DeerRun’s Figures Contradict Each Other',
+      heading: 'Are DeerRun’s Specs Accurate?',
       html: `          <p>
-            Budget fitness listings drift as text is copied between models, colours and marketplaces.
-            DeerRun’s show the pattern clearly. These are the disagreements we found on the day we
+            Not reliably: several of DeerRun’s headline figures contradict each other or an independent
+            source. Budget fitness listings drift as text is copied between models, colours and
+            marketplaces, and DeerRun’s show the pattern clearly. These are the disagreements we found on the day we
             checked, between DeerRun’s own pages and between DeerRun and independent sources.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Brushless or brushed?</h3>
@@ -229,7 +281,7 @@ export default {
     },
     {
       id: 'warranty-and-returns',
-      heading: 'Warranty, Returns and the “Risk-Free Trial”',
+      heading: 'What Warranty Does DeerRun Offer, and How Risk-Free Is the Trial?',
       html: `          <p>
             This is the part of a DeerRun purchase most worth reading slowly, because the headline
             promises and the written terms are not the same.
@@ -288,19 +340,61 @@ export default {
             but check the return terms on the listing on the day you buy, because marketplace terms vary
             by seller and category, and warranty claims will still go to DeerRun.
           </p>
-          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Support and the complaint record</h3>
           <p>
             Support is by email, with a stated average reply time of 24 hours, and by a US phone line six
-            days a week. Independent coverage of DeerRun repeats the same kinds of complaint: shipping
-            delays, slow refunds, and units that failed early, including reports of a pad that smoked and
-            of a motor that stopped after a few months. We could not verify individual cases, and any
-            brand selling in volume attracts complaints, but the pattern is consistent enough that you
-            should pay by a method that gives you a chargeback route, such as a credit card.
+            days a week.
+          </p>`,
+    },
+    {
+      id: 'owner-complaints',
+      heading: 'What Do Deer Run Owners Complain About?',
+      html: `          <p>
+            <strong>The complaints that recur in independent coverage of DeerRun are shipping delays, slow
+            refunds and units that failed early, including reports of a pad that smoked and of a motor that
+            stopped after a few months.</strong> We have not collected or verified owner reviews ourselves,
+            and any brand selling in volume attracts complaints, so read what follows as a pattern reported
+            by others, set against what DeerRun’s own pages say.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Delivery and refunds</h3>
+          <p>
+            Shipping delays and slow refunds are the most repeated complaints. They fit the way DeerRun
+            sells: several of its larger machines have been sold as pre-orders with promised ship dates,
+            and the checkout offers paid Ship-Date Protection and Price Lock add-ons that pay out in DeerRun
+            gift cards rather than cash. On refunds, the written policy promises processing within 72 hours
+            once the warehouse has inspected the return, so the clock starts when the machine arrives back,
+            not when you send it. Even the store’s own warehouse count varies, from one to five depending on
+            the page, which makes it hard to predict where a return will go.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Early failures</h3>
+          <p>
+            Reports of a pad that smoked and a motor that stopped after a few months are the serious end of
+            the record. We could not verify them, and we found no CPSC recall or warning for any DeerRun
+            product. They do matter alongside the warranty, which is one year with no longer term for the
+            motor or frame, and alongside the teardown that found a brushed motor of roughly 0.6 HP
+            continuous in a Q2 Urban advertised as brushless. A small motor is normal on a walking pad; it is
+            the gap between the claim and the hardware that leaves buyers feeling misled.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Smaller gripes from owners and reviewers</h3>
+          <ul>
+            <li><strong>The Q2 Urban’s incline.</strong> An owner quoted by an independent site described
+            the 7% incline as a fixed position: flat or tilted, with nothing in between.</li>
+            <li><strong>The app.</strong> An independent reviewer of an earlier DeerRun pad found that the
+            PitPat app asked for phone permissions she thought unnecessary, and that its competitions
+            needed a subscription or paid entry. The pads run without the app.</li>
+            <li><strong>Noise.</strong> We have no owner measurements, but the Z10’s page claims both under
+            45 dB and 65 dB, so expectations set by the lower figure are easy to miss.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How to avoid becoming a complaint</h3>
+          <p>
+            Pay by a method that gives you a chargeback route, such as a credit card. Screenshot the return
+            window on the product page you buy from. Keep every piece of packaging, and run the pad through
+            its full speed and incline range in the first few days, while a return or warranty claim is
+            least open to argument. If a fault appears, report it in writing and keep DeerRun’s replies.
           </p>`,
     },
     {
       id: 'safety-record',
-      heading: 'Recalls: What the CPSC Record Shows',
+      heading: 'Has DeerRun Had a Recall?',
       html: `          <p>
             We searched the US Consumer Product Safety Commission’s recall database for DeerRun, Deer Run,
             JOYFIT and PitPat on 20 October 2026, and read its recent product safety warnings for walking
@@ -333,7 +427,7 @@ export default {
     },
     {
       id: 'pitpat-and-extras',
-      heading: 'PitPat, Rentals and the Paid Add-Ons',
+      heading: 'Do You Need the PitPat App, and What Are the Paid Add-Ons?',
       html: `          <p>
             DeerRun’s machines connect to its PitPat app, which records workouts and runs online races and
             challenges, some of which the brand describes as “cash contests”. An independent reviewer of an
@@ -363,7 +457,7 @@ export default {
     },
     {
       id: 'compared',
-      heading: 'DeerRun Compared With the Walking Pads We Recommend',
+      heading: 'How Does DeerRun Compare With UREVO and MERACH?',
       html: `          <p>
             Our
             <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a>
@@ -414,7 +508,7 @@ export default {
     },
     {
       id: 'before-you-buy',
-      heading: 'What to Check Before Buying a DeerRun, and Who Should',
+      heading: 'Should You Buy a DeerRun Treadmill?',
       html: `          <p>
             If a DeerRun pad still looks like the right machine, these checks cover most of what can go
             wrong.
@@ -447,6 +541,14 @@ export default {
     },
   ],
   faqs: [
+    {
+      q: 'Is Deer Run a legit company or a scam?',
+      a: 'DeerRun is a real seller: its US store names JOYFIT INC of Houston, the BBB directory lists it at the same address, it runs a showroom in Katy, Texas, and Target.com carries its machines sold and shipped by DeerRun. The scam risk is copycat sites; DeerRun says deerruntreadmill.com is its only official domain. Treat its specifications as claims.',
+    },
+    {
+      q: 'What do Deer Run owners complain about?',
+      a: 'Independent coverage repeats three complaints: shipping delays, slow refunds, and units that failed early, including a pad that smoked and a motor that stopped after a few months. We could not verify individual cases. Smaller gripes include the Q2 Urban’s fixed-position incline and an app that asks for broad phone permissions.',
+    },
     {
       q: 'Who makes Deer Run treadmills?',
       a: 'DeerRun’s US store names JOYFIT INC of Houston, Texas, as the company, and a 2024 press release named Kevin Zhang as founder of JOYFIT and CEO of DeerRun. A FIBO 2026 trade-fair profile presented Hangzhou Ruze Electronic Commerce Co., Ltd. as the company behind the brand. We could not establish how the companies relate, and the store names no factory.',

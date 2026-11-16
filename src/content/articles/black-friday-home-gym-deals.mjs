@@ -161,7 +161,7 @@ export default {
           <p>
             <strong>Cyber Monday and the week after.</strong> Some offers carry over or are
             replaced by different ones on Cyber Monday. The main treadmill hub,
-            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals 2026</a>,
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals 2026</a>,
             tracks that for cardio machines. For home gym equipment, December is usually quieter,
             and January brings its own New Year promotions, which is worth remembering if nothing
             on your list reaches your price in November.

@@ -1,30 +1,75 @@
+const th = 'text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4';
+const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
+
 export default {
   slug: 'treadmill-interval-workouts',
-  title: 'Treadmill Interval Workouts: Sessions That Actually Work',
+  title: 'Treadmill Interval Training: 5 Workouts From Beginner to Hard',
   description:
-    'Five interval sessions from beginner to advanced, how to pick the pace so you finish the last rep, and why the belt not slowing down when you tire changes everything.',
+    'Start with 6 rounds of 1 minute hard and 2 easy, once a week. Five treadmill interval workouts in one table, how to set a pace you can finish, and safety.',
   crumbLabel: 'Treadmill Interval Workouts',
   kicker: 'Training Guide',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-08',
+  modified: '2026-11-16',
   socialProof: '5.2k',
-  h1: ['Treadmill', 'Interval Workouts'],
+  h1: ['Interval Training', 'on a Treadmill'],
   standfirst:
     'Intervals are the most efficient and most over-prescribed session on a treadmill. Five structures, how to set a pace you can finish, and the one safety difference from running outdoors.',
   ctas: [
-    { label: 'The Five Sessions', href: '#five-sessions' },
+    { label: 'The Five Sessions', href: '#short-answer' },
     { label: 'Setting the Pace', href: '#setting-pace' },
   ],
   tags: ['treadmill interval workouts', 'treadmill hiit', 'interval training', 'treadmill sprints', 'treadmill workouts'],
-  stickyCta: { text: 'See the Five Sessions', link: '#five-sessions' },
-  lead: `Intervals do more for fitness per minute than anything else you can do on a treadmill,
+  stickyCta: { text: 'See the Five Sessions', link: '#short-answer' },
+  lead: `Interval training on a treadmill means short hard efforts separated by easy recoveries,
+          and the right place to start is 6 rounds of 1 minute hard and 2 minutes easy, once a
+          week. Intervals do more for fitness per minute than anything else you can do on a treadmill,
           and they are the reason more treadmill habits end in injury than in boredom. The
           sessions below are structured so that the second point does not happen to you.`,
   sections: [
     {
+      id: 'short-answer',
+      navLabel: 'The Five Workouts at a Glance',
+      heading: 'Interval Training on a Treadmill: The Short Answer',
+      html: `          <p>
+            <strong>Start with session one below, once a week, for three weeks.</strong> Every
+            treadmill interval workout is a set number of hard efforts with easy recoveries between
+            them, wrapped in a 10-minute easy warm-up and a 5-minute easy cool-down. The five
+            sessions run easiest first; move down the table only when the one above feels
+            controlled to the last rep.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Session</th>
+                <th class="${th}">Level</th>
+                <th class="${th}">Work / recovery</th>
+                <th class="${th}">Rounds</th>
+                <th class="${th}">Hard work</th>
+                <th class="${th}">Total time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">1. First intervals</td><td class="${td}">Beginner</td><td class="${td}">1 min hard / 2 min easy</td><td class="${td}">6</td><td class="${td}">6 min</td><td class="${td}">33 min</td></tr>
+              <tr><td class="${td}">2. Short and sharp</td><td class="${td}">Beginner</td><td class="${td}">30 sec hard / 1 min easy</td><td class="${td}">10</td><td class="${td}">5 min</td><td class="${td}">30 min</td></tr>
+              <tr><td class="${td}">3. The classic</td><td class="${td}">Intermediate</td><td class="${td}">2 min hard / 2 min easy</td><td class="${td}">4</td><td class="${td}">8 min</td><td class="${td}">31 min</td></tr>
+              <tr><td class="${td}">4. Pyramid</td><td class="${td}">Intermediate</td><td class="${td}">1, 2, 3, 2, 1 min hard / equal easy after each</td><td class="${td}">5</td><td class="${td}">9 min</td><td class="${td}">33 min</td></tr>
+              <tr><td class="${td}">5. Sustained</td><td class="${td}">Advanced</td><td class="${td}">4 min hard / 90 sec easy</td><td class="${td}">4</td><td class="${td}">16 min</td><td class="${td}">37 min</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Total time includes the 10-minute warm-up and 5-minute cool-down. "Hard" means you can
+            manage single words but not a sentence; "easy" means you could hold a conversation.
+            Set the speed for the final round, not the first, because the belt will not slow down
+            for you as you tire. Joints or a downstairs neighbour a concern? Run the same table as
+            <a href="#incline-intervals" class="text-[#0F62FE] font-medium">incline intervals</a>
+            instead, raising the grade rather than the speed.
+          </p>`,
+    },
+    {
       id: 'what-is-an-interval',
-      heading: 'What an Interval Session Actually Is',
+      heading: 'What Is Interval Training on a Treadmill?',
       html: `          <p>
             Repeated efforts at an intensity you could not sustain continuously, separated by
             recovery periods long enough to repeat the effort properly. That last clause is the
@@ -39,7 +84,7 @@ export default {
             you are after.
           </p>
           <p>
-            That is also why intervals are efficient. A 28-minute interval session including
+            That is also why intervals are efficient. A 33-minute interval session including
             <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium" data-autolink>warm-up and cool-down</a> can do more for cardiovascular fitness than 45 minutes of steady
             moderate work. The cost is that it is genuinely demanding and needs recovery, which is
             why our <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">training guide</a>
@@ -48,7 +93,8 @@ export default {
     },
     {
       id: 'two-variables',
-      heading: 'The Two Variables That Define a Session',
+      navLabel: 'The Two Variables That Define a Session',
+      heading: 'What Makes One Interval Session Harder Than Another?',
       html: `          <p>
             Every interval session is described by effort length and recovery length. Changing
             either changes what the session trains and how hard it is to recover from.
@@ -76,7 +122,8 @@ export default {
     },
     {
       id: 'setting-pace',
-      heading: 'Setting a Pace You Can Actually Finish',
+      navLabel: 'Setting a Pace You Can Finish',
+      heading: 'How Fast Should Treadmill Intervals Be?',
       html: `          <p>
             This is where most interval sessions go wrong, and the treadmill makes it worse than
             outdoors. Outdoors you slow down as you tire without deciding to. On a belt, the speed
@@ -104,18 +151,19 @@ export default {
     },
     {
       id: 'five-sessions',
-      heading: 'Five Sessions, Easiest First',
+      navLabel: 'The Five Sessions in Detail',
+      heading: 'How Do You Do Each of the Five Sessions?',
       html: `          <p>
             Every session below includes a 10-minute easy warm-up and a 5-minute easy cool-down,
             which are not optional. Times are in minutes.
           </p>
           <p>
-            <strong>One — First intervals (28 min total).</strong> Warm up 10. Then 6 rounds of
+            <strong>One — First intervals (33 min total).</strong> Warm up 10. Then 6 rounds of
             1 minute hard, 2 minutes easy. Cool down 5. Six minutes of hard work in total; do this
             for three weeks before changing anything.
           </p>
           <p>
-            <strong>Two — Short and sharp (27 min).</strong> Warm up 10. Then 10 rounds of
+            <strong>Two — Short and sharp (30 min).</strong> Warm up 10. Then 10 rounds of
             30 seconds hard, 1 minute easy. Cool down 5. Develops speed with minimal fatigue cost.
           </p>
           <p>
@@ -129,7 +177,7 @@ export default {
             shorter than it is.
           </p>
           <p>
-            <strong>Five — Sustained (36 min).</strong> Warm up 10. Then 4 rounds of 4 minutes
+            <strong>Five — Sustained (37 min).</strong> Warm up 10. Then 4 rounds of 4 minutes
             hard, 90 seconds easy. Cool down 5. Genuinely difficult. Only once sessions one to four
             are comfortable.
           </p>
@@ -139,7 +187,8 @@ export default {
     },
     {
       id: 'incline-intervals',
-      heading: 'Incline Intervals: Harder, Lower Impact',
+      navLabel: 'Incline Intervals',
+      heading: 'Are Incline Intervals Easier on Your Joints?',
       html: `          <p>
             Instead of raising speed for the effort, raise the grade and keep the speed constant.
             The cardiovascular demand goes up substantially; the impact per footfall does not.
@@ -165,7 +214,8 @@ export default {
     },
     {
       id: 'treadmill-safety',
-      heading: 'The Treadmill-Specific Safety Rules',
+      navLabel: 'Treadmill Safety Rules',
+      heading: 'How Do You Do Intervals Safely on a Treadmill?',
       html: `          <p>
             Interval training on a belt has failure modes that outdoor intervals do not, and all
             of them are avoidable.
@@ -198,7 +248,8 @@ export default {
     },
     {
       id: 'how-often',
-      heading: 'How Often — and Why the Answer Is Low',
+      navLabel: 'How Often',
+      heading: 'How Often Should You Do Treadmill Intervals?',
       html: `          <p>
             <strong>Once a week</strong> for most people. <strong>Twice</strong> is the ceiling
             for anyone training seriously, and those two sessions should be at least two days
@@ -206,7 +257,7 @@ export default {
           </p>
           <p>
             The reason is that high-intensity work generates fatigue disproportionate to its
-            duration. A 28-minute interval session costs more recovery than a 45-minute easy one,
+            duration. A 33-minute interval session costs more recovery than a 45-minute easy one,
             and recovery is when adaptation happens. Three interval sessions a week produces
             accumulating fatigue, deteriorating session quality, and eventually either injury or
             the decision that training is unpleasant.
@@ -222,7 +273,8 @@ export default {
     },
     {
       id: 'progression',
-      heading: 'How to Progress',
+      navLabel: 'How to Progress',
+      heading: 'How Do You Make Treadmill Intervals Harder Over Time?',
       html: `          <p>
             Progress intervals by <strong>adding rounds, not speed.</strong> Going from 6 rounds
             of 1 minute to 8 is a clean 33% increase in work at a pace you have already proved you
@@ -246,7 +298,8 @@ export default {
     },
     {
       id: 'walking-intervals',
-      heading: 'Intervals for Walkers',
+      navLabel: 'Intervals for Walkers',
+      heading: 'Can You Do Interval Training on a Treadmill by Walking?',
       html: `          <p>
             Nothing about interval training requires running, and walkers get the same benefits
             from the same structures.
@@ -273,7 +326,8 @@ export default {
     },
     {
       id: 'tabata',
-      heading: 'Tabata and Very Short Protocols',
+      navLabel: 'Tabata and Very Short Protocols',
+      heading: 'Does Tabata Work on a Treadmill?',
       html: `          <p>
             Tabata — 20 seconds maximal, 10 seconds rest, eight rounds, four minutes total — comes
             up constantly and is a poor fit for a treadmill specifically.
@@ -302,7 +356,8 @@ export default {
     },
     {
       id: 'verdict',
-      heading: 'Where to Start',
+      navLabel: 'Where to Start',
+      heading: 'Which Treadmill Interval Workout Should You Start With?',
       html: `          <p>
             Do <strong>session one</strong> — 6 rounds of 1 minute hard, 2 minutes easy — once a
             week for three weeks before changing anything. That is six minutes of hard work per
@@ -327,7 +382,7 @@ export default {
     },
     {
       q: 'What is a good beginner treadmill interval workout?',
-      a: `Warm up 10 minutes easy, then 6 rounds of 1 minute hard and 2 minutes easy, then 5 minutes easy to finish — about 28 minutes with six minutes of hard work in it. Do that once a week for three weeks before adding rounds.`,
+      a: `Warm up 10 minutes easy, then 6 rounds of 1 minute hard and 2 minutes easy, then 5 minutes easy to finish — about 33 minutes with six minutes of hard work in it. Do that once a week for three weeks before adding rounds.`,
     },
     {
       q: 'How fast should treadmill intervals be?',
