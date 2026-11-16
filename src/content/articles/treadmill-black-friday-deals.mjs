@@ -11,7 +11,7 @@ export default {
   modified: '2026-11-16',
   socialProof: '2.4k',
   h1: ['Treadmill', 'Black Friday Deals'],
-  standfirst: `Black Friday is Friday 27 November this year, and no retailer has published its treadmill prices yet. Here are seven machines on Amazon worth watching, one or two in every tier, with what each sold for when we checked and the price at which we would call it a good deal.`,
+  standfirst: `Black Friday is Friday 27 November this year and Cyber Monday is 30 November. Here are seven machines on Amazon worth watching, one or two in every tier, with what each sold for when we checked and the price at which we would call it a good deal.`,
   ctas: [
     { label: 'The 2026 Watch List', href: '#quick-picks' },
     { label: 'How to Judge a Deal', href: '#judge-the-price' },
