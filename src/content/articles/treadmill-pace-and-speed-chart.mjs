@@ -2,7 +2,7 @@ export default {
   slug: 'treadmill-pace-and-speed-chart',
   title: 'Treadmill Pace & Speed Chart: mph, Pace and Incline',
   description:
-    'Convert treadmill mph to minutes per mile and km/h, see what each speed actually feels like, and what an incline grade is worth in equivalent flat effort.',
+    '6 mph is a 10:00 mile, 7.5 mph is 8:00 and 10 mph is 6:00. The full mph-to-pace chart, km/h, how each speed feels, and what each incline grade is worth.',
   crumbLabel: 'Treadmill Pace & Speed Chart',
   kicker: 'Reference',
   updated: 'September 2026',

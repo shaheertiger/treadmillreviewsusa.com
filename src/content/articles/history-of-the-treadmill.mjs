@@ -2,7 +2,7 @@ export default {
   slug: 'history-of-the-treadmill',
   title: 'History of the Treadmill: When Was It Invented, and by Whom?',
   description:
-    'From Roman treadwheel cranes and the 1818 prison treadmill to the 1913 patent, the medical treadmill and the first home machines: the treadmill story, dated with care.',
+    'No single inventor: William Cubitt\'s prison treadmill came in 1818, Claude Hagen\'s patent in 1913 and William Staub\'s first home treadmill in the late 1960s.',
   crumbLabel: 'History of the Treadmill',
   kicker: 'History',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },

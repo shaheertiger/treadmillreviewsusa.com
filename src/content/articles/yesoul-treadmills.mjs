@@ -228,7 +228,7 @@ export default {
             The T3S Plus’s screen size, incline range, top speed and motor figure agree between Yesoul and Best
             Buy’s listings. The T5 series publishes a continuous motor rating, 2.0 HP, alongside the 4.5 HP peak,
             which most budget brands do not, and its five-year frame, three-year motor and one-year parts and
-            labour warranty appears both on Yesoul’s specification page and in Sole’s independent comparison.
+            labour warranty appears both on Yesoul’s specification page and in Sole’s comparison page (Sole is a rival brand).
             Against that, the sold-out T3S Pro’s page gives its motor as both 3.0 and 3.5 HP, the T3S Plus motor
             is rated only as a 3.0 HP maximum with no continuous figure, and the optional membership price quoted
             by Sole could not be confirmed on Yesoul’s store.
@@ -281,7 +281,7 @@ export default {
       heading: 'Yesoul T3S Plus Review: Is It Good for Running or Only Walking?',
       html: `          <p>
             It is a walking and jogging machine, not a running one. The T3S Plus is the Yesoul with the most
-            reviews on retailer sites, and the one most people mean by "Yesoul treadmill". It is easiest to
+            coverage, and the one most people mean by "Yesoul treadmill". It is easiest to
             understand as a compact folding walking and jogging treadmill with an unusually large screen.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The screen is the point</h3>
@@ -380,7 +380,7 @@ export default {
           <p>
             The T5 models carry a much longer warranty: five years on the frame, three on the motor and 12 months
             on parts and labour, according to Yesoul’s specification page, with the same five, three and one-year
-            split in Sole’s independent comparison. The home trial is 30 days from delivery, but a non-quality
+            split in Sole’s comparison page. The home trial is 30 days from delivery, but a non-quality
             return carries a $300 return shipping fee, and paid delivery and installation fees are not refunded.
             Keep the box and internal packaging until you are sure. If the T5’s price drops within 30 days of your
             order, Yesoul says it will refund the difference on request.

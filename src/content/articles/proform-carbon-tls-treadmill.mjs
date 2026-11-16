@@ -1,13 +1,14 @@
 export default {
   slug: 'proform-carbon-tls-treadmill',
-  title: 'ProForm Carbon TLS Treadmill Review (2026): Specs, iFIT, Warranty',
+  title: 'ProForm Carbon TL & TLS Treadmill Review (2026): TL vs TLS',
   description:
-    'The ProForm Carbon TLS treadmill checked against ProForm’s listing, a retailer listing and independent coverage: an 18 x 55 in. folding deck, 10 mph, 12% incline and 300 lb rating, run through iFIT on your own device. Conflicting warranty terms explained.',
+    'The ProForm Carbon TLS is a compact walking treadmill, not a runner: 18 x 55 in. belt, 12% incline, 10 mph, 300 lb. The older Carbon TL is a different model.',
   crumbLabel: 'ProForm Carbon TLS Treadmill',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-14',
+  modified: '2026-11-16',
   socialProof: '1.4k',
   h1: ['ProForm Carbon TLS', 'Treadmill Review'],
   standfirst:
@@ -17,7 +18,9 @@ export default {
     { label: 'Who Should Buy It', href: '#who-should-buy' },
   ],
   tags: [
+    'proform carbon tl treadmill reviews',
     'proform carbon tls treadmill',
+    'proform carbon tl vs tls',
     'proform carbon tls review',
     'proform carbon tls vs tlx',
     'proform carbon tls warranty',
