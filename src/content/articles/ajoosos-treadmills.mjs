@@ -130,7 +130,7 @@ export default {
             figures turn out optimistic, and check it against the list below before you pay.
           </p>
           <p>
-            That is not an accusation. A great many walking pads on Amazon carry names that tell you
+            That is not an accusation. A great many <a href="/best-walking-pads-on-amazon/" class="text-[#0F62FE] font-medium" data-autolink>walking pads on Amazon</a> carry names that tell you
             nothing about who built them, and plenty of those pads are perfectly usable for slow
             walking at a desk. AJOOSOS is an unusual case only because the name belongs to an
             established scooter seller, which can make the treadmill feel better documented than it

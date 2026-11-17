@@ -223,7 +223,7 @@ export default {
           </p>
           <p>
             InMovement’s products are sold direct and through iMovR, not on Amazon, so the cards below show
-            the nearest Amazon alternatives instead: a 400 lb walking pad in place of the Unsit, a standing
+            the nearest Amazon alternatives instead: a 400 lb <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> in place of the Unsit, a standing
             desk in place of InMovement’s own, LifeSpan’s TX6-GlowUp, and a lower-priced office pad in place
             of LifeSpan’s TR1200Pro. The Unsit’s own figures are set out in the next section.
           </p>`,

@@ -68,7 +68,7 @@ export default {
             choosing one. Several of these are sold mainly through specialist dog-equipment
             retailers rather than general stores, and some ship by freight only. GoPet's toy and
             small-medium machines are sold only through those dealers, so their cards show the
-            nearest small-dog treadmills on Amazon instead. The same applies to the four larger machines
+            nearest small-dog <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium" data-autolink>treadmills on Amazon</a> instead. The same applies to the four larger machines
             we compare in this guide: the dogPACER LF 3.1 and LF 4.0 could not be found in stock from a
             US seller, and Dog Runner and Dog Trotter USA sell through their own dealers, so their cards
             show the closest machines Amazon sells. Those cards' figures are the sellers' listing claims,

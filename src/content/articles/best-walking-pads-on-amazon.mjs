@@ -205,7 +205,7 @@ export default {
             only reliable answer is the one on the listing you are about to buy from.
           </p>
           <p>
-            One example shows how the details work. When we checked the WalkingPad Z1, its Amazon
+            One example shows how the details work. When we checked the <a href="/walkingpad-z1-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad Z1</a>, its Amazon
             listing gave a 30-day refund or replacement, noted that a return shipping fee may apply and
             said the item is not eligible for free returns. In other words, a change-of-mind return on
             a pad that ships in a 60 lb box can cost real money even inside the window. A pad that
@@ -352,7 +352,7 @@ export default {
             <strong>The MERACH NovaWalk W50 TrekPad, rated for 400 lb, at about $300.</strong> Its rating
             is stated by MERACH, in the Amazon listing title and in independent coverage, and MERACH
             publishes a continuous motor figure, 1.25 HP, which few pad makers do. If you will be on the
-            belt for hours every working day, the LifeSpan TX6 also carries 400 lb on a 20-inch belt and
+            belt for hours every working day, the <a href="/lifespan-tx6-under-desk-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>LifeSpan TX6</a> also carries 400 lb on a 20-inch belt and
             is rated by LifeSpan for seven hours’ use a day, but at about $1,399 it costs over four times
             as much.
           </p>

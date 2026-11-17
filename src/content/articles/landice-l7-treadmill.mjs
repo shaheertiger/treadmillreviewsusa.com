@@ -141,7 +141,7 @@ export default {
           </p>
           <p>
             Landice sells its treadmills direct and through dealers, not on Amazon, so the cards below show
-            the nearest alternatives Amazon does sell: the SOLE TT8 for the L7, the Spirit XT485 for the L8
+            the nearest alternatives Amazon does sell: the <a href="/sole-tt8-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>SOLE TT8</a> for the L7, the Spirit XT485 for the L8
             and Exerpeutic’s Senior Fitness Treadmill for the L7 RTM. None of them is a Landice, and the
             L7’s own figures are in the specification table that follows.
           </p>`,

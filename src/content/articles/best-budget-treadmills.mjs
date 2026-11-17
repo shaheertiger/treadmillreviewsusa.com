@@ -274,7 +274,7 @@ export default {
             Walking pads at this price are typically covered for about a year; MERACH gives two years
             on the W50 TrekPad. The Horizon and SOLE machines
             here all carry lifetime frame and motor cover, which sounds equal — but the parts warranty
-            is where they differ, and parts are what actually fail: one year on the Horizon T202, two
+            is where they differ, and parts are what actually fail: one year on the <a href="/horizon-t202-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Horizon T202</a>, two
             years on the SOLE F63 and three years on the Horizon 7.0 AT. Check NordicTrack's current
             terms for the T Series 10, which we did not confirm for this page. Labour is one
             year on most of them. Our

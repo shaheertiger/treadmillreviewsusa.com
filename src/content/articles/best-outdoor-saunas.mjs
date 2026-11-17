@@ -165,7 +165,7 @@ export default {
           <p>
             <strong>Figures checked twice.</strong> For SaunaLife we compared the maker's product pages
             and E7 installation manual with the Amazon listings and Steam Sauna Depot's dealer listing.
-            For the EuroSauna barrel we compared the Amazon and Wayfair listings, and for the GL4 the
+            For the EuroSauna barrel we compared the Amazon and <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Wayfair</a> listings, and for the GL4 the
             Amazon listing and SaunaLife dealers' listings. For Almost Heaven, discussed but not carded,
             we used the Pinnacle product page and Almost Heaven's barrel and heater
             manuals, and for Redwood Outdoors the maker's page and Garage Gym Reviews' hands-on review.

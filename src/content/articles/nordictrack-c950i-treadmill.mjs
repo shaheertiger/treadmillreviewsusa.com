@@ -141,7 +141,7 @@ export default {
             If you want the same kind of machine new, NordicTrack’s T Series 10 is the closest current
             equivalent and the Commercial 1250 the sturdier step up. Because a C950i can only be bought used,
             and mostly not on Amazon, the cards below start with the cheapest new NordicTrack on Amazon, the
-            T 6.5 S, as the price point to weigh a used C950i against. We have not tested any of them.
+            <a href="/nordictrack-t-6-5-s-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>T 6.5 S</a>, as the price point to weigh a used C950i against. We have not tested any of them.
           </p>`,
     },
     {

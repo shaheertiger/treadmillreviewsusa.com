@@ -269,7 +269,7 @@ export default {
             (Discover SE3), each with a year of parts and on-site labour, and remanufactured 95Tis ran from $2,599
             plus $699 shipping at GymStore to $3,799 at Fitness Superstore. The 95T and 95Ti are sold through
             remanufacturers and dealers, not on Amazon US, so the cards below show the nearest new alternatives
-            sold there: the Sole TT8 for the 95T's 22 by 60-inch deck and 400 lb rating, Life Fitness's own T3 in
+            sold there: the <a href="/sole-tt8-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Sole TT8</a> for the 95T's 22 by 60-inch deck and 400 lb rating, Life Fitness's own T3 in
             place of the 95Ti, and the Life Fitness Run CX we would compare both with.
           </p>
           <p>

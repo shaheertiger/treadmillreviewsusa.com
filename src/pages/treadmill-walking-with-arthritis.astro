@@ -1,0 +1,695 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SECTIONS } from "../data/sections";
+
+const title = "Treadmill Walking With Arthritis: Pain Rules, Speed and Incline";
+const description =
+  "Is a treadmill good for arthritis? Guidelines recommend exercise such as walking for knee and hip osteoarthritis. How much pain is acceptable, speed, incline, shoes and flares.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Workouts & Training", item: "https://www.treadmillreviewsusa.com/training/" },
+        { "@type": "ListItem", position: 3, name: "Treadmill Walking With Arthritis", item: "https://www.treadmillreviewsusa.com/treadmill-walking-with-arthritis/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Is a treadmill good for arthritis?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For most people with knee or hip osteoarthritis, yes. The 2019 ACR/Arthritis Foundation guideline strongly recommends exercise, including walking, and a treadmill gives a level surface, precise control of speed and time, and handrails. Start with 5 to 10 minutes at an easy pace, avoid decline, and build up gradually.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is walking on a treadmill good for knee osteoarthritis?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Generally yes. Guidelines from the ACR/Arthritis Foundation and OARSI put exercise at the centre of knee osteoarthritis treatment, and walking is one of the recommended forms. Keep the deck flat or on a small incline, avoid decline, take shorter steps, and judge the dose by how the knee feels the next morning.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much pain is OK when walking with arthritis?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A common physical therapy rule is that pain up to about 5 out of 10 during exercise is acceptable if it settles back to your usual level by the next morning and is not increasing week to week. Sharp pain, locking, giving way or new swelling are reasons to stop. If your therapist has set a different threshold, use theirs.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should you walk on an incline with arthritis?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A small incline of about 1 to 3 percent is fine for many people once flat walking is comfortable. Steep inclines can aggravate pain around the kneecap and in the hip, and decline walking loads the front of the knee more, so leave decline at zero.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long should you walk on a treadmill with arthritis?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Start with 5 to 10 minutes, then add a couple of minutes per session each week if pain settles by the next morning. The CDC suggests working toward 150 minutes of moderate activity a week, and short sessions such as two 15-minute walks count the same as one longer walk.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you walk on a treadmill during a rheumatoid arthritis flare?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually not on hot, swollen joints. During a flare, rest the inflamed joints, keep them moving gently through their range, and return to walking gradually once the swelling and heat have settled. Your rheumatologist or physical therapist can advise on your own limits.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-17",
+      dateModified: "2026-11-17",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-walking-with-arthritis/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-17",
+    modifiedTime: "2026-11-17",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill walking with arthritis",
+      "is a treadmill good for arthritis",
+      "treadmill for knee osteoarthritis",
+      "walking with hip arthritis",
+      "exercise with rheumatoid arthritis",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "The Pain Rules", link: "#pain-rules" }}
+>
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Training</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Walking With Arthritis</h1>
+      <p class="ed-dek">
+        Exercise is one of the few arthritis treatments that the major guidelines agree on, and walking is the simplest form of it. A treadmill makes walking predictable: a level surface, a speed you choose and a rail to hold. Here is how to use one without making your joints worse.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 17, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          <span class="ed-method">Based on published exercise guidance. General information, not medical advice.</span>
+        </div>
+        <a href="#pain-rules" class="btn-ghost">How Much Pain Is OK?</a>
+      </div>
+      <p class="ed-disclosure">
+        Nothing on this page is a paid placement, and it carries no affiliate links. <a href="/editorial-standards/">How we review.</a>
+      </p>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          When a joint aches, resting it feels like the obvious thing to do. For most people with
+          osteoarthritis, the evidence points the other way: regular, sensibly dosed exercise
+          tends to reduce pain and improve function, while inactivity weakens the muscles that
+          protect the joint. The skill is in the dose — how fast, how long, how steep and how
+          much discomfort to accept — and a treadmill lets you control every one of those
+          numbers.
+        </p>
+
+        <nav class="ed-toc not-prose" aria-label="On this page">
+          <h2>On this page</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#evidence">What the Evidence Says About Walking and Arthritis</a></li>
+            <li><a href="#why-treadmill">Why a Treadmill Suits Arthritic Joints (and Where It Does Not)</a></li>
+            <li><a href="#pain-rules">How Much Pain Is Acceptable?</a></li>
+            <li><a href="#session-length">How Long and How Often to Walk</a></li>
+            <li><a href="#speed-incline">Speed and Incline Settings</a></li>
+            <li><a href="#cushioning">Does a Cushioned Deck Help?</a></li>
+            <li><a href="#shoes">Shoes and Insoles</a></li>
+            <li><a href="#knee-vs-hip">Knee Versus Hip Arthritis on a Treadmill</a></li>
+            <li><a href="#rheumatoid">Rheumatoid Arthritis and Flares</a></li>
+            <li><a href="#when-to-stop">When to Stop and See a Doctor</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2>The Short Answer</h2>
+<p>
+            <strong>Yes, for most people with knee or hip osteoarthritis a treadmill is a good
+            place to walk, provided you start short and slow, keep the deck flat or nearly flat,
+            avoid decline, and use a simple pain rule to judge how much is enough.</strong> The
+            2019 American College of Rheumatology and Arthritis Foundation guideline strongly
+            recommends exercise for knee, hip and hand osteoarthritis and lists walking among the
+            suitable types. The 2019 Osteoarthritis Research Society International (OARSI)
+            guideline makes structured land-based exercise a core treatment for knee and hip
+            osteoarthritis.
+          </p>
+          <ul>
+            <li><strong>Start with 5 to 10 minutes</strong> at a comfortable speed, and add a few
+            minutes a week.</li>
+            <li><strong>Accept mild discomfort, not more.</strong> Pain up to about 5 out of 10
+            during the walk is commonly treated as acceptable, as long as it settles by the next
+            morning and is not creeping up week to week.</li>
+            <li><strong>Walk flat or on a small incline</strong> (around 1 to 3 percent). Skip
+            decline, which loads the front of the knee more.</li>
+            <li><strong>Wear comfortable, cushioned walking shoes</strong>, and choose a machine
+            with a cushioned deck and handrails if you are buying.</li>
+            <li><strong>With rheumatoid or other inflammatory arthritis</strong>, ease right back
+            during a flare and walk again once hot, swollen joints have settled.</li>
+          </ul>
+          <p>
+            If you have a heart condition, poor balance, a recent joint operation or an
+            inflammatory arthritis that is not yet under control, ask your doctor or physical
+            therapist before starting. They can also set a starting dose specific to your joints.
+          </p>
+        </div>
+
+        <div id="evidence" class="scroll-mt-24">
+          <h2>What the Evidence Says About Walking and Arthritis</h2>
+<p>
+            The case for walking with arthritis rests on clinical guidelines rather than on one
+            study, which is reassuring: the guideline panels weigh all of the trials together.
+          </p>
+          <p>
+            <strong>The ACR and Arthritis Foundation.</strong> The 2019 American College of
+            Rheumatology/Arthritis Foundation guideline for osteoarthritis of the hand, hip and
+            knee, published in early 2020, strongly recommends exercise for all three. Exercise is
+            the only non-drug treatment it strongly recommends for every one of those joints. The
+            guideline does not rank one form above another: walking, strengthening, neuromuscular
+            training and water-based exercise are all listed as options for knee and hip
+            osteoarthritis, and it notes that outcomes tend to be better when exercise is
+            supervised, at least at first.
+          </p>
+          <p>
+            <strong>OARSI.</strong> The 2019 OARSI guidelines for the non-surgical management of
+            knee, hip and polyarticular osteoarthritis put arthritis education and structured
+            land-based exercise programmes at the core of treatment for knee and hip
+            osteoarthritis, with dietary weight management added for the knee. A structured
+            walking programme on a treadmill fits that description.
+          </p>
+          <p>
+            <strong>The CDC.</strong> The Centers for Disease Control and Prevention advise that
+            adults with arthritis, like all adults, aim for at least 150 minutes a week of
+            moderate activity such as brisk walking, plus muscle strengthening on at least two
+            days. Its arthritis pages are equally clear that you do not have to start there: begin
+            slowly, pay attention to how your body responds, and know that even 5 or 10 minutes at
+            a time counts. The CDC also recognises the Arthritis Foundation’s Walk With Ease
+            programme, a six-week walking programme for people with arthritis that can be done in
+            a group or on your own, and which has been reported to reduce pain and improve
+            strength and balance.
+          </p>
+          <p>
+            <strong>Rheumatoid arthritis.</strong> The ACR’s 2022 guideline on exercise,
+            rehabilitation and diet for rheumatoid arthritis strongly recommends consistent
+            engagement in exercise over no exercise — the only recommendation in that guideline
+            given at strong strength.
+          </p>
+          <p>
+            Two things the evidence does not say. It does not say walking rebuilds cartilage or
+            reverses arthritis; the benefits are less pain, better function and the general
+            health gains that come with being active. And it does not say every walk will feel
+            good. Some increase in discomfort, especially early on, is normal, which is why the
+            pain rules below matter.
+          </p>
+        </div>
+
+        <div id="why-treadmill" class="scroll-mt-24">
+          <h2>Why a Treadmill Suits Arthritic Joints (and Where It Does Not)</h2>
+<p>
+            <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium" data-autolink>Walking outside</a> is excellent exercise too, and if you enjoy it, keep doing it. The
+            treadmill has some specific advantages for sore joints.
+          </p>
+          <ul>
+            <li><strong>A level, predictable surface.</strong> No kerbs, camber, potholes or tree
+            roots. Uneven ground makes the knee and ankle make small corrections with every step,
+            and an unexpected dip on a painful knee is exactly what people with arthritis learn to
+            dread.</li>
+            <li><strong>Precise control of the dose.</strong> You can set the speed to a tenth of a
+            mile per hour and the time to the minute, and repeat the session exactly. That makes
+            the gradual build-up the guidelines describe much easier to follow.</li>
+            <li><strong>No hills unless you choose them.</strong> Downhill walking is the part of
+            many outdoor routes that hurts arthritic knees most. On a treadmill there is none.</li>
+            <li><strong>You can stop at any minute.</strong> Outside, a walk that starts hurting at
+            the halfway point still leaves you a mile from home. On a treadmill, you are never
+            more than a few seconds from a chair.</li>
+            <li><strong>Handrails.</strong> Light contact for balance is reasonable if your
+            arthritis affects your confidence on your feet.</li>
+            <li><strong>Weather.</strong> Many people with arthritis find cold, damp days the
+            stiffest, and icy pavements are a fall risk. Indoors, the session goes ahead.</li>
+          </ul>
+          <p>
+            The drawbacks are real. The belt keeps moving when you want to stop, so you need a
+            safe routine for getting off; there is a step up onto the deck, often higher than a
+            stair; and walking at a fixed pace on a flat surface is repetitive, which can bother
+            some joints over long sessions. Our guide on <a href="/how-to-get-on-and-off-a-treadmill-safely/" class="text-[#0F62FE] font-medium">how to get on and off a treadmill safely</a> covers the first two. Breaking a long walk into two shorter ones, or varying the speed
+            a little, helps with the third.
+          </p>
+        </div>
+
+        <div id="pain-rules" class="scroll-mt-24">
+          <h2>How Much Pain Is Acceptable?</h2>
+<p>
+            This is the question that stops most people with arthritis from exercising, so it is
+            worth having a clear answer. Physical therapists commonly use a <strong>pain-monitoring
+            model</strong>, developed by the Swedish physiotherapist Roland Thomeé for knee pain
+            and since adapted for other conditions. Clinics vary in the exact thresholds, but a
+            typical version goes like this.
+          </p>
+          <ol>
+            <li><strong>Rate your pain from 0 to 10</strong>, where 0 is none and 10 is the worst
+            imaginable. Note your usual level before you start.</li>
+            <li><strong>During the walk, pain up to about 5 out of 10 is acceptable.</strong> Above
+            that, slow down, shorten the session or stop.</li>
+            <li><strong>After the walk, pain should settle back to your usual level by the next
+            morning.</strong> If you wake up noticeably worse than before the session, it was too
+            much; do less next time.</li>
+            <li><strong>From week to week, your pain should not be trending upward.</strong> If it
+            is, cut back the time or speed and build again more slowly.</li>
+          </ol>
+          <p>
+            Many people find their pain at the start of a walk is higher than in the middle: the
+            joint is stiff, then warms up and eases. That pattern is common in osteoarthritis and
+            is not a reason to stop. A useful habit is to note three numbers on your phone each
+            session — pain before, worst pain during, pain the next morning — alongside the time
+            and speed. After two or three weeks you will have a clear picture of what your joints
+            tolerate.
+          </p>
+          <p>
+            Some physical therapists use a stricter rule, especially soon after surgery or for
+            people who are anxious about pain, and some use a “traffic light” version. If your
+            therapist has given you a threshold, use theirs. The general point is the same:
+            discomfort that settles is acceptable; discomfort that lingers and builds means the
+            dose is too high.
+          </p>
+          <p>
+            Pain is different from <strong>warning signs</strong>, which mean stop altogether:
+            sharp, stabbing pain, a joint that locks or gives way, new swelling, or a joint that
+            becomes hot and red. More on those in the section on when to stop.
+          </p>
+        </div>
+
+        <div id="session-length" class="scroll-mt-24">
+          <h2>How Long and How Often to Walk</h2>
+<p>
+            Start lower than you think you need to. A first session of 5 to 10 minutes at an easy
+            pace is a perfectly good start, and if that leaves you sore the next day, drop to 5.
+            The CDC’s advice that even 5 minutes counts is aimed precisely at people with
+            arthritis who are worried about doing too much.
+          </p>
+          <p>
+            <strong>Build by small, regular steps.</strong> Add a couple of minutes per session
+            each week if the pain rules are being met, and change only one thing at a time: time
+            first, then speed, then a small incline. A typical progression might take someone
+            from 10 minutes three times a week to 30 minutes most days over two to three months,
+            but the right pace is the one your joints tolerate.
+          </p>
+          <p>
+            <strong>Short sessions add up.</strong> Two 15-minute walks are often easier on an
+            arthritic knee or hip than one 30-minute walk, and they count the same towards the
+            weekly 150 minutes the CDC suggests aiming for in time. A 10-minute walk after each
+            meal is a common pattern.
+          </p>
+          <p>
+            <strong>Frequency beats intensity.</strong> Joints with osteoarthritis tend to like
+            regular movement. Walking most days at a modest dose usually works better than a long,
+            hard session twice a week followed by days of recovery. Many people also find that
+            their joints feel stiffer after a few days off.
+          </p>
+          <p>
+            <strong>Add strength work.</strong> The guidelines recommend strengthening alongside
+            aerobic exercise, and stronger thigh and hip muscles take load off the knee and hip.
+            Simple sit-to-stands from a chair, step-ups and hip exercises, ideally taught by a
+            physical therapist, complement the treadmill well. Our <a href="/treadmill-workout-for-seniors/" class="text-[#0F62FE] font-medium">treadmill workout for seniors</a> and our guide to <a href="/how-long-should-seniors-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long seniors should walk on a treadmill</a> set out week-by-week build-ups that suit arthritic joints too.
+          </p>
+        </div>
+
+        <div id="speed-incline" class="scroll-mt-24">
+          <h2>Speed and Incline Settings</h2>
+<p>
+            <strong>Speed.</strong> There is no correct speed for arthritis. Choose one at which
+            you can walk with a normal, relaxed stride and hold a conversation. For many people
+            with knee or hip osteoarthritis that is slower at first than the brisk 3 mph or so
+            often quoted for healthy adults, and that is fine. Faster is not automatically better: if the pace forces you into a
+            longer stride or a limp, slow down. Walking with a limp shifts load to other joints and
+            is a sign the dose is too high. Our guide to <a href="/treadmill-speed-for-seniors/" class="text-[#0F62FE] font-medium">treadmill speed for seniors</a> explains how to find a comfortable starting pace.
+          </p>
+          <p>
+            <strong>Short, quick steps are kinder than long ones.</strong> Over-striding — landing
+            with your foot well ahead of your body — increases the braking force at the knee and
+            pushes the hip into a larger range of movement. A slightly shorter, quicker step
+            usually feels smoother on an arthritic joint.
+          </p>
+          <p>
+            <strong>Incline.</strong> A flat deck is a fine place to start and many people never
+            need anything else. Once flat walking is comfortable, a small incline of around 1 to 3
+            percent can add effort without adding speed, which some people with knee
+            osteoarthritis prefer. Steep inclines are different: they increase how far the knee
+            bends and how hard the thigh muscles work, and people with pain around the kneecap
+            often find them aggravating. Hip arthritis can also complain on a steep gradient,
+            because it asks for more hip flexion. Add incline in single-percent steps and drop it
+            again if your pain score climbs.
+          </p>
+          <p>
+            <strong>Decline.</strong> Avoid it. Walking downhill makes the thigh muscles work as
+            brakes and loads the front of the knee more than level walking, which is why many
+            people with knee arthritis find stairs and hills harder going down than coming up.
+            Some treadmills offer a decline setting; leave it at zero. Our explainer on whether <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills are bad for your knees</a> goes into incline and decline in more detail.
+          </p>
+          <p>
+            <strong>Change things gradually during the session too.</strong> Start each walk with
+            three to five minutes at a slow pace to let the joints loosen, and finish with a few
+            minutes at the same slow pace before you stop the belt.
+          </p>
+        </div>
+
+        <div id="cushioning" class="scroll-mt-24">
+          <h2>Does a Cushioned Deck Help?</h2>
+<p>
+            Most treadmills have some form of deck cushioning — elastomers, springs or flexible
+            mounts between the deck and the frame — and manufacturers market it heavily. For
+            people with arthritis it is worth having, with realistic expectations.
+          </p>
+          <p>
+            A cushioned deck gives slightly under foot, which most people find more comfortable
+            than concrete or asphalt. Comfort matters with arthritis: a walk that feels better is
+            a walk you are more likely to repeat. What the marketing figures cannot tell you is how
+            much a particular deck changes the load inside your knee or hip, and the forces in
+            walking are far lower than in running to begin with. Shoes, speed, stride and session
+            length make more difference than the deck.
+          </p>
+          <p>
+            If you are buying, a well-cushioned deck, a belt at least 20 inches wide, sturdy
+            handrails, a low step-up height and a slow starting speed are the features that matter
+            for arthritis. A long belt matters less for walking than for running. Our guide to the <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">best treadmills for bad knees</a> compares cushioning systems, and the <a href="/best-walking-machines-for-seniors/" class="text-[#0F62FE] font-medium">best walking machines for seniors</a> covers lower, simpler machines.
+          </p>
+          <p>
+            Walking pads are a reasonable option for short, slow walks, but most have thin decks
+            with little cushioning and no handrail. If your balance or confidence is affected by
+            arthritis, choose a model with a full handrail.
+          </p>
+        </div>
+
+        <div id="shoes" class="scroll-mt-24">
+          <h2>Shoes and Insoles</h2>
+<p>
+            Wear comfortable, cushioned walking or <a href="/best-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>running shoes</a> with a firm heel counter and
+            enough room in the toe box for any swelling or bunions. Comfort from the first step is
+            a reasonable guide; there is no single shoe type proven best for arthritic knees or
+            hips. Replace shoes once the midsole looks compressed or creased, since worn foam
+            cushions less.
+          </p>
+          <p>
+            Be cautious about specialist products. The 2019 ACR/Arthritis Foundation guideline
+            conditionally recommends <em>against</em> lateral and medial wedged insoles and
+            specially modified shoes for knee and hip osteoarthritis, because the evidence that
+            they help is weak. Ordinary cushioned insoles for comfort are a different matter, and
+            if foot pain or a foot deformity is part of the picture — common in rheumatoid
+            arthritis — a podiatrist can advise on footwear and orthotics.
+          </p>
+          <p>
+            Never walk on a motorised <a href="/can-you-walk-barefoot-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>treadmill in socks</a>, slippers or bare feet. Apart from the
+            lack of support, a foot that slips on the side rail is a fall risk.
+          </p>
+        </div>
+
+        <div id="knee-vs-hip" class="scroll-mt-24">
+          <h2>Knee Versus Hip Arthritis on a Treadmill</h2>
+<p>
+            The general approach is the same for both, but the details differ.
+          </p>
+          <p>
+            <strong>Knee osteoarthritis.</strong> The knee usually tolerates level walking and
+            gentle incline better than descent, stairs and deep bending. Keep decline at zero,
+            keep the stride short, and watch for pain around or behind the kneecap on steeper
+            gradients. Strengthening the thigh muscles, especially the quadriceps, is one of the
+            most useful additions to treadmill walking for the knee. If the knee is swollen after
+            a walk, reduce the time before reducing the speed.
+          </p>
+          <p>
+            <strong>Hip osteoarthritis.</strong> The hip tends to dislike long strides and large
+            ranges of movement, so a shorter step and a modest speed help. Many people with hip
+            arthritis are stiffest first thing and after sitting; walking later in the day, after
+            some gentle movement, is often more comfortable. Watch for pain in the groin, the
+            front of the thigh or the buttock, and for a limp creeping in as the session goes on —
+            a common sign to stop for the day.
+          </p>
+          <p>
+            <strong>After a joint replacement</strong> the rules change. Timing, speed and step
+            height are set by your surgeon and physical therapist, and the treadmill usually comes
+            in some weeks after the operation. Our guides to the <a href="/treadmill-after-knee-replacement/" class="text-[#0F62FE] font-medium">treadmill after knee replacement</a> and <a href="/treadmill-after-hip-replacement/" class="text-[#0F62FE] font-medium">treadmill after hip replacement</a> cover that stage separately.
+          </p>
+        </div>
+
+        <div id="rheumatoid" class="scroll-mt-24">
+          <h2>Rheumatoid Arthritis and Flares</h2>
+<p>
+            Rheumatoid arthritis and other inflammatory types — psoriatic arthritis, ankylosing
+            spondylitis, lupus-related arthritis — behave differently from osteoarthritis, and the
+            pain rules need adjusting.
+          </p>
+          <p>
+            <strong>Between flares</strong>, walking is just as worthwhile. The ACR’s 2022
+            guideline for rheumatoid arthritis strongly recommends consistent exercise, and
+            regular aerobic activity also matters because rheumatoid arthritis raises the risk of
+            heart disease. A treadmill’s level surface is useful if the feet and ankles are
+            affected, which is common in rheumatoid arthritis.
+          </p>
+          <p>
+            <strong>During a flare</strong>, when joints are hot, swollen and painful even at rest,
+            the advice from arthritis charities and physical therapists is to ease right back:
+            rest the inflamed joints, keep them moving gently through their range so they do not
+            stiffen, and return to walking gradually once the swelling and heat have settled.
+            Versus Arthritis, the UK charity, advises slow, gentle movement during a flare rather
+            than stopping altogether, and warns against overdoing it. A flare is not the time to
+            apply the 5-out-of-10 rule; walking on a hot, swollen knee or ankle is not
+            recommended.
+          </p>
+          <p>
+            <strong>Fatigue and morning stiffness</strong> are often as limiting as pain. Plan
+            walks for the part of the day you feel best — for many people that is late morning or
+            afternoon rather than first thing — and use short sessions on low-energy days rather
+            than skipping them entirely.
+          </p>
+          <p>
+            Your rheumatologist or a physical therapist with rheumatology experience is the right
+            person to set limits, particularly if your medication, joint damage or other
+            conditions affect what is safe.
+          </p>
+        </div>
+
+        <div id="when-to-stop" class="scroll-mt-24">
+          <h2>When to Stop and See a Doctor</h2>
+<p>
+            Ordinary arthritis aches that settle within a day are part of the process. These are
+            not — stop the session, and get advice:
+          </p>
+          <ul>
+            <li><strong>Sharp, stabbing or sudden pain</strong> in a joint, as opposed to the
+            familiar ache.</li>
+            <li><strong>A joint that locks, catches or gives way</strong> under you.</li>
+            <li><strong>New swelling, heat or redness</strong> in a joint, especially with a fever
+            or feeling unwell. A hot, red, swollen joint needs prompt medical assessment.</li>
+            <li><strong>Pain that is worse each day</strong> despite cutting back, or pain that
+            wakes you at night when it did not before.</li>
+            <li><strong>Calf pain and swelling</strong>, particularly after recent surgery or a
+            long period of inactivity.</li>
+            <li><strong>Chest pain or pressure, unusual breathlessness, dizziness or
+            palpitations</strong> — stop at once, and seek urgent help if they do not settle.</li>
+          </ul>
+          <p>
+            It is also worth seeing a physical therapist if you simply cannot find a dose that
+            works — every session hurts, or you cannot get past a few minutes. Many people need
+            a short period of supervised exercise, or treatment for an associated problem such
+            as weak hip muscles, before walking becomes comfortable. And if walking itself is
+            consistently painful despite all the adjustments here, a <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium" data-autolink>recumbent bike</a>, an
+            elliptical or water-based exercise may suit your joints better for a while.
+          </p>
+          <p>
+            If you are new to treadmills, our answer to <a href="/is-a-treadmill-good-for-seniors/" class="text-[#0F62FE] font-medium">is a treadmill good for seniors</a> covers who does well on one and who might prefer another machine.
+          </p>
+        </div>
+
+
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>4 Mistakes Walking With Arthritis</h2>
+          <p>Most setbacks come from getting the dose wrong rather than from walking itself.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Judging the session by how it felt during the walk</h3>
+              <p>Arthritic joints often feel fine during a walk and complain that evening or the next morning. Use the next-morning pain score to set the following session, not how you felt at the time.</p>
+            </li>
+            <li>
+              <h3>Adding time, speed and incline all at once</h3>
+              <p>Three changes in one week make it impossible to tell which one caused a flare-up. Increase time first, then speed, then a small incline, one at a time.</p>
+            </li>
+            <li>
+              <h3>Using decline or steep incline for variety</h3>
+              <p>Decline loads the front of the knee more, and steep gradients can aggravate kneecap and hip pain. Keep decline at zero and incline to a few percent unless your therapist advises otherwise.</p>
+            </li>
+            <li>
+              <h3>Walking through a hot, swollen joint</h3>
+              <p>Heat, redness and new swelling are signs of inflammation, not stiffness. Stop, rest the joint, and seek medical advice if it does not settle quickly or you feel unwell.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The takeaway</h2>
+          <p>
+            <strong class="text-white">Treadmill walking is a sound choice for most people with knee
+            or hip osteoarthritis, and exercise is recommended by the major arthritis
+            guidelines.</strong> Start with 5 to 10 minutes at an easy pace on a flat deck, keep
+            decline at zero, and build gradually, judging each step by whether pain settles by the
+            next morning.
+          </p>
+          <p>
+            With rheumatoid or other inflammatory arthritis, walk between flares and rest hot,
+            swollen joints. Stop for sharp pain, locking, giving way or new swelling, and ask a
+            doctor or physical therapist before starting if you have heart, balance or recent
+            surgical concerns. If you are choosing a machine, our guide to the <a href="/best-treadmills-for-bad-knees/" class="text-[#5AA9FF] font-bold no-underline">best treadmills for bad knees</a> is the place to start.
+          </p>
+        </div>
+
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmills-for-bad-knees/">Best Treadmills for Bad Knees</a></li>
+            <li><a href="/are-treadmills-bad-for-your-knees/">Are Treadmills Bad for Your Knees?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is a treadmill good for arthritis?</h3></summary>
+            <p class="faq-a">
+              For most people with knee or hip osteoarthritis, yes. The 2019 ACR/Arthritis Foundation guideline strongly recommends exercise, including walking, and a treadmill gives a level surface, precise control of speed and time, and handrails. Start with 5 to 10 minutes at an easy pace, avoid decline, and build up gradually.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is walking on a treadmill good for knee osteoarthritis?</h3></summary>
+            <p class="faq-a">
+              Generally yes. Guidelines from the ACR/Arthritis Foundation and OARSI put exercise at the centre of knee osteoarthritis treatment, and walking is one of the recommended forms. Keep the deck flat or on a small incline, avoid decline, take shorter steps, and judge the dose by how the knee feels the next morning.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much pain is OK when walking with arthritis?</h3></summary>
+            <p class="faq-a">
+              A common physical therapy rule is that pain up to about 5 out of 10 during exercise is acceptable if it settles back to your usual level by the next morning and is not increasing week to week. Sharp pain, locking, giving way or new swelling are reasons to stop. If your therapist has set a different threshold, use theirs.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should you walk on an incline with arthritis?</h3></summary>
+            <p class="faq-a">
+              A small incline of about 1 to 3 percent is fine for many people once flat walking is comfortable. Steep inclines can aggravate pain around the kneecap and in the hip, and decline walking loads the front of the knee more, so leave decline at zero.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long should you walk on a treadmill with arthritis?</h3></summary>
+            <p class="faq-a">
+              Start with 5 to 10 minutes, then add a couple of minutes per session each week if pain settles by the next morning. The CDC suggests working toward 150 minutes of moderate activity a week, and short sessions such as two 15-minute walks count the same as one longer walk.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you walk on a treadmill during a rheumatoid arthritis flare?</h3></summary>
+            <p class="faq-a">
+              Usually not on hot, swollen joints. During a flare, rest the inflamed joints, keep them moving gently through their range, and return to walking gradually once the swelling and heat have settled. Your rheumatologist or physical therapist can advise on your own limits.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Joint-Friendly Walking Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmills-for-bad-knees/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Treadmills for Bad Knees</div>
+            <p class="c-blurb">Cushioned decks, low step-ups and sturdy rails compared.</p>
+          </a>
+          <a href="/are-treadmills-bad-for-your-knees/" class="card">
+            <div class="c-kicker">Training</div>
+            <div class="c-title">Are Treadmills Bad for Your Knees?</div>
+            <p class="c-blurb">What the research says about knees, incline and decline.</p>
+          </a>
+          <a href="/treadmill-after-knee-replacement/" class="card">
+            <div class="c-kicker">Recovery</div>
+            <div class="c-title">Treadmill After Knee Replacement</div>
+            <p class="c-blurb">When to start, what speed and how to build up after surgery.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>
