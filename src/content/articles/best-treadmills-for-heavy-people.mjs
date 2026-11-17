@@ -122,7 +122,7 @@ export default {
       products: true,
       html: `          <p>
             Capacities below are the manufacturers' stated figures. The last card, a remanufactured
-            Cybex club treadmill, stands in for Life Fitness's Platinum Club Series, which is sold
+            <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Cybex</a> club treadmill, stands in for Life Fitness's Platinum Club Series, which is sold
             through dealers rather than on Amazon US. Our recommendations assume
             the 50 to 75 lb margin described above, and each entry says who we would and would
             not put on the machine.

@@ -239,6 +239,20 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-for-seniors/',
           },
           {
+            title: 'Best Walking Machines for Seniors',
+            description:
+              'Rail treadmills, low-deck walkers, walking pads and seated steppers, matched to balance and mobility.',
+            badge: 'Seniors',
+            url: '/best-walking-machines-for-seniors/',
+          },
+          {
+            title: 'Best Walking Pads for Seniors',
+            description:
+              'Five walking pads with handrails, chosen for low deck height, slow starts and simple remotes.',
+            badge: 'Seniors',
+            url: '/best-walking-pads-for-seniors/',
+          },
+          {
             title: "Best Treadmills With Handrails",
             description: "Five treadmills with full-length side rails for walkers, seniors and anyone wanting support.",
             badge: "Handrails",
@@ -3351,6 +3365,59 @@ export const SECTIONS: Section[] = [
               'Why wrist trackers under-count at a desk, and the trackers and placements that count properly.',
             badge: 'Steps',
             url: '/best-fitness-trackers-for-walking-pad/',
+          },
+        ],
+      },
+      {
+        name: 'Walking for older adults',
+        pages: [
+          {
+            title: "Is a Treadmill Good for Seniors?",
+            description: "Benefits and real risks for older walkers, who should check with a doctor, and the alternatives.",
+            badge: 'Seniors',
+            url: '/is-a-treadmill-good-for-seniors/',
+          },
+          {
+            title: "What Speed Should a Senior Walk On?",
+            description: "Typical walking speeds by age, a safe starting speed and the talk test for older walkers.",
+            badge: 'Seniors',
+            url: '/treadmill-speed-for-seniors/',
+          },
+          {
+            title: "How Long Should Seniors Walk?",
+            description: "Building from 5\u201310 minutes to the 150-minute weekly guideline, with step counts for older adults.",
+            badge: 'Seniors',
+            url: '/how-long-should-seniors-walk-on-a-treadmill/',
+          },
+          {
+            title: "Treadmill Workout for Seniors",
+            description: "A 6-week walking plan with speeds, incline and effort, plus balance work beside the treadmill.",
+            badge: 'Seniors',
+            url: '/treadmill-workout-for-seniors/',
+          },
+          {
+            title: "Getting On and Off a Treadmill Safely",
+            description: "Step-by-step mounting, stopping and stumble recovery, with clearance and step-up height advice.",
+            badge: 'Seniors',
+            url: '/how-to-get-on-and-off-a-treadmill-safely/',
+          },
+          {
+            title: "Treadmill Walking With Arthritis",
+            description: "Pain rules, speed, incline and session length for knee and hip arthritis, from current guidelines.",
+            badge: 'Seniors',
+            url: '/treadmill-walking-with-arthritis/',
+          },
+          {
+            title: "Treadmill After Knee Replacement",
+            description: "When treadmill walking usually starts, first sessions, swelling checks and warning signs.",
+            badge: 'Seniors',
+            url: '/treadmill-after-knee-replacement/',
+          },
+          {
+            title: "Treadmill After Hip Replacement",
+            description: "A typical timeline, hip precautions on the belt, and stepping on and off after surgery.",
+            badge: 'Seniors',
+            url: '/treadmill-after-hip-replacement/',
           },
         ],
       },

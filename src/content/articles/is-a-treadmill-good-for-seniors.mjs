@@ -242,8 +242,8 @@ export default {
       id: 'who-it-suits',
       heading: 'Who a Treadmill Suits, and Who Should Check First',
       html: `          <p>
-            There is no age cut-off. Plenty of people in their eighties walk on a treadmill every
-            day. What matters is balance, health and the ability to use the controls reliably.
+            There is no age cut-off. Plenty of people in their eighties <a href="/can-you-use-a-treadmill-every-day/" class="text-[#0F62FE] font-medium" data-autolink>walk on a treadmill every
+            day</a>. What matters is balance, health and the ability to use the controls reliably.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[600px] w-full text-sm border-collapse">
             <thead>
@@ -429,7 +429,7 @@ export default {
             includes compact and seated options for smaller homes.
           </p>
           <p>
-            Be cautious with walking pads. Most are low and compact, which helps, but many have no
+            Be cautious with <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a>. Most are low and compact, which helps, but many have no
             handrail at all, and a pad without a rail removes the support many older walkers
             need. If a walking pad is the only thing that fits, choose one with a fold-up rail, and
             see our guide to

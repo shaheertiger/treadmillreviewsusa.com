@@ -139,7 +139,7 @@ export default {
           <p>
             <strong>Knee pain and osteoarthritis.</strong> Small clinical trials have reported
             improvements in pain and function when backward walking was added to standard
-            rehabilitation for knee osteoarthritis. The results are encouraging, but the studies
+            rehabilitation for <a href="/treadmill-walking-with-arthritis/" class="text-[#0F62FE] font-medium" data-autolink>knee osteoarthritis</a>. The results are encouraging, but the studies
             are small, the programmes were supervised, and backward walking was one component
             rather than the whole treatment.
           </p>

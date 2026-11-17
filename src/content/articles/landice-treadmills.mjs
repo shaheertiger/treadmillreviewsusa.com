@@ -133,7 +133,7 @@ export default {
           <p>
             Landice's machines are sold through its dealers and its own store, not on Amazon, so the
             cards below show the nearest Amazon alternatives to the L7, L8 and M2 Genesis: the
-            non-folding Sole TT8, the Spirit XT485, whose warranty comes closest to Landice's, and the
+            non-folding <a href="/sole-tt8-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Sole TT8</a>, the Spirit XT485, whose warranty comes closest to Landice's, and the
             folding NordicTrack Commercial 2450. None is a Landice, and each card says what it gives up.
           </p>`,
     },

@@ -116,7 +116,7 @@ export default {
             When all three hold, it can be a good way into Peloton’s classes. When any one fails, a
             new machine, or a cheaper non-Peloton treadmill with the Peloton App, is the better buy.
             The Tread Flex is sold by Peloton rather than on Amazon US, so the last card below is a
-            new NordicTrack folding smart treadmill that Amazon does sell, for comparison.
+            new NordicTrack folding <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium" data-autolink>smart treadmill</a> that Amazon does sell, for comparison.
           </p>
           <p>
             The recall check comes first and is not optional. Every Tread+ sold from 2018 to April

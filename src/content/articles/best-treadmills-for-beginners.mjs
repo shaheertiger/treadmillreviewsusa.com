@@ -264,7 +264,7 @@ export default {
             On a firmer budget the <strong>NordicTrack T Series 5</strong> is a reasonable buy for
             walking, provided you accept the short deck and the 10 mph ceiling. If you want guided
             content to supply the structure, the <strong>ProForm Carbon TLX</strong> gives you that
-            through your own tablet on iFIT's cheaper Train membership, and it still works without paying.
+            through your own tablet on <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium" data-autolink>iFIT</a>'s cheaper Train membership, and it still works without paying.
           </p>
           <p>
             Whichever arrives, spend the first month walking slowly and put the machine somewhere

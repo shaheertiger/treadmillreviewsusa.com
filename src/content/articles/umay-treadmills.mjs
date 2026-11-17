@@ -203,7 +203,7 @@ export default {
             These are the three UMAY machines whose main figures we could check against a second source
             on 5 November 2026, plus two checked alternatives from other brands. We could not find the SF20 or
             U20F on Amazon US under those names, so their cards show the closest machines Amazon does list, the
-            CURSOR 40% Incline Treadmill and UREVO Strol 2E Pro; the SF20 and U20F themselves are covered in the
+            CURSOR <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>40% Incline</a> Treadmill and UREVO Strol 2E Pro; the SF20 and U20F themselves are covered in the
             sections below and sold on UMAY's store. Prices are UMAY’s sale
             prices on its own store on the day; UMAY shows every product at roughly 40% off a higher
             “regular” price, so treat the sale price as the real one. Where UMAY’s figures disagree with

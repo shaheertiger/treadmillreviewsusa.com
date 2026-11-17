@@ -284,7 +284,7 @@ export default {
       heading: 'Final Recommendations',
       html: `          <p>
             The <strong>NordicTrack T Series 5</strong> is our pick at this price: a powered
-            0–10% incline, a simple LCD console with iFIT optional through your own tablet, and a
+            0–10% incline, a simple LCD console with <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium" data-autolink>iFIT</a> optional through your own tablet, and a
             300 lb rating, for about $600. It is a walking and light-jogging machine and it is honest
             about that.
           </p>

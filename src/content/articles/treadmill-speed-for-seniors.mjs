@@ -220,7 +220,7 @@ export default {
             unreliable for many people over 65. Your breathing is a more honest gauge.
           </p>
           <p>
-            Once you are comfortable on the belt, try this at 0 or 1% incline:
+            Once you are comfortable on the belt, try this at 0 or <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium" data-autolink>1% incline</a>:
           </p>
           <ul>
             <li><strong>Warm up</strong> for five minutes at an easy speed, around 1.5 mph or
@@ -314,7 +314,7 @@ export default {
           </p>
           <p>
             <strong>Holding on changes the numbers.</strong> Supporting part of your weight on the
-            rails makes a given speed and incline easier, which means the calorie readout and
+            rails makes a given speed and incline easier, which means the <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium" data-autolink>calorie readout</a> and
             the effort you think you are making will both be overstated. That matters less than
             safety does, but it is another reason to set the speed so that a light touch is
             enough.
@@ -375,7 +375,7 @@ export default {
             flat, holding the rails as needed. Goal: comfortable getting on and off.</li>
             <li><strong>Week 2:</strong> add 0.1 to 0.2 mph per minute after a warm-up until
             breathing is a little quicker. Say this lands at 2.0 mph. Walk 10 minutes there,
-            plus 3 minutes of warm-up and cool-down at 1.5 mph.</li>
+            plus 3 minutes of <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium" data-autolink>warm-up and cool-down</a> at 1.5 mph.</li>
             <li><strong>Weeks 3 to 4:</strong> stay at about 2.0 to 2.2 mph and lengthen the
             sessions gradually, rather than raising the speed.</li>
             <li><strong>Weeks 5 to 8:</strong> repeat the talk test. If the moderate speed has

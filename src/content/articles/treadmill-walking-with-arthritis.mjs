@@ -111,7 +111,7 @@ export default {
       id: 'why-treadmill',
       heading: 'Why a Treadmill Suits Arthritic Joints (and Where It Does Not)',
       html: `          <p>
-            Walking outside is excellent exercise too, and if you enjoy it, keep doing it. The
+            <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium" data-autolink>Walking outside</a> is excellent exercise too, and if you enjoy it, keep doing it. The
             treadmill has some specific advantages for sore joints.
           </p>
           <ul>
@@ -300,7 +300,7 @@ export default {
       id: 'shoes',
       heading: 'Shoes and Insoles',
       html: `          <p>
-            Wear comfortable, cushioned walking or running shoes with a firm heel counter and
+            Wear comfortable, cushioned walking or <a href="/best-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>running shoes</a> with a firm heel counter and
             enough room in the toe box for any swelling or bunions. Comfort from the first step is
             a reasonable guide; there is no single shoe type proven best for arthritic knees or
             hips. Replace shoes once the midsole looks compressed or creased, since worn foam
@@ -315,7 +315,7 @@ export default {
             arthritis — a podiatrist can advise on footwear and orthotics.
           </p>
           <p>
-            Never walk on a motorised treadmill in socks, slippers or bare feet. Apart from the
+            Never walk on a motorised <a href="/can-you-walk-barefoot-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>treadmill in socks</a>, slippers or bare feet. Apart from the
             lack of support, a foot that slips on the side rail is a fall risk.
           </p>`,
     },
@@ -412,7 +412,7 @@ export default {
             works — every session hurts, or you cannot get past a few minutes. Many people need
             a short period of supervised exercise, or treatment for an associated problem such
             as weak hip muscles, before walking becomes comfortable. And if walking itself is
-            consistently painful despite all the adjustments here, a recumbent bike, an
+            consistently painful despite all the adjustments here, a <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium" data-autolink>recumbent bike</a>, an
             elliptical or water-based exercise may suit your joints better for a while.
           </p>
           <p>

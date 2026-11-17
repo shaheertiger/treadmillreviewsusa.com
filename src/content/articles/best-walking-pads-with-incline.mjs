@@ -124,7 +124,7 @@ export default {
             Several well-known names are missing on purpose. KingSmith's WalkingPad range is
             mostly flat; its one fixed-incline pad we found has a short 35-inch belt, does not
             fold, and was listed only on the brand's own site when independent trackers last checked. Mobvoi's incline model is a
-            folding treadmill with handrails rather than a pad. And Sperax is absent for a more
+            folding <a href="/best-treadmills-with-handrails/" class="text-[#0F62FE] font-medium" data-autolink>treadmill with handrails</a> rather than a pad. And Sperax is absent for a more
             serious reason, covered in the
             <a href="#warranty-support" class="text-[#0F62FE] font-medium">warranty and support section</a>
             below. Where a figure on a pad we did include was disputed, the product's description

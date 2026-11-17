@@ -146,7 +146,7 @@ export default {
       heading: 'The Bike Usually Comes First',
       html: `          <p>
             Ask most physical therapists which machine to use early in knee replacement recovery and
-            the answer is a bike. The AAOS's exercise guide calls riding an exercise bike an excellent
+            the answer is a bike. The AAOS's exercise guide calls riding an <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium" data-autolink>exercise bike</a> an excellent
             activity to help you regain muscle strength and knee mobility, and its activities page
             mentions that your doctor may have you riding a stationary bicycle at physical therapy.
           </p>

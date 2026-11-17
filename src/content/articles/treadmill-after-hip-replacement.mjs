@@ -254,7 +254,7 @@ export default {
       id: 'bike',
       heading: 'Bike, Treadmill or Both?',
       html: `          <p>
-            The AAOS's exercise guide calls riding an exercise bike an excellent activity to help you
+            The AAOS's exercise guide calls riding an <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium" data-autolink>exercise bike</a> an excellent activity to help you
             regain muscle strength and hip mobility, and its activities page notes that your doctor may
             recommend a stationary bicycle, typically at physical therapy. One hospital rehab protocol,
             from Mass General Brigham, lists both stationary cycling and treadmill walking as endurance
