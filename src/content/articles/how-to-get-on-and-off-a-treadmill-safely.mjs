@@ -1,0 +1,501 @@
+export default {
+  slug: 'how-to-get-on-and-off-a-treadmill-safely',
+  title: 'How to Get On and Off a Treadmill Safely, Step by Step',
+  description:
+    'How to get on and off a treadmill safely: straddle the rails, clip the key, start at the slowest speed, and wait for the belt to stop before stepping off. Extra steps for older users.',
+  crumbLabel: 'Getting On and Off Safely',
+  breadcrumb: { name: 'Buying Guides', url: '/guides/' },
+  kicker: 'Safety',
+  updated: 'November 2026',
+  updatedLong: 'November 17, 2026',
+  published: '2026-11-17',
+  socialProof: '1.6k',
+  h1: ['How to Get On and Off', 'a Treadmill Safely'],
+  standfirst:
+    'The first and last ten seconds of a treadmill session are where most falls start. A fixed routine for stepping on, stepping off and stopping in a hurry takes the risk out of both, and it matters most for older walkers.',
+  ctas: [
+    { label: 'Getting On, Step by Step', href: '#getting-on' },
+    { label: 'Getting Off, Step by Step', href: '#getting-off' },
+  ],
+  tags: ['how to get on a treadmill', 'how to get off a treadmill', 'step onto a moving treadmill', 'treadmill safety for elderly', 'treadmill emergency stop'],
+  stickyCta: { text: 'The Step-On Routine', link: '#getting-on' },
+  lead: `Walking on a treadmill is not the hard part. Moving between a floor that stays still and
+          a belt that does not is. The body expects the ground to stay where the foot put it, and a
+          moving belt breaks that expectation in the half-second before your weight arrives. The
+          answer is a routine that never asks your feet to make that switch at speed: on to a
+          stopped or crawling belt, off a belt that has fully stopped, and a known escape route if
+          something goes wrong in between.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'The Short Answer',
+      html: `          <p>
+            <strong>To get on, stand with a foot on each side rail, clip the safety key to your
+            waistband, start the belt at its lowest speed, then step on while holding the
+            handrails and walk in the centre of the belt.</strong> To get off, return the incline
+            to zero, slow to the lowest speed, press stop, keep walking as the belt slows, and
+            step off to the side only once the belt has completely stopped.
+          </p>
+          <ul>
+            <li><strong>Never step onto a belt already moving at walking pace</strong> from the
+            floor. The belt takes your foot backward before your weight is over it.</li>
+            <li><strong>Never step off a moving belt</strong>, and never turn around on it.</li>
+            <li><strong>Clip the safety key to your clothing every time</strong>, including at
+            walking speeds. It is the only part of the machine that reacts faster than you can.</li>
+            <li><strong>Know your escape:</strong> hands on the rails, feet out onto the side
+            rails, then stop the machine.</li>
+            <li><strong>Keep the space behind the machine clear</strong>; manufacturers commonly
+            ask for about 2 metres (6.5 feet) or more behind the deck, and some ask for 8 feet.</li>
+          </ul>
+          <p>
+            The rest of this page breaks each stage into numbered steps, explains what to do if
+            you stumble or fall, and covers the extra precautions that make sense for older users,
+            people with balance or joint problems, and anyone using a walking pad without rails.
+            For the wider list of household hazards — children, pets, cords and folding decks —
+            see our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a>.
+          </p>`,
+    },
+    {
+      id: 'set-up',
+      heading: 'Before You Step On: Set Up the Space',
+      html: `          <p>
+            How safely you get on and off a treadmill is decided partly before you touch it. The
+            room around the machine determines what happens if you misjudge a step, so it is worth
+            getting right once and leaving alone.
+          </p>
+          <p>
+            <strong>Clearance behind the deck.</strong> If you lose your footing, the belt carries
+            you backward. The space behind the machine is where you land. Manuals differ on the
+            number: ICON-built machines such as NordicTrack and ProForm typically ask for at least
+            8 feet (2.4 m) behind the treadmill and 2 feet (0.6 m) on each side, while a Life
+            Fitness manual summarising the US standard for motorised treadmills, ASTM F2115, gives
+            0.5 m on each side and 2 m behind to the nearest obstruction, and notes that the older
+            European standard also used 2 m. Treat 2 metres — roughly 6.5 feet — as a minimum and
+            your own manual’s figure as the rule. Our
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
+            works through the full measurement.
+          </p>
+          <p>
+            <strong>What is in that space matters as much as its size.</strong> A wall, the edge of
+            a sofa, a radiator, a glass door or another machine behind the deck turns a stumble
+            into a real injury. The top of a staircase behind a treadmill is the worst case of all.
+          </p>
+          <p>
+            <strong>Light.</strong> You need to see the side rails and the edge of the belt clearly
+            when you place your feet. A treadmill in a dim basement or garage, lit by one ceiling
+            bulb behind you, puts your own shadow over the deck. Add a light in front of or beside
+            the machine, and switch it on before you walk over to the treadmill, not after.
+          </p>
+          <p>
+            <strong>Floor around the machine.</strong> The patch where you step down should be
+            flat, dry and free of rug edges. A treadmill mat that extends past the deck is fine;
+            a thin rug that slides or curls is not. Route the power cord along the wall from the
+            front of the machine so it never crosses the place you step off.
+          </p>
+          <p>
+            <strong>Shoes.</strong> Wear walking or running shoes with a firm heel and laces tied.
+            Socks, slippers and bare feet slide on the side rails, which are often smooth plastic
+            or aluminium, and a slip there is the commonest way people end up half on and half off
+            the belt.
+          </p>`,
+    },
+    {
+      id: 'step-up-height',
+      heading: 'Step-Up Height, and What to Do If It Is Too High',
+      html: `          <p>
+            Step-up height is the distance from the floor to the top of the deck. It is the step
+            you climb every time you get on and descend every time you get off, and on many home
+            machines it is higher than a stair. For comparison, the International Residential Code
+            used for most US homes caps a stair riser at 7¾ inches. Treadmill decks frequently sit
+            above that: Horizon lists 8⅝ inches for one of its folding models, and some heavier
+            machines with thick decks and big rollers go well past 10 inches. Incline makes it
+            worse, because many machines raise the front of the deck and some raise the whole
+            frame.
+          </p>
+          <p>
+            For a fit adult, an extra inch is nothing. For someone with a stiff knee or hip, weak
+            ankles or poor balance, it is the difference between an easy step and an awkward
+            hitch. If the step feels high to you, there are three sensible fixes.
+          </p>
+          <ul>
+            <li><strong>Hold both handrails while you step</strong>, and take the step slowly.
+            Rails that extend well back along the deck help here, because you can hold them while
+            your foot is still on the floor.</li>
+            <li><strong>Use a sturdy, non-slip step</strong> at the side of the machine, not
+            behind it. A wide, solid aerobic-style step or a purpose-made step stool with a rubber
+            base works; a loose box, a stack of books or a folding stool does not. It must not
+            slide, rock or sit in the clearance zone behind the deck.</li>
+            <li><strong>Choose a lower machine next time.</strong> If you are buying, look for a
+            published step-up height and compare it. Our guide to the
+            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">best treadmills for seniors</a>
+            lists it where manufacturers publish it, and
+            <a href="/best-walking-machines-for-seniors/" class="text-[#0F62FE] font-medium">walking machines for seniors</a>
+            covers lower-deck options.</li>
+          </ul>
+          <p>
+            If a knee or hip is painful or recently operated on, the stairs rule physical
+            therapists teach — <em>up with the good, down with the bad</em> — applies to a
+            treadmill deck too. Step up with your stronger leg first, and step down with the
+            weaker or operated leg first, so the strong leg does the lifting and lowering. After a
+            joint replacement, follow your therapist’s instructions over any general advice; our
+            pages on the <a href="/treadmill-after-knee-replacement/" class="text-[#0F62FE] font-medium">treadmill after knee replacement</a>
+            and the <a href="/treadmill-after-hip-replacement/" class="text-[#0F62FE] font-medium">treadmill after hip replacement</a>
+            go into the timing.
+          </p>`,
+    },
+    {
+      id: 'getting-on',
+      heading: 'How to Get On a Treadmill, Step by Step',
+      html: `          <p>
+            Use this sequence every time, including the hundredth time. It takes about half a
+            minute longer than stepping onto a moving belt and removes the most common cause of
+            falls.
+          </p>
+          <ol>
+            <li><strong>Check the deck is clear.</strong> Nothing on the belt, no towel draped
+            where it can slide onto it, no pet underneath, nothing behind the machine. Check that
+            the incline is at zero; if the last user left it raised, lower it before you climb on.</li>
+            <li><strong>Stand at the side and take hold of the handrails.</strong> Face the
+            console. Put one hand on each rail before you lift a foot.</li>
+            <li><strong>Step up onto the side rails, not the belt.</strong> Place one foot on each
+            side rail — the stationary strips either side of the belt — so you are straddling the
+            belt. If the side rails are narrow, step up onto one side rail first and then bring
+            the other foot across to the opposite rail.</li>
+            <li><strong>Clip the safety key to your clothing at the waist.</strong> A firm
+            waistband or belt loop is best, at the front or side. Clipped to a loose jacket or the
+            hem of a shirt, the cord can tear the fabric rather than pulling the key out. Check
+            the key is seated in the console.</li>
+            <li><strong>Start the belt at its lowest speed.</strong> On many home treadmills that
+            is 0.5 mph; some start at 0.1 mph and some at 1 mph. Avoid quick-start and preset
+            buttons that jump straight to a walking pace. If the machine counts down, wait for
+            the belt to begin moving and watch it for a moment.</li>
+            <li><strong>Step on with your hands still on the rails.</strong> Put one foot on the
+            moving belt and let it slide back under you for two or three strides, as if you were
+            paddling. Then bring the other foot on and start walking. Look ahead at the console,
+            not down at your feet; looking down tips your weight forward and back.</li>
+            <li><strong>Find the centre.</strong> Walk in the middle of the belt, side to side and
+            front to back — roughly an arm’s length from the console. Too close and you kick the
+            motor hood; too far back and you have no margin.</li>
+            <li><strong>Increase speed in small steps</strong> using the arrow buttons, a tenth of
+            a mile per hour at a time, until you reach your walking pace. Release the rails once
+            you are walking steadily, if your balance allows.</li>
+          </ol>
+          <p>
+            Holding the rails while you step on and change speed is exactly what they are for.
+            Holding them for a whole session is a different question, which our answer on
+            <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether you should hold the handrails on a treadmill</a>
+            covers in full. If you are not sure what speed to settle on, our guide to
+            <a href="/treadmill-speed-for-seniors/" class="text-[#0F62FE] font-medium">treadmill speed for seniors</a>
+            gives starting ranges.
+          </p>`,
+    },
+    {
+      id: 'moving-treadmill',
+      heading: 'How to Step Onto a Moving Treadmill (and When Not To)',
+      html: `          <p>
+            The honest answer to “how do I step onto a moving treadmill?” is that you should
+            almost never need to. Starting the belt with your feet on the side rails is the safer
+            method and there is no fitness benefit to the alternative. But there are a few
+            situations where you will be stepping back onto a belt that is already moving: after
+            straddling the rails for a breather during an interval, after stepping out to reach a
+            dropped phone, or on a gym machine somebody else has left running.
+          </p>
+          <p>
+            If you do it, do it like this:
+          </p>
+          <ol>
+            <li><strong>Slow the belt first.</strong> Bring it down to a slow walk — around 1 to
+            2 mph for most adults — before you step back on, not the running or brisk walking
+            speed you were using.</li>
+            <li><strong>Start from the side rails, never from the floor.</strong> Straddle the belt
+            with both hands on the handrails so you have three points of contact before a foot
+            touches the belt.</li>
+            <li><strong>Paddle in with one foot.</strong> Let one foot touch the belt and move
+            back with it for a few strides, matching its rhythm, before you commit your weight.</li>
+            <li><strong>Bring the second foot on and walk</strong>, still holding on, and only then
+            build speed again.</li>
+          </ol>
+          <p>
+            Do not step onto a belt that is moving faster than a slow walk, do not step on from
+            behind the machine, and do not attempt it at all if you have balance problems, are
+            unsteady after a hard effort, or are an older user. In those cases, press stop, wait
+            for the belt to come to rest, and start again from the side rails. It costs you
+            fifteen seconds.
+          </p>
+          <p>
+            The same applies to the reverse move. Straddling the side rails while the belt runs
+            underneath is a legitimate way to take a rest during a hard interval, but only at
+            speeds you could comfortably walk at, and with both hands on the rails as you step
+            out.
+          </p>`,
+    },
+    {
+      id: 'getting-off',
+      heading: 'How to Get Off a Treadmill, Step by Step',
+      html: `          <p>
+            Stepping off a moving belt is the classic treadmill fall. The instinct, when you
+            decide you have finished, is to stop walking — and the belt does not stop with you.
+            The stopping routine is the starting routine run backwards, with one extra step at the
+            beginning.
+          </p>
+          <ol>
+            <li><strong>Return the incline to zero.</strong> Do this first, while you are still
+            walking. Many machines level the deck when you press stop, but a deck that is still
+            descending while you are trying to step off moves under you, and an inclined deck is
+            a higher step down.</li>
+            <li><strong>Slow down gradually.</strong> Bring the speed down over a minute or two
+            to the lowest setting. This doubles as your cool-down, and it lets your heart rate and
+            breathing settle before the change of surface.</li>
+            <li><strong>Take hold of the handrails and press stop.</strong> Keep walking as the
+            belt decelerates. Most belts take a few seconds to stop and some coast further than
+            you expect.</li>
+            <li><strong>Wait until the belt has completely stopped.</strong> Not nearly stopped.
+            Stopped. If you prefer, once the belt is at its slowest speed you can step your feet
+            out onto the side rails, holding on, and then press stop — but not at walking pace.</li>
+            <li><strong>Unclip the safety key</strong> and take it out of the console.</li>
+            <li><strong>Step off to the side, facing forward or sideways</strong>, holding the
+            rail with at least one hand. Step down with your weaker leg first if one knee or hip
+            is painful. Never step off backward, and never turn around on the deck while the belt
+            is moving.</li>
+            <li><strong>Stand still for a few seconds</strong> before walking away.</li>
+          </ol>
+          <p>
+            That last step is not fussiness. After twenty or thirty minutes on a belt, solid
+            ground often feels briefly as if it is moving, because your brain has adjusted to
+            the belt carrying you. The sensation passes within a minute or so, but the first few
+            steps on the floor can be unsteady. Some people also feel light-headed if they stop
+            exercising abruptly, which is one more reason to slow down over a couple of minutes
+            rather than stopping from a brisk pace. If you feel dizzy, hold the rail and stay
+            where you are until it passes, or sit down.
+          </p>`,
+    },
+    {
+      id: 'emergency-stop',
+      heading: 'Emergency Stop and What to Do If You Stumble',
+      html: `          <p>
+            Every treadmill has two ways to stop the belt quickly, and you should know where both
+            are before you need either. <strong>The safety key</strong> cuts power to the belt the
+            moment the cord pulls it out of the console; on most machines the belt stops
+            abruptly. <strong>The stop button</strong>, usually large and red, normally brings the
+            belt to a controlled stop over a few seconds. Some consoles have a separate pause
+            button that behaves differently, and your manual will say which is which.
+          </p>
+          <p>
+            Test the key once a month or so: at your slowest speed, holding both rails, pull the
+            cord and confirm the belt stops. A key that does not stop the belt is a fault to fix
+            before you use the machine again.
+          </p>
+          <p>
+            <strong>If you start to lose your footing</strong> — you have drifted back, caught a
+            toe, or the speed is more than you can manage — the order is:
+          </p>
+          <ol>
+            <li><strong>Grab the handrails.</strong> This is the instinct anyway; let it happen.</li>
+            <li><strong>Put your feet out onto the side rails.</strong> Once both feet are off the
+            belt you are no longer being carried backward, and the urgency is gone.</li>
+            <li><strong>Stop the machine</strong> with the stop button or by pulling the key, then
+            wait for the belt to stop before stepping down.</li>
+          </ol>
+          <p>
+            <strong>If you do fall on a moving belt</strong>, do not try to stand up on it. If the
+            key is clipped to you, the cord should already have stopped the belt. If it is not,
+            and you cannot reach the console, let the belt carry you off the back or roll off to
+            one side, protecting your head, rather than fighting it — which is precisely why the
+            space behind the machine has to be clear. Keep hands, hair and loose clothing away
+            from the gap at the rear roller.
+          </p>
+          <p>
+            <strong>Getting up after a fall.</strong> Take a moment before moving. Check for pain,
+            particularly in the hips, wrists and head. If you think you are hurt, or you cannot get
+            up, stay where you are, keep warm, and call for help. If you feel able to get up, the
+            approach generally taught to older adults is to roll onto your side, get onto your
+            hands and knees, crawl to a sturdy chair, and use it to rise slowly — not to push
+            yourself up from the treadmill frame, which is not designed to bear sideways loads.
+            Any fall that involves a blow to the head, or that you cannot explain, is worth
+            mentioning to a doctor even if you feel fine.
+          </p>
+          <p>
+            If the belt ever starts on its own, surges, will not stop, or the machine smells of
+            burning, unplug it at the wall and stop using it until it has been looked at. Our
+            <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">guide to using a treadmill</a>
+            covers the console controls on a first session.
+          </p>`,
+    },
+    {
+      id: 'elderly',
+      heading: 'Treadmill Safety for Elderly Users',
+      html: `          <p>
+            The routine above is the same at any age. What changes with age is the margin for
+            error. The CDC reports that more than one in four adults aged 65 and older falls each
+            year, and a fall at 75 carries far more risk of fracture than a fall at 35. None of
+            that is a reason to avoid a treadmill — a level, predictable walking surface indoors,
+            with rails to hold, is in many ways safer than an icy pavement — but it is a reason to
+            add a few layers.
+          </p>
+          <ul>
+            <li><strong>Talk to a doctor or physical therapist first</strong> if you have a heart
+            condition, a history of falls, dizziness, a recent joint operation, neuropathy in the
+            feet, or a condition that affects balance such as Parkinson’s disease. A therapist can
+            watch you get on and off once and suggest adjustments specific to you.</li>
+            <li><strong>Check your medicines.</strong> Some blood pressure tablets, sedatives and
+            other drugs can cause light-headedness, especially when you stop exercising or stand
+            up quickly. A pharmacist can tell you whether any of yours are known to.</li>
+            <li><strong>Have someone nearby for the first few sessions.</strong> Not necessarily
+            in the room for ever, but present while the routine becomes automatic.</li>
+            <li><strong>Choose a machine with long side handrails</strong> that you can hold
+            while your feet are still on the floor, a low step-up height, a slow starting speed
+            and speed buttons on the rails, so you do not have to let go or lean forward to adjust
+            it.</li>
+            <li><strong>Keep the rails within reach</strong> throughout. Light fingertip contact
+            for balance is reasonable for people who need it; leaning your weight on them is a
+            sign the speed is too high.</li>
+            <li><strong>Start slowly and briefly.</strong> Short, easy sessions build confidence
+            on the belt itself, which in turn makes getting on and off feel routine. Our guides to
+            <a href="/how-long-should-seniors-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long seniors should walk on a treadmill</a>
+            and a <a href="/treadmill-workout-for-seniors/" class="text-[#0F62FE] font-medium">treadmill workout for seniors</a>
+            set out a gradual build-up.</li>
+            <li><strong>Keep a phone within reach but not in your hand</strong>, so you can call
+            for help if you fall when you are home alone.</li>
+          </ul>
+          <p>
+            If balance is the main concern, consider whether a treadmill is the right machine at
+            all. A recumbent bike or a seated stepper removes the moving-surface problem entirely,
+            and our answer to <a href="/is-a-treadmill-good-for-seniors/" class="text-[#0F62FE] font-medium">is a treadmill good for seniors</a>
+            sets out who does well on one and who does better on something else.
+          </p>`,
+    },
+    {
+      id: 'walking-pads',
+      heading: 'Getting On and Off a Walking Pad',
+      html: `          <p>
+            Walking pads change the routine because most have no side rails to straddle and many
+            have no handrail at all. The belt runs almost the full width of the deck, so there is
+            nowhere to put your feet while the belt starts.
+          </p>
+          <p>
+            The adjustment is simple: <strong>stand on the stopped belt, then start it at its
+            lowest speed</strong>, usually with the remote. Because the pad starts from its
+            slowest setting, your feet begin moving with it rather than being dragged by it.
+            Step on from the side or the front, not from the back, and stand in the middle of the
+            belt with your feet hip-width apart before pressing start. Stopping is the reverse:
+            slow to the lowest speed, press stop, wait for the belt to come to rest, and step off
+            to the side.
+          </p>
+          <p>
+            Many walking pads have no safety key either, and some rely on an automatic stop when
+            nobody is detected on the belt. That is no substitute for a key you can pull. If the
+            pad you are considering has a clip-on key, use it; if it has a fold-up handrail, put it
+            up. For older users, a pad with a full-height handrail is the sensible minimum, and
+            our guide to the <a href="/best-walking-pads-for-seniors/" class="text-[#0F62FE] font-medium">best walking pads for seniors</a>
+            explains which designs suit. Under-desk pads also need clear space behind them: people
+            step backward off them while distracted far more often than you would expect.
+          </p>`,
+    },
+    {
+      id: 'household',
+      heading: 'Children, Pets and the Moment You Step Off',
+      html: `          <p>
+            Children and pets are a getting-on-and-off issue as well as a general one. The moment
+            you step off is the moment you are least likely to notice a toddler or dog behind the
+            deck, and a machine left with the key in place can be started by anyone.
+          </p>
+          <ul>
+            <li>Check behind and beside the treadmill before you start the belt, every time.</li>
+            <li>Keep children and pets out of the room while the belt moves; a closed door or a
+            gate does more than any feature on the machine.</li>
+            <li>When you step off, remove the key and keep it out of reach, and unplug the
+            machine if you can.</li>
+            <li>Never let a child ride or play on the deck, even with the machine off.</li>
+          </ul>
+          <p>
+            The full reasoning, including the US Consumer Product Safety Commission’s warnings
+            about children and home treadmills, is in our
+            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a>.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'How do you get on a treadmill safely?',
+      a: `Stand with a foot on each side rail, holding the handrails, and clip the safety key to your waistband. Start the belt at its lowest speed, then step on one foot at a time while still holding on, walk in the centre of the belt and increase the speed gradually.`,
+    },
+    {
+      q: 'How do you step onto a moving treadmill?',
+      a: `Ideally you do not: start the belt with your feet on the side rails instead. If you must, slow the belt to a slow walk first, straddle the side rails holding both handrails, let one foot move with the belt for a few strides, then bring the other on. Do not step onto a fast belt or step on from behind, and older users or anyone with balance problems should stop the belt and restart it.`,
+    },
+    {
+      q: 'Should you wait for the treadmill to stop before getting off?',
+      a: `Yes. Lower the incline to zero, slow to the lowest speed, press stop and keep walking until the belt has completely stopped, then step off to the side holding a rail. Stepping off a moving belt is one of the most common ways people fall.`,
+    },
+    {
+      q: 'Where should the treadmill safety key be clipped?',
+      a: `To your clothing at the waist — a firm waistband, belt or belt loop at the front or side. Clipped to loose fabric it may tear rather than pull the key out. Test it occasionally at the slowest speed, holding the rails, to confirm the belt stops.`,
+    },
+    {
+      q: 'How much space do you need behind a treadmill?',
+      a: `Follow your manual. ICON-built machines such as NordicTrack and ProForm commonly ask for at least 8 feet behind and 2 feet each side; a Life Fitness manual summarising ASTM F2115 gives 2 metres behind and 0.5 metres each side. Treat about 2 metres, or 6.5 feet, as a minimum and keep it permanently clear.`,
+    },
+    {
+      q: 'Is a treadmill safe for elderly people?',
+      a: `For many older adults, yes, with the right routine and machine: long handrails, a low step-up height, a slow starting speed and the safety key clipped on every time. Anyone with a heart condition, history of falls, dizziness or a balance disorder should ask a doctor or physical therapist first, and have someone nearby for the first sessions.`,
+    },
+    {
+      q: 'What should you do if you stumble on a treadmill?',
+      a: `Grab the handrails, put your feet out onto the side rails so you are off the belt, then stop the machine. If you fall, do not try to stand up on a moving belt; the clipped-on key should stop it. Roll off to the side if it does not, and check for injury before getting up slowly.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Getting On and Off a Treadmill',
+  mistakesIntro:
+    'Each of these saves a few seconds, and each is behind a large share of treadmill falls.',
+  mistakes: [
+    {
+      title: 'Using quick-start to jump to walking pace',
+      body: 'A quick-start or preset button can put the belt at 2 to 3 mph before you are ready. Start at the lowest speed with your feet on the side rails and build up with the arrow keys.',
+    },
+    {
+      title: 'Pressing stop and stepping straight off',
+      body: 'Belts coast for a few seconds after stop is pressed, and some go further than you expect. Keep walking, holding a rail, until the belt has fully stopped before you step down.',
+    },
+    {
+      title: 'Leaving the incline up',
+      body: 'A raised deck is a higher step and can still be moving when you press stop. Bring the incline to zero while you are walking, before you slow down and stop.',
+    },
+    {
+      title: 'Clipping the key to a loose layer',
+      body: 'A key clipped to a jacket hem or loose shirt may tear the fabric instead of pulling free. Clip it to a firm waistband or belt loop at the waist and test it at the slowest speed.',
+    },
+  ],
+  relatedHeading: 'Related Treadmill Safety Guides',
+  related: [
+    {
+      kicker: 'Safety',
+      title: 'Treadmill Safety Tips',
+      blurb: 'Keys, children, pets, clearance, cords and folding decks.',
+      url: '/treadmill-safety-tips/',
+    },
+    {
+      kicker: 'Question Answered',
+      title: 'Should You Hold the Handrails?',
+      blurb: 'When holding on helps, and when it makes the session worse.',
+      url: '/should-you-hold-the-handrails-on-a-treadmill/',
+    },
+    {
+      kicker: 'Seniors',
+      title: 'Is a Treadmill Good for Seniors?',
+      blurb: 'Who does well on one, and who should choose another machine.',
+      url: '/is-a-treadmill-good-for-seniors/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">Get on from the side rails with the key clipped on and the
+            belt at its slowest speed; get off only after the incline is down and the belt has
+            completely stopped.</strong> Those two routines, done every time, remove most of the
+            risk of a treadmill fall.`,
+    `Keep about 2 metres or more clear behind the deck, know that hands on rails and feet on
+            the side rails is your escape route, and add a stable step or a lower machine if the
+            step-up is awkward. Older users and anyone with balance or joint problems should check
+            with a doctor or physical therapist first. Our
+            <a href="/treadmill-safety-tips/" class="text-[#5AA9FF] font-bold no-underline">treadmill safety tips</a>
+            cover the rest of the household hazards.`,
+  ],
+};
