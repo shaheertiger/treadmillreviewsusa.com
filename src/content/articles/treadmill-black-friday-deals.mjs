@@ -1,7 +1,7 @@
 export default {
   slug: 'treadmill-black-friday-deals',
-  title: 'Treadmill Black Friday Deals (2026): 7 Worth Watching',
-  description: `Black Friday is Nov 27, and a real treadmill deal is 15–30% off the usual selling price. Seven machines to watch, from a $170 walking pad to the 1750.`,
+  title: 'Black Friday Treadmill Prices (2026): 7 Deals Worth Watching',
+  description: `Black Friday is Nov 27. Target sale prices for seven treadmills, from a $170 walking pad to the NordicTrack 1750, and how to tell a real 15–30% deal.`,
   crumbLabel: 'Treadmill Black Friday Deals',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Timing',

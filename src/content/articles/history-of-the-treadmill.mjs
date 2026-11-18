@@ -1,6 +1,6 @@
 export default {
   slug: 'history-of-the-treadmill',
-  title: 'History of the Treadmill: When Was It Invented, and by Whom?',
+  title: 'When Was the Treadmill Invented? A Short History, 1818 On',
   description:
     'No single inventor: William Cubitt\'s prison treadmill came in 1818, Claude Hagen\'s patent in 1913 and William Staub\'s first home treadmill in the late 1960s.',
   crumbLabel: 'History of the Treadmill',
