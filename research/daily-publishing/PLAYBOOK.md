@@ -42,6 +42,36 @@ What made it work, in order of effect:
 Caveat: the export is site-level only. When a Pages or Queries export is available, check which
 URLs drove the 16–17 Nov jump and reorder `queue.md` toward the winning clusters.
 
+## 1b. What turns impressions into visitors (Vercel top pages, Nov 12-19)
+
+234 visitors across 108 pages in the week. Grouped by page type:
+
+| Page type | Pages with traffic | Visitors | Share | Visitors per page |
+|---|---:|---:|---:|---:|
+| "Best" roundups | 23 | 64 | 27% | **2.8** |
+| Fixes and troubleshooting | 14 | 39 | 17% | **2.8** |
+| Deals (Black Friday) | 5 | 11 | 5% | 2.2 |
+| Brand and model pages | 40 | 75 | **32%** | 1.9 |
+| Comparisons | 4 | 7 | 3% | 1.8 |
+| General questions and guides | 22 | 38 | 16% | 1.7 |
+
+Top pages: /proform-treadmill-troubleshooting/ (11), /best-treadmills-with-decline/ (10), /best-incline-treadmills/ (9),
+/nordictrack/ (8 visitors, 98 views), /wellfit-tm037-treadmill/ (6), then /best-treadmills-for-zwift/,
+/best-treadmills-without-subscriptions/, /horizon-t101-treadmill/, /how-to-lubricate-a-walking-pad/ and
+/treadmill-static-shock/ (5 each).
+
+**Doubling down.** The two daily lanes now follow the winners:
+- **Money lane (`roundup-queue.md`)** alternates feature roundups ("best treadmills with X", like decline, Zwift and
+  no-subscription) with Amazon-brand pages ("is <brand> any good", like Wellfit, Famistar and OMA).
+- **Traffic lane (`queue.md`)** leads with brand troubleshooting (the ProForm page's siblings: NordicTrack, Sole,
+  Horizon, Bowflex, Peloton, XTERRA, Schwinn), walking pad fixes and noise and symptom fixes. General question and health pages
+  move below them, because they convert worst. The 17 Nov seniors pages were too new to show in this export;
+  re-check them in the next one before writing more of that cluster.
+- **Link to the winners.** Every new page links, in the body, to the closest top-10 page of its type above
+  (e.g. a brand troubleshooting page links /proform-treadmill-troubleshooting/; a feature roundup links
+  /best-treadmills-with-decline/ or /best-incline-treadmills/). That passes the new page authority from a page Bing already favours.
+- **Re-rank monthly.** When a new top-pages export arrives, regroup it by type and reorder both queues.
+
 ## 2. The exact format (copy this for every article)
 
 Reference implementation: `src/content/articles/treadmill-speed-for-seniors.mjs` (question page)
