@@ -202,7 +202,7 @@ export default {
             covers this in more detail.</li>
             <li><strong>It breaks up sitting.</strong> A short walk after each meal interrupts long
             stretches in a chair, which has benefits of its own, and some research suggests
-            walking after meals can help blunt rises in blood sugar.</li>
+            <a href="/treadmill-walking-for-diabetes/" class="text-[#0F62FE] font-medium" data-autolink>walking after meals</a> can help blunt rises in blood sugar.</li>
             <li><strong>It fits around energy levels.</strong> Many older adults feel best at a
             particular time of day. Walking then, in shorter pieces, beats forcing a long session
             at a bad time.</li>

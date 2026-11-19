@@ -3422,6 +3422,17 @@ export const SECTIONS: Section[] = [
         ],
       },
       {
+        name: 'Walking for health',
+        pages: [
+          {
+            title: "Treadmill Walking for Diabetes",
+            description: "When to walk after meals, how fast and how long, and how to avoid lows on insulin.",
+            badge: 'Health',
+            url: '/treadmill-walking-for-diabetes/',
+          },
+        ],
+      },
+      {
         name: 'Common questions, answered',
         pages: [
           {
@@ -3834,6 +3845,13 @@ export const SECTIONS: Section[] = [
       {
         name: 'Recovery, boxing & accessories',
         pages: [
+          {
+            title: 'Best Knee Braces for Walking',
+            description:
+              'Six sleeves, hinged braces and straps matched to knee problems, from a $12 strap to the $80 GenuTrain.',
+            badge: 'Knees',
+            url: '/best-knee-braces-for-walking/',
+          },
           {
             title: 'Best Recovery Tools for Weightlifters',
             description:
