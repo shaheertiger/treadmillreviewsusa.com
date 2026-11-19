@@ -1,10 +1,44 @@
-# Daily Topic Queue
+# Daily Topic Queue (traffic lane: fix and troubleshooting pages first)
 
-Two per day, top to bottom. The daily run ticks each one: `- [x] 2026-11-20 · slug`.
+One per day, top to bottom (the other daily article comes from roundup-queue.md). The daily run ticks each one: `- [x] 2026-11-20 · slug`.
 Each topic was checked against existing titles on 2026-11-19. Re-check before writing (PLAYBOOK §2).
 If a topic turns out to be covered, mark it `- [~] skipped: covered by /slug/` and take the next one.
 
 Format: `slug` — Title — hub → group — pillar to link from
+
+## Cluster T: Brand troubleshooting (hub: /problems/) — doubles down on /proform-treadmill-troubleshooting/, the #1 page by visitors (Nov 12-19)
+Pillar: /treadmill-troubleshooting/ and /proform-treadmill-troubleshooting/
+
+- [ ] `nordictrack-treadmill-troubleshooting` — NordicTrack Treadmill Troubleshooting: Reset, Belt and iFIT Fixes (link /how-to-reset-nordictrack-treadmill/ for error codes; do not duplicate it)
+- [ ] `walking-pad-not-working` — Walking Pad Not Working? Belt, Remote and Power Fixes (builds on /how-to-lubricate-a-walking-pad/, a top-10 page)
+- [ ] `sole-treadmill-troubleshooting` — Sole Treadmill Troubleshooting: Console, Belt and Speed Fixes
+- [ ] `treadmill-clicking-noise` — Treadmill Clicking Noise: Find It by When It Clicks (noise pages win: /treadmill-squeaking-noise/, /treadmill-static-shock/)
+- [ ] `horizon-treadmill-troubleshooting` — Horizon Treadmill Troubleshooting: Won't Start, Belt, Console
+- [ ] `walking-pad-belt-slipping` — Walking Pad Belt Slipping or Off-Center: How to Fix It
+- [ ] `bowflex-treadmill-troubleshooting` — Bowflex Treadmill Troubleshooting: JRNY, Belt and Power Fixes
+- [ ] `treadmill-humming-noise` — Treadmill Humming Noise: Normal Hum or a Failing Motor?
+- [ ] `peloton-tread-troubleshooting` — Peloton Tread Troubleshooting: Belt, Screen and Speed Fixes
+- [ ] `walking-pad-remote-not-working` — Walking Pad Remote Not Working: Pairing and Battery Fixes
+- [ ] `xterra-treadmill-troubleshooting` — XTERRA Treadmill Troubleshooting: Power, Belt and Console
+- [ ] `sperax-walking-pad-recall` — Sperax Walking Pad Recall: What Owners Should Do (verify every fact on cpsc.gov first; skip if it cannot be verified)
+- [ ] `schwinn-treadmill-troubleshooting` — Schwinn Treadmill Troubleshooting: Common Faults and Fixes
+- [ ] `how-to-clean-a-walking-pad` — How to Clean a Walking Pad: Belt, Deck and Under the Belt
+
+## Cluster F: Treadmill problems (hub: /problems/)
+Pillar: /treadmill-troubleshooting/
+
+- [ ] `treadmill-speed-fluctuating` — Treadmill Speeds Up or Slows Down on Its Own: Causes
+- [ ] `treadmill-belt-sticking` — Treadmill Belt Sticking or Hesitating: Lube, Deck or Motor
+- [ ] `treadmill-motor-control-board` — Treadmill Motor Control Board: Signs It Has Failed
+- [ ] `treadmill-keeps-beeping` — Why Does My Treadmill Keep Beeping? Causes and Fixes
+- [ ] `treadmill-belt-fraying` — Treadmill Belt Fraying or Curling at the Edges: Fixes
+- [ ] `how-to-tell-if-treadmill-motor-is-bad` — How to Tell If a Treadmill Motor Is Bad: 6 Signs
+- [ ] `treadmill-error-codes` — Treadmill Error Codes: What E1, E2, E5 and E7 Usually Mean
+
+
+---
+
+# Lower priority (question pages convert worst: 1.7 visitors/page vs 2.8 for fixes and roundups, Nov 12-19)
 
 ## Cluster A: Treadmill walking for health conditions (hub: /training/, new group "Walking for health")
 Pillar: /what-speed-should-i-walk-on-a-treadmill/ and /treadmill-walking-with-arthritis/
@@ -41,7 +75,6 @@ Pillar: /best-walking-pads/ and /what-is-a-walking-pad/
 - [ ] `walking-pad-workouts` — Walking Pad Workouts: 6 Sessions You Can Do at a Desk
 - [ ] `what-speed-to-walk-on-a-walking-pad` — What Speed Should You Walk on a Walking Pad?
 - [ ] `how-long-to-walk-on-a-walking-pad` — How Long Should You Walk on a Walking Pad Each Day?
-- [ ] `walking-pad-not-working` — Walking Pad Not Working? Belt, Remote and Power Fixes
 - [ ] `how-to-adjust-a-walking-pad-belt` — How to Adjust a Walking Pad Belt: Center and Tighten
 - [ ] `walking-pad-on-hardwood-floor` — Can You Use a Walking Pad on Hardwood Floors?
 - [ ] `walking-pad-vs-walking-outside` — Walking Pad vs Walking Outside: Steps, Calories, Effort
@@ -69,19 +102,6 @@ Pillar: /treadmill-workout-for-weight-loss/
 - [ ] `walking-on-a-treadmill-with-a-weighted-vest` — Walking on a Treadmill With a Weighted Vest: How Heavy?
 - [ ] `treadmill-walking-when-overweight` — Treadmill Walking When You're Overweight: Where to Start
 - [ ] `hot-girl-walk-on-a-treadmill` — Hot Girl Walk on a Treadmill: The 4-Mile Version
-
-## Cluster F: Treadmill problems (hub: /problems/)
-Pillar: /treadmill-troubleshooting/
-
-- [ ] `treadmill-speed-fluctuating` — Treadmill Speeds Up or Slows Down on Its Own: Causes
-- [ ] `treadmill-clicking-noise` — Treadmill Clicking Noise: Find It by When It Clicks
-- [ ] `treadmill-belt-sticking` — Treadmill Belt Sticking or Hesitating: Lube, Deck or Motor
-- [ ] `treadmill-motor-control-board` — Treadmill Motor Control Board: Signs It Has Failed
-- [ ] `treadmill-keeps-beeping` — Why Does My Treadmill Keep Beeping? Causes and Fixes
-- [ ] `treadmill-belt-fraying` — Treadmill Belt Fraying or Curling at the Edges: Fixes
-- [ ] `treadmill-humming-noise` — Treadmill Humming Noise: Normal Hum or a Failing Motor?
-- [ ] `how-to-tell-if-treadmill-motor-is-bad` — How to Tell If a Treadmill Motor Is Bad: 6 Signs
-- [ ] `treadmill-error-codes` — Treadmill Error Codes: What E1, E2, E5 and E7 Usually Mean
 
 ## Cluster G: Owning a treadmill at home (hub: /guides/ or /maintenance/)
 Pillar: /where-to-put-a-treadmill/
