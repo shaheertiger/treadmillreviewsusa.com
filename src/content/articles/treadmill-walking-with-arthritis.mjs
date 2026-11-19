@@ -317,6 +317,14 @@ export default {
           <p>
             Never walk on a motorised <a href="/can-you-walk-barefoot-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>treadmill in socks</a>, slippers or bare feet. Apart from the
             lack of support, a foot that slips on the side rail is a fall risk.
+          </p>
+          <p>
+            Some people with knee arthritis also find a brace makes walking more comfortable. Guidelines
+            treat braces as an aid for knees that feel unstable rather than a routine treatment; our guide
+            to the <a href="/best-knee-braces-for-walking/" class="text-[#0F62FE] font-medium">best knee braces for walking</a>
+            matches sleeves, hinged braces and straps to knee problems. If you also have diabetes, check
+            your feet and the skin under any brace after each walk, as our guide to
+            <a href="/treadmill-walking-for-diabetes/" class="text-[#0F62FE] font-medium">treadmill walking for diabetes</a> explains.
           </p>`,
     },
     {

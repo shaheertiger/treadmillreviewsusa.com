@@ -145,7 +145,7 @@ export default {
           <p>
             <strong>Visceral fat</strong> sits deeper, inside the abdominal cavity around the liver,
             intestines and other organs. You cannot pinch it, and someone can carry a fair amount
-            while looking fairly slim. It is the type most strongly associated with type 2 diabetes,
+            while looking fairly slim. It is the type most strongly associated with <a href="/treadmill-walking-for-diabetes/" class="text-[#0F62FE] font-medium" data-autolink>type 2 diabetes</a>,
             cardiovascular disease and other metabolic problems, which is why waist measurement
             appears in health screening and body weight alone is a fairly blunt instrument.
           </p>

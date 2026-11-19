@@ -1,0 +1,485 @@
+const th = 'text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4';
+const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
+
+export default {
+  slug: 'best-knee-braces-for-walking',
+  title: 'Best Knee Braces for Walking (2026): 6 Picks by Support',
+  description:
+    'The Bauerfeind GenuTrain (about $80) is the best knee brace for walking; a $20 Modvel sleeve covers mild aches. Six picks from sleeve to hinged, by knee problem.',
+  crumbLabel: 'Best Knee Braces for Walking',
+  breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
+  kicker: 'Buying Guide',
+  updated: 'November 2026',
+  updatedLong: 'November 19, 2026',
+  published: '2026-11-19',
+  modified: '2026-11-19',
+  socialProof: '1.1k',
+  h1: ['Best Knee Braces', 'for Walking'],
+  standfirst:
+    'Most walkers with sore knees need light compression, not a rigid brace. The right choice depends on where it hurts and whether the knee feels unstable, so here are six braces matched to the problems walkers actually have, with what each listing confirms and what the guidelines say braces can and cannot do.',
+  ctas: [
+    { label: 'See the Picks', href: '#quick-picks' },
+    { label: 'Which Type Do I Need?', href: '#which-type' },
+  ],
+  tags: ['best knee brace for walking', 'knee brace for walking', 'knee sleeve for walking', 'knee brace for arthritis walking', 'hinged knee brace', 'patella strap', 'knee brace for treadmill'],
+  stickyCta: { text: 'See the Best Knee Braces for Walking', link: '#quick-picks' },
+  lead: `The best knee brace for walking for most people is the Bauerfeind GenuTrain: a knitted
+          compression sleeve with a built-in pad around the kneecap, comfortable enough to wear for a
+          long walk and firm enough to make an aching knee feel steadier. If you want to spend less,
+          a $20 two-pack of Modvel compression sleeves does the basic job. Walkers with a knee that
+          gives way need a hinged brace such as McDavid&rsquo;s, and pain just below the kneecap is
+          often better served by a strap. We have not tested these braces hands-on. Each pick was
+          chosen from its Amazon listing, the maker&rsquo;s sizing and the published guidance on knee
+          supports, and each card says which figures come from where.`,
+  sections: [
+    {
+      id: 'quick-picks',
+      heading: 'Best Knee Brace for Walking: The Short Answer',
+      navLabel: 'The short answer',
+      html: `          <p>
+            <strong>Buy the Bauerfeind GenuTrain if you walk most days with an aching or swollen knee
+            and want one brace that will last; buy the Modvel two-pack if you want light compression
+            for as little as possible; buy the McDavid hinged brace if your knee feels like it might
+            give way.</strong> The other three answer narrower problems: a kneecap that tracks badly, a
+            knee you need to brace without pulling a sleeve over your foot, and pain just below the
+            kneecap.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[640px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Brace</th>
+                <th class="${th}">Type</th>
+                <th class="${th}">Price seen</th>
+                <th class="${th}">Best for</th>
+                <th class="${th}">Sizing</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">Bauerfeind GenuTrain</td><td class="${td}">Knit sleeve with kneecap pad</td><td class="${td}">About $80</td><td class="${td}">Daily walking with aches or swelling</td><td class="${td}">Thigh and calf measurements</td></tr>
+              <tr><td class="${td}">Modvel Compression Sleeve (2-pack)</td><td class="${td}">Knit sleeve</td><td class="${td}">About $20</td><td class="${td}">Mild aches, warmth, budget</td><td class="${td}">S to 3XL</td></tr>
+              <tr><td class="${td}">McDavid Hinged Knee Brace</td><td class="${td}">Neoprene sleeve, side hinges</td><td class="${td}">About $40</td><td class="${td}">A knee that feels unstable</td><td class="${td}">S to XL; fits either knee</td></tr>
+              <tr><td class="${td}">Mueller Patella Stabilizer</td><td class="${td}">Mesh sleeve, kneecap buttress</td><td class="${td}">About $43</td><td class="${td}">Kneecap pain and tracking</td><td class="${td}">XS to XXXL by knee circumference</td></tr>
+              <tr><td class="${td}">ACE Adjustable with Side Stabilizers</td><td class="${td}">Wraparound, strapped</td><td class="${td}">About $17</td><td class="${td}">Easy on and off; arthritic knees</td><td class="${td}">One size</td></tr>
+              <tr><td class="${td}">Bodyprox Patella Tendon Strap (2-pack)</td><td class="${td}">Strap below kneecap</td><td class="${td}">About $12</td><td class="${td}">Pain just below the kneecap</td><td class="${td}">Knees 13 to 18 in.</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Prices are what Amazon showed on 19 November 2026 for the size we checked; brace prices
+            vary by size and colour, so check the live price for yours. We do not print <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium" data-autolink>star ratings</a>,
+            which change daily and are pooled across sizes. A brace is a support for walking, not a
+            treatment: if your knee is hot, badly swollen, locking or giving way, see a doctor or
+            physical therapist before you buy anything.
+          </p>`,
+    },
+    {
+      id: 'picks',
+      heading: 'Which Knee Braces Are Best for Walking?',
+      navLabel: 'The 6 picks',
+      products: true,
+      html: `          <p>
+            Each card links to the Amazon listing we matched by its ASIN, Amazon&rsquo;s product code,
+            on 19 November 2026. The specification line carries only what the listing states. All six
+            come from brands that sell under their own name with published sizing; we left out the
+            many unbranded braces with near-identical listings, because a brand you cannot reach is a
+            brand you cannot return a wrong size to.
+          </p>
+          <p>
+            The picks cover the four basic designs: plain compression sleeves, sleeves with a pad or
+            buttress around the kneecap, hinged braces with metal or plastic uprights, and straps that
+            sit below the kneecap. If you are not sure which you need, read
+            <a href="#which-type" class="text-[#0F62FE] font-medium">which type of brace suits which knee problem</a>
+            first.
+          </p>`,
+    },
+    {
+      id: 'which-type',
+      heading: 'Which Type of Knee Brace Do You Need for Walking?',
+      html: `          <p>
+            The type matters more than the brand. A rigid hinged brace on a knee that only needs a
+            little warmth is hot and awkward; a thin sleeve on a knee that gives way does nothing
+            useful. Match the brace to what the knee is doing:
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">What your knee does</th>
+                <th class="${th}">Brace type</th>
+                <th class="${th}">Pick on this page</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">General ache or stiffness, worse after a long walk</td><td class="${td}">Compression sleeve</td><td class="${td}">Modvel, or Bauerfeind for daily use</td></tr>
+              <tr><td class="${td}">Aches with puffiness around the joint</td><td class="${td}">Compression sleeve with a pad</td><td class="${td}">Bauerfeind GenuTrain</td></tr>
+              <tr><td class="${td}">Pain at the front of the knee, around the kneecap, worse on stairs or incline</td><td class="${td}">Patella stabilizer</td><td class="${td}">Mueller Patella Stabilizer</td></tr>
+              <tr><td class="${td}">Pain in a spot just below the kneecap</td><td class="${td}">Patellar tendon strap</td><td class="${td}">Bodyprox strap</td></tr>
+              <tr><td class="${td}">The knee feels loose or gives way</td><td class="${td}">Hinged brace</td><td class="${td}">McDavid Hinged</td></tr>
+              <tr><td class="${td}">Hard to pull a sleeve over the foot (stiff hips, swelling, limited reach)</td><td class="${td}">Wraparound brace</td><td class="${td}">ACE Adjustable</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            <strong>Compression sleeves</strong> are what most walkers end up using. They give warmth,
+            gentle pressure and a sense of where the knee is, which many people find makes it feel
+            steadier. They do not hold the joint in place.
+          </p>
+          <p>
+            <strong>Patella stabilizers</strong> add a horseshoe or ring-shaped buttress around the
+            kneecap. They are aimed at front-of-knee pain, which treadmill walkers often notice when
+            they first add
+            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">incline</a>.
+          </p>
+          <p>
+            <strong>Hinged braces</strong> have uprights on both sides of the knee that limit sideways
+            movement. They are bulkier and warmer, and they are meant for a knee that actually feels
+            unstable, not for routine aches.
+          </p>
+          <p>
+            <strong>Tendon straps</strong> are a band that presses on the patellar tendon below the
+            kneecap. They are small and cheap, and some people with pain in that one spot find them
+            more comfortable than a full sleeve.
+          </p>
+          <p>
+            <strong>Unloader braces</strong>, which shift load from one side of the knee to the other
+            in arthritis, are a separate category. They are usually fitted through a clinic and are
+            not on this page.
+          </p>`,
+    },
+    {
+      id: 'evidence',
+      heading: 'Do Knee Braces Actually Help When Walking?',
+      html: `          <p>
+            <strong>They can, but less than exercise does, and mostly for specific problems.</strong>
+            The two most-cited guidelines on knee osteoarthritis, the commonest reason older walkers
+            buy a brace, put it like this:
+          </p>
+          <ul>
+            <li><strong>American College of Rheumatology and Arthritis Foundation, 2019</strong>
+            (Kolasinski and colleagues, <em>Arthritis Care &amp; Research</em>). Strongly recommends
+            tibiofemoral knee braces for people with knee osteoarthritis whose disability comes from
+            instability, when they are part of a wider plan, and conditionally recommends patellofemoral
+            braces for arthritis around the kneecap. It strongly recommends exercise for everyone.</li>
+            <li><strong>NICE guideline NG226, 2022</strong> (England). Advises against routinely offering
+            braces, insoles or supports for osteoarthritis unless there is joint instability or
+            abnormal loading and exercise alone is ineffective or unsuitable without one.</li>
+          </ul>
+          <p>
+            Read together, they say the same thing: a brace is an aid that helps some people walk more,
+            and walking more is what helps the knee. If a brace makes you comfortable enough to get on
+            the treadmill five days a week instead of two, it has done its job. If you are buying one
+            instead of strengthening the muscles around the knee, it will not do the job on its own.
+          </p>
+          <p>
+            For pain that is not arthritis, such as front-of-knee pain or tendon pain, the evidence on
+            braces and straps is thinner and mixed. Many people find them comfortable, and they are
+            low-risk, but they work best alongside the exercises a physical therapist would give you.
+            Our guide to
+            <a href="/treadmill-walking-with-arthritis/" class="text-[#0F62FE] font-medium">treadmill walking with arthritis</a>
+            covers pain rules, speed and incline for sore knees, and
+            <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">whether treadmills are bad for your knees</a>
+            answers the question most knee-pain walkers ask first.
+          </p>`,
+    },
+    {
+      id: 'sizing',
+      heading: 'How Should a Knee Brace Fit?',
+      html: `          <p>
+            Most knee brace returns are about size, and the listings measure in different places, so
+            use the method on the listing you buy rather than your trouser size.
+          </p>
+          <ul>
+            <li><strong>Measure with the knee slightly bent</strong>, as Bauerfeind&rsquo;s listing
+            asks, and with the tape snug but not digging in.</li>
+            <li><strong>Note where.</strong> Bauerfeind measures around the thigh and calf at set
+            distances from the centre of the knee; Mueller measures around the knee itself; the
+            Bodyprox strap gives a knee circumference of 13 to 18 inches.</li>
+            <li><strong>Between sizes?</strong> McDavid&rsquo;s listing says to size up if you are near
+            the top of a range. For a brace you will walk in for half an hour or more, the looser of
+            two sizes is usually more comfortable.</li>
+            <li><strong>Check after ten minutes of walking.</strong> A brace that fits standing still
+            can slide down once you warm up and sweat. If it rolls at the top edge, cuts in behind
+            the knee, or leaves deep marks, the size or style is wrong.</li>
+          </ul>
+          <p>
+            Swelling changes your size during the day. If your knee is puffier in the evening, which is
+            when many people walk on a treadmill, measure then.
+          </p>`,
+    },
+    {
+      id: 'on-the-treadmill',
+      heading: 'Wearing a Knee Brace on a Treadmill',
+      html: `          <p>
+            A treadmill is one of the easier places to walk in a brace: the surface is even, you can
+            stop the moment it rubs, and you can change one thing at a time. A few habits make it more
+            comfortable:
+          </p>
+          <ul>
+            <li><strong>Put it on before you warm up</strong>, not halfway through, so you can feel
+            whether it slips during the first slow minutes.</li>
+            <li><strong>Wear it over bare skin</strong> unless the listing says otherwise. Under
+            leggings a sleeve tends to slide; over them it loses grip.</li>
+            <li><strong>Mind the heat.</strong> Neoprene braces such as the McDavid and ACE are warm.
+            On long walks, a fan and breathable clothing help; see our
+            <a href="/how-to-stay-cool-on-a-treadmill/" class="text-[#0F62FE] font-medium">guide to staying cool on a treadmill</a>.</li>
+            <li><strong>Go easy on incline at first.</strong> Front-of-knee pain often gets worse
+            uphill. Start flat in a new brace, then add incline a percent at a time.</li>
+            <li><strong>Take it off afterwards.</strong> Most braces are designed for activity. Unless
+            a clinician has told you otherwise, do not sleep in one.</li>
+            <li><strong>Wash it as the label says.</strong> Sweat breaks down elastic. Two-packs like
+            the Modvel and Bodyprox make it easy to rotate.</li>
+          </ul>
+          <p>
+            Shoes matter as much as the brace. <a href="/how-often-to-replace-running-shoes/" class="text-[#0F62FE] font-medium" data-autolink>Worn-out shoes</a> change how your knee takes each step; our
+            <a href="/best-walking-shoes-for-treadmill/" class="text-[#0F62FE] font-medium">treadmill walking shoes guide</a>
+            covers what to look for.
+          </p>`,
+    },
+    {
+      id: 'when-to-see-someone',
+      heading: 'When to See a Doctor Instead of Buying a Brace',
+      html: `          <p>
+            A brace is reasonable for a knee that aches with activity and settles with rest. It is not
+            the right first step if you have any of these, which need a doctor or physical therapist:
+          </p>
+          <ul>
+            <li>A knee that is hot, red or rapidly swollen</li>
+            <li>A knee that locks, catches or will not straighten fully</li>
+            <li>A knee that gives way repeatedly, or after a twist or fall</li>
+            <li>Pain at night or at rest that is getting worse</li>
+            <li>Pain after a knee replacement or other surgery; follow your surgeon&rsquo;s plan, and
+            see our guide to
+            <a href="/treadmill-after-knee-replacement/" class="text-[#0F62FE] font-medium">treadmill walking after knee replacement</a></li>
+            <li>Numbness, tingling or calf swelling along with the knee pain</li>
+          </ul>
+          <p>
+            People with diabetes and reduced feeling in their legs should check the skin under a brace
+            after every walk, because rubbing can go unnoticed; our guide to
+            <a href="/treadmill-walking-for-diabetes/" class="text-[#0F62FE] font-medium">treadmill walking for diabetes</a>
+            covers foot and skin checks. This page is about choosing equipment, not medical advice.
+          </p>`,
+    },
+  ],
+  products: [
+    {
+      id: 'bauerfeind-genutrain',
+      name: 'Bauerfeind GenuTrain',
+      category: 'Daily-Wear Sleeve With a Kneecap Pad',
+      badge: 'Best Overall',
+      priceRange: 'About $80 (Amazon, 19 Nov 2026)',
+      specs: 'Knit compression sleeve · integrated Omega+ pad around the kneecap · sized by thigh and calf measurements (listing)',
+      pros: [
+        'A built-in pad around the kneecap, which a plain sleeve does not have',
+        'Medical-grade gradient compression, per the listing, aimed at swelling and fatigue',
+        'Sized from two measurements rather than one, which tends to mean a better fit on long walks',
+        'Lists mild osteoarthritis, runner’s knee and swelling among its uses',
+      ],
+      cons: [
+        'About four times the price of a basic sleeve',
+        'Sizing by thigh and calf takes care; measure as the listing describes',
+        'No side hinges, so it is not the brace for a knee that gives way',
+      ],
+      bottomLine:
+        'The brace to buy if you walk most days with an aching or puffy knee and want one sleeve that is comfortable for long sessions.',
+      description:
+        'The GenuTrain is our best overall pick because it combines the comfort of a knitted sleeve, which most walkers can wear for an hour without overheating, with a feature cheap sleeves lack: an integrated pad, which Bauerfeind calls the Omega+ pad, that sits around the kneecap. The listing says the pad holds the kneecap in place and is meant to reduce swelling, and that small Meniscus Wings and Hoffa Pads add targeted pressure around the joint space. It describes the compression as gradient and medical grade. Uses listed include knee pain, strain, tendinitis, swelling, runner’s and jumper’s knee, feelings of instability and mild osteoarthritis. Sizing uses two measurements, around the thigh and calf at set distances from the centre of the knee with the knee slightly bent, which takes more effort than a single circumference but suits a sleeve meant to stay put while you walk. It has no hinges, so a genuinely unstable knee needs a different brace. Amazon showed the size 5 titanium version at $79.92 on 19 November 2026.',
+    },
+    {
+      id: 'modvel-compression-sleeve',
+      name: 'Modvel Compression Knee Sleeve (2-Pack)',
+      category: 'Light Compression for the Lowest Price',
+      badge: 'Best Budget',
+      priceRange: 'About $20 for two (Amazon, 19 Nov 2026)',
+      specs: 'Knit compression sleeve · nylon and latex blend · sizes S to 3XL · two sleeves per pack (listing)',
+      pros: [
+        'Two sleeves for about $20, so you can wash one and wear the other',
+        'Six sizes from S to 3XL, wider than most budget sleeves',
+        'Lightweight knit that suits warm treadmill sessions better than neoprene',
+        'Machine-washable without losing compression, per the listing',
+      ],
+      cons: [
+        'Contains latex, so it is not for anyone with a latex allergy',
+        'Plain compression only: no kneecap pad and no side support',
+        'The listing’s claims about meniscus and ACL support go beyond what any sleeve can do',
+      ],
+      bottomLine:
+        'The cheapest sensible choice for mild aches and stiffness on walks, if you are not allergic to latex.',
+      description:
+        'Modvel’s two-pack is the budget pick because it gives you two plain compression sleeves for about the price of one elsewhere, in a range of six sizes from small to 3XL. The listing describes a blend of nylon and latex, breathable and moisture-wicking, that can be washed without shrinking or losing compression. For walking that is the right kind of sleeve: thin enough to stay comfortable on a 30 or 40-minute treadmill session, and two of them means one can dry while you wear the other. Read the listing’s claims carefully. It mentions meniscus tears, ACL injuries and post-surgery swelling, but a plain knit sleeve gives warmth and gentle pressure, not structural support, so treat it as a comfort aid for aches rather than protection for an injured knee. Anyone with a latex allergy should look elsewhere. Amazon showed the two-pack at $19.99 on 19 November 2026.',
+    },
+    {
+      id: 'mcdavid-hinged-knee-brace',
+      name: 'McDavid Hinged Knee Brace',
+      category: 'Side Support for a Knee That Feels Unstable',
+      badge: 'Best Hinged',
+      priceRange: 'About $40 (Amazon, 19 Nov 2026)',
+      specs: 'Latex-free neoprene sleeve · side hinges and straps · 360° padded kneecap buttress · fits either knee (listing)',
+      pros: [
+        'Hinges on both sides limit the sideways movement that makes a knee feel unsafe',
+        'Described as McDavid’s lightest hinge, which matters on a long walk',
+        'Latex-free neoprene with bound edges and a perforated back panel',
+        'Straps let you set the fit above and below the knee',
+      ],
+      cons: [
+        'Neoprene is warm on longer treadmill walks',
+        'Bulkier than a sleeve and noticeable under trousers',
+        'More support than most aching knees need',
+      ],
+      bottomLine:
+        'The pick for a walker whose knee feels loose or gives way, as long as a doctor has checked why.',
+      description:
+        'McDavid’s hinged brace is our pick for walkers whose problem is instability rather than ache. The listing describes side hinges and straps that support the knee while allowing it to bend and straighten freely, which is what you want on a treadmill, where the knee goes through the same arc thousands of times. McDavid calls it its lightest hinge, with wider arms. The sleeve is latex-free neoprene with bound edges, a perforated back panel for heat and moisture, and an open 360-degree padded buttress around the kneecap. It fits either knee, and the listing advises sizing up if your measurement is near the top of a range. Neoprene holds heat, so it is less comfortable than a knit sleeve on a long, warm walk, and it is more brace than a simple aching knee needs. If your knee gives way, see a doctor or physical therapist to find out why before relying on any brace. Amazon showed the large size at $39.99 on 19 November 2026.',
+    },
+    {
+      id: 'mueller-patella-stabilizer',
+      name: 'Mueller Patella Stabilizer Knee Brace',
+      category: 'Front-of-Knee and Kneecap Pain',
+      badge: 'Best for Kneecap Pain',
+      priceRange: 'About $43 (Amazon, 19 Nov 2026)',
+      specs: 'Breathable mesh with double-layer liner · 3 coiled alloy stays · sizes XS (10–12 in.) to XXXL (22–24 in.) knee circumference (listing)',
+      pros: [
+        'Designed to limit side-to-side movement of the kneecap, the target for front-of-knee pain',
+        'Breathable mesh rather than neoprene, cooler on long walks',
+        'Seven sizes by knee circumference, from 10 to 24 inches',
+        'Fits either knee and slides on, then tightens to your comfort',
+      ],
+      cons: [
+        'Not the right brace for general aches or for instability from ligaments',
+        'Sizing is by knee circumference only, so measure carefully',
+        'Pricier than a basic sleeve',
+      ],
+      bottomLine:
+        'The brace to try if the front of your knee hurts around the kneecap, especially walking uphill or on stairs.',
+      description:
+        'Mueller’s Patella Stabilizer is our pick for front-of-knee pain, which treadmill walkers often notice when they start using incline. The listing describes it as engineered to help prevent side-to-side movement of the knee, with targeted compression, and it lists sprains, strains and arthritic knees among its uses. It uses breathable mesh with a soft double-layer liner instead of neoprene, and three coiled alloy stays to keep it from slipping or bunching during activity. It slides on and then tightens to your comfort, and it fits either knee. Sizing runs from XS for a 10 to 12-inch knee circumference to XXXL for 22 to 24 inches, so measure around the knee before ordering. It is not designed for a knee that gives way because of a ligament problem, which is where a hinged brace fits better. Amazon showed the large size at $42.95 on 19 November 2026.',
+    },
+    {
+      id: 'ace-adjustable-knee-brace',
+      name: 'ACE Adjustable Knee Brace With Side Stabilizers',
+      category: 'Wraparound Brace That Is Easy to Put On',
+      badge: 'Easiest to Put On',
+      priceRange: 'About $17 (Amazon, 19 Nov 2026)',
+      specs: 'Neoprene wraparound · adjustable straps · dual side stabilizers · one size, fits either knee (listing)',
+      pros: [
+        'Wraps around the knee, so there is no sleeve to pull over the foot',
+        'Side stabilizers give some lateral support for a modest price',
+        'Adjustable straps let you change the compression as swelling changes',
+        'From ACE, a widely stocked brand you can find in pharmacies',
+      ],
+      cons: [
+        'One size fits most, which leaves very small and very large knees out',
+        'Neoprene is warm on long walks',
+        'Less precise fit than a measured sleeve',
+      ],
+      bottomLine:
+        'The practical choice for walkers with stiff hips, swelling or limited reach, who struggle to pull on a sleeve.',
+      description:
+        'ACE’s adjustable brace is on this list for a reason that matters more to many older walkers than any spec: you do not have to pull it over your foot. It wraps around the knee and fastens with adjustable straps, so someone with stiff hips, a swollen leg or limited reach can put it on sitting down. The listing describes firm support and adjustable compression for weak, sore or injured joints, dual side stabilizers for lateral support, a contoured design that allows full range of motion, and soft, breathable neoprene. It is one size and fits either knee. The trade-offs are the fit, which is less exact than a measured sleeve, and the warmth of neoprene on long sessions. For walkers with arthritis who find sleeves a struggle, that is usually a fair trade. Amazon showed it at $16.92 on 19 November 2026.',
+    },
+    {
+      id: 'bodyprox-patella-tendon-strap',
+      name: 'Bodyprox Patella Tendon Knee Strap (2-Pack)',
+      category: 'Pain Just Below the Kneecap',
+      badge: 'Best Strap',
+      priceRange: 'About $12 for two (Amazon, 19 Nov 2026)',
+      specs: 'Neoprene strap with silicone gel pad · hook-and-loop fastening · fits 13–18 in. knee circumference · two per pack (listing)',
+      pros: [
+        'Small and cool compared with any sleeve or brace',
+        'A silicone gel pad sits on the tendon below the kneecap',
+        'Two straps for about $12, one for each knee or one spare',
+        'Adjustable, and the listing mentions walking up and down inclines',
+      ],
+      cons: [
+        'Only helps pain in one specific spot below the kneecap',
+        'Fits knees of 13 to 18 inches only',
+        'The listing’s long list of conditions overstates what a strap can do',
+      ],
+      bottomLine:
+        'Worth trying first if your pain sits in one spot just below the kneecap, because it costs little and barely gets in the way.',
+      description:
+        'The Bodyprox strap is the cheapest pick and the most specific. It is a narrow neoprene band with a built-in silicone gel pad that sits on the patellar tendon, just below the kneecap, fastened with hook-and-loop straps. The listing says it fits knees from 13 to 18 inches around, has hexagonal vent holes for airflow, and mentions support when walking up or down an incline, which is exactly when tendon pain tends to show up on a treadmill. You get two in a pack for about $12. Its listing names a long list of conditions, from arthritis to torn ligaments, but a strap only presses on one tendon; it is a reasonable thing to try for pain in that spot and the wrong tool for anything else. Larger knees will need a different product. Amazon showed the two-pack at $11.89 on 19 November 2026.',
+    },
+  ],
+  faqs: [
+    {
+      q: 'What is the best knee brace for walking?',
+      a: `For most people, a compression sleeve with a kneecap pad, such as the Bauerfeind GenuTrain, at about $80 on Amazon in November 2026. If you want to spend less, a plain compression sleeve like Modvel's two-pack does the basic job for about $20. A knee that gives way needs a hinged brace instead.`,
+    },
+    {
+      q: 'Should I wear a knee brace when walking on a treadmill?',
+      a: `If it makes walking more comfortable, yes. A brace is an aid that can help you walk more often, and walking more is what helps most knees. Put it on before you warm up, start on a flat belt, and take it off afterwards. See a doctor first if the knee is hot, swollen, locking or giving way.`,
+    },
+    {
+      q: 'Is a knee sleeve or a knee brace better for walking?',
+      a: `For most walkers, a sleeve. Sleeves give warmth and gentle compression and are comfortable for long walks. Hinged braces are bulkier and warmer, and they are meant for knees that feel unstable. Straps suit pain in one spot just below the kneecap.`,
+    },
+    {
+      q: 'Do knee braces help arthritis when walking?',
+      a: `They can help some people. The American College of Rheumatology's 2019 guideline strongly recommends knee braces for osteoarthritis when disability comes from instability, and conditionally recommends kneecap braces. England's NICE guideline advises against routine use without instability. Both put exercise first.`,
+    },
+    {
+      q: 'Can you wear a knee brace all day?',
+      a: `Most compression sleeves and activity braces are meant to be worn during activity rather than all day and night. Take it off after your walk, check the skin underneath, and do not sleep in it unless a clinician has told you to. If a brace leaves deep marks or causes numbness, it is too tight or the wrong size.`,
+    },
+    {
+      q: 'How tight should a knee brace be for walking?',
+      a: `Snug enough not to slide down after ten minutes of walking, but not so tight that it digs in behind the knee, leaves deep marks or causes tingling. Measure where the listing tells you to, with the knee slightly bent, and size up if you are near the top of a range.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Buying a Knee Brace for Walking',
+  mistakesIntro: 'Most of these come from buying more brace, or a different brace, than the knee needs.',
+  mistakes: [
+    {
+      title: 'Buying a hinged brace for an aching knee',
+      body: 'Hinged braces are for knees that feel unstable. On a knee that simply aches, they are hot, bulky and no more helpful than a sleeve. Start with compression unless the knee actually gives way.',
+    },
+    {
+      title: 'Guessing the size',
+      body: 'Brace makers measure in different places: the thigh and calf, the knee itself, or a single circumference. Use the method on the listing, measure with the knee slightly bent, and measure in the evening if your knee swells during the day.',
+    },
+    {
+      title: 'Using a brace instead of strengthening',
+      body: 'Guidelines for knee arthritis put exercise first and braces second. A brace that gets you walking is doing its job; a brace that replaces the thigh and hip exercises that protect the knee is not.',
+    },
+    {
+      title: 'Ignoring warning signs',
+      body: 'A hot, red, swollen, locking or repeatedly buckling knee needs a doctor or physical therapist, not a brace from a listing. So does knee pain after surgery, and calf swelling or tingling alongside it.',
+    },
+  ],
+  relatedHeading: 'Related Knee and Walking Guides',
+  related: [
+    {
+      kicker: 'Arthritis',
+      title: 'Treadmill Walking With Arthritis',
+      blurb: 'Pain rules, speed, incline and session length for knee and hip arthritis.',
+      url: '/treadmill-walking-with-arthritis/',
+    },
+    {
+      kicker: 'Knees',
+      title: 'Are Treadmills Bad for Your Knees?',
+      blurb: 'What a belt changes for your knees compared with pavement, and how to protect them.',
+      url: '/are-treadmills-bad-for-your-knees/',
+    },
+    {
+      kicker: 'Diabetes',
+      title: 'Treadmill Walking for Diabetes',
+      blurb: 'When to walk, how fast, and how to avoid lows, with foot and skin checks.',
+      url: '/treadmill-walking-for-diabetes/',
+    },
+    {
+      kicker: 'Machines',
+      title: 'Best Treadmills for Bad Knees',
+      blurb: 'Firm decks, low step-ups and incline for walkers with sore knees.',
+      url: '/best-treadmills-for-bad-knees/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">For most walkers the best knee brace is a compression sleeve, and the
+            Bauerfeind GenuTrain is the one to buy if you walk most days.</strong> The Modvel two-pack does the
+            basic job for about $20; the McDavid hinged brace is for a knee that gives way; the Mueller
+            stabilizer suits kneecap pain; the ACE wraparound is easiest to put on; and the Bodyprox strap
+            is the cheap first try for pain just below the kneecap.`,
+    `Whatever you buy, measure as the listing says, start on a flat belt, and keep up the exercises
+            that strengthen the knee. If your knee is hot, swollen, locking or giving way, see a doctor
+            first. Our
+            <a href="/treadmill-walking-with-arthritis/" class="text-[#5AA9FF] font-bold no-underline">arthritis walking guide</a>
+            covers how to build up time and incline without a flare.`,
+  ],
+};

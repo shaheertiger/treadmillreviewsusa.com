@@ -255,6 +255,12 @@ export default {
           </p>
           <p>
             <strong>Let go of the rails.</strong> If you need them, turn down the speed or incline.
+          </p>
+          <p>
+            <strong>Consider a sleeve if an aching knee keeps you off the belt.</strong> Light compression
+            helps many walkers feel steadier; our guide to the
+            <a href="/best-knee-braces-for-walking/" class="text-[#0F62FE] font-medium">best knee braces for walking</a>
+            explains which type suits which knee problem.
           </p>`,
     },
     {

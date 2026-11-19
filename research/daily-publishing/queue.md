@@ -9,7 +9,7 @@ Format: `slug` — Title — hub → group — pillar to link from
 ## Cluster A: Treadmill walking for health conditions (hub: /training/, new group "Walking for health")
 Pillar: /what-speed-should-i-walk-on-a-treadmill/ and /treadmill-walking-with-arthritis/
 
-- [ ] `treadmill-walking-for-diabetes` — Treadmill Walking for Diabetes: Timing, Speed, Blood Sugar
+- [x] 2026-11-19 · `treadmill-walking-for-diabetes` — Treadmill Walking for Diabetes: Timing, Speed, Blood Sugar
 - [ ] `walking-on-treadmill-after-eating` — Walking on a Treadmill After Eating: How Soon, How Long
 - [ ] `treadmill-walking-for-high-blood-pressure` — Is Treadmill Walking Good for High Blood Pressure?
 - [ ] `treadmill-walking-for-back-pain` — Is Treadmill Walking Good for Lower Back Pain?

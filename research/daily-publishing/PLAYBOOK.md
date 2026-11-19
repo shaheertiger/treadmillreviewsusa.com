@@ -1,4 +1,4 @@
-# Daily Publishing Playbook — 2 articles a day
+# Daily Publishing Playbook — 2 articles a day (1 Amazon roundup + 1 question page)
 
 Written 2026-11-19 from the Bing Webmaster Tools "Search Performance" export (19 Aug – 17 Nov 2026)
 and the git history. The scheduled daily run reads this file first and follows it exactly.
@@ -77,13 +77,40 @@ Checklist, every item required:
 - [ ] **≥ 2,500 words** of prose (the build enforces it).
 - [ ] **2–4 in-body links** to existing related pages, with `class="text-[#0F62FE] font-medium"`.
 - [ ] `published`, `updated`, `updatedLong` set to the publish date.
-- [ ] No product roundups or model reviews in the daily run. Those need verified specs and
-      ASINs, which this run cannot check. Question and how-to pages only.
+- [ ] Product claims follow §2a. Never put a spec, price or capacity on a card that the Amazon
+      listing (or the maker's own page) does not state.
+
+## 2a. Amazon roundups (one a day)
+
+Every day publishes **one roundup from `roundup-queue.md` and one question article from
+`queue.md`**. Roundups earn the affiliate money; question pages bring the impressions.
+Reference spec: `src/content/articles/best-walking-pads-on-amazon.mjs` (copy its `products` shape:
+`id`, `name`, `category`, `badge`, `priceRange`, `specs`, `pros`, `cons`, `bottomLine`, `description`).
+
+The Amazon Creators API credentials are in this environment (`AMAZON_CREATORS_*`). Use them:
+
+1. `node scripts/amazon/search.mjs "<query>"`: shortlist 10–15 live listings with ASIN, title, price, photo.
+2. `node scripts/amazon/item.mjs <ASIN> [...]`: read each candidate's brand, price and feature bullets.
+   Pick 5–7 that are in stock, from a named brand, and genuinely different from each other
+   (budget, best overall, heaviest capacity, with incline, and so on). Skip unbranded clones and
+   listings with no clear specs.
+3. Card `specs` and `pros` come **only** from the listing's title and bullets (or the maker's site).
+   Write "per the Amazon listing" where it matters. `priceRange` is "About $X (Amazon, D Mon YYYY)",
+   the price you saw today. Where sources conflict (motor HP is common), leave the figure off and say so.
+4. Write the `name` of each product so it matches the listing (brand + model), then bind the ASINs:
+   write a `picks.txt` with one `Product name | ASIN` per line and run
+   `node scripts/amazon/add-asins.mjs picks.txt`. Check the titles it prints match your picks.
+   Delete `picks.txt` afterwards. Then regenerate the page so cards get the photo and the `/dp/` link.
+5. Still no testing claims: "Not tested hands-on; picked from listings, specs and owner reviews" is
+   the honest method line. No `aggregateRating`, no star ratings, no invented review quotes.
+6. Roundup title format: `Best <thing> (2026): <N> Picks <payoff>`, 50–65 characters. Open with the
+   Short answer line naming the top three picks (the generator does this when the first pick has
+   a real "Best ..." badge).
 
 ## 3. Publishing as a cluster
 
-- Take the **next two unchecked topics** in `queue.md`. They are grouped by cluster, so a day's two
-  articles usually share a cluster. Link them to each other.
+- Take the **next unchecked roundup** in `roundup-queue.md` and the **next unchecked topic** in
+  `queue.md`. Link them to each other where it makes sense, and to their clusters.
 - Add both to `src/data/sections.ts` in the hub group named in the queue. Create the group if the
   queue says "new group", following the seniors "Walking for older adults" group on `/training/`.
 - Add an entry for each to `scripts/interlink-anchors.json` (1–5 specific phrases), then
@@ -99,11 +126,11 @@ npm run audit:seo
 ```
 
 The build must pass. Fix anything `audit:seo` reports for the two new pages. Then tick the two
-topics in `queue.md` with the date and slug, and add a line to `log.md`.
+topics in their queues with the date and slug, and add a line to `log.md`.
 
 ## 5. When the queue runs low
 
-At 10 or fewer unchecked topics, append a new cluster of 10–12 to `queue.md`. Use the same
+At 10 or fewer unchecked topics in either queue, append a new cluster of 10–12 to `queue.md`. Use the same
 selection rules: a question people search, no existing page targeting it, closest to the
 clusters that performed best (walking, seniors and health-adjacent walking, walking pads,
 treadmill problems).

@@ -204,6 +204,12 @@ export default {
             sets out realistic sessions and expectations, and the health benefits of regular
             walking arrive whether the scale moves or not. For nutrition questions, a registered
             dietitian is the right person to ask.
+          </p>
+          <p>
+            For people with diabetes, timing matters as much as speed: a brisk 10 to 15-minute walk soon
+            after a meal lowers the rise in blood sugar more than the same walk at another time. Our guide to
+            <a href="/treadmill-walking-for-diabetes/" class="text-[#0F62FE] font-medium">treadmill walking for diabetes</a>
+            covers when to walk and how to avoid lows.
           </p>`,
     },
     {
