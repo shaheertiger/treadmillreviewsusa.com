@@ -369,7 +369,7 @@ export default {
             covers the simpler alternative.
           </p>
           <p>
-            ProForm machines share the same parent company and much of the same console behaviour; owners of those should see our <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm treadmill troubleshooting</a> guide.
+            ProForm machines share the same parent company and much of the same console behaviour; owners of those should see our <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm treadmill troubleshooting</a> guide. If a reset does not fix your NordicTrack, our <a href="/nordictrack-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">NordicTrack treadmill troubleshooting</a> guide works through belt, incline, decline and iFIT faults by symptom.
           </p>`,
     },
     {

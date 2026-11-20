@@ -447,6 +447,13 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-for-zwift/',
           },
           {
+            title: 'Best Treadmills With Kinomap',
+            description:
+              'Six treadmills whose listings name Kinomap, from a $212 rehab walker to a 20% incline runner, and what “compatible” means.',
+            badge: 'Kinomap',
+            url: '/best-treadmills-with-kinomap/',
+          },
+          {
             title: 'Best Curved Treadmills',
             description:
               'Self-powered curved trainers for runners, what the slat belt changes, and who should not spend this much.',
@@ -2583,6 +2590,13 @@ export const SECTIONS: Section[] = [
               'Resetting the console, iFIT screens that freeze, belt and incline faults, and what to have ready for support.',
             badge: 'ProForm',
             url: '/proform-treadmill-troubleshooting/',
+          },
+          {
+            title: 'NordicTrack Treadmill Troubleshooting',
+            description:
+              'Safety key and reset breaker, speed or incline changing by itself, frozen iFIT screens, belt and decline faults.',
+            badge: 'NordicTrack',
+            url: '/nordictrack-treadmill-troubleshooting/',
           },
           {
             title: 'Treadmill Water Damage',

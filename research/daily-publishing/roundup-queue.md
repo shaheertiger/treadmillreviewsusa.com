@@ -21,7 +21,7 @@ Format: `slug` — Title — hub → group — Amazon search to start from
 
 ## Next (alternating feature roundup / Amazon brand page)
 
-- [ ] `best-treadmills-with-kinomap` — Best Treadmills With Kinomap (2026): 6 Picks, No iFIT Needed — /best/ → features group — "treadmill kinomap"
+- [x] 2026-11-20 · `best-treadmills-with-kinomap` — Best Treadmills With Kinomap (2026): 6 Picks, No iFIT Needed — /best/ → features group — "treadmill kinomap"
 - [ ] `merach-treadmills` — MERACH Treadmill Reviews (2026): Is MERACH a Good Brand? — /brands/ → Cross-shopped alternatives group — "MERACH treadmill"
 - [ ] `best-treadmills-for-peloton-app` — Best Treadmills for the Peloton App (2026): 6 Without a Tread — /best/ → features group — "treadmill bluetooth app"
 - [ ] `superun-treadmills` — Superun Treadmill Reviews (2026): Walking Pads, Specs, Warranty — /brands/ → Cross-shopped alternatives group — "Superun walking pad"
