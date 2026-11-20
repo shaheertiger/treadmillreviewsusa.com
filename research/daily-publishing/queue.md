@@ -9,7 +9,7 @@ Format: `slug` — Title — hub → group — pillar to link from
 ## Cluster T: Brand troubleshooting (hub: /problems/) — doubles down on /proform-treadmill-troubleshooting/, the #1 page by visitors (Nov 12-19)
 Pillar: /treadmill-troubleshooting/ and /proform-treadmill-troubleshooting/
 
-- [ ] `nordictrack-treadmill-troubleshooting` — NordicTrack Treadmill Troubleshooting: Reset, Belt and iFIT Fixes (link /how-to-reset-nordictrack-treadmill/ for error codes; do not duplicate it)
+- [x] 2026-11-20 · `nordictrack-treadmill-troubleshooting` — NordicTrack Treadmill Troubleshooting: Reset, Belt and iFIT Fixes (link /how-to-reset-nordictrack-treadmill/ for error codes; do not duplicate it)
 - [ ] `walking-pad-not-working` — Walking Pad Not Working? Belt, Remote and Power Fixes (builds on /how-to-lubricate-a-walking-pad/, a top-10 page)
 - [ ] `sole-treadmill-troubleshooting` — Sole Treadmill Troubleshooting: Console, Belt and Speed Fixes
 - [ ] `treadmill-clicking-noise` — Treadmill Clicking Noise: Find It by When It Clicks (noise pages win: /treadmill-squeaking-noise/, /treadmill-static-shock/)

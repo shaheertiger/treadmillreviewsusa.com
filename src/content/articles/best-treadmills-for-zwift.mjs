@@ -61,6 +61,11 @@ export default {
             <a href="#ftms-vs-foot-pod" class="text-[#0F62FE] font-medium">FTMS versus a foot pod</a>.
             Plenty of people buy a new treadmill for Zwift when a sensor on the treadmill they
             already own would have done the same job.
+          </p>
+          <p>
+            If you would rather follow real-world route videos than an animated world, our
+            <a href="/best-treadmills-with-kinomap/" class="text-[#0F62FE] font-medium">best treadmills with Kinomap</a>
+            covers six machines whose listings name that app, several of which also name Zwift.
           </p>`,
     },
     {
