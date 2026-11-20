@@ -13,7 +13,7 @@ export default {
   slug: 'best-walking-machines-for-seniors',
   title: 'Best Walking Machines for Seniors (2026): 6 Picks by Balance',
   description:
-    'The best walking machines for seniors, matched to balance and mobility: rail treadmills, a low-deck treadmill, a handrail walking pad and seated steppers.',
+    'The Exerpeutic Senior Fitness Treadmill (about $399, full-length rails) is the best walking machine for most seniors; a seated stepper suits poor balance.',
   crumbLabel: 'Best Walking Machines for Seniors',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',

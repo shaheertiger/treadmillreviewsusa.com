@@ -19,7 +19,7 @@ Format: `slug` — Title — hub → group — Amazon search to start from
 - [~] skipped: covered by /best-treadmills-under-200/ (same pads, same price band) · `best-walking-pads-under-200`
 - [x] 2026-11-19 · `best-knee-braces-for-walking`
 
-## Next (alternating feature roundup / Amazon brand page)
+## Next (alternating feature roundup / Amazon brand page; "best" roundups convert at 21% CTR, incline/decline at 24.5%)
 
 - [x] 2026-11-20 · `best-treadmills-with-kinomap` — Best Treadmills With Kinomap (2026): 6 Picks, No iFIT Needed — /best/ → features group — "treadmill kinomap"
 - [ ] `merach-treadmills` — MERACH Treadmill Reviews (2026): Is MERACH a Good Brand? — /brands/ → Cross-shopped alternatives group — "MERACH treadmill"
@@ -37,7 +37,7 @@ Format: `slug` — Title — hub → group — Amazon search to start from
 - [ ] `best-treadmills-for-short-people` — Best Treadmills for Short People (2026): Low Step-Up Picks — /best/ → use-case group — "treadmill low deck" (needs step-up heights from maker pages; skip if unavailable)
 - [ ] `best-treadmills-under-600` — Best Treadmills Under $600 (2026): 6 Picks With Real Motors — /price/ → budget group — "treadmill"
 
-## Later (accessories: unproven traffic, keep behind the lanes above)
+## Parked: accessories (no click evidence in the Nov 13-20 keyword report; do not write unless a future export shows accessory pages winning)
 
 - [ ] `best-insoles-for-plantar-fasciitis-walking` — Best Insoles for Plantar Fasciitis Walking (2026): 6 Picks — /home-gym/ accessories group — "plantar fasciitis insoles"
 - [ ] `best-treadmill-mats-for-hardwood-floors` — Best Treadmill Mats for Hardwood Floors (2026): 5 Picks — /guides/ accessories group — "treadmill mat hardwood floor"

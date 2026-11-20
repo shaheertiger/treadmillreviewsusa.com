@@ -1,8 +1,8 @@
 export default {
   slug: 'horizon-t101-treadmill',
-  title: 'Horizon T101 Treadmill Review (2026): A Walker, Not a Runner',
+  title: 'Horizon T101 Review (2026): T101 Connect Specs, Walker-First',
   description:
-    'The Horizon T101 is a sound no-subscription walking treadmill with lifetime frame and motor cover: 20 x 55 in. deck, 10 mph, 10% incline. Recall and manual.',
+    'The Horizon T101 and T101 Connect are no-subscription walking treadmills: 20 x 55 in. deck, 10 mph, 10% incline, lifetime frame and motor. Recall and manual.',
   crumbLabel: 'Horizon T101 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',

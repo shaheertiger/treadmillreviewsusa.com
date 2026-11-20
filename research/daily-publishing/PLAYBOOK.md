@@ -72,6 +72,32 @@ Top pages: /proform-treadmill-troubleshooting/ (11), /best-treadmills-with-decli
   /best-treadmills-with-decline/ or /best-incline-treadmills/). That passes the new page authority from a page Bing already favours.
 - **Re-rank monthly.** When a new top-pages export arrives, regroup it by type and reorder both queues.
 
+## 1c. Only what works (Bing keyword report + Vercel, Nov 13-20)
+
+**Where visitors come from:** DuckDuckGo sent 245 visitors and Bing 142 in the week. Both run on Bing's index,
+so the Bing rules in §2 apply to both.
+
+**Keyword report (1,374 keywords, 3,273 impressions, 359 clicks), by theme:**
+
+| Theme | Impressions | Clicks | CTR | Verdict |
+|---|---:|---:|---:|---|
+| Incline / decline | 143 | 35 | 24.5% | Winner |
+| Black Friday / deals | 98 | 23 | 23.5% | Winner (seasonal) |
+| "Best" roundups | 104 | 22 | 21.2% | Winner |
+| Speed / pace / calories | 121 | 25 | 20.7% | Winner |
+| Cost / price | 561 | 67 | 11.9% | **Biggest click source** |
+| Troubleshooting / fixes | 421 | 49 | 11.6% | Winner |
+| Brand / model | 488 | 46 | 9.4% | Steady |
+| Seniors | 587 | 6 | 1.0% | Impressions only; fix CTR, write no more |
+| Walking pad how-to | 28 | 1 | 3.6% | **Parked** |
+| Health questions | 18 | 2 | n/a | **Parked** |
+
+- "how much does a treadmill cost" alone: 354 impressions, **45 clicks**, position 2.3. It is the #1 Bing landing page
+  (21 visitors). The traffic lane now leads with its siblings: cost by type and by brand.
+- "best walking machines for seniors": 526 impressions at position 6.6 and 0 clicks. Its meta description was rewritten to
+  give the answer (top pick and price) on 20 Nov. No more seniors or health pages until they show clicks.
+- **Rule:** the daily run writes only from the Active lists. Parked topics wait until a later export shows that type winning.
+
 ## 2. The exact format (copy this for every article)
 
 Reference implementation: `src/content/articles/treadmill-speed-for-seniors.mjs` (question page)
@@ -160,7 +186,7 @@ topics in their queues with the date and slug, and add a line to `log.md`.
 
 ## 5. When the queue runs low
 
-At 10 or fewer unchecked topics in either queue, append a new cluster of 10–12 to `queue.md`. Use the same
-selection rules: a question people search, no existing page targeting it, closest to the
-clusters that performed best (walking, seniors and health-adjacent walking, walking pads,
-treadmill problems).
+At 10 or fewer unchecked topics in either Active list, append 10–12 more **of the winning types in §1c only**:
+cost and price questions (by machine type and by brand), brand troubleshooting, noise and walking pad fixes, speed questions,
+feature roundups and Amazon-brand pages. Check each against existing titles first. Never refill from a Parked list. When a
+new Bing keyword report or Vercel export arrives, regroup it by theme as in §1c and re-rank both queues.
