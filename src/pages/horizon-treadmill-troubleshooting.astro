@@ -1,0 +1,842 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SECTIONS } from "../data/sections";
+
+const title = "Horizon Treadmill Troubleshooting: Won’t Start, Belt, Console";
+const description =
+  "Horizon treadmill won’t start or the belt slips? Check the safety key and a dedicated 15-amp circuit, tension the belt ¼ turn at a time, lube every 150 miles.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Fault Diagnosis", item: "https://www.treadmillreviewsusa.com/problems/" },
+        { "@type": "ListItem", position: 3, name: "Horizon Treadmill Troubleshooting", item: "https://www.treadmillreviewsusa.com/horizon-treadmill-troubleshooting/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Why won’t my Horizon treadmill start?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually the safety key: Horizon says the treadmill will not start unless the key is in position, and a display of dashes, 8s or SAFETY KEY OFF means it is not registering. If nothing lights, check the outlet, house breaker, cord and the ON/OFF switch next to the power cord, and make sure it is on a dedicated 15-amp circuit with no GFCI, power strip or extension cord.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I reset a Horizon treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Hold STOP for 3 seconds to reset the console on current T101, T202, 7.0 AT and 7.4 AT models. For a fuller reset, remove the key, switch off, unplug and wait a few minutes before powering back up. A software update resets the console to factory settings and erases saved users, so use it only when Horizon’s instructions call for it.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I clear the LUBE BELT message on a Horizon treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "After lubricating, hold Speed up and STOP together for 5 to 7 seconds on the T101, T202, T303, 7.0 AT and older 7.4 AT. The 7.8 AT uses Play/Pause and STOP, and the 7.4AT-04 uses Speed key 12 and STOP, or Media Play/Pause and STOP on version 4.006 or newer. The belt will not run while the message shows.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I tighten a slipping belt on a Horizon treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Turn the treadmill off and turn both rear roller bolts clockwise a quarter turn each with the supplied wrench, then test. Horizon says never to turn the bolts more than a quarter turn at a time and to stop once the slipping sensation is gone, because over-tightening wears the treadmill.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What lubricant does a Horizon treadmill use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For treadmills made after November 2002, Horizon specifies 100% silicone oil, about 20 ml per application every 3 months or 150 miles. That applies only to silicone decks. Horizon says waxed decks and belts are maintenance-free and nothing should be applied to them, so check your owner’s manual first.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I plug a Horizon treadmill into a surge protector?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Horizon says to plug the treadmill directly into a grounded outlet on a dedicated 15 to 20 amp circuit, with no surge protector, power strip, extension cord or GFCI outlet, and warns that not doing so may void the warranty. This differs from some other brands, so follow Horizon’s rule on a Horizon.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the Horizon treadmill support phone number?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Horizon lists 800.244.4192 for in-warranty parts and tech support, Monday to Friday 8 a.m. to 5 p.m. Central, and techsupport@horizonfitness.com. Out of warranty, call 888.878.9011. Have the model number, serial number, a description or photos of the fault and proof of purchase ready.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-21",
+      dateModified: "2026-11-21",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/horizon-treadmill-troubleshooting/";
+const HUB = SECTIONS.find((s) => s.slug === "problems");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-21",
+    modifiedTime: "2026-11-21",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "horizon treadmill troubleshooting",
+      "horizon treadmill not working",
+      "horizon treadmill wont start",
+      "horizon treadmill belt slipping",
+      "horizon treadmill lube belt message",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Find Your Symptom", link: "#short-answer" }}
+>
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/problems/">Fault Diagnosis</a>
+        <span aria-hidden="true">›</span>
+        <span>Troubleshooting</span>
+      </nav>
+      <h1 class="ed-title">Horizon Treadmill Troubleshooting: Won’t Start, Belt and Console Problems</h1>
+      <p class="ed-dek">
+        Most Horizon faults come down to the safety key, a power supply Horizon does not allow (a GFCI outlet, a power strip or a shared circuit), a running belt that needs a quarter-turn of tension or centring, or a LUBE message that stops the belt until it is cleared. Here is the order to check them in, using Horizon’s own help-centre procedures, and what to have ready when you call Horizon support.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 21, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          <span class="ed-method">Based on manufacturer manuals and service guidance, and the faults owners report most.</span>
+        </div>
+        <a href="#short-answer" class="btn-ghost">Symptom Table</a>
+      </div>
+      <p class="ed-disclosure">
+        Nothing on this page is a paid placement, and it carries no affiliate links. <a href="/editorial-standards/">How we review.</a>
+      </p>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Horizon Fitness is part of Johnson Health Tech, the group that also makes Matrix and Vision
+          equipment, and its home treadmills — the T101, T202, T303 and the 7.0, 7.4 and 7.8 AT
+          Studio Series — share a great deal of their troubleshooting. They also share a habit that
+          catches owners out: Horizon is unusually strict about how the treadmill is powered, and a
+          machine on the wrong outlet can look exactly like a broken one. Horizon publishes its
+          fault-finding as short articles on its help centre rather than as a long list of numbered
+          codes, and this page works through those articles in the order that finds the cause
+          fastest, naming which Horizon document each step comes from.
+        </p>
+
+        <nav class="ed-toc not-prose" aria-label="Jump to">
+          <h2>Jump to</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#wont-start">Horizon Treadmill Won’t Turn On or Start</a></li>
+            <li><a href="#safety-key">Safety Key, Dashes and a Display of 8s</a></li>
+            <li><a href="#reset-update">Resetting the Console and Updating the Software</a></li>
+            <li><a href="#belt-wont-move">Console Lit but the Belt Will Not Move, or Stops and Starts</a></li>
+            <li><a href="#belt-slipping">Belt Slipping, Tension and Centring on a Horizon</a></li>
+            <li><a href="#lubrication">Lubrication and the LUBE BELT Message</a></li>
+            <li><a href="#messages">Horizon Error Messages and Codes</a></li>
+            <li><a href="#bluetooth-apps">Bluetooth, Apps and Watch Connection Problems</a></li>
+            <li><a href="#warranty-support">Warranty and Support</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2>The Short Answer</h2>
+<p>
+            <strong>When a Horizon treadmill will not start, check the safety key first, then the power
+            supply: Horizon wants a grounded wall outlet on a dedicated 15-amp circuit, with no GFCI
+            outlet, power strip, surge protector or extension cord.</strong> After that, most remaining
+            faults are a belt that needs tension or centring, a deck that needs silicone, or a LUBE
+            message that has to be cleared before the belt will move.
+          </p>
+          <ul>
+            <li><strong>Dashes, 8s or SAFETY KEY OFF on the display</strong> means the key is not
+            registering. Reseat it, and check a magnetic key is still magnetised.</li>
+            <li><strong>A completely dark console</strong> is the outlet, the house breaker, the cord or
+            the ON/OFF switch next to the power cord, in that order.</li>
+            <li><strong>A belt that slips</strong> gets both rear roller bolts turned clockwise ¼ turn at a
+            time, never more, until the slip goes.</li>
+            <li><strong>A belt that drifts</strong> is centred at 1 mph, a ¼ turn at a time on the rear
+            bolts, as described below.</li>
+            <li><strong>A silicone deck</strong> needs lubricating every 3 months or 150 miles; a waxed deck
+            needs nothing at all. Your manual says which you have.</li>
+          </ul>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Horizon symptom</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Most likely cause</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">First fix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Completely dead, no lights</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Outlet, tripped breaker, cord, ON/OFF switch</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Test the outlet with a lamp; check the switch beside the cord is on</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Display shows dashes, 8s or SAFETY KEY OFF</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Safety key not in place or not magnetised</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Reseat the key; replace it if the magnet is weak</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Shows LUBE or LUBE BELT, belt will not run</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lubrication reminder</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lubricate (silicone decks only), then clear it with your model’s key combination</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Console lit, belt will not move or moves briefly</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Power supply, drive belt, loose cable</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Move to a dedicated circuit; then call Horizon before opening the motor cover</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stops and resets, or speed is erratic</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Shared circuit, console cable, phone interference</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Plug straight into the wall; take the phone off the reading rack</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt slips or hesitates underfoot</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stretched belt, dry silicone deck</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tension ¼ turn at a time; lubricate if due</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt drifts to one side</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tracking, unlevel floor</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Level the frame; centre at 1 mph with the rear bolts</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Breaker trips mid-workout</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Shared circuit, GFCI, extension cord</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Dedicated 15-amp circuit, plugged straight into the wall</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">App or watch will not connect</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heart-rate strap mode, another app holding it</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hold the Bluetooth button 5 seconds; close other apps</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The start-up sequence itself — switch, key, START — is set out step by step in our guide on <a href="/how-to-start-a-horizon-treadmill/" class="text-[#0F62FE] font-medium">how to start a Horizon treadmill</a>,
+            and it is worth reading first if the machine is new to you. This page picks up where that
+            one stops, with the faults. Owners of other brands will find the same structure in our <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm treadmill troubleshooting</a> and <a href="/nordictrack-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">NordicTrack treadmill troubleshooting</a> guides, but note that Horizon’s rules differ on one important point: ProForm and NordicTrack
+            ask for a surge suppressor, while Horizon says not to use one.
+          </p>
+        </div>
+
+        <div id="wont-start" class="scroll-mt-24">
+          <h2>Horizon Treadmill Won’t Turn On or Start</h2>
+<p>
+            Horizon’s help centre splits a machine that will not start into two problems, and the fix
+            depends on which one you have: a console that does not light at all, and a console that
+            lights but a treadmill that will not run. Work out which before you do anything else.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The console does not light up</h3>
+          <p>
+            Horizon’s article “Treadmill Console Does Not Light Up” (checked November 2026) starts with a
+            single question: does the red light on the ON/OFF switch come on? The switch on current
+            models sits at the front of the frame next to the power cord, low down, not on the console;
+            Horizon notes that some treadmills have no lit switch, and some older ones have the switch
+            behind the console instead. If the switch light is off, Horizon’s checks are:
+          </p>
+          <ol>
+            <li><strong>The outlet works.</strong> Plug a lamp into it.</li>
+            <li><strong>The house breaker has not tripped.</strong> Reset it if it has.</li>
+            <li><strong>The circuit is right.</strong> A dedicated 15-amp circuit, not a GFCI-equipped
+            outlet, and not a power strip, surge protector or extension cord.</li>
+            <li><strong>The cord is sound</strong>, not pinched or damaged, and fully plugged in at the
+            wall <em>and</em> at the machine.</li>
+            <li><strong>The power switch is on.</strong></li>
+          </ol>
+          <p>
+            If the switch light is on but the console stays dark, Horizon’s next step is to switch off,
+            unplug, wait 60 seconds, remove the motor cover, wait for the red LEDs on the motor control
+            board to go out, and then check that the console cable and the other wires on the lower board
+            are seated and undamaged. That is work under the motor cover on an electrical appliance. If
+            you are not comfortable with it, or the treadmill is in warranty, stop at this point and call
+            Horizon; the support section at the end of this page lists what to have ready.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Why Horizon is strict about the outlet</h3>
+          <p>
+            Horizon’s “Treadmill Electrical Requirements” article (checked November 2026) says most of its
+            North American treadmills run on 120 volts at 60 Hz and should be on a dedicated 15 to 20 amp
+            circuit, meaning nothing else draws power from that circuit. It says GFCI outlets and surge
+            protectors can cut power and are not compatible, that the treadmill should go straight into
+            a grounded three-prong outlet, and that extension cords can overload or under-supply it.
+            It also warns that ignoring this may void the warranty, and Horizon’s list of what the
+            warranty does not cover includes damage from outlets or cords that do not meet its
+            electrical requirements. The quickest test for a dedicated circuit is to switch that breaker
+            off at the panel and see whether anything else in the house loses power. If you are unsure,
+            ask an electrician; never fit a bigger breaker to stop trips.
+          </p>
+          <p>
+            The same supply rules are Horizon’s first answer to a breaker that trips mid-workout and to a
+            belt that stops and starts, so one visit from an electrician can clear several symptoms at
+            once. Our general guide to a <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that won’t turn on</a> works through the same chain for any brand, from the outlet to the console cable.
+          </p>
+        </div>
+
+        <div id="safety-key" class="scroll-mt-24">
+          <h2>Safety Key, Dashes and a Display of 8s</h2>
+<p>
+            Horizon’s help centre is blunt about it: “Your treadmill will not start unless the safety key
+            is placed in position.” Its article on a display showing only dashes, 8s or “Safety Key Off”
+            (checked November 2026) adds that “the dashes or screen saver mode are an indicator of the
+            safety key being off.” A Horizon showing dashes is therefore usually not broken or asleep in
+            any deeper sense; it is waiting for the key.
+          </p>
+          <ul>
+            <li><strong>Is it in place?</strong> Horizon describes the key as “either inserted or
+            magnetically attached”, depending on the model. Take it off and refit it firmly.</li>
+            <li><strong>Is a magnetic key still magnetised?</strong> Horizon lists this as a separate
+            check. A key that only works when held, or that drops the treadmill out when the cord is
+            brushed, is not holding the sensor.</li>
+            <li><strong>Is it the right key?</strong> A key from another treadmill, or a loose magnet, may
+            sit in the right place without triggering the sensor. Horizon sells replacement keys through
+            its parts site, parts.horizonfitness.com.</li>
+            <li><strong>Has it been tested lately?</strong> Horizon asks owners to check that the key stops
+            the treadmill every two weeks, and to remove it whenever the machine is not in use.</li>
+          </ul>
+          <p>
+            Do not bypass the key. Horizon’s deeper troubleshooting for this symptom tests the reed switch
+            the key acts on, which is service work rather than an owner fix. A treadmill that runs without
+            a working key has lost the one control that stops the belt if you fall.
+          </p>
+          <p>
+            If the key is in, the display still shows dashes and the key is known to be good, the reed
+            switch or its wiring is the suspect, and that is a support call. Horizon’s help centre keeps a
+            separate version of this article for the 7.0AT-03 and 7.0AT-04, so owners of those models
+            should check the model-specific note before assuming a fault.
+          </p>
+        </div>
+
+        <div id="reset-update" class="scroll-mt-24">
+          <h2>Resetting the Console and Updating the Software</h2>
+<p>
+            “Reset” means three different things on a Horizon, and they do very different amounts of
+            work.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The console reset</h3>
+          <p>
+            On the current T101, T202, 7.0 AT and 7.4 AT owner’s manuals, holding STOP for 3 seconds resets
+            the console, clearing a program or menu that seems stuck. Try it before reaching for the power
+            switch.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The power cycle</h3>
+          <p>
+            Horizon’s maintenance article (checked November 2026) asks owners to unplug the treadmill and
+            wait two to three minutes before any maintenance, to let power drain from the electronics, and
+            its wiring checks use a 60-second wait for the lower board to discharge. The same habit makes a
+            better reset than a quick flick of the switch: key out, switch off, unplug at the wall, wait a
+            few minutes, then plug in, switch on and fit the key.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A software update</h3>
+          <p>
+            Horizon’s “Software and Firmware Updates” page (checked November 2026) recommends updating the
+            console software before first use, and lists a file for each model version, from the T101-05
+            and T101-08 to the T202-06 and the 7.0AT-05. Updates are loaded from a USB stick formatted to
+            FAT32, following the PDF instructions for your console. Two cautions from that page matter:
+            the updates are for North American machines only, and an update “will erase previously saved
+            user data and reset your equipment’s console to its factory default settings.” Pick the file by
+            the model version on your serial label (T101-07, T101-08 and so on), not by the name on the
+            console, and note any saved users first.
+          </p>
+          <p>
+            Software matters more on a Horizon than many owners realise. Clearing the LUBE message on a
+            7.4AT-04 uses a different key combination once the console is on version 4.006 or newer, the
+            stuck-key error codes only appear on consoles at a minimum software version, and Horizon’s
+            fix for interference-related speed problems on some T101s is a software update. Horizon also
+            publishes a master reset document for owners who cannot clear a LUBE message after updating;
+            follow that document for your model rather than a sequence found for another machine.
+          </p>
+        </div>
+
+        <div id="belt-wont-move" class="scroll-mt-24">
+          <h2>Console Lit but the Belt Will Not Move, or Stops and Starts</h2>
+<p>
+            Horizon’s article “Treadmill Belt Does Not Move or Moves Briefly” (checked November 2026)
+            starts, again, with power: the treadmill should be on a dedicated 15-amp circuit, not a GFCI
+            outlet, and not on a power strip, surge protector or extension cord. Only then does it move on
+            to the machine.
+          </p>
+          <ol>
+            <li><strong>Look for any movement.</strong> If the belt moves a little and stops, note how far
+            or for how long; that detail helps support.</li>
+            <li><strong>Try to move the belt by hand</strong>, with the machine unplugged. If it will not
+            move, Horizon says the drive belt may have come off or the motor bearings may have seized.</li>
+            <li><strong>Check the drive belt and connections.</strong> Horizon’s next step is to unplug,
+            remove the plastic motor cover at the front, check the drive belt’s alignment and look for
+            loose, crimped, damaged or burnt wires, which can work loose in shipping or assembly.</li>
+          </ol>
+          <p>
+            Before any of that, check the display. A LUBE or LUBE BELT message stops the belt by design,
+            and is covered in the lubrication section below.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Stops and resets, or speed is erratic</h3>
+          <p>
+            Horizon’s “How to Fix a Treadmill that is Stopping and Starting” article (checked November 2026)
+            lists the causes in this order: the power source (straight into the wall, on a 15-amp circuit
+            it does not share with appliances, computers or TVs — Horizon says sharing can cause electronic
+            components to fail), the console cable at the console board and at the joint between console
+            and mast, the belt tension and lubrication (rollers and deck that feel hot after a short use
+            can indicate lack of lubrication), and finally a recalibration to factory settings.
+          </p>
+          <p>
+            A separate article on electromagnetic interference describes a flickering console with a belt
+            that slows and speeds up, a console that switches off, numbers that read wrong, speed or
+            incline that changes without input, and a repeating clicking from the motor control board.
+            Horizon’s first fix is to take any phone or tablet off the reading rack, or put it in airplane
+            mode, and see whether the symptoms stop. For T101s it names specific software versions to move
+            to.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Check an older T101 against the recall</h3>
+          <p>
+            Speed that changes or stops without input on a T101-05 is a recall matter, not a maintenance
+            one. In October 2022 the CPSC and Johnson Health Tech recalled T101-05 treadmills with serial
+            numbers beginning TM734 or TM486 because they could accelerate, change speed or stop
+            unexpectedly; the remedy was a free software repair. Our <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101 review</a> sets out how to check your label and what the repair involves. If you cannot confirm the
+            software was updated, stop using the machine and contact Horizon.
+          </p>
+        </div>
+
+        <div id="belt-slipping" class="scroll-mt-24">
+          <h2>Belt Slipping, Tension and Centring on a Horizon</h2>
+<p>
+            A belt that hesitates when your foot lands, or that creeps to one side, is the most common
+            Horizon maintenance job, and Horizon expects it. Its “Running Belt Adjustments” article (checked
+            November 2026) says temperature and humidity make the belt stretch, recommends checking tension
+            and alignment after the first week of use, and then monthly as part of routine maintenance.
+            Both jobs use the two hex bolts in the end caps at the rear of the deck, with the Allen wrench
+            or T-handle wrench supplied with the treadmill.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Tensioning a slipping belt</h3>
+          <p>
+            Horizon’s “Tensioning and Centering the Running Belt” article (checked November 2026) gives the
+            procedure: turn the treadmill off, then turn <strong>both</strong> rear roller bolts ¼ turn
+            clockwise. Turn it back on and check for slipping. Repeat if needed, but “never turn the roller
+            bolts more than ¼ turn at a time.” The belt is tensioned correctly “when the slipping sensation
+            is gone.” The same article warns that the belt should not be moving while you tension it, and
+            that over-tightening causes excessive wear on the treadmill and its components.
+          </p>
+          <p>
+            To test for slip, Horizon’s adjustment article suggests walking at 3 mph on a level treadmill
+            and, once you are balanced, stomping one foot as a heavy-footed runner would. If the belt stops
+            or hesitates, add tension; if it does not, leave it alone. Turn each bolt the same amount so you
+            do not knock the belt off centre while tensioning it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Centring a belt that drifts</h3>
+          <p>
+            Level the treadmill first; an unlevel frame is one of the causes Horizon lists for a belt that
+            will not stay centred. Then, per the same article, run the belt at 1 mph — no faster while
+            centring — and keep fingers, hair and clothing well away from it.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Problem</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Which bolt</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Turn</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Condition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt slips</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Both rear roller bolts, equally</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">¼ turn clockwise, then test</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Treadmill off, belt not moving</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt too far to the right</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Right bolt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">¼ turn clockwise, then wait</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt running at 1 mph</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt too far to the left</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Left bolt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">¼ turn clockwise, then wait</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt running at 1 mph</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt too loose and off-centre</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Centre first, then tension</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">As above</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Remove the end caps for easier access</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            After each quarter turn, wait for the belt to settle before turning again; it moves more than
+            you expect. Horizon suggests using the marking or part line on the motor cover as the reference
+            for centre. Horizon’s help centre also carries a shorter article that centres the belt using
+            only the left bolt — counter-clockwise when the belt has run to the right, clockwise when it has
+            run to the left — so if your
+            owner’s manual shows a different method, follow the manual for your model.
+          </p>
+          <p>
+            A belt that still slips with correct tension and a lubricated deck is a worn belt, a glazed
+            drive belt or a worn deck. Horizon’s advice is to inspect the belt for curling, fraying, rips and
+            seam problems each time you lubricate. Our guide to a <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">treadmill belt that slips</a> explains why tightening is so often the wrong first move and when a belt is past adjusting.
+          </p>
+        </div>
+
+        <div id="lubrication" class="scroll-mt-24">
+          <h2>Lubrication and the LUBE BELT Message</h2>
+<p>
+            Lubrication is where Horizon owners most often get conflicting advice, because Horizon makes
+            two kinds of running surface. Its article on deck lubrication (checked November 2026) says to
+            check the owner’s manual to see whether your treadmill has a <strong>silicone</strong> or a <strong>waxed</strong> deck and belt. Waxed surfaces “are considered maintenance free”, and
+            nothing should ever be applied to them. Silicone surfaces need periodic silicone, and running
+            them dry causes friction that Horizon says can lead to premature failure of the belt, deck,
+            motor or electronics.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How often, and with what</h3>
+          <p>
+            For silicone decks, Horizon recommends lubricating every 150 miles (241 km) or every 3 months,
+            adjusted for use, age and conditions. For treadmills made after November 2002 it specifies 100%
+            silicone oil, sold on its accessories page; for older machines it asks owners to call. The
+            treadmill ships with a 40 ml bottle, enough for two applications. Do not substitute a
+            household spray or a petroleum lubricant.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Horizon’s method</h3>
+          <ol>
+            <li>Power down and unplug the treadmill.</li>
+            <li>Loosen the rear roller bolts enough to lift the belt and expose the centre of the deck.
+            Horizon’s lubrication article puts this at 10 to 15 turns counter-clockwise.</li>
+            <li>Lift the belt and apply the silicone in a zig-zag across the deck surface — 20 ml per
+            application, never more than 30 ml at once — on the deck, not on top of the belt.</li>
+            <li>Tighten both bolts clockwise by the same number of turns you loosened them.</li>
+            <li>Plug in, fit the key, run the belt at 3 mph for 3 minutes with nobody on it, then walk on it
+            for 3 minutes to spread the silicone and check tension and centring.</li>
+            <li>Wipe any excess from the sides with a damp cloth.</li>
+          </ol>
+          <p>
+            Horizon also describes a method with its silicone applicator that does not need the belt
+            loosened: 10 ml slid under the belt from the side towards the rear roller, then repeated on the
+            other half of the belt. Either way, re-check tension and alignment afterwards.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Clearing the LUBE message</h3>
+          <p>
+            Horizon’s treadmills display “LUBE” or “LUBE BELT” as a mileage reminder, and “the treadmill
+            will not operate while the message is showing.” One Horizon article puts the reminder at 300
+            miles while recommending lubrication every 150, and older documents vary too, so treat the
+            message as a backstop rather than a schedule. Horizon’s reset article (checked November 2026)
+            gives the combination by model:
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Hold together</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T101, T202, T303</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Speed up (+) and STOP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 to 7 seconds</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.0 AT and older 7.4 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Speed up (by the middle dial) and STOP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 to 7 seconds</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.4AT-04 on current software</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Speed key 12 and STOP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 seconds</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.4AT-04 on version 4.006 or newer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Media Play/Pause and STOP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 seconds</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.8 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Play/Pause and STOP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 to 7 seconds</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Horizon notes that pressing any key suspends the message until after your next workout, and
+            that some older models need STOP held for 5 seconds to suspend it for 5 miles. Suspending it is
+            not the same as lubricating: on a silicone deck, do the job, then clear the message. If the
+            message will not clear, update the console software and then use Horizon’s master reset
+            document for your model. Folding models with gas shocks under the deck have a separate
+            instruction: a Teflon-based spray on the shock’s silver tube, not silicone.
+          </p>
+        </div>
+
+        <div id="messages" class="scroll-mt-24">
+          <h2>Horizon Error Messages and Codes</h2>
+<p>
+            Horizon’s manuals and help centre are organised by symptom rather than by a long table of
+            numbered codes, and we do not publish code meanings that Horizon itself does not. These are the
+            messages Horizon documents on its help centre (checked November 2026), and what it says about
+            each.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">On the display</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What Horizon says</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What to do</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Dashes, 8s or SAFETY KEY OFF</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The safety key is off</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Reseat the key; check a magnetic key is magnetised</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LUBE or LUBE BELT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lubrication reminder; the belt will not run while it shows</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lubricate a silicone deck, then clear it for your model</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Speed Range Error – Ending Workout</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A safety cut-out when load and a high incline push the speed out of range</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lower the incline</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">An error code as soon as it is switched on</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Can mean a stuck key on the console overlay</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Use Horizon’s Stuck Key Error Codes guide to find which overlay</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">E1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Linked to no belt movement</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Follow Horizon’s attached E1 document; check power first</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The stuck-key codes only appear on consoles at or above a set software version, which Horizon
+            lists as V5.004 for the 7.0AT-04, V4.006 for the 7.4AT-04, V3.002 for the 7.8AT-04 and S4.09 for
+            the T101-07. On an older version, a stuck key may simply make a button misbehave.
+          </p>
+          <p>
+            For any code not in that table, do not act on a code list compiled for another brand; codes do
+            not carry across manufacturers or even across console generations. Write down the exact
+            message, when it appears (at power-on, on pressing START, a few seconds after the belt starts,
+            or after minutes of running) and what the belt and incline were doing, then look it up in your
+            model’s manual or send it to Horizon support. A message that appears once and clears after a
+            proper power cycle is often a momentary supply dip; a message that comes back every time is a
+            fault.
+          </p>
+        </div>
+
+        <div id="bluetooth-apps" class="scroll-mt-24">
+          <h2>Bluetooth, Apps and Watch Connection Problems</h2>
+<p>
+            Horizon consoles are button-and-dial consoles rather than touchscreens, and Horizon’s help centre
+            says plainly that no subscription, Wi-Fi or download is needed to use the treadmill. Connection
+            problems therefore never stop the belt; they only stop an app seeing it. Horizon’s articles
+            (checked November 2026) cover three kinds of connection.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Apps such as Zwift and Peloton</h3>
+          <p>
+            Studio Series treadmills use the Bluetooth FTMS protocol to share speed and incline with apps.
+            For Zwift, Horizon’s instructions are to switch the treadmill on, open Zwift’s pairing screen in
+            the RUN section (not RIDE), tap the treadmill image and pick the Horizon from the list. Horizon
+            publishes separate Peloton App+ pairing pages for the 7.0AT-04, 7.4AT-04 and 7.8AT-04, and
+            notes that the T303 lacks FTMS and will not send speed to Zwift. If the app cannot find the
+            treadmill, close every other app that might already be connected to it, including Horizon’s own
+            app, and try again.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Heart-rate strap versus app mode</h3>
+          <p>
+            This is the one that catches most owners. Holding the treadmill’s Bluetooth button for
+            5 seconds switches it to receive a heart-rate strap’s signal, and in that mode, Horizon says,
+            the treadmill cannot push data out to apps. Hold the button for another 5 seconds to switch
+            back. When using Zwift, Horizon recommends connecting both the treadmill and the strap directly
+            to the app instead. A strap that will not read may also need its electrodes slightly dampened.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Console speakers</h3>
+          <p>
+            Horizon says the console speakers should pair automatically with your phone or tablet when the
+            treadmill is switched on. If they do not, open Settings, then Bluetooth, on the device and
+            select the speakers under My Devices. Owner’s manuals add that after the treadmill sleeps or is
+            switched off, it looks for the last paired music device on the next power-up.
+          </p>
+          <p>
+            Watch tap-to-connect for Apple Watch and Galaxy Watch is listed for the 7.0 AT, and its steps
+            are in our start guide linked above. If you are still weighing up the range, our <a href="/horizon-fitness/" class="text-[#0F62FE] font-medium">Horizon Fitness brand guide</a> sets out which models have which connectivity.
+          </p>
+        </div>
+
+        <div id="warranty-support" class="scroll-mt-24">
+          <h2>Serial Number, Warranty and Calling Horizon Support</h2>
+<p>
+            Almost every next step — the right software file, the right manual, a part or a warranty
+            claim — starts with the serial number and the model version.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Finding the serial number</h3>
+          <p>
+            Horizon’s help centre (checked November 2026) says the serial number is often on a white label,
+            and that the first page of the assembly instructions shows where it is on your model. On
+            treadmills, frame serial numbers are on the front of the treadmill on the elevation rack; current
+            owner’s manuals place the white barcode label near the ON/OFF switch and power cord. Some models
+            use a console shared with other products, which carries its own serial number on the back
+            cover of the console. Write both down, along with the model version (such as T101-08 or
+            7.4AT-04), which differs from the marketing name.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What the warranty covers</h3>
+          <p>
+            Horizon’s standard home warranties, as listed on its help centre in November 2026:
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Treadmill</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Frame</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Motor</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Parts</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Labor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T101, T202</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T303, 7.0 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.4 AT, 7.8 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2 years</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Horizon asks owners to register within 30 days of purchase at horizonfitness.com/support/register
+            and to keep proof of purchase, which it requires for all warranty claims. Its list of
+            exclusions is worth reading before you troubleshoot: normal wear and tear, improper assembly or
+            maintenance, use in a non-temperature-controlled space such as a garage or porch, a user over
+            the maximum weight, outlets or cords that do not meet its electrical requirements, commercial
+            use, equipment outside the US and Canada, and damage from repairs or attempted repairs. Horizon
+            says any repair attempt is at your own risk, so on a machine in warranty, call before you take
+            the motor cover off. Out of warranty, parts are sold at parts.horizonfitness.com. Whether that
+            cover is good value against rivals is part of our verdict on <a href="/is-horizon-a-good-treadmill-brand/" class="text-[#0F62FE] font-medium">whether Horizon is a good treadmill brand</a>.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Who to call, and what to have ready</h3>
+          <p>
+            Horizon’s contact page (checked November 2026) lists in-warranty parts and tech support on
+            800.244.4192, Monday to Friday 8 a.m. to 5 p.m. Central, or techsupport@horizonfitness.com. Out of
+            warranty, and for general customer support, the number is 888.878.9011. Horizon asks you to have
+            ready:
+          </p>
+          <ul>
+            <li>The model number and serial number.</li>
+            <li>The nature of the problem: error messages, symptoms, what is not working, and pictures.</li>
+            <li>Your name, address and phone number.</li>
+            <li>Proof of purchase, for any warranty claim.</li>
+          </ul>
+          <p>
+            Horizon also suggests being near the treadmill when you call, in case there are simple checks
+            to try before it sends a technician. A short phone video of the fault, and a note of what you
+            have already tried from this page, will save time on the call.
+          </p>
+        </div>
+
+
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Mistakes to Avoid With Horizon Treadmill Troubleshooting</h2>
+          <p>Horizon faults are usually simple. These four are how owners make them take longer or cost more than they should.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Plugging it into a surge protector or GFCI outlet</h3>
+              <p>Many brands ask for a surge suppressor; Horizon says the opposite. A Horizon on a power strip, surge protector, extension cord, GFCI outlet or shared circuit can stay dark, stop and start or trip the breaker, and Horizon excludes damage from the wrong supply from its warranty. Fix the circuit before you suspect the machine.</p>
+            </li>
+            <li>
+              <h3>Lubricating a waxed deck</h3>
+              <p>Horizon makes both silicone and waxed running surfaces, and the waxed ones are maintenance-free: nothing should ever be applied to them. Check your owner’s manual before reaching for the bottle. On a silicone deck, use 100% silicone, about 20 ml, applied to the deck rather than the top of the belt.</p>
+            </li>
+            <li>
+              <h3>Cranking the belt bolts more than a quarter turn</h3>
+              <p>Horizon’s rule is a quarter turn at a time on both rear bolts, testing in between, and stopping as soon as the slip is gone. Big turns over-tighten the belt, wear the rollers and motor, and usually knock it off centre so that you then chase it from side to side.</p>
+            </li>
+            <li>
+              <h3>Opening the motor cover before calling Horizon</h3>
+              <p>Several of Horizon’s own checks involve removing the motor cover, but its warranty terms say repair attempts are at your own risk. On a machine still in warranty, call 800.244.4192 first with the model, serial number, a photo or video of the fault and proof of purchase.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The fix, in short</h2>
+          <p>
+            <strong class="text-white">Key, outlet, then the belt.</strong> Most Horizon problems are a
+            safety key that is not registering, a treadmill on a GFCI outlet, power strip or shared circuit,
+            or a LUBE message that stops the belt until it is cleared. Horizon’s own help centre puts the
+            power supply first in almost every fault, and so should you.
+          </p>
+          <p>
+            <strong class="text-white">For the rest, follow Horizon’s quarter-turn rule and your manual.</strong> Tension both rear bolts a quarter turn at a time, centre at 1 mph, lubricate only a silicone deck,
+            and call 800.244.4192 with your serial number before opening the motor cover on a machine in
+            warranty. Our <a href="/how-to-start-a-horizon-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Horizon start guide</a> covers the start-up sequence model by model.
+          </p>
+        </div>
+
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-to-start-a-horizon-treadmill/">How to Start a Horizon Treadmill</a></li>
+            <li><a href="/proform-treadmill-troubleshooting/">ProForm Treadmill Troubleshooting</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Why won’t my Horizon treadmill start?</h3></summary>
+            <p class="faq-a">
+              Usually the safety key: Horizon says the treadmill will not start unless the key is in position, and a display of dashes, 8s or SAFETY KEY OFF means it is not registering. If nothing lights, check the outlet, house breaker, cord and the ON/OFF switch next to the power cord, and make sure it is on a dedicated 15-amp circuit with no GFCI, power strip or extension cord.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I reset a Horizon treadmill?</h3></summary>
+            <p class="faq-a">
+              Hold STOP for 3 seconds to reset the console on current T101, T202, 7.0 AT and 7.4 AT models. For a fuller reset, remove the key, switch off, unplug and wait a few minutes before powering back up. A software update resets the console to factory settings and erases saved users, so use it only when Horizon’s instructions call for it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I clear the LUBE BELT message on a Horizon treadmill?</h3></summary>
+            <p class="faq-a">
+              After lubricating, hold Speed up and STOP together for 5 to 7 seconds on the T101, T202, T303, 7.0 AT and older 7.4 AT. The 7.8 AT uses Play/Pause and STOP, and the 7.4AT-04 uses Speed key 12 and STOP, or Media Play/Pause and STOP on version 4.006 or newer. The belt will not run while the message shows.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I tighten a slipping belt on a Horizon treadmill?</h3></summary>
+            <p class="faq-a">
+              Turn the treadmill off and turn both rear roller bolts clockwise a quarter turn each with the supplied wrench, then test. Horizon says never to turn the bolts more than a quarter turn at a time and to stop once the slipping sensation is gone, because over-tightening wears the treadmill.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What lubricant does a Horizon treadmill use?</h3></summary>
+            <p class="faq-a">
+              For treadmills made after November 2002, Horizon specifies 100% silicone oil, about 20 ml per application every 3 months or 150 miles. That applies only to silicone decks. Horizon says waxed decks and belts are maintenance-free and nothing should be applied to them, so check your owner’s manual first.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I plug a Horizon treadmill into a surge protector?</h3></summary>
+            <p class="faq-a">
+              No. Horizon says to plug the treadmill directly into a grounded outlet on a dedicated 15 to 20 amp circuit, with no surge protector, power strip, extension cord or GFCI outlet, and warns that not doing so may void the warranty. This differs from some other brands, so follow Horizon’s rule on a Horizon.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the Horizon treadmill support phone number?</h3></summary>
+            <p class="faq-a">
+              Horizon lists 800.244.4192 for in-warranty parts and tech support, Monday to Friday 8 a.m. to 5 p.m. Central, and techsupport@horizonfitness.com. Out of warranty, call 888.878.9011. Have the model number, serial number, a description or photos of the fault and proof of purchase ready.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Fault Diagnosis">
+          <h2 class="section-title">More in Fault Diagnosis</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/problems/" class="btn-ghost">See all Fault Diagnosis</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Fault Diagnosis Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-to-start-a-horizon-treadmill/" class="card">
+            <div class="c-kicker">Horizon</div>
+            <div class="c-title">How to Start a Horizon Treadmill</div>
+            <p class="c-blurb">Switch, key and START, model by model, from Horizon’s manuals.</p>
+          </a>
+          <a href="/proform-treadmill-troubleshooting/" class="card">
+            <div class="c-kicker">Sibling Brand Guide</div>
+            <div class="c-title">ProForm Treadmill Troubleshooting</div>
+            <p class="c-blurb">Reset, belt, incline and iFIT faults on ProForm machines.</p>
+          </a>
+          <a href="/nordictrack-treadmill-troubleshooting/" class="card">
+            <div class="c-kicker">Sibling Brand Guide</div>
+            <div class="c-title">NordicTrack Treadmill Troubleshooting</div>
+            <p class="c-blurb">Safety key, iFIT screens, belt and decline problems.</p>
+          </a>
+          <a href="/treadmill-belt-slipping/" class="card">
+            <div class="c-kicker">Diagnosis</div>
+            <div class="c-title">Treadmill Belt Slipping</div>
+            <p class="c-blurb">Tension, tracking and when a belt is past adjusting.</p>
+          </a>
+          <a href="/horizon-t101-treadmill/" class="card">
+            <div class="c-kicker">Review</div>
+            <div class="c-title">Horizon T101 Review</div>
+            <p class="c-blurb">The T101 Connect, its manual and the 2022 T101-05 recall.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>

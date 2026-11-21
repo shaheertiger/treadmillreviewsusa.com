@@ -2606,6 +2606,13 @@ export const SECTIONS: Section[] = [
             url: '/nordictrack-treadmill-troubleshooting/',
           },
           {
+            title: 'Horizon Treadmill Troubleshooting',
+            description:
+              'Safety key and dashes, the dedicated-circuit rule, belt tension and centring, LUBE BELT resets and Horizon support.',
+            badge: 'Horizon',
+            url: '/horizon-treadmill-troubleshooting/',
+          },
+          {
             title: 'Treadmill Water Damage',
             description:
               'What to do before switching it back on, what water harms first, typical repair costs and when to replace.',
