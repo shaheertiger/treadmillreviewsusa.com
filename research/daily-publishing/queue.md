@@ -27,7 +27,7 @@ Already covered, do not write a second URL: "how to lube a treadmill" (1,900/mo;
 for it), "how to tighten a treadmill belt" (720; /how-to-adjust-treadmill-belt/), "how to reset proform treadmill"
 (170; a section of /proform-treadmill-troubleshooting/). If those pages are not ranking, improve them instead.
 
-- [ ] `life-fitness-f3-treadmill` — Life Fitness F3 Folding Treadmill Review (2026) — "life fitness f3 folding treadmill" 3,600/mo — pillar /life-fitness/
+- [x] 2026-11-21 · `life-fitness-f3-treadmill` — Life Fitness F3 Folding Treadmill Review (2026) — "life fitness f3 folding treadmill" 3,600/mo — pillar /life-fitness/
 - [ ] `horizon-7-4-at-treadmill` — Horizon 7.4 AT Treadmill Review (2026) — "horizon 7.4 at treadmill" 1,900/mo — siblings /horizon-7-0-at-treadmill/, /horizon-7-8-at-treadmill/
 - [ ] `xterra-tr95h-treadmill` — XTERRA TR95H Hiker Treadmill Review (2026) — "xterra tr95h hiker treadmill" 2,400/mo — pillar /xterra-treadmills/
 - [ ] `what-does-incline-mean-on-a-treadmill` — What Does Incline Mean on a Treadmill? — 4 variants at 140/mo each — sibling /what-is-12-incline-on-a-treadmill/ (check it does not already answer this)

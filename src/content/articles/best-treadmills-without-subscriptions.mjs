@@ -138,7 +138,10 @@ export default {
             <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">breakdown of whether iFIT is worth it</a>
             looks at the Train and Pro tiers on their own terms, and
             <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT versus Peloton</a>
-            compares the two biggest libraries head to head.
+            compares the two biggest libraries head to head. If you want Peloton&rsquo;s classes without
+            its hardware, our
+            <a href="/best-treadmills-for-peloton-app/" class="text-[#0F62FE] font-medium">best treadmills for the Peloton App</a>
+            pairs subscription-free machines with App+.
           </p>`,
     },
     {
