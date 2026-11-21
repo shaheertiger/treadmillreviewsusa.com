@@ -255,7 +255,7 @@ export default {
             descent, yet long descents are where tired legs, sore knees and slips tend to happen.
             Walking on a decline with a pack is a reasonable rehearsal for the second half of a day
             in the hills, and a machine that can also climb steeply lets you practise both halves of
-            the same hill.
+            the same hill. Our <a href="/best-treadmills-for-hiking/" class="text-[#0F62FE] font-medium">best treadmills for hiking</a> guide picks machines for both halves and adds a weighted-pack workout.
           </p>
           <p>
             <strong>Eccentric quad loading.</strong> Going downhill makes the quadriceps work

@@ -650,6 +650,12 @@ export default {
       blurb: 'The alternatives if decline is why you are looking at LifeSmart.',
       url: '/best-treadmills-with-decline/',
     },
+    {
+      kicker: 'Brand guide',
+      title: 'Merach Treadmills',
+      blurb: 'Incline walking pads and four T12 folding treadmills under $600, compared.',
+      url: '/merach-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">LifeSmart's appeal is PowerTouch, a fold that does the lifting for you, plus decline

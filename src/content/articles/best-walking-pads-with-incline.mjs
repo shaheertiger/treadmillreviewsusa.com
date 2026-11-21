@@ -42,7 +42,7 @@ export default {
             the least money and can live with a short belt. The table lists them from the steepest
             grade down, using only incline figures already confirmed for each card. Before you buy,
             it is worth knowing
-            <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium">how long walking pads last</a>.
+            <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium">how long walking pads last</a>. Our <a href="/merach-treadmills/" class="text-[#0F62FE] font-medium">Merach treadmills</a> guide compares the W50 with the rest of Merach's range.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[640px] w-full text-sm border-collapse">
             <thead>

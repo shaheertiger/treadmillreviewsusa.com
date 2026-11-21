@@ -81,7 +81,7 @@ export default {
             applies almost word for word to most ProForm consoles, and it is worth reading
             alongside this page, as is our full
             <a href="/nordictrack-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">NordicTrack treadmill troubleshooting</a>
-            guide, which also covers decline and the iFIT features that change speed by themselves. If none of the steps here finds the cause, the last section sets
+            guide, which also covers decline and the iFIT features that change speed by themselves. Owners of other brands should use the matching guide, because belt, lube and power rules differ: <a href="/sole-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Sole</a>, <a href="/horizon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Horizon</a> and <a href="/bowflex-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Bowflex treadmill troubleshooting</a>. If none of the steps here finds the cause, the last section sets
             out when to call ProForm support and what to have in front of you when you do; and if
             the question is whether the machine is worth keeping, our
             <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm treadmill guide</a>

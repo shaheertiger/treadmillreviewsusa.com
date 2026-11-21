@@ -184,6 +184,8 @@ export default {
             steady walking, often under a standing desk — they can be good value. What you are
             buying is a compact deck, a small motor and a slim profile that slides under a sofa
             or bed.
+          For prices by type, from budget flat pads to incline and handrail models, see
+            <a href="/how-much-does-a-walking-pad-cost/" class="text-[#0F62FE] font-medium">how much a walking pad costs</a>.
           </p>
           <p>
             What you are not buying is a running machine. Most cap out around 4 mph, some fold up
@@ -293,7 +295,8 @@ export default {
             wants a machine that will outlast them. A used or refurbished commercial unit can make
             sense here, which we cover below. Our
             <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills guide</a>
-            explains what the commercial label actually guarantees.
+            explains what the commercial label actually guarantees, and for dated prices by brand, from remanufactured gym units to new club machines, see
+            <a href="/how-much-does-a-commercial-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a commercial treadmill costs</a>.
           </p>
           <p>
             <strong>Curved non-motorized treadmills</strong> have no motor at all: you push a slatted,
