@@ -1,4 +1,6 @@
 import { join } from 'path';
+import { execSync } from 'child_process';
+import { readFileSync } from 'fs';
 import { walkPages, routeFor, draftRoutes } from './lib/pages.mjs';
 import { SECTIONS } from '../src/data/sections.ts';
 
@@ -16,10 +18,39 @@ const excluded = new Set([
   ...draftRoutes(PAGES_DIR),
 ]);
 
-const urlList = walkPages(PAGES_DIR)
+const allUrls = walkPages(PAGES_DIR)
   .map(routeFor)
   .filter((path) => !excluded.has(path))
   .map((path) => `${SITE}${path}`);
+
+// Submit only what changed. Bing Webmaster Tools warned (21 Nov 2026) against IndexNow "batch mode":
+// re-submitting every URL on every push. The workflow passes the pushed range in INDEXNOW_BEFORE and
+// INDEXNOW_AFTER; only pages whose source changed in a commit of that range are submitted. Commits
+// whose message contains [skip indexnow] (bulk date syncs, sitewide template edits) are ignored.
+// Run with --all to submit every page, e.g. after a key rotation.
+function changedUrls() {
+  const before = process.env.INDEXNOW_BEFORE, after = process.env.INDEXNOW_AFTER;
+  if (process.argv.includes('--all') || !before || !after || /^0+$/.test(before)) return null;
+  const sh = (cmd) => execSync(cmd, { cwd: join(import.meta.dirname, '..'), encoding: 'utf8' }).trim();
+  const routes = new Set();
+  for (const commit of sh(`git rev-list --no-merges ${before}..${after}`).split('\n').filter(Boolean)) {
+    if (sh(`git log -1 --format=%B ${commit}`).includes('[skip indexnow]')) continue;
+    for (const file of sh(`git diff-tree --no-commit-id --name-only -r ${commit} -- src/pages src/content/articles`).split('\n').filter(Boolean)) {
+      if (file.startsWith('src/pages/') && file.endsWith('.astro')) routes.add(routeFor(file.replace(/^src\/pages\//, '')));
+      else if (file.startsWith('src/content/articles/') && file.endsWith('.mjs')) {
+        try { const slug = readFileSync(join(import.meta.dirname, '..', file), 'utf8').match(/slug:\s*'([^']+)'/)?.[1]; if (slug) routes.add(`/${slug}/`); } catch { /* deleted spec */ }
+      }
+    }
+  }
+  return new Set([...routes].map((r) => `${SITE}${r}`));
+}
+const changed = changedUrls();
+const urlList = changed ? allUrls.filter((u) => changed.has(u)) : allUrls;
+if (changed && urlList.length === 0) {
+  console.log('No page changed in this push (or only [skip indexnow] commits did); nothing to submit.');
+  process.exit(0);
+}
+console.log(changed ? `Changed pages in this push: ${urlList.length}` : `Submitting every page (${urlList.length}).`);
 
 if (process.argv.includes('--dry-run')) {
   console.log(urlList.join('\n'));

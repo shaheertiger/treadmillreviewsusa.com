@@ -3,6 +3,34 @@
 Written 2026-11-19 from the Bing Webmaster Tools "Search Performance" export (19 Aug – 17 Nov 2026)
 and the git history. The scheduled daily run reads this file first and follows it exactly.
 
+## 0. Data step: every run starts here (added 21 Nov 2026)
+
+The run decides what to write from fresh data, not from this file's older analysis. Before picking topics:
+
+1. **Pull Vercel analytics for every search engine** with the Vercel MCP tool `aggregate_pageviews`
+   (project `prj_aVSShsaH02dbYTHUoqcp35Uvz0I5`, team `team_pAoikpyeUpvHszE2JvWQKq7c`):
+   - `by: ["referrerHostname"]`, last 7 days: record visitors per engine in the PR description.
+   - `by: ["requestPath"]`, `limit: 100`, filter
+     `referrerHostname in ('duckduckgo.com','bing.com','cn.bing.com','search.yahoo.com','uk.search.yahoo.com','ca.search.yahoo.com','au.search.yahoo.com','google.com','ecosia.org','msn.com','search.brave.com','startpage.com','yandex.ru','alice.yandex.ru','m.baidu.com','sogou.com')`
+     (the list in `scripts/perf-save-vercel.mjs`), for the last 7 full days. Add any new search referrer that appears in the referrer breakdown.
+   - Save it: write one `path visitors pageviews` line per row (skip "Others") to a scratch file and run
+     `node scripts/perf-save-vercel.mjs --start <D-7> --end <D> --source search-all <file>`. On Mondays also pull the
+     previous 7 days if that window is missing, so the week-on-week comparison always has two windows.
+2. **Pull Bing**: if `BING_WEBMASTER_API_KEY` or `apikey` is set (the owner saved it as `apikey`), run `node scripts/bing-fetch.mjs` (keywords, page stats and daily
+   totals from the Bing Webmaster API). If it is not set, say so in the PR; data then comes only from uploads.
+3. **File uploads**: `node scripts/perf-ingest.mjs` picks up any CSV the owner uploaded (Vercel top pages, Bing keyword
+   report, Bing overview, Bing AI queries and AI pages).
+4. **Rebuild the report**: `node scripts/perf-report.mjs` writes `PERFORMANCE.md`. Read its "Instructions for today's run"
+   and follow them: take the first **PICK** in each lane, defer queue items whose type is DOESN'T, expand rising pages,
+   and make one CTR fix from the page-one-no-clicks lists.
+5. **Keep dates honest**: `node scripts/sync-lastmod.mjs --write` before the build, so every changed page's
+   `dateModified` and sitemap `<lastmod>` move with its content (Bing flagged stale lastmods on 21 Nov).
+6. **Say what the data said** in the PR: visitors by engine, the type verdicts that drove today's picks, and anything
+   deferred. Commit the data folder and `PERFORMANCE.md` with the articles.
+
+IndexNow now submits only the pages changed in each push (Bing warned against batch mode). Put `[skip indexnow]` in the
+message of any commit that only bulk-updates dates or templates.
+
 ## 1. What the data says
 
 Weekly totals (Bing, all engines it powers):
