@@ -98,6 +98,31 @@ so the Bing rules in §2 apply to both.
   give the answer (top pick and price) on 20 Nov. No more seniors or health pages until they show clicks.
 - **Rule:** the daily run writes only from the Active lists. Parked topics wait until a later export shows that type winning.
 
+## 1d. Consistent growers (Vercel, 30 days Oct 21 - Nov 20, by week)
+
+30-day totals: 4,651 visitors (+69%), 5,925 views. Referrers: DuckDuckGo 688 (+305%, rising every week), Bing 441 (+341%),
+Yahoo 114, Google 40, Ecosia 35. All Bing-index engines, so §2 still applies. Ranked by trend, not total, because a big
+30-day total can hide a page that is falling. Visitors per week, weeks starting Oct 19, 26, Nov 2, 9, 16 (Nov 16 is 5 days, scaled up to 7 after the arrow):
+
+| Page | Weekly visitors | Verdict |
+|---|---|---|
+| /best-treadmills-without-subscriptions/ | 6, 8, 9, 17, 15→21 | Cleanest steady climb. **Expanded 21 Nov** |
+| /proform-treadmill-troubleshooting/ | 9, 10, 19, 17, 15→21 | Steady. **Expanded 21 Nov** |
+| /how-much-does-a-treadmill-cost/ | 15, 30, 23, 42, 21→29 | Biggest page, rising. **Expanded 21 Nov** |
+| /best-treadmills-with-decline/ | 1, 0, 4, 7, 8→11 | Up every week. **Expanded 21 Nov** |
+| /treadmill-horsepower-guide/ | 6, 8, 6, 11, 9→13 | Slow, steady. **Expanded 21 Nov** |
+| /lifesmart-treadmills/ | 0, 0, 0, 8, 19→27 | Fastest riser. **Expanded 21 Nov** |
+| /best-incline-treadmills/ | 3, 1, 17, 17, 12→17 | Jumped up and held. DuckDuckGo's #1 page (30) |
+| /treadmill-squeaking-noise/, /treadmill-maintenance/ | 11→15; 4→15 last week | Rising late. Watch next export |
+| /treadmill-black-friday-deals/ | 4, 7, 15, 13, 19→27 | Seasonal; drops after Cyber Monday |
+| /treadmill-reviews-2026/ | 10, 12, 12, 17, 7→10 | **Falling.** Check titles and freshness |
+| /treadmill-pace-and-speed-chart/, /best-treadmills-for-seniors/ | flat, then down | Falling |
+| /best-treadmill-for-home-reviews/ | 16, 19, 7, 7, 0 | Not a loss: redirected into /best-treadmills-for-home/ (vercel.json) |
+
+**Rule from this:** when a page climbs three weeks or more in a row, expand it (3-4 new sections answering what the
+searcher asks next, 2-3 new FAQs, a new table, links to its cluster, a fresh `updated` date) before writing new
+siblings. Do this check with each new export.
+
 ## 2. The exact format (copy this for every article)
 
 Reference implementation: `src/content/articles/treadmill-speed-for-seniors.mjs` (question page)
