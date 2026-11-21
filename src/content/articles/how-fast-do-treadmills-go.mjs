@@ -236,7 +236,7 @@ export default {
       id: 'why-max-rarely-matters',
       heading: 'Why Top Speed Is Rarely the Constraint',
       html: `          <p>
-            For the great majority of buyers, a 10 mph treadmill and a 12 mph treadmill are
+            For the great majority of buyers, a 10 mph treadmill and a <a href="/best-fast-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>12 mph treadmill</a> are
             equally fast in practice, because neither person will ever reach 10 mph. The specs
             that limit a runner long before the top speed does are these:
           </p>

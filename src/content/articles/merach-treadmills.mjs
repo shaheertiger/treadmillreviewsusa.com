@@ -609,6 +609,24 @@ export default {
   related: [
     {
       kicker: 'Brand guide',
+      title: 'AKLUER Treadmills',
+      blurb: 'Seven Amazon walking pads from about $70, and the warranty you must activate.',
+      url: '/akluer-treadmills/',
+    },
+    {
+      kicker: 'Brand guide',
+      title: 'Superun Treadmills',
+      blurb: 'Amazon walking pads from about $94 and the figures that disagree.',
+      url: '/superun-treadmills/',
+    },
+    {
+      kicker: 'Brand guide',
+      title: 'THERUN Treadmills',
+      blurb: 'Walking pads from $80 to a 20% incline runner, and which claims conflict.',
+      url: '/therun-treadmills/',
+    },
+    {
+      kicker: 'Brand guide',
       title: 'UREVO Treadmills',
       blurb: 'Merach’s closest rival on Amazon: walking pads, 2-in-1s and the warranty catch.',
       url: '/urevo-treadmills/',

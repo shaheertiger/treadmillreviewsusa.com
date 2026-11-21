@@ -695,6 +695,18 @@ export default {
   relatedHeading: 'Related Walking Pad Guides',
   related: [
     {
+      kicker: 'Brand guide',
+      title: 'THERUN Treadmills',
+      blurb: 'Walking pads from $80 to a 20% incline runner, and which claims conflict.',
+      url: '/therun-treadmills/',
+    },
+    {
+      kicker: 'Brand guide',
+      title: 'AKLUER Treadmills',
+      blurb: 'Seven Amazon walking pads from about $70, and the warranty you must activate.',
+      url: '/akluer-treadmills/',
+    },
+    {
       kicker: 'Best List',
       title: 'Best Walking Pads',
       blurb: 'Six pads, three of them UREVO, with figures checked against two sources.',

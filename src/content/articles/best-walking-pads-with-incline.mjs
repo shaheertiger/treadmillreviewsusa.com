@@ -586,6 +586,18 @@ export default {
   relatedHeading: 'Related Walking Pad Guides',
   related: [
     {
+      kicker: 'Brand guide',
+      title: 'LONTEK Walking Pads',
+      blurb: 'Which LONTEK listing is 15% and which is 32%, set by hand.',
+      url: '/lontek-walking-pad/',
+    },
+    {
+      kicker: 'Brand guide',
+      title: 'Superun Treadmills',
+      blurb: 'Amazon walking pads from about $94 and the figures that disagree.',
+      url: '/superun-treadmills/',
+    },
+    {
       kicker: 'Buying Guide',
       title: 'Walking Pad Buying Guide',
       blurb: 'Belt size, motor, capacity, height, controls and warranty — everything to check on any pad.',

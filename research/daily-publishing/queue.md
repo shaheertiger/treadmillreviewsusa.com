@@ -39,7 +39,7 @@ for it), "how to tighten a treadmill belt" (720; /how-to-adjust-treadmill-belt/)
 - [x] 2026-11-21 · `sole-treadmill-troubleshooting` — Sole Treadmill Troubleshooting: Console, Belt and Speed Fixes
 - [x] 2026-11-21 · `how-much-does-a-commercial-treadmill-cost` — How Much Does a Commercial Treadmill Cost? (2026) — /price/ — pillar /commercial-treadmills/
 - [ ] `treadmill-clicking-noise` — Treadmill Clicking Noise: Find It by When It Clicks (noise pages win: /treadmill-squeaking-noise/, /treadmill-static-shock/)
-- [ ] `how-much-does-a-peloton-tread-cost` — How Much Does a Peloton Tread Cost? (2026): Tread, Tread+, Membership — /price/ — pillar /peloton-tread/ (prices from Peloton's own site, dated)
+- [x] 2026-11-21 · `how-much-does-a-peloton-tread-cost` — How Much Does a Peloton Tread Cost? (2026): Tread, Tread+, Membership — /price/ — pillar /peloton-tread/ (prices from Peloton's own site, dated)
 - [x] 2026-11-21 · `horizon-treadmill-troubleshooting` — Horizon Treadmill Troubleshooting: Won't Start, Belt, Console
 - [ ] `how-much-does-a-sole-treadmill-cost` — How Much Does a Sole Treadmill Cost? (2026): Every Model — /price/ — pillar /sole-fitness/
 - [ ] `walking-pad-belt-slipping` — Walking Pad Belt Slipping or Off-Center: How to Fix It

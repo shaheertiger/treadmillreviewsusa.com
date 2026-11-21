@@ -91,8 +91,8 @@ export default {
             on the motor, while its site lists a lifetime motor warranty for the 1750. And the
             <strong>price</strong>: the 1750 has typically cost a few hundred dollars more, although
             NordicTrack discounts both so often that the gap on any given day is worth checking.
-            Everything else that NordicTrack confirms is the same: 0 to 12 mph, -3% decline to 12%
-            incline, a folding cushioned deck and iFIT compatibility.
+            Everything else that NordicTrack confirms is the same: 0 to 12 mph, -3% decline to <a href="/what-is-12-incline-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>12%
+            incline</a>, a folding cushioned deck and iFIT compatibility.
           </p>
           <p>
             What we could not confirm are the figures most comparisons lead with — the motor

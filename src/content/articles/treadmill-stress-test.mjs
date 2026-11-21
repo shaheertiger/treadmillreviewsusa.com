@@ -158,7 +158,7 @@ export default {
             shows what the speeds feel like.
           </p>
           <p>
-            Many clinics use a modified Bruce protocol for older patients or people who are less
+            Many clinics use a <a href="/average-time-on-treadmill-stress-test-by-age/" class="text-[#0F62FE] font-medium" data-autolink>modified Bruce protocol</a> for older patients or people who are less
             active, which adds gentler starting stages at a lower incline before joining the
             standard sequence. Other protocols exist — some increase effort in smaller, more
             frequent steps — and the choice is the clinic's. Whatever the protocol, the point is a

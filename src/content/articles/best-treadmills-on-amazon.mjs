@@ -497,6 +497,18 @@ export default {
   relatedHeading: 'Related Buying Guides',
   related: [
     {
+      kicker: 'Brand guide',
+      title: 'THERUN Treadmills',
+      blurb: 'Walking pads from $80 to a 20% incline runner, and which claims conflict.',
+      url: '/therun-treadmills/',
+    },
+    {
+      kicker: 'Brand guide',
+      title: 'AKLUER Treadmills',
+      blurb: 'Seven Amazon walking pads from about $70, and the warranty you must activate.',
+      url: '/akluer-treadmills/',
+    },
+    {
       kicker: 'Where to Buy',
       title: 'Buying a Treadmill on Amazon',
       blurb: 'Sellers, listings, reviews, freight delivery and returns — how to judge any Amazon treadmill.',

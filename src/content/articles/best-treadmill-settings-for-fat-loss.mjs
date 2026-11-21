@@ -385,7 +385,7 @@ export default {
             deck to rise.
           </p>
           <p>
-            Popular named routines fit the same logic. The 12-3-30 workout — 12% incline, 3 mph, 30
+            Popular named routines fit the same logic. The 12-3-30 workout — <a href="/what-is-12-incline-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>12% incline</a>, 3 mph, 30
             minutes — is the "fit walker" row of the settings table at its upper end, and it is a
             demanding session for anyone who is not already walking on a steep grade. Our page on
             the <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 treadmill workout</a>

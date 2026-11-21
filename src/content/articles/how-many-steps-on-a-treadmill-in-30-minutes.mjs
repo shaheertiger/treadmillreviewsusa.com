@@ -204,7 +204,7 @@ export default {
       html: `          <p>
             Many people searching for "speed 3" or "speed 4" are reading the number straight off the
             console without knowing which unit it uses. Most treadmills sold in the US display miles
-            per hour, but some machines, particularly compact walking pads and imported models, can be
+            per hour, but some machines, particularly compact <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a> and imported models, can be
             set to kilometres per hour. The difference is large.
           </p>
           <ul>
@@ -253,7 +253,7 @@ export default {
           </table></div>
           <p>
             In practice, longer sessions tend to come in slightly lower than straight multiplication
-            suggests, because most people include a slower warm-up and cool-down. Ten minutes of
+            suggests, because most people include a slower <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium" data-autolink>warm-up and cool-down</a>. Ten minutes of
             warming up at 2.5 mph inside a 45-minute session at 3.5 mph, for example, trims the total
             by a few hundred steps compared with the table.
           </p>
@@ -310,7 +310,7 @@ export default {
           </p>
           <p>
             <strong>Undercounting from handrails.</strong> A wrist-worn tracker detects steps
-            largely from arm swing. Hold the rails, rest your forearms on a desk shelf or carry a phone
+            largely from arm swing. <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Hold the rails</a>, rest your forearms on a desk shelf or carry a phone
             in one hand, and it can miss a large share of your steps. This is the single most common
             reason a treadmill session reads low. Walking hands-free with a natural swing fixes most
             of it. Our page on whether a
