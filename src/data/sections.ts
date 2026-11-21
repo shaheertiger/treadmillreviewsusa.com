@@ -3360,6 +3360,13 @@ export const SECTIONS: Section[] = [
             url: '/how-many-steps-in-a-mile-on-a-treadmill/',
           },
           {
+            title: 'How Many Steps in 30 Minutes?',
+            description:
+              'About 2,900 steps at 2 mph to 3,900 at 4 mph, by speed and height, from walking-cadence research.',
+            badge: 'Steps',
+            url: '/how-many-steps-on-a-treadmill-in-30-minutes/',
+          },
+          {
             title: 'Make Treadmill Running Less Boring',
             description:
               'Why treadmill runs drag, and nine fixes: structure, chunking, entertainment, games, a fan and more.',
