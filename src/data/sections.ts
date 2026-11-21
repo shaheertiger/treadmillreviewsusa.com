@@ -1310,6 +1310,13 @@ export const SECTIONS: Section[] = [
             url: '/lifesmart-treadmills/',
           },
           {
+            title: 'Merach Treadmills',
+            description:
+              'W50 TrekPad and W60 Plus incline walking pads and four T12 folding treadmills under $600, compared, with the 1+1-year warranty.',
+            badge: 'Walking pads',
+            url: '/merach-treadmills/',
+          },
+          {
             title: 'Centr Treadmills',
             description:
               'Chris Hemsworth\'s brand: the folding Runr and Runr-S and the $6,999 Centr x HYROX Perform Tread race treadmill.',
