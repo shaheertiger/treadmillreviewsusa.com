@@ -475,6 +475,13 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-with-kinomap/',
           },
           {
+            title: 'Best Treadmills for the Peloton App',
+            description:
+              'Six treadmills for Peloton classes without a Tread, from a $627 12 mph machine to the 15% incline Sole F65.',
+            badge: 'Peloton App',
+            url: '/best-treadmills-for-peloton-app/',
+          },
+          {
             title: 'Best Curved Treadmills',
             description:
               'Self-powered curved trainers for runners, what the slat belt changes, and who should not spend this much.',
@@ -1759,6 +1766,13 @@ export const SECTIONS: Section[] = [
             description: 'Genuine commercial-grade AC motor durability for the home.',
             badge: 'Review',
             url: '/life-fitness-t3-treadmill/',
+          },
+          {
+            title: 'Life Fitness F3 Folding Treadmill Review',
+            description:
+              'The gym brand’s folding treadmill: 350 lb rating, 10 mph, 12% incline, two consoles and a lifetime frame warranty.',
+            badge: 'Life Fitness',
+            url: '/life-fitness-f3-treadmill/',
           },
           {
             title: 'Life Fitness Platinum Club Series',

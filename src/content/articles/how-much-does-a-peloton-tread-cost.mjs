@@ -190,7 +190,9 @@ export default {
             treadmill, or rower". App One, the cheapest tier, is limited to three cardio equipment
             classes a month. The difference between the All-Access and App+ rows, about $1,260 over
             five years on monthly billing, is part of what you pay for running Peloton's classes on
-            Peloton's own screen.
+            Peloton's own screen. If you would rather pay for App+ and use an ordinary treadmill, our
+            <a href="/best-treadmills-for-peloton-app/" class="text-[#0F62FE] font-medium">best treadmills for the Peloton App</a>
+            covers six that keep up with the classes.
           </p>
           <p>
             Two smaller points. Peloton's Black Friday offer includes a code for one free month of

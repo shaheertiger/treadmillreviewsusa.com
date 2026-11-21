@@ -23,7 +23,7 @@ Format: `slug` — Title — hub → group — Amazon search to start from
 
 - [x] 2026-11-20 · `best-treadmills-with-kinomap` — Best Treadmills With Kinomap (2026): 6 Picks, No iFIT Needed — /best/ → features group — "treadmill kinomap"
 - [x] 2026-11-21 · `merach-treadmills` — MERACH Treadmill Reviews (2026): Is MERACH a Good Brand? — /brands/ → Cross-shopped alternatives group — "MERACH treadmill"
-- [ ] `best-treadmills-for-peloton-app` — Best Treadmills for the Peloton App (2026): 6 Without a Tread — /best/ → features group — "treadmill bluetooth app"
+- [x] 2026-11-21 · `best-treadmills-for-peloton-app` — Best Treadmills for the Peloton App (2026): 6 Without a Tread — /best/ → features group — "treadmill bluetooth app"
 - [x] 2026-11-21 · `superun-treadmills` — Superun Treadmill Reviews (2026): Walking Pads, Specs, Warranty — /brands/ → Cross-shopped alternatives group — "Superun walking pad"
 - [ ] `best-treadmills-with-long-warranty` — Best Treadmills With the Longest Warranty (2026): 6 Picks — /best/ → features group — "treadmill lifetime warranty" (use makers' warranty pages for terms)
 - [x] 2026-11-21 · `therun-treadmills` — THERUN Treadmill Reviews (2026): Is THERUN Legit? — /brands/ → Cross-shopped alternatives group — "THERUN treadmill"
@@ -36,6 +36,18 @@ Format: `slug` — Title — hub → group — Amazon search to start from
 - [ ] `best-treadmills-with-60-inch-deck` — Best Treadmills With a 60-Inch Deck (2026): Room to Run — /best/ → features group — "treadmill 22 x 60"
 - [ ] `best-treadmills-for-short-people` — Best Treadmills for Short People (2026): Low Step-Up Picks — /best/ → use-case group — "treadmill low deck" (needs step-up heights from maker pages; skip if unavailable)
 - [x] 2026-11-21 · `best-treadmills-under-600` — Best Treadmills Under $600 (2026): 6 Picks With Real Motors — /price/ → budget group — "treadmill"
+
+### Added 2026-11-21 (refill: each brand had real listings under its own name on Amazon today; each slug checked unused)
+
+- [ ] `serenelife-treadmills` — SereneLife Treadmill Reviews (2026): Models, Specs, What to Check — /brands/ → Cross-shopped alternatives group — "SereneLife treadmill" (10/10 listings branded)
+- [ ] `best-treadmills-under-700` — Best Treadmills Under $700 (2026): Incline and 12 mph Picks — /price/ → budget group — "treadmill" (keyword "treadmill under $700 with 12% or higher incline" already drew 2 clicks)
+- [ ] `ypoo-treadmills` — YPOO Treadmill Reviews (2026): Is YPOO a Good Brand? — /brands/ → Cross-shopped alternatives group — "YPOO treadmill" (10/10)
+- [ ] `best-treadmills-with-brushless-motor` — Best Treadmills With Brushless Motors (2026): Quiet Picks — /best/ → features group — "brushless treadmill"
+- [ ] `cursor-fitness-treadmills` — CURSOR FITNESS Treadmill Reviews (2026): Walking Pads, Specs — /brands/ → Cross-shopped alternatives group — "CURSOR FITNESS treadmill" (8/10)
+- [ ] `best-treadmills-with-ac-motor` — Best Treadmills With an AC Motor (2026): Commercial-Grade Picks — /best/ → features group — "ac motor treadmill" (link /ac-vs-dc-treadmill-motor/; check it does not already target this search)
+- [ ] `ksports-treadmills` — Ksports Treadmill Reviews (2026): Rehab and Folding Models — /brands/ → Cross-shopped alternatives group — "Ksports treadmill" (6/10)
+- [ ] `merax-treadmills` — Merax Treadmill Reviews (2026): Models and What to Check — /brands/ → Cross-shopped alternatives group — "Merax treadmill" (6/10)
+- [ ] `fyc-treadmills` — FYC Treadmill Reviews (2026): Walking Pads and Folding Models — /brands/ → Cross-shopped alternatives group — "FYC treadmill" (5/10)
 
 ## Parked: accessories (no click evidence in the Nov 13-20 keyword report; do not write unless a future export shows accessory pages winning)
 
