@@ -275,6 +275,55 @@ function eligible(file, section) {
 }
 const lanes = [['Money lane', 'roundup-queue.md'], ['Traffic lane', 'queue.md']].map(([name, file]) => ({ name, items: eligible(file) }));
 
+// ---------- engine lanes: 3 picks from Bing data, 3 from DuckDuckGo data ----------
+// Each engine sends visitors to different kinds of page, so each gets its own type ranking (visitors
+// per live page from that engine's own Vercel pull, plus Bing Webmaster click-through for Bing), and
+// its own three picks from the Active queues. A DOESN'T type is never picked by either lane.
+function engineIndex(source) {
+  const w = [...windows.values()].filter((x) => x.sources[source] && x.days >= 5).sort((a, b) => a.end.localeCompare(b.end)).at(-1);
+  if (!w) return null;
+  const tot = w.sources[source];
+  const by = new Map();
+  for (const p of pages.values()) {
+    if (age(p) < 14) continue;
+    const t = by.get(p.type) ?? { type: p.type, live: 0, visitors: 0 };
+    t.live++; t.visitors += tot.get(p.slug) ?? 0; by.set(p.type, t);
+  }
+  const rows = [...by.values()];
+  const avg = rows.reduce((a, t) => a + t.visitors, 0) / Math.max(1, rows.reduce((a, t) => a + t.live, 0));
+  for (const t of rows) t.index = avg ? t.visitors / t.live / avg : 0;
+  return { window: w, rows: rows.sort((a, b) => b.index - a.index), total: [...tot.values()].reduce((a, b) => a + b, 0) };
+}
+const engines = { bing: engineIndex('bing'), duckduckgo: engineIndex('duckduckgo') };
+if (engines.bing && bingTypes.length) { // blend in Bing's own click-through by type
+  const ctr = new Map(bingTypes.map((t) => [t.type, t.ctr]));
+  const avgCtr = bingTypes.reduce((a, t) => a + t.clk, 0) / Math.max(1, bingTypes.reduce((a, t) => a + t.imp, 0));
+  for (const t of engines.bing.rows) t.index = 0.5 * t.index + 0.5 * ((ctr.get(t.type) ?? 0) / (avgCtr || 1));
+  engines.bing.rows.sort((a, b) => b.index - a.index);
+}
+const pool = lanes.flatMap((l) => l.items.map((x, i) => ({ ...x, lane: l.name, order: i }))).filter((x) => !x.exists && !String(x.verdict).startsWith("DOESN'T"));
+const enginePicks = {};
+const taken = new Set(), typeUse = new Map();
+// Each engine lane: 1 pick from the money lane (roundups and brand pages, the affiliate pages) and 2 from
+// the traffic lane, ranked by that engine's type index. No type is used more than twice across all six,
+// so the day's output is not six versions of one page.
+for (const eng of ['bing', 'duckduckgo']) {
+  const e = engines[eng];
+  if (!e) { enginePicks[eng] = []; continue; }
+  const idx = new Map(e.rows.map((t) => [t.type, t.index]));
+  const picks = [];
+  for (const [laneName, n] of [['Money lane', 1], ['Traffic lane', 2]]) {
+    const ranked = pool.filter((x) => x.lane === laneName && !taken.has(x.slug)).map((x) => ({ ...x, score: idx.get(x.type) ?? 0 })).sort((a, b) => b.score - a.score || a.order - b.order);
+    let got = 0;
+    for (const x of ranked) {
+      if (got === n) break;
+      if ((typeUse.get(x.type) ?? 0) >= 2) continue;
+      picks.push(x); taken.add(x.slug); typeUse.set(x.type, (typeUse.get(x.type) ?? 0) + 1); got++;
+    }
+  }
+  enginePicks[eng] = picks;
+}
+
 // ---------- write ----------
 const pct = (x) => `${(100 * x).toFixed(1)}%`;
 P('# Performance Report (auto-generated)');
@@ -291,7 +340,18 @@ P('3. **Expand before adding siblings:** any page in "Rising" below that climbed
 P('4. **CTR fixes:** if the "Page-one keywords with no clicks" list names a page that has not had a title/description change in the last 7 days, rewrite one title and one description per run so they lead with that query and give the answer with a number.');
 P('5. **Sample size:** a verdict built on fewer than about 5 visitors per type is a hint, not a rule. Say so in the PR.');
 P('');
-P('### Eligible queue items today (first eligible item per lane is today\'s pick)');
+P('### Today\'s six picks: 3 for Bing, 3 for DuckDuckGo');
+P('');
+P('The daily run writes these six. Each engine\'s picks come from the page types that engine rewards (its own visitors per page; for Bing also its click-through rate). If a pick turns out to be covered by an existing page, mark it skipped and take the next item in that engine\'s ranking.');
+P('');
+for (const [eng, label] of [['bing', 'Bing (also Yahoo, MSN, Copilot)'], ['duckduckgo', 'DuckDuckGo']]) {
+  const e = engines[eng];
+  P(`**${label}**${e ? ` (${e.total} visitors, ${e.window.start} to ${e.window.end}; top types: ${e.rows.slice(0, 4).map((t) => `${t.type} ${t.index.toFixed(2)}x`).join(', ')})` : ' (no per-engine pull on file: run the data step)'}`);
+  P('');
+  for (const x of enginePicks[eng] ?? []) P(`- **PICK** \`${x.slug}\`: ${x.type} (${x.lane === 'Money lane' ? 'roundup-queue.md' : 'queue.md'})`);
+  P('');
+}
+P('### Queue order (for reference)');
 P('');
 for (const lane of lanes) {
   P(`**${lane.name}**`);
@@ -411,5 +471,5 @@ P('');
 for (const f of manifest.files) P(`- ${f.file} (${f.kind}, ${f.start ?? ''}${f.start ? '→' : ''}${f.end ?? ''}, source: ${f.source})`);
 P('');
 writeFileSync(join(DP, 'PERFORMANCE.md'), out.join('\n'));
-writeFileSync(join(DATA, 'performance.json'), JSON.stringify({ built: TODAY, siteVpp, bingTypes, bingPageOne, types: typeRows, aiTypes, aiTopPages, aiGaps, risers, fallers, newByType: [...newByType.values()], kwThemes, ctrFixes, lanes }, null, 2) + '\n');
+writeFileSync(join(DATA, 'performance.json'), JSON.stringify({ built: TODAY, enginePicks, engineTypes: Object.fromEntries(Object.entries(engines).map(([k, v]) => [k, v?.rows ?? null])), siteVpp, bingTypes, bingPageOne, types: typeRows, aiTypes, aiTopPages, aiGaps, risers, fallers, newByType: [...newByType.values()], kwThemes, ctrFixes, lanes }, null, 2) + '\n');
 console.log(`PERFORMANCE.md written: ${typeRows.length} types, ${risers.length} risers, ${fallers.length} fallers, ${newPages.length} new pages, ${ctrFixes.length} CTR fixes`);

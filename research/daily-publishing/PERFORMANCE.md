@@ -1,6 +1,6 @@
 # Performance Report (auto-generated)
 
-Built 2026-11-21 by `node scripts/perf-report.mjs` from 16 export(s) in `research/daily-publishing/data/`. Do not edit by hand; drop new exports in and re-run.
+Built 2026-11-21 by `node scripts/perf-report.mjs` from 18 export(s) in `research/daily-publishing/data/`. Do not edit by hand; drop new exports in and re-run.
 
 ## Instructions for today's run
 
@@ -10,7 +10,23 @@ Built 2026-11-21 by `node scripts/perf-report.mjs` from 16 export(s) in `researc
 4. **CTR fixes:** if the "Page-one keywords with no clicks" list names a page that has not had a title/description change in the last 7 days, rewrite one title and one description per run so they lead with that query and give the answer with a number.
 5. **Sample size:** a verdict built on fewer than about 5 visitors per type is a hint, not a rule. Say so in the PR.
 
-### Eligible queue items today (first eligible item per lane is today's pick)
+### Today's six picks: 3 for Bing, 3 for DuckDuckGo
+
+The daily run writes these six. Each engine's picks come from the page types that engine rewards (its own visitors per page; for Bing also its click-through rate). If a pick turns out to be covered by an existing page, mark it skipped and take the next item in that engine's ranking.
+
+**Bing (also Yahoo, MSN, Copilot)** (132 visitors, 2026-11-14 to 2026-11-22; top types: cost/price 8.35x, deals 2.71x, fix 1.57x, maintenance/how-to 1.16x)
+
+- **PICK** `best-treadmills-with-heart-rate-monitor`: roundup: treadmills & pads (roundup-queue.md)
+- **PICK** `how-much-does-a-sole-treadmill-cost`: cost/price (queue.md)
+- **PICK** `how-much-does-a-proform-treadmill-cost`: cost/price (queue.md)
+
+**DuckDuckGo** (244 visitors, 2026-11-14 to 2026-11-22; top types: deals 2.86x, cost/price 2.39x, fix 1.97x, roundup: treadmills & pads 1.44x)
+
+- **PICK** `best-treadmills-with-60-inch-deck`: roundup: treadmills & pads (roundup-queue.md)
+- **PICK** `walking-pad-not-working`: fix (queue.md)
+- **PICK** `treadmill-clicking-noise`: fix (queue.md)
+
+### Queue order (for reference)
 
 **Money lane**
 
@@ -263,4 +279,6 @@ Top queries Copilot answered with this site:
 - vercel-top-pages/2026-11-21_1d_duckduckgo_9ab4ea.csv (vercel-top-pages, 2026-11-20→2026-11-21, source: duckduckgo)
 - vercel-top-pages/2026-11-21_1d_other_bfa0e2.csv (vercel-top-pages, 2026-11-20→2026-11-21, source: other)
 - vercel-top-pages/2026-11-21_1d_yahoo_638ab9.csv (vercel-top-pages, 2026-11-20→2026-11-21, source: yahoo)
+- vercel-top-pages/2026-11-22_8d_bing_9004cf.csv (vercel-top-pages, 2026-11-14→2026-11-22, source: bing)
+- vercel-top-pages/2026-11-22_8d_duckduckgo_75749c.csv (vercel-top-pages, 2026-11-14→2026-11-22, source: duckduckgo)
 - vercel-top-pages/2026-11-22_8d_search-all_ec7a97.csv (vercel-top-pages, 2026-11-14→2026-11-22, source: search-all)

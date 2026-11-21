@@ -5,6 +5,14 @@ and the git history. The scheduled daily run reads this file first and follows i
 
 ## 0. Data step: every run starts here (added 21 Nov 2026)
 
+**Volume (from 22 Nov 2026): six articles a day, three for Bing and three for DuckDuckGo.** The owner asked for
+three per engine. DuckDuckGo uses Bing's index but its visitors land on different page types (DDG: roundups,
+model and brand reviews, deals; Bing: cost pages, explainers, deals, fixes), so each engine gets its own lane in
+`PERFORMANCE.md` ("Today's six picks"): one money-lane page (roundup or brand, the affiliate pages) and two
+traffic-lane pages per engine, ranked by that engine's type index, with no page type used more than twice in a day.
+Write all six to the full standard in §2; if time runs short, ship fewer complete pages rather than six thin ones,
+and say so in the PR.
+
 The run decides what to write from fresh data, not from this file's older analysis. Before picking topics:
 
 1. **Pull Vercel analytics for every search engine** with the Vercel MCP tool `aggregate_pageviews`
@@ -13,6 +21,9 @@ The run decides what to write from fresh data, not from this file's older analys
    - `by: ["requestPath"]`, `limit: 100`, filter
      `referrerHostname in ('duckduckgo.com','bing.com','cn.bing.com','search.yahoo.com','uk.search.yahoo.com','ca.search.yahoo.com','au.search.yahoo.com','google.com','ecosia.org','msn.com','search.brave.com','startpage.com','yandex.ru','alice.yandex.ru','m.baidu.com','sogou.com')`
      (the list in `scripts/perf-save-vercel.mjs`), for the last 7 full days. Add any new search referrer that appears in the referrer breakdown.
+   - Then the same `requestPath` pull twice more, once with `referrerHostname eq 'duckduckgo.com'` (save with
+     `--source duckduckgo`) and once with `referrerHostname in ('bing.com','cn.bing.com','msn.com')` (save with
+     `--source bing`). These per-engine pulls drive the two lanes.
    - Save it: write one `path visitors pageviews` line per row (skip "Others") to a scratch file and run
      `node scripts/perf-save-vercel.mjs --start <D-7> --end <D> --source search-all <file>`. On Mondays also pull the
      previous 7 days if that window is missing, so the week-on-week comparison always has two windows.
@@ -21,7 +32,7 @@ The run decides what to write from fresh data, not from this file's older analys
 3. **File uploads**: `node scripts/perf-ingest.mjs` picks up any CSV the owner uploaded (Vercel top pages, Bing keyword
    report, Bing overview, Bing AI queries and AI pages).
 4. **Rebuild the report**: `node scripts/perf-report.mjs` writes `PERFORMANCE.md`. Read its "Instructions for today's run"
-   and follow them: take the first **PICK** in each lane, defer queue items whose type is DOESN'T, expand rising pages,
+   and follow them: write the six **PICK**s under "Today's six picks" (3 Bing, 3 DuckDuckGo), defer queue items whose type is DOESN'T, expand rising pages,
    and make one CTR fix from the page-one-no-clicks lists.
 5. **Keep dates honest**: `node scripts/sync-lastmod.mjs --write` before the build, so every changed page's
    `dateModified` and sitemap `<lastmod>` move with its content (Bing flagged stale lastmods on 21 Nov).
@@ -239,7 +250,7 @@ topics in their queues with the date and slug, and add a line to `log.md`.
 
 ## 5. When the queue runs low
 
-At 10 or fewer unchecked topics in either Active list, append 10–12 more **of the winning types in §1c only**:
+At 15 or fewer unchecked topics in either Active list, append 15–20 more (six are used a day) **of the winning types in §1c only**:
 cost and price questions (by machine type and by brand), brand troubleshooting, noise and walking pad fixes, speed questions,
 feature roundups and Amazon-brand pages. Check each against existing titles first. Never refill from a Parked list. When a
 new Bing keyword report or Vercel export arrives, regroup it by theme as in §1c and re-rank both queues.
