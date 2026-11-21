@@ -15,6 +15,24 @@ The list alternates cost and fix pages.
 
 ## Active (cost / fix, alternating)
 
+### From the Semrush US keyword exports (20 Nov 2026) — write these first, highest volume first
+
+In progress 21 Nov (do not re-queue): how-to-turn-on-a-nordictrack-treadmill, how-to-take-apart-a-nordictrack-treadmill,
+what-is-12-incline-on-a-treadmill, how-much-does-a-peloton-tread-cost, how-much-does-a-treadmill-stress-test-cost,
+what-speed-is-a-10-minute-mile-on-a-treadmill, how-many-steps-on-a-treadmill-in-30-minutes,
+how-to-connect-apple-watch-to-planet-fitness-treadmill, nordictrack-treadmill-repair, proform-treadmill-repair,
+average-time-on-treadmill-stress-test-by-age.
+
+Already covered, do not write a second URL: "how to lube a treadmill" (1,900/mo; /treadmill-belt-lubrication/ is titled
+for it), "how to tighten a treadmill belt" (720; /how-to-adjust-treadmill-belt/), "how to reset proform treadmill"
+(170; a section of /proform-treadmill-troubleshooting/). If those pages are not ranking, improve them instead.
+
+- [ ] `life-fitness-f3-treadmill` — Life Fitness F3 Folding Treadmill Review (2026) — "life fitness f3 folding treadmill" 3,600/mo — pillar /life-fitness/
+- [ ] `horizon-7-4-at-treadmill` — Horizon 7.4 AT Treadmill Review (2026) — "horizon 7.4 at treadmill" 1,900/mo — siblings /horizon-7-0-at-treadmill/, /horizon-7-8-at-treadmill/
+- [ ] `xterra-tr95h-treadmill` — XTERRA TR95H Hiker Treadmill Review (2026) — "xterra tr95h hiker treadmill" 2,400/mo — pillar /xterra-treadmills/
+- [ ] `what-does-incline-mean-on-a-treadmill` — What Does Incline Mean on a Treadmill? — 4 variants at 140/mo each — sibling /what-is-12-incline-on-a-treadmill/ (check it does not already answer this)
+- [ ] `what-incline-should-i-run-on-a-treadmill` — What Incline Should I Run on a Treadmill? — 140/mo — sibling /what-incline-should-i-walk-on-a-treadmill/
+
 - [x] 2026-11-21 · `how-much-does-a-walking-pad-cost` — How Much Does a Walking Pad Cost? (2026): Prices by Type — /price/ — pillar /how-much-does-a-treadmill-cost/ (live Amazon prices via search.mjs)
 - [ ] `walking-pad-not-working` — Walking Pad Not Working? Belt, Remote and Power Fixes (builds on /how-to-lubricate-a-walking-pad/, a top-10 page)
 - [x] 2026-11-21 · `how-much-does-a-nordictrack-treadmill-cost` — How Much Does a NordicTrack Treadmill Cost? (2026) — /price/ — pillar /how-much-does-a-treadmill-cost/ and /nordictrack/ (prices from NordicTrack or Amazon listings, dated; iFIT cost separate)
