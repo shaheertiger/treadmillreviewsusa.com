@@ -3311,6 +3311,13 @@ export const SECTIONS: Section[] = [
             url: '/treadmill-pace-and-speed-chart/',
           },
           {
+            title: 'What Speed Is a 10-Minute Mile?',
+            description:
+              '6.0 mph, plus 8-, 9- and 12-minute miles, km/h settings and 5K/10K times.',
+            badge: 'Running pace',
+            url: '/what-speed-is-a-10-minute-mile-on-a-treadmill/',
+          },
+          {
             title: 'Treadmill Heart Rate Zones',
             description:
               'How the five zones work, why 220-minus-age misleads, and why grip sensors are the wrong instrument.',
