@@ -1,3 +1,6 @@
+const th = 'text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4';
+const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
+
 export default {
   slug: 'proform-treadmill-troubleshooting',
   title: 'ProForm Treadmill Troubleshooting: Reset, Belt and iFIT Fixes',
@@ -5,8 +8,8 @@ export default {
   crumbLabel: 'ProForm Treadmill Troubleshooting',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
-  updated: 'October 2026',
-  updatedLong: 'October 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-10-08',
   socialProof: '2.1k',
   h1: ['ProForm Treadmill Troubleshooting:', 'Reset, Belt, Incline and iFIT Problems'],
@@ -53,6 +56,25 @@ export default {
             will not get past a logo, an update or a login screen is a software or network problem
             that a reset or a wired check will usually clear.
           </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">ProForm symptom</th>
+                <th class="${th}">Most likely cause</th>
+                <th class="${th}">First fix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">Completely dead, no lights</td><td class="${td}">Outlet, tripped power switch, safety key</td><td class="${td}">Test the outlet with a lamp; reset the switch by the cord; reseat the key</td></tr>
+              <tr><td class="${td}">Cuts out mid-workout or trips the house breaker</td><td class="${td}">Shared or AFCI circuit, surge suppressor, overload</td><td class="${td}">Wait five minutes, reset; give it its own circuit</td></tr>
+              <tr><td class="${td}">Console lit, belt will not move</td><td class="${td}">Safety key, drive belt, motor controller</td><td class="${td}">Reseat the key; then call support before opening the hood</td></tr>
+              <tr><td class="${td}">Speed changes by itself or slows underfoot</td><td class="${td}">An iFIT workout, an over-tight belt, the speed sensor</td><td class="${td}">Check what is running; test in manual mode</td></tr>
+              <tr><td class="${td}">Belt slips, jerks or drifts to one side</td><td class="${td}">Tension or tracking, then lubrication</td><td class="${td}">Adjust the rear roller bolts a little at a time</td></tr>
+              <tr><td class="${td}">Incline stuck or reads wrong</td><td class="${td}">Lost calibration, loose connector</td><td class="${td}">Run the incline calibration for your model</td></tr>
+              <tr><td class="${td}">iFIT screen frozen, no Wi-Fi, no Bluetooth</td><td class="${td}">Software, signal, unsupported device</td><td class="${td}">Full power cycle; check signal; pair through the iFIT app</td></tr>
+              <tr><td class="${td}">New squeak, thump or grind</td><td class="${td}">Loose upright bolts, belt seam, rollers</td><td class="${td}">Tighten the upright bolts; time the noise to the belt</td></tr>
+            </tbody>
+          </table></div>
           <p>
             Because ProForm and NordicTrack share so much, our guide to
             <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">how to reset a NordicTrack treadmill</a>
@@ -180,6 +202,61 @@ export default {
           </p>`,
     },
     {
+      id: 'trips-breaker',
+      heading: 'ProForm Trips the Breaker or Shuts Off Mid-Workout',
+      html: `          <p>
+            A ProForm that runs for a while and then goes dead, or that takes the house breaker with
+            it, is nearly always a power-supply problem rather than a broken treadmill. There are two
+            breakers to think about: the small power switch or reset breaker on the treadmill
+            frame beside the cord, and the breaker for the circuit in your electrical panel.
+          </p>
+          <p>
+            <strong>When the treadmill&rsquo;s own switch trips.</strong> ProForm&rsquo;s user&rsquo;s
+            manual for model PFTL90924.1 (checked November 2026) sets out the order for &ldquo;the power
+            turns off during use&rdquo;: check the power switch and, if it has tripped, wait five
+            minutes before pressing it back in; make sure the cord is plugged in, and if it is, unplug
+            it, wait five minutes and plug it back in; then remove the key and reinsert it. If it still
+            will not run, contact Member Care. Note the five-minute wait: pressing the switch straight
+            back in is the habit that turns a one-off trip into a repeat.
+          </p>
+          <p>
+            <strong>When the house breaker trips.</strong> A treadmill motor draws a surge as it
+            starts and climbs under load, and it does not share a circuit well. The same manual asks
+            for a grounded outlet on a nominal 120-volt circuit capable of carrying 15 or more amps,
+            with nothing else on that circuit except low-power devices such as phone chargers, and
+            for the treadmill to be plugged into a UL 1449 listed surge suppressor that meets the
+            specification in the manual. It also notes that if the treadmill is on an AFCI-protected
+            outlet and the breaker trips repeatedly, Member Care can supply an arc filter. Newer homes
+            often have AFCI breakers on bedroom and living-room circuits, which is a common reason a
+            new ProForm trips a breaker that an old one never did.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">What trips</th>
+                <th class="${th}">When</th>
+                <th class="${th}">Usual reason</th>
+                <th class="${th}">What to do</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">Treadmill power switch</td><td class="${td}">After a long or heavy session</td><td class="${td}">Overload: dry or over-tight belt, high incline</td><td class="${td}">Wait five minutes, reset; check tension and lubrication guidance</td></tr>
+              <tr><td class="${td}">House breaker</td><td class="${td}">The moment the belt starts</td><td class="${td}">Shared circuit, or an AFCI or GFCI device</td><td class="${td}">Move to its own circuit; ask Member Care about an arc filter</td></tr>
+              <tr><td class="${td}">House breaker</td><td class="${td}">Only when another appliance runs</td><td class="${td}">Circuit overloaded</td><td class="${td}">Separate the loads; no space heaters on the same circuit</td></tr>
+              <tr><td class="${td}">Either, with a burning smell</td><td class="${td}">Any time</td><td class="${td}">Motor, controller or wiring fault</td><td class="${td}">Stop, unplug and call support</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Avoid a long extension lead or a household power strip in place of the specified surge
+            suppressor; both drop voltage and make trips more likely. Our guide to a
+            <a href="/treadmill-trips-breaker/" class="text-[#0F62FE] font-medium">treadmill that trips the breaker</a>
+            goes through the circuit checks in the general case, and our
+            <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">treadmill surge protector guide</a>
+            explains what the joule and clamping ratings mean. Anything beyond resetting and moving
+            the plug, such as changing a breaker or adding a circuit, is a job for an electrician.
+          </p>`,
+    },
+    {
       id: 'console-sleep',
       heading: 'Console Sleep, Wake-on-Power and a Screen That Looks Dead',
       html: `          <p>
@@ -254,6 +331,26 @@ export default {
             connects but will not log in, the iFIT account itself — password, subscription status —
             is the place to look, and that is an account question rather than a treadmill fault.
           </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Bluetooth will not connect</h3>
+          <p>
+            Bluetooth on a ProForm console is narrower than owners expect. The user&rsquo;s manual
+            for ProForm model PFTL90924.1 (checked November 2026) says its console supports
+            Bluetooth connections to smart devices through the iFIT app and to compatible heart rate
+            monitors, and that other Bluetooth connections are not supported. On a console like
+            that, headphones or a speaker that will not pair are not a fault. Other consoles,
+            particularly touchscreens, may differ, so check the manual for your model number.
+          </p>
+          <p>
+            For a phone or tablet, pair from inside the iFIT app with Bluetooth switched on in the
+            phone&rsquo;s settings, rather than from the phone&rsquo;s own Bluetooth menu. Close the
+            app fully and reopen it, keep the phone close to the console, and power cycle the
+            treadmill if the console no longer appears. The same manual notes that the console
+            requires activation before its connected features work, which catches out owners of
+            second-hand machines. A chest strap that will not show a heart rate is usually a strap
+            battery, a dry strap or a second device holding the connection; our guide to a
+            <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium">treadmill heart rate monitor that is not working</a>
+            covers those checks.
+          </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Using the machine without iFIT</h3>
           <p>
             A ProForm touchscreen console can be used in a manual mode without a subscription, with
@@ -262,6 +359,49 @@ export default {
             <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
             sets out what you get and what you lose; check the current price rather than relying on
             any figure you have seen quoted.
+          </p>`,
+    },
+    {
+      id: 'speed-changes',
+      heading: 'ProForm Speed Changing by Itself or Slowing Under You',
+      html: `          <p>
+            Three different complaints get searched as &ldquo;ProForm speed problem&rdquo;, and
+            they have different causes: the speed changes without you touching anything, the belt
+            slows or stutters each time a foot lands, or the machine will not go as fast as you ask.
+          </p>
+          <p>
+            <strong>Speed or incline changing on its own.</strong> On an iFIT console, check what is
+            on the screen before anything else. Trainer-led classes and map routes are built to
+            control the treadmill, so speed and incline will move during them. Press the speed or
+            incline buttons to override, or start a manual workout when you want the machine to stay
+            where you put it. If you want to understand which iFIT features adjust the machine and
+            how to turn them off, the
+            <a href="/nordictrack-treadmill-troubleshooting/#changes-by-itself" class="text-[#0F62FE] font-medium">NordicTrack section on speed and incline changing by itself</a>
+            applies to ProForm&rsquo;s iFIT consoles too. If the speed surges or drops in manual mode,
+            with nothing running, that is a fault, and a belt that will not slow down or stop when
+            the key is pulled is a reason to stop using the machine and call support.
+          </p>
+          <p>
+            <strong>The belt slows when you walk on it.</strong> ProForm&rsquo;s manual for model
+            PFTL90924.1 (checked November 2026) lists two checks for this symptom: that the
+            treadmill is on a surge suppressor meeting its specification, and that the belt is not
+            over-tightened. An over-tight belt loads the motor at every footstrike. The manual&rsquo;s
+            guide is that, with the key out and the cord unplugged, you should be able to lift each
+            edge of the walking belt 2 to 3 inches off the platform; if it is tighter than that,
+            loosen both rear roller screws by a quarter-turn and test. If the belt still slows, it
+            directs owners to Member Care.
+          </p>
+          <p>
+            <strong>Speed reading wrong, or capped.</strong> A console that shows a speed the belt
+            plainly is not doing, or that drops to zero and stops the belt a few seconds into a
+            workout, is often the speed sensor at the front roller: a magnet that has moved, a dirty
+            sensor face or a loose wire. Our
+            <a href="/treadmill-speed-sensor/" class="text-[#0F62FE] font-medium">treadmill speed sensor guide</a>
+            covers the checks, all with the machine unplugged. If the top speed seems low, compare it
+            with the maximum listed for your model before suspecting a fault, and check the console is
+            not set to a different unit of measurement; our guide on
+            <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">whether your treadmill speed is accurate</a>
+            explains how to time the belt yourself.
           </p>`,
     },
     {
@@ -282,7 +422,9 @@ export default {
             <li><strong>The drive belt.</strong> If the motor runs — you hear it spin up — but the
             walking belt does not move, the short ribbed belt between motor and front roller has
             slipped off, snapped or is slipping on its pulleys. Unplug, remove the motor hood and
-            look. This is a replaceable part.</li>
+            look. This is a replaceable part, but ProForm&rsquo;s manuals say not to remove the
+            motor hood unless an authorised service representative tells you to, so on a machine
+            in warranty, call before you open it.</li>
             <li><strong>The motor controller.</strong> If the motor does not try to run at all with
             the key in and the console lit, the controller is not sending it power. A tripped reset
             breaker, a blown fuse on the board, a failed board after a surge or a loose motor
@@ -310,12 +452,15 @@ export default {
             always one of three things.
           </p>
           <p>
-            <strong>A dry deck.</strong> ProForm, like NordicTrack, specifies silicone lubrication
-            of the deck at intervals given in the manual, and a deck that has run dry makes the belt
-            drag so that the motor momentarily loses the fight with your foot. Unplug, lift the edge
-            of the belt and feel the deck; dry and dusty means it needs lubricant. Use the lubricant
-            and the quantity the manual specifies. This is the first thing to do for any slip,
-            before touching the tension bolts.
+            <strong>A dry deck.</strong> A deck that has run dry makes the belt drag so that the
+            motor momentarily loses the fight with your foot. But check your manual before adding
+            anything: current ProForm manuals we checked in November 2026 (for example the user's
+            manual for model PFTL90924.1) say the walking belt comes coated with a high-performance
+            lubricant and that you should never apply silicone spray or anything else to the belt or
+            platform unless an authorised service representative tells you to, and to contact
+            Member Care if you think it needs more. Older models and some other ProForm treadmills
+            do specify periodic lubrication. Follow the instruction for your model number; where the
+            manual says lubricate, use the lubricant and the quantity it specifies.
           </p>
           <p>
             <strong>Belt tension.</strong> If the deck is lubricated and the belt still slips under
@@ -340,6 +485,61 @@ export default {
             goes through the sequence, including the lift test for tension and when a belt is past
             adjusting. Do not simply keep tightening: a drum-tight belt on a dry deck is one of the
             more reliable ways to shorten the life of a ProForm motor.
+          </p>`,
+    },
+    {
+      id: 'off-centre-noise',
+      heading: 'Belt Off-Centre, Squeaking and Other ProForm Noises',
+      html: `          <p>
+            A belt that has crept to one side and a new noise often arrive together, because the
+            same things cause both: a machine that has been moved, folded or assembled with bolts left
+            loose, and a belt running out of true.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Centring the belt</h3>
+          <p>
+            The ProForm manual for model PFTL90924.1 (checked November 2026) gives a centring
+            procedure that is worth knowing because it differs from the generic advice. With the key
+            removed and the power cord unplugged, it uses only the <em>left</em> rear idler roller
+            screw: if the belt has shifted to the left, turn that screw clockwise half a turn; if it has
+            shifted to the right, turn it counter-clockwise half a turn. Then plug back in, insert the
+            key, walk on the treadmill for a few minutes and repeat until the belt runs centrally,
+            taking care not to over-tighten it. Other ProForm models may use both screws, so follow the
+            drawing in your own manual. Our step-by-step guide on
+            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">how to center a treadmill belt</a>
+            explains why the belt moves the way it does and how to avoid chasing it from side to side.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Placing a noise by its timing</h3>
+          <p>
+            For a squeak during use, the same manual&rsquo;s first step is to retighten the screws
+            that secure the uprights, which loosen with use and after a move. For anything else, the
+            timing of the noise is the best clue to its source.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">The noise</th>
+                <th class="${th}">Most likely source</th>
+                <th class="${th}">What to do</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">Squeak in time with your steps</td><td class="${td}">Upright or base bolts working loose</td><td class="${td}">Retighten the upright screws, then the base</td></tr>
+              <tr><td class="${td}">Thump once per belt revolution</td><td class="${td}">Belt seam, damaged belt, flat spot on a roller</td><td class="${td}">Mark the belt and watch it come round</td></tr>
+              <tr><td class="${td}">Rubbing or scuffing at one side</td><td class="${td}">Belt off-centre, touching a rail</td><td class="${td}">Centre it as your manual shows</td></tr>
+              <tr><td class="${td}">Whine rising with speed</td><td class="${td}">Motor or drive belt</td><td class="${td}">Note the speed it starts at; call support</td></tr>
+              <tr><td class="${td}">Grinding or rumbling</td><td class="${td}">Roller bearings or motor bearings</td><td class="${td}">Stop using it and have it checked</td></tr>
+              <tr><td class="${td}">Clunk when the incline moves</td><td class="${td}">Incline motor, its mounts, or a loose frame bolt</td><td class="${td}">Recalibrate; check the incline mounts with power off</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Our guides to a
+            <a href="/treadmill-squeaking-noise/" class="text-[#0F62FE] font-medium">treadmill squeaking noise</a>
+            and a
+            <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium">treadmill thumping noise</a>
+            go through each in more detail, and a machine that rocks or wobbles is covered under
+            <a href="/treadmill-shaking-or-wobbling/" class="text-[#0F62FE] font-medium">treadmill shaking or wobbling</a>.
+            Always unplug the treadmill before checking bolts, rollers or anything under the deck, and
+            do not put hands near the rear roller while the belt is moving.
           </p>`,
     },
     {
@@ -421,6 +621,66 @@ export default {
           </p>`,
     },
     {
+      id: 'model-serial-warranty',
+      heading: 'ProForm Model Number, Serial Number, Parts and Warranty',
+      html: `          <p>
+            Almost every useful next step, from looking up an error to ordering a part to making a
+            warranty claim, starts with the model and serial number. The name on the console is not
+            enough: ProForm reuses names across model years, and the internal parts differ.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Finding the numbers</h3>
+          <p>
+            ProForm user&rsquo;s manuals print the model number on the front cover, with a drawing
+            showing where the serial number decal sits on the machine and a space to write the serial
+            number down (checked November 2026). The decal is on the frame rather than the console,
+            and is usually low down near the front of the base or the power inlet; on a folding model
+            you may need the deck down to see it. ProForm treadmill model numbers in the manuals we
+            checked begin with PFTL, followed by digits and a revision number. If
+            the manual is lost, the decal is the source of truth, and support can find the manual from
+            the model number.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Getting parts and service</h3>
+          <p>
+            Current ProForm manuals direct owners to Member Care at my.iFIT.com for service, and to
+            my.proform.com to register the product and activate the warranty. Parts are model-specific,
+            so order by model number, and use manufacturer-supplied parts, which the manuals also ask
+            for. Our guide to
+            <a href="/treadmill-parts/" class="text-[#0F62FE] font-medium">treadmill parts</a>
+            explains which parts wear and roughly what to expect.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What the warranty covers</h3>
+          <p>
+            ProForm warranty terms vary by model and by when and where you bought the machine, so
+            the document that came with yours is the one that counts. Two examples, both checked in
+            November 2026, show how much they differ:
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Source</th>
+                <th class="${th}">Treadmill warranty stated</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">ProForm&rsquo;s website, treadmills (current range)</td><td class="${td}">Lifetime motor warranty plus 1, 3 or 5-year parts and labour options</td></tr>
+              <tr><td class="${td}">User&rsquo;s manual, model PFTL90924.1</td><td class="${td}">Frame 10 years; parts and labour 1 year from purchase</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The same manual&rsquo;s limited warranty also says the cover is for the original
+            purchaser only and is not transferable, that repairs must be pre-authorised by iFIT, that
+            a small handling charge may apply to shipped parts and a trip charge to in-home service,
+            and that the warranty can be voided by commercial or rental use, abuse, modification, use
+            outside the USA, or not following the manual&rsquo;s instructions and warnings. That last
+            point matters for troubleshooting: the manual also says not to remove the motor hood
+            unless an authorised service representative tells you to. Inside the warranty period,
+            call before you open it. Buying second-hand means you almost certainly have no warranty.
+            Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
+            explains how frame, motor, parts and labour cover compare across brands.
+          </p>`,
+    },
+    {
       id: 'support',
       heading: 'When to Call ProForm Support and What to Have Ready',
       html: `          <p>
@@ -492,6 +752,22 @@ export default {
       q: 'Is ProForm the same as NordicTrack?',
       a: `They are sister brands owned by the same parent company, iFIT Health and Fitness, and they share consoles, controllers, incline systems and the iFIT platform. ProForm is positioned as the more affordable range. Most troubleshooting and reset procedures carry across between the two, which is why NordicTrack guides are often useful to ProForm owners, though the exact button sequences still differ by model.`,
     },
+    {
+      q: 'Why does my ProForm treadmill keep tripping the breaker?',
+      a: `Usually because it shares a circuit or sits on an AFCI-protected outlet. ProForm's manuals ask for a grounded 120-volt outlet on a circuit of 15 amps or more with nothing else heavy on it, and a UL 1449 surge suppressor; Member Care can supply an arc filter if an AFCI breaker trips repeatedly. If the treadmill's own power switch trips, wait five minutes before resetting it.`,
+    },
+    {
+      q: 'Where is the serial number on a ProForm treadmill?',
+      a: `On a decal on the frame, not the console, usually low down near the front of the base or the power inlet. The front cover of the ProForm user's manual shows the model number and a drawing of where the serial decal sits on your model. Have both numbers ready before contacting support.`,
+    },
+    {
+      q: 'Why will my ProForm not connect to Bluetooth?',
+      a: `Many ProForm consoles only support Bluetooth to the iFIT app and compatible heart rate monitors, so headphones and speakers may never pair. Pair a phone from inside the iFIT app with Bluetooth on, keep it close to the console, and power cycle the treadmill if it disappears. Check your model's manual for what its console supports.`,
+    },
+    {
+      q: 'Is my ProForm treadmill still under warranty?',
+      a: `It depends on the model and when you bought it. ProForm's website lists a lifetime motor warranty with 1, 3 or 5-year parts and labour options on current treadmills, while one current manual lists a 10-year frame and 1-year parts and labour. The cover usually applies to the original purchaser only, so check the warranty document that came with your machine.`,
+    },
   ],
   mistakesHeading: 'Common Mistakes With ProForm Treadmill Troubleshooting',
   mistakesIntro: `Most ProForm faults are simple. These four are how owners make them take longer or cost more than they should.`,
@@ -506,7 +782,7 @@ export default {
     },
     {
       title: 'Tightening the belt to cure a slip',
-      body: `Slip on a ProForm is usually a dry deck. Tightening the belt until the slip stops presses it onto a deck that was already dragging, so the motor runs hotter and the rollers wear. Lubricate the deck as the manual specifies first, then adjust tension a quarter-turn at a time on both rear bolts, stopping as soon as the slip is gone.`,
+      body: `Cranking the belt until the slip stops presses it onto a deck that may already be dragging, so the motor runs hotter and the rollers wear. Check the manual first: some ProForm belts are pre-lubricated and must not be sprayed, others need periodic lubricant. Then adjust tension a quarter-turn at a time on both rear bolts, stopping as soon as the slip is gone.`,
     },
     {
       title: 'Calling support without the model number or a video',
@@ -533,6 +809,12 @@ export default {
       blurb: 'The incline motor, the position sensor and calibration.',
       url: '/treadmill-incline-not-working/',
     },
+    {
+      kicker: 'Diagnosis',
+      title: 'Treadmill Trips the Breaker',
+      blurb: 'Shared circuits, AFCI outlets and surge suppressors.',
+      url: '/treadmill-trips-breaker/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Key, breaker, proper power cycle, then the manual.</strong>
@@ -540,7 +822,7 @@ export default {
             that needed a real unplug or an iFIT screen waiting on an update, and none of them need
             a tool.`,
     `<strong class="text-white">For anything else, diagnose before you pay.</strong> A slipping
-            belt is a dry deck, a wrong incline is a calibration, and a lit console with a dead belt
+            belt is tension or a dry deck, a wrong incline is a calibration, and a lit console with a dead belt
             is the drive belt or the controller. Confirm the procedure for your model number, have
             the sticker and a video ready for support, and read our
             <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#5AA9FF] font-bold no-underline">NordicTrack reset guide</a>
