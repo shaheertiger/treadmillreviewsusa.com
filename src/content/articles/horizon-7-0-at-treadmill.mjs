@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Horizon 7.0 AT Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-21',
   socialProof: '1.8k',
   h1: ['Horizon Fitness 7.0 AT', 'Treadmill Review'],
   standfirst:
@@ -82,7 +82,8 @@ export default {
             "3.0 HP" you will see in reviews and listings is not Horizon’s number.
           </p>
           <p>
-            Buy it if you run or walk at pace and are of average build. Step up to the 7.4 AT if you are
+            Buy it if you run or walk at pace and are of average build. Step up to the
+            <a href="/horizon-7-4-at-treadmill/" class="text-[#0F62FE] font-medium">7.4 AT</a> if you are
             broad or heavy, and look at the T202 or T101 if you only walk. Never pay the reference price;
             the <a href="#black-friday" class="text-[#0F62FE] font-medium">Black Friday section</a>
             below sets out what a good price looks like. We have not tested the 7.0 AT; what follows is

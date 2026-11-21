@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-21',
   socialProof: '2.6k',
   h1: ['Treadmill Warranties', 'Explained'],
   standfirst:
@@ -343,6 +343,8 @@ export default {
           <p>
             A machine with a modest frame term and generous in-home parts and labour can be the
             better-protected purchase than one advertising a lifetime frame with one year of labour.
+            Our <a href="/best-treadmills-with-long-warranty/" class="text-[#0F62FE] font-medium">best treadmills with the longest warranty</a>
+            ranks seven machines by exactly those terms.
             Our <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a>
             covers how warranty fits alongside motor, deck and price. If you are considering a
             used machine, our guide to
