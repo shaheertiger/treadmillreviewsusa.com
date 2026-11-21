@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Commercial Gym Equipment',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 16, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-16',
+  modified: '2026-11-16',
   socialProof: '1.6k',
   h1: ['Commercial Gym Equipment', 'Worth Buying'],
   standfirst:

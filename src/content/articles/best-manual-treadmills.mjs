@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Best Manual Treadmills',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-13',
+  modified: '2026-11-16',
   socialProof: '2.1k',
   h1: ['Best Manual Treadmills', 'Flat Walkers and Curved Runners'],
   standfirst:

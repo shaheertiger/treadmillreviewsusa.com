@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Best Dog Treadmills',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 17, 2026',
   published: '2026-10-13',
+  modified: '2026-11-17',
   socialProof: '1.7k',
   h1: ['Best Dog Treadmills', 'Sized for Your Dog'],
   standfirst:

@@ -5,9 +5,10 @@ export default {
     'Above 6 feet, most treadmills are too short and some rooms are too low. We compared six 60-inch machines on deck width, frame mass and incline headroom.',
   crumbLabel: 'Best Treadmills for Tall Runners',
   kicker: "Buyer's Guide",
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-09-08',
+  modified: '2026-11-15',
   socialProof: '2.9k',
   h1: ['Best Treadmills for', 'Tall Runners'],
   standfirst:

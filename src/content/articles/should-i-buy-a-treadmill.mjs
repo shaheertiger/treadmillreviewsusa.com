@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Should I Buy a Treadmill',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Question Answered',
-  updated: 'October 2026',
-  updatedLong: 'October 18, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-18',
+  modified: '2026-11-15',
   socialProof: '1.6k',
   h1: ['Should I Buy', 'a Treadmill?'],
   standfirst:

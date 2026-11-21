@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Walmart Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
-  updated: 'October 2026',
-  updatedLong: 'October 18, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-18',
+  modified: '2026-11-15',
   socialProof: '1.2k',
   h1: ['Does Walmart Sell Treadmills?', 'What to Check First'],
   standfirst:

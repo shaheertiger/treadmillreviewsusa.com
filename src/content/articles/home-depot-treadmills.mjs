@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Home Depot Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
-  updated: 'October 2026',
-  updatedLong: 'October 18, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-18',
+  modified: '2026-11-15',
   socialProof: '0.9k',
   h1: ['Does Home Depot Sell Treadmills?', 'Online Only, and Read the Listing'],
   standfirst:

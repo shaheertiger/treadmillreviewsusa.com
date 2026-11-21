@@ -11,8 +11,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 5, 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-11-05',
+  modified: '2026-11-15',
   socialProof: '1.3k',
   h1: ['Sunny Health & Fitness Treadmills:', 'A Buyer’s Guide to the Range'],
   standfirst:

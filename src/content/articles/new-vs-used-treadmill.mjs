@@ -5,9 +5,10 @@ export default {
     'A used treadmill buys roughly twice the hardware per dollar. Whether that is a bargain depends on four things you can check before paying — and one you cannot.',
   crumbLabel: 'New vs. Used Treadmill',
   kicker: 'Comparison',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-08',
+  modified: '2026-11-16',
   socialProof: '3.9k',
   h1: ['New vs. Used', 'Treadmill'],
   standfirst:

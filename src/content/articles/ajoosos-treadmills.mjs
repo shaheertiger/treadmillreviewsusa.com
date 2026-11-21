@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 5, 2026',
+  updatedLong: 'November 17, 2026',
   published: '2026-11-05',
+  modified: '2026-11-17',
   socialProof: '6.6k',
   h1: ['AJOOSOS 2-in-1 Under Desk Treadmill:', 'What We Could Confirm'],
   standfirst:

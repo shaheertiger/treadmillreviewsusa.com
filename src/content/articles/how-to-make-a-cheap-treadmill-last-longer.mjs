@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'How to Make a Cheap Treadmill Last Longer',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-13',
+  modified: '2026-11-16',
   socialProof: '1.8k',
   h1: ['How to Make a Cheap Treadmill', 'Last Longer'],
   standfirst:

@@ -5,9 +5,10 @@ export default {
     'Seven current running and walking shoes that suit a treadmill belt — daily trainers, a tempo shoe, a stability shoe and an incline-walking pick — with what changes indoors.',
   crumbLabel: 'Best Running Shoes for Treadmill',
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-13',
+  modified: '2026-11-15',
   socialProof: '2.8k',
   h1: ['Best Running Shoes for Treadmill', 'Seven Current Models'],
   standfirst:

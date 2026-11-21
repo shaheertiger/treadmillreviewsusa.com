@@ -15,9 +15,10 @@ export default {
     'Sole F80 treadmill reviews quote three different machines. The 2026 F80 has a 3.25 HP brushless motor, a 20 x 60 in. deck and a 10.1 in. touchscreen. What changed, what conflicts and who it suits.',
   crumbLabel: 'Sole F80 Treadmill',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '2.9k',
   h1: ['Sole F80 Treadmill', 'Review for 2026'],
   standfirst:

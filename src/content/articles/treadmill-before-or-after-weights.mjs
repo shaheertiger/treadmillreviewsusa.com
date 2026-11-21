@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Treadmill Before or After Weights',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
-  updated: 'October 2026',
-  updatedLong: 'October 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-08',
+  modified: '2026-11-15',
   socialProof: '1.7k',
   h1: ['Treadmill Before or After Weights?', 'Do the One That Matters More First'],
   standfirst:

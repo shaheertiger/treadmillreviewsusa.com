@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'What Is Treadmill Decline Good For',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-13',
+  modified: '2026-11-15',
   socialProof: '1.8k',
   h1: ['What Is Treadmill Decline', 'Actually Good For?'],
   standfirst:

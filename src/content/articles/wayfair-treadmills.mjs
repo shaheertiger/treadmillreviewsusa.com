@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Wayfair Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-14',
+  modified: '2026-11-16',
   socialProof: '1.3k',
   h1: ['Buying a Wayfair Treadmill:', 'What You Are Actually Buying'],
   standfirst:

@@ -5,9 +5,10 @@ export default {
     'The ProForm Carbon Pro 9000 treadmill (PFTL16925): 16 in. screen, 3.6 CHP, 20 x 60 in. belt, 0-12% incline, 350 lb. How it differs from the older 22 in. Pro 9000, and who should buy it.',
   crumbLabel: 'ProForm Carbon Pro 9000',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.2k',
   h1: ['ProForm Carbon Pro 9000', 'Treadmill Review'],
   standfirst:

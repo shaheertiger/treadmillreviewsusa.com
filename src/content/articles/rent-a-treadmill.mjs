@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Treadmill Rental',
   kicker: 'Price Guide',
   breadcrumb: { name: 'By Price', url: '/price/' },
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-06',
+  modified: '2026-11-15',
   socialProof: '1.2k',
   h1: ['Treadmill Rental and', 'Rent-to-Own'],
   standfirst:

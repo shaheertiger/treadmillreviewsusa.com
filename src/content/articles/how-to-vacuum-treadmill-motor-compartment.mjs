@@ -5,9 +5,10 @@ export default {
     'Dust in the motor compartment directly reduces cooling on the component least able to tolerate heat. Here is how to clear it safely — and what not to touch while you are in there.',
   crumbLabel: 'How to Vacuum a Treadmill Motor Compartment',
   kicker: 'Maintenance',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-08',
+  modified: '2026-11-16',
   socialProof: '3.1k',
   h1: ['How to Vacuum a', 'Treadmill Motor Compartment'],
   standfirst:

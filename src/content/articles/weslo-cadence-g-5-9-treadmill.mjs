@@ -5,9 +5,10 @@ export default {
     'For years the best-selling budget treadmill in America, and now discontinued. What the Cadence G 5.9 actually was, what it is worth used, and what to buy instead.',
   crumbLabel: 'Weslo Cadence G 5.9',
   kicker: 'Model Review',
-  updated: 'September 2026',
-  updatedLong: 'September 15, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-15',
+  modified: '2026-11-16',
   socialProof: '1.8k',
   h1: ['Weslo Cadence G 5.9', 'Treadmill Review'],
   standfirst:

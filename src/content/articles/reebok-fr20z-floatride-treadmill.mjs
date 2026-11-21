@@ -5,9 +5,10 @@ export default {
     'The Reebok FR20z Floatride is a non-folding home treadmill sold mainly in the UK and Australia. Its agreed specs, the conflicts, and why US stock is hard to find.',
   crumbLabel: 'Reebok FR20z Floatride',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.6k',
   h1: ['Reebok FR20z Floatride', 'Treadmill Review'],
   standfirst:

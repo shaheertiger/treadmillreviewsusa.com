@@ -5,9 +5,10 @@ export default {
     'What a treadmill weight limit actually measures, why running loads the deck far beyond your body weight, and how much capacity to buy for your weight and training.',
   crumbLabel: 'Treadmill Weight Capacity Guide',
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-06',
+  modified: '2026-11-15',
   socialProof: '2.4k',
   h1: ['Treadmill Weight Capacity:', 'What Limit Do You Need?'],
   standfirst:

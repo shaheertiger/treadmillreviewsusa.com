@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 5, 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-11-05',
+  modified: '2026-11-15',
   socialProof: '1.4k',
   h1: ['Best Treadmill Laptop Holders', 'Trays, Desks and Phone Mounts'],
   standfirst:

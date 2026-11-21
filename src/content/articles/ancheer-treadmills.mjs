@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 5, 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-11-05',
+  modified: '2026-11-15',
   socialProof: '1.1k',
   h1: ['ANCHEER Treadmills:', 'What You Are Buying, and From Whom'],
   standfirst:

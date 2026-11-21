@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Refurbished Treadmills',
   kicker: 'Price Guide',
   breadcrumb: { name: 'By Price', url: '/price/' },
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-06',
+  modified: '2026-11-16',
   socialProof: '1.6k',
   h1: ['Refurbished Treadmills:', 'Are They Worth It?'],
   standfirst:

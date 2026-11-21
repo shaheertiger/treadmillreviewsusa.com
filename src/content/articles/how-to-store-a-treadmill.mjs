@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'How to Store a Treadmill',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Ownership',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-06',
+  modified: '2026-11-16',
   socialProof: '1.4k',
   h1: ['How to Store', 'a Treadmill'],
   standfirst:

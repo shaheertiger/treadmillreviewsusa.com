@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'UREVO Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 20, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-10-20',
+  modified: '2026-11-21',
   socialProof: '1.3k',
   h1: ['UREVO Treadmills:', 'A Buyer’s Guide to the Range'],
   standfirst:

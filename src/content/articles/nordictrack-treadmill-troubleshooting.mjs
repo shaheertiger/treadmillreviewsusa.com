@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 20, 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-11-20',
+  modified: '2026-11-21',
   socialProof: '1.8k',
   h1: ['NordicTrack Treadmill Troubleshooting:', 'Reset, Belt, Incline and iFIT Problems'],
   standfirst:

@@ -5,9 +5,10 @@ export default {
     'A $500 and a $4,000 treadmill do the same job. We break down component by component what the extra $3,500 buys, and which parts of it you will genuinely notice.',
   crumbLabel: 'Cheap vs. Premium Treadmill',
   kicker: 'Comparison',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-09-08',
+  modified: '2026-11-15',
   socialProof: '4.1k',
   h1: ['Cheap vs. Premium', 'Treadmill'],
   standfirst:

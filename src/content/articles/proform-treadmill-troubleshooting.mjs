@@ -11,6 +11,7 @@ export default {
   updated: 'November 2026',
   updatedLong: 'November 21, 2026',
   published: '2026-10-08',
+  modified: '2026-11-21',
   socialProof: '2.1k',
   h1: ['ProForm Treadmill Troubleshooting:', 'Reset, Belt, Incline and iFIT Problems'],
   standfirst: `Most ProForm faults are one of a short list: a safety key not seated, a console that needs a proper reset, an iFIT screen stuck on something, a belt that slips or will not move, or an incline that has lost its place. Here is the order to check them in, what to do yourself, and what to have ready before you call support.`,

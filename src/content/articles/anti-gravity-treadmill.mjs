@@ -5,9 +5,10 @@ export default {
   crumbLabel: 'Anti-Gravity Treadmill',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Explainer',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 18, 2026',
   published: '2026-10-14',
+  modified: '2026-11-18',
   socialProof: '1.4k',
   h1: [
     'Anti-Gravity Treadmill:',

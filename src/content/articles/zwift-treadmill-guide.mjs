@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Zwift Treadmill Guide',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 13, 2026',
   published: '2026-10-08',
+  modified: '2026-11-13',
   socialProof: '1.7k',
   h1: ['Using Zwift With a Treadmill:', 'What You Need and What to Expect'],
   standfirst:

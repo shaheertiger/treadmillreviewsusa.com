@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'How Fast Do Treadmills Go?',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Spec Explainer',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-10-06',
+  modified: '2026-11-21',
   socialProof: '1.2k',
   h1: ['How Fast Do', 'Treadmills Go?'],
   standfirst:

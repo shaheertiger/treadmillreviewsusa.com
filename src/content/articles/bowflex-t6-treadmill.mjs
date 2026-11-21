@@ -5,9 +5,10 @@ export default {
     'A 20 x 60 in. folding deck, 15% incline and lifetime frame and motor cover for $999-$1,299. What the 3.0 HP test rating means, and when the T9 or Sole F63 wins.',
   crumbLabel: 'Bowflex T6 Treadmill',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-08',
+  modified: '2026-11-15',
   socialProof: '1.9k',
   h1: ['Bowflex T6', 'Treadmill Review'],
   standfirst:

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-10-20',
-  modified: '2026-11-16',
+  modified: '2026-11-21',
   socialProof: '1.4k',
   h1: ['Peloton Treadmill Review:', 'Tread Flex, Tread Vision and Tread+ Vision'],
   standfirst:

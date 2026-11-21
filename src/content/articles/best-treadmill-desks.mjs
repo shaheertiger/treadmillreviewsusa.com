@@ -5,9 +5,10 @@ export default {
     'Five treadmill desks: two desk-and-treadmill sets and three standing desks that suit a walking pad, chosen on height range, stability at walking height and warranty.',
   crumbLabel: 'Best Treadmill Desks',
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-13',
+  modified: '2026-11-15',
   socialProof: '1.9k',
   h1: ['Best Treadmill Desks', 'Sets and Desks for a Pad'],
   standfirst:

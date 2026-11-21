@@ -5,9 +5,10 @@ export default {
     'Seven treadmill accessories, one per category: a mat, 100% silicone lubricant, a chest strap, a pace sensor, a surge protector (with the caveats), a fan and a cleaning cloth.',
   crumbLabel: 'Best Treadmill Accessories',
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-13',
+  modified: '2026-11-15',
   socialProof: '2.6k',
   h1: ['Best Treadmill Accessories', 'Worth Buying'],
   standfirst:

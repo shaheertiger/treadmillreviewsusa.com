@@ -5,9 +5,10 @@ export default {
     'The Life Fitness Run CX treadmill: a 22 x 60 in. FlexDeck, 3.0 HP continuous motor, 15% incline, 400 lb capacity and lifetime frame cover at about $4,800-$4,900. Who it suits.',
   crumbLabel: 'Life Fitness Run CX Treadmill',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.9k',
   h1: ['Run CX Treadmill', 'Review: Life Fitness at Home'],
   standfirst:

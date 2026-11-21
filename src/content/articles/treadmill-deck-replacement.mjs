@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Treadmill Deck Replacement',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Maintenance',
-  updated: 'October 2026',
-  updatedLong: 'October 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-08',
+  modified: '2026-11-15',
   socialProof: '1.6k',
   h1: ['Treadmill Deck Replacement:', 'Worn Decks, Flipping and What It Costs'],
   standfirst:

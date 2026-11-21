@@ -5,9 +5,10 @@ export default {
     'A 3.75 CHP motor, a 22 x 60-inch deck and decline to -3% — genuine running specifications at a mid-market price. The catch is the console, and it is worth pricing properly.',
   crumbLabel: 'ProForm Pro 5000',
   kicker: 'Model Review',
-  updated: 'September 2026',
-  updatedLong: 'September 15, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-09-15',
+  modified: '2026-11-15',
   socialProof: '2.4k',
   h1: ['ProForm Pro 5000', 'Treadmill Review'],
   standfirst:

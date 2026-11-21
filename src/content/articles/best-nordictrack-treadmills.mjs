@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Best NordicTrack Treadmills',
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-13',
+  modified: '2026-11-15',
   socialProof: '2.2k',
   h1: ['Best NordicTrack Treadmills', 'Which Model to Buy in 2026'],
   standfirst:

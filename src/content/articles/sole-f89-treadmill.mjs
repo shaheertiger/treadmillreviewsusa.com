@@ -5,9 +5,10 @@ export default {
     'The Sole F89 was Sole’s 21.5-inch touchscreen folding treadmill. What its specs were, why it is no longer on Sole’s US store, and what to buy or check now.',
   crumbLabel: 'Sole F89 Treadmill',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.7k',
   h1: ['Sole F89', 'Treadmill Review'],
   standfirst:

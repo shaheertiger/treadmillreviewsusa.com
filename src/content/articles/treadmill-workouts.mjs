@@ -5,9 +5,10 @@ export default {
     'Four session types cover everything a treadmill can do. Here is what each is for, how to build a week from them, and how to progress without breaking the habit.',
   crumbLabel: 'Treadmill Workouts',
   kicker: 'Training Guide',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-09-08',
+  modified: '2026-11-15',
   socialProof: '6.8k',
   h1: ['Treadmill', 'Workouts'],
   standfirst:

@@ -5,9 +5,10 @@ export default {
     'The Redliro under desk treadmill is a budget walking pad sold mainly through marketplaces. What its listings claim, where the figures conflict, the 1-year warranty, and who it suits.',
   crumbLabel: 'Redliro Under Desk Treadmill',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.7k',
   h1: ['Redliro Under Desk Treadmill', 'Review: Read the Listing'],
   standfirst:

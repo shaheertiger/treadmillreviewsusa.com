@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'How to Turn On a Treadmill',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Question Answered',
-  updated: 'October 2026',
-  updatedLong: 'October 9, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-09',
+  modified: '2026-11-15',
   socialProof: '1.3k',
   h1: ['How Do You Turn On', 'a Treadmill?'],
   standfirst:

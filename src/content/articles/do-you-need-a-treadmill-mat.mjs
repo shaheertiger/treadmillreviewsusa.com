@@ -5,9 +5,10 @@ export default {
     'What a treadmill mat actually does — floor protection, dust control, some vibration damping — what it cannot fix, and how to choose the material, thickness and size.',
   crumbLabel: 'Do You Need a Treadmill Mat?',
   kicker: 'Setup',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-06',
+  modified: '2026-11-15',
   socialProof: '2.8k',
   h1: ['Do You Need a', 'Treadmill Mat?'],
   standfirst:

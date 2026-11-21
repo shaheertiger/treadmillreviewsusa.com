@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'How to Replace a Treadmill Belt',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Maintenance',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-06',
+  modified: '2026-11-16',
   socialProof: '2.4k',
   h1: ['How to Replace', 'a Treadmill Belt'],
   standfirst:

@@ -5,9 +5,10 @@ export default {
     'The softest deck is not the kindest to your knees. We compared six machines on deck construction, incline range and speed control, and ranked on cushioning quality, not softness.',
   crumbLabel: 'Best Treadmills for Bad Knees',
   kicker: "Buyer's Guide",
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-09-08',
+  modified: '2026-11-15',
   socialProof: '3.7k',
   h1: ['Best Treadmills for', 'Bad Knees'],
   standfirst:

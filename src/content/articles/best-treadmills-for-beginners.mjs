@@ -5,9 +5,10 @@ export default {
     'Most first treadmills are bought too expensive and abandoned in ten weeks. We ranked six machines on assembly, console simplicity, safety and how little you need to spend.',
   crumbLabel: 'Best Treadmills for Beginners',
   kicker: "Buyer's Guide",
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 17, 2026',
   published: '2026-09-08',
+  modified: '2026-11-17',
   socialProof: '5.1k',
   h1: ['Best Treadmills for', 'Beginners'],
   standfirst:

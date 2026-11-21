@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Scheels Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.1k',
   h1: ['Scheels Treadmills:', 'What to Know Before You Buy'],
   standfirst:

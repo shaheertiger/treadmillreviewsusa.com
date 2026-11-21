@@ -5,9 +5,10 @@ export default {
     'Treadmill motors rarely die of old age — they die of heat caused by friction. Expected lifespans by motor type, the warning signs, and what actually determines the number.',
   crumbLabel: 'How Long Do Treadmill Motors Last?',
   kicker: 'Ownership',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-08',
+  modified: '2026-11-16',
   socialProof: '3.0k',
   h1: ['How Long Do', 'Treadmill Motors Last?'],
   standfirst:

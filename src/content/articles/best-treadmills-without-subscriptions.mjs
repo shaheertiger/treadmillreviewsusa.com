@@ -11,6 +11,7 @@ export default {
   updated: 'November 2026',
   updatedLong: 'November 21, 2026',
   published: '2026-09-08',
+  modified: '2026-11-21',
   socialProof: '4.8k',
   h1: ['Best Treadmills', 'Without Subscriptions'],
   standfirst:

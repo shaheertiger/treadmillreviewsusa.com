@@ -5,9 +5,10 @@ export default {
     'The "space-saving" label means very little. We compared six folding treadmills on fold mechanism, storage geometry and weight — the fold effort decides it.',
   crumbLabel: 'Best Treadmills for Small Spaces',
   kicker: "Buyer's Guide",
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-08',
+  modified: '2026-11-16',
   socialProof: '4.4k',
   h1: ['Best Treadmills for', 'Small Spaces'],
   standfirst:

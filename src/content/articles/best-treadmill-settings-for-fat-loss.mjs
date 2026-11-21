@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Best Treadmill Settings for Fat Loss',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-10-14',
+  modified: '2026-11-21',
   socialProof: '1.8k',
   h1: ['Best Treadmill Settings', 'for Fat Loss'],
   standfirst:

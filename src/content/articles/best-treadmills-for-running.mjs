@@ -5,9 +5,10 @@ export default {
     'We compared six running treadmills on deck length, frame mass, motor rating and warranty. Deck length and frame rigidity separate them; motor horsepower, the spec everyone shops on, barely matters.',
   crumbLabel: 'Best Treadmills for Running',
   kicker: "Buyer's Guide",
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-08',
+  modified: '2026-11-16',
   socialProof: '4.2k',
   h1: ['Best Treadmills for', 'Running'],
   standfirst:

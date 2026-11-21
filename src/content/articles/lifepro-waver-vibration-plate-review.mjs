@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'LifePro Waver Review',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Product Review',
-  updated: 'October 2026',
-  updatedLong: 'October 16, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-16',
+  modified: '2026-11-15',
   socialProof: '2.2k',
   h1: ['LifePro Waver Review:', 'The Vibration Plate, Read Carefully'],
   standfirst:

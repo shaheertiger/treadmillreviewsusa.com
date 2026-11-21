@@ -415,9 +415,10 @@ export default {
   crumbLabel: 'Treadmill Workout Plan',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training Plan',
-  updated: 'October 2026',
-  updatedLong: 'October 20, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-20',
+  modified: '2026-11-15',
   socialProof: '1.9k',
   h1: ['A 12-Week', 'Treadmill Workout Plan'],
   standfirst:

@@ -5,9 +5,10 @@ export default {
     'Under $500 you are buying a walking machine, and the honest question is which compromises are acceptable. We compared six options, and two of them are walking pads rather than treadmills.',
   crumbLabel: 'Best Treadmills Under $500',
   kicker: "Buyer's Guide",
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-09-08',
+  modified: '2026-11-15',
   socialProof: '6.2k',
   h1: ['Best Treadmills', 'Under $500'],
   standfirst:

@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'GymProLuxe Review',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Product Review',
-  updated: 'October 2026',
-  updatedLong: 'October 16, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-16',
+  modified: '2026-11-15',
   socialProof: '1.7k',
   h1: ['GymProLuxe Review:', 'What We Could and Could Not Verify'],
   standfirst:

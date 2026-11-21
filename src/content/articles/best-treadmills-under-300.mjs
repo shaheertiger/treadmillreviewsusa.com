@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Best Treadmills Under $300',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-13',
+  modified: '2026-11-15',
   socialProof: '3.1k',
   h1: ['Best Treadmills', 'Under $300'],
   standfirst:

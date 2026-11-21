@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Best Headphones for Treadmill Running',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 15, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-15',
+  modified: '2026-11-15',
   socialProof: '1.7k',
   h1: ['Best Headphones', 'for Treadmill Running'],
   standfirst:

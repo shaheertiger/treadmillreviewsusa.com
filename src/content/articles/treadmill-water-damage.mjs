@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Treadmill Water Damage',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Question Answered',
-  updated: 'October 2026',
-  updatedLong: 'October 9, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-09',
+  modified: '2026-11-15',
   socialProof: '1.4k',
   h1: ['Can a Treadmill Be Fixed', 'After Water Damage?'],
   standfirst:

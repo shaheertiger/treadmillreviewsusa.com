@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'History of the Treadmill',
   kicker: 'History',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 18, 2026',
   published: '2026-10-06',
+  modified: '2026-11-18',
   socialProof: '1.4k',
   h1: ['The History of', 'the Treadmill'],
   standfirst:

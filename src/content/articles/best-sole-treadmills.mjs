@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Best Sole Treadmills',
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Brands', url: '/brands/' },
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-10-13',
+  modified: '2026-11-21',
   socialProof: '2.4k',
   h1: ['Best Sole Treadmills', 'Which Model to Buy in 2026'],
   standfirst:

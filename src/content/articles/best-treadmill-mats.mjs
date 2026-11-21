@@ -5,9 +5,10 @@ export default {
     'Five treadmill mats checked against maker and retailer listings: the best overall, a budget mat, a 4 x 7.5 ft rubber mat for carpet and big machines, 3/4 in. rubber tiles for upstairs, and a walking-pad size.',
   crumbLabel: 'Best Treadmill Mats',
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-13',
+  modified: '2026-11-15',
   socialProof: '2.1k',
   h1: ['Best Treadmill Mats', 'for Every Floor'],
   standfirst:

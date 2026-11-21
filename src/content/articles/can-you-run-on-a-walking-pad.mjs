@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Can You Run on a Walking Pad?',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Question Answered',
-  updated: 'October 2026',
-  updatedLong: 'October 9, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-09',
+  modified: '2026-11-16',
   socialProof: '1.4k',
   h1: ['Can You Run on', 'a Walking Pad?'],
   standfirst:

@@ -5,9 +5,10 @@ export default {
     'How Horizon positions itself in the treadmill market, what to check across the lineup, and the questions worth asking a retailer before you buy one.',
   crumbLabel: 'Horizon Fitness Treadmills',
   kicker: 'Brand Guide',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-09-08',
+  modified: '2026-11-21',
   socialProof: '2.4k',
   h1: ['Horizon Fitness', 'Treadmills'],
   standfirst:

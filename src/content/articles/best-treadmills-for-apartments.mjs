@@ -5,9 +5,10 @@ export default {
     'An apartment treadmill has to clear four hurdles: the neighbour below, the floor space, the stairwell it arrives through, and the lease. We ranked six machines on all four.',
   crumbLabel: 'Best Treadmills for Apartments',
   kicker: "Buyer's Guide",
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 17, 2026',
   published: '2026-09-08',
+  modified: '2026-11-17',
   socialProof: '3.6k',
   h1: ['Best Treadmills for', 'Apartments'],
   standfirst:

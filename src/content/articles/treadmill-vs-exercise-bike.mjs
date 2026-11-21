@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Treadmill vs Exercise Bike',
   kicker: 'Comparison',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-06',
+  modified: '2026-11-16',
   socialProof: '2.1k',
   h1: ['Treadmill vs', 'Exercise Bike'],
   standfirst:

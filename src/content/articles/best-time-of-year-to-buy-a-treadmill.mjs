@@ -5,9 +5,10 @@ export default {
     'Treadmill prices swing 20-35% across a year on the same machine. Here is when the real reductions happen, when the fake ones do, and the three weeks to avoid entirely.',
   crumbLabel: 'Best Time of Year to Buy a Treadmill',
   kicker: 'Buying Guide',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-08',
+  modified: '2026-11-16',
   socialProof: '3.3k',
   h1: ['Best Time of Year to', 'Buy a Treadmill'],
   standfirst:

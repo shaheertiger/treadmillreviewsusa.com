@@ -5,9 +5,10 @@ export default {
     'Routine treadmill maintenance runs $15-$40 a year. The repairs it prevents run $300-$800. Here is the full cost picture, including when repair stops making sense.',
   crumbLabel: 'Treadmill Maintenance Cost',
   kicker: 'Ownership',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-08',
+  modified: '2026-11-16',
   socialProof: '3.2k',
   h1: ['Treadmill', 'Maintenance Cost'],
   standfirst:

@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Walking Pad vs Folding Treadmill',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   kicker: 'Comparison',
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-13',
+  modified: '2026-11-15',
   socialProof: '2.1k',
   h1: ['Walking Pad vs', 'Folding Treadmill'],
   standfirst:

@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'How to Lubricate a Walking Pad',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Question Answered',
-  updated: 'October 2026',
-  updatedLong: 'October 9, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-09',
+  modified: '2026-11-16',
   socialProof: '1.2k',
   h1: ['How to Lubricate', 'a Walking Pad'],
   standfirst:
