@@ -666,6 +666,13 @@ export const SECTIONS: Section[] = [
             url: '/how-much-does-a-walking-pad-cost/',
           },
           {
+            title: 'How Much Does a Commercial Treadmill Cost?',
+            description:
+              'Dated new prices by gym brand, remanufactured prices, leasing, delivery and service costs.',
+            badge: 'Commercial',
+            url: '/how-much-does-a-commercial-treadmill-cost/',
+          },
+          {
             title: 'Cheap vs. Premium Treadmill',
             description:
               'Component by component, what the extra money buys — and which three parts you will notice.',
