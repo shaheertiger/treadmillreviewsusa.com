@@ -15,18 +15,36 @@ The list alternates cost and fix pages.
 
 ## Active (cost / fix, alternating)
 
-- [ ] `how-much-does-a-walking-pad-cost` — How Much Does a Walking Pad Cost? (2026): Prices by Type — /price/ — pillar /how-much-does-a-treadmill-cost/ (live Amazon prices via search.mjs)
+### From the Semrush US keyword exports (20 Nov 2026) — write these first, highest volume first
+
+In progress 21 Nov (do not re-queue): how-to-turn-on-a-nordictrack-treadmill, how-to-take-apart-a-nordictrack-treadmill,
+what-is-12-incline-on-a-treadmill, how-much-does-a-peloton-tread-cost, how-much-does-a-treadmill-stress-test-cost,
+what-speed-is-a-10-minute-mile-on-a-treadmill, how-many-steps-on-a-treadmill-in-30-minutes,
+how-to-connect-apple-watch-to-planet-fitness-treadmill, nordictrack-treadmill-repair, proform-treadmill-repair,
+average-time-on-treadmill-stress-test-by-age.
+
+Already covered, do not write a second URL: "how to lube a treadmill" (1,900/mo; /treadmill-belt-lubrication/ is titled
+for it), "how to tighten a treadmill belt" (720; /how-to-adjust-treadmill-belt/), "how to reset proform treadmill"
+(170; a section of /proform-treadmill-troubleshooting/). If those pages are not ranking, improve them instead.
+
+- [ ] `life-fitness-f3-treadmill` — Life Fitness F3 Folding Treadmill Review (2026) — "life fitness f3 folding treadmill" 3,600/mo — pillar /life-fitness/
+- [ ] `horizon-7-4-at-treadmill` — Horizon 7.4 AT Treadmill Review (2026) — "horizon 7.4 at treadmill" 1,900/mo — siblings /horizon-7-0-at-treadmill/, /horizon-7-8-at-treadmill/
+- [ ] `xterra-tr95h-treadmill` — XTERRA TR95H Hiker Treadmill Review (2026) — "xterra tr95h hiker treadmill" 2,400/mo — pillar /xterra-treadmills/
+- [ ] `what-does-incline-mean-on-a-treadmill` — What Does Incline Mean on a Treadmill? — 4 variants at 140/mo each — sibling /what-is-12-incline-on-a-treadmill/ (check it does not already answer this)
+- [ ] `what-incline-should-i-run-on-a-treadmill` — What Incline Should I Run on a Treadmill? — 140/mo — sibling /what-incline-should-i-walk-on-a-treadmill/
+
+- [x] 2026-11-21 · `how-much-does-a-walking-pad-cost` — How Much Does a Walking Pad Cost? (2026): Prices by Type — /price/ — pillar /how-much-does-a-treadmill-cost/ (live Amazon prices via search.mjs)
 - [ ] `walking-pad-not-working` — Walking Pad Not Working? Belt, Remote and Power Fixes (builds on /how-to-lubricate-a-walking-pad/, a top-10 page)
-- [ ] `how-much-does-a-nordictrack-treadmill-cost` — How Much Does a NordicTrack Treadmill Cost? (2026) — /price/ — pillar /how-much-does-a-treadmill-cost/ and /nordictrack/ (prices from NordicTrack or Amazon listings, dated; iFIT cost separate)
-- [ ] `sole-treadmill-troubleshooting` — Sole Treadmill Troubleshooting: Console, Belt and Speed Fixes
-- [ ] `how-much-does-a-commercial-treadmill-cost` — How Much Does a Commercial Treadmill Cost? (2026) — /price/ — pillar /commercial-treadmills/
+- [x] 2026-11-21 · `how-much-does-a-nordictrack-treadmill-cost` — How Much Does a NordicTrack Treadmill Cost? (2026) — /price/ — pillar /how-much-does-a-treadmill-cost/ and /nordictrack/ (prices from NordicTrack or Amazon listings, dated; iFIT cost separate)
+- [x] 2026-11-21 · `sole-treadmill-troubleshooting` — Sole Treadmill Troubleshooting: Console, Belt and Speed Fixes
+- [x] 2026-11-21 · `how-much-does-a-commercial-treadmill-cost` — How Much Does a Commercial Treadmill Cost? (2026) — /price/ — pillar /commercial-treadmills/
 - [ ] `treadmill-clicking-noise` — Treadmill Clicking Noise: Find It by When It Clicks (noise pages win: /treadmill-squeaking-noise/, /treadmill-static-shock/)
-- [ ] `how-much-does-a-peloton-tread-cost` — How Much Does a Peloton Tread Cost? (2026): Tread, Tread+, Membership — /price/ — pillar /peloton-tread/ (prices from Peloton's own site, dated)
-- [ ] `horizon-treadmill-troubleshooting` — Horizon Treadmill Troubleshooting: Won't Start, Belt, Console
+- [x] 2026-11-21 · `how-much-does-a-peloton-tread-cost` — How Much Does a Peloton Tread Cost? (2026): Tread, Tread+, Membership — /price/ — pillar /peloton-tread/ (prices from Peloton's own site, dated)
+- [x] 2026-11-21 · `horizon-treadmill-troubleshooting` — Horizon Treadmill Troubleshooting: Won't Start, Belt, Console
 - [ ] `how-much-does-a-sole-treadmill-cost` — How Much Does a Sole Treadmill Cost? (2026): Every Model — /price/ — pillar /sole-fitness/
 - [ ] `walking-pad-belt-slipping` — Walking Pad Belt Slipping or Off-Center: How to Fix It
 - [ ] `how-much-does-a-proform-treadmill-cost` — How Much Does a ProForm Treadmill Cost? (2026) — /price/ — pillar /proform-treadmill/
-- [ ] `bowflex-treadmill-troubleshooting` — Bowflex Treadmill Troubleshooting: JRNY, Belt and Power Fixes
+- [x] 2026-11-21 · `bowflex-treadmill-troubleshooting` — Bowflex Treadmill Troubleshooting: JRNY, Belt and Power Fixes
 - [ ] `how-much-does-an-incline-trainer-cost` — How Much Does an Incline Trainer Cost? (2026): X22i, X24 and More — /price/ — pillar /incline-trainer-vs-treadmill/
 - [ ] `treadmill-humming-noise` — Treadmill Humming Noise: Normal Hum or a Failing Motor?
 - [ ] `how-much-does-a-curved-treadmill-cost` — How Much Does a Curved Treadmill Cost? (2026) — /price/ — pillar /curved-treadmill-guide/

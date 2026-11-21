@@ -401,6 +401,12 @@ export default {
   relatedHeading: 'Related Training Guides',
   related: [
     {
+      kicker: 'Steps',
+      title: 'Steps on a Treadmill in 30 Minutes',
+      blurb: 'About 2,900 at 2 mph to 3,900 at 4 mph, by speed and height.',
+      url: '/how-many-steps-on-a-treadmill-in-30-minutes/',
+    },
+    {
       kicker: 'Speed',
       title: 'What Speed Should I Walk On?',
       blurb: 'Typical walking speeds and how to find yours with the talk test.',

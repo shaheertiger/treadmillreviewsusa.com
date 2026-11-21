@@ -17,7 +17,7 @@ export default {
     { label: 'The Steps in Order', href: '#console-cable' },
     { label: 'Safety First', href: '#safety' },
   ],
-  tags: ['how to disassemble a treadmill', 'how to take apart a treadmill', 'how to dismantle a treadmill', 'how to take apart nordictrack treadmill', 'treadmill disassembly'],
+  tags: ['how to disassemble a treadmill', 'how to take apart a treadmill', 'how to dismantle a treadmill', 'treadmill disassembly'],
   stickyCta: { text: 'See the Steps', link: '#console-cable' },
   lead: `People take treadmills apart for three main reasons: to get one through a doorway or up a
           staircase, to move house, or to break one down for disposal. All three need less

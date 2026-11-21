@@ -1,0 +1,558 @@
+const th = 'text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4';
+const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
+
+export default {
+  slug: 'how-to-turn-on-a-nordictrack-treadmill',
+  title: 'How to Turn On a NordicTrack Treadmill: Switch, Key and Screen',
+  description:
+    'Turn on a NordicTrack in 3 steps: plug it in, press the power switch by the cord at the front of the base to reset (I), then insert the safety key.',
+  crumbLabel: 'How to Turn On a NordicTrack Treadmill',
+  breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
+  kicker: 'How-To',
+  updated: 'November 2026',
+  updatedLong: 'November 21, 2026',
+  published: '2026-11-21',
+  socialProof: '1.2k',
+  h1: ['How to Turn On a', 'NordicTrack Treadmill'],
+  standfirst:
+    'Plug the cord into a surge suppressor on a grounded outlet, press the power switch on the frame beside the cord into the reset (I) position, then clip the safety key to your waistband and push it into the console. An LED console lights after a moment; a touchscreen can take up to a few minutes to boot.',
+  ctas: [
+    { label: 'Turn It On Step by Step', href: '#step-by-step' },
+    { label: 'It Will Not Turn On', href: '#wont-turn-on' },
+  ],
+  tags: ['how to turn on nordictrack treadmill', 'how do you turn on a nordictrack treadmill', 'nordictrack power switch', 'nordictrack safety key', 'nordictrack touchscreen not turning on', 'nordictrack activation'],
+  stickyCta: { text: 'Turn It On', link: '#step-by-step' },
+  lead: `A NordicTrack has no power button on the console. That is the single fact behind most
+          "how do I turn this on" searches: the switch is down on the frame, beside where the power
+          cord goes in, and the console stays dark until the safety key is in its slot. Once you
+          know those two places, turning one on takes under a minute, plus whatever time a
+          touchscreen needs to boot. The steps below come from NordicTrack's own owner's manuals
+          (checked November 2026), with the differences between the LED-console and touchscreen
+          machines spelled out, because the first-time setup on a touchscreen model is where most
+          new owners get stuck.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'The Short Answer',
+      html: `          <p>
+            <strong>To turn on a NordicTrack treadmill, plug it in, press the power switch on the
+            frame near the power cord into the reset (I) position, clip the safety key to your
+            waistband and insert the key into the console.</strong> The console then lights or
+            starts to boot. There is no separate on button on the console itself.
+          </p>
+          <ul>
+            <li><strong>The switch:</strong> on the treadmill frame near the power cord, at the
+            front of the base. NordicTrack's manuals call the on position "reset" and mark it I
+            (checked November 2026).</li>
+            <li><strong>The key:</strong> slide the clip onto your waistband, then push the key
+            into its slot on the console. No key, no belt.</li>
+            <li><strong>The wait:</strong> an LED console lights "after a moment". A touchscreen
+            console "may take up to a few minutes" to be ready, per the <a href="/nordictrack-x22i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>X22i</a> manual.</li>
+            <li><strong>First time only:</strong> a touchscreen asks you to join Wi-Fi, set units and
+            time zone, sign in to iFIT, check for updates and calibrate the incline. You can skip
+            iFIT and use manual mode.</li>
+            <li><strong>Turning off:</strong> remove the key, press the switch to off, and unplug the
+            cord. NordicTrack says skipping this can make electrical parts wear prematurely.</li>
+          </ul>
+          <p>
+            If you already did all of that and the machine is frozen or acting strangely, you need
+            a restart rather than a start-up; our guide on
+            <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">how to reset a NordicTrack treadmill</a>
+            covers the proper power cycle and the console factory reset.
+          </p>`,
+    },
+    {
+      id: 'power-switch',
+      heading: 'Where the Power Switch Is on a NordicTrack',
+      html: `          <p>
+            Every NordicTrack treadmill and incline trainer manual checked for this guide describes the same
+            place: "locate the power switch on the treadmill frame near the power cord." On a
+            typical NordicTrack that is the front of the base, under or beside the motor hood, where
+            the cord enters the frame. Stand at the front of the machine, facing the console, and
+            look low on the base on the side where the cord comes out. If the machine is against a
+            wall, you may have to pull it forward a little, or crouch with a torch, to see it.
+          </p>
+          <p>
+            The switch is a small rocker. NordicTrack's manuals label its on position
+            <strong>reset</strong> and mark it with an I, and tell you to "press the power switch
+            into the reset position (I)" (checked November 2026, <a href="/nordictrack-commercial-2450-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Commercial 2450</a> and Commercial X22i
+            manuals). The other position is off. The word reset confuses people, because it sounds
+            like a separate button you press when something goes wrong. On current NordicTrack
+            machines the on position and the reset position are the same thing.
+          </p>
+          <p>
+            That is because, on these machines, the power switch is also the circuit breaker. Older
+            manuals call it a "reset/off circuit breaker located on the frame near the power cord";
+            newer ones just call it the power switch and describe the same behaviour. If the
+            treadmill draws too much current, the switch trips and stands out, or "protrudes", from
+            its normal position. The manual's fix is to wait five minutes and press it back in. So
+            if you have been looking for a separate reset button next to the switch, the switch
+            itself may be the part you need. A few older or unusual models are laid out differently,
+            which is why the parts diagram in your manual is the final word on where it sits.
+          </p>
+          <p>
+            One practical tip: once you have found it, take a photo of it with your phone. The next
+            time the treadmill seems dead, you will know at a glance whether the switch is on, off
+            or tripped, without crawling around the base to work out which is which.
+          </p>`,
+    },
+    {
+      id: 'step-by-step',
+      heading: 'How to Turn On a NordicTrack Treadmill, Step by Step',
+      html: `          <p>
+            This is the sequence NordicTrack's manuals give, in their order, with the reasons behind
+            each step. It is the same for treadmills and the X-series incline trainers.
+          </p>
+          <p>
+            <strong>1. Let a cold machine warm up first.</strong> Every manual opens its power-on
+            instructions with the same warning: if the treadmill has been exposed to cold
+            temperatures, let it warm to room temperature before you turn it on, or you may damage
+            the console display or other electrical parts. That matters for garage gyms in winter
+            and for a machine that has just come in from a delivery truck.
+          </p>
+          <p>
+            <strong>2. Plug in the cord the way the manual says.</strong> NordicTrack's US manuals
+            tell you to use a surge suppressor and plug that into a properly grounded outlet. They
+            are specific about it: UL 1449 listed as a transient voltage surge suppressor, a UL
+            suppressed voltage rating of 400 volts or less, at least 450 joules, rated for 120 volts
+            AC and 15 amps, with a monitoring light (checked November 2026). They also say not to put
+            other devices on the same suppressor or circuit, apart from low-power things such as a
+            phone charger. Our guide to a
+            <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">treadmill surge protector</a>
+            explains what those numbers mean when you shop for one.
+          </p>
+          <p>
+            <strong>3. Press the power switch into the reset (I) position.</strong> It is on the
+            frame near the cord, as described above. On some machines the console may light at this
+            point even without the key; that is demo mode, covered below.
+          </p>
+          <p>
+            <strong>4. Stand on the foot rails and clip on the key.</strong> The manuals have you
+            stand on the foot rails, not the belt, then slide the clip attached to the key onto the
+            waistband of your clothes.
+          </p>
+          <p>
+            <strong>5. Insert the key into the console.</strong> On an LED console the display lights
+            after a moment. On a touchscreen the screen starts to boot, which takes longer; the
+            Commercial 2450 manual says "it may take some time for the console to be ready for use",
+            and the X22i manual says up to a few minutes.
+          </p>
+          <p>
+            <strong>6. Test the clip.</strong> NordicTrack asks you to take a few careful steps
+            backward; if the key does not pull out of the console, move the clip. In an emergency,
+            pulling the key makes the walking belt slow to a stop, so it only protects you if it
+            actually comes out.
+          </p>
+          <p>
+            <strong>7. Start the belt.</strong> On a touchscreen, touch Manual Start or press the
+            Start button; the belt starts at a low speed. On an LED console, press Start, the speed
+            increase button or a numbered speed button. One LED-console manual (model NTL17915) says
+            the belt begins at 1 mph when you press Start. The general version of this sequence, for
+            any brand, is in our guide on
+            <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium">how to turn on a treadmill</a>.
+          </p>`,
+    },
+    {
+      id: 'safety-key',
+      heading: 'The Safety Key: Why Nothing Happens Without It',
+      html: `          <p>
+            The safety key is the most common reason a NordicTrack seems not to turn on. The power
+            switch can be on, the outlet can be live, and the console will still sit dark or refuse
+            to start the belt, because the key is missing or not fully in. NordicTrack's own
+            troubleshooting for "the power does not turn on" lists it second, right after the power
+            cord: "make sure that the key is inserted into the console."
+          </p>
+          <p>
+            The key is a small magnetic or plastic plug on a cord, with a clip at the other end. It
+            goes into a slot on the console, usually near the centre or the bottom edge. Push it in
+            until it seats firmly. If it sits loose or slightly proud, the console may power up while
+            the motor stays disabled, which looks like a belt fault when it is not.
+          </p>
+          <p>
+            Keys go missing, especially in homes with children, which is partly the point of them:
+            remove the key after every workout and put it somewhere children cannot reach, as the
+            manuals advise. Keys also get swapped between machines. A key from a different brand, or
+            from an older NordicTrack, may not fit or may not be read correctly by your console, so
+            if you have lost the original, order the correct replacement for your model number
+            rather than trying whatever key is in the drawer.
+          </p>
+          <p>
+            If the key is in and the machine still behaves as if it is not, the problem is usually
+            the key's magnet, the clip cord, or the switch behind the slot. Our guide to a
+            <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">treadmill safety key that's not working</a>
+            walks through each of those, and what the fix costs.
+          </p>`,
+    },
+    {
+      id: 'demo-mode',
+      heading: 'Lit Up Without the Key? That Is Demo Mode',
+      html: `          <p>
+            Sometimes the opposite happens: the console lights up the moment you flip the power
+            switch, before you have touched the key, and stays lit after you pull the key out. That
+            is not a fault. Several NordicTrack consoles have a display demo mode, which the manuals
+            describe as "designed to be used if the treadmill is displayed in a store" (checked
+            November 2026).
+          </p>
+          <p>
+            On two recent LED-console manuals, the fix is to hold down the Stop button for a few
+            seconds; if the display stays lit, you switch demo mode off in the console settings.
+            Other models only offer the settings route. Turning it off matters for two reasons: a
+            screen that lights whenever the switch is on can confuse you into thinking the key is not
+            needed, and the display is drawing power and ageing whenever it is lit.
+          </p>
+          <p>
+            Demo mode also explains a common worry after a move or a power cut: the console wakes
+            up showing scrolling numbers or a sample program, but the belt will not start. Turn
+            demo mode off, insert the key and start a manual workout normally.
+          </p>`,
+    },
+    {
+      id: 'touchscreen',
+      heading: 'Waking the iFIT Touchscreen and First-Time Setup',
+      html: `          <p>
+            NordicTrack's touchscreen machines, which include the Commercial series, the larger
+            T Series models and the X-series incline trainers, run the console like a tablet. That
+            changes what "turned on" means. The power switch and key bring it to life, but the
+            screen then has to boot, and the first time you use it, set up.
+          </p>
+          <p>
+            <strong>Boot time.</strong> Give it time. NordicTrack's Commercial X22i manual says it
+            "may take up to a few minutes for the console to be ready for use", and when it is, the
+            home screen appears (checked November 2026). Tapping at the screen while it boots does
+            nothing useful, and switching off halfway through to "try again" can interrupt an update.
+          </p>
+          <p>
+            <strong>First-time setup.</strong> Both the Commercial 2450 and Commercial X22i manuals
+            list the same steps before the first workout, and the screen prompts you through them:
+          </p>
+          <ul>
+            <li><strong>Connect to your wireless network.</strong> You need your network name and,
+            if it has one, the password. The X22i manual says hidden networks are not supported and
+            passwords are case-sensitive.</li>
+            <li><strong>Customise settings:</strong> unit of measurement and time zone.</li>
+            <li><strong>Log in to or create an iFIT account.</strong></li>
+            <li><strong>Check for firmware updates.</strong> Through the menu, Settings, Maintenance
+            and Update.</li>
+            <li><strong>Calibrate the incline.</strong> Through Settings, Maintenance and Calibrate
+            Incline. The deck rises and lowers by itself, so keep pets, feet and objects clear.</li>
+          </ul>
+          <p>
+            <strong>Updates and the power switch.</strong> The one rule to remember: NordicTrack says
+            "do not turn off or unplug the treadmill while the firmware is being updated", to avoid
+            damaging the console. When an update finishes, the machine turns itself off and back on.
+            If it does not, the manual says to use the power switch to turn it off, wait a few
+            seconds, and turn it back on, then allow a few minutes for the console to be ready. An
+            update the first time you switch on, or after a long gap, is normal and can add
+            noticeably to the start-up time.
+          </p>
+          <p>
+            <strong>Waking it later.</strong> After the first setup, a touchscreen boots straight to
+            the home screen each time you switch on and insert the key. If the screen is dark but
+            the machine is on, check the key first, then the power switch, before assuming the screen
+            has failed.
+          </p>`,
+    },
+    {
+      id: 'activation',
+      heading: 'Activation on LED-Console Models',
+      html: `          <p>
+            NordicTrack's non-touchscreen machines, such as the T Series 5, which NordicTrack lists
+            with a 5-inch LCD display (checked November 2026), work differently. The console has its
+            own buttons and display for manual mode and built-in workouts, and iFIT runs on your own
+            phone or tablet, connected to the console over Bluetooth.
+          </p>
+          <p>
+            These consoles need activating before you can use their connected features. The manual
+            for model NTL17915 puts it plainly: "You must activate your Console to begin using its
+            exclusive features." The steps it gives are to plug in and turn on the power, then use a
+            smartphone or tablet to go to iFIT.com/activate and follow the instructions. If you have
+            no smartphone or tablet, it says to use a computer at the same address, and if you have
+            no computer, to call Member Care (checked November 2026).
+          </p>
+          <p>
+            Notably, the same manual's troubleshooting for "the power does not turn on" includes
+            "the console requires activation". So if a brand-new LED-console NordicTrack seems to
+            power up but will not do what you expect, an unfinished activation is a genuine
+            possibility, not just a sales prompt.
+          </p>
+          <p>
+            Connecting and disconnecting the tablet uses the iFIT Sync button on the console. To
+            disconnect, the manual says to choose the disconnect option in the iFIT app, then press
+            and hold iFIT Sync until the LED on the console turns solid green. That drops every
+            Bluetooth connection to the console, including a <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>heart rate monitor</a>.
+          </p>`,
+    },
+    {
+      id: 'manual-mode',
+      heading: 'Using It in Manual Mode Without iFIT',
+      html: `          <p>
+            You do not need an iFIT membership, a Wi-Fi connection or a signed-in account to make a
+            NordicTrack belt move. Every manual checked includes a manual mode, and NordicTrack's
+            own iFIT FAQ says you can always use the machine in manual mode (checked November 2026).
+          </p>
+          <p>
+            <strong>On a touchscreen:</strong> switch on, insert the key, let the home screen load,
+            then touch Manual Start or press the Start button on the console. The belt starts at a
+            low speed, and on the X22i a warm-up period begins. Use the speed and incline buttons,
+            the numbered quick keys, or the on-screen sliders to change speed and incline. To stop,
+            press Stop or tap the middle of the screen.
+          </p>
+          <p>
+            <strong>On an LED console:</strong> switch on, insert the key, press the Manual button if
+            manual mode is not already selected, then press Start, the speed increase button or a
+            numbered speed button. Speed changes in small steps per press and faster when you hold
+            the button.
+          </p>
+          <p>
+            During first-time setup on a touchscreen you will be asked to log in or create an iFIT
+            account. Whether you can skip that step depends on the software version on your console,
+            and it has changed over the years, so follow the prompts on your screen. What you lose
+            without a membership, what still works and what it means at resale are covered in our
+            guide on whether
+            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">you can use a NordicTrack without iFIT</a>.
+          </p>`,
+    },
+    {
+      id: 'model-differences',
+      heading: 'How Start-Up Differs Between NordicTrack Models',
+      html: `          <p>
+            The hardware steps (switch, key) are the same across the range. What differs is the
+            console, and it is the console type, not the series name, that decides how start-up
+            goes. Check which console you have before following any video or forum post.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Console type</th>
+                <th class="${th}">Examples</th>
+                <th class="${th}">After you insert the key</th>
+                <th class="${th}">First-time step</th>
+                <th class="${th}">Starting manual mode</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">LED or LCD console, iFIT on your own device</td><td class="${td}">T Series 5; LED-console models such as NTL17915</td><td class="${td}">Display lights after a moment</td><td class="${td}">Activate at iFIT.com/activate; calibrate incline</td><td class="${td}">Manual button, then Start, speed up, or a speed key</td></tr>
+              <tr><td class="${td}">Built-in touchscreen treadmill</td><td class="${td}">T Series 10, Commercial series (e.g. Commercial 2450)</td><td class="${td}">Screen boots; can take some time</td><td class="${td}">Wi-Fi, settings, iFIT login, update check, incline calibration</td><td class="${td}">Manual Start on screen or Start button</td></tr>
+              <tr><td class="${td}">Touchscreen incline trainer</td><td class="${td}">Commercial X22i</td><td class="${td}">Up to a few minutes to be ready</td><td class="${td}">Same as touchscreen treadmills</td><td class="${td}">Manual Start or Start; warm-up begins</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            <strong>T Series.</strong> The T Series spans both console types. NordicTrack lists the
+            T Series 5 with a 5-inch LCD and the <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>T Series 10</a> with a tilting 10-inch touchscreen
+            (checked November 2026), so two machines with "T Series" on the side start up quite
+            differently. Read the console, not the decal.
+          </p>
+          <p>
+            <strong>Commercial series.</strong> These are touchscreen machines, and the setup and
+            update steps above apply. The Commercial 2450 manual gives the power switch, reset
+            position and key steps in exactly the order described in this guide.
+          </p>
+          <p>
+            <strong>X-series incline trainers.</strong> The X22i manual adds one instruction the
+            treadmill manuals checked do not have: "any time that the incline trainer is turned off,
+            wait for a minimum of five minutes before turning it on again", to let residual charge
+            dissipate from the electronics (checked November 2026). If you own an X-series machine,
+            do not flick it off and straight back on.
+          </p>
+          <p>
+            Older <a href="/nordictrack/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack treadmills</a> from before the touchscreen era have their own consoles and
+            sometimes slightly different wording, but the switch near the cord and the key in the
+            console are constant. If you do not know which model you have, the model and serial
+            numbers are on a decal on the frame, and NordicTrack's support site will give you the
+            right manual from them.
+          </p>`,
+    },
+    {
+      id: 'wont-turn-on',
+      heading: 'What to Do When a NordicTrack Will Not Turn On',
+      html: `          <p>
+            If you have followed the steps and nothing lights, work through NordicTrack's own
+            troubleshooting order. Each check takes a minute and rules out the next most likely
+            cause.
+          </p>
+          <ul>
+            <li><strong>The cord and surge suppressor.</strong> Is the cord plugged into a surge
+            suppressor that is switched on and plugged into a grounded outlet? Is the suppressor's
+            monitoring light on? A dead suppressor looks exactly like a dead treadmill.</li>
+            <li><strong>The outlet.</strong> Plug a lamp into the same outlet. Check your household
+            breaker panel and any GFCI outlet on the circuit.</li>
+            <li><strong>The key.</strong> Remove it and push it back in firmly.</li>
+            <li><strong>The power switch.</strong> If it protrudes, it has tripped. Wait five
+            minutes, then press it back in, as the manuals direct.</li>
+            <li><strong>Activation.</strong> On a new LED-console model, check that the console has
+            been activated.</li>
+          </ul>
+          <p>
+            Two NordicTrack-specific notes. First, the US manuals warn that if the treadmill is on an
+            AFCI-equipped outlet and your circuit breaker trips repeatedly when it is used, you may
+            need an arc filter, and the manual points you to NordicTrack support to buy one. Second, if the
+            power cuts out during a workout, the manuals' steps are to check the switch, then unplug
+            the cord for five minutes and plug it back in, then remove and reinsert the key.
+          </p>
+          <p>
+            If all of that fails, the cause is likely inside the machine: a power cord fault, the
+            switch itself, or the motor control board. That is a support call, especially under
+            warranty. Our guide to a
+            <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that won't turn on</a>
+            explains what each remaining cause looks like, and our
+            <a href="/nordictrack-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">NordicTrack treadmill troubleshooting</a>
+            guide covers what comes next if it powers up but the belt, incline or iFIT then
+            misbehaves.
+          </p>`,
+    },
+    {
+      id: 'turn-off',
+      heading: 'How to Turn a NordicTrack Off Properly',
+      html: `          <p>
+            Turning it off is the same three things in reverse, and NordicTrack treats it as part of
+            normal use, not something to do only before maintenance.
+          </p>
+          <p>
+            <strong>1. End the workout.</strong> Step onto the foot rails, press Stop, and finish
+            the workout on screen so it can save. On a touchscreen, wait until it returns to the home
+            screen.
+          </p>
+          <p>
+            <strong>2. Remove the key</strong> and put it somewhere secure, out of children's reach.
+          </p>
+          <p>
+            <strong>3. Press the power switch into the off position and unplug the power
+            cord.</strong> The manuals give the reason in capitals: "If you do not do this, the
+            electrical components of the treadmill may wear prematurely" (checked November 2026).
+            Leaving a NordicTrack switched on and plugged in between workouts is the habit most
+            owners fall into, and it is the opposite of what the manual asks.
+          </p>
+          <p>
+            Two exceptions. Never switch off or unplug during a firmware update; wait for the update
+            to finish and the machine to restart itself. And on a folding model, one LED-console manual (model NTL13125)
+            says to lower the incline to 0% before you <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>fold the deck</a>, which means doing
+            it while the power is still on. After that, switch off, unplug and fold.
+          </p>
+          <p>
+            If you own an X-series incline trainer, remember the five-minute wait before switching
+            back on. On any model, if you turned it off because something felt wrong, such as a
+            burning smell, a belt that kept moving or a switch that keeps tripping, do not just switch
+            it back on to see; find the cause first.
+          </p>`,
+    },
+    {
+      id: 'turn-on-vs-reset',
+      heading: 'Turning On Versus Resetting',
+      html: `          <p>
+            A lot of searches for how to turn on a NordicTrack really mean "it was working yesterday
+            and now it is not." That is a reset question rather than a start-up one, and the two need
+            different steps.
+          </p>
+          <p>
+            <strong>Turning on</strong> is what this page covers: switch to reset (I), key in, wait
+            for the console. If the machine has never been set up, or has been moved, or you have
+            simply never used it, start here.
+          </p>
+          <p>
+            <strong>Resetting</strong> covers a machine that powers up but freezes, will not respond,
+            shows nonsense or stops mid-workout. The usual first step is a clean power cycle, and
+            after that a console factory reset, which on touchscreen models involves a small reset
+            opening on the console, a straightened paper clip and two people, and erases your custom
+            settings. Do not try that from memory or from a video for a different model. Our
+            dedicated guide on resetting a NordicTrack treadmill covers the power cycle, the breaker
+            and when a factory reset is justified.
+          </p>
+        `,
+    },
+  ],
+  faqs: [
+    {
+      q: 'How do you turn on a NordicTrack treadmill?',
+      a: `Plug the cord into a surge suppressor on a grounded outlet, then press the power switch on the frame near the power cord into the reset (I) position. Stand on the foot rails, clip the safety key to your waistband and insert the key into the console. An LED console lights after a moment; a touchscreen can take up to a few minutes to boot.`,
+    },
+    {
+      q: 'Where is the on/off switch on a NordicTrack treadmill?',
+      a: `On the treadmill frame near the power cord, which on most NordicTrack machines is low on the front of the base. It is a rocker switch with an off position and an on position that the manuals call reset and mark I. There is no power button on the console.`,
+    },
+    {
+      q: 'Why won’t my NordicTrack treadmill turn on?',
+      a: `Check, in order, that the cord and surge suppressor are plugged in and working, that the outlet works with a lamp, that the safety key is fully inserted, and that the power switch has not tripped. If the switch protrudes, wait five minutes and press it back in. A new LED-console model may also need activating at iFIT.com/activate.`,
+    },
+    {
+      q: 'Can you turn on a NordicTrack without the safety key?',
+      a: `The belt will not run without the key in the console, and on most models the console stays dark too. If the display lights without the key, the console is in demo mode, a store display setting you can turn off. If you have lost the key, order the correct replacement for your model number.`,
+    },
+    {
+      q: 'How long does a NordicTrack touchscreen take to turn on?',
+      a: `NordicTrack's X22i manual says it may take up to a few minutes for the console to be ready, and the first start, or a start after a long gap, can take longer if a firmware update runs. Do not switch off or unplug during an update; the machine restarts itself when it finishes.`,
+    },
+    {
+      q: 'Do I need iFIT to turn on a NordicTrack treadmill?',
+      a: `No. The power switch and safety key turn it on, and every NordicTrack has a manual mode that runs the belt with no membership. Touch Manual Start or press Start on a touchscreen, or press Manual and then Start on an LED console. iFIT adds trainer-led and automatically controlled workouts on top.`,
+    },
+    {
+      q: 'Should I unplug my NordicTrack after every use?',
+      a: `NordicTrack's manuals say yes: remove the key, press the power switch to off and unplug the cord when you finish, because otherwise the electrical components may wear prematurely. The exception is a firmware update in progress, which must be left to finish.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes When Turning On a NordicTrack',
+  mistakesIntro:
+    'Each of these makes a working machine look broken, and one of them can genuinely damage the console.',
+  mistakes: [
+    {
+      title: 'Looking for a power button on the console',
+      body: 'There is not one. The switch is on the frame near the power cord, low on the front of the base. Find it once, photograph it, and the next "it will not turn on" moment takes seconds.',
+    },
+    {
+      title: 'Thinking the reset position is a fault setting',
+      body: 'NordicTrack labels the on position of the power switch "reset" and marks it I. Pressing the switch into reset is simply turning the machine on. A switch that sticks out from its normal position has tripped; wait five minutes and press it back in.',
+    },
+    {
+      title: 'Switching off while the touchscreen updates',
+      body: 'A slow first boot is often a firmware update. NordicTrack says not to turn off or unplug the machine while it updates, to avoid damaging the console. Leave it until it restarts itself, then give it a few minutes.',
+    },
+    {
+      title: 'Leaving it switched on and plugged in between workouts',
+      body: 'The manuals ask you to remove the key, switch off and unplug after every use, warning that otherwise electrical parts may wear prematurely. It also protects the machine from storms and stops children starting it.',
+    },
+  ],
+  relatedHeading: 'Related NordicTrack Guides',
+  related: [
+    {
+      kicker: 'Fault Diagnosis',
+      title: 'How to Reset a NordicTrack Treadmill',
+      blurb: 'The proper power cycle, the breaker and the console factory reset.',
+      url: '/how-to-reset-nordictrack-treadmill/',
+    },
+    {
+      kicker: 'Fault Diagnosis',
+      title: 'NordicTrack Treadmill Troubleshooting',
+      blurb: 'Belt, incline, decline and iFIT faults, sorted by symptom.',
+      url: '/nordictrack-treadmill-troubleshooting/',
+    },
+    {
+      kicker: 'Question Answered',
+      title: 'Can You Use a NordicTrack Without iFIT?',
+      blurb: 'What manual mode does with no membership, and what stops.',
+      url: '/can-you-use-nordictrack-without-ifit/',
+    },
+    {
+      kicker: 'Diagnosis',
+      title: "Treadmill Won't Turn On",
+      blurb: 'The outlet, key, breaker and board checks, in order.',
+      url: '/treadmill-wont-turn-on/',
+    },
+    {
+      kicker: 'Diagnosis',
+      title: 'Treadmill Safety Key Not Working',
+      blurb: 'When the key is in but the machine acts as if it is not.',
+      url: '/treadmill-safety-key-not-working/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">The switch is on the frame by the cord, not on the console.</strong>
+            Plug into a surge suppressor on a grounded outlet, press the switch into reset (I), clip
+            on the key and insert it. Give a touchscreen a few minutes, and never cut power during an
+            update. Still dark? Work through the
+            <a href="/treadmill-wont-turn-on/" class="text-[#5AA9FF] font-bold no-underline">won't-turn-on checks</a>.`,
+    `<strong class="text-white">You do not need iFIT to run it</strong>, and when you finish,
+            key out, switch off and unplug. If it turns on but freezes or misbehaves, that is a
+            <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#5AA9FF] font-bold no-underline">reset</a>,
+            not a start-up problem.`,
+  ],
+};

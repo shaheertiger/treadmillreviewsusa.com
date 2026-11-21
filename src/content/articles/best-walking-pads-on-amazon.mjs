@@ -713,6 +713,24 @@ export default {
   relatedHeading: 'Related Walking Pad Guides',
   related: [
     {
+      kicker: 'Brand guide',
+      title: 'AKLUER Treadmills',
+      blurb: 'Seven Amazon walking pads from about $70, and the warranty you must activate.',
+      url: '/akluer-treadmills/',
+    },
+    {
+      kicker: 'Brand guide',
+      title: 'LONTEK Walking Pads',
+      blurb: 'Which LONTEK listing is 15% and which is 32%, set by hand.',
+      url: '/lontek-walking-pad/',
+    },
+    {
+      kicker: 'Brand guide',
+      title: 'Superun Treadmills',
+      blurb: 'Amazon walking pads from about $94 and the figures that disagree.',
+      url: '/superun-treadmills/',
+    },
+    {
       kicker: 'Roundup',
       title: 'Best Walking Pads',
       blurb: 'Six walking pads for every job, wherever they are sold, with the sources behind each figure.',

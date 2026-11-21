@@ -1,0 +1,853 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SECTIONS } from "../data/sections";
+
+const title = "LONTEK Walking Pad Review (2026): 15% and 32% Incline Checked";
+const description =
+  "LONTEK walking pads cost about $95 to $190 on Amazon. The 15% and 32% inclines are manual leg settings on two different machines, with a 1-year warranty.";
+
+const PRODUCTS = [
+  {
+    id: "lontek-u20f-1-15-incline-walking-pad",
+    name: "LONTEK U20F-1 15% Incline Walking Pad",
+    brand: "LONTEK",
+    category: "The 15% Walking Pad With Handle Bar",
+    badge: "Cheapest Incline Pad",
+    amazonUrl: "https://www.amazon.com/dp/B0HDSSGJGP?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41rg0740FuL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $111 (Amazon, 21 Nov 2026)",
+    priceBounds: {"low":111,"high":111},
+    specs: "Per listing: flat, 10% or 15% manual incline · 0.6–6.2 mph · 350 lb capacity · 37.4 x 15 in. belt · 3.0 HP brushless",
+    pros: [
+      "Three incline positions set by hand: flat, fold-out legs for 10%, and red pads under the legs for 15%, per the listing bullets",
+      "Handle bar, LED display and removable phone or tablet holder listed",
+      "Low-profile body the listing says slides under a desk, bed or sofa",
+    ],
+    cons: [
+      "Incline is manual: you stop and step off to change it",
+      "Sold under a title that also says 32% and 7.5 mph; this colour option is the 15%, 6.2 mph machine",
+      "Motor given only as 3.0 HP with no continuous rating, and the warranty field says one year",
+    ],
+    bottomLine: "The LONTEK to buy for desk walking with an occasional hill, as long as you order the colour whose bullets say 15%.",
+    description: "This is the 15% machine in the LONTEK \"15%/32% Incline Walking Pad\" family (model U20F-1 in the listing data, checked November 2026). Its bullets describe three manual incline positions: flat, 10% with the black legs folded out, and 15% with red pads placed under the front legs. They list a 3.0 HP brushless motor under 45 dB, 0.6 to 6.2 mph, a 350 lb capacity, a 37.4 by 15-inch belt with side shock strips, an LED display and a removable device holder. The red option was about $111 on Amazon on 21 November 2026, sold by TODOYONUS, with a near-identical black option at about $119.",
+  },
+  {
+    id: "lontek-32-incline-walking-pad",
+    name: "LONTEK 32% Incline Walking Pad",
+    brand: "LONTEK",
+    category: "The Steepest LONTEK",
+    badge: "Steepest Incline (Manual)",
+    amazonUrl: "https://www.amazon.com/dp/B0HHDJCFT3?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41mCR43WPVL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $187 (Amazon, 21 Nov 2026)",
+    priceBounds: {"low":187,"high":187},
+    specs: "Per listing: 0, 8, 16, 24 or 32% manual incline · 0.6–7.5 mph · 350 lb capacity · 38.6 x 15.4 in. belt · 51 in. handrails",
+    pros: [
+      "Five manual incline levels to 32%, which the listing puts at roughly 17 degrees with the deck about 15 in. off the floor at the front",
+      "Longer belt and taller 51 in. dual handrails than the 15% model, per the bullets",
+      "Folding front support feet that the listing says form a braced triangular base",
+    ],
+    cons: [
+      "Every incline change is by hand, with the belt stopped",
+      "The same bullets appear under two model numbers (U20F-1 and X5FD), so check the colour and bullets before ordering",
+      "Folded size in the bullets (57.3 x 24.4 x 6.1 in.) is much larger than the generic dimensions in the listing data",
+    ],
+    bottomLine: "The machine behind the 32% headline: a steep, manual hill-walking pad for someone who will pick one or two settings and stay on them.",
+    description: "The 32% machine appears as the Coal Black option of the \"15%/32%\" listing (model U20F-1 in the listing data) and as the Ivory Black option of a separate \"0%/32%\" listing (model X5FD), both with identical bullets (checked November 2026). Those bullets give five manual incline levels, 0, 8, 16, 24 and 32%, with the deck rising to about 15 inches at the top setting, roughly 17 degrees. They list a 3HP brushless motor under 45 dB, 0.6 to 7.5 mph, a 350 lb capacity, a 38.6 by 15.4-inch seven-layer belt, 51-inch dual handrails, a cup holder, two transport wheels, a remote and a folded size of about 57.3 by 24.4 by 6.1 inches. It was about $187 and $190 on the two listings on 21 November 2026, sold by TODOYONUS.",
+  },
+  {
+    id: "lontek-sf60-15-auto-incline-treadmill",
+    name: "LONTEK SF60 15% Auto Incline Treadmill",
+    brand: "LONTEK",
+    category: "The Only Powered Incline",
+    badge: "Powered Incline",
+    amazonUrl: "https://www.amazon.com/dp/B0HKCZJKXM?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41wHIgdyX6L._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $184 (Amazon, 21 Nov 2026)",
+    priceBounds: {"low":184,"high":184},
+    specs: "Per listing: 12 powered incline levels to 15% · 0.6–7.2 mph · 400 lb capacity · 15.2 x 38.2 in. belt · 3.0 HP brushless",
+    pros: [
+      "The only current LONTEK whose bullets describe incline changed at the touch of a button, in 12 preset levels from 0 to 15%",
+      "Handles, three LED screens, tablet holder and bottle holder listed",
+      "One-knob fold the listing says takes about 10 seconds",
+    ],
+    cons: [
+      "Tops out at 15%, half the grade of the 32% model",
+      "The 400 lb capacity is a listing claim on a machine listed at about 45 lb",
+      "Sold as a compact folding treadmill rather than an under-desk pad",
+    ],
+    bottomLine: "The LONTEK for anyone who wants to change incline mid-walk, and the closest it gets to a small conventional treadmill.",
+    description: "The SF60 (model number from the listing data, checked November 2026) is listed as a folding treadmill with handles rather than a flat pad. Its bullets describe 12 preset incline levels from 0 to 15% adjusted by button, 0.6 to 7.2 mph, a 3.0HP brushless motor under 45 dB, a 400 lb capacity, a 15.2 by 38.2-inch seven-layer belt, three LED screens, a tablet holder and a water bottle holder, and a folded size of about 44.8 by 23.5 by 5.4 inches. The listing data gives a weight of about 45 lb and a one-year warranty. It was about $184 on Amazon on 21 November 2026, sold by TODOYONUS.",
+  },
+  {
+    id: "lontek-sf20-18-incline-treadmill",
+    name: "LONTEK SF20 18% Incline Treadmill",
+    brand: "LONTEK",
+    category: "Highest Capacity Claim",
+    badge: "400 lb Claim, Manual 18%",
+    amazonUrl: "https://www.amazon.com/dp/B0HJGVBZ2F?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41dzqrPYGML._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $142 (Amazon, 21 Nov 2026)",
+    priceBounds: {"low":142,"high":142},
+    specs: "Per listing: 0, 10 or 18% manual incline · 0.6–7.5 mph · 400 lb capacity · 15 x 37.5 in. belt · 3.0 HP brushless",
+    pros: [
+      "A 400 lb capacity claim and 7.5 mph top speed for about $142",
+      "Folds to about 44.3 x 21.8 x 4.1 in. and arrives 90% pre-assembled, per the listing",
+      "Handle bar, LED display and large tablet or phone holder listed",
+    ],
+    cons: [
+      "Incline is set with included attachments, not a motor",
+      "A sister listing describes the steps as 0, 8 and 18% rather than 0, 10 and 18%",
+      "A 15-inch-wide belt is narrow for jogging",
+    ],
+    bottomLine: "A middle option: steeper than the 15% pad and cheaper than the 32% one, with the highest capacity figure LONTEK prints.",
+    description: "The SF20 (model number from the listing data, checked November 2026) is listed with a manual 0 to 18% incline using included attachments, 0.6 to 7.5 mph, a 3.0HP brushless motor under 45 dB, a 400 lb capacity, a 15 by 37.5-inch seven-layer belt, a handle bar and LED display, and a folded size of about 44.3 by 21.8 by 4.1 inches. The listing data gives a weight of about 43.6 lb and a one-year warranty. It was about $142 on Amazon on 21 November 2026, sold by TODOYONUS. A second listing with the same title family puts the steps at 0, 8 and 18% and calls the motor 3.0HP peak.",
+  },
+  {
+    id: "lontek-u19-walking-pad-with-vibration",
+    name: "LONTEK U19 Walking Pad with Vibration",
+    brand: "LONTEK",
+    category: "Budget Pad With Vibration Plate",
+    badge: "Budget With Vibration",
+    amazonUrl: "https://www.amazon.com/dp/B0H335Q63C?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/410TjHux9kL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $100 (Amazon, 21 Nov 2026)",
+    priceBounds: {"low":100,"high":100},
+    specs: "Per listing: flat, 10% or 15% manual incline · 0.6–5.0 mph · 300 lb capacity · 36 x 16 in. belt · 3 vibration levels",
+    pros: [
+      "The cheapest current LONTEK with a 15% setting, at about $100",
+      "A 16-inch-wide belt, slightly wider than the other LONTEK pads",
+      "Three vibration levels for warm-up and recovery, per the listing",
+    ],
+    cons: [
+      "The bullets say the remote adjusts incline, but the incline itself is a fold-out stand and silicone pads",
+      "Walking speeds only, to 5.0 mph",
+      "The listing asks you to run vibration for 5 minutes, then rest the unit 20 minutes",
+    ],
+    bottomLine: "A low-cost walking pad with a vibration gimmick and a hand-set 15% hill; buy it for walking, not for the vibration.",
+    description: "The U19 (model number from the listing data, checked November 2026) is a flat walking pad with a vibration function. Its bullets describe three vibration levels, a 3.0HP brushless motor at about 40 dB, a 300 lb capacity, flat, 10% and 15% incline using a fold-out stand and red silicone pads, a 36 by 16-inch belt with 8 shock absorbers and a six-layer deck, an LED screen and a remote. The listing data gives a weight of about 38 lb and a one-year warranty. It was about $100 on Amazon on 21 November 2026, sold by TODOYONUS.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Brands", item: "https://www.treadmillreviewsusa.com/brands/" },
+        { "@type": "ListItem", position: 3, name: "LONTEK Walking Pad", item: "https://www.treadmillreviewsusa.com/lontek-walking-pad/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Is LONTEK a good walking pad brand?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "LONTEK is a real Amazon brand with live, in-stock listings, mostly sold by the seller TODOYONUS, and its walking pads are cheap for the incline they offer. It has no maker's website we could find, gives a one-year warranty in the listing data, and its listings sometimes contradict themselves. It is a reasonable budget buy if you read the bullets for the exact colour you order.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does the LONTEK walking pad really have 32% incline?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "One LONTEK machine does. Its bullets give five manual levels, 0, 8, 16, 24 and 32%, with the deck rising to about 15 inches, roughly 17 degrees. It is sold as one colour option of the \"15%/32%\" listing and of a separate \"0%/32%\" listing. Other colours under the same titles are 15% machines or, in one case, describe no incline at all.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is the LONTEK incline automatic?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On the walking pads, no. The 15% and 32% models are set by hand with fold-out legs, red pads or manual levels, with the belt stopped. Some vibration-pad bullets say the remote adjusts incline, which conflicts with the manual stand they describe. The only current LONTEK with button-set incline is the SF60 folding treadmill, with 12 levels to 15%.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What warranty comes with a LONTEK walking pad?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Amazon's listing data shows one year for every current LONTEK model we checked in November 2026. The listings do not break down what is covered or who pays shipping on a claim, and we found no brand website with a warranty policy. Contact the seller through your Amazon order and keep the model number and bullets for reference.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How steep is 32% incline in degrees?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A 32% grade is about 17.7 degrees, which matches the listing's \"roughly 17 degrees\". That is about 1,600 feet of climb per mile walked, more than twice the climb of a 15% setting, which is about 8.5 degrees. Most people will walk slowly and hold the handrails at that grade.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you run on a LONTEK walking pad?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The 32% pad, SF20 and SF60 list top speeds of 7.2 to 7.5 mph, and the 15% pad lists 6.2 mph, so a light jog on a flat deck is within the listed range. Belts of about 15 inches wide and 37 to 39 inches long are short and narrow for a running stride, though, so treat these as walking machines.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-21",
+      dateModified: "2026-11-21",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
+      ...(product.image ? { image: product.image.url } : {}),
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 5,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/lontek-walking-pad/#${product.id}`,
+      })),
+    },
+  ],
+};
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/lontek-walking-pad/";
+const HUB = SECTIONS.find((s) => s.slug === "brands");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-21",
+    modifiedTime: "2026-11-21",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "lontek walking pad",
+      "lontek treadmill",
+      "lontek walking pad review",
+      "lontek 32% incline walking pad",
+      "lontek 15% incline walking pad",
+      "lontek treadmill incline",
+      "is lontek a good brand",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Cheapest Incline Pad: LONTEK U20F-1 15% Incline Walking Pad", link: PRODUCTS[0].amazonUrl }}
+>
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/brands/">Brands</a>
+        <span aria-hidden="true">›</span>
+        <span>Brand Guide</span>
+      </nav>
+      <h1 class="ed-title">LONTEK Walking Pad Review: 15% and 32% Incline Checked</h1>
+      <p class="ed-dek">
+        A LONTEK walking pad is a cheap, credible choice for incline walking at home if you buy the right listing: the 15% and 32% figures belong to two different machines, both set by hand with fold-out legs rather than a motor, and the listing warranty is one year. This page reads every current LONTEK listing on Amazon and says which figures hold together and which do not.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 21, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          <span class="ed-method">Based on the brand’s published specifications and warranty terms, retailer listings and owner reports.</span>
+        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
+      </div>
+      <p class="ed-disclosure">
+        Some links on this page are affiliate links: we may earn a commission at no cost to you. <a href="/editorial-standards/">How we review.</a>
+      </p>
+
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#lontek-u20f-1-15-incline-walking-pad"><img src="https://m.media-amazon.com/images/I/41rg0740FuL._SL500_.jpg" alt="LONTEK U20F-1 15% Incline Walking Pad" width="500" height="500" decoding="async" /></a>
+          <a href="#lontek-32-incline-walking-pad"><img src="https://m.media-amazon.com/images/I/41mCR43WPVL._SL500_.jpg" alt="LONTEK 32% Incline Walking Pad" width="500" height="500" decoding="async" /></a>
+          <a href="#lontek-sf60-15-auto-incline-treadmill"><img src="https://m.media-amazon.com/images/I/41wHIgdyX6L._SL500_.jpg" alt="LONTEK SF60 15% Auto Incline Treadmill" width="500" height="500" decoding="async" /></a>
+        </div>
+        <figcaption>LONTEK U20F-1 15% Incline Walking Pad · LONTEK 32% Incline Walking Pad · LONTEK SF60 15% Auto Incline Treadmill</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          LONTEK is one of the newer names on Amazon's walking pad pages, and its headline is incline: listings
+          promise 15%, 18% and even 32% on machines that cost less than $200. Those numbers are not invented, but they
+          are easy to misread. On 21 November 2026 the best-known LONTEK title, "15%/32% Incline Walking Pad with
+          Handle Bar", covered several different machines sold as colour options, and the bullets under each colour
+          describe a different deck, speed range and incline system. This guide sets out what each listing actually
+          says, what those inclines mean in degrees and effort, who sells and backs the machines, and when a
+          different walking pad is the better buy.
+        </p>
+
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Cheapest Incline Pad:</span> <a href="#lontek-u20f-1-15-incline-walking-pad">LONTEK U20F-1 15% Incline Walking Pad</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Steepest Incline (Manual):</span> <a href="#lontek-32-incline-walking-pad">LONTEK 32% Incline Walking Pad</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Powered Incline:</span> <a href="#lontek-sf60-15-auto-incline-treadmill">LONTEK SF60 15% Auto Incline Treadmill</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">400 lb Claim, Manual 18%:</span> <a href="#lontek-sf20-18-incline-treadmill">LONTEK SF20 18% Incline Treadmill</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Budget With Vibration:</span> <a href="#lontek-u19-walking-pad-with-vibration">LONTEK U19 Walking Pad with Vibration</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <nav class="ed-toc not-prose" aria-label="In this brand guide">
+          <h2>In this brand guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#who-sells-lontek">Who Is LONTEK, and Who Sells It?</a></li>
+            <li><a href="#lineup">Which LONTEK Walking Pads Are on Amazon Now?</a></li>
+            <li><a href="#incline-check">Is It 15% or 32%? What the Listing Bullets Actually Say</a></li>
+            <li><a href="#how-steep">How Steep Are 15% and 32% on a Walking Pad?</a></li>
+            <li><a href="#motor-and-capacity">Can a 3HP LONTEK Handle 32% and 350 lb?</a></li>
+            <li><a href="#warranty-seller">What Warranty Does LONTEK Give, and Who Handles Returns?</a></li>
+            <li><a href="#who-it-suits">Who Should Buy a LONTEK Walking Pad, and Who Should Skip It?</a></li>
+            <li><a href="#alternatives">LONTEK Alternatives Worth Cross-Shopping</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2>The Short Answer</h2>
+<p>
+            <strong>A LONTEK walking pad is a reasonable budget buy for incline walking, but "15%/32%" is two different
+            machines, not one machine that does both, and on every current model except one the incline is set by hand
+            with fold-out legs or pads.</strong>
+          </p>
+          <ul>
+            <li><strong>15% model:</strong> about $111 on Amazon, flat, 10% or 15% set by hand, 0.6 to 6.2 mph, 350 lb
+            listed (checked November 2026).</li>
+            <li><strong>32% model:</strong> about $187, five manual levels from 0 to 32% (roughly 17 degrees), 0.6 to
+            7.5 mph, 350 lb listed, longer belt and 51-inch handrails.</li>
+            <li><strong>Powered incline:</strong> only the SF60, about $184, with 12 button-set levels to 15%.</li>
+            <li><strong>Warranty and seller:</strong> one year in the listing data for every model, sold by an Amazon
+            seller called TODOYONUS, with Woot also offering some colours.</li>
+            <li><strong>Not for:</strong> runners, anyone who wants to change incline mid-walk on a pad, or anyone who
+            needs a maker's website and a published service process.</li>
+          </ul>
+          <p>
+            If incline is the point and you can spend more, compare the powered-incline pads in our <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">best walking pads with incline</a> guide before ordering a LONTEK.
+          </p>
+        </div>
+
+        <div id="who-sells-lontek" class="scroll-mt-24">
+          <h2>Who Is LONTEK, and Who Sells It?</h2>
+<p>
+            LONTEK is an Amazon-first brand. On 21 November 2026 every current LONTEK walking pad and folding treadmill
+            we found carried the LONTEK brand name in its listing, and the seller named on almost all of them was an
+            Amazon storefront called <strong>TODOYONUS</strong>. Two colour options, the red 15% pad and one X5FD
+            variant, were also offered by Woot, Amazon's deals site (checked November 2026). That matters because the
+            seller, not the brand name, is who you deal with for a return on Amazon.
+          </p>
+          <p>
+            We could not find a maker's website. The domain lontek.com redirected to a domain-for-sale page when we
+            checked it in November 2026, so there is no brand site to cross-check the Amazon figures against, no
+            published warranty policy beyond the listing, and no downloadable manuals hosted by the brand. Several
+            third-party manual sites carry LONTEK manuals under model numbers such as SF10, SF20, U17F and L10, which
+            tells you the range has existed for a while and turns over often.
+          </p>
+          <p>
+            The Amazon listing data gives a model number for most current machines. The 15% pad and its siblings are
+            filed as U20F-1, the second 32% listing and a 5 mph pad as X5FD, the vibration pad as U19, and the two <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a> as SF20 and SF60. Those model numbers are the most useful thing to note before you buy:
+            titles change, colour options get swapped, and a model number is what a seller will ask for if something
+            goes wrong.
+          </p>
+          <p>
+            None of this makes LONTEK a scam. The listings are live, in stock and sold through Amazon's normal checkout,
+            which gives you Amazon's return process for the return window. It does make LONTEK a brand to buy on the
+            evidence of the listing in front of you, read colour by colour, rather than on a brand reputation. A repair
+            company's blog has criticised walking pads "like Lontek" as built to be replaced rather than repaired, but
+            it named no LONTEK model and gave no LONTEK-specific evidence, so we treat it as a general warning about
+            cheap walking pads rather than a finding about this brand.
+          </p>
+        </div>
+
+        <div id="lineup" class="scroll-mt-24">
+          <h2>Which LONTEK Walking Pads Are on Amazon Now?</h2>
+<p>
+            Five LONTEK machines stood out on Amazon on 21 November 2026 as distinct products with complete bullets: two
+            versions of the "15%/32%" pad, a vibration pad, and two folding treadmills with handles. Prices below are
+            what Amazon showed that day and change often. Specifications are the listing's own claims; LONTEK publishes
+            nothing elsewhere that we could check them against.
+          </p>
+          <p>
+            Read the cards with one rule in mind: on LONTEK's variation listings, the colour you pick decides the
+            machine. Two colours of the same title can be a 15% pad at about $111 and a 32% pad at about $187, with
+            different belts, speeds and handrails. The card names below follow the machine, not the shared title.
+          </p>
+        </div>
+      <!-- Product blocks -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
+                </div>
+              </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
+          ))
+        }
+      </div>
+
+        <div id="incline-check" class="scroll-mt-24">
+          <h2>Is It 15% or 32%? What the Listing Bullets Actually Say</h2>
+<p>
+            The title "LONTEK 15%/32% Incline Walking Pad with Handle Bar ... 0.6-6.2/7.5MPH" reads as if one machine
+            offers both inclines and both top speeds. It does not. The slashes join two products sold under one
+            listing family. We read the bullets under each colour option on 21 November 2026; the table sets out what
+            each one says.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Listing option</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Incline in bullets</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">How it is set</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Speed</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Capacity</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Belt</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15%/32% title, red or soot black (U20F-1)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0, 10, 15%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fold-out legs, red pads</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–6.2 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">37.4 x 15 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15%/32% title, coal black (U20F-1)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0, 8, 16, 24, 32%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manual levels</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–7.5 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">38.6 x 15.4 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15%/32% title, slag (U20F-1)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0, 10, 15%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manual, with vibration</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not stated</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">265 lb in bullets</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">35 x 16 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0%/32% title, ivory black (X5FD)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0, 8, 16, 24, 32%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manual levels</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–7.5 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">38.6 x 15.4 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0%/32% title, black (X5FD)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None in bullets</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">n/a</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–5.0 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">36 x 15 in.</td></tr>
+            </tbody>
+          </table></div>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What is per-listing and holds together</h3>
+          <p>
+            The 15% claim is consistent wherever it appears with its own bullets. Each 15% option describes the same
+            three positions: flat, the black legs folded out for 10%, and the red pads placed under the front legs for
+            15%. The 32% claim is also consistent: both colour options that carry it give five levels, 0, 8, 16, 24
+            and 32%, a deck about 15 inches off the floor at the top setting and an angle of "roughly 17 degrees".
+            That last figure checks out arithmetically. A 32% grade is about 17.7 degrees, and a 15-inch rise at that
+            angle implies roughly four feet between the front legs and the rear of the deck, which is plausible for a
+            machine the bullets say folds to about 57 inches long. We cannot confirm the 15-inch figure itself.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What conflicts</h3>
+          <ul>
+            <li><strong>The shared title.</strong> "15%/32%" and "0.6-6.2/7.5MPH" describe two machines. Order the
+            colour whose bullets match the incline you want, and check the bullets again in your basket.</li>
+            <li><strong>The slag option.</strong> It sits under a title that says 350 lb, but its own bullets give
+            265 lb, a 35 by 16-inch belt and a <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium" data-autolink>vibration plate</a>. Where the title and bullets disagree, we take the lower
+            capacity.</li>
+            <li><strong>The cheapest "0%/32%" option.</strong> At about $95 it is the lowest LONTEK price, but its
+            bullets mention no incline at all, give 0.6 to 5.0 mph and describe a 2.5HP motor, while its title says
+            32% and 3HP. We left it off the cards for that reason.</li>
+            <li><strong>Model numbers.</strong> The 32% bullets appear word for word under model U20F-1 on one listing
+            and X5FD on another, so the model number alone does not identify the incline.</li>
+          </ul>
+          <p>
+            The practical rule: the incline that applies is the one in the bullets of the colour you select, not the
+            one in the title. If the bullets do not describe the incline, assume the machine does not have it.
+          </p>
+        </div>
+
+        <div id="how-steep" class="scroll-mt-24">
+          <h2>How Steep Are 15% and 32% on a Walking Pad?</h2>
+<p>
+            Treadmill incline is a percentage grade: feet of climb per 100 feet of horizontal distance. It is not
+            degrees, and the gap between the two grows as the grade rises. Our explainer on <a href="/what-is-12-incline-on-a-treadmill/" class="text-[#0F62FE] font-medium">what 12% incline on a treadmill means</a> works through the conversion; the table below applies it to every LONTEK setting.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">LONTEK setting</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Angle</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Climb per mile walked (approx.)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Found on</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">8%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.6°</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">420 ft</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">32% model, SF20 sister listing</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5.7°</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">525 ft</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% models, U19, SF20</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">8.5°</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">780 ft</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% models, U19, SF60</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">9.1°</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">835 ft</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">32% model</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">18%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10.2°</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">935 ft</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SF20</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">24%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">13.5°</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1,230 ft</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">32% model</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">32%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">17.7°</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1,610 ft</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">32% model</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            For context, most full-size home treadmills stop at 12 to 15%, and the steepest home machines, <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>incline
+            trainers</a>, go to 40%. Our list of <a href="/treadmills-with-the-highest-incline/" class="text-[#0F62FE] font-medium">treadmills with the highest incline</a> covers those. A walking pad that reaches 32% for under $200 is unusual, and it gets there by propping the
+            whole deck up on legs rather than by a lift motor.
+          </p>
+          <p>
+            In use, 15% is a stiff hill walk for most adults even at 2 to 2.5 mph. A 32% grade is closer to a steep
+            mountain trail: many people will <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>hold the handrails</a> and walk well under 2 mph. The higher top speed on the
+            32% model, 7.5 mph, is a flat-deck figure in practice; nothing in the listing suggests running at 32%,
+            and we would not.
+          </p>
+          <p>
+            Two caveats apply to every hand-set incline. First, the percentage assumes a level floor and a deck that
+            sits fully on its legs; a thick rug or soft mat under the front legs changes the angle. Second, the grade
+            is fixed for the whole session. You cannot climb for five minutes and recover on the flat without stopping
+            the belt, getting off and resetting the legs.
+          </p>
+        </div>
+
+        <div id="motor-and-capacity" class="scroll-mt-24">
+          <h2>Can a 3HP LONTEK Handle 32% and 350 lb?</h2>
+<p>
+            Every LONTEK listing we read gives the motor as 3.0HP brushless, apart from the cheapest X5FD option, whose
+            bullets say 2.5HP. One SF20 listing calls the 3.0HP figure "peak". None gives a continuous rating, which is
+            the number that describes what a motor sustains for a long walk. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a> explains why a peak figure on its own tells you little, and on a budget walking pad the continuous figure
+            behind it is usually a fraction of the peak.
+          </p>
+          <p>
+            Steep incline is where that matters. On a hand-set pad the tilted deck rests on a pair of legs or pads rather
+            than on its full base, every footfall lands on an angled surface, and the frame, rollers and belt are the
+            same light parts that carry you on the flat. Body weight is the biggest load on a walking pad motor and frame
+            at walking speed, and a claimed 350 lb at 32% is a lot to ask of a machine the listing data puts at about
+            40 lb.
+            The 32% listing's answer is a braced triangular base and silicone damping pads; whether that holds up over
+            months of daily steep walking is something no independent source we found has reported on.
+          </p>
+          <p>
+            The capacity figures vary across the range: 265 lb in one set of bullets, 300 lb on the U19, 350 lb on the
+            15% and 32% pads and 400 lb on the two folding treadmills, all on machines the listing data puts at roughly
+            38 to 45 lb. Treat them as maximums rather than comfortable working loads. Our usual advice is to leave a
+            margin of around a quarter between your body weight and the rated capacity, and to be more conservative still
+            on a light pad used at steep incline.
+          </p>
+          <p>
+            Noise is given as under 45 dB on most models and about 40 dB on the vibration models. Neither figure says
+            how it was measured, and on any walking pad footfall into the floor is often louder than the motor.
+          </p>
+        </div>
+
+        <div id="warranty-seller" class="scroll-mt-24">
+          <h2>What Warranty Does LONTEK Give, and Who Handles Returns?</h2>
+<p>
+            The warranty field in Amazon's listing data says one year for every current LONTEK we checked: the 15% and
+            32% pads, the U19, the SF20 and the SF60 (checked November 2026). The bullets do not say what that year
+            covers, whether motor and frame are treated differently, or who pays shipping on a claim. The 32% bullets
+            add "24/7 customer support", which describes contact hours rather than warranty terms.
+          </p>
+          <p>
+            With no maker's website, the practical route for a problem is the Amazon order: the return window first,
+            then the seller, TODOYONUS on most listings, for anything after that. If you buy a colour fulfilled by Woot,
+            Woot's own return terms apply instead, so read them before ordering.
+          </p>
+          <ul>
+            <li><strong>Before you buy:</strong> note the model number shown on the listing (U20F-1, X5FD, U19, SF20 or
+            SF60) and screenshot the bullets for your colour.</li>
+            <li><strong>In the first days:</strong> use the machine at your real speed, session length and incline,
+            including setting the legs to the top position, while a return is still simple.</li>
+            <li><strong>If something fails:</strong> contact the seller through your Amazon order, quote the model
+            number and keep the reply in writing.</li>
+          </ul>
+          <p>
+            One year of cover is normal for walking pads at this price. It is the main reason a LONTEK belongs in the
+            budget bracket: you are paying less partly because you are getting less support.
+          </p>
+        </div>
+
+        <div id="who-it-suits" class="scroll-mt-24">
+          <h2>Who Should Buy a LONTEK Walking Pad, and Who Should Skip It?</h2>
+<p>
+            <strong>Buy the 15% pad</strong> if you want an under-desk walking pad with a handle bar and the option of a
+            moderate hill, at a fixed angle, for about $111. It is the most sensible LONTEK for most buyers: the hill
+            setting is steep enough to make walking harder without needing handrails to stay on.
+          </p>
+          <p>
+            <strong>Buy the 32% pad</strong> if steep hill walking is the specific goal, you are happy to pick one grade
+            per session, and you have room for a machine that folds to about 57 by 24 inches. The taller handrails and
+            longer belt suit that use. Expect to walk slowly at the top settings.
+          </p>
+          <p>
+            <strong>Buy the SF60</strong> if you want to change incline during a walk. It is the only current LONTEK
+            whose bullets describe button-set incline, and it costs about the same as the 32% pad.
+          </p>
+          <p>
+            <strong>Skip LONTEK</strong> if you want to run, need a long warranty, or are close to the claimed capacity
+            and plan long daily sessions. A heavier-built machine with a continuous motor rating is the safer buy, and
+            our <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a> explains which figures to look for.
+          </p>
+        </div>
+
+        <div id="alternatives" class="scroll-mt-24">
+          <h2>LONTEK Alternatives Worth Cross-Shopping</h2>
+<p>
+            Most LONTEK buyers are comparing it with other Amazon-era walking pad brands at $100 to $300. Three
+            alternatives cover the main reasons to look elsewhere.
+          </p>
+          <ul>
+            <li><strong>Powered incline on a pad:</strong> the MERACH NovaWalk W50 TrekPad has a motorised incline, a
+            published 1.25 HP continuous rating and a 400 lb capacity, and Merach registers buyers for a second year of
+            cover. It costs more and tops out at 4 mph. Our <a href="/merach-treadmills/" class="text-[#0F62FE] font-medium">Merach treadmills guide</a> sets out the
+            range and where its own figures disagree.</li>
+            <li><strong>Better-supported desk walking:</strong> our <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> roundup favours brands
+            with a maker's site, published specifications and clearer service routes, such as WalkingPad and <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a>.</li>
+            <li><strong>A similar budget brand, read the same way:</strong> our <a href="/wellfit-tm037-treadmill/" class="text-[#0F62FE] font-medium">Wellfit TM037 review</a> covers
+            another two-in-one pad sold on listing claims, with the same one-year motor cover.</li>
+          </ul>
+          <p>
+            If steep incline is what draws you to LONTEK, compare like with like. A 32% manual pad is cheaper than any
+            powered alternative, but a 10 to 15% powered pad lets you vary the climb without stopping, and for most
+            people that is the more useful feature day to day.
+          </p>
+        </div>
+
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>4 Mistakes People Make Buying a LONTEK Walking Pad</h2>
+          <p>Nearly every disappointment with a LONTEK comes from trusting the title over the bullets. These are the four to avoid.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Ordering by the title instead of the colour</h3>
+              <p>"15%/32%" and "0.6-6.2/7.5MPH" describe two machines under one listing. Pick the colour, then read the bullets that appear for that colour and confirm they say the incline and speed you want. Check again in the basket, because the cheapest colour on a family listing is often not the machine in the headline.</p>
+            </li>
+            <li>
+              <h3>Expecting to change incline mid-walk</h3>
+              <p>The 15% and 32% pads are set by hand with legs and pads, so changing grade means stopping the belt and getting off. If you want hill intervals, buy the SF60 or a pad with powered incline. If you buy a manual model, choose one setting you are happy to hold for the whole session.</p>
+            </li>
+            <li>
+              <h3>Walking at 32% like it is 15%</h3>
+              <p>At about 17.7 degrees, 32% is more than twice the climb of 15%. Start at 8 or 16%, at a slow pace, holding the handrails, and only move up a level once that feels controlled. Do not jog at the steep settings; the listing does not suggest it and the deck is resting on its legs.</p>
+            </li>
+            <li>
+              <h3>Letting the return window lapse</h3>
+              <p>The warranty in the listing data is one year and there is no maker's site to fall back on. Use the pad at your real speed, weight and steepest setting in the first days, and listen for knocking or belt drift. A return inside the window is far simpler than a seller warranty claim later.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>Our verdict on the brand</h2>
+          <p>
+            <strong class="text-white">A LONTEK walking pad is a fair budget buy for hill walking if you order the
+            right colour.</strong> The 15% pad at about $111 suits desk walking with an occasional fixed hill; the 32%
+            pad at about $187 is a steep, manual climbing machine for someone who will pick a grade and stay on it. Both
+            are hand-set, both carry one year of cover in the listing data, and every figure is the seller's claim.
+          </p>
+          <p>
+            If you want to change the climb mid-walk, need longer support or plan heavy daily use, spend more on a
+            powered-incline pad from a better-documented brand — the <a href="/best-walking-pads-with-incline/" class="text-[#5AA9FF] font-bold no-underline">best walking pads with incline</a> guide is the place to start.
+          </p>
+        </div>
+
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-walking-pads-with-incline/">Best Walking Pads With Incline</a></li>
+            <li><a href="/merach-treadmills/">Merach Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is LONTEK a good walking pad brand?</h3></summary>
+            <p class="faq-a">
+              LONTEK is a real Amazon brand with live, in-stock listings, mostly sold by the seller TODOYONUS, and its walking pads are cheap for the incline they offer. It has no maker's website we could find, gives a one-year warranty in the listing data, and its listings sometimes contradict themselves. It is a reasonable budget buy if you read the bullets for the exact colour you order.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does the LONTEK walking pad really have 32% incline?</h3></summary>
+            <p class="faq-a">
+              One LONTEK machine does. Its bullets give five manual levels, 0, 8, 16, 24 and 32%, with the deck rising to about 15 inches, roughly 17 degrees. It is sold as one colour option of the "15%/32%" listing and of a separate "0%/32%" listing. Other colours under the same titles are 15% machines or, in one case, describe no incline at all.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the LONTEK incline automatic?</h3></summary>
+            <p class="faq-a">
+              On the walking pads, no. The 15% and 32% models are set by hand with fold-out legs, red pads or manual levels, with the belt stopped. Some vibration-pad bullets say the remote adjusts incline, which conflicts with the manual stand they describe. The only current LONTEK with button-set incline is the SF60 folding treadmill, with 12 levels to 15%.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What warranty comes with a LONTEK walking pad?</h3></summary>
+            <p class="faq-a">
+              Amazon's listing data shows one year for every current LONTEK model we checked in November 2026. The listings do not break down what is covered or who pays shipping on a claim, and we found no brand website with a warranty policy. Contact the seller through your Amazon order and keep the model number and bullets for reference.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How steep is 32% incline in degrees?</h3></summary>
+            <p class="faq-a">
+              A 32% grade is about 17.7 degrees, which matches the listing's "roughly 17 degrees". That is about 1,600 feet of climb per mile walked, more than twice the climb of a 15% setting, which is about 8.5 degrees. Most people will walk slowly and hold the handrails at that grade.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you run on a LONTEK walking pad?</h3></summary>
+            <p class="faq-a">
+              The 32% pad, SF20 and SF60 list top speeds of 7.2 to 7.5 mph, and the 15% pad lists 6.2 mph, so a light jog on a flat deck is within the listed range. Belts of about 15 inches wide and 37 to 39 inches long are short and narrow for a running stride, though, so treat these as walking machines.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Brands">
+          <h2 class="section-title">More in Brands</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/brands/" class="btn-ghost">See all Brands</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Brand and Walking Pad Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-walking-pads-with-incline/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Walking Pads With Incline</div>
+            <p class="c-blurb">Powered and manual incline pads compared, including a 400 lb pick.</p>
+          </a>
+          <a href="/merach-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">Merach Treadmills</div>
+            <p class="c-blurb">The W50 TrekPad, W60 Plus and T12 range, with warranty and conflicting figures.</p>
+          </a>
+          <a href="/what-is-12-incline-on-a-treadmill/" class="card">
+            <div class="c-kicker">Explainer</div>
+            <div class="c-title">What Is 12% Incline on a Treadmill?</div>
+            <p class="c-blurb">Percent versus degrees, climb per mile, and how hard it feels.</p>
+          </a>
+          <a href="/best-walking-pads/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Walking Pads</div>
+            <p class="c-blurb">Better-supported walking pads for daily desk walking.</p>
+          </a>
+          <a href="/wellfit-tm037-treadmill/" class="card">
+            <div class="c-kicker">Model Review</div>
+            <div class="c-title">Wellfit TM037 Review</div>
+            <p class="c-blurb">Another budget two-in-one pad, read claim by claim.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>

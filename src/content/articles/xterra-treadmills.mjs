@@ -235,7 +235,7 @@ export default {
       html: `          <p>
             "XTERRA TR95H Hiker treadmill" is one of the most searched XTERRA terms, and the machine is
             different from the rest of the range. It is a walking treadmill with a built-in standing desktop
-            and two modes. In XTERRA's running mode, speed runs from 0.5 to 7.5 mph at incline levels 0 to 15;
+            and two modes. In XTERRA's running mode, speed runs from 0.5 to 7.5 mph at <a href="/what-is-12-incline-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>incline levels</a> 0 to 15;
             in climbing mode, speed is limited to 0.5 to 3.7 mph and incline runs from level 15 to level 40.
             That design — a slow, very steep climbing mode — is aimed at hikers training for elevation and at
             people who want an <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline-trainer</a>

@@ -107,6 +107,13 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-for-running/',
           },
           {
+            title: 'Best Budget Treadmills for Running',
+            description:
+              'Six treadmills under $800 with the belt, speed and motor to carry a runner, from a $370 10 mph pick to the Horizon T101.',
+            badge: 'Under $800',
+            url: '/best-budget-treadmills-for-running/',
+          },
+          {
             title: 'Best Treadmills for Tall Runners',
             description:
               'Usable deck length, not just the quoted belt size, plus the ceiling height nobody checks before buying.',
@@ -365,6 +372,20 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-with-decline/',
           },
           {
+            title: 'Best Treadmills for Hiking',
+            description:
+              'Incline and decline machines for trail and mountain prep, with a weighted-pack workout.',
+            badge: 'Hiking',
+            url: '/best-treadmills-for-hiking/',
+          },
+          {
+            title: 'Best Folding Treadmills With Incline',
+            description:
+              'Six treadmills that climb up to 18% and still fold, from a $220 manual-incline model to a NordicTrack with decline.',
+            badge: 'Fold + incline',
+            url: '/best-folding-treadmills-with-incline/',
+          },
+          {
             title: 'Treadmills With the Highest Incline',
             description:
               'Machines ranked by maximum grade, from 15% folders to 40% incline trainers, with degrees explained.',
@@ -465,6 +486,13 @@ export const SECTIONS: Section[] = [
             description: "A 14 mph motorised treadmill, an interval pick and three curved trainers with no speed limit.",
             badge: "Sprinting",
             url: '/best-treadmills-for-sprinting/',
+          },
+          {
+            title: 'Best Fast Treadmills',
+            description:
+              'Six treadmills from 12 to 15.6 mph, with belt length and motor for each, from the Sole F83 to a 15.5 mph STEPR.',
+            badge: '12-15 mph',
+            url: '/best-fast-treadmills/',
           },
           {
             title: 'Best Manual Treadmills',
@@ -574,6 +602,13 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-under-500/',
           },
           {
+            title: 'Best Treadmills Under $600',
+            description:
+              'Five real treadmills (not walking pads) from $552 to $590: 18-20 in. belts, up to 400 lb, picked for walking and jogging.',
+            badge: 'Under $600',
+            url: '/best-treadmills-under-600/',
+          },
+          {
             title: 'Best Treadmills Under $800',
             description:
               'The first tier worth buying. Deck, motor, frame and warranty all cross thresholds here.',
@@ -650,6 +685,34 @@ export const SECTIONS: Section[] = [
               'Typical US prices from walking pads to gym machines, what each tier buys, and the costs after checkout.',
             badge: 'Price tiers',
             url: '/how-much-does-a-treadmill-cost/',
+          },
+          {
+            title: 'How Much Does a NordicTrack Treadmill Cost?',
+            description:
+              'Every model\'s list and Black Friday price, plus the iFIT membership over three and five years.',
+            badge: 'NordicTrack',
+            url: '/how-much-does-a-nordictrack-treadmill-cost/',
+          },
+          {
+            title: 'How Much Is a Peloton Treadmill?',
+            description:
+              'Every Tread\'s list and Black Friday price, the $299 Tread+ assembly, and All-Access over three and five years.',
+            badge: 'Peloton',
+            url: '/how-much-does-a-peloton-tread-cost/',
+          },
+          {
+            title: 'How Much Does a Walking Pad Cost?',
+            description:
+              'Prices by type, from $130 flat pads to $800 handrail pads, what more money buys, and the costs after checkout.',
+            badge: 'Walking pads',
+            url: '/how-much-does-a-walking-pad-cost/',
+          },
+          {
+            title: 'How Much Does a Commercial Treadmill Cost?',
+            description:
+              'Dated new prices by gym brand, remanufactured prices, leasing, delivery and service costs.',
+            badge: 'Commercial',
+            url: '/how-much-does-a-commercial-treadmill-cost/',
           },
           {
             title: 'Cheap vs. Premium Treadmill',
@@ -1287,6 +1350,41 @@ export const SECTIONS: Section[] = [
               'The self-folding PowerTouch range: TM4500 discontinued, TM4000C, TM6500 at Costco, and a 1-year warranty.',
             badge: 'PowerTouch',
             url: '/lifesmart-treadmills/',
+          },
+          {
+            title: 'Merach Treadmills',
+            description:
+              'W50 TrekPad and W60 Plus incline walking pads and four T12 folding treadmills under $600, compared, with the 1+1-year warranty.',
+            badge: 'Walking pads',
+            url: '/merach-treadmills/',
+          },
+          {
+            title: 'LONTEK Walking Pads',
+            description:
+              'Which LONTEK is 15% and which is 32%, set by hand, plus the 1-year warranty and the seller.',
+            badge: 'Amazon brand',
+            url: '/lontek-walking-pad/',
+          },
+          {
+            title: 'THERUN Treadmills',
+            description:
+              'An Amazon budget brand: walking pads from about $80, TR06 incline treadmills under $300, a 20% runner at $800, one-year warranty.',
+            badge: 'Amazon only',
+            url: '/therun-treadmills/',
+          },
+          {
+            title: 'AKLUER Treadmills',
+            description:
+              'Is AKLUER legit? Seven Amazon models from about $70 to $360, their sellers, and the 1-year warranty you must activate.',
+            badge: 'Amazon walking pads',
+            url: '/akluer-treadmills/',
+          },
+          {
+            title: 'Superun Treadmills',
+            description:
+              'Amazon walking pads from about $94, a 12-month warranty, and which listing figures disagree.',
+            badge: 'Budget walking pads',
+            url: '/superun-treadmills/',
           },
           {
             title: 'Centr Treadmills',
@@ -2212,6 +2310,13 @@ export const SECTIONS: Section[] = [
             url: '/how-to-connect-apple-watch-to-treadmill/',
           },
           {
+            title: 'Apple Watch on a Planet Fitness Treadmill',
+            description:
+              'Which club consoles support GymKit, the 4-step tap, the PF app and Apple Health, and fixing a tap that won\'t connect.',
+            badge: 'How-to',
+            url: '/how-to-connect-apple-watch-to-planet-fitness-treadmill/',
+          },
+          {
             title: 'Smart Treadmill vs. Regular',
             description:
               'Touchscreens, auto-adjust, subscriptions and Bluetooth apps: what a smart treadmill adds and costs.',
@@ -2550,6 +2655,13 @@ export const SECTIONS: Section[] = [
             url: '/how-to-reset-nordictrack-treadmill/',
           },
           {
+            title: 'How to Turn On a NordicTrack Treadmill',
+            description:
+              'The power switch by the cord, the safety key, demo mode, touchscreen setup and activation.',
+            badge: 'NordicTrack',
+            url: '/how-to-turn-on-a-nordictrack-treadmill/',
+          },
+          {
             title: 'Turns On but the Belt Won’t Move',
             description:
               'Silence, a hum, a click or a free-spinning motor — each points somewhere different.',
@@ -2597,6 +2709,27 @@ export const SECTIONS: Section[] = [
               'Safety key and reset breaker, speed or incline changing by itself, frozen iFIT screens, belt and decline faults.',
             badge: 'NordicTrack',
             url: '/nordictrack-treadmill-troubleshooting/',
+          },
+          {
+            title: 'Horizon Treadmill Troubleshooting',
+            description:
+              'Safety key and dashes, the dedicated-circuit rule, belt tension and centring, LUBE BELT resets and Horizon support.',
+            badge: 'Horizon',
+            url: '/horizon-treadmill-troubleshooting/',
+          },
+          {
+            title: 'Sole Treadmill Troubleshooting',
+            description:
+              'Safety key and front breaker, the 90-hour lube, belt tension and tracking, error codes and calling Sole.',
+            badge: 'Sole',
+            url: '/sole-treadmill-troubleshooting/',
+          },
+          {
+            title: 'Bowflex Treadmill Troubleshooting',
+            description:
+              'SAFETY KEY OFF, the no-GFCI outlet rule, belt tension and centring, LUBE BELT resets, JRNY and Bowflex support.',
+            badge: 'Bowflex',
+            url: '/bowflex-treadmill-troubleshooting/',
           },
           {
             title: 'Treadmill Water Damage',
@@ -2952,6 +3085,20 @@ export const SECTIONS: Section[] = [
             url: '/treadmill-repair-near-me/',
           },
           {
+            title: 'NordicTrack Treadmill Repair',
+            description:
+              'Warranty claims through iFIT, out-of-warranty options, parts by model number and what common repairs cost.',
+            badge: 'NordicTrack',
+            url: '/nordictrack-treadmill-repair/',
+          },
+          {
+            title: 'ProForm Treadmill Repair',
+            description:
+              'Warranty claims through iFIT, service plans, parts by model number and what common repairs cost.',
+            badge: 'ProForm',
+            url: '/proform-treadmill-repair/',
+          },
+          {
             title: 'Treadmill Parts: Where to Buy',
             description:
               'How to find your model and serial number, OEM against aftermarket, each brand\'s parts route, and when a part isn\'t worth buying.',
@@ -2997,6 +3144,13 @@ export const SECTIONS: Section[] = [
               'Taking one apart for a move or disposal: tools, the order to work in, the console harness and reassembly.',
             badge: 'Disassembly',
             url: '/how-to-disassemble-a-treadmill/',
+          },
+          {
+            title: 'How to Take Apart a NordicTrack Treadmill',
+            description:
+              'Incline, power and latch first, then console and uprights, from NordicTrack\'s own manuals.',
+            badge: 'NordicTrack',
+            url: '/how-to-take-apart-a-nordictrack-treadmill/',
           },
           {
             title: 'How to Pack a Treadmill',
@@ -3103,6 +3257,13 @@ export const SECTIONS: Section[] = [
               'What the incline-walking protocol demands, a four-week build-up, and which machines reach 12%.',
             badge: 'Incline',
             url: '/12-3-30-treadmill-workout/',
+          },
+          {
+            title: 'What Is 12 Incline on a Treadmill?',
+            description:
+              '12% is 6.8 degrees and about 630 feet of climb per mile: what it looks like, how hard it is, and 10% vs 15%.',
+            badge: 'Incline',
+            url: '/what-is-12-incline-on-a-treadmill/',
           },
           {
             title: 'What Incline Should I Walk On?',
@@ -3255,6 +3416,13 @@ export const SECTIONS: Section[] = [
             url: '/treadmill-pace-and-speed-chart/',
           },
           {
+            title: 'What Speed Is a 10-Minute Mile?',
+            description:
+              '6.0 mph, plus 8-, 9- and 12-minute miles, km/h settings and 5K/10K times.',
+            badge: 'Running pace',
+            url: '/what-speed-is-a-10-minute-mile-on-a-treadmill/',
+          },
+          {
             title: 'Treadmill Heart Rate Zones',
             description:
               'How the five zones work, why 220-minus-age misleads, and why grip sensors are the wrong instrument.',
@@ -3267,6 +3435,20 @@ export const SECTIONS: Section[] = [
               'What the exercise ECG looks for, how the Bruce protocol runs, how long it takes and how to prepare.',
             badge: 'Explainer',
             url: '/treadmill-stress-test/',
+          },
+          {
+            title: 'How Much Does a Treadmill Stress Test Cost?',
+            description:
+              'Cash prices, Medicare\'s 2026 rate and insurance, for exercise, echo and nuclear stress tests.',
+            badge: 'Cost',
+            url: '/how-much-does-a-treadmill-stress-test-cost/',
+          },
+          {
+            title: 'Stress Test Time by Age',
+            description:
+              'Average Bruce protocol times and METs by age and sex, and how the Duke Treadmill Score is calculated.',
+            badge: 'Norms',
+            url: '/average-time-on-treadmill-stress-test-by-age/',
           },
           {
             title: 'Are Treadmill Calories Accurate?',
@@ -3295,6 +3477,13 @@ export const SECTIONS: Section[] = [
               'Steps per mile walking vs. running, with the stride arithmetic and a two-minute way to count your own.',
             badge: 'Steps',
             url: '/how-many-steps-in-a-mile-on-a-treadmill/',
+          },
+          {
+            title: 'How Many Steps in 30 Minutes?',
+            description:
+              'About 2,900 steps at 2 mph to 3,900 at 4 mph, by speed and height, from walking-cadence research.',
+            badge: 'Steps',
+            url: '/how-many-steps-on-a-treadmill-in-30-minutes/',
           },
           {
             title: 'Make Treadmill Running Less Boring',

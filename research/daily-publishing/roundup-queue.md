@@ -22,20 +22,20 @@ Format: `slug` — Title — hub → group — Amazon search to start from
 ## Next (alternating feature roundup / Amazon brand page; "best" roundups convert at 21% CTR, incline/decline at 24.5%)
 
 - [x] 2026-11-20 · `best-treadmills-with-kinomap` — Best Treadmills With Kinomap (2026): 6 Picks, No iFIT Needed — /best/ → features group — "treadmill kinomap"
-- [ ] `merach-treadmills` — MERACH Treadmill Reviews (2026): Is MERACH a Good Brand? — /brands/ → Cross-shopped alternatives group — "MERACH treadmill"
+- [x] 2026-11-21 · `merach-treadmills` — MERACH Treadmill Reviews (2026): Is MERACH a Good Brand? — /brands/ → Cross-shopped alternatives group — "MERACH treadmill"
 - [ ] `best-treadmills-for-peloton-app` — Best Treadmills for the Peloton App (2026): 6 Without a Tread — /best/ → features group — "treadmill bluetooth app"
-- [ ] `superun-treadmills` — Superun Treadmill Reviews (2026): Walking Pads, Specs, Warranty — /brands/ → Cross-shopped alternatives group — "Superun walking pad"
+- [x] 2026-11-21 · `superun-treadmills` — Superun Treadmill Reviews (2026): Walking Pads, Specs, Warranty — /brands/ → Cross-shopped alternatives group — "Superun walking pad"
 - [ ] `best-treadmills-with-long-warranty` — Best Treadmills With the Longest Warranty (2026): 6 Picks — /best/ → features group — "treadmill lifetime warranty" (use makers' warranty pages for terms)
-- [ ] `therun-treadmills` — THERUN Treadmill Reviews (2026): Is THERUN Legit? — /brands/ → Cross-shopped alternatives group — "THERUN treadmill"
+- [x] 2026-11-21 · `therun-treadmills` — THERUN Treadmill Reviews (2026): Is THERUN Legit? — /brands/ → Cross-shopped alternatives group — "THERUN treadmill"
 - [ ] `best-treadmills-with-heart-rate-monitor` — Best Treadmills With Heart Rate Monitors (2026): Chest Strap Picks — /best/ → features group — "treadmill heart rate chest strap"
-- [ ] `akluer-treadmills` — AKLUER Treadmill Reviews (2026): Models and What to Check — /brands/ → Cross-shopped alternatives group — "AKLUER treadmill"
-- [ ] `best-fast-treadmills` — Best Fast Treadmills (2026): 12 mph and Up for Sprinters — /best/ → features group — "treadmill 12 mph"
-- [ ] `lontek-walking-pad` — LONTEK Walking Pad Review (2026): 15%/32% Incline Checked — /brands/ → Cross-shopped alternatives group — "LONTEK walking pad"
-- [ ] `best-folding-treadmills-with-incline` — Best Folding Treadmills With Incline (2026): 6 Picks — /best/ → folding group — "folding treadmill incline" (check /best-auto-incline-treadmills/ first)
+- [x] 2026-11-21 · `akluer-treadmills` — AKLUER Treadmill Reviews (2026): Models and What to Check — /brands/ → Cross-shopped alternatives group — "AKLUER treadmill"
+- [x] 2026-11-21 · `best-fast-treadmills` — Best Fast Treadmills (2026): 12 mph and Up for Sprinters — /best/ → features group — "treadmill 12 mph"
+- [x] 2026-11-21 · `lontek-walking-pad` — LONTEK Walking Pad Review (2026): 15%/32% Incline Checked — /brands/ → Cross-shopped alternatives group — "LONTEK walking pad"
+- [x] 2026-11-21 · `best-folding-treadmills-with-incline` — Best Folding Treadmills With Incline (2026): 6 Picks — /best/ → folding group — "folding treadmill incline" (check /best-auto-incline-treadmills/ first)
 - [ ] `cybergoing-walking-pad` — Cybergoing Walking Pad Review (2026): The Bosch-Motor T10 — /brands/ → Cross-shopped alternatives group — "Cybergoing walking pad"
 - [ ] `best-treadmills-with-60-inch-deck` — Best Treadmills With a 60-Inch Deck (2026): Room to Run — /best/ → features group — "treadmill 22 x 60"
 - [ ] `best-treadmills-for-short-people` — Best Treadmills for Short People (2026): Low Step-Up Picks — /best/ → use-case group — "treadmill low deck" (needs step-up heights from maker pages; skip if unavailable)
-- [ ] `best-treadmills-under-600` — Best Treadmills Under $600 (2026): 6 Picks With Real Motors — /price/ → budget group — "treadmill"
+- [x] 2026-11-21 · `best-treadmills-under-600` — Best Treadmills Under $600 (2026): 6 Picks With Real Motors — /price/ → budget group — "treadmill"
 
 ## Parked: accessories (no click evidence in the Nov 13-20 keyword report; do not write unless a future export shows accessory pages winning)
 

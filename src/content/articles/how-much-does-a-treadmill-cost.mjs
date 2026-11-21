@@ -1,3 +1,6 @@
+const th = 'text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4';
+const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
+
 export default {
   slug: 'how-much-does-a-treadmill-cost',
   title: 'How Much Does a Treadmill Cost? (2026): Prices by Type and Tier',
@@ -5,14 +8,15 @@ export default {
   crumbLabel: 'How Much Does a Treadmill Cost?',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-10-06',
   socialProof: '2.1k',
   h1: ['How Much Does', 'a Treadmill Cost?'],
   standfirst: `Anywhere from about $200 to well over $10,000, which is not a useful answer until you know what the money buys at each step. Here are the tiers, what changes between them, and the costs that arrive after checkout.`,
   ctas: [
     { label: 'Prices by Tier', href: '#price-tiers' },
+    { label: 'Cost by Type', href: '#cost-by-type' },
     { label: 'The Hidden Costs', href: '#hidden-costs' },
   ],
   tags: [
@@ -96,6 +100,62 @@ export default {
           </p>`,
     },
     {
+      id: 'cost-by-type',
+      heading: 'Treadmill Cost by Type',
+      html: `          <p>
+            Price tiers describe how well a machine is built. Type describes what kind of machine it
+            is, and many searches start there instead: how much is a walking pad, a folding
+            treadmill, an incline trainer, a curved treadmill. The table puts the main types side by
+            side. The figures are typical US ranges for new machines and are consistent with the
+            tiers above; individual models, sales and seller terms will put some machines outside
+            them.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Type</th>
+                <th class="${th}">Typical new price</th>
+                <th class="${th}">Built for</th>
+                <th class="${th}">What pushes the price up</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">Flat manual (non-motorized)</td><td class="${td}">about $100-$300</td><td class="${td}">Light walking where there is no outlet</td><td class="${td}">Little; these are simple machines with limited ceilings</td></tr>
+              <tr><td class="${td}">Walking pad</td><td class="${td}">about $200-$600</td><td class="${td}">Walking, often under a desk</td><td class="${td}">Longer deck, handrail, quieter motor, incline</td></tr>
+              <tr><td class="${td}">Budget folding treadmill</td><td class="${td}">about $400-$900</td><td class="${td}">Walking and light jogging</td><td class="${td}">Deck length, powered incline, longer parts warranty</td></tr>
+              <tr><td class="${td}">Mid-range folding treadmill</td><td class="${td}">about $1,000-$2,000</td><td class="${td}">Regular running</td><td class="${td}">Continuous-duty motor, 60-inch deck, hydraulic fold</td></tr>
+              <tr><td class="${td}">Non-folding home treadmill</td><td class="${td}">about $1,500-$4,000</td><td class="${td}">Heavy use, taller and heavier runners</td><td class="${td}">Heavier frame, larger rollers, AC motor at the top end</td></tr>
+              <tr><td class="${td}">Incline trainer</td><td class="${td}">about $2,000-$3,500</td><td class="${td}">Steep incline walking and hiking</td><td class="${td}">Lift system and frame able to hold a 30-40% grade</td></tr>
+              <tr><td class="${td}">Curved manual treadmill</td><td class="${td}">about $1,600-$4,500+</td><td class="${td}">Sprints and intervals</td><td class="${td}">Slat belt, bearing system, commercial build</td></tr>
+              <tr><td class="${td}">Commercial treadmill</td><td class="${td}">about $4,000-$10,000+</td><td class="${td}">Gyms and multi-user homes</td><td class="${td}">AC motor, heavy steel, service network</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Two rows deserve a note. <strong>Incline trainers</strong> carry a premium over a
+            standard treadmill with the same motor and deck, because the deck has to be lifted and
+            held at a far steeper angle. As one example, NordicTrack's X16 was listed at $2,799 on
+            NordicTrack's own site against a $3,499 list price, and at $2,499 to $2,699 at large US
+            retailers (checked November 2026). Our list of the
+            <a href="/best-incline-trainers/" class="text-[#0F62FE] font-medium">best incline trainers</a>
+            covers the type, including cheaper machines that reach a steep grade with fewer refinements.
+          </p>
+          <p>
+            <strong>Curved manual treadmills</strong> have no motor, yet cost more than most
+            motorized home machines. The home-focused curved models in our roundup were listed at
+            roughly $1,600 to $2,600 in October and November 2026, while gym-grade slat-belt
+            machines sat around $4,500 and above. The
+            <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>
+            guide shows what the spread buys. Do not confuse them with flat manual treadmills at the
+            other end of the table: the shared lack of a motor is the only thing the two have in common.
+          </p>
+          <p>
+            Folding versus non-folding is less about price than it looks. At the same price, a fold
+            usually costs some stability, deck or motor, because the hinge and lift mechanism take
+            budget that would otherwise go into the frame. A non-folding machine at $1,500 is often a
+            sturdier treadmill than a folding one at the same figure.
+          </p>`,
+    },
+    {
       id: 'picks-by-tier',
       heading: 'Our Pick at Each Price Tier',
       products: true,
@@ -124,6 +184,8 @@ export default {
             steady walking, often under a standing desk — they can be good value. What you are
             buying is a compact deck, a small motor and a slim profile that slides under a sofa
             or bed.
+          For prices by type, from budget flat pads to incline and handrail models, see
+            <a href="/how-much-does-a-walking-pad-cost/" class="text-[#0F62FE] font-medium">how much a walking pad costs</a>.
           </p>
           <p>
             What you are not buying is a running machine. Most cap out around 4 mph, some fold up
@@ -233,7 +295,8 @@ export default {
             wants a machine that will outlast them. A used or refurbished commercial unit can make
             sense here, which we cover below. Our
             <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills guide</a>
-            explains what the commercial label actually guarantees.
+            explains what the commercial label actually guarantees, and for dated prices by brand, from remanufactured gym units to new club machines, see
+            <a href="/how-much-does-a-commercial-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a commercial treadmill costs</a>.
           </p>
           <p>
             <strong>Curved non-motorized treadmills</strong> have no motor at all: you push a slatted,
@@ -271,6 +334,49 @@ export default {
           </p>`,
     },
     {
+      id: 'by-brand',
+      heading: 'Treadmill Prices by Brand',
+      html: `          <p>
+            Brands cluster in recognisable price bands, which makes the brand name a useful first
+            filter. It is only a filter: most brands sell across more than one tier, and a company's
+            cheapest model is often a weaker machine than a competitor's mid-range one at the same
+            price. The table groups familiar names by where most of their home range sits, with the
+            prices of the picks on this page as anchors.
+          For every NordicTrack model priced with its iFIT membership over three and five years, see
+            <a href="/how-much-does-a-nordictrack-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a NordicTrack treadmill costs</a>.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Brand group</th>
+                <th class="${th}">Examples</th>
+                <th class="${th}">Where most models sit</th>
+                <th class="${th}">Anchor from this page</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">Walking pad and online-first brands</td><td class="${td}">WalkingPad, Sunny Health &amp; Fitness and many marketplace brands</td><td class="${td}">Under $1,000, mostly under $600</td><td class="${td}">WalkingPad Z1R, about $359</td></tr>
+              <tr><td class="${td}">Mainstream home brands</td><td class="${td}">Horizon, SOLE, ProForm, NordicTrack, Bowflex</td><td class="${td}">About $800-$2,500</td><td class="${td}">Horizon T202 around $899; SOLE F63 $1,100-$1,200</td></tr>
+              <tr><td class="${td}">Connected premium</td><td class="${td}">Peloton, NordicTrack's upper Commercial and X series</td><td class="${td}">About $2,000-$4,000, plus a membership</td><td class="${td}">NordicTrack Commercial 1750, $1,799-$2,299</td></tr>
+              <tr><td class="${td}">Commercial brands</td><td class="${td}">Life Fitness, Matrix, Precor, Woodway</td><td class="${td}">About $3,500 for home lines; gym units far higher</td><td class="${td}">Life Fitness T3, $3,499-$3,999</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Two things make brand comparisons misleading. The first is list prices. Some brands sell
+            close to their list price; others publish a high list price and are almost always on
+            promotion, so a "$1,000 off" banner may describe a normal week. Compare the price you
+            would actually pay, delivered, rather than the discount.
+          </p>
+          <p>
+            The second is what the brand bundles. Connected brands build part of the cost into a
+            monthly membership, while mainstream and commercial brands mostly sell the machine on its
+            own, with an optional or free app. The warranty also differs more between brands than
+            the spec sheets do: a lifetime frame and motor warranty is common across the mainstream
+            group, but parts and labour cover ranges from one year to several, and that is often
+            the real difference between two machines a couple of hundred dollars apart.
+          </p>`,
+    },
+    {
       id: 'hidden-costs',
       heading: 'The Hidden Costs Beyond the Sticker Price',
       html: `          <p>
@@ -280,8 +386,9 @@ export default {
           <p>
             <strong>Delivery and assembly.</strong> Many online sellers deliver curbside only,
             leaving a box that can weigh well over 200 lb at your door. Room-of-choice delivery
-            and professional assembly are often extras, commonly in the region of $150 to $300
-            together. Specialty dealers more often include both in the price, which narrows the
+            and professional assembly are often extras: full white-glove delivery with assembly
+            commonly adds $150 to $400 above curbside (see our
+            <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a>). Specialty dealers more often include both in the price, which narrows the
             gap with an online deal more than it first appears.
           </p>
           <p>
@@ -313,6 +420,69 @@ export default {
             <strong>Extended warranties.</strong> Often offered at checkout. On a machine that
             already carries a long manufacturer warranty they rarely add much; on a budget machine
             with a one-year parts warranty they can be worth reading, but read what they exclude.
+          </p>
+          <p>
+            <strong>A surge protector.</strong> Treadmill control boards are sensitive to power
+            spikes, and many manuals specify a dedicated outlet and, where a protector is used, a
+            single-outlet unit rather than a power strip. A suitable one costs from under $20 for a
+            basic single-outlet model to around $100 for a heavier-duty unit, which is small next to
+            the price of a replacement board.
+          </p>
+          <p>
+            Added up, a typical first-year budget on top of the sticker price is modest for a
+            machine without a subscription: a mat, a surge protector and a bottle of lubricant come
+            to roughly $70 to $220, plus delivery and assembly if they are not included. A
+            subscription is the line that can change the total entirely.
+          </p>`,
+    },
+    {
+      id: 'cost-per-year',
+      heading: 'What a Treadmill Costs per Year of Ownership',
+      html: `          <p>
+            The sticker price tells you what a treadmill costs today. Dividing it by the years the
+            machine will last tells you what it costs to own, and that number is often more useful
+            when you are choosing between tiers. The lifespans below are the typical ranges from our
+            guide to
+            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>,
+            and the prices are example figures from within each tier. Treat the results as
+            illustrations, not quotes.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Tier (example price)</th>
+                <th class="${th}">Typical life, maintained</th>
+                <th class="${th}">Cost per year, maintained</th>
+                <th class="${th}">Typical life, neglected</th>
+                <th class="${th}">Cost per year, neglected</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">Walking pad ($400)</td><td class="${td}">3-5 years</td><td class="${td}">about $80-$135</td><td class="${td}">2-3 years</td><td class="${td}">about $135-$200</td></tr>
+              <tr><td class="${td}">Budget folding ($600)</td><td class="${td}">5-8 years</td><td class="${td}">about $75-$120</td><td class="${td}">2-4 years</td><td class="${td}">about $150-$300</td></tr>
+              <tr><td class="${td}">Mid-range ($1,200)</td><td class="${td}">8-12 years</td><td class="${td}">about $100-$150</td><td class="${td}">4-6 years</td><td class="${td}">about $200-$300</td></tr>
+              <tr><td class="${td}">Premium ($2,200)</td><td class="${td}">10-15 years</td><td class="${td}">about $145-$220</td><td class="${td}">5-8 years</td><td class="${td}">about $275-$440</td></tr>
+              <tr><td class="${td}">Commercial ($5,000)</td><td class="${td}">15-20 years</td><td class="${td}">about $250-$335</td><td class="${td}">8-12 years</td><td class="${td}">about $415-$625</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Two lessons come out of the arithmetic. First, maintenance matters more than tier: a
+            maintained budget machine and a maintained mid-range machine cost about the same per
+            year, while neglect roughly doubles the yearly cost at every level. Routine upkeep, at
+            roughly $15 to $40 a year, is the cheapest way to lower the figure.
+          </p>
+          <p>
+            Second, the lifespans assume the machine is used for what it was built for. A budget
+            folding treadmill used for gentle walking can reach the maintained column; the same
+            machine used for regular running tends to behave like the neglected one, because its
+            motor and deck are working beyond their design. That is why a runner usually pays less
+            per year in the mid-range, and a walker usually pays less per year at the budget end or
+            with a walking pad. A commercial machine only pays back its higher yearly cost when
+            several people use it heavily.
+          </p>
+          <p>
+            Add any subscription on top. A $40 monthly membership is $480 a year, which is more than
+            the yearly hardware cost of every tier in the table except a neglected commercial machine.
           </p>`,
     },
     {
@@ -340,6 +510,33 @@ export default {
             and the
             <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a>
             cover what to inspect before you hand over cash.
+          </p>
+          <p>
+            Used is not one price point but several, depending on who is selling and what they
+            stand behind. As typical ranges:
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">How it is sold</th>
+                <th class="${th}">Typical price</th>
+                <th class="${th}">What you usually get</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">Open box</td><td class="${td}">about 10-25% below the current new price</td><td class="${td}">An unused or barely used machine, usually with the full warranty</td></tr>
+              <tr><td class="${td}">Manufacturer refurbished</td><td class="${td}">about 20-40% below new</td><td class="${td}">Inspected and repaired by the maker, with a written but often shorter warranty</td></tr>
+              <tr><td class="${td}">Dealer-refurbished ex-commercial</td><td class="${td}">about 40-70% below original cost</td><td class="${td}">A gym machine with replaced wear parts and a dealer warranty</td></tr>
+              <tr><td class="${td}">Private sale, about 2 years old</td><td class="${td}">roughly half the original price</td><td class="${td}">No warranty in most cases; you collect and move it</td></tr>
+              <tr><td class="${td}">Private sale, 3-5 years old</td><td class="${td}">roughly a third of the original price</td><td class="${td}">The frame and motor, and whatever life is left in the belt and deck</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Compare any of these against a new machine on sale, not against its list price. A
+            refurbished machine is a bargain only when the saving survives that comparison and
+            comes with a written warranty and a list of the parts replaced; our guide to
+            <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills</a>
+            covers who sells them and what to ask.
           </p>`,
     },
     {
@@ -384,7 +581,11 @@ export default {
             new-year rush, when demand has peaked and retailers are clearing stock. Our guide to
             the
             <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a>
-            goes through the calendar.
+            goes through the calendar. Black Friday and Cyber Monday are usually the biggest single
+            discount window of the year for treadmills, and we track the current offers in our
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">treadmill Black Friday deals</a>
+            roundup; check a deal price against the price the same machine has sold for in recent
+            months, since a large discount from an inflated list price is not a saving.
           </p>
           <p>
             Beyond timing, compare the full delivered-and-assembled price rather than the sticker,
@@ -394,6 +595,44 @@ export default {
             you are hoping to pay with health-account money, read
             <a href="/are-treadmills-hsa-fsa-eligible/" class="text-[#0F62FE] font-medium">are treadmills HSA or FSA eligible</a>
             first: the retailer label does not decide it.
+          </p>`,
+    },
+    {
+      id: 'financing',
+      heading: 'How Much Does a Treadmill Cost per Month?',
+      html: `          <p>
+            Many treadmills are now advertised with a monthly figure rather than a price, through
+            0% financing, buy-now-pay-later plans or bundles that roll the machine and a membership
+            into one payment. A monthly price is not a different price, but it can hide one, so it
+            is worth knowing how each kind of plan works before you compare.
+          </p>
+          <p>
+            <strong>True 0% plans</strong> are the simplest. A $1,200 treadmill on a 12-month 0%
+            plan is $100 a month, and after twelve payments you have paid $1,200. If you would buy
+            the machine outright anyway and the plan really charges nothing, spreading the cost is
+            reasonable.
+          </p>
+          <p>
+            <strong>Deferred-interest plans</strong> look identical in the advert but behave very
+            differently. If any balance remains when the promotional period ends, interest can be
+            charged back to the date of purchase on the whole original amount, not just on what is
+            left. A small shortfall at the end can therefore cost hundreds of dollars. Read whether
+            a plan says "no interest" or "no interest if paid in full", because the second wording
+            usually means deferred interest.
+          </p>
+          <p>
+            <strong>Bundles</strong> are the hardest to compare. A plan presented as $100 a month
+            might be $60 for the machine over 36 months plus a $40 membership: $2,160 for the
+            treadmill and $1,440 for the membership, or $3,600 over three years, and the membership
+            does not stop when the machine is paid off. Split any bundle into its two parts and
+            compare the machine part with the cash price of competing treadmills.
+          </p>
+          <p>
+            The practical rule is to decide what the treadmill is worth to you as a cash price
+            first, and only then look at how to pay for it. Our guide to
+            <a href="/treadmill-financing/" class="text-[#0F62FE] font-medium">treadmill financing</a>
+            walks through each type of plan, the credit implications and the questions to ask
+            before signing.
           </p>`,
     },
   ],
@@ -529,6 +768,18 @@ export default {
     {
       q: 'How much are used treadmills?',
       a: `As a typical pattern, a well-kept treadmill sells for roughly half its original price after about two years and roughly a third after three to five years. Used buying offers the best value in the mid-range and premium tiers; at the budget end the savings are small and the remaining life is short.`,
+    },
+    {
+      q: 'How much does an incline trainer cost?',
+      a: `Name-brand incline trainers that reach a 30 to 40 percent grade typically cost about $2,000 to $3,500 new. NordicTrack's X16, for example, was listed at $2,799 on NordicTrack's site and $2,499 to $2,699 at large US retailers in November 2026. Cheaper machines advertise steep incline too, but usually with a smaller motor, shorter deck and fewer refinements.`,
+    },
+    {
+      q: 'How much does it cost to own a treadmill per year?',
+      a: `Divide the price by the years it will last. A maintained $1,200 mid-range treadmill lasting 8 to 12 years works out to roughly $100 to $150 a year, plus about $15 to $40 of maintenance and a few dollars a month in electricity. Neglect roughly doubles the yearly figure, and a $40 monthly subscription adds $480 a year on its own.`,
+    },
+    {
+      q: 'Can you buy a treadmill on a monthly payment plan?',
+      a: `Yes. Many retailers and manufacturers offer 0% financing, buy-now-pay-later plans or bundles with a membership. A true 0% plan costs the same as paying cash, but deferred-interest plans can charge interest back to the purchase date if any balance remains, and bundles keep billing the membership after the machine is paid off.`,
     },
     {
       q: 'Are cheap treadmills worth it?',

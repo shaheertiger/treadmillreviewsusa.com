@@ -327,6 +327,12 @@ export default {
   relatedHeading: 'Related Brand &amp; Buying Guides',
   related: [
     {
+      kicker: 'Fixes',
+      title: 'Horizon Treadmill Troubleshooting',
+      blurb: 'Safety key, the dedicated-circuit rule, belt tension and the LUBE BELT message.',
+      url: '/horizon-treadmill-troubleshooting/',
+    },
+    {
       kicker: 'Cross-Shop',
       title: 'Sole Fitness Treadmills',
       blurb: 'The subscription-free reference point for any mid-market comparison.',
