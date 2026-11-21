@@ -41,7 +41,7 @@ export default {
             <strong>When a Sole treadmill is not working, check the safety key, the power switch
             and the circuit breaker on the front of the frame, the wall outlet, and the deck
             lubrication, in that order; most faults end there.</strong> Sole's service checklist
-            in its 2026 F80 owner's manual (checked November 2026) lists exactly those causes for
+            in its 2026 <a href="/sole-f80-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F80</a> owner's manual (checked November 2026) lists exactly those causes for
             a display that will not light, and lists high belt-to-deck friction, meaning a dry
             deck, as the cause of a belt that stops abruptly or a machine that trips its own
             breaker.
@@ -50,7 +50,7 @@ export default {
             <li><strong>Safety key in and seated.</strong> Sole's manual says the treadmill will
             not power on or run without it.</li>
             <li><strong>Breaker on the front grill pushed in</strong> until it locks, and the
-            power switch at the front, below the motor hood, switched on.</li>
+            <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a> at the front, below the motor hood, switched on.</li>
             <li><strong>Its own 120-volt, 15-amp grounded outlet</strong>, with nothing else on
             the circuit and no ordinary extension cord.</li>
             <li><strong>Deck lubricated every 90 hours or 90 days</strong>, with Sole's
@@ -109,7 +109,7 @@ export default {
             it. Pulling the key stops the belt with what the manual describes as a one to two step
             coast, depending on speed. On touchscreen consoles a message saying the safety key has
             been removed and the machine stopped appears, and putting the key back lets you carry
-            on. On the simpler LED consoles, Sole's 2026 F63 manual notes that removing the key is
+            on. On the simpler LED consoles, Sole's 2026 <a href="/sole-f63-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F63</a> manual notes that removing the key is
             similar to entering sleep mode, so a missing key can look exactly like a dead machine.
           </p>
           <p>
@@ -155,7 +155,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Resetting the console during or after a workout</h3>
           <p>
-            On the LED-console models, Sole's 2026 F63 manual and its 2020 F85 manual (both
+            On the LED-console models, Sole's 2026 F63 manual and its 2020 <a href="/sole-f85-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F85</a> manual (both
             checked November 2026) describe the Stop key as a three-stage control: press it once to
             pause, a second time to end the program and see the workout summary, and a third time
             to return to the start-up screen. Holding Stop down for more than three seconds resets
@@ -250,7 +250,7 @@ export default {
             lubricant. A dry deck makes the motor work harder at every footstrike, and a controller
             that protects itself by stopping is doing its job. Second, the communication and
             voltage codes are often cured by the outlet and a clean power cycle rather than a part.
-            The manual also says to check for a burning smell when the motor runs; if you notice
+            The manual also says to check for a <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium" data-autolink>burning smell</a> when the motor runs; if you notice
             one, stop and call Sole rather than resetting the code again.
           </p>
           <p>
@@ -435,7 +435,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The console shuts off when touched on a cold day</h3>
           <p>
-            Sole lists this one specifically: static electricity discharging through you into the
+            Sole lists this one specifically: <a href="/treadmill-static-shock/" class="text-[#0F62FE] font-medium" data-autolink>static electricity</a> discharging through you into the
             console can crash the computer if the treadmill is not grounded. The fix is a properly
             grounded outlet, as described in the grounding instructions at the front of the
             manual, not a new console. In very dry winter air an anti-static mat under the

@@ -212,7 +212,7 @@ export default {
             TrekPad.</li>
             <li><strong>Warranty:</strong> one year on the frame and parts, plus a second year for registered members,
             according to Merach's warranty page.</li>
-            <li><strong>Returns:</strong> 30 days on Merach's own store, in resellable condition and original packaging.</li>
+            <li><strong>Returns:</strong> 30 days on Merach's own store, in resellable condition and <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a>.</li>
           </ul>
           <p>
             Merach is one of several Amazon-era brands that publish more detail than most, including continuous motor
@@ -237,12 +237,12 @@ export default {
           <p>
             Treadmills are a small part of what it makes. On 21 November 2026 its US walking-pad and treadmill
             collection listed six machines, beside eleven rowing machines, eight exercise bikes, two vibration plates, a
-            Smith machine, benches, steppers and accessories. Every treadmill and pad on the list connects to the Merach
+            <a href="/best-smith-machines/" class="text-[#0F62FE] font-medium" data-autolink>Smith machine</a>, benches, steppers and accessories. Every treadmill and pad on the list connects to the Merach
             app for iOS and Android, according to its product pages.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Where Merach is sold</h3>
           <p>
-            In the US, Merach sells through its own store, Amazon, and marketplace listings at Best Buy, Walmart and
+            In the US, Merach sells through its own store, Amazon, and marketplace listings <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>at Best Buy</a>, Walmart and
             Newegg. Those channels do not always carry the same models. The W50 Lite, for example, appears on Amazon and
             Best Buy but not on Merach's US store, and older models such as the T19 2-in-1 have been reported as
             Amazon-only by a walking-pad comparison site. Where you buy matters for two reasons covered further down: Merach's 30-day return policy only
@@ -430,7 +430,7 @@ export default {
             true, depending on whether you register. Merach also links to a paid extended warranty program.
           </p>
           <p>
-            The page does not give separate terms for the motor, which many treadmill brands cover for longer than the
+            The page does not give separate terms for the motor, which many <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium" data-autolink>treadmill brands</a> cover for longer than the
             frame. Exclusions include normal wear on parts such as pulleys, unauthorised modification, damage from use in
             bad weather, noise caused by poor maintenance and damage from third-party products. Claims go through
             Merach's contact page with a proof of purchase, receipt or order number.
@@ -466,7 +466,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">It will not start, or stops on its own</h3>
           <p>
             Check the safety key or magnetic clip is seated, plug straight into a wall outlet rather than an extension
-            lead, and check the power switch. On walking pads that use a remote, replace the remote's battery and re-pair
+            lead, and check the <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a>. On walking pads that use a remote, replace the remote's battery and re-pair
             it, following the manual. A pad that starts or stops by itself is a fault to report under warranty rather
             than fix at home; one independent comparison notes owner reports of exactly that on the W50 Lite.
           </p>
@@ -502,7 +502,7 @@ export default {
           </p>
           <p>
             What Merach does well is publish more than most budget brands. A continuous motor rating, a stated belt size,
-            a capacity and a warranty with written terms are more than many walking pads on Amazon offer. Its pads'
+            a capacity and a warranty with written terms are more than many <a href="/best-walking-pads-on-amazon/" class="text-[#0F62FE] font-medium" data-autolink>walking pads on Amazon</a> offer. Its pads'
             41.3-inch belts and the T12's 15% incline are genuinely useful features at under $600. And a US phone line
             with stated hours is worth something when a 70 lb pad arrives damaged.
           </p>

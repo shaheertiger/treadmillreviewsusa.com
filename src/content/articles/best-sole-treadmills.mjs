@@ -483,6 +483,12 @@ export default {
   relatedHeading: 'Related Sole Guides',
   related: [
     {
+      kicker: 'Fixes',
+      title: 'Sole Treadmill Troubleshooting',
+      blurb: 'What to check when a Sole will not start, slips or shows an error code.',
+      url: '/sole-treadmill-troubleshooting/',
+    },
+    {
       kicker: 'The Brand',
       title: 'Sole Fitness Treadmills',
       blurb: 'How Sole builds, warrants and sells its treadmills.',

@@ -342,6 +342,8 @@ export default {
             cheapest model is often a weaker machine than a competitor's mid-range one at the same
             price. The table groups familiar names by where most of their home range sits, with the
             prices of the picks on this page as anchors.
+          For every NordicTrack model priced with its iFIT membership over three and five years, see
+            <a href="/how-much-does-a-nordictrack-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a NordicTrack treadmill costs</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead>

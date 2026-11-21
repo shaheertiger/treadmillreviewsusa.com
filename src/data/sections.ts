@@ -659,6 +659,13 @@ export const SECTIONS: Section[] = [
             url: '/how-much-does-a-treadmill-cost/',
           },
           {
+            title: 'How Much Does a NordicTrack Treadmill Cost?',
+            description:
+              'Every model\'s list and Black Friday price, plus the iFIT membership over three and five years.',
+            badge: 'NordicTrack',
+            url: '/how-much-does-a-nordictrack-treadmill-cost/',
+          },
+          {
             title: 'How Much Does a Walking Pad Cost?',
             description:
               'Prices by type, from $130 flat pads to $800 handrail pads, what more money buys, and the costs after checkout.',

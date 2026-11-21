@@ -109,7 +109,7 @@ export default {
             <li><strong>The outlet works.</strong> Plug a lamp into it.</li>
             <li><strong>The house breaker has not tripped.</strong> Reset it if it has.</li>
             <li><strong>The circuit is right.</strong> A dedicated 15-amp circuit, not a GFCI-equipped
-            outlet, and not a power strip, surge protector or extension cord.</li>
+            outlet, and not a power strip, <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium" data-autolink>surge protector</a> or extension cord.</li>
             <li><strong>The cord is sound</strong>, not pinched or damaged, and fully plugged in at the
             wall <em>and</em> at the machine.</li>
             <li><strong>The power switch is on.</strong></li>
@@ -166,7 +166,7 @@ export default {
             the treadmill every two weeks, and to remove it whenever the machine is not in use.</li>
           </ul>
           <p>
-            Do not bypass the key. Horizon’s deeper troubleshooting for this symptom tests the reed switch
+            Do not bypass the key. Horizon’s deeper troubleshooting for this symptom tests the <a href="/treadmill-speed-sensor/" class="text-[#0F62FE] font-medium" data-autolink>reed switch</a>
             the key acts on, which is service work rather than an owner fix. A treadmill that runs without
             a working key has lost the one control that stops the belt if you fall.
           </p>
@@ -187,8 +187,8 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The console reset</h3>
           <p>
             On the current T101, T202, 7.0 AT and 7.4 AT owner’s manuals, holding STOP for 3 seconds resets
-            the console, clearing a program or menu that seems stuck. Try it before reaching for the power
-            switch.
+            the console, clearing a program or menu that seems stuck. Try it before reaching for the <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power
+            switch</a>.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The power cycle</h3>
           <p>
@@ -222,7 +222,7 @@ export default {
       id: 'belt-wont-move',
       heading: 'Console Lit but the Belt Will Not Move, or Stops and Starts',
       html: `          <p>
-            Horizon’s article “Treadmill Belt Does Not Move or Moves Briefly” (checked November 2026)
+            Horizon’s article “Treadmill <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium" data-autolink>Belt Does Not Move</a> or Moves Briefly” (checked November 2026)
             starts, again, with power: the treadmill should be on a dedicated 15-amp circuit, not a GFCI
             outlet, and not on a power strip, surge protector or extension cord. Only then does it move on
             to the machine.
@@ -326,7 +326,7 @@ export default {
           </p>
           <p>
             A belt that still slips with correct tension and a lubricated deck is a worn belt, a glazed
-            drive belt or a worn deck. Horizon’s advice is to inspect the belt for curling, fraying, rips and
+            drive belt or a <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>worn deck</a>. Horizon’s advice is to inspect the belt for curling, fraying, rips and
             seam problems each time you lubricate. Our guide to a
             <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">treadmill belt that slips</a>
             explains why tightening is so often the wrong first move and when a belt is past adjusting.
@@ -477,7 +477,7 @@ export default {
             switched off, it looks for the last paired music device on the next power-up.
           </p>
           <p>
-            Watch tap-to-connect for Apple Watch and Galaxy Watch is listed for the 7.0 AT, and its steps
+            Watch tap-to-connect for <a href="/best-treadmills-for-apple-watch/" class="text-[#0F62FE] font-medium" data-autolink>Apple Watch</a> and Galaxy Watch is listed for the 7.0 AT, and its steps
             are in our start guide linked above. If you are still weighing up the range, our
             <a href="/horizon-fitness/" class="text-[#0F62FE] font-medium">Horizon Fitness brand guide</a>
             sets out which models have which connectivity.

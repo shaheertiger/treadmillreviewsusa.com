@@ -424,6 +424,18 @@ export default {
   relatedHeading: 'Related Fault Diagnosis Guides',
   related: [
     {
+      kicker: 'Fixes',
+      title: 'Sole Treadmill Troubleshooting',
+      blurb: 'Safety key and front breaker, the 90-hour lube, belt tracking and error codes.',
+      url: '/sole-treadmill-troubleshooting/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'Bowflex Treadmill Troubleshooting',
+      blurb: 'SAFETY KEY OFF, the no-GFCI outlet rule, belt tension and JRNY fixes.',
+      url: '/bowflex-treadmill-troubleshooting/',
+    },
+    {
       kicker: 'Reset',
       title: 'How to Reset a NordicTrack Treadmill',
       blurb: 'Turning it on in order, the reset breaker, and a safe console reset.',

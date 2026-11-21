@@ -200,7 +200,7 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Six machines, three kinds of hiker. The Aviron and the Sunny are climbing machines first;
-            the Sole and the NordicTrack are running treadmills with decline; the LifeSmart and the
+            the Sole and the NordicTrack are running treadmills with decline; the <a href="/lifesmart-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>LifeSmart</a> and the
             CURSOR are the budget routes, one to powered decline and one to a steep manual climb.
             If you are not sure the descent is worth paying for, read
             <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium">what treadmill decline is good for</a>
@@ -259,7 +259,7 @@ export default {
             Several machines nearly made the list. NordicTrack’s X-series incline trainers combine
             steep incline with decline, but on the day we last checked they were sold by NordicTrack
             and its retailers rather than on Amazon, and the Aviron covers the same ground. The
-            FreeMotion i11.9 incline trainer is listed on Amazon with 30% incline and decline, but
+            <a href="/freemotion-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>FreeMotion</a> i11.9 incline trainer is listed on Amazon with 30% incline and decline, but
             the listing does not state how much decline, the top speed, the user weight or the
             warranty, so we left it out.
           </p>`,
@@ -277,7 +277,7 @@ export default {
             treadmill: a trail that gains 1,000 feet in a mile averages about 19%, one that gains
             1,500 feet averages about 28%, and the steep sections of either will be steeper than the
             average. That is why 15% is a floor for hiking training rather than a target, and why
-            hikers preparing for big mountain days end up looking at incline trainers. Our list of
+            hikers preparing for big mountain days end up looking at <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>incline trainers</a>. Our list of
             <a href="/treadmills-with-the-highest-incline/" class="text-[#0F62FE] font-medium">treadmills with the highest incline</a>
             ranks machines on the climb alone. Note that percentages read steeper than degrees: 40%
             is about 22 degrees, and 45% about 24.
@@ -301,7 +301,7 @@ export default {
             <strong>Motor.</strong> Hiking is slow, but climbing steeply under load is a sustained,
             heavy job for a motor: the belt is carrying more weight against more resistance for long
             sessions. A higher continuous rating gives more headroom, and a long motor warranty is
-            the best sign of what the maker expects. Peak horsepower figures are not comparable with
+            the best sign of what the maker expects. <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium" data-autolink>Peak horsepower</a> figures are not comparable with
             continuous ones, which is why a couple of cards here leave the motor off.
           </p>
           <p>
@@ -424,8 +424,8 @@ export default {
           <p>
             <strong>What a stepper or stair machine does well.</strong> Stepping lifts your whole
             body weight with each step, which builds the strength and stamina for steep, stepped
-            sections of trail, rock steps and stair-like climbs. A compact stepper or vertical
-            climber costs far less than a powered incline treadmill and fits in a cupboard. Our
+            sections of trail, rock steps and stair-like climbs. A compact stepper or <a href="/best-vertical-climbers/" class="text-[#0F62FE] font-medium" data-autolink>vertical
+            climber</a> costs far less than a powered incline treadmill and fits in a cupboard. Our
             <a href="/stepper-buying-guide/" class="text-[#0F62FE] font-medium">stepper buying guide</a>
             compares the types, from mini steppers to full stair machines.
           </p>
@@ -484,7 +484,7 @@ export default {
           </p>
           <p>
             <strong>If you also want to run fast.</strong> The steepest machines here are walking
-            machines in practice. If running matters as much as hiking, the Sole TT8 or the
+            machines in practice. If running matters as much as hiking, the <a href="/sole-tt8-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Sole TT8</a> or the
             NordicTrack Commercial 1750 keeps a 12 mph top speed with decline, at the cost of a lower
             climb.
           </p>`,

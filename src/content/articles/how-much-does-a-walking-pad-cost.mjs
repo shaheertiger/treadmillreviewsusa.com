@@ -39,7 +39,7 @@ export default {
             <strong>Expect to pay about $130 to $250 for a basic flat walking pad, $250 to $450 for a
             longer, better-built one, and $230 to $800 for a pad with incline, a handrail or a
             fold-up running mode.</strong> Those ranges come from the prices the two biggest
-            direct-selling walking pad brands, WalkingPad and UREVO, were charging on their own
+            direct-selling walking pad brands, WalkingPad and <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a>, were charging on their own
             stores on 21 November 2026, set against what the same kinds of pads sell for elsewhere.
           </p>
           <ul>
@@ -53,7 +53,7 @@ export default {
             from UREVO's Strol 2E at $161.99 to WalkingPad's R3 Hybrid+ at $759 (checked November
             2026).</li>
             <li><strong>On top of the pad:</strong> a mat at about $40-$65, lubricant at about
-            $15-$25 a bottle, and a standing desk if you plan to walk while you work.</li>
+            $15-$25 a bottle, and a standing desk if you plan to <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium" data-autolink>walk while you work</a>.</li>
           </ul>
           <p>
             Walking pads are the cheapest motorized treadmills you can buy, and that is the context
@@ -195,7 +195,7 @@ export default {
           <p>
             <strong>A mat: about $40-$65.</strong> A mat protects the floor from scuffs and rubber
             marks, keeps carpet fibres and dust out of the motor compartment, and damps the thud that
-            carries to the room below. The makers sell their own: UREVO lists a foldable treadmill mat
+            carries to the room below. The makers sell their own: UREVO lists a foldable <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium" data-autolink>treadmill mat</a>
             at $39.99 and WalkingPad a non-slip treadmill floor mat at $65 (checked November 2026).
             Generic mats sized for a walking pad cost about the same.
           </p>
@@ -225,7 +225,7 @@ export default {
             about: WalkingPad lists a replacement remote at $20 and a safety key at $15, and UREVO a
             remote at $49.99 and a safety key at $9.99 (checked November 2026). Extended warranties are
             offered by some stores at checkout; on a pad with a one-year warranty they can be worth
-            reading, but check what they exclude, since motor and belt wear from heavy daily use is
+            reading, but check what they exclude, since motor and <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>belt wear</a> from heavy daily use is
             the failure you most want covered.
           </p>
           <p>
@@ -243,7 +243,7 @@ export default {
       html: `          <p>
             A walking pad is the cheapest motorized treadmill you can buy. Even a premium pad at
             $450 to $800 costs about the same as a budget folding treadmill, which typically runs
-            about $400 to $900, and a mid-range treadmill built for regular running typically costs
+            about $400 to $900, and a <a href="/treadmills-under-1500/" class="text-[#0F62FE] font-medium" data-autolink>mid-range treadmill</a> built for regular running typically costs
             $1,000 to $2,000. On sticker price alone, the pad wins by a wide margin.
           </p>
           <p>
@@ -332,7 +332,7 @@ export default {
             comparison worth more than brand loyalty.
           </p>
           <p>
-            Black Friday and Cyber Monday are usually the biggest discount window of the year. In 2026
+            Black Friday and <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium" data-autolink>Cyber Monday</a> are usually the biggest discount window of the year. In 2026
             Black Friday falls on 27 November, and several makers had already cut prices by 21 November:
             WalkingPad's Z1R was $359 against a $499 compare-at and UREVO's SpaceWalk 3S $239.99 against
             $349.99 (checked November 2026). We track the offers and the price history behind them in our
