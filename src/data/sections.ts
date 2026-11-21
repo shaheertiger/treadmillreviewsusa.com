@@ -2641,6 +2641,13 @@ export const SECTIONS: Section[] = [
             url: '/sole-treadmill-troubleshooting/',
           },
           {
+            title: 'Bowflex Treadmill Troubleshooting',
+            description:
+              'SAFETY KEY OFF, the no-GFCI outlet rule, belt tension and centring, LUBE BELT resets, JRNY and Bowflex support.',
+            badge: 'Bowflex',
+            url: '/bowflex-treadmill-troubleshooting/',
+          },
+          {
             title: 'Treadmill Water Damage',
             description:
               'What to do before switching it back on, what water harms first, typical repair costs and when to replace.',

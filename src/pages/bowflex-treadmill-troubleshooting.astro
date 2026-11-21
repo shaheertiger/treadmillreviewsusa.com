@@ -1,0 +1,833 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SECTIONS } from "../data/sections";
+
+const title = "Bowflex Treadmill Troubleshooting: JRNY, Belt and Power Fixes";
+const description =
+  "Bowflex treadmill troubleshooting: reseat the safety key, use a dedicated 15-amp outlet (no GFCI), tighten the belt a quarter-turn at a time, lube on schedule.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Fault Diagnosis", item: "https://www.treadmillreviewsusa.com/problems/" },
+        { "@type": "ListItem", position: 3, name: "Bowflex Treadmill Troubleshooting", item: "https://www.treadmillreviewsusa.com/bowflex-treadmill-troubleshooting/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How do I reset a Bowflex treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For a hung console, switch off, unplug at the wall and wait at least a minute (the T6 manual says 60 seconds), then power back on and insert the safety key. On the T6, holding STOP for 3 seconds only ends the workout and resets the display. Full console resets differ by model, so use the procedure in your own manual or ask support.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why will my Bowflex treadmill not turn on?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Check the outlet with a lamp, then that the treadmill is on a dedicated 15-amp circuit with no GFCI outlet, power strip, surge protector or extension cord, as the T6 manual requires. Confirm the cord is in at both ends and the power switch is on. If the switch lights but the console does not, the console cable is the next thing to check.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why does my Bowflex treadmill belt slip?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually because the belt has stretched or the deck needs silicone. On a T6, turn both rear roller bolts a quarter-turn clockwise with the belt stopped, test, and repeat until the slip goes, never more than a quarter-turn at a time. If lubrication is due, do that first, because tightening a belt over a dry deck makes the motor work harder.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How often should I lubricate a Bowflex treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The T6 manual says every three months or 150 miles, using 100% silicone, and the treadmill shows LUBE BELT and will not run until you deal with it. The older Treadmill 7 and 18 manual says every three months or 25 hours, whichever comes first. Never use petroleum-based products or WD-40.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why will my Bowflex treadmill not connect to JRNY?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On the T6 and T9, JRNY runs on your phone or tablet. Turn on both Bluetooth and Location, open the BowFlex JRNY app close to the treadmill and follow its sync steps. If it still will not sync, restart your device and the treadmill and try again; the T6 manual gives exactly that sequence.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Who makes Bowflex treadmills now?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Johnson Health Tech bought the BowFlex brand and assets out of bankruptcy in 2024, and bowflex.com now carries a Johnson Health Tech Trading copyright line. Before that, Bowflex treadmills were made by Nautilus, Inc. Owners of older Nautilus-era machines should ask support what cover applies to them.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where is the serial number on a Bowflex treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On the T6, the manual says it is on a white barcode sticker near the on/off power switch and the power cord. Write it and the model name in the front of your manual, because support asks for both along with proof of purchase.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-21",
+      dateModified: "2026-11-21",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/bowflex-treadmill-troubleshooting/";
+const HUB = SECTIONS.find((s) => s.slug === "problems");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-21",
+    modifiedTime: "2026-11-21",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "bowflex treadmill troubleshooting",
+      "bowflex treadmill not working",
+      "bowflex treadmill wont turn on",
+      "bowflex treadmill belt slipping",
+      "bowflex jrny not connecting",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Fix Your Bowflex", link: "#short-answer" }}
+>
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/problems/">Fault Diagnosis</a>
+        <span aria-hidden="true">›</span>
+        <span>Troubleshooting</span>
+      </nav>
+      <h1 class="ed-title">Bowflex Treadmill Troubleshooting: Power, Belt, Lube and JRNY Problems</h1>
+      <p class="ed-dek">
+        Most Bowflex treadmill faults come down to a safety key that is not seated, an outlet the manual does not allow (GFCI, power strip or extension cord), a belt that needs a quarter-turn of tension or a centring tweak, a deck that is due for silicone, or a phone that has lost its JRNY connection. Here is the order to check them in, using Bowflex&rsquo;s own manuals and support guides.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 21, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          <span class="ed-method">Based on manufacturer manuals and service guidance, and the faults owners report most.</span>
+        </div>
+        <a href="#belt-tension-centring" class="btn-ghost">Belt Slipping or Off-Centre</a>
+      </div>
+      <p class="ed-disclosure">
+        Nothing on this page is a paid placement, and it carries no affiliate links. <a href="/editorial-standards/">How we review.</a>
+      </p>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Bowflex (now styled BowFlex) has sold several generations of treadmill: the older
+          Results Series BXT models, the touchscreen Treadmill 7, 10, 18 and 22 of the Nautilus
+          years, and the current T6, T9 and T16. The procedures differ between them in ways that
+          matter &mdash; which bolt you turn to centre the belt, how often the deck wants silicone,
+          whether the console needs Wi-Fi &mdash; so this page quotes the manual a step comes from
+          rather than giving one sequence for every machine. What does not differ is the order
+          that finds the cause fastest: key, outlet, belt, lubrication, connection, then support.
+        </p>
+
+        <nav class="ed-toc not-prose" aria-label="Jump to">
+          <h2>Jump to</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#which-model">Which Bowflex Treadmill Do You Have?</a></li>
+            <li><a href="#safety-key">SAFETY KEY OFF and Other Safety Key Problems</a></li>
+            <li><a href="#wont-turn-on">Bowflex Treadmill Will Not Turn On</a></li>
+            <li><a href="#stops-trips">Bowflex Stops Mid-Workout or Trips the Breaker</a></li>
+            <li><a href="#belt-wont-move">Console Lit but the Belt Will Not Move</a></li>
+            <li><a href="#belt-tension-centring">Belt Slipping or Off-Centre: Tension and Centring</a></li>
+            <li><a href="#lubrication">LUBE BELT Message and How to Lubricate a Bowflex</a></li>
+            <li><a href="#jrny-console">JRNY Not Connecting, Updates and Console Resets</a></li>
+            <li><a href="#warranty-support">Bowflex Warranty, Support and What to Have Ready</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2>The Short Answer</h2>
+<p>
+            <strong>When a Bowflex treadmill is not working, reseat the safety key, plug it straight
+            into a grounded wall outlet on its own 15-amp circuit with no GFCI, power strip or
+            extension cord, and then check belt tension, centring and lubrication before you
+            suspect the motor or the console.</strong> That order comes straight from Bowflex&rsquo;s
+            T6 owner&rsquo;s manual (checked November 2026), and it clears most &ldquo;Bowflex
+            won&rsquo;t start&rdquo; and &ldquo;Bowflex belt slipping&rdquo; complaints without
+            taking a cover off.
+          </p>
+          <ul>
+            <li><strong>Safety key first.</strong> The treadmill will not start without it, and a
+            console reading SAFETY KEY OFF or showing only dashes means the key is out, loose or,
+            on a magnetic key, no longer magnetised.</li>
+            <li><strong>Outlet second.</strong> The T6 manual asks for a dedicated circuit of at
+            least 15 amps and says the treadmill is not compatible with GFCI-equipped outlets; its
+            troubleshooting steps also rule out power strips, surge protectors and extension cords.</li>
+            <li><strong>Belt tension a quarter-turn at a time.</strong> On the T6, turn both rear
+            roller bolts a quarter-turn clockwise, test, and never more than a quarter-turn at once.</li>
+            <li><strong>Lubrication on schedule.</strong> The T6 wants 100% silicone on the deck every
+            three months or 150 miles, and will show LUBE BELT and refuse to run until you deal with it.</li>
+            <li><strong>JRNY problems are usually the connection.</strong> Bluetooth and Location on,
+            app open near the machine, and restart both the phone and the treadmill if it will not sync.</li>
+          </ul>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Bowflex symptom</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Most likely cause</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">First fix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Completely dead, no lights</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Outlet, power switch, tripped breaker on the frame</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Test the outlet with a lamp; go direct to the wall; push in the breaker by the power switch</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SAFETY KEY OFF, or only dashes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Key out, loose or demagnetised</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Remove and reinsert the key firmly; replace a damaged key</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stops mid-workout or trips the house breaker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Shared, GFCI or older AFCI circuit; dry deck</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Dedicated 15-amp outlet, no extension; check lubrication</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Console lit, belt will not move</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Key, drive belt, loose cable, seized roller</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Reseat the key; push the belt with your foot to see if it turns</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt slips or hesitates underfoot</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stretched belt, dry deck</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Quarter-turn on both rear bolts; lubricate if due</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt drifts to one side</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Machine not level, uneven bolts</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Level the frame, then centre at 1 mph as your manual shows</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LUBE BELT on the display, will not run</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Mileage reminder (T6: every 150 miles)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lubricate, then hold STOP and SELECT for 3 to 5 seconds</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">JRNY will not sync</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bluetooth or Location off, app or machine needs a restart</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Turn both on, open the app beside the machine, restart both</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Bowflex is not the only brand with a short, predictable fault list. If you also own or
+            are comparing an iFIT machine, our <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm treadmill troubleshooting</a> guide follows the same symptom-first order, and our <a href="/nordictrack-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">NordicTrack treadmill troubleshooting</a> guide covers the sister brand. The procedures below are Bowflex&rsquo;s own, and they do
+            not carry across: the bolt you turn to centre a T6 belt is not the one a NordicTrack
+            manual names. For the range itself and how the current models compare, see our <a href="/bowflex/" class="text-[#0F62FE] font-medium">Bowflex treadmill guide</a>.
+          </p>
+        </div>
+
+        <div id="which-model" class="scroll-mt-24">
+          <h2>Which Bowflex Treadmill Do You Have?</h2>
+<p>
+            Before following any procedure, know which machine you are working on, because Bowflex
+            has changed designs, consoles and even owners in the last few years, and the manuals
+            differ on details that matter.
+          </p>
+          <p>
+            <strong>The current range.</strong> In November 2026 bowflex.com lists three treadmills:
+            the T6 and T9, which have LCD consoles and connect to the JRNY app on your phone or
+            tablet, and the T16, which has a 16-inch touchscreen with built-in apps (checked November
+            2026). Our reviews of the <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6</a>, <a href="/bowflex-t9-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T9</a> and <a href="/bowflex-t16-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T16</a> cover each in detail. The T6 owner&rsquo;s manual is the most recent full manual we
+            could read, and most of the steps on this page are quoted from it.
+          </p>
+          <p>
+            <strong>Older machines.</strong> Before 2024, Bowflex treadmills were made by Nautilus,
+            Inc. (renamed BowFlex Inc. shortly before its sale). That era includes the Results Series
+            BXT116 and BXT216, and the touchscreen Treadmill 7, 10, 18 and 22, whose consoles needed
+            Wi-Fi to register and ran JRNY on the screen itself. Bowflex&rsquo;s assembly and
+            owner&rsquo;s manual for the Treadmill 7 and Treadmill 18 (a 2020 Nautilus edition,
+            checked November 2026) is the source for the touchscreen steps below. If your machine is
+            one of these, the T6 instructions are a guide to what to check, not a substitute for
+            your own manual.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Finding the serial number</h3>
+          <p>
+            The T6 manual says the serial number is on a white barcode sticker near the on/off power
+            switch and the power cord, and asks you to write it and the model name into the boxes at
+            the front of the manual, because support will ask for both (checked November 2026). Do
+            it now, while the treadmill works, rather than when you are lying on the floor with a
+            torch. The serial is on the frame, not the console, and on a folded machine the sticker
+            can be easier to read with the deck down.
+          </p>
+          <p>
+            The name on the console is not always enough. Bowflex has reused names (there was a
+            BXT16 before there was a T16), and the internal parts are not the same. Have the serial
+            number in hand before ordering a part or asking for a manual.
+          </p>
+        </div>
+
+        <div id="safety-key" class="scroll-mt-24">
+          <h2>SAFETY KEY OFF and Other Safety Key Problems</h2>
+<p>
+            Every Bowflex treadmill has a safety key on a clip that attaches to your clothing. The
+            T6 manual is plain about it: the treadmill will not start unless the key is in position,
+            the key is designed to cut power if you fall, and you should check that it works every
+            two weeks (checked November 2026). It also tells owners to remove the key when the
+            treadmill is not in use, which is why so many &ldquo;dead&rdquo; Bowflex treadmills
+            turn out to have a key in a drawer.
+          </p>
+          <p>
+            The T6 troubleshooting section lists one problem specifically: the console reads SAFETY
+            KEY OFF or only displays dashes. The checks it gives are that the key is securely in
+            place and, for a magnetic key, that the key is still magnetised. A key that has been
+            dropped, chewed by a dog or stored next to other magnets can stop registering while
+            looking perfectly normal.
+          </p>
+          <ul>
+            <li><strong>Pull it out and push it back in firmly.</strong> Bowflex&rsquo;s support
+            guide for the Results Series BXT216 says a safety key error appears when the key is not
+            fully inserted or not inserted at all, and that removing and reinserting it is the first
+            step (checked November 2026).</li>
+            <li><strong>Inspect it.</strong> The same guide&rsquo;s next step is to look for damage
+            to the key itself and replace a damaged key.</li>
+            <li><strong>Check the clip end.</strong> Tug the clip as the manual describes. A clip
+            that comes off your clothing easily is a clip that will stop the belt mid-stride.</li>
+            <li><strong>Mid-workout stops.</strong> The support guide for a treadmill that stops
+            during a workout says that if the display stays on and reads &ldquo;+SAFETY KEY&rdquo;,
+            remove and reinsert the key before looking any further.</li>
+          </ul>
+          <p>
+            Beyond that, the BXT216 guide goes inside the console to check the two-wire lead from
+            the key socket to the board. That is a job to discuss with support first, particularly
+            on a machine still under warranty. Do not defeat the key with a loose magnet: the key is
+            the one part of the machine designed to stop the belt when you cannot.
+          </p>
+        </div>
+
+        <div id="wont-turn-on" class="scroll-mt-24">
+          <h2>Bowflex Treadmill Will Not Turn On</h2>
+<p>
+            A Bowflex with a dark console has lost power somewhere between the wall and the console,
+            or the console is asleep. The T6 manual&rsquo;s troubleshooting starts with a single
+            question: does the red light on the on/off switch light up? (Some models do not have a
+            lit switch, in which case work through both lists.)
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">If the switch does not light</h3>
+          <ol>
+            <li><strong>The outlet works.</strong> Plug a lamp into it. Bowflex&rsquo;s BXT216
+            support guide uses the same lamp test.</li>
+            <li><strong>The house breaker has not tripped</strong>, and the treadmill is on a
+            dedicated 15-amp circuit.</li>
+            <li><strong>It is not on a GFCI-equipped outlet</strong>, and not plugged into a power
+            strip, surge protector or extension cord. All three are named in the T6 manual.</li>
+            <li><strong>The power cord</strong> is undamaged and fully pushed in at both the wall
+            and the machine.</li>
+            <li><strong>The power switch is on.</strong></li>
+          </ol>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">If the switch lights but the console stays dark</h3>
+          <p>
+            Power is reaching the machine, so the fault is between the base and the console. The
+            T6 manual&rsquo;s steps are to turn the power off, unplug and wait 60 seconds, remove the
+            motor cover, wait until all the red LEDs on the motor control board have gone out, then
+            check that no wires to the lower board are loose, unplug and reconnect the console
+            cable, and make sure the console cable is not pinched or damaged. Then plug back in,
+            switch on and look for lit LEDs on the motor control board. Lights on the board with a
+            dark console point at the console cable or the console; no lights at all point at the
+            power inlet, the frame breaker or the board.
+          </p>
+          <p>
+            The BXT216 support guide adds a step worth knowing on any Bowflex with one: if the
+            switch glows, push the circuit breaker next to the power switch, because it may have
+            tripped. On a folding machine that has been moved, the cable connections at the top and
+            bottom of the upright are the usual suspects.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Touchscreen consoles: asleep, not dead</h3>
+          <p>
+            The Treadmill 7 / 18 manual lists &ldquo;console in sleep mode&rdquo; as the first cause of
+            no display, fixed by touching the screen. It also notes that the power button on the
+            console only turns off the backlight, so the screen looks off while the electronics are
+            still on, and that a status LED blinking means the console has an error, cleared by
+            disconnecting power for 30 seconds and reconnecting. Our general guide to a <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that won&rsquo;t turn on</a> goes through the wall-to-console sequence for any brand.
+          </p>
+        </div>
+
+        <div id="stops-trips" class="scroll-mt-24">
+          <h2>Bowflex Stops Mid-Workout or Trips the Breaker</h2>
+<p>
+            A Bowflex that runs for a while and then quits, or that takes the house breaker with it,
+            is usually telling you about the circuit, not the treadmill. Bowflex is stricter about
+            power than most brands, and the T6 manual repeats the same requirement in almost every
+            troubleshooting entry: a dedicated 15-amp circuit, no GFCI outlet (or a circuit with a
+            GFCI outlet on it), no surge protector, power strip or extension cord.
+          </p>
+          <p>
+            The manual also explains how to check for a dedicated circuit: switch off that circuit at
+            the panel and see whether anything else loses power. If it does, move those devices to a
+            different circuit. A room usually has several outlets on one circuit, so a treadmill on
+            its own outlet is not necessarily on its own circuit.
+          </p>
+          <p>
+            Bowflex&rsquo;s support guide for a treadmill that stops during a workout (written for
+            the BXT216, checked November 2026) gives the order: if the display stays on, look for the
+            safety key message; if the display is dark, check the panel breaker, and if it has
+            tripped use a different outlet, because the treadmill may not work with some older GFI or
+            AFI circuits or improperly grounded ones; remove any extension cord; check the breaker on
+            the treadmill itself, at the front next to the main power switch, and push it in to reset
+            it; inspect the cord; then disconnect for one minute and reset the console. A separate
+            Bowflex technical guide on circuit breakers adds inadequate lubrication on the deck and
+            belt as a cause of a tripping house breaker, alongside older AFCI breakers that trip on
+            motor-drive equipment.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What trips or stops</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Usual reason</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What to do</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">House breaker, when the belt starts</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Shared circuit, GFCI, older AFCI breaker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Dedicated 15-amp circuit; ask an electrician about the breaker type</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">House breaker, after a while</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Dry deck making the motor work harder</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Check the lubrication schedule for your model</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Breaker on the treadmill frame</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Overload or a failed breaker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Push it in to reset; if it keeps tripping, call support</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt stops, display still on</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Safety key lost contact</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Remove and reinsert the key</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt stops, display dark</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Power lost at the wall or the frame breaker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Panel breaker, outlet, extension cord, frame breaker, cord</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The Treadmill 7 / 18 manual lists one more cause for a belt that stops in use: motor
+            overload, where the machine draws too much current and cuts power to protect the motor.
+            Its fix is to check the belt lubrication and tension and start again. Anything beyond
+            resetting breakers and moving the plug, such as replacing a breaker or adding a circuit,
+            is a job for an electrician.
+          </p>
+        </div>
+
+        <div id="belt-wont-move" class="scroll-mt-24">
+          <h2>Console Lit but the Belt Will Not Move</h2>
+<p>
+            The console works, you press start, and the belt does not move, or moves for a moment
+            and stops. The T6 manual treats this as one problem with a clear list of checks.
+          </p>
+          <ul>
+            <li><strong>Power guidelines.</strong> The same dedicated 15-amp circuit, no GFCI, no
+            power strip or extension cord. A motor that cannot draw what it needs at start-up can
+            look like a mechanical fault.</li>
+            <li><strong>Note what the belt does.</strong> If it moves at all, note how far or how
+            long before it stops.</li>
+            <li><strong>Try to move the belt by hand.</strong> If you cannot, the manual says the
+            drive belt may have come off or the motor bearings may have seized.</li>
+            <li><strong>Check the drive belt.</strong> With the treadmill off and unplugged, remove
+            the plastic motor cover (Phillips screws) and check the drive belt is aligned.</li>
+            <li><strong>Check the connections.</strong> With the cover off, make sure no wires are
+            loose, crimped, damaged, disconnected or burnt; the manual notes they can work loose in
+            shipping or assembly.</li>
+          </ul>
+          <p>
+            Bowflex&rsquo;s support guide for the BXT216 adds two useful tests (checked November 2026).
+            First, holding on for balance, push the belt with your foot: if it will not move freely,
+            the rollers or motor may be seized. Second, if it does move, start a workout from the
+            Welcome screen (the guide notes the belt will not start from anywhere else) and time
+            it. A belt that runs for five seconds or less and stops points at the cables between the
+            console and the motor control board; a belt that runs longer and then stops points at
+            the speed sensor and its wire by the front roller. A burning smell, scorch marks or
+            smoke mean stop, unplug and call support.
+          </p>
+        </div>
+
+        <div id="belt-tension-centring" class="scroll-mt-24">
+          <h2>Belt Slipping or Off-Centre: Tension and Centring</h2>
+<p>
+            A belt that hesitates when your foot lands, or that drifts until it rubs a side rail, is
+            maintenance, not a fault. But this is exactly where Bowflex models differ, so match the
+            procedure to your manual.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Tensioning a slipping belt</h3>
+          <p>
+            The T6 manual says a slipping sensation usually means the belt has stretched with use,
+            which it calls normal and common. With the treadmill off, turn both rear roller bolts a
+            quarter-turn clockwise with the supplied Allen wrench, turn the treadmill on and check
+            for slipping, and repeat if needed &mdash; but never more than a quarter-turn at a time.
+            The belt is correctly tensioned when the slipping sensation is gone. It warns that the
+            belt must not be moving while you tension it, and that over-tightening causes excessive
+            wear on the treadmill and its parts.
+          </p>
+          <p>
+            The Treadmill 7 / 18 manual uses half-turns instead: key out, power off and unplugged,
+            then turn the right and left bolts clockwise half a turn each, one after the other. Its
+            test is that a correctly tensioned belt has only about an inch of give when you lift it
+            at its midpoint. It also warns that turning one side more than the other will push the
+            belt away from that side.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Job</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">T6 owner&rsquo;s manual</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Treadmill 7 / 18 manual</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tension step</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Both bolts &frac14; turn clockwise, belt stopped</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Each bolt &frac12; turn clockwise, unplugged</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">How you know it is right</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The slipping sensation is gone</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 1 inch of give at the belt&rsquo;s midpoint</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Centring speed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No faster than 1 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt running; watch for about 2 minutes</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bolts used to centre</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The LEFT bolt only</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Both: &frac14; turn one way on one side, the opposite on the other</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lubrication interval</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Every 3 months or 150 miles</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Every 3 months or 25 hours, whichever first</td></tr>
+            </tbody>
+          </table></div>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Centring a belt that drifts</h3>
+          <p>
+            Level the treadmill first. The T6 manual&rsquo;s troubleshooting for a belt that will not
+            stay centred begins with a level surface, and its setup section says that if the
+            treadmill is not level, the belt may not track properly; adjust the levelers under the
+            frame with a carpenter&rsquo;s level and lock them with the nuts.
+          </p>
+          <p>
+            Then, on a T6, the manual uses only the <em>left</em> adjustment bolt, with the belt
+            running at 1 mph and never faster while centring. If the belt is too far to the right,
+            turn the left bolt a quarter-turn counter-clockwise; if it is too far to the left, turn
+            the left bolt a quarter-turn clockwise. Wait for the belt to settle and repeat until it
+            stays centred in use. If the belt is also slipping because it is loose, the manual says
+            to centre it first, then tension it. Removing the end caps makes the bolts easier to
+            reach. Keep fingers, hair and clothing away from the moving belt throughout.
+          </p>
+          <p>
+            The Treadmill 7 / 18 manual works both bolts in opposite directions: if the belt moves
+            left, the left bolt a quarter-turn clockwise and the right a quarter-turn
+            counter-clockwise, and the reverse if it moves right, watching the belt for about two
+            minutes between adjustments. If your manual shows a different method, follow it. Our
+            guide to a <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">treadmill belt that slips</a> goes through what to do when tension and lubrication are both right and the slip
+            remains, which usually means a worn belt, a worn deck or a loose drive belt. Bowflex&rsquo;s
+            BXT216 support guide checks the drive belt next for exactly that reason.
+          </p>
+        </div>
+
+        <div id="lubrication" class="scroll-mt-24">
+          <h2>LUBE BELT Message and How to Lubricate a Bowflex</h2>
+<p>
+            Bowflex treadmills use silicone on the deck, and unlike some brands that ship
+            &ldquo;never lubricate&rdquo; belts, the manuals we read all set an interval. Getting the
+            product and the amount right matters more than the exact day you do it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The T6: every 3 months or 150 miles</h3>
+          <p>
+            The T6 manual says to lubricate the running deck every three months or 150 miles. At 150
+            miles the treadmill displays LUBE or LUBE BELT and will not operate while the message is
+            showing. The machine comes with a bottle of 100% silicone lubricant, enough for two
+            applications. The procedure, summarised from the manual:
+          </p>
+          <ol>
+            <li>Switch off and unplug at the wall.</li>
+            <li>Loosen both rear roller bolts 10 to 15 turns counter-clockwise, enough to lift the belt.</li>
+            <li>Lift the belt and squirt the silicone in a zigzag across the whole deck surface, using
+            half the bottle. Never apply it to the top of the belt.</li>
+            <li>Lay the belt down and tighten both bolts clockwise by the same number of turns you
+            loosened them.</li>
+            <li>Plug in, insert the key and reset the message.</li>
+            <li>Stay off the belt and run it at 3 mph for 3 minutes, then walk on it for 3 minutes to
+            spread the silicone and check tension and centring.</li>
+            <li>Wipe any excess from the sides with a damp cloth.</li>
+          </ol>
+          <p>
+            To clear the reminder, the T6 manual says to hold the STOP and SELECT buttons for 3 to 5
+            seconds after lubricating. Pressing any key suspends the message until after your next
+            workout, and the manual notes that some older models need STOP held for 5 seconds to
+            suspend it for 5 miles. Suspending it is not the same as doing the job.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Older touchscreen models: every 3 months or 25 hours</h3>
+          <p>
+            The Treadmill 7 / 18 manual describes a pre-lubricated, low-maintenance deck and belt but
+            still asks for lubrication every three months or every 25 hours of use, whichever comes
+            first, because silicone dissipates even when the machine is not used. It wants a few
+            drops across the full width of the deck under the belt, rotated half a belt length and
+            repeated, aiming for a very thin layer, and it specifies 100% pure silicone: no
+            petroleum-based products and no degreaser such as WD-40. Its console shows
+            &ldquo;LUBRICATE BELT&rdquo; as a reminder, accepted with any button.
+          </p>
+          <p>
+            Bowflex&rsquo;s BXT216 support guide turns the 25-hour figure into a calendar: roughly
+            monthly at 5 or more hours a week, every two months at 3 to 5 hours, and every three
+            months at under 3 hours, more often with several users. It also warns that petroleum
+            lubricants damage the machine and can mean replacing the deck and rollers, and that
+            over-lubricating leaves silicone pooling under the belt. Wipe away what you can see.
+          </p>
+        </div>
+
+        <div id="jrny-console" class="scroll-mt-24">
+          <h2>JRNY Not Connecting, Updates and Console Resets</h2>
+<p>
+            How JRNY works depends on the console. On the T6 and T9, JRNY runs on your phone or tablet
+            and connects to the treadmill; on the T16 and the older touchscreen models it is on the
+            screen itself. bowflex.com&rsquo;s product pages for the T9 and T16 say no subscription is
+            required (checked November 2026).
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">JRNY app will not sync (T6, T9)</h3>
+          <p>
+            The T6 manual&rsquo;s steps are short: download the app named &ldquo;BowFlex JRNY&rdquo;
+            from the App Store or Google Play, make sure both Bluetooth and Location settings are on
+            in your device, open the app near the machine and follow its instructions to sync. If it
+            will not sync, restart your device and the machine and try again. Location is the easy one
+            to miss, because a phone does not obviously need it for Bluetooth. A
+            JRNY membership is needed for the guided workouts, and the manual notes memberships are
+            not available in every country.
+          </p>
+          <p>
+            Other Bluetooth on the T6 is separate. A heart rate monitor pairs with the Bluetooth key
+            on the console (the manual asks for a Bluetooth 4.0 device that is open to sharing), and
+            music goes to the speakers from your phone&rsquo;s own Bluetooth list. If there is no
+            sound, the manual&rsquo;s checks are the volume on your device and that the right device
+            is connected.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Touchscreen consoles: Wi-Fi and updates</h3>
+          <p>
+            On the T16, bowflex.com says Wi-Fi is not required for the basic functions, such as the
+            built-in programs and Quick Start, but is required for the entertainment and fitness apps
+            on the screen. The older Treadmill 7 / 18 manual says the machine must be registered over
+            Wi-Fi first, after which basic workouts run without it; that if the console shows an
+            Update Available screen during setup you agree and let it update; and that the machine
+            checks for and installs software updates while active, so after a period switched off it
+            may install updates when restarted. Let an update finish rather than switching off
+            part-way through.
+          </p>
+          <p>
+            Two more points from that manual. The buttons on the back of the console are for factory
+            reset and recovery and are not meant for owners to use. And if the screen keeps playing
+            a feature video, the console is in demonstration mode: tap the upper-right corner of the
+            screen ten times, choose the demo mode app and de-activate it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Resets and error messages</h3>
+          <p>
+            &ldquo;Reset&rdquo; means different things. On the T6, holding STOP for 3 seconds ends a
+            workout and resets the console display; that is all it does. A power cycle (switch off,
+            unplug, wait) clears a hung console; the times Bowflex gives vary between 30 seconds on
+            the Treadmill 7 / 18 status LED and 60 seconds in the T6 manual, so a few minutes covers
+            both. Bowflex&rsquo;s support guides for the Results Series describe a machine-settings
+            mode that shows firmware versions, an error log and a full console reset that deletes
+            workout data. We do not list error codes here: the T6 owner&rsquo;s manual does not
+            publish a code table, and a meaning copied from one console can send the
+            owner of another after the wrong part. Write the message down exactly, note when it
+            appears, and give it to support.
+          </p>
+        </div>
+
+        <div id="warranty-support" class="scroll-mt-24">
+          <h2>Bowflex Warranty, Support and What to Have Ready</h2>
+<p>
+            <strong>Who makes Bowflex now.</strong> Nautilus, Inc., which owned Bowflex, renamed
+            itself BowFlex Inc. and sold its assets out of bankruptcy to Johnson Health Tech in 2024.
+            In November 2026 the footer of bowflex.com reads &ldquo;Johnson Health Tech Trading,
+            Inc.&rdquo;, and the T6 manual gives a Cottage Grove, Wisconsin address. If you have an
+            older Nautilus-era Bowflex, ask support what cover still applies to your machine rather
+            than assuming the terms printed in your manual.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What the warranty covers</h3>
+          <p>
+            The T6 owner&rsquo;s manual (checked November 2026) gives a limited home-use warranty of
+            lifetime on the frame and the original motor, three years on electronics and parts, and
+            one year of labour, all for the original owner while the machine stays in their
+            possession. bowflex.com lists the same pattern for the T9 and T16: lifetime frame and
+            motor, three years on mechanical parts, one year of labour. The manual&rsquo;s small
+            print matters when you are troubleshooting:
+          </p>
+          <ul>
+            <li>Labour or installation of a motor is not covered by the motor warranty, and only one
+            replacement motor is authorised.</li>
+            <li>Normal wear and tear, improper assembly or maintenance, and power reduction,
+            fluctuation or failure are excluded, which is one more reason to follow the outlet rules
+            and the lubrication schedule.</li>
+            <li>Commercial use and machines owned or operated outside the US and Canada are excluded,
+            and the warranty is not transferable, so a second-hand Bowflex almost certainly has none.</li>
+            <li>In-home service is available within 150 miles of an authorised service provider, and
+            all returns must be pre-authorised.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Contacting support</h3>
+          <p>
+            bowflex.com&rsquo;s contact page (checked November 2026) lists product support on
+            (800) 605-3369, with in-warranty support Monday to Friday, 8am to 5pm Central, and
+            out-of-warranty support on longer hours that include weekends, plus a support ticket form
+            on the BowFlex support site, links to product manuals and replacement parts, and a
+            separate JRNY app support site for subscription and app questions. Call support rather
+            than carrying on alone when the console stays dark with power confirmed, the motor does
+            not try to run, the frame breaker keeps tripping, there is any burning smell, or the
+            belt moves on its own or does not stop when the key is pulled.
+          </p>
+          <p>
+            The T6 manual says you may be asked for the model name, serial number and proof of
+            purchase, and lists the questions technicians ask: how long the problem has been
+            happening, whether it happens with every use and every user, where a noise comes from
+            and what kind it is, and whether the machine has been maintained to the schedule. Have
+            those answers ready, along with a short phone video of the fault and the exact text of
+            any message on the console. A video of a belt hesitating tells a technician more than a
+            description of it.
+          </p>
+        </div>
+
+
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Mistakes to Avoid With Bowflex Treadmill Troubleshooting</h2>
+          <p>Bowflex faults are usually simple. These four are how owners turn them into longer or more expensive ones.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Running it from a power strip or GFCI outlet</h3>
+              <p>Bowflex manuals ask for a dedicated 15-amp circuit and say the treadmill is not compatible with GFCI outlets, power strips, surge protectors or extension cords. Many cut-outs, tripped breakers and belts that will not start come from ignoring that. Plug straight into a grounded wall outlet on its own circuit before diagnosing anything else.</p>
+            </li>
+            <li>
+              <h3>Using another model's centring method</h3>
+              <p>The T6 centres its belt with the left bolt only, at 1 mph; the older Treadmill 7 and 18 turn both bolts in opposite directions. Following a video for a different machine can push the belt the wrong way and leave it rubbing a rail. Level the frame first and use the method in your own manual.</p>
+            </li>
+            <li>
+              <h3>Cranking the belt tight to stop a slip</h3>
+              <p>Tighten a quarter-turn at a time on both bolts and stop as soon as the slip is gone, because over-tightening wears the belt, rollers and motor. Check the lubrication schedule first: a dry deck causes slipping and breaker trips that more tension only makes worse.</p>
+            </li>
+            <li>
+              <h3>Suspending the LUBE BELT message instead of lubricating</h3>
+              <p>A key press hides the reminder until after the next workout, but the deck is still dry. Lubricate with 100% silicone as your manual describes, then clear the message (STOP and SELECT for 3 to 5 seconds on the T6). Never use WD-40 or a petroleum product, which Bowflex says can damage the deck and rollers.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The fix, in short</h2>
+          <p>
+            <strong class="text-white">Key, outlet, belt, lube, then the app.</strong> Most Bowflex
+            problems are a safety key that is not seated, a treadmill on a power strip or GFCI outlet,
+            a belt that needs a quarter-turn or a centring tweak, a deck due for silicone, or a phone
+            with Bluetooth or Location switched off. None of them needs a part.
+          </p>
+          <p>
+            <strong class="text-white">For anything else, use your own manual and call support.</strong> Bowflex procedures differ between the T6, the older touchscreen models and the Results
+            Series, so match the steps to your serial number, and have the model, serial, proof of
+            purchase and a phone video ready. For the same approach on an iFIT machine, read our <a href="/proform-treadmill-troubleshooting/" class="text-[#5AA9FF] font-bold no-underline">ProForm troubleshooting guide</a>.
+          </p>
+        </div>
+
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/proform-treadmill-troubleshooting/">ProForm Treadmill Troubleshooting</a></li>
+            <li><a href="/nordictrack-treadmill-troubleshooting/">NordicTrack Treadmill Troubleshooting</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do I reset a Bowflex treadmill?</h3></summary>
+            <p class="faq-a">
+              For a hung console, switch off, unplug at the wall and wait at least a minute (the T6 manual says 60 seconds), then power back on and insert the safety key. On the T6, holding STOP for 3 seconds only ends the workout and resets the display. Full console resets differ by model, so use the procedure in your own manual or ask support.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why will my Bowflex treadmill not turn on?</h3></summary>
+            <p class="faq-a">
+              Check the outlet with a lamp, then that the treadmill is on a dedicated 15-amp circuit with no GFCI outlet, power strip, surge protector or extension cord, as the T6 manual requires. Confirm the cord is in at both ends and the power switch is on. If the switch lights but the console does not, the console cable is the next thing to check.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why does my Bowflex treadmill belt slip?</h3></summary>
+            <p class="faq-a">
+              Usually because the belt has stretched or the deck needs silicone. On a T6, turn both rear roller bolts a quarter-turn clockwise with the belt stopped, test, and repeat until the slip goes, never more than a quarter-turn at a time. If lubrication is due, do that first, because tightening a belt over a dry deck makes the motor work harder.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How often should I lubricate a Bowflex treadmill?</h3></summary>
+            <p class="faq-a">
+              The T6 manual says every three months or 150 miles, using 100% silicone, and the treadmill shows LUBE BELT and will not run until you deal with it. The older Treadmill 7 and 18 manual says every three months or 25 hours, whichever comes first. Never use petroleum-based products or WD-40.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why will my Bowflex treadmill not connect to JRNY?</h3></summary>
+            <p class="faq-a">
+              On the T6 and T9, JRNY runs on your phone or tablet. Turn on both Bluetooth and Location, open the BowFlex JRNY app close to the treadmill and follow its sync steps. If it still will not sync, restart your device and the treadmill and try again; the T6 manual gives exactly that sequence.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Who makes Bowflex treadmills now?</h3></summary>
+            <p class="faq-a">
+              Johnson Health Tech bought the BowFlex brand and assets out of bankruptcy in 2024, and bowflex.com now carries a Johnson Health Tech Trading copyright line. Before that, Bowflex treadmills were made by Nautilus, Inc. Owners of older Nautilus-era machines should ask support what cover applies to them.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Where is the serial number on a Bowflex treadmill?</h3></summary>
+            <p class="faq-a">
+              On the T6, the manual says it is on a white barcode sticker near the on/off power switch and the power cord. Write it and the model name in the front of your manual, because support asks for both along with proof of purchase.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Fault Diagnosis">
+          <h2 class="section-title">More in Fault Diagnosis</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/problems/" class="btn-ghost">See all Fault Diagnosis</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Fault Diagnosis Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/proform-treadmill-troubleshooting/" class="card">
+            <div class="c-kicker">Troubleshooting</div>
+            <div class="c-title">ProForm Treadmill Troubleshooting</div>
+            <p class="c-blurb">The same symptom-first order for ProForm and its iFIT consoles.</p>
+          </a>
+          <a href="/nordictrack-treadmill-troubleshooting/" class="card">
+            <div class="c-kicker">Troubleshooting</div>
+            <div class="c-title">NordicTrack Treadmill Troubleshooting</div>
+            <p class="c-blurb">Resets, belt fixes and iFIT problems on NordicTrack machines.</p>
+          </a>
+          <a href="/treadmill-trips-breaker/" class="card">
+            <div class="c-kicker">Diagnosis</div>
+            <div class="c-title">Treadmill Trips the Breaker</div>
+            <p class="c-blurb">Shared circuits, GFCI and AFCI outlets, and what an electrician checks.</p>
+          </a>
+          <a href="/treadmill-safety-key-not-working/" class="card">
+            <div class="c-kicker">Diagnosis</div>
+            <div class="c-title">Treadmill Safety Key Not Working</div>
+            <p class="c-blurb">Seating, cleaning and replacing a key that will not register.</p>
+          </a>
+          <a href="/how-often-to-lubricate-treadmill/" class="card">
+            <div class="c-kicker">Maintenance</div>
+            <div class="c-title">How Often to Lubricate a Treadmill</div>
+            <p class="c-blurb">Intervals by hours of use, and the signs a deck has run dry.</p>
+          </a>
+          <a href="/bowflex/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">Bowflex Treadmills</div>
+            <p class="c-blurb">The T6, T9 and T16 compared, with warranties and JRNY.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>
