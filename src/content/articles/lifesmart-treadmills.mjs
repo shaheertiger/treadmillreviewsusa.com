@@ -7,7 +7,7 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 5, 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-11-05',
   socialProof: '2.1k',
   h1: ['LifeSmart Treadmills:', 'The PowerTouch Range Explained'],
@@ -238,6 +238,58 @@ export default {
           </p>`,
     },
     {
+      id: 'compare-models',
+      heading: 'LifeSmart Treadmill Models Compared: Speed, Incline and Weight Capacity',
+      navLabel: 'Specs Compared',
+      html: `          <p>
+            The range table above shows where each model is sold. This one answers the next question most shoppers have:
+            how fast, how steep and how heavy a user each LifeSmart is rated for. Every figure comes from LifeSmart's own
+            store, Costco's product page or a live retailer listing, and the last column says which. Where those sources
+            disagree, we say so rather than pick one; where we could not find a figure, the model is left out. The
+            TM4500 is not in the table because it is discontinued and its capacity is quoted three different ways (see
+            below), and the TM4800 is left out because we found no maker or Costco page for it.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[620px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Type</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Top speed</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Incline / decline</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Max user</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Figures from</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM2305</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2-in-1 walking pad / treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6.5 mph (3.7 mph pad mode)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4% manual</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">245 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walmart, Dick's listings</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM2500</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PowerTouch folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">12 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10% / -3%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Retailer listings</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM3000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PowerTouch folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">12.5 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10% / -3%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LifeSmart</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM4000C</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PowerTouch folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">14 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10% / -3%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LifeSmart</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM5000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PowerTouch folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">14 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% / -3%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">310 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LifeSmart</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM55</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PowerTouch folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10% / -3%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Costco</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM6500</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PowerTouch, 22 in. touchscreen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">14 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10% / -3% or 15% (Costco gives both)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">325 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Costco</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM22X</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PowerTouch, 22 in. touchscreen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">14 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">12%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">325 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Costco</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Three patterns stand out. First, the 300 lb rating is LifeSmart's standard: only the TM5000 (310 lb) and the
+            two 22-inch touchscreen Costco models, the TM6500 and TM22X (325 lb), go higher, and no LifeSmart we found is
+            rated beyond 325 lb. A heavier user should look at our guide to
+            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">treadmills for heavy people</a>
+            instead. Second, top speed tracks deck length: the 55-inch models (TM2500, TM3000, TM55) stop at 10 to 12.5 mph,
+            while the 60-inch models reach 14 mph. Third, the -3% decline that sets LifeSmart apart is on every PowerTouch
+            model except the TM22X, whose Costco listing gives a 12% maximum incline and does not mention decline.
+          </p>
+          <p>
+            The TM22X is the newest name here. Costco's listing gives it a 4.5 HP brushless motor, a 22 by 60-inch belt
+            (two inches wider than the rest of the range), 0 to 14 mph, 12% incline, a 22-inch pivoting touchscreen with
+            casting, 30 programs and a 325 lb capacity. A Slickdeals post recorded it at $1,599.99 with delivery on
+            Costco.com in January 2026; check Costco for the current price. The TM2305 is a different kind of machine: a
+            folding 2-in-1 that works as a walking pad or a small treadmill, with a 2.25 HP
+            motor and manual incline. It is not a PowerTouch model.
+          </p>`,
+    },
+    {
       id: 'tm4500',
       heading: 'The LifeSmart TM4500: Discontinued, and What Replaced It',
       navLabel: 'The TM4500',
@@ -325,6 +377,53 @@ export default {
           </p>`,
     },
     {
+      id: 'troubleshooting',
+      heading: 'LifeSmart Treadmill Troubleshooting, Support and Parts',
+      navLabel: 'Troubleshooting',
+      html: `          <p>
+            LifeSmart does not publish a public list of error codes that we could find, and codes differ between models
+            and console suppliers, so the code table in your owner's manual is the only reliable guide to what a
+            particular number means. Most faults on a motorised folding treadmill, though, come down to the same handful
+            of causes, and these checks are safe to try before calling anyone. Unplug the treadmill before touching
+            anything under the motor hood or the deck.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">If it will not start or the console is blank</h3>
+          <p>
+            Check that the safety key is fully seated: on most treadmills the key completes a circuit, and without it the
+            motor will not run, which many consoles report as a code or a row of dashes. Then check the power switch and
+            circuit breaker on the frame, plug the treadmill straight into a wall outlet rather than an extension lead or
+            power strip, and try a different outlet. Our guides to a
+            <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that won't turn on</a> and a
+            <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">safety key that is not working</a>
+            go through each step.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">If the PowerTouch fold will not lower</h3>
+          <p>
+            LifeSmart says PowerTouch uses sensors to stop the deck lowering when something is underneath or close by. If
+            the deck stops or refuses to move, clear the floor around and under the treadmill first, including cables,
+            rugs and pet toys, and wipe the sensor windows if they are dusty. If it still will not move, do not force the
+            deck by hand: contact support, because the fold is motorised and forcing it may damage the mechanism.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Belt slipping, jerking or squeaking</h3>
+          <p>
+            These are usually maintenance rather than faults. A belt that slips or hesitates under each footstrike often
+            needs tensioning or lubricating; one that drifts to one side needs centring; a squeak often points to a dry
+            deck or a loose bolt. Use only the lubricant your manual specifies. Our
+            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a>
+            and <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>
+            cover the routine.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Getting support and parts</h3>
+          <p>
+            LifeSmart's warranty page sends claims through the place of purchase, so start with the retailer, with your
+            receipt, the model number (including any C suffix) and the serial number from the frame label. LifeSmart's
+            fitness support email is on the domain of Supply Chain Sources, its fitness partner, and that is the route for
+            parts such as a replacement safety key or console once a retailer has pointed you there. Keep the manual and
+            box labels: on a brand whose model names change often, the exact model and serial number are what get the
+            right part sent.
+          </p>`,
+    },
+    {
       id: 'motors-decline',
       heading: 'Brushless Motors, Decline and Other Claims',
       navLabel: 'Motors and Decline',
@@ -386,6 +485,81 @@ export default {
             of purchase.
           </p>`,
     },
+    {
+      id: 'good-brand',
+      heading: 'Is LifeSmart a Good Treadmill Brand?',
+      navLabel: 'Is It Good?',
+      html: `          <p>
+            <strong>LifeSmart is a reasonable brand for a home walker who wants a treadmill that folds itself, and a weaker
+            choice for anyone who runs most days or wants long-term protection.</strong> Its specifications are competitive
+            on paper: brushless motors, decline as well as incline, 60-inch belts from about $1,199 and big touchscreens at
+            Costco. What it does not have is the track record or warranty of a fitness specialist. LifeSmart is a
+            consumer-products brand whose treadmill support is handled through a partner company, and it offers one year
+            on functional parts where Horizon, Sole and Bowflex offer lifetime motor or frame cover at similar prices.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Where LifeSmart is sold</h3>
+          <p>
+            LifeSmart sells through its own online store, Costco (its own model numbers, mostly online through Costco
+            Direct) and Dick's Sporting Goods. In November 2026 we also found the TM2500 listed at BrandSmart USA, R.C.
+            Willey and Nebraska Furniture Mart, at prices from about $699 to $899 depending on the retailer and sale (checked November 2026), and the
+            TM2305 2-in-1 listed on Walmart.com, out of stock when we checked. We found no LifeSmart treadmill on Sam's Club's
+            site, which carries NordicTrack, ProForm, Sunny and WalkingPad instead; our
+            <a href="/sams-club-treadmills/" class="text-[#0F62FE] font-medium">Sam's Club treadmills</a> guide covers what
+            it does stock. On Amazon US, the TM3000 and TM5000 cards above link to Amazon searches; we could not confirm a
+            live Amazon listing for the Costco models.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Who it suits, and who it does not</h3>
+          <ul>
+            <li><strong>Suits:</strong> walkers and light joggers with limited strength or a bad back, who will fold the
+            treadmill away after every session and value the motorised fold above everything else.</li>
+            <li><strong>Suits:</strong> Costco members, because Costco's returns policy covers the risk a one-year
+            warranty leaves open.</li>
+            <li><strong>Does not suit:</strong> daily runners, who are better served by a non-folding or heavier-built
+            machine with a lifetime motor warranty.</li>
+            <li><strong>Does not suit:</strong> users over 325 lb, since no LifeSmart we found is rated higher.</li>
+          </ul>
+          <p>
+            We have not tested a LifeSmart treadmill, and we have no independent reliability data for the brand. Owner
+            reviews on retailer sites are a useful check on noise and assembly, but read the one-star reviews for
+            patterns, such as console faults or support delays, before relying on the average.
+          </p>`,
+    },
+    {
+      id: 'budget-models',
+      heading: 'LifeSmart’s Cheaper Models vs Other Treadmills Under $600',
+      navLabel: 'Budget Models',
+      html: `          <p>
+            Not every LifeSmart costs $1,000. On 5 November 2026 LifeSmart's store listed the TM2301 Lift Assist at $299,
+            the TM2305 2-in-1 at $399, and the TM2202 3-in-1 and TM2303 PowerTouch at $599 each, and the TM2500 PowerTouch
+            sits just above them at retailers. These are the LifeSmarts most likely to be compared with Amazon's cheaper
+            folding treadmills and walking pads, so the question is what you give up and what you gain.
+          </p>
+          <p>
+            The clearest of them is the TM2305. Retailer listings at Walmart and Dick's (checked November 2026) give a 2.25 HP brushless motor, 0 to 3.7 mph
+            as a walking pad and up to 6.5 mph in treadmill mode, a 4% manual incline, a 245 lb maximum user and a 66 lb
+            weight. That is a walking machine: the speed ceiling rules out running, and 245 lb is the lowest rating we found
+            on any LifeSmart. We could not find a full set of figures for the TM2301,
+            TM2202 or TM2303 from LifeSmart or a live listing, so we have left them out of the comparison table; check the
+            product page for the top speed and capacity before you buy.
+          </p>
+          <p>
+            The TM2303 is the cheapest way to get PowerTouch, and at $599 it is the LifeSmart that makes the most sense if
+            the motorised fold is the point. If it is not, $600 buys a wider choice: our
+            <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">best treadmills under $500</a> and
+            <a href="/best-walking-pads-on-amazon/" class="text-[#0F62FE] font-medium">best walking pads on Amazon</a>
+            compare machines with published capacities and, in several cases, longer motor warranties than LifeSmart's one
+            year.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A note on budget-model warranties</h3>
+          <p>
+            LifeSmart's own warranty page gives one year on all products. One furniture retailer's TM2500 listing quotes a
+            10-year frame and one-year parts and labour warranty, which we could not match to anything LifeSmart publishes.
+            Treat the retailer's wording as unconfirmed, and check the warranty card in the box or ask the seller in writing
+            before counting on frame cover beyond a year. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains
+            what to look for.
+          </p>`,
+    },
   ],
   faqs: [
     {
@@ -415,6 +589,18 @@ export default {
     {
       q: 'Where can I buy a LifeSmart treadmill?',
       a: 'LifeSmart’s own online store, Dick’s Sporting Goods (TM3000 and TM4000) and Costco, which sells its own models such as the TM6500 and TM55 online and has carried the TM4800 in warehouses. Costco’s returns policy is a real advantage given the one-year warranty.',
+    },
+    {
+      q: 'Does Sam’s Club sell LifeSmart treadmills?',
+      a: 'We found no LifeSmart treadmill on Sam’s Club’s website in November 2026; its treadmill range is NordicTrack, ProForm, Sunny and WalkingPad. LifeSmart’s warehouse-club partner is Costco, which sells its own LifeSmart models such as the TM6500, TM22X and TM55.',
+    },
+    {
+      q: 'How much weight can a LifeSmart treadmill hold?',
+      a: 'Most LifeSmart PowerTouch models are rated for 300 lb. The TM5000 is rated for 310 lb, and Costco’s TM6500 and TM22X for 325 lb. The TM2305 2-in-1 is rated for 245 lb on Walmart’s listing. We found no LifeSmart rated above 325 lb.',
+    },
+    {
+      q: 'What is the LifeSmart TM22X?',
+      a: 'A Costco LifeSmart with a 22-inch pivoting touchscreen. Costco lists a 4.5 HP brushless motor, a 22 by 60-inch belt, 0 to 14 mph, 12% incline, 30 programs, PowerTouch folding and a 325 lb capacity. A Slickdeals post recorded it at $1,599.99 delivered in January 2026.',
     },
   ],
   mistakesHeading: 'Common Mistakes Buying a LifeSmart Treadmill',
