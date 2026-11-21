@@ -5,9 +5,10 @@ export default {
     'The NordicTrack Commercial 1250 treadmill as sold now (NTL14125): 3.6 CHP, 22 x 60 in. belt, 400 lb rating, -3% to 12% incline, 10 in. screen. What changed, and who should buy it.',
   crumbLabel: 'NordicTrack Commercial 1250',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.4k',
   h1: ['NordicTrack Commercial 1250', 'Treadmill Review'],
   standfirst:

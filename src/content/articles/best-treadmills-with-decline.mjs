@@ -9,6 +9,7 @@ export default {
   updated: 'November 2026',
   updatedLong: 'November 21, 2026',
   published: '2026-10-13',
+  modified: '2026-11-21',
   socialProof: '1.6k',
   h1: ['Best Treadmills With Decline', 'Machines That Really Go Downhill'],
   standfirst:

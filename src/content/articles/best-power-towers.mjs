@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Best Power Towers',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 19, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-19',
+  modified: '2026-11-16',
   socialProof: '1.9k',
   h1: ['Best Power Towers', 'and What Their Weight Ratings Leave Out'],
   standfirst:

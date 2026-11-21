@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Commercial 1250 vs 1750',
   kicker: 'Comparison',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
-  updated: 'October 2026',
-  updatedLong: 'October 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-10-08',
+  modified: '2026-11-21',
   socialProof: '2.2k',
   h1: ['NordicTrack Commercial 1250', 'vs Commercial 1750'],
   standfirst:

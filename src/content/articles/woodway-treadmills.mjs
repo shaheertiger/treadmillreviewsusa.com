@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Woodway Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer\'s Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 20, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-20',
+  modified: '2026-11-15',
   socialProof: '1.1k',
   h1: ['Woodway Treadmills:', 'Slat Belts, Prices and Who Should Buy One'],
   standfirst:

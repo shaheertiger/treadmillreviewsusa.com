@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Chest Strap vs Wrist Heart Rate',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Comparison',
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-13',
+  modified: '2026-11-15',
   socialProof: '2.1k',
   h1: ['Chest Strap vs Wrist', 'Heart Rate Monitors'],
   standfirst:

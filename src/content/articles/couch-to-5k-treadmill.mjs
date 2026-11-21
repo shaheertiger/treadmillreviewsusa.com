@@ -5,9 +5,10 @@ export default {
     'The full nine-week walk-to-run progression adapted for a treadmill, with speeds to set, what to do when a week is too hard, and the deck length you actually need.',
   crumbLabel: 'Couch to 5K on a Treadmill',
   kicker: 'Training Guide',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-09-08',
+  modified: '2026-11-15',
   socialProof: '6.4k',
   h1: ['Couch to 5K', 'on a Treadmill'],
   standfirst:

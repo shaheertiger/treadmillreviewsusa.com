@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Are Treadmills Bad for Your Knees?',
   kicker: 'Training',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 19, 2026',
   published: '2026-10-06',
+  modified: '2026-11-19',
   socialProof: '1.4k',
   h1: ['Are Treadmills Bad', 'for Your Knees?'],
   standfirst:

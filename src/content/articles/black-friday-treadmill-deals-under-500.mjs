@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Black Friday Treadmill Deals Under $500',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
-  updated: 'October 2026',
-  updatedLong: 'October 28, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-28',
+  modified: '2026-11-16',
   socialProof: '2.1k',
   h1: ['Black Friday Treadmill Deals', 'Under $500'],
   standfirst:

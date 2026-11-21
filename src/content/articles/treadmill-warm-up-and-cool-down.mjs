@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Treadmill Warm Up and Cool Down',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-06',
+  modified: '2026-11-15',
   socialProof: '1.6k',
   h1: ['Treadmill Warm Up', 'and Cool Down'],
   standfirst:

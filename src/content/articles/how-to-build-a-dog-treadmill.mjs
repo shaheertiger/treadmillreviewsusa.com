@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'How to Build a Dog Treadmill',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Question Answered',
-  updated: 'October 2026',
-  updatedLong: 'October 18, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-18',
+  modified: '2026-11-15',
   socialProof: '1.2k',
   h1: ['How to Build a', 'Dog Treadmill'],
   standfirst:

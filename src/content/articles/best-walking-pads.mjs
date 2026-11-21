@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Best Walking Pads',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 18, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-18',
+  modified: '2026-11-16',
   socialProof: '2.4k',
   h1: ['What Is the Best', 'Walking Pad?'],
   standfirst:

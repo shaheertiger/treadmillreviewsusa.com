@@ -5,9 +5,10 @@ export default {
     'The honest version: a treadmill is a strong tool for health and consistency and a weaker one for weight change than most content implies. Here is how to use it well.',
   crumbLabel: 'Treadmill Workouts for Weight Loss',
   kicker: 'Training Guide',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-09-08',
+  modified: '2026-11-15',
   socialProof: '7.9k',
   h1: ['Treadmill Workouts', 'for Weight Loss'],
   standfirst:

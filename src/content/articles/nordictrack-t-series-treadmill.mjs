@@ -5,9 +5,10 @@ export default {
     'The NordicTrack T Series treadmill line as sold now: T Series 10 and 16 on nordictrack.com, the retail-only T Series 8, and the T Series 5. Confirmed specs, warranty and who each suits.',
   crumbLabel: 'NordicTrack T Series',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.3k',
   h1: ['NordicTrack T Series', 'Treadmill Review'],
   standfirst:

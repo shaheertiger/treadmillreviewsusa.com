@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 6, 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-11-06',
+  modified: '2026-11-16',
   socialProof: '1.1k',
   h1: ['Best Treadmill Safety Keys', 'and How to Match One'],
   standfirst:

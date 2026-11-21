@@ -15,9 +15,10 @@ export default {
     'The 2026 Sole F85 has a 22 x 60 in. deck, a 3.5 HP brushless motor, a 15.6 in. touchscreen and a 350 lb rating, with no decline. What changed from the 4.0 HP F85, what still conflicts, and who should buy it.',
   crumbLabel: 'Sole F85 Treadmill',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '2.2k',
   h1: ['Sole Treadmill F85', 'Review for 2026'],
   standfirst:

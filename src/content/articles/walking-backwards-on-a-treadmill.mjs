@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Walking Backwards on a Treadmill',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 17, 2026',
   published: '2026-10-06',
+  modified: '2026-11-17',
   socialProof: '1.6k',
   h1: ['Walking Backwards', 'on a Treadmill'],
   standfirst:

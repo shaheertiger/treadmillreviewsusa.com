@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Spirit Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.6k',
   h1: ['Spirit Treadmills:', 'The XT Range, Warranty and Apps'],
   standfirst:

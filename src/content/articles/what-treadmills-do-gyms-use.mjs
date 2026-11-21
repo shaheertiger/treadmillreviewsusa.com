@@ -10,9 +10,10 @@ export default {
   crumbLabel: 'What Treadmills Do Gyms Use',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Question Answered',
-  updated: 'October 2026',
-  updatedLong: 'October 18, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-18',
+  modified: '2026-11-15',
   socialProof: '1.3k',
   h1: ['What Treadmills', 'Do Gyms Use?'],
   standfirst:

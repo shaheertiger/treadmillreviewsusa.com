@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Used',
   updated: 'November 2026',
-  updatedLong: 'November 5, 2026',
+  updatedLong: 'November 17, 2026',
   published: '2026-11-05',
+  modified: '2026-11-17',
   socialProof: '1.3k',
   h1: ['Buying a Used', 'Peloton Treadmill'],
   standfirst:

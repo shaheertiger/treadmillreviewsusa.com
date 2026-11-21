@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Horizon T101 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 20, 2026',
   published: '2026-09-15',
-  modified: '2026-11-16',
+  modified: '2026-11-20',
   socialProof: '2.7k',
   h1: ['Horizon T101', 'Treadmill Review'],
   standfirst:

@@ -5,9 +5,10 @@ export default {
     'Four treadmill covers checked against their listings, for folding, non-folding and garage use, plus how to measure your machine and avoid trapping condensation.',
   crumbLabel: 'Best Treadmill Covers',
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 15, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-15',
+  modified: '2026-11-16',
   socialProof: '1.7k',
   h1: ['Best Treadmill Covers', 'for Garage and Home'],
   standfirst:

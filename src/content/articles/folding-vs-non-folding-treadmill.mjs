@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Folding vs Non-Folding Treadmill',
   kicker: 'Comparison',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-06',
+  modified: '2026-11-16',
   socialProof: '1.7k',
   h1: ['Folding vs', 'Non-Folding Treadmill'],
   standfirst:

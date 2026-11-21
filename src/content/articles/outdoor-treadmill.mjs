@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Treadmill Outdoors',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Question Answered',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-14',
+  modified: '2026-11-16',
   socialProof: '1.2k',
   h1: ['Treadmill Outdoors:', 'Can You Keep One Outside?'],
   standfirst:

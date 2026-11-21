@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'How Thick Should a Treadmill Mat Be',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Question Answered',
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-13',
+  modified: '2026-11-15',
   socialProof: '1.4k',
   h1: ['How Thick Should a', 'Treadmill Mat Be?'],
   standfirst:

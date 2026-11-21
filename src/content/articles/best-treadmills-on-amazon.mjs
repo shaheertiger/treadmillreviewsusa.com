@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Best Treadmills on Amazon',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-10-13',
+  modified: '2026-11-21',
   socialProof: '2.9k',
   h1: ['Best Treadmills', 'on Amazon'],
   standfirst:

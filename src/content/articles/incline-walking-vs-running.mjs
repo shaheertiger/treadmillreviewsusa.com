@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Incline Walking vs Running',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
-  updated: 'October 2026',
-  updatedLong: 'October 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-08',
+  modified: '2026-11-15',
   socialProof: '2.4k',
   h1: ['Incline Walking vs Running:', 'Which Is Better on a Treadmill?'],
   standfirst:

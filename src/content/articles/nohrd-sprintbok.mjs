@@ -5,9 +5,10 @@ export default {
     'The NOHrD Sprintbok treadmill is a handmade wooden curved manual treadmill from $8,199 in the US. What NOHrD confirms, the V2 vs Pro, the short warranty, and who it suits.',
   crumbLabel: 'NOHrD Sprintbok',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.3k',
   h1: ['NOHrD Sprintbok', 'Treadmill Review'],
   standfirst:

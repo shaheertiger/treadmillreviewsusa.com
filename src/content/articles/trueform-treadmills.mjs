@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 5, 2026',
+  updatedLong: 'November 17, 2026',
   published: '2026-11-05',
+  modified: '2026-11-17',
   socialProof: '1.1k',
   h1: ['TrueForm Treadmills:', 'Runner vs Trainer, Explained'],
   standfirst:

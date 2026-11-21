@@ -5,9 +5,10 @@ export default {
     'The Bowflex T16 treadmill checked against Bowflex’s listing and two independent reviews: 22 x 60 in. deck, 15% incline, 375 lb rating and a 16 in. touchscreen with no required subscription. What reviewers flag, and when the T9 or T6 is enough.',
   crumbLabel: 'Bowflex T16 Treadmill',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.6k',
   h1: ['Bowflex T16', 'Treadmill Review'],
   standfirst:

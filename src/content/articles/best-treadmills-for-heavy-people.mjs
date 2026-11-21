@@ -5,9 +5,10 @@ export default {
     'Weight capacity is a warranty term, not an engineering limit. We compared six treadmills on roller diameter, motor type, frame mass and deck width instead.',
   crumbLabel: 'Best Treadmills for Heavy People',
   kicker: "Buyer's Guide",
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 17, 2026',
   published: '2026-09-08',
+  modified: '2026-11-17',
   socialProof: '3.4k',
   h1: ['Best Treadmills for', 'Heavy Users'],
   standfirst:

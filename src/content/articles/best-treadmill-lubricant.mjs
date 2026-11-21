@@ -5,9 +5,10 @@ export default {
     'Almost every treadmill needs 100% silicone — the real decision is bottle versus aerosol, and whether your deck is pre-waxed and must never receive silicone at all.',
   crumbLabel: 'Best Treadmill Lubricant',
   kicker: 'Maintenance',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-08',
+  modified: '2026-11-16',
   socialProof: '5.7k',
   h1: ['Best Treadmill', 'Lubricant'],
   standfirst:

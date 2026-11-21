@@ -5,9 +5,10 @@ export default {
     'The TKO AirRaid Runner 8CTM is a curved manual treadmill with four magnetic resistance levels, now listed by TKO as the AirRaid Force. Specs, conflicts, warranty and who it suits.',
   crumbLabel: 'TKO AirRaid Runner 8CTM',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.2k',
   h1: ['TKO AirRaid Runner 8CTM', 'Manual Treadmill Review'],
   standfirst:

@@ -9,6 +9,7 @@ export default {
   updated: 'November 2026',
   updatedLong: 'November 21, 2026',
   published: '2026-11-05',
+  modified: '2026-11-21',
   socialProof: '2.1k',
   h1: ['LifeSmart Treadmills:', 'The PowerTouch Range Explained'],
   standfirst:

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 19, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-19',
   socialProof: '2.1k',
   h1: ['Does a Treadmill', 'Burn Belly Fat?'],
   standfirst:

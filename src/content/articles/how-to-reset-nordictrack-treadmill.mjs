@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'How to Reset a NordicTrack Treadmill',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 20, 2026',
   published: '2026-10-06',
+  modified: '2026-11-20',
   socialProof: '1.9k',
   h1: ['How to Reset a', 'NordicTrack Treadmill'],
   standfirst:

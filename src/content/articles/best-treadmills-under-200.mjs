@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 6, 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-11-06',
+  modified: '2026-11-15',
   socialProof: '1.9k',
   h1: ['Best Treadmills', 'Under $200'],
   standfirst:

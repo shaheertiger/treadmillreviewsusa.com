@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Treadmill Burning Smell',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-06',
+  modified: '2026-11-16',
   socialProof: '2.2k',
   h1: ['Treadmill', 'Burning Smell?'],
   standfirst:

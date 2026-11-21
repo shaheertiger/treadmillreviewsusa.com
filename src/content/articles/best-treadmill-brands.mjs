@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Best Treadmill Brands',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-06',
+  modified: '2026-11-15',
   socialProof: '2.6k',
   h1: ['The Best Treadmill Brands', 'and How to Judge Them'],
   standfirst:

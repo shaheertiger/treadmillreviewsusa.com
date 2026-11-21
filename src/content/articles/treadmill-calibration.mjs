@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Treadmill Calibration',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Spec Explainer',
-  updated: 'October 2026',
-  updatedLong: 'October 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 13, 2026',
   published: '2026-10-08',
+  modified: '2026-11-13',
   socialProof: '1.9k',
   h1: ['Treadmill Calibration:', 'The Machine, the Watch and Which to Trust'],
   standfirst:

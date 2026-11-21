@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Best Non-Folding Treadmills',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 15, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-15',
+  modified: '2026-11-16',
   socialProof: '1.7k',
   h1: ['Best Non-Folding Treadmills', 'for a Permanent Spot at Home'],
   standfirst:

@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 5, 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-11-05',
+  modified: '2026-11-16',
   socialProof: '1.4k',
   h1: ['Treadmills at Sam’s Club:', 'What It Sells and How to Buy'],
   standfirst:

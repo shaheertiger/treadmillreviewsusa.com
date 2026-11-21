@@ -5,9 +5,10 @@ export default {
     'Is there an East Urban Home compact foldable electric treadmill? Who makes Wayfair house-brand products, what the listings show, returns, warranty and what to check.',
   crumbLabel: 'East Urban Home Treadmill',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-14',
+  modified: '2026-11-16',
   socialProof: '1.4k',
   h1: ['East Urban Home Compact Foldable', 'Electric Treadmill, Checked'],
   standfirst:

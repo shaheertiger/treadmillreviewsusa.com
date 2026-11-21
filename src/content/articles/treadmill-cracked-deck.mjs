@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Treadmill Cracked Deck',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-14',
+  modified: '2026-11-16',
   socialProof: '1.5k',
   h1: ['Treadmill Cracked Deck:', 'What It Means and What to Do Next'],
   standfirst:

@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Can You Watch Netflix on a NordicTrack?',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   kicker: 'Question Answered',
-  updated: 'October 2026',
-  updatedLong: 'October 20, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-20',
+  modified: '2026-11-15',
   socialProof: '1.4k',
   h1: ['Can You Watch Netflix', 'on a NordicTrack?'],
   standfirst:

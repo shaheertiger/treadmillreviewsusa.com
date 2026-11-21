@@ -5,9 +5,10 @@ export default {
     'Under $2,000 is where 60-inch decks meet frames heavy enough to run on. We compared six machines at this price on deck length, frame mass, motor and warranty.',
   crumbLabel: 'Best Treadmills Under $2,000',
   kicker: "Buyer's Guide",
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-09-08',
+  modified: '2026-11-15',
   socialProof: '4.6k',
   h1: ['Best Treadmills', 'Under $2,000'],
   standfirst:

@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Kids Treadmill Guide',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: "Buyer's Guide",
-  updated: 'October 2026',
-  updatedLong: 'October 20, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-20',
+  modified: '2026-11-15',
   socialProof: '1.3k',
   h1: ['Kids and Treadmills:', 'Safe Ages, Real Risks, Better Options'],
   standfirst:

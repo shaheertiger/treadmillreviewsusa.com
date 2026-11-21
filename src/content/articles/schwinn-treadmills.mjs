@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 5, 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-11-05',
+  modified: '2026-11-21',
   socialProof: '1.5k',
   h1: ['Schwinn Treadmills:', 'The Current Range and the Models You Will See Used'],
   standfirst:

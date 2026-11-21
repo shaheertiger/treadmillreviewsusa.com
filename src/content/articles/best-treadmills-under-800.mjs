@@ -5,9 +5,10 @@ export default {
     'Under $800 is where treadmills stop being appliances and start being equipment — 55-inch decks, 2.5 CHP motors and warranties in years. We compared six at this price on their published specifications.',
   crumbLabel: 'Best Treadmills Under $800',
   kicker: "Buyer's Guide",
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 17, 2026',
   published: '2026-09-08',
+  modified: '2026-11-17',
   socialProof: '5.4k',
   h1: ['Best Treadmills', 'Under $800'],
   standfirst:

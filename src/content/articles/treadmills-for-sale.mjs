@@ -5,9 +5,10 @@ export default {
     'Four separate markets sell treadmills, and they differ more in delivery, warranty and returns than in price. What each one actually costs you, and when the discounts are real.',
   crumbLabel: 'Treadmills for Sale',
   kicker: 'Buying Guide',
-  updated: 'September 2026',
-  updatedLong: 'September 15, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-15',
+  modified: '2026-11-16',
   socialProof: '3.1k',
   h1: ['Treadmills for Sale:', 'Where to Buy and What to Pay'],
   standfirst:

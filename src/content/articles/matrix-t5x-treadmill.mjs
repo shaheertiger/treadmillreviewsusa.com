@@ -5,9 +5,10 @@ export default {
     'The Matrix T5x is a commercial gym treadmill most buyers now find remanufactured. Which specs the sources agree on, which conflict, what it costs, and what to check before buying.',
   crumbLabel: 'Matrix T5x Treadmill',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.1k',
   h1: ['Matrix T5x', 'Treadmill Review'],
   standfirst:

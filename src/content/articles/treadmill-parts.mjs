@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 5, 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-11-05',
+  modified: '2026-11-16',
   socialProof: '1.9k',
   h1: ['Treadmill Parts:', 'Where to Buy the Right One'],
   standfirst:

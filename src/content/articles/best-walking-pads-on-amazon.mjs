@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-11-16',
-  modified: '2026-11-16',
+  modified: '2026-11-21',
   socialProof: '2.1k',
   h1: ['Best Walking Pads', 'on Amazon'],
   standfirst:

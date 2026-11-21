@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 19, 2026',
   published: '2026-11-17',
+  modified: '2026-11-19',
   socialProof: '1.3k',
   h1: ['How Long Should Seniors Walk', 'on a Treadmill?'],
   standfirst:

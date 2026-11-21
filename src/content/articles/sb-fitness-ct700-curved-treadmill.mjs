@@ -5,9 +5,10 @@ export default {
     'The SB Fitness CT700 is a self-generated curved treadmill with 8 magnetic levels and steel bearings, sold direct for $2,595. Its listed specs, the conflicts, CT700 vs CT550, and who it suits.',
   crumbLabel: 'SB Fitness CT700',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.4k',
   h1: ['SB Fitness CT700', 'Self-Generated Curved Treadmill'],
   standfirst:

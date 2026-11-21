@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Home Workout Equipment Reviews',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 16, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-16',
+  modified: '2026-11-15',
   socialProof: '2.4k',
   h1: ['Home Workout Equipment Reviews:', 'The Best in Each Category'],
   standfirst:

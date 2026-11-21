@@ -5,9 +5,10 @@ export default {
     'Five questions about how you will actually use it decide your budget. Answer them honestly and the number falls out — usually lower than you expected.',
   crumbLabel: 'How Much Should You Spend?',
   kicker: 'Buying Guide',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-09-08',
+  modified: '2026-11-15',
   socialProof: '4.9k',
   h1: ['How Much Should You', 'Spend on a Treadmill?'],
   standfirst:

@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Treadmill Belt Replacement Cost',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Maintenance',
-  updated: 'October 2026',
-  updatedLong: 'October 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-08',
+  modified: '2026-11-16',
   socialProof: '1.8k',
   h1: ['Treadmill Belt Replacement Cost:', 'What You Will Actually Pay'],
   standfirst:

@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'How to Disassemble a Treadmill',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Question Answered',
-  updated: 'October 2026',
-  updatedLong: 'October 9, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-10-09',
+  modified: '2026-11-21',
   socialProof: '2.1k',
   h1: ['How Do You Disassemble', 'a Treadmill?'],
   standfirst:

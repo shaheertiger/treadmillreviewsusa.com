@@ -5,9 +5,10 @@ export default {
     'WD-40 is a solvent and water displacer, not a lubricant. On a treadmill deck it strips the low-friction surface, attracts grit and can void your warranty. Here is what to use instead.',
   crumbLabel: 'Can You Use WD-40 on a Treadmill?',
   kicker: 'Maintenance',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-08',
+  modified: '2026-11-16',
   socialProof: '7.3k',
   h1: ['Can You Use WD-40', 'on a Treadmill?'],
   standfirst:

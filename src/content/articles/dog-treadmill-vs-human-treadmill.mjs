@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Dog Treadmill vs Human Treadmill',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Comparison',
-  updated: 'October 2026',
-  updatedLong: 'October 13, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-13',
+  modified: '2026-11-15',
   socialProof: '1.3k',
   h1: ['Dog Treadmill vs Human Treadmill', 'The Differences That Matter'],
   standfirst:

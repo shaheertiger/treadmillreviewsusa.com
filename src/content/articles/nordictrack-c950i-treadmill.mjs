@@ -19,8 +19,9 @@ export default {
   crumbLabel: 'NordicTrack C950i Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 5, 2026',
+  updatedLong: 'November 17, 2026',
   published: '2026-11-05',
+  modified: '2026-11-17',
   socialProof: '1.1k',
   h1: ['NordicTrack C950i', 'Treadmill: Buying One Now'],
   standfirst:

@@ -5,9 +5,10 @@ export default {
     'How the five zones work, why 220-minus-age is a poor guide for an individual, why treadmill grip sensors mislead, and when the talk test beats a monitor entirely.',
   crumbLabel: 'Treadmill Heart Rate Zones',
   kicker: 'Training Guide',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-09-08',
+  modified: '2026-11-15',
   socialProof: '3.8k',
   h1: ['Treadmill', 'Heart Rate Zones'],
   standfirst:

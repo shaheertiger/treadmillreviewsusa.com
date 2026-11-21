@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 5, 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-11-05',
+  modified: '2026-11-15',
   socialProof: '1.2k',
   h1: ['Rogue Treadmills:', 'What Rogue Fitness Actually Sells'],
   standfirst:

@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 5, 2026',
+  updatedLong: 'November 17, 2026',
   published: '2026-11-05',
+  modified: '2026-11-17',
   socialProof: '0.9k',
   h1: ['Bells of Steel Blitz', 'Manual Treadmill Review'],
   standfirst:

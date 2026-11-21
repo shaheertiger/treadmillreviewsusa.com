@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Black Friday Elliptical Deals',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Black Friday 2026',
-  updated: 'October 2026',
-  updatedLong: 'October 28, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-28',
+  modified: '2026-11-16',
   socialProof: '1.8k',
   h1: ['Black Friday', 'Elliptical Deals 2026'],
   standfirst:

@@ -5,9 +5,10 @@ export default {
     'A 2.5 CHP motor, a 20 x 55-inch deck and a 325 lb capacity that beats machines costing more. What the 505 CST gets right at the budget end, and where the money was saved.',
   crumbLabel: 'ProForm 505 CST',
   kicker: 'Model Review',
-  updated: 'September 2026',
-  updatedLong: 'September 15, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-09-15',
+  modified: '2026-11-15',
   socialProof: '1.9k',
   h1: ['ProForm 505 CST', 'Treadmill Review'],
   standfirst:

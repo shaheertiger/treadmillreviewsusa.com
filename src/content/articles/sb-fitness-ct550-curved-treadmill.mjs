@@ -5,9 +5,10 @@ export default {
     'The SB Fitness CT550 is a motorless curved treadmill sold mainly by SB Fitness Equipment. Its listed specs, where they conflict, the warranty and returns, and who it suits.',
   crumbLabel: 'SB Fitness CT550',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.4k',
   h1: ['SB Fitness CT550', 'Self-Generated Curved Treadmill'],
   standfirst:

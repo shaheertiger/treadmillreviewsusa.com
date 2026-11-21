@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 5, 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-11-05',
+  modified: '2026-11-16',
   socialProof: '1.7k',
   h1: ['Nautilus Treadmills:', 'What Happened, and What to Buy Instead'],
   standfirst:

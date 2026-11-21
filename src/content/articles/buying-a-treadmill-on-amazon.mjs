@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Buying a Treadmill on Amazon',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-06',
+  modified: '2026-11-15',
   socialProof: '2.4k',
   h1: ['Buying a Treadmill', 'on Amazon'],
   standfirst:

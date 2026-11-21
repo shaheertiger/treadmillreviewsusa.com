@@ -6,8 +6,9 @@ export default {
   crumbLabel: 'Best Treadmills for Sprinting',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 6, 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-11-06',
+  modified: '2026-11-21',
   socialProof: '1.5k',
   h1: ['Best Treadmills', 'for Sprinting'],
   standfirst:

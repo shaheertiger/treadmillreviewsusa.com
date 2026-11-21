@@ -9,9 +9,10 @@ export default {
     'The WalkingPad Z1 folding under desk treadmill, checked against WalkingPad, Amazon and an independent review: price, folded size, the 242 lb limit and the disputed figures.',
   crumbLabel: 'WalkingPad Z1',
   kicker: 'Product Review',
-  updated: 'October 2026',
-  updatedLong: 'October 20, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-20',
+  modified: '2026-11-15',
   socialProof: '1.9k',
   h1: ['WalkingPad Z1', 'Review: Folds in Half, Walks Only'],
   standfirst:

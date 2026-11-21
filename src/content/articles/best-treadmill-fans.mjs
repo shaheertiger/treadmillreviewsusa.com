@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Best Treadmill Fans',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 15, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-15',
+  modified: '2026-11-15',
   socialProof: '1.6k',
   h1: ['Best Fans', 'for Treadmill Running'],
   standfirst:

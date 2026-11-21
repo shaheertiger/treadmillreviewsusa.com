@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 17, 2026',
   published: '2026-10-15',
-  modified: '2026-11-16',
+  modified: '2026-11-17',
   socialProof: '2.2k',
   h1: ['Best Affordable Treadmills:', 'Budget Picks Under $300, $500 and $1,000'],
   standfirst:

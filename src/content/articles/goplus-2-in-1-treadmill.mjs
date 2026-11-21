@@ -5,9 +5,10 @@ export default {
     'The Goplus SuperFit 2-in-1 is a $150-$200 folding pad with a rail that unlocks a 7.5 mph mode. What is confirmed, the conflicting warranty, the generic listing title and who it suits.',
   crumbLabel: 'Goplus 2-in-1 Treadmill',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '2.1k',
   h1: ['Goplus 2-in-1 Treadmill', 'Review: The SuperFit'],
   standfirst:

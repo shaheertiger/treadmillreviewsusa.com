@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Treadmill Speed Sensor',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
-  updated: 'October 2026',
-  updatedLong: 'October 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-08',
+  modified: '2026-11-15',
   socialProof: '1.8k',
   h1: ['Treadmill Speed Sensor', 'Not Working? Symptoms, Tests and Fixes'],
   standfirst:

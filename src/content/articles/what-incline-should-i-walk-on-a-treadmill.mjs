@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'What Incline Should I Walk On?',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
-  updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-10-06',
+  modified: '2026-11-16',
   socialProof: '2.4k',
   h1: ['What Incline Should I Walk', 'On a Treadmill?'],
   standfirst:

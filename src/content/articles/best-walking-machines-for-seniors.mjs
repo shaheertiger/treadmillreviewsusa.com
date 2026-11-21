@@ -18,8 +18,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 20, 2026',
   published: '2026-11-17',
+  modified: '2026-11-20',
   h1: ['Best Walking Machines', 'for Seniors'],
   standfirst:
     'The best walking machine for an older person depends less on the machine than on the walker: how steady they are, how high they can step and whether they need something to hold. Here are six machines across four types, from a full-rail treadmill to a seated stepper, and a simple table for choosing between them.',

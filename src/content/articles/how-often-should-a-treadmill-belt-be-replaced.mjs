@@ -5,9 +5,10 @@ export default {
     'A maintained treadmill belt lasts 5-10 years; a neglected one can need replacing in two. Here are the five signs it is due, what it costs, and why the deck usually goes with it.',
   crumbLabel: 'How Often Should a Treadmill Belt Be Replaced?',
   kicker: 'Ownership',
-  updated: 'September 2026',
-  updatedLong: 'September 8, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 16, 2026',
   published: '2026-09-08',
+  modified: '2026-11-16',
   socialProof: '3.5k',
   h1: ['How Often Should a', 'Treadmill Belt Be Replaced?'],
   standfirst:

@@ -6,9 +6,10 @@ export default {
   crumbLabel: 'Dog Treadmills for Large Dogs',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.6k',
   h1: ['Best Dog Treadmills for Large Dogs', 'Long Enough for Big Breeds'],
   standfirst:

@@ -11,6 +11,7 @@ export default {
   updated: 'November 2026',
   updatedLong: 'November 21, 2026',
   published: '2026-10-06',
+  modified: '2026-11-21',
   socialProof: '2.1k',
   h1: ['How Much Does', 'a Treadmill Cost?'],
   standfirst: `Anywhere from about $200 to well over $10,000, which is not a useful answer until you know what the money buys at each step. Here are the tiers, what changes between them, and the costs that arrive after checkout.`,

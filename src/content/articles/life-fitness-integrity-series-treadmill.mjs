@@ -5,9 +5,10 @@ export default {
     'The Life Fitness Integrity Series treadmill for home: the current Integrity+ specs, the SL and SE4 consoles, what it costs, where home buyers can get one, and what free delivery and install really covers.',
   crumbLabel: 'Life Fitness Integrity Series Treadmill',
   kicker: 'Model Review',
-  updated: 'October 2026',
-  updatedLong: 'October 14, 2026',
+  updated: 'November 2026',
+  updatedLong: 'November 15, 2026',
   published: '2026-10-14',
+  modified: '2026-11-15',
   socialProof: '1.6k',
   h1: ['Life Fitness Integrity Series', 'Treadmill Review'],
   standfirst:
