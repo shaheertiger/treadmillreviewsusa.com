@@ -25,7 +25,7 @@ Format: `slug` — Title — hub → group — Amazon search to start from
 - [x] 2026-11-21 · `merach-treadmills` — MERACH Treadmill Reviews (2026): Is MERACH a Good Brand? — /brands/ → Cross-shopped alternatives group — "MERACH treadmill"
 - [x] 2026-11-21 · `best-treadmills-for-peloton-app` — Best Treadmills for the Peloton App (2026): 6 Without a Tread — /best/ → features group — "treadmill bluetooth app"
 - [x] 2026-11-21 · `superun-treadmills` — Superun Treadmill Reviews (2026): Walking Pads, Specs, Warranty — /brands/ → Cross-shopped alternatives group — "Superun walking pad"
-- [ ] `best-treadmills-with-long-warranty` — Best Treadmills With the Longest Warranty (2026): 6 Picks — /best/ → features group — "treadmill lifetime warranty" (use makers' warranty pages for terms)
+- [x] 2026-11-21 · `best-treadmills-with-long-warranty` — Best Treadmills With the Longest Warranty (2026): 6 Picks — /best/ → features group — "treadmill lifetime warranty" (use makers' warranty pages for terms)
 - [x] 2026-11-21 · `therun-treadmills` — THERUN Treadmill Reviews (2026): Is THERUN Legit? — /brands/ → Cross-shopped alternatives group — "THERUN treadmill"
 - [ ] `best-treadmills-with-heart-rate-monitor` — Best Treadmills With Heart Rate Monitors (2026): Chest Strap Picks — /best/ → features group — "treadmill heart rate chest strap"
 - [x] 2026-11-21 · `akluer-treadmills` — AKLUER Treadmill Reviews (2026): Models and What to Check — /brands/ → Cross-shopped alternatives group — "AKLUER treadmill"

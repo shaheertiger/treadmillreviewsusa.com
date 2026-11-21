@@ -28,7 +28,11 @@ const DATE_LINE = /(modified|updated|updatedLong|published|dateModified|modified
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 // Newest real content change per file, from one pass over the patch log (newest commit first).
-const log = execSync('git log -p --no-color --format=@@@%ad --date=short -- src/content/articles src/pages', { cwd: ROOT, encoding: 'utf8', maxBuffer: 1024e6 });
+// Uncommitted edits count as today's changes, so a run that edits pages and syncs before committing
+// still dates them correctly. They are read first, so they win over older commits.
+const today = new Date().toISOString().slice(0, 10);
+const working = execSync('git diff HEAD --no-color -- src/content/articles src/pages', { cwd: ROOT, encoding: 'utf8', maxBuffer: 1024e6 });
+const log = (working ? `@@@${today}\n${working}\n` : '') + execSync('git log -p --no-color --format=@@@%ad --date=short -- src/content/articles src/pages', { cwd: ROOT, encoding: 'utf8', maxBuffer: 1024e6 });
 const lastReal = new Map();
 let date = null, file = null, real = false;
 const flush = () => { if (file && real && !lastReal.has(file)) lastReal.set(file, date); };

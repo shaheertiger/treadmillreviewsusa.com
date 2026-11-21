@@ -270,14 +270,14 @@ export default {
         'A full 60-inch deck for running strides',
       ],
       cons: [
-        'Does not fold',
+        'Heavy, at 277 lb, though it folds',
         'The listing does not say what data reaches the Peloton App, so expect to set speed by hand',
         'About $935 on Amazon, more than the T101 Connect',
       ],
       bottomLine:
         'The treadmill to buy for Peloton running classes: it matches the Tread’s ranges closely for a fraction of the price.',
       description:
-        'The Horizon 7.0 AT is our best overall pick because it covers Peloton’s running classes and makes the constant speed changes easy. Our spec-checked review gives a 20 by 60-inch deck, 0.5 to 12 mph, 0 to 15% incline and a 325 lb capacity, with Bluetooth FTMS. The Amazon listing adds QuickDial speed and incline controls with Rapid Sync for faster changes, 3-zone variable response cushioning, and app compatibility that names Peloton, Strava and Zwift, with a note that separate subscriptions are required. It does not fold, and the listing does not explain what the Peloton connection shares, so plan on changing speed and incline yourself. Amazon showed it at $934.98 on 21 November 2026.',
+        'The Horizon 7.0 AT is our best overall pick because it covers Peloton’s running classes and makes the constant speed changes easy. Our spec-checked review gives a 20 by 60-inch deck, 0.5 to 12 mph, 0 to 15% incline and a 325 lb capacity, with Bluetooth FTMS. The Amazon listing adds QuickDial speed and incline controls with Rapid Sync for faster changes, 3-zone variable response cushioning, and app compatibility that names Peloton, Strava and Zwift, with a note that separate subscriptions are required. It folds, though at 277 lb it is heavy to move, and the listing does not explain what the Peloton connection shares, so plan on changing speed and incline yourself. Amazon showed it at $934.98 on 21 November 2026.',
     },
     {
       id: 'horizon-t101-connect',

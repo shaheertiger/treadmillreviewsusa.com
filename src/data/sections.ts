@@ -398,6 +398,13 @@ export const SECTIONS: Section[] = [
         name: 'Getting started & ownership',
         pages: [
           {
+            title: 'Best Treadmills With the Longest Warranty',
+            description:
+              'Seven treadmills ranked by parts and labour cover, from Spirit’s lifetime deck to Horizon’s two years of labour.',
+            badge: 'Warranty',
+            url: '/best-treadmills-with-long-warranty/',
+          },
+          {
             title: 'Best Treadmills for Beginners',
             description:
               'Ranked on assembly, console simplicity and safety — and an argument for spending less than you think.',
@@ -1713,6 +1720,12 @@ export const SECTIONS: Section[] = [
               "Horizon's best-selling folder: confirmed specs, the missing motor rating, and how to judge a sale price.",
             badge: 'Horizon',
             url: '/horizon-7-0-at-treadmill/',
+          },
+          {
+            title: 'Horizon 7.4 AT',
+            description: '22-inch deck, 12 mph, 350 lb and five years on parts: the mid-range Horizon, against the 7.0 and 7.8 AT.',
+            badge: 'Review',
+            url: '/horizon-7-4-at-treadmill/',
           },
           {
             title: 'Goplus 2-in-1 Treadmill Review',

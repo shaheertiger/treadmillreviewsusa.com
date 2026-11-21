@@ -283,7 +283,7 @@ export default {
             belt and deck at the same time.
           </p>
           <p>
-            <strong>The drive motor</strong> is where ProForm&rsquo;s lifetime motor warranty earns its
+            <strong>The drive motor</strong> is where ProForm&rsquo;s <a href="/best-treadmills-with-long-warranty/" class="text-[#0F62FE] font-medium" data-autolink>lifetime motor warranty</a> earns its
             keep on current machines; check it before paying for one. Motors fail less often than the
             boards that drive them, and a humming motor is frequently worn brushes or a failing board
             rather than the motor itself.

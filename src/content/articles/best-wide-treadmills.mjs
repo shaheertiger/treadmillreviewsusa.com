@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 21, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-21',
   socialProof: '1.9k',
   h1: ['Best Wide Treadmills:', 'Six 22-Inch Belts'],
   standfirst:
@@ -144,7 +144,7 @@ export default {
           </p>
           <p>
             That is not a theoretical gap. One independent reviewer that measures belts found the
-            Horizon 7.4 AT's running surface matched Horizon's 22-inch claim, and measured a
+            <a href="/horizon-7-4-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Horizon 7.4 AT</a>'s running surface matched Horizon's 22-inch claim, and measured a
             NordicTrack Commercial-series belt quoted at 22 inches at about 21.5. Half an inch is
             not a reason to reject a machine, but it is a reason not to treat two 22-inch listings as
             identical, and a reason to be wary of any listing that gives a width to the tenth of an
