@@ -365,6 +365,13 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-with-decline/',
           },
           {
+            title: 'Best Treadmills for Hiking',
+            description:
+              'Incline and decline machines for trail and mountain prep, with a weighted-pack workout.',
+            badge: 'Hiking',
+            url: '/best-treadmills-for-hiking/',
+          },
+          {
             title: 'Treadmills With the Highest Incline',
             description:
               'Machines ranked by maximum grade, from 15% folders to 40% incline trainers, with degrees explained.',
@@ -2611,6 +2618,13 @@ export const SECTIONS: Section[] = [
               'Safety key and dashes, the dedicated-circuit rule, belt tension and centring, LUBE BELT resets and Horizon support.',
             badge: 'Horizon',
             url: '/horizon-treadmill-troubleshooting/',
+          },
+          {
+            title: 'Sole Treadmill Troubleshooting',
+            description:
+              'Safety key and front breaker, the 90-hour lube, belt tension and tracking, error codes and calling Sole.',
+            badge: 'Sole',
+            url: '/sole-treadmill-troubleshooting/',
           },
           {
             title: 'Treadmill Water Damage',
