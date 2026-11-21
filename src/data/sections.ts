@@ -652,6 +652,13 @@ export const SECTIONS: Section[] = [
             url: '/how-much-does-a-treadmill-cost/',
           },
           {
+            title: 'How Much Does a Walking Pad Cost?',
+            description:
+              'Prices by type, from $130 flat pads to $800 handrail pads, what more money buys, and the costs after checkout.',
+            badge: 'Walking pads',
+            url: '/how-much-does-a-walking-pad-cost/',
+          },
+          {
             title: 'Cheap vs. Premium Treadmill',
             description:
               'Component by component, what the extra money buys — and which three parts you will notice.',
