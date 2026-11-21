@@ -40,6 +40,57 @@ const NEEDS = [
   },
 ];
 
+const LISTING_TERMS = [
+  {
+    says: "\"3.0 CHP\" or \"3.0 HP continuous\"",
+    means: "The sustained rating, the figure this page's recommendations use.",
+    treat: "Take it at face value and compare directly.",
+  },
+  {
+    says: "\"3.0 HP peak\" or \"max HP\"",
+    means: "A momentary figure, commonly 1.5 to 2 times the continuous rating.",
+    treat: "Halve it as a cautious working estimate.",
+  },
+  {
+    says: "\"Treadmill duty\" HP",
+    means: "No standard definition; usually between peak and continuous.",
+    treat: "Assume roughly two thirds of the stated figure.",
+  },
+  {
+    says: "\"3.0 HP\" with no qualifier",
+    means: "Most often a peak figure in a search-optimized title.",
+    treat: "Treat as peak until the manual says otherwise.",
+  },
+  {
+    says: "Different HP on different retailer pages",
+    means: "Mixed rating types, or copy left over from an older model year.",
+    treat: "Trust the manufacturer's manual and the lowest continuous figure.",
+  },
+];
+
+const WARRANTY_SIGNALS = [
+  {
+    term: "Lifetime or 10+ years",
+    where: "Established mid-range and premium home brands",
+    signal: "The maker expects the motor to run well inside its limits for years.",
+  },
+  {
+    term: "3 to 5 years",
+    where: "Mainstream mid-priced home treadmills",
+    signal: "A reasonable commitment; size the motor with some headroom.",
+  },
+  {
+    term: "1 to 2 years",
+    where: "Budget folding treadmills and many marketplace brands",
+    signal: "Treat any large horsepower claim with caution; buy for light use.",
+  },
+  {
+    term: "Under 1 year",
+    where: "Some low-cost walking pads and unbranded imports",
+    signal: "Expect a walking-duty motor whatever the listing says.",
+  },
+];
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -102,6 +153,30 @@ const schema = {
             text: "For heavy daily use, yes. AC motors run at a constant speed with the load handled by gearing, which is why commercial gym machines use them and why they last decades. They are also louder, heavier, more expensive, and often need a dedicated circuit. For a household running under about two hours a day, a good DC motor is the more sensible buy.",
           },
         },
+        {
+          "@type": "Question",
+          name: "Does a higher horsepower treadmill use more electricity?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Not in any meaningful way. Horsepower is the ceiling of what the motor can sustain, while the electricity it draws depends on the work you ask of it: your weight, pace, incline and deck friction. The same walker on a 2.5 CHP and a 3.5 CHP machine draws power in the same range, so motor size barely moves the bill compared with how long and how hard you use it.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much horsepower does a walking pad need?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Walking pads commonly list 1.0 to 2.5 HP, often as a peak figure, and that is usually enough for walking at desk speeds of 1.5 to 3 mph. Walking produces small, steady loads with no landing spike. Heavier users, very long daily sessions or jogging push a small motor toward its limit, so in those cases look for a stated continuous rating and a higher weight capacity.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why do retailers list different horsepower for the same treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually because they are quoting different ratings. One page gives continuous horsepower, another gives the larger peak figure, and a third copies a number from an older model year. Trust the manufacturer's manual over a marketplace title, and when sources conflict and none says continuous, assume the lower capability.",
+          },
+        },
       ],
     },
     {
@@ -110,7 +185,7 @@ const schema = {
       description: description,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-09-06",
-      dateModified: "2026-09-06",
+      dateModified: "2026-11-21",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
   ],
@@ -123,7 +198,7 @@ const schema = {
   ogType="article"
   article={{
     publishedTime: "2026-09-06",
-    modifiedTime: "2026-09-06",
+    modifiedTime: "2026-11-21",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
@@ -154,7 +229,7 @@ const schema = {
             Buyer's Guide
           </span>
           <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated September 2026
+            Updated November 2026
           </span>
         </div>
         <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
@@ -187,7 +262,7 @@ const schema = {
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">September 6, 2026</strong>
+          Last Updated: <strong class="text-gray-700">November 21, 2026</strong>
         </p>
         <div class="ml-auto">
           <SocialProof users="6.1k" />
@@ -220,7 +295,11 @@ const schema = {
           <a href="#underpowered" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What an Underpowered Motor Does</a>
           <a href="#overbuying" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Where Extra Horsepower Is Wasted</a>
           <a href="#reading-specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Reading a Spec Sheet Honestly</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+          <a href="#listings-disagree" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Why Two Listings Disagree</a>
+          <a href="#electricity" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Does More HP Use More Electricity?</a>
+          <a href="#walking-pads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Walking Pad Motors</a>
+          <a href="#lifespan-warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Motor Lifespan and Warranty</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
         </nav>
       </div>
     </div>
@@ -487,8 +566,8 @@ const schema = {
             — a larger motor at low load is usually quieter, but deck construction
             and roller quality dominate the noise a downstairs neighbour hears, as
             our
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">apartment noise testing</a>
-            found.
+            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a>
+            explains.
           </p>
           <p>
             It does not improve cushioning, incline range, belt size, console
@@ -543,10 +622,234 @@ const schema = {
             covers the rest of the specification in the same spirit.
           </p>
         </div>
+        <div id="listings-disagree" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Why Two Listings Disagree on the Same Motor</h2>
+          <p>
+            Shop for one treadmill across three retailers and you can easily
+            find three horsepower figures. The maker's page says 3.0 CHP, a
+            marketplace listing says 4.25 HP, and a comparison site says 3.5.
+            Nobody has necessarily lied. Each has picked a different rating,
+            or copied a figure from a different version of the machine, and
+            dropped the word that would have told you which.
+          </p>
+          <p>
+            The commonest cause is the peak-versus-continuous swap described at
+            the top of this page. A reseller writing a title for search wants the
+            biggest number available, and the peak figure is always bigger.
+            The second cause is model-year drift: brands quietly change motors
+            between production runs, and old copy lives on in listings long after
+            the spec has moved. The third is translation from a motor supplier's
+            data sheet, which may quote input power, output power or a rating at
+            a particular voltage, none of which maps cleanly onto the treadmill's
+            own continuous figure.
+          </p>
+          <p>
+            The working rule is to trust the most conservative figure from the
+            most accountable source. The manufacturer's own spec sheet or manual
+            is more accountable than a marketplace title, because the
+            manufacturer also writes the warranty. When the sources conflict and
+            none of them says continuous, treat the machine as having the lower
+            capability until you can confirm otherwise. The table below is a
+            rough translation guide for the wording you will meet. It is general
+            guidance for reading listings, not a measurement of any particular
+            motor.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[680px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">What the Listing Says</th>
+              <th class="text-left px-4 py-3 font-black">What It Usually Means</th>
+              <th class="text-left px-4 py-3 font-black">How to Treat It</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              LISTING_TERMS.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.says}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.means}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.treat}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p>
+          If a figure matters to your decision, the most reliable step is to
+          download the owner's manual from the manufacturer's site. Manuals tend
+          to be written by engineering rather than marketing, and they more often
+          state the continuous rating plainly, along with the electrical
+          requirement, which is itself a useful clue to how much motor is really
+          inside.
+        </p>
+
+        <div id="electricity" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Does More Horsepower Use More Electricity?</h2>
+          <p>
+            Less than most people assume. A motor's horsepower rating is a
+            ceiling, not a meter reading. It describes how much work the motor
+            can sustain, while the electricity it actually draws is set by how
+            much work you ask of it: your body weight, your pace, the incline,
+            and the friction of the deck. One horsepower is about 746 watts of
+            mechanical output, so a 3.0 CHP motor could in principle deliver well
+            over 2,000 watts, yet a household treadmill in normal use typically
+            draws far less than that because nobody is loading it to its rating.
+          </p>
+          <p>
+            Put the same 180 lb walker at 3 mph on a 2.5 CHP machine and on a
+            3.5 CHP machine, and the work being done is essentially the same, so
+            the draw is in the same range. The larger motor is loafing rather
+            than straining. There are small secondary effects in both directions
+            — a bigger motor has more mass to spin and may have slightly
+            different losses, while a motor working well below its limit runs
+            cooler and can be a little more efficient — but neither is large
+            enough to show up as a meaningful line on a power bill.
+          </p>
+          <p>
+            What does change the bill is use. Running faster, walking on a
+            steep incline, a heavier user and longer sessions all raise the
+            energy used, and a dry, under-lubricated deck raises it for no
+            benefit at all. We work through the arithmetic, with typical monthly
+            costs by pattern of use, in
+            <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">how much electricity a treadmill uses</a>.
+          </p>
+          <p>
+            The one place horsepower genuinely touches your wiring is the
+            outlet. Larger home motors and especially commercial AC machines may
+            call for a dedicated 15- or 20-amp circuit, and the manual will say
+            so. That is a statement about the peak current at start-up and under
+            heavy load, not about the monthly running cost. If a manufacturer
+            asks for a dedicated circuit, follow it; sharing a circuit with a
+            space heater or a freezer is a common cause of tripped breakers and
+            erratic controller behavior that owners misread as a motor fault.
+          </p>
+        </div>
+
+        <div id="walking-pads" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Walking Pad Motors: Why Low Horsepower Is Fine</h2>
+          <p>
+            Walking pads are the obvious exception to everything above. Their
+            listed motors are commonly in the 1.0 to 2.5 HP range, and that
+            figure is very often peak rather than continuous. By the standards of
+            a running treadmill, that is a small motor. For the job a walking pad
+            is designed to do, it is usually enough.
+          </p>
+          <p>
+            The reason is load. Walking at 1.5 to 3 mph, the speeds most people
+            use under a standing desk, produces small footstrike forces and a
+            steady, low demand on the motor. There is no airborne phase, no
+            landing spike, and usually no incline. A compact motor on a short,
+            light belt can sustain that for long sessions, which is exactly how
+            these machines are used. Most walking pads also cap their top speed
+            at a walking or light-jogging pace, which is the controller
+            protecting the motor from work it was not sized for.
+          </p>
+          <p>
+            Where the low figure does matter is at the edges. A heavier user, a
+            pad run for many hours a day, or someone who tries to jog on a
+            machine sold for walking all push a small motor toward its limit, and
+            the symptoms are the same as on a full treadmill: hesitation under
+            the foot, heat and cutting out. If any of those describes you, read
+            the weight rating and the motor wording with the same scepticism as
+            you would for a treadmill, and favor pads that state a continuous
+            rating. The
+            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill comparison</a>
+            covers where a pad stops being the right tool.
+          </p>
+          <p>
+            For a straightforward walking setup, do not let a modest horsepower
+            number put you off a well-made pad. Deck stability, belt width,
+            noise and the quality of the speed control are more noticeable day
+            to day. Our
+            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads guide</a>
+            compares current models on those points, and
+            <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">can you run on a walking pad</a>
+            answers the jogging question directly.
+          </p>
+        </div>
+
+        <div id="lifespan-warranty" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Motor Lifespan and Warranty as a Quality Signal</h2>
+          <p>
+            Since duty cycle is almost never published and horsepower figures
+            are so easily inflated, the motor warranty is the most useful number
+            a buyer has for judging what is really in the box. A warranty is a
+            financial commitment: the manufacturer pays for every motor that
+            fails inside the term. Brands that know their motors run cool at the
+            rated load can afford a long term; brands that suspect otherwise
+            cannot.
+          </p>
+          <p>
+            How long a motor lasts depends far more on how hard it is worked
+            relative to its rating than on the rating itself. A motor with
+            plenty of headroom, on a lubricated deck, in a cool room with its
+            compartment kept free of dust, will generally outlast the belt, the
+            deck and the console around it. The same motor run near its limit
+            every day can wear its brushes and bearings and cook its controller
+            in a fraction of the time. We cover the failure modes and typical
+            service life in
+            <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a>.
+          </p>
+          <p>
+            Read the warranty in parts. The motor term, the parts term and the
+            labor term are usually different, and the motor is often the most
+            generous of the three because motors fail less often than
+            electronics. A lifetime motor warranty paired with one year of parts
+            still leaves the controller board, the likeliest failure on an
+            overworked machine, largely on you. The table below shows how motor
+            warranty terms are commonly read across the home market; it is a
+            general pattern, not a guarantee about any brand, and the
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
+            goes through the fine print in detail.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[680px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">Motor Warranty Term</th>
+              <th class="text-left px-4 py-3 font-black">Where You Usually See It</th>
+              <th class="text-left px-4 py-3 font-black">What It Suggests</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              WARRANTY_SIGNALS.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.term}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.where}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.signal}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p>
+          Two cautions. A long warranty only helps if the company is still
+          around and still stocks parts, so a lifetime promise from an unknown
+          marketplace brand is worth less than a ten-year term from an
+          established one. And warranties usually exclude damage from missed
+          maintenance, so keep the deck lubricated on the schedule in the manual;
+          a dry deck is the most common way owners overload a motor that was
+          correctly sized on the day it arrived.
+        </p>
+
 
         <!-- FAQ -->
         <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
           <div class="space-y-6">
             <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
               <h3 class="font-bold text-gray-900 mb-2">How much horsepower do I need in a treadmill?</h3>
@@ -610,6 +913,38 @@ const schema = {
                 more expensive, and often need a dedicated circuit. For a
                 household running under about two hours a day, a good DC motor is
                 the more sensible buy.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does a higher horsepower treadmill use more electricity?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Not in any meaningful way. Horsepower is the ceiling of what the
+                motor can sustain, while the electricity it draws depends on the
+                work you ask of it: your weight, pace, incline and deck friction.
+                The same walker on a 2.5 CHP and a 3.5 CHP machine draws power in
+                the same range, so motor size barely moves the bill compared with
+                how long and how hard you use it.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much horsepower does a walking pad need?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Walking pads commonly list 1.0 to 2.5 HP, often as a peak figure,
+                and that is usually enough for walking at desk speeds of 1.5 to
+                3 mph. Walking produces small, steady loads with no landing spike.
+                Heavier users, very long daily sessions or jogging push a small
+                motor toward its limit, so in those cases look for a stated
+                continuous rating and a higher weight capacity.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why do retailers list different horsepower for the same treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Usually because they are quoting different ratings. One page gives
+                continuous horsepower, another gives the larger peak figure, and a
+                third copies a number from an older model year. Trust the
+                manufacturer's manual over a marketplace title, and when sources
+                conflict and none says continuous, assume the lower capability.
               </p>
             </div>
           </div>
