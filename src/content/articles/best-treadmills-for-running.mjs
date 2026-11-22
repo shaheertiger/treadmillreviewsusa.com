@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmills for Running',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-09-08',
-  modified: '2026-11-16',
+  modified: '2026-11-22',
   socialProof: '4.2k',
   h1: ['Best Treadmills for', 'Running'],
   standfirst:
@@ -215,7 +215,7 @@ export default {
             correct in a decade, and the price reflects that rather than inflating it.
           </p>
           <p>
-            On a genuine budget, the <strong>ProForm Pro 2000</strong> gives you a 60-inch deck
+            On a genuine budget, the <strong>ProForm Pro 2000</strong> gives you a <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch deck</a>
             for well under a thousand dollars, which is the single most important specification
             met at the lowest price on this page. It gives up frame mass to get there, and for a
             lighter runner that is a reasonable trade.

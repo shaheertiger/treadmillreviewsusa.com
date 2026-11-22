@@ -9,8 +9,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Cost Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-11-21',
+  modified: '2026-11-22',
   socialProof: '1.2k',
   h1: ['How Much Does a Treadmill', 'Stress Test Cost?'],
   standfirst: `A plain exercise ECG stress test was listed at $331 to $774 as a prepaid cash price on MDsave, against a Medicare rate of $73.48 in a doctor's office in 2026. Add imaging and the price climbs: stress echo and nuclear tests cost several times more. Here is what each version costs, what insurance and Medicare leave you to pay, and how to get a real number before you book.`,
@@ -385,8 +386,8 @@ export default {
       heading: 'Why a Home Treadmill Is Not a Cheaper Substitute',
       html: `          <p>
             Because this site reviews treadmills, it is worth answering a question that sometimes
-            follows a large quote: could you just walk on your own treadmill with a heart rate
-            monitor? No. A clinical stress test is valuable because of what surrounds the treadmill:
+            follows a large quote: could you just walk on your own <a href="/best-treadmills-with-heart-rate-monitor/" class="text-[#0F62FE] font-medium" data-autolink>treadmill with a heart rate
+            monitor</a>? No. A clinical stress test is valuable because of what surrounds the treadmill:
             a multi-lead ECG read by trained staff, blood pressure checks at each stage, a
             supervising clinician and emergency equipment in the room. A home treadmill and a chest
             strap measure heart rate, which is one small part of that picture, and they cannot

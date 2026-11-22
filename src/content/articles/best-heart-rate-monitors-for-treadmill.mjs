@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-22',
   socialProof: '2.4k',
   h1: ['Best Heart Rate Monitors', 'for Treadmill Training'],
   standfirst:
@@ -557,6 +557,12 @@ export default {
       title: 'Zone 2 Training on a Treadmill',
       blurb: 'Easy aerobic work where a strap is the difference between guessing and knowing.',
       url: '/zone-2-training-on-a-treadmill/',
+    },
+    {
+      kicker: 'Treadmills',
+      title: 'Best Treadmills With a Heart Rate Monitor',
+      blurb: 'Machines that pair a chest strap, not just grip sensors.',
+      url: '/best-treadmills-with-heart-rate-monitor/',
     },
   ],
   bottomLine: [

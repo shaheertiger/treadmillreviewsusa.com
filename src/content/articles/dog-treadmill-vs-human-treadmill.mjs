@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-22',
   socialProof: '1.3k',
   h1: ['Dog Treadmill vs Human Treadmill', 'The Differences That Matter'],
   standfirst:
@@ -132,7 +132,7 @@ export default {
           </table></div>
           <p>
             The arithmetic shows where the line falls. A mainstream 55-inch human belt satisfies the
-            rule for a dog up to about 27.5 inches nose to tail; a 60-inch belt, about 30 inches. Many
+            rule for a dog up to about 27.5 inches nose to tail; a <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch belt</a>, about 30 inches. Many
             medium and most large dogs are longer than that, which is why a human treadmill tends to
             suit a dog at a walk and not much more. By contrast, the dog treadmills on our roundup run
             from a 28-inch running area for toy breeds (GoPet's PetRun PR700) through 52 inches for

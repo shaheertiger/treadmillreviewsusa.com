@@ -89,9 +89,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-10-18',
-  modified: '2026-11-16',
+  modified: '2026-11-22',
   socialProof: '1.6k',
   h1: ['What Treadmill', 'Should I Buy?'],
   standfirst:
@@ -400,7 +400,7 @@ ${DECISION_TABLE}
             pad typically costs around $200 to $600, and a full-size walking treadmill starts around
             $500. For jogging and some running, roughly $900 is the realistic floor for a machine
             with a full-size deck, with sales occasionally bringing one lower. For regular running on
-            a 60-inch deck, our spending guide puts the floor at roughly $1,200 new or $800 used. Most
+            a <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch deck</a>, our spending guide puts the floor at roughly $1,200 new or $800 used. Most
             households land between about $600 and $1,200. Prices move with sales and model years,
             and model-year clearance can bring a machine down a tier with the warranty intact.
           </p>

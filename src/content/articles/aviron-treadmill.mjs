@@ -1,15 +1,15 @@
 export default {
   slug: 'aviron-treadmill',
-  title: 'Aviron Treadmill Review (2026): Justice, Podium and Summit',
+  title: 'Aviron Justice Treadmill Review: From $1,999, vs Podium & Summit',
   description:
-    'Aviron’s three treadmills checked against its own pages and independent reviews: prices, membership, what works without it, the 20-year warranty’s conditions and recalls.',
+    'The Aviron Justice treadmill is $1,999 with a 16-inch screen (Aviron, 20 Oct): 3.5 CHP, 12.5 mph, 15% incline, 300 lb. How it compares with the Podium, Summit.',
   crumbLabel: 'Aviron Treadmill',
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-10-20',
-  modified: '2026-11-15',
+  modified: '2026-11-22',
   socialProof: '1.6k',
   h1: ['Aviron Treadmill:', 'Justice, Podium and Summit Reviewed'],
   standfirst:

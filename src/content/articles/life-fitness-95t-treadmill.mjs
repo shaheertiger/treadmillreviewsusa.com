@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-11-05',
-  modified: '2026-11-17',
+  modified: '2026-11-22',
   socialProof: '1.3k',
   h1: ['Life Fitness 95T and 95Ti:', 'Buying a Remanufactured Club Treadmill'],
   standfirst:
@@ -357,7 +357,7 @@ export default {
       id: 'alternatives',
       heading: 'Remanufactured 95T or New Life Fitness?',
       html: `          <p>
-            For about $4,000, a remanufactured 95T Inspire gets you a club AC drive, a 22 by 60-inch deck, 14 mph
+            For about $4,000, a remanufactured 95T Inspire gets you a club AC drive, a 22 by <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch deck</a>, 14 mph
             and a 400 lb rating, with a year of seller's warranty. On 5 November 2026 the new
             <a href="/life-fitness-run-cx-treadmill/" class="text-[#0F62FE] font-medium">Life Fitness Run CX</a>
             was $3,919 with a lifetime frame warranty, 10 years on the motor, 7 on parts, delivery and installation,

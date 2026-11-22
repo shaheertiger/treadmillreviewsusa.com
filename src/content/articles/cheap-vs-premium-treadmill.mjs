@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Cheap vs. Premium Treadmill',
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-09-08',
-  modified: '2026-11-15',
+  modified: '2026-11-22',
   socialProof: '4.1k',
   h1: ['Cheap vs. Premium', 'Treadmill'],
   standfirst:
@@ -33,7 +33,7 @@ export default {
             get.
           </p>
           <p>
-            <strong>$800 to $1,200</strong> buys a real treadmill. Fifty-five to 60-inch deck, a
+            <strong>$800 to $1,200</strong> buys a real treadmill. Fifty-five to <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch deck</a>, a
             motor with margin, a frame that stays still at a jog, and a warranty in years. This is
             where most people should be.
           </p>

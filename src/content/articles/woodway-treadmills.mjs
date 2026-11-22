@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer\'s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-10-20',
-  modified: '2026-11-15',
+  modified: '2026-11-22',
   socialProof: '1.1k',
   h1: ['Woodway Treadmills:', 'Slat Belts, Prices and Who Should Buy One'],
   standfirst:
@@ -392,8 +392,8 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The price compared with the alternatives</h3>
           <p>
-            For context, a premium conventional home treadmill with a heavy frame, a 22 by 60-inch
-            deck and a long motor warranty typically costs between about $3,000 and $7,000. Landice's
+            For context, a premium conventional home treadmill with a heavy frame, a 22 by <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch
+            deck</a> and a long motor warranty typically costs between about $3,000 and $7,000. Landice's
             core L7, for instance, was listed from $5,429 when our Landice guide checked it on 14
             October. A 4Front
             costs two to four times as much. The case for paying that rests on lifespan, capacity and

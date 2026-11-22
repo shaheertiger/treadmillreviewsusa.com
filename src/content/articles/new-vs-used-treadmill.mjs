@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'New vs. Used Treadmill',
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-09-08',
-  modified: '2026-11-16',
+  modified: '2026-11-22',
   socialProof: '3.9k',
   h1: ['New vs. Used', 'Treadmill'],
   standfirst:
@@ -60,7 +60,7 @@ export default {
           <p>
             At <strong>$500</strong>: new buys a 40 to 50-inch deck, a 1.5 to 2.25 CHP motor and a
             frame under 130 lbs. Used buys a three-to-five-year-old mid-range machine with a 55 to
-            60-inch deck, 2.5 to 3.0 CHP and 200 lbs or more of frame.
+            <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch deck</a>, 2.5 to 3.0 CHP and 200 lbs or more of frame.
           </p>
           <p>
             At <strong>$800</strong>: new buys a 55-inch deck and about 190 lbs. Used buys what

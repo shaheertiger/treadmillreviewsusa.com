@@ -11,9 +11,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-10-18',
-  modified: '2026-11-15',
+  modified: '2026-11-22',
   socialProof: '1.3k',
   h1: ['What Treadmills', 'Do Gyms Use?'],
   standfirst:
@@ -339,7 +339,7 @@ ${row('Machine weight', '425–434 lb', 'Not confirmed')}
             rather than the badge.
           </p>
           <p>
-            <strong>A heavy-duty home treadmill.</strong> A well-built home machine with a 60-inch deck
+            <strong>A heavy-duty home treadmill.</strong> A well-built home machine with a <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch deck</a>
             and a strong continuous motor reproduces most of what you like about the gym treadmill, on
             household power, for much less.
           </p>
