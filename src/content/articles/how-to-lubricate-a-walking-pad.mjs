@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-10-09',
-  modified: '2026-11-16',
+  modified: '2026-11-22',
   socialProof: '1.2k',
   h1: ['How to Lubricate', 'a Walking Pad'],
   standfirst:
@@ -434,6 +434,12 @@ export default {
       title: 'How Often to Lubricate a Treadmill',
       blurb: 'Intervals by hours of use, the finger test, and the cost of skipping it.',
       url: '/how-often-to-lubricate-treadmill/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'Walking Pad Not Working?',
+      blurb: 'Power, remote, belt and auto-stop fixes in order.',
+      url: '/walking-pad-not-working/',
     },
   ],
   bottomLine: [

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-22',
   socialProof: '1.8k',
   h1: ['The Best', 'Incline Trainers'],
   standfirst:
@@ -160,7 +160,7 @@ export default {
       html: `          <p>
             NordicTrack's X-series is the incline trainer most people have heard of, and the search
             term "incline trainer" is still largely about it. The current models are the X16 and the
-            X24, both with a -6% to 40% range, a 22 by 60-inch belt and a 400 lb maximum user weight by
+            X24, both with a -6% to 40% range, a 22 by <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch belt</a> and a 400 lb maximum user weight by
             NordicTrack's figures. On 5 November 2026 NordicTrack's checkout pages listed the X16 at
             $3,699 and the X24 at $4,299. Our
             <a href="/nordictrack-x24-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack X24 review</a>

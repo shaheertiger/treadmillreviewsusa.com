@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmills for Tall Runners',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-09-08',
-  modified: '2026-11-15',
+  modified: '2026-11-22',
   socialProof: '2.9k',
   h1: ['Best Treadmills for', 'Tall Runners'],
   standfirst:
@@ -63,7 +63,7 @@ export default {
             Usable length is the number that matters instead: from the front roller housing to the
             point where the deck stops being flat and safe. It is always shorter than the
             advertised belt length, it is rarely published, and the gap need not be the same
-            between brands — two machines quoting the same 60-inch belt can give a tall runner
+            between brands — two machines quoting the same <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch belt</a> can give a tall runner
             meaningfully different running surfaces.
           </p>
           <p>

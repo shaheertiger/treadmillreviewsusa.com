@@ -280,7 +280,7 @@ const lanes = [['Money lane', 'roundup-queue.md'], ['Traffic lane', 'queue.md']]
 // per live page from that engine's own Vercel pull, plus Bing Webmaster click-through for Bing), and
 // its own three picks from the Active queues. A DOESN'T type is never picked by either lane.
 function engineIndex(source) {
-  const w = [...windows.values()].filter((x) => x.sources[source] && x.days >= 5).sort((a, b) => a.end.localeCompare(b.end)).at(-1);
+  const w = [...windows.values()].filter((x) => x.sources[source] && x.days >= 5).sort((a, b) => a.end.localeCompare(b.end) || a.start.localeCompare(b.start)).at(-1);
   if (!w) return null;
   const tot = w.sources[source];
   const by = new Map();

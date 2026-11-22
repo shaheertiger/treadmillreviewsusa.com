@@ -1,0 +1,517 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SECTIONS } from "../data/sections";
+
+const title = "Walking Pad Not Working? Belt, Remote and Power Fixes";
+const description =
+  "Most walking pad faults are one of 5 things: the safety key or magnet, the remote, a dry or loose belt, overheating, or power. Fixes in order, and when to call support.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Fault Diagnosis", item: "https://www.treadmillreviewsusa.com/problems/" },
+        { "@type": "ListItem", position: 3, name: "Walking Pad Not Working", item: "https://www.treadmillreviewsusa.com/walking-pad-not-working/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Why is my walking pad not turning on?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually the outlet, the pad's own power switch, or the cord. Test the socket with a lamp, check the rocker switch near the cord, and press in any reset button the manual shows. If it is still dead, it needs the brand's support.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why will my walking pad not start?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Check the safety key or magnet, whether the pad is in standby or child lock, and whether the remote or app is needed to start it. Unplug and check nothing is blocking the belt. A motor that hums without moving the belt needs support.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why is my walking pad remote not working?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Replace the battery first, then re-pair the remote using the sequence in the manual, since pairing is often lost after a power cut. Check line of sight for infrared remotes, and test the pad with its own button or app.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I fix a walking pad belt that slips?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Lubricate it as the manual says first, because a dry deck is the usual cause. If it still slips, tighten both rear bolts equally a quarter turn at a time, stopping as soon as the slip stops.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why does my walking pad stop by itself?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "An auto-stop timer, heat from a dry belt or long heavy use, overload from running or exceeding the weight limit, or a shared circuit. Let it cool, lubricate, and check the manual for timer settings.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I reset a walking pad?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Switch it off, unplug it for about a minute, plug it back in and switch on. Some models have a reset button or a factory-reset button sequence; follow the manual for yours rather than a generic sequence.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-22",
+      dateModified: "2026-11-22",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/walking-pad-not-working/";
+const HUB = SECTIONS.find((s) => s.slug === "problems");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-22",
+    modifiedTime: "2026-11-22",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "walking pad not working",
+      "walking pad wont turn on",
+      "walking pad remote not working",
+      "walking pad stops",
+      "walking pad belt slipping",
+      "walking pad troubleshooting",
+      "under desk treadmill not working",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Find Your Symptom", link: "#short-answer" }}
+>
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/problems/">Fault Diagnosis</a>
+        <span aria-hidden="true">›</span>
+        <span>Troubleshooting</span>
+      </nav>
+      <h1 class="ed-title">Walking Pad Not Working? Belt, Remote and Power Fixes</h1>
+      <p class="ed-dek">
+        A walking pad that will not start, stops on its own, or has a belt that slips is usually not broken. Most faults come down to five things: the safety key or magnet, the remote, the belt, heat, or power. Here is the order to check them, what you can fix at home, and when it is a warranty call.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 22, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          <span class="ed-method">Based on manufacturer manuals and service guidance, and the faults owners report most.</span>
+        </div>
+        <a href="#short-answer" class="btn-ghost">Find Your Symptom</a>
+      </div>
+      <p class="ed-disclosure">
+        Nothing on this page is a paid placement, and it carries no affiliate links. <a href="/editorial-standards/">How we review.</a>
+      </p>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Walking pads are simpler than full treadmills: a small motor, a short belt, a basic controller and, usually, a
+          remote instead of a console. That simplicity means most problems are quick to find. The catch is that brands
+          and models differ, so where a step depends on your model (a reset sequence, a remote pairing routine, an error
+          message) we point you to the manual rather than guess. Everything here applies to the common under-desk pads
+          from brands such as UREVO, WalkingPad, Goplus, MERACH and Superun, and to 2-in-1 folding pads. If your pad is
+          new, remember that most problems in the first weeks are warranty or return matters, not repairs.
+        </p>
+
+        <nav class="ed-toc not-prose" aria-label="Jump to">
+          <h2>Jump to</h2>
+          <ol>
+            <li><a href="#short-answer">Walking Pad Not Working? The Short Answer</a></li>
+            <li><a href="#wont-turn-on">Walking Pad Will Not Turn On</a></li>
+            <li><a href="#wont-start">Lights On but the Belt Will Not Move</a></li>
+            <li><a href="#remote">Walking Pad Remote Not Working</a></li>
+            <li><a href="#belt">Belt Slipping, Hesitating or Off-Centre</a></li>
+            <li><a href="#stops">Walking Pad Stops by Itself</a></li>
+            <li><a href="#noise">New Noises</a></li>
+            <li><a href="#error">If the Display Shows an Error</a></li>
+            <li><a href="#setup">Set It Up to Avoid Problems</a></li>
+            <li><a href="#repair-or-replace">Repair or Replace?</a></li>
+            <li><a href="#support">When to Call Support, and What to Have Ready</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2>Walking Pad Not Working? The Short Answer</h2>
+<p>
+            <strong>Check, in order: the power switch and outlet, the safety key or magnet, the remote&rsquo;s battery and
+            pairing, then the belt. Then do a clean restart: switch off, unplug for a minute, plug back in.</strong> That
+            clears most pads that will not start or respond. If the belt slips or drifts, lubricate and adjust it as the
+            manual says. If the pad stops on its own after a while, suspect heat or overload.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Symptom</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Most likely cause</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">First fix</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Completely dead</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Outlet, power switch, cord</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Test the outlet with a lamp; check the switch at the pad</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lights on, belt will not start</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Safety key/magnet, remote, standby mode</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Reseat the key; use the pad&rsquo;s own button</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Remote does nothing</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Battery, pairing, range</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">New battery; re-pair per the manual</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt slips or hesitates</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Dry deck, then loose belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lubricate per the manual, then tension</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt drifts to one side</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tracking</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Adjust the rear bolts a little at a time</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stops after a while</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heat, overload, auto-stop timer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Let it cool; check weight limit and session length</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Many walking pads have a short belt and a motor meant for walking pace, so some &ldquo;faults&rdquo; are limits:
+            see <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">can you run on a walking pad</a>.
+            Our most-read walking pad fix is <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">how to lubricate a walking pad</a>,
+            because a dry belt causes more problems than anything else.
+          </p>
+        </div>
+
+        <div id="wont-turn-on" class="scroll-mt-24">
+          <h2>Walking Pad Will Not Turn On</h2>
+<ol>
+            <li><strong>The outlet.</strong> Plug a lamp into the same socket. If it is on a GFCI outlet or a power strip,
+            reset or bypass it. Many makers advise plugging a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> straight into the wall rather than an extension
+            lead; see <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords</a>.</li>
+            <li><strong>The power switch.</strong> Most pads have a rocker switch near the cord at the front or side, separate
+            from the start button. It is easy to knock off when moving the pad.</li>
+            <li><strong>The cord and inlet.</strong> Unplugged, check the cord for damage and that it is pushed fully into the
+            pad if it is detachable.</li>
+            <li><strong>Overload protection.</strong> Some pads have a reset button or breaker near the switch; the manual
+            shows where. Press it in if it has popped out.</li>
+          </ol>
+          <p>
+            If it is still dead after these four, the fault is inside (fuse, power board or controller), and on a pad
+            under warranty that is a call to the brand, not a screwdriver job. Our general <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill won&rsquo;t turn on</a> guide covers the same checks in more depth.
+          </p>
+        </div>
+
+        <div id="wont-start" class="scroll-mt-24">
+          <h2>Lights On but the Belt Will Not Move</h2>
+<ul>
+            <li><strong>Safety key or magnet.</strong> Many pads have a clip-on safety key or a magnet that must be in place.
+            Reseat it firmly. If yours has none, check whether the pad needs a start command from the remote or app rather
+            than the button.</li>
+            <li><strong>Standby or child lock.</strong> Some pads go into a sleep or lock mode after a period of inactivity.
+            The manual gives the wake or unlock step; it is often a long press of the pad&rsquo;s own button.</li>
+            <li><strong>Mode setting.</strong> On 2-in-1 pads with a fold-up handle, some models only allow higher speeds
+            with the handle raised, and some only start in the mode the handle position allows.</li>
+            <li><strong>Something blocking the belt.</strong> Unplug and check underneath and around the rollers for a sock,
+            cable or toy. Try to move the belt by hand.</li>
+            <li><strong>Motor hums, belt does not move.</strong> A belt so tight the motor cannot turn it, or a drive fault.
+            Loosen the belt to the manual&rsquo;s tension; if it still hums, stop and call support.</li>
+          </ul>
+          <p>
+            For full treadmills with the same symptom, see <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium">treadmill turns on but the belt won&rsquo;t move</a>.
+          </p>
+        </div>
+
+        <div id="remote" class="scroll-mt-24">
+          <h2>Walking Pad Remote Not Working</h2>
+<p>
+            The remote is the most common thing to stop working on a walking pad, and it is rarely the pad&rsquo;s fault.
+          </p>
+          <ol>
+            <li><strong>Replace the battery,</strong> even if it is new; some remotes ship with a pull tab still in, or a
+            weak battery.</li>
+            <li><strong>Re-pair it.</strong> Most pad remotes are paired to the pad, and pairing is lost after a power cut or
+            battery change. The manual gives the sequence; it usually involves holding a button on the remote within a few
+            seconds of switching the pad on.</li>
+            <li><strong>Check the range and line of sight.</strong> Some remotes use infrared, which needs a clear line to the
+            sensor, often at the front of the pad.</li>
+            <li><strong>Use the app or the pad&rsquo;s button</strong> to confirm the pad itself works. If it does, the
+            remote is the problem, and a replacement is usually available from the brand.</li>
+          </ol>
+        </div>
+
+        <div id="belt" class="scroll-mt-24">
+          <h2>Belt Slipping, Hesitating or Off-Centre</h2>
+<p>
+            Belt problems on a walking pad are almost always maintenance, and the order matters.
+          </p>
+          <ol>
+            <li><strong>Lubricate first.</strong> A dry deck makes the belt drag, so it hesitates with each step. Use the
+            lubricant and amount your manual specifies, at the interval it gives; some pads are sold as needing little or
+            none, so check before adding any. Our <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">walking pad lubrication guide</a> walks through it.</li>
+            <li><strong>Then tension.</strong> If it still slips under your foot, tighten the two rear bolts equally, a quarter
+            turn at a time, testing between turns. Stop when the slip stops; an over-tight belt overloads a small motor.</li>
+            <li><strong>Then tracking.</strong> If the belt drifts to one side, run it slowly with nobody on it and turn the
+            bolt on the side it drifts towards a quarter turn, then wait and watch. Some pads advertise auto-centring belts,
+            but they still drift if the pad is not level.</li>
+          </ol>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Belt does this</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Adjust</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Slips under a firm step</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lubricate, then both bolts tighter, equally</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Drifts left</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Left bolt, a quarter turn clockwise (check your manual)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Drifts right</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Right bolt, a quarter turn clockwise (check your manual)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubs the side</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stop; re-centre before using again</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Direction conventions vary by brand, so confirm in the manual. Our <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">how to center a treadmill belt</a> and <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">treadmill belt slipping</a> guides go into more detail.
+          </p>
+        </div>
+
+        <div id="stops" class="scroll-mt-24">
+          <h2>Walking Pad Stops by Itself</h2>
+<ul>
+            <li><strong>An auto-stop or session timer.</strong> Many pads stop after a set time or distance, or if they sense
+            no one on the belt. Check the manual for the default and whether it can be changed.</li>
+            <li><strong>Heat.</strong> Walking pads are built for walking pace and long desk sessions, but a small motor
+            working against a dry belt or a heavy user can overheat and cut out. Let it cool, lubricate, and check you are
+            under the weight limit. Our <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill overheating</a> guide explains the signs.</li>
+            <li><strong>Overload.</strong> Running on a walking pad, or a user above the rated capacity, can trip the
+            overload protection. See <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">what happens if you exceed a treadmill&rsquo;s weight limit</a>.</li>
+            <li><strong>Power.</strong> A pad sharing a circuit with a space heater or printer may lose power at start-up.</li>
+          </ul>
+        </div>
+
+        <div id="noise" class="scroll-mt-24">
+          <h2>New Noises</h2>
+<p>
+            A squeak with each step usually means a dry belt or a loose screw; a rhythmic thump once per belt revolution
+            means a belt seam or damaged spot; grinding means a roller bearing. Lubricate and tighten first, then listen
+            again. Our <a href="/treadmill-squeaking-noise/" class="text-[#0F62FE] font-medium">squeaking</a>, <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium">thumping</a> and <a href="/treadmill-clicking-noise/" class="text-[#0F62FE] font-medium">clicking noise</a> guides help you find the source by when it happens.
+          </p>
+        </div>
+
+        <div id="error" class="scroll-mt-24">
+          <h2>If the Display Shows an Error</h2>
+<p>
+            Many walking pads show a short error code on the display or in the app when something is wrong. Codes are
+            not standard: the same letters and numbers can mean different things on different brands, so look yours up
+            in the manual or on the brand&rsquo;s support page rather than a generic list. Then:
+          </p>
+          <ol>
+            <li>Note the exact code and when it appeared (at start, under load, after a while).</li>
+            <li>Switch off, unplug for a minute and restart.</li>
+            <li>If it returns, do the check the manual gives for that code, usually the safety key, the belt or the
+            connection to the controller.</li>
+            <li>If it still returns, send the code, the model and a short video to the brand.</li>
+          </ol>
+        </div>
+
+        <div id="setup" class="scroll-mt-24">
+          <h2>Set It Up to Avoid Problems</h2>
+<ul>
+            <li><strong>Put it on a hard, flat floor or a firm mat.</strong> Thick carpet blocks airflow to the motor and
+            can let the belt drift; see <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">best treadmill mats</a>.</li>
+            <li><strong>Plug it straight into the wall</strong> where the manual says so, on a circuit without heavy loads.</li>
+            <li><strong>Run it in before heavy use.</strong> Many manuals suggest a short, easy first session to let the belt
+            settle, then a centring check.</li>
+            <li><strong>Keep it clean underneath.</strong> Under a desk, dust and hair collect fast; vacuum around it
+            weekly.</li>
+            <li><strong>Store it flat or as the manual says.</strong> Standing some pads on end, or sliding them under a sofa
+            where the frame flexes, can knock the belt out of line.</li>
+          </ul>
+          <p>
+            If you are choosing a new pad, our <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> guide notes capacity, speed and warranty for each.
+          </p>
+        </div>
+
+        <div id="repair-or-replace" class="scroll-mt-24">
+          <h2>Repair or Replace?</h2>
+<p>
+            Inside the warranty, always contact the brand first: parts are often sent free. Outside it, compare the cost of
+            the part and your time against the price of a new pad. Belts, remotes and safety keys are usually worth
+            replacing; a failed motor or controller on an old, cheap pad often is not.
+          </p>
+        </div>
+
+        <div id="support" class="scroll-mt-24">
+          <h2>When to Call Support, and What to Have Ready</h2>
+<p>
+            Contact the brand when the pad is dead after the power checks, the motor hums without moving, there is a <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium" data-autolink>burning
+            smell</a>, the belt will not stop, or an error message returns after a restart. Most walking pads carry a one-year
+            warranty, and some brands require purchase from an authorised seller and registration.
+          </p>
+          <ul>
+            <li>The model and serial number from the label on the pad</li>
+            <li>Proof of purchase and the seller</li>
+            <li>A short phone video of the fault</li>
+            <li>What you have tried already</li>
+          </ul>
+          <p>
+            If your pad is old and out of warranty, our <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium">how long do walking pads last</a> guide helps with the repair-or-replace decision.
+          </p>
+        </div>
+
+
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>4 Mistakes Fixing a Walking Pad</h2>
+          <p>Most of these make a small problem bigger.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Tightening before lubricating</h3>
+              <p>A dry belt slips; tightening it overloads the small motor. Lubricate as the manual says first, then tension.</p>
+            </li>
+            <li>
+              <h3>Using the wrong lubricant</h3>
+              <p>Use the silicone lubricant the maker specifies. Household oils and sprays can damage the belt and deck.</p>
+            </li>
+            <li>
+              <h3>Running on a walking pad</h3>
+              <p>Many pads are built for walking pace. Running can trip overload protection and wear the motor and belt fast.</p>
+            </li>
+            <li>
+              <h3>Opening it under warranty</h3>
+              <p>Opening the motor cover can affect warranty cover. On a newer pad, contact the brand before taking anything apart.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The fix, in short</h2>
+          <p>
+            <strong class="text-white">Check the outlet, the power switch, the safety key and the remote, then restart the pad
+            cleanly.</strong> That fixes most walking pads that will not start or respond.
+          </p>
+          <p>
+            For belt problems, lubricate before you tighten; for a pad that stops on its own, think heat, overload or a timer.
+            Call the brand for anything that smells hot, hums without moving or will not stop. Our <a href="/how-to-lubricate-a-walking-pad/" class="text-[#5AA9FF] font-bold no-underline">lubrication guide</a> is the place to start.
+          </p>
+        </div>
+
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-to-lubricate-a-walking-pad/">How to Lubricate a Walking Pad</a></li>
+            <li><a href="/how-long-do-walking-pads-last/">How Long Do Walking Pads Last?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Why is my walking pad not turning on?</h3></summary>
+            <p class="faq-a">
+              Usually the outlet, the pad's own power switch, or the cord. Test the socket with a lamp, check the rocker switch near the cord, and press in any reset button the manual shows. If it is still dead, it needs the brand's support.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why will my walking pad not start?</h3></summary>
+            <p class="faq-a">
+              Check the safety key or magnet, whether the pad is in standby or child lock, and whether the remote or app is needed to start it. Unplug and check nothing is blocking the belt. A motor that hums without moving the belt needs support.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why is my walking pad remote not working?</h3></summary>
+            <p class="faq-a">
+              Replace the battery first, then re-pair the remote using the sequence in the manual, since pairing is often lost after a power cut. Check line of sight for infrared remotes, and test the pad with its own button or app.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I fix a walking pad belt that slips?</h3></summary>
+            <p class="faq-a">
+              Lubricate it as the manual says first, because a dry deck is the usual cause. If it still slips, tighten both rear bolts equally a quarter turn at a time, stopping as soon as the slip stops.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why does my walking pad stop by itself?</h3></summary>
+            <p class="faq-a">
+              An auto-stop timer, heat from a dry belt or long heavy use, overload from running or exceeding the weight limit, or a shared circuit. Let it cool, lubricate, and check the manual for timer settings.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I reset a walking pad?</h3></summary>
+            <p class="faq-a">
+              Switch it off, unplug it for about a minute, plug it back in and switch on. Some models have a reset button or a factory-reset button sequence; follow the manual for yours rather than a generic sequence.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Fault Diagnosis">
+          <h2 class="section-title">More in Fault Diagnosis</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/problems/" class="btn-ghost">See all Fault Diagnosis</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Walking Pad Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-to-lubricate-a-walking-pad/" class="card">
+            <div class="c-kicker">Maintenance</div>
+            <div class="c-title">How to Lubricate a Walking Pad</div>
+            <p class="c-blurb">Steps, timing and what to use.</p>
+          </a>
+          <a href="/how-long-do-walking-pads-last/" class="card">
+            <div class="c-kicker">Lifespan</div>
+            <div class="c-title">How Long Do Walking Pads Last?</div>
+            <p class="c-blurb">Lifespan, wear and when to repair or replace.</p>
+          </a>
+          <a href="/can-you-run-on-a-walking-pad/" class="card">
+            <div class="c-kicker">Running</div>
+            <div class="c-title">Can You Run on a Walking Pad?</div>
+            <p class="c-blurb">Speeds, limits and what breaks.</p>
+          </a>
+          <a href="/treadmill-troubleshooting/" class="card">
+            <div class="c-kicker">All brands</div>
+            <div class="c-title">Treadmill Troubleshooting</div>
+            <p class="c-blurb">Every common fault, diagnosed in order.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>

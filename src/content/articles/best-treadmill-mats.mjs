@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmill Mats',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-22',
   socialProof: '2.1k',
   h1: ['Best Treadmill Mats', 'for Every Floor'],
   standfirst:
@@ -106,7 +106,7 @@ export default {
       html: `          <p>
             Size is where most mat purchases go wrong, and the cause is usually measuring the wrong
             thing. The belt, or running surface, is the number on the box, and it is always smaller
-            than the machine. A treadmill with a 20 x 60-inch belt can easily be 35 inches wide
+            than the machine. A treadmill with a 20 x <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch belt</a> can easily be 35 inches wide
             and 75 inches long or more once you include the frame, the motor hood and the rails.
           </p>
           <p>

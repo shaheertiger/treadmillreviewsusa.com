@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-22',
   socialProof: '2.0k',
   h1: ['The Best', 'Heavy Duty Treadmills'],
   standfirst:
@@ -140,7 +140,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The deck, belt and rollers</h3>
           <p>
-            A 22 by 60-inch deck is the commercial standard and the size every one of our top three
+            A 22 by <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch deck</a> is the commercial standard and the size every one of our top three
             uses. Width gives larger runners room for arm swing and lateral drift; length gives a full
             stride at speed. The rollers at each end of the deck carry the belt, and larger rollers turn
             more slowly for the same belt speed and spread the load over more belt, which is why

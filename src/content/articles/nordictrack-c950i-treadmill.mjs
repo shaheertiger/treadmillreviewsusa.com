@@ -19,9 +19,9 @@ export default {
   crumbLabel: 'NordicTrack C950i Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-11-05',
-  modified: '2026-11-17',
+  modified: '2026-11-22',
   socialProof: '1.1k',
   h1: ['NordicTrack C950i', 'Treadmill: Buying One Now'],
   standfirst:
@@ -133,7 +133,7 @@ export default {
             that lost support still run in manual mode with their preloaded workouts.
           </p>
           <p>
-            What made the C950i appealing when new still holds: a full 20 by 60-inch belt on a folding frame,
+            What made the C950i appealing when new still holds: a full 20 by <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch belt</a> on a folding frame,
             with built-in programs. What counts against it is age, a thinly documented specification, and the
             one full independent review we found, which judged it a decent walking treadmill with a powerful
             motor but a frame that felt wobbly at incline for heavier runners.

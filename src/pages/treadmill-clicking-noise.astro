@@ -1,0 +1,538 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SECTIONS } from "../data/sections";
+
+const title = "Treadmill Clicking Noise: Find It by When It Clicks";
+const description =
+  "A treadmill click once per belt lap points to the belt or a roller; once per step, a loose bolt or deck; with no one on it, the motor or drive belt. 6 causes and fixes.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Fault Diagnosis", item: "https://www.treadmillreviewsusa.com/problems/" },
+        { "@type": "ListItem", position: 3, name: "Treadmill Clicking Noise", item: "https://www.treadmillreviewsusa.com/treadmill-clicking-noise/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Why does my treadmill click when the incline changes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A click only during incline changes points to the incline motor, its gear or the lift arms. Check nothing is trapped under the deck, then run the incline calibration your manual describes. If the click continues or the incline sticks, contact support.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why is my treadmill making a clicking noise?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually a belt seam or debris (once per belt revolution), a loose bolt or the deck (with each step), or the drive belt, pulley or a roller bearing (with nobody on, speeding up with the belt). Time the click to find which.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why does my treadmill click when I walk?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A click that matches your footsteps is usually a loose frame or upright bolt, the deck moving on its mounts, an uneven floor or a dry deck. Tighten the bolts with the treadmill unplugged, level it and lubricate as the manual says.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a clicking treadmill belt normal?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A faint click from the belt seam passing over a roller is common and harmless. A seam that is lifting or fraying, or a click that gets louder, needs attention.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why is my treadmill motor clicking?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "With the belt running empty, a click from the front points to the drive belt, motor pulley, something touching the flywheel, or worn brushes on a brushed DC motor. Unplug before opening the motor cover, and use support if the machine is under warranty.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I keep using a clicking treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "If the click is the only symptom, yes, while you find it. Stop if it comes with a burning smell, a hesitating or surging belt, grinding, tripping or a visible crack.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I stop my treadmill from clicking?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Clean under the belt, lubricate the deck as the manual says, tighten the frame and upright bolts, re-centre the belt and level the machine. If it persists with nobody on, check the drive belt and pulley.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-22",
+      dateModified: "2026-11-22",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-clicking-noise/";
+const HUB = SECTIONS.find((s) => s.slug === "problems");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-22",
+    modifiedTime: "2026-11-22",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill clicking noise",
+      "treadmill clicking sound",
+      "treadmill clicking when walking",
+      "treadmill belt clicking",
+      "treadmill motor clicking",
+      "treadmill ticking noise",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Time the Click", link: "#short-answer" }}
+>
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/problems/">Fault Diagnosis</a>
+        <span aria-hidden="true">›</span>
+        <span>Troubleshooting</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Clicking Noise: Find It by When It Clicks</h1>
+      <p class="ed-dek">
+        A clicking treadmill is telling you where the problem is, if you time the click. Once per belt revolution points to the belt or a roller; once per footstep, to a loose bolt or the deck; with nobody on the belt, to the motor area. Here is how to tell which, and what to do about each.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 22, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          <span class="ed-method">Based on manufacturer manuals and service guidance, and the faults owners report most.</span>
+        </div>
+        <a href="#short-answer" class="btn-ghost">Time the Click</a>
+      </div>
+      <p class="ed-disclosure">
+        Nothing on this page is a paid placement, and it carries no affiliate links. <a href="/editorial-standards/">How we review.</a>
+      </p>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Treadmills make a lot of small noises, and most are harmless. A new, regular click is worth tracking down,
+          because the timing of the click narrows the cause to one part of the machine. You need a minute, a phone
+          stopwatch, and the treadmill unplugged for the checks underneath. This guide is general: treadmills differ by
+          brand and model, so where a step depends on your machine (opening the motor cover, adjusting tension) follow the
+          manual. If the click comes with a burning smell, a belt that hesitates or a machine that cuts out, stop and read
+          the section on when to stop using it first.
+        </p>
+
+        <nav class="ed-toc not-prose" aria-label="Jump to">
+          <h2>Jump to</h2>
+          <ol>
+            <li><a href="#short-answer">Treadmill Clicking? The Short Answer</a></li>
+            <li><a href="#time-it">How to Time the Click</a></li>
+            <li><a href="#belt">Click Once Per Revolution: Belt and Rollers</a></li>
+            <li><a href="#step">Click With Each Step: Bolts, Deck and Frame</a></li>
+            <li><a href="#motor">Click With Nobody On: Motor and Drive</a></li>
+            <li><a href="#other">Clicks From the Incline, Console or Fold</a></li>
+            <li><a href="#routine">A 20-Minute Fix Routine, in Order</a></li>
+            <li><a href="#normal">Normal Treadmill Noises vs Warning Signs</a></li>
+            <li><a href="#prevent">How to Stop Clicks Coming Back</a></li>
+            <li><a href="#repair">If It Needs a Part</a></li>
+            <li><a href="#walking-pad">Clicking on a Walking Pad</a></li>
+            <li><a href="#stop">When to Stop Using the Treadmill</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2>Treadmill Clicking? The Short Answer</h2>
+<p>
+            <strong>Time the click. Once per belt revolution means the belt (a seam, a lump or debris) or a roller. Once per
+            footstep means a loose bolt, the deck or the frame. A click with nobody on the belt, that speeds up with the
+            belt, points to the motor pulley, drive belt or a roller bearing.</strong> Most clicks are fixed by cleaning,
+            lubricating and tightening bolts.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">When it clicks</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Likely source</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">First fix</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Once per belt revolution</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt seam, lump, debris; roller</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Inspect the belt; clean underneath</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">With each footstep</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Loose bolt, deck, frame, side rail</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tighten frame and upright bolts</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">With nobody on, faster with speed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motor pulley, drive belt, roller bearing</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Unplug; inspect under the motor cover per the manual</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Only during incline changes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline motor or mechanism</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Check for debris; calibrate incline</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">From the console</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Relays, fan, speaker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Often normal; check the manual</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Squeaks and thumps follow the same logic: see our <a href="/treadmill-squeaking-noise/" class="text-[#0F62FE] font-medium">treadmill squeaking</a> and <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium">thumping noise</a> guides.
+          </p>
+        </div>
+
+        <div id="time-it" class="scroll-mt-24">
+          <h2>How to Time the Click</h2>
+<ol>
+            <li><strong>Mark the belt.</strong> With the treadmill unplugged, put a strip of tape across the belt near the
+            edge.</li>
+            <li><strong>Run it empty at a slow speed.</strong> Stand beside it, not on it, and watch the tape. If the click
+            comes each time the tape passes the same point, it is the belt or something the belt carries past.</li>
+            <li><strong>Walk on it.</strong> If the click only happens with someone walking and matches footsteps, it is the
+            deck, frame or a fastener flexing under load.</li>
+            <li><strong>Change the speed.</strong> A click that speeds up exactly with the belt, with nobody on it, is in the
+            drive: motor pulley, drive belt or roller bearing.</li>
+          </ol>
+          <p>
+            A phone video with sound is useful here and for support later, because it captures the timing.
+          </p>
+        </div>
+
+        <div id="belt" class="scroll-mt-24">
+          <h2>Click Once Per Revolution: Belt and Rollers</h2>
+<ul>
+            <li><strong>Belt seam.</strong> Every belt is joined somewhere. A slightly raised or worn seam can click as it
+            passes over the rollers. Mild seam noise is common; a seam that is lifting or fraying needs a new belt. See <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium">how to replace a treadmill belt</a>.</li>
+            <li><strong>Debris.</strong> Grit, hair or a small object under the belt clicks as it passes the rollers. Our <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">how to clean under a treadmill belt</a> guide shows how.</li>
+            <li><strong>Belt rubbing the frame.</strong> A belt that has drifted can tick against the side rail or motor
+            cover. Re-centre it; see <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">how to center a treadmill belt</a>.</li>
+            <li><strong>Roller.</strong> A worn roller bearing can click or tick each revolution of that roller. It often
+            grows into a grind. That is a parts job; check the warranty first.</li>
+          </ul>
+        </div>
+
+        <div id="step" class="scroll-mt-24">
+          <h2>Click With Each Step: Bolts, Deck and Frame</h2>
+<p>
+            A click that matches your footsteps is usually something flexing under load.
+          </p>
+          <ul>
+            <li><strong>Loose bolts.</strong> Upright, console-arm and base bolts loosen over time, especially on folding
+            machines. With the treadmill unplugged, check and tighten each one to the manual&rsquo;s guidance. This fixes more
+            clicks than anything else.</li>
+            <li><strong>The deck.</strong> A deck that has shifted on its mounts, or <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>worn deck</a> isolators, can click as you
+            land. A cracked deck needs replacing; see our <a href="/treadmill-cracked-deck/" class="text-[#0F62FE] font-medium">cracked deck guide</a>.</li>
+            <li><strong>An uneven floor.</strong> A treadmill rocking on an uneven floor can tick as weight shifts. Adjust the
+            levelling feet or use a mat; see <a href="/treadmill-shaking-or-wobbling/" class="text-[#0F62FE] font-medium">treadmill shaking or wobbling</a>.</li>
+            <li><strong>A dry deck.</strong> Belt dragging on a dry deck can tick or squeak with each step. Lubricate as the
+            manual says; see <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">treadmill belt lubrication</a>.</li>
+          </ul>
+        </div>
+
+        <div id="motor" class="scroll-mt-24">
+          <h2>Click With Nobody On: Motor and Drive</h2>
+<p>
+            If the click is there with the belt running empty and speeds up with the belt, it is in the drive, under the
+            motor cover at the front.
+          </p>
+          <ul>
+            <li><strong>Drive belt.</strong> The short ribbed belt between motor and front roller can click if it is worn,
+            cracked or slightly off its pulley. See <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium">treadmill drive belt</a>.</li>
+            <li><strong>Motor pulley or flywheel.</strong> A loose pulley set screw can tick.</li>
+            <li><strong>Something touching the flywheel or fan.</strong> A loose wire or a bit of debris under the cover.</li>
+            <li><strong>Motor brushes.</strong> On brushed <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium" data-autolink>DC motors</a>, worn brushes can make a ticking or crackling noise; see <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium">treadmill motor brushes</a>.</li>
+          </ul>
+          <p>
+            Always unplug before removing the motor cover, and follow the manual for what an owner may open. On a machine
+            under warranty, a drive problem is usually a support call.
+          </p>
+        </div>
+
+        <div id="other" class="scroll-mt-24">
+          <h2>Clicks From the Incline, Console or Fold</h2>
+<ul>
+            <li><strong>Incline:</strong> a click only during incline changes points to the incline motor, its gear or the lift
+            arms. Check nothing is under the deck, then run the <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium" data-autolink>incline calibration</a> your manual describes; see <a href="/treadmill-incline-not-working/" class="text-[#0F62FE] font-medium">treadmill incline not working</a>.</li>
+            <li><strong>Console:</strong> a single click when you start, stop or change speed is often an electrical relay
+            and normal. Fans and speakers can tick too.</li>
+            <li><strong>Folding latch:</strong> on <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a>, a latch or hinge that is not fully seated can tick with
+            each step. Re-seat it with the deck down.</li>
+          </ul>
+        </div>
+
+        <div id="routine" class="scroll-mt-24">
+          <h2>A 20-Minute Fix Routine, in Order</h2>
+<p>
+            If you cannot time the click clearly, work through these in order. They go from free and quick to more
+            involved, and most clicks stop somewhere in the first four.
+          </p>
+          <ol>
+            <li><strong>Unplug the treadmill</strong> and let it sit for a minute.</li>
+            <li><strong>Look and feel around the deck.</strong> Check under and beside the belt for anything loose: a coin,
+            a sock, a cable, a screw that has dropped out.</li>
+            <li><strong>Tighten the frame.</strong> Go round every visible bolt on the uprights, console arms and base with
+            the tools supplied, snug but not forced.</li>
+            <li><strong>Check the floor.</strong> Rock the treadmill by hand. If it moves, adjust the levelling feet or move
+            it to a flat spot.</li>
+            <li><strong>Clean and lubricate.</strong> Vacuum around and under the belt edges, then lubricate the deck if the
+            manual says it is due.</li>
+            <li><strong>Check belt centring.</strong> Run it slowly empty and make sure it is not touching either side
+            rail.</li>
+            <li><strong>Listen again,</strong> empty and then walking. If the click is still there and follows the belt
+            speed with nobody on it, move on to the motor and drive checks above, or call support.</li>
+          </ol>
+        </div>
+
+        <div id="normal" class="scroll-mt-24">
+          <h2>Normal Treadmill Noises vs Warning Signs</h2>
+<p>
+            Some sound is part of how a treadmill works. The point is to notice a change, not to chase silence.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Sound</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Usually</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Act when</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A steady motor hum</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Normal</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">It turns to a whine or grinding</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Footfall on the deck</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Normal</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">It turns to a sharp knock or creak</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A click on start or stop</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Often a relay; normal</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">It repeats during running</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A faint seam tick</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Common</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">It gets louder or the seam lifts</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline motor whirr</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Normal during changes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">It clicks, sticks or stalls</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            A new noise that appears suddenly, or one that grows over a week or two, is the one worth investigating.
+          </p>
+        </div>
+
+        <div id="prevent" class="scroll-mt-24">
+          <h2>How to Stop Clicks Coming Back</h2>
+<ul>
+            <li><strong>Check bolts every few months.</strong> Vibration loosens fasteners over time, especially on folding
+            frames that are raised and lowered often.</li>
+            <li><strong>Keep the area clean.</strong> Vacuum under and around the treadmill regularly; grit and pet hair are
+            common causes of belt noise.</li>
+            <li><strong>Lubricate on schedule.</strong> Follow the interval your manual gives. Our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance</a> guide sets out a routine.</li>
+            <li><strong>Use a mat.</strong> It levels small floor bumps and keeps dust out of the motor area; see <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">best treadmill mats</a>.</li>
+            <li><strong>Mind the weight limit.</strong> Running heavier than the rated capacity flexes the deck and frame
+            more, which loosens joints faster.</li>
+          </ul>
+        </div>
+
+        <div id="repair" class="scroll-mt-24">
+          <h2>If It Needs a Part</h2>
+<p>
+            If the routine does not stop the click, it is usually one of a few parts: the running belt, a roller or its
+            bearing, the drive belt, or a deck isolator. Before ordering anything, find the model and serial number on the
+            frame label, check whether the treadmill is still under its parts warranty, and send the maker a short video
+            with sound. Warranty parts are often sent free, with labour covered for a shorter period, so the order matters:
+            ask first, then repair.
+          </p>
+          <p>
+            For a treadmill out of warranty, our <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium">belt replacement guide</a> and <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium">drive belt guide</a> cover the two most common parts jobs.
+          </p>
+        </div>
+
+        <div id="walking-pad" class="scroll-mt-24">
+          <h2>Clicking on a Walking Pad</h2>
+<p>
+            Walking pads click for the same reasons as full treadmills, but a few causes are more common on them. With no
+            side rails, the belt edge can tick against the frame if it drifts even slightly, so check centring first. Pads
+            stored on end or slid under furniture can have a slightly twisted frame, which shows up as a tick with each
+            step; laying the pad flat on a hard floor often cures it. And because the motor and rollers are small and close
+            together, a dry deck is heard sooner.
+          </p>
+          <p>
+            Our <a href="/walking-pad-not-working/" class="text-[#0F62FE] font-medium">walking pad not working</a> guide covers belt centring and tension on pads, and <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">how to lubricate a walking pad</a> shows how to reach the deck without side rails.
+          </p>
+        </div>
+
+        <div id="stop" class="scroll-mt-24">
+          <h2>When to Stop Using the Treadmill</h2>
+<p>
+            Stop and get the treadmill checked if the click comes with any of these:
+          </p>
+          <ul>
+            <li>A burning smell (see <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium">treadmill burning smell</a>)</li>
+            <li>The belt hesitating, surging or not stopping when the key is pulled</li>
+            <li>A grinding or rising whine</li>
+            <li>The breaker tripping or the treadmill cutting out</li>
+            <li>A visible crack in the deck or frame</li>
+          </ul>
+          <p>
+            For brand-specific steps, see our <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm</a> and <a href="/nordictrack-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">NordicTrack</a> troubleshooting guides, and our general <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting</a>.
+          </p>
+        </div>
+
+
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>4 Mistakes Chasing a Treadmill Click</h2>
+          <p>Most clicks are simple. These make them harder to find or fix.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Not timing it</h3>
+              <p>Without knowing whether the click follows the belt, your steps or the motor, you end up replacing the wrong part. A taped belt and a stopwatch take a minute.</p>
+            </li>
+            <li>
+              <h3>Opening the motor cover while plugged in</h3>
+              <p>Always unplug first. The flywheel and electronics under the cover are dangerous with power connected.</p>
+            </li>
+            <li>
+              <h3>Over-tightening the belt to stop a click</h3>
+              <p>Belt tension rarely causes clicks, and an over-tight belt strains the motor and rollers. Fix tension only for slipping.</p>
+            </li>
+            <li>
+              <h3>Ignoring a click that grows</h3>
+              <p>A roller bearing click often turns into a grind. Catch it early, especially while the machine is under warranty.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The fix, in short</h2>
+          <p>
+            <strong class="text-white">Time the click: per belt revolution, per step, or with nobody on.</strong> That points
+            you to the belt, the frame or the drive, and most clicks are fixed by cleaning, lubricating and tightening.
+          </p>
+          <p>
+            Stop using the treadmill if the click comes with a burning smell, grinding, a surging belt or tripping, and call
+            support if it is under warranty. Our <a href="/treadmill-troubleshooting/" class="text-[#5AA9FF] font-bold no-underline">troubleshooting guide</a> covers every symptom.
+          </p>
+        </div>
+
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-squeaking-noise/">Treadmill Squeaking Noise</a></li>
+            <li><a href="/treadmill-thumping-noise/">Treadmill Thumping Noise</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Why does my treadmill click when the incline changes?</h3></summary>
+            <p class="faq-a">
+              A click only during incline changes points to the incline motor, its gear or the lift arms. Check nothing is trapped under the deck, then run the incline calibration your manual describes. If the click continues or the incline sticks, contact support.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why is my treadmill making a clicking noise?</h3></summary>
+            <p class="faq-a">
+              Usually a belt seam or debris (once per belt revolution), a loose bolt or the deck (with each step), or the drive belt, pulley or a roller bearing (with nobody on, speeding up with the belt). Time the click to find which.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why does my treadmill click when I walk?</h3></summary>
+            <p class="faq-a">
+              A click that matches your footsteps is usually a loose frame or upright bolt, the deck moving on its mounts, an uneven floor or a dry deck. Tighten the bolts with the treadmill unplugged, level it and lubricate as the manual says.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a clicking treadmill belt normal?</h3></summary>
+            <p class="faq-a">
+              A faint click from the belt seam passing over a roller is common and harmless. A seam that is lifting or fraying, or a click that gets louder, needs attention.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why is my treadmill motor clicking?</h3></summary>
+            <p class="faq-a">
+              With the belt running empty, a click from the front points to the drive belt, motor pulley, something touching the flywheel, or worn brushes on a brushed DC motor. Unplug before opening the motor cover, and use support if the machine is under warranty.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I keep using a clicking treadmill?</h3></summary>
+            <p class="faq-a">
+              If the click is the only symptom, yes, while you find it. Stop if it comes with a burning smell, a hesitating or surging belt, grinding, tripping or a visible crack.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I stop my treadmill from clicking?</h3></summary>
+            <p class="faq-a">
+              Clean under the belt, lubricate the deck as the manual says, tighten the frame and upright bolts, re-centre the belt and level the machine. If it persists with nobody on, check the drive belt and pulley.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Fault Diagnosis">
+          <h2 class="section-title">More in Fault Diagnosis</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/problems/" class="btn-ghost">See all Fault Diagnosis</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Noise and Fault Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-squeaking-noise/" class="card">
+            <div class="c-kicker">Noise</div>
+            <div class="c-title">Treadmill Squeaking Noise</div>
+            <p class="c-blurb">Dry deck or loose bolt? Find it by when it squeaks.</p>
+          </a>
+          <a href="/treadmill-thumping-noise/" class="card">
+            <div class="c-kicker">Noise</div>
+            <div class="c-title">Treadmill Thumping Noise</div>
+            <p class="c-blurb">Time the thump to find the belt or roller fault.</p>
+          </a>
+          <a href="/treadmill-static-shock/" class="card">
+            <div class="c-kicker">Static</div>
+            <div class="c-title">Treadmill Static Shock</div>
+            <p class="c-blurb">Why treadmills shock you, and how to stop it.</p>
+          </a>
+          <a href="/treadmill-troubleshooting/" class="card">
+            <div class="c-kicker">All faults</div>
+            <div class="c-title">Treadmill Troubleshooting</div>
+            <p class="c-blurb">Every common fault, in the order worth checking.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>

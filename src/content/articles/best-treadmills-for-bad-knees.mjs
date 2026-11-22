@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmills for Bad Knees',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-09-08',
-  modified: '2026-11-15',
+  modified: '2026-11-22',
   socialProof: '3.7k',
   h1: ['Best Treadmills for', 'Bad Knees'],
   standfirst:
@@ -153,7 +153,7 @@ export default {
             55-inch deck is ample for walking, and that unlocks cheaper machines and easier folding.
           </p>
           <p>
-            If you are working back toward running, buy the 60-inch deck now. Returning to running
+            If you are working back toward running, buy the <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch deck</a> now. Returning to running
             on a deck that is too short forces a shortened stride at exactly the point when your
             gait needs to be as normal as possible, and that is a poor combination for a knee you
             are trying to protect. Our

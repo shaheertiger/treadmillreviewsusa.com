@@ -1,0 +1,623 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SECTIONS } from "../data/sections";
+
+const title = "How Much Does a Sole Treadmill Cost? (2026): Every Model";
+const description =
+  "Sole treadmills cost $899.99 (F50) to $2,899.99 (TT8) on Sole’s site in November 2026; the popular F63 is $1,099.99 and the F80 $1,499.99. Every model priced.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "By Price", item: "https://www.treadmillreviewsusa.com/price/" },
+        { "@type": "ListItem", position: 3, name: "How Much Does a Sole Treadmill Cost?", item: "https://www.treadmillreviewsusa.com/how-much-does-a-sole-treadmill-cost/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Does a Sole treadmill need a subscription?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Sole's product pages list no monthly subscription and a free SOLE+ app. You can stream other apps on your own tablet or, on the touchscreen models, on the built-in screen where Sole allows it, but nothing is required to use the treadmill.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the cheapest Sole treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The F50, at $899.99 on Sole's store on 22 November 2026, down from $999.99. It tops out at 10 mph on a 20 by 55-inch deck, so it suits walking and jogging; the F63 at $1,099.99 is the cheapest Sole built for running.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is the Sole F65 worth $100 more than the F63?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On 22 November 2026 it was only $100 more on Sole's store and adds a 3.25 HP motor instead of 3.0 HP and a 350 lb rating instead of 325 lb, on the same 20 by 60-inch deck. If you are near the F63's limit or run often, it is a small price for the extra headroom.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much does a Sole treadmill cost?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "From $899.99 for the F50 to $2,899.99 for the TT8 on Sole's US store on 22 November 2026. The F63 was $1,099.99, the F65 $1,199.99, the F80 $1,499.99, the F83 $1,699.99, the F85 $1,999.99 and the F89 $2,699.99.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much is the Sole F80?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "$1,499.99 on Sole's store on 22 November 2026, down from $1,599.99. It has a 10.1-inch touchscreen, 12 mph and a 20 by 60-inch deck.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Sole charge a monthly subscription?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Sole's product pages list no monthly subscription and a free SOLE+ app, which makes a Sole cheaper over five years than treadmills that need a paid class membership.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the cheapest Sole treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The F50, at $899.99 on Sole's store on 22 November 2026 (regular $999.99). It tops out at 10 mph on a 55-inch deck, so the $1,099.99 F63 is the cheapest Sole built for running.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a Sole treadmill worth the money?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For runners who want a solid deck and no subscription, yes: the F63 gives a 60-inch deck, 12 mph and a lifetime frame and motor warranty for $1,099.99. Ask Sole for the parts and labour terms, which its product pages did not state.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Sole cheaper on Amazon?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Not on 21 and 22 November 2026: the F63 and F65 were the same price on Amazon as on Sole's store. Compare the seller, delivery terms and return policy before choosing.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-22",
+      dateModified: "2026-11-22",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-much-does-a-sole-treadmill-cost/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-22",
+    modifiedTime: "2026-11-22",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "how much does a sole treadmill cost",
+      "sole treadmill price",
+      "sole f63 price",
+      "sole f80 price",
+      "sole f85 price",
+      "sole treadmill cost",
+      "sole treadmill black friday",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See Sole Prices by Model", link: "#price-table" }}
+>
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Price Guide</span>
+      </nav>
+      <h1 class="ed-title">How Much Does a Sole Treadmill Cost?</h1>
+      <p class="ed-dek">
+        A Sole treadmill costs from $899.99 for the F50 to $2,899.99 for the TT8 on Sole’s own store on 22 November 2026, and most buyers land between $1,099.99 (F63) and $1,999.99 (F85). There is no monthly subscription. Here is every current model’s price, what each step up buys, and what delivery and warranty add.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 22, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          <span class="ed-method">Based on retailer and maker listings, with prices checked on the dates shown.</span>
+        </div>
+        <a href="#price-table" class="btn-ghost">Prices by Model</a>
+      </div>
+      <p class="ed-disclosure">
+        Nothing on this page is a paid placement, and it carries no affiliate links. <a href="/editorial-standards/">How we review.</a>
+      </p>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Sole sells eight treadmills on its own US store, and on 22 November 2026 every one in stock was discounted
+          against its regular price. The cheapest, the F50, was $899.99; the best-known, the F63 and F80, were
+          $1,099.99 and $1,499.99; the touchscreen F85 was $1,999.99; and the commercial-style TT8 was $2,899.99 and
+          out of stock. Unlike NordicTrack or Peloton, Sole charges nothing a month: its app is free. These prices
+          come from Sole&rsquo;s own product listings on the date shown, and Amazon prices where noted. They change
+          often around Black Friday, so treat them as a guide to the usual level.
+        </p>
+
+        <nav class="ed-toc not-prose" aria-label="On this page">
+          <h2>On this page</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#price-table">Sole Treadmill Prices by Model</a></li>
+            <li><a href="#step-up">What Each Step Up Buys</a></li>
+            <li><a href="#no-subscription">No Subscription: The Five-Year Cost</a></li>
+            <li><a href="#delivery-warranty">Delivery, Assembly and Warranty</a></li>
+            <li><a href="#amazon-vs-sole">Sole on Amazon vs Sole Direct</a></li>
+            <li><a href="#discounts">How Big Are Sole&rsquo;s Discounts?</a></li>
+            <li><a href="#vs-rivals">Sole vs Horizon and NordicTrack at the Same Money</a></li>
+            <li><a href="#per-use">Cost per Workout Over Five Years</a></li>
+            <li><a href="#extras">What the Price Does Not Include</a></li>
+            <li><a href="#worth-it">Is a Sole Treadmill Worth the Price?</a></li>
+            <li><a href="#used">Buying a Used Sole</a></li>
+            <li><a href="#which">Which Sole Treadmill Is Worth the Money?</a></li>
+            <li><a href="#when">When Sole Treadmills Are Cheapest</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2>The Short Answer</h2>
+<p>
+            <strong>A Sole treadmill costs $899.99 to $2,899.99 on Sole&rsquo;s own store (22 November 2026). The F63
+            at $1,099.99 is the usual entry point for runners, the F80 at $1,499.99 adds a 10.1-inch touchscreen, and the
+            F85 at $1,999.99 adds a 22-inch-wide deck and a 15.6-inch screen.</strong> There is no subscription to add,
+            which makes a Sole cheaper over five years than many treadmills with a lower sticker price.
+          </p>
+          <ul>
+            <li><strong>Under $1,000:</strong> F50, $899.99 (walking and jogging, 10 mph).</li>
+            <li><strong>$1,000 to $1,500:</strong> F63 $1,099.99, F65 $1,199.99, F80 $1,499.99.</li>
+            <li><strong>$1,500 to $2,000:</strong> F83 $1,699.99, F85 $1,999.99.</li>
+            <li><strong>Over $2,000:</strong> C80 curved manual $2,099.99, <a href="/sole-f89-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F89</a> $2,699.99, TT8 $2,899.99.</li>
+          </ul>
+          <p>
+            For the brand as a whole, see our <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole treadmills guide</a>;
+            for prices across every brand, <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a treadmill costs</a>.
+          </p>
+        </div>
+
+        <div id="price-table" class="scroll-mt-24">
+          <h2>Sole Treadmill Prices by Model</h2>
+<div class="not-prose overflow-x-auto my-8"><table class="min-w-[640px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Sole price (22 Nov)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Regular</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Key specs (Sole)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F50</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$899.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Brushless motor, 0.5–10 mph, 12 incline levels, 20 x 55 in., 300 lb, folding</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F63</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,099.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0 HP, 12 mph, 15 incline levels, 20 x 60 in., 325 lb, folding</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F65</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,399.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.25 HP, 0.5–12 mph, 0–15%, 20 x 60 in., 350 lb, folding</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F80</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,499.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,599.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10.1 in. touchscreen, 12 mph, 20 x 60 in., 350 lb, folding</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F83</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,699.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,799.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 HP, 0.5–12 mph, 0–15%, 10.1 in. touchscreen, 350 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F85</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,999.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,199.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 HP, 0.5–12 mph, 0–15%, 22 x 60 in., 15.6 in. touchscreen, 350 lb, folding</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">C80 (curved manual)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,099.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,399.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Self-powered curved slat treadmill</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F89</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,699.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,899.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.75 HP, 15 incline levels, 24 in. touchscreen, 375 lb, folding</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TT8</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,899.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">n/a (out of stock)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Listed but out of stock on 22 November</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Prices and stock from Sole&rsquo;s US store product listings on 22 November 2026; specifications from the same
+            pages and the Amazon listings where Sole&rsquo;s page did not state them. The F50&rsquo;s figures are from its
+            Amazon listing. Sole&rsquo;s regular prices are the ones shown struck through; the discount ranged from $100 to
+            $300.
+          </p>
+        </div>
+
+        <div id="step-up" class="scroll-mt-24">
+          <h2>What Each Step Up Buys</h2>
+<ul>
+            <li><strong>F50 → F63 (+$200):</strong> from a walking-and-jogging machine to a running one: 12 mph instead of
+            10, a <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch deck</a> instead of 55, 15 incline levels instead of 12, and a 325 lb rating instead of 300. For
+            anyone who runs, this is the most worthwhile step in the range.</li>
+            <li><strong>F63 → F65 (+$100):</strong> a slightly stronger 3.25 HP motor and a 350 lb rating.</li>
+            <li><strong>F65 → F80 (+$300):</strong> a 10.1-inch touchscreen for Sole&rsquo;s app and streaming, with the
+            same 20 by 60-inch deck and 350 lb rating.</li>
+            <li><strong>F80 → F85 (+$500):</strong> a wider 22 by 60-inch deck, a 3.5 HP motor and a 15.6-inch
+            touchscreen. The width is the part runners notice.</li>
+            <li><strong>F85 → F89 (+$700):</strong> a 3.75 HP motor, a 24-inch touchscreen and a 375 lb rating.</li>
+          </ul>
+          <p>
+            If screens do not matter to you, the F63 or F65 gives you the running deck and motor for hundreds less than
+            the touchscreen models. Our <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">best Sole treadmills</a> ranking compares them in more depth.
+          </p>
+        </div>
+
+        <div id="no-subscription" class="scroll-mt-24">
+          <h2>No Subscription: The Five-Year Cost</h2>
+<p>
+            Sole&rsquo;s product pages list no monthly subscription and a free SOLE+ app. That changes the long-run cost
+            against brands that charge for classes.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Treadmill</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Membership over 5 years</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">5-year total</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole F63</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,099.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,099.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole F80</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,499.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,499.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack Commercial 1750 + iFIT Pro</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,999 (Amazon)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,340 at $39/mo</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$4,339</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            iFIT Pro at $39 a month is from the Commercial 1750&rsquo;s Amazon listing on 21 November 2026, multiplied out
+            with no price change; the NordicTrack works without it, but its classes do not. If you want classes on a Sole,
+            you can stream an app such as the Peloton App on a tablet; see our <a href="/best-treadmills-for-peloton-app/" class="text-[#0F62FE] font-medium">best treadmills for the Peloton App</a> and <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>.
+          </p>
+        </div>
+
+        <div id="delivery-warranty" class="scroll-mt-24">
+          <h2>Delivery, Assembly and Warranty</h2>
+<p>
+            Sole&rsquo;s product pages describe standard curbside delivery by LTL freight, with in-room delivery and
+            assembly offered as an upgrade priced at checkout. Curbside means the box is left at the kerb or the first
+            dry area, and Sole&rsquo;s treadmills are heavy, so plan two people or pay for the upgrade. Our <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a> compares the options.
+          </p>
+          <p>
+            <strong>Warranty:</strong> Sole&rsquo;s product pages state a lifetime frame and motor warranty and a 30-day
+            satisfaction guarantee. The pages we checked did not state parts and labour terms, so ask Sole for them in
+            writing before you buy; our <a href="/best-treadmills-with-long-warranty/" class="text-[#0F62FE] font-medium">longest-warranty treadmills</a> explains why those terms matter more than the lifetime headline.
+          </p>
+        </div>
+
+        <div id="amazon-vs-sole" class="scroll-mt-24">
+          <h2>Sole on Amazon vs Sole Direct</h2>
+<p>
+            Several Sole treadmills are also sold on Amazon. On 21 and 22 November 2026 the F63 was $1,099.99 and the F65
+            $1,199.99 on Amazon, the same as Sole&rsquo;s own store, and the F83 was $1,699.99 on Amazon. When prices match,
+            check three things before choosing where to buy: who the seller is (the warranty can depend on an authorised
+            seller), the delivery terms (curbside or in-room), and the return policy, which differs between Amazon and
+            Sole&rsquo;s 30-day guarantee. Our <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a> guide covers the checks.
+          </p>
+        </div>
+
+        <div id="discounts" class="scroll-mt-24">
+          <h2>How Big Are Sole&rsquo;s Discounts?</h2>
+<p>
+            Sole&rsquo;s store shows a regular price struck through next to the sale price. On 22 November 2026, the gap
+            for each in-stock model was:
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Regular</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Sale</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Saving</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F50</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$899.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$100 (10%)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F63</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,099.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$100 (8%)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F65</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,399.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$200 (14%)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F80</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,599.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,499.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$100 (6%)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F83</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,799.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,699.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$100 (6%)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F85</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,199.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,999.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$200 (9%)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">C80</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,399.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,099.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$300 (13%)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F89</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,899.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,699.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$200 (7%)</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The F65 stands out: its $200 cut puts it only $100 above the F63, which makes the stronger motor and 350 lb
+            rating cheap to add. Percentages are rounded. A struck-through price tells you what Sole calls regular, not
+            what most buyers pay, so compare against the price on other days rather than the saving shown.
+          </p>
+        </div>
+
+        <div id="vs-rivals" class="scroll-mt-24">
+          <h2>Sole vs Horizon and NordicTrack at the Same Money</h2>
+<p>
+            Sole&rsquo;s closest rivals on price are Horizon, which also sells without a subscription, and NordicTrack, which
+            builds around iFIT. Using the Amazon prices from our <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium">60-inch treadmill roundup</a> (21 November 2026):
+          </p>
+          <ul>
+            <li><strong>Around $1,000:</strong> the Horizon 7.0 AT at about $935 against the Sole F63 at $1,099.99. Both
+            have a 20 by 60-inch deck, 12 mph and a 325 lb rating. The Horizon is cheaper and adds Apple Watch support; the
+            Sole states a 3.0 HP motor and no subscription either way.</li>
+            <li><strong>Around $1,500:</strong> the Horizon 7.4 AT at about $1,500 against the Sole F80 at $1,499.99. The
+            Horizon has the wider 22-inch deck and an included chest strap; the Sole has a 10.1-inch touchscreen.</li>
+            <li><strong>Around $2,000:</strong> the NordicTrack Commercial 1750 at $1,999 against the Sole F85 at $1,999.99.
+            Both are 22 by 60 inches. The NordicTrack adds decline and iFIT classes at $39 a month; the Sole has no
+            subscription.</li>
+          </ul>
+          <p>
+            Our <a href="/sole-vs-nordictrack/" class="text-[#0F62FE] font-medium">Sole vs NordicTrack</a> comparison goes further.
+          </p>
+        </div>
+
+        <div id="per-use" class="scroll-mt-24">
+          <h2>Cost per Workout Over Five Years</h2>
+<p>
+            Because there is no membership, a Sole&rsquo;s cost per workout falls steadily the longer you use it. At three
+            workouts a week for five years (780 workouts):
+          </p>
+          <ul>
+            <li><strong>F50:</strong> $899.99, about $1.15 a workout.</li>
+            <li><strong>F63:</strong> $1,099.99, about $1.41 a workout.</li>
+            <li><strong>F80:</strong> $1,499.99, about $1.92 a workout.</li>
+            <li><strong>F85:</strong> $1,999.99, about $2.56 a workout.</li>
+          </ul>
+          <p>
+            Add delivery upgrades, a mat and any repairs outside the warranty to get the full figure. Our <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">home treadmill vs gym membership</a> guide sets these numbers against a gym.
+          </p>
+        </div>
+
+        <div id="extras" class="scroll-mt-24">
+          <h2>What the Price Does Not Include</h2>
+<ul>
+            <li><strong>In-room delivery and assembly.</strong> Standard delivery is curbside; the upgrade is priced at
+            checkout.</li>
+            <li><strong>A mat.</strong> Worth it on carpet or upstairs; see <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">best treadmill mats</a>.</li>
+            <li><strong>A suitable outlet.</strong> Treadmills draw a lot of power; follow Sole&rsquo;s manual on circuits
+            and extension leads.</li>
+            <li><strong>Lubricant and upkeep.</strong> Small, but regular; our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance</a> guide lists what to budget for.</li>
+          </ul>
+        </div>
+
+        <div id="worth-it" class="scroll-mt-24">
+          <h2>Is a Sole Treadmill Worth the Price?</h2>
+<p>
+            Sole costs more at the start than many budget brands, and less over five years than most class-led ones. What
+            you are paying for, on Sole&rsquo;s own pages, is a lifetime frame and motor warranty, 60-inch decks from the F63
+            upward, and no subscription. What you are not getting at the lower end is a built-in screen; the F63 and F65
+            pair with your own device instead.
+          </p>
+          <p>
+            A Sole makes the most sense if you run several times a week, plan to keep the treadmill for years and do not
+            want a monthly bill. It makes less sense if you mainly walk a few times a week, where the F50&rsquo;s price, or a
+            cheaper walking treadmill, is plenty, or if trainer-led classes are the main reason you are buying, in which
+            case an iFIT or Peloton machine builds them in.
+          </p>
+          <p>
+            Before buying, ask Sole for the parts and labour terms in writing, since the product pages we checked state only
+            the lifetime frame and motor cover. Those terms decide most repair bills.
+          </p>
+        </div>
+
+        <div id="used" class="scroll-mt-24">
+          <h2>Buying a Used Sole</h2>
+<p>
+            Sole treadmills come up second-hand often, because they are heavy and people move house. A used one can save a
+            lot against the new prices above, but check a few things first:
+          </p>
+          <ul>
+            <li><strong>The model and year.</strong> Find the label on the frame and compare it with the current range; an
+            older model may have a different motor, deck or console.</li>
+            <li><strong>Warranty transfer.</strong> Ask Sole whether the warranty passes to a second owner; many treadmill
+            warranties cover the original purchaser only.</li>
+            <li><strong>The belt and deck.</strong> Run it, walk on it and look for a worn, glazed or frayed belt.</li>
+            <li><strong>Moving it.</strong> Sole treadmills are heavy; budget for help or a mover.</li>
+          </ul>
+          <p>
+            Our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance guide</a> lists the wear points to check.
+          </p>
+        </div>
+
+        <div id="which" class="scroll-mt-24">
+          <h2>Which Sole Treadmill Is Worth the Money?</h2>
+<div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">If you…</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Buy</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walk and jog, tight budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F50</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$899.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Run, no screen needed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F63</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,099.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Run and are heavier</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F65</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Want a touchscreen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F80</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,499.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Want a wide deck</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F85</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,999.99</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            For full reviews, see the <a href="/sole-f63-treadmill/" class="text-[#0F62FE] font-medium">Sole F63</a>, <a href="/sole-f65-treadmill/" class="text-[#0F62FE] font-medium">F65</a>, <a href="/sole-f80-treadmill/" class="text-[#0F62FE] font-medium">F80</a> and <a href="/sole-f85-treadmill/" class="text-[#0F62FE] font-medium">F85</a>.
+          </p>
+        </div>
+
+        <div id="when" class="scroll-mt-24">
+          <h2>When Sole Treadmills Are Cheapest</h2>
+<p>
+            On 22 November 2026 every in-stock Sole was already $100 to $300 below its regular price, ahead of Black Friday.
+            Sole&rsquo;s regular prices are rarely what buyers pay: holiday sales, New Year promotions and clearance of
+            outgoing models are the usual times to buy. Our <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a> and <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">treadmill Black Friday deals</a> track the patterns.
+          </p>
+        </div>
+
+
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Where People Go Wrong When Pricing a Sole Treadmill</h2>
+          <p>Most of these come from comparing sticker prices and ignoring what comes with them.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Paying the regular price</h3>
+              <p>Every in-stock Sole was $100 to $300 off on 22 November 2026. Sole’s regular price is a reference, not the usual selling price.</p>
+            </li>
+            <li>
+              <h3>Buying a touchscreen you will not use</h3>
+              <p>The F80 costs $300 more than the F65 for a screen, with the same deck. If you stream from a tablet anyway, the F63 or F65 is the better value.</p>
+            </li>
+            <li>
+              <h3>Forgetting delivery</h3>
+              <p>Standard delivery is curbside freight. A heavy treadmill left at the kerb needs two people and a plan, or the paid in-room upgrade.</p>
+            </li>
+            <li>
+              <h3>Not asking about parts and labour</h3>
+              <p>Sole’s pages state lifetime frame and motor but not parts and labour. Get those terms in writing before you compare Sole against Horizon or Spirit.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">A Sole treadmill costs $899.99 to $2,899.99 on Sole&rsquo;s store, and most buyers spend
+            $1,099.99 (F63) to $1,999.99 (F85)</strong>, with no monthly subscription on top.
+          </p>
+          <p>
+            For running without a screen, the F63 or F65 is the value pick; pay for the F80 or F85 only if you want the
+            touchscreen or the wider deck. Buy in a sale, plan for curbside delivery, and ask Sole for the parts and
+            labour terms. Our <a href="/sole-fitness/" class="text-[#5AA9FF] font-bold no-underline">Sole guide</a> covers the range.
+          </p>
+        </div>
+
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-much-does-a-treadmill-cost/">How Much Does a Treadmill Cost?</a></li>
+            <li><a href="/sole-fitness/">Sole Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Does a Sole treadmill need a subscription?</h3></summary>
+            <p class="faq-a">
+              No. Sole's product pages list no monthly subscription and a free SOLE+ app. You can stream other apps on your own tablet or, on the touchscreen models, on the built-in screen where Sole allows it, but nothing is required to use the treadmill.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the cheapest Sole treadmill?</h3></summary>
+            <p class="faq-a">
+              The F50, at $899.99 on Sole's store on 22 November 2026, down from $999.99. It tops out at 10 mph on a 20 by 55-inch deck, so it suits walking and jogging; the F63 at $1,099.99 is the cheapest Sole built for running.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the Sole F65 worth $100 more than the F63?</h3></summary>
+            <p class="faq-a">
+              On 22 November 2026 it was only $100 more on Sole's store and adds a 3.25 HP motor instead of 3.0 HP and a 350 lb rating instead of 325 lb, on the same 20 by 60-inch deck. If you are near the F63's limit or run often, it is a small price for the extra headroom.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much does a Sole treadmill cost?</h3></summary>
+            <p class="faq-a">
+              From $899.99 for the F50 to $2,899.99 for the TT8 on Sole's US store on 22 November 2026. The F63 was $1,099.99, the F65 $1,199.99, the F80 $1,499.99, the F83 $1,699.99, the F85 $1,999.99 and the F89 $2,699.99.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much is the Sole F80?</h3></summary>
+            <p class="faq-a">
+              $1,499.99 on Sole's store on 22 November 2026, down from $1,599.99. It has a 10.1-inch touchscreen, 12 mph and a 20 by 60-inch deck.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does Sole charge a monthly subscription?</h3></summary>
+            <p class="faq-a">
+              No. Sole's product pages list no monthly subscription and a free SOLE+ app, which makes a Sole cheaper over five years than treadmills that need a paid class membership.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the cheapest Sole treadmill?</h3></summary>
+            <p class="faq-a">
+              The F50, at $899.99 on Sole's store on 22 November 2026 (regular $999.99). It tops out at 10 mph on a 55-inch deck, so the $1,099.99 F63 is the cheapest Sole built for running.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a Sole treadmill worth the money?</h3></summary>
+            <p class="faq-a">
+              For runners who want a solid deck and no subscription, yes: the F63 gives a 60-inch deck, 12 mph and a lifetime frame and motor warranty for $1,099.99. Ask Sole for the parts and labour terms, which its product pages did not state.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is Sole cheaper on Amazon?</h3></summary>
+            <p class="faq-a">
+              Not on 21 and 22 November 2026: the F63 and F65 were the same price on Amazon as on Sole's store. Compare the seller, delivery terms and return policy before choosing.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Price Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-much-does-a-treadmill-cost/" class="card">
+            <div class="c-kicker">Cost</div>
+            <div class="c-title">How Much Does a Treadmill Cost?</div>
+            <p class="c-blurb">Prices by type and tier, across every brand.</p>
+          </a>
+          <a href="/sole-fitness/" class="card">
+            <div class="c-kicker">Brand</div>
+            <div class="c-title">Sole Treadmills</div>
+            <p class="c-blurb">The Sole range explained, model by model.</p>
+          </a>
+          <a href="/how-much-does-a-proform-treadmill-cost/" class="card">
+            <div class="c-kicker">Cost</div>
+            <div class="c-title">How Much Does a ProForm Treadmill Cost?</div>
+            <p class="c-blurb">Every ProForm priced, plus what iFIT adds.</p>
+          </a>
+          <a href="/how-much-does-a-nordictrack-treadmill-cost/" class="card">
+            <div class="c-kicker">Cost</div>
+            <div class="c-title">How Much Does a NordicTrack Treadmill Cost?</div>
+            <p class="c-blurb">NordicTrack prices by model, and the iFIT membership.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>

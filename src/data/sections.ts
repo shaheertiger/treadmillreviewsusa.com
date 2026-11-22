@@ -107,6 +107,13 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-for-running/',
           },
           {
+            title: 'Best Treadmills With a 60-Inch Deck',
+            description:
+              "Seven treadmills with a 60-inch running surface, from Horizon's T202 to the Spirit XT485, and who needs the length.",
+            badge: '60-inch',
+            url: '/best-treadmills-with-60-inch-deck/',
+          },
+          {
             title: 'Best Budget Treadmills for Running',
             description:
               'Six treadmills under $800 with the belt, speed and motor to carry a runner, from a $370 10 mph pick to the Horizon T101.',
@@ -456,6 +463,13 @@ export const SECTIONS: Section[] = [
             url: '/best-smart-treadmills/',
           },
           {
+            title: 'Best Treadmills With a Heart Rate Monitor',
+            description:
+              'Six treadmills with chest-strap or Bluetooth heart rate support, and why grip sensors are not enough.',
+            badge: 'Heart rate',
+            url: '/best-treadmills-with-heart-rate-monitor/',
+          },
+          {
             title: "Best Treadmills With Bluetooth Speakers",
             description: "Five folding treadmills with built-in speakers, $114 to $1,200, and what Bluetooth really means.",
             badge: "Speakers",
@@ -713,6 +727,20 @@ export const SECTIONS: Section[] = [
               'Every Tread\'s list and Black Friday price, the $299 Tread+ assembly, and All-Access over three and five years.',
             badge: 'Peloton',
             url: '/how-much-does-a-peloton-tread-cost/',
+          },
+          {
+            title: 'How Much Does a ProForm Treadmill Cost?',
+            description:
+              'Every current ProForm treadmill price from $479 to $1,665, plus the iFIT membership.',
+            badge: 'ProForm',
+            url: '/how-much-does-a-proform-treadmill-cost/',
+          },
+          {
+            title: 'How Much Does a Sole Treadmill Cost?',
+            description:
+              'Every Sole treadmill at list price, $899.99 to $2,899.99, and what the extra money buys.',
+            badge: 'Sole',
+            url: '/how-much-does-a-sole-treadmill-cost/',
           },
           {
             title: 'How Much Does a Walking Pad Cost?',
@@ -2816,6 +2844,13 @@ export const SECTIONS: Section[] = [
             url: '/treadmill-thumping-noise/',
           },
           {
+            title: 'Treadmill Clicking Noise',
+            description:
+              'Time the click against the belt, your steps or the motor to find the belt, frame or drive fault.',
+            badge: 'Noise',
+            url: '/treadmill-clicking-noise/',
+          },
+          {
             title: 'Treadmill Burning Smell',
             description:
               'Burning rubber, hot plastic or dust? Which smells mean unplug now, and what to check after.',
@@ -2959,6 +2994,13 @@ export const SECTIONS: Section[] = [
               'Lubricating a deck with no rails to lift: loosen, lift the edge, apply silicone, re-tension and re-centre.',
             badge: 'Walking pad',
             url: '/how-to-lubricate-a-walking-pad/',
+          },
+          {
+            title: 'Walking Pad Not Working',
+            description:
+              'Power, safety key, remote, belt and auto-stop: walking pad fixes in the order worth checking.',
+            badge: 'Walking pad',
+            url: '/walking-pad-not-working/',
           },
         ],
       },

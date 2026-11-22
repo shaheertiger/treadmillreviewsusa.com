@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'How Much Should You Spend?',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 22, 2026',
   published: '2026-09-08',
-  modified: '2026-11-15',
+  modified: '2026-11-22',
   socialProof: '4.9k',
   h1: ['How Much Should You', 'Spend on a Treadmill?'],
   standfirst:
@@ -38,7 +38,7 @@ export default {
             Most treadmills are used at 2.5 to 4 mph regardless of price.
           </p>
           <p>
-            <strong>If you will run</strong>, you need a 60-inch deck if you are over about 5'8",
+            <strong>If you will run</strong>, you need a <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch deck</a> if you are over about 5'8",
             and a frame heavy enough to stay still at pace. That is a floor of roughly $1,200 new,
             or $800 used. Below it you will shorten your stride to stay clear of the rear roller,
             which is how treadmill running earns its reputation for feeling wrong.
