@@ -18,8 +18,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-11-17',
+  modified: '2026-11-23',
   h1: ['Best Walking Pads', 'for Seniors'],
   standfirst:
     'A walking pad sits only a few inches off the floor, which makes it easier to step onto than any full-size treadmill. For an older walker that is a real advantage, but only on a pad with something to hold. Here are five pads with a handrail, what to check before you buy, and when a pad is the wrong machine.',
@@ -230,7 +231,9 @@ export default {
             <li><strong>You want to hold on for the whole walk.</strong> Even the best pad rails are
             short. A treadmill with full-length side rails, such as those in our
             ${A('/best-treadmills-with-handrails/', 'treadmills with handrails')} guide, lets you walk
-            in the middle of the belt with a hand at your side the whole time.</li>
+            in the middle of the belt with a hand at your side the whole time. Our
+            ${A('/walking-pad-vs-treadmill-for-seniors/', 'walking pad vs treadmill for seniors')}
+            comparison sets the two formats side by side.</li>
             <li><strong>You use a cane or walker, have fallen in the past year, or feel dizzy when you
             stand up.</strong> A moving belt of any height is a fall risk. A seated cross trainer, such as
             those in our ${A('/best-recumbent-ellipticals/', 'recumbent ellipticals')} guide, gives the
@@ -527,6 +530,12 @@ export default {
       title: 'Best Treadmills With Handrails',
       blurb: 'Five treadmills with full-length rails, slow starts and simple consoles.',
       url: '/best-treadmills-with-handrails/',
+    },
+    {
+      kicker: 'Comparison',
+      title: 'Walking Pad vs Treadmill for Seniors',
+      blurb: 'When a full-rail treadmill is the safer choice than a pad.',
+      url: '/walking-pad-vs-treadmill-for-seniors/',
     },
   ],
   bottomLine: [

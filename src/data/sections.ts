@@ -743,6 +743,13 @@ export const SECTIONS: Section[] = [
             url: '/how-much-does-a-sole-treadmill-cost/',
           },
           {
+            title: 'How Much Does a Horizon Treadmill Cost?',
+            description:
+              'Every Horizon from the $699 T101 to the $1,999 7.8 AT, Amazon vs Horizon prices, and the reference prices to ignore.',
+            badge: 'Horizon',
+            url: '/how-much-does-a-horizon-treadmill-cost/',
+          },
+          {
             title: 'How Much Does a Walking Pad Cost?',
             description:
               'Prices by type, from $130 flat pads to $800 handrail pads, what more money buys, and the costs after checkout.',
@@ -1028,6 +1035,13 @@ export const SECTIONS: Section[] = [
               'Which NordicTrack treadmills to watch, how to value a bundled iFIT membership, and Amazon versus buying direct.',
             badge: 'NordicTrack',
             url: '/nordictrack-black-friday-deals/',
+          },
+          {
+            title: 'Sole Treadmill Black Friday Deals 2026',
+            description:
+              "Every Sole treadmill's Black Friday price to 27 Nov, what each sold for before, and which drops are real.",
+            badge: 'Sole',
+            url: '/sole-treadmill-black-friday-deals/',
           },
         ],
       },
@@ -1991,6 +2005,13 @@ export const SECTIONS: Section[] = [
             url: '/walking-pad-vs-treadmill/',
           },
           {
+            title: 'Walking Pad vs Treadmill for Seniors',
+            description:
+              'Rails, step height, starting speed and space compared for older walkers, with real machines and prices.',
+            badge: 'Seniors',
+            url: '/walking-pad-vs-treadmill-for-seniors/',
+          },
+          {
             title: 'Treadmill vs. Elliptical',
             description:
               'Joints, calorie burn, bone density, footprint, noise and ten-year cost — compared honestly.',
@@ -2785,6 +2806,13 @@ export const SECTIONS: Section[] = [
               'SAFETY KEY OFF, the no-GFCI outlet rule, belt tension and centring, LUBE BELT resets, JRNY and Bowflex support.',
             badge: 'Bowflex',
             url: '/bowflex-treadmill-troubleshooting/',
+          },
+          {
+            title: 'Weslo Treadmill Troubleshooting',
+            description:
+              'The power switch by the cord, the no-GFCI rule, belt tension and centring, and parts for a discontinued Weslo.',
+            badge: 'Weslo',
+            url: '/weslo-treadmill-troubleshooting/',
           },
           {
             title: 'Treadmill Water Damage',
@@ -3672,6 +3700,13 @@ export const SECTIONS: Section[] = [
             description: "Step-by-step mounting, stopping and stumble recovery, with clearance and step-up height advice.",
             badge: 'Seniors',
             url: '/how-to-get-on-and-off-a-treadmill-safely/',
+          },
+          {
+            title: 'Walking Pad or Treadmill for Seniors?',
+            description:
+              'Why full-length rails usually beat a low step, and when a walking pad with a handlebar is the better fit.',
+            badge: 'Seniors',
+            url: '/walking-pad-vs-treadmill-for-seniors/',
           },
           {
             title: "Treadmill Walking With Arthritis",

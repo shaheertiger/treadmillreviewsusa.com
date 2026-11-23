@@ -53,9 +53,10 @@ for it), "how to tighten a treadmill belt" (720; /how-to-adjust-treadmill-belt/)
 - [ ] `walking-pad-remote-not-working` — Walking Pad Remote Not Working: Pairing and Battery Fixes
 - [ ] `how-much-does-a-bowflex-treadmill-cost` — How Much Does a Bowflex Treadmill Cost? (2026) — /price/ — pillar /bowflex/
 - [ ] `xterra-treadmill-troubleshooting` — XTERRA Treadmill Troubleshooting: Power, Belt and Console
-- [ ] `how-much-does-a-horizon-treadmill-cost` — How Much Does a Horizon Treadmill Cost? (2026) — /price/ — pillar /horizon-fitness/
+- [x] 2026-11-23 · `how-much-does-a-horizon-treadmill-cost` — How Much Does a Horizon Treadmill Cost? (2026) — /price/ — pillar /horizon-fitness/
 - [ ] `sperax-walking-pad-recall` — Sperax Walking Pad Recall: What Owners Should Do (verify every fact on cpsc.gov first; skip if it cannot be verified)
 - [ ] `treadmill-motor-replacement-cost` — Treadmill Motor Replacement Cost: Parts, Labor, Worth It? — /problems/ — pillar /treadmill-repair-guide/ (check the repair guide does not already answer this search)
+- [x] 2026-11-23 · `weslo-treadmill-troubleshooting` — Weslo Treadmill Troubleshooting: Won't Start, Belt and Speed (picked over Schwinn: Bing shows ~15 Weslo impressions incl. "treadmill weslo cadence older model" 4 imp/1 click vs 3 for Schwinn; steps from a Weslo owner's manual)
 - [ ] `schwinn-treadmill-troubleshooting` — Schwinn Treadmill Troubleshooting: Common Faults and Fixes
 - [ ] `what-speed-should-i-run-on-a-treadmill` — What Speed Should I Run on a Treadmill? Beginner to Fast — /training/ — pillar /what-speed-should-i-walk-on-a-treadmill/ (speed pages convert at 21% CTR)
 - [ ] `how-to-clean-a-walking-pad` — How to Clean a Walking Pad: Belt, Deck and Under the Belt

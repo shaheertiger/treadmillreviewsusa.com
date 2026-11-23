@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-11-22',
+  modified: '2026-11-23',
   socialProof: '1.1k',
   h1: ['How Much Does a', 'Sole Treadmill Cost?'],
   standfirst:
@@ -302,7 +303,9 @@ export default {
       id: 'when',
       heading: 'When Sole Treadmills Are Cheapest',
       html: `          <p>
-            On 22 November 2026 every in-stock Sole was already $100 to $300 below its regular price, ahead of Black Friday.
+            On 22 November 2026 every in-stock Sole was already $100 to $300 below its regular price, ahead of Black Friday;
+            our <a href="/sole-treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Sole Black Friday deals</a> page
+            sets those prices against what each model sold for earlier.
             Sole&rsquo;s regular prices are rarely what buyers pay: holiday sales, New Year promotions and clearance of
             outgoing models are the usual times to buy. Our
             <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a>
@@ -394,6 +397,12 @@ export default {
       title: 'How Much Does a NordicTrack Treadmill Cost?',
       blurb: 'NordicTrack prices by model, and the iFIT membership.',
       url: '/how-much-does-a-nordictrack-treadmill-cost/',
+    },
+    {
+      kicker: 'By brand',
+      title: 'How Much Does a Horizon Treadmill Cost?',
+      blurb: 'Every Horizon priced at Horizon and on Amazon, T101 to 7.8 AT.',
+      url: '/how-much-does-a-horizon-treadmill-cost/',
     },
   ],
   bottomLine: [

@@ -51,7 +51,7 @@ Format: `slug` — Title — hub → group — Amazon search to start from
 
 ### Added 2026-11-22 (refill at 11 open: deals 2.8x on both engines and treadmill/pad roundups 1.2-1.5x are the winning types; each slug checked unused today; deals first because Black Friday is 27 Nov)
 
-- [ ] `sole-treadmill-black-friday-deals` — Sole Treadmill Black Friday Deals (2026): Every Model's Sale Price — /deals/ → Black Friday group — Sole store + "Sole treadmill" (link /how-much-does-a-sole-treadmill-cost/)
+- [x] 2026-11-23 · `sole-treadmill-black-friday-deals` — Sole Treadmill Black Friday Deals (2026): Every Model's Sale Price — /deals/ → Black Friday group — Sole store + "Sole treadmill" (link /how-much-does-a-sole-treadmill-cost/)
 - [ ] `horizon-treadmill-black-friday-deals` — Horizon Treadmill Black Friday Deals (2026): 7.0 AT, 7.4 AT, T202 — /deals/ → Black Friday group — "Horizon treadmill"
 - [ ] `proform-black-friday-deals` — ProForm Black Friday Deals (2026): Carbon and Pro Prices — /deals/ → Black Friday group — "ProForm treadmill" (link /how-much-does-a-proform-treadmill-cost/)
 - [ ] `peloton-tread-black-friday-deals` — Peloton Tread Black Friday Deals (2026): What's Actually Cheaper — /deals/ → Black Friday group — Peloton store (link /how-much-does-a-peloton-tread-cost/)

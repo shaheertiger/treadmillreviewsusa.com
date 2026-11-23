@@ -1,10 +1,10 @@
 # Performance Report (auto-generated)
 
-Built 2026-11-22 by `node scripts/perf-report.mjs` from 24 export(s) in `research/daily-publishing/data/`. Do not edit by hand; drop new exports in and re-run.
+Built 2026-11-23 by `node scripts/perf-report.mjs` from 27 export(s) in `research/daily-publishing/data/`. Do not edit by hand; drop new exports in and re-run.
 
 ## Instructions for today's run
 
-1. **Write more of:** deals, fix, compare, maintenance/how-to, speed/incline explainer.
+1. **Write more of:** deals, fix, compare, maintenance/how-to, speed/incline explainer, guide/question.
 2. **Do not write new:** roundup: home gym & accessories, workouts/training. A queue item of one of these types is deferred: mark it `- [~] deferred: <type> is DOESN'T in PERFORMANCE.md (date)` and take the next eligible item.
 3. **Expand before adding siblings:** any page in "Rising" below that climbed again this export gets 2-4 new sections and FAQs (PLAYBOOK §1d).
 4. **CTR fixes:** if the "Page-one keywords with no clicks" list names a page that has not had a title/description change in the last 7 days, rewrite one title and one description per run so they lead with that query and give the answer with a number.
@@ -14,41 +14,41 @@ Built 2026-11-22 by `node scripts/perf-report.mjs` from 24 export(s) in `researc
 
 The daily run writes these six. Each engine's picks come from the page types that engine rewards (its own visitors per page; for Bing also its click-through rate). If a pick turns out to be covered by an existing page, mark it skipped and take the next item in that engine's ranking.
 
-**Bing (also Yahoo, MSN, Copilot)** (113 visitors, 2026-11-15 to 2026-11-22; top types: cost/price 9.20x, deals 2.83x, fix 1.56x, roundup: treadmills & pads 1.17x)
+**Bing (also Yahoo, MSN, Copilot)** (113 visitors, 2026-11-15 to 2026-11-22; top types: cost/price 9.03x, deals 2.83x, fix 1.64x, brand 1.37x)
 
-- **PICK** `best-treadmills-with-heart-rate-monitor`: roundup: treadmills & pads (roundup-queue.md)
-- **PICK** `how-much-does-a-sole-treadmill-cost`: cost/price (queue.md)
-- **PICK** `how-much-does-a-proform-treadmill-cost`: cost/price (queue.md)
+- **PICK** `sole-treadmill-black-friday-deals`: deals (roundup-queue.md)
+- **PICK** `how-much-does-an-incline-trainer-cost`: cost/price (queue.md)
+- **PICK** `how-much-does-a-curved-treadmill-cost`: cost/price (queue.md)
 
 **DuckDuckGo** (191 visitors, 2026-11-15 to 2026-11-22; top types: deals 2.87x, cost/price 2.18x, fix 1.84x, roundup: treadmills & pads 1.51x)
 
-- **PICK** `best-treadmills-with-60-inch-deck`: roundup: treadmills & pads (roundup-queue.md)
-- **PICK** `walking-pad-not-working`: fix (queue.md)
-- **PICK** `treadmill-clicking-noise`: fix (queue.md)
+- **PICK** `horizon-treadmill-black-friday-deals`: deals (roundup-queue.md)
+- **PICK** `walking-pad-belt-slipping`: fix (queue.md)
+- **PICK** `treadmill-humming-noise`: fix (queue.md)
 
 ### Queue order (for reference)
 
 **Money lane**
 
-- `best-treadmills-with-heart-rate-monitor`: roundup: treadmills & pads, WATCH, **PICK**
-- `cybergoing-walking-pad`: brand, WATCH, ok
-- `best-treadmills-with-60-inch-deck`: roundup: treadmills & pads, WATCH, ok
+- `cybergoing-walking-pad`: brand, WATCH, **PICK**
 - `best-treadmills-for-short-people`: roundup: treadmills & pads, WATCH, ok
 - `serenelife-treadmills`: brand, WATCH, ok
 - `best-treadmills-under-700`: roundup: treadmills & pads, WATCH, ok
 - `ypoo-treadmills`: brand, WATCH, ok
 - `best-treadmills-with-brushless-motor`: roundup: treadmills & pads, WATCH, ok
+- `cursor-fitness-treadmills`: brand, WATCH, ok
+- `best-treadmills-with-ac-motor`: roundup: treadmills & pads, WATCH, ok
 
 **Traffic lane**
 
 - `xterra-tr95h-treadmill`: model review, WATCH, **PICK**
 - `what-does-incline-mean-on-a-treadmill`: speed/incline explainer, WORKS, ok
 - `what-incline-should-i-run-on-a-treadmill`: speed/incline explainer, WORKS, ok
-- `walking-pad-not-working`: fix, WORKS, ok
-- `treadmill-clicking-noise`: fix, WORKS, ok
-- `how-much-does-a-sole-treadmill-cost`: cost/price, WORKS (few pages), ok
 - `walking-pad-belt-slipping`: fix, WORKS, ok
-- `how-much-does-a-proform-treadmill-cost`: cost/price, WORKS (few pages), ok
+- `how-much-does-an-incline-trainer-cost`: cost/price, WORKS (few pages), ok
+- `treadmill-humming-noise`: fix, WORKS, ok
+- `how-much-does-a-curved-treadmill-cost`: cost/price, WORKS (few pages), ok
+- `peloton-tread-troubleshooting`: fix, WORKS, ok
 
 ## What works and what doesn't, by page type (2026-11-15 to 2026-11-22, sources: search-all, 331 visitors)
 
@@ -58,19 +58,19 @@ Site average: 0.66 visitors per page. "Visits" and "AI" are each type's visitors
 
 | Type | Live pages (14d+) | Pages with visitors | Hit rate | Visitors | Per page | Visits | AI | Verdict |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| cost/price | 6 | 2 | 33.3% | 31 | 5.17 | 7.79x | 7.99x | WORKS (few pages) |
-| deals | 10 | 4 | 40.0% | 31 | 3.10 | 4.67x | 1.14x | WORKS |
-| fix | 27 | 3 | 11.1% | 26 | 0.96 | 1.45x | 1.96x | WORKS |
+| cost/price | 6 | 2 | 33.3% | 31 | 5.17 | 7.79x | 6.83x | WORKS (few pages) |
+| deals | 10 | 4 | 40.0% | 31 | 3.10 | 4.67x | 1.15x | WORKS |
+| fix | 27 | 3 | 11.1% | 26 | 0.96 | 1.45x | 1.87x | WORKS |
 | roundup: treadmills & pads | 102 | 17 | 16.7% | 81 | 0.79 | 1.20x | 0.35x | WATCH |
-| compare | 25 | 2 | 8.0% | 18 | 0.72 | 1.09x | 2.04x | WORKS |
-| model review | 61 | 10 | 16.4% | 40 | 0.66 | 0.99x | 0.90x | WATCH |
-| maintenance/how-to | 30 | 4 | 13.3% | 19 | 0.63 | 0.95x | 2.36x | WORKS |
-| speed/incline explainer | 13 | 1 | 7.7% | 8 | 0.62 | 0.93x | 2.40x | WORKS |
+| compare | 25 | 2 | 8.0% | 18 | 0.72 | 1.09x | 2.06x | WORKS |
+| model review | 61 | 10 | 16.4% | 40 | 0.66 | 0.99x | 0.91x | WATCH |
+| maintenance/how-to | 30 | 4 | 13.3% | 19 | 0.63 | 0.95x | 2.38x | WORKS |
+| speed/incline explainer | 13 | 1 | 7.7% | 8 | 0.62 | 0.93x | 2.43x | WORKS |
 | brand | 53 | 5 | 9.4% | 32 | 0.60 | 0.91x | 0.09x | WATCH |
-| guide/question | 58 | 8 | 13.8% | 35 | 0.60 | 0.91x | 1.49x | WATCH |
-| health/fitness question | 10 | 2 | 20.0% | 6 | 0.60 | 0.90x | 0.41x | WATCH |
+| guide/question | 58 | 8 | 13.8% | 35 | 0.60 | 0.91x | 1.51x | WORKS |
+| health/fitness question | 10 | 2 | 20.0% | 6 | 0.60 | 0.90x | 0.42x | WATCH |
 | roundup: home gym & accessories | 64 | 1 | 1.6% | 4 | 0.06 | 0.09x | 0.00x | DOESN'T |
-| workouts/training | 40 | 0 | 0.0% | 0 | 0.00 | 0.00x | 0.34x | DOESN'T |
+| workouts/training | 40 | 0 | 0.0% | 0 | 0.00 | 0.00x | 0.35x | DOESN'T |
 
 ### Top pages this window
 
@@ -119,12 +119,12 @@ Visitors summed across every export in the data folder. A page under 7 days old 
 | Type | New pages | Pages with any visitors | Visitors |
 |---|---:|---:|---:|
 | brand | 25 | 7 | 73 |
-| roundup: treadmills & pads | 43 | 8 | 26 |
+| roundup: treadmills & pads | 45 | 8 | 26 |
 | model review | 4 | 2 | 9 |
 | health/fitness question | 7 | 2 | 2 |
-| fix | 7 | 1 | 1 |
+| fix | 9 | 1 | 1 |
+| cost/price | 7 | 0 | 0 |
 | speed/incline explainer | 3 | 0 | 0 |
-| cost/price | 5 | 0 | 0 |
 | guide/question | 2 | 0 | 0 |
 | maintenance/how-to | 6 | 0 | 0 |
 | roundup: home gym & accessories | 3 | 0 | 0 |
@@ -133,20 +133,20 @@ Visitors summed across every export in the data folder. A page under 7 days old 
 
 **New pages already drawing visitors:** /lifesmart-treadmills/ (26), /yesoul-treadmills/ (23), /tru-grit-treadmills/ (10), /best-treadmills-for-low-ceilings/ (6), /nordictrack-x24-treadmill/ (6), /oma-treadmills/ (6), /life-fitness-95t-treadmill/ (5), /nordictrack-c950i-treadmill/ (4), /rhythm-fun-treadmill/ (4), /best-ifit-treadmills/ (3), /best-treadmill-phone-holders/ (3), /life-fitness-club-series-plus-treadmill/ (3), /rogue-treadmills/ (3), /freemotion-treadmills/ (2), /trueform-treadmills/ (2)
 
-## Bing keywords by theme (2026-11-22)
+## Bing keywords by theme (2026-11-23)
 
 | Theme | Keywords | Impressions | Clicks | CTR |
 |---|---:|---:|---:|---:|
-| other | 129 | 321 | 66 | 20.6% |
-| cost/price | 16 | 419 | 47 | 11.2% |
-| fix/troubleshoot | 58 | 93 | 35 | 37.6% |
-| brand/model | 71 | 175 | 32 | 18.3% |
-| deals | 25 | 94 | 22 | 23.4% |
-| incline/decline | 29 | 45 | 19 | 42.2% |
-| speed/pace | 25 | 43 | 19 | 44.2% |
-| best roundup | 14 | 37 | 9 | 24.3% |
+| other | 135 | 331 | 66 | 19.9% |
+| cost/price | 18 | 421 | 47 | 11.2% |
+| fix/troubleshoot | 51 | 85 | 35 | 41.2% |
+| brand/model | 76 | 181 | 32 | 17.7% |
+| deals | 24 | 92 | 22 | 23.9% |
+| speed/pace | 25 | 42 | 19 | 45.2% |
+| incline/decline | 28 | 44 | 19 | 43.2% |
+| best roundup | 11 | 33 | 9 | 27.3% |
 | seniors/health | 7 | 537 | 5 | 0.9% |
-| walking pad | 5 | 21 | 2 | 9.5% |
+| walking pad | 4 | 19 | 2 | 10.5% |
 
 ### Page-one keywords with no clicks (CTR fix candidates)
 
@@ -166,29 +166,35 @@ Visitors summed across every export in the data folder. A page under 7 days old 
 - "horizon t101 connect treadmill": 6 impressions, position 3.0
 - "what treadmill is on black friday 2026": 6 impressions, position 7.0
 
-## Bing clicks by page type (Bing Webmaster API, 2026-10-25 to 2026-11-22)
+## Bing clicks by page type (Bing Webmaster API, 2026-10-26 to 2026-11-23)
 
 | Type | Pages with impressions | Impressions | Clicks | CTR |
 |---|---:|---:|---:|---:|
-| cost/price | 3 | 379 | 38 | 10.0% |
-| fix | 14 | 364 | 22 | 6.0% |
-| deals | 3 | 333 | 19 | 5.7% |
-| maintenance/how-to | 11 | 247 | 19 | 7.7% |
-| model review | 30 | 790 | 18 | 2.3% |
-| guide/question | 19 | 353 | 18 | 5.1% |
-| roundup: treadmills & pads | 17 | 247 | 18 | 7.3% |
-| speed/incline explainer | 6 | 750 | 12 | 1.6% |
-| compare | 8 | 351 | 11 | 3.1% |
+| cost/price | 4 | 597 | 45 | 7.5% |
+| roundup: treadmills & pads | 24 | 1102 | 31 | 2.8% |
+| fix | 14 | 520 | 31 | 6.0% |
+| model review | 34 | 1139 | 31 | 2.7% |
+| deals | 3 | 564 | 28 | 5.0% |
+| guide/question | 19 | 496 | 25 | 5.0% |
+| maintenance/how-to | 14 | 324 | 24 | 7.4% |
+| speed/incline explainer | 8 | 1049 | 16 | 1.5% |
+| compare | 9 | 491 | 16 | 3.3% |
+| brand | 12 | 216 | 13 | 6.0% |
+| health/fitness question | 6 | 131 | 5 | 3.8% |
+| workouts/training | 14 | 98 | 5 | 5.1% |
 | not in inventory | 4 | 71 | 3 | 4.2% |
-| health/fitness question | 4 | 86 | 3 | 3.5% |
-| brand | 8 | 90 | 3 | 3.3% |
-| workouts/training | 10 | 44 | 3 | 6.8% |
+| roundup: home gym & accessories | 1 | 4 | 0 | 0.0% |
 
 **Pages on page one with impressions but no clicks** (fix the title and description first):
 
-- /anti-gravity-treadmill/: 112 impressions, position 5.7
-- /dicks-sporting-goods-treadmills/: 50 impressions, position 5.0
+- /anti-gravity-treadmill/: 189 impressions, position 6.2
+- /how-to-reset-nordictrack-treadmill/: 37 impressions, position 5.1
+- /bowflex/: 28 impressions, position 6.3
+- /nordictrack-x24-treadmill/: 27 impressions, position 6.0
 - /treadmill-calibration/: 22 impressions, position 4.4
+- /gymproluxe-review/: 22 impressions, position 5.3
+- /bowflex-t6-treadmill/: 20 impressions, position 4.8
+- /home-workout-equipment-reviews/: 20 impressions, position 6.0
 
 ## AI search citations by page type (Copilot, 2026-11-21)
 
@@ -196,16 +202,16 @@ Citations are how often Copilot and partner AI answers cite the page. They predi
 
 | Type | Pages | Pages cited | Citations | Per page |
 |---|---:|---:|---:|---:|
-| cost/price | 11 | 5 | 3049 | 277.2 |
+| cost/price | 13 | 5 | 3049 | 234.5 |
 | speed/incline explainer | 16 | 10 | 1335 | 83.4 |
 | maintenance/how-to | 33 | 23 | 2700 | 81.8 |
 | compare | 25 | 16 | 1772 | 70.9 |
-| fix | 34 | 24 | 2309 | 67.9 |
+| fix | 36 | 24 | 2309 | 64.1 |
 | guide/question | 60 | 41 | 3104 | 51.7 |
 | deals | 10 | 4 | 396 | 39.6 |
 | model review | 63 | 30 | 1963 | 31.2 |
 | health/fitness question | 17 | 8 | 243 | 14.3 |
-| roundup: treadmills & pads | 113 | 26 | 1383 | 12.2 |
+| roundup: treadmills & pads | 115 | 26 | 1383 | 12.0 |
 | workouts/training | 40 | 20 | 475 | 11.9 |
 | brand | 58 | 14 | 180 | 3.1 |
 | roundup: home gym & accessories | 65 | 2 | 7 | 0.1 |
@@ -273,3 +279,6 @@ Top queries Copilot answered with this site:
 - vercel-top-pages/2026-11-22_8d_bing_9004cf.csv (vercel-top-pages, 2026-11-14→2026-11-22, source: bing)
 - vercel-top-pages/2026-11-22_8d_duckduckgo_75749c.csv (vercel-top-pages, 2026-11-14→2026-11-22, source: duckduckgo)
 - vercel-top-pages/2026-11-22_8d_search-all_ec7a97.csv (vercel-top-pages, 2026-11-14→2026-11-22, source: search-all)
+- bing-keywords/2026-11-23_bing-api_e9813b.csv (bing-keywords, 2026-10-26→2026-11-23, source: bing)
+- bing-overview/2026-11-23_bing-api_b3d72c.csv (bing-overview, 2026-11-23, source: bing)
+- bing-pages/2026-11-23_bing-api_056164.csv (bing-pages, 2026-10-26→2026-11-23, source: bing)

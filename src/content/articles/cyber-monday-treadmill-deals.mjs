@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-10-28',
-  modified: '2026-11-16',
+  modified: '2026-11-23',
   socialProof: '2.1k',
   h1: ['Cyber Monday', 'Treadmill Deals 2026'],
   standfirst:
@@ -596,6 +596,12 @@ export default {
       title: 'Treadmill Delivery Guide',
       blurb: 'Kerbside, threshold, room-of-choice and white-glove delivery, and what each one actually includes.',
       url: '/treadmill-delivery-guide/',
+    },
+    {
+      kicker: 'Sole',
+      title: 'Sole Treadmill Black Friday Deals',
+      blurb: 'Sole’s prices to 27 November, and what each model sold for before.',
+      url: '/sole-treadmill-black-friday-deals/',
     },
   ],
   bottomLine: [

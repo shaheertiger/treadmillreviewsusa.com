@@ -6,9 +6,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Timing',
   updated: 'November 2026',
-  updatedLong: 'November 18, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-10-06',
-  modified: '2026-11-18',
+  modified: '2026-11-23',
   socialProof: '2.4k',
   h1: ['Treadmill', 'Black Friday Deals'],
   standfirst: `Black Friday is Friday 27 November this year and Cyber Monday is 30 November. Here are seven machines on Amazon worth watching, one or two in every tier, with what each sold for when we checked and the price at which we would call it a good deal.`,
@@ -714,6 +714,12 @@ export default {
   ],
   relatedHeading: 'Related Price Guides',
   related: [
+    {
+      kicker: 'Sole',
+      title: 'Sole Treadmill Black Friday Deals',
+      blurb: 'Every Sole model’s Black Friday price, and which drops are real.',
+      url: '/sole-treadmill-black-friday-deals/',
+    },
     {
       kicker: 'Timing',
       title: 'Best Time of Year to Buy a Treadmill',
