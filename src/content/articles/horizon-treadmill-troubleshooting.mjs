@@ -9,8 +9,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-11-21',
+  modified: '2026-11-23',
   socialProof: '1.2k',
   h1: ['Horizon Treadmill Troubleshooting:', 'Won’t Start, Belt and Console Problems'],
   standfirst: `Most Horizon faults come down to the safety key, a power supply Horizon does not allow (a GFCI outlet, a power strip or a shared circuit), a running belt that needs a quarter-turn of tension or centring, or a LUBE message that stops the belt until it is cleared. Here is the order to check them in, using Horizon’s own help-centre procedures, and what to have ready when you call Horizon support.`,
@@ -634,6 +635,12 @@ export default {
       title: 'Horizon T101 Review',
       blurb: 'The T101 Connect, its manual and the 2022 T101-05 recall.',
       url: '/horizon-t101-treadmill/',
+    },
+    {
+      kicker: 'Sibling Brand Guide',
+      title: 'Weslo Treadmill Troubleshooting',
+      blurb: 'Power switch, no-GFCI rule and belt steps from Weslo’s manuals.',
+      url: '/weslo-treadmill-troubleshooting/',
     },
   ],
   bottomLine: [

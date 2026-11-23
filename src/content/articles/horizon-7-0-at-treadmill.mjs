@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Horizon 7.0 AT Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-10-14',
-  modified: '2026-11-21',
+  modified: '2026-11-23',
   socialProof: '1.8k',
   h1: ['Horizon Fitness 7.0 AT', 'Treadmill Review'],
   standfirst:
@@ -512,6 +512,12 @@ export default {
       title: "Horizon T202 Review",
       blurb: "The cheapest 60-inch Horizon: checked specs, the unrated motor, one-year parts cover, and T101 vs 7.0 AT.",
       url: '/horizon-t202-treadmill/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a Horizon Treadmill Cost?',
+      blurb: 'The whole Horizon range priced, and the reference prices to ignore.',
+      url: '/how-much-does-a-horizon-treadmill-cost/',
     },
   ],
   bottomLine: [

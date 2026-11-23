@@ -18,9 +18,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 20, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-11-17',
-  modified: '2026-11-20',
+  modified: '2026-11-23',
   h1: ['Best Walking Machines', 'for Seniors'],
   standfirst:
     'The best walking machine for an older person depends less on the machine than on the walker: how steady they are, how high they can step and whether they need something to hold. Here are six machines across four types, from a full-rail treadmill to a seated stepper, and a simple table for choosing between them.',
@@ -171,7 +171,9 @@ export default {
             nothing like full-length side rails. Our new guide to the
             ${A('/best-walking-pads-for-seniors/', 'best walking pads for seniors')} covers them in
             detail, and the wider ${A('/best-walking-pads-with-handrail/', 'walking pads with a handrail')}
-            roundup covers the category for all ages.
+            roundup covers the category for all ages. If you are choosing between a pad and a
+            treadmill, our ${A('/walking-pad-vs-treadmill-for-seniors/', 'walking pad vs treadmill for seniors')}
+            comparison puts the two side by side on rails, step height and starting speed.
           </p>
           <p>
             <strong>4. Seated cross trainers.</strong> Also called recumbent cross trainers or recumbent

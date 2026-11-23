@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Weslo Cadence G 5.9',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-09-15',
-  modified: '2026-11-16',
+  modified: '2026-11-23',
   socialProof: '1.8k',
   h1: ['Weslo Cadence G 5.9', 'Treadmill Review'],
   standfirst:
@@ -257,7 +257,9 @@ export default {
             — <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">our lifespan guide</a>
             covers that arithmetic, and
             <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">the troubleshooting guide</a>
-            covers the faults worth attempting first.
+            covers the faults worth attempting first, and our
+            <a href="/weslo-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Weslo treadmill troubleshooting</a>
+            guide takes the steps from Weslo’s own manuals.
           </p>`,
     },
   ],

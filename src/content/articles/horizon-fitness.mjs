@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Horizon Fitness Treadmills',
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-09-08',
-  modified: '2026-11-21',
+  modified: '2026-11-23',
   socialProof: '2.4k',
   h1: ['Horizon Fitness', 'Treadmills'],
   standfirst:
@@ -117,7 +117,9 @@ export default {
           <p>
             A subscription at around $39 a month is roughly $2,350 over five years — for most
             machines in the mid-market, more than the treadmill itself cost. Two machines that look
-            $500 apart on a comparison page can be $2,850 apart in reality.
+            $500 apart on a comparison page can be $2,850 apart in reality. Horizon itself charges no
+            subscription; our <a href="/how-much-does-a-horizon-treadmill-cost/" class="text-[#0F62FE] font-medium">Horizon treadmill price guide</a>
+            lists what every current model sells for.
           </p>
           <p>
             There are three positions a manufacturer can take, and it is worth establishing which

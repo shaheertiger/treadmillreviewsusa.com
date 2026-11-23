@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-10-28',
-  modified: '2026-11-16',
+  modified: '2026-11-23',
   socialProof: '2.1k',
   h1: ['NordicTrack', 'Black Friday Deals 2026'],
   standfirst:
@@ -540,6 +540,12 @@ export default {
       title: 'Commercial 1250 vs 1750',
       blurb: 'Screen, motor warranty and price: which of the two Commercial machines to buy.',
       url: '/nordictrack-commercial-1250-vs-1750/',
+    },
+    {
+      kicker: 'Sole',
+      title: 'Sole Treadmill Black Friday Deals',
+      blurb: 'Every Sole model’s Black Friday price, and which drops are real.',
+      url: '/sole-treadmill-black-friday-deals/',
     },
   ],
   bottomLine: [

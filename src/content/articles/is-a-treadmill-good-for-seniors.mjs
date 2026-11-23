@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-11-17',
+  modified: '2026-11-23',
   socialProof: '1.4k',
   h1: ['Is a Treadmill Good', 'for Seniors?'],
   standfirst:
@@ -525,6 +526,12 @@ export default {
       title: 'Treadmill Safety Tips',
       blurb: 'Setup, clearance, safety keys and habits that prevent most accidents.',
       url: '/treadmill-safety-tips/',
+    },
+    {
+      kicker: 'Seniors',
+      title: 'Walking Pad vs Treadmill for Seniors',
+      blurb: 'Rails, step height and starting speed compared for older walkers.',
+      url: '/walking-pad-vs-treadmill-for-seniors/',
     },
   ],
   bottomLine: [
