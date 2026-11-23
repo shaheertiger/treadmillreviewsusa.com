@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-10-09',
-  modified: '2026-11-22',
+  modified: '2026-11-23',
   socialProof: '1.2k',
   h1: ['How to Lubricate', 'a Walking Pad'],
   standfirst:
@@ -440,6 +440,12 @@ export default {
       title: 'Walking Pad Not Working?',
       blurb: 'Power, remote, belt and auto-stop fixes in order.',
       url: '/walking-pad-not-working/',
+    },
+    {
+      kicker: 'Walking pad',
+      title: 'Walking Pad Belt Slipping or Off-Center',
+      blurb: 'Lubricate, tension and track a walking pad belt.',
+      url: '/walking-pad-belt-slipping/',
     },
   ],
   bottomLine: [

@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-11-22',
+  modified: '2026-11-23',
   socialProof: '1.3k',
   h1: ['Walking Pad Not Working?', 'Belt, Remote and Power Fixes'],
   standfirst:
@@ -316,6 +317,12 @@ export default {
       title: 'Treadmill Troubleshooting',
       blurb: 'Every common fault, diagnosed in order.',
       url: '/treadmill-troubleshooting/',
+    },
+    {
+      kicker: 'Belt',
+      title: 'Walking Pad Belt Slipping or Off-Center',
+      blurb: 'Lubricate, tension and track a walking pad belt.',
+      url: '/walking-pad-belt-slipping/',
     },
   ],
   bottomLine: [

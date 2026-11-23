@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-11-22',
+  modified: '2026-11-23',
   socialProof: '1.2k',
   h1: ['Treadmill Clicking Noise:', 'Find It by When It Clicks'],
   standfirst:
@@ -331,6 +332,12 @@ export default {
       title: 'Treadmill Troubleshooting',
       blurb: 'Every common fault, in the order worth checking.',
       url: '/treadmill-troubleshooting/',
+    },
+    {
+      kicker: 'Noise',
+      title: 'Treadmill Humming Noise',
+      blurb: 'Normal motor hum or a failing motor?',
+      url: '/treadmill-humming-noise/',
     },
   ],
   bottomLine: [

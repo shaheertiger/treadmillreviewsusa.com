@@ -7,9 +7,9 @@ export default {
   kicker: 'Comparison',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-23',
   socialProof: '1.4k',
   h1: ['Incline Trainer vs', 'Treadmill'],
   standfirst:
@@ -377,6 +377,12 @@ export default {
       title: "Best Incline Trainers",
       blurb: "True incline trainers climb to 30% or more and most add a decline. Five picks from a $200 manual model to…",
       url: '/best-incline-trainers/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does an Incline Trainer Cost?',
+      blurb: 'X16, X24 and cheaper high-incline options.',
+      url: '/how-much-does-an-incline-trainer-cost/',
     },
   ],
   bottomLine: [

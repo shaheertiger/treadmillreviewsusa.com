@@ -1,0 +1,959 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SECTIONS } from "../data/sections";
+
+const title = "ProForm Black Friday Deals (2026): Treadmill Prices by Model";
+const description =
+  "ProForm on Amazon, 23 Nov 2026: Carbon TL $479, TLX $849, Carbon Pro 2000 $1,199, all unchanged from 22 Nov. Which prices beat October, plus iFIT at $15–$39/mo.";
+
+const PRODUCTS = [
+  {
+    id: "proform-carbon-tlx",
+    name: "ProForm Carbon TLX",
+    brand: "ProForm",
+    category: "Biggest confirmed saving, and the runner’s pick",
+    badge: "Best Value",
+    amazonUrl: "https://www.amazon.com/dp/B0C6DTYQ3G?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31kq3r4+jKL._SL500_.jpg","width":500,"height":498},
+    reviewUrl: null,
+    priceRange: "$849 (Amazon, 23 Nov 2026; $1,299.99 at ProForm on 13 Oct)",
+    priceBounds: {"low":849,"high":1299.99},
+    specs: "0–12 mph · 0–12% incline · 7 in. LCD + device shelf · ProShox cushioning · folding with hydraulic foot bar (Amazon listing)",
+    pros: [
+      "About $451 below ProForm’s own price on 13 October",
+      "The cheapest ProForm with a 12 mph top speed",
+      "Runs iFIT Train classes from your own phone or tablet at $15 a month or $144 a year",
+      "ActivePulse heart-rate control and Strava, Garmin and Apple Health sync with Train, per the listing",
+    ],
+    cons: [
+      "No built-in touchscreen",
+      "The listing does not state the deck size or user weight; ProForm gives 20 x 60 in. and 300 lb",
+      "Most connected features need the paid membership",
+    ],
+    bottomLine: "The ProForm we would buy this week if you run, now that it costs $350 less than the Carbon Pro 2000.",
+    description: "On ProForm’s own site on 13 October 2026 the Carbon TLX cost $1,299.99, the same as the touchscreen Carbon Pro 2000. On Amazon on 22 and 23 November it was $849, a saving of about $451 against that October price and $350 below the Carbon Pro 2000. Its Amazon listing gives 0 to 12 mph, a 0–12% incline, a 7-inch LCD with a device shelf, ProShox cushioning and a folding frame with a hydraulic foot bar, plus iFIT Train features (classes that control speed and incline, SmartAdjust, ActivePulse and AI Coach) that need the $15 a month membership. ProForm’s site gave a 20 by 60-inch belt and a 300 lb user rating in October. We have no October Amazon price, so we cannot say when Amazon’s price fell.",
+  },
+  {
+    id: "proform-carbon-pro-2000",
+    name: "ProForm Carbon Pro 2000",
+    brand: "ProForm",
+    category: "Best touchscreen ProForm for the money",
+    badge: "Best Touchscreen",
+    amazonUrl: "https://www.amazon.com/dp/B0FFDKN27H?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/21NRx1XmIPL._SL500_.jpg","width":500,"height":375},
+    reviewUrl: null,
+    priceRange: "$1,199 (Amazon, 23 Nov 2026; $1,299.99 at ProForm on 13 Oct)",
+    priceBounds: {"low":1199,"high":1299.99},
+    specs: "0–12 mph · 0–12% incline · 10 in. pivoting touchscreen · ProShox cushioning · folding (Amazon listing)",
+    pros: [
+      "About $101 below ProForm’s own price on 13 October",
+      "A 10-inch touchscreen that pivots for off-treadmill workouts",
+      "On-screen speed and incline shortcuts",
+      "ProForm gives it a 350 lb rating, 50 lb more than the TLX",
+    ],
+    cons: [
+      "Needs iFIT Pro at $39 a month for the classes and connected features",
+      "The same speed and incline as the $849 Carbon TLX",
+      "No decline",
+    ],
+    bottomLine: "The touchscreen ProForm to buy, but only if you will pay for iFIT Pro or need the higher user rating.",
+    description: "The Carbon Pro 2000 was $1,199 on Amazon on 22 and 23 November 2026, about $101 below the $1,299.99 ProForm’s own site charged on 13 October. Its Amazon listing gives 0 to 12 mph, a 0–12% incline, a 10-inch pivoting touchscreen, ProShox cushioning, on-screen speed and incline shortcuts and a folding frame, and says an iFIT Pro membership at $39 a month is required for iFIT content and connected features for the whole household. ProForm’s site gave a 20 by 60-inch belt and a 350 lb user capacity in October. It is $350 more than the Carbon TLX for a screen, the same speed and incline, and the higher user rating.",
+  },
+  {
+    id: "proform-carbon-tls",
+    name: "ProForm Carbon TLS",
+    brand: "ProForm",
+    category: "Incline walking for less",
+    badge: "Best for Walking",
+    amazonUrl: "https://www.amazon.com/dp/B0F6VVX36Z?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31+1EXxOMRL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: "/proform-carbon-tls-treadmill/",
+    priceRange: "$559.30 (Amazon, 23 Nov 2026; $799.99 at Scheels on 14 Oct)",
+    priceBounds: {"low":559.3,"high":799.99},
+    specs: "0–10 mph · 0–12% incline · 5 in. LCD + device shelf · one-press speed and incline buttons · folding (Amazon listing)",
+    pros: [
+      "About $241 below the lowest October price we recorded, and $540 below ProForm’s",
+      "12% incline for steep walking, the same ceiling as ProForm’s dearer models",
+      "One-press speed and incline buttons",
+      "Works without a membership; iFIT Train is optional",
+    ],
+    cons: [
+      "Tops out at 10 mph; not a running treadmill",
+      "ProForm gives an 18 x 55 in. belt, narrower and shorter than the TLX",
+      "Only $80.30 more than the Carbon TL, so check you need the extra incline",
+    ],
+    bottomLine: "A genuine saving for incline walkers who already own a tablet for iFIT.",
+    description: "The Carbon TLS was $559.30 on Amazon on 22 and 23 November 2026. On 13 October ProForm’s own site listed it at $1,099.99 and on 14 October Scheels had it at $799.99, so today’s Amazon price is about $241 below the cheaper of those. Its Amazon listing gives 0 to 10 mph, a 0–12% incline, a 5-inch LCD with a device shelf, ProShox cushioning, one-press speed and incline buttons and a folding frame with a hydraulic foot bar, with iFIT Train features at $15 a month. ProForm gives it an 18 by 55-inch belt and a 300 lb rating. It is a walking and light-jogging machine; runners should spend $289.70 more on the TLX.",
+  },
+  {
+    id: "proform-carbon-tl",
+    name: "ProForm Carbon TL",
+    brand: "ProForm",
+    category: "The cheapest ProForm",
+    badge: "Best Budget",
+    amazonUrl: "https://www.amazon.com/dp/B0BS4CRS8C?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31yv4f1FxpL._SL500_.jpg","width":500,"height":488},
+    reviewUrl: null,
+    priceRange: "$479 (Amazon, 22 and 23 Nov 2026)",
+    priceBounds: {"low":479,"high":479},
+    specs: "0–10 mph · 0–10% incline · 5 in. LCD + device shelf · ProShox cushioning · folding with hydraulic foot bar (Amazon listing)",
+    pros: [
+      "The lowest price on any ProForm treadmill on Amazon this week",
+      "Automatic incline to 10%",
+      "iFIT Train classes, ActivePulse and fitness-app sync available on your own device",
+      "Folds and lowers with a hydraulic foot bar",
+    ],
+    cons: [
+      "Same price on 22 and 23 November; no earlier dated price to show a saving",
+      "Tops out at 10 mph and 10% incline",
+      "The listing does not state deck size or user weight",
+    ],
+    bottomLine: "A sound budget walking treadmill at today’s price, but not a proven Black Friday deal.",
+    description: "The Carbon TL was $479 on Amazon on both 22 and 23 November 2026, and we have no earlier dated price for it, so this is today’s price rather than a confirmed Black Friday saving. It was not among the treadmills on ProForm’s own US site on 13 October. Its Amazon listing gives 0 to 10 mph, a 0–10% incline, a 5-inch LCD with a device shelf, ProShox cushioning and a folding frame with a hydraulic foot bar, with iFIT Train features (classes, SmartAdjust, ActivePulse, AI Coach and Strava, Garmin and Apple Health sync) at $15 a month. The listing does not state the deck size or the user weight limit. For $80.30 more the Carbon TLS adds 12% incline.",
+  },
+  {
+    id: "proform-carbon-pro-9000",
+    name: "ProForm Carbon Pro 9000",
+    brand: "ProForm",
+    category: "A 16-inch screen, at its usual price",
+    badge: "Big Screen",
+    amazonUrl: "https://www.amazon.com/dp/B0FKTTWRZW?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41OQl2NepEL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: "/proform-carbon-pro-9000-treadmill/",
+    priceRange: "$1,599 (Amazon, 23 Nov 2026; about $1,600 at ProForm on 13 Oct)",
+    priceBounds: {"low":1599,"high":1600},
+    specs: "0–12 mph · 0–12% incline · 16 in. pivoting touchscreen · ProShox cushioning · folding (Amazon listing)",
+    pros: [
+      "A 16-inch pivoting touchscreen",
+      "ProForm gives it a 20 x 60 in. belt and a 350 lb rating",
+      "On-screen speed and incline shortcuts",
+      "Below the $1,799 Nebraska Furniture Mart showed on 14 October",
+    ],
+    cons: [
+      "About the same as ProForm’s own price in October; not a new low",
+      "$400 more than the Carbon Pro 2000 for a bigger screen and the same speed and incline",
+      "Needs iFIT Pro at $39 a month for the classes",
+    ],
+    bottomLine: "Buy it for the screen, not for the sale: $1,599 is its usual price on our records.",
+    description: "The Carbon Pro 9000 was $1,599 on Amazon on 22 and 23 November 2026. ProForm’s own site showed about $1,600 when we checked on 13 October, and Nebraska Furniture Mart $1,799 on 14 October, so Amazon is not charging more than ProForm, but this is not a Black Friday low either. Its Amazon listing gives 0 to 12 mph, a 0–12% incline, a 16-inch pivoting touchscreen, ProShox cushioning and a folding frame, and says iFIT Pro at $39 a month is required for iFIT content. ProForm gives it a 20 by 60-inch belt, a 3.6 CHP motor and a 350 lb user rating. Against the Carbon Pro 2000, the extra $400 buys screen size only.",
+  },
+  {
+    id: "proform-pro-9000",
+    name: "ProForm Pro 9000",
+    brand: "ProForm",
+    category: "The ProForm with decline and a 22-inch screen",
+    badge: "Decline",
+    amazonUrl: "https://www.amazon.com/dp/B09358GQ3D?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31GC9cR8D4S._SL500_.jpg","width":500,"height":449},
+    reviewUrl: null,
+    priceRange: "$1,665.27 (Amazon, 22 and 23 Nov 2026)",
+    priceBounds: {"low":1665.27,"high":1665.27},
+    specs: "0–12 mph · -3% to 12% incline · 22 in. tilting touchscreen · Rebound Pro cushioning · CoolAire fan · folding (Amazon listing)",
+    pros: [
+      "Decline to -3%, for downhill training",
+      "The largest screen in the range, 22 inches, which tilts",
+      "One-touch speed and incline controls",
+      "Only $66.27 more than the Carbon Pro 9000",
+    ],
+    cons: [
+      "An older model, not on ProForm’s site in October",
+      "The listing does not state deck size, user weight or warranty",
+      "Same price on 22 and 23 November; no earlier dated price",
+    ],
+    bottomLine: "The ProForm for anyone who wants decline and the biggest screen, at today’s price rather than a proven deal.",
+    description: "The Pro 9000 was $1,665.27 on Amazon on 22 and 23 November 2026; we have no earlier dated price, so we cannot call it a Black Friday saving. It is an older model that was not on ProForm’s US site on 13 October. Its Amazon listing gives 0 to 12 mph quick speed controls, -3% to 12% quick incline controls, a 22-inch tilting touchscreen, Rebound Pro cushioning, a three-speed CoolAire fan and a SpaceSaver folding frame, with iFIT Pro required for the classes and ActivePulse. The listing does not state the deck size, user capacity or warranty, so check them with the seller before buying. Its reason to exist is the decline.",
+  },
+  {
+    id: "proform-pro-2000",
+    name: "ProForm Pro 2000",
+    brand: "ProForm",
+    category: "Decline for less, with 30 days of iFIT",
+    badge: "Older Model",
+    amazonUrl: "https://www.amazon.com/dp/B08N3NL32C?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31M4plx9X1L._SL500_.jpg","width":500,"height":446},
+    reviewUrl: "/proform-pro-2000-treadmill/",
+    priceRange: "$1,259.69 (Amazon, 22 and 23 Nov 2026)",
+    priceBounds: {"low":1259.69,"high":1259.69},
+    specs: "0–12 mph · -3% to 12% incline · 10 in. HD touchscreen · 20 x 60 in. belt · 300 lb capacity · folding (Amazon listing)",
+    pros: [
+      "Decline to -3% for about $406 less than the Pro 9000",
+      "A 20 by 60-inch belt and 300 lb capacity stated on the listing",
+      "10-year frame, 2-year parts and 1-year labour warranty per the listing",
+      "30 days of iFIT included",
+    ],
+    cons: [
+      "An older model, not on ProForm’s site in October",
+      "$60.69 more than the newer Carbon Pro 2000",
+      "Same price on 22 and 23 November; no earlier dated price",
+    ],
+    bottomLine: "Worth the $60.69 over the Carbon Pro 2000 only if you want decline.",
+    description: "The Pro 2000 is the earlier touchscreen model, not the Carbon Pro 2000, and was $1,259.69 on Amazon on 22 and 23 November 2026. Its Amazon listing gives a 10-inch HD touchscreen, 0 to 12 mph, -3% to 12% incline, a 20 by 60-inch tread belt with Rebound Pro cushioning, a folding SpaceSaver frame, a 300 lb user capacity, a 10-year frame, 2-year parts and 1-year labour warranty, and 30 days of iFIT included. Against the Carbon Pro 2000 at $1,199 it costs $60.69 more and has a 50 lb lower rating (on ProForm’s figure for the Carbon), but it adds decline. We have no earlier dated price, so this is today’s price.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "By Price", item: "https://www.treadmillreviewsusa.com/price/" },
+        { "@type": "ListItem", position: 3, name: "ProForm Black Friday Deals", item: "https://www.treadmillreviewsusa.com/proform-black-friday-deals/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Does ProForm have Black Friday deals in 2026?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On Amazon on 23 November 2026 none of the ProForm treadmill listings carried a Black Friday or deal label in the data we could see, and every price matched 22 November. But three, the Carbon TLS ($559.30), Carbon TLX ($849) and Carbon Pro 2000 ($1,199), were $100 to $540 below ProForm’s own October prices. ProForm’s own site blocked our check that day.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is a good Black Friday price for a ProForm Carbon TLX?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "$849 or less. That was its Amazon price on 22 and 23 November 2026, about $451 below the $1,299.99 ProForm’s site charged on 13 October. At that price it is $350 cheaper than the Carbon Pro 2000, with the same 12 mph and 12% incline on the listings.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is the ProForm Carbon Pro 2000 worth it at Black Friday prices?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "At $1,199 on Amazon on 23 November 2026, if you will pay for iFIT Pro at $39 a month or need its 350 lb rating. It is about $101 below ProForm’s October price. Without the membership, the $849 Carbon TLX has the same speed and incline for $350 less.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much is iFIT on a ProForm treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "iFIT Train, for the Carbon TL, TLS and TLX, is $15 a month or $144 a year. iFIT Pro, for models with a built-in touchscreen, is $39 a month or $396 a year. Those are the prices on iFIT’s membership page on 23 November 2026; we saw no Black Friday offer on the membership.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you use a ProForm treadmill without iFIT?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Every ProForm here works as a plain treadmill: you set speed and incline yourself. The membership adds classes that control the treadmill, SmartAdjust, ActivePulse and fitness-app sync. Our guide to using a NordicTrack without iFIT applies to ProForm’s consoles too.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Will ProForm treadmills be cheaper on Cyber Monday?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We do not know, and neither ProForm nor Amazon had said. Cyber Monday is 30 November 2026. If prices change, compare them with the 23 November Amazon prices on this page, not with a list price.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-23",
+      dateModified: "2026-11-23",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
+      ...(product.image ? { image: product.image.url } : {}),
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 7,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/proform-black-friday-deals/#${product.id}`,
+      })),
+    },
+  ],
+};
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/proform-black-friday-deals/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-23",
+    modifiedTime: "2026-11-23",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "proform black friday",
+      "proform black friday deals",
+      "proform treadmill black friday",
+      "proform carbon tlx black friday",
+      "proform carbon pro 2000 black friday",
+      "proform treadmill sale",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Best Value: ProForm Carbon TLX", link: PRODUCTS[0].amazonUrl }}
+>
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Black Friday 2026</span>
+      </nav>
+      <h1 class="ed-title">ProForm Treadmill Black Friday Deals 2026</h1>
+      <p class="ed-dek">
+        On Amazon on 23 November 2026 ProForm’s treadmills ran from $479 for the Carbon TL to $1,665.27 for the Pro 9000, every one the same price as the day before. None was labelled a Black Friday deal in the listing data we could see, but three of them, the Carbon TLS, Carbon TLX and Carbon Pro 2000, are well below what ProForm’s own site charged in October. Here is every price, which ones are real savings, and what iFIT adds on top.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 23, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          <span class="ed-method">How we chose: makers’ published specifications and manuals, independent reviews and owner reports, cross-checked. Not tested hands-on.</span>
+        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
+      </div>
+      <p class="ed-disclosure">
+        We may earn a commission when you buy through the links below. It costs you nothing and never decides a ranking. <a href="/editorial-standards/">How we review.</a>
+      </p>
+
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#proform-carbon-tlx"><img src="https://m.media-amazon.com/images/I/31kq3r4+jKL._SL500_.jpg" alt="ProForm Carbon TLX" width="500" height="498" decoding="async" /></a>
+          <a href="#proform-carbon-pro-2000"><img src="https://m.media-amazon.com/images/I/21NRx1XmIPL._SL500_.jpg" alt="ProForm Carbon Pro 2000" width="500" height="375" decoding="async" /></a>
+          <a href="#proform-carbon-tls"><img src="https://m.media-amazon.com/images/I/31+1EXxOMRL._SL500_.jpg" alt="ProForm Carbon TLS" width="500" height="500" decoding="async" /></a>
+        </div>
+        <figcaption>ProForm Carbon TLX · ProForm Carbon Pro 2000 · ProForm Carbon TLS</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          ProForm is iFIT’s value brand, sister to NordicTrack, and its treadmills are among the cheapest folding
+          machines with automatic incline and trainer-led classes. That makes it a natural Black Friday target, and
+          also an easy brand to overpay for, because the sticker price is only half the cost: the classes need an
+          iFIT membership of $15 or $39 a month. We checked every current ProForm treadmill on Amazon on 23 November
+          2026 and compared each price with the one we recorded on 22 November and, where we have it, with what
+          ProForm’s own site charged in October. ProForm’s site turned our request away with a security check on
+          23 November, so the prices below are Amazon’s. Nothing here is a price we have guessed at, and every figure
+          carries the date we saw it.
+        </p>
+
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Value:</span> <a href="#proform-carbon-tlx">ProForm Carbon TLX</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Touchscreen:</span> <a href="#proform-carbon-pro-2000">ProForm Carbon Pro 2000</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Walking:</span> <a href="#proform-carbon-tls">ProForm Carbon TLS</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#proform-carbon-tl">ProForm Carbon TL</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Big Screen:</span> <a href="#proform-carbon-pro-9000">ProForm Carbon Pro 9000</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Decline:</span> <a href="#proform-pro-9000">ProForm Pro 9000</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Older Model:</span> <a href="#proform-pro-2000">ProForm Pro 2000</a></span>
+              <a href={PRODUCTS[6].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <nav class="ed-toc not-prose" aria-label="In this roundup">
+          <h2>In this roundup</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#price-table">Price by model</a></li>
+            <li><a href="#ifit-cost">iFIT membership cost</a></li>
+            <li><a href="#picks">The 7 ProForm Treadmills on Amazon This Black Friday</a></li>
+            <li><a href="#real-deal">Is ProForm’s Black Friday Price a Real Deal?</a></li>
+            <li><a href="#which-model">Which ProForm to Buy at These Prices</a></li>
+            <li><a href="#five-year">The Five-Year Cost at Black Friday Prices</a></li>
+            <li><a href="#older-models">The Older ProForm Models Still on Amazon</a></li>
+            <li><a href="#amazon-or-proform">Amazon or ProForm.com: Where to Buy</a></li>
+            <li><a href="#vs-nordictrack">ProForm or NordicTrack This Black Friday?</a></li>
+            <li><a href="#when-to-buy">When to Buy: Now, Black Friday or Cyber Monday?</a></li>
+            <li><a href="#checklist">Before You Click Buy: A ProForm Checklist</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2>The Short Answer</h2>
+<p>
+            <strong>On Amazon on 23 November 2026 the ProForm range cost $479 (Carbon TL), $559.30 (Carbon TLS), $849
+            (Carbon TLX), $1,199 (Carbon Pro 2000), $1,599 (Carbon Pro 9000) and $1,665.27 (Pro 9000), exactly what each
+            cost on 22 November.</strong> The listings did not label any of them a Black Friday deal in the data we
+            could see, so treat these as today’s prices. The real savings are against ProForm’s own October prices.
+          </p>
+          <ul>
+            <li><strong>Biggest saving we can show:</strong> the Carbon TLX at $849, against $1,299.99 on ProForm’s site
+            on 13 October, about $451 less.</li>
+            <li><strong>Best touchscreen value:</strong> the Carbon Pro 2000 at $1,199, about $101 under ProForm’s
+            $1,299.99 on 13 October.</li>
+            <li><strong>Cheapest:</strong> the Carbon TL at $479, a walking treadmill (10 mph, 10% incline on its
+            listing).</li>
+            <li><strong>Not a deal on our records:</strong> the Carbon Pro 9000 at $1,599, about what ProForm’s own site
+            showed on 13 October.</li>
+            <li><strong>Add iFIT:</strong> $15 a month (or $144 a year) for Train on the Carbon TL, TLS and TLX; $39 a
+            month (or $396 a year) for Pro on the touchscreen models, per iFIT’s membership page on 23 November.</li>
+          </ul>
+          <p>
+            For the model-by-model price guide outside sale weeks, see <a href="/how-much-does-a-proform-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a ProForm treadmill costs</a>; for deals across
+            every brand, our <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a> guide.
+          </p>
+        </div>
+
+        <div id="price-table" class="scroll-mt-24">
+          <h2>Every ProForm Treadmill’s Price, 22 vs 23 November</h2>
+<p>
+            The table gives each model’s Amazon price on 22 November 2026, when we priced the range for our ProForm cost
+            guide, and again on 23 November, four days before Black Friday. The October column is the price on
+            ProForm’s own US site, or another named retailer, from our earlier checks; a dash means we had no earlier
+            dated price.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[680px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Amazon, 22 Nov</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Amazon, 23 Nov</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Change</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Earlier dated price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon TL</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$479</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$479</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">–</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon TLS</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$559.30</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$559.30</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,099.99 ProForm, 13 Oct; $799.99 Scheels, 14 Oct</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon TLX</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$849</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$849</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,299.99 ProForm, 13 Oct</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon Pro 2000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,299.99 ProForm, 13 Oct</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pro 2000 (older model)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,259.69</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,259.69</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">–</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon Pro 9000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,599</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,599</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $1,600 ProForm, 13 Oct; $1,799 Nebraska Furniture Mart, 14 Oct</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pro 9000 (older model)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,665.27</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,665.27</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">–</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon T7 (older model)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not checked</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,399.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">n/a</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">–</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Prices from each model’s Amazon listing (ASINs in the cards below) on the dates shown. Not one price moved
+            between 22 and 23 November, which tells you something on its own: whatever discount these prices contain was
+            already in place before Black Friday week began. Amazon’s listing data did not carry a deal or Black Friday
+            label for any of them when we checked. If a price drops between now and 27 November, judge it against this
+            table, not against a list price on the listing.
+          </p>
+        </div>
+
+        <div id="ifit-cost" class="scroll-mt-24">
+          <h2>The iFIT Cost on Top of the Price</h2>
+<p>
+            Every ProForm here works as a plain treadmill without a membership: you press start and set the speed and
+            incline yourself. The membership is what unlocks the trainer-led classes that change the speed and incline
+            for you, SmartAdjust, ActivePulse heart-rate control (with a Bluetooth strap sold separately) and, on the
+            Carbon listings, iFIT’s AI Coach. Which tier you need depends on the screen.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">iFIT tier</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Monthly</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">1 year / 2 years / 3 years</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">ProForm models</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">iFIT Train</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$15</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$144 / $249 / $329</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon TL, TLS, TLX (phone or tablet on the device shelf)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">iFIT Pro</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$39</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$396 / $699 / $899</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon Pro 2000, Carbon Pro 9000, Pro 2000, Pro 9000 (built-in touchscreen)</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Monthly prices and the regular one-, two- and three-year prices are from iFIT’s membership page on 23
+            November 2026. iFIT describes Train as working on your phone or tablet with iFIT-ready equipment that has no
+            built-in screen, and Pro as made for equipment with built-in touchscreens. The Carbon Pro 2000 and 9000 Amazon
+            listings repeat the $39 a month figure and say Pro covers the whole household. We saw no Black Friday offer on
+            the membership itself on that page; a multi-year promotion it described had expired on 10 September 2026.
+          </p>
+          <p>
+            <strong>Why this matters at Black Friday.</strong> A $100 saving on a touchscreen ProForm is worth less than
+            three months of iFIT Pro. If you are buying a Carbon Pro 2000 to use the classes, the five-year cost is decided
+            far more by the membership than by the discount, as the five-year table further down shows. Our <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">is iFIT worth it</a> guide weighs what the membership gets you.
+          </p>
+        </div>
+
+        <div id="picks" class="scroll-mt-24">
+          <h2>The 7 ProForm Treadmills on Amazon This Black Friday</h2>
+<p>
+            These are the seven ProForm treadmills Amazon listed under ProForm’s name on 23 November 2026, ordered by how
+            good a buy each is at today’s price. The specification line on each card comes only from the Amazon listing’s
+            title and feature bullets on that date; where we quote ProForm’s own figures (from its US site on 13 October
+            2026), we say so. We have not tested these machines hands-on: they are chosen from the listings, ProForm’s
+            published specifications and the price history we have recorded.
+          </p>
+        </div>
+      <!-- Product blocks -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
+                </div>
+              </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
+          ))
+        }
+      </div>
+
+        <div id="real-deal" class="scroll-mt-24">
+          <h2>Is ProForm’s Black Friday Price a Real Deal?</h2>
+<p>
+            A real Black Friday deal is a price lower than the one the machine has actually been selling for, not just
+            lower than a list price nobody pays. We hold every model to that test, using only prices we recorded on a
+            known date.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[600px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Earlier price we recorded</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Amazon, 23 Nov</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Verdict</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon TLX</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,299.99 at ProForm, 13 Oct</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$849</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $451 lower; a genuine saving</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon TLS</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,099.99 at ProForm, 13 Oct; $799.99 at Scheels, 14 Oct</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$559.30</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $241 below the cheaper October price; a genuine saving</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon Pro 2000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,299.99 at ProForm, 13 Oct</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $101 lower; a modest real saving</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon Pro 9000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $1,600 at ProForm, 13 Oct</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,599</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Essentially the same; a fair price, not a new low</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon TL, Pro 2000, Pro 9000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Only 22 Nov, the same as today</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">See table above</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No evidence either way; today’s price</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            <strong>Two honest caveats.</strong> First, the October prices are from ProForm’s own site and from other
+            retailers, not from Amazon. We do not have an October Amazon price for these models, so we can say the
+            Amazon price today is lower than the price ProForm itself was charging, but not when Amazon’s price fell or
+            whether it is the lowest Amazon has ever charged. Second, prices on 22 and 23 November were identical, so
+            none of this is a price that appeared for Black Friday week; it was already there.
+          </p>
+          <p>
+            <strong>What we would treat as a good ProForm price.</strong> At or below the 23 November Amazon prices in
+            the table for the Carbon TLS, TLX and Pro 2000, which already beat ProForm’s October prices by $100 to $450.
+            For the Carbon Pro 9000, $1,599 is a fair price but not a reason to hurry; a real Black Friday cut would take
+            it clearly below $1,600. We will not guess at what ProForm or Amazon will do on 27 or 30 November. Our <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday method guide</a> explains how inflated reference prices
+            work across brands.
+          </p>
+        </div>
+
+        <div id="which-model" class="scroll-mt-24">
+          <h2>Which ProForm to Buy at These Prices</h2>
+<p>
+            The October-to-November changes are not even across the range, and they change which ProForm is the value
+            pick. In October, on ProForm’s own site, the screenless Carbon TLX and the touchscreen Carbon Pro 2000 cost
+            the same $1,299.99, which made the Pro 2000 the obvious choice. On Amazon on 23 November the TLX is $350
+            cheaper, and that changes the answer for a lot of buyers.
+          </p>
+          <ul>
+            <li><strong>Walking only, lowest price: Carbon TL at $479.</strong> 0–10 mph, 0–10% incline, a 5-inch LCD
+            and a device shelf, per its listing. A walking and light-jogging machine; the listing does not state deck size
+            or user weight.</li>
+            <li><strong>Incline walking: Carbon TLS at $559.30.</strong> $80.30 more than the TL for <a href="/what-is-12-incline-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>12% incline</a> instead of
+            10% and one-press speed and incline buttons. ProForm gives it an 18 by 55-inch belt and a 300 lb rating.</li>
+            <li><strong>Running, with your own tablet: Carbon TLX at $849.</strong> The cheapest ProForm with 12 mph, plus
+            12% incline and a 7-inch LCD, per the listing. ProForm gives it a 20 by <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch belt</a>. The value pick this week
+            for anyone who runs.</li>
+            <li><strong>Classes on a built-in screen: Carbon Pro 2000 at $1,199.</strong> The same 12 mph and 12% as the
+            TLX, plus a 10-inch pivoting touchscreen. ProForm gives it a 350 lb rating against the TLX’s 300 lb. Worth the
+            $350 step only if you will pay for iFIT Pro or need the higher rating.</li>
+            <li><strong>A bigger screen: Carbon Pro 9000 at $1,599.</strong> A 16-inch screen for $400 more than the
+            Carbon Pro 2000, with the same speed and incline on the listings.</li>
+            <li><strong>Decline: Pro 9000 at $1,665.27.</strong> The only ProForm on Amazon here that goes to -3%, with a
+            22-inch tilting screen. The older Pro 2000 also lists -3% to 12% for $1,259.69.</li>
+          </ul>
+          <p>
+            For a ranking of the current range on ProForm’s own specifications, see our <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">best ProForm treadmills</a>, and for the brand as a whole, our <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm treadmills guide</a>. Full reviews: <a href="/proform-carbon-tls-treadmill/" class="text-[#0F62FE] font-medium">Carbon TLS</a>, <a href="/proform-carbon-pro-9000-treadmill/" class="text-[#0F62FE] font-medium">Carbon Pro 9000</a> and <a href="/proform-pro-2000-treadmill/" class="text-[#0F62FE] font-medium">Pro 2000</a>.
+          </p>
+        </div>
+
+        <div id="five-year" class="scroll-mt-24">
+          <h2>The Five-Year Cost at Black Friday Prices</h2>
+<p>
+            The cheapest way to judge a ProForm deal is to add the membership you will actually pay for. The table uses
+            the 23 November Amazon prices and iFIT’s regular yearly prices on the same day, with no price rises assumed.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Setup</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Treadmill</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">iFIT, 5 years</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">5-year total</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon TL, no membership</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$479</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$479</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon TL + iFIT Train yearly</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$479</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$720</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon TLX + iFIT Train yearly</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$849</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$720</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,569</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon Pro 2000 + iFIT Pro yearly</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,980</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,179</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon Pro 2000 + iFIT Pro monthly</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,340</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,539</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carbon Pro 9000 + iFIT Pro yearly</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,599</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,980</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,579</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pro 9000 + iFIT Pro yearly</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,665.27</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,980</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,645.27</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Two things stand out. On a touchscreen ProForm, five years of iFIT Pro costs more than the treadmill, so the
+            $101 you save on the Carbon Pro 2000 this week is small beside the $1,980 to $2,340 membership. And the Carbon
+            TLX with iFIT Train costs $1,569 over five years, less than a Carbon Pro 2000 with one year of iFIT Pro at
+            $1,595. If you mainly want the classes and already own a tablet, the TLX route is the cheaper one by a wide
+            margin. If you will never subscribe, compare the TLX with machines that need no subscription in our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a> guide.
+          </p>
+        </div>
+
+        <div id="older-models" class="scroll-mt-24">
+          <h2>The Older ProForm Models Still on Amazon</h2>
+<p>
+            ProForm renames and retires treadmills often, and older models stay on Amazon after they leave ProForm’s own
+            site. On 13 October 2026 ProForm’s US site listed only four treadmills: the Carbon TLS, Carbon TLX, Carbon Pro
+            2000 and Carbon Pro 9000. Four of the machines on Amazon this week were not among them.
+          </p>
+          <ul>
+            <li><strong>Carbon TL ($479).</strong> Not on ProForm’s site in October but still sold new on Amazon, with
+            the same iFIT Train features as the TLS. A reasonable walking machine at this price.</li>
+            <li><strong>Pro 2000 ($1,259.69).</strong> The earlier touchscreen model, not to be confused with the Carbon Pro
+            2000. Its listing gives -3% to 12% incline, 0–12 mph, a 20 by 60-inch belt, a 300 lb user capacity, a 10-year
+            frame, 2-year parts and 1-year labour warranty, and a 30-day iFIT membership included. It costs $60.69 more
+            than the Carbon Pro 2000; the decline is the reason to choose it.</li>
+            <li><strong>Pro 9000 ($1,665.27).</strong> The earlier flagship with a 22-inch tilting screen and -3% to 12%
+            incline. Its listing does not state the deck size or user capacity.</li>
+            <li><strong>Carbon T7 ($1,399.99).</strong> A 7-inch touchscreen, 0–10 mph, 0–10% incline and a 20 by
+            55-inch belt, per its listing. At $200 more than the Carbon Pro 2000, which has a bigger screen, 12 mph and 12%
+            incline, it is poor value at this price, so we have left it out of the cards.</li>
+          </ul>
+          <p>
+            Older models are not bad buys by definition, but check which console and software they run, that iFIT still
+            supports them, and who honours the warranty before you buy one. Our <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm troubleshooting guide</a> covers the faults that show up most
+            on the older consoles.
+          </p>
+        </div>
+
+        <div id="amazon-or-proform" class="scroll-mt-24">
+          <h2>Amazon or ProForm.com: Where to Buy</h2>
+<p>
+            We could not compare the two on 23 November: ProForm’s site returned a security checkpoint page instead of
+            its prices when we tried. What we can say is that in October ProForm’s own prices for the Carbon TLS, TLX and
+            Pro 2000 were $100 to $540 above Amazon’s prices today. Before you buy from either, compare these four things,
+            not just the headline price.
+          </p>
+          <ul>
+            <li><strong>The delivered price.</strong> A folding treadmill arrives in one heavy box. Check what delivery
+            includes and whether assembly is offered, and add it to the price.</li>
+            <li><strong>Return terms.</strong> Our Carbon TLS review found that returns under ProForm’s 30-day trial cost
+            $249.99 in return shipping, with delivery not refunded. Read the terms for the seller you use; a heavy
+            treadmill is expensive to send back.</li>
+            <li><strong>Bundled membership.</strong> The older Pro 2000 listing includes 30 days of iFIT. A month of iFIT Pro
+            is $39, so value a bundle at that, not at the headline.</li>
+            <li><strong>Warranty registration.</strong> ProForm’s warranty usually applies whichever authorised seller
+            you use; register the treadmill with ProForm and keep the receipt.</li>
+          </ul>
+          <p>
+            Our <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a> compares curbside, threshold and in-room
+            options, and what each costs in practice.
+          </p>
+        </div>
+
+        <div id="vs-nordictrack" class="scroll-mt-24">
+          <h2>ProForm or NordicTrack This Black Friday?</h2>
+<p>
+            ProForm and NordicTrack are both iFIT brands and share the same Train and Pro memberships, so the iFIT
+            arithmetic above is identical for both. The difference is the machine. NordicTrack’s Commercial models add
+            heavier frames and, on some, decline and wider decks; ProForm’s Carbon range is lighter and cheaper. On Amazon
+            on 23 November a Carbon TLX was $849 and a Carbon Pro 2000 $1,199, against prices from about $1,600 for
+            NordicTrack’s <a href="/nordictrack-commercial-1250-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Commercial 1250</a> when we last checked it in October.
+          </p>
+          <p>
+            If you walk or jog and want iFIT at the lowest outlay, ProForm is the better Black Friday buy. If you run
+            hard or weigh close to a machine’s limit, look at NordicTrack. Our <a href="/nordictrack-black-friday-deals/" class="text-[#0F62FE] font-medium">NordicTrack Black Friday deals</a> page sets out its prices and the
+            price at which we would buy each model, and <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack vs ProForm</a> compares
+            the two brands model by model.
+          </p>
+        </div>
+
+        <div id="when-to-buy" class="scroll-mt-24">
+          <h2>When to Buy: Now, Black Friday or Cyber Monday?</h2>
+<p>
+            Black Friday is Friday 27 November 2026 and Cyber Monday is 30 November. ProForm’s Amazon prices were already
+            the same on 22 and 23 November, so the question is whether to buy at today’s price or wait for a further cut.
+          </p>
+          <ol>
+            <li><strong>Buy now if your model is one of the genuine savings</strong>: the Carbon TLX, Carbon TLS or Carbon
+            Pro 2000. Each is already $100 to $450 below ProForm’s October price, and freight treadmills can sell out in
+            Black Friday week.</li>
+            <li><strong>Wait on the Carbon Pro 9000.</strong> At $1,599 it is about what ProForm charged in October, so
+            there is no evidence this is a limited-time price.</li>
+            <li><strong>If you wait, keep this page’s table.</strong> Judge any Black Friday or Cyber Monday price against
+            the 23 November figures, not against a list price. Our <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium">Cyber Monday treadmill deals</a> page covers what usually changes between
+            Friday and Monday.</li>
+          </ol>
+          <p>
+            If you are in no hurry at all, our guide to the <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a> covers the other sale
+            windows in the year, including the new-year fitness season.
+          </p>
+        </div>
+
+        <div id="checklist" class="scroll-mt-24">
+          <h2>Before You Click Buy: A ProForm Checklist</h2>
+<ul>
+            <li><strong>Check the exact model name.</strong> The Carbon Pro 2000 and the older Pro 2000 are different
+            machines $60.69 apart; so are the Carbon Pro 9000 and Pro 9000. Make sure the screen, speed and incline you
+            want are on the model in your basket.</li>
+            <li><strong>Decide on iFIT first.</strong> If you will not pay for iFIT Pro, a touchscreen adds $350 or more for
+            little. A Carbon TLX with a tablet runs iFIT Train for $144 a year.</li>
+            <li><strong>Check the speed you need.</strong> The Carbon TL and TLS top out at 10 mph on their listings; runners
+            should start at the TLX.</li>
+            <li><strong>Measure the space and the doorways.</strong> All of these fold, per the listings, but they arrive
+            as full-size treadmills in a large box.</li>
+            <li><strong>Plan the outlet.</strong> Put the treadmill on a grounded wall outlet near where it will stand. Our <a href="/proform-treadmill-repair/" class="text-[#0F62FE] font-medium">ProForm repair guide</a> covers what to check if it will not start.</li>
+            <li><strong>Screenshot the price and date.</strong> If the price drops again inside the return window, ask the
+            seller whether it will adjust.</li>
+          </ul>
+        </div>
+
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Before You Buy a ProForm at Black Friday: 4 Mistakes to Avoid</h2>
+          <p>ProForm’s range is cheap and confusingly named, and these four mistakes cost buyers the most.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Ignoring the membership</h3>
+              <p>Five years of iFIT Pro is $1,980 to $2,340, more than any ProForm treadmill here. A $100 Black Friday saving disappears in three months of membership. Decide whether you will pay for iFIT before you choose a touchscreen model.</p>
+            </li>
+            <li>
+              <h3>Mixing up the Carbon and older models</h3>
+              <p>The Carbon Pro 2000 and the older Pro 2000 are different machines, and so are the Carbon Pro 9000 and Pro 9000. Check the screen size, incline range and user rating of the listing in your basket, not just the number in the name.</p>
+            </li>
+            <li>
+              <h3>Buying a 10 mph model to run</h3>
+              <p>The Carbon TL and TLS top out at 10 mph on their listings, and the older Carbon T7 does too. Runners should start at the Carbon TLX, which is the cheapest ProForm with 12 mph this week at $849.</p>
+            </li>
+            <li>
+              <h3>Treating every price as a Black Friday deal</h3>
+              <p>Every ProForm price on Amazon was the same on 22 and 23 November, and the Carbon Pro 9000 at $1,599 matches ProForm’s own October price. Judge a deal by a dated earlier price, not by the word “sale”.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">ProForm’s Amazon prices did not move into Black Friday week, but three are real
+            savings.</strong> On 23 November 2026 the Carbon TLS was $559.30, the Carbon TLX $849 and the Carbon Pro 2000
+            $1,199, each $100 to $540 below ProForm’s own October prices. The Carbon Pro 9000 at $1,599 is its usual price,
+            and the Carbon TL, Pro 2000 and Pro 9000 have no earlier price on our records to beat.
+          </p>
+          <p>
+            <strong class="text-white">Buy for the membership you will pay.</strong> If you run and own a tablet, the Carbon
+            TLX at $849 with iFIT Train is the value pick this week; buy a touchscreen ProForm only if you will pay $39 a
+            month for iFIT Pro. See our <a href="/how-much-does-a-proform-treadmill-cost/" class="text-[#5AA9FF] font-bold no-underline">ProForm price guide</a> for every model outside sale weeks.
+          </p>
+        </div>
+
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-much-does-a-proform-treadmill-cost/">How Much Does a ProForm Treadmill Cost?</a></li>
+            <li><a href="/treadmill-black-friday-deals/">Black Friday Treadmill Deals 2026</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Does ProForm have Black Friday deals in 2026?</h3></summary>
+            <p class="faq-a">
+              On Amazon on 23 November 2026 none of the ProForm treadmill listings carried a Black Friday or deal label in the data we could see, and every price matched 22 November. But three, the Carbon TLS ($559.30), Carbon TLX ($849) and Carbon Pro 2000 ($1,199), were $100 to $540 below ProForm’s own October prices. ProForm’s own site blocked our check that day.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is a good Black Friday price for a ProForm Carbon TLX?</h3></summary>
+            <p class="faq-a">
+              $849 or less. That was its Amazon price on 22 and 23 November 2026, about $451 below the $1,299.99 ProForm’s site charged on 13 October. At that price it is $350 cheaper than the Carbon Pro 2000, with the same 12 mph and 12% incline on the listings.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the ProForm Carbon Pro 2000 worth it at Black Friday prices?</h3></summary>
+            <p class="faq-a">
+              At $1,199 on Amazon on 23 November 2026, if you will pay for iFIT Pro at $39 a month or need its 350 lb rating. It is about $101 below ProForm’s October price. Without the membership, the $849 Carbon TLX has the same speed and incline for $350 less.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much is iFIT on a ProForm treadmill?</h3></summary>
+            <p class="faq-a">
+              iFIT Train, for the Carbon TL, TLS and TLX, is $15 a month or $144 a year. iFIT Pro, for models with a built-in touchscreen, is $39 a month or $396 a year. Those are the prices on iFIT’s membership page on 23 November 2026; we saw no Black Friday offer on the membership.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you use a ProForm treadmill without iFIT?</h3></summary>
+            <p class="faq-a">
+              Yes. Every ProForm here works as a plain treadmill: you set speed and incline yourself. The membership adds classes that control the treadmill, SmartAdjust, ActivePulse and fitness-app sync. Our guide to using a NordicTrack without iFIT applies to ProForm’s consoles too.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Will ProForm treadmills be cheaper on Cyber Monday?</h3></summary>
+            <p class="faq-a">
+              We do not know, and neither ProForm nor Amazon had said. Cyber Monday is 30 November 2026. If prices change, compare them with the 23 November Amazon prices on this page, not with a list price.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Black Friday and ProForm Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-much-does-a-proform-treadmill-cost/" class="card">
+            <div class="c-kicker">ProForm</div>
+            <div class="c-title">How Much Does a ProForm Treadmill Cost?</div>
+            <p class="c-blurb">Every model’s price, the iFIT tier each needs, and the five-year cost.</p>
+          </a>
+          <a href="/treadmill-black-friday-deals/" class="card">
+            <div class="c-kicker">Black Friday</div>
+            <div class="c-title">Black Friday Treadmill Deals 2026</div>
+            <p class="c-blurb">Every tier, the method for spotting a real deal, and target prices.</p>
+          </a>
+          <a href="/nordictrack-black-friday-deals/" class="card">
+            <div class="c-kicker">Black Friday</div>
+            <div class="c-title">NordicTrack Black Friday Deals 2026</div>
+            <p class="c-blurb">ProForm’s sister brand: the models to watch and the price worth paying.</p>
+          </a>
+          <a href="/is-ifit-worth-it/" class="card">
+            <div class="c-kicker">iFIT</div>
+            <div class="c-title">Is iFIT Worth It?</div>
+            <p class="c-blurb">What the membership gets you, and what it costs over time.</p>
+          </a>
+          <a href="/best-proform-treadmills/" class="card">
+            <div class="c-kicker">ProForm</div>
+            <div class="c-title">Best ProForm Treadmills</div>
+            <p class="c-blurb">The current Carbon range ranked, and the older models to skip.</p>
+          </a>
+          <a href="/cyber-monday-treadmill-deals/" class="card">
+            <div class="c-kicker">Cyber Monday</div>
+            <div class="c-title">Cyber Monday Treadmill Deals 2026</div>
+            <p class="c-blurb">What changes between Friday and Monday, and Christmas delivery.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>

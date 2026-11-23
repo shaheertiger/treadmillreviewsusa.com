@@ -12,7 +12,7 @@
  *
  * The filter the daily run uses (keep in sync with PLAYBOOK §0):
  */
-export const SEARCH_REFERRERS = ['duckduckgo.com', 'bing.com', 'cn.bing.com', 'search.yahoo.com', 'uk.search.yahoo.com', 'ca.search.yahoo.com', 'au.search.yahoo.com', 'google.com', 'ecosia.org', 'msn.com', 'search.brave.com', 'startpage.com', 'yandex.ru', 'alice.yandex.ru', 'm.baidu.com', 'sogou.com'];
+export const SEARCH_REFERRERS = ['duckduckgo.com', 'bing.com', 'cn.bing.com', 'search.yahoo.com', 'uk.search.yahoo.com', 'ca.search.yahoo.com', 'au.search.yahoo.com', 'google.com', 'ecosia.org', 'msn.com', 'search.brave.com', 'startpage.com', 'yandex.ru', 'alice.yandex.ru', 'm.baidu.com', 'sogou.com', 'kagi.com'];
 import { createHash } from 'crypto';
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';

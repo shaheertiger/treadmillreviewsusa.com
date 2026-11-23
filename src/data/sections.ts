@@ -750,6 +750,20 @@ export const SECTIONS: Section[] = [
             url: '/how-much-does-a-horizon-treadmill-cost/',
           },
           {
+            title: 'How Much Does an Incline Trainer Cost?',
+            description:
+              'NordicTrack X16 and X24 prices, iFIT Pro on top, and cheaper high-incline treadmills.',
+            badge: 'Incline trainers',
+            url: '/how-much-does-an-incline-trainer-cost/',
+          },
+          {
+            title: 'How Much Does a Curved Treadmill Cost?',
+            description:
+              '21 curved treadmills priced, from $1,095 SB Fitness to TrueForm, and why curved costs more.',
+            badge: 'Curved',
+            url: '/how-much-does-a-curved-treadmill-cost/',
+          },
+          {
             title: 'How Much Does a Walking Pad Cost?',
             description:
               'Prices by type, from $130 flat pads to $800 handrail pads, what more money buys, and the costs after checkout.',
@@ -1042,6 +1056,20 @@ export const SECTIONS: Section[] = [
               "Every Sole treadmill's Black Friday price to 27 Nov, what each sold for before, and which drops are real.",
             badge: 'Sole',
             url: '/sole-treadmill-black-friday-deals/',
+          },
+          {
+            title: 'Horizon Treadmill Black Friday Deals',
+            description:
+              "Horizon's Black Friday codes on the T202, 7.0 AT, 7.4 AT and 7.8 AT, against earlier prices.",
+            badge: 'Horizon',
+            url: '/horizon-treadmill-black-friday-deals/',
+          },
+          {
+            title: 'ProForm Black Friday Deals',
+            description:
+              "Every ProForm treadmill's Amazon price, which beat October, and iFIT on top.",
+            badge: 'ProForm',
+            url: '/proform-black-friday-deals/',
           },
         ],
       },
@@ -2879,6 +2907,13 @@ export const SECTIONS: Section[] = [
             url: '/treadmill-clicking-noise/',
           },
           {
+            title: 'Treadmill Humming Noise',
+            description:
+              'Normal motor hum or a warning? Five hums that mean stop, and checks in order.',
+            badge: 'Noise',
+            url: '/treadmill-humming-noise/',
+          },
+          {
             title: 'Treadmill Burning Smell',
             description:
               'Burning rubber, hot plastic or dust? Which smells mean unplug now, and what to check after.',
@@ -3029,6 +3064,13 @@ export const SECTIONS: Section[] = [
               'Power, safety key, remote, belt and auto-stop: walking pad fixes in the order worth checking.',
             badge: 'Walking pad',
             url: '/walking-pad-not-working/',
+          },
+          {
+            title: 'Walking Pad Belt Slipping or Off-Center',
+            description:
+              'Lubricate first, then quarter turns on the rear bolts: slipping and drift fixed on walking pads.',
+            badge: 'Walking pad',
+            url: '/walking-pad-belt-slipping/',
           },
         ],
       },

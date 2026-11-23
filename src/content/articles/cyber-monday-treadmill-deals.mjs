@@ -603,6 +603,18 @@ export default {
       blurb: 'Sole’s prices to 27 November, and what each model sold for before.',
       url: '/sole-treadmill-black-friday-deals/',
     },
+    {
+      kicker: 'Brand deals',
+      title: 'Horizon Treadmill Black Friday Deals',
+      blurb: 'Codes on the T202, 7.0 AT, 7.4 AT and 7.8 AT.',
+      url: '/horizon-treadmill-black-friday-deals/',
+    },
+    {
+      kicker: 'Brand deals',
+      title: 'ProForm Black Friday Deals',
+      blurb: 'Every ProForm price checked against October.',
+      url: '/proform-black-friday-deals/',
+    },
   ],
   bottomLine: [
     `Cyber Monday 2026 is on 30 November, and it suits

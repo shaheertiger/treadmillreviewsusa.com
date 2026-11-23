@@ -6,9 +6,9 @@ export default {
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-10-08',
-  modified: '2026-11-16',
+  modified: '2026-11-23',
   socialProof: '1.6k',
   h1: [
     'Curved Treadmills:',
@@ -525,6 +525,12 @@ export default {
       title: 'SB Fitness CT550 Curved Treadmill',
       blurb: `A direct-sold budget curved trainer, its listing claims, the restocking fee and the sprinting caveat.`,
       url: '/sb-fitness-ct550-curved-treadmill/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a Curved Treadmill Cost?',
+      blurb: 'Every tier, from $1,095 to TrueForm.',
+      url: '/how-much-does-a-curved-treadmill-cost/',
     },
   ],
   bottomLine: [
