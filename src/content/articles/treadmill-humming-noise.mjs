@@ -55,7 +55,7 @@ export default {
             <li><strong>Hum plus a smell:</strong> stop and let it cool. Do not run it again until you know the source.</li>
             <li><strong>Buzz from the console or plug area:</strong> check the outlet, cord and anything between the wall and
             the treadmill first.</li>
-            <li><strong>Incline hums, deck does not move:</strong> clear under the deck, then run the incline calibration
+            <li><strong>Incline hums, deck does not move:</strong> clear under the deck, then run the <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium" data-autolink>incline calibration</a>
             in your manual.</li>
           </ul>
           <p>
@@ -269,7 +269,7 @@ export default {
       id: 'incline',
       heading: 'Incline Motor Hum',
       html: `          <p>
-            Most powered incline treadmills use a separate small motor to raise and lower the deck, and it makes its own
+            Most powered <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>incline treadmills</a> use a separate small motor to raise and lower the deck, and it makes its own
             whirring hum while it works. That sound is normal as long as the deck moves smoothly and stops at the level you
             chose.
           </p>

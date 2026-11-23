@@ -52,13 +52,13 @@ export default {
           </p>
           <ul>
             <li><strong>Best value:</strong> the 7.0 AT at $934 (code BLACKFRI165) or $934.98 on Amazon, the
-            cheapest Horizon with a 20 by 60-inch deck and 15% incline. A good price, but the same one we
+            cheapest Horizon with a 20 by <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch deck</a> and 15% incline. A good price, but the same one we
             recorded in October.</li>
             <li><strong>The one genuine new low we can show:</strong> the 7.8 AT at $1,799 (code
             BLACKFRI200), $100 below the $1,899 code price we recorded on 13 October.</li>
             <li><strong>Matching earlier lows, not beating them:</strong> the T202 at $799 and the 7.4 AT at
             $1,499, both prices we had already seen in October or on 21 November.</li>
-            <li><strong>Not on sale:</strong> the T101 Connect is sold out on Horizon’s store at $699, and
+            <li><strong>Not on sale:</strong> the <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>T101</a> Connect is sold out on Horizon’s store at $699, and
             Amazon’s $779.67 is higher than the $699.99 Amazon showed on 13 October.</li>
           </ul>
           <p>
@@ -203,10 +203,10 @@ export default {
           </p>
           <ul>
             <li><strong>Walking and light jogging, small space: T202 at $799.</strong> A 20 by 60-inch
-            running area, 0.5 to 12 mph, 12% incline and a 325 lb capacity on its Amazon listing, with
+            running area, 0.5 to 12 mph, <a href="/what-is-12-incline-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>12% incline</a> and a 325 lb capacity on its Amazon listing, with
             EasyDial controls and hydraulic folding. Horizon gives it one year on parts and labour.</li>
             <li><strong>Most buyers: 7.0 AT at $934.</strong> Only $135 more than the T202 this week for 15%
-            incline, Apple Watch and app connectivity named on its listing, and three years of parts cover
+            incline, <a href="/best-treadmills-for-apple-watch/" class="text-[#0F62FE] font-medium" data-autolink>Apple Watch</a> and app connectivity named on its listing, and three years of parts cover
             instead of one, on the same 20 by 60-inch deck. It is the model to buy if you are unsure.</li>
             <li><strong>Heavier runners and anyone who wants width: 7.4 AT at $1,499.</strong> A 22 by
             60-inch running surface, a 350 lb maximum user weight and a 3.5 CHP motor rating on its Amazon

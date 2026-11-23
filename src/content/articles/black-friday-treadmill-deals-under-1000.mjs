@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-10-28',
-  modified: '2026-11-16',
+  modified: '2026-11-23',
   socialProof: '2.1k',
   h1: ['Black Friday Treadmill Deals', 'Under $1,000'],
   standfirst:
@@ -575,6 +575,18 @@ export default {
       title: 'Treadmills Under $1,500',
       blurb: 'The next tier up, for when a Black Friday price does not reach $1,000.',
       url: '/treadmills-under-1500/',
+    },
+    {
+      kicker: 'Brand deals',
+      title: 'Horizon Treadmill Black Friday Deals',
+      blurb: 'Codes on the T202, 7.0 AT, 7.4 AT and 7.8 AT.',
+      url: '/horizon-treadmill-black-friday-deals/',
+    },
+    {
+      kicker: 'Brand deals',
+      title: 'ProForm Black Friday Deals',
+      blurb: 'Every ProForm price checked against October.',
+      url: '/proform-black-friday-deals/',
     },
   ],
   bottomLine: [

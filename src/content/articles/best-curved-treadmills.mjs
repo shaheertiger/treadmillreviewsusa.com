@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-23',
   socialProof: '1.8k',
   h1: ['Best Curved Treadmills', 'Seven Self-Powered Trainers'],
   standfirst:
@@ -624,6 +624,12 @@ export default {
       title: "Bells of Steel Blitz Treadmill",
       blurb: "Steep-curve manual treadmill with six magnetic resistance levels.",
       url: '/bells-of-steel-blitz-treadmill/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a Curved Treadmill Cost?',
+      blurb: 'Every tier, from $1,095 to TrueForm.',
+      url: '/how-much-does-a-curved-treadmill-cost/',
     },
   ],
   bottomLine: [

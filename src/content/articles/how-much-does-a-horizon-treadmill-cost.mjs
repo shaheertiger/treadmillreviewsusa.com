@@ -392,6 +392,12 @@ export default {
       blurb: 'Safety key, the dedicated-circuit rule, belt and LUBE resets.',
       url: '/horizon-treadmill-troubleshooting/',
     },
+    {
+      kicker: 'Deals',
+      title: 'Horizon Treadmill Black Friday Deals',
+      blurb: 'Horizon’s Black Friday codes, model by model.',
+      url: '/horizon-treadmill-black-friday-deals/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">A Horizon costs $699 to $1,999 at Horizon, and less on Amazon.</strong> On

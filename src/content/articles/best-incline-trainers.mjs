@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-11-06',
-  modified: '2026-11-22',
+  modified: '2026-11-23',
   socialProof: '1.8k',
   h1: ['The Best', 'Incline Trainers'],
   standfirst:
@@ -507,6 +507,12 @@ export default {
       title: 'Best Incline Treadmills',
       blurb: 'Treadmills with 12 to 15% incline that also suit running.',
       url: '/best-incline-treadmills/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does an Incline Trainer Cost?',
+      blurb: 'X16, X24 and cheaper high-incline options.',
+      url: '/how-much-does-an-incline-trainer-cost/',
     },
   ],
   bottomLine: [

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-23',
   socialProof: '1.4k',
   h1: ['Curved Treadmill Workouts', 'Built Around a Belt You Drive'],
   standfirst:
@@ -537,6 +537,12 @@ export default {
       title: 'Curved Treadmill Guide',
       blurb: 'How the curve works, which claimed benefits are real and who should not buy one.',
       url: '/curved-treadmill-guide/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a Curved Treadmill Cost?',
+      blurb: 'Every tier, from $1,095 to TrueForm.',
+      url: '/how-much-does-a-curved-treadmill-cost/',
     },
   ],
   bottomLine: [

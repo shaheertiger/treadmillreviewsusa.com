@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'SB Fitness CT550',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-23',
   socialProof: '1.4k',
   h1: ['SB Fitness CT550', 'Self-Generated Curved Treadmill'],
   standfirst:
@@ -451,6 +451,12 @@ export default {
       title: 'Curved Treadmill Workouts',
       blurb: 'Sessions that play to a self-powered curved belt.',
       url: '/curved-treadmill-workouts/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a Curved Treadmill Cost?',
+      blurb: 'Every tier, from $1,095 to TrueForm.',
+      url: '/how-much-does-a-curved-treadmill-cost/',
     },
   ],
   bottomLine: [

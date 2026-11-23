@@ -42,12 +42,12 @@ for it), "how to tighten a treadmill belt" (720; /how-to-adjust-treadmill-belt/)
 - [x] 2026-11-21 · `how-much-does-a-peloton-tread-cost` — How Much Does a Peloton Tread Cost? (2026): Tread, Tread+, Membership — /price/ — pillar /peloton-tread/ (prices from Peloton's own site, dated)
 - [x] 2026-11-21 · `horizon-treadmill-troubleshooting` — Horizon Treadmill Troubleshooting: Won't Start, Belt, Console
 - [x] 2026-11-22 · `how-much-does-a-sole-treadmill-cost` — How Much Does a Sole Treadmill Cost? (2026): Every Model — /price/ — pillar /sole-fitness/
-- [ ] `walking-pad-belt-slipping` — Walking Pad Belt Slipping or Off-Center: How to Fix It
+- [x] 2026-11-23 · `walking-pad-belt-slipping` — Walking Pad Belt Slipping or Off-Center: How to Fix It
 - [x] 2026-11-22 · `how-much-does-a-proform-treadmill-cost` — How Much Does a ProForm Treadmill Cost? (2026) — /price/ — pillar /proform-treadmill/
 - [x] 2026-11-21 · `bowflex-treadmill-troubleshooting` — Bowflex Treadmill Troubleshooting: JRNY, Belt and Power Fixes
-- [ ] `how-much-does-an-incline-trainer-cost` — How Much Does an Incline Trainer Cost? (2026): X22i, X24 and More — /price/ — pillar /incline-trainer-vs-treadmill/
-- [ ] `treadmill-humming-noise` — Treadmill Humming Noise: Normal Hum or a Failing Motor?
-- [ ] `how-much-does-a-curved-treadmill-cost` — How Much Does a Curved Treadmill Cost? (2026) — /price/ — pillar /curved-treadmill-guide/
+- [x] 2026-11-23 · `how-much-does-an-incline-trainer-cost` — How Much Does an Incline Trainer Cost? (2026): X22i, X24 and More — /price/ — pillar /incline-trainer-vs-treadmill/
+- [x] 2026-11-23 · `treadmill-humming-noise` — Treadmill Humming Noise: Normal Hum or a Failing Motor?
+- [x] 2026-11-23 · `how-much-does-a-curved-treadmill-cost` — How Much Does a Curved Treadmill Cost? (2026) — /price/ — pillar /curved-treadmill-guide/
 - [ ] `peloton-tread-troubleshooting` — Peloton Tread Troubleshooting: Belt, Screen and Speed Fixes
 - [ ] `how-much-does-a-treadmill-desk-cost` — How Much Does a Treadmill Desk Cost? (2026): Pad, Desk, Combo — /price/ — pillar /best-treadmill-desks/
 - [ ] `walking-pad-remote-not-working` — Walking Pad Remote Not Working: Pairing and Battery Fixes

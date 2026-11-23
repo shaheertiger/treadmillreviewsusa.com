@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-11-22',
+  modified: '2026-11-23',
   socialProof: '1.1k',
   h1: ['How Much Does a', 'ProForm Treadmill Cost?'],
   standfirst:
@@ -373,6 +374,12 @@ export default {
       title: 'Is iFIT Worth It?',
       blurb: 'What the membership gets you, and what it costs.',
       url: '/is-ifit-worth-it/',
+    },
+    {
+      kicker: 'Deals',
+      title: 'ProForm Black Friday Deals',
+      blurb: 'Which ProForm prices are real deals this week.',
+      url: '/proform-black-friday-deals/',
     },
   ],
   bottomLine: [

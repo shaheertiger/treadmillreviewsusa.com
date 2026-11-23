@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'NordicTrack X24 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-23',
   socialProof: '1.9k',
   h1: ['NordicTrack X24', 'Treadmill Review'],
   standfirst:
@@ -492,6 +492,12 @@ export default {
       title: 'Treadmills With the Highest Incline',
       blurb: 'The few home machines that go steeper than 15%, compared.',
       url: '/treadmills-with-the-highest-incline/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does an Incline Trainer Cost?',
+      blurb: 'X16, X24 and cheaper high-incline options.',
+      url: '/how-much-does-an-incline-trainer-cost/',
     },
   ],
   bottomLine: [

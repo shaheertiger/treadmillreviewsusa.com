@@ -744,6 +744,18 @@ export default {
       blurb: 'The mid-range tier, where the genuine discounts tend to be largest.',
       url: '/black-friday-treadmill-deals-under-1000/',
     },
+    {
+      kicker: 'Brand deals',
+      title: 'Horizon Treadmill Black Friday Deals',
+      blurb: 'Codes on the T202, 7.0 AT, 7.4 AT and 7.8 AT.',
+      url: '/horizon-treadmill-black-friday-deals/',
+    },
+    {
+      kicker: 'Brand deals',
+      title: 'ProForm Black Friday Deals',
+      blurb: 'Every ProForm price checked against October.',
+      url: '/proform-black-friday-deals/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Black Friday is usually a strong time to buy a treadmill</strong>,

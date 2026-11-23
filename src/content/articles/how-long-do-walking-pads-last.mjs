@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-10-13',
-  modified: '2026-11-16',
+  modified: '2026-11-23',
   socialProof: '1.6k',
   h1: ['How Long Do', 'Walking Pads Last?'],
   standfirst:
@@ -556,6 +556,12 @@ export default {
       title: 'How to Lubricate a Walking Pad',
       blurb: 'Step-by-step, what to use, and how to time it by hours of use rather than months.',
       url: '/how-to-lubricate-a-walking-pad/',
+    },
+    {
+      kicker: 'Walking pad',
+      title: 'Walking Pad Belt Slipping or Off-Center',
+      blurb: 'Lubricate, tension and track a walking pad belt.',
+      url: '/walking-pad-belt-slipping/',
     },
   ],
   bottomLine: [

@@ -195,10 +195,10 @@ export default {
             <li><strong>Walking only, lowest price: Carbon TL at $479.</strong> 0–10 mph, 0–10% incline, a 5-inch LCD
             and a device shelf, per its listing. A walking and light-jogging machine; the listing does not state deck size
             or user weight.</li>
-            <li><strong>Incline walking: Carbon TLS at $559.30.</strong> $80.30 more than the TL for 12% incline instead of
+            <li><strong>Incline walking: Carbon TLS at $559.30.</strong> $80.30 more than the TL for <a href="/what-is-12-incline-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>12% incline</a> instead of
             10% and one-press speed and incline buttons. ProForm gives it an 18 by 55-inch belt and a 300 lb rating.</li>
             <li><strong>Running, with your own tablet: Carbon TLX at $849.</strong> The cheapest ProForm with 12 mph, plus
-            12% incline and a 7-inch LCD, per the listing. ProForm gives it a 20 by 60-inch belt. The value pick this week
+            12% incline and a 7-inch LCD, per the listing. ProForm gives it a 20 by <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch belt</a>. The value pick this week
             for anyone who runs.</li>
             <li><strong>Classes on a built-in screen: Carbon Pro 2000 at $1,199.</strong> The same 12 mph and 12% as the
             TLX, plus a 10-inch pivoting touchscreen. ProForm gives it a 350 lb rating against the TLX’s 300 lb. Worth the
@@ -305,7 +305,7 @@ export default {
             arithmetic above is identical for both. The difference is the machine. NordicTrack’s Commercial models add
             heavier frames and, on some, decline and wider decks; ProForm’s Carbon range is lighter and cheaper. On Amazon
             on 23 November a Carbon TLX was $849 and a Carbon Pro 2000 $1,199, against prices from about $1,600 for
-            NordicTrack’s Commercial 1250 when we last checked it in October.
+            NordicTrack’s <a href="/nordictrack-commercial-1250-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Commercial 1250</a> when we last checked it in October.
           </p>
           <p>
             If you walk or jog and want iFIT at the lowest outlay, ProForm is the better Black Friday buy. If you run
