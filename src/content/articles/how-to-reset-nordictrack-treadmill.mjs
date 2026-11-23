@@ -1,15 +1,15 @@
 export default {
   slug: 'how-to-reset-nordictrack-treadmill',
-  title: 'How to Reset a NordicTrack Treadmill: Power, Reset and Restart',
+  title: 'How to Reset a NordicTrack Treadmill: 3 Resets, in Order',
   description:
-    'How to reset a NordicTrack treadmill: turning it on in the right order, the reset breaker, a safe console factory reset, and taking it apart for moving.',
+    'To reset a NordicTrack treadmill, switch off and unplug for 1 minute, press in the reset breaker by the power switch, then restart the console. When to go further.',
   crumbLabel: 'How to Reset a NordicTrack Treadmill',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 20, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-10-06',
-  modified: '2026-11-20',
+  modified: '2026-11-23',
   socialProof: '1.9k',
   h1: ['How to Reset a', 'NordicTrack Treadmill'],
   standfirst:

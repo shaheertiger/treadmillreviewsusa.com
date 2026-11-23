@@ -11,9 +11,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 23, 2026',
   published: '2026-11-05',
-  modified: '2026-11-16',
+  modified: '2026-11-23',
   socialProof: '1.3k',
   h1: ['Yesoul Treadmill Review:', 'The T3S Plus and T5 Series'],
   standfirst:
@@ -432,6 +432,37 @@ export default {
           </p>`,
     },
     {
+      id: 'black-friday',
+      heading: 'Yesoul Treadmill Black Friday Prices: What to Pay',
+      html: `          <p>
+            Yesoul shows a struck-through &ldquo;regular&rdquo; price on almost everything all year, so a Black Friday
+            banner tells you little on its own. The useful test is whether today&rsquo;s price is lower than the price we
+            recorded earlier, on the same model, from the same seller.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead><tr><th class="${TH}">Model</th><th class="${TH}">Earlier price we recorded</th><th class="${TH}">Amazon, 23 Nov 2026</th></tr></thead>
+            <tbody>
+              ${row(['T3S Plus', '$799.99 at Yesoul, 5 Nov 2026', '$799.99'])}
+              ${row(['Yesoul Treadmill for Seniors (handrail walking pad)', 'Not recorded before', '$203.99'])}
+            </tbody>
+          </table></div>
+          <p>
+            On 23 November the T3S Plus was the same $799.99 on Amazon that Yesoul&rsquo;s own store charged on 5 November,
+            so it was not cheaper for Black Friday at that point, whatever the stated regular price. Best Buy had shown it
+            at $699.99, as noted above, which is the figure to beat. We could not load Yesoul&rsquo;s US store on 23 November,
+            so the T5 Plus, Max and Ultra prices in the table above are still the 5 November figures; check the store
+            before buying.
+          </p>
+          <p>
+            Amazon also listed a Yesoul handrail walking pad for seniors at $203.99 on 23 November. Its listing gives a
+            0.6 to 3.8 mph speed range, a 300 lb capacity, long handrails, an emergency stop button, a safety key and a
+            remote. That is a walking machine, not a treadmill for jogging; compare it with the picks in our
+            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with handrails</a>
+            guide. For deals across every brand, see our
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a>.
+          </p>`,
+    },
+    {
       id: 'who-should-buy',
       heading: 'Who Should Buy a Yesoul Treadmill, and What Are the Alternatives?',
       html: `          <p>
@@ -456,6 +487,10 @@ export default {
     },
   ],
   faqs: [
+    {
+      q: 'Are Yesoul treadmills on sale for Black Friday?',
+      a: `Yesoul shows a higher regular price next to most products all year. On 23 November 2026 the T3S Plus was $799.99 on Amazon, the same price Yesoul's store charged on 5 November, so it was not cheaper than earlier in the month. Compare against the price you can find on other days, not the struck-through figure.`,
+    },
     {
       q: 'Is Yesoul a good treadmill brand?',
       a: 'Yesoul is a credible brand with published figures and terms, but its treadmills have little independent long-term coverage. The T3S Plus is a compact walking and jogging machine with a big screen and a one-year warranty; the T5 series, on sale since June 2026, is a full-size treadmill with a 30% incline and a five-year frame warranty.',

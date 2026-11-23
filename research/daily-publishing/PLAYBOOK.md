@@ -19,7 +19,7 @@ The run decides what to write from fresh data, not from this file's older analys
    (project `prj_aVSShsaH02dbYTHUoqcp35Uvz0I5`, team `team_pAoikpyeUpvHszE2JvWQKq7c`):
    - `by: ["referrerHostname"]`, last 7 days: record visitors per engine in the PR description.
    - `by: ["requestPath"]`, `limit: 100`, filter
-     `referrerHostname in ('duckduckgo.com','bing.com','cn.bing.com','search.yahoo.com','uk.search.yahoo.com','ca.search.yahoo.com','au.search.yahoo.com','google.com','ecosia.org','msn.com','search.brave.com','startpage.com','yandex.ru','alice.yandex.ru','m.baidu.com','sogou.com')`
+     `referrerHostname in ('duckduckgo.com','bing.com','cn.bing.com','search.yahoo.com','uk.search.yahoo.com','ca.search.yahoo.com','au.search.yahoo.com','google.com','ecosia.org','msn.com','search.brave.com','startpage.com','yandex.ru','alice.yandex.ru','m.baidu.com','sogou.com','kagi.com')`
      (the list in `scripts/perf-save-vercel.mjs`), for the last 7 full days. Add any new search referrer that appears in the referrer breakdown.
    - Then the same `requestPath` pull twice more, once with `referrerHostname eq 'duckduckgo.com'` (save with
      `--source duckduckgo`) and once with `referrerHostname in ('bing.com','cn.bing.com','msn.com')` (save with
