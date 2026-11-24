@@ -388,16 +388,17 @@ export default {
           </table></div>
           <p>
             Specifications are from each Amazon listing as summarised in our app guide, and Peloton’s for
-            the Tread Vision. The Horizon 7.0 AT and Sole F65 match or beat the Tread Vision on speed and
-            incline range and deck length for well under half its Black Friday price, and the
+            the Tread Vision. The Horizon 7.0 AT and Sole F65 come close to the Tread Vision on top speed (12 against
+            12.5 mph), go steeper on incline (15% against 12.5%) and have a slightly longer 60-inch deck,
+            for well under half its Black Friday price, and the
             ${A('/horizon-treadmill-black-friday-deals/', 'Horizon Black Friday deals')} and
             ${A('/sole-treadmill-black-friday-deals/', 'Sole Black Friday deals')} pages track their sale
-            prices. Both Sole and Horizon carry lifetime frame and motor warranties on their listings or
-            sites, against Peloton’s three-year belt and motor guarantee.
+            prices. Sole states a lifetime frame and motor warranty, and the Horizon T101 Connect’s listing
+            does the same, against Peloton’s three-year belt and motor guarantee on the Tread Vision.
           </p>
           <p>
-            <strong>What you give up.</strong> No auto-incline that follows the instructor, no class
-            leaderboard tied to the treadmill’s own speed readings, no camera-based Run Analysis, and no big
+            <strong>What you give up.</strong> No auto-incline that follows the instructor’s cues, no
+            speed and incline readings fed from the treadmill into the class, no camera-based Run Analysis, and no big
             swivel screen for off-treadmill strength classes unless you add a tablet. For some buyers those
             are the whole point of a Peloton, and the Tread Vision at $2,795 is the best price we have seen
             for them. For buyers who mainly want Peloton’s instructors, the alternatives cost $800 to $1,400
@@ -480,7 +481,7 @@ export default {
       cons: [
         'All-Access at $49.99 a month is needed for the classes and camera features',
         'Does not fold',
-        'A 3-year belt and motor guarantee, shorter than many rivals at half the price',
+        'A 3-year belt and motor guarantee, against lifetime motor cover on some cheaper rivals',
       ],
       bottomLine: 'If you want a Peloton treadmill, this is the model and the week to buy it.',
       description:
