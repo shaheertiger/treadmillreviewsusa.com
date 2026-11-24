@@ -5,7 +5,7 @@ export default {
   slug: 'peloton-tread-troubleshooting',
   title: 'Peloton Tread Troubleshooting: Belt, Screen and Speed Fixes',
   description:
-    'Peloton Tread not working? Check the safety key, a dedicated 15 amp outlet with no GFCI, then restart. Fixes for a frozen screen, Tread Lock, knobs and belt.',
+    'Peloton Tread not working? Check these 3 first: the safety key, the outlet and power cord, then a full restart. Fixes for a frozen screen, Tread Lock and belt.',
   crumbLabel: 'Peloton Tread Troubleshooting',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
