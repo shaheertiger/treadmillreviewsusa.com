@@ -1,6 +1,6 @@
 # Performance Report (auto-generated)
 
-Built 2026-11-24 by `node scripts/perf-report.mjs` from 38 export(s) in `research/daily-publishing/data/`. Do not edit by hand; drop new exports in and re-run.
+Built 2026-11-24 by `node scripts/perf-report.mjs` from 40 export(s) in `research/daily-publishing/data/`. Do not edit by hand; drop new exports in and re-run.
 
 ## Instructions for today's run
 
@@ -16,15 +16,15 @@ The daily run writes these six. Each engine's picks come from the page types tha
 
 **Bing (also Yahoo, MSN, Copilot)** (147 visitors, 2026-11-17 to 2026-11-23; top types: cost/price 6.31x, deals 2.99x, fix 1.50x, brand 1.42x)
 
-- **PICK** `peloton-tread-black-friday-deals`: deals (roundup-queue.md)
-- **PICK** `how-much-does-a-treadmill-desk-cost`: cost/price (queue.md)
-- **PICK** `how-much-does-a-bowflex-treadmill-cost`: cost/price (queue.md)
+- **PICK** `cyber-monday-walking-pad-deals`: deals (roundup-queue.md)
+- **PICK** `treadmill-motor-replacement-cost`: cost/price (queue.md)
+- **PICK** `how-much-does-a-used-treadmill-cost`: cost/price (queue.md)
 
 **DuckDuckGo** (247 visitors, 2026-11-17 to 2026-11-23; top types: deals 3.23x, cost/price 3.03x, roundup: treadmills & pads 1.51x, fix 1.42x)
 
-- **PICK** `bowflex-treadmill-black-friday-deals`: deals (roundup-queue.md)
-- **PICK** `peloton-tread-troubleshooting`: fix (queue.md)
-- **PICK** `walking-pad-remote-not-working`: fix (queue.md)
+- **PICK** `best-treadmills-for-short-people`: roundup: treadmills & pads (roundup-queue.md)
+- **PICK** `sperax-walking-pad-recall`: fix (queue.md)
+- **PICK** `schwinn-treadmill-troubleshooting`: fix (queue.md)
 
 ### Queue order (for reference)
 
@@ -44,11 +44,11 @@ The daily run writes these six. Each engine's picks come from the page types tha
 - `xterra-tr95h-treadmill`: model review, WATCH, **PICK**
 - `what-does-incline-mean-on-a-treadmill`: speed/incline explainer, WORKS, ok
 - `what-incline-should-i-run-on-a-treadmill`: speed/incline explainer, WORKS, ok
-- `peloton-tread-troubleshooting`: fix, WORKS, ok
-- `how-much-does-a-treadmill-desk-cost`: cost/price, WORKS (few pages), ok
-- `walking-pad-remote-not-working`: fix, WORKS, ok
-- `how-much-does-a-bowflex-treadmill-cost`: cost/price, WORKS (few pages), ok
-- `xterra-treadmill-troubleshooting`: fix, WORKS, ok
+- `sperax-walking-pad-recall`: fix, WORKS, ok
+- `treadmill-motor-replacement-cost`: cost/price, WORKS (few pages), ok
+- `schwinn-treadmill-troubleshooting`: fix, WORKS, ok
+- `what-speed-should-i-run-on-a-treadmill`: speed/incline explainer, WORKS, ok
+- `how-to-clean-a-walking-pad`: maintenance/how-to, WORKS, ok
 
 ## What works and what doesn't, by page type (2026-11-17 to 2026-11-23, sources: search-all, 426 visitors)
 
@@ -58,19 +58,19 @@ Site average: 0.85 visitors per page. "Visits" and "AI" are each type's visitors
 
 | Type | Live pages (14d+) | Pages with visitors | Hit rate | Visitors | Per page | Visits | AI | Verdict |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| cost/price | 6 | 3 | 50.0% | 31 | 5.17 | 6.09x | 5.65x | WORKS (few pages) |
-| deals | 10 | 4 | 40.0% | 40 | 4.00 | 4.72x | 0.90x | WORKS |
-| fix | 27 | 9 | 33.3% | 35 | 1.30 | 1.53x | 1.76x | WORKS |
+| cost/price | 6 | 3 | 50.0% | 31 | 5.17 | 6.09x | 5.08x | WORKS (few pages) |
+| deals | 10 | 4 | 40.0% | 40 | 4.00 | 4.72x | 0.79x | WORKS |
+| fix | 27 | 9 | 33.3% | 35 | 1.30 | 1.53x | 1.69x | WORKS |
 | roundup: treadmills & pads | 102 | 27 | 26.5% | 107 | 1.05 | 1.24x | 0.36x | WATCH |
-| model review | 61 | 17 | 27.9% | 54 | 0.89 | 1.04x | 0.92x | WATCH |
-| compare | 25 | 4 | 16.0% | 22 | 0.88 | 1.04x | 2.02x | WORKS |
+| model review | 61 | 17 | 27.9% | 54 | 0.89 | 1.04x | 0.93x | WATCH |
+| compare | 25 | 4 | 16.0% | 22 | 0.88 | 1.04x | 2.04x | WORKS |
 | brand | 53 | 9 | 17.0% | 46 | 0.87 | 1.02x | 0.09x | WATCH |
-| speed/incline explainer | 13 | 2 | 15.4% | 10 | 0.77 | 0.91x | 2.47x | WORKS |
-| maintenance/how-to | 30 | 7 | 23.3% | 23 | 0.77 | 0.90x | 2.43x | WORKS |
-| guide/question | 58 | 9 | 15.5% | 36 | 0.62 | 0.73x | 1.53x | WORKS |
-| health/fitness question | 10 | 2 | 20.0% | 6 | 0.60 | 0.71x | 0.42x | WATCH |
+| speed/incline explainer | 13 | 2 | 15.4% | 10 | 0.77 | 0.91x | 2.50x | WORKS |
+| maintenance/how-to | 30 | 7 | 23.3% | 23 | 0.77 | 0.90x | 2.45x | WORKS |
+| guide/question | 58 | 9 | 15.5% | 36 | 0.62 | 0.73x | 1.55x | WORKS |
+| health/fitness question | 10 | 2 | 20.0% | 6 | 0.60 | 0.71x | 0.43x | WATCH |
 | roundup: home gym & accessories | 64 | 2 | 3.1% | 9 | 0.14 | 0.17x | 0.00x | DOESN'T |
-| workouts/training | 40 | 2 | 5.0% | 4 | 0.10 | 0.12x | 0.35x | DOESN'T |
+| workouts/training | 40 | 2 | 5.0% | 4 | 0.10 | 0.12x | 0.36x | DOESN'T |
 
 ### Top pages this window
 
@@ -138,9 +138,9 @@ Visitors summed across every export in the data folder. A page under 7 days old 
 | roundup: treadmills & pads | 45 | 12 | 50 |
 | model review | 4 | 2 | 9 |
 | health/fitness question | 7 | 2 | 3 |
-| fix | 12 | 1 | 1 |
-| deals | 3 | 0 | 0 |
-| cost/price | 10 | 0 | 0 |
+| fix | 14 | 1 | 1 |
+| deals | 5 | 0 | 0 |
+| cost/price | 12 | 0 | 0 |
 | compare | 1 | 0 | 0 |
 | speed/incline explainer | 3 | 0 | 0 |
 | guide/question | 2 | 0 | 0 |
@@ -155,14 +155,14 @@ Visitors summed across every export in the data folder. A page under 7 days old 
 
 | Theme | Keywords | Impressions | Clicks | CTR |
 |---|---:|---:|---:|---:|
-| other | 133 | 328 | 66 | 20.1% |
-| cost/price | 17 | 419 | 47 | 11.2% |
-| fix/troubleshoot | 53 | 88 | 35 | 39.8% |
-| brand/model | 73 | 176 | 32 | 18.2% |
+| other | 133 | 326 | 66 | 20.2% |
+| cost/price | 15 | 417 | 47 | 11.3% |
+| fix/troubleshoot | 54 | 89 | 35 | 39.3% |
+| brand/model | 74 | 179 | 32 | 17.9% |
 | deals | 25 | 94 | 22 | 23.4% |
-| incline/decline | 29 | 45 | 19 | 42.2% |
-| speed/pace | 26 | 42 | 19 | 45.2% |
-| best roundup | 12 | 35 | 9 | 25.7% |
+| speed/pace | 25 | 43 | 19 | 44.2% |
+| incline/decline | 27 | 43 | 19 | 44.2% |
+| best roundup | 13 | 36 | 9 | 25.0% |
 | seniors/health | 7 | 537 | 5 | 0.9% |
 | walking pad | 5 | 21 | 2 | 9.5% |
 
@@ -174,8 +174,8 @@ Visitors summed across every export in the data folder. A page under 7 days old 
 - "can you run on a walking pad": 13 impressions, position 6.7
 - "treadmill price": 13 impressions, position 4.8
 - "best treadmill sale black friday 2026": 12 impressions, position 4.0
-- "anti gravity treadmill": 11 impressions, position 6.0
 - "news about walking pad deals to shop ahead of black friday (2026)": 11 impressions, position 4.0
+- "anti gravity treadmill": 11 impressions, position 6.0
 - "aviron justice treadmill": 10 impressions, position 7.0
 - "horizon t101 treadmill": 9 impressions, position 6.0
 - "treadmill reviews 2026": 8 impressions, position 3.0
@@ -220,14 +220,14 @@ Citations are how often Copilot and partner AI answers cite the page. They predi
 
 | Type | Pages | Pages cited | Citations | Per page |
 |---|---:|---:|---:|---:|
-| cost/price | 16 | 5 | 3049 | 190.6 |
+| cost/price | 18 | 5 | 3049 | 169.4 |
 | speed/incline explainer | 16 | 10 | 1335 | 83.4 |
 | maintenance/how-to | 33 | 23 | 2700 | 81.8 |
 | compare | 26 | 16 | 1772 | 68.2 |
-| fix | 39 | 24 | 2309 | 59.2 |
+| fix | 41 | 24 | 2309 | 56.3 |
 | guide/question | 60 | 41 | 3104 | 51.7 |
 | model review | 63 | 30 | 1963 | 31.2 |
-| deals | 13 | 4 | 396 | 30.5 |
+| deals | 15 | 4 | 396 | 26.4 |
 | health/fitness question | 17 | 8 | 243 | 14.3 |
 | roundup: treadmills & pads | 115 | 26 | 1383 | 12.0 |
 | workouts/training | 40 | 20 | 475 | 11.9 |
@@ -309,5 +309,7 @@ Top queries Copilot answered with this site:
 - vercel-top-pages/2026-11-23_6d_duckduckgo_0e5da3.csv (vercel-top-pages, 2026-11-17→2026-11-23, source: duckduckgo)
 - vercel-top-pages/2026-11-23_6d_search-all_1e0505.csv (vercel-top-pages, 2026-11-17→2026-11-23, source: search-all)
 - bing-keywords/2026-11-24_bing-api_603796.csv (bing-keywords, 2026-10-27→2026-11-24, source: bing)
+- bing-keywords/2026-11-24_bing-api_88f010.csv (bing-keywords, 2026-10-27→2026-11-24, source: bing)
 - bing-overview/2026-11-24_bing-api_39392d.csv (bing-overview, 2026-11-24, source: bing)
+- bing-pages/2026-11-24_bing-api_0a378e.csv (bing-pages, 2026-10-27→2026-11-24, source: bing)
 - bing-pages/2026-11-24_bing-api_83d2b1.csv (bing-pages, 2026-10-27→2026-11-24, source: bing)
