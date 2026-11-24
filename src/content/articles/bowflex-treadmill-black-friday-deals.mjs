@@ -133,8 +133,8 @@ export default {
       heading: 'Is Bowflex’s Black Friday Price a Real Deal?',
       html: `          <p>
             A real Black Friday deal is a price lower than the one the machine has actually been selling for,
-            not just lower than a regular price nobody pays. Bowflex’s regular prices fail that test: in every
-            check we have made since early October, all three treadmills were on sale below them. So the
+            not just lower than a regular price nobody pays. Bowflex’s regular prices fail that test: on every
+            date our pages record since early October, all three treadmills were on sale below them. So the
             comparison that matters is against the sale prices we recorded earlier, on dated pages of this
             site.
           </p>
@@ -197,8 +197,8 @@ export default {
             offer must be sold and shipped by that retailer, in stock and live online. Third-party marketplace
             sellers, including third-party sellers on Amazon and Walmart, are excluded, as are clearance,
             open-box and refurbished prices, membership-only prices, and anything that needs a coupon or
-            promotional code. So a lower T6 price from a retailer such as Dick’s could be matched; a marketplace
-            listing on Amazon could not.
+            promotional code. So a lower price from an authorised retailer selling direct could be matched; a
+            third-party marketplace listing on Amazon could not.
           </p>
           <p>
             <strong>Financing and pre-tax payment.</strong> Bowflex’s home page on 24 November advertised 36
@@ -292,7 +292,7 @@ export default {
           <p>
             Totals are before sales tax. Bowflex says deliveries run from 9 a.m. to 5 p.m. local time, Monday to
             Friday, with a signature required, and that its delivery partner calls to schedule. Standard
-            delivery leaves a 234 to 293 lb machine (Bowflex’s assembled weights for the T6 and T16) at your
+            delivery leaves a 234 to 288 lb machine (Bowflex’s assembled weights for the T6 and T16) at your
             door, so if it has to go upstairs or into a basement, budget for room of choice at least.
           </p>
           <p>
@@ -356,9 +356,9 @@ export default {
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[620px] w-full text-sm border-collapse">
             <thead><tr><th class="${th}">Price band</th><th class="${th}">Bowflex (24 Nov)</th><th class="${th}">Horizon (23 Nov)</th><th class="${th}">Sole (23 Nov)</th><th class="${th}">The trade-off</th></tr></thead>
             <tbody>
-              <tr><td class="${td}">About $900 to $1,100</td><td class="${td}">T6, $899</td><td class="${td}">7.0 AT, $934 with code</td><td class="${td}">F63, $1,099.99</td><td class="${td}">All 20 x 60 in. and 12 mph; the T6 is the cheapest, and the T6 and 7.0 AT both reach 15% incline</td></tr>
+              <tr><td class="${td}">About $900 to $1,100</td><td class="${td}">T6, $899</td><td class="${td}">7.0 AT, $934 with code</td><td class="${td}">F63, $1,099.99</td><td class="${td}">All 20 x 60 in. and 12 mph; the T6 is the cheapest of the three</td></tr>
               <tr><td class="${td}">About $1,400 to $1,500</td><td class="${td}">T9, $1,399</td><td class="${td}">7.4 AT, $1,499 with code</td><td class="${td}">F80, $1,499.99</td><td class="${td}">The T9 and 7.4 AT both have 22-inch decks and 350 lb ratings; the T9 is $100 less</td></tr>
-              <tr><td class="${td}">About $1,800 to $2,000</td><td class="${td}">T16, $1,999</td><td class="${td}">7.8 AT, $1,799 with code</td><td class="${td}">F85, $1,999.99</td><td class="${td}">All 22 x 60 in.; the T16 and F85 have large touchscreens, the 7.8 AT a smaller colour screen and a 375 lb rating</td></tr>
+              <tr><td class="${td}">About $1,800 to $2,000</td><td class="${td}">T16, $1,999</td><td class="${td}">7.8 AT, $1,799 with code</td><td class="${td}">F85, $1,999.99</td><td class="${td}">All 22 x 60 in.; the T16 and F85 have large touchscreens, the 7.8 AT a colour screen and a 375 lb rating</td></tr>
             </tbody>
           </table></div>
           <p>
