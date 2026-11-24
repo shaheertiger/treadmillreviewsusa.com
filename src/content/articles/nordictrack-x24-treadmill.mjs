@@ -1,14 +1,14 @@
 export default {
   slug: 'nordictrack-x24-treadmill',
-  title: 'NordicTrack X24 Treadmill Review (2026): 40% Incline Trainer',
+  title: 'NordicTrack X24 Review (2026): $4,299, 40% Incline, -6% Decline',
   description:
-    'The NordicTrack X24 incline treadmill checked against NordicTrack’s listing and two independent reviews: -6% to 40% grade, 4.25 CHP, 400 lb, 24 in. screen. The speed caps, ceiling height, iFIT cost and X24 vs X16.',
+    'The NordicTrack X24 is $4,299 (NordicTrack, 5 Nov): -6% to 40% grade, 4.25 CHP, 400 lb, 24-inch screen. Speed caps at steep grades, ceiling height, iFIT cost.',
   crumbLabel: 'NordicTrack X24 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 24, 2026',
   published: '2026-11-05',
-  modified: '2026-11-23',
+  modified: '2026-11-24',
   socialProof: '1.9k',
   h1: ['NordicTrack X24', 'Treadmill Review'],
   standfirst:
