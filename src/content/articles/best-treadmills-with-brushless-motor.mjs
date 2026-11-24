@@ -42,18 +42,18 @@ export default {
             that arrives fully assembled with a 20-inch belt and 15% incline; buy the UREVO CyberMega if you want
             a brushless machine for running at up to 12.5 mph; buy the Sole F85 if you want a brushless motor in a
             full-size treadmill from an established brand.</strong> For tighter budgets, Sunny’s Smart Wi-Fi model
-            and UMAY’s 20% incline treadmill come in under $500, and MERACH’s W50 and LONTEK’s 32% pad are the
+            and <a href="/umay-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UMAY</a>’s 20% incline treadmill come in under $500, and MERACH’s W50 and LONTEK’s 32% pad are the
             brushless walking pads to look at.
           </p>
           <ul>
             <li><strong>What brushless buys:</strong> no brushes to wear or replace, and less motor noise. It does not add power.</li>
             <li><strong>Price range:</strong> about $187 to $2,000 on Amazon on 24 November 2026.</li>
-            <li><strong>Treadmill or walking pad:</strong> four full treadmills, one hybrid with a fixed bar and two walking pads.</li>
+            <li><strong>Treadmill or walking pad:</strong> four full treadmills, one hybrid with a fixed bar and two <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a>.</li>
             <li><strong>What to compare instead:</strong> belt size, weight limit, speed range and warranty, as you would on any treadmill.</li>
           </ul>
           <p>
             The table gives the figures each listing states. Prices are what Amazon showed on 24 November 2026, three
-            days before Black Friday. For the engineering background, our guide to
+            days before <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium" data-autolink>Black Friday</a>. For the engineering background, our guide to
             <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium">AC vs DC treadmill motors</a>
             explains where brushless DC motors fit alongside brushed DC and AC designs.
           </p>
@@ -80,7 +80,7 @@ export default {
             </tbody>
           </table></div>
           <p>
-            We do not print Amazon star ratings or review counts. They change daily, and several of these listings pool
+            We do not print Amazon <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium" data-autolink>star ratings</a> or review counts. They change daily, and several of these listings pool
             reviews across colours and versions, so a figure here would not reliably describe the machine you receive.
           </p>`,
     },
@@ -92,7 +92,7 @@ export default {
       html: `          <p>
             Each card links to the Amazon listing we matched by its ASIN on 24 November 2026. The specification line
             carries only what the listing title, its feature bullets or the maker’s own page state. Where the listing
-            and the maker disagree, as they do on the Sole F85’s deck width and weight limit and on the UREVO’s top
+            and the maker disagree, as they do on the <a href="/sole-f85-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Sole F85</a>’s deck width and weight limit and on the UREVO’s top
             speed, the card says so instead of picking one figure.
           </p>
           <p>
@@ -208,7 +208,7 @@ export default {
             wear, windings can still overheat if the motor is overloaded, and the electronic controller still has to last.
           </p>
           <p>
-            Some listings go much further. UREVO says the CyberMega’s motor has a lifespan ten times longer than
+            Some listings go much further. <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> says the CyberMega’s motor has a lifespan ten times longer than
             traditional brushed motors and quotes 620,000 miles of training; UREVO’s CyberPad listing quotes a motor
             lifespan of at least 6,000 hours; Sole says the F85’s motor delivers up to ten times longer life. Those are
             the makers’ own claims and we cannot verify them. The figure that tells you what a maker will actually stand

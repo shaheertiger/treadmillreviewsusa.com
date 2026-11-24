@@ -41,7 +41,7 @@ export default {
             <strong>Buy the Horizon 7.4 AT if you want one treadmill that suits almost any couple; buy the
             Horizon T202 if you want a 60-inch deck and a 325 lb limit for about $800; buy the Schwinn 810 if
             you want two user profiles on the console for under $600 and both of you are under about 225 lb.</strong>
-            The BowFlex T16 has the highest weight limit here at 375 lb, the NordicTrack T Series 10 suits couples
+            The <a href="/bowflex-t16-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>BowFlex T16</a> has the highest weight limit here at 375 lb, the NordicTrack T Series 10 suits couples
             who will share one iFIT household membership, and the Sole F65 is the runner’s option at 12 mph and
             15% incline.
           </p>
@@ -91,12 +91,12 @@ export default {
       html: `          <p>
             Each card links to the Amazon listing we matched by its ASIN, Amazon’s product code, on 24 November
             2026. The specification line carries only what the listing title, its feature bullets or the maker’s
-            own page state. Where sources disagree, as they do on the Sole F65’s weight limit, the card says so
+            own page state. Where sources disagree, as they do on the <a href="/sole-f65-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Sole F65</a>’s weight limit, the card says so
             and leaves the figure off.
           </p>
           <p>
             All six come from established brands with US support and published warranties: Horizon, Schwinn
-            and BowFlex (all now part of Johnson Health Tech), Sole Fitness, and NordicTrack (part of iFIT). That is deliberate. A treadmill shared by two people runs twice
+            and BowFlex (all now part of Johnson Health Tech), <a href="/sole-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Sole Fitness</a>, and NordicTrack (part of iFIT). That is deliberate. A treadmill shared by two people runs twice
             the hours of one used by a single person, and the brand’s parts supply and warranty matter more the
             harder a machine works.
           </p>`,
@@ -190,7 +190,7 @@ export default {
           </table></div>
           <p>
             These ranges are general guidance rather than a rule, and they explain the picks. Five of the six have
-            60-inch decks. The Horizon 7.4 AT and BowFlex T16 are 22 inches wide as well, which gives a wider user or
+            60-inch decks. The <a href="/horizon-7-4-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Horizon 7.4 AT</a> and BowFlex T16 are 22 inches wide as well, which gives a wider user or
             a tired runner more room to drift without stepping on the side rail. The Schwinn 810’s 55-inch deck is
             the compromise that keeps it under $600; it is fine for two walkers, but not for a tall runner. Our
             <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium">best treadmills for tall runners</a>
@@ -272,7 +272,7 @@ export default {
             <strong>Motor.</strong> A continuous-duty rating (CHP) describes what a motor can sustain, and it is the
             figure to compare. Horizon gives the 7.4 AT a 3.5 CHP drive, labelled continuous in its listing, which is
             the clearest motor figure on this page. BowFlex lists 3.5 HP for the T16 and Sole 3.25 HP for the F65
-            without saying continuous; Horizon’s T202, NordicTrack’s T Series 10 and the Schwinn 810 listings give no
+            without saying continuous; Horizon’s T202, NordicTrack’s <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>T Series 10</a> and the Schwinn 810 listings give no
             figure. For two walkers, any of these is enough; for a heavy runner sharing with another runner, put the
             continuous rating first.
           </p>
@@ -307,7 +307,7 @@ export default {
             guide covers what makes a treadmill quieter in practice.
           </p>
           <p>
-            Space is the other shared cost. A 60-inch deck makes for a long machine: Horizon gives the 7.4 AT’s
+            Space is the other shared cost. A <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch deck</a> makes for a long machine: Horizon gives the 7.4 AT’s
             assembled size as 76 by 37 by 63 inches and the T202 as 76 by 34 by 57 inches. All six fold, which helps
             between sessions, but measure the room with the deck down and leave clear space behind it.
           </p>

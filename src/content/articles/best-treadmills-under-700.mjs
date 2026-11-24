@@ -50,7 +50,7 @@ export default {
             <li><strong>12% incline or more at 12 mph:</strong> Sunny SF-T723016 (12%), Aeriflo X-T510A (20%) and ORASANT (20%), per each listing.</li>
             <li><strong>Price band:</strong> about $510 to $700 on Amazon on 24 November 2026; three of the five sit between $620 and $700.</li>
             <li><strong>Belt:</strong> 18 to 20 inches wide and 51 to 55 inches long.</li>
-            <li><strong>Weight limit:</strong> 275 lb (Schwinn) to 500 lb (WELLFIT), per each listing; Aeriflo does not state one.</li>
+            <li><strong>Weight limit:</strong> 275 lb (Schwinn) to 500 lb (<a href="/wellfit-tm037-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>WELLFIT</a>), per each listing; Aeriflo does not state one.</li>
             <li><strong>Use:</strong> walking, incline walking and jogging. None is built for daily high-mileage running.</li>
           </ul>
           <p>
@@ -125,7 +125,7 @@ export default {
             at minimum. And <strong>it had to do one job better than the others here</strong>.
           </p>
           <p>
-            We also kept clear of the picks on our neighbouring budget pages. The ProForm Carbon TLS, BORGUSI,
+            We also kept clear of the picks on our neighbouring budget pages. The <a href="/proform-carbon-tls-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>ProForm Carbon TLS</a>, BORGUSI,
             MERACH, Schwinn SFT4.1 and Sunny SF-T7718 on the
             <a href="/best-treadmills-under-600/" class="text-[#0F62FE] font-medium">best treadmills under $600</a>
             page, and the NordicTrack T Series machines and Horizon T101 on the under-$800 page, are all reasonable
@@ -310,7 +310,7 @@ export default {
           </p>
           <p>
             One more point about subscriptions. None of the five needs a paid membership to work. Sunny’s SunnyFit
-            app and Aeriflo’s Kinomap and FitShow support are optional, and Schwinn’s Explore the World routes need a
+            app and Aeriflo’s <a href="/best-treadmills-with-kinomap/" class="text-[#0F62FE] font-medium" data-autolink>Kinomap</a> and FitShow support are optional, and Schwinn’s Explore the World routes need a
             subscription, but each machine runs its speed, incline and built-in programs without one. If avoiding
             fees matters to you, our
             <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">best treadmills without subscriptions</a>
@@ -330,7 +330,7 @@ export default {
           </p>
           <p>
             Check your ceiling too. On a 20% incline the front of the deck rises several inches, and a jogger lifts a
-            few inches with each stride. In a basement with a low ceiling, a tall user on a steep grade can run out of
+            few inches with each stride. In a basement with a <a href="/best-treadmills-for-low-ceilings/" class="text-[#0F62FE] font-medium" data-autolink>low ceiling</a>, a tall user on a steep grade can run out of
             headroom on a machine that fits the floor comfortably.
           </p>
           <p>

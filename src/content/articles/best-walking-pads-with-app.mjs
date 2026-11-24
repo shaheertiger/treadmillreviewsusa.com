@@ -40,13 +40,13 @@ export default {
             <strong>Buy the MERACH UltraWalk W60 if you want the most complete app and the best-built pad;
             buy the UREVO Smart Walking Pad if you want an app with virtual routes for the least money; buy
             the SereneLife handrail pad if you want to walk in Zwift, Kinomap or FitShow.</strong> The
-            WELLFIT is the choice for app and voice control with 12% auto incline, UREVO’s Strol 2E Pro for
+            <a href="/wellfit-tm037-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>WELLFIT</a> is the choice for app and voice control with 12% auto incline, UREVO’s Strol 2E Pro for
             an app that sets your speed for you, and Cybergoing’s T10 for a simple app on a Bosch-powered pad.
           </p>
           <ul>
             <li><strong>Price band:</strong> about $133 to $315 on Amazon on 24 November 2026.</li>
             <li><strong>Maker’s own app:</strong> MERACH, UREVO (both), WELLFIT and Cybergoing.</li>
-            <li><strong>Third-party apps named:</strong> SereneLife (FitShow, Kinomap, Zwift) and WELLFIT (Kinomap).</li>
+            <li><strong>Third-party apps named:</strong> SereneLife (FitShow, Kinomap, <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a>) and WELLFIT (Kinomap).</li>
             <li><strong>Health sync named:</strong> MERACH (Apple Health, Google Fit) and WELLFIT (Apple Health).</li>
             <li><strong>Works without the app:</strong> all six, from a remote, console buttons or both.</li>
           </ul>
@@ -76,7 +76,7 @@ export default {
             </tbody>
           </table></div>
           <p>
-            We do not print Amazon star ratings or review counts: they change daily, and app reviews in particular swing with each software
+            We do not print Amazon <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium" data-autolink>star ratings</a> or review counts: they change daily, and app reviews in particular swing with each software
             update, so a figure printed here would soon describe a different app.
           </p>`,
     },
@@ -120,7 +120,7 @@ export default {
           <p>
             We gave most weight to app features that change how you use the pad (tracking that reaches your
             phone’s health app, platforms you may already pay for, automatic speed) and to the pad’s basic
-            figures: belt size, weight limit and warranty. We gave no weight to star ratings, and little to
+            figures: <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt size</a>, weight limit and warranty. We gave no weight to star ratings, and little to
             claims such as “AI” that the listing does not explain.
           </p>`,
     },

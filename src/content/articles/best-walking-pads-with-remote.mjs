@@ -47,7 +47,7 @@ export default {
           <ul>
             <li><strong>Price band:</strong> about $133 to $363 on Amazon on 24 November 2026.</li>
             <li><strong>Remote:</strong> all six listings say a remote is included; none states the remote type or battery.</li>
-            <li><strong>Backup control:</strong> four of the six listings name an app; only WELLFIT names buttons on the machine.</li>
+            <li><strong>Backup control:</strong> four of the six listings name an app; only <a href="/wellfit-tm037-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>WELLFIT</a> names buttons on the machine.</li>
             <li><strong>Speed:</strong> 0.6 to 4 mph on most; FOUSAE reaches 6.2 mph and WELLFIT 7.6 mph.</li>
             <li><strong>Weight limit:</strong> 220 lb (WalkingPad C2) to 375 lb (WELLFIT), where the listing gives one.</li>
           </ul>
@@ -80,7 +80,7 @@ export default {
           <p>
             “If the remote is lost” lists only what the listing itself names as another way to change speed.
             A pad may well have a start button or speed keys the listing does not mention, so the manual is
-            the place to confirm it. We do not print star ratings or review counts; they change daily and
+            the place to confirm it. We do not print <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium" data-autolink>star ratings</a> or review counts; they change daily and
             are often pooled across versions of a pad.
           </p>`,
     },
@@ -96,7 +96,7 @@ export default {
             so rather than borrowing a number from another seller.
           </p>
           <p>
-            The six are deliberately different. Two are budget flat pads (UREVO and Goplus), one is a premium
+            The six are deliberately different. Two are budget flat pads (<a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> and Goplus), one is a premium
             fold-in-half pad (WalkingPad C2), two are low-cost incline pads (FOUSAE at 10% adjustable and
             Cybergoing at a fixed 7%), and one is a pad with a handlebar and powered incline (WELLFIT). What
             they share is a remote in the box. What separates them, for the purposes of this page, is how
@@ -155,7 +155,7 @@ export default {
           </table></div>
           <p>
             An infrared remote is the cheapest and the easiest to replace, which is why it is common on budget
-            pads. Goplus’s own replacement remote for its older Superfit treadmills, for example, is described in
+            pads. Goplus’s own replacement remote for its older <a href="/goplus-2-in-1-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Superfit</a> treadmills, for example, is described in
             its listing as infrared with a 33-foot range and a 360-degree effective angle. In practice, an IR
             remote at a standing desk can struggle if the pad’s receiver is under the desk and your hand is above
             it, because the signal has to reach the receiver.
@@ -165,7 +165,7 @@ export default {
             remote and the pad have to be introduced to each other, and a replacement has to use the same
             receiver. Pairing on its own does not prove a remote is radio, though. The Goplus infrared remote
             above also has a pairing step, and the Cybergoing T10 listing describes one too: switch the pad on at
-            its side power switch and, within five seconds, hold the remote’s power button until you hear rapid
+            its side <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a> and, within five seconds, hold the remote’s power button until you hear rapid
             beeps. If the type matters to you, ask the seller before buying; the answer is rarely in the bullets.
           </p>
           <p>
@@ -336,7 +336,7 @@ export default {
           <p>
             The app is better for everything you do not need mid-stride: steps, distance, time and calories, goals
             and history. UREVO’s listing adds virtual routes, MIIT mode and races against virtual opponents;
-            WELLFIT’s adds Kinomap routes and Apple Health; Cybergoing uses its own app, and several
+            WELLFIT’s adds <a href="/best-treadmills-with-kinomap/" class="text-[#0F62FE] font-medium" data-autolink>Kinomap</a> routes and Apple Health; Cybergoing uses its own app, and several
             other budget brands, such as DeerRun and Superun, use the third-party PitPat app. Some people find that kind of motivation useful. Others never open the app after the first
             week, and that is fine, as long as the remote is in good order. Check whether any app you rely on needs
             a paid subscription for the features you want; the core speed control on these pads is described as

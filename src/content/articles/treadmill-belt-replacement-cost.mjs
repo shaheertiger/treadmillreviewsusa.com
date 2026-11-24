@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Maintenance',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 24, 2026',
   published: '2026-10-08',
-  modified: '2026-11-16',
+  modified: '2026-11-24',
   socialProof: '1.8k',
   h1: ['Treadmill Belt Replacement Cost:', 'What You Will Actually Pay'],
   standfirst:
@@ -468,7 +468,7 @@ export default {
             covers it.</li>
             <li><strong>Use a mat.</strong> On carpet especially, a mat keeps fibres and dust away
             from the belt and the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a>.</li>
-            <li><strong>Respect the machine's limits.</strong> Heavy runners on a light-duty belt
+            <li><strong>Respect the machine's limits.</strong> <a href="/best-treadmills-for-heavy-runners/" class="text-[#0F62FE] font-medium" data-autolink>Heavy runners</a> on a light-duty belt
             and deck wear both quickly. If that is the mismatch, the long-term answer is a machine
             built for it rather than a cycle of belts.</li>
           </ul>

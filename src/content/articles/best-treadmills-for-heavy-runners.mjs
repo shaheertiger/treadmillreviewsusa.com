@@ -40,7 +40,7 @@ export default {
       html: `          <p>
             <strong>Buy the Spirit XT685 if you run regularly and weigh up to about 325 lb; buy the BowFlex
             T16 if the treadmill has to fold; buy the 3G Cardio Elite Runner X if you need a 400 lb limit
-            and the longest deck here.</strong> The SOLE F85 is the alternative folding runner with a
+            and the longest deck here.</strong> The <a href="/sole-f85-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>SOLE F85</a> is the alternative folding runner with a
             large touchscreen, the Sole ST90 is a slat-belt machine for runners who want a 400 lb rating
             and a belt that does not need waxing, and the ATEEDGE is the only machine under $600 that
             states 400 lb and 12 mph, with a short deck that limits how much running it suits.
@@ -124,7 +124,7 @@ export default {
           </p>
           <p>
             We also kept away from the picks on our two neighbouring pages where we could. The Sole F65,
-            NordicTrack Commercial 1750 and 2450, Life Fitness T3 and Matrix T7xe are covered on our heavy
+            NordicTrack Commercial 1750 and 2450, Life Fitness T3 and <a href="/matrix-fitness-t7xe-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Matrix T7xe</a> are covered on our heavy
             people page, and the Spirit XT485, Horizon 7.4 AT, ECHANFIT and WELLFIT machines on the
             <a href="/best-heavy-duty-treadmills/" class="text-[#0F62FE] font-medium">best heavy-duty treadmills</a>
             page. Several of them are good choices for a heavy runner too; this page is more useful if it
@@ -220,7 +220,7 @@ export default {
             but does not give a horsepower figure on the listing, and the ST90 listing gives none at all. So
             the motor number cannot separate these machines on its own. What does separate them is the
             motor warranty, because a maker that covers its drive motor for life is telling you how it rates
-            that motor. Spirit and BowFlex both state a lifetime motor warranty for these models.
+            that motor. Spirit and BowFlex both state a <a href="/best-treadmills-with-long-warranty/" class="text-[#0F62FE] font-medium" data-autolink>lifetime motor warranty</a> for these models.
           </p>
           <p>
             One more thing affects motor life more than its rating: the electrical supply. Running machines
@@ -242,7 +242,7 @@ export default {
             spread the belt’s load over more bearing surface and run cooler.
           </p>
           <p>
-            Only two of our sources state these figures. Spirit’s specification sheet for the XT685 gives a
+            Only two of our sources state these figures. Spirit’s specification sheet for the <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>XT685</a> gives a
             1-inch phenolic waxed deck and 3-inch front and rear rollers, which is commercial-gym
             construction. SOLE’s F85 listing gives an 18 mm CushionFlex deck. The others describe their
             cushioning (BowFlex’s FlexZone XL, 3G Cardio’s Ortho Flex Shock Suspension) without giving deck
@@ -253,7 +253,7 @@ export default {
             deck that gives too much under a heavy footstrike can feel unstable and works the motor harder.
             Firmer, thicker decks with modest cushioning suit heavier runners better than very soft ones.
             The Sole ST90 is a different design altogether: its belt is made of interlocking slats running
-            on bearings, like a commercial curved treadmill, so there is no deck to wax and the surface
+            on bearings, like a commercial <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>curved treadmill</a>, so there is no deck to wax and the surface
             does not sag under load.
           </p>`,
     },
@@ -268,8 +268,8 @@ export default {
             spec sheets or listings, and all three are big, heavy machines.
           </p>
           <p>
-            Folding machines can still be sound running treadmills if the frame is built for it. The BowFlex
-            T16 and SOLE F85 both fold and both carry a 375 lb rating, and BowFlex states a lifetime frame
+            Folding machines can still be sound running treadmills if the frame is built for it. The <a href="/bowflex-t16-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>BowFlex
+            T16</a> and SOLE F85 both fold and both carry a 375 lb rating, and BowFlex states a lifetime frame
             warranty. The point is to buy a folding treadmill rated well above your weight, not one that
             just clears it.
           </p>

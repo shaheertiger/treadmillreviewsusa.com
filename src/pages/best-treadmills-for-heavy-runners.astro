@@ -13,9 +13,9 @@ const PRODUCTS = [
     brand: "Spirit Fitness",
     category: "Best treadmill for heavy runners overall",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=Spirit%20Fitness%20XT685+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B07KQMCPCV?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/41NlKpaJSSL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/spirit-treadmills/",
     priceRange: "About $2,899 (Amazon, 24 Nov 2026)",
     priceBounds: {"low":2899,"high":2899},
@@ -40,9 +40,9 @@ const PRODUCTS = [
     brand: "BowFlex",
     category: "Best folding treadmill for heavy runners",
     badge: "Best Folding",
-    amazonUrl: "https://www.amazon.com/s?k=BowFlex%20T16+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0GSBKBRD8?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/31I8-29nvEL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/bowflex-t16-treadmill/",
     priceRange: "About $2,150 (Amazon, 24 Nov 2026)",
     priceBounds: {"low":2150,"high":2150},
@@ -94,9 +94,9 @@ const PRODUCTS = [
     brand: "SOLE",
     category: "Folding runner with a large touchscreen",
     badge: "Best Touchscreen",
-    amazonUrl: "https://www.amazon.com/s?k=SOLE%20F85%20Folding%20Treadmill+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0H5KK6P56?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/313FL2pZ45L._SL500_.jpg","width":500,"height":333},
     reviewUrl: "/sole-f85-treadmill/",
     priceRange: "About $2,000 (Amazon, 24 Nov 2026)",
     priceBounds: {"low":2000,"high":2000},
@@ -121,9 +121,9 @@ const PRODUCTS = [
     brand: "Sole",
     category: "Best slat-belt treadmill for heavy runners",
     badge: "Best Slat Belt",
-    amazonUrl: "https://www.amazon.com/s?k=Sole%20ST90%20Slat%20Treadmill+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0CQK5KQZ9?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/41+4ExfLFEL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "About $3,800 (Amazon, 24 Nov 2026)",
     priceBounds: {"low":3800,"high":3800},
@@ -148,9 +148,9 @@ const PRODUCTS = [
     brand: "ATEEDGE",
     category: "Cheapest 400 lb, 12 mph treadmill (jogging, not running)",
     badge: "Budget Pick",
-    amazonUrl: "https://www.amazon.com/s?k=ATEEDGE%20Heavy%20Duty%20Treadmill+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0HKFJXJY5?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/41YOHep7qVL._SL500_.jpg","width":430,"height":500},
     reviewUrl: null,
     priceRange: "About $570 (Amazon, 24 Nov 2026)",
     priceBounds: {"low":570,"high":570},
@@ -335,9 +335,11 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 
       <figure class="ed-hero">
         <div class="ed-hero-collage">
+          <a href="#spirit-xt685"><img src="https://m.media-amazon.com/images/I/41NlKpaJSSL._SL500_.jpg" alt="Spirit Fitness XT685" width="500" height="500" decoding="async" /></a>
+          <a href="#bowflex-t16"><img src="https://m.media-amazon.com/images/I/31I8-29nvEL._SL500_.jpg" alt="BowFlex T16" width="500" height="500" decoding="async" /></a>
           <a href="#3g-cardio-elite-runner-x"><img src="https://m.media-amazon.com/images/I/41KcqkKo0oL._SL500_.jpg" alt="3G Cardio Elite Runner X" width="500" height="500" decoding="async" /></a>
         </div>
-        <figcaption>3G Cardio Elite Runner X</figcaption>
+        <figcaption>Spirit Fitness XT685 · BowFlex T16 · 3G Cardio Elite Runner X</figcaption>
       </figure>
 
       <div class="ed-body prose prose-lg">
@@ -405,7 +407,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 <p>
             <strong>Buy the Spirit XT685 if you run regularly and weigh up to about 325 lb; buy the BowFlex
             T16 if the treadmill has to fold; buy the 3G Cardio Elite Runner X if you need a 400 lb limit
-            and the longest deck here.</strong> The SOLE F85 is the alternative folding runner with a
+            and the longest deck here.</strong> The <a href="/sole-f85-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>SOLE F85</a> is the alternative folding runner with a
             large touchscreen, the Sole ST90 is a slat-belt machine for runners who want a 400 lb rating
             and a belt that does not need waxing, and the ATEEDGE is the only machine under $600 that
             states 400 lb and 12 mph, with a short deck that limits how much running it suits.
@@ -543,7 +545,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           </p>
           <p>
             We also kept away from the picks on our two neighbouring pages where we could. The Sole F65,
-            NordicTrack Commercial 1750 and 2450, Life Fitness T3 and Matrix T7xe are covered on our heavy
+            NordicTrack Commercial 1750 and 2450, Life Fitness T3 and <a href="/matrix-fitness-t7xe-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Matrix T7xe</a> are covered on our heavy
             people page, and the Spirit XT485, Horizon 7.4 AT, ECHANFIT and WELLFIT machines on the <a href="/best-heavy-duty-treadmills/" class="text-[#0F62FE] font-medium">best heavy-duty treadmills</a> page. Several of them are good choices for a heavy runner too; this page is more useful if it
             shows you the alternatives. We gave the most weight to capacity margin, deck length and the
             motor and frame warranty, and none to star ratings or the decibel claims some listings make.
@@ -627,7 +629,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             but does not give a horsepower figure on the listing, and the ST90 listing gives none at all. So
             the motor number cannot separate these machines on its own. What does separate them is the
             motor warranty, because a maker that covers its drive motor for life is telling you how it rates
-            that motor. Spirit and BowFlex both state a lifetime motor warranty for these models.
+            that motor. Spirit and BowFlex both state a <a href="/best-treadmills-with-long-warranty/" class="text-[#0F62FE] font-medium" data-autolink>lifetime motor warranty</a> for these models.
           </p>
           <p>
             One more thing affects motor life more than its rating: the electrical supply. Running machines
@@ -646,7 +648,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             spread the belt’s load over more bearing surface and run cooler.
           </p>
           <p>
-            Only two of our sources state these figures. Spirit’s specification sheet for the XT685 gives a
+            Only two of our sources state these figures. Spirit’s specification sheet for the <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>XT685</a> gives a
             1-inch phenolic waxed deck and 3-inch front and rear rollers, which is commercial-gym
             construction. SOLE’s F85 listing gives an 18 mm CushionFlex deck. The others describe their
             cushioning (BowFlex’s FlexZone XL, 3G Cardio’s Ortho Flex Shock Suspension) without giving deck
@@ -657,7 +659,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             deck that gives too much under a heavy footstrike can feel unstable and works the motor harder.
             Firmer, thicker decks with modest cushioning suit heavier runners better than very soft ones.
             The Sole ST90 is a different design altogether: its belt is made of interlocking slats running
-            on bearings, like a commercial curved treadmill, so there is no deck to wax and the surface
+            on bearings, like a commercial <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>curved treadmill</a>, so there is no deck to wax and the surface
             does not sag under load.
           </p>
         </div>
@@ -671,8 +673,8 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             spec sheets or listings, and all three are big, heavy machines.
           </p>
           <p>
-            Folding machines can still be sound running treadmills if the frame is built for it. The BowFlex
-            T16 and SOLE F85 both fold and both carry a 375 lb rating, and BowFlex states a lifetime frame
+            Folding machines can still be sound running treadmills if the frame is built for it. The <a href="/bowflex-t16-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>BowFlex
+            T16</a> and SOLE F85 both fold and both carry a 375 lb rating, and BowFlex states a lifetime frame
             warranty. The point is to buy a folding treadmill rated well above your weight, not one that
             just clears it.
           </p>

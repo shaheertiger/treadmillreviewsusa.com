@@ -81,6 +81,13 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-for-home/',
           },
           {
+            title: "Best Treadmills for Two People",
+            description:
+              "Six treadmills for couples: capacity margin, a belt long enough for the taller user, and two-profile consoles.",
+            badge: "Couples",
+            url: '/best-treadmills-for-two-people/',
+          },
+          {
             title: 'Best Non-Folding Treadmills',
             description:
               'Fixed-deck machines for buyers who want stability over storage, and who should fold after all.',
@@ -107,6 +114,13 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-for-running/',
           },
           {
+            title: "Best Treadmills for Walking and Running",
+            description:
+              "Six treadmills for a home with one walker and one runner: 55-60 in. belts, 10-12 mph, low start speeds and incline.",
+            badge: "Walk + run",
+            url: '/best-treadmills-for-walking-and-running/',
+          },
+          {
             title: 'Best Treadmills With a 60-Inch Deck',
             description:
               "Seven treadmills with a 60-inch running surface, from Horizon's T202 to the Spirit XT485, and who needs the length.",
@@ -126,6 +140,13 @@ export const SECTIONS: Section[] = [
               'Usable deck length, not just the quoted belt size, plus the ceiling height nobody checks before buying.',
             badge: 'Over 6 ft',
             url: '/best-treadmills-for-tall-runners/',
+          },
+          {
+            title: "Best Treadmills for Short People",
+            description:
+              "Five treadmills with a low step-up, from a 2.9 in. Jogtica deck to Horizon's 7 1/8 in. T101, plus reach and fold weight.",
+            badge: "Low step-up",
+            url: '/best-treadmills-for-short-people/',
           },
           {
             title: 'Best Treadmills for HIIT',
@@ -178,6 +199,20 @@ export const SECTIONS: Section[] = [
               'Airborne versus structure-borne noise, and why the quietest deck is not always the quietest room below.',
             badge: 'Noise',
             url: '/quiet-treadmills/',
+          },
+          {
+            title: "Best Treadmills With Brushless Motors",
+            description:
+              "Seven brushless treadmills and walking pads from $187 to the Sole F85, and what brushless does and doesn't change.",
+            badge: "Brushless",
+            url: '/best-treadmills-with-brushless-motor/',
+          },
+          {
+            title: "Best Treadmills With an AC Motor",
+            description:
+              "Five commercial-grade AC-motor treadmills from Precor, Spirit and Life Fitness, with each maker's circuit requirement.",
+            badge: "AC motor",
+            url: '/best-treadmills-with-ac-motor/',
           },
           {
             title: 'Best Treadmills for Apartments',
@@ -304,6 +339,20 @@ export const SECTIONS: Section[] = [
               'Walking pads that add a powered or fixed incline, and how much grade a pad can realistically give you.',
             badge: 'Incline pad',
             url: '/best-walking-pads-with-incline/',
+          },
+          {
+            title: "Best Walking Pads With an App",
+            description:
+              "Six walking pads whose listings name an app (MERACH, UREVO, Kinomap, Zwift), and how each runs without it.",
+            badge: "App",
+            url: '/best-walking-pads-with-app/',
+          },
+          {
+            title: "Best Walking Pads With a Remote",
+            description:
+              "Six pads from $133 with a remote, and what each one offers if the remote is lost or stops pairing.",
+            badge: "Remote",
+            url: '/best-walking-pads-with-remote/',
           },
           {
             title: 'Best Walking Pads With Handrail',
@@ -436,6 +485,13 @@ export const SECTIONS: Section[] = [
               'Capacity is a warranty term, not an engineering limit. Ranked on roller diameter, frame flex and motor heat.',
             badge: 'High capacity',
             url: '/best-treadmills-for-heavy-people/',
+          },
+          {
+            title: "Best Treadmills for Heavy Runners",
+            description:
+              "Six treadmills rated 375-425 lb that also run to 12 mph, with the running margin each one leaves you.",
+            badge: "Running, 350 lb+",
+            url: '/best-treadmills-for-heavy-runners/',
           },
           {
             title: "Best Heavy Duty Treadmills",
@@ -591,6 +647,13 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-with-screens/',
           },
           {
+            title: "Best Treadmills With Netflix",
+            description:
+              "Six consoles whose listings name Netflix or streaming apps, what iFIT locks out, and the tablet-holder alternative.",
+            badge: "Streaming",
+            url: '/best-treadmills-with-netflix/',
+          },
+          {
             title: 'Best Dog Treadmills for Small Dogs',
             description:
               'Motorised machines sized for toy and small breeds, what was in stock, and the safety rules.',
@@ -635,6 +698,13 @@ export const SECTIONS: Section[] = [
               'Five real treadmills (not walking pads) from $552 to $590: 18-20 in. belts, up to 400 lb, picked for walking and jogging.',
             badge: 'Under $600',
             url: '/best-treadmills-under-600/',
+          },
+          {
+            title: "Best Treadmills Under $700",
+            description:
+              "Five treadmills from $510 to $700 with 12 mph or 12-20% incline, from Sunny and Aeriflo to a 500 lb WELLFIT.",
+            badge: "Under $700",
+            url: '/best-treadmills-under-700/',
           },
           {
             title: 'Best Treadmills Under $800',

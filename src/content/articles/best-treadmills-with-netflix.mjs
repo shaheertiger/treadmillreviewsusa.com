@@ -39,14 +39,14 @@ export default {
       html: `          <p>
             <strong>Buy the Bowflex T16 if you want Netflix on the console without a fitness membership;
             buy the Aviron Victory if you want the longest named app list, including Disney+ and YouTube;
-            buy the NordicTrack T Series 10 if you already plan to pay for iFIT Pro.</strong> The SOLE F89
+            buy the NordicTrack T Series 10 if you already plan to pay for iFIT Pro.</strong> The <a href="/sole-f89-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>SOLE F89</a>
             is the choice for runners who want a big screen, decline and no membership at all, the Sunny
             Wi-Fi treadmill is the mid-price option, and the SYTIRY is the cheap, open-screen gamble.
           </p>
           <ul>
             <li><strong>Price band:</strong> about $434 to $2,800 on Amazon on 24 November 2026.</li>
             <li><strong>Netflix named by the listing:</strong> Bowflex T16 and Aviron Victory only.</li>
-            <li><strong>Netflix with a membership:</strong> NordicTrack T Series 10, through iFIT Pro (listed at $39 a month) and your own Netflix plan.</li>
+            <li><strong>Netflix with a membership:</strong> <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack T Series</a> 10, through iFIT Pro (listed at $39 a month) and your own Netflix plan.</li>
             <li><strong>Streaming, apps not named:</strong> SOLE F89, Sunny Wi-Fi treadmill and SYTIRY.</li>
             <li><strong>You always pay for Netflix itself.</strong> No treadmill includes a streaming subscription.</li>
           </ul>
@@ -79,7 +79,7 @@ export default {
             </tbody>
           </table></div>
           <p>
-            We do not print Amazon star ratings or review counts. They change daily, and several of
+            We do not print Amazon <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium" data-autolink>star ratings</a> or review counts. They change daily, and several of
             these listings pool reviews across older versions of the machine whose consoles ran
             different software, so a figure printed here would not describe the screen you receive.
           </p>`,
@@ -295,7 +295,7 @@ export default {
             let you angle the screen to your eye line and, on the SOLE F89’s swivel screen, turn it toward a
             mat for off-treadmill classes. The NordicTrack T Series 10’s screen tilts, per its listing.
             <strong>Speakers</strong> are rarely good enough for dialogue over a belt and motor, so plan on
-            Bluetooth headphones; Bowflex, SOLE, Sunny and SYTIRY all list speakers or Bluetooth, and a
+            Bluetooth <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium" data-autolink>headphones</a>; Bowflex, SOLE, Sunny and SYTIRY all list speakers or Bluetooth, and a
             headphone connection matters more than speaker wattage.
           </p>
           <p>
