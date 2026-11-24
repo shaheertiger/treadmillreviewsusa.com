@@ -359,8 +359,8 @@ export default {
             setups we would actually use, in order.
           </p>
           <ul>
-            <li><strong>You already own a standing desk that rises high enough: about $153.</strong> A UREVO Smart
-            Walking Pad at $132.99 (0.6 to 4 mph, 265 lb) and a $19.99 mat. Check the desk&rsquo;s top height against your
+            <li><strong>You already own a standing desk that rises high enough: about $153.</strong> A UREVO <a href="/best-walking-pads-with-app/" class="text-[#0F62FE] font-medium" data-autolink>Smart
+            Walking Pad</a> at $132.99 (0.6 to 4 mph, 265 lb) and a $19.99 mat. Check the desk&rsquo;s top height against your
             height first, using the chart in our desk height guide.</li>
             <li><strong>You have no standing desk and a fixed budget: about $397.</strong> The same pad and mat with a
             FLEXISPOT E6 at $243.66. It is dual-motor and three-stage, reaches 48.8 inches and carries a stated 5-year

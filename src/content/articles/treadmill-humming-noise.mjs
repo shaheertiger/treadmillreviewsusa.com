@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 24, 2026',
   published: '2026-11-23',
+  modified: '2026-11-24',
   socialProof: '1.1k',
   h1: ['Treadmill Humming Noise:', 'Normal Hum or a Failing Motor?'],
   standfirst:
@@ -138,7 +139,7 @@ export default {
             under the belt, a roller whose bearing has seized, a deck so dry and the belt so tight that the motor cannot
             break the friction, or a drive belt that has snapped or jumped off its pulley (in which case the motor may spin
             freely with a hum while the belt sits still). Electrical: the motor cannot produce enough turning force. On
-            treadmills with an AC motor, a failed start capacitor is a classic cause of a hum with no rotation. On DC
+            <a href="/best-treadmills-with-ac-motor/" class="text-[#0F62FE] font-medium" data-autolink>treadmills with an AC motor</a>, a failed start capacitor is a classic cause of a hum with no rotation. On DC
             machines, worn brushes or a fault in the motor or controller can do the same.
           </p>
           <p>
