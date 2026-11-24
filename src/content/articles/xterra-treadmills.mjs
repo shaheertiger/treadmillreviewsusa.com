@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 24, 2026',
   published: '2026-11-05',
-  modified: '2026-11-21',
+  modified: '2026-11-24',
   socialProof: '1.5k',
   h1: ['XTERRA Treadmills:', 'A Buyer’s Guide to the Current Range'],
   standfirst:
@@ -463,6 +463,12 @@ export default {
       title: "OMA Treadmills",
       blurb: "The folding brand sold on Amazon behind the 7200EB: what its figures say, where they conflict, and.",
       url: '/oma-treadmills/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'XTERRA Treadmill Troubleshooting',
+      blurb: 'Power, belt, console and error codes.',
+      url: '/xterra-treadmill-troubleshooting/',
     },
   ],
   bottomLine: [

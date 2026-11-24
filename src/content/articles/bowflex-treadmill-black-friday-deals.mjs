@@ -50,7 +50,7 @@ export default {
             shipping on the T16 until 26 November.
           </p>
           <ul>
-            <li><strong>Best value:</strong> the T6 at $899, a 20 by 60-inch deck, 12 mph, 15% incline and a
+            <li><strong>Best value:</strong> the T6 at $899, a 20 by <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch deck</a>, 12 mph, 15% incline and a
             325 lb rating. A good price, but the same $899 bowflex.com showed on 14 October.</li>
             <li><strong>Best for runners:</strong> the T9 at $1,399, with a 22-inch-wide deck and a 350 lb
             rating. It matches the $1,399 we saw in mid-October and is $100 below the $1,499 of 20 October.</li>
@@ -363,7 +363,7 @@ export default {
           </table></div>
           <p>
             The comparison favours Bowflex at the bottom and middle of the range this week: the T6 undercuts
-            the 7.0 AT by $35 and the T9 undercuts the 7.4 AT by $100. Warranties differ, though. Bowflex gives
+            the 7.0 AT by $35 and the T9 undercuts the <a href="/horizon-7-4-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>7.4 AT</a> by $100. Warranties differ, though. Bowflex gives
             three years of parts and one of labour on all three; Horizon gives three years of parts on the
             7.0 AT and five years of parts and two of labour on the 7.4 AT and 7.8 AT; Sole states lifetime frame
             and motor cover across its range. Horizon also needs a code this week, and Bowflex does not.
@@ -607,6 +607,12 @@ export default {
       title: 'Bowflex T6 Review',
       blurb: 'The cheapest full-size Bowflex, and when the T9 or Sole F63 wins.',
       url: '/bowflex-t6-treadmill/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a Bowflex Treadmill Cost?',
+      blurb: 'Every Bowflex treadmill, delivery and JRNY on top.',
+      url: '/how-much-does-a-bowflex-treadmill-cost/',
     },
   ],
   bottomLine: [

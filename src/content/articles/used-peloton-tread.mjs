@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Used',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 24, 2026',
   published: '2026-11-05',
-  modified: '2026-11-17',
+  modified: '2026-11-24',
   socialProof: '1.3k',
   h1: ['Buying a Used', 'Peloton Treadmill'],
   standfirst:
@@ -535,6 +535,12 @@ export default {
       title: 'Best Peloton Alternatives',
       blurb: 'Cheaper ways to Peloton-style classes, with three-year costs compared.',
       url: '/best-peloton-alternatives/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'Peloton Tread Troubleshooting',
+      blurb: 'Belt, screen and speed fixes, from Peloton support.',
+      url: '/peloton-tread-troubleshooting/',
     },
   ],
   bottomLine: [

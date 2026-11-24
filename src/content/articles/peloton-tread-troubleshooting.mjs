@@ -364,7 +364,7 @@ export default {
             needs Member Support; our guide to a
             <a href="/treadmill-incline-not-working/" class="text-[#0F62FE] font-medium">treadmill incline not working</a>
             explains the motor and sensor involved. Peloton&rsquo;s <em>Leveling Your Peloton Tread and
-            Tread+</em> article covers the levelling feet, which are worth checking if the deck rocks.
+            Tread+</em> article covers the <a href="/treadmill-shaking-or-wobbling/" class="text-[#0F62FE] font-medium" data-autolink>levelling feet</a>, which are worth checking if the deck rocks.
           </p>`,
     },
     {
@@ -411,7 +411,7 @@ export default {
             This is where Peloton differs from many brands. Peloton&rsquo;s belt maintenance article says the
             Tread belt is lubricated at the factory and should not need more lubricant for three years, and it
             notes that this is an updated position, so older guides may say otherwise. Do not apply a generic
-            treadmill lubricant on a schedule copied from another brand; if your Tread is past that point,
+            <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium" data-autolink>treadmill lubricant</a> on a schedule copied from another brand; if your Tread is past that point,
             follow the lubrication section of Peloton&rsquo;s article or ask Member Support which product to
             use. Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">treadmill belt lubrication guide</a>
             explains why the right product matters.

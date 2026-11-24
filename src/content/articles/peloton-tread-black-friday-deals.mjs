@@ -595,6 +595,12 @@ export default {
       blurb: 'The recalls, the $95 activation fee and fair used prices.',
       url: '/used-peloton-tread/',
     },
+    {
+      kicker: 'Fixes',
+      title: 'Peloton Tread Troubleshooting',
+      blurb: 'Belt, screen and speed fixes, from Peloton support.',
+      url: '/peloton-tread-troubleshooting/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Peloton’s Black Friday Tread deals are real.</strong> On 24 November 2026

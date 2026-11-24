@@ -50,7 +50,7 @@ export default {
             XTERRA problems. If it does not, match your symptom below.
           </p>
           <ul>
-            <li><strong>Dead console:</strong> safety key, power switch, front breaker, wall outlet, then the breaker panel.</li>
+            <li><strong>Dead console:</strong> safety key, <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a>, front breaker, wall outlet, then the breaker panel.</li>
             <li><strong>Error code on the screen:</strong> E0 points at the safety key, E2 at belt friction or overload, E5 at the console cable, E7 at the power supply (on most current models; the TR95H uses its own codes).</li>
             <li><strong>Belt slips:</strong> clean and lubricate the deck first, then tighten both rear bolts a quarter turn at a time.</li>
             <li><strong>Belt drifts to one side:</strong> adjust the rear roller bolt a quarter turn at 3 mph and wait.</li>
@@ -120,7 +120,7 @@ export default {
           </p>
           <h3 class="${h3}">A clean power cycle</h3>
           <p>
-            XTERRA consoles have no software to restore the way an iFIT or JRNY touchscreen does, so the
+            XTERRA consoles have no software to restore the way an <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium" data-autolink>iFIT</a> or JRNY touchscreen does, so the
             reset that matters is a clean restart: remove the safety key, turn the power switch off, unplug
             the cord, wait about a minute, then plug in, switch on and replace the key. The TR75 manual
             says all the display lights come on briefly at power-up and the console shows its software
@@ -151,7 +151,7 @@ export default {
             goes further.
           </p>
           <p>
-            <strong>Avoid extension cords.</strong> The TRX1000 manual says not to use an extension cord
+            <strong>Avoid extension cords.</strong> The TRX1000 manual says not to use an <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium" data-autolink>extension cord</a>
             unless it is 14 AWG or heavier with a single outlet on the end. The Sport series manuals go
             further: do not use one, and if you must, keep it as short as possible and at least 14 gauge.
             Never use a power strip, and never defeat the grounding pin.
@@ -342,7 +342,7 @@ export default {
             of lubricant in an S pattern, then repeating on the other side. Plug back in, switch on and walk
             at a moderate speed for five minutes to spread it. The TRX1000 manual uses half a bottle per side
             starting about a foot from the motor cover; amounts vary by model, so follow yours and do not
-            overdo it. XTERRA lists its own treadmill lubricant on its FAQ page at $11.99 (24 Nov 2026).
+            overdo it. XTERRA lists its own <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium" data-autolink>treadmill lubricant</a> on its FAQ page at $11.99 (24 Nov 2026).
             Our guide to
             <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>
             covers the general rules.

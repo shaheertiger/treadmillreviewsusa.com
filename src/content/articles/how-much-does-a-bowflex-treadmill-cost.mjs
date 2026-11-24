@@ -48,7 +48,7 @@ export default {
           </p>
           <ul>
             <li><strong>Bowflex T6:</strong> $899 on sale ($1,299 regular). 20 x 60 in. deck, 0–12 mph,
-            15 incline levels, 325 lb, no touchscreen.</li>
+            15 <a href="/what-is-12-incline-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>incline levels</a>, 325 lb, no touchscreen.</li>
             <li><strong>Bowflex T9:</strong> $1,399 on sale ($1,799 regular). 22 x 60 in. deck, 350 lb,
             no touchscreen.</li>
             <li><strong>Bowflex T16:</strong> $1,999 on sale ($2,299 regular), or $2,150 on Amazon. 22 x 60
@@ -322,7 +322,7 @@ export default {
             service.
           </p>
           <p>
-            The BXT8J listing describes a 20 x 60-inch belt, 15% motorised incline, a DualTrack LCD display
+            The BXT8J listing describes a 20 x <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch belt</a>, 15% motorised incline, a DualTrack LCD display
             with 26 programs and a two-month JRNY mobile trial. It is not one of the three treadmills Bowflex’s
             own store sells, and at $1,123.72 it cost more than a new T6 on sale ($899) with a similar deck and
             incline. Unless you have a reason to want that model, the T6 from Bowflex is the better-value way to
@@ -350,11 +350,11 @@ export default {
             <li><strong>Around $900:</strong> the T6 and Horizon 7.0 AT line up almost figure for figure on
             deck, speed, incline and weight rating, and their standard warranties both give lifetime frame and
             motor cover with three years on parts and one on labour. At these prices the T6 was about $36
-            cheaper. The NordicTrack T Series 10 adds a touchscreen but is built around iFIT.</li>
-            <li><strong>Around $1,400 to $1,600:</strong> the T9 was $100 under the Horizon 7.4 AT for the same
+            cheaper. The <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack T Series</a> 10 adds a touchscreen but is built around iFIT.</li>
+            <li><strong>Around $1,400 to $1,600:</strong> the T9 was $100 under the <a href="/horizon-7-4-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Horizon 7.4 AT</a> for the same
             22 by 60-inch deck and 350 lb rating. The Horizon’s longer standard parts and labour cover, five
             years and two, against Bowflex’s three and one, is what the extra $100 buys.</li>
-            <li><strong>Around $2,000:</strong> the T16 and NordicTrack Commercial 1750 both have 16-inch
+            <li><strong>Around $2,000:</strong> the T16 and <a href="/nordictrack-commercial-1750-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack Commercial 1750</a> both have 16-inch
             touchscreens at $1,999. The difference is the membership: the T16 works without one and can stream
             apps, while the NordicTrack’s screen is built around iFIT at $39 a month or $396 a year.</li>
           </ul>
@@ -373,7 +373,7 @@ export default {
             ${A('/bowflex-treadmill-troubleshooting/', 'Bowflex troubleshooting')} guide covers how to clear the
             reminder.</li>
             <li><strong>Electrical:</strong> the T6 manual asks for a dedicated circuit of at least 15 amps and
-            says the treadmill is not compatible with GFCI outlets; power strips and extension cords are out
+            says the treadmill is not compatible with GFCI outlets; power strips and <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium" data-autolink>extension cords</a> are out
             too. If your room lacks a suitable outlet, an electrician’s visit is a real cost to budget.</li>
             <li><strong>Mat:</strong> Bowflex sold machine mats for $99 on 24 November 2026; third-party mats
             cost less. Our ${A('/best-treadmill-mats/', 'best treadmill mats')} guide compares them.</li>
@@ -517,6 +517,12 @@ export default {
       title: 'Bowflex Treadmill Troubleshooting',
       blurb: 'Safety key, outlet rules, belt tension and the LUBE BELT message.',
       url: '/bowflex-treadmill-troubleshooting/',
+    },
+    {
+      kicker: 'Deals',
+      title: 'Bowflex Treadmill Black Friday Deals',
+      blurb: 'T6, T9 and T16 sale prices, checked against October.',
+      url: '/bowflex-treadmill-black-friday-deals/',
     },
   ],
   bottomLine: [
