@@ -9,8 +9,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 24, 2026',
   published: '2026-11-21',
+  modified: '2026-11-24',
   h1: ['How Much Does', 'a Walking Pad Cost?'],
   standfirst: `Most walking pads cost between about $130 and $450, and pads with incline, a handrail or a fold-up running mode stretch the range to roughly $800. Here is what each type costs today, what the extra money buys, and what you will spend after checkout.`,
   ctas: [
@@ -472,6 +473,12 @@ export default {
       title: 'Best Walking Pads',
       blurb: 'The strongest picks across budget, mid-range and premium pads.',
       url: '/best-walking-pads/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a Treadmill Desk Cost?',
+      blurb: 'Pad plus desk, or an integrated treadmill desk.',
+      url: '/how-much-does-a-treadmill-desk-cost/',
     },
   ],
   bottomLine: [

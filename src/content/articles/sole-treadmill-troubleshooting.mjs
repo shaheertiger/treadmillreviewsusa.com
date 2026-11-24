@@ -9,8 +9,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 24, 2026',
   published: '2026-11-21',
+  modified: '2026-11-24',
   h1: ['Sole Treadmill Troubleshooting:', 'Console, Belt, Speed and Error Codes'],
   standfirst: `Most Sole faults come down to five things: a safety key that is not in, a tripped breaker on the front of the frame, a deck that is due its 90-hour lube, a belt that needs a quarter-turn of tension or tracking, or a circuit shared with something else. Here is the order to check them in, what Sole's own manuals say to do, and what to have ready before you call Sole on 866-780-7653.`,
   ctas: [
@@ -703,6 +704,12 @@ export default {
       title: 'Best Sole Treadmills',
       blurb: 'The current range, model by model.',
       url: '/best-sole-treadmills/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'XTERRA Treadmill Troubleshooting',
+      blurb: 'Power, belt, console and error codes.',
+      url: '/xterra-treadmill-troubleshooting/',
     },
   ],
   bottomLine: [

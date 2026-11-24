@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 24, 2026',
   published: '2026-10-20',
-  modified: '2026-11-21',
+  modified: '2026-11-24',
   socialProof: '1.4k',
   h1: ['Peloton Treadmill Review:', 'Tread Flex, Tread Vision and Tread+ Vision'],
   standfirst:
@@ -625,6 +625,18 @@ export default {
       title: "Buying a Used Peloton Treadmill",
       blurb: "The 2021 recalls, the activation fee, and fair used prices.",
       url: '/used-peloton-tread/',
+    },
+    {
+      kicker: 'Deals',
+      title: 'Peloton Tread Black Friday Deals',
+      blurb: 'Which Peloton Tread sale prices are real drops.',
+      url: '/peloton-tread-black-friday-deals/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'Peloton Tread Troubleshooting',
+      blurb: 'Belt, screen and speed fixes, from Peloton support.',
+      url: '/peloton-tread-troubleshooting/',
     },
   ],
   bottomLine: [

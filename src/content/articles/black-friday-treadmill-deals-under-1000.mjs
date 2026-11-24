@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 24, 2026',
   published: '2026-10-28',
-  modified: '2026-11-23',
+  modified: '2026-11-24',
   socialProof: '2.1k',
   h1: ['Black Friday Treadmill Deals', 'Under $1,000'],
   standfirst:
@@ -587,6 +587,12 @@ export default {
       title: 'ProForm Black Friday Deals',
       blurb: 'Every ProForm price checked against October.',
       url: '/proform-black-friday-deals/',
+    },
+    {
+      kicker: 'Deals',
+      title: 'Bowflex Treadmill Black Friday Deals',
+      blurb: 'T6, T9 and T16 sale prices, checked against October.',
+      url: '/bowflex-treadmill-black-friday-deals/',
     },
   ],
   bottomLine: [

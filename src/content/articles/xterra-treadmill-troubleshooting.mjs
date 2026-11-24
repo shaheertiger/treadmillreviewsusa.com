@@ -1,0 +1,596 @@
+const th = 'text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4';
+const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
+const h3 = 'text-xl font-bold text-gray-900 mt-8 mb-3';
+
+export default {
+  slug: 'xterra-treadmill-troubleshooting',
+  title: 'XTERRA Treadmill Troubleshooting: Power, Belt and Console',
+  description:
+    'XTERRA treadmill not working? Check the safety key, front breaker and a 15-amp grounded outlet first. Then the E0 to E7 codes, belt slip, tracking and LUBE.',
+  crumbLabel: 'XTERRA Treadmill Troubleshooting',
+  breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
+  kicker: 'Troubleshooting',
+  updated: 'November 2026',
+  updatedLong: 'November 24, 2026',
+  published: '2026-11-24',
+  modified: '2026-11-24',
+  socialProof: '1.2k',
+  h1: ['XTERRA Treadmill Troubleshooting:', 'Power, Belt, Error Codes and Console'],
+  standfirst:
+    'Most XTERRA faults come down to a short list: a safety key that is not seated, a tripped breaker on the front of the base, a circuit shared with other appliances, a dry deck, a belt that needs tension or tracking, or a LUBE reminder that needs clearing. Here is the order to check them in, what XTERRA’s own manuals say each error code means, and what to have ready before you call.',
+  ctas: [
+    { label: 'Find Your Symptom', href: '#short-answer' },
+    { label: 'Error Codes E0 to E7', href: '#error-codes' },
+  ],
+  tags: [
+    'xterra treadmill troubleshooting',
+    'xterra treadmill not working',
+    'xterra treadmill error codes',
+    'xterra treadmill e1 error',
+    'xterra treadmill belt slipping',
+    'xterra treadmill lube message',
+  ],
+  stickyCta: { text: 'Find Your Symptom', link: '#short-answer' },
+  lead: `XTERRA treadmills are made by Dyaco, the Taiwanese manufacturer that also owns Spirit Fitness,
+          and they share a family of simple LCD consoles, motor controllers and belt adjustments. That
+          makes them easier to troubleshoot than most: there is no touchscreen operating system to freeze,
+          and the owner&rsquo;s manuals XTERRA hosts on its own site spell out the error codes, the belt
+          adjustments and the electrical rules in plain terms. This guide is built on those manuals and on
+          XTERRA&rsquo;s support pages, read on 24 November 2026. We have not tested an XTERRA treadmill.
+          Where a step or a code differs between models, we say so, and you should treat your own
+          model&rsquo;s manual as the final word.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'The Short Answer',
+      html: `          <p>
+            <strong>Seat the safety key, check the power switch and the circuit breaker on the front of the
+            base, and make sure the treadmill is plugged straight into a grounded 120-volt, 15-amp outlet
+            with nothing else on that circuit. Then do a clean power cycle.</strong> That clears most
+            XTERRA problems. If it does not, match your symptom below.
+          </p>
+          <ul>
+            <li><strong>Dead console:</strong> safety key, <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a>, front breaker, wall outlet, then the breaker panel.</li>
+            <li><strong>Error code on the screen:</strong> E0 points at the safety key, E2 at belt friction or overload, E5 at the console cable, E7 at the power supply (on most current models; the TR95H uses its own codes).</li>
+            <li><strong>Belt slips:</strong> clean and lubricate the deck first, then tighten both rear bolts a quarter turn at a time.</li>
+            <li><strong>Belt drifts to one side:</strong> adjust the rear roller bolt a quarter turn at 3 mph and wait.</li>
+            <li><strong>&ldquo;LUBE&rdquo; on the display:</strong> lubricate if the deck is dry, then hold PROGRAM for 3 seconds in standby to clear it.</li>
+          </ul>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Symptom</th>
+                <th class="${th}">Most likely cause</th>
+                <th class="${th}">First fix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">Completely dead</td><td class="${td}">Safety key, front breaker, outlet</td><td class="${td}">Seat the key; push the front breaker in until it locks</td></tr>
+              <tr><td class="${td}">Console on, belt will not start</td><td class="${td}">Safety key, E0 or E1 code</td><td class="${td}">Reseat the key; read the code in the table below</td></tr>
+              <tr><td class="${td}">Trips the house breaker</td><td class="${td}">Shared circuit, AFCI/GFCI, dry deck</td><td class="${td}">Give it its own circuit; clean and lubricate</td></tr>
+              <tr><td class="${td}">Will not go above about 5 mph</td><td class="${td}">Low voltage</td><td class="${td}">Remove the extension cord; have the voltage checked</td></tr>
+              <tr><td class="${td}">Belt slips or hesitates</td><td class="${td}">Dry deck, then low tension</td><td class="${td}">Lubricate, then a quarter turn on both bolts</td></tr>
+              <tr><td class="${td}">Belt runs off-centre</td><td class="${td}">Tracking, uneven gait</td><td class="${td}">Quarter-turn tracking adjustment at 3 mph</td></tr>
+              <tr><td class="${td}">Console shuts off when touched</td><td class="${td}">Static, poor grounding</td><td class="${td}">Check the outlet is properly grounded</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            If anything smells hot, the belt keeps running after you pull the safety key, or a breaker
+            trips the moment the belt starts, stop using the treadmill and call XTERRA. For the same
+            checks on any brand, see our
+            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a>.
+          </p>`,
+    },
+    {
+      id: 'wont-turn-on',
+      heading: 'XTERRA Treadmill Will Not Turn On',
+      html: `          <p>
+            XTERRA&rsquo;s Sport series manuals list five causes for a display that does not light, in
+            this order: the safety tether is not in place, the circuit breaker on the front of the treadmill
+            has tripped, the plug is not fully in the wall outlet, the breaker in your home&rsquo;s panel has
+            tripped, and finally a fault in the treadmill itself. Work through them in that order; the first
+            four cost nothing.
+          </p>
+          <h3 class="${h3}">1. The safety key</h3>
+          <p>
+            Every current XTERRA uses a magnetic safety key on a tether that clips to your clothing. The
+            TR75 manual says the treadmill will not power on without it; on the TRX1200 the manual says the
+            display shows E0 in the speed window if the key is missing. Either way, a key pulled half off
+            by the cord looks like a dead machine. Press it firmly onto the round metal pad on the console.
+            If it still is not recognised, our guide to a
+            <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">treadmill safety key that is not working</a>
+            covers the switch behind it.
+          </p>
+          <h3 class="${h3}">2. The power switch and front breaker</h3>
+          <p>
+            The main power switch is at the front of the base, below the motor hood. The Sport series
+            manuals also show a circuit breaker on the front of the treadmill; when it trips, the fix is to
+            push it in until it locks. Switch off and unplug before you touch it. One trip after a long,
+            hard session is not unusual. A breaker that keeps tripping is a symptom, and the usual causes
+            are below.
+          </p>
+          <h3 class="${h3}">3. The outlet and the circuit</h3>
+          <p>
+            Plug a lamp into the same socket to prove it is live, and check your breaker panel. XTERRA&rsquo;s
+            manuals ask for a properly grounded 120-volt, 15-amp outlet, and the TRX1000 manual says the
+            treadmill should be the only appliance on that circuit. If the console is still dark after all
+            of this, our guide to a
+            <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that won&rsquo;t turn on</a>
+            works through the cord and the controller.
+          </p>
+          <h3 class="${h3}">A clean power cycle</h3>
+          <p>
+            XTERRA consoles have no software to restore the way an <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium" data-autolink>iFIT</a> or JRNY touchscreen does, so the
+            reset that matters is a clean restart: remove the safety key, turn the power switch off, unplug
+            the cord, wait about a minute, then plug in, switch on and replace the key. The TR75 manual
+            says all the display lights come on briefly at power-up and the console shows its software
+            version before going to idle; that start-up sequence is a useful sign the console itself is
+            alive. Note that some XTERRA consoles go to sleep after a period of inactivity (the TRX1000
+            manual says 30 minutes; the TR75 manual describes a sleep setting of 15 minutes), so a dark
+            screen on a machine nobody has touched may simply be asleep. Press a key before assuming it
+            has failed.
+          </p>`,
+    },
+    {
+      id: 'breaker-and-power',
+      heading: 'Tripping Breakers, Extension Cords and Low Voltage',
+      html: `          <p>
+            Power problems cause more XTERRA service calls than broken parts, and the manuals are unusually
+            specific about them. Three rules cover most cases.
+          </p>
+          <p>
+            <strong>Give the treadmill its own circuit.</strong> XTERRA&rsquo;s manuals say AFCI and GFCI
+            breakers may trip occasionally because of the high inrush current of the drive electronics and
+            motor, and that this affects every treadmill brand. They tell you to avoid those breakers if
+            possible, and, where local code requires them, to check what else is on the circuit: the
+            manuals name fluorescent lights with electronic ballasts, a coffee maker, a space heater and a
+            hair dryer as examples. XTERRA says it has tested several AFCI/GFCI breakers with its treadmills
+            and that they did not trip as long as nothing else was plugged into the same circuit. If your
+            treadmill trips a breaker in the panel, start there. Our guide to a
+            <a href="/treadmill-trips-breaker/" class="text-[#0F62FE] font-medium">treadmill that trips the breaker</a>
+            goes further.
+          </p>
+          <p>
+            <strong>Avoid extension cords.</strong> The TRX1000 manual says not to use an <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium" data-autolink>extension cord</a>
+            unless it is 14 AWG or heavier with a single outlet on the end. The Sport series manuals go
+            further: do not use one, and if you must, keep it as short as possible and at least 14 gauge.
+            Never use a power strip, and never defeat the grounding pin.
+          </p>
+          <p>
+            <strong>Watch the voltage.</strong> XTERRA&rsquo;s Sport series troubleshooting table has a
+            telling entry: a treadmill that only reaches about 5 mph while the display shows a higher
+            speed. Its explanation is low AC voltage, and its fix is to remove the extension cord and have
+            an electrician or your dealer check the supply, with a minimum of 120 volts required. The
+            manuals also say that if voltage varies by 10% or more, performance may suffer, and that such
+            conditions are not covered under warranty.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">What happens</th>
+                <th class="${th}">What XTERRA&rsquo;s manuals point to</th>
+                <th class="${th}">What to do</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">House breaker trips, treadmill breaker does not</td><td class="${td}">Other appliances on the circuit</td><td class="${td}">Make the treadmill the only load on that circuit</td></tr>
+              <tr><td class="${td}">Treadmill&rsquo;s own 15-amp breaker trips</td><td class="${td}">High belt and deck friction</td><td class="${td}">Clean the deck and lubricate it</td></tr>
+              <tr><td class="${td}">Tops out near 5 mph</td><td class="${td}">Low AC voltage</td><td class="${td}">Remove the extension cord; check voltage</td></tr>
+              <tr><td class="${td}">Console shuts off when touched on a cold day</td><td class="${td}">Static and poor grounding</td><td class="${td}">Confirm the outlet is properly grounded</td></tr>
+              <tr><td class="${td}">Belt stops very abruptly when the key is pulled</td><td class="${td}">High belt and deck friction</td><td class="${td}">Clean the deck and lubricate it</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The static entry deserves a note. XTERRA&rsquo;s troubleshooting table says a console that
+            shuts off when touched on a cold day is static electricity &ldquo;crashing&rdquo; the computer
+            because the treadmill may not be grounded. A grounded outlet and a humidifier in a dry room
+            help; our guide to
+            <a href="/treadmill-static-shock/" class="text-[#0F62FE] font-medium">treadmill static shock</a>
+            covers mats and other fixes.
+          </p>`,
+    },
+    {
+      id: 'error-codes',
+      heading: 'XTERRA Error Codes E0 to E7',
+      html: `          <p>
+            <strong>Most current XTERRA folding treadmills use the same E0 to E7 codes, but the exact
+            meaning of E1 differs between models, and the TR95H Hiker uses a different set.</strong> The
+            table below is taken from the TRX1000 and TR65 owner&rsquo;s manuals on XTERRA&rsquo;s site
+            (read 24 November 2026); the TRX1200 and TR150 manuals list the same codes as the TRX1000.
+            Look up the code in your own model&rsquo;s manual before you order a part.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Code</th>
+                <th class="${th}">Meaning in XTERRA&rsquo;s manuals</th>
+                <th class="${th}">Owner checks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">E0</td><td class="${td}">Safety switch malfunction</td><td class="${td}">Seat the safety key; check the key and its harness for damage</td></tr>
+              <tr><td class="${td}">E1</td><td class="${td}">TRX1000, TRX1200, TR150: shown 8 to 10 seconds after Start. TR65: missing speed signal</td><td class="${td}">Does the motor run? Check the console-to-controller cable; on the TR65, the speed sensor connection</td></tr>
+              <tr><td class="${td}">E2</td><td class="${td}">Over-current protection: the treadmill is overloaded</td><td class="${td}">Check belt alignment; clean and lubricate the deck; let an overheated motor cool</td></tr>
+              <tr><td class="${td}">E3</td><td class="${td}">TR65: incline error</td><td class="${td}">Check for anything blocking the incline; then service</td></tr>
+              <tr><td class="${td}">E4</td><td class="${td}">Improper motor input voltage: motor not connected properly</td><td class="${td}">Service: motor-to-controller connection</td></tr>
+              <tr><td class="${td}">E5</td><td class="${td}">Communication lost between console and controller</td><td class="${td}">With the power off, check the console cable connections</td></tr>
+              <tr><td class="${td}">E6</td><td class="${td}">Controller malfunction</td><td class="${td}">Service: controller</td></tr>
+              <tr><td class="${td}">E7</td><td class="${td}">Abnormal power input</td><td class="${td}">Check the outlet, circuit and voltage; remove any extension cord</td></tr>
+            </tbody>
+          </table></div>
+          <h3 class="${h3}">The TR95H Hiker is different</h3>
+          <p>
+            The TR95H manual uses its own short list. It describes E1 as the computer not reading the
+            sensor signal for 7 seconds after the machine starts, E3 as a poorly connected or damaged cable
+            between the computer and the control box, and E6 as the computer not reading the incline
+            motor&rsquo;s position signal for 6 seconds. So an E6 on a TR95H is an incline problem, while
+            on a TRX1000 it is a controller fault. This is exactly why a generic error-code table can send
+            you after the wrong part.
+          </p>
+          <h3 class="${h3}">What you can do and what you should not</h3>
+          <p>
+            The owner checks in the table are the ones that need no tools beyond a screwdriver for the
+            motor hood: the safety key, the cable connections behind the console, the outlet and the deck.
+            The manuals&rsquo; fixes for E4 and E6, and the deeper E1 and E2 causes such as a failed speed
+            sensor, damaged roller bearings or an overheated motor, are parts replacements. Unplug before
+            removing any cover, as every XTERRA manual insists, and if the code survives a clean power
+            cycle and the owner checks, call XTERRA with the code and the moment it appears.
+          </p>`,
+    },
+    {
+      id: 'belt-slipping',
+      heading: 'Belt Slipping, Hesitating or Stopping Hard',
+      html: `          <p>
+            <strong>On an XTERRA, a belt that slips or hesitates under each step is most often a dry or
+            dirty deck, and only then a loose belt.</strong> Friction between the belt and the deck rises as
+            lubricant wears off and dirt builds up, and the manuals warn that this puts stress on the drive
+            motor, the drive belt and the motor control board. It is also the likely cause of E2 codes and
+            of a treadmill that trips its own breaker. So check the deck first.
+          </p>
+          <h3 class="${h3}">Then adjust the tension</h3>
+          <p>
+            The TRX1000 manual&rsquo;s procedure is typical of the range. The two tension bolts are at the
+            rear roller, at the ends of the step rails, and take the Allen wrench supplied with the
+            treadmill (6 mm on the TRX1000). Turn both bolts clockwise a quarter turn each, then walk on the
+            belt to check that it no longer slips or hesitates. Repeat only if you have to. The manual says
+            to tighten the rear roller &ldquo;only enough to prevent slippage at the front roller,&rdquo; and
+            to turn the two bolts evenly, or the belt will start tracking to one side.
+          </p>
+          <p>
+            XTERRA&rsquo;s manuals put the next warning in capitals: do not overtighten. Too much tension
+            damages the belt and wears out the roller bearings early. Damage from improper tracking or
+            tension adjustment is not covered by XTERRA&rsquo;s warranty, according to the TRX1000 manual.
+          </p>
+          <h3 class="${h3}">When it is the drive belt</h3>
+          <p>
+            If you tighten the walking belt a lot and it still slips, the manuals say the problem could be
+            the drive belt under the motor cover, which connects the motor to the front roller. A loose drive
+            belt feels much like a loose walking belt. XTERRA says tightening the motor belt should be done
+            by a trained service person. Our guides to a
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">treadmill belt slipping</a>
+            and the
+            <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium">treadmill drive belt</a>
+            explain how to tell the two apart.
+          </p>
+          <h3 class="${h3}">A belt that stops too abruptly</h3>
+          <p>
+            Pulling the safety key should bring the belt to a stop with what the TR75 manual calls a one- to
+            two-step coast. If it stops almost instantly, XTERRA&rsquo;s troubleshooting table blames high
+            belt and deck friction and sends you back to cleaning and lubrication. It is an easy symptom to
+            miss and a good early warning that the deck is dry.
+          </p>`,
+    },
+    {
+      id: 'tracking',
+      heading: 'Belt Drifting to One Side: Tracking an XTERRA',
+      html: `          <p>
+            The TRX1000 manual describes the tracking adjustment step by step, and other models in the range
+            follow the same principle. It is an owner job: XTERRA calls proper belt tracking &ldquo;an owner
+            responsibility common with all treadmills.&rdquo;
+          </p>
+          <ol>
+            <li>Run the belt at 3 mph with nobody on it.</li>
+            <li>Use the supplied Allen wrench on the left rear roller bolt.</li>
+            <li>If the belt is too close to the left side, turn the bolt a quarter turn clockwise. If it is too close to the right side, turn it counter-clockwise.</li>
+            <li>Wait a few minutes. XTERRA warns that a small adjustment can make a dramatic difference that is not visible right away.</li>
+            <li>Repeat in quarter turns until the belt settles in the centre of the deck.</li>
+          </ol>
+          <p>
+            Some drift during use is normal. The manuals note that the belt can move toward one side
+            depending on your gait and whether you favour one leg. The Sport series troubleshooting table
+            suggests that if that walking pattern is natural, you track the belt slightly off-centre, to the
+            side opposite the direction it drifts. Tracking also tends to settle as a new belt beds in, so
+            expect a few small adjustments in the first weeks. Our step-by-step guide on
+            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">how to center a treadmill belt</a>
+            has diagrams that apply to XTERRA&rsquo;s rear-roller layout.
+          </p>
+          <p>
+            Do not try to fix a slipping belt with the tracking bolt, or a drifting belt by tightening both
+            bolts hard. Tension and tracking are adjusted with the same two bolts, which is why the manuals
+            insist on equal turns for tension and single-side quarter turns for tracking.
+          </p>`,
+    },
+    {
+      id: 'lubrication',
+      heading: 'Lubrication and the LUBE Message',
+      html: `          <p>
+            <strong>XTERRA&rsquo;s stated lubrication interval depends on which document you read, so
+            follow the one in your model&rsquo;s manual, and lubricate sooner whenever the deck feels
+            dry.</strong> Every manual we read agrees on the method and on the warning: use only
+            XTERRA-approved lubricant, and failing to clean and lubricate the deck at regular intervals may
+            void the warranty.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Source (XTERRA, read 24 Nov 2026)</th>
+                <th class="${th}">Stated interval</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">TR65, TR75, TR95H and TRX1200 manuals</td><td class="${td}">Every 90 days, after 90 hours of use, or earlier if dry or dirty</td></tr>
+              <tr><td class="${td}">TRX1000 manual, text</td><td class="${td}">Every 80 hours of use, or earlier if dry or dirty</td></tr>
+              <tr><td class="${td}">TRX1000 and TR150 manuals, maintenance chart</td><td class="${td}">Every 40 hours, or sooner if dry</td></tr>
+              <tr><td class="${td}">XTERRA FAQ and Support Center pages</td><td class="${td}">Every 3 months or 180 hours, described as current guidance</td></tr>
+            </tbody>
+          </table></div>
+          <h3 class="${h3}">How to check and apply it</h3>
+          <p>
+            Switch off and unplug. Lift one edge of the belt and reach between the belt and the deck; it
+            should feel slick. If it does not, the TR75 manual describes measuring about 18 inches from the
+            motor cover, reaching under the belt about 4 to 6 inches from one edge and squeezing a thin line
+            of lubricant in an S pattern, then repeating on the other side. Plug back in, switch on and walk
+            at a moderate speed for five minutes to spread it. The TRX1000 manual uses half a bottle per side
+            starting about a foot from the motor cover; amounts vary by model, so follow yours and do not
+            overdo it. XTERRA lists its own <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium" data-autolink>treadmill lubricant</a> on its FAQ page at $11.99 (24 Nov 2026).
+            Our guide to
+            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>
+            covers the general rules.
+          </p>
+          <h3 class="${h3}">Clean before you lubricate</h3>
+          <p>
+            The manuals pair lubrication with cleaning. Slide a cloth longer than the belt is wide between
+            the belt and the deck, hold one end on each side, and drag it up and down the deck. Rotate the
+            belt halfway and repeat until the cloth comes out clean. The TRX1000 manual also asks you to
+            vacuum under the treadmill monthly and under the motor hood every other month, unplugged.
+          </p>
+          <h3 class="${h3}">Clearing the LUBE reminder</h3>
+          <p>
+            Many XTERRA consoles flash &ldquo;LUBE&rdquo; after a set running time. The TRX1200 manual says
+            it first appears at 10 hours and then every 40 hours; pressing any button dismisses it for that
+            session, but it returns each time you start the treadmill until you clear it. On the TRX1000,
+            TRX1200 and TR65, the manuals say to hold the PROGRAM key for 3 seconds in standby mode to reset
+            the message. The TR75 manual instead puts the lube-message reset in its Engineering Mode menu.
+            The message is a reminder, not a fault: check the deck, lubricate if it is dry, then clear it.
+          </p>`,
+    },
+    {
+      id: 'console-speed-incline',
+      heading: 'Console, Speed Sensor and Incline Problems',
+      html: `          <h3 class="${h3}">The console resets or the workout stops</h3>
+          <p>
+            XTERRA&rsquo;s pause behaviour catches people out. On the TRX1000, pressing Stop once pauses
+            the belt and holds your time, distance and calories; pressing Stop a second time resets the
+            console to its start-up screen, and a pause left for five minutes resets it too. The TR75 manual
+            describes a pause setting that can be switched between a 5-minute limit and an indefinite pause.
+            If your workout data keeps vanishing, that is probably the cause, not a fault.
+          </p>
+          <h3 class="${h3}">Speed problems and E1</h3>
+          <p>
+            The speed sensor tells the controller how fast the front roller is turning. When the signal
+            is lost, the belt may surge, stop or refuse to start, and on the TR65 the console shows E1,
+            which its manual defines as a missing speed signal. The manual&rsquo;s fixes are to make sure the
+            sensor is connected and, if it is defective, to replace it. On the TRX1000 family, E1 is described
+            by when it appears, 8 to 10 seconds after pressing Start, with checks of whether the motor runs and
+            of the console-to-controller cable. Our guide to the
+            <a href="/treadmill-speed-sensor/" class="text-[#0F62FE] font-medium">treadmill speed sensor</a>
+            explains how the sensor and magnet sit on the front roller and what to look at with the hood off.
+            If the belt reaches only about 5 mph whatever the display says, that is a voltage problem
+            instead, covered above.
+          </p>
+          <h3 class="${h3}">Incline that will not move or reads wrong</h3>
+          <p>
+            First, check which kind of incline you have. The TRX1000 has manual incline: you lift the deck,
+            pull the pop pin, slide the incline foot to the height you want and reinsert the pin on both
+            sides, before you start the belt. Nothing electrical can fail there. The TRX1200, the Sport
+            series and the Hikers have powered incline, and on the TR65 a stuck or faulty incline shows as E3;
+            the manual points to the cable between the incline motor and the controller and then to the
+            incline motor itself.
+          </p>
+          <p>
+            Some XTERRA manuals also describe a calibration that resets speed and incline limits. On the
+            TR75, the manual says to remove the safety key, hold Start and Speed Up while replacing the key
+            until the display shows &ldquo;Factory settings,&rdquo; and then start the calibration, which
+            runs automatically. It warns that the belt will start without warning, so nobody should stand on
+            it. The TR65 manual gives a different key sequence and tells owners not to change any value other
+            than miles or kilometres. Use only the procedure printed in your own manual. Our guide to a
+            <a href="/treadmill-incline-not-working/" class="text-[#0F62FE] font-medium">treadmill incline not working</a>
+            covers the mechanical checks.
+          </p>
+          <h3 class="${h3}">Keys that do not respond</h3>
+          <p>
+            The TR75 manual describes an Engineering Mode, reached by holding Start, Stop and Enter for about
+            5 seconds, with a key test and a display test. If one button seems dead, the key test tells you
+            whether the console is registering it. The same menu holds a child lock, which locks the keypad
+            until the lock buttons are held for 3 seconds, so a keypad that ignores you may simply be
+            locked. Other models may not have this menu; check your manual. The manuals also ask for light
+            finger pressure on the keys, which are &ldquo;precision set.&rdquo;
+          </p>`,
+    },
+    {
+      id: 'support',
+      heading: 'When to Call XTERRA and What to Have Ready',
+      html: `          <p>
+            Call when an error code survives a clean power cycle and the owner checks, when the motor,
+            controller or drive belt is involved, when anything smells hot, or when the treadmill trips a
+            breaker that has nothing else on its circuit. XTERRA&rsquo;s contact page (24 Nov 2026) lists
+            one number, 870-336-4286, Monday to Friday 8:00 AM to 5:00 PM, for warranty and parts as well as
+            sales, plus a contact form that takes up to three photos and a chat assistant. Older manuals print
+            other numbers, including 800-258-8511 and a service line, 870-935-1107; use the one on the current
+            website first.
+          </p>
+          <ul>
+            <li><strong>Model and serial number.</strong> XTERRA&rsquo;s FAQ says the serial number is on the frame near the power cord and is 16 characters long.</li>
+            <li><strong>Proof of purchase.</strong> The warranty runs from the date of retail sale, so keep the receipt. XTERRA&rsquo;s site asks owners to register at its Register Your Product page.</li>
+            <li><strong>The exact code and when it appears.</strong> &ldquo;E1 eight seconds after Start&rdquo; is more useful than &ldquo;E1.&rdquo;</li>
+            <li><strong>A short video.</strong> Belt noise, slipping and odd behaviour are far easier to diagnose on video.</li>
+            <li><strong>What you have already done.</strong> Power cycle, circuit, lubrication and adjustments.</li>
+          </ul>
+          <h3 class="${h3}">What the warranty does not cover</h3>
+          <p>
+            XTERRA&rsquo;s manuals list several owner responsibilities that matter when you claim. The
+            TRX1000 manual says damage from improper tracking or tension adjustment is not covered, that
+            failing to clean and lubricate may void the warranty, and that the owner is responsible for a
+            proper power supply and house wiring. The manuals also say low-voltage problems are not covered.
+            The cheaper Compact models carry short parts and labour terms (the TRX1000 manual lists 90 days
+            on parts and labour and one year on the motor), so check where you stand before agreeing to a
+            paid visit. Our
+            <a href="/xterra-treadmills/" class="text-[#0F62FE] font-medium">XTERRA treadmills buyer&rsquo;s guide</a>
+            lists the warranty on each current model, and our
+            <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>
+            helps decide whether an out-of-warranty fix is worth it.
+          </p>
+          <h3 class="${h3}">Finding your manual</h3>
+          <p>
+            XTERRA hosts owner&rsquo;s manuals for current and older models, including the TR150, TR65,
+            TR75, TR85, TR95H, TRX1000, TRX1200 and TRX1400, on its Manuals &amp; Documents page. The
+            TRX1200 and TR95H manuals put the serial number sticker on the frame near the power switch,
+            and the manuals have a page to record it with your purchase date and dealer. Download the manual before you start: every code, interval and key sequence in this guide
+            comes from those documents, and they differ enough between models to matter.
+          </p>`,
+    },
+    {
+      id: 'prevention',
+      heading: 'A Simple XTERRA Maintenance Routine',
+      html: `          <p>
+            Most of the faults above trace back to friction, dirt and power. The manuals&rsquo; maintenance
+            schedule, condensed, prevents most of them.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">How often</th>
+                <th class="${th}">Task</th>
+                <th class="${th}">Why</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">After each use</td><td class="${td}">Wipe sweat off the console and frame</td><td class="${td}">Protects the keys and display</td></tr>
+              <tr><td class="${td}">Monthly</td><td class="${td}">Vacuum under the treadmill; check tracking</td><td class="${td}">Keeps dust out of the motor and the belt centred</td></tr>
+              <tr><td class="${td}">Every other month</td><td class="${td}">Wipe the deck edges; vacuum under the motor hood, unplugged</td><td class="${td}">Dust and pet hair raise friction and heat</td></tr>
+              <tr><td class="${td}">Per your manual</td><td class="${td}">Clean and lubricate the deck</td><td class="${td}">Prevents slipping, E2 codes and breaker trips</td></tr>
+              <tr><td class="${td}">Whenever moved</td><td class="${td}">Check level, the power cord&rsquo;s route and the outlet</td><td class="${td}">Avoids cord damage and shared circuits</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Two placement rules from the manuals also prevent trouble. Keep the cord away from the incline
+            mechanism and transport wheels, and leave clear space around the machine; the TR75 manual
+            recommends at least 20 inches at the front and sides and 6 feet behind. Do not run the treadmill
+            on deep, plush carpet, which the TRX1000 manual says can damage both carpet and machine, and
+            unplug it during electrical storms, as the Sport manuals advise.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'Why is my XTERRA treadmill not turning on?',
+      a: `Check the safety key first, then the power switch and the circuit breaker on the front of the base, which you push in until it locks. Then check the wall outlet and your breaker panel. XTERRA's manuals ask for a grounded 120-volt, 15-amp outlet with no other appliances on the circuit.`,
+    },
+    {
+      q: 'What does E1 mean on an XTERRA treadmill?',
+      a: `It depends on the model. On the TR65, E1 means a missing speed signal, so check the speed sensor connection. On the TRX1000, TRX1200 and TR150, E1 appears 8 to 10 seconds after pressing Start, and the manual says to check whether the motor runs and the cable between the console and controller.`,
+    },
+    {
+      q: 'How do I reset my XTERRA treadmill?',
+      a: `Remove the safety key, turn the power switch off, unplug for about a minute, then plug in, switch on and replace the key. If it is completely dead, push in the circuit breaker on the front of the base. Pressing Stop twice also returns the console to its start-up screen.`,
+    },
+    {
+      q: 'How do I get rid of the LUBE message on my XTERRA?',
+      a: `Check the deck and lubricate it if it is dry. Then, on the TRX1000, TRX1200 and TR65, hold the PROGRAM key for 3 seconds in standby mode to clear the message. Some models, such as the TR75, reset it from the Engineering Mode menu instead.`,
+    },
+    {
+      q: 'How often should I lubricate an XTERRA treadmill?',
+      a: `Follow your model's manual. The TR65, TR75, TR95H and TRX1200 manuals say every 90 days or 90 hours, the TRX1000 manual says 80 hours, and XTERRA's FAQ says every 3 months or 180 hours. Lubricate sooner if the deck feels dry, and use only XTERRA-approved lubricant.`,
+    },
+    {
+      q: 'Why does my XTERRA treadmill keep tripping the breaker?',
+      a: `Usually because something else shares the circuit, or because the deck is dry and the motor is working too hard. XTERRA's manuals say AFCI and GFCI breakers can trip from the treadmill's inrush current and recommend making the treadmill the only device on the circuit. Clean and lubricate the deck as well.`,
+    },
+    {
+      q: 'What is the XTERRA customer service number?',
+      a: `XTERRA's website listed 870-336-4286, Monday to Friday 8:00 AM to 5:00 PM, on 24 November 2026. Have your model, the 16-character serial number from the frame near the power cord, and your proof of purchase ready.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Troubleshooting an XTERRA',
+  mistakesIntro: 'Most XTERRA faults are simple. These four make them take longer or cost more.',
+  mistakes: [
+    {
+      title: 'Using another model’s error-code table',
+      body: 'E1 and E6 mean different things on a TR65, a TRX1000 and a TR95H. Acting on the wrong table can mean replacing a good controller. Look the code up in your own model’s manual and note when it appears.',
+    },
+    {
+      title: 'Tightening the belt before lubricating',
+      body: 'A dry deck is the most common cause of slipping, E2 codes and breaker trips. Cranking the tension bolts on a dry deck wears the bearings, and XTERRA does not cover damage from improper tension. Clean and lubricate first, then a quarter turn.',
+    },
+    {
+      title: 'Running it on a shared circuit or an extension cord',
+      body: 'XTERRA’s manuals say the treadmill should be the only appliance on its circuit and warn against extension cords. A power strip or a shared kitchen circuit causes nuisance trips and low voltage, which the warranty does not cover.',
+    },
+    {
+      title: 'Clearing LUBE without checking the deck',
+      body: 'The LUBE reminder is easy to dismiss with a button press, and it will come back each time you start the treadmill. Clearing it without checking the deck lets friction build until it shows up as slipping or an E2 code.',
+    },
+  ],
+  relatedHeading: 'Related Fault Diagnosis Guides',
+  related: [
+    {
+      kicker: 'All brands',
+      title: 'Treadmill Troubleshooting by Symptom',
+      blurb: 'Every common treadmill fault, diagnosed in the order worth checking.',
+      url: '/treadmill-troubleshooting/',
+    },
+    {
+      kicker: 'Brand guide',
+      title: 'XTERRA Treadmills: The Current Range',
+      blurb: 'The TRX1000 to the TR95H Hiker, with prices and warranties.',
+      url: '/xterra-treadmills/',
+    },
+    {
+      kicker: 'Power',
+      title: 'Treadmill Trips the Breaker',
+      blurb: 'Shared circuits, AFCI/GFCI outlets, dry decks and when it is the motor.',
+      url: '/treadmill-trips-breaker/',
+    },
+    {
+      kicker: 'Belt',
+      title: 'Treadmill Turns On but the Belt Won’t Move',
+      blurb: 'Safety key, drive belt, controller and motor, checked in order.',
+      url: '/treadmill-turns-on-but-belt-wont-move/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'Sole Treadmill Troubleshooting',
+      blurb: 'Safety key and front breaker, lubrication, belt tracking and error codes.',
+      url: '/sole-treadmill-troubleshooting/',
+    },
+    {
+      kicker: 'Maintenance',
+      title: 'How Often to Lubricate a Treadmill',
+      blurb: 'Intervals, the right lubricant and how to tell when the deck is dry.',
+      url: '/how-often-to-lubricate-treadmill/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">Seat the safety key, check the front breaker and give the treadmill its
+            own grounded circuit, then do a clean power cycle.</strong> Most XTERRA problems end there. If a
+            code appears, look it up in your own model&rsquo;s manual, because E1 and E6 mean different
+            things on different XTERRAs.`,
+    `For belt problems, clean and lubricate before you tighten, turn the bolts a quarter at a time, and
+            track the belt at 3 mph. Call XTERRA for the motor, controller or drive belt, or for anything that
+            smells hot or trips a circuit it has to itself. Our
+            <a href="/xterra-treadmills/" class="text-[#5AA9FF] font-bold no-underline">XTERRA treadmills guide</a>
+            lists each model&rsquo;s warranty, and our
+            <a href="/treadmill-troubleshooting/" class="text-[#5AA9FF] font-bold no-underline">troubleshooting guide</a>
+            covers every brand.`,
+  ],
+};

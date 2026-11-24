@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Bowflex Treadmill 10',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 24, 2026',
   published: '2026-10-20',
-  modified: '2026-11-16',
+  modified: '2026-11-24',
   socialProof: '1.6k',
   h1: ['Bowflex Treadmill 10', 'Review'],
   standfirst:
@@ -567,6 +567,12 @@ export default {
       title: 'Used Treadmill Buying Checklist',
       blurb: 'What to inspect, run and ask before you pay for any second-hand treadmill.',
       url: '/used-treadmill-buying-checklist/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a Bowflex Treadmill Cost?',
+      blurb: 'Every Bowflex treadmill, delivery and JRNY on top.',
+      url: '/how-much-does-a-bowflex-treadmill-cost/',
     },
   ],
   bottomLine: [

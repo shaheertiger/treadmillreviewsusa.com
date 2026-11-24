@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Bowflex T6 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 24, 2026',
   published: '2026-10-08',
-  modified: '2026-11-15',
+  modified: '2026-11-24',
   socialProof: '1.9k',
   h1: ['Bowflex T6', 'Treadmill Review'],
   standfirst:
@@ -632,6 +632,18 @@ export default {
       title: "Nautilus Treadmills",
       blurb: "No longer sold: the T614, T616 and T618 figures, the 2022 recall with no remedy left, and the Bowflex.",
       url: '/nautilus-treadmills/',
+    },
+    {
+      kicker: 'Deals',
+      title: 'Bowflex Treadmill Black Friday Deals',
+      blurb: 'T6, T9 and T16 sale prices, checked against October.',
+      url: '/bowflex-treadmill-black-friday-deals/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a Bowflex Treadmill Cost?',
+      blurb: 'Every Bowflex treadmill, delivery and JRNY on top.',
+      url: '/how-much-does-a-bowflex-treadmill-cost/',
     },
   ],
   bottomLine: [

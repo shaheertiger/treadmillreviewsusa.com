@@ -764,6 +764,20 @@ export const SECTIONS: Section[] = [
             url: '/how-much-does-a-curved-treadmill-cost/',
           },
           {
+            title: 'How Much Does a Treadmill Desk Cost?',
+            description:
+              'Walking pad plus standing desk from about $215, or an integrated treadmill desk from $2,048.',
+            badge: 'Treadmill desks',
+            url: '/how-much-does-a-treadmill-desk-cost/',
+          },
+          {
+            title: 'How Much Does a Bowflex Treadmill Cost?',
+            description:
+              'T6, T9 and T16 prices, delivery tiers, JRNY on top, and five-year cost.',
+            badge: 'Bowflex',
+            url: '/how-much-does-a-bowflex-treadmill-cost/',
+          },
+          {
             title: 'How Much Does a Walking Pad Cost?',
             description:
               'Prices by type, from $130 flat pads to $800 handrail pads, what more money buys, and the costs after checkout.',
@@ -1070,6 +1084,20 @@ export const SECTIONS: Section[] = [
               "Every ProForm treadmill's Amazon price, which beat October, and iFIT on top.",
             badge: 'ProForm',
             url: '/proform-black-friday-deals/',
+          },
+          {
+            title: 'Peloton Tread Black Friday Deals',
+            description:
+              'Tread Flex, Tread Vision and Tread+ Vision sale prices, against earlier dated prices.',
+            badge: 'Peloton',
+            url: '/peloton-tread-black-friday-deals/',
+          },
+          {
+            title: 'Bowflex Treadmill Black Friday Deals',
+            description:
+              'T6, T9 and T16 sale prices to 26-27 Nov, and which match October lows.',
+            badge: 'Bowflex',
+            url: '/bowflex-treadmill-black-friday-deals/',
           },
         ],
       },
@@ -2806,6 +2834,20 @@ export const SECTIONS: Section[] = [
               'Resetting the console, iFIT screens that freeze, belt and incline faults, and what to have ready for support.',
             badge: 'ProForm',
             url: '/proform-treadmill-troubleshooting/',
+          },
+          {
+            title: 'Peloton Tread Troubleshooting',
+            description:
+              'Safety key, outlet, restart, frozen screen, Tread Lock and belt fixes from Peloton support.',
+            badge: 'Peloton',
+            url: '/peloton-tread-troubleshooting/',
+          },
+          {
+            title: 'XTERRA Treadmill Troubleshooting',
+            description:
+              'Breaker, safety key, E0-E7 codes from XTERRA manuals, belt slip and LUBE reminders.',
+            badge: 'XTERRA',
+            url: '/xterra-treadmill-troubleshooting/',
           },
           {
             title: 'NordicTrack Treadmill Troubleshooting',

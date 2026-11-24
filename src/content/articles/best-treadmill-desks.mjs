@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmill Desks',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 24, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-24',
   socialProof: '1.9k',
   h1: ['Best Treadmill Desks', 'Sets and Desks for a Pad'],
   standfirst:
@@ -537,6 +537,12 @@ export default {
       title: "Best Treadmill Laptop Holders",
       blurb: "Laptop boards, pole trays and phone clamps that strap to a treadmill, how to measure the rails, and when.",
       url: '/best-treadmill-laptop-holders/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a Treadmill Desk Cost?',
+      blurb: 'Pad plus desk, or an integrated treadmill desk.',
+      url: '/how-much-does-a-treadmill-desk-cost/',
     },
   ],
   bottomLine: [

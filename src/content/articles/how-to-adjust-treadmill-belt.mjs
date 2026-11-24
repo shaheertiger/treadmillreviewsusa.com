@@ -1,3 +1,6 @@
+const th = 'text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4';
+const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
+
 export default {
   slug: 'how-to-adjust-treadmill-belt',
   title: 'How to Tighten a Treadmill Belt: Quarter Turns, Lift Test',
@@ -6,7 +9,7 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Maintenance',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 24, 2026',
   published: '2026-10-06',
   socialProof: '2.4k',
   h1: ['How to Tighten', 'a Treadmill Belt'],
@@ -94,7 +97,7 @@ export default {
             only one of them is a loose belt.
           </p>
           <p>
-            The other — in our experience the more common one — is a dry deck. As the lubricant
+            The other — and very often the real one — is a dry deck. As the lubricant
             between the belt and the deck wears away, friction rises until the front roller can
             no longer reliably drag the belt across the deck under load. It feels exactly like
             slack. Tightening does make the symptom go away, because a tighter belt gives the
@@ -198,6 +201,55 @@ export default {
             Write the number down. It is your starting point, and checking it again after each
             round of tightening is what stops you going past correct. There is nothing underfoot
             that tells you a belt is now too tight; the lift test is the only upper limit you have.
+          </p>`,
+    },
+    {
+      id: 'reading-the-lift-test',
+      heading: 'Reading the Lift Test in Inches and Centimetres',
+      html: `          <p>
+            The lift test only works if you read it the same way each time, and a surprising
+            number of people searching how tight a belt can go are really asking how to read the
+            number they got. Here is the same rule laid out by reading, with metric equivalents
+            for anyone whose tape measure or manual works in centimetres. The conversions are
+            simple arithmetic (one inch is 2.54 cm) rounded to the nearest half centimetre.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Lift at mid-deck</th>
+                <th class="${th}">Approx. in cm</th>
+                <th class="${th}">What it means</th>
+                <th class="${th}">What to do</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">Under 2 in.</td><td class="${td}">Under 5 cm</td><td class="${td}">Over-tight</td><td class="${td}">Back both bolts off a quarter turn, equally, and re-test</td></tr>
+              <tr><td class="${td}">2 to 3 in.</td><td class="${td}">About 5 to 7.5 cm</td><td class="${td}">Correct range for most home machines</td><td class="${td}">Leave tension alone; if it still slips, look elsewhere</td></tr>
+              <tr><td class="${td}">3 to 4 in.</td><td class="${td}">About 7.5 to 10 cm</td><td class="${td}">On the slack side</td><td class="${td}">Tighten only if it slips after lubricating</td></tr>
+              <tr><td class="${td}">Over 4 in.</td><td class="${td}">Over 10 cm</td><td class="${td}">Slack</td><td class="${td}">Lubricate check, then quarter turns on both bolts</td></tr>
+              <tr><td class="${td}">Different left and right</td><td class="${td}">—</td><td class="${td}">Rear roller not square</td><td class="${td}">A tracking job: one bolt only</td></tr>
+              <tr><td class="${td}">In range but still slipping</td><td class="${td}">—</td><td class="${td}">Not a tension fault</td><td class="${td}">Stop tightening; check deck, belt and drive</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Three habits make the reading trustworthy. Take it at the same point every time —
+            the middle of the deck's length, at the belt edge — because the gap shrinks as you move
+            toward either roller. Lift with the same moderate effort each time: you are lifting
+            the belt until it stops rising easily, not seeing how far you can force it. And hold a
+            ruler or tape upright against the side rail rather than estimating by eye, because the
+            difference between "about two inches" and "about an inch and a half" is the
+            difference between correct and over-tight.
+          </p>
+          <p>
+            People also ask how tight they can make a belt before it does damage, as if there were
+            a safe maximum somewhere beyond the correct setting. There is not a useful one. The
+            bottom of the correct range is the limit; anything tighter is already adding load to
+            the bearings, belt and motor, and the harm is gradual rather than sudden, so nothing
+            warns you. The end of the adjuster bolts' travel is not a limit either — it is a sign
+            the belt has stretched, and the
+            <a href="#stretched-or-worn" class="text-[#0F62FE] font-medium">section on adjustment that will not hold</a>
+            covers what that means. If your manual gives its own gap figure or a bolt torque, that
+            figure replaces this table for your machine.
           </p>`,
     },
     {
@@ -335,6 +387,44 @@ export default {
           </p>`,
     },
     {
+      id: 'speed-after-adjusting',
+      heading: 'Does Adjusting the Belt Change the Speed Reading?',
+      html: `          <p>
+            Not directly, but fixing slip can change how honest the console is. On most home
+            treadmills the speed shown on the console comes from a sensor at the front roller,
+            which counts how fast the roller turns. It does not watch the running belt itself.
+            So when a belt slips, the roller keeps turning at the set speed while the belt under
+            your feet briefly slows, and the console carries on reporting the roller's speed.
+            A slipping belt therefore tends to make a treadmill read slightly fast under load.
+          </p>
+          <p>
+            Turning the rear bolts does not touch the sensor, and a correct tension adjustment does
+            not need any recalibration afterwards. What it can do is remove the slip that was
+            making the readout optimistic, so a machine that seemed to cover distance easily may
+            feel a little harder at the same displayed speed once the belt is gripping properly.
+            That is the belt now doing what the console says, not a new fault.
+          </p>
+          <p>
+            If you want to know whether the speed is accurate after an adjustment, check it rather
+            than guessing: mark the belt, count its revolutions over a timed period and work out
+            the real speed from the belt's loop length. Our guide to
+            <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">checking whether your treadmill speed is accurate</a>
+            sets out that method and the arithmetic, and
+            <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration</a>
+            covers what to do if it is off. Do the check with the belt properly tensioned and the
+            deck lubricated; calibrating a machine that is still slipping just builds the slip
+            into the numbers.
+          </p>
+          <p>
+            One thing the rear bolts cannot fix: a speed reading that jumps, drops to zero or
+            surges while the belt runs steadily. That points at the speed sensor, its magnet or
+            its wiring under the motor hood, not at belt tension. Sensor gaps and positions vary
+            by model, so check your manual before moving anything, and see our
+            <a href="/treadmill-speed-sensor/" class="text-[#0F62FE] font-medium">speed sensor guide</a>
+            for the symptoms and tests.
+          </p>`,
+    },
+    {
       id: 'over-tightening',
       heading: 'What Over-Tightening Does',
       html: `          <p>
@@ -421,6 +511,48 @@ export default {
           </p>`,
     },
     {
+      id: 'keep-your-setting',
+      heading: 'Keeping Your Setting When You Lubricate or Clean',
+      html: `          <p>
+            Once tension and tracking are right, the easiest way to lose them is during other
+            maintenance. Lubricating the deck or cleaning under the belt sometimes means backing
+            the rear bolts off to get enough slack to reach underneath, and that is where a
+            correctly set belt quietly becomes a slipping or wandering one. The fix is to treat
+            your adjustment as a setting you can record and restore, not a feel you have to
+            rediscover.
+          </p>
+          <p>
+            <strong>Try without loosening first.</strong> On many machines there is enough give to
+            lift the belt edge at mid-deck and reach the centre of the deck without touching the
+            bolts at all — the same lift you use for the lift test. If you can lubricate or wipe
+            underneath that way, your tension is never disturbed. The method itself is in our
+            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">guide to lubricating a treadmill</a>;
+            this section is only about protecting the adjustment while you do it.
+          </p>
+          <p>
+            <strong>If you must loosen, record a reference first.</strong> Before turning anything,
+            note how far each bolt head sits from a fixed point — the end cap or the frame — or
+            how many threads are showing, and write it down along with your lift-test reading. Then
+            loosen both bolts by the same counted number of quarter turns. Afterwards, tighten each
+            back by exactly the count you took off, so each side returns to where it was. Because
+            you turned both sides the same, the roller stays square and tracking should come back
+            with it.
+          </p>
+          <p>
+            <strong>Then confirm, do not assume.</strong> Run the belt empty at about 3 mph to
+            spread the lubricant and watch tracking for a minute, then repeat the lift test and the
+            foot-plant test. Fresh silicone can make a belt feel briefly slippery until it has
+            spread, so give it a few minutes of walking before you decide it needs more tension.
+            If it does, it is a quarter turn each side, equally, exactly as in the step-by-step
+            section above.
+          </p>
+          <p>
+            The same record is useful whenever the machine is moved or the belt is lifted for any
+            reason. A note of your bolt positions and lift reading, kept with the hex key, turns
+            the next adjustment from a fifteen-minute job into a two-minute check.
+          </p>`,
+    },
+    {
       id: 'verdict',
       heading: 'The Bottom Line on Adjusting a Treadmill Belt',
       html: `          <p>
@@ -465,6 +597,10 @@ export default {
     {
       q: 'Do you adjust treadmill belt tension or tracking first?',
       a: `Tension first. A slack belt will not hold a tracking adjustment, and any tension change disturbs tracking slightly. Set tension with both bolts equally, then correct tracking with one bolt at a time, and re-check the lift test at the end.`,
+    },
+    {
+      q: 'How tight can you tighten a treadmill belt without damaging it?',
+      a: `Only to the bottom of the correct range: you should still be able to lift the belt about 2 inches (roughly 5 cm) off the deck at the centre with the machine unplugged. Anything tighter adds load to the bearings, belt and motor gradually, with no warning underfoot. If your manual gives its own gap or bolt torque, follow that instead.`,
     },
   ],
   mistakesHeading: 'Common Mistakes When Adjusting a Treadmill Belt',
@@ -523,5 +659,5 @@ export default {
             <a href="/how-to-center-treadmill-belt/" class="text-[#5AA9FF] font-bold no-underline">Our centring guide</a>
             covers what to do if it will not stay put.`,
   ],
-  modified: '2026-11-16',
+  modified: '2026-11-24',
 };
