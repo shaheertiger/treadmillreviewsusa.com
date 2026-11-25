@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmills Under $500',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-09-08',
-  modified: '2026-11-15',
+  modified: '2026-11-25',
   socialProof: '6.2k',
   h1: ['Best Treadmills', 'Under $500'],
   standfirst:
@@ -493,6 +493,12 @@ export default {
       title: 'Buying a Used Treadmill',
       blurb: 'Fifteen checks that separate a bargain from a dead controller board.',
       url: '/used-treadmill-buying-checklist/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'SereneLife Treadmill Reviews',
+      blurb: 'Budget folding treadmills and pads on Amazon.',
+      url: '/serenelife-treadmills/',
     },
   ],
   bottomLine: [

@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-11-21',
+  modified: '2026-11-25',
   h1: ['Superun Treadmill Reviews:', 'Walking Pads, Specs, Warranty'],
   standfirst:
     'Superun is a real, low-cost walking pad brand, not a scam, and its 6% incline pad at about $94 on Amazon is a fair buy for slow desk walking. Expect a 12-month warranty, listings that contradict each other on incline and capacity, and a brand that is cheap rather than well documented.',
@@ -567,6 +568,12 @@ export default {
       title: 'Best Walking Pads',
       blurb: 'Where Superun sits against the whole walking pad field.',
       url: '/best-walking-pads/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'Cybergoing Walking Pad Review',
+      blurb: 'T10, T12 and T16, and the Bosch motor claim.',
+      url: '/cybergoing-walking-pad/',
     },
   ],
   bottomLine: [

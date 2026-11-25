@@ -6,7 +6,7 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Maintenance',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-10-08',
   socialProof: '2.2k',
   h1: ['Treadmill Repair Guide:', 'What to Fix Yourself, What to Pay For'],
@@ -581,6 +581,12 @@ export default {
       blurb: `How to find your model and serial number, OEM against aftermarket, each brand's parts route, and when a.`,
       url: '/treadmill-parts/',
     },
+    {
+      kicker: 'Repairs',
+      title: 'Treadmill Motor Replacement Cost',
+      blurb: 'Motor prices by brand, labour, and when to replace.',
+      url: '/treadmill-motor-replacement-cost/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Diagnose the component before anyone is paid.</strong> Lubricate
@@ -594,5 +600,5 @@ export default {
             <a href="/treadmill-warranty-guide/" class="text-[#5AA9FF] font-bold no-underline">warranty guide</a>
             explains what is usually covered.`,
   ],
-  modified: '2026-11-16',
+  modified: '2026-11-25',
 };

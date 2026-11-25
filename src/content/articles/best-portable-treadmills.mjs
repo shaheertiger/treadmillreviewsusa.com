@@ -6,7 +6,7 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-10-18',
   socialProof: '2.2k',
   h1: ['Best Portable Treadmills', 'Sorted by How They Move'],
@@ -731,6 +731,12 @@ export default {
       blurb: 'Five walking pads ranked by checked footprint and weight.',
       url: '/best-mini-treadmills/',
     },
+    {
+      kicker: 'Safety',
+      title: 'Sperax Walking Pad Recall?',
+      blurb: 'The CPSC warning on four Sperax models, explained.',
+      url: '/sperax-walking-pad-recall/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">For most people, the best portable treadmill is the WalkingPad Z1</strong>:
@@ -742,5 +748,5 @@ export default {
             will travel, not by the word on the listing. Before the first move, read our guide to
             <a href="/how-to-move-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">moving a treadmill</a>.`,
   ],
-  modified: '2026-11-16',
+  modified: '2026-11-25',
 };

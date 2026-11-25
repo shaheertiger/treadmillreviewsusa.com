@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-25',
   socialProof: '2.2k',
   h1: ['Where to Buy', 'a Used Treadmill'],
   standfirst:
@@ -410,6 +410,12 @@ export default {
       title: "NordicTrack C950i",
       blurb: "Discontinued: what is known about it, what iFIT's 2023 cut-off means, parts, buying used, and what.",
       url: '/nordictrack-c950i-treadmill/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a Used Treadmill Cost?',
+      blurb: 'Dated used and refurbished prices against new.',
+      url: '/how-much-does-a-used-treadmill-cost/',
     },
   ],
   bottomLine: [

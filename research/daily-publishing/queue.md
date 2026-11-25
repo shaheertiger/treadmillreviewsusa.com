@@ -54,10 +54,10 @@ for it), "how to tighten a treadmill belt" (720; /how-to-adjust-treadmill-belt/)
 - [x] 2026-11-24 · `how-much-does-a-bowflex-treadmill-cost` — How Much Does a Bowflex Treadmill Cost? (2026) — /price/ — pillar /bowflex/
 - [x] 2026-11-24 · `xterra-treadmill-troubleshooting` — XTERRA Treadmill Troubleshooting: Power, Belt and Console
 - [x] 2026-11-23 · `how-much-does-a-horizon-treadmill-cost` — How Much Does a Horizon Treadmill Cost? (2026) — /price/ — pillar /horizon-fitness/
-- [ ] `sperax-walking-pad-recall` — Sperax Walking Pad Recall: What Owners Should Do (verify every fact on cpsc.gov first; skip if it cannot be verified)
-- [ ] `treadmill-motor-replacement-cost` — Treadmill Motor Replacement Cost: Parts, Labor, Worth It? — /problems/ — pillar /treadmill-repair-guide/ (check the repair guide does not already answer this search)
+- [x] 2026-11-25 · `sperax-walking-pad-recall` (CPSC warning, not a recall; title says so) — Sperax Walking Pad Recall: What Owners Should Do (verify every fact on cpsc.gov first; skip if it cannot be verified)
+- [x] 2026-11-25 · `treadmill-motor-replacement-cost` — Treadmill Motor Replacement Cost: Parts, Labor, Worth It? — /problems/ — pillar /treadmill-repair-guide/ (check the repair guide does not already answer this search)
 - [x] 2026-11-23 · `weslo-treadmill-troubleshooting` — Weslo Treadmill Troubleshooting: Won't Start, Belt and Speed (picked over Schwinn: Bing shows ~15 Weslo impressions incl. "treadmill weslo cadence older model" 4 imp/1 click vs 3 for Schwinn; steps from a Weslo owner's manual)
-- [ ] `schwinn-treadmill-troubleshooting` — Schwinn Treadmill Troubleshooting: Common Faults and Fixes
+- [x] 2026-11-25 · `schwinn-treadmill-troubleshooting` — Schwinn Treadmill Troubleshooting: Common Faults and Fixes
 - [ ] `what-speed-should-i-run-on-a-treadmill` — What Speed Should I Run on a Treadmill? Beginner to Fast — /training/ — pillar /what-speed-should-i-walk-on-a-treadmill/ (speed pages convert at 21% CTR)
 - [ ] `how-to-clean-a-walking-pad` — How to Clean a Walking Pad: Belt, Deck and Under the Belt
 - [ ] `treadmill-speed-fluctuating` — Treadmill Speeds Up or Slows Down on Its Own: Causes
@@ -67,7 +67,7 @@ for it), "how to tighten a treadmill belt" (720; /how-to-adjust-treadmill-belt/)
 
 ### Added 2026-11-24 (refill at 11 open: cost/price 6.1x and fix 1.5x are the winning traffic-lane types; each slug checked unused today)
 
-- [ ] `how-much-does-a-used-treadmill-cost` — How Much Does a Used Treadmill Cost? (2026): Prices by Brand and Age — /price/ — pillar /new-vs-used-treadmill/
+- [x] 2026-11-25 · `how-much-does-a-used-treadmill-cost` — How Much Does a Used Treadmill Cost? (2026): Prices by Brand and Age — /price/ — pillar /new-vs-used-treadmill/
 - [ ] `treadmill-grinding-noise` — Treadmill Grinding Noise: Rollers, Bearings or Motor? — /problems/ — siblings: clicking, humming, thumping
 - [ ] `how-much-does-a-lifespan-treadmill-cost` — How Much Does a LifeSpan Treadmill Cost? (2026): Every Model — /price/ — pillar /lifespan-treadmills/ (LifeSpan Shopify store works)
 - [ ] `walking-pad-making-noise` — Walking Pad Making Noise? Squeak, Click and Hum Fixes — /problems/ — sibling /walking-pad-not-working/
@@ -81,7 +81,7 @@ for it), "how to tighten a treadmill belt" (720; /how-to-adjust-treadmill-belt/)
 - [ ] `lifespan-treadmill-troubleshooting` — LifeSpan Treadmill Troubleshooting: Desk Treadmill Fixes — /problems/ — pillar /lifespan-treadmills/
 - [ ] `how-much-does-a-woodway-treadmill-cost` — How Much Does a Woodway Treadmill Cost? (2026) — /price/ — pillar /woodway-treadmills/ (check overlap with curved cost page)
 - [ ] `urevo-walking-pad-troubleshooting` — UREVO Walking Pad Troubleshooting: Remote, Belt and App — /problems/ — pillar /urevo-treadmills/ (maker manuals only)
-- [ ] `how-much-does-a-treadmill-motor-cost` — How Much Does a Treadmill Motor Cost? Replacement Prices — /price/ — link /how-long-do-treadmill-motors-last/, /ac-vs-dc-treadmill-motor/
+- [~] skipped 2026-11-25: duplicate of /treadmill-motor-replacement-cost/ · `how-much-does-a-treadmill-motor-cost` — How Much Does a Treadmill Motor Cost? Replacement Prices — /price/ — link /how-long-do-treadmill-motors-last/, /ac-vs-dc-treadmill-motor/
 - [ ] `precor-treadmill-troubleshooting` — Precor Treadmill Troubleshooting: Home and Commercial — /problems/ — pillar /precor-treadmills/
 
 ## Parked: do not write unless a future export shows this type winning

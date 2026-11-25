@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'How Long Do Treadmill Motors Last?',
   kicker: 'Ownership',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-09-08',
-  modified: '2026-11-16',
+  modified: '2026-11-25',
   socialProof: '3.0k',
   h1: ['How Long Do', 'Treadmill Motors Last?'],
   standfirst:
@@ -385,6 +385,12 @@ export default {
       title: 'Treadmill Troubleshooting',
       blurb: 'Working out whether it is the motor, the board, or friction.',
       url: '/treadmill-troubleshooting/',
+    },
+    {
+      kicker: 'Repairs',
+      title: 'Treadmill Motor Replacement Cost',
+      blurb: 'Motor prices by brand, labour, and when to replace.',
+      url: '/treadmill-motor-replacement-cost/',
     },
   ],
   bottomLine: [

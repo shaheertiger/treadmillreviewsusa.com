@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-25',
   socialProof: '3.1k',
   h1: ['Best Treadmills', 'Under $300'],
   standfirst:
@@ -500,6 +500,12 @@ export default {
       title: "Best Treadmills Under $200",
       blurb: "Five treadmills under $200 on Amazon, all walking pads, 2-in-1s or manual machines, plus what $100 and…",
       url: '/best-treadmills-under-200/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'SereneLife Treadmill Reviews',
+      blurb: 'Budget folding treadmills and pads on Amazon.',
+      url: '/serenelife-treadmills/',
     },
   ],
   bottomLine: [

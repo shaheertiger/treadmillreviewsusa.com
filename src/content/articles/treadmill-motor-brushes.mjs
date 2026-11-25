@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Repair',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-25',
   socialProof: '1.3k',
   h1: ['Treadmill', 'Motor Brushes'],
   standfirst:
@@ -444,6 +444,12 @@ export default {
       title: 'Treadmill Shuts Off by Itself',
       blurb: 'Safety key, thermal cut-outs, brushes and the board.',
       url: '/treadmill-shuts-off-by-itself/',
+    },
+    {
+      kicker: 'Repairs',
+      title: 'Treadmill Motor Replacement Cost',
+      blurb: 'Motor prices by brand, labour, and when to replace.',
+      url: '/treadmill-motor-replacement-cost/',
     },
   ],
   bottomLine: [

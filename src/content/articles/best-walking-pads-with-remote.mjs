@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-11-24',
-  modified: '2026-11-24',
+  modified: '2026-11-25',
   socialProof: '1.2k',
   h1: ['Best Walking Pads With a Remote', 'and What to Do If It Goes Missing'],
   standfirst:
@@ -569,6 +569,12 @@ export default {
       title: 'Best Quiet Walking Pads',
       blurb: 'The pads to choose for calls, shared walls and walking while others sleep.',
       url: '/best-quiet-walking-pads/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'Cybergoing Walking Pad Review',
+      blurb: 'T10, T12 and T16, and the Bosch motor claim.',
+      url: '/cybergoing-walking-pad/',
     },
   ],
   bottomLine: [

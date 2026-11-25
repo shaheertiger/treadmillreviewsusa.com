@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-25',
   socialProof: '2.1k',
   h1: ['Treadmill Console', 'Not Working?'],
   standfirst:
@@ -440,6 +440,12 @@ export default {
       title: 'Treadmill Troubleshooting',
       blurb: 'Error-code families and the four symptoms that mean stop.',
       url: '/treadmill-troubleshooting/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'Schwinn Treadmill Troubleshooting',
+      blurb: 'Error codes, belt and power, from Schwinn manuals.',
+      url: '/schwinn-treadmill-troubleshooting/',
     },
   ],
   bottomLine: [

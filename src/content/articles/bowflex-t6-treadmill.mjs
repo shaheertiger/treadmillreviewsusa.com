@@ -1,18 +1,18 @@
 export default {
   slug: 'bowflex-t6-treadmill',
-  title: 'Bowflex T6 Treadmill Review (2026): Specs, Warranty, T9 and F63',
+  title: 'Bowflex T6 Treadmill Review (2026): $899 Sale, Specs, vs T9',
   description:
-    'A 20 x 60 in. folding deck, 15% incline and lifetime frame and motor cover for $999-$1,299. What the 3.0 HP test rating means, and when the T9 or Sole F63 wins.',
+    "The Bowflex T6 is $899 in Bowflex's sale to Nov 27 ($1,299 regular, checked 24 Nov): 20 x 60 in. folding deck, 15% incline, lifetime frame and motor cover.",
   crumbLabel: 'Bowflex T6 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-10-08',
-  modified: '2026-11-24',
+  modified: '2026-11-25',
   socialProof: '1.9k',
   h1: ['Bowflex T6', 'Treadmill Review'],
   standfirst:
-    'The T6 is the entry point to Bowflex’s folding range, and on paper it is a complete machine: a full-length deck, incline to 15%, and a console that works without any subscription. The questions worth answering are what its horsepower figure actually means, and whether the T9 or a Sole F63 is the better use of the same money.',
+    'The T6 is the entry point to Bowflex’s folding range, and on paper it is a complete machine: a full-length deck, incline to 15%, and a console that works without any subscription. The questions worth answering are what its horsepower figure actually means, and whether the T9 or a Sole F63 is the better use of the same money. On 24 November 2026 Bowflex listed it at $899 in its Black Friday sale, against $1,299 regular, ending 27 November.',
   ctas: [
     { label: 'The Specifications', href: '#bowflex-t6' },
     { label: 'Who Should Buy It', href: '#who-should-buy' },
