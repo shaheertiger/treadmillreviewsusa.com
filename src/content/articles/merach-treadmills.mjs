@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-11-21',
+  modified: '2026-11-25',
   h1: ['Merach Treadmills:', 'Are They Any Good?'],
   standfirst:
     'Merach treadmills are decent value for walking, not for serious running. Its US store sells two incline walking pads at $299.99 and four compact T12 treadmills from $369.99 to $599.99, all topping out at 7.5 mph or below, with a one-year warranty that becomes two years if you register. This guide sets out every current model, which published figures disagree, and which Merach, if any, to buy.',
@@ -660,6 +661,12 @@ export default {
       title: 'Best Treadmills Under $300',
       blurb: 'Cheaper walking machines, if you do not need Merach’s incline.',
       url: '/best-treadmills-under-300/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'SereneLife Treadmill Reviews',
+      blurb: 'Budget folding treadmills and pads on Amazon.',
+      url: '/serenelife-treadmills/',
     },
   ],
   bottomLine: [

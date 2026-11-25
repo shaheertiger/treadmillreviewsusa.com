@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-11-21',
+  modified: '2026-11-25',
   h1: ['AKLUER Treadmill Reviews:', 'Models and What to Check'],
   standfirst:
     'AKLUER is a real brand selling budget walking pads on Amazon, not a scam, and its pads are a reasonable buy for slow desk walking. Every current model is rated for 330 lb, most stop at 4 mph, the motor is given only as "2.5 HP", and the one-year warranty has to be activated on AKLUER’s own site. This guide lists each model on Amazon, who sells it, and what to check before you order.',
@@ -614,6 +615,12 @@ export default {
       title: 'Best Walking Pads With Incline',
       blurb: 'Incline pads with clearer figures, if you are weighing the TW140X or H1-B.',
       url: '/best-walking-pads-with-incline/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'SereneLife Treadmill Reviews',
+      blurb: 'Budget folding treadmills and pads on Amazon.',
+      url: '/serenelife-treadmills/',
     },
   ],
   bottomLine: [

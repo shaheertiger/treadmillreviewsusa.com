@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-11-24',
-  modified: '2026-11-24',
+  modified: '2026-11-25',
   socialProof: '1.2k',
   h1: ['Best Walking Pads With an App', 'What Each App Actually Does'],
   standfirst:
@@ -523,6 +523,12 @@ export default {
       title: 'Best Fitness Trackers for a Walking Pad',
       blurb: 'Which watches and trackers count steps when your hands rest on a desk.',
       url: '/best-fitness-trackers-for-walking-pad/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'Cybergoing Walking Pad Review',
+      blurb: 'T10, T12 and T16, and the Bosch motor claim.',
+      url: '/cybergoing-walking-pad/',
     },
   ],
   bottomLine: [

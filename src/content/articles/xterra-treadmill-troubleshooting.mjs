@@ -11,9 +11,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-11-24',
-  modified: '2026-11-24',
+  modified: '2026-11-25',
   socialProof: '1.2k',
   h1: ['XTERRA Treadmill Troubleshooting:', 'Power, Belt, Error Codes and Console'],
   standfirst:
@@ -578,6 +578,12 @@ export default {
       title: 'How Often to Lubricate a Treadmill',
       blurb: 'Intervals, the right lubricant and how to tell when the deck is dry.',
       url: '/how-often-to-lubricate-treadmill/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'Schwinn Treadmill Troubleshooting',
+      blurb: 'Error codes, belt and power, from Schwinn manuals.',
+      url: '/schwinn-treadmill-troubleshooting/',
     },
   ],
   bottomLine: [

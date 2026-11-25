@@ -263,7 +263,7 @@ export default {
             Belt problems are the most common Schwinn complaint after power, and the fix depends on which
             manual you follow. Start the same way on every model: make sure the treadmill is level. Schwinn&rsquo;s
             810 guide says the belt will not stay aligned on an uneven floor, and names garages, basements and
-            rooms with a water heater as places to check. Adjust the leveling feet until all of them touch the
+            rooms with a water heater as places to check. Adjust the <a href="/treadmill-shaking-or-wobbling/" class="text-[#0F62FE] font-medium" data-autolink>leveling feet</a> until all of them touch the
             floor and the frame does not rock.
           </p>
           <h3 class="${h3}">Is it the walking belt or the drive belt?</h3>
@@ -318,7 +318,7 @@ export default {
             explains why a small turn has a delayed effect.
           </p>
           <p>
-            If the belt does not move at all while you adjust it, Schwinn&rsquo;s 810 guide points to the rear
+            If the <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium" data-autolink>belt does not move</a> at all while you adjust it, Schwinn&rsquo;s 810 guide points to the rear
             roller. And if the side rails no longer cover both edges of the belt, alignment is the problem, not
             tension.
           </p>`,
@@ -330,7 +330,7 @@ export default {
             Every Schwinn manual we read calls for 100% silicone lubricant, and Schwinn&rsquo;s 810 guide is
             blunt about the alternative: petroleum-based products will damage the machine, and if you have
             used them, the belt may need to come off so the rollers can be cleaned, and the deck and rollers may
-            need replacing. The 810 manual also warns against degreasers such as WD-40.
+            need replacing. The 810 manual also warns against degreasers such as <a href="/can-you-use-wd40-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>WD-40</a>.
           </p>
           <h3 class="${h3}">How often</h3>
           <p>
@@ -378,8 +378,8 @@ export default {
           <h3 class="${h3}">When lubricant will not help</h3>
           <p>
             Johnson Health Tech&rsquo;s Deck and Belt Guide lists the signs that the belt or deck is worn out
-            rather than dry: white dust or nylon fabric at the rear, under the deck or around the rollers (replace
-            the belt); a dark brownish underside from friction heat (replace the belt); or a deck worn through to
+            rather than dry: white dust or nylon fabric at the rear, under the deck or around the rollers (<a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>replace
+            the belt</a>); a dark brownish underside from friction heat (replace the belt); or a deck worn through to
             bare wood (replace the deck and belt). It also says never to apply more than 30 ml of silicone at
             once.
           </p>`,

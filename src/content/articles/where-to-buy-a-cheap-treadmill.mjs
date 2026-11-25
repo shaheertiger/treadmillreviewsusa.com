@@ -11,9 +11,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-10-18',
-  modified: '2026-11-15',
+  modified: '2026-11-25',
   socialProof: '1.4k',
   h1: ['Where to Buy Treadmills Cheap:', 'Ranked by What You Really Pay'],
   standfirst:
@@ -497,6 +497,12 @@ ${row('8. Gym closeouts and surplus auctions (GovDeals, liquidators)', 'Can be v
       title: 'Best Budget Treadmills',
       blurb: 'The best verified pick at every price band, and what each band sacrifices.',
       url: '/best-budget-treadmills/',
+    },
+    {
+      kicker: 'Safety',
+      title: 'Sperax Walking Pad Recall?',
+      blurb: 'The CPSC warning on four Sperax models, explained.',
+      url: '/sperax-walking-pad-recall/',
     },
   ],
   bottomLine: [

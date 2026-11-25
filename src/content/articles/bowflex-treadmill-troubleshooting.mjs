@@ -9,8 +9,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-11-21',
+  modified: '2026-11-25',
   socialProof: '1.4k',
   h1: ['Bowflex Treadmill Troubleshooting:', 'Power, Belt, Lube and JRNY Problems'],
   standfirst: `Most Bowflex treadmill faults come down to a safety key that is not seated, an outlet the manual does not allow (GFCI, power strip or extension cord), a belt that needs a quarter-turn of tension or a centring tweak, a deck that is due for silicone, or a phone that has lost its JRNY connection. Here is the order to check them in, using Bowflex&rsquo;s own manuals and support guides.`,
@@ -623,6 +624,12 @@ export default {
       title: 'Bowflex Treadmills',
       blurb: 'The T6, T9 and T16 compared, with warranties and JRNY.',
       url: '/bowflex/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'Schwinn Treadmill Troubleshooting',
+      blurb: 'Error codes, belt and power, from Schwinn manuals.',
+      url: '/schwinn-treadmill-troubleshooting/',
     },
   ],
   bottomLine: [

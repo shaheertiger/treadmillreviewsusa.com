@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-11-05',
-  modified: '2026-11-21',
+  modified: '2026-11-25',
   socialProof: '1.5k',
   h1: ['Schwinn Treadmills:', 'The Current Range and the Models You Will See Used'],
   standfirst:
@@ -449,6 +449,12 @@ export default {
       title: 'Best Treadmills Under $1,000',
       blurb: 'Where the Schwinn range sits against the rest of the budget market.',
       url: '/best-treadmill-under-1000-reviews/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'Schwinn Treadmill Troubleshooting',
+      blurb: 'Error codes, belt and power, from Schwinn manuals.',
+      url: '/schwinn-treadmill-troubleshooting/',
     },
   ],
   bottomLine: [

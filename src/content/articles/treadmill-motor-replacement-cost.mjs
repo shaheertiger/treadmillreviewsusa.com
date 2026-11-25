@@ -68,7 +68,7 @@ export default {
       heading: 'Treadmill Motor Prices by Brand',
       html: `          <p>
             The table below lists replacement drive motors we found on sale on 25 November 2026, on Amazon and
-            at Treadmill Doctor, a long-running US treadmill parts seller. Every price is the listing price on
+            at Treadmill Doctor, a long-running US <a href="/treadmill-parts/" class="text-[#0F62FE] font-medium" data-autolink>treadmill parts</a> seller. Every price is the listing price on
             that day, before tax and shipping. Motors are sold by part number, not by brand, so the right
             motor for your machine depends on the model and serial number on its frame decal. Treat the rows
             as a guide to what each brand's motors cost, not as a fit list.
@@ -270,7 +270,7 @@ export default {
             Motors are rarely the first part to fail, and the parts that share their symptoms are much cheaper.
             The motor control board is the usual suspect: on 25 November 2026 an ICON board (MC1618DLS) for
             NordicTrack and ProForm listed at $198.99 on Amazon, Treadmill Doctor's MC-2100 board at $199.99,
-            aftermarket Sole F63 boards at $128.89 to $152.99 on Amazon, Treadmill Doctor's Sole board at
+            aftermarket <a href="/sole-f63-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Sole F63</a> boards at $128.89 to $152.99 on Amazon, Treadmill Doctor's Sole board at
             $296.99, and Horizon boards at $179.00 to $359.99 on Amazon. A board can cost as much as a motor,
             so guessing wrong is expensive either way.
           </p>
@@ -374,7 +374,7 @@ export default {
             deck and walking belt are sound, and the treadmill is not near the end of its expected life.
             Replace when the repair is most of the price of a new one, when other parts are also worn, or when
             a budget machine has failed from being used harder than it was built for. A new motor in a
-            treadmill with a worn belt and a dry deck is often followed by a new board or belt a few months
+            treadmill with a <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>worn belt</a> and a dry deck is often followed by a new board or belt a few months
             later.
           </p>
           <p>
@@ -406,8 +406,8 @@ export default {
             return visit costs.</li>
             <li><strong>Are you authorised by my treadmill's maker?</strong> This matters if any part of the
             warranty still applies, because an unauthorised repair may not be reimbursed.</li>
-            <li><strong>What else did you see?</strong> A technician with the hood off can tell you about a worn
-            deck, belt or rollers, which is information you need before deciding to repair.</li>
+            <li><strong>What else did you see?</strong> A technician with the hood off can tell you about a <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>worn
+            deck</a>, belt or rollers, which is information you need before deciding to repair.</li>
           </ol>
           <p>
             A technician who will not explain how the fault was diagnosed, or who quotes only a single total

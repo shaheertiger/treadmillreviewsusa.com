@@ -848,6 +848,20 @@ export const SECTIONS: Section[] = [
             url: '/how-much-does-a-bowflex-treadmill-cost/',
           },
           {
+            title: 'Treadmill Motor Replacement Cost',
+            description:
+              'Drive motors from about $130 to $550 by brand, technician rates, and when to replace the treadmill instead.',
+            badge: 'Repairs',
+            url: '/treadmill-motor-replacement-cost/',
+          },
+          {
+            title: 'How Much Does a Used Treadmill Cost?',
+            description:
+              'Dated used and refurbished prices against new, and when a Black Friday new price beats used.',
+            badge: 'Used',
+            url: '/how-much-does-a-used-treadmill-cost/',
+          },
+          {
             title: 'How Much Does a Walking Pad Cost?',
             description:
               'Prices by type, from $130 flat pads to $800 handrail pads, what more money buys, and the costs after checkout.',
@@ -1567,6 +1581,20 @@ export const SECTIONS: Section[] = [
               'Amazon walking pads from about $94, a 12-month warranty, and which listing figures disagree.',
             badge: 'Budget walking pads',
             url: '/superun-treadmills/',
+          },
+          {
+            title: 'Cybergoing Walking Pad Review',
+            description:
+              "T10, T12 and T16 on Amazon, the Bosch motor claim, warranty terms from Cybergoing's store.",
+            badge: 'Walking pad brand',
+            url: '/cybergoing-walking-pad/',
+          },
+          {
+            title: 'SereneLife Treadmill Reviews',
+            description:
+              'Folding treadmills and walking pads on Amazon, listing specs, and the 1-year warranty.',
+            badge: 'Budget brand',
+            url: '/serenelife-treadmills/',
           },
           {
             title: 'Centr Treadmills',
@@ -2920,6 +2948,13 @@ export const SECTIONS: Section[] = [
             url: '/xterra-treadmill-troubleshooting/',
           },
           {
+            title: 'Schwinn Treadmill Troubleshooting',
+            description:
+              "810 error codes E0-E8, breaker, safety key, belt tension and lube, from Schwinn's own manuals.",
+            badge: 'Schwinn',
+            url: '/schwinn-treadmill-troubleshooting/',
+          },
+          {
             title: 'NordicTrack Treadmill Troubleshooting',
             description:
               'Safety key and reset breaker, speed or incline changing by itself, frozen iFIT screens, belt and decline faults.',
@@ -3183,6 +3218,13 @@ export const SECTIONS: Section[] = [
               'Lubricate first, then quarter turns on the rear bolts: slipping and drift fixed on walking pads.',
             badge: 'Walking pad',
             url: '/walking-pad-belt-slipping/',
+          },
+          {
+            title: 'Sperax Walking Pad Recall?',
+            description:
+              'No recall: the CPSC warned owners of four Sperax models to stop using them. What to do.',
+            badge: 'Safety',
+            url: '/sperax-walking-pad-recall/',
           },
         ],
       },

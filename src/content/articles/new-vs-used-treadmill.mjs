@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'New vs. Used Treadmill',
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-09-08',
-  modified: '2026-11-22',
+  modified: '2026-11-25',
   socialProof: '3.9k',
   h1: ['New vs. Used', 'Treadmill'],
   standfirst:
@@ -390,6 +390,12 @@ export default {
       title: 'Best Treadmills Under $500',
       blurb: 'What new money buys at the budget where used wins most clearly.',
       url: '/best-treadmills-under-500/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a Used Treadmill Cost?',
+      blurb: 'Dated used and refurbished prices against new.',
+      url: '/how-much-does-a-used-treadmill-cost/',
     },
   ],
   bottomLine: [

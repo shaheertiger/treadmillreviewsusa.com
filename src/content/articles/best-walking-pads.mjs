@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-10-18',
-  modified: '2026-11-16',
+  modified: '2026-11-25',
   socialProof: '2.4k',
   h1: ['What Is the Best', 'Walking Pad?'],
   standfirst:
@@ -594,6 +594,12 @@ export default {
       title: "Best Lightweight Treadmills",
       blurb: "Five lightweight folding treadmills from 44 to 66 lb, each with a weight stated by the listing or the…",
       url: '/best-portable-treadmills/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'Cybergoing Walking Pad Review',
+      blurb: 'T10, T12 and T16, and the Bosch motor claim.',
+      url: '/cybergoing-walking-pad/',
     },
   ],
   bottomLine: [

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Spec Explainer',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-25',
   socialProof: '1.6k',
   h1: ['AC vs DC', 'Treadmill Motor'],
   standfirst:
@@ -467,6 +467,12 @@ export default {
       title: 'Commercial Treadmills',
       blurb: 'What changes when you move up to gym-grade machines.',
       url: '/commercial-treadmills/',
+    },
+    {
+      kicker: 'Repairs',
+      title: 'Treadmill Motor Replacement Cost',
+      blurb: 'Motor prices by brand, labour, and when to replace.',
+      url: '/treadmill-motor-replacement-cost/',
     },
   ],
   bottomLine: [

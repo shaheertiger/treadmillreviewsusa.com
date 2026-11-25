@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 25, 2026',
   published: '2026-10-28',
-  modified: '2026-11-16',
+  modified: '2026-11-25',
   socialProof: '2.4k',
   h1: ['Black Friday', 'Walking Pad Deals 2026'],
   standfirst:
@@ -540,6 +540,12 @@ export default {
       title: 'Walking Pad Buying Guide',
       blurb: 'Belt length, capacity, incline, noise and folding — what to check before you buy any pad.',
       url: '/walking-pad-buying-guide/',
+    },
+    {
+      kicker: 'Safety',
+      title: 'Sperax Walking Pad Recall?',
+      blurb: 'The CPSC warning on four Sperax models, explained.',
+      url: '/sperax-walking-pad-recall/',
     },
   ],
   bottomLine: [
