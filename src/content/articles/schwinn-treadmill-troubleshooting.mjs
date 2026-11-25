@@ -542,7 +542,7 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr><td class="${td}">After each use</td><td class="${td}">Wipe the belt, deck edges, motor cover and console with a damp cloth; no solvents</td><td class="${td}">Sweat and dust raise friction and damage the console</td></tr>
+              <tr><td class="${td}">Daily</td><td class="${td}">Wipe the belt, deck edges, motor cover and console with a damp cloth; no solvents</td><td class="${td}">Sweat and dust raise friction and damage the console</td></tr>
               <tr><td class="${td}">Daily</td><td class="${td}">Check the power cord is not under the treadmill or pinched; glance at belt centring</td><td class="${td}">Prevents cord damage and edge wear</td></tr>
               <tr><td class="${td}">Weekly</td><td class="${td}">Fold, move and vacuum under the treadmill</td><td class="${td}">Dust under the deck ends up in the belt and motor</td></tr>
               <tr><td class="${td}">Monthly</td><td class="${td}">Check bolts; test the safety key; check tension and centring; vacuum the motor area (newer manuals)</td><td class="${td}">Loose bolts cause noise; dust shortens electronics life</td></tr>
