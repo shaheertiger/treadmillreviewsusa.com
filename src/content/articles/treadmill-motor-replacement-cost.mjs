@@ -4,7 +4,7 @@ const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
 export default {
   slug: 'treadmill-motor-replacement-cost',
   title: 'Treadmill Motor Replacement Cost (2026): Parts, Labor, Worth It?',
-  description: `A treadmill drive motor costs about $130 to $550 for most home brands (Amazon, Nov 2026); a technician adds roughly $185 to $270. Check the motor warranty first.`,
+  description: `A treadmill drive motor costs about $130 to $550 for most home brands (Amazon, Nov 2026); a technician adds about $185 to $270. Check the warranty first.`,
   crumbLabel: 'Treadmill Motor Replacement Cost',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
@@ -329,8 +329,7 @@ export default {
             breaker or smells of burning, which points to an electrical fault that needs testing; the board and
             motor are both suspect; or the treadmill is a heavy commercial machine. Pay attention to safety too:
             unplug the treadmill and wait before opening the hood, because control boards can hold a charge,
-            and follow the manual's warning that electrical servicing should be done by a qualified person if
-            you are not one.
+            and read the service warnings in your owner's manual before you start.
           </p>
           <p>
             Whichever route you take, budget for the small extras that go with the job. Treadmill Doctor lists
