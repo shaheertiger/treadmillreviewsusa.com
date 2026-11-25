@@ -4,7 +4,7 @@ const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
 export default {
   slug: 'treadmill-motor-replacement-cost',
   title: 'Treadmill Motor Replacement Cost (2026): Parts, Labor, Worth It?',
-  description: `A treadmill drive motor costs about $130 to $430 for most home brands (Amazon, Nov 2026); a technician adds roughly $185 to $270. Check the motor warranty first.`,
+  description: `A treadmill drive motor costs about $130 to $550 for most home brands (Amazon, Nov 2026); a technician adds roughly $185 to $270. Check the motor warranty first.`,
   crumbLabel: 'Treadmill Motor Replacement Cost',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
@@ -14,7 +14,7 @@ export default {
   modified: '2026-11-25',
   socialProof: '1.2k',
   h1: ['Treadmill Motor Replacement Cost:', 'Parts, Labor and Whether It Pays'],
-  standfirst: `For most home treadmills the drive motor itself costs roughly $130 to $430, and a technician's visit adds about $185 to $270 on the published rates we found, so a fitted motor usually lands somewhere around $350 to $700. Before you pay anything, check the warranty: many brands cover the motor for life.`,
+  standfirst: `For most home treadmills the drive motor itself costs roughly $130 to $550, and a technician's visit adds about $185 to $270 on the published rates we found, so a fitted motor usually lands somewhere around $320 to $820. Before you pay anything, check the warranty: many brands cover the motor for life.`,
   ctas: [
     { label: 'Motor Prices by Brand', href: '#motor-prices' },
     { label: 'Check the Warranty', href: '#warranty-first' },
@@ -39,8 +39,8 @@ export default {
       id: 'short-answer',
       heading: 'The Short Answer',
       html: `          <p>
-            <strong>Replacing a home treadmill's drive motor typically costs about $130 to $430 for the part
-            and roughly $350 to $700 with a technician, but a lifetime motor warranty may cover the part
+            <strong>Replacing a home treadmill's drive motor typically costs about $130 to $550 for the part
+            and roughly $320 to $820 with a technician, but a lifetime motor warranty may cover the part
             entirely, so check that before anything else.</strong>
           </p>
           <ul>
@@ -145,7 +145,7 @@ export default {
             <strong>Brushed DC motors</strong> are in most home treadmills. They are the only type with a
             routine wear part, the carbon brushes, and a motor that has lost power or started to crackle often
             needs nothing more than a new pair. Generic brush pairs listed from $8.99 on Amazon on 25 November
-            2026, a ProForm kit (part 405705) at $39.95 to $49.95, and a kit for Precor and Life Fitness DC
+            2026, ProForm brush kits at $39.95 to $49.95, and a kit for Precor and Life Fitness DC
             motors at $84.75 to $89.90. Our
             <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium">treadmill motor brushes</a>
             guide shows how to check them. Brushes cannot help a motor with a burnt winding or a badly scored
@@ -361,7 +361,7 @@ export default {
             </thead>
             <tbody>
               <tr><td class="${td}">ProForm Carbon TL</td><td class="${td}">$479 (Amazon, 25 Nov 2026)</td><td class="${td}">About $133-$230 / $320-$500</td><td class="${td}">DIY if the frame and belt are good; otherwise replace</td></tr>
-              <tr><td class="${td}">Horizon T202</td><td class="${td}">$799.99 (Amazon, 25 Nov 2026)</td><td class="${td}">Covered by lifetime motor warranty for the original owner; otherwise about $400 / $585-$670</td><td class="${td}">Claim the warranty; out of it, borderline</td></tr>
+              <tr><td class="${td}">Horizon T202</td><td class="${td}">$799.99 (Amazon, 25 Nov 2026)</td><td class="${td}">Lifetime motor warranty for the original owner; otherwise Horizon motors we found were $377.99-$413.99, or about $565-$685 fitted</td><td class="${td}">Claim the warranty; out of it, borderline</td></tr>
               <tr><td class="${td}">Horizon 7.0 AT</td><td class="${td}">$934.98 (Amazon, 25 Nov 2026)</td><td class="${td}">Warranty; otherwise about $414 / $600-$685</td><td class="${td}">Claim the warranty; out of it, repair if under about 8 years old</td></tr>
               <tr><td class="${td}">NordicTrack T Series 10</td><td class="${td}">$949.05 (Amazon, 25 Nov 2026)</td><td class="${td}">2-year motor cover; after that about $133-$230 / $320-$500</td><td class="${td}">Repair: iFIT motors are cheap</td></tr>
               <tr><td class="${td}">Sole F63</td><td class="${td}">$1,099.99 (Amazon, 25 Nov 2026)</td><td class="${td}">Warranty; otherwise about $324-$430 / $510-$700</td><td class="${td}">Claim the warranty; out of it, usually repair</td></tr>
@@ -455,7 +455,7 @@ export default {
     },
     {
       q: 'How much does it cost to replace a treadmill motor with labor?',
-      a: `Add the technician's visit to the part. Treadmill Doctor's certified service was $269.99 for the first visit and one Pennsylvania-area repairer published $185 for diagnosis and labor (both checked 25 Nov 2026), so a fitted motor typically comes to about $350 to $700 on a home treadmill. Get written quotes, because labor varies by region and machine.`,
+      a: `Add the technician's visit to the part. Treadmill Doctor's certified service was $269.99 for the first visit and one Pennsylvania-area repairer published $185 for diagnosis and labor (both checked 25 Nov 2026), so a fitted motor typically comes to about $320 to $820 on a home treadmill. Get written quotes, because labor varies by region and machine.`,
     },
     {
       q: 'Is a treadmill motor covered by warranty?',
@@ -528,10 +528,10 @@ export default {
     },
   ],
   bottomLine: [
-    `<strong class="text-white">A treadmill motor is usually a $130 to $430 part</strong> on a home
+    `<strong class="text-white">A treadmill motor is usually a $130 to $550 part</strong> on a home
             machine, with NordicTrack and ProForm motors at the cheap end and Sole, Spirit, Horizon and Bowflex
             motors costing more (prices checked 25 November 2026). A technician's visit adds roughly $185 to
-            $270 on the published rates we found, so a fitted motor typically comes to about $350 to $700.`,
+            $270 on the published rates we found, so a fitted motor typically comes to about $320 to $820.`,
     `<strong class="text-white">Check the warranty first and the diagnosis second.</strong> Many brands
             cover the motor for life for the original owner, and brushes, belts and control boards cause the same
             symptoms for less. If the motor really has failed and the warranty will not pay, repair a sound
