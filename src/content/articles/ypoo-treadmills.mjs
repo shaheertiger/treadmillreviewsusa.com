@@ -490,7 +490,7 @@ export default {
             <li><strong>Does not suit:</strong> anyone who wants powered incline. Every YPOO on Amazon uses manual
             positions.</li>
             <li><strong>Does not suit:</strong> buyers who want long cover. One year is short; several rival brands give
-            to 24 months or more.</li>
+            longer cover.</li>
           </ul>
           <p>
             For a household where two people of different sizes will share the machine, plan for the heavier user and
