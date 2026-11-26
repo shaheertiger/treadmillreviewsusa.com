@@ -850,6 +850,12 @@ export default {
       blurb: 'Heart rate, calories, muscle and joints — what the extra grade actually changes.',
       url: '/what-does-incline-walking-do/',
     },
+    {
+      kicker: 'Brand',
+      title: 'YPOO Treadmill Reviews',
+      blurb: 'Incline pads and a folding treadmill on Amazon.',
+      url: '/ypoo-treadmills/',
+    },
   ],
   bottomLine: [
     `For most people the <strong class="text-white">MERACH NovaWalk W50 TrekPad</strong> is the incline

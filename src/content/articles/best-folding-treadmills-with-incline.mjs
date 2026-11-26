@@ -10,8 +10,9 @@ export default {
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-11-21',
+  modified: '2026-11-26',
   socialProof: '1.2k',
   h1: ['Best Folding Treadmills With Incline', 'Real Treadmills That Climb, Then Fold Away'],
   standfirst:
@@ -518,6 +519,12 @@ export default {
       title: 'Best Treadmills With Decline',
       blurb: 'The machines that genuinely go below zero.',
       url: '/best-treadmills-with-decline/',
+    },
+    {
+      kicker: 'Budget',
+      title: 'Best Treadmills Under $400',
+      blurb: 'Folding treadmills with incline, $340 to $380.',
+      url: '/best-treadmills-under-400/',
     },
   ],
   bottomLine: [

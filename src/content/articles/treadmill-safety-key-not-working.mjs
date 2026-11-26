@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-26',
   socialProof: '2.6k',
   h1: ['Treadmill Safety Key', 'Not Working or Lost?'],
   standfirst:
@@ -462,6 +462,12 @@ export default {
       title: "Best Treadmill Safety Keys",
       blurb: "Five replacement treadmill safety keys, how magnetic and pin-style keys differ, how to match one to your…",
       url: '/best-treadmill-safety-keys/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'Why Does My Treadmill Keep Beeping?',
+      blurb: 'Safety key, LUBE reminders and error beeps.',
+      url: '/treadmill-keeps-beeping/',
     },
   ],
   bottomLine: [

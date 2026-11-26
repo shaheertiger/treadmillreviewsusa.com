@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-10-28',
-  modified: '2026-11-16',
+  modified: '2026-11-26',
   socialProof: '2.1k',
   h1: ['Black Friday Treadmill Deals', 'Under $500'],
   standfirst:
@@ -544,6 +544,12 @@ export default {
       title: 'Make a Cheap Treadmill Last Longer',
       blurb: 'Belt tension, lubrication and the habits that decide how long a budget machine lasts.',
       url: '/how-to-make-a-cheap-treadmill-last-longer/',
+    },
+    {
+      kicker: 'Budget',
+      title: 'Best Treadmills Under $400',
+      blurb: 'Folding treadmills with incline, $340 to $380.',
+      url: '/best-treadmills-under-400/',
     },
   ],
   bottomLine: [

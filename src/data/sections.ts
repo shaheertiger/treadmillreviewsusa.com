@@ -734,6 +734,13 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-under-300/',
           },
           {
+            title: 'Best Treadmills Under $400',
+            description:
+              'Six folding treadmills at $340 to $380 with up to 18% auto incline and 250 to 400 lb ratings.',
+            badge: 'Under $400',
+            url: '/best-treadmills-under-400/',
+          },
+          {
             title: "Best Treadmills Under $200",
             description: "Walking pads, 2-in-1s and a manual treadmill under $200, and why nothing at this price is for running.",
             badge: "Under $200",
@@ -860,6 +867,20 @@ export const SECTIONS: Section[] = [
               'Dated used and refurbished prices against new, and when a Black Friday new price beats used.',
             badge: 'Used',
             url: '/how-much-does-a-used-treadmill-cost/',
+          },
+          {
+            title: 'How Much Does a LifeSpan Treadmill Cost?',
+            description:
+              'Under-desk treadmills $1,199 to $1,699 and desk sets $2,048 to $2,748, warranty and returns.',
+            badge: 'LifeSpan',
+            url: '/how-much-does-a-lifespan-treadmill-cost/',
+          },
+          {
+            title: 'How Much Does an Echelon Treadmill Cost?',
+            description:
+              'Stride prices at Echelon and Amazon, Premier membership on top, and five-year cost.',
+            badge: 'Echelon',
+            url: '/how-much-does-an-echelon-treadmill-cost/',
           },
           {
             title: 'How Much Does a Walking Pad Cost?',
@@ -1595,6 +1616,13 @@ export const SECTIONS: Section[] = [
               'Folding treadmills and walking pads on Amazon, listing specs, and the 1-year warranty.',
             badge: 'Budget brand',
             url: '/serenelife-treadmills/',
+          },
+          {
+            title: 'YPOO Treadmill Reviews',
+            description:
+              'Incline walking pads and an 8 mph folding treadmill on Amazon, YPOO Care warranty terms.',
+            badge: 'Walking pad brand',
+            url: '/ypoo-treadmills/',
           },
           {
             title: 'Centr Treadmills',
@@ -3059,6 +3087,20 @@ export const SECTIONS: Section[] = [
               'Normal motor hum or a warning? Five hums that mean stop, and checks in order.',
             badge: 'Noise',
             url: '/treadmill-humming-noise/',
+          },
+          {
+            title: 'Treadmill Grinding Noise',
+            description:
+              'Rollers, bearings, motor or drive belt: find the grind by when it happens, and when to stop.',
+            badge: 'Noise',
+            url: '/treadmill-grinding-noise/',
+          },
+          {
+            title: 'Why Does My Treadmill Keep Beeping?',
+            description:
+              'Safety key, LUBE reminders, error codes and countdowns, and how makers say to mute them.',
+            badge: 'Beeping',
+            url: '/treadmill-keeps-beeping/',
           },
           {
             title: 'Treadmill Burning Smell',

@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-11-24',
+  modified: '2026-11-26',
   h1: ['How Much Does a', 'Treadmill Desk Cost?'],
   standfirst:
     'A treadmill desk costs about $150 to $350 if you slide a walking pad under a standing desk you already own, about $215 to $1,000 if you buy a pad and a new desk together, and $2,048 to $3,840 for an integrated office treadmill desk from LifeSpan, InMovement or iMovR. Every price below is from Amazon or the maker on 24 November 2026, with the totals for each setup, what the extra money buys and what it costs to run.',
@@ -514,6 +515,12 @@ export default {
       title: 'Best Walking Pads',
       blurb: 'The pads worth buying for home and desk walking.',
       url: '/best-walking-pads/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a LifeSpan Treadmill Cost?',
+      blurb: 'Under-desk treadmills and desk sets, priced.',
+      url: '/how-much-does-a-lifespan-treadmill-cost/',
     },
   ],
   bottomLine: [

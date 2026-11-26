@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-10-20',
-  modified: '2026-11-15',
+  modified: '2026-11-26',
   socialProof: '1.4k',
   h1: ['Echelon Treadmills:', 'A Buyer’s Guide to the Stride Range'],
   standfirst:
@@ -549,6 +549,12 @@ export default {
       title: "Yesoul Treadmills",
       blurb: "The T3S Plus screen treadmill and the 30%-incline T5 range.",
       url: '/yesoul-treadmills/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does an Echelon Treadmill Cost?',
+      blurb: 'Stride prices plus the Premier membership.',
+      url: '/how-much-does-an-echelon-treadmill-cost/',
     },
   ],
   bottomLine: [

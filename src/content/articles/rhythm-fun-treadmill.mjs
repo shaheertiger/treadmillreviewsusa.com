@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-26',
   socialProof: '710',
   h1: ['RHYTHM FUN Treadmill:', 'What We Could Confirm'],
   standfirst:
@@ -405,6 +405,12 @@ export default {
       title: "OMA Treadmills",
       blurb: "The folding brand sold on Amazon behind the 7200EB: what its figures say, where they conflict, and.",
       url: '/oma-treadmills/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'YPOO Treadmill Reviews',
+      blurb: 'Incline pads and a folding treadmill on Amazon.',
+      url: '/ypoo-treadmills/',
     },
   ],
   bottomLine: [

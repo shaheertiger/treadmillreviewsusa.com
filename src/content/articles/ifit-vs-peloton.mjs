@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-10-08',
-  modified: '2026-11-15',
+  modified: '2026-11-26',
   socialProof: '2.1k',
   h1: ['iFIT vs Peloton:', 'Two Ecosystems, Two Kinds of Treadmill Buyer'],
   standfirst:
@@ -516,6 +516,12 @@ export default {
       title: 'NordicTrack vs ProForm',
       blurb: 'The two main iFIT brands and how they split the range.',
       url: '/nordictrack-vs-proform/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does an Echelon Treadmill Cost?',
+      blurb: 'Stride prices plus the Premier membership.',
+      url: '/how-much-does-an-echelon-treadmill-cost/',
     },
   ],
   bottomLine: [

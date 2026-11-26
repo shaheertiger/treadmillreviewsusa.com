@@ -116,7 +116,7 @@ export default {
       heading: 'Beeping Because of the Safety Key',
       html: `          <p>
             The safety key is the most common reason a treadmill nags you. Every manual we read says the belt will not
-            run without it. XTERRA&rsquo;s TR150 manual says the treadmill will not operate without the safety key
+            run without it. <a href="/xterra-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>XTERRA</a>&rsquo;s TR150 manual says the treadmill will not operate without the safety key
             installed, and the Schwinn 810 / 510T manual says the console displays &ldquo;+ SAFETY KEY&rdquo; for a
             safety key fault and that the treadmill will not start a workout, or will end and clear an active workout,
             when the key is removed. On some consoles the key reminder comes with a beep. LifeSpan&rsquo;s settings page
@@ -275,8 +275,8 @@ export default {
             stop mode, and describes how to switch sleep mode on or off by display type. XTERRA&rsquo;s TR150 manual says
             its display sleeps after 30 minutes with no key presses. The Schwinn 810 manual says the console shuts off if
             it gets no input for about 5 minutes.</li>
-            <li><strong>Walk detection.</strong> LifeSpan&rsquo;s settings page describes Intelli-Guard on its treadmill
-            desks, which stops the walking belt if you do not walk on it for 20 seconds, and can be switched on or
+            <li><strong>Walk detection.</strong> LifeSpan&rsquo;s settings page describes Intelli-Guard on its <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium" data-autolink>treadmill
+            desks</a>, which stops the walking belt if you do not walk on it for 20 seconds, and can be switched on or
             off.</li>
           </ul>
           <p>
@@ -360,7 +360,7 @@ export default {
             <li><strong>Clear the console.</strong> Lift off anything resting on the keypad.</li>
             <li><strong>Press Stop.</strong> On many consoles, pressing Stop once, twice or holding it ends a workout or
             resets the display. The Sole F50 manual says holding Stop for more than 3 seconds resets the console.</li>
-            <li><strong>Power-cycle properly.</strong> Switch off at the treadmill&rsquo;s power switch, unplug from the wall,
+            <li><strong>Power-cycle properly.</strong> Switch off at the treadmill&rsquo;s <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a>, unplug from the wall,
             wait a minute, and plug back in directly to a wall outlet with no power strip or extension cord.</li>
             <li><strong>Read the display from the first second.</strong> Note any message or code that appears before the
             start screen.</li>
@@ -371,7 +371,7 @@ export default {
             video with sound.</li>
           </ol>
           <p>
-            On NordicTrack treadmills, our
+            On <a href="/nordictrack/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack treadmills</a>, our
             <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">how to reset a NordicTrack
             treadmill</a> guide covers the console reset steps in more detail.
           </p>`,

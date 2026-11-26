@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmill Desks',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-10-13',
-  modified: '2026-11-24',
+  modified: '2026-11-26',
   socialProof: '1.9k',
   h1: ['Best Treadmill Desks', 'Sets and Desks for a Pad'],
   standfirst:
@@ -543,6 +543,12 @@ export default {
       title: 'How Much Does a Treadmill Desk Cost?',
       blurb: 'Pad plus desk, or an integrated treadmill desk.',
       url: '/how-much-does-a-treadmill-desk-cost/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a LifeSpan Treadmill Cost?',
+      blurb: 'Under-desk treadmills and desk sets, priced.',
+      url: '/how-much-does-a-lifespan-treadmill-cost/',
     },
   ],
   bottomLine: [

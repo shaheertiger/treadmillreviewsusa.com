@@ -150,7 +150,7 @@ export default {
           </p>
           <ul>
             <li>The grind is loudest right at the motor cover, not at the roller ends.</li>
-            <li>It comes with a hot or burning smell, a strained hum, or the belt surging and slowing.</li>
+            <li>It comes with a hot or burning smell, a strained hum, or the <a href="/treadmill-belt-jerking/" class="text-[#0F62FE] font-medium" data-autolink>belt surging</a> and slowing.</li>
             <li>The treadmill trips its breaker, shows a motor error on the console, or cuts out under load.</li>
             <li>A technician removes the drive belt and the motor still grinds when it is run on its own.</li>
           </ul>
@@ -203,7 +203,7 @@ export default {
       html: `          <p>
             Grit trapped between the running belt and the deck makes a sandpaper-like grinding that is worst with someone on
             the belt, because your weight presses the grit into both surfaces. Sand from shoes, pet hair, dust and carpet fibre
-            are the usual culprits, and a treadmill on carpet or near a door picks up more of them. Left alone, grit wears the
+            are the usual culprits, and a <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium" data-autolink>treadmill on carpet</a> or near a door picks up more of them. Left alone, grit wears the
             underside of the belt and the deck surface, and it can work its way into the roller ends.
           </p>
           <p>

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-26',
   socialProof: '2.1k',
   h1: ['Treadmill Thumping,', 'Knocking or Clunking?'],
   standfirst:
@@ -488,6 +488,12 @@ export default {
       title: 'How to Replace a Treadmill Belt',
       blurb: 'Measuring, ordering and fitting a new belt when the seam is finished.',
       url: '/how-to-replace-treadmill-belt/',
+    },
+    {
+      kicker: 'Noise',
+      title: 'Treadmill Grinding Noise',
+      blurb: 'Rollers, bearings or motor? Find it by timing.',
+      url: '/treadmill-grinding-noise/',
     },
   ],
   bottomLine: [
