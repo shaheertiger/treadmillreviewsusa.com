@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Repair',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-26',
   socialProof: '1.5k',
   h1: ['Treadmill', 'Drive Belt'],
   standfirst:
@@ -440,6 +440,12 @@ export default {
       title: 'Treadmill Motor Brushes',
       blurb: 'Signs of wear, inspection and replacement on DC motors.',
       url: '/treadmill-motor-brushes/',
+    },
+    {
+      kicker: 'Noise',
+      title: 'Treadmill Grinding Noise',
+      blurb: 'Rollers, bearings or motor? Find it by timing.',
+      url: '/treadmill-grinding-noise/',
     },
   ],
   bottomLine: [

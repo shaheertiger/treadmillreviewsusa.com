@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-10-06',
-  modified: '2026-11-25',
+  modified: '2026-11-26',
   socialProof: '2.1k',
   h1: ['Treadmill Console', 'Not Working?'],
   standfirst:
@@ -446,6 +446,12 @@ export default {
       title: 'Schwinn Treadmill Troubleshooting',
       blurb: 'Error codes, belt and power, from Schwinn manuals.',
       url: '/schwinn-treadmill-troubleshooting/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'Why Does My Treadmill Keep Beeping?',
+      blurb: 'Safety key, LUBE reminders and error beeps.',
+      url: '/treadmill-keeps-beeping/',
     },
   ],
   bottomLine: [

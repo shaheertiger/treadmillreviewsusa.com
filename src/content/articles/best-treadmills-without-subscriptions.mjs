@@ -9,9 +9,9 @@ export default {
   crumbLabel: 'Best Treadmills Without Subscriptions',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-09-08',
-  modified: '2026-11-21',
+  modified: '2026-11-26',
   socialProof: '4.8k',
   h1: ['Best Treadmills', 'Without Subscriptions'],
   standfirst:
@@ -708,6 +708,12 @@ export default {
       title: 'Buying a Used Treadmill',
       blurb: 'Fifteen checks — including the account-transfer question on connected machines.',
       url: '/used-treadmill-buying-checklist/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does an Echelon Treadmill Cost?',
+      blurb: 'Stride prices plus the Premier membership.',
+      url: '/how-much-does-an-echelon-treadmill-cost/',
     },
   ],
   bottomLine: [

@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmills Under $500',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-09-08',
-  modified: '2026-11-25',
+  modified: '2026-11-26',
   socialProof: '6.2k',
   h1: ['Best Treadmills', 'Under $500'],
   standfirst:
@@ -499,6 +499,12 @@ export default {
       title: 'SereneLife Treadmill Reviews',
       blurb: 'Budget folding treadmills and pads on Amazon.',
       url: '/serenelife-treadmills/',
+    },
+    {
+      kicker: 'Budget',
+      title: 'Best Treadmills Under $400',
+      blurb: 'Folding treadmills with incline, $340 to $380.',
+      url: '/best-treadmills-under-400/',
     },
   ],
   bottomLine: [

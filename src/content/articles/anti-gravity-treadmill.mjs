@@ -1,14 +1,14 @@
 export default {
   slug: 'anti-gravity-treadmill',
-  title: 'Anti-Gravity Treadmill: AlterG Cost, Benefits and Home Options',
-  description: `Sessions cost about $12.50 to $75 at US clinics; press reports put a clinical machine at $35,000 to $75,000. How AlterG works, who uses one, home options.`,
+  title: 'Anti-Gravity Treadmill: How AlterG Works and What a Session Costs',
+  description: `An anti-gravity treadmill like the AlterG uses air pressure to take up to 80% of your weight off. Sessions run about $12.50 to $75; machines $35,000 to $75,000.`,
   crumbLabel: 'Anti-Gravity Treadmill',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Explainer',
   updated: 'November 2026',
-  updatedLong: 'November 18, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-10-14',
-  modified: '2026-11-18',
+  modified: '2026-11-26',
   socialProof: '1.4k',
   h1: [
     'Anti-Gravity Treadmill:',

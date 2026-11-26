@@ -1,0 +1,972 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SECTIONS } from "../data/sections";
+
+const title = "YPOO Treadmill Reviews (2026): Is YPOO a Good Brand?";
+const description =
+  "YPOO sells incline walking pads from $116.84 and an 8 mph folding treadmill from $199.99 with Prime on Amazon (26 Nov), with a 1-year warranty. What to check.";
+
+const PRODUCTS = [
+  {
+    id: "ypoo-15-incline-walking-pad-handle-bar",
+    name: "YPOO 15% Incline Walking Pad with Handle Bar",
+    brand: "YPOO",
+    category: "The Cheapest YPOO Walking Pad With Handles",
+    badge: "Best Budget YPOO",
+    amazonUrl: "https://www.amazon.com/dp/B0DWMYV62K?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41Y1ss++ezL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $116.84 (Amazon, 26 Nov 2026)",
+    priceBounds: {"low":116.84,"high":116.84},
+    specs: "0.6–6.2 mph · 15% manual incline (3 levels) · 37.4 x 15 in. belt · 300 lb max user · 8.5 in. side handlebars · app (per the Amazon listing)",
+    pros: [
+      "The lowest price of any YPOO pad on Amazon on 26 November 2026, against a $168.99 list price",
+      "A consistent listing: title and bullets agree on 15%, 6.2 mph and 300 lb",
+      "Sold by YPOO-US, the brand’s own Amazon storefront, with a one-year warranty in the product details",
+    ],
+    cons: [
+      "No motor rating anywhere in the listing",
+      "A 37.4-inch belt is a walking length, not a running one",
+      "Incline is manual: three positions, set with the belt stopped",
+    ],
+    bottomLine: "The YPOO to buy on price if you want handles and some incline for walking, and do not need a published motor figure.",
+    description: "This is the cheapest YPOO walking pad with side handlebars. The Amazon listing (checked 26 November 2026) gives a three-level manual incline to 15%, 0.6 to 6.2 mph, 8.5-inch side handlebars that fold down for under-desk walking, RGB light strips that change colour with speed, a 37.4 by 15-inch five-layer belt with shock absorption, app control and a 300 lb capacity. The product details give model T5, about 43 lb and a one-year warranty. It was $116.84, sold by YPOO-US, against a $168.99 list price. Another listing with the same T5 model code claims 16% and 330 lb, so treat the model code as a family name rather than proof of identical figures.",
+  },
+  {
+    id: "ypoo-t7-16-incline-walking-pad-350-lb",
+    name: "YPOO T7 16% Incline Walking Pad, 350 lb",
+    brand: "YPOO",
+    category: "The YPOO Pad With Handles, Highest Capacity and Speed",
+    badge: "Best for Heavier Users",
+    amazonUrl: "https://www.amazon.com/dp/B0HFR1YDGL?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41fterUw3WL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $142.49 (Amazon, 26 Nov 2026)",
+    priceBounds: {"low":142.49,"high":142.49},
+    specs: "0.6–7.5 mph · 0/10/16% manual incline · 350 lb max user · 3.5 HP · handle bar · app (per the Amazon listing)",
+    pros: [
+      "The highest capacity, 350 lb, of any YPOO pad with handlebars on 26 November 2026",
+      "A top speed of 7.5 mph, the fastest of the YPOO walking pads",
+      "Three stated incline positions, 0, 10 and 16%, rather than just a maximum",
+    ],
+    cons: [
+      "The listing does not give a belt size, so none is on the card",
+      "The bullets describe a removable desk that the title never mentions; check the photos before you rely on it",
+      "The 3.5 HP figure is not described as continuous or peak",
+    ],
+    bottomLine: "The YPOO pad to choose if you weigh over 300 lb or want a little more speed, once you have confirmed the belt size.",
+    description: "The T7 (model code in the product details) is YPOO’s highest-rated walking pad with handles on Amazon. Its listing (checked 26 November 2026) gives 0.6 to 7.5 mph, manual incline at 0, 10 and 16%, a 3.5 HP motor, a 350 lb capacity, noise of “around 45 dB”, a foldable frame with wheels, app connection and four modes from desk walking to running. The bullets also describe a removable workstation, which the title does not, and no bullet gives a belt size. The product details give about 42.3 lb and a one-year warranty. It was $142.49, sold by YPOO-US, against a $199.99 list price.",
+  },
+  {
+    id: "ypoo-ultra-slim-14-incline-walking-pad",
+    name: "YPOO Ultra-Slim 14% Incline Walking Pad",
+    brand: "YPOO",
+    category: "The Slimmest YPOO for Under a Desk",
+    badge: "Under-Desk Pick",
+    amazonUrl: "https://www.amazon.com/dp/B0HFSPRR41?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/415U+KlStVL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $149.99 with Prime (Amazon, 26 Nov 2026)",
+    priceBounds: {"low":149.99,"high":149.99},
+    specs: "0.5–3.7 mph · 14% manual incline · 15 x 37 in. belt · 350 lb max user · 2.5 HP brushless · 3.5 in. thick (per the Amazon listing)",
+    pros: [
+      "At 3.5 inches thick, the slimmest YPOO; it slides under most beds and sofas",
+      "A 350 lb rating and a stated brushless motor",
+      "A self-lubricating belt, so no routine silicone oiling, per the listing",
+    ],
+    cons: [
+      "Tops out at 3.7 mph: a walking pad only",
+      "The $149.99 price was a Prime-exclusive deal; the non-Prime offer was $199.99",
+      "Sold by YIFIT FITNESS rather than YPOO-US, so check returns with that seller",
+    ],
+    bottomLine: "The YPOO for slow incline walking at a desk, if you are a Prime member and do not need to jog.",
+    description: "This is YPOO’s low-profile pad (model M5038 in the product details). The Amazon listing (checked 26 November 2026) gives a 3.5-inch body, a 14% manual incline, 0.5 to 3.7 mph in working, walking and jogging modes, a 2.5 HP brushless motor running “under 45dB”, a 350 lb capacity, a self-lubricating belt, a 15 by 37-inch five-layer belt with eight shock absorbers, an LED display, a remote and the YPOOFIT app. The product details give 37.9 lb and a one-year warranty. It was $149.99 as a Prime-exclusive deal and $199.99 otherwise, sold by YIFIT FITNESS. YPOO’s own store listed the same description at $209.99. A second Amazon listing with the same title (model M5038A) has bullets for a different pad, covered below.",
+  },
+  {
+    id: "ypoo-m4638-auto-folding-treadmill",
+    name: "YPOO M4638 Auto-Folding Treadmill, 8 mph",
+    brand: "YPOO",
+    category: "The Only YPOO Folding Treadmill on Amazon",
+    badge: "Best for Light Jogging",
+    amazonUrl: "https://www.amazon.com/dp/B0D9VPS7CP?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41LcuoH13dL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $199.99 with Prime (Amazon, 26 Nov 2026)",
+    priceBounds: {"low":199.99,"high":199.99},
+    specs: "To 8 mph · 8% manual incline · 37 x 15 in. belt · 300 lb max user · soft-drop folding · 12 programs · Bluetooth (per the Amazon listing)",
+    pros: [
+      "The fastest YPOO on Amazon, with speed shortcuts at 3, 6 and 8 mph",
+      "A console, 12 preset programs and hands-free soft-drop folding",
+      "The same M4638 code as the V8 on YPOO’s own store, which was $441.99 there",
+    ],
+    cons: [
+      "A 37-inch belt is short for anything faster than a jog",
+      "The listing’s display and folded-size figures do not make sense, so they are left off",
+      "The $199.99 price was Prime-exclusive; otherwise it was $249.99",
+    ],
+    bottomLine: "The YPOO to pick if you want a console and the option of an easy jog, accepting a walking-pad-length belt.",
+    description: "This is YPOO’s compact folding treadmill (model M4638 in the product details). Its Amazon listing (checked 26 November 2026) gives a top speed of 8 mph with shortcut keys at 3, 6 and 8 mph, an 8% manual incline, a 37 by 15-inch five-layer belt, a 300 lb capacity, 12 preset programs and countdown modes, Bluetooth with the YPOO app, wheels and soft-drop folding, and says it arrives mostly assembled. It also claims a 16-inch screen and a folded size of “10.5 ft”, neither of which is credible, so we left both out. The product details give 75 lb and a one-year warranty. It was $199.99 as a Prime-exclusive deal, $249.99 otherwise, sold by YPOO-US. YPOO’s store sells the V8 under the same M4638 code at $441.99, against $499.99, with the same 8 mph, 8% and 300 lb figures.",
+  },
+  {
+    id: "urevo-strol-2e-pro",
+    name: "UREVO Strol 2E Pro",
+    brand: "UREVO",
+    category: "Alternative From a Bigger Walking-Pad Brand",
+    badge: "Alternative: Sold by Amazon",
+    amazonUrl: "https://www.amazon.com/dp/B0H1H4JT4C?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/410e3-vj4nL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $177.64 (Amazon, 26 Nov 2026)",
+    priceBounds: {"low":177.64,"high":177.64},
+    specs: "0.6–4 mph walking mode · 0.4–6.2 mph running mode · 12% manual incline · safety handle · 44 lb · app (per the Amazon listing)",
+    pros: [
+      "Sold by Amazon.com, so Amazon’s own returns apply",
+      "A 12-month warranty in the listing details, from a brand with a longer US track record",
+      "At 44 lb, light enough to roll under a bed, per the listing",
+    ],
+    cons: [
+      "About $35 to $60 more than comparable YPOO pads on 26 November 2026",
+      "The listing does not state a capacity or belt size",
+      "A lower maximum incline, 12%, than most YPOO listings claim",
+    ],
+    bottomLine: "The pad to compare first if you would rather buy from Amazon itself and a better-known brand than save $40.",
+    description: "UREVO’s Strol 2E Pro is the closest mainstream rival to a YPOO pad with handles. Its Amazon listing (checked 26 November 2026) gives a 12% manual incline, a safety handle, 0.6 to 4 mph in walking mode and 0.4 to 6.2 mph in running mode, tool-free folding, wheels, a 44 lb weight and an app with AI auto-speed and virtual routes. It does not state a capacity or belt size in its title or bullets. The product details give model URTM059 and a 12-month warranty. It was $177.64, sold by Amazon.com, against a $219.99 list price. Our UREVO guide covers the brand’s other pads and warranty terms.",
+  },
+  {
+    id: "merach-w50-lite-trekpad",
+    name: "MERACH W50 Lite TrekPad",
+    brand: "MERACH",
+    category: "Alternative With Powered Incline",
+    badge: "Alternative: Auto Incline",
+    amazonUrl: "https://www.amazon.com/dp/B0HJZQGPW5?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41otnmoQLpL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $209.99 (Amazon, 26 Nov 2026)",
+    priceBounds: {"low":209.99,"high":209.99},
+    specs: "10% auto incline (10 levels) · 350 lb max user · 3.0 HP brushless · Bluetooth speaker · Merach app (per the Amazon listing)",
+    pros: [
+      "Automatic incline you change by remote, without stepping off: no YPOO pad offers that",
+      "A 350 lb capacity, matching the highest YPOO pads",
+      "Apple Health and Google Fit syncing through the Merach app, per the listing",
+    ],
+    cons: [
+      "No side handlebars, unlike most YPOO pads",
+      "The listing’s bullets do not state a speed range or belt size",
+      "A lower maximum incline, 10%, than the YPOO listings claim",
+    ],
+    bottomLine: "Worth the extra if you want to change incline mid-walk and do not need handles to hold.",
+    description: "The W50 Lite is MERACH’s cheaper auto-incline walking pad. Its Amazon listing (checked 26 November 2026) gives a 10-level automatic incline to 10%, adjusted by remote, a 3.0 HP brushless motor quoted at under 40 dB, a steel frame, a five-layer belt, a 350 lb capacity, built-in Bluetooth speakers and the Merach app with Apple Health and Google Fit. Its bullets give no speed range or belt size. The product details give a one-year warranty and about 51.8 lb. It was $209.99, sold by MERACHFITNESS, against a $299.99 list price.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Brands", item: "https://www.treadmillreviewsusa.com/brands/" },
+        { "@type": "ListItem", position: 3, name: "YPOO Treadmills", item: "https://www.treadmillreviewsusa.com/ypoo-treadmills/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Is YPOO a good treadmill brand?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It is a legitimate budget brand with a US store, a US phone line and spare parts for sale. Its walking pads are fine for incline walking with handles, but every model has a belt of about 37 to 39.5 inches, a top speed of 8 mph or less, a manual incline and a one-year warranty, so they are not running treadmills.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Who makes YPOO treadmills?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "YPOO’s US store says the brand started in 2010. A factory site under the same name, ypoo.com, describes YPOO as a Chinese manufacturer of treadmills and other equipment in Wuyi County, Jinhua, Zhejiang, that also builds for other brands. We could not confirm the two are the same legal company.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is YPOO the same as RHYTHM FUN?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "They are clearly linked: RHYTHM FUN uses YPOO’s YPOOFIT app and calls its S8 a “YPOO treadmill”, and YPOO’s shipping guide names Rhythm Fun. Some models look like the same design, but their Amazon listings differ on model codes, belts or capacity, so compare the figures before assuming two are identical.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What warranty comes with a YPOO walking pad?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Every Amazon listing we checked gives one year. YPOO’s own YPOO Care warranty is also one year, for home use, but it applies only to orders placed on ypoofitness.com, so on an Amazon order the listing’s warranty and the seller are what you rely on.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much weight can a YPOO walking pad hold?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "YPOO listings give 300, 330 or 350 lb depending on the model. The T7 and the ultra-slim M5038 state 350 lb. One listing states both 350 and 400 lb, so use the lower figure for that one.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is the YPOO incline automatic?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Every YPOO on Amazon on 26 November 2026 used a manual incline, set by hand at two or three positions with the belt stopped. If you want to change incline while walking, look at an automatic-incline pad such as the MERACH W50 Lite.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What app does YPOO use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "YPOO pads use the YPOOFIT app, spelled Ypoofit or YPOO FIT in some listings, for workouts, speed control and tracking. The same app is used by RHYTHM FUN’s pads.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-26",
+      dateModified: "2026-11-26",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
+      ...(product.image ? { image: product.image.url } : {}),
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 6,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/ypoo-treadmills/#${product.id}`,
+      })),
+    },
+  ],
+};
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/ypoo-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "brands");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-26",
+    modifiedTime: "2026-11-26",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "ypoo treadmill",
+      "ypoo treadmill reviews",
+      "ypoo walking pad",
+      "is ypoo a good brand",
+      "ypoo walking pad with handle bar",
+      "ypoo treadmill warranty",
+      "ypoofit app",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Best Budget YPOO: YPOO 15% Incline Walking Pad with Handle Bar", link: PRODUCTS[0].amazonUrl }}
+>
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/brands/">Brands</a>
+        <span aria-hidden="true">›</span>
+        <span>Brand Guide</span>
+      </nav>
+      <h1 class="ed-title">YPOO Treadmills: Is YPOO a Good Brand?</h1>
+      <p class="ed-dek">
+        YPOO is a real Chinese fitness brand with a US store, a US phone line and a spare-parts shop, and its treadmills are cheap incline walking pads with side handlebars rather than running machines. On Amazon on 26 November 2026 its pads ran from $116.84 to $203.99 and its one folding treadmill was $199.99, rated 300 to 350 lb, with a one-year warranty in every listing. Several listings contradict themselves, so this guide sets out which figures hold, which do not, and what to check before you order.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 26, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          <span class="ed-method">Based on the brand’s published specifications and warranty terms, retailer listings and owner reports.</span>
+        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
+      </div>
+      <p class="ed-disclosure">
+        Some links on this page are affiliate links: we may earn a commission at no cost to you. <a href="/editorial-standards/">How we review.</a>
+      </p>
+
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#ypoo-15-incline-walking-pad-handle-bar"><img src="https://m.media-amazon.com/images/I/41Y1ss++ezL._SL500_.jpg" alt="YPOO 15% Incline Walking Pad with Handle Bar" width="500" height="500" decoding="async" /></a>
+          <a href="#ypoo-t7-16-incline-walking-pad-350-lb"><img src="https://m.media-amazon.com/images/I/41fterUw3WL._SL500_.jpg" alt="YPOO T7 16% Incline Walking Pad, 350 lb" width="500" height="500" decoding="async" /></a>
+          <a href="#ypoo-ultra-slim-14-incline-walking-pad"><img src="https://m.media-amazon.com/images/I/415U+KlStVL._SL500_.jpg" alt="YPOO Ultra-Slim 14% Incline Walking Pad" width="500" height="500" decoding="async" /></a>
+        </div>
+        <figcaption>YPOO 15% Incline Walking Pad with Handle Bar · YPOO T7 16% Incline Walking Pad, 350 lb · YPOO Ultra-Slim 14% Incline Walking Pad</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          YPOO walking pads fill Amazon's results for an incline walking pad with handles: a dozen listings between
+          about $115 and $205, near-identical photos, and titles that promise 13, 14, 15 or 16% incline. Some of them
+          are the same machine listed twice; some list one figure in the title and another in the bullets. This guide
+          reads them line by line: who YPOO is, which models Amazon sold on 26 November 2026 and at what price, where a
+          listing contradicts itself, what the warranty covers and who it is with, how YPOO relates to RHYTHM FUN, and
+          who should buy one at all. Nothing here was tested hands-on; it is built from Amazon's listings, YPOO's own
+          store and its published warranty and return terms.
+        </p>
+
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget YPOO:</span> <a href="#ypoo-15-incline-walking-pad-handle-bar">YPOO 15% Incline Walking Pad with Handle Bar</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Heavier Users:</span> <a href="#ypoo-t7-16-incline-walking-pad-350-lb">YPOO T7 16% Incline Walking Pad, 350 lb</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Under-Desk Pick:</span> <a href="#ypoo-ultra-slim-14-incline-walking-pad">YPOO Ultra-Slim 14% Incline Walking Pad</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Light Jogging:</span> <a href="#ypoo-m4638-auto-folding-treadmill">YPOO M4638 Auto-Folding Treadmill, 8 mph</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Alternative: Sold by Amazon:</span> <a href="#urevo-strol-2e-pro">UREVO Strol 2E Pro</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Alternative: Auto Incline:</span> <a href="#merach-w50-lite-trekpad">MERACH W50 Lite TrekPad</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <nav class="ed-toc not-prose" aria-label="In this brand guide">
+          <h2>In this brand guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#is-ypoo-legit">Is It Legit?</a></li>
+            <li><a href="#lineup">The Models</a></li>
+            <li><a href="#compare-specs">Specs Compared</a></li>
+            <li><a href="#ypoo-and-rhythm-fun">YPOO and RHYTHM FUN</a></li>
+            <li><a href="#warranty">Warranty and Seller</a></li>
+            <li><a href="#what-to-check">What to Check</a></li>
+            <li><a href="#who-it-suits">Who It Suits</a></li>
+            <li><a href="#alternatives">Alternatives</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2>The Short Answer</h2>
+<p>
+            <strong>YPOO is a legitimate budget brand, and its walking pads are reasonable for incline walking with
+            something to hold, not for running. The 15% pad with handlebars at $116.84 is the one to buy on price, and the
+            T7 at $142.49 if you need a 350 lb rating (Amazon, 26 Nov 2026).</strong>
+          </p>
+          <ul>
+            <li><strong>Who it is:</strong> YPOO Fitness runs a US store at ypoofitness.com with a US phone line
+            (1-844-977-0007) and says it started in 2010. A factory site under the same name, ypoo.com, gives an address
+            in Wuyi County, Jinhua, Zhejiang, China.</li>
+            <li><strong>Walking pads:</strong> $116.84 to $203.99 on Amazon on 26 November 2026, most with folding side
+            handlebars, a manual incline of 13 to 16%, top speeds of 3.7 to 7.5 mph and belts of about 37 inches.</li>
+            <li><strong>Folding treadmill:</strong> one model on Amazon, the M4638, at $199.99 with Prime: 8 mph, 8%
+            manual incline, 300 lb.</li>
+            <li><strong>Warranty:</strong> every Amazon listing gives one year. YPOO's own "YPOO Care" warranty is also one
+            year, home use only, and applies only to orders placed on its store.</li>
+            <li><strong>Seller:</strong> YPOO-US or YIFIT FITNESS, not Amazon.com, on every listing we checked.</li>
+          </ul>
+          <p>
+            If you are shopping on price, a YPOO belongs in the same comparison as the machines in our guide to the <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">best treadmills under $300</a>.
+            What you should not do is trust the incline in a YPOO title: two listings below claim 13 or 16% in the title
+            and 8% in the bullets. Nothing on this page was tested hands-on; it is built from Amazon's listings, YPOO's
+            store and its published policies.
+          </p>
+        </div>
+
+        <div id="is-ypoo-legit" class="scroll-mt-24">
+          <h2>Is YPOO Legit, and Is It Any Good?</h2>
+<p>
+            <strong>Yes, YPOO is a real brand with a working US store, a support line and a spare-parts catalogue, and its
+            machines are real products sold on Amazon by its own storefront. Whether they are any good depends on what you
+            ask of them: they are fine short-belt incline walkers and poor running machines.</strong>
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Who is behind YPOO</h3>
+          <p>
+            YPOO's US store, ypoofitness.com, says on its About page (checked 26 November 2026) that "YPOO started in 2010"
+            and sells in "more than 70 countries". It sells treadmills, walking pads, <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium" data-autolink>rowing machines</a> and exercise bikes,
+            ships free within the contiguous United States by UPS or FedEx, and lists a support email at its own domain
+            and a phone line, 1-844-977-0007, staffed Monday to Friday, 9am to 5pm Pacific. Its guarantee page promises a
+            reply within 48 hours.
+          </p>
+          <p>
+            A separate site, ypoo.com, presents YPOO as a manufacturer for other brands. It describes YPOO as "one of the
+            largest manufacturers in China, specializing in treadmills, elliptical trainer, spinning bikes and rower",
+            offers OEM, ODM, wholesale and private-label production, and gives an address on Furong Road, Wuyi County,
+            Jinhua City, Zhejiang Province. We could not find a page that formally ties the two sites to one company, but
+            they share the name and product types. That matters for one reason: a factory that also builds for other
+            labels explains why YPOO machines turn up under other names, as the RHYTHM FUN section below shows.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What points to a real, if basic, product</h3>
+          <ul>
+            <li><strong>Spare parts are on sale.</strong> YPOO's store sells replacement remotes, safety keys, incline
+            spacers, handrails and rubber pads at $19.99 to $29.99, listed by model codes such as M4138, M5038 and T5 that
+            also appear in the Amazon listings' product details. Many cheap brands sell no parts at all.</li>
+            <li><strong>The models are coded and traceable.</strong> Amazon's product details give model codes (T5, T7,
+            M4138F, M4138L, M4138P, M5038, M4638) that you can match to YPOO's own store and manuals.</li>
+            <li><strong>The brand sells under its own name.</strong> Most listings are sold by YPOO-US, the brand's Amazon
+            storefront, rather than an unnamed reseller.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Why buyers end up disappointed</h3>
+          <ul>
+            <li><strong>Inclines that do not agree.</strong> One listing says 16% in its title and 8% in its bullets;
+            another says 13% and 6.2 mph in its title, and 8% and 5.0 mph in its bullets.</li>
+            <li><strong>Short belts.</strong> Every YPOO belt figure we found is 36.6 to 39.5 inches long and 15 inches
+            wide. That is a walking-pad size, even on the treadmill with a console.</li>
+            <li><strong>Missing motor ratings.</strong> Half the listings give no horsepower, and none says whether its
+            figure is continuous or peak.</li>
+            <li><strong>Prices that depend on the deal.</strong> Four YPOO prices on 26 November 2026 were
+            Prime-exclusive; without Prime the same listings cost $50 to $96 more.</li>
+          </ul>
+          <p>
+            Read that way, YPOO is neither a scam nor a hidden bargain. It is a factory-linked budget brand selling
+            compact incline walkers, with listings you should read as claims. Our <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a> explains which of those claims matter most at this price.
+          </p>
+        </div>
+
+        <div id="lineup" class="scroll-mt-24">
+          <h2>YPOO Treadmills and Walking Pads on Amazon in November 2026</h2>
+<p>
+            These are the YPOO-branded listings that Amazon's search returned on 26 November 2026 for "YPOO treadmill" and
+            "YPOO walking pad", with the model code from each listing's product details, the seller and the price shown
+            that day. Every one listed "1 Year" as its warranty.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Listing</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model code</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Seller</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Amazon price, 26 Nov 2026</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% pad with handle bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">YPOO-US</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$116.84 (list $168.99)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16% pad with RGB light, 330 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">YPOO-US</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$118.99 (typical $139.99)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">13% pad with handle bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M4138F</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">YPOO-US</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$129.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16% pad with app, to 5 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M4138L</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">YPOO-US</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$135.99 (typical $159.99)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16% pad, 4.1 in. folded, 330 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not stated</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">YIFIT FITNESS</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$139.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T7 16% pad, 350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T7</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">YPOO-US</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$142.49 (list $199.99)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16% pad, 300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M4138F</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">YPOO-US</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$144.39 (list $199.99)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16% pad, 0.6–7.5 mph, 300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not stated</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">YPOO-US</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$149.99 (list $219.99)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ultra-slim 14% pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M5038</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">YIFIT FITNESS</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$149.99 Prime only; $199.99 otherwise</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ultra-slim 14% pad (second listing)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M5038A</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">YIFIT FITNESS</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$149.99 Prime only; $239.99 otherwise</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Auto-folding treadmill, 8 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M4638</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">YPOO-US</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$199.99 Prime only; $249.99 otherwise</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16% pad with removable desk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M4138P</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">YPOO-US</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$203.99 Prime only; $299.99 otherwise (1 left)</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Twelve listings is more models than YPOO really sells. Several share a model code: the 13% and one of the 16%
+            pads are both M4138F, and two T5 listings disagree on incline (15 against 16%) and capacity (300 against
+            330 lb). When two YPOO listings look alike, compare the model code and the bullets, not the photo or the
+            title, and buy the cheaper one only if the figures match. The cards below cover four YPOO models that between
+            them span the range, from the cheapest pad with handles to the folding treadmill, plus two alternatives from
+            better-known walking-pad brands.
+          </p>
+        </div>
+      <!-- Product blocks -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
+                </div>
+              </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
+          ))
+        }
+      </div>
+
+        <div id="compare-specs" class="scroll-mt-24">
+          <h2>YPOO Models Compared: Speed, Incline, Belt and Capacity</h2>
+<p>
+            Every figure here comes from the Amazon listing's title or bullets on 26 November 2026. A dash means the
+            listing does not state it, or states it two ways; the notes below say which.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Speed</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Incline</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Belt</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Max user</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Motor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T5, 15% pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–6.2 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15%, 3 levels</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">37.4 x 15 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T5, 16% RGB pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–6.2 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">37 x 15 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">330 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 HP</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16% pad, 4.1 in. folded</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–6.2 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0/12/16%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">37.4 x 15 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">330 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M4138L</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.5–5.0 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">36.6 x 15 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 HP brushless</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M4138F, "16%" listing</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.5–5.0 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">36.6 x 15 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M4138F, "13%" listing</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">36.6 x 15 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16% pad, 0.6–7.5 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–7.5 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">36.6 x 15 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T7</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–7.5 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0/10/16%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 HP</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M4138P with desk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.5–6.7 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0/10/16%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">39.5 in. long</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M5038 ultra-slim</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.5–3.7 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">14%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15 x 37 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 HP brushless</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M5038A ultra-slim</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M4638 treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">To 8 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">8%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">37 x 15 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td></tr>
+            </tbody>
+          </table></div>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Where the listings disagree with themselves</h3>
+          <ul>
+            <li><strong>M4138F, "16%" listing ($144.39):</strong> the title says 16% incline twice; the first bullet says
+            "a unique 8% manual incline". Until the seller confirms it, assume 8%.</li>
+            <li><strong>M4138F, "13%" listing ($129.99):</strong> the title says 13% and 6.2 mph; the bullets say 8% incline
+            and a top speed of 5.0 mph. Both listings share the M4138F code and identical bullets, which suggests the
+            bullets describe the real machine and the titles were changed.</li>
+            <li><strong>M5038A ultra-slim ($149.99 with Prime):</strong> the title promises a 3.5-inch, 14%, 2.5 HP,
+            350 lb pad; the bullets describe a model called "R2" with 0, 10 and 16% incline, a 3.0 HP motor, a 400 lb
+            capacity, 6.2 mph and foldable handrails. YPOO's own store page for its R2-style slim pad gives 14%, 2.5 HP and
+            350 lb. We left every figure off this listing.</li>
+            <li><strong>T5 code:</strong> two listings carry it, one claiming 15% and 300 lb, the other 16%, 330 lb and
+            a 2.5 HP motor. They may be revisions of one frame; buy on the figures in the listing you order from.</li>
+            <li><strong>M4638 treadmill:</strong> the incline, speed and capacity agree, but the listing's "16 Inch"
+            screen and "10.5 ft" folded size are not credible and are left out.</li>
+          </ul>
+          <p>
+            Two patterns hold despite the gaps. Every belt figure is 15 inches wide and 36.6 to 39.5 inches long, and
+            nothing in the range goes faster than 8 mph. That puts every YPOO, whatever the title says, in the walking and
+            light-jogging class. No listing says whether its horsepower is continuous or peak, and at these prices a
+            quoted figure is very likely peak; the continuous rating, which matters on a long desk walk, is usually lower.
+            YPOO's inclines are also all manual: you set one of two or three positions by hand, with the belt stopped.
+          </p>
+        </div>
+
+        <div id="ypoo-and-rhythm-fun" class="scroll-mt-24">
+          <h2>YPOO and RHYTHM FUN: The Same Machines?</h2>
+<p>
+            <strong>The two brands are clearly linked, and some of their machines look like the same design, but we could
+            not confirm that any two specific models are identical.</strong>
+          </p>
+          <p>
+            Our <a href="/rhythm-fun-treadmill/" class="text-[#0F62FE] font-medium">RHYTHM FUN treadmill guide</a> noted
+            that RHYTHM FUN's pads use the YPOOFIT app and that its store describes its S8 treadmill as a "YPOO treadmill".
+            YPOO's side of the story adds more. The shipping guide on ypoofitness.com, checked 26 November 2026, refers to
+            "Rhythm Fun" by name four times, including "the Rhythm Fun shipping facility", in a page that is otherwise
+            about YPOO orders. That reads like a policy page shared between the two stores.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Which models line up</h3>
+          <ul>
+            <li><strong>The S8 and the YPOO V8 (M4638).</strong> RHYTHM FUN describes its S8 as a handle-bar treadmill with
+            a three-lever manual incline to 8%, 8 mph, 300 lb, a brushless motor under 65 dB, a Bluetooth speaker and the
+            YPOOFIT app. YPOO's store describes its V8 Auto-Folding Treadmill (SKU code M4638) in almost the same words:
+            "Three Lever Manual Incline", 8%, 8 mph, 300 lb, "noise below 65 db", a Bluetooth speaker and YPOOFIT. On
+            Amazon, though, RHYTHM FUN's 8 mph, 8% treadmill carries model code M4438 and a 41.7 by 15-inch belt, while
+            YPOO's M4638 listing gives 37 by 15 inches. They are the same class of machine, but the listings do not prove
+            they are the same machine.</li>
+            <li><strong>The RHYTHM FUN 16% pad and YPOO's 4.1-inch 16% pad.</strong> Both give 0.6 to 6.2 mph, a 16%
+            maximum in three manual steps, 8.5-inch side handlebars, front wheels and the YPOOFIT app, and their Amazon
+            product details give the same 43.5 by 21-inch footprint. They differ in small ways: 2/12/16% against
+            0/12/16%, 300 against 330 lb, a 3.9 against a 4.1-inch fold, and 37.5 against 37.4-inch belts. On
+            26 November 2026 the RHYTHM FUN listing was $118.99 and the YPOO one $139.99.</li>
+          </ul>
+          <p>
+            The practical point is the one our RHYTHM FUN guide made: before you buy either brand, search for the other
+            and compare the photos, model code, belt, incline steps and capacity. If they match, buy the cheaper one from
+            the seller whose returns you prefer. If they differ on capacity or belt length, buy on those figures, not on
+            the logo.
+          </p>
+        </div>
+
+        <div id="warranty" class="scroll-mt-24">
+          <h2>YPOO Warranty, Returns and Who Sells It</h2>
+<p>
+            Every YPOO listing on this page gave "1 Year" (or "1-Year", or "1 Year Manufacturer") as its warranty in its
+            Amazon product details on 26 November 2026. YPOO's store has its own one-year warranty, called YPOO Care,
+            with conditions worth reading before you choose where to buy.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What YPOO Care covers</h3>
+          <p>
+            YPOO's guarantee page says the product is "free from defects in material and workmanship for one (1) year
+            from the date of purchase, provided it is used in a home environment". It excludes abuse, accidental damage,
+            unauthorized repairs, negligence, misuse, modifications and commercial use, and it is non-transferable. The
+            important line for Amazon shoppers is that YPOO Care "applies only to orders placed through ypoofitness.com".
+            So on an Amazon purchase you rely on the one-year warranty stated in the listing, through the seller in the
+            buy box. Keep the order number and write to YPOO's support email with photos if a fault appears. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains how one year compares with what other brands offer.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Returns on YPOO's own store</h3>
+          <p>
+            The store's refund policy gives 30 days, for unused items in their <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a>, with no restocking
+            fee. If the return is your choice, you pay return shipping, and that cost is deducted from the refund; if the
+            item arrived damaged or wrong, you do not. Two lines need care. The policy says "only regular priced items may
+            be refunded, unfortunately sale items cannot be refunded", which matters on Black Friday, and transit damage
+            has to be reported within three business days of delivery, with photos.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Who sells YPOO on Amazon</h3>
+          <p>
+            None of the YPOO listings we checked was sold by Amazon.com. Most were sold by YPOO-US, the brand's own
+            storefront; the 4.1-inch 16% pad and both ultra-slim listings were sold by YIFIT FITNESS. That is normal for
+            a brand like this, but it means the return terms are the seller's, inside Amazon's rules, rather than Amazon's
+            own. Check the "Ships from" and "Sold by" lines and the seller's return terms before you order, and keep the
+            box until the return window has closed: a 40 to 75 lb machine is very hard to send back without it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Store or Amazon?</h3>
+          <p>
+            On 26 November 2026 Amazon was far cheaper. YPOO's store listed the M5038 ultra-slim pad at $209.99 against
+            $149.99 with Prime on Amazon, and the V8 under the M4638 code at $441.99 against $199.99. The store's own
+            YPOO Care warranty is also only one year, the same term the Amazon listings state, so the extra cost buys
+            little except a direct relationship with the brand.
+          </p>
+        </div>
+
+        <div id="what-to-check" class="scroll-mt-24">
+          <h2>What to Check Before You Buy a YPOO Walking Pad</h2>
+<p>
+            Because YPOO listings look alike and several contradict themselves, a few minutes on the listing page saves a
+            return later. These are the checks worth making, in order.
+          </p>
+          <ol>
+            <li><strong>The incline in the bullets, not the title.</strong> Two listings claim 13 or 16% in the title and
+            8% in the bullets. If they disagree, assume the lower figure. Our guide to the <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">best walking pads with incline</a> explains how much incline is useful for walking.</li>
+            <li><strong>The model code.</strong> Scroll to the product details and note it (T5, T7, M4138F, M5038 and so
+            on). Two listings with the same photo can differ in speed and capacity, and the same code can appear twice at
+            different prices.</li>
+            <li><strong>The capacity.</strong> YPOO listings give 300, 330 or 350 lb, and one gives 350 and 400 lb in the
+            same listing. Buy on the lowest figure stated and leave a margin; our <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">treadmill weight capacity guide</a> explains why.</li>
+            <li><strong>Belt length against your stride.</strong> Every YPOO belt figure is 36.6 to 39.5 inches. That is
+            enough for walking for most adults; taller walkers and anyone who wants to jog should compare the longer belts
+            in our guide to the <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">best treadmills
+            under $500</a>.</li>
+            <li><strong>Whether the price needs Prime.</strong> Four YPOO deals on 26 November 2026 were Prime-exclusive.
+            Without Prime, the ultra-slim pad was $199.99 or $239.99, not $149.99.</li>
+            <li><strong>The seller line.</strong> YPOO-US or YIFIT FITNESS, not Amazon.com. Read that seller's return
+            terms, and note that YPOO's own store warranty does not cover Amazon orders.</li>
+          </ol>
+          <p>
+            One practical point on manual incline: on a YPOO pad you change it by lifting the frame and moving a spacer or
+            lever, with the belt stopped. That is fine if you pick one setting for a session. If you want to change
+            incline as you walk, you need a pad with <a href="/best-auto-incline-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>automatic incline</a>, such as the MERACH alternative below.
+          </p>
+        </div>
+
+        <div id="who-it-suits" class="scroll-mt-24">
+          <h2>Who a YPOO Treadmill Suits, and Who It Does Not</h2>
+<p>
+            <strong>A YPOO suits a walker on a tight budget who wants handles to hold and a fixed incline to climb. It does
+            not suit a runner, a tall jogger or anyone who wants to change incline mid-walk.</strong>
+          </p>
+          <ul>
+            <li><strong>Suits:</strong> a home or desk walker who wants side handlebars and a steep manual incline for
+            about $115 to $145. The 15% pad with handle bar fits this best.</li>
+            <li><strong>Suits:</strong> users between 300 and 350 lb who want handles, on the T7, the highest-rated YPOO
+            pad with handlebars.</li>
+            <li><strong>Suits:</strong> an under-desk walker short of storage space, on the 3.5-inch M5038, as long as
+            3.7 mph is enough.</li>
+            <li><strong>Suits:</strong> a walker who wants a console, programs and the odd easy jog, on the M4638 folding
+            treadmill, accepting its 37-inch belt.</li>
+            <li><strong>Does not suit:</strong> runners. A belt of 36.6 to 39.5 inches and a ceiling of 8 mph are not
+            running equipment; look for 10 mph or more and a belt of 55 to 60 inches. Our page on whether <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">you can run on a walking pad</a> explains the limits.</li>
+            <li><strong>Does not suit:</strong> anyone who wants powered incline. Every YPOO on Amazon uses manual
+            positions.</li>
+            <li><strong>Does not suit:</strong> buyers who want long cover. One year is short; several rival brands give
+            longer cover.</li>
+          </ul>
+          <p>
+            For a household where two people of different sizes will share the machine, plan for the heavier user and
+            the longer stride. That usually narrows the YPOO choice to the 350 lb models, or out of YPOO altogether.
+          </p>
+        </div>
+
+        <div id="alternatives" class="scroll-mt-24">
+          <h2>YPOO Alternatives: Bigger Brands and Powered Incline</h2>
+<p>
+            The two alternatives in the cards cover the two reasons YPOO shoppers end up looking elsewhere. If you would
+            rather buy from Amazon itself and a brand with a longer US record, the UREVO Strol 2E Pro cost about $177.64 on
+            26 November 2026, sold by Amazon.com, with a safety handle, a 12% manual incline, a running mode to 6.2 mph and
+            a 12-month warranty. Its listing does not state a capacity or belt size, so check both. Our <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium">UREVO treadmills</a> guide covers the rest of
+            that range.
+          </p>
+          <p>
+            If manual incline is the sticking point, the MERACH W50 Lite TrekPad cost $209.99 on the same day, with a
+            10-level automatic incline to 10% that you change by remote, a 350 lb rating and a 3.0 HP brushless motor. It
+            has no side handlebars and its bullets give no speed range. Our <a href="/merach-treadmills/" class="text-[#0F62FE] font-medium">Merach treadmills</a> guide explains the
+            brand's other pads and its warranty.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">If you need a real folding treadmill</h3>
+          <p>
+            YPOO's only folding treadmill on Amazon has a 37-inch belt. If you want to jog properly, a folding treadmill
+            with a longer deck and a published continuous motor rating is a better buy, even at two or three times the
+            price. Our guide to the <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a> compares
+            them on belt, speed, capacity and folded size. For the closest look-alike brand, read our <a href="/rhythm-fun-treadmill/" class="text-[#0F62FE] font-medium">RHYTHM FUN guide</a>, and for another
+            budget brand read the same way, our guide to <a href="/serenelife-treadmills/" class="text-[#0F62FE] font-medium">SereneLife treadmills</a>.
+          </p>
+          <p>
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium" data-autolink>Black Friday</a> falls on 27 November 2026, and YPOO listings already showed cuts of $21 to $70 against their list
+            or typical prices on 26 November. A cut against a list price is not the same as a good price, and four of
+            the best deals needed Prime. Compare the model code and the price on the day rather than the percentage off,
+            and remember that YPOO's own store does not refund sale items.
+          </p>
+        </div>
+
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>4 Mistakes People Make Buying a YPOO Walking Pad</h2>
+          <p>A YPOO can be a sensible cheap incline walker. These are the mistakes that turn it into a return.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Believing the incline in the title</h3>
+              <p>Two YPOO listings claim 13 or 16% in the title and 8% in the bullets. Read the bullets and the model code, assume the lower figure, and do not pay extra for a bigger number.</p>
+            </li>
+            <li>
+              <h3>Counting on a Prime-only price</h3>
+              <p>Four YPOO deals on 26 November 2026 were Prime-exclusive, and the same listings cost $50 to $96 more without Prime. Check the price in your basket, not on the search page.</p>
+            </li>
+            <li>
+              <h3>Assuming YPOO’s store warranty covers Amazon orders</h3>
+              <p>YPOO Care applies only to orders placed on ypoofitness.com. On Amazon you rely on the one-year warranty in the listing and on the seller, so keep the order number and the box.</p>
+            </li>
+            <li>
+              <h3>Buying one to run on</h3>
+              <p>Every YPOO belt is about 37 to 39.5 inches long and the fastest model tops out at 8 mph. If you plan to run, budget for a treadmill with a 55 to 60-inch belt and 10 mph or more.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>Our verdict on the brand</h2>
+          <p>
+            <strong class="text-white">YPOO is a real budget brand that makes incline walking pads, not running
+          treadmills.</strong> The 15% pad with handle bar at $116.84 is the one to buy on price, the T7 at $142.49 adds a
+          350 lb rating and 7.5 mph, the ultra-slim M5038 at $149.99 with Prime is the under-desk pick, and the M4638 at
+          $199.99 with Prime is the only YPOO with a console (Amazon, 26 Nov 2026). Every model has a short belt, a manual
+          incline and a one-year warranty.
+          </p>
+          <p>
+            Read the bullets rather than the title, check the model code, the lowest capacity and whether the price needs
+          Prime, and keep the box. Compare any YPOO with its RHYTHM FUN look-alike before you buy. If you want to run, or
+          to change incline as you walk, compare <a href="/best-treadmills-under-500/" class="text-[#5AA9FF] font-bold no-underline">treadmills under $500</a> or our <a href="/best-walking-pads-with-incline/" class="text-[#5AA9FF] font-bold no-underline">incline walking pads</a> before you order.
+          </p>
+        </div>
+
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/rhythm-fun-treadmill/">RHYTHM FUN Treadmill</a></li>
+            <li><a href="/serenelife-treadmills/">SereneLife Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is YPOO a good treadmill brand?</h3></summary>
+            <p class="faq-a">
+              It is a legitimate budget brand with a US store, a US phone line and spare parts for sale. Its walking pads are fine for incline walking with handles, but every model has a belt of about 37 to 39.5 inches, a top speed of 8 mph or less, a manual incline and a one-year warranty, so they are not running treadmills.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Who makes YPOO treadmills?</h3></summary>
+            <p class="faq-a">
+              YPOO’s US store says the brand started in 2010. A factory site under the same name, ypoo.com, describes YPOO as a Chinese manufacturer of treadmills and other equipment in Wuyi County, Jinhua, Zhejiang, that also builds for other brands. We could not confirm the two are the same legal company.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is YPOO the same as RHYTHM FUN?</h3></summary>
+            <p class="faq-a">
+              They are clearly linked: RHYTHM FUN uses YPOO’s YPOOFIT app and calls its S8 a “YPOO treadmill”, and YPOO’s shipping guide names Rhythm Fun. Some models look like the same design, but their Amazon listings differ on model codes, belts or capacity, so compare the figures before assuming two are identical.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What warranty comes with a YPOO walking pad?</h3></summary>
+            <p class="faq-a">
+              Every Amazon listing we checked gives one year. YPOO’s own YPOO Care warranty is also one year, for home use, but it applies only to orders placed on ypoofitness.com, so on an Amazon order the listing’s warranty and the seller are what you rely on.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much weight can a YPOO walking pad hold?</h3></summary>
+            <p class="faq-a">
+              YPOO listings give 300, 330 or 350 lb depending on the model. The T7 and the ultra-slim M5038 state 350 lb. One listing states both 350 and 400 lb, so use the lower figure for that one.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the YPOO incline automatic?</h3></summary>
+            <p class="faq-a">
+              No. Every YPOO on Amazon on 26 November 2026 used a manual incline, set by hand at two or three positions with the belt stopped. If you want to change incline while walking, look at an automatic-incline pad such as the MERACH W50 Lite.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What app does YPOO use?</h3></summary>
+            <p class="faq-a">
+              YPOO pads use the YPOOFIT app, spelled Ypoofit or YPOO FIT in some listings, for workouts, speed control and tracking. The same app is used by RHYTHM FUN’s pads.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Brands">
+          <h2 class="section-title">More in Brands</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/brands/" class="btn-ghost">See all Brands</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Budget and Brand Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/rhythm-fun-treadmill/" class="card">
+            <div class="c-kicker">Brand guide</div>
+            <div class="c-title">RHYTHM FUN Treadmill</div>
+            <p class="c-blurb">The look-alike brand that shares YPOO’s app, and what we could confirm.</p>
+          </a>
+          <a href="/serenelife-treadmills/" class="card">
+            <div class="c-kicker">Brand guide</div>
+            <div class="c-title">SereneLife Treadmills</div>
+            <p class="c-blurb">Another budget brand, its models and the listing figures that disagree.</p>
+          </a>
+          <a href="/best-treadmills-under-300/" class="card">
+            <div class="c-kicker">Budget</div>
+            <div class="c-title">Best Treadmills Under $300</div>
+            <p class="c-blurb">Where YPOO sits among the cheapest machines with published specs.</p>
+          </a>
+          <a href="/best-treadmills-under-500/" class="card">
+            <div class="c-kicker">Budget</div>
+            <div class="c-title">Best Treadmills Under $500</div>
+            <p class="c-blurb">Longer belts and higher capacities for a little more money.</p>
+          </a>
+          <a href="/best-folding-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Folding Treadmills</div>
+            <p class="c-blurb">Folding treadmills compared on belt, speed, capacity and folded size.</p>
+          </a>
+          <a href="/best-walking-pads-with-incline/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Walking Pads With Incline</div>
+            <p class="c-blurb">Incline pads with better-documented figures, manual and automatic.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>

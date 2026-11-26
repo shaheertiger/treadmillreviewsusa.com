@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-26',
   socialProof: '1.5k',
   h1: ['LifeSpan Treadmills:', 'What the Brand Sells Now'],
   standfirst:
@@ -464,6 +464,12 @@ export default {
       title: "LifeSpan TX6-GlowUp",
       blurb: "The 20-inch, 400 lb desk treadmill and its spec conflicts.",
       url: '/lifespan-tx6-under-desk-treadmill/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a LifeSpan Treadmill Cost?',
+      blurb: 'Under-desk treadmills and desk sets, priced.',
+      url: '/how-much-does-a-lifespan-treadmill-cost/',
     },
   ],
   bottomLine: [

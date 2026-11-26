@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-11-23',
-  modified: '2026-11-24',
+  modified: '2026-11-26',
   socialProof: '1.1k',
   h1: ['Treadmill Humming Noise:', 'Normal Hum or a Failing Motor?'],
   standfirst:
@@ -468,6 +468,18 @@ export default {
       title: 'Treadmill Troubleshooting',
       blurb: 'Every common fault, in the order worth checking.',
       url: '/treadmill-troubleshooting/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'Why Does My Treadmill Keep Beeping?',
+      blurb: 'Safety key, LUBE reminders and error beeps.',
+      url: '/treadmill-keeps-beeping/',
+    },
+    {
+      kicker: 'Noise',
+      title: 'Treadmill Grinding Noise',
+      blurb: 'Rollers, bearings or motor? Find it by timing.',
+      url: '/treadmill-grinding-noise/',
     },
   ],
   bottomLine: [

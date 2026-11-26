@@ -60,19 +60,19 @@ for it), "how to tighten a treadmill belt" (720; /how-to-adjust-treadmill-belt/)
 - [x] 2026-11-25 · `schwinn-treadmill-troubleshooting` — Schwinn Treadmill Troubleshooting: Common Faults and Fixes
 - [ ] `what-speed-should-i-run-on-a-treadmill` — What Speed Should I Run on a Treadmill? Beginner to Fast — /training/ — pillar /what-speed-should-i-walk-on-a-treadmill/ (speed pages convert at 21% CTR)
 - [ ] `how-to-clean-a-walking-pad` — How to Clean a Walking Pad: Belt, Deck and Under the Belt
-- [ ] `treadmill-speed-fluctuating` — Treadmill Speeds Up or Slows Down on Its Own: Causes
-- [ ] `treadmill-belt-sticking` — Treadmill Belt Sticking or Hesitating: Lube, Deck or Motor
-- [ ] `treadmill-keeps-beeping` — Why Does My Treadmill Keep Beeping? Causes and Fixes
+- [~] skipped 2026-11-26: covered by /treadmill-belt-jerking/ (tagged 'treadmill speed fluctuates') · `treadmill-speed-fluctuating` — Treadmill Speeds Up or Slows Down on Its Own: Causes
+- [~] skipped 2026-11-26: covered by /treadmill-belt-slows-down-when-i-step-on-it/ and /treadmill-belt-jerking/ · `treadmill-belt-sticking` — Treadmill Belt Sticking or Hesitating: Lube, Deck or Motor
+- [x] 2026-11-26 · `treadmill-keeps-beeping` — Why Does My Treadmill Keep Beeping? Causes and Fixes
 
 
 ### Added 2026-11-24 (refill at 11 open: cost/price 6.1x and fix 1.5x are the winning traffic-lane types; each slug checked unused today)
 
 - [x] 2026-11-25 · `how-much-does-a-used-treadmill-cost` — How Much Does a Used Treadmill Cost? (2026): Prices by Brand and Age — /price/ — pillar /new-vs-used-treadmill/
-- [ ] `treadmill-grinding-noise` — Treadmill Grinding Noise: Rollers, Bearings or Motor? — /problems/ — siblings: clicking, humming, thumping
-- [ ] `how-much-does-a-lifespan-treadmill-cost` — How Much Does a LifeSpan Treadmill Cost? (2026): Every Model — /price/ — pillar /lifespan-treadmills/ (LifeSpan Shopify store works)
+- [x] 2026-11-26 · `treadmill-grinding-noise` — Treadmill Grinding Noise: Rollers, Bearings or Motor? — /problems/ — siblings: clicking, humming, thumping
+- [x] 2026-11-26 · `how-much-does-a-lifespan-treadmill-cost` — How Much Does a LifeSpan Treadmill Cost? (2026): Every Model — /price/ — pillar /lifespan-treadmills/ (LifeSpan Shopify store works)
 - [ ] `walking-pad-making-noise` — Walking Pad Making Noise? Squeak, Click and Hum Fixes — /problems/ — sibling /walking-pad-not-working/
-- [ ] `how-much-does-an-echelon-treadmill-cost` — How Much Does an Echelon Treadmill Cost? (2026) — /price/ — pillar /echelon-treadmills/
-- [ ] `treadmill-speed-fluctuates` — Treadmill Speed Fluctuates: Surging and Slowing Fixed — /problems/ — link /treadmill-speed-sensor/, /treadmill-belt-jerking/ (check not duplicating)
+- [x] 2026-11-26 · `how-much-does-an-echelon-treadmill-cost` — How Much Does an Echelon Treadmill Cost? (2026) — /price/ — pillar /echelon-treadmills/
+- [~] skipped 2026-11-26: covered by /treadmill-belt-jerking/ (tagged 'treadmill speed fluctuates') · `treadmill-speed-fluctuates` — Treadmill Speed Fluctuates: Surging and Slowing Fixed — /problems/ — link /treadmill-speed-sensor/, /treadmill-belt-jerking/ (check not duplicating)
 - [ ] `how-much-does-a-landice-treadmill-cost` — How Much Does a Landice Treadmill Cost? (2026) — /price/ — pillar /landice-treadmills/
 - [ ] `walking-pad-overheating` — Walking Pad Overheating: Why It Stops and How to Cool It — /problems/ — sibling /treadmill-overheating/
 - [ ] `how-much-does-a-precor-treadmill-cost` — How Much Does a Precor Treadmill Cost? (2026): Home and Gym — /price/ — pillar /precor-treadmills/
@@ -83,6 +83,25 @@ for it), "how to tighten a treadmill belt" (720; /how-to-adjust-treadmill-belt/)
 - [ ] `urevo-walking-pad-troubleshooting` — UREVO Walking Pad Troubleshooting: Remote, Belt and App — /problems/ — pillar /urevo-treadmills/ (maker manuals only)
 - [~] skipped 2026-11-25: duplicate of /treadmill-motor-replacement-cost/ · `how-much-does-a-treadmill-motor-cost` — How Much Does a Treadmill Motor Cost? Replacement Prices — /price/ — link /how-long-do-treadmill-motors-last/, /ac-vs-dc-treadmill-motor/
 - [ ] `precor-treadmill-troubleshooting` — Precor Treadmill Troubleshooting: Home and Commercial — /problems/ — pillar /precor-treadmills/
+
+### Added 2026-11-26 (refill at 15 open: cost/price 5.38x and fix 1.66x are the winning traffic-lane types; each slug checked unused today; skipped moving cost (= /how-to-move-a-treadmill/) and treadmill remote (= walking pad remote pages))
+
+- [ ] `how-much-does-a-sunny-treadmill-cost` — How Much Does a Sunny Health & Fitness Treadmill Cost? (2026) — /price/ — pillar /sunny-health-fitness-treadmills/ (Amazon + sunnyhealthfitness.com)
+- [ ] `treadmill-bluetooth-not-connecting` — Treadmill Bluetooth Not Connecting: App, Watch and HR Fixes — /problems/ — Sole guide has a brand-specific section; this is the cross-brand page
+- [ ] `how-much-does-a-merach-treadmill-cost` — How Much Does a MERACH Treadmill Cost? (2026): Every Model — /price/ — pillar /merach-treadmills/
+- [ ] `treadmill-fan-not-working` — Treadmill Fan Not Working: Console Fan Checks and Fixes — /problems/ — maker manuals only
+- [ ] `how-much-does-a-urevo-walking-pad-cost` — How Much Does a UREVO Walking Pad Cost? (2026): Every Model — /price/ — pillar /urevo-treadmills/
+- [ ] `merach-treadmill-troubleshooting` — MERACH Treadmill Troubleshooting: Remote, App and Belt — /problems/ — pillar /merach-treadmills/ (maker manuals only)
+- [ ] `how-much-does-an-xterra-treadmill-cost` — How Much Does an XTERRA Treadmill Cost? (2026): Every Model — /price/ — pillar /xterra-treadmills/ (xterrafitness.com readable)
+- [ ] `treadmill-speakers-not-working` — Treadmill Speakers Not Working: Bluetooth Audio Fixes — /problems/ — link /best-treadmills-with-bluetooth-speakers/
+- [ ] `how-much-does-a-schwinn-treadmill-cost` — How Much Does a Schwinn Treadmill Cost? (2026): 810, 815 and More — /price/ — pillar /schwinn-treadmills/
+- [ ] `sunny-treadmill-troubleshooting` — Sunny Health & Fitness Treadmill Troubleshooting — /problems/ — pillar /sunny-health-fitness-treadmills/
+- [ ] `how-much-does-a-spirit-treadmill-cost` — How Much Does a Spirit Treadmill Cost? (2026): XT and CT Models — /price/ — pillar /spirit-treadmills/
+- [ ] `goplus-treadmill-troubleshooting` — Goplus Treadmill Troubleshooting: Power, Remote and Belt — /problems/ — link /goplus-2-in-1-treadmill/
+- [ ] `how-much-does-a-matrix-treadmill-cost` — How Much Does a Matrix Treadmill Cost? (2026): Home and Gym — /price/ — pillar /matrix-fitness/
+- [ ] `life-fitness-treadmill-troubleshooting` — Life Fitness Treadmill Troubleshooting: Home and Club Models — /problems/ — pillar /life-fitness/
+- [ ] `how-much-does-a-true-treadmill-cost` — How Much Does a TRUE Treadmill Cost? (2026) — /price/ — pillar /true-fitness-treadmills/
+- [ ] `how-much-does-a-technogym-treadmill-cost` — How Much Does a Technogym Treadmill Cost? (2026) — /price/ — pillar /technogym-treadmills/
 
 ## Parked: do not write unless a future export shows this type winning
 

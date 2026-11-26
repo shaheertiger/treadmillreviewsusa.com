@@ -1,0 +1,623 @@
+const th = 'text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4';
+const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
+
+export default {
+  slug: 'best-treadmills-under-400',
+  title: 'Best Treadmills Under $400 (2026): 6 Folding Picks With Incline',
+  description:
+    'Six folding treadmills selling for $340 to $380 on Amazon on 26 Nov 2026, with up to 18% auto incline, 250 to 400 lb ratings and 42 to 51-inch belts.',
+  crumbLabel: 'Best Treadmills Under $400',
+  breadcrumb: { name: 'By Price', url: '/price/' },
+  kicker: 'Buying Guide',
+  updated: 'November 2026',
+  updatedLong: 'November 26, 2026',
+  published: '2026-11-26',
+  modified: '2026-11-26',
+  socialProof: '1.2k',
+  h1: ['Best Treadmills', 'Under $400'],
+  standfirst:
+    'Between $300 and $400 you stop buying walking pads and start buying real folding treadmills: a deck with handrails, a console and, on five of these six, a powered incline. The MERACH 18% Auto Incline Treadmill is the pick for most people, the Goplus 4.75HP has the longest belt and highest speed, and the WELLFIT 4.0HP carries the highest weight rating.',
+  ctas: [
+    { label: 'See the 6 Picks', href: '#picks' },
+    { label: 'Compare the Specs', href: '#spec-table' },
+  ],
+  tags: ['best treadmill under 400', 'treadmill under 400', 'folding treadmill with incline', 'treadmill 300 lb folding incline', 'cheap incline treadmill', 'budget folding treadmill', 'xterra trx1000', 'merach t12'],
+  stickyCta: { text: 'See the 6 Picks', link: '#picks' },
+  lead: `$400 is the price at which a home treadmill stops being a walking pad with ambitions.
+          Every machine on this page has an upright console, handrails and a deck that folds up on
+          a hinge, and five of the six raise the deck with a motor. What this budget still does not
+          buy is a long running deck, a published continuous-duty motor rating or a long parts
+          warranty. Below are six machines that were selling for $340 to $380 on Amazon on
+          26 November 2026, what each listing actually states, and where the figures run out.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'The Short Answer',
+      navLabel: 'The short answer',
+      html: `          <p>
+            <strong>For most people, the best treadmill under $400 is the MERACH 18% Auto Incline
+            Treadmill: an 18 by 47-inch belt, up to 18% powered incline and a 350 lb rating for about
+            $380 on Amazon on 26 November 2026.</strong>
+          </p>
+          <ul>
+            <li><strong>Best overall:</strong> MERACH 18% <a href="/best-auto-incline-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Auto Incline Treadmill</a>, about $380, with the steepest incline and a 350 lb rating.</li>
+            <li><strong>Longest belt and highest speed:</strong> Goplus 4.75HP Folding Treadmill with 15% Auto Incline, about $340, with a 51 by 18-inch running area and 0.6 to 10.8 mph.</li>
+            <li><strong>Highest weight rating:</strong> WELLFIT 4.0HP Heavy Duty Foldable Home Treadmill, about $380, rated for 400 lb with a 3-year frame guarantee.</li>
+            <li><strong>Best-known brand:</strong> <a href="/xterra-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>XTERRA</a> TRX1000, about $370, with a 16 by 50-inch surface but only manual incline and a 250 lb limit.</li>
+            <li><strong>Prices move tomorrow:</strong> Black Friday is 27 November 2026, and every price here is the one Amazon showed on 26 November. Check the listing on the day you buy.</li>
+          </ul>
+          <p>
+            If $400 is a stretch, the
+            <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">best treadmills under $300</a>
+            are mostly walking pads; if you can stretch the other way, the
+            <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">under-$500 guide</a>
+            covers the next tier.
+          </p>`,
+    },
+    {
+      id: 'quick-picks',
+      heading: 'Our Picks at a Glance',
+      html: `          <p>
+            Six folding treadmills, each with handrails and a console, chosen so that no two are
+            the best answer to the same question. Every price is the one Amazon showed on
+            26 November 2026, the day before Black Friday.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Pick</th>
+                <th class="${th}">Best for</th>
+                <th class="${th}">Why</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">MERACH 18% Auto Incline Treadmill</td><td class="${td}">Most people</td><td class="${td}">18% auto incline, 18 x 47 in. belt, 350 lb rating; about $380</td></tr>
+              <tr><td class="${td}">Goplus 4.75HP Folding Treadmill with 15% Auto Incline</td><td class="${td}">Jogging and taller users</td><td class="${td}">51 x 18 in. running area, 0.6–10.8 mph, 15% auto incline; about $340</td></tr>
+              <tr><td class="${td}">WELLFIT 4.0HP Heavy Duty Foldable Home Treadmill</td><td class="${td}">Heavier users</td><td class="${td}">400 lb rating, 15-level auto incline, 3-year frame guarantee; about $380</td></tr>
+              <tr><td class="${td}">Xterra Fitness TRX1000 Compact Series Treadmill</td><td class="${td}">A familiar brand</td><td class="${td}">16 x 50 in. surface and 10 mph from a long-established brand; about $370</td></tr>
+              <tr><td class="${td}">ATEEDGE 15% Auto Incline Foldable Treadmill</td><td class="${td}">Programmed workouts</td><td class="${td}">36 preset programs, 0.5–10 mph, 350 lb rating; about $369</td></tr>
+              <tr><td class="${td}">Merach T12 Foldable Treadmill</td><td class="${td}">Small rooms</td><td class="${td}">Folds to 27.6 in. tall, 15% auto incline, 300 lb rating; about $340</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            None of these is a walking pad. If you want something that slides under a bed rather
+            than standing on end, our
+            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
+            guide covers both kinds.
+          </p>`,
+    },
+    {
+      id: 'picks',
+      heading: 'The 6 Best Treadmills Under $400',
+      navLabel: 'The 6 picks',
+      products: true,
+      html: `          <p>
+            Each card links to the Amazon listing matched to that model by its ASIN. Specifications
+            come only from the listing's title and feature bullets, and for the XTERRA, from XTERRA's
+            own product page, both read on 26 November 2026. Where a listing leaves a figure out,
+            the card says so rather than filling the gap. Motor horsepower is quoted as the listing
+            states it and nothing more; none of these listings gives a continuous-duty rating, so
+            the figures are not comparable with each other or with premium treadmills.
+          </p>`,
+    },
+    {
+      id: 'spec-table',
+      heading: 'How the Six Compare, Figure by Figure',
+      html: `          <p>
+            The table puts the figures each listing states side by side. A dash means the listing
+            does not give that figure; it does not mean the machine lacks it. The incline column is
+            the one that varies most in meaning: a percentage is a deck angle, while "15 levels"
+            without a percentage tells you how many steps there are, not how steep the top one is.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Model</th>
+                <th class="${th}">Belt (in.)</th>
+                <th class="${th}">Speed (mph)</th>
+                <th class="${th}">Incline</th>
+                <th class="${th}">Capacity</th>
+                <th class="${th}">Price, 26 Nov</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">MERACH 18% Auto Incline</td><td class="${td}">18 x 47</td><td class="${td}">up to 8.7</td><td class="${td}">18% auto</td><td class="${td}">350 lb</td><td class="${td}">$380.12</td></tr>
+              <tr><td class="${td}">Goplus 4.75HP 15% Auto Incline</td><td class="${td}">51 x 18</td><td class="${td}">0.6–10.8</td><td class="${td}">0–15% auto</td><td class="${td}">—</td><td class="${td}">$339.99</td></tr>
+              <tr><td class="${td}">WELLFIT 4.0HP Heavy Duty</td><td class="${td}">18 x 43</td><td class="${td}">0.6–8.8</td><td class="${td}">15 levels, auto</td><td class="${td}">400 lb</td><td class="${td}">$379.96</td></tr>
+              <tr><td class="${td}">XTERRA TRX1000</td><td class="${td}">16 x 50</td><td class="${td}">0.5–10 (XTERRA)</td><td class="${td}">3 manual levels (XTERRA)</td><td class="${td}">250 lb (XTERRA)</td><td class="${td}">$370.17</td></tr>
+              <tr><td class="${td}">ATEEDGE 15% Auto Incline</td><td class="${td}">18 x 42.5</td><td class="${td}">0.5–10</td><td class="${td}">15% auto</td><td class="${td}">350 lb</td><td class="${td}">$369.48</td></tr>
+              <tr><td class="${td}">Merach T12</td><td class="${td}">42.5 x 16.5</td><td class="${td}">0.5–7.5</td><td class="${td}">15% auto</td><td class="${td}">300 lb</td><td class="${td}">$339.99</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Read across the rows and the trade-offs are plain. The two longest belts, on the Goplus
+            and the XTERRA, come with the least information about weight rating or the least
+            incline. The two highest weight ratings, on the WELLFIT and the MERACH, come with belts
+            of 43 and 47 inches, which suit walking and jogging better than running. Nothing here
+            combines a 55-inch belt, a powered incline and a published rating above 300 lb at this
+            price, and a listing that claims all three under $400 deserves a careful second read.
+          </p>`,
+    },
+    {
+      id: 'what-400-buys',
+      heading: 'What $400 Buys That $300 Does Not, and What It Still Cannot',
+      html: `          <p>
+            The jump from $300 to $400 changes the kind of machine you get, not just the quality.
+            Under $300, as our
+            <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">under-$300 guide</a>
+            explains, almost everything worth buying is a walking pad or a 2-in-1 pad with a
+            fold-up bar. Between $300 and $400 the listings shift to folding treadmills: a deck on a
+            frame with uprights, a console at chest height and handrails you can hold for the whole
+            workout.
+          </p>
+          <p>
+            <strong>What you gain.</strong> A powered incline is now normal rather than a premium
+            feature: five of these six raise the deck with a motor, to between 15% and 18% where the
+            listing gives a figure. Belts get wider, from the 15 to 16 inches common on pads to 16.5
+            to 18 inches here, which matters more than people expect once you are walking briskly
+            and drifting sideways. Top speeds of 7.5 to 10.8 mph put a steady jog within reach on
+            all six. Handrails mean you can hold on while you change settings or while you build
+            confidence on an incline, and several have hand-pulse sensors in them.
+          </p>
+          <p>
+            <strong>What you still cannot buy.</strong> We found no folding treadmill in this band
+            with a 55 to 60-inch running deck and a powered incline at the listed price; the MERACH listing offers a
+            55-inch configuration, but the variant at $380 is described with a 47-inch belt, and
+            MERACH's other listings for the same machine were well over $500 on the same day. Nor
+            can you buy a long motor or parts warranty: where these listings state terms at all,
+            parts and motor are covered for a year. And you cannot buy a motor figure you can
+            trust for comparison, because none of these listings gives a continuous-duty rating.
+          </p>
+          <p>
+            <strong>What the next $100 adds.</strong> Up to $500, recognised mid-market brands start
+            to appear with longer warranties and better-documented specifications. The NordicTrack
+            T Series 5, for instance, was listed at $445.75 on Amazon on 26 November 2026, and
+            XTERRA's own store had the TRX1000 at $449.99, with its TRX1200 at $499.99. If brand
+            support and warranty matter more to you than incline percentage, read the
+            <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">best treadmills under $500</a>
+            before you decide.
+          </p>`,
+    },
+    {
+      id: 'how-we-chose',
+      heading: 'How We Chose These Six',
+      html: `          <p>
+            We have not tested these machines. They were picked from Amazon listings, the maker's
+            own product page where one was available, and the figures each states, all read on
+            26 November 2026. Four rules decided the list.
+          </p>
+          <p>
+            <strong>Price on the day.</strong> Each had to be selling on Amazon for between $300
+            and $400 on 26 November 2026, at the listed price rather than through a clipped coupon or
+            a "compare at" figure. That ruled out the NordicTrack T Series 5 ($445.75), the
+            Horizon T101 Connect ($777.23 on the same day) and the ProForm Carbon TL ($479), which are
+            better-known machines but not $400 machines this week.
+          </p>
+          <p>
+            <strong>A real folding treadmill.</strong> Every pick has uprights, a console and
+            handrails, and a deck that folds up. Under-desk walking pads with a fold-down bar, even
+            ones priced in this band, are covered elsewhere on this site and were left out here.
+          </p>
+          <p>
+            <strong>A named brand with a listing that states its figures.</strong> Each brand has
+            its own presence beyond a single listing, and each listing states at least a belt size
+            and a speed range. A folding treadmill listing that gave three <a href="/what-is-12-incline-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>incline levels</a> but no
+            belt size, speed or warranty was left out for that reason.
+          </p>
+          <p>
+            <strong>Genuinely different.</strong> Six machines that all do the same thing would not
+            help you choose. Each pick is here because it leads on one thing: incline, belt length,
+            weight rating, brand, programs or folded size.
+          </p>
+          <p>
+            Several popular machines in this price band appear in other guides instead. The
+            WELLFIT Heavy Duty Auto Incline Foldable Treadmill and the Goplus 3.75HP Folding
+            Treadmill with Incline, both picks in our under-$500 guide, are different listings from
+            the WELLFIT and Goplus models here.
+          </p>`,
+    },
+    {
+      id: 'incline',
+      heading: 'Auto Incline Under $400: What the Percentages Mean',
+      html: `          <p>
+            Incline is the feature that most separates this price band from the one below, so it is
+            worth knowing what the listings are telling you. A treadmill's incline is quoted as a
+            percentage grade: the rise in height divided by the horizontal distance. A 15% grade
+            means 15 inches of rise for every 100 inches travelled horizontally, which works
+            out to an angle of roughly 8.5 degrees. Our guide to
+            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">incline percent versus degrees</a>
+            explains the conversion.
+          </p>
+          <p>
+            <strong>Auto versus manual.</strong> Five of these six have a powered (auto) incline: you
+            press a button or turn a dial and a motor raises the deck while you walk. The XTERRA
+            TRX1000 has three manual incline positions, set at the rear support with the machine
+            stopped, according to XTERRA's product page. Manual incline is fine if you choose a
+            setting and leave it; it is no use for intervals or for programs that change the
+            gradient during a workout.
+          </p>
+          <p>
+            <strong>Levels versus percentages.</strong> The WELLFIT listing says "1–15 level"
+            auto incline without giving the top percentage, and the ATEEDGE says "15 incline
+            options" alongside a 15% maximum. A level is a step, not a gradient, so two machines
+            with 15 levels can top out at different angles. Where a listing gives levels but no
+            percentage, ask the seller for the maximum grade before you buy, if incline is the
+            reason you are buying.
+          </p>
+          <p>
+            <strong>Title figures that contain two numbers.</strong> Two MERACH listings quote
+            incline as "0-6/15%" (the T12) and "15/18%" (the 18% model). That pattern usually means
+            the same listing covers two configurations. The bullets on the T12 listing describe a
+            15% auto incline, and the bullets on the larger MERACH describe 18%. Check the selected
+            configuration on the product page, not only the title, before you add it to your cart.
+          </p>
+          <p>
+            Incline is useful for walkers in particular: it raises the effort of a walk without
+            asking you to go faster. If that is why you are buying, compare these machines with the
+            options in our
+            <a href="/best-folding-treadmills-with-incline/" class="text-[#0F62FE] font-medium">folding treadmills with incline</a>
+            guide.
+          </p>`,
+    },
+    {
+      id: 'belt-size',
+      heading: 'Belt Size: Will You Fit on a $400 Treadmill?',
+      html: `          <p>
+            Belt length decides who can use a treadmill comfortably more than any other figure. The
+            belts here run from 42.5 to 51 inches long and 16 to 18 inches wide. For walking, most
+            adults are comfortable on a belt of 45 to 50 inches; jogging lengthens the stride and
+            pushes that toward 50 to 55 inches, and regular running toward 55 to 60. Our
+            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a>
+            sets out the ranges by height and use.
+          </p>
+          <p>
+            On that basis, the Goplus (51 by 18 inches, per its listing) and the XTERRA (16 by 50
+            inches, per both Amazon and XTERRA) are the two to look at if you are tall or want to
+            jog regularly. The MERACH 18% model's 47-inch belt is comfortable for walking and an
+            easy jog for most people. The WELLFIT (43 inches), ATEEDGE (42.5 inches) and <a href="/merach-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Merach T12</a>
+            (42.5 inches) are walking-first machines that will take a short jog, but a long stride at
+            speed will feel cramped.
+          </p>
+          <p>
+            Width matters too, especially for heavier users and anyone who drifts while walking and
+            reading a screen. The 18 to 18.5-inch belts on the MERACH, Goplus, WELLFIT and ATEEDGE
+            give noticeably more room than the 16 to 16.5 inches on the XTERRA and T12. A wider belt
+            is also more forgiving on an incline, where most people's feet splay a little.
+          </p>
+          <p>
+            One caution: belt size and running surface are sometimes used interchangeably in
+            listings. The XTERRA and Goplus quote a "running surface" or "running area", the others
+            a belt. The difference is usually small, but if you are close to the limit for your
+            height, it is worth asking which figure the listing means.
+          </p>`,
+    },
+    {
+      id: 'capacity-and-motors',
+      heading: 'Weight Ratings and Horsepower: Reading the Listings',
+      html: `          <p>
+            The weight ratings on this page run from 250 lb (XTERRA, per its own site) to 400 lb
+            (WELLFIT, per its listing), and one listing, the Goplus, does not state a figure at all.
+            Treat a printed capacity as a ceiling, not a target: a common rule of thumb is to choose
+            a machine rated at least 50 lb above your weight, which keeps the motor, rollers and
+            deck working well inside their design limits. Our
+            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>
+            explains why.
+          </p>
+          <p>
+            For anyone around 250 to 300 lb, that leaves the WELLFIT (400 lb), the MERACH 18% model
+            (350 lb) and the ATEEDGE (350 lb) as the machines to consider here. The MERACH listing
+            backs its figure with a frame description, 2.0 mm core steel and a machine weight of
+            122 lb, which is a useful sign: heavier frames generally carry heavier users more
+            steadily. If you are above that range, a budget of $400 is tight, and our
+            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">treadmills for heavy people</a>
+            guide covers machines built for it.
+          </p>
+          <p>
+            Motor horsepower is the least useful figure on any of these listings. The six state
+            2.25 HP (XTERRA), 2.5 HP (Merach T12), "3-peak HP" (ATEEDGE), "max 3.5 HP" (MERACH 18%),
+            4.0 HP (WELLFIT) and 4.75 HP (Goplus). Some of these are peak figures, some are not
+            labelled either way, and none is a continuous-duty rating, which is the figure that
+            tells you what a motor can sustain. A 4.75 HP figure on a $340 treadmill is not a sign
+            that it is twice as strong as a 2.25 HP machine at $370. Compare belt size, speed range,
+            weight rating and warranty instead; our
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
+            explains the difference between peak and continuous ratings.
+          </p>`,
+    },
+    {
+      id: 'folding-and-space',
+      heading: 'Folding, Footprint and Assembly',
+      html: `          <p>
+            All six fold the deck up toward the console, and the listings that give folded
+            dimensions show how different "folding" can be.
+          </p>
+          <ul>
+            <li><strong>Merach T12:</strong> folds to 49.2 x 25.6 x 27.6 inches, per its listing. At 27.6 inches tall it is the most compact folded shape here.</li>
+            <li><strong>WELLFIT 4.0HP:</strong> folds to 31.89 x 28.74 x 44.1 inches with a soft-drop hydraulic system, per its listing.</li>
+            <li><strong>ATEEDGE:</strong> 54.33 x 27.5 x 48.43 inches set up, and 35.43 x 27.5 x 48.43 inches folded, per its listing.</li>
+            <li><strong>XTERRA TRX1000:</strong> 64 x 29.5 x 51 inches set up and 28.7 x 29.5 x 60.8 inches folded, per XTERRA's product page, with a Lift Assist fold.</li>
+            <li><strong>Goplus and MERACH 18%:</strong> both describe hydraulic folding, the MERACH "in 30 seconds", but neither listing gives folded dimensions.</li>
+          </ul>
+          <p>
+            Before ordering, measure the floor space with the machine set up, plus clearance behind
+            the deck for safety, and the height of the room where it will stand folded. A treadmill
+            that folds upright is narrow but tall; check that it clears a window sill or a sloped
+            ceiling. Our
+            <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">treadmills for small spaces</a>
+            guide has a fuller checklist.
+          </p>
+          <p>
+            Assembly is lighter than it used to be at this price. The WELLFIT listing says it
+            arrives 95% pre-installed with setup in about 10 minutes, and the T12 listing says 90%
+            pre-assembled. The others do not state an assembly time. The MERACH 18% model weighs
+            122 lb by its listing, so plan for two people to move it into the room even if one can
+            fold it afterwards.
+          </p>`,
+    },
+    {
+      id: 'black-friday',
+      heading: 'Buying Under $400 on Black Friday Week',
+      html: `          <p>
+            Black Friday is 27 November 2026, the day after these prices were read. Prices on
+            budget treadmills often move during this week, sometimes down and sometimes up as
+            earlier discounts end, so treat the figures on this page as a snapshot of 26 November
+            rather than a promise.
+          </p>
+          <p>
+            Three habits help. First, compare the price you see with the one here: if a machine on
+            this list drops further, it is likely a genuine reduction; if a "was" price has
+            appeared that is far above anything quoted here, it is probably a list price that the
+            machine rarely sells at. Second, check which configuration is selected, since two of
+            these listings (both MERACH) cover more than one version under the same page. Third,
+            check who the seller is and the return window, because a 100-plus pound treadmill is
+            expensive to send back.
+          </p>
+          <p>
+            For Black Friday prices across all budgets, see our
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill prices</a>
+            page, and for this end of the market specifically, the
+            <a href="/black-friday-treadmill-deals-under-500/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals under $500</a>.
+          </p>`,
+    },
+  ],
+  products: [
+    {
+      id: 'merach-18-auto-incline',
+      name: 'MERACH 18% Auto Incline Treadmill',
+      category: 'Best Treadmill Under $400 Overall',
+      badge: 'Best Overall',
+      priceRange: 'About $380 (Amazon, 26 Nov 2026)',
+      specs: '18 x 47 in. belt · up to 8.7 mph · 18% auto incline · 350 lb capacity · 122 lb machine weight · hydraulic fold (per the Amazon listing)',
+      pros: [
+        'The steepest powered incline on this page, at 18% per the listing',
+        'A 350 lb rating backed by a 2.0 mm core-steel frame and a 122 lb machine weight',
+        'An 18-inch-wide belt with a multi-layer shock-absorbing system',
+        'Speed and incline adjustable from a remote panel or the MERACH app',
+      ],
+      cons: [
+        'The listing covers more than one configuration (15/18% incline, 47 or 55-inch belt); check which one is selected at this price',
+        'A 47-inch belt is better for walking and jogging than running',
+        'No warranty term stated in the listing; it promises 24/7 support only',
+      ],
+      bottomLine:
+        'The best balance of incline, capacity and belt size we found under $400, provided the configuration you select is the 18%, 47-inch model the bullets describe.',
+      description:
+        'MERACH\'s 18% auto incline treadmill is the pick for most people because it does the most of what this price band can do well. The Amazon listing describes an 18% powered incline, an 18 by 47-inch non-slip belt, a top speed of 8.7 mph and a 350 lb weight capacity, with a frame of 2.0 mm core steel that brings the machine\'s own weight to 122 lb. A heavy frame is a better sign of capacity than a large number on a box, and among these six only the WELLFIT claims more. The listing also describes a multi-layer shock-absorbing system, an LED display showing speed, time, distance, calories, incline and heart rate, adjustment from a remote panel or the MERACH app, operation under 45 decibels and hydraulic folding in about 30 seconds. The catch is the title. It reads "15/18% Auto Incline, 55"/47"x18"/19" Wide Belt, 0.5-8.7MPH/10MPH", which means the page covers two versions, and other MERACH listings for this machine were priced at $509.99 and $552.49 on the same day. The bullets describe the 18%, 47-inch version; confirm that is the one selected before you pay. Amazon showed $380.12 on 26 November 2026.',
+    },
+    {
+      id: 'goplus-4-75hp-15-incline',
+      name: 'Goplus 4.75HP Folding Treadmill with 15% Auto Incline',
+      category: 'Best for Jogging and Taller Users',
+      badge: 'Longest Belt',
+      priceRange: 'About $340 (Amazon, 26 Nov 2026)',
+      specs: '51 x 18 in. running area · 0.6–10.8 mph · 0–15% auto incline · 20 programs · hydraulic fold · capacity not stated (per the Amazon listing)',
+      pros: [
+        'The longest running area here, 51 by 18 inches per the listing',
+        'The highest top speed here, 10.8 mph, with 15% auto incline',
+        'Control by touch screen, the Gymax app, or a detachable knob that works as a remote with voice control',
+        'Extra-long handrails with heart rate sensors, and a six-point cushioning system',
+      ],
+      cons: [
+        'The listing does not state a maximum user weight',
+        'No warranty term stated in the listing',
+        'The 4.75 HP figure is not a continuous rating and should not be compared as one',
+      ],
+      bottomLine:
+        'The most running-friendly machine under $400 on paper. Ask Goplus for the weight limit before you buy if you are over about 250 lb.',
+      description:
+        'The Goplus 4.75HP is the machine on this page for anyone who wants to jog regularly or is tall. Its listing describes a 51 by 18-inch running area, the longest and among the widest here, with a five-layer belt and a six-point buffer system, plus a speed range of 0.6 to 10.8 mph and a 0 to 15% automatic incline. Twenty preset programs, dual Bluetooth speakers, a device holder and an LED touch screen come with it, and the machine can also be controlled through Goplus\'s Gymax app or a removable control knob that doubles as a remote and accepts voice commands. The listing describes a steel frame, folding with a hydraulic rod you press with a foot, transport wheels and extra-long handrails with heart rate sensors. Two things are missing, and both matter. The listing does not state a maximum user weight, which is unusual at this price and the first thing to ask about if you are a heavier user. Nor does it state a warranty term. Goplus also sells the SuperFit 2-in-1 pads covered elsewhere on this site. Amazon showed this model at $339.99 on 26 November 2026, the same price on two separate listings.',
+    },
+    {
+      id: 'wellfit-4hp-400lb',
+      name: 'WELLFIT 4.0HP Heavy Duty Foldable Home Treadmill',
+      category: 'Best Under $400 for Heavier Users',
+      badge: 'Highest Capacity',
+      priceRange: 'About $380 (Amazon, 26 Nov 2026)',
+      specs: '18 x 43 in. belt · 0.6–8.8 mph · 15-level auto incline · 400 lb capacity · folds to 31.89 x 28.74 x 44.1 in. (per the Amazon listing)',
+      pros: [
+        'A 400 lb weight rating, the highest on this page',
+        'The only listing here with a multi-year term: 3 years on the frame, 1 year on parts and motor',
+        'An 18-inch-wide belt, a soft-drop hydraulic fold and 95% pre-installed assembly',
+        'Incline adjustable from the console or by voice command',
+      ],
+      cons: [
+        'The listing gives 15 incline levels but not the top percentage',
+        'A 43-inch belt is short for running',
+        'Needs a grounded outlet, which the listing flags as a warning',
+      ],
+      bottomLine:
+        'The pick for heavier users who mainly walk, with the clearest warranty terms on this page. Ask WELLFIT for the maximum incline grade if it matters to you.',
+      description:
+        'WELLFIT\'s 4.0HP home treadmill is here for its weight rating. The listing claims a 400 lb capacity on a reinforced alloy steel frame, the highest figure among these six, and pairs it with an 18 by 43-inch multi-layer belt, speeds from 0.6 to 8.8 mph and 15 levels of automatic incline adjustable from the console or by voice command. It describes operation under 45 decibels, a soft-drop hydraulic fold to 31.89 by 28.74 by 44.1 inches, arrival 95% pre-installed with setup in about 10 minutes, a display showing heart rate, incline and calories, built-in speakers and an emergency-stop safety key. It is also the only listing here to state a multi-year term: a 3-year guarantee on the frame and 1 year on parts and motor, with US-based technical support. The gaps are the incline grade, given only as levels, and the belt length, which suits walking better than running. The listing warns that it must be plugged into a grounded outlet. It is a different listing from the WELLFIT Heavy Duty Auto Incline Foldable Treadmill in our under-$500 guide. Amazon showed $379.96 on 26 November 2026.',
+    },
+    {
+      id: 'xterra-trx1000',
+      name: 'Xterra Fitness TRX1000 Compact Series Treadmill',
+      category: 'Best Brand-Name Treadmill Under $400',
+      badge: 'Best-Known Brand',
+      priceRange: 'About $370 (Amazon, 26 Nov 2026)',
+      specs: '16 x 50 in. running surface · 2.25 HP · 0.5–10 mph (XTERRA) · 3 manual incline levels (XTERRA) · 250 lb capacity (XTERRA) · folds',
+      pros: [
+        'A 16 by 50-inch running surface, the second-longest here',
+        'Up to 10 mph and 12 workout programs, per XTERRA\'s product page',
+        'From a long-established treadmill brand with US-based support',
+        'About $80 less on Amazon than XTERRA\'s own sale price on the same day',
+      ],
+      cons: [
+        'Incline is manual, three positions set at the rear, not powered',
+        'A 250 lb limit, the lowest here',
+        'The Amazon listing itself gives few figures; most come from XTERRA\'s site',
+      ],
+      bottomLine:
+        'The machine for buyers who would rather have a familiar brand and a 50-inch deck than a powered incline. Check your weight against the 250 lb limit.',
+      description:
+        'The XTERRA TRX1000 is the one machine here from a brand most people will recognise from sporting goods stores, and it trades features for that. The Amazon listing is short: a 2.25 HP motor, a 16 by 50-inch walking and running surface, a 5-inch LCD, a heavy-duty steel frame and console crossbar, and a folding deck. XTERRA\'s own product page, read on 26 November 2026, fills in the rest: a 250 lb maximum user weight, 0.5 to 10 mph, three levels of manual incline, 12 workout programs, hand-pulse sensors, a fold with Lift Assist, and set-up dimensions of 64 by 29.5 by 51 inches. The 50-inch surface is the main reason to choose it over the cheaper machines here, and 10 mph is enough for a run. The incline is the main reason not to: it is set by hand at the rear support, so it suits a fixed setting rather than intervals. XTERRA\'s store listed the TRX1000 at $449.99 (regular $599.99) that day, while Amazon showed $370.17, which is a large gap; check the seller on the Amazon listing before you buy. XTERRA\'s brand page on this site covers the TRX1200 and TRX1400 above it.',
+    },
+    {
+      id: 'ateedge-15-auto-incline-foldable',
+      name: 'ATEEDGE 15% Auto Incline Foldable Treadmill',
+      category: 'Best Under $400 for Programmed Workouts',
+      badge: 'Most Programs',
+      priceRange: 'About $369 (Amazon, 26 Nov 2026)',
+      specs: '18 x 42.5 in. belt · 0.5–10 mph · 15% auto incline (15 levels) · 350 lb capacity · 36 programs · folds to 35.43 x 27.5 x 48.43 in. (per the Amazon listing)',
+      pros: [
+        '36 preset programs, the most here, with 15 incline steps to 15%',
+        'A 350 lb rating and an 18-inch-wide belt',
+        'Double-layer deck with 8 internal and 6 external cushions, per the listing',
+        'Fixed and removable device holders, Bluetooth app and speakers',
+      ],
+      cons: [
+        'A 42.5-inch belt is short for the 10 mph top speed',
+        'Motor described only as "3-peak HP"',
+        'No warranty term stated in the listing',
+      ],
+      bottomLine:
+        'For walkers who like a program to vary incline and speed for them, with a 350 lb rating. Not the one for long running strides.',
+      description:
+        'The ATEEDGE is the pick for people who would rather follow a program than set speed and incline themselves. Its listing describes 36 preset programs, 15 incline options up to a 15% maximum and a speed range of 0.5 to 10 mph, enough for interval walking and short running efforts. It quotes an 18 by 42.5-inch belt on a double-layer deck with 8 built-in and 6 external cushions, a 350 lb capacity, a fixed and a removable device holder, a Bluetooth connection to an app and built-in speakers. It is one of only two listings here to give both set-up and folded dimensions: 54.33 by 27.5 by 48.43 inches open and 35.43 by 27.5 by 48.43 inches folded. The motor is described as "3-peak HP", a peak figure, and no warranty term is stated. The belt is the limitation: at 42.5 inches it is a walking and jogging length, and the 10 mph top speed is more than its deck is suited to for most adults. A related ATEEDGE listing with a 20% incline and 45.5-inch belt was also around $370 that day, but does not describe a folding deck, so it is not included here. Amazon showed $369.48 on 26 November 2026.',
+    },
+    {
+      id: 'merach-t12',
+      name: 'Merach T12 Foldable Treadmill',
+      category: 'Best Under $400 for Small Rooms',
+      badge: 'Most Compact Fold',
+      priceRange: 'About $340 (Amazon, 26 Nov 2026)',
+      specs: '42.5 x 16.5 in. belt · 0.5–7.5 mph · 15% auto incline · 300 lb capacity · folds to 49.2 x 25.6 x 27.6 in. · 1-year warranty (per the Amazon listing)',
+      pros: [
+        'Folds to 27.6 inches tall, the lowest folded height here',
+        '15% auto incline and a 300 lb rating at the bottom of this price band',
+        'Under 40 dB by the listing, with heart rate sensors and 12 programs',
+        'A stated 1-year warranty and 90% pre-assembly',
+      ],
+      cons: [
+        'A 7.5 mph top speed and 42.5-inch belt make it a walking and light-jogging machine',
+        'The title quotes "0-6/15%" incline; check that the configuration selected is the 15% one',
+        'Narrower belt (16.5 in.) than four of the other five',
+      ],
+      bottomLine:
+        'The machine for a small apartment where storage matters more than stride length, with incline and a 300 lb rating for about $340.',
+      description:
+        'The Merach T12 is the smallest machine here when folded, which makes it the pick for flats and spare rooms. Its listing gives folded dimensions of 49.2 by 25.6 by 27.6 inches, so it stores lower and flatter than the upright folds of the others, with wheels for moving it. Set up, it offers a 42.5 by 16.5-inch belt, 0.5 to 7.5 mph, a 15% automatic incline and a 300 lb maximum user weight, on a double deck with four silicone cushions and six shock-absorbing pillars. The listing quotes a 2.5 HP motor, operation under 40 decibels, built-in heart rate sensors, 12 preset programs and the MERACH app, and it is one of only two listings here to state a warranty: one year, with lifetime customer support. It arrives 90% pre-assembled. The limits follow from its size: 7.5 mph and a 42.5-inch belt make it a walking machine that will take a gentle jog. Its title quotes incline as "0-6/15%", which suggests a second configuration with a 6% maximum; the bullets describe 15%, so check the selection before you buy. MERACH sells a T16 at $379.96 with a slightly longer 43.5-inch belt if you want a little more room. Amazon showed the T12 at $339.99 on 26 November 2026.',
+    },
+  ],
+  faqs: [
+    {
+      q: 'Can you get a good treadmill for under $400?',
+      a: `Yes, for walking, incline walking and jogging. Between $300 and $400 you can buy a real folding treadmill with handrails, a console and, usually, a powered incline of up to 15 to 18%. What this budget does not buy is a 55 to 60-inch running deck with incline, or a long motor and parts warranty.`,
+    },
+    {
+      q: 'What is the best folding treadmill with incline under $400?',
+      a: `On 26 November 2026 our pick was the MERACH 18% Auto Incline Treadmill at about $380, with an 18% incline, an 18 by 47-inch belt and a 350 lb rating per its listing. The Goplus 4.75HP at about $340 has a longer 51-inch running area and 15% incline, but its listing does not state a weight limit.`,
+    },
+    {
+      q: 'Is there a 300 lb folding treadmill with incline under $400?',
+      a: `Yes. Four of the six here state a rating of 300 lb or more with a powered incline: the WELLFIT 4.0HP (400 lb), the MERACH 18% model and the ATEEDGE (350 lb each) and the Merach T12 (300 lb). For a 300 lb user, pick one rated at least 50 lb higher, which points to the WELLFIT, MERACH or ATEEDGE.`,
+    },
+    {
+      q: 'Can you run on a $400 treadmill?',
+      a: `You can jog, and on the longer-belt machines you can run for short sessions. The Goplus (51 inches) and XTERRA TRX1000 (50 inches) are the most suitable for running here, with top speeds of 10.8 and 10 mph. Regular running is better served by a 55 to 60-inch deck, which generally costs more than $400.`,
+    },
+    {
+      q: 'Will treadmills under $400 be cheaper on Black Friday?',
+      a: `Some will and some will not. Prices on budget treadmills often move during Black Friday week, in both directions. Compare the price you see with the 26 November prices on this page, and be wary of a new "was" price that is far above anything the machine has recently sold for.`,
+    },
+    {
+      q: 'Should I buy a walking pad or a folding treadmill for $400?',
+      a: `If you want handrails, a console, a powered incline or a belt longer than about 45 inches, buy a folding treadmill. If the machine has to slide under a bed or a desk, buy a walking pad, which costs less for the same walking performance. At $400 you can afford either, so the choice comes down to space and how you plan to use it.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Buying a Treadmill Under $400',
+  mistakesIntro:
+    'Each of these comes from reading the headline of a budget listing rather than the details, which is where the figures that matter usually are.',
+  mistakes: [
+    {
+      title: 'Buying the configuration you did not mean to',
+      body: 'Several listings at this price, including both MERACH models here, cover two versions on one page, with titles like "15/18%" or "55\"/47\"". The price you see is for whichever is selected. Check the selected option and the bullets before you pay, and if the price looks too good, it may be the smaller version.',
+    },
+    {
+      title: 'Assuming a blank weight limit means it is high',
+      body: 'A listing that does not state a maximum user weight has not told you anything, and at this price ratings vary from 250 to 400 lb. If you are over about 250 lb, choose a machine with a stated rating at least 50 lb above your weight, or ask the seller in writing before you order.',
+    },
+    {
+      title: 'Choosing on horsepower',
+      body: 'The listings here quote anything from 2.25 to 4.75 HP, and none of them is a continuous-duty rating. The higher number does not mean a stronger or longer-lasting motor. Compare belt size, speed range, weight rating and warranty instead, which are figures you can check.',
+    },
+    {
+      title: 'Measuring the room but not the fold',
+      body: 'A folding treadmill that stands upright when stored can be over 5 feet tall and still nearly 3 feet deep. Measure where it will be stored, not just where it will be used, and check the folded dimensions in the listing. If none are given, ask before you buy.',
+    },
+  ],
+  relatedHeading: 'Related Buying Guides',
+  related: [
+    {
+      kicker: 'By Price',
+      title: 'Best Treadmills Under $300',
+      blurb: 'The tier below: mostly walking pads and 2-in-1s, and what $300 cannot buy.',
+      url: '/best-treadmills-under-300/',
+    },
+    {
+      kicker: 'By Price',
+      title: 'Best Treadmills Under $500',
+      blurb: 'The next step up, and what an extra $100 changes.',
+      url: '/best-treadmills-under-500/',
+    },
+    {
+      kicker: 'Buying Guide',
+      title: 'Best Folding Treadmills With Incline',
+      blurb: 'Six folding treadmills with powered incline, across a wider price range.',
+      url: '/best-folding-treadmills-with-incline/',
+    },
+    {
+      kicker: 'Deals',
+      title: 'Black Friday Treadmill Deals Under $500',
+      blurb: 'Budget treadmill prices to watch this Black Friday.',
+      url: '/black-friday-treadmill-deals-under-500/',
+    },
+    {
+      kicker: 'Deals',
+      title: 'Black Friday Treadmill Prices',
+      blurb: 'Seven deals worth watching across all budgets.',
+      url: '/treadmill-black-friday-deals/',
+    },
+    {
+      kicker: 'Guide',
+      title: 'Treadmill Belt Size Guide',
+      blurb: 'How long and wide a belt you need for walking, jogging and running.',
+      url: '/treadmill-belt-size-guide/',
+    },
+  ],
+  bottomLine: [
+    `For most people with up to $400 to spend, the <strong class="text-white">MERACH 18% Auto Incline
+            Treadmill</strong> is the one to buy: an 18% incline, an 18 by 47-inch belt and a 350 lb rating for
+            about $380, as long as the configuration you select matches. If you want to jog regularly or are tall,
+            the <strong class="text-white">Goplus 4.75HP</strong> has the longest belt and highest speed for about
+            $340, and if weight rating comes first, the <strong class="text-white">WELLFIT 4.0HP</strong> is rated
+            for 400 lb with a 3-year frame guarantee.`,
+    `This is the price band where real folding treadmills with powered incline begin, but it is still a
+            walking-and-jogging budget, with short warranties and motor figures you cannot compare. If running is
+            the goal, the <a href="/best-treadmills-under-500/" class="text-[#5AA9FF] font-bold no-underline">under-$500 guide</a>
+            is the next step; if you are shopping this week, check the
+            <a href="/black-friday-treadmill-deals-under-500/" class="text-[#5AA9FF] font-bold no-underline">Black Friday deals under $500</a>
+            before you buy, because prices are likely to move on 27 November.`,
+  ],
+};

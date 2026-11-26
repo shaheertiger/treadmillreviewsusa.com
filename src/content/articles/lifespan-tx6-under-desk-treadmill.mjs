@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-26',
   socialProof: '1.4k',
   h1: ['LifeSpan TX6-GlowUp', 'Under Desk Treadmill Review'],
   standfirst:
@@ -555,6 +555,12 @@ export default {
       title: 'Best Walking Pads for Heavy People',
       blurb: 'High-capacity pads from about $300, with the ratings that hold up across sources.',
       url: '/best-walking-pads-for-heavy-people/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a LifeSpan Treadmill Cost?',
+      blurb: 'Under-desk treadmills and desk sets, priced.',
+      url: '/how-much-does-a-lifespan-treadmill-cost/',
     },
   ],
   bottomLine: [

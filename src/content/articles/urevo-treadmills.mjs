@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-10-20',
-  modified: '2026-11-21',
+  modified: '2026-11-26',
   socialProof: '1.3k',
   h1: ['UREVO Treadmills:', 'A Buyer’s Guide to the Range'],
   standfirst:
@@ -730,6 +730,12 @@ export default {
       title: "Yesoul Treadmills",
       blurb: "The T3S Plus screen treadmill and the 30%-incline T5 range.",
       url: '/yesoul-treadmills/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'YPOO Treadmill Reviews',
+      blurb: 'Incline pads and a folding treadmill on Amazon.',
+      url: '/ypoo-treadmills/',
     },
   ],
   bottomLine: [

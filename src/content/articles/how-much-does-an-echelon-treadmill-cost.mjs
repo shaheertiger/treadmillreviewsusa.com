@@ -1,0 +1,577 @@
+const th = 'text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4';
+const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
+const A = (href, text) => `<a href="${href}" class="text-[#0F62FE] font-medium">${text}</a>`;
+
+export default {
+  slug: 'how-much-does-an-echelon-treadmill-cost',
+  title: 'How Much Does an Echelon Treadmill Cost? (2026): Every Model',
+  description:
+    'Echelon treadmills cost $1,399.99 to $2,195.99 at Echelon on 26 Nov 2026, walking pads from $299.99. Premier adds $39.99 a month or $399.99 a year.',
+  crumbLabel: 'How Much Does an Echelon Treadmill Cost?',
+  breadcrumb: { name: 'By Price', url: '/price/' },
+  kicker: 'Price Guide',
+  updated: 'November 2026',
+  updatedLong: 'November 26, 2026',
+  published: '2026-11-26',
+  socialProof: '1.0k',
+  h1: ['How Much Does an', 'Echelon Treadmill Cost?'],
+  standfirst:
+    'An Echelon treadmill costs $1,399.99 to $2,195.99 on Echelon’s own store in its Black Friday sale on 26 November 2026: $1,399.99 for the Stride-6, $1,599.99 for the Stride-6s, $1,999.99 for the Stride 50 RCX-22 and $2,195.99 for the Stride-8s. Its walking pads start at $299.99, and the optional Premier membership adds $39.99 a month or $399.99 a year. Here is every model’s price, what works without the membership, the five-year cost and how Echelon compares with Peloton and NordicTrack at the same money.',
+  ctas: [
+    { label: 'Prices by Model', href: '#price-table' },
+    { label: 'Premier on Top', href: '#membership-cost' },
+    { label: '5-Year Totals', href: '#total-cost' },
+  ],
+  tags: [
+    'how much does an echelon treadmill cost',
+    'echelon treadmill price',
+    'echelon stride 6 price',
+    'echelon stride 8s price',
+    'echelon premier membership cost',
+    'echelon treadmill black friday',
+  ],
+  stickyCta: { text: 'See Echelon Prices by Model', link: '#price-table' },
+  lead: `Echelon sells its Stride treadmills mainly through its own store, where nearly every model carries
+          a crossed-out “compare-at” price and a lower sale price beside it. Behind the sticker sit three
+          costs that decide what an Echelon really costs you: delivery, which is free on some models and
+          only with a membership on others; the Premier membership, which is optional but drives the
+          warranty; and the choice between buying from Echelon or from Amazon, where the same name can
+          mean a different version. We read Echelon’s US store and Amazon on 26 November 2026, the day
+          before Black Friday. Earlier prices come from our Echelon guide, with the date they were seen.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'The Short Answer',
+      html: `          <p>
+            <strong>A new Echelon treadmill costs $1,399.99 to $2,195.99 on Echelon’s store on 26 November
+            2026, against compare-at prices of $1,999.99 to $2,999.99, and the optional Premier membership
+            adds $39.99 a month or $399.99 a year.</strong> Echelon says every Stride runs in manual mode
+            without a membership; the classes, and the longer warranty, need Premier.
+          </p>
+          <ul>
+            <li><strong>Stride-6 (auto-fold, no screen):</strong> $1,399.99 at Echelon ($1,999.99
+            compare-at) and $1,399.99 on Amazon.</li>
+            <li><strong>Stride-6s (auto-fold, 10-inch touchscreen):</strong> $1,599.99 at Echelon
+            ($2,299.99 compare-at). Not found on Amazon.</li>
+            <li><strong>Stride-8s (22-inch touchscreen, 400 lb rating):</strong> $2,195.99 at Echelon with
+            free delivery ($2,999.99 compare-at), or $1,999.99 on Amazon for a listing that states a
+            300 lb capacity.</li>
+            <li><strong>Walking pads:</strong> the DuoPad at $299.99 and the DuoTread at $399.99 at Echelon;
+            the DuoTread is $299.99 on Amazon.</li>
+            <li><strong>On top:</strong> Premier at $39.99 a month, $399.99 a year or $699.99 for two years,
+            which is about $1,800 to $2,400 over five years. The 1- and 2-year plans include free
+            shipping.</li>
+          </ul>
+          <p>
+            The practical answer for most buyers is that a Stride-6s costs about $1,600 to buy this week
+            and about $3,600 to own for five years with a yearly Premier plan. For the brand, the fold and
+            what each model is like to live with, see our ${A('/echelon-treadmills/', 'Echelon treadmill guide')};
+            for the same arithmetic on Echelon’s biggest rival, our guide to
+            ${A('/how-much-does-a-peloton-tread-cost/', 'how much a Peloton treadmill costs')}.
+          </p>`,
+    },
+    {
+      id: 'price-table',
+      heading: 'Echelon Treadmill Prices by Model',
+      html: `          <p>
+            The table lists every treadmill in Echelon’s US Stride collection on 26 November 2026, with the
+            sale price and the compare-at price Echelon showed, and the Amazon price for the matching
+            listing where we found one. Echelon badged the Stride-6, Stride-6s and Stride-8s as Black
+            Friday deals; the site banner read “Biggest Sale of the Year. Price guaranteed through Dec 2.”
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[680px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Model</th>
+                <th class="${th}">What it is</th>
+                <th class="${th}">Echelon (26 Nov)</th>
+                <th class="${th}">Echelon compare-at</th>
+                <th class="${th}">Amazon (26 Nov)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">Stride-6</td><td class="${td}">Auto-fold, LED console and device holder, 20.5 x 60 in., 330 lb</td><td class="${td}">$1,399.99 (30% off)</td><td class="${td}">$1,999.99</td><td class="${td}">$1,399.99</td></tr>
+              <tr><td class="${td}">Stride-6s</td><td class="${td}">Stride-6 with a 10 in. touchscreen</td><td class="${td}">$1,599.99 (30% off)</td><td class="${td}">$2,299.99</td><td class="${td}">Not found</td></tr>
+              <tr><td class="${td}">Stride 50 RCX-22</td><td class="${td}">Fold-up, 22 in. screen, 22 x 57 in., 15% incline, 330 lb</td><td class="${td}">$1,999.99 (13% off)</td><td class="${td}">$2,299.99</td><td class="${td}">Not found</td></tr>
+              <tr><td class="${td}">Stride-8s</td><td class="${td}">22 in. swivel touchscreen, 20 x 60 in., 400 lb, flat after removing two screws</td><td class="${td}">$2,195.99 (26% off), delivery included</td><td class="${td}">$2,999.99</td><td class="${td}">$1,999.99 (listing states 300 lb)</td></tr>
+              <tr><td class="${td}">Stride DuoTread</td><td class="${td}">Walking pad that converts to a compact runner, manual incline to 4.1%</td><td class="${td}">$399.99 (50% off)</td><td class="${td}">$799.99</td><td class="${td}">$299.99</td></tr>
+              <tr><td class="${td}">Stride DuoPad</td><td class="${td}">Walking pad, 0.6–4.0 mph, 265 lb, no incline</td><td class="${td}">$299.99 (50% off)</td><td class="${td}">$599.99</td><td class="${td}">Not found</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Prices are before sales tax. Specifications are Echelon’s own, from each product page on 26
+            November 2026. Three notes keep the table honest. First, Echelon’s Stride-6s page carried two
+            prices: the buy box and the store’s product data said $1,599.99, while a comparison box lower
+            down the same page still showed $1,799.99, the price we recorded on 20 October; trust the
+            figure in the cart. Second, the Amazon listings do not always match Echelon’s current
+            specification. Amazon’s Stride-8s listing states a 300 lb capacity and 12.5 mph, where
+            Echelon’s 2026 Stride-8s page says 400 lb and 12 mph, and Amazon’s Stride-6 title mentions an
+            HD touchscreen that Echelon says the Stride-6 does not have. Third, Echelon’s compare-at prices
+            are its own reference figures, not prices we have seen it charge; we have only ever seen
+            these models sold below them.
+          </p>
+          <p>
+            The Stride-4s-22 also appeared in the collection at $1,399.99 (compare-at $2,599.00) but was
+            marked sold out, so it is not in the table. We found no Stride-10s on Echelon’s US store or on
+            Amazon; the only “Stride 10” we found was the Stride 10 Sport, a marketplace listing at
+            $399.99 that was also unavailable.
+          </p>`,
+    },
+    {
+      id: 'each-model',
+      heading: 'What Each Step Up Costs',
+      html: `          <p>
+            The Stride range is not evenly spaced. At Echelon’s Black Friday prices, the Stride-6s is $200
+            more than the Stride-6, and the Stride-8s is $596 more than the Stride-6s. What each step buys,
+            from Echelon’s product pages on 26 November 2026:
+          </p>
+          <p>
+            <strong>Stride-6 to Stride-6s ($200 more).</strong> Echelon describes the Stride-6s as “the
+            Stride-6 with one difference”: a built-in 10-inch HD touchscreen. Both are 2026-model
+            treadmills with a DC 3.0 brushless motor, a 20.5 by 60-inch waterfall deck, 12.5 mph, 12 levels
+            of power incline to 12.5%, a 330 lb maximum user weight and the one-touch auto-fold. The
+            Stride-6 has an LED console and an extra-large device holder, so you run classes from your own
+            phone or tablet through the free Echelon Fit app. If you already own a tablet of 10 inches or
+            more, the $200 buys convenience rather than a better picture. Echelon’s Stride-6s page also
+            says it arrives fully assembled and that, with Premier, Echelon Worlds can change the incline
+            to match the terrain.
+          </p>
+          <p>
+            <strong>Stride-6s to Stride-8s ($596 more).</strong> The Stride-8s swaps the 10-inch screen
+            for a 22-inch touchscreen that tilts, swivels and rotates 180 degrees for off-treadmill
+            classes, adds trackball controls with 0.1 or 1 mph steps, a wireless charging pad and
+            DuroFlex cushioning, and raises the maximum user weight to 400 lb on Echelon’s current page. It
+            gives up the auto-fold: Echelon says it folds flat only after removing two screws. Its deck is
+            slightly narrower, at 20 by 60 inches, and Echelon lists 12 mph rather than 12.5. It is also
+            the only Stride with delivery included whether or not you take a membership, which matters
+            more than it sounds (see delivery below).
+          </p>
+          <p>
+            <strong>The Stride 50 RCX-22 ($1,999.99).</strong> The odd one out: a conventional fold-up
+            treadmill with a 22-inch screen, a wider but shorter 22 by 57-inch deck, 15% incline, 12.5 mph
+            and a 330 lb rating, on Echelon’s listing. On our 20 October check it was $1,499.99; on 26
+            November it was $1,999.99, badged “New”, with its motor now described as 3.0 peak DC brushless.
+            It is the one Echelon treadmill whose price went up into Black Friday, so it is not the bargain
+            its “$300 off” badge implies. A 57-inch deck is short for running; taller runners should price
+            the 60-inch models.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How prices moved since October</h3>
+          <p>
+            On 20 October 2026 our ${A('/echelon-treadmills/', 'Echelon guide')} recorded the Stride-6 at
+            $1,699.99, the Stride-6s at $1,799.99 and the Stride-8s at $2,249.99. By 26 November they were
+            $300, $200 and $54 lower, and the Stride-6 and Stride-6s had become 2026 models with a larger
+            motor rating and a 330 lb limit, up from 300 lb. The cut on the Stride-8s is small; the bigger
+            changes on it are the 400 lb rating and free delivery.
+          </p>`,
+    },
+    {
+      id: 'walking-pads-other',
+      heading: 'Walking Pads, Doorbusters, Open-Box and Older Models',
+      html: `          <p>
+            Echelon sells more than the four Stride treadmills, and some of the lowest prices on its store
+            are for machines that are a different kind of product. These are the ones a shopper searching
+            for an Echelon treadmill is likely to see.
+          </p>
+          <p>
+            <strong>Stride DuoTread, $399.99 at Echelon, $299.99 on Amazon.</strong> A <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> with a
+            folding support bar that turns it into a compact treadmill, with a detachable remote, manual
+            incline up to 4.1% and a frame under 5 inches high. Walking mode runs from 0.6 to 3.7 mph. The
+            top speed is where the sources disagree: Echelon’s page says running mode reaches 12.5 mph,
+            while the Amazon listing says 7.5 mph, so we do not rely on either. Echelon’s page also says it
+            does not connect to the Echelon Fit app, so Premier adds nothing to it as a treadmill. On these
+            figures Amazon was $100 cheaper on 26 November.
+          </p>
+          <p>
+            <strong>Stride DuoPad, $299.99 at Echelon.</strong> A flat walking pad with a dual-sided deck,
+            one side textured as a “recovery” surface. Echelon lists a 1.8 CHP motor, 0.6 to 4.0 mph, no
+            incline, a 39-inch running surface, a 265 lb maximum user weight, 46 lb of machine and a
+            one-year residential warranty. For how these prices sit against other brands, see our guide to
+            ${A('/how-much-does-a-walking-pad-cost/', 'how much a walking pad costs')}.
+          </p>
+          <p>
+            <strong>Black Friday doorbusters.</strong> Echelon’s Black Friday collection included a Stride
+            40 Sport at $449.99 (compare-at $899.99), with the regular listing at $693.93, and the Stride
+            Cross Trainer Treadmill at $296.99. Both are listed by Echelon as marketplace or partner
+            products, and neither page gave a specification we could check, so we cannot tell you what you
+            would be getting. Amazon’s Stride 40 Sport listing was $819.27 and its bullets contradict
+            themselves on speed and screen size. Ask before buying either.
+          </p>
+          <p>
+            <strong>Certified open-box.</strong> Echelon says open-box units carry the same limited warranty
+            as new. On 26 November the open-box Stride-8s was $1,799.99, $396 below new. The open-box
+            Stride-6 ($1,299.99) and Stride-6s ($1,599.99) were sold out, and the open-box Stride-6s was
+            priced the same as a new one in the Black Friday sale, which shows how far the new prices
+            have fallen.
+          </p>
+          <p>
+            <strong>Older and commercial models.</strong> Amazon still listed the original Echelon Stride
+            at $1,299.99 and the Stride-s at $1,258.44 on 26 November. Both listings describe a 20 by
+            55-inch deck, 12 mph and 10% incline, and the Stride-s listing quotes a 12-month limited parts
+            and labour warranty and says the unit needs a Wi-Fi update before it can be used. Those are
+            older, smaller machines selling for close to a new 2026 Stride-6, which has a <a href="/best-treadmills-with-60-inch-deck/" class="text-[#0F62FE] font-medium" data-autolink>60-inch deck</a>. At
+            the top, Amazon listed the commercial Stride 9S at $5,999.99, and Echelon’s store data showed a
+            Stride-9s Pro at $6,399.99; that is gym equipment, outside the scope of this page.
+          </p>`,
+    },
+    {
+      id: 'membership-cost',
+      heading: 'The Premier Membership on Top',
+      html: `          <p>
+            Echelon’s paid tier for its equipment is Premier. On its treadmill product pages on 26 November
+            2026 Echelon offered it three ways: a 30-day free trial, “then $39.99/mo. Cancel anytime”; 1-Year
+            Access at $399.99; and 2-Year Access at $699.99. Echelon’s upsell box gives the effective
+            monthly prices as $33.33 for the yearly plan and $29.17 for the two-year plan. One membership
+            covers up to five family profiles. A cheaper FitPass tier, from $11.99 a month on Echelon’s
+            membership page, covers off-equipment workouts only; Echelon’s fine print says classes for
+            equipment-based workouts are not included in it.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Plan and billing</th>
+                <th class="${th}">Per year</th>
+                <th class="${th}">Over 3 years</th>
+                <th class="${th}">Over 5 years</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">Premier, $39.99 monthly</td><td class="${td}">$479.88</td><td class="${td}">$1,439.64</td><td class="${td}">$2,399.40</td></tr>
+              <tr><td class="${td}">Premier, $399.99 yearly</td><td class="${td}">$399.99</td><td class="${td}">$1,199.97</td><td class="${td}">$1,999.95</td></tr>
+              <tr><td class="${td}">Premier, $699.99 every 2 years</td><td class="${td}">$349.99 average</td><td class="${td}">$1,099.98 (2-year + 1-year)</td><td class="${td}">$1,799.97 (2 + 2 + 1 years)</td></tr>
+              <tr><td class="${td}">FitPass, $11.99 monthly (no equipment classes)</td><td class="${td}">$143.88</td><td class="${td}">$431.64</td><td class="${td}">$719.40</td></tr>
+              <tr><td class="${td}">No membership</td><td class="${td}">$0</td><td class="${td}">$0</td><td class="${td}">$0</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Totals are before tax and assume Echelon’s prices do not change, which it does not promise. The
+            two-year rows mix plans because five years cannot be bought in two-year blocks. Echelon’s store
+            also contained cheaper Premier plans tied to particular partners and promotions, but they were
+            not offered on the treadmill pages, so we have left them out.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What Premier adds</h3>
+          <p>
+            Echelon lists live and on-demand classes, scenic runs, Echelon Worlds (gamified races, with
+            incline that follows the terrain on the Stride-6s), AI-personalised plans, FitOS entertainment
+            streaming on screened machines, saved workout history and its separate Workout Builder AI app,
+            which it values at $14.99 a month on its own. It also adds two things that are really about
+            cost: free shipping with a 1- or 2-year plan on the Stride-6, Stride-6s and Stride 50 RCX-22,
+            and five years of parts and labour cover instead of two and one (see the warranty section).
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What works without it</h3>
+          <p>
+            This is clearer than it was. Echelon’s Stride-6 page now says “No membership needed to run.
+            Manual workouts from the console always work.” The Stride-6s page says that after the free trial
+            you can “cancel anytime and keep running in Manual Mode”, with the LED console showing speed,
+            incline, time and distance. The Stride-8s page says “Freestyle mode and built-in programs are
+            always available.” Without Premier you lose the classes, the scenic and gamified content, the
+            screen’s entertainment apps and the longer warranty. Independent reviews we read for our
+            Echelon guide said earlier Strides needed at least a free Echelon account to run, so set one up
+            during the trial even if you do not plan to pay. If you want a machine whose total cost stays
+            at the sticker with nothing left on the table, our guide to
+            ${A('/best-treadmills-without-subscriptions/', 'treadmills without subscriptions')} covers the
+            alternatives.
+          </p>`,
+    },
+    {
+      id: 'total-cost',
+      heading: 'The 5-Year Cost of Each Echelon Treadmill',
+      html: `          <p>
+            Put the machine and the membership together and the order of the models does not change, but
+            the gaps between them shrink. The table uses Echelon’s prices on 26 November 2026 and Premier
+            on the yearly plan, which also brings free shipping. The right-hand column is the machine alone;
+            on every model but the Stride-8s, delivery is then extra (see below).
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[620px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Model (Echelon price)</th>
+                <th class="${th}">3 years, yearly Premier</th>
+                <th class="${th}">5 years, yearly Premier</th>
+                <th class="${th}">5 years, 2-year plans</th>
+                <th class="${th}">5 years, no membership</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">Stride-6 ($1,399.99)</td><td class="${td}">$2,599.96</td><td class="${td}">$3,399.94</td><td class="${td}">$3,199.96</td><td class="${td}">$1,399.99 + delivery</td></tr>
+              <tr><td class="${td}">Stride-6s ($1,599.99)</td><td class="${td}">$2,799.96</td><td class="${td}">$3,599.94</td><td class="${td}">$3,399.96</td><td class="${td}">$1,599.99 + delivery</td></tr>
+              <tr><td class="${td}">Stride 50 RCX-22 ($1,999.99)</td><td class="${td}">$3,199.96</td><td class="${td}">$3,999.94</td><td class="${td}">$3,799.96</td><td class="${td}">$1,999.99 + delivery</td></tr>
+              <tr><td class="${td}">Stride-8s ($2,195.99)</td><td class="${td}">$3,395.96</td><td class="${td}">$4,195.94</td><td class="${td}">$3,995.96</td><td class="${td}">$2,195.99</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Totals exclude tax, accessories and premium delivery, and assume no price changes. On monthly
+            billing instead, add $399.45 to each five-year figure. Two things stand out. Over five years,
+            Premier costs more than the Stride-6 or the Stride-6s itself: $1,999.95 on the yearly plan
+            against $1,399.99 and $1,599.99. And while a Stride-8s costs 57% more than a Stride-6 to buy,
+            it costs about 23% more to own for five years with Premier.
+          </p>
+          <p>
+            Spread over sixty months, a Stride-6s bought this week and used with yearly Premier works out
+            at about $60 a month, and a Stride-6 at about $57. If you will not pay for the membership, the
+            last column is your real cost, and at that point the question becomes whether the auto-fold is
+            worth the price on its own, because Echelon’s hardware without classes competes with plain
+            treadmills that cost far less.
+          </p>`,
+    },
+    {
+      id: 'delivery-warranty',
+      heading: 'Delivery, Assembly, Returns and Warranty',
+      html: `          <p>
+            <strong>Delivery.</strong> Echelon’s shipping policy says treadmills go by FedEx Freight, that
+            “shipping rates vary by product and are calculated and displayed at checkout”, and that total
+            delivery time is usually 10 to 14 days after the order leaves the warehouse. The Stride-8s page
+            says “Free delivery on every Stride-8s, no membership required” (continental US). On the
+            Stride-6, Stride-6s and Stride 50 RCX-22 pages, free shipping comes with the 1- or 2-year
+            Premier plan, and Echelon’s membership box puts a $299.00 value on that free shipping. We did not
+            run a checkout, so we cannot confirm what a non-member actually pays; check the cart before
+            deciding the yearly plan is “free”.
+          </p>
+          <p>
+            <strong>Assembly.</strong> Echelon’s shipping policy offers premium in-home delivery and setup
+            through Hub Group for $299.99 where available, covering delivery to the room of your choice,
+            unpacking, light assembly and packaging removal. Echelon says the Stride-6s arrives fully
+            assembled and the Stride-8s needs minimal assembly, with an “under-5-minute setup”. At 182.35 lb
+            for the Stride-6 on Echelon’s figures, the real cost is carrying it in, not putting it together.
+          </p>
+          <p>
+            <strong>Returns.</strong> Echelon’s returns page on 26 November said you can request a return
+            within 60 days of delivery, with a prepaid label, no return fees and no restocking fee, provided
+            the product comes back in brand-new, resaleable condition in its <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a>. The
+            Stride-8s page describes the same thing as a 60-day home trial with “no return-freight or
+            restocking fees” in the contiguous US. One paragraph of Echelon’s shipping policy still says 30
+            days, so get the return window confirmed with your order. The “original packaging” condition is
+            the catch: keep the box.
+          </p>
+          <p>
+            <strong>Warranty.</strong> For Stride treadmills bought on or after 4 November 2026, Echelon’s
+            product pages give a lifetime drive-motor warranty for the original purchaser, 10 years on the
+            frame, 2 years on parts (and the touchscreen on screened models) and 1 year on labour. Active
+            Premier members get parts, touchscreen and labour extended to five years in total from the
+            purchase date; Echelon says the motor and frame terms do not change, and there are no handling
+            or trip fees on warranty service during the warranty period. That is a real improvement on the
+            terms we recorded in October, when the base cover was one year on equipment and five on the
+            motor. The walking pads are different: the DuoPad lists a one-year residential warranty.
+          </p>
+          <p>
+            Two cautions. The five-year cover lasts only while Premier stays active, so over five years it
+            is worth roughly $1,800 to $2,400 of membership fees, not a free extra. And an older Stride sold
+            elsewhere may not carry the new terms; the Stride-s listing on Amazon still quotes a 12-month
+            limited parts and labour warranty. Echelon also sells separate extended warranties for connected
+            equipment at $59.99, $119.99 and $239.99 for one, two and four extra years. Our
+            ${A('/treadmill-warranty-guide/', 'treadmill warranty guide')} explains how to weigh terms like
+            these.
+          </p>`,
+    },
+    {
+      id: 'vs-rivals',
+      heading: 'Echelon vs Peloton and NordicTrack at the Same Price',
+      html: `          <p>
+            Echelon’s own Stride-8s page compares it with Peloton’s Tread Flex and NordicTrack’s X24, using
+            figures Echelon says it took from those makers’ sites on 4 November. We use the figures from our
+            own dated price guides instead: Peloton’s Black Friday prices as recorded in our
+            ${A('/how-much-does-a-peloton-tread-cost/', 'Peloton Tread cost guide')} (checked 21 to 24
+            November 2026) and NordicTrack’s as recorded in our
+            ${A('/how-much-does-a-nordictrack-treadmill-cost/', 'NordicTrack cost guide')} (November 2026).
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[680px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Treadmill</th>
+                <th class="${th}">Sale price</th>
+                <th class="${th}">Membership</th>
+                <th class="${th}">5 years with membership</th>
+                <th class="${th}">Key differences</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">Echelon Stride-8s</td><td class="${td}">$2,195.99 (Echelon, 26 Nov)</td><td class="${td}">Premier $399.99/yr</td><td class="${td}">$4,195.94</td><td class="${td}">22 in. swivel screen, 400 lb, lifetime motor, free delivery</td></tr>
+              <tr><td class="${td}">Peloton Tread Flex</td><td class="${td}">$1,995 ($2,195 list)</td><td class="${td}">All-Access $49.99/mo</td><td class="${td}">$4,994</td><td class="${td}">21.5 in. screen, folds, 300 lb, 3-year belt and motor</td></tr>
+              <tr><td class="${td}">NordicTrack Commercial 1750</td><td class="${td}">$1,999 ($2,499 list)</td><td class="${td}">iFIT Pro $396/yr</td><td class="${td}">$3,979</td><td class="${td}">16 in. pivoting screen, -3% to 12% incline</td></tr>
+              <tr><td class="${td}">Echelon Stride-6s</td><td class="${td}">$1,599.99 (Echelon, 26 Nov)</td><td class="${td}">Premier $399.99/yr</td><td class="${td}">$3,599.94</td><td class="${td}">10 in. screen, auto-folds flat, 330 lb</td></tr>
+              <tr><td class="${td}">NordicTrack T Series 10</td><td class="${td}">$1,599 (NordicTrack); $949.05 on Amazon, 26 Nov</td><td class="${td}">iFIT Pro $396/yr</td><td class="${td}">$3,579 at $1,599</td><td class="${td}">10 in. touchscreen, 12% incline, folds upright</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            <strong>Against Peloton.</strong> Echelon’s Stride-8s page claims the “same $2,195 price as the
+            Peloton Tread Flex”. That is true at Peloton’s list price, but in Peloton’s Black Friday sale
+            the Tread Flex is $1,995, about $200 less than the Stride-8s. Over five years the order flips:
+            Premier’s yearly plan costs about $1,000 less than All-Access, so the Stride-8s ends up about $800
+            cheaper to own, with a larger screen, a higher weight rating and, on the makers’ stated terms,
+            longer motor cover. The Peloton folds; the Stride-8s does not. The Stride-6s, at $1,599.99,
+            is the folding Echelon to set against the Tread Flex: about $400 less to buy and about $1,400
+            less over five years, with a much smaller screen. Our
+            ${A('/ifit-vs-peloton/', 'iFIT vs Peloton comparison')} covers how the class platforms differ.
+          </p>
+          <p>
+            <strong>Against NordicTrack.</strong> At about $1,600 the Stride-6s and the <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>T Series 10</a> are
+            almost level over five years, and at about $2,000 the Commercial 1750 is roughly $200 cheaper
+            to own than the Stride-8s. iFIT workouts on a NordicTrack can change speed and incline for you
+            with an iFIT membership; Echelon’s Worlds does that on the Stride-6s. The decisive difference is usually space:
+            only the Stride-6 and Stride-6s fold themselves flat. If they do not need to, a T Series 10 at
+            Amazon’s $949.05 on 26 November undercuts every Echelon by hundreds of dollars.
+          </p>`,
+    },
+    {
+      id: 'when-cheapest',
+      heading: 'When and Where an Echelon Treadmill Is Cheapest',
+      html: `          <p>
+            <strong>This week, at Echelon.</strong> The Black Friday prices on 26 November are the lowest we
+            have recorded for the Stride-6, Stride-6s and Stride-8s, $54 to $300 below our 20 October
+            check. Echelon’s banner says “Price guaranteed through Dec 2”, which suggests the sale runs past
+            <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium" data-autolink>Cyber Monday</a>, but Echelon’s promotional terms page did not set out the Black Friday terms when
+            we read it, so we cannot tell you what the guarantee covers. If you buy now and the price falls
+            before 2 December, ask Echelon to honour the difference.
+          </p>
+          <p>
+            <strong>Amazon for some models.</strong> On 26 November Amazon matched Echelon on the Stride-6
+            at $1,399.99, was $100 cheaper on the DuoTread at $299.99, and was $196 cheaper on the Stride-8s
+            at $1,999.99. That last one comes with a question: the Amazon listing states a 300 lb capacity
+            where Echelon’s current Stride-8s is rated 400 lb, which suggests a different version. Before
+            buying an Echelon from Amazon, check whether it is the 2026 model, whether delivery is included,
+            whether the new lifetime-motor warranty applies (Echelon’s terms speak of treadmills purchased
+            on or after 4 November 2026 and do not say from whom), and the return route: Echelon’s returns
+            page says it accepts returns only on items bought directly from echelonfit.com.
+          </p>
+          <p>
+            <strong>Discounts that stack.</strong> Echelon advertised 0% APR for up to 36 months, subject to
+            approval; $50 off for verified military, first responders, healthcare workers and teachers
+            through VerifyPass; and HSA/FSA payment through Truemed, which Echelon says saves qualified
+            buyers “about 30%” (that depends on your tax position and eligibility, not on Echelon). Open-box
+            units save more when they are in stock. For Black Friday prices across every brand, see our
+            ${A('/treadmill-black-friday-deals/', 'treadmill Black Friday deals')} roundup.
+          </p>
+          <p>
+            <strong>Outside sale periods.</strong> Echelon shows a compare-at price on almost everything and
+            discounts often, so do not pay anything close to the compare-at figure. The sale price on 20
+            October was already $300 below the Stride-6’s compare-at price. If you miss this week, wait for
+            the next sale rather than paying more, and price the membership first, because over five years
+            it matters more than a $200 swing in the hardware.
+          </p>`,
+    },
+    {
+      id: 'worth-it',
+      heading: 'Is an Echelon Treadmill Worth the Money?',
+      html: `          <p>
+            <strong>An Echelon is worth it if you need a full-length treadmill that folds itself flat, or you
+            want Echelon’s classes for less than Peloton’s, and you will keep Premier long enough to want the
+            five-year cover.</strong> At $1,399.99 to $1,599.99 this week, the Stride-6 and Stride-6s are
+            the cheapest way we know to get a 60-inch deck that lies flat under furniture, and the 2026
+            versions add a 330 lb rating and a <a href="/best-treadmills-with-long-warranty/" class="text-[#0F62FE] font-medium" data-autolink>lifetime motor warranty</a> that the October models did not have.
+          </p>
+          <p>
+            It is less convincing in three cases. <strong>If you will not pay for Premier,</strong> you are
+            paying for a connected treadmill with two years of parts cover and one of labour, plus delivery
+            on most models, and plainer machines do the same job for less. <strong>If you want the biggest
+            screen,</strong> the Stride-8s is good value against a Peloton over five years but gives up the
+            fold that makes Echelon distinctive. <strong>If you only need to walk,</strong> the DuoPad and
+            DuoTread are cheap, but neither connects to the Echelon app for classes, so judge them as walking
+            pads, not as Echelon treadmills.
+          </p>
+          <p class="text-sm text-gray-500">
+            This page covers prices and terms as Echelon and Amazon stated them on 26 November 2026; we have
+            not tested these treadmills. Prices change daily during sales, so check the cart before you buy.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'How much does an Echelon treadmill cost?',
+      a: 'On Echelon’s store on 26 November 2026, the Stride-6 was $1,399.99, the Stride-6s $1,599.99, the Stride 50 RCX-22 $1,999.99 and the Stride-8s $2,195.99, against compare-at prices of $1,999.99 to $2,999.99. Echelon’s walking pads were $299.99 (DuoPad) and $399.99 (DuoTread).',
+    },
+    {
+      q: 'How much is the Echelon membership for a treadmill?',
+      a: 'Echelon Premier was $39.99 a month after a 30-day free trial, $399.99 for a year or $699.99 for two years on Echelon’s treadmill pages on 26 November 2026. The yearly and two-year plans include free shipping on the treadmill. Over five years Premier costs about $1,800 to $2,400.',
+    },
+    {
+      q: 'Can you use an Echelon treadmill without a membership?',
+      a: 'Yes. Echelon’s Stride-6 page says no membership is needed to run and manual workouts from the console always work, and the Stride-8s page says Freestyle mode and built-in programs are always available. Without Premier you lose the classes, scenic and gamified content, and the five-year parts and labour cover.',
+    },
+    {
+      q: 'Does Echelon charge for delivery?',
+      a: 'The Stride-8s includes delivery in the continental US with or without a membership. On the Stride-6, Stride-6s and Stride 50 RCX-22, shipping is free with a 1- or 2-year Premier plan; otherwise Echelon says rates are calculated at checkout. Premium in-home delivery and setup is $299.99 where available.',
+    },
+    {
+      q: 'What warranty comes with an Echelon treadmill?',
+      a: 'For Stride treadmills bought on or after 4 November 2026, Echelon lists a lifetime motor warranty for the original purchaser, 10 years on the frame, 2 years on parts and 1 year on labour. Active Premier members get parts and labour extended to five years in total.',
+    },
+    {
+      q: 'Is Echelon cheaper than Peloton?',
+      a: 'Usually, once the membership is counted. In Black Friday 2026 sales, the Stride-6s was $1,599.99 against $1,995 for Peloton’s Tread Flex, and Premier’s yearly plan costs about $1,000 less over five years than All-Access at $49.99 a month. The Stride-8s costs about $200 more to buy than a Tread Flex but about $800 less over five years.',
+    },
+    {
+      q: 'Is the Echelon treadmill cheaper on Amazon?',
+      a: 'Sometimes. On 26 November 2026 Amazon matched Echelon on the Stride-6 at $1,399.99 and was cheaper on the Stride-8s ($1,999.99) and DuoTread ($299.99). The Amazon Stride-8s listing states a 300 lb capacity against 400 lb on Echelon’s current model, and Echelon only accepts returns on items bought from echelonfit.com.',
+    },
+  ],
+  mistakesHeading: 'Common Mistakes When Pricing an Echelon Treadmill',
+  mistakesIntro:
+    'Most Echelon overspending comes from reading the sticker and missing the terms around it. These are the four that cost the most.',
+  mistakes: [
+    {
+      title: 'Treating the compare-at price as the real price',
+      body: 'Echelon shows a crossed-out compare-at price on almost every model, and we have only ever seen the Strides sold below it. Judge a deal against the last sale price, not the compare-at figure: the Stride-6 was $1,699.99 in October and $1,399.99 this week, against a $1,999.99 compare-at both times.',
+    },
+    {
+      title: 'Leaving Premier out of the five-year budget',
+      body: 'Premier costs $1,800 to $2,400 over five years, more than a Stride-6 or Stride-6s on sale. Decide whether you will keep it before choosing a model, and remember that the five-year parts and labour cover only lasts while you pay.',
+    },
+    {
+      title: 'Skipping the membership and forgetting delivery',
+      body: 'On the Stride-6, Stride-6s and Stride 50 RCX-22, free shipping comes with a yearly or two-year plan. Check the delivery charge in the cart before deciding to buy without Premier; on the Stride-8s, delivery is included either way.',
+    },
+    {
+      title: 'Buying an older or different version to save a little',
+      body: 'Amazon’s Stride and Stride-s listings have 55-inch decks, the Stride-s listing quotes a 12-month warranty, and its Stride-8s listing states 300 lb rather than the 400 lb of Echelon’s current model. Confirm the model year, specification, warranty and return route before paying, especially since Echelon only accepts returns on items bought from its own site.',
+    },
+  ],
+  relatedHeading: 'Related Echelon and Price Guides',
+  related: [
+    {
+      kicker: 'Brand Guide',
+      title: 'Echelon Treadmills',
+      blurb: 'The Stride range, the auto-fold and what each model is like to own.',
+      url: '/echelon-treadmills/',
+    },
+    {
+      kicker: 'Price Guide',
+      title: 'How Much Is a Peloton Treadmill?',
+      blurb: 'Tread Flex, Tread Vision and Tread+ prices with All-Access on top.',
+      url: '/how-much-does-a-peloton-tread-cost/',
+    },
+    {
+      kicker: 'Comparison',
+      title: 'iFIT vs Peloton',
+      blurb: 'The two biggest class platforms compared on price and content.',
+      url: '/ifit-vs-peloton/',
+    },
+    {
+      kicker: 'Price Guide',
+      title: 'How Much Does a NordicTrack Cost?',
+      blurb: 'Every NordicTrack treadmill priced, with iFIT on top.',
+      url: '/how-much-does-a-nordictrack-treadmill-cost/',
+    },
+    {
+      kicker: 'No Subscription',
+      title: 'Best Treadmills Without Subscriptions',
+      blurb: 'Treadmills whose total cost stays at the sticker price.',
+      url: '/best-treadmills-without-subscriptions/',
+    },
+    {
+      kicker: 'Deals',
+      title: 'Treadmill Black Friday Deals',
+      blurb: 'This week’s treadmill prices across every brand.',
+      url: '/treadmill-black-friday-deals/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">An Echelon treadmill costs $1,399.99 to $2,195.99 on Echelon’s store this
+          Black Friday</strong>, against compare-at prices of $1,999.99 to $2,999.99: $1,399.99 for the
+          Stride-6, $1,599.99 for the Stride-6s and $2,195.99 for the Stride-8s, which is the only model with
+          delivery included regardless of membership. The walking pads start at $299.99. These are the
+          lowest prices we have recorded for the Stride range.`,
+    `Add <strong class="text-white">Premier at $399.99 a year</strong>, which also brings free shipping and
+          five-year parts and labour cover, and a Stride-6s comes to about $3,600 over five years, less than
+          a Peloton Tread Flex with All-Access. If you would rather pay nothing after the sticker, see our
+          <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">treadmills without subscriptions</a>.`,
+  ],
+};

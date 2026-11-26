@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-11-25',
+  modified: '2026-11-26',
   h1: ['SereneLife Treadmills:', 'Models, Specs and What to Check'],
   standfirst:
     'SereneLife is a real brand, owned by Sound Around, Inc. of Brooklyn, the company behind Pyle, and its treadmills are cheap compact walkers rather than running machines. On Amazon on 25 November 2026 its folding treadmills ran from $237.89 to $314.91 and its walking pads from $167.29, nearly all rated to about 265 lb, with a one-year warranty in the listing details. This guide sets out every current model, which listing figures disagree, and what to check before you order.',
@@ -634,6 +635,12 @@ export default {
       title: 'Treadmill Buying Guide 2026',
       blurb: 'What belt length, motor rating and capacity to look for before you buy.',
       url: '/treadmill-buying-guide-2026/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'YPOO Treadmill Reviews',
+      blurb: 'Incline pads and a folding treadmill on Amazon.',
+      url: '/ypoo-treadmills/',
     },
   ],
   bottomLine: [
