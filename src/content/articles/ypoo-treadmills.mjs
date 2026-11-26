@@ -239,7 +239,7 @@ export default {
             wide. That is a walking-pad size, even on the treadmill with a console.</li>
             <li><strong>Missing motor ratings.</strong> Half the listings give no horsepower, and none says whether its
             figure is continuous or peak.</li>
-            <li><strong>Prices that depend on the deal.</strong> Three of the lowest prices on 26 November 2026 were
+            <li><strong>Prices that depend on the deal.</strong> Four YPOO prices on 26 November 2026 were
             Prime-exclusive; without Prime the same listings cost $50 to $96 more.</li>
           </ul>
           <p>
@@ -455,7 +455,7 @@ export default {
             enough for walking for most adults; taller walkers and anyone who wants to jog should compare the longer belts
             in our guide to the <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">best treadmills
             under $500</a>.</li>
-            <li><strong>Whether the price needs Prime.</strong> Three YPOO deals on 26 November 2026 were Prime-exclusive.
+            <li><strong>Whether the price needs Prime.</strong> Four YPOO deals on 26 November 2026 were Prime-exclusive.
             Without Prime, the ultra-slim pad was $199.99 or $239.99, not $149.99.</li>
             <li><strong>The seller line.</strong> YPOO-US or YIFIT FITNESS, not Amazon.com. Read that seller's return
             terms, and note that YPOO's own store warranty does not cover Amazon orders.</li>
@@ -489,7 +489,7 @@ export default {
             explains the limits.</li>
             <li><strong>Does not suit:</strong> anyone who wants powered incline. Every YPOO on Amazon uses manual
             positions.</li>
-            <li><strong>Does not suit:</strong> buyers who want long cover. One year is short; some rival brands give 18
+            <li><strong>Does not suit:</strong> buyers who want long cover. One year is short; several rival brands give
             to 24 months or more.</li>
           </ul>
           <p>
@@ -528,8 +528,8 @@ export default {
             <a href="/serenelife-treadmills/" class="text-[#0F62FE] font-medium">SereneLife treadmills</a>.
           </p>
           <p>
-            Black Friday falls on 27 November 2026, and YPOO listings already showed cuts of $21 to $96 against their list
-            or typical prices on 26 November. A cut against a list price is not the same as a good price, and three of
+            Black Friday falls on 27 November 2026, and YPOO listings already showed cuts of $21 to $70 against their list
+            or typical prices on 26 November. A cut against a list price is not the same as a good price, and four of
             the best deals needed Prime. Compare the model code and the price on the day rather than the percentage off,
             and remember that YPOO's own store does not refund sale items.
           </p>`,
@@ -575,7 +575,7 @@ export default {
     },
     {
       title: 'Counting on a Prime-only price',
-      body: 'Three of the cheapest YPOO deals on 26 November 2026 were Prime-exclusive, and the same listings cost $50 to $96 more without Prime. Check the price in your basket, not on the search page.',
+      body: 'Four YPOO deals on 26 November 2026 were Prime-exclusive, and the same listings cost $50 to $96 more without Prime. Check the price in your basket, not on the search page.',
     },
     {
       title: 'Assuming YPOO’s store warranty covers Amazon orders',
