@@ -2,7 +2,7 @@ export default {
   slug: 'ypoo-treadmills',
   title: 'YPOO Treadmill Reviews (2026): Is YPOO a Good Brand?',
   description:
-    'YPOO sells incline walking pads from $116.84 and an 8 mph folding treadmill at $199.99 on Amazon, rated 300 to 350 lb, with a 1-year warranty. What to check.',
+    'YPOO sells incline walking pads from $116.84 and an 8 mph folding treadmill from $199.99 with Prime on Amazon (26 Nov), with a 1-year warranty. What to check.',
   crumbLabel: 'YPOO Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
