@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 26, 2026',
   published: '2026-10-13',
-  modified: '2026-11-21',
+  modified: '2026-11-26',
   socialProof: '2.7k',
   h1: ['Best Walking Pads', 'With Incline'],
   standfirst:
@@ -90,6 +90,61 @@ export default {
           </p>`,
     },
     {
+      id: 'black-friday-price-check',
+      heading: 'Black Friday Price Check: What These Pads Cost on 26 November',
+      navLabel: 'Black Friday prices',
+      html: `          <p>
+            Black Friday falls on 27 November this year, and walking pads are one of the categories
+            where Amazon prices move most in the week around it. We re-checked the Amazon listing
+            for each of the five pads on 26 November 2026, the day before, and set the result
+            against the price this page printed earlier. Every figure below is a single reading
+            from the listing on the date shown; prices can change several times a day during the
+            sale, so treat these as a reference point for judging a deal rather than as the price
+            you will pay.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[640px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pad</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Earlier price on this page</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Amazon, 26 Nov 2026</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What changed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">MERACH NovaWalk W50 TrekPad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$299.99 (MERACH, 5 Nov 2026)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No price shown on the listing we track; a second W50 listing showed $256.49</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $43 under the 5 Nov MERACH price, on the second listing</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Strol 2E Pro</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$197.98 and $219.99 (Amazon, 6 Nov 2026)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$177.64</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $20 under the cheaper 6 Nov listing</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">DeerRun Z10</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$200–$240 (October 2026 range)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$189.98</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Just under the bottom of the earlier range</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Egofit Walker Pro M1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $479 (independent tracker, early Oct 2026)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$479.00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No change</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">DeerRun A6 Plus</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$249.00 (Amazon, 6 Nov 2026)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$249.00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No change</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Three things stand out. <strong>The two cheapest pads have already dropped.</strong>
+            The UREVO Strol 2E Pro and the DeerRun Z10 were both lower on 26 November than at any
+            point this page recorded before, which puts a 12% manual incline and a powered incline
+            each under $190. If either reaches your price on Black Friday itself, there is little
+            reason to wait for Cyber Monday.
+          </p>
+          <p>
+            <strong>The MERACH needs a careful look at the listing.</strong> The W50 TrekPad is sold
+            under more than one Amazon listing. The one we track showed no price on 26 November,
+            while a second listing, whose title names the W50 and gives the same 400 lb, 12% and
+            16.5 by 41.3-inch figures, showed $256.49. Before you buy from either, check that the
+            title says W50 and 400 lb rather than W50 Lite, which is a different pad with a 10%
+            incline and a 350 lb rating that sold for $209.99 the same day. MERACH's own store is
+            worth checking too, since it was the cheaper source on 5 November.
+          </p>
+          <p>
+            <strong>The Egofit and the A6 Plus had not moved.</strong> Both sat at exactly the
+            price we recorded earlier. A Black Friday cut may still arrive on the day; if it does
+            not, the Egofit in particular is cheaper on Egofit's own site than on Amazon, as noted
+            on its card. For the wider list of pads with deals running this week, flat ones
+            included, see our
+            <a href="/black-friday-walking-pad-deals/" class="text-[#0F62FE] font-medium">Black Friday walking pad deals</a>.
+          </p>`,
+    },
+    {
       id: 'how-we-chose',
       heading: 'How We Chose These Walking Pads',
       html: `          <p>
@@ -97,7 +152,8 @@ export default {
             we had. This is a spec-based roundup. The picks
             were made from published specifications, manufacturer and marketplace listings,
             warranty terms and independent coverage, checked on 13 October 2026, with prices and
-            listings re-checked on 5 and 6 November 2026. For each pad we
+            listings re-checked on 5 and 6 November 2026 and Amazon prices checked again on
+            26 November 2026, the day before Black Friday. For each pad we
             confirmed that it is currently sold, on the brand's own store, on Amazon, or both.
           </p>
           <p>
@@ -337,6 +393,185 @@ export default {
           </p>`,
     },
     {
+      id: 'tall-users',
+      heading: 'Best Walking Pad With Incline for Tall People',
+      navLabel: 'For tall people',
+      html: `          <p>
+            Height is where an incline pad asks for the most compromise. Our guide to the
+            <a href="/best-walking-pads-for-tall-people/" class="text-[#0F62FE] font-medium">best walking pads for tall people</a>
+            works out that a walker of six feet or more is best served by a belt of about 47 inches
+            or longer, and the pads that reach that length are flat or nearly flat. None of the
+            incline pads on this page comes close, so a tall buyer is choosing the longest belt
+            available with incline rather than the length the stride ideally wants.
+          </p>
+          <p>
+            Here is the belt length each pad's listing or maker states, and where it does not.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pad</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Belt or walking area (stated)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Incline</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">For tall walkers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">MERACH NovaWalk W50 TrekPad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">41.3 x 16.5 in. (MERACH); one Amazon bullet says 42.5 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The longest here; the best of the five</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">DeerRun Z10</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">35 x 16 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered, 12 levels</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Short, and shorter in feel at full tilt</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Egofit Walker Pro M1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">34 x 16.5 in. walking area</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fixed 5%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The shortest; desk pace only</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Strol 2E Pro</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not stated in the listing</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">12% manual</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ask UREVO before buying</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">DeerRun A6 Plus</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">"Longer running belt", no length given</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5% manual</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ask DeerRun before buying</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The MERACH W50 TrekPad is the answer for most tall walkers who want incline on a pad.
+            Its belt is the longest we could confirm, its 400 lb rating gives a heavier, taller
+            frame room to spare, and because the incline is powered you can walk flat for long
+            stretches and add grade only when you want it, which is easier on a stride that is
+            already near the front roller. One detail to check: MERACH's product page and the
+            title of one W50 Amazon listing give a 16.5 by 41.3-inch belt, while a bullet on both
+            W50 Amazon listings says 16.5 by 42.5 inches. We use the smaller figure. Either is well short of 47 inches.
+          </p>
+          <p>
+            MERACH also sells the UltraWalk W60, whose Amazon listing describes a 16.5 by
+            41.3-inch deck "for tall people", a 12-level automatic incline and a 400 lb maximum
+            capacity, at $282.12 on 26 November 2026. That is the same belt length as the W50, so
+            the "tall" wording does not buy you extra stride; it is not one of the picks here
+            because we have not cross-checked its figures against a second source. If the listing
+            does not state its maximum incline as a percentage, ask MERACH.
+          </p>
+          <p>
+            If you are well over six feet, walk briskly, or plan to spend real time at the top of
+            the incline range, the honest answer is a folding treadmill rather than a pad. A
+            treadmill gives you a belt of 55 inches or more and a stronger incline system; our
+            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">incline treadmill guide</a>
+            starts there. For everyone else, the general advice on matching belt length to height
+            is in the
+            <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>.
+          </p>`,
+    },
+    {
+      id: 'motor-hp',
+      heading: 'Motor Horsepower on Incline Pads: Peak vs Continuous',
+      navLabel: 'Motor horsepower',
+      html: `          <p>
+            A powered incline asks more of the drive motor than flat walking does, because the
+            motor is now pushing the belt against your weight on a slope. That is why horsepower
+            comes up so often in searches for incline pads, and why the figure on the box is worth
+            reading closely.
+          </p>
+          <p>
+            <strong>Peak horsepower</strong> is the most the motor can produce for a brief moment,
+            such as at start-up or as you land a heavy step. <strong>Continuous horsepower</strong>
+            (often written CHP) is what it can deliver for a whole session without overheating.
+            Continuous is the useful number, and it is always lower. Many walking pad listings
+            print only the peak figure, or a figure with no label at all, which makes two pads
+            impossible to compare. Our
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a>
+            explains the difference in more depth.
+          </p>
+          <p>
+            Here is what the listings for the pads on this page state, checked on Amazon on
+            26 November 2026 and, for the W50 TrekPad, on MERACH's product page on 5 November 2026.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pad</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Motor figure stated</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Peak or continuous?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">MERACH NovaWalk W50 TrekPad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1.25 HP continuous, 3.5 HP peak (MERACH); "3.5 HP" on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Both, on MERACH's page; the Amazon title calls 3.5 HP the maximum</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">DeerRun Z10</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0 HP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not stated</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Strol 2E Pro</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None in the listing bullets</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">—</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Egofit Walker Pro M1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None in the listing bullets</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">—</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">DeerRun A6 Plus</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None in the listing bullets</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">—</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            So when a listing pairs "12% incline" with "3.0 HP", as the DeerRun Z10's does, the
+            3.0 HP is very likely a peak figure, but the listing does not say so and we cannot
+            confirm it. Compare it with the MERACH, where the same company's 3.5 HP turns out to
+            be the peak and 1.25 HP the continuous rating. A 3.0 HP label on a budget pad tells
+            you little about how the motor copes with a long session at full incline.
+          </p>
+          <p>
+            In practice, at walking speeds of 4 mph or less, a pad's motor is rarely the limit
+            on incline. Belt length, the incline mechanism and the weight capacity matter more,
+            and a published continuous rating matters more than a large peak one. If a tall or
+            heavy walker is choosing between a pad that states a continuous rating and one that
+            states only a big number, the stated continuous rating is the safer bet, and on this
+            page only the MERACH has one.
+          </p>`,
+    },
+    {
+      id: 'incline-levels',
+      heading: 'Incline Levels, 12% and Fixed Decks: What the Numbers Mean',
+      navLabel: 'Incline levels',
+      html: `          <p>
+            Searches for a walking pad with "4 level incline", "12 level incline" or "12%
+            incline" are really asking the same question: how many steps of grade do I get, and
+            how far does the last one go? Listings describe this in three different ways, and they
+            are easy to mix up.
+          </p>
+          <p>
+            <strong>Levels with a stated percentage.</strong> The clearest listings give both. The
+            MERACH W50 Lite, for example, is sold on Amazon as a "10-Level 10% Auto Incline", which
+            reads as 1% per level. When a listing states both numbers, you know what each press of
+            the button does.
+          </p>
+          <p>
+            <strong>Levels with no percentage, or with a percentage that does not hold.</strong> The
+            DeerRun Z10 is sold as a 12-level pad and its Amazon title says "12% Auto Incline", but
+            one hands-on reviewer measured about 9% at the top level. Twelve levels does not
+            guarantee 12%. If a listing gives a level count and no percentage, or the two do not
+            match between the title and the manual, assume the maximum is lower than the level
+            count suggests and ask the seller.
+          </p>
+          <p>
+            <strong>One or two set positions.</strong> Manual pads usually have a single incline
+            position, or two at most, rather than levels. The UREVO Strol 2E Pro sets to 12% and
+            the DeerRun A6 Plus to 5%; MERACH also sells a version of its W60 listed with a
+            "2-Level 7% Manual Incline". A fixed deck such as the Egofit Walker Pro M1 has exactly
+            one setting, 5%, which never changes.
+          </p>
+          <p>
+            None of the five pads here is sold as a four-level pad. A small number of levels is not
+            a drawback in itself: for walking, the steps that matter most are the first few
+            percent, and a pad that goes flat, 3%, 6% and 9% would cover most of what a desk walker
+            uses. What matters is whether the incline is powered, so you can step between levels
+            without stopping, and whether the top level is stated as a percentage. A pad with many
+            levels and no stated top grade is harder to judge than one with four levels and an
+            honest maximum.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pad (Amazon listing, 26 Nov 2026)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">How incline is described</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Change it while walking?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">MERACH NovaWalk W50 TrekPad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">"12% auto incline", no level count in the bullets</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes, by remote or app</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">DeerRun Z10</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">12 levels, "12% Auto Incline"; about 9% measured by one reviewer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes, by remote or app</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Strol 2E Pro</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">"12% manual incline"</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No, step off to set it</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">DeerRun A6 Plus</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5% manual incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No, step off to set it</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Egofit Walker Pro M1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fixed 5% deck</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No, it never changes</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Steeper pads do exist outside this list. UREVO's CyberPad, for instance, is listed on
+            Amazon with a 14% auto incline and a 2.5 HP motor, at $349.25 on 26 November 2026. It
+            is not a pick because we have not confirmed its figures against a second source, but
+            it shows where the category's top end sits: a few percent above the 12% that the best
+            pads here reach, and still below a full incline treadmill.
+          </p>`,
+    },
+    {
       id: 'warranty-support',
       heading: 'What Warranty Do Budget Incline Pads Come With?',
       html: `          <p>
@@ -546,8 +781,8 @@ export default {
       a: `Yes. On this page, the UREVO Strol 2E Pro pairs a fold-up front rail with a 12% manual incline for about $200, and the DeerRun A6 Plus pairs a handrail with a 5% manual incline for about $249. Neither has a powered incline. The MERACH W50 TrekPad, DeerRun Z10 and Egofit Walker Pro M1 have no handle.`,
     },
     {
-      q: 'Is powered incline worth paying more for?',
-      a: `If you want to change the effort during a walk or build up gradually over weeks, yes. Powered incline lets you add a hill without stepping off, one level at a time. If you simply want every desk hour to be a little harder and never want to touch a setting, a fixed-incline pad is simpler and has fewer parts to fail.`,
+      q: 'What is the best walking pad with incline for tall people?',
+      a: `Of the pads we could check, the MERACH NovaWalk W50 TrekPad: MERACH gives a 16.5 by 41.3-inch belt, the longest we could confirm on an incline pad, with powered incline and a 400 lb rating. MERACH states its motor as 1.25 HP continuous and 3.5 HP peak. That belt is still well short of the 47 inches or so a walker over six feet ideally wants, so if you are very tall or walk briskly, a folding incline treadmill is the better machine.`,
     },
     {
       q: 'Will an incline walking pad fit under my standing desk?',
