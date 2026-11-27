@@ -90,7 +90,7 @@ export default {
             </thead>
             <tbody>
               <tr><td class="${td}">TRM 531</td><td class="${td}">P31 LED</td><td class="${td}">$5,885</td><td class="${td}">500 line: 0.5–12 mph, 0–15% incline, 350 lb</td></tr>
-              <tr><td class="${td}">TRM 581</td><td class="${td}">P82 touchscreen</td><td class="${td}">$9,845</td><td class="${td}">500 line</td></tr>
+              <tr><td class="${td}">TRM 581</td><td class="${td}">P84 touchscreen</td><td class="${td}">$9,845</td><td class="${td}">500 line</td></tr>
               <tr><td class="${td}">TRM 631</td><td class="${td}">P31 LED</td><td class="${td}">$7,985</td><td class="${td}">600 line: 3 HP AC, 0.5–12 mph, 0–15%, 400 lb</td></tr>
               <tr><td class="${td}">TRM 661</td><td class="${td}">P62</td><td class="${td}">$9,820</td><td class="${td}">600 line</td></tr>
               <tr><td class="${td}">TRM 681</td><td class="${td}">P82 / P84</td><td class="${td}">$10,615 / $11,800</td><td class="${td}">600 line</td></tr>
@@ -107,8 +107,7 @@ export default {
           </table></div>
           <p>
             Prices are Top Fitness’s listed prices on 27 November 2026, with no sale or compare-at price shown on
-            any new Precor treadmill. Consoles are as Top Fitness names them (the P31, P62 and P94 consoles are
-            those Precor’s brochures pair with each model number). Line specifications are from Precor’s 2025
+            any new Precor treadmill. Consoles are as Top Fitness’s titles and product descriptions name them. Line specifications are from Precor’s 2025
             brochures as recorded in our Precor guide on 20 October 2026. One conflict: Top Fitness’s TRM 885
             (P84) page gives 0.5 to 14 mph and a 350 lb user limit, where Precor’s brochure gives the 800 line
             16 mph and 400 lb. Check the specification sheet for the exact unit you are quoted.
@@ -139,8 +138,8 @@ export default {
           </p>
           <p>
             What a home buyer can still buy new is a commercial TRM, sold into a home by a dealer, with Precor’s
-            separate home warranty. That is why the cheapest new Precor is $5,885, not the $1,500 to $3,000 that
-            older reviews of the Energy and Precision Series home models quoted.
+            separate home warranty. That is why the cheapest new Precor we found was $5,885: the home-priced
+            models that used to sit below the TRM range are no longer sold.
           </p>
           <h3 class="${h3}">Home models vs commercial models</h3>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[640px] w-full text-sm border-collapse">
@@ -208,10 +207,10 @@ export default {
               <tr><td class="${td}">TRM 781, P82</td><td class="${td}">Fitness Superstore</td><td class="${td}">$4,599</td><td class="${td}">Remanufactured; 1 yr parts and on-site labour</td></tr>
               <tr><td class="${td}">TRM 885, P82</td><td class="${td}">Fitness Superstore</td><td class="${td}">$4,799</td><td class="${td}">Remanufactured; 1 yr parts and on-site labour</td></tr>
               <tr><td class="${td}">TRM 885, P82</td><td class="${td}">Top Fitness</td><td class="${td}">$3,699 (compare at $14,010)</td><td class="${td}">Refurbished, “3-4 years old”; 3 yr parts, 3 yr labour</td></tr>
-              <tr><td class="${td}">TRM 731 / TRM 811 / C956i</td><td class="${td}">Global Fitness</td><td class="${td}">$2,284 / $2,284 / $2,375</td><td class="${td}">Refurbished; “Full 1 Year Warranty”</td></tr>
+              <tr><td class="${td}">TRM 731 / TRM 811 / C956i</td><td class="${td}">Global Fitness</td><td class="${td}">$2,284 / $2,284 / $2,375</td><td class="${td}">Refurbished; “Full 1 Year Warranty” stated on the TRM 811 page</td></tr>
               <tr><td class="${td}">TRM 885</td><td class="${td}">Global Fitness</td><td class="${td}">$3,975</td><td class="${td}">Refurbished; “Full 1 Year Warranty”</td></tr>
-              <tr><td class="${td}">C932i / TRM 811 / TRM 731 / C956i</td><td class="${td}">Global Fitness</td><td class="${td}">$1,375 / $1,455 / $1,645 / $1,775</td><td class="${td}">Used; 30 days parts only, “Sold In Working Order”</td></tr>
-              <tr><td class="${td}">TRM 885</td><td class="${td}">Global Fitness</td><td class="${td}">$3,575</td><td class="${td}">Used; 30 days parts only</td></tr>
+              <tr><td class="${td}">C932i / TRM 811 / TRM 731 / C956i</td><td class="${td}">Global Fitness</td><td class="${td}">$1,375 / $1,455 / $1,645 / $1,775</td><td class="${td}">Used; “30 Days Parts Only … Sold In Working Order” stated on the C932i page</td></tr>
+              <tr><td class="${td}">TRM 885</td><td class="${td}">Global Fitness</td><td class="${td}">$3,575</td><td class="${td}">Used; 30 days parts only, “Sold In Working Order”</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -275,8 +274,8 @@ export default {
           <p>
             <strong>The pattern:</strong> a rebuilt Precor with a one-year or longer warranty sold for about a fifth
             to a little over a third of the same model new, a saving of $7,600 to $10,900. That is a steeper
-            discount than the 43% to 59% our used treadmill guide found for rebuilt Star Trac machines at Fitness
-            Superstore on 25 November, partly because Top Fitness’s new Precor prices are high list prices and partly
+            discount than the 43% to 59% our used treadmill guide found for Star Trac machines at Fitness Superstore
+            on 25 November, partly because Top Fitness’s new Precor prices are high list prices and partly
             because so many ex-gym Precors are on the market.
           </p>
           <p>
@@ -341,7 +340,7 @@ export default {
             <tbody>
               <tr><td class="${td}">Frame</td><td class="${td}">Lifetime</td><td class="${td}">7 years</td><td class="${td}">Seller’s term only</td></tr>
               <tr><td class="${td}">Parts, including belt, deck and drive motor</td><td class="${td}">10 years</td><td class="${td}">3 years (motor 5)</td><td class="${td}">1 year (Fitness Superstore, Build A Gym, Global Fitness refurbished)</td></tr>
-              <tr><td class="${td}">Console</td><td class="${td}">3 years</td><td class="${td}">3 years</td><td class="${td}">1 year</td></tr>
+              <tr><td class="${td}">Console</td><td class="${td}">3 years</td><td class="${td}">3 years</td><td class="${td}">Seller’s term (usually within the 1-year parts cover)</td></tr>
               <tr><td class="${td}">Labour</td><td class="${td}">1 year</td><td class="${td}">3 years from 30 March 2026</td><td class="${td}">1 year (on-site at Fitness Superstore)</td></tr>
             </tbody>
           </table></div>
@@ -441,7 +440,7 @@ export default {
               <tr><td class="${td}">Walking (running) belt</td><td class="${td}">TRM 885 2-ply belt, by serial prefix; generic Precor commercial 2-ply belt</td><td class="${td}">$158.85–$209.99</td></tr>
               <tr><td class="${td}">Motor drive belt</td><td class="${td}">TRM 885, by serial prefix</td><td class="${td}">$78.99</td></tr>
               <tr><td class="${td}">Incline (lift) motor</td><td class="${td}">Precor 9.2x, 9.3x and C932i models, by part number</td><td class="${td}">$76.99–$203.99</td></tr>
-              <tr><td class="${td}">DC drive motor</td><td class="${td}">9.4x home models to TRM 631/661/681</td><td class="${td}">$177.09–$599.99</td></tr>
+              <tr><td class="${td}">DC drive motor</td><td class="${td}">From 9.4x home-model motors to TRM 631/661/681 and other club motors</td><td class="${td}">$177.09–$599.99</td></tr>
               <tr><td class="${td}">Lower motor control board</td><td class="${td}">Precor 9.2x, 9.21s and TRM 211 boards</td><td class="${td}">$102.89–$467.89</td></tr>
               <tr><td class="${td}">Deck cushion</td><td class="${td}">Precor part PPP000000044236101</td><td class="${td}">$37.79</td></tr>
             </tbody>
@@ -451,9 +450,9 @@ export default {
             recorded a certified-technician first visit at $269.99 and one regional repairer’s $185 diagnosis and
             labour charge in November 2026, and found Precor drive motors on Amazon from $293.99 to $719.99. Precor’s
             home warranty covers only one year of labour, so from year two a ten-year part still needs a paid visit.
-            On a rebuilt machine with a one-year warranty, one lift motor replacement in year two could plausibly cost
-            $350 to $500 with a technician on these figures; a two-year extended plan at $299 is priced close to one
-            such repair.
+            On a rebuilt machine with a one-year warranty, a lift motor replaced in year two would come to roughly
+            $260 to $475 on these figures ($76.99 to $203.99 for the part plus $185 to $269.99 for the visit), so a
+            two-year extended plan at $299 is priced close to one such repair.
           </p>
           <p>
             The dealer guide cited in our Precor page names the incline motor as the most common failure on used
@@ -481,7 +480,7 @@ export default {
             </thead>
             <tbody>
               <tr><td class="${td}">Precor</td><td class="${td}">TRM 885 $3,799–$4,799; TRM 835 $2,495–$3,999 (27 Nov 2026)</td><td class="${td}">No home range; TRM 531 from $5,885 via a dealer (Top Fitness, 27 Nov 2026)</td><td class="${td}">TRM 835 $11,860 to TRM 895 $16,230 (Top Fitness, 27 Nov 2026)</td></tr>
-              <tr><td class="${td}">Life Fitness</td><td class="${td}">95T $3,799–$4,099; Integrity SE3 HD $5,199 (Fitness Superstore, 27 Nov 2026)</td><td class="${td}">Run CX $4,899 (Life Fitness, 14 Oct 2026); Club Series+ $6,079 (The Fitness Outlet, 27 Nov 2026)</td><td class="${td}">Integrity+ SL $11,247 (facility store, Nov 2026)</td></tr>
+              <tr><td class="${td}">Life Fitness</td><td class="${td}">95T $3,799–$4,099; Integrity SE3 HD $5,199 (Fitness Superstore, 27 Nov 2026)</td><td class="${td}">Run CX $4,899 (Life Fitness, 14 Oct 2026); Club Series+ $6,079, compare at $10,999 (The Fitness Outlet, 27 Nov 2026)</td><td class="${td}">Integrity+ SL $11,247 (facility store, Nov 2026)</td></tr>
               <tr><td class="${td}">Matrix</td><td class="${td}">T3x $3,799; T5x $3,799–$4,099; T7xi $4,499 (Fitness Superstore, 27 Nov 2026)</td><td class="${td}">T30 to T75, $4,699–$7,399 (Matrix home store, October 2026)</td><td class="${td}">“Call for pricing” at dealers (Nov 2026)</td></tr>
               <tr><td class="${td}">Landice</td><td class="${td}">L7 Pro Sports Trainer and L9 $3,799 (Fitness Superstore, 27 Nov 2026)</td><td class="${td}">L7 $5,429–$7,804 by configuration (Landice, 5 Nov 2026)</td><td class="${td}">Sold as the same L-series; no separate club line priced</td></tr>
             </tbody>
@@ -495,8 +494,8 @@ export default {
           <p>
             <strong>New:</strong> a buyer who wants a new club-quality treadmill with a home warranty and a published
             price has cheaper options than a new Precor. The Life Fitness
-            ${A('/life-fitness-run-cx-treadmill/', 'Run CX')} was $4,899 and a new Club Series+ $6,079 at an authorized
-            dealer on Black Friday, the Matrix home range starts at $4,699, and a Landice L7 starts at $5,429. A new
+            ${A('/life-fitness-run-cx-treadmill/', 'Run CX')} was $4,899 on Life Fitness’s store in October and a new Club Series+ $6,079 at The
+            Fitness Outlet on Black Friday, the Matrix home range starts at $4,699, and a Landice L7 starts at $5,429. A new
             TRM 531 at $5,885 is the cheapest new Precor, and it is Precor’s light-commercial line with a 350 lb
             rating. A new TRM 885 at $14,640 to $15,625 is a facility purchase. See our
             ${A('/commercial-treadmills/', 'commercial-grade treadmills')} roundup for home-buyable alternatives and
