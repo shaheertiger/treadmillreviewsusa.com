@@ -227,7 +227,7 @@ export default {
             <li><strong>Clearance.</strong> Do not push the motor end hard against a wall, a desk leg or a pile of boxes, and do
             not drape a towel or jacket over the motor cover. Follow any clearance the manual gives.</li>
             <li><strong>Room heat.</strong> A pad next to a radiator, heater vent or in strong sun starts warmer and has less
-            margin. The manuals we read warn against direct sunlight and high humidity.</li>
+            margin. One manual we read warns against use in high humidity and direct sunlight.</li>
           </ul>
           <p>
             Choose a mat that is firm rather than squashy; a soft foam mat can block air almost as well as a rug. Our
