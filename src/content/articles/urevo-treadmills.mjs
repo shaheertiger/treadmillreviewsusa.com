@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-20',
-  modified: '2026-11-26',
+  modified: '2026-11-27',
   socialProof: '1.3k',
   h1: ['UREVO Treadmills:', 'A Buyer’s Guide to the Range'],
   standfirst:
@@ -424,7 +424,10 @@ export default {
       heading: 'UREVO Warranty, Returns and Shipping',
       html: `          <p>
             UREVO’s terms are shorter than most brands’, and two of its own pages contradict each other, so
-            this section is worth reading before you order.
+            this section is worth reading before you order. Every model’s store and Amazon price is in our
+            <a href="/how-much-does-a-urevo-walking-pad-cost/" class="text-[#0F62FE] font-medium">UREVO walking pad cost</a> guide, and UREVO’s own
+            fixes for error codes, belts and remotes are in our
+            <a href="/urevo-walking-pad-troubleshooting/" class="text-[#0F62FE] font-medium">UREVO walking pad troubleshooting</a> guide.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The warranty: one year, plus 180 days if you use the app</h3>
           <p>

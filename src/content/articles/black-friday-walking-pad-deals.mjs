@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-28',
-  modified: '2026-11-25',
+  modified: '2026-11-27',
   socialProof: '2.4k',
   h1: ['Black Friday', 'Walking Pad Deals 2026'],
   standfirst:
@@ -283,7 +283,9 @@ export default {
             fall at the start of the week stay down through Cyber Monday, so missing one day rarely
             means missing the deal. Our
             <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium">Cyber Monday treadmill deals</a>
-            page covers the end of the window.</li>
+            page covers the end of the window, and our
+            <a href="/cyber-monday-walking-pad-deals/" class="text-[#0F62FE] font-medium">Cyber Monday walking pad deals</a> page re-checks these six
+            pads against the targets on this page.</li>
             <li><strong>December and January:</strong> walking pads are rarely scarce and are
             promoted again in the new-year fitness sales, so if nothing hits your ceiling, waiting
             costs little.</li>

@@ -77,20 +77,21 @@ for it), "how to tighten a treadmill belt" (720; /how-to-adjust-treadmill-belt/)
 - [x] 2026-11-27 · `walking-pad-overheating` — Walking Pad Overheating: Why It Stops and How to Cool It — /problems/ — sibling /treadmill-overheating/
 - [x] 2026-11-27 · `how-much-does-a-precor-treadmill-cost` — How Much Does a Precor Treadmill Cost? (2026): Home and Gym — /price/ — pillar /precor-treadmills/
 - [ ] `echelon-treadmill-troubleshooting` — Echelon Treadmill Troubleshooting: Power, Belt and App — /problems/ — pillar /echelon-treadmills/ (maker sources only)
-- [ ] `how-much-does-a-life-fitness-treadmill-cost` — How Much Does a Life Fitness Treadmill Cost? (2026) — /price/ — pillar /life-fitness/
+- [x] 2026-11-27 · `how-much-does-a-life-fitness-treadmill-cost` — How Much Does a Life Fitness Treadmill Cost? (2026) — /price/ — pillar /life-fitness/
 - [ ] `lifespan-treadmill-troubleshooting` — LifeSpan Treadmill Troubleshooting: Desk Treadmill Fixes — /problems/ — pillar /lifespan-treadmills/
 - [ ] `how-much-does-a-woodway-treadmill-cost` — How Much Does a Woodway Treadmill Cost? (2026) — /price/ — pillar /woodway-treadmills/ (check overlap with curved cost page)
-- [ ] `urevo-walking-pad-troubleshooting` — UREVO Walking Pad Troubleshooting: Remote, Belt and App — /problems/ — pillar /urevo-treadmills/ (maker manuals only)
+- [x] 2026-11-27 · `urevo-walking-pad-troubleshooting` — UREVO Walking Pad Troubleshooting: Remote, Belt and App — /problems/ — pillar /urevo-treadmills/ (maker manuals only)
+- [x] 2026-11-27 · `walkingpad-troubleshooting` — WalkingPad Troubleshooting: Error Codes, SAFE, Rest and Remote — /problems/ — added and written same day (WalkingPad help article, FAQ, belt and lube guides; sibling of the UREVO page)
 - [~] skipped 2026-11-25: duplicate of /treadmill-motor-replacement-cost/ · `how-much-does-a-treadmill-motor-cost` — How Much Does a Treadmill Motor Cost? Replacement Prices — /price/ — link /how-long-do-treadmill-motors-last/, /ac-vs-dc-treadmill-motor/
 - [ ] `precor-treadmill-troubleshooting` — Precor Treadmill Troubleshooting: Home and Commercial — /problems/ — pillar /precor-treadmills/
 
 ### Added 2026-11-26 (refill at 15 open: cost/price 5.38x and fix 1.66x are the winning traffic-lane types; each slug checked unused today; skipped moving cost (= /how-to-move-a-treadmill/) and treadmill remote (= walking pad remote pages))
 
-- [ ] `how-much-does-a-sunny-treadmill-cost` — How Much Does a Sunny Health & Fitness Treadmill Cost? (2026) — /price/ — pillar /sunny-health-fitness-treadmills/ (Amazon + sunnyhealthfitness.com)
+- [x] 2026-11-27 · `how-much-does-a-sunny-treadmill-cost` — How Much Does a Sunny Health & Fitness Treadmill Cost? (2026) — /price/ — pillar /sunny-health-fitness-treadmills/ (Amazon + sunnyhealthfitness.com)
 - [ ] `treadmill-bluetooth-not-connecting` — Treadmill Bluetooth Not Connecting: App, Watch and HR Fixes — /problems/ — Sole guide has a brand-specific section; this is the cross-brand page
 - [ ] `how-much-does-a-merach-treadmill-cost` — How Much Does a MERACH Treadmill Cost? (2026): Every Model — /price/ — pillar /merach-treadmills/
 - [ ] `treadmill-fan-not-working` — Treadmill Fan Not Working: Console Fan Checks and Fixes — /problems/ — maker manuals only
-- [ ] `how-much-does-a-urevo-walking-pad-cost` — How Much Does a UREVO Walking Pad Cost? (2026): Every Model — /price/ — pillar /urevo-treadmills/
+- [x] 2026-11-27 · `how-much-does-a-urevo-walking-pad-cost` — How Much Does a UREVO Walking Pad Cost? (2026): Every Model — /price/ — pillar /urevo-treadmills/
 - [ ] `merach-treadmill-troubleshooting` — MERACH Treadmill Troubleshooting: Remote, App and Belt — /problems/ — pillar /merach-treadmills/ (maker manuals only)
 - [ ] `how-much-does-an-xterra-treadmill-cost` — How Much Does an XTERRA Treadmill Cost? (2026): Every Model — /price/ — pillar /xterra-treadmills/ (xterrafitness.com readable)
 - [ ] `treadmill-speakers-not-working` — Treadmill Speakers Not Working: Bluetooth Audio Fixes — /problems/ — link /best-treadmills-with-bluetooth-speakers/

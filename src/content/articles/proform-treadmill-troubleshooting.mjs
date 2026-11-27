@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-08',
-  modified: '2026-11-23',
+  modified: '2026-11-27',
   socialProof: '2.1k',
   h1: ['ProForm Treadmill Troubleshooting:', 'Reset, Belt, Incline and iFIT Problems'],
   standfirst: `Most ProForm faults are one of a short list: a safety key not seated, a console that needs a proper reset, an iFIT screen stuck on something, a belt that slips or will not move, or an incline that has lost its place. Here is the order to check them in, what to do yourself, and what to have ready before you call support.`,
@@ -82,7 +82,7 @@ export default {
             applies almost word for word to most ProForm consoles, and it is worth reading
             alongside this page, as is our full
             <a href="/nordictrack-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">NordicTrack treadmill troubleshooting</a>
-            guide, which also covers decline and the iFIT features that change speed by themselves. Owners of other brands should use the matching guide, because belt, lube and power rules differ: <a href="/sole-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Sole</a>, <a href="/horizon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Horizon</a> and <a href="/bowflex-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Bowflex treadmill troubleshooting</a>; owners of an older Weslo, ProForm’s former budget sister brand, should use our <a href="/weslo-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Weslo treadmill troubleshooting</a> guide. If none of the steps here finds the cause, the last section sets
+            guide, which also covers decline and the iFIT features that change speed by themselves. Owners of other brands should use the matching guide, because belt, lube and power rules differ: <a href="/sole-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Sole</a>, <a href="/horizon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Horizon</a> and <a href="/bowflex-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Bowflex treadmill troubleshooting</a>; owners of an older Weslo, ProForm’s former budget sister brand, should use our <a href="/weslo-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Weslo treadmill troubleshooting</a> guide, and walking pad owners our <a href="/walkingpad-troubleshooting/" class="text-[#0F62FE] font-medium">WalkingPad</a> or <a href="/urevo-walking-pad-troubleshooting/" class="text-[#0F62FE] font-medium">UREVO troubleshooting</a> guides. If none of the steps here finds the cause, the last section sets
             out when to call ProForm support and what to have in front of you when you do; and if
             the question is whether the machine is worth keeping, our
             <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm treadmill guide</a>

@@ -56,7 +56,7 @@ Format: `slug` — Title — hub → group — Amazon search to start from
 - [x] 2026-11-23 · `proform-black-friday-deals` — ProForm Black Friday Deals (2026): Carbon and Pro Prices — /deals/ → Black Friday group — "ProForm treadmill" (link /how-much-does-a-proform-treadmill-cost/)
 - [x] 2026-11-24 · `peloton-tread-black-friday-deals` — Peloton Tread Black Friday Deals (2026): What's Actually Cheaper — /deals/ → Black Friday group — Peloton store (link /how-much-does-a-peloton-tread-cost/)
 - [x] 2026-11-24 · `bowflex-treadmill-black-friday-deals` — Bowflex Treadmill Black Friday Deals (2026) — /deals/ → Black Friday group — "Bowflex treadmill"
-- [ ] `cyber-monday-walking-pad-deals` — Cyber Monday Walking Pad Deals (2026): Prices Checked — /deals/ → Cyber Monday group — "walking pad" (write on or after 30 Nov; check /black-friday-walking-pad-deals/ is not the same page)
+- [x] 2026-11-27 · `cyber-monday-walking-pad-deals` (written on Black Friday with 27 Nov prices, framed as the bar a Monday price must beat) — Cyber Monday Walking Pad Deals (2026): Prices Checked — /deals/ → Cyber Monday group — "walking pad" (write on or after 30 Nov; check /black-friday-walking-pad-deals/ is not the same page)
 - [x] 2026-11-24 · `best-treadmills-for-walking-and-running` — Best Treadmills for Walking and Running (2026): One Machine for Both — /best/ → use-case group — "treadmill 12 mph folding"
 - [x] 2026-11-24 · `best-treadmills-with-netflix` — Best Treadmills With Netflix (2026): Screens That Stream — /best/ → features group — "treadmill touchscreen streaming" (link /can-you-watch-netflix-on-nordictrack/)
 - [x] 2026-11-24 · `best-walking-pads-with-app` — Best Walking Pads With an App (2026): 6 Picks — /best/ → walking pad group — "walking pad app"

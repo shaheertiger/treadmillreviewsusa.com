@@ -904,11 +904,32 @@ export const SECTIONS: Section[] = [
             url: '/how-much-does-a-precor-treadmill-cost/',
           },
           {
+            title: 'How Much Does a Life Fitness Treadmill Cost?',
+            description:
+              'F3, T3, Run CX, Atmos and Club Series+ by console, the 20% Black Friday cut, delivery and warranty.',
+            badge: 'Life Fitness',
+            url: '/how-much-does-a-life-fitness-treadmill-cost/',
+          },
+          {
             title: 'How Much Does a Walking Pad Cost?',
             description:
               'Prices by type, from $130 flat pads to $800 handrail pads, what more money buys, and the costs after checkout.',
             badge: 'Walking pads',
             url: '/how-much-does-a-walking-pad-cost/',
+          },
+          {
+            title: 'How Much Does a UREVO Walking Pad Cost?',
+            description:
+              'Every UREVO pad on its store and Amazon, what the compare-at price hides, warranty and parts.',
+            badge: 'UREVO',
+            url: '/how-much-does-a-urevo-walking-pad-cost/',
+          },
+          {
+            title: 'How Much Does a Sunny Treadmill Cost?',
+            description:
+              'Every Sunny type from $199.99 to $2,999.99, store against Amazon by SF number, parts and warranty.',
+            badge: 'Sunny',
+            url: '/how-much-does-a-sunny-treadmill-cost/',
           },
           {
             title: 'How Much Does a Commercial Treadmill Cost?',
@@ -1154,6 +1175,13 @@ export const SECTIONS: Section[] = [
               'What changes between Friday and Monday, Christmas delivery for freight boxes, and the machines to watch online.',
             badge: 'Cyber Monday',
             url: '/cyber-monday-treadmill-deals/',
+          },
+          {
+            title: 'Cyber Monday Walking Pad Deals 2026',
+            description:
+              'Six pads checked on 27 November against October prices: which hit a real-deal price and which to wait on.',
+            badge: 'Walking pads',
+            url: '/cyber-monday-walking-pad-deals/',
           },
           {
             title: 'Black Friday Walking Pad Deals 2026',
@@ -3302,6 +3330,20 @@ export const SECTIONS: Section[] = [
               'Run-time limits makers state, thermal cut-outs, dry belts, carpet and power strips.',
             badge: 'Walking pad',
             url: '/walking-pad-overheating/',
+          },
+          {
+            title: 'UREVO Walking Pad Troubleshooting',
+            description:
+              'Safety-key and wiring codes, belt turns, lubrication, remote and child lock, from UREVO’s own pages.',
+            badge: 'UREVO',
+            url: '/urevo-walking-pad-troubleshooting/',
+          },
+          {
+            title: 'WalkingPad Troubleshooting',
+            description:
+              'E01 to E11, SAFE, Press and Rest, remote pairing and CALI belt centring, from WalkingPad.',
+            badge: 'WalkingPad',
+            url: '/walkingpad-troubleshooting/',
           },
           {
             title: 'Sperax Walking Pad Recall?',

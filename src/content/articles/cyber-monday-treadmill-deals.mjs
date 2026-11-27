@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-28',
-  modified: '2026-11-24',
+  modified: '2026-11-27',
   socialProof: '2.1k',
   h1: ['Cyber Monday', 'Treadmill Deals 2026'],
   standfirst:
@@ -18,7 +18,7 @@ export default {
     { label: 'See the Six Picks', href: '#picks' },
     { label: 'Friday or Monday?', href: '#friday-or-monday' },
   ],
-  tags: ['cyber monday treadmill deals', 'treadmill cyber monday', 'cyber monday treadmill', 'cyber monday walking pad', 'cyber week treadmill deals', 'amazon treadmill deals'],
+  tags: ['cyber monday treadmill deals', 'treadmill cyber monday', 'cyber monday treadmill', 'cyber week treadmill deals', 'amazon treadmill deals'],
   stickyCta: { text: 'See the Six Picks', link: '#picks' },
   lead: `Cyber Monday is the same sale as Black Friday seen from a different angle: four days
           later, entirely online, and closer to the point where Christmas delivery starts to get
@@ -163,7 +163,9 @@ export default {
             resources. <strong>For a walking pad, you can afford to be more patient</strong>, because
             pads are discounted frequently, often restocked quickly and delivered within days. Our
             <a href="/black-friday-walking-pad-deals/" class="text-[#0F62FE] font-medium">Black Friday walking pad deals</a>
-            page goes deeper on the pad segment.
+            page goes deeper on the pad segment, and our
+            <a href="/cyber-monday-walking-pad-deals/" class="text-[#0F62FE] font-medium">Cyber Monday walking pad deals</a> page has the prices we
+            checked on 27 November against those October figures.
           </p>`,
     },
     {
