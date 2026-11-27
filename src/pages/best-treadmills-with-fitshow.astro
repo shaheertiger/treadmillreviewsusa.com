@@ -1,0 +1,971 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SECTIONS } from "../data/sections";
+
+const title = "Best FitShow Treadmills (2026): 7 Picks Whose Listings Name It";
+const description =
+  "JAGJOG’s 15% auto-incline folder (about $297) is the best FitShow treadmill; the Aeriflo X-T510A ($627) is for running. 7 picks whose listings name FitShow.";
+
+const PRODUCTS = [
+  {
+    id: "jagjog-15-auto-incline",
+    name: "JAGJOG Foldable Treadmill With 15% Auto Incline",
+    brand: "JAGJOG",
+    category: "Best FitShow Treadmill for Most People",
+    badge: "Best Overall",
+    amazonUrl: "https://www.amazon.com/dp/B0HCJB81Q8?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41pEITCJ1XL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $297 (Amazon, 27 Nov 2026)",
+    priceBounds: {"low":297,"high":297},
+    specs: "3.5 HP brushless · up to 8.8 mph · 15% auto incline · 300 lb · 14.96 in. LED touchscreen · folds to 54 x 28.3 x 8.5 in. · no assembly (per the Amazon listing)",
+    pros: [
+      "The listing says FitShow can track workouts and run virtual routes, the fullest description of any pick",
+      "A 15% powered incline, so app-set hills are possible",
+      "A 300 lb rating and up to 8.8 mph for about $297",
+      "Arrives ready to use and folds to 8.5 inches tall",
+    ],
+    cons: [
+      "No belt size on the listing; ask before you plan to run on it",
+      "No warranty term stated",
+      "The under-48 dB noise figure is the listing’s claim, not a measurement",
+    ],
+    bottomLine: "The FitShow treadmill to buy if you walk and jog, want powered incline and want the app to be more than a step counter.",
+    description: "The JAGJOG Foldable Treadmill is our best overall FitShow pick because its listing treats the app as a feature rather than a footnote, and the machine under it has the incline to make routes worthwhile. The Amazon listing gives a 3.5 HP brushless motor, speeds up to 8.8 mph, a 15% automatic incline, 12 preset HIIT programs and a 300 lb capacity. Controls are on a 14.96-inch LED touchscreen with physical buttons and handrail pulse sensors, and the listing says you can connect with the FitShow App to track workout data, explore virtual routes and personalise your training. The deck has two layers and 10 shock absorbers, needs no assembly, and folds to 54 by 28.3 by 8.5 inches to slide under a bed. The listing does not give a belt size or a warranty term, so check both before relying on it for regular running. Amazon showed it at $297.49 on 27 November 2026.",
+  },
+  {
+    id: "aeriflo-x-t510a",
+    name: "Aeriflo X-T510A Treadmill",
+    brand: "Aeriflo",
+    category: "FitShow Treadmill for Running and Steep Incline",
+    badge: "Best for Running",
+    amazonUrl: "https://www.amazon.com/dp/B0GVMZR42Y?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41HmqiefNRL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $627 (Amazon, 27 Nov 2026)",
+    priceBounds: {"low":627,"high":627},
+    specs: "3.5 HP · up to 12 mph · 20% auto incline · 55 x 20 in. belt · hydraulic soft-drop fold · 5-yr motor, 2-yr machine warranty (per the Amazon listing)",
+    pros: [
+      "The only pick built for running: 12 mph on a 55 by 20-inch belt",
+      "A 20% powered incline, steeper than any other machine here",
+      "Names FitShow and Kinomap, so you can move to route videos later",
+      "A stated 5-year motor and 2-year full-machine warranty",
+    ],
+    cons: [
+      "No maximum user weight on the listing",
+      "More than twice the price of the best overall pick",
+      "FitShow appears only in a bullet; the title names Kinomap alone",
+    ],
+    bottomLine: "The FitShow treadmill for runners, and the one to buy if you might add Kinomap later.",
+    description: "The Aeriflo X-T510A is the pick for runners because it is the only FitShow treadmill here with both the speed and the belt for a full stride. The Amazon listing gives a 3.5 HP motor, speeds up to 12 mph, a 20% automatic incline and a 55 by 20-inch multi-layer belt with shock absorption, on a heavy-duty steel frame. It folds with a soft-drop hydraulic system and has transport wheels. FitShow is named in the bullet about smart features, which lists app connectivity with Kinomap and FitShow alongside LED lights, wireless charging and Bluetooth speakers. The listing states a 5-year motor warranty and a 2-year full-machine warranty with lifetime support. What it does not give is a maximum user weight, so ask the seller if you are heavy. Amazon showed it at $626.99 on 27 November 2026.",
+  },
+  {
+    id: "ksports-16-5-wide",
+    name: "Ksports Foldable 16.5 in Wide Treadmill",
+    brand: "Ksports",
+    category: "FitShow, Kinomap and Zwift on One Machine",
+    badge: "Best for Three Apps",
+    amazonUrl: "https://www.amazon.com/dp/B08VHLCMF4?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/51uNT6IaSmL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $420 (Amazon, 27 Nov 2026)",
+    priceBounds: {"low":420,"high":420},
+    specs: "2.5 HP · 0.5–10 mph · 15 auto incline levels · 16.5 in. wide platform · 12 programs · 125 lb unit (per the Amazon listing)",
+    pros: [
+      "Names FitShow, Kinomap and Zwift in the title, the clearest app support here",
+      "15 levels of powered incline and up to 10 mph",
+      "A 16.5-inch platform, a little wider than most budget treadmills",
+      "USB and AUX ports, plus two small dumbbells and an ab mat in the box",
+    ],
+    cons: [
+      "Incline is given as levels, not a percentage",
+      "No maximum user weight or belt length on the listing",
+      "About $120 more than the JAGJOG, which has a stated 15% incline",
+    ],
+    bottomLine: "The FitShow treadmill to buy if you want Zwift and Kinomap on the table too.",
+    description: "Ksports’ 16.5-inch treadmill is the pick for anyone who wants FitShow now and the option of a paid app later, because it is the only machine here whose title names FitShow, Kinomap and Zwift together. The Amazon listing gives a 2.5 HP motor, speeds from 0.5 to 10 mph, 15 levels of automatic incline, 12 preset programs and a 16.5-inch running platform, with Bluetooth pairing to all three apps to manage goals and keep exercise records. It has an LCD panel with USB and AUX ports and a safety key, folds, and the listing gives its size as 60 by 27 by 49.5 inches and its weight as 125 lb. The gaps are a maximum user weight and a belt length, and the incline is stated only as levels. Amazon showed it at $419.99 on 27 November 2026.",
+  },
+  {
+    id: "jelens-15-auto-incline-pad",
+    name: "JELENS Walking Pad Treadmill With 15% Auto Incline",
+    brand: "JELENS",
+    category: "Under-Desk Walking Pad With Powered Incline",
+    badge: "Best Walking Pad With Incline",
+    amazonUrl: "https://www.amazon.com/dp/B0HCV7T4T8?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41HFKoJLdeL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $230 (Amazon, 27 Nov 2026)",
+    priceBounds: {"low":230,"high":230},
+    specs: "0.6–3.8 mph · 0–15% auto incline, 15 levels · 220 lb · LED display · remote · transport wheels (per the Amazon listing)",
+    pros: [
+      "A 15% powered incline on a walking pad, set from the remote",
+      "The listing names FitShow for real-time data and training programs",
+      "A light strip that changes colour with speed and incline",
+      "One of the cheaper ways to get powered incline with FitShow",
+    ],
+    cons: [
+      "A 220 lb rating, the lowest of the seven",
+      "Tops out at 3.8 mph: walking only",
+      "No motor rating, belt size or warranty term on the listing",
+    ],
+    bottomLine: "The FitShow walking pad for under-desk walkers who want hills and weigh well under 220 lb.",
+    description: "The JELENS pad is the pick for desk walkers who want incline, because it pairs a 0 to 15% automatic incline with FitShow for about $230. The Amazon listing says the 15 incline levels switch from the remote, speed runs from 0.6 to 3.8 mph, and the frame supports up to 220 lb. It names Bluetooth connectivity with the FitShow app to show workout data in real time and access training programs, and a light strip under the display changes colour with your speed and incline. Cushioning comes from two soft cushions, four silicone shock absorbers and a five-layer belt, and the pad has transport wheels for storage under a sofa or bed. The listing does not give a motor rating, belt size or warranty term, and 220 lb is a firm limit to respect. Amazon showed it at $229.99 on 27 November 2026.",
+  },
+  {
+    id: "runimon-6-in-1-walking-pad",
+    name: "RUNIMON 6 in 1 Walking Pad Treadmill With Desk",
+    brand: "RUNIMON",
+    category: "Walking Pad With a Handlebar Desk",
+    badge: "Best With a Desk",
+    amazonUrl: "https://www.amazon.com/dp/B0GXFHCXPR?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/51uk00a+iNL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $300 (Amazon, 27 Nov 2026)",
+    priceBounds: {"low":300,"high":300},
+    specs: "3.0 HP · 0.6–7.5 mph (handle up), 0.6–5 mph (handle down) · 2%, 7%, 12% incline · 330 lb · folds to 49.2 x 27.6 x 5.9 in. · 66 lb (per the Amazon listing)",
+    pros: [
+      "A detachable desktop on a handlebar that adjusts from 36.6 to 42.5 inches",
+      "Three incline settings and a 330 lb rating",
+      "Folds to 5.9 inches tall and weighs 66 lb, with wheels",
+      "The listing says it connects to FitShow over Bluetooth",
+    ],
+    cons: [
+      "The listing does not say whether incline is powered, so app-set hills are unconfirmed",
+      "No belt size or warranty term stated",
+      "The brand is not in the listing title; check the seller is RUNIMON",
+    ],
+    bottomLine: "The FitShow pad for people who want to type, read or take calls while they walk.",
+    description: "RUNIMON’s 6-in-1 pad is the pick for working while you walk, because it is the only FitShow machine here with a desktop on the handlebar. The Amazon listing gives a 3.0 HP motor, a 330 lb capacity and speeds of 0.6 to 7.5 mph with the handle up or 0.6 to 5 mph with it down. Incline comes in three settings, 2%, 7% and 12%, though the listing does not say whether they are powered. The handle adjusts from 36.6 to 42.5 inches, the armrests swivel through 270 degrees and the desktop lifts off. Dual LED displays show speed, time, distance and calories, the listing says it connects to FitShow via Bluetooth, and RGB lights change colour with speed. It needs no installation and folds to 49.2 by 27.6 by 5.9 inches at 66 lb. Amazon showed it at $299.99 on 27 November 2026.",
+  },
+  {
+    id: "jagjog-fold-in-half-pad",
+    name: "JAGJOG Foldable Walking Pad Treadmill",
+    brand: "JAGJOG",
+    category: "Walking Pad That Folds in Half",
+    badge: "Most Compact",
+    amazonUrl: "https://www.amazon.com/dp/B0HDBSQDS1?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41EcZ2eISzL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $240 (Amazon, 27 Nov 2026)",
+    priceBounds: {"low":240,"high":240},
+    specs: "550W motor · 0.6–4.0 mph · no incline · 300 lb · 47.3 x 19.5 x 3.9 in., folds to 28.3 x 19.5 x 6 in. · remote (per the Amazon listing)",
+    pros: [
+      "Folds nearly in half, to 28.3 inches long, with a locking plate",
+      "Only 3.9 inches tall when open, for under a standing desk",
+      "A 300 lb rating",
+      "Names FitShow for tracking, with time, distance and calorie countdown modes",
+    ],
+    cons: [
+      "No incline, so FitShow can only work with speed",
+      "A 4.0 mph top speed: walking only",
+      "No belt size or warranty term on the listing",
+    ],
+    bottomLine: "The FitShow walking pad for small flats, where storage matters more than incline.",
+    description: "JAGJOG’s fold-in-half walking pad is the pick when space is the constraint. The Amazon listing gives its open size as 47.3 by 19.5 by 3.9 inches and its folded size as 28.3 by 19.5 by 6 inches, held by a locking plate, which is short enough for a cupboard. It walks at 0.6 to 4.0 mph on a 550W motor, supports up to 300 lb and comes mostly assembled with a remote, four adjustable foot pads, an Allen key and lubricating oil. The listing names FitShow for app-based workout tracking, with time, distance and calorie countdown modes. There is no incline, so the app can log your walk and follow your pace but has nothing to tilt. The listing does not give a belt size or warranty term. Amazon showed it at $239.99 on 27 November 2026.",
+  },
+  {
+    id: "ksports-advanced-rehab",
+    name: "Ksports Advanced Rehab Walking Treadmill",
+    brand: "Ksports",
+    category: "Long Handrails for Balance",
+    badge: "Best for Seniors",
+    amazonUrl: "https://www.amazon.com/dp/B0D78NZ936?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/4171b6HuKFL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $212 (Amazon, 27 Nov 2026)",
+    priceBounds: {"low":212,"high":212},
+    specs: "2.25 HP · 0.4–8 mph · 3-level manual incline · 287 lb · multi-grip handrails along top, middle and sides · folding (per the Amazon listing)",
+    pros: [
+      "Handrails at the top, middle and sides for support at any point",
+      "Starts at 0.4 mph, slower than most treadmills",
+      "The cheapest pick, at about $212",
+      "Names FitShow, Kinomap and Zwift in the title",
+    ],
+    cons: [
+      "Manual incline, so no app can change the slope",
+      "No belt size on the listing",
+      "A 2.25 HP motor is meant for walking and jogging",
+    ],
+    bottomLine: "The FitShow treadmill for older walkers and anyone in recovery who wants a rail within reach.",
+    description: "The Ksports Advanced Rehab treadmill is the pick for seniors and walkers in recovery because of its rails. The listing describes multi-grip handrail positions along the top, middle and sides, aimed at people in recovery and older users, and says the long rails can be removed to make it a normal treadmill. The 2.25 HP motor runs from 0.4 to 8 mph in small steps, the incline is a three-level manual adjustment and the capacity is 287 lb. The backlit LCD shows distance, calories and heart rate, with 12 programs, three countdown modes and a pause button, and the title and bullets name Bluetooth for Kinomap, Zwift and FitShow. It folds and has wheels. With manual incline, FitShow can follow your pace but cannot tilt the deck. For more machines with rails, see our best treadmills for seniors. Amazon showed it at $211.99 on 27 November 2026.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Best Treadmills", item: "https://www.treadmillreviewsusa.com/best/" },
+        { "@type": "ListItem", position: 3, name: "Best FitShow Treadmills", item: "https://www.treadmillreviewsusa.com/best-treadmills-with-fitshow/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is the FitShow app?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "FitShow is a free indoor training app for walking, running, cycling and rowing, made by FitShow (Xiamen) Information Technology Co., Ltd. Its Google Play description says it works with treadmills, bikes, ellipticals and rowers, can adjust equipment settings to match your training and routes, and has a library of geolocated route videos. The same company supplies the connection platform built into many budget treadmills.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is FitShow free?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "FitShow is free to download. Its Google Play listing on 27 November 2026 said it contains in-app purchases priced from $0.99 to $59.99 per item, but did not say which features are paid. Check the store page on your phone for the current options.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the best treadmill with FitShow?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For most people, the JAGJOG Foldable Treadmill with 15% Auto Incline: up to 8.8 mph, 300 lb, and a listing that names FitShow for tracking and virtual routes, at about $297 on Amazon on 27 November 2026. For running, the Aeriflo X-T510A at about $627, with 12 mph and a 20% incline.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I know if a treadmill works with FitShow?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Read the listing&rsquo;s bullet points and the manual, not just the title. Most treadmills that use FitShow mention it once, in a bullet about Bluetooth or the app. If a listing only says &ldquo;smart app&rdquo;, ask the seller which app it is, because many brands ship their own.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can FitShow control my treadmill’s incline?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "FitShow says it can adjust equipment settings, but only a treadmill with powered incline that accepts the command can follow. A manual-incline treadmill such as the Ksports Advanced Rehab cannot be tilted by any app. None of the listings here states outright that FitShow will raise the deck, so confirm with the seller if it matters.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do FitShow treadmills work with Kinomap or Zwift?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Some do. Of the seven picks, the Aeriflo X-T510A and both Ksports treadmills also name Kinomap, and the two Ksports also name Zwift. The others name FitShow only. Close FitShow before opening another app, because a treadmill usually accepts one connection at a time.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-27",
+      dateModified: "2026-11-27",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
+      ...(product.image ? { image: product.image.url } : {}),
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 7,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/best-treadmills-with-fitshow/#${product.id}`,
+      })),
+    },
+  ],
+};
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmills-with-fitshow/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-27",
+    modifiedTime: "2026-11-27",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "fitshow treadmill",
+      "best fitshow treadmill",
+      "treadmill fitshow app",
+      "fitshow compatible treadmill",
+      "walking pad fitshow",
+      "fitshow app",
+      "what is fitshow",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Best Overall: JAGJOG Foldable Treadmill With 15% Auto Incline", link: PRODUCTS[0].amazonUrl }}
+>
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best FitShow Treadmills</h1>
+      <p class="ed-dek">
+        FitShow is the free app that a lot of budget treadmills and walking pads quietly rely on, but the name rarely appears in a listing title. We read the bullet points instead. Here are seven treadmills whose Amazon listings name FitShow, from a $212 walker with long handrails to a 12 mph, 20% incline runner, and what the app can and cannot do with each.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 27, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          <span class="ed-method">How we chose: makers’ published specifications and manuals, independent reviews and owner reports, cross-checked. Not tested hands-on.</span>
+        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
+      </div>
+      <p class="ed-disclosure">
+        We may earn a commission when you buy through the links below. It costs you nothing and never decides a ranking. <a href="/editorial-standards/">How we review.</a>
+      </p>
+
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#jagjog-15-auto-incline"><img src="https://m.media-amazon.com/images/I/41pEITCJ1XL._SL500_.jpg" alt="JAGJOG Foldable Treadmill With 15% Auto Incline" width="500" height="500" decoding="async" /></a>
+          <a href="#aeriflo-x-t510a"><img src="https://m.media-amazon.com/images/I/41HmqiefNRL._SL500_.jpg" alt="Aeriflo X-T510A Treadmill" width="500" height="500" decoding="async" /></a>
+          <a href="#ksports-16-5-wide"><img src="https://m.media-amazon.com/images/I/51uNT6IaSmL._SL500_.jpg" alt="Ksports Foldable 16.5 in Wide Treadmill" width="500" height="500" decoding="async" /></a>
+        </div>
+        <figcaption>JAGJOG Foldable Treadmill With 15% Auto Incline · Aeriflo X-T510A Treadmill · Ksports Foldable 16.5 in Wide Treadmill</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          FitShow is a phone app for indoor walking, running, cycling and rowing, and it is also the
+          connection platform built into a long list of budget treadmills sold under many different
+          brand names. That is why so many Amazon listings mention it only once, deep in the bullet
+          points. We searched Amazon for FitShow treadmills on 27 November 2026, read the listing of
+          every candidate, and kept only the seven whose title or bullets name FitShow. The JAGJOG
+          Foldable Treadmill with 15% auto incline is the pick for most people at about $297; the
+          Aeriflo X-T510A is the one to buy if you run. We have not tested these treadmills hands-on.
+          Every figure on this page comes from the Amazon listing or FitShow&rsquo;s own pages, and each
+          card says what the listing leaves out.
+        </p>
+
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#jagjog-15-auto-incline">JAGJOG Foldable Treadmill With 15% Auto Incline</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Running:</span> <a href="#aeriflo-x-t510a">Aeriflo X-T510A Treadmill</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Three Apps:</span> <a href="#ksports-16-5-wide">Ksports Foldable 16.5 in Wide Treadmill</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Walking Pad With Incline:</span> <a href="#jelens-15-auto-incline-pad">JELENS Walking Pad Treadmill With 15% Auto Incline</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best With a Desk:</span> <a href="#runimon-6-in-1-walking-pad">RUNIMON 6 in 1 Walking Pad Treadmill With Desk</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Most Compact:</span> <a href="#jagjog-fold-in-half-pad">JAGJOG Foldable Walking Pad Treadmill</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Seniors:</span> <a href="#ksports-advanced-rehab">Ksports Advanced Rehab Walking Treadmill</a></span>
+              <a href={PRODUCTS[6].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <nav class="ed-toc not-prose" aria-label="In this roundup">
+          <h2>In this roundup</h2>
+          <ol>
+            <li><a href="#short-answer">The short answer</a></li>
+            <li><a href="#quick-picks">The 7 FitShow Treadmills at a Glance</a></li>
+            <li><a href="#picks">The 7 picks</a></li>
+            <li><a href="#what-is-fitshow">What Is FitShow?</a></li>
+            <li><a href="#what-it-controls">What “FitShow Compatible” Gets You on Each Pick</a></li>
+            <li><a href="#fitshow-vs-other-apps">FitShow vs Kinomap, Zwift and the Maker’s Own App</a></li>
+            <li><a href="#how-we-chose">How We Chose These FitShow Treadmills</a></li>
+            <li><a href="#walking-vs-running">Which FitShow Treadmill for Walking, Jogging or Running?</a></li>
+            <li><a href="#setup">How to Connect a Treadmill to FitShow</a></li>
+            <li><a href="#black-friday">Buying a FitShow Treadmill on Black Friday</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2>The Short Answer</h2>
+<p>
+            <strong>The best FitShow treadmill for most people is the JAGJOG Foldable Treadmill with 15%
+            Auto Incline: powered incline, up to 8.8 mph, a 300 lb rating and a listing that says the
+            FitShow app can track workouts and run virtual routes, for about $297 on Amazon on
+            27 November 2026.</strong>
+          </p>
+          <ul>
+            <li><strong>Best overall:</strong> JAGJOG Foldable Treadmill with 15% Auto Incline, about $297, with a 14.96-inch touchscreen and no assembly.</li>
+            <li><strong>Best for running:</strong> Aeriflo X-T510A, about $627, with 12 mph, a 20% powered incline and a 55 by 20-inch belt; it names FitShow and Kinomap.</li>
+            <li><strong>Best for three apps:</strong> Ksports Foldable 16.5 in <a href="/best-wide-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Wide Treadmill</a>, about $420, which names FitShow, Kinomap and Zwift and has 15 levels of auto incline.</li>
+            <li><strong>Best walking pads:</strong> the JELENS 15% Auto Incline pad (about $230) for incline under a desk, the RUNIMON 6-in-1 (about $300) if you want a desktop on the handlebar, and the JAGJOG fold-in-half pad (about $240) for the smallest storage.</li>
+            <li><strong>Best for balance:</strong> Ksports Advanced Rehab Walking Treadmill, about $212, with handrails along the top, middle and sides.</li>
+          </ul>
+          <p>
+            FitShow is free to download and the treadmill works without it. If you want real-world route
+            videos from a separate service instead, our <a href="/best-treadmills-with-kinomap/" class="text-[#0F62FE] font-medium">best treadmills with Kinomap</a> covers that app; several machines appear on both lists.
+          </p>
+        </div>
+
+        <div id="quick-picks" class="scroll-mt-24">
+          <h2>The 7 FitShow Treadmills at a Glance</h2>
+<p>
+            Seven machines, chosen so that no two answer the same need. The last column is the part that
+            matters most on this page: where on the listing FitShow is named, because a treadmill that
+            only says &ldquo;smart app&rdquo; may use FitShow, the maker&rsquo;s own app, or something else.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[640px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Treadmill</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price seen</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Speed</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Incline</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Capacity</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">FitShow named in</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">JAGJOG 15% Auto Incline Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $297</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Up to 8.8 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bullets</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Aeriflo X-T510A</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $627</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Up to 12 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20% powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not on listing</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bullets</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ksports 16.5-inch Wide</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $420</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.5–10 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15 powered levels</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not on listing</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Title and bullets</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">JELENS 15% Walking Pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $230</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–3.8 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–15% powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">220 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bullets</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">RUNIMON 6-in-1 Walking Pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $300</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–7.5 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2%, 7%, 12%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">330 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bullets</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">JAGJOG Fold-in-Half Walking Pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $240</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–4.0 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bullets</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ksports Advanced Rehab</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $212</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.4–8 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3 manual levels</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">287 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Title and bullets</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Every figure comes from the Amazon listing on 27 November 2026, which is Black Friday, and
+            &ldquo;not on listing&rdquo; means the listing did not state it. Prices on budget treadmills
+            move during this week, so check the live price before you buy. We do not print <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium" data-autolink>star ratings</a>,
+            which change constantly and are often pooled across versions of a machine.
+          </p>
+        </div>
+
+        <div id="picks" class="scroll-mt-24">
+          <h2>The 7 Best Treadmills With FitShow</h2>
+<p>
+            Each card links to the Amazon listing we matched by its ASIN, Amazon&rsquo;s product code, on
+            27 November 2026. The test for a place on this page was simple and strict: the listing&rsquo;s
+            title or bullet points had to name FitShow. Only two of the seven put it in the title; the
+            other five mention it once, in a bullet about the app or Bluetooth. Specifications on each card
+            come only from that listing, and where a figure is missing the card says so.
+          </p>
+          <p>
+            Several brands that came up when we searched for FitShow treadmills, including <a href="/cursor-fitness-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>CURSOR FITNESS</a>,
+            UMAY, KASSADIN and WELLFIT, did not name FitShow on the listings we read, so they are not here,
+            even though some of them advertise an app. Two more listings that do name FitShow were left
+            out to keep the list varied: the manual-incline Ksports 16-inch treadmill (about $265, 6.2 mph
+            top speed) and the SereneLife Foldable Treadmill with Handrail (about $297), which we cover in
+            our <a href="/best-walking-pads-with-app/" class="text-[#0F62FE] font-medium">best walking pads with an app</a>.
+          </p>
+        </div>
+      <!-- Product blocks -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
+                </div>
+              </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
+          ))
+        }
+      </div>
+
+        <div id="what-is-fitshow" class="scroll-mt-24">
+          <h2>What Is FitShow?</h2>
+<p>
+            <strong>FitShow is two things at once: a free fitness app you install on your phone, and the
+            connection platform inside the treadmill that the app talks to.</strong> Both come from the
+            same company, which the Google Play listing names as FitShow (Xiamen) Information Technology
+            Co., Ltd.
+          </p>
+          <p>
+            <strong>The app.</strong> On Google Play on 27 November 2026, FitShow was listed as
+            &ldquo;FitShow: Treadmill Workout&rdquo;, an interactive indoor training app for walking,
+            running, cycling and rowing that works with treadmills, exercise bikes, home trainers,
+            ellipticals and <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium" data-autolink>rowing machines</a>. The description says it can adjust your equipment&rsquo;s
+            settings to match your training and the virtual routes you choose, and that it gives access to
+            a library of geolocated videos of routes around the world. It also mentions structured training
+            programs, virtual challenges and a community. The listing showed more than one million
+            downloads, a first release in May 2016 and an update on 18 November 2026.
+          </p>
+          <p>
+            <strong>The platform.</strong> FitShow&rsquo;s own website describes the company as an IoT
+            development platform for fitness equipment, offering cloud, connectivity and an app to brands,
+            retailers and manufacturers that want to make their products smart. It says the platform has
+            smart-enabled more than five million pieces of equipment sold in more than 160 countries and
+            regions. In plain terms: a treadmill brand can buy a console and Bluetooth module that already
+            work with FitShow, rather than writing its own app. That explains why the same app turns up on
+            treadmills from JAGJOG, JELENS, RUNIMON, Ksports and Aeriflo, and why it is so often a footnote
+            on the listing rather than a headline.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Question</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What FitShow&rsquo;s own pages say (27 Nov 2026)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">What does it do?</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Indoor training app for walking, running, cycling and rowing</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Which machines?</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Treadmills, exercise bikes, home trainers, ellipticals, rowers</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Can it change the machine&rsquo;s settings?</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes, where the equipment supports it, to match your training and route</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Route videos?</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A library of geolocated route videos</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cost?</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Free to install; Google Play lists in-app purchases of $0.99 to $59.99 per item</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Who makes it?</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FitShow (Xiamen) Information Technology Co., Ltd</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            On price, the Google Play page says only that the app contains in-app purchases, priced from
+            $0.99 to $59.99 per item. It does not set out which features are free and which are paid, and
+            we could not load the Apple App Store page on the day we checked, so we are not quoting a
+            subscription price. Open the app&rsquo;s store page on your own phone to see the current
+            options before you count on any paid feature.
+          </p>
+        </div>
+
+        <div id="what-it-controls" class="scroll-mt-24">
+          <h2>What “FitShow Compatible” Gets You on Each Pick</h2>
+<p>
+            <strong>A listing that names FitShow promises that the treadmill and the app can talk. It does
+            not promise that the app can steer the machine.</strong> The app&rsquo;s description says it can
+            adjust equipment settings, but that only works where the treadmill has a motor to do the
+            adjusting and accepts the command. A manual-incline treadmill cannot tilt itself however good its
+            Bluetooth is, and a walking pad with no incline has only speed to change.
+          </p>
+          <p>
+            The listings also describe FitShow differently, and the wording is a fair guide to what the
+            seller expects you to use it for:
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[640px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Treadmill</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What the listing says FitShow does</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Incline the app could change</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">JAGJOG 15% Auto Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Track workout data, explore virtual routes, personalise training</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Possible: powered incline</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Aeriflo X-T510A</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">App connectivity (Kinomap/FitShow)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Possible: powered incline</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ksports 16.5-inch</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manage fitness goals and keep exercise records</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Possible: powered incline</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">JELENS 15% Walking Pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">View workout data in real time, access training programs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Possible: powered incline</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">RUNIMON 6-in-1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Connects to FitShow over Bluetooth for tracking</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not stated: listing does not say how incline is set</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">JAGJOG Fold-in-Half Pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">App-based workout tracking</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No incline</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ksports Advanced Rehab</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Interactive workouts over Bluetooth</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No: manual incline</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            &ldquo;Possible&rdquo; is as far as we can go: none of these listings states in so many words that
+            FitShow will raise the deck for you on a route. If automatic hills are the reason you are buying,
+            ask the seller before you order, and test it in the first days of the return window. If you only
+            want the app to log your walks and play a route at your pace, any of the seven will do.
+          </p>
+        </div>
+
+        <div id="fitshow-vs-other-apps" class="scroll-mt-24">
+          <h2>FitShow vs Kinomap, Zwift and the Maker’s Own App</h2>
+<p>
+            FitShow is rarely the only option on a treadmill, and it is worth knowing how it fits beside the
+            others before you decide how much the app matters.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">App</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Where you find it</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Main draw</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Picks here that name it</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FitShow</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Budget treadmills and pads built on its platform</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Free tracking, programs, route videos</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">All seven</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Kinomap</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Many Bluetooth treadmills from different brands</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Real-world route videos, subscription</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Aeriflo, both Ksports</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Zwift</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bluetooth treadmills, or any treadmill with a foot pod</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Animated worlds, group runs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Both Ksports</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Maker&rsquo;s app</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Brands with their own software</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Varies by brand</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None named</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The practical difference is cost and depth. FitShow comes with the treadmill and installs free,
+            which makes it the default for logging walks and running the built-in programs. Kinomap and
+            Zwift are separate services with their own subscriptions, and they are the reason some people
+            pick a treadmill in the first place. If you think you will want one of those later, buy a
+            treadmill that names it now: the Aeriflo and both Ksports machines here name Kinomap too, and the
+            Ksports pair also names Zwift. Our <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">best treadmills for Zwift</a> and <a href="/best-treadmill-workout-apps/" class="text-[#0F62FE] font-medium">best treadmill workout apps</a> compare the paid options in more depth.
+          </p>
+          <p>
+            What you will not find on a FitShow treadmill is iFIT, Peloton or JRNY. Those apps are tied to
+            NordicTrack and ProForm, Peloton, and Bowflex machines respectively, and none of those
+            brands&rsquo; listings that we have seen names FitShow. The flip side is that none of the picks here
+            needs a subscription to work: FitShow is free to install, and every treadmill runs from its own
+            console if you never open the app.
+          </p>
+        </div>
+
+        <div id="how-we-chose" class="scroll-mt-24">
+          <h2>How We Chose These FitShow Treadmills</h2>
+<p>
+            We have not tested these treadmills hands-on. We ran three Amazon searches on 27 November 2026,
+            &ldquo;fitshow treadmill&rdquo;, &ldquo;treadmill fitshow app&rdquo; and &ldquo;walking pad
+            fitshow&rdquo;, then pulled the full listing for more than 25 candidates. A treadmill had to
+            clear four bars:
+          </p>
+          <ul>
+            <li><strong>Its listing names FitShow</strong> in the title or the bullet points. A listing that
+            only says &ldquo;smart app&rdquo; or &ldquo;APP control&rdquo; was left out, because many brands
+            ship their own app instead.</li>
+            <li><strong>It is sold under a named brand</strong> shown on the listing, so there is someone to
+            contact about a fault or a warranty claim.</li>
+            <li><strong>It was in stock with a price</strong> on the day we checked.</li>
+            <li><strong>It answers a distinct need</strong>: everyday incline walking and jogging, running,
+            several apps at once, incline under a desk, a desk on the handlebar, the smallest fold, and
+            balance support.</li>
+          </ul>
+          <p>
+            We weighted speed range, incline type and weight capacity above motor horsepower, because
+            horsepower on budget listings is usually a peak figure that says little about long sessions.
+            Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a> explains why, and our <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a> set out the wider process.
+          </p>
+        </div>
+
+        <div id="walking-vs-running" class="scroll-mt-24">
+          <h2>Which FitShow Treadmill for Walking, Jogging or Running?</h2>
+<p>
+            FitShow works the same at 2 mph as at 10, but the machine you need does not. Most of the picks
+            are walking machines, and the listings&rsquo; top speeds can flatter them.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">If you mainly…</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Look for</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick here</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Run</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10–12 mph, a belt of 55 in. or longer, powered incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Aeriflo X-T510A</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walk and jog with incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">8–10 mph, powered incline, handrails</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">JAGJOG 15% Auto Incline, Ksports 16.5-inch</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walk at a desk, with hills</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Low profile, remote, powered incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">JELENS 15% Walking Pad</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walk and work from the pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A handlebar with a desktop</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">RUNIMON 6-in-1</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walk and store in a cupboard</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A deck that folds in half</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">JAGJOG Fold-in-Half Pad</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walk with support</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Long handrails, a slow starting speed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ksports Advanced Rehab</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Two warnings. First, only the Aeriflo gives a belt length long enough for a full running stride;
+            the JAGJOG treadmill, JELENS and RUNIMON listings give no belt size at all, so treat their top
+            speeds as jogging speeds until the seller confirms the belt. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a> gives lengths by height and speed. Second, check the weight rating. The JELENS pad is rated for
+            220 lb, the lowest here, and the Aeriflo and Ksports 16.5-inch listings give no figure. If you
+            are heavier, see our <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a>.
+          </p>
+        </div>
+
+        <div id="setup" class="scroll-mt-24">
+          <h2>How to Connect a Treadmill to FitShow</h2>
+<p>
+            Screens change between app versions and between treadmills, so follow the manual that comes in
+            the box first. The general sequence is the same on every machine here:
+          </p>
+          <ol>
+            <li><strong>Install FitShow from your phone&rsquo;s app store</strong> and create an account.
+            Search for &ldquo;FitShow&rdquo;; on Google Play its full name is &ldquo;FitShow: Treadmill
+            Workout&rdquo;.</li>
+            <li><strong>Switch the treadmill on and insert the safety key.</strong> Many consoles only
+            broadcast over Bluetooth once they are awake.</li>
+            <li><strong>Connect from inside the app,</strong> not from your phone&rsquo;s Bluetooth settings.
+            Training apps generally find and pair the treadmill themselves; pairing it in system settings
+            first can stop the app from seeing it.</li>
+            <li><strong>Start a free run at walking pace</strong> and check that the app&rsquo;s speed matches
+            the console. Then try a program or route, and if the treadmill has powered incline, watch the
+            first change with your hands near the rails.</li>
+          </ol>
+          <p>
+            If the treadmill does not appear, close Kinomap, Zwift or any other fitness app on every phone and
+            tablet in the room, since a treadmill usually accepts one app connection at a time. Then restart
+            the treadmill and the phone, and turn off battery-saving modes that limit Bluetooth. If the app
+            connects but its distance or speed disagrees with the console, the treadmill may need checking;
+            our <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration guide</a> explains how.
+          </p>
+          <p>
+            The app also asks for permissions. Google Play&rsquo;s data-safety section for FitShow on
+            27 November 2026 said the app may collect location, personal information and other data types,
+            may share personal information and app activity with third parties, and that data isn&rsquo;t
+            encrypted; it also says you can request that data be deleted. Read it before you sign up, and decline permissions the
+            app does not need for a treadmill workout.
+          </p>
+        </div>
+
+        <div id="black-friday" class="scroll-mt-24">
+          <h2>Buying a FitShow Treadmill on Black Friday</h2>
+<p>
+            Every price on this page is the one Amazon showed on 27 November 2026, Black Friday. None of
+            these listings was labelled as a deal in the data we read, so we are quoting prices, not
+            discounts. Budget treadmill prices often move during the week between Black Friday and Cyber
+            Monday on 30 November, sometimes down and sometimes back up.
+          </p>
+          <p>
+            Three checks help. Compare the price you see with the one here; a large &ldquo;was&rdquo; price
+            that appears overnight is usually a list price the machine rarely sells at. Check which colour or
+            version is selected, because some of these listings cover more than one. And check the return
+            window and who the seller is, because a treadmill is heavy to send back and the app connection
+            is something you should try in the first few days. For prices across every budget, see our <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill prices</a>.
+          </p>
+        </div>
+
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>4 Mistakes People Make Buying a FitShow Treadmill</h2>
+          <p>Most of these come from reading the app line on a listing as more than it says.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Assuming every “smart app” treadmill uses FitShow</h3>
+              <p>Plenty of budget treadmills advertise an app without naming it, and many use the maker’s own. If FitShow is the point, buy a machine whose listing or manual names it, and ask the seller when it does not.</p>
+            </li>
+            <li>
+              <h3>Expecting the app to raise the deck</h3>
+              <p>App-set hills need powered incline and a treadmill that accepts the command. A manual-incline treadmill or a flat walking pad can only report your speed. If you want automatic hills, buy powered incline and confirm it in the return window.</p>
+            </li>
+            <li>
+              <h3>Treating a walking pad’s top speed as a running speed</h3>
+              <p>Three of these listings give no belt size and two pads stop at 4 mph or below. If you want to run FitShow routes, buy the Aeriflo, with a stated 55-inch belt and 12 mph, rather than counting on a pad’s headline speed.</p>
+            </li>
+            <li>
+              <h3>Leaving another app connected</h3>
+              <p>A treadmill usually talks to one app at a time. If Kinomap, Zwift or FitShow is open on another phone in the room, the app you want may not find the machine. Close the others first, then connect from inside the app.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">The JAGJOG Foldable Treadmill with 15% Auto Incline is the best FitShow
+            treadmill for most people</strong>: powered incline, up to 8.8 mph, a 300 lb rating and a listing
+            that names FitShow for tracking and virtual routes, for about $297. Runners should buy the Aeriflo
+            X-T510A; anyone who wants Kinomap and Zwift as well should buy the Ksports 16.5-inch; desk walkers
+            should choose between the JELENS, RUNIMON and JAGJOG pads; and the Ksports Advanced Rehab is the
+            one with rails all round.
+          </p>
+          <p>
+            FitShow is free, comes with the treadmill and does the basics well, but treat it as a bonus rather
+            than the reason to buy. Check that the listing names it, assume the app follows your pace rather
+            than steering the deck unless the seller confirms otherwise, and try it in the return window. If
+            you would rather pay for real-world route videos, our <a href="/best-treadmills-with-kinomap/" class="text-[#5AA9FF] font-bold no-underline">best treadmills with Kinomap</a> covers that, and <a href="/best-treadmill-workout-apps/" class="text-[#5AA9FF] font-bold no-underline">best treadmill workout apps</a> compares the rest.
+          </p>
+        </div>
+
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmills-with-kinomap/">Best Treadmills With Kinomap</a></li>
+            <li><a href="/best-treadmill-workout-apps/">Best Treadmill Workout Apps</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the FitShow app?</h3></summary>
+            <p class="faq-a">
+              FitShow is a free indoor training app for walking, running, cycling and rowing, made by FitShow (Xiamen) Information Technology Co., Ltd. Its Google Play description says it works with treadmills, bikes, ellipticals and rowers, can adjust equipment settings to match your training and routes, and has a library of geolocated route videos. The same company supplies the connection platform built into many budget treadmills.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is FitShow free?</h3></summary>
+            <p class="faq-a">
+              FitShow is free to download. Its Google Play listing on 27 November 2026 said it contains in-app purchases priced from $0.99 to $59.99 per item, but did not say which features are paid. Check the store page on your phone for the current options.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the best treadmill with FitShow?</h3></summary>
+            <p class="faq-a">
+              For most people, the JAGJOG Foldable Treadmill with 15% Auto Incline: up to 8.8 mph, 300 lb, and a listing that names FitShow for tracking and virtual routes, at about $297 on Amazon on 27 November 2026. For running, the Aeriflo X-T510A at about $627, with 12 mph and a 20% incline.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I know if a treadmill works with FitShow?</h3></summary>
+            <p class="faq-a">
+              Read the listing&rsquo;s bullet points and the manual, not just the title. Most treadmills that use FitShow mention it once, in a bullet about Bluetooth or the app. If a listing only says &ldquo;smart app&rdquo;, ask the seller which app it is, because many brands ship their own.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can FitShow control my treadmill’s incline?</h3></summary>
+            <p class="faq-a">
+              FitShow says it can adjust equipment settings, but only a treadmill with powered incline that accepts the command can follow. A manual-incline treadmill such as the Ksports Advanced Rehab cannot be tilted by any app. None of the listings here states outright that FitShow will raise the deck, so confirm with the seller if it matters.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do FitShow treadmills work with Kinomap or Zwift?</h3></summary>
+            <p class="faq-a">
+              Some do. Of the seven picks, the Aeriflo X-T510A and both Ksports treadmills also name Kinomap, and the two Ksports also name Zwift. The others name FitShow only. Close FitShow before opening another app, because a treadmill usually accepts one connection at a time.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Smart Treadmill Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmills-with-kinomap/" class="card">
+            <div class="c-kicker">Apps</div>
+            <div class="c-title">Best Treadmills With Kinomap</div>
+            <p class="c-blurb">Six treadmills whose listings name Kinomap, and what “compatible” really covers.</p>
+          </a>
+          <a href="/best-treadmill-workout-apps/" class="card">
+            <div class="c-kicker">Apps</div>
+            <div class="c-title">Best Treadmill Workout Apps</div>
+            <p class="c-blurb">Eight treadmill apps compared, with what each one can control.</p>
+          </a>
+          <a href="/best-treadmills-for-zwift/" class="card">
+            <div class="c-kicker">Zwift</div>
+            <div class="c-title">Best Treadmills for Zwift</div>
+            <p class="c-blurb">FTMS treadmills and foot pods for Zwift, and how to connect each.</p>
+          </a>
+          <a href="/best-walking-pads-with-app/" class="card">
+            <div class="c-kicker">Walking pads</div>
+            <div class="c-title">Best Walking Pads With an App</div>
+            <p class="c-blurb">Walking pads compared by the app they use and what it does.</p>
+          </a>
+          <a href="/best-treadmills-for-seniors/" class="card">
+            <div class="c-kicker">Seniors</div>
+            <div class="c-title">Best Treadmills for Seniors</div>
+            <p class="c-blurb">Long handrails, slow starts and low step-up heights for safer walking.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>

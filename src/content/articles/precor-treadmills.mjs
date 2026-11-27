@@ -12,9 +12,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer\'s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-20',
-  modified: '2026-11-15',
+  modified: '2026-11-27',
   socialProof: '1.3k',
   h1: ['Precor Treadmill:', 'A Buyer’s Guide for Home Use'],
   standfirst:
@@ -520,6 +520,12 @@ ${row('Star Trac', 'Core Health &amp; Fitness', 'No home range', 'Check the mode
       title: "Freemotion Treadmills",
       blurb: "iFIT's commercial brand: the t8.9b, Reflex models and incline trainers.",
       url: '/freemotion-treadmills/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a Precor Treadmill Cost?',
+      blurb: 'New, rebuilt and used Precor prices.',
+      url: '/how-much-does-a-precor-treadmill-cost/',
     },
   ],
   bottomLine: [

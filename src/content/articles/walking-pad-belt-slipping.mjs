@@ -11,8 +11,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-11-23',
+  modified: '2026-11-27',
   socialProof: '1.1k',
   h1: ['Walking Pad Belt Slipping or Off-Center?', 'How to Fix It'],
   standfirst:
@@ -453,6 +454,12 @@ export default {
       title: 'Treadmill Troubleshooting',
       blurb: 'Every common fault, diagnosed in order.',
       url: '/treadmill-troubleshooting/',
+    },
+    {
+      kicker: 'Walking pad',
+      title: 'Walking Pad Making Noise?',
+      blurb: 'Squeak, click and hum fixes.',
+      url: '/walking-pad-making-noise/',
     },
   ],
   bottomLine: [

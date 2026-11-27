@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-08',
-  modified: '2026-11-16',
+  modified: '2026-11-27',
   socialProof: '1.9k',
   h1: ['Treadmill Overheating:', 'Why the Motor Runs Hot and What to Do'],
   standfirst:
@@ -531,6 +531,12 @@ export default {
       title: 'Treadmill Motor Brushes',
       blurb: 'How to inspect and replace the brushes on a DC motor.',
       url: '/treadmill-motor-brushes/',
+    },
+    {
+      kicker: 'Walking pad',
+      title: 'Walking Pad Overheating',
+      blurb: 'Why it stops and how to cool it.',
+      url: '/walking-pad-overheating/',
     },
   ],
   bottomLine: [

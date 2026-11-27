@@ -1,0 +1,754 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SECTIONS } from "../data/sections";
+
+const title = "How Much Does a Landice Treadmill Cost? (2026): L7, L8 and More";
+const description =
+  "Landice treadmills list at $3,999 to $8,904. On 27 Nov 2026 the Black Friday cart price was $4,829 for an L7 and $5,729 for an L8, plus $399 delivery.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "By Price", item: "https://www.treadmillreviewsusa.com/price/" },
+        { "@type": "ListItem", position: 3, name: "How Much Does a Landice Treadmill Cost?", item: "https://www.treadmillreviewsusa.com/how-much-does-a-landice-treadmill-cost/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How much does a Landice treadmill cost?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On Landice’s store on 27 November 2026 the M2 Genesis listed at $3,999, the L7 at $5,429 to $7,804 and the L8 at $6,329 to $8,904, depending on console, belt and mount. Its Black Friday checkout discount brought the M2 to $3,199, the L7 to $4,829 and the L8 to $5,729 with the basic console. Delivery and installation added $399 on the L7 and L8.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much is a Landice L7 treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "$5,429 with the Pro Sports console, $5,929 with Achieve and $7,229 with the Elite touchscreen at list on 27 November 2026, or $4,829, $5,129 and $6,229 after the Black Friday discount in the cart. The orthopedic belt adds $325 and the TV mount $250.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much is a Landice L8 treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "$6,329 (Pro Sports), $6,929 (Achieve) and $8,129 (Elite) at list on 27 November 2026, or $5,729, $6,129 and $7,129 in the Black Friday cart. The orthopedic belt adds $525 on the L8. It costs $900 to $1,000 more than an L7 with the same console.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Landice have a Black Friday sale?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. On 27 November 2026 Landice’s L7 and L8 pages advertised $1,000 off the Elite, $800 off Achieve and $600 off Pro Sports consoles, and $800 off the M2, applied at checkout from 6 November to 3 December 2026. Club and rehab models were not included.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Landice charge for delivery and installation?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "In Landice’s cart on 27 November 2026, shipping, delivery and installation cost $399 on the L7, L8 and L7 Club. The M2 Genesis cost $299 for curbside delivery or $599 for white glove delivery and assembly. Landice says self-assembly voids the warranty.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is the Landice warranty really lifetime?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On the L7 and L8 for home use, Landice’s warranty card gives lifetime frame and parts, 5 years on the console (3 on the touchscreen console) and 1 year of labour. It covers the original owner only, and only if a dealer installs it within 60 driving miles of the selling dealer’s store. The M2 has 10 years on parts.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you buy a Landice treadmill on Amazon?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Not on 27 November 2026. An Amazon search for Landice treadmills returned only third-party parts and accessories, such as belts, brushes, power cords and lube. Landice sells its treadmills through its own store and authorised dealers.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-27",
+      dateModified: "2026-11-27",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-much-does-a-landice-treadmill-cost/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-27",
+    modifiedTime: "2026-11-27",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "how much does a landice treadmill cost",
+      "landice treadmill price",
+      "landice l7 price",
+      "landice l8 price",
+      "landice m2 genesis price",
+      "landice black friday",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See Landice Prices by Console", link: "#price-table" }}
+>
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Price Guide</span>
+      </nav>
+      <h1 class="ed-title">How Much Does a Landice Treadmill Cost?</h1>
+      <p class="ed-dek">
+        A new Landice home treadmill lists at $3,999 for the folding M2 Genesis, $5,429 to $7,804 for the L7 and $6,329 to $8,904 for the L8 on Landice’s own store on 27 November 2026. Its Black Friday sale took $600 to $1,000 off at checkout, so an L7 cost $4,829 and an L8 $5,729 with the basic console, plus $399 for delivery and installation. Here is every console and belt priced, what delivery, warranty and returns add, and when a Landice is cheapest.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 27, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          <span class="ed-method">Based on retailer and maker listings, with prices checked on the dates shown.</span>
+        </div>
+        <a href="#price-table" class="btn-ghost">Prices by Console</a>
+      </div>
+      <p class="ed-disclosure">
+        Nothing on this page is a paid placement, and it carries no affiliate links. <a href="/editorial-standards/">How we review.</a>
+      </p>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Landice builds its treadmills to order in New Jersey and sells them through its own online store and
+          a network of dealers. There is no single Landice price: each L-Series treadmill is configured with one
+          of three consoles, a standard or orthopedic belt and an optional mount, and every combination has its
+          own price. We read every Landice treadmill listing on landice.com on 27 November 2026, Black Friday,
+          added each configuration to the cart to see the discounted price and the delivery charge, and read
+          Landice’s warranty, delivery, return and financing pages the same day. We also checked dealers that
+          publish Landice prices and Amazon. Earlier prices come from our own Landice pages, with their dates.
+        </p>
+
+        <nav class="ed-toc not-prose" aria-label="On this page">
+          <h2>On this page</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#price-table">Landice Treadmill Prices by Model and Console</a></li>
+            <li><a href="#options">What Consoles, Belts and Mounts Cost</a></li>
+            <li><a href="#black-friday">The Landice Black Friday Sale, and How It Compares</a></li>
+            <li><a href="#delivery">Delivery, Installation and the Delivered Price</a></li>
+            <li><a href="#commercial">Club and Rehabilitation Landice Prices</a></li>
+            <li><a href="#dealers-amazon">Landice Prices at Dealers and on Amazon</a></li>
+            <li><a href="#warranty">What the Landice Warranty Covers</a></li>
+            <li><a href="#returns-financing">Returns, Cancellations and Financing</a></li>
+            <li><a href="#vs-rivals">Landice vs Sole, Horizon and NordicTrack Commercial at the Same Money</a></li>
+            <li><a href="#used">What a Used or Remanufactured Landice Costs</a></li>
+            <li><a href="#cheapest">When Is a Landice Cheapest?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2>The Short Answer</h2>
+<p>
+            <strong>A Landice treadmill lists at $3,999 to $8,904 on Landice’s store on 27 November 2026, and its
+            Black Friday sale cut the home models to $3,199 to $7,904 at checkout.</strong> Most buyers land between
+            $4,829 and $6,229 for an L7, before $399 delivery and installation and sales tax.
+          </p>
+          <ul>
+            <li><strong>M2 Genesis (folding):</strong> $3,999 list, $3,199 in the cart on 27 Nov; delivery $299
+            curbside or $599 white glove.</li>
+            <li><strong>L7:</strong> $5,429 (Pro Sports) to $7,229 (Elite touchscreen) list; $4,829 to $6,229 in the
+            cart. Up to $7,804 list with the orthopedic belt and TV mount.</li>
+            <li><strong>L8:</strong> $6,329 to $8,129 list; $5,729 to $7,129 in the cart. Up to $8,904 list fully
+            optioned.</li>
+            <li><strong>Commercial and rehab:</strong> L7 Club, L10 Club, L7 RTM and L8 RTM from $5,429 to $8,929,
+            with no Black Friday discount on Landice’s store.</li>
+            <li><strong>On top:</strong> $399 shipping, delivery and installation on every L-Series treadmill we
+            priced, no membership, and no returns once it is delivered.</li>
+          </ul>
+          <p>
+            For the brand, models and how they compare, see our <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium">Landice treadmill guide</a>;
+            for prices across every brand, <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a treadmill costs</a>.
+          </p>
+        </div>
+
+        <div id="price-table" class="scroll-mt-24">
+          <h2>Landice Treadmill Prices by Model and Console</h2>
+<p>
+            Landice prices each L-Series treadmill by console and belt. The table gives the list price Landice’s
+            store showed on 27 November 2026 and the price the cart showed after its Black Friday discount was
+            applied automatically. Both exclude delivery and tax.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">L7 and L8 residential treadmills</h3>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[680px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model and console</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Standard belt, list</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Standard belt, in cart</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Orthopedic belt, list</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Orthopedic belt, in cart</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L7, Pro Sports</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,429</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$4,829</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,754</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,154</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L7, Achieve</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,929</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,129</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,254</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,454</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L7, Elite (15.6 in. touchscreen)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$7,229</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,229</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$7,554</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,554</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L8, Pro Sports</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,329</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,729</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,854</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,254</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L8, Achieve</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,929</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,129</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$7,454</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,654</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L8, Elite (15.6 in. touchscreen)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$8,129</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$7,129</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$8,654</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$7,654</td></tr>
+            </tbody>
+          </table></div>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">M2 Genesis folding treadmill</h3>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Configuration</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">List (27 Nov)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">In cart (27 Nov)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Key figures (Landice)</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M2 Genesis</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,999</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,199</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">21 x 62 in., 3 HP continuous-duty rating, 0.5–12.5 mph, 15%, 300 lb, 15.6 in. touchscreen, folds</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M2 Genesis with floor mat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$4,088.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not checked</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">As above, plus Landice’s mat</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The L7 and L8 share a 4 HP continuous-duty motor rating (Landice notes it is a laboratory figure), a
+            0.5 to 12 mph speed range, 15% incline and an aluminium frame. The L7 has a 20 by 58-inch running area
+            and a 400 lb user rating; the L8 has 22 by 63 inches and 500 lb. Every residential configuration was
+            shown as available on 27 November. Landice’s store listed no treadmill on its clearance page that day.
+          </p>
+          <p>
+            The list prices were identical to the ones we recorded on 5 November for our <a href="/landice-l7-treadmill/" class="text-[#0F62FE] font-medium">Landice L7 review</a>, so the cart prices are a real cut, not a raised
+            list price discounted back down. The cart prices are what Landice’s cart calculated with no code
+            entered. We did not complete an order, so check the total on the final checkout page.
+          </p>
+        </div>
+
+        <div id="options" class="scroll-mt-24">
+          <h2>What Consoles, Belts and Mounts Cost</h2>
+<p>
+            The console is the biggest single choice in a Landice’s price. The motor, deck, frame and warranty on
+            the frame and parts are the same whichever you pick. These are the step-up costs on 27 November 2026,
+            at list and after the Black Friday discount.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[600px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Option</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Extra at list</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Extra in Black Friday cart</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What it is, per Landice</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pro Sports → Achieve console</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$500 (L7), +$600 (L8)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$300 (L7), +$400 (L8)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A step-up panel; Landice does not publish full specifications for it</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Achieve → Elite console</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$1,300 (L7), +$1,200 (L8)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$1,100 (L7), +$1,000 (L8)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15.6 in. colour touchscreen, 42 programs, user profiles, Strava and MapMyFitness sync, entertainment apps</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Orthopedic running belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$325 (L7), +$525 (L8)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Same; the discount is per console</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A cushioned treadbelt and “Orthopedic Super Absorber” suspension</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tablet mount (7–12 in.)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$75</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$75</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Also sold separately for $75</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TV or monitor mount</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$250</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$250</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Also sold separately for $250</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice Vision System</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$800, separate</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not checked</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sold as an entertainment option</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Treadmill and elliptical mat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$89.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not checked</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Offered as an add-on on each product page</td></tr>
+            </tbody>
+          </table></div>
+          <ul>
+            <li><strong>Pro Sports.</strong> The cheapest way into an L7 or L8. If you watch your own TV or tablet
+            and want speed and incline buttons that will not date, it is the console to price first. Every L-Series
+            machine also has Landice’s control centre with speed, incline and emergency stop buttons, a contact
+            heart-rate bar, a safety lanyard, two bottle holders and a USB trickle-charge port.</li>
+            <li><strong>Achieve.</strong> The middle choice. In the Black Friday cart it was only $300 more than a
+            Pro Sports on the L7, against $500 at list, so the sale narrows the gap. Ask a dealer to show you both,
+            since Landice’s pages say little about either.</li>
+            <li><strong>Elite.</strong> The only console with a touchscreen and apps. It costs $1,400 more than a
+            Pro Sports on an L7 in the cart, and Landice says the console does not include smart devices or
+            subscriptions; any app you stream through it is paid for separately. It also has a shorter warranty
+            than the button consoles, as the warranty section explains.</li>
+            <li><strong>Orthopedic belt.</strong> It costs $200 more on the L8 than on the L7, because there is
+            more belt. Landice ran a promotion from 25 September to 5 November 2026 that included it free on the
+            L7, which is worth knowing if you are timing a purchase.</li>
+          </ul>
+          <p>
+            If you only need somewhere to put a tablet, a $75 Landice mount is hardly worth shopping around for,
+            but the $250 TV mount is worth comparing with a wall mount in front of the treadmill.
+          </p>
+        </div>
+
+        <div id="black-friday" class="scroll-mt-24">
+          <h2>The Landice Black Friday Sale, and How It Compares</h2>
+<p>
+            Landice’s L7 and L8 pages carried this banner on 27 November 2026: “Landice Residential Sale – SEE
+            DISCOUNTS AT CHECKOUT. $1000 OFF ELITE, $800 OFF ACHIEVE, $600 OFF PRO SPORTS. *Terms apply: 11/06/26 -
+            12/03/26.” The M2 page read “$800 OFF M2 TREADMILL”, with the same dates. In the cart the discounts were
+            applied automatically, under the codes BRPRO600, BFACHIEVE800, BFELITE1000 and BFM2800. The sale runs
+            to 3 December, past <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium" data-autolink>Cyber Monday</a>. The terms themselves were not published on the product pages.
+          </p>
+          <p>
+            The banner did not appear on the club or rehabilitation treadmills, and their prices were unchanged.
+            The home page carried no Black Friday wording, only a note that you can pay with an HSA or FSA.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Is this sale better than the autumn offer?</h3>
+          <p>
+            Landice’s previous promotion, recorded on our <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium">Landice brand guide</a>, ran
+            from 25 September to 5 November 2026: free shipping, delivery and installation, plus a free orthopedic
+            belt on the L7, at full list price. Comparing the delivered cost before tax:
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Configuration</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Autumn offer (to 5 Nov)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Black Friday (27 Nov) + $399</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Difference</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L7 Pro Sports, standard belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,429</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,228</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$201 cheaper now</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L7 Pro Sports, orthopedic belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,429 (belt free)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,553</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$124 dearer now</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L7 Achieve, orthopedic belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,929 (belt free)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,853</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$76 cheaper now</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L7 Elite, orthopedic belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$7,229 (belt free)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,953</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$276 cheaper now</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L8 Pro Sports, standard belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,329</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,128</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$201 cheaper now</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            So the Black Friday sale is the better deal on most configurations, but not by as much as “$600 off”
+            suggests once you add back the $399 delivery that was free in the autumn. If you want the L7 with a Pro
+            Sports console and the orthopedic belt, the autumn offer was cheaper. Landice runs promotions
+            regularly, so if your configuration costs more now than it would have then, it may be worth asking
+            whether a similar offer is coming. Our <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a> page covers this year’s offers from other brands.
+          </p>
+        </div>
+
+        <div id="delivery" class="scroll-mt-24">
+          <h2>Delivery, Installation and the Delivered Price</h2>
+<p>
+            Landice does not post delivery prices on its product pages; it says shipping and taxes are calculated at
+            checkout. Its cart quoted a flat $399 for “Shipping, Delivery &amp; Installation” on the L7 and L8 to
+            addresses in Chicago, Los Angeles, New York and Montana on 27 November 2026. The M2 Genesis had two
+            options: “Curbside Delivery Only” at $299 or “White Glove Delivery” at $599, which matches the $599
+            Landice states on its shipping FAQ.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Configuration</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Cart price (27 Nov)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Delivery</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Delivered, before tax</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M2 Genesis, curbside</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,199</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$299</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,498</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M2 Genesis, white glove</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,199</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$599</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,798</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L7 Pro Sports</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$4,829</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$399</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,228</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L7 Achieve</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,129</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$399</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,528</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L7 Elite</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,229</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$399</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,628</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L8 Pro Sports</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,729</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$399</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,128</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L8 Achieve</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,129</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$399</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,528</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L8 Elite</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$7,129</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$399</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$7,528</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            What the $399 buys, according to Landice’s “About Your Order” page: Landice assigns an authorised dealer
+            to deliver, assemble and service the treadmill; allows up to 5 days to build it to your specification and
+            up to 10 business days for delivery; the installer arranges a date, assembles it in one to two hours in
+            most cases and removes the packaging. Prices and shipping apply to the continental United States only.
+          </p>
+          <p>
+            Two conditions make the installation part of the price rather than an extra you can skip. Landice states
+            that assembling the unit yourself voids the warranty, and its home warranty applies only when an
+            authorised dealer or technician installs it within 60 driving miles of the selling dealer’s store. Landice
+            also asks for a dedicated 15-amp circuit and a temperature-controlled room, and lists garages and porches
+            as unsuitable, so budget for an electrician if you do not have a free circuit. Our <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a> covers what to check before the truck arrives.
+          </p>
+        </div>
+
+        <div id="commercial" class="scroll-mt-24">
+          <h2>Club and Rehabilitation Landice Prices</h2>
+<p>
+            Landice also sells versions of the same frames for gyms and clinics. They carry commercial warranties,
+            and none had a Black Friday discount on Landice’s store on 27 November 2026.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[620px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pro Sports</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Achieve</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Elite</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Range with mounts (Landice)</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L7 Club</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,429</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,129</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$7,229</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,429–$7,479</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L10 Club</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,329</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$7,029</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$8,129</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,329–$8,929 (19 in. HDTV and mount adds $800)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L7 RTM (rehab)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700" colspan="3">$5,429 standard; $6,029 reverse with remote stop/start</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,429–$6,829</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L8 RTM (rehab)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700" colspan="3">$6,629 standard; $7,229 reverse with remote stop/start</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,629–$7,999</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Delivery and installation on the L7 Club was also $399 in Landice’s cart. Landice’s warranty page gives
+            the club models five years on parts and one year of labour, and the light-commercial and RTM models five
+            years or 5,000 hours on parts and one year of labour, with console terms varying.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A dealer that publishes lower prices</h3>
+          <p>
+            The Fitness Store, a dealer in Manitowoc, Wisconsin, published Landice prices on 27 November 2026 for
+            club and rehab models only: the L7-90 Club at $4,999 with the Pro Sports Trainer console or $5,699 with
+            Achieve; the L10 Club at $6,329 or $6,899; and its “Rehab Trainer” at $4,999 as an L7 or $5,999 as an L8.
+            The L7 Club and Rehab Trainer listings said they ship immediately from the New Jersey warehouse. That is
+            $430 less than Landice’s own L7 Club price with the same console name. Ask any dealer to confirm the
+            exact console, warranty and installation before comparing. For how these prices sit against Life
+            Fitness, Precor and Matrix, see our <a href="/how-much-does-a-commercial-treadmill-cost/" class="text-[#0F62FE] font-medium">commercial treadmill cost guide</a> and our <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills</a> overview.
+          </p>
+        </div>
+
+        <div id="dealers-amazon" class="scroll-mt-24">
+          <h2>Landice Prices at Dealers and on Amazon</h2>
+<p>
+            Landice sells through dealers, and even an order on landice.com is handed to an authorised dealer to
+            deliver and install. Most dealers do not publish Landice prices online. What we could and could not read
+            on 27 November 2026:
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Seller</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What we found (27 Nov 2026)</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice (landice.com)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Every model, console and belt priced; Black Friday discount applied in the cart; delivery quoted in the cart</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The Fitness Store (Wisconsin)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Club and rehab prices published (above); no residential L7, L8 or M2 listing</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fitness Superstore (California)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Remanufactured Landice only (see the used section)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fitness Factory, Johnson Fitness &amp; Wellness, Scheels</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sites refused our automated request, so we could not read their prices</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fitness Gallery, Fitness Showrooms, Fitness Expo</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Site search returned no Landice products</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">US Fitness Products</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No Landice page found</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No Landice treadmills; only third-party parts, such as Landice treadmill lube at $10.68</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Dealers that do not publish prices may still quote below Landice’s list, especially on floor models,
+            and a local dealer matters more with Landice than with most brands because the home warranty’s labour
+            cover depends on installation within 60 driving miles of the selling dealer. Take the configured cart
+            price from landice.com as your benchmark and ask a local dealer to beat it delivered and installed.
+            Landice’s dealer locator lists the stores near you.
+          </p>
+        </div>
+
+        <div id="warranty" class="scroll-mt-24">
+          <h2>What the Landice Warranty Covers</h2>
+<p>
+            Landice’s home warranty card for the L7 and L8 (effective 1 September 2023, linked from its warranty
+            page on 27 November 2026) gives these terms from the date of purchase by the original owner:
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Component</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">L7 and L8 (home)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">M2 Genesis (home)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Club models</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Frame</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Part of the 5-year parts term</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Parts</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 years</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Console</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 years (touchscreen console 3 years)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Varies by console</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Labour</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year</td></tr>
+            </tbody>
+          </table></div>
+          <ul>
+            <li><strong>Installation by a dealer.</strong> The home warranty applies only if an authorised dealer or
+            technician installed the treadmill within 60 driving miles of the selling dealer’s store. Service beyond
+            that radius is at the owner’s cost.</li>
+            <li><strong>Original owner only.</strong> Landice’s FAQ says the warranty is not transferable, so a used
+            Landice carries none of it.</li>
+            <li><strong>Register within 30 days.</strong> Landice asks you to register online within 30 days and says
+            all products must be registered before a claim.</li>
+            <li><strong>Floor and demo units.</strong> The card says floor models, demonstration units and stored units
+            bought more than a year after manufacture carry five years on parts, not lifetime. A discounted floor
+            model is not the same warranty as a new order.</li>
+            <li><strong>Home use only.</strong> Commercial use, including personal trainers’ businesses, is excluded.</li>
+          </ul>
+          <p>
+            The Elite touchscreen’s 3-year console term is worth pricing in: it is the most expensive console and the
+            shortest-covered part of the machine. Landice did not offer an extended warranty on its store. Our <a href="/best-treadmills-with-long-warranty/" class="text-[#0F62FE] font-medium">longest-warranty treadmills</a> guide sets Landice’s
+            lifetime parts against other brands’ terms.
+          </p>
+        </div>
+
+        <div id="returns-financing" class="scroll-mt-24">
+          <h2>Returns, Cancellations and Financing</h2>
+<p>
+            Landice’s return policy on 27 November 2026 is strict, and it belongs in the price. You can cancel before
+            the treadmill ships for a full refund minus a 5% processing fee. Cancel after it ships but before
+            delivery and Landice charges a 25% restocking fee on the invoice amount. After delivery, Landice says it
+            cannot accept returns; an out-of-box fault is handled by the installer or a service technician, and
+            Landice replaces the unit if it judges it unrepairable.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Cart price (27 Nov)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Cancel before shipping (5%)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Cancel after shipping (25%)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">After delivery</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">M2 Genesis, $3,199</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$159.95</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$799.75</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No return</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L7 Pro Sports, $4,829</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$241.45</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,207.25</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No return</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L8 Pro Sports, $5,729</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$286.45</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,432.25</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No return</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L7 Elite, $6,229</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$311.45</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,557.25</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No return</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The fees above use the treadmill price alone; Landice bases them on the invoice, which may include
+            delivery. Landice says equipment generally ships within two to five business days of the order, so the
+            window to cancel cheaply is short. Try the treadmill at a dealer before ordering, and compare with
+            other brands in our <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a> guide.
+          </p>
+          <p>
+            <strong>Financing.</strong> Landice offers Affirm loans over 12, 24 or 36 months. Its disclosure gives
+            rates from 10% to 30% APR by creditworthiness, while the same page also mentions 0% to 30%, and its
+            worked example is $149.30 a month for 36 months at 20% APR on a $3,999 purchase. Landice also says you
+            can pay with an HSA or FSA; whether a treadmill qualifies usually depends on a medical reason, as our <a href="/are-treadmills-hsa-fsa-eligible/" class="text-[#0F62FE] font-medium">HSA and FSA guide</a> explains.
+          </p>
+        </div>
+
+        <div id="vs-rivals" class="scroll-mt-24">
+          <h2>Landice vs Sole, Horizon and NordicTrack Commercial at the Same Money</h2>
+<p>
+            A Landice costs two to three times as much as the best-known home running treadmills. Using the prices on
+            our own cost guides, this is what the same budget buys elsewhere.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[680px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Treadmill</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price (source, date)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Deck and capacity</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Warranty headline</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Membership</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice L7 Pro Sports</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$4,829 + $399 delivery (Landice, 27 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 58 in., 400 lb, non-folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame and parts, 1 yr labour</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice M2 Genesis</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,199 + $299–$599 (Landice, 27 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">21 x 62 in., 300 lb, folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame, 10 yr parts</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole TT8</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,899.99, out of stock (Sole, 22 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in., non-folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame and motor (Sole)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole F89</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,699.99 (Sole, 22 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">24 in. touchscreen, 375 lb, folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame and motor (Sole)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.8 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,999 (Horizon, 23 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in., 375 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame and motor (Horizon)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack Commercial 2450</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $2,299 Black Friday ($2,999 list), Nov 2026</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">24 in. touchscreen, 0–14 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime motor advertised</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">iFIT Pro optional, $396 a year</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack X24</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $2,999 Black Friday ($4,299 list), Nov 2026</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline trainer, −6% to 40%, 24 in. touchscreen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime motor advertised</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">iFIT Pro optional, $396 a year</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            On paper the rivals win on features per dollar. A <a href="/horizon-7-8-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Horizon 7.8 AT</a> has a wider and longer deck than the
+            L7 for less than half its delivered price, and a Sole TT8 gives a non-folding 22 by 60-inch deck for
+            about $2,330 less than an L7 Pro Sports before delivery. A NordicTrack Commercial 2450 with five years of
+            iFIT Pro comes to about $4,279, still under a delivered L7, with a big screen and classes the Landice
+            does not have.
+          </p>
+          <p>
+            What the extra money buys is the warranty and the build. Landice covers parts for life on the L7 and L8,
+            not just the frame and motor, and it installs every machine through a dealer who also services it.
+            Its frames are the ones it sells into clubs and clinics. If you will use a treadmill hard for 15 or 20
+            years, that is a reasonable thing to pay for; if you want screen-led workouts or the most deck for the
+            money, it is not. Our <a href="/how-much-does-a-sole-treadmill-cost/" class="text-[#0F62FE] font-medium">Sole</a>, <a href="/how-much-does-a-horizon-treadmill-cost/" class="text-[#0F62FE] font-medium">Horizon</a> and <a href="/how-much-does-a-nordictrack-treadmill-cost/" class="text-[#0F62FE] font-medium">NordicTrack</a> price guides have every model and
+            date behind these figures, and our <a href="/treadmills-over-2500/" class="text-[#0F62FE] font-medium">treadmills over $2,500</a> roundup
+            covers the premium field.
+          </p>
+        </div>
+
+        <div id="used" class="scroll-mt-24">
+          <h2>What a Used or Remanufactured Landice Costs</h2>
+<p>
+            Landice frames last, so used ones hold their value. The clearest dated prices we found were at Fitness
+            Superstore, a California dealer, on 27 November 2026:
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Remanufactured model</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price (27 Nov)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Status</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice L7 Pro Sports Trainer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,799</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">In stock</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice L9 (older club model)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,799</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">In stock</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice L8</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,899</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sold out</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The store’s banner offered 5% off remanufactured stock with the code BF5 until 30 November, which would
+            bring the L7 to $3,609.05. Our <a href="/how-much-does-a-used-treadmill-cost/" class="text-[#0F62FE] font-medium">used treadmill cost guide</a> recorded on 25 November that its warranty page stated a 1-year parts and on-site labour warranty on all
+            remanufactured machines. Against a new L7 Pro Sports at $4,829 in Landice’s cart, the rebuilt one saves
+            about $1,000 to $1,200, but gives up the lifetime parts warranty, which only covers the original owner.
+          </p>
+          <p>
+            For private sales we have no reliable dated prices, so price any used Landice against those figures:
+            a private seller asking close to $3,800 for an older L7 is asking dealer money without the dealer’s
+            warranty or delivery. Out of warranty, parts are available: on Amazon on 27 November third-party sellers
+            listed a replacement L7 walking belt at $189.99, motor brushes for the L7, L8 and L9 at $39.95 and a Pro
+            Sports Trainer display console at $153.29. Use our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a> before you pay.
+          </p>
+        </div>
+
+        <div id="cheapest" class="scroll-mt-24">
+          <h2>When Is a Landice Cheapest?</h2>
+<ul>
+            <li><strong>Now, to 3 December 2026.</strong> The checkout discount of $600 to $1,000 on the L7 and L8,
+            and $800 on the M2, is the largest price cut we have recorded on Landice’s own store. It ends after Cyber
+            Monday.</li>
+            <li><strong>During delivery or accessory promotions.</strong> The autumn offer of free shipping, delivery
+            and installation plus a free orthopedic belt was worth $724 on an L7 with that belt, more than the
+            Black Friday cut on a Pro Sports. If you want the orthopedic belt with the basic console, that kind of
+            offer is the one to wait for.</li>
+            <li><strong>From a dealer, on commercial models.</strong> The Fitness Store’s L7-90 Club at $4,999 was
+            $430 under Landice’s own L7 Club price. Ask local dealers for floor models too, but remember they carry
+            five years of parts cover, not lifetime.</li>
+            <li><strong>With the console you need, not the one on display.</strong> Choosing Pro Sports over Elite
+            saves $1,400 on an L7 in the Black Friday cart and $1,800 at list.</li>
+            <li><strong>Remanufactured.</strong> About $3,800 for a rebuilt L7 or L9 at Fitness Superstore, with a
+            1-year warranty.</li>
+          </ul>
+          <p>
+            The M2 Genesis at $3,199 is the cheapest new Landice, but it is a different machine: steel frame,
+            300 lb rating and a 10-year parts warranty rather than lifetime. If you want a Landice for its build and
+            warranty, the L7 Pro Sports at $4,829 is the real entry point; if you mainly want a folding treadmill
+            with a large screen, compare the M2 with the rivals in the table above first.
+          </p>
+        </div>
+
+
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Where People Go Wrong When Pricing a Landice Treadmill</h2>
+          <p>A Landice is expensive, and most of the ways to overpay come from the configuration and the policies, not the headline price.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Comparing the base price with a fully optioned quote</h3>
+              <p>An L7 runs from $5,429 to $7,804 at list depending on console, belt and mount. Compare the same configuration at Landice and a dealer, and work out the delivered price, including the $399 delivery and installation.</p>
+            </li>
+            <li>
+              <h3>Paying for the Elite when you will watch your own screen</h3>
+              <p>The Elite touchscreen adds $1,400 over the Pro Sports on an L7 in the Black Friday cart and has a 3-year console warranty, against 5 years on the other consoles. If you will use a tablet or TV, choose Pro Sports or Achieve.</p>
+            </li>
+            <li>
+              <h3>Ordering before trying one</h3>
+              <p>Landice accepts no returns after delivery and charges 25% to cancel once the treadmill has shipped. Walk on an L7 and an L8 at a dealer, at your real pace, before you order.</p>
+            </li>
+            <li>
+              <h3>Assuming a used or floor-model Landice keeps the lifetime warranty</h3>
+              <p>The warranty covers the original owner only, and floor or demo units sold more than a year after manufacture get five years on parts. Price a used or floor unit against that, not against a new order.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">A Landice treadmill costs $3,999 to $8,904 at list, and $3,199 to $7,904 in this week’s sale.</strong> On 27 November 2026 Landice’s cart priced the L7 from $4,829 and the L8 from $5,729 with the Pro Sports
+            console, and the folding M2 Genesis at $3,199. Delivery and installation added $399 on the L-Series and
+            $299 to $599 on the M2. The sale runs to 3 December.
+          </p>
+          <p>
+            <strong class="text-white">Choose the console carefully and try before you buy.</strong> The console moves an
+            L7 by up to $1,400 in the sale, returns stop at delivery, and the lifetime parts warranty depends on dealer
+            installation. For most home buyers the L7 Pro Sports or Achieve is the configuration to price first; see our <a href="/landice-l7-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Landice L7 review</a> before you order.
+          </p>
+        </div>
+
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/landice-treadmills/">Landice Treadmills</a></li>
+            <li><a href="/landice-l7-treadmill/">Landice L7 Treadmill Review</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How much does a Landice treadmill cost?</h3></summary>
+            <p class="faq-a">
+              On Landice’s store on 27 November 2026 the M2 Genesis listed at $3,999, the L7 at $5,429 to $7,804 and the L8 at $6,329 to $8,904, depending on console, belt and mount. Its Black Friday checkout discount brought the M2 to $3,199, the L7 to $4,829 and the L8 to $5,729 with the basic console. Delivery and installation added $399 on the L7 and L8.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much is a Landice L7 treadmill?</h3></summary>
+            <p class="faq-a">
+              $5,429 with the Pro Sports console, $5,929 with Achieve and $7,229 with the Elite touchscreen at list on 27 November 2026, or $4,829, $5,129 and $6,229 after the Black Friday discount in the cart. The orthopedic belt adds $325 and the TV mount $250.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much is a Landice L8 treadmill?</h3></summary>
+            <p class="faq-a">
+              $6,329 (Pro Sports), $6,929 (Achieve) and $8,129 (Elite) at list on 27 November 2026, or $5,729, $6,129 and $7,129 in the Black Friday cart. The orthopedic belt adds $525 on the L8. It costs $900 to $1,000 more than an L7 with the same console.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does Landice have a Black Friday sale?</h3></summary>
+            <p class="faq-a">
+              Yes. On 27 November 2026 Landice’s L7 and L8 pages advertised $1,000 off the Elite, $800 off Achieve and $600 off Pro Sports consoles, and $800 off the M2, applied at checkout from 6 November to 3 December 2026. Club and rehab models were not included.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does Landice charge for delivery and installation?</h3></summary>
+            <p class="faq-a">
+              In Landice’s cart on 27 November 2026, shipping, delivery and installation cost $399 on the L7, L8 and L7 Club. The M2 Genesis cost $299 for curbside delivery or $599 for white glove delivery and assembly. Landice says self-assembly voids the warranty.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the Landice warranty really lifetime?</h3></summary>
+            <p class="faq-a">
+              On the L7 and L8 for home use, Landice’s warranty card gives lifetime frame and parts, 5 years on the console (3 on the touchscreen console) and 1 year of labour. It covers the original owner only, and only if a dealer installs it within 60 driving miles of the selling dealer’s store. The M2 has 10 years on parts.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you buy a Landice treadmill on Amazon?</h3></summary>
+            <p class="faq-a">
+              Not on 27 November 2026. An Amazon search for Landice treadmills returned only third-party parts and accessories, such as belts, brushes, power cords and lube. Landice sells its treadmills through its own store and authorised dealers.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Landice and Treadmill Price Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/landice-treadmills/" class="card">
+            <div class="c-kicker">Brand</div>
+            <div class="c-title">Landice Treadmills</div>
+            <p class="c-blurb">The L7, L8 and M2 Genesis, the warranty and where to buy.</p>
+          </a>
+          <a href="/landice-l7-treadmill/" class="card">
+            <div class="c-kicker">Review</div>
+            <div class="c-title">Landice L7 Treadmill Review</div>
+            <p class="c-blurb">Every figure, console and mount on Landice’s core treadmill.</p>
+          </a>
+          <a href="/how-much-does-a-commercial-treadmill-cost/" class="card">
+            <div class="c-kicker">Price</div>
+            <div class="c-title">How Much Does a Commercial Treadmill Cost?</div>
+            <p class="c-blurb">Club treadmill prices from Landice’s rivals, new and rebuilt.</p>
+          </a>
+          <a href="/best-treadmills-with-long-warranty/" class="card">
+            <div class="c-kicker">Best</div>
+            <div class="c-title">Treadmills With the Longest Warranty</div>
+            <p class="c-blurb">How Landice’s lifetime parts compares with other brands.</p>
+          </a>
+          <a href="/how-much-does-a-used-treadmill-cost/" class="card">
+            <div class="c-kicker">Price</div>
+            <div class="c-title">How Much Does a Used Treadmill Cost?</div>
+            <p class="c-blurb">Used and remanufactured prices by brand and seller.</p>
+          </a>
+          <a href="/treadmill-black-friday-deals/" class="card">
+            <div class="c-kicker">Deals</div>
+            <div class="c-title">Black Friday Treadmill Deals</div>
+            <p class="c-blurb">This year’s offers from every major brand.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>

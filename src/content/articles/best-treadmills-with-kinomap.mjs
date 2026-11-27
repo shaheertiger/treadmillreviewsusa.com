@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 20, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-11-20',
-  modified: '2026-11-20',
+  modified: '2026-11-27',
   socialProof: '1.3k',
   h1: ['Best Treadmills', 'With Kinomap'],
   standfirst:
@@ -468,6 +468,12 @@ export default {
       title: 'Best Incline Treadmills',
       blurb: 'Treadmills with the steepest powered incline for hill walking and running.',
       url: '/best-incline-treadmills/',
+    },
+    {
+      kicker: 'Apps',
+      title: 'Best FitShow Treadmills',
+      blurb: 'Picks whose listings name the FitShow app.',
+      url: '/best-treadmills-with-fitshow/',
     },
   ],
   bottomLine: [

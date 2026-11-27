@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-11-25',
+  modified: '2026-11-27',
   h1: ['How Much Does a', 'Used Treadmill Cost?'],
   standfirst:
     'It depends far more on who is selling than on the brand. On 25 November 2026 maker scratch-and-dent units were selling at about 87% of the new price, remanufactured gym treadmills cost $3,799 to $10,599 at one specialist dealer, and one resale marketplace put a typical used Peloton Tread sale at about $1,800. With Black Friday cutting new prices this week, a used home treadmill is only a bargain once moving, wear parts and the missing warranty are counted. Here are the dated pairs, the hidden costs and the sums.',
@@ -491,6 +492,12 @@ export default {
       title: 'How Much Does a Treadmill Cost?',
       blurb: 'New treadmill prices by type and tier, across every brand.',
       url: '/how-much-does-a-treadmill-cost/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a Precor Treadmill Cost?',
+      blurb: 'New, rebuilt and used Precor prices.',
+      url: '/how-much-does-a-precor-treadmill-cost/',
     },
   ],
   bottomLine: [

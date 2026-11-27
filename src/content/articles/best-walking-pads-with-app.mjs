@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-11-24',
-  modified: '2026-11-25',
+  modified: '2026-11-27',
   socialProof: '1.2k',
   h1: ['Best Walking Pads With an App', 'What Each App Actually Does'],
   standfirst:
@@ -529,6 +529,12 @@ export default {
       title: 'Cybergoing Walking Pad Review',
       blurb: 'T10, T12 and T16, and the Bosch motor claim.',
       url: '/cybergoing-walking-pad/',
+    },
+    {
+      kicker: 'Apps',
+      title: 'Best FitShow Treadmills',
+      blurb: 'Picks whose listings name the FitShow app.',
+      url: '/best-treadmills-with-fitshow/',
     },
   ],
   bottomLine: [

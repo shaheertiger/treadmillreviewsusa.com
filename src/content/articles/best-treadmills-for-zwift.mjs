@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 20, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-13',
-  modified: '2026-11-20',
+  modified: '2026-11-27',
   socialProof: '1.8k',
   h1: ['Best Treadmills', 'for Zwift'],
   standfirst:
@@ -486,6 +486,12 @@ export default {
       title: 'Best Treadmills for Running',
       blurb: 'Deck length, motor and cushioning for runners, whatever app you use.',
       url: '/best-treadmills-for-running/',
+    },
+    {
+      kicker: 'Apps',
+      title: 'Best FitShow Treadmills',
+      blurb: 'Picks whose listings name the FitShow app.',
+      url: '/best-treadmills-with-fitshow/',
     },
   ],
   bottomLine: [

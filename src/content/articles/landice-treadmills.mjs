@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-14',
-  modified: '2026-11-17',
+  modified: '2026-11-27',
   socialProof: '1.4k',
   h1: ['Landice Treadmills:', 'Models, Warranty and Where to Buy'],
   standfirst:
@@ -590,6 +590,12 @@ export default {
       title: "Vision Fitness Treadmills",
       blurb: "One dealer-sold treadmill left, the light-commercial T600; the old T9200, T40 and T80 and the January.",
       url: '/vision-fitness-treadmills/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a Landice Treadmill Cost?',
+      blurb: 'L7 and L8 by console, delivered.',
+      url: '/how-much-does-a-landice-treadmill-cost/',
     },
   ],
   bottomLine: [

@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-11-22',
-  modified: '2026-11-25',
+  modified: '2026-11-27',
   socialProof: '1.3k',
   h1: ['Walking Pad Not Working?', 'Belt, Remote and Power Fixes'],
   standfirst:
@@ -329,6 +329,18 @@ export default {
       title: 'Sperax Walking Pad Recall?',
       blurb: 'The CPSC warning on four Sperax models, explained.',
       url: '/sperax-walking-pad-recall/',
+    },
+    {
+      kicker: 'Walking pad',
+      title: 'Walking Pad Making Noise?',
+      blurb: 'Squeak, click and hum fixes.',
+      url: '/walking-pad-making-noise/',
+    },
+    {
+      kicker: 'Walking pad',
+      title: 'Walking Pad Overheating',
+      blurb: 'Why it stops and how to cool it.',
+      url: '/walking-pad-overheating/',
     },
   ],
   bottomLine: [

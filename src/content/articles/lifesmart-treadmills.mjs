@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-11-05',
-  modified: '2026-11-21',
+  modified: '2026-11-27',
   socialProof: '2.1k',
   h1: ['LifeSmart Treadmills:', 'The PowerTouch Range Explained'],
   standfirst:
@@ -154,7 +154,7 @@ export default {
       html: `          <p>
             <strong>Only if the automatic PowerTouch fold matters to you. LifeSmart treadmills are reasonably specified
             for the price, but every LifeSmart carries a one-year limited warranty on functional parts, and the
-            best-known model, the TM4500, is discontinued. If you do buy one, the TM4000C at $1,199 is the pick; on Amazon, where it is not sold, the TM3000 and TM5000 are listed, and the ProForm Pro 2000 is the closest match to the TM4000C.</strong>
+            best-known model, the TM4500, is discontinued. If you do buy one, the TM4000C at $1,199 is the pick; by late November it was listed on Amazon alongside the TM3000 and TM5000, and on Black Friday (27 November 2026) only the TM3000 showed a labelled discount there.</strong>
           </p>
           <p>
             On 5 November 2026 LifeSmart's own store listed the TM3000 at $999, the TM4000C at $1,199 and the TM5000 at
@@ -169,6 +169,68 @@ export default {
             money, the <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6</a> and the
             <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium">Horizon 7.0 AT</a> come with
             far longer frame and motor cover. We have not tested any LifeSmart treadmill.
+          </p>`,
+    },
+    {
+      id: 'black-friday',
+      heading: 'LifeSmart Black Friday Prices (27 November 2026)',
+      navLabel: 'Black Friday',
+      html: `          <p>
+            <strong>On Black Friday, 27 November 2026, only one LifeSmart treadmill on Amazon US carried a labelled
+            discount: the TM3000, at $999 as a Prime-exclusive price against a stated list price of $1,199. Every other
+            LifeSmart we checked was at the same price we had recorded earlier in November, or had no earlier price to
+            compare with.</strong> The table below lists every LifeSmart treadmill or walking pad that Amazon's product
+            search returned for "LifeSmart treadmill" and "LifeSmart PowerTouch" that morning, with the price, the seller
+            and stock message on the listing, and the earliest dated price this page holds for the same model.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[620px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Amazon, 27 Nov 2026</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Discount shown on listing</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Earlier dated price</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Verdict</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM3000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999 (Prime members); $1,199 otherwise. "Only 5 left"</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$200 (17%) off a $1,199 list price, Prime exclusive</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999 at LifeSmart, 5 Nov</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Labelled deal, but no lower than early November</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM4000C</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199. "Only 4 left"</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199 at LifeSmart, 5 Nov; about $1,199 on Amazon, 21 Nov</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No change</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM5000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,699. In stock</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,699 at LifeSmart, 5 Nov</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No change</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM2000C</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$799. "Only 10 left"</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None recorded</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cannot tell</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">AT1 Pro</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$599. In stock</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None recorded</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cannot tell</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM2202 3-in-1 walking pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$599. "Only 3 left"</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$599 at LifeSmart, 5 Nov</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No change</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM2500</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Currently unavailable</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999 at LifeSmart, 5 Nov</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not buyable on Amazon</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            All of the in-stock listings above were sold by LifeSmart Global itself, the brand's own seller account, and
+            not by a third-party reseller. That matters for a brand whose warranty claims go through the place of purchase.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Is the TM3000 a real Black Friday deal?</h3>
+          <p>
+            It is a real discount against the list price Amazon shows, and it is the only LifeSmart price cut we could see.
+            It is not a new low. LifeSmart's own store already had the TM3000 at $999 on 5 November, against its own
+            "from" price of $1,399, so the Black Friday price is the same price the treadmill has sold for all month. Note
+            the two reference prices differ: $1,199 on Amazon and $1,399 on LifeSmart's store, which is a reason to judge
+            a LifeSmart by the price you pay rather than the percentage off. The $999 also applies only to Prime
+            members: the same listing showed a second offer from LifeSmart Global at $1,199 for everyone else. And the
+            TM3000 was showing "only 5 left in stock", so the price may not last through Cyber Monday on 30 November.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What else $999 to $1,199 buys this weekend</h3>
+          <p>
+            At $999 the TM3000 still has a 55-inch belt and a one-year warranty, so the useful comparison is with the 60-inch
+            folding treadmills that are discounted this week. Our
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">treadmill Black Friday deals</a>
+            page tracks the dated prices across brands, and
+            <a href="/black-friday-treadmill-deals-under-1000/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals under $1,000</a>
+            covers the TM3000's price bracket specifically, including the Horizon 7.0 AT, whose frame and motor cover runs
+            far beyond LifeSmart's one year. If the PowerTouch fold is the reason you want a LifeSmart, the TM3000 at $999
+            or the TM4000C at $1,199 is simply the going price this month, so there is no price reason to rush, though stock on both was low. If the fold is not
+            the reason, compare the belt length and warranty of whatever is discounted before you choose. Prices on all of
+            these can change through the weekend; our
+            <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium">Cyber Monday treadmill deals</a>
+            page picks up from Monday.
           </p>`,
     },
     {
@@ -478,12 +540,124 @@ export default {
           <p>
             Some LifeSmart models appear on Amazon US, including a TM2500 listing; the TM3000 and TM5000 cards link to
             their Amazon listings. The Costco-only TM6500 is not on Amazon, so its place in the cards goes to the closest
-            big-screen folding treadmill that is, the NordicTrack T Series 16. We could not find the TM4000C or the
-            TM4500 on Amazon US either, so their cards show the closest machines Amazon does sell: the <a href="/proform-pro-2000-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>ProForm Pro 2000</a>,
+            big-screen folding treadmill that is, the NordicTrack T Series 16. When we first wrote this page we could not
+            find the TM4000C on Amazon US; it had appeared there by 21 November 2026 (see the Black Friday prices above),
+            and the TM4500 is not listed at all. Their cards still show the closest machines Amazon does sell: the <a href="/proform-pro-2000-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>ProForm Pro 2000</a>,
             a 60-inch folding deck with decline at about the TM4000C’s price, and the NordicTrack Commercial 1250 in
             place of the discontinued TM4500. If you find a LifeSmart listing on Amazon, check the model number and the
             C suffix in the title, and that the seller is LifeSmart or Amazon, since warranty claims go through the place
             of purchase.
+          </p>`,
+    },
+    {
+      id: 'amazon-models',
+      heading: 'Newer LifeSmart Models on Amazon: TM2000C, AT1 Pro and TM2202',
+      navLabel: 'Newer Models',
+      html: `          <p>
+            Three LifeSmart machines on Amazon in late November are not in the range table above, which was built from
+            LifeSmart's store on 5 November: the TM2000C and AT1 Pro, and the TM2202, which we listed then only by price.
+            They fill the gap below the TM3000, and two of them bring PowerTouch to a lower price. Every figure
+            below is from the Amazon listing as it read on 27 November 2026; we found no independent source for them.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[620px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Motor / speed</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Incline / decline</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Belt</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Max user</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Amazon, 27 Nov 2026</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM2000C PowerTouch</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.75 HP brushless, 0.6-10 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10% / -3%, powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 55 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$799</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">AT1 Pro PowerTouch</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 HP brushless, 0.6-7.5 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10% / -1%, powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16 x 47 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">250 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$599</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM2202 3-in-1 walking pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 HP brushless, walk 0-3.7 mph, jog to 7.5 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not stated</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">17 x 48 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">265 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$599</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TM3000 PowerTouch (for reference)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Brushless, 12.5 mph in the title</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10% / -3%, powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 55 in. (LifeSmart)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999 Prime / $1,199</td></tr>
+            </tbody>
+          </table></div>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">TM2000C: the cheapest full-size PowerTouch</h3>
+          <p>
+            The TM2000C has the same 20 by 55-inch belt, the same -3% to 10% powered incline range and the same 300 lb
+            rating as the TM3000, with a smaller 2.75 HP motor and a 10 mph top speed instead of 12.5. For a walker or a
+            light jogger, that is very little given up for $200 less than the TM3000's Prime price. Its listing also
+            describes an infrared safety sensor on the PowerTouch fold, 26 built-in programs plus 5 user programs and 3
+            heart-rate programs, EKG grip sensors, Bluetooth speakers, a cooling fan, a Qi wireless charging pad, and
+            compatibility with Zwift, Kinomap, FitShow and Snailcle. If you run regularly, 10 mph (a 6-minute mile) is
+            a real ceiling, and our <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmills</a>
+            guide has faster decks at this price.
+          </p>
+          <p>
+            One line in the TM2000C listing needs checking: it says the treadmill "includes a 10-year frame warranty and
+            1-year parts and labor warranty". LifeSmart's warranty page gives one year on all products, and this is the
+            second time we have seen a 10-year frame figure on a retailer listing that LifeSmart's own page does not
+            match (see the budget-model note below). Before you count on frame cover beyond a year, ask LifeSmart in
+            writing or keep a screenshot of the listing with your order.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">AT1 Pro: PowerTouch for a walking machine</h3>
+          <p>
+            The AT1 Pro is a smaller, slower machine: a 16 by 47-inch belt, 0.6 to 7.5 mph, 10% incline and a -1% decline,
+            15 programs and a 250 lb limit. What it keeps is the motorised fold, with the listing describing a dedicated
+            lift motor plus pause, reverse and obstruction detection. At $599 it is the cheapest PowerTouch LifeSmart on
+            Amazon, at the same price LifeSmart's store asked for the TM2303 PowerTouch on 5 November. A 47-inch belt
+            suits walking at a normal stride; taller users and anyone who wants to jog should look at the 55-inch
+            TM2000C instead, or at our <a href="/best-walking-pads-on-amazon/" class="text-[#0F62FE] font-medium">best walking pads on Amazon</a>
+            if the fold is not essential.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">TM2202: a walking pad, not a treadmill</h3>
+          <p>
+            The TM2202 is sold as the Denise Austin 3-in-1 walking pad with a tabletop. Its Amazon title gives a 17 by
+            48-inch belt, a 2.5 HP brushless motor, 0 to 3.7 mph in walking mode, up to 7.5 mph jogging and a 265 lb
+            limit, which fills in the figures we could not find for it earlier in November. The listing title does not
+            call it PowerTouch, so do not assume it folds itself. It is the under-desk option, and it belongs alongside
+            the machines in our <a href="/black-friday-walking-pad-deals/" class="text-[#0F62FE] font-medium">Black Friday walking pad deals</a>
+            rather than against the TM3000.
+          </p>`,
+    },
+    {
+      id: 'buying-on-amazon',
+      heading: 'Buying a LifeSmart on Amazon: Delivery, Stock and Listing Errors',
+      navLabel: 'Buying on Amazon',
+      html: `          <p>
+            With the TM3000, TM4000C and TM5000 now all sold on Amazon by LifeSmart Global, the question for many buyers is
+            no longer where to find a LifeSmart but where to buy one. The listings themselves answer a few of the practical
+            points, and raise a couple of warnings.
+          </p>
+          <ul>
+            <li><strong>Curbside delivery.</strong> The TM3000 and TM4000C listings both say the treadmill is "dropped off
+            at the nearest curb outside your home" and that in-home setup is not included, and both tell you to check the
+            weight before buying. LifeSmart gives the TM5000 at 211.6 lb, so plan for two people to move the box. Our
+            <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a> covers
+            what curbside means in practice.</li>
+            <li><strong>Prime-only pricing.</strong> The TM3000's $999 on 27 November was a Prime-exclusive price; the same
+            listing offered it at $1,199 without Prime. Check which price is in your basket.</li>
+            <li><strong>Low stock.</strong> On Black Friday morning the TM3000 showed "only 5 left", the TM4000C "only 4
+            left", the TM2000C "only 10 left" and the TM2202 "only 3 left"; the TM2500 was unavailable. Only the TM5000 and
+            AT1 Pro were simply "in stock".</li>
+            <li><strong>Warranty claims.</strong> LifeSmart's warranty page says claims are made through the retailer where
+            you bought the treadmill. Buying from LifeSmart Global on Amazon keeps the seller and the brand the same, but
+            keep the order confirmation and the listing text, and check the listing's return terms before ordering a
+            treadmill this heavy.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Figures that disagree within the same listing</h3>
+          <p>
+            Two LifeSmart listings contradict themselves. The TM3000's title says 12.5 mph, matching LifeSmart's store,
+            but one of its feature bullets says the motor performs "whether you're walking, jogging, or sprinting up to 14
+            MPH", wording repeated from the TM4000C listing. The TM2500 listing has a bullet giving a 0 to 12 mph speed
+            range and another describing sprinting "up to 14 MPH". For the TM3000 the lower figure matches both the
+            listing title and LifeSmart's store, so treat 14 mph as a copy-and-paste error; for the TM2500, assume 12 mph
+            until LifeSmart confirms otherwise. It is the same pattern as the motor and capacity conflicts elsewhere on
+            this page: on LifeSmart, check the figure that matters to you in more than one place.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Amazon, Costco or LifeSmart's store?</h3>
+          <p>
+            Amazon's Black Friday prices matched what LifeSmart's own store asked on 5 November for the TM4000C, TM5000
+            and TM2202, and matched it for the TM3000 only with Prime. Costco's LifeSmarts, such as the TM6500 and TM55,
+            are mostly Costco-only model numbers, and Costco's returns policy is the strongest protection against a one-year
+            warranty (our <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">buying a treadmill at Costco</a>
+            guide explains it). If you want a model Amazon sells, the price is the same either way, so buy where the
+            return terms and delivery suit you best.
           </p>`,
     },
     {
