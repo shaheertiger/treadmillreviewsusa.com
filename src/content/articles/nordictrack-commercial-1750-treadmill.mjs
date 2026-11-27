@@ -1,11 +1,11 @@
 export default {
   slug: 'nordictrack-commercial-1750-treadmill',
-  title: 'NordicTrack Commercial 1750 Review (2026): Specs and Verdict',
-  description: `The Commercial 1750 is the default NordicTrack for runners: 22 x 60 in. deck, -3% to 12% incline, 400 lb rating and a lifetime motor warranty, about $2,000.`,
+  title: "NordicTrack Commercial 1750 Review (2026): Lifetime Motor",
+  description: "NordicTrack Commercial 1750 review: lifetime motor warranty, 400 lb rating, 22 x 60 in. deck and -3% to 12% incline for about $2,000. Durability and faults.",
   crumbLabel: 'NordicTrack Commercial 1750',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-14',
   socialProof: '1.9k',
   h1: ['NordicTrack Commercial 1750', 'Treadmill Review'],
@@ -733,5 +733,5 @@ export default {
             does the same work on the belt for less. Whichever you choose, buy by model number, not by
             name — the figures that circulate for the 1750 describe more than one machine.`,
   ],
-  modified: '2026-11-16',
+  modified: '2026-11-27',
 };

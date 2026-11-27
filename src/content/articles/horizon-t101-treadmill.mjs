@@ -1,14 +1,13 @@
 export default {
   slug: 'horizon-t101-treadmill',
-  title: 'Horizon T101 Review (2026): T101 Connect Specs, Walker-First',
-  description:
-    'The Horizon T101 and T101 Connect are no-subscription walking treadmills: 20 x 55 in. deck, 10 mph, 10% incline, lifetime frame and motor. Recall and manual.',
+  title: "Horizon T101 Review (2026): T101 Connect at $699, vs T202",
+  description: "The Horizon T101 Connect is a $699 no-subscription walking treadmill: 20 x 55 in. deck, 10 mph, 10% incline, 300 lb. T101 vs T202, the recall and the manual.",
   crumbLabel: 'Horizon T101 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 20, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-09-15',
-  modified: '2026-11-20',
+  modified: '2026-11-27',
   socialProof: '2.7k',
   h1: ['Horizon T101', 'Treadmill Review'],
   standfirst:

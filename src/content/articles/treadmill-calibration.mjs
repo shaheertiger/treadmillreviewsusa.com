@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-calibration',
-  title: 'How to Calibrate a Treadmill: Speed, Incline and Your Watch',
-  description:
-    'To check treadmill speed, mark the belt, time 10 laps and work out feet per minute: 3 mph is 264 ft/min. Then fix incline and calibrate your watch or foot pod.',
+  title: "Treadmill Calibration: Check Speed, Incline and Watch Pace",
+  description: "To calibrate a treadmill, mark the belt, time 10 laps and work out feet per minute (3 mph = 264 ft/min). Check incline at zero with a level, then your watch.",
   crumbLabel: 'Treadmill Calibration',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Spec Explainer',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-08',
-  modified: '2026-11-21',
+  modified: '2026-11-27',
   socialProof: '1.9k',
   h1: ['Treadmill Calibration:', 'The Machine, the Watch and Which to Trust'],
   standfirst:
