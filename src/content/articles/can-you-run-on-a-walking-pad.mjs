@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-09',
-  modified: '2026-11-16',
+  modified: '2026-11-27',
   socialProof: '1.4k',
   h1: ['Can You Run on', 'a Walking Pad?'],
   standfirst:
@@ -428,6 +428,12 @@ export default {
       title: 'Portable Treadmills',
       blurb: 'Flat pads, 2-in-1 pads and compact folders, and what each one gives up.',
       url: '/best-portable-treadmills/',
+    },
+    {
+      kicker: 'Walking pad',
+      title: 'Walking Pad Overheating',
+      blurb: 'Why it stops and how to cool it.',
+      url: '/walking-pad-overheating/',
     },
   ],
   bottomLine: [

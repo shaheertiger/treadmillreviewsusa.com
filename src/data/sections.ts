@@ -552,6 +552,13 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-with-kinomap/',
           },
           {
+            title: 'Best FitShow Treadmills',
+            description:
+              'Seven treadmills and pads whose listings name the FitShow app, and what the app does.',
+            badge: 'FitShow',
+            url: '/best-treadmills-with-fitshow/',
+          },
+          {
             title: 'Best Treadmills for the Peloton App',
             description:
               'Six treadmills for Peloton classes without a Tread, from a $627 12 mph machine to the 15% incline Sole F65.',
@@ -881,6 +888,20 @@ export const SECTIONS: Section[] = [
               'Stride prices at Echelon and Amazon, Premier membership on top, and five-year cost.',
             badge: 'Echelon',
             url: '/how-much-does-an-echelon-treadmill-cost/',
+          },
+          {
+            title: 'How Much Does a Landice Treadmill Cost?',
+            description:
+              'L7 and L8 by console and belt, the Black Friday cart price, $399 delivery and Landice warranty terms.',
+            badge: 'Landice',
+            url: '/how-much-does-a-landice-treadmill-cost/',
+          },
+          {
+            title: 'How Much Does a Precor Treadmill Cost?',
+            description:
+              'New TRM models from $5,885 at a dealer, rebuilt from $2,495, warranty and the 20-amp circuit.',
+            badge: 'Precor',
+            url: '/how-much-does-a-precor-treadmill-cost/',
           },
           {
             title: 'How Much Does a Walking Pad Cost?',
@@ -1623,6 +1644,13 @@ export const SECTIONS: Section[] = [
               'Incline walking pads and an 8 mph folding treadmill on Amazon, YPOO Care warranty terms.',
             badge: 'Walking pad brand',
             url: '/ypoo-treadmills/',
+          },
+          {
+            title: 'CURSOR FITNESS Treadmill Reviews',
+            description:
+              'Walking pads and high-incline treadmills on Amazon, sellers, warranty and listing conflicts.',
+            badge: 'Walking pad brand',
+            url: '/cursor-fitness-treadmills/',
           },
           {
             title: 'Centr Treadmills',
@@ -3260,6 +3288,20 @@ export const SECTIONS: Section[] = [
               'Lubricate first, then quarter turns on the rear bolts: slipping and drift fixed on walking pads.',
             badge: 'Walking pad',
             url: '/walking-pad-belt-slipping/',
+          },
+          {
+            title: 'Walking Pad Making Noise?',
+            description:
+              'Squeaks, clicks and hums by when they happen, and what UREVO and WalkingPad advise.',
+            badge: 'Walking pad',
+            url: '/walking-pad-making-noise/',
+          },
+          {
+            title: 'Walking Pad Overheating',
+            description:
+              'Run-time limits makers state, thermal cut-outs, dry belts, carpet and power strips.',
+            badge: 'Walking pad',
+            url: '/walking-pad-overheating/',
           },
           {
             title: 'Sperax Walking Pad Recall?',

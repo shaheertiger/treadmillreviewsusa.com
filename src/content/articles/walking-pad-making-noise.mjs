@@ -75,7 +75,7 @@ export default {
       id: 'normal',
       heading: 'What a Healthy Walking Pad Sounds Like',
       html: `          <p>
-            No walking pad is silent, so before chasing a noise it helps to know what you are comparing against. A pad that
+            No <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> is silent, so before chasing a noise it helps to know what you are comparing against. A pad that
             is working properly makes three kinds of sound, and all three are steady and predictable: they rise and fall with
             speed and with your footsteps, and they do not change from one week to the next.
           </p>
@@ -157,7 +157,7 @@ export default {
             sliding across it. If the lubricant between belt and deck has worn thin, the belt grabs and releases with each
             step and you hear a squeak or a rubbery chirp. Because a walking pad belt is short, every part of it passes under
             your foot far more often than on a long treadmill belt, so a dry patch is heard sooner. The clue is that the
-            squeak follows your steps and often gets worse in a long desk session. UREVO&rsquo;s FAQ (read 27 November 2026)
+            squeak follows your steps and often gets worse in a long desk session. <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a>&rsquo;s FAQ (read 27 November 2026)
             gives lubrication as its first fix for noise: it says to try &ldquo;adding lubricant under the running belt on
             both sides&rdquo; and then let the machine idle for 5 to 10 minutes so the lubricant spreads, and to contact
             customer service if the noise continues.
@@ -384,7 +384,7 @@ export default {
             <a href="/walking-pad-overheating/" class="${a}">walking pad overheating</a>.</li>
             <li>The belt scraping the motor cover, or a belt edge that is fraying, curling or melting.</li>
             <li>A grind or rumble from a roller end that does not go away, or a roller that wobbles.</li>
-            <li>The motor humming while the belt barely moves, or the belt slipping and catching under your feet.</li>
+            <li>The motor humming while the belt barely moves, or the <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium" data-autolink>belt slipping</a> and catching under your feet.</li>
             <li>Speed changing by itself, or sudden stops, along with the noise.</li>
             <li>Buzzing, crackling or heat at the cord, plug or socket.</li>
           </ul>

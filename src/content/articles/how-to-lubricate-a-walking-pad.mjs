@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-09',
-  modified: '2026-11-23',
+  modified: '2026-11-27',
   socialProof: '1.2k',
   h1: ['How to Lubricate', 'a Walking Pad'],
   standfirst:
@@ -446,6 +446,12 @@ export default {
       title: 'Walking Pad Belt Slipping or Off-Center',
       blurb: 'Lubricate, tension and track a walking pad belt.',
       url: '/walking-pad-belt-slipping/',
+    },
+    {
+      kicker: 'Walking pad',
+      title: 'Walking Pad Making Noise?',
+      blurb: 'Squeak, click and hum fixes.',
+      url: '/walking-pad-making-noise/',
     },
   ],
   bottomLine: [

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-27',
   socialProof: '2.2k',
   h1: ['Best Treadmill Workout Apps', 'and What Each One Controls'],
   standfirst:
@@ -475,6 +475,12 @@ export default {
       title: 'Making Treadmill Running Less Boring',
       blurb: 'Session ideas, entertainment and structure that keep you on the belt.',
       url: '/how-to-make-treadmill-running-less-boring/',
+    },
+    {
+      kicker: 'Apps',
+      title: 'Best FitShow Treadmills',
+      blurb: 'Picks whose listings name the FitShow app.',
+      url: '/best-treadmills-with-fitshow/',
     },
   ],
   bottomLine: [

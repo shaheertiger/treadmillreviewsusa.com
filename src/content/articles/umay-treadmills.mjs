@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-11-05',
-  modified: '2026-11-17',
+  modified: '2026-11-27',
   socialProof: '1.5k',
   h1: ['UMAY Treadmills:', 'What the Figures Really Say'],
   standfirst:
@@ -417,6 +417,12 @@ export default {
       title: "FUNMILY Treadmills",
       blurb: "An Amazon-led brand whose pads carry 2.5 or 3.5 HP and 300–400 lb depending on the source: models.",
       url: '/funmily-treadmills/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'CURSOR FITNESS Treadmill Reviews',
+      blurb: 'Walking pads and incline treadmills on Amazon.',
+      url: '/cursor-fitness-treadmills/',
     },
   ],
   bottomLine: [

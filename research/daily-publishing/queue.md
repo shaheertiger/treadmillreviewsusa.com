@@ -70,12 +70,12 @@ for it), "how to tighten a treadmill belt" (720; /how-to-adjust-treadmill-belt/)
 - [x] 2026-11-25 · `how-much-does-a-used-treadmill-cost` — How Much Does a Used Treadmill Cost? (2026): Prices by Brand and Age — /price/ — pillar /new-vs-used-treadmill/
 - [x] 2026-11-26 · `treadmill-grinding-noise` — Treadmill Grinding Noise: Rollers, Bearings or Motor? — /problems/ — siblings: clicking, humming, thumping
 - [x] 2026-11-26 · `how-much-does-a-lifespan-treadmill-cost` — How Much Does a LifeSpan Treadmill Cost? (2026): Every Model — /price/ — pillar /lifespan-treadmills/ (LifeSpan Shopify store works)
-- [ ] `walking-pad-making-noise` — Walking Pad Making Noise? Squeak, Click and Hum Fixes — /problems/ — sibling /walking-pad-not-working/
+- [x] 2026-11-27 · `walking-pad-making-noise` — Walking Pad Making Noise? Squeak, Click and Hum Fixes — /problems/ — sibling /walking-pad-not-working/
 - [x] 2026-11-26 · `how-much-does-an-echelon-treadmill-cost` — How Much Does an Echelon Treadmill Cost? (2026) — /price/ — pillar /echelon-treadmills/
 - [~] skipped 2026-11-26: covered by /treadmill-belt-jerking/ (tagged 'treadmill speed fluctuates') · `treadmill-speed-fluctuates` — Treadmill Speed Fluctuates: Surging and Slowing Fixed — /problems/ — link /treadmill-speed-sensor/, /treadmill-belt-jerking/ (check not duplicating)
-- [ ] `how-much-does-a-landice-treadmill-cost` — How Much Does a Landice Treadmill Cost? (2026) — /price/ — pillar /landice-treadmills/
-- [ ] `walking-pad-overheating` — Walking Pad Overheating: Why It Stops and How to Cool It — /problems/ — sibling /treadmill-overheating/
-- [ ] `how-much-does-a-precor-treadmill-cost` — How Much Does a Precor Treadmill Cost? (2026): Home and Gym — /price/ — pillar /precor-treadmills/
+- [x] 2026-11-27 · `how-much-does-a-landice-treadmill-cost` — How Much Does a Landice Treadmill Cost? (2026) — /price/ — pillar /landice-treadmills/
+- [x] 2026-11-27 · `walking-pad-overheating` — Walking Pad Overheating: Why It Stops and How to Cool It — /problems/ — sibling /treadmill-overheating/
+- [x] 2026-11-27 · `how-much-does-a-precor-treadmill-cost` — How Much Does a Precor Treadmill Cost? (2026): Home and Gym — /price/ — pillar /precor-treadmills/
 - [ ] `echelon-treadmill-troubleshooting` — Echelon Treadmill Troubleshooting: Power, Belt and App — /problems/ — pillar /echelon-treadmills/ (maker sources only)
 - [ ] `how-much-does-a-life-fitness-treadmill-cost` — How Much Does a Life Fitness Treadmill Cost? (2026) — /price/ — pillar /life-fitness/
 - [ ] `lifespan-treadmill-troubleshooting` — LifeSpan Treadmill Troubleshooting: Desk Treadmill Fixes — /problems/ — pillar /lifespan-treadmills/

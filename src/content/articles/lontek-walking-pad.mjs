@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-11-21',
+  modified: '2026-11-27',
   h1: ['LONTEK Walking Pad Review:', '15% and 32% Incline Checked'],
   standfirst:
     'A LONTEK walking pad is a cheap, credible choice for incline walking at home if you buy the right listing: the 15% and 32% figures belong to two different machines, both set by hand with fold-out legs rather than a motor, and the listing warranty is one year. This page reads every current LONTEK listing on Amazon and says which figures hold together and which do not.',
@@ -515,6 +516,12 @@ export default {
       title: 'Wellfit TM037 Review',
       blurb: 'Another budget two-in-one pad, read claim by claim.',
       url: '/wellfit-tm037-treadmill/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'CURSOR FITNESS Treadmill Reviews',
+      blurb: 'Walking pads and incline treadmills on Amazon.',
+      url: '/cursor-fitness-treadmills/',
     },
   ],
   bottomLine: [

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-13',
-  modified: '2026-11-26',
+  modified: '2026-11-27',
   socialProof: '2.7k',
   h1: ['Best Walking Pads', 'With Incline'],
   standfirst:
@@ -855,6 +855,12 @@ export default {
       title: 'YPOO Treadmill Reviews',
       blurb: 'Incline pads and a folding treadmill on Amazon.',
       url: '/ypoo-treadmills/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'CURSOR FITNESS Treadmill Reviews',
+      blurb: 'Walking pads and incline treadmills on Amazon.',
+      url: '/cursor-fitness-treadmills/',
     },
   ],
   bottomLine: [

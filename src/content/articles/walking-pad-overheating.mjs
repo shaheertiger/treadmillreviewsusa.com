@@ -155,7 +155,7 @@ export default {
             <li>The belt feels as if it hesitates or catches under each footstrike, especially at slow speeds.</li>
             <li>The pad is noisier than it used to be, often with a squeak or rub in time with your steps.</li>
             <li>Lifting the belt edge and touching the deck underneath (unplugged) shows a dry, rough or dusty surface.</li>
-            <li>It has been longer than the manual&rsquo;s lubrication interval, or you have never lubricated it.</li>
+            <li>It has been longer than the manual&rsquo;s <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>lubrication interval</a>, or you have never lubricated it.</li>
           </ul>
           <p>
             The fix is the lubricant and method the maker specifies, at the interval it specifies. Use only the product the
@@ -254,7 +254,7 @@ export default {
             under-desk set-ups make it especially likely, because the nearest outlet is usually a crowded power strip.
           </p>
           <ul>
-            <li><strong>Plug straight into a wall outlet</strong> as the manual says. UREVO&rsquo;s own guidance is not to use an
+            <li><strong>Plug straight into a wall outlet</strong> as the manual says. <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a>&rsquo;s own guidance is not to use an
             extension cord or power strip unless the manufacturer specifically approves it (UREVO blog, read 27 Nov 2026).</li>
             <li><strong>Do not share the outlet</strong> with a heater, kettle or other big load.</li>
             <li><strong>Feel the plug and outlet</strong> after a session. Warm to the touch is a warning; hot is a reason to stop
@@ -321,11 +321,11 @@ export default {
             plug, this is the sequence:
           </p>
           <ol>
-            <li><strong>Step off and switch off.</strong> Use the power switch, then unplug it if you are going to touch or move
+            <li><strong>Step off and switch off.</strong> Use the <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a>, then unplug it if you are going to touch or move
             anything.</li>
             <li><strong>Leave it to cool for the time the manual gives.</strong> WalkingPad, for example, says 15 to 30 minutes
             for the models it lists. If your manual gives no time, give it a proper break rather than a minute. Do not point a
-            fan into the motor compartment or open the cover to speed things up.</li>
+            fan into the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a> or open the cover to speed things up.</li>
             <li><strong>While it cools, look.</strong> Check the belt is centred and not rubbing a side rail, that nothing is
             caught under the pad, that the floor under it is clear, and that the cord is undamaged.</li>
             <li><strong>Think about what changed.</strong> A new user, a heavier session, a move onto carpet, a new power strip,

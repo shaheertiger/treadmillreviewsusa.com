@@ -161,7 +161,7 @@ export default {
             DISCOUNTS AT CHECKOUT. $1000 OFF ELITE, $800 OFF ACHIEVE, $600 OFF PRO SPORTS. *Terms apply: 11/06/26 -
             12/03/26.” The M2 page read “$800 OFF M2 TREADMILL”, with the same dates. In the cart the discounts were
             applied automatically, under the codes BRPRO600, BFACHIEVE800, BFELITE1000 and BFM2800. The sale runs
-            to 3 December, past Cyber Monday. The terms themselves were not published on the product pages.
+            to 3 December, past <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium" data-autolink>Cyber Monday</a>. The terms themselves were not published on the product pages.
           </p>
           <p>
             The banner did not appear on the club or rehabilitation treadmills, and their prices were unchanged.
@@ -381,7 +381,7 @@ export default {
             </tbody>
           </table></div>
           <p>
-            On paper the rivals win on features per dollar. A Horizon 7.8 AT has a wider and longer deck than the
+            On paper the rivals win on features per dollar. A <a href="/horizon-7-8-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Horizon 7.8 AT</a> has a wider and longer deck than the
             L7 for less than half its delivered price, and a Sole TT8 gives a non-folding 22 by 60-inch deck for
             about $2,330 less than an L7 Pro Sports before delivery. A NordicTrack Commercial 2450 with five years of
             iFIT Pro comes to about $4,279, still under a delivered L7, with a big screen and classes the Landice

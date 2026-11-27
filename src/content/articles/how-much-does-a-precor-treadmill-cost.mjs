@@ -274,7 +274,7 @@ export default {
           <p>
             <strong>The pattern:</strong> a rebuilt Precor with a one-year or longer warranty sold for about a fifth
             to a little over a third of the same model new, a saving of $7,600 to $10,900. That is a steeper
-            discount than the 43% to 59% our used treadmill guide found for Star Trac machines at Fitness Superstore
+            discount than the 43% to 59% our used treadmill guide found for <a href="/star-trac-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Star Trac</a> machines at Fitness Superstore
             on 25 November, partly because Top Fitness’s new Precor prices are high list prices and partly
             because so many ex-gym Precors are on the market.
           </p>
@@ -377,7 +377,7 @@ export default {
       id: 'delivery',
       heading: 'Delivery, Installation and the 20-Amp Circuit',
       html: `          <p>
-            A Precor club treadmill weighs roughly 385 to 430 lb, does not fold and usually arrives mostly or fully
+            A Precor club <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium" data-autolink>treadmill weighs</a> roughly 385 to 430 lb, does not fold and usually arrives mostly or fully
             assembled, so getting it into a room is part of the price. These are the delivery options published on
             27 November 2026.
           </p>
