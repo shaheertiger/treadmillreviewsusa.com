@@ -1,19 +1,17 @@
 export default {
   slug: 'history-of-the-treadmill',
-  title: 'When Was the Treadmill Invented? A Short History, 1818 On',
-  description:
-    'No single inventor: William Cubitt\'s prison treadmill came in 1818, Claude Hagen\'s patent in 1913 and William Staub\'s first home treadmill in the late 1960s.',
+  title: "When Was the Treadmill Invented? 1818, by William Cubitt",
+  description: "The treadmill was invented in 1818 by William Cubitt, as a prison mill. Hagen patented a training one in 1913; Staub built the first home one in the late 1960s.",
   crumbLabel: 'History of the Treadmill',
   kicker: 'History',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   updated: 'November 2026',
-  updatedLong: 'November 18, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-06',
-  modified: '2026-11-18',
+  modified: '2026-11-27',
   socialProof: '1.4k',
-  h1: ['The History of', 'the Treadmill'],
-  standfirst:
-    'There is no single inventor, because the treadmill was invented several times for several different jobs: lifting stone, punishing prisoners, testing hearts and, last of all, getting fit at home.',
+  h1: ["Who Invented the Treadmill,", "and When?"],
+  standfirst: "The treadmill the word was coined for dates to 1818, when engineer William Cubitt introduced it to British prisons. But there is no single inventor: it was reinvented several times for different jobs, from lifting stone and punishing prisoners to testing hearts and, last of all, getting fit at home.",
   ctas: [
     { label: 'The Short Answer', href: '#short-answer' },
     { label: 'The Timeline', href: '#timeline' },

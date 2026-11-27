@@ -194,7 +194,13 @@ export default {
             <li>If it returns, do the check the manual gives for that code, usually the safety key, the belt or the
             connection to the controller.</li>
             <li>If it still returns, send the code, the model and a short video to the brand.</li>
-          </ol>`,
+          </ol>
+          <p>
+            Two brands publish their codes in full, and we have collected them: see our
+            <a href="/walkingpad-troubleshooting/" class="text-[#0F62FE] font-medium">WalkingPad troubleshooting</a> guide (E01 to E11, SAFE, Press and
+            Rest) and our <a href="/urevo-walking-pad-troubleshooting/" class="text-[#0F62FE] font-medium">UREVO walking pad troubleshooting</a> guide
+            (safety-key and wiring codes, belt turns and remote fixes).
+          </p>`,
     },
     {
       id: 'setup',

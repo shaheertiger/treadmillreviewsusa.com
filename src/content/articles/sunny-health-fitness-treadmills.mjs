@@ -11,9 +11,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-27',
   socialProof: '1.3k',
   h1: ['Sunny Health & Fitness Treadmills:', 'A Buyer’s Guide to the Range'],
   standfirst:
@@ -359,7 +359,8 @@ export default {
       html: `          <p>
             Sunny’s warranty and return terms are published and specific, which is more than many budget brands
             manage. They are also short on everything except the frame, and they read slightly differently
-            depending on which page you open.
+            depending on which page you open. For what every current Sunny model costs, on Sunny’s store and on
+            Amazon, see our <a href="/how-much-does-a-sunny-treadmill-cost/" class="text-[#0F62FE] font-medium">Sunny treadmill cost</a> guide.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The warranty</h3>
           <p>

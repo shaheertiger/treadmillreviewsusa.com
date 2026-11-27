@@ -49,7 +49,8 @@ export default {
             and the Woodway 4Front at $13,995 (all checked November 2026).</li>
             <li><strong>Commercial machines sold to homes:</strong> Life Fitness's own consumer store
             listed new "outlet" Integrity treadmills at $5,940 and $7,183, depending on console (checked
-            November 2026).</li>
+            November 2026). Its home models are priced console by console in our
+            <a href="/how-much-does-a-life-fitness-treadmill-cost/" class="text-[#0F62FE] font-medium">Life Fitness treadmill cost</a> guide.</li>
             <li><strong>Remanufactured belt treadmills:</strong> a <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Precor TRM</a> 835 from $2,495 and a Matrix
             T3x at $3,799 at US resellers (checked November 2026). Slat-belt machines cost more: a
             remanufactured Woodway 4Front was $9,599.</li>

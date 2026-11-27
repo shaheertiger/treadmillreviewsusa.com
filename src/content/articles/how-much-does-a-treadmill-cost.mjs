@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-06',
-  modified: '2026-11-25',
+  modified: '2026-11-27',
   socialProof: '2.1k',
   h1: ['How Much Does', 'a Treadmill Cost?'],
   standfirst: `Anywhere from about $200 to well over $10,000, which is not a useful answer until you know what the money buys at each step. Here are the tiers, what changes between them, and the costs that arrive after checkout.`,
@@ -346,6 +346,11 @@ export default {
           For every NordicTrack model priced with its iFIT membership over three and five years, see
             <a href="/how-much-does-a-nordictrack-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a NordicTrack treadmill costs</a>; for every Horizon from the T101 to the 7.8 AT, with Amazon and Horizon prices side by side, see
             <a href="/how-much-does-a-horizon-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a Horizon treadmill costs</a>.
+            At the budget end, our <a href="/how-much-does-a-sunny-treadmill-cost/" class="text-[#0F62FE] font-medium">Sunny treadmill cost</a> guide prices
+            every Sunny model on its store and Amazon, and our
+            <a href="/how-much-does-a-urevo-walking-pad-cost/" class="text-[#0F62FE] font-medium">UREVO walking pad cost</a> guide does the same for UREVO’s
+            pads; at the top, our <a href="/how-much-does-a-life-fitness-treadmill-cost/" class="text-[#0F62FE] font-medium">Life Fitness treadmill cost</a>
+            guide has every console of the F3, T3, Run CX and Club Series+.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead>

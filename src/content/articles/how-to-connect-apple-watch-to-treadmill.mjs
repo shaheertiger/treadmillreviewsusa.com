@@ -1,15 +1,14 @@
 export default {
   slug: 'how-to-connect-apple-watch-to-treadmill',
-  title: 'How to Connect Apple Watch to a Treadmill: GymKit and Strava',
-  description:
-    'How to connect an Apple Watch to a treadmill with GymKit, what to do when your machine lacks it, why distances disagree, and how to log treadmill runs on Strava.',
+  title: "How to Connect Apple Watch to a Treadmill: GymKit in 3 Steps",
+  description: "Turn on gym-equipment detection, hold your Apple Watch to the treadmill's GymKit reader until it taps, then press start. No GymKit? Start an Indoor Run instead.",
   crumbLabel: 'How to Connect Apple Watch to a Treadmill',
   kicker: 'How-To',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-27',
   socialProof: '2.3k',
   h1: ['How to Connect Apple Watch', 'to a Treadmill'],
   standfirst:

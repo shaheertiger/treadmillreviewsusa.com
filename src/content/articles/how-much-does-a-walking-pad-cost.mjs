@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-11-21',
-  modified: '2026-11-24',
+  modified: '2026-11-27',
   h1: ['How Much Does', 'a Walking Pad Cost?'],
   standfirst: `Most walking pads cost between about $130 and $450, and pads with incline, a handrail or a fold-up running mode stretch the range to roughly $800. Here is what each type costs today, what the extra money buys, and what you will spend after checkout.`,
   ctas: [
@@ -42,6 +42,9 @@ export default {
             fold-up running mode.</strong> Those ranges come from the prices the two biggest
             direct-selling walking pad brands, WalkingPad and <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a>, were charging on their own
             stores on 21 November 2026, set against what the same kinds of pads sell for elsewhere.
+            Every UREVO model is priced, store against Amazon, in our
+            <a href="/how-much-does-a-urevo-walking-pad-cost/" class="text-[#0F62FE] font-medium">UREVO walking pad cost</a> guide, and this week’s
+            sale prices are on our <a href="/cyber-monday-walking-pad-deals/" class="text-[#0F62FE] font-medium">Cyber Monday walking pad deals</a> page.
           </p>
           <ul>
             <li><strong>Budget flat pad:</strong> about $130-$250. UREVO's SpaceWalk E1L was $132.99

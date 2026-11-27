@@ -10,9 +10,9 @@ export default {
   crumbLabel: 'WalkingPad Z1',
   kicker: 'Product Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-20',
-  modified: '2026-11-15',
+  modified: '2026-11-27',
   socialProof: '1.9k',
   h1: ['WalkingPad Z1', 'Review: Folds in Half, Walks Only'],
   standfirst:
@@ -377,7 +377,9 @@ export default {
             Register the pad, keep the receipt, and before buying an extension, read who handles
             claims and whether it covers the motor. Our
             <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            lists the questions to ask.
+            lists the questions to ask, and our
+            <a href="/walkingpad-troubleshooting/" class="text-[#0F62FE] font-medium">WalkingPad troubleshooting</a>
+            guide has WalkingPad’s own fixes for error codes and the SAFE and Rest messages before you claim.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Returns: 30 days, with costs</h3>
           <p>

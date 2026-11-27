@@ -1,19 +1,17 @@
 export default {
   slug: 'zone-2-training-on-a-treadmill',
-  title: 'Zone 2 Training on a Treadmill: Walking, Incline and Pace',
-  description:
-    'How to do zone 2 training on a treadmill: what zone 2 is, the talk test, why heart-rate formulas are crude, using incline walking to get there, session length, progression and drift.',
+  title: "How to Get to Zone 2 on a Treadmill: 3–3.8 mph, 3–10% Incline",
+  description: "To reach zone 2 on a treadmill, walk at 3 to 3.8 mph and raise the incline to 3–10% until you can talk but not sing. Hold it 30–60 minutes, 2–4 times a week.",
   crumbLabel: 'Zone 2 Training on a Treadmill',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-27',
   socialProof: '2.1k',
-  h1: ['Zone 2 Training', 'on a Treadmill'],
-  standfirst:
-    'Zone 2 is easy, conversational exercise held for a decent length of time — and a treadmill, with its incline button, is one of the easiest places to do it. Here is how to find it, how long to stay there and how to tell it is working.',
+  h1: ["How to Get to Zone 2", "on a Treadmill"],
+  standfirst: "For most people, zone 2 on a treadmill is a brisk walk at 3 to 3.8 mph on a 3 to 10% incline: easy enough to talk in full sentences, held for 30 to 60 minutes. Here is how to find your own settings, how long to stay there and how to tell it is working.",
   ctas: [
     { label: 'Find Your Zone 2', href: '#finding-it' },
     { label: 'Zone 2 Walking', href: '#incline-walking' },

@@ -1,17 +1,16 @@
 export default {
   slug: 'gymproluxe-review',
-  title: 'GymProLuxe Review (2026): What We Could and Could Not Verify',
-  description:
-    'GymProLuxe is a real UK seller of a band-and-bar resistance kit. What we verified, the conflicting return terms, the warranty fine print and who the set suits.',
+  title: "GymProLuxe Review (2026): Is It Any Good? Legit, With Caveats",
+  description: "Is GymProLuxe any good? It is a real UK company; its $133 band-and-bar kit suits upper-body work, but its 30-day and 100-day return terms conflict.",
   crumbLabel: 'GymProLuxe Review',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Product Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-16',
-  modified: '2026-11-15',
+  modified: '2026-11-27',
   socialProof: '1.7k',
-  h1: ['GymProLuxe Review:', 'What We Could and Could Not Verify'],
+  h1: ["GymProLuxe Review:", "Is It Legit, and Is It Any Good?"],
   standfirst:
     'GymProLuxe is a real, traceable UK business selling a portable resistance band and bar kit. The product is a reasonable idea for travel and small spaces; the terms around it need reading more carefully than the product page suggests.',
   ctas: [
