@@ -105,8 +105,8 @@ export default {
       id: "urevo-strol-2e",
       name: "UREVO Strol 2E",
       category: "Closest on Amazon to the Strol 2S Pro: UREVO’s Budget 2-in-1",
-      badge: "Closest on Amazon",
-      priceRange: "$169.99 at UREVO (5 Nov 2026)",
+      badge: "Closest Budget Alternative",
+      priceRange: "$161.99 at UREVO (27 Nov 2026)",
       specs: "0.6–6.2 mph with handle up · 265 lb capacity · about 15 x 40 in. belt · no incline",
       pros: [
         "A fold-down handle and a 6.2 mph top speed with the handle raised",
@@ -118,8 +118,8 @@ export default {
         "Sources give the belt as 40.1 or 40.2 inches long, shorter than the 2S Pro’s 42.5 inches",
         "Narrow at 15 inches; walking speed is capped at 4 mph with the handle folded",
       ],
-      bottomLine: "The cheapest UREVO 2-in-1 sold on Amazon: a fold-down handle and a short jog to 6.2 mph, without the Strol 2S Pro’s incline or longer belt.",
-      description: "The Strol 2S Pro is sold in UREVO’s own US store and we could not find an Amazon US listing that names it, so this card is UREVO’s budget 2-in-1 that Amazon does sell: a walking pad with a handle that folds flat and a short jogging mode. UREVO’s US store listed the Strol 2E in stock at $169.99, against $289.99, on 5 November 2026. UREVO gives 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it raised, a 265 lb maximum load, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty, and Live Science and T3, both of which reviewed it hands-on, give the same 265 lb and 6.2 mph. The belt is 40.2 inches long on UREVO’s page and 40.1 in other listings, which is why the card rounds. Against the Strol 2S Pro it gives up the powered incline, about two inches of belt and over a mile an hour of top speed; if you want incline in a UREVO 2-in-1 from Amazon, the Strol 2E Pro above has it.",
+      bottomLine: "UREVO’s budget 2-in-1: a fold-down handle and a short jog to 6.2 mph, without the Strol 2S Pro’s incline or longer belt.",
+      description: "The Strol 2S Pro is sold in UREVO’s own US store and we could not find an Amazon US listing that names it, so this card is UREVO’s budget 2-in-1: a walking pad with a handle that folds flat and a short jogging mode. UREVO’s US store listed the Strol 2E in stock at $169.99, against $289.99, on 5 November 2026. UREVO gives 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it raised, a 265 lb maximum load, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty, and Live Science and T3, both of which reviewed it hands-on, give the same 265 lb and 6.2 mph. The belt is 40.2 inches long on UREVO’s page and 40.1 in other listings, which is why the card rounds. Against the Strol 2S Pro it gives up the powered incline, about two inches of belt and over a mile an hour of top speed; if you want incline in a UREVO 2-in-1 from Amazon, the Strol 2E Pro above has it. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.",
     },
     {
       id: "lastforever-walking-treadmill",

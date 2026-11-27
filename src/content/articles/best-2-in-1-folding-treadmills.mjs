@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-27',
   socialProof: '2.0k',
   h1: ['Best 2-in-1', 'Folding Treadmills'],
   standfirst:
@@ -291,13 +291,13 @@ export default {
       category: 'Best Overall 2-in-1 Folding Treadmill',
       badge: 'Best Overall',
       amazonUrl: 'https://www.amazon.com/s?k=UREVO+Strol+2E&tag=sktiger-20',
-      priceRange: 'About $170 (Amazon, 6 Nov 2026)',
+      priceRange: '$161.99 at UREVO (27 Nov 2026)',
       specs: '15 x 40.1 in. track · 0.6–4 mph walking mode · 0.6–6.2 mph running mode · remote with one-key mute · UREVO app',
       pros: [
         'A known brand with its own storefront and app, at a price close to the anonymous listings',
-        'The listing states both speed ranges and the track size clearly',
+        'The Amazon listing stated both speed ranges and the track size clearly on 6 November',
         'The magnetic remote clips to the frame, so it is less likely to go missing under a desk',
-        'Eight silicone shock absorbers and two rubber pads under the deck, by the listing',
+        'Eight silicone shock absorbers and two rubber pads under the deck, by the 6 November listing',
       ],
       cons: [
         'The listing bullets did not state a weight limit on the day we checked',
@@ -307,7 +307,7 @@ export default {
       bottomLine:
         'The 2-in-1 to buy if you mainly walk and want an occasional easy jog from a brand that publishes its figures. Check the weight limit with UREVO if you are over about 220 lb.',
       description:
-        "The Strol 2E is UREVO's entry-level 2-in-1 and our pick for most people because it does the basics well at a sensible price. Its Amazon listing describes a 15 by 40.1-inch track with a five-layer belt, eight silicone shock absorbers and two soft rubber pads, two speed modes — 0.6 to 4 mph with the handle folded and 0.6 to 6.2 mph with it raised — and an LED display showing time, calories, steps, speed and distance. Control is by a remote with a one-key mute and a magnetic back that sticks to the treadmill, or by the UREVO Sport app. The 4 mph walking cap is higher than the Goplus 2.25HP's 2.5 mph, which matters if you walk briskly at a desk. The 6.2 mph running ceiling suits an easy jog rather than real running, and the 40-inch track sets the same limit from the other direction. The listing asks you to lubricate the belt every 125 miles, which is a useful honest detail. What it does not give in the bullets is a maximum user weight or a unit weight, so if either matters to you, confirm it with UREVO before ordering. Amazon showed it at $169.99 on 6 November 2026.",
+        "The Strol 2E is UREVO's entry-level 2-in-1 and our pick for most people because it does the basics well at a sensible price. Its Amazon listing described, when we checked on 6 November 2026, a 15 by 40.1-inch track with a five-layer belt, eight silicone shock absorbers and two soft rubber pads, two speed modes — 0.6 to 4 mph with the handle folded and 0.6 to 6.2 mph with it raised — and an LED display showing time, calories, steps, speed and distance. Control is by a remote with a one-key mute and a magnetic back that sticks to the treadmill, or by the UREVO Sport app. The 4 mph walking cap is higher than the Goplus 2.25HP's 2.5 mph, which matters if you walk briskly at a desk. The 6.2 mph running ceiling suits an easy jog rather than real running, and the 40-inch track sets the same limit from the other direction. The listing asks you to lubricate the belt every 125 miles, which is a useful honest detail. What it does not give in the bullets is a maximum user weight or a unit weight, so if either matters to you, confirm it with UREVO before ordering. Amazon showed it at $169.99 on 6 November 2026. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.",
     },
     {
       id: 'goplus-2-in-1-2-25hp',

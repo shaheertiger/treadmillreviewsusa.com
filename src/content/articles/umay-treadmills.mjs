@@ -122,7 +122,7 @@ export default {
       category: 'Budget 2-in-1 Alternative',
       badge: 'Cheapest Checked 2-in-1',
       amazonUrl: 'https://www.amazon.com/s?k=UREVO+Strol+2E&tag=sktiger-20',
-      priceRange: '$169.99 at UREVO (5 Nov 2026)',
+      priceRange: '$161.99 at UREVO (27 Nov 2026)',
       specs: '0.6–6.2 mph with handle up · 265 lb capacity · about 15 x 40 in. belt · no incline',
       pros: [
         'UREVO and two hands-on reviews agree on the 265 lb rating and 6.2 mph',
@@ -137,7 +137,7 @@ export default {
       bottomLine:
         'The cheaper, better-reviewed 2-in-1 to compare the U20F against if you do not need an incline.',
       description:
-        'The Strol 2E is UREVO’s budget 2-in-1 walking pad with a handle that folds flat. UREVO’s US store listed it in stock at $169.99, against $289.99, on 5 November 2026, with 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it raised, a 265 lb maximum load, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty. Live Science and T3, both of which reviewed it hands-on, give the same 265 lb and 6.2 mph, which is more independent confirmation than any UMAY pad has. The belt is 40.2 inches long on UREVO’s page and 40.1 in other listings, which is why the card rounds.',
+        'The Strol 2E is UREVO’s budget 2-in-1 walking pad with a handle that folds flat. UREVO’s US store listed it in stock at $169.99, against $289.99, on 5 November 2026, with 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it raised, a 265 lb maximum load, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty. Live Science and T3, both of which reviewed it hands-on, give the same 265 lb and 6.2 mph, which is more independent confirmation than any UMAY pad has. The belt is 40.2 inches long on UREVO’s page and 40.1 in other listings, which is why the card rounds. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.',
     },
   ],
   sections: [

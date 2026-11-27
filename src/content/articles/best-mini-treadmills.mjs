@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-27',
   socialProof: '1.6k',
   h1: ['Best Mini Treadmills', 'for Small Homes and Desks'],
   standfirst:
@@ -127,7 +127,7 @@ export default {
       category: 'Best Mini Treadmill With a Handle',
       badge: 'Best With Handle',
       amazonUrl: 'https://www.amazon.com/s?k=UREVO+Strol+2E&tag=sktiger-20',
-      priceRange: '$169.99 at UREVO (5 Nov 2026)',
+      priceRange: '$161.99 at UREVO (27 Nov 2026)',
       specs: 'About 48 lb · 4.6 in. tall folded · 0.6–6.2 mph with handle up · 265 lb capacity · about 15 x 40 in. belt',
       pros: [
         'A handle that folds flat, so it stores as low as a flat pad',
@@ -142,7 +142,7 @@ export default {
       bottomLine:
         'For a small-space buyer who wants something to hold and the option of a slow jog, at the lowest price on this page.',
       description:
-        'The Strol 2E is the smallest 2-in-1 we could check. UREVO’s US store listed it in stock at $169.99, against $289.99, on 5 November 2026, with a 265 lb maximum load, 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it up, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty. Live Science and T3, which both reviewed it hands-on, give the same 265 lb and 6.2 mph, and Live Science found it quiet but its belt short and narrow for taller users. UREVO gives a 40.2 by 15-inch running area and a 47.2 lb weight; other listings give 40.1 inches and T3 about 48 lb. UREVO’s page also lists the unfolded length as 48 inches and the folded length as 51.2, which cannot both be right, so plan around the larger figure. With the handle down it is 4.6 inches tall.',
+        'The Strol 2E is the smallest 2-in-1 we could check. UREVO’s US store listed it in stock at $169.99, against $289.99, on 5 November 2026, with a 265 lb maximum load, 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it up, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty. Live Science and T3, which both reviewed it hands-on, give the same 265 lb and 6.2 mph, and Live Science found it quiet but its belt short and narrow for taller users. UREVO gives a 40.2 by 15-inch running area and a 47.2 lb weight; other listings give 40.1 inches and T3 about 48 lb. UREVO’s page also lists the unfolded length as 48 inches and the folded length as 51.2, which cannot both be right, so plan around the larger figure. With the handle down it is 4.6 inches tall. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.',
     },
   ],
   sections: [

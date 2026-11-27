@@ -13,12 +13,12 @@ const PRODUCTS = [
     brand: "UREVO",
     category: "Best Overall Treadmill Under $200",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
+    amazonUrl: null,
     amazonLabel: "Check Price on Amazon",
-    image: {"url":"https://m.media-amazon.com/images/I/41ZS3Q+sfdL._SL500_.jpg","width":500,"height":500},
+    image: null,
     reviewUrl: null,
-    priceRange: "About $170 (Amazon, 6 Nov 2026)",
-    priceBounds: {"low":170,"high":170},
+    priceRange: "$161.99 at UREVO (27 Nov 2026)",
+    priceBounds: {"low":161.99,"high":161.99},
     specs: "15 x 40.1 in. track · 0.6–4 mph walking mode · 0.6–6.2 mph running mode · remote with one-key mute · UREVO app",
     pros: [
       "A 4 mph walking mode and a 6.2 mph jogging mode for about $170",
@@ -32,7 +32,7 @@ const PRODUCTS = [
       "The jogging mode is an easy jog, not a run",
     ],
     bottomLine: "The most useful machine under $200: a good walking pad with a short jog in reserve, from a brand that publishes its figures.",
-    description: "The Strol 2E is our pick under $200 because it covers the most ground for the least money without relying on an unknown seller. UREVO's Amazon listing describes a 15 by 40.1-inch track with a five-layer anti-slip belt, eight silicone shock absorbers and two soft rubber pads, a walking mode of 0.6 to 4 mph with the handle folded and a running mode of 0.6 to 6.2 mph with it raised, an LED display for time, calories, steps, speed and distance, a remote with a one-key mute and a magnetic back, and the UREVO Sport app. It folds compactly for storage. A 4 mph walking cap is brisk enough for exercise walking, and the 40-inch track is a little longer than the flat pads at this price, which helps taller walkers. The 6.2 mph mode is for short, easy jogs rather than running. The listing helpfully tells you to lubricate the belt every 125 miles; what it does not give is a maximum user weight, so check with UREVO if you are over about 220 lb. Amazon showed it at $169.99 on 6 November 2026.",
+    description: "The Strol 2E is our pick under $200 because it covers the most ground for the least money without relying on an unknown seller. UREVO's Amazon listing described, when we checked on 6 November 2026, a 15 by 40.1-inch track with a five-layer anti-slip belt, eight silicone shock absorbers and two soft rubber pads, a walking mode of 0.6 to 4 mph with the handle folded and a running mode of 0.6 to 6.2 mph with it raised, an LED display for time, calories, steps, speed and distance, a remote with a one-key mute and a magnetic back, and the UREVO Sport app. It folds compactly for storage. A 4 mph walking cap is brisk enough for exercise walking, and the 40-inch track is a little longer than the flat pads at this price, which helps taller walkers. The 6.2 mph mode is for short, easy jogs rather than running. That listing told you to lubricate the belt every 125 miles; what it did not give was a maximum user weight, so check with UREVO if you are over about 220 lb. Amazon showed it at $169.99 on 6 November 2026. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.",
   },
   {
     id: "urevo-smart-walking-pad",
@@ -214,7 +214,7 @@ const schema = {
       description: description,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-11-06",
-      dateModified: "2026-11-15",
+      dateModified: "2026-11-27",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
     ...PRODUCTS.map((product) => ({
@@ -230,7 +230,7 @@ const schema = {
               priceCurrency: "USD",
               lowPrice: product.priceBounds.low,
               highPrice: product.priceBounds.high,
-              url: product.amazonUrl,
+              ...(product.amazonUrl ? { url: product.amazonUrl } : {}),
             },
           }
         : {}),
@@ -262,7 +262,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
   ogType="article"
   article={{
     publishedTime: "2026-11-06",
-    modifiedTime: "2026-11-15",
+    modifiedTime: "2026-11-27",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
@@ -275,7 +275,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "Best Overall: UREVO Strol 2E", link: PRODUCTS[0].amazonUrl }}
+  stickyCta={{ text: "Best Overall: UREVO Strol 2E", link: "#urevo-strol-2e" }}
 >
   <article class="ed-article" data-template="editorial">
     <div class="ed-col">
@@ -295,7 +295,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
         <div class="ed-byline-text">
           By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
-          Updated November 15, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          Updated November 27, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
           <span class="ed-method">How we chose: makers’ published specifications and manuals, independent reviews and owner reports, cross-checked. Not tested hands-on.</span>
         </div>
         <a href="#top-picks" class="btn-ghost">View products</a>
@@ -306,11 +306,11 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 
       <figure class="ed-hero">
         <div class="ed-hero-collage">
-          <a href="#urevo-strol-2e"><img src="https://m.media-amazon.com/images/I/41ZS3Q+sfdL._SL500_.jpg" alt="UREVO Strol 2E" width="500" height="500" decoding="async" /></a>
           <a href="#urevo-smart-walking-pad"><img src="https://m.media-amazon.com/images/I/41bR35pRVJL._SL500_.jpg" alt="UREVO Smart Walking Pad" width="500" height="500" decoding="async" /></a>
           <a href="#goplus-2-in-1-2-25hp"><img src="https://m.media-amazon.com/images/I/41SEoBJ8pLS._SL500_.jpg" alt="Goplus 2 in 1 Folding Treadmill 2.25HP" width="500" height="500" decoding="async" /></a>
+          <a href="#urevo-strol-2e-pro"><img src="https://m.media-amazon.com/images/I/410e3-vj4nL._SL500_.jpg" alt="UREVO Strol 2E Pro" width="500" height="500" decoding="async" /></a>
         </div>
-        <figcaption>UREVO Strol 2E · UREVO Smart Walking Pad · Goplus 2 in 1 Folding Treadmill 2.25HP</figcaption>
+        <figcaption>UREVO Smart Walking Pad · Goplus 2 in 1 Folding Treadmill 2.25HP · UREVO Strol 2E Pro</figcaption>
       </figure>
 
       <div class="ed-body prose prose-lg">
@@ -329,7 +329,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           <ul>
             <li>
               <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#urevo-strol-2e">UREVO Strol 2E</a></span>
-              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+              
             </li>
             <li>
               <span class="tp-label"><span class="tp-award">Best Walking Pad:</span> <a href="#urevo-smart-walking-pad">UREVO Smart Walking Pad</a></span>
@@ -421,14 +421,13 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
                     <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
                   </a> )}
                 <div class="ed-p-buy">
-                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
-                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
-                    <span>Amazon &rarr;</span>
-                  </a>
-                  <span class="ed-buy-note">
+                  {product.amazonUrl && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                      <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                      <span>Amazon &rarr;</span>
+                    </a> )} <span class="ed-buy-note">
                     {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
-                    Prices and availability change often; Amazon shows today's price.
-                  </span>
+                    Prices and availability change often, so check the seller's own page for today's price before you buy.
+                  </span> {!product.amazonUrl && ( <span class="ed-buy-note">No current Amazon listing matches this model, so there is no buy link; check the maker's own store.</span> )}
                 </div>
               </div>
               <div class="ed-proscons">
@@ -455,7 +454,8 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
                 </>
               )}
               <p class="ed-p-links">
-                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+                {product.amazonUrl && <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a>}
+                {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
               </p>
             </section>
           ))

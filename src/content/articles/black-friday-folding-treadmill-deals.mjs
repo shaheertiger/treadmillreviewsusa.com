@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-28',
-  modified: '2026-11-16',
+  modified: '2026-11-27',
   socialProof: '2.4k',
   h1: ['Black Friday', 'Folding Treadmill Deals 2026'],
   standfirst:
@@ -469,7 +469,7 @@ export default {
       bottomLine:
         'The compact option for a studio where nothing can stand against a wall. Good at $150 or less; do not pay more than UREVO’s own $169.99.',
       description:
-        'The Strol 2E is the one machine here that is not a full folding treadmill. It is a walking pad with a fold-up handlebar, and it is on the list because in the smallest homes it is the only kind of machine that disappears completely. UREVO’s product page and an independent tracker agree on a 40.2 by 15-inch belt, 0.6 to 4 mph with the bar folded and up to 6.2 mph with it raised, a 265 lb capacity and a 47.2 lb weight; UREVO gives the folded size as 51.2 by 22.6 by 4.6 inches. On 28 October 2026 UREVO’s own store showed it in stock at $169.99 against a $289.99 compare-at price, and our Amazon roundup saw listings between about $190 and $250 on 13 October; we noted it sold out on 20 October, so check stock on the listing you use. Our target is $150 or less, because UREVO’s own price is already low. Check the model: at least one Amazon listing titled “Strol 2E” describes the incline and 300 lb limit of the Strol 2E Pro. For more pads, see our walking pad deals page.',
+        'The Strol 2E is the one machine here that is not a full folding treadmill. It is a walking pad with a fold-up handlebar, and it is on the list because in the smallest homes it is the only kind of machine that disappears completely. UREVO’s product page and an independent tracker agree on a 40.2 by 15-inch belt, 0.6 to 4 mph with the bar folded and up to 6.2 mph with it raised, a 265 lb capacity and a 47.2 lb weight; UREVO gives the folded size as 51.2 by 22.6 by 4.6 inches. On 28 October 2026 UREVO’s own store showed it in stock at $169.99 against a $289.99 compare-at price, and our Amazon roundup saw listings between about $190 and $250 on 13 October; we noted it sold out on 20 October, so check stock on the listing you use. Our target is $150 or less, because UREVO’s own price is already low. Check the model: at least one Amazon listing titled “Strol 2E” describes the incline and 300 lb limit of the Strol 2E Pro. For more pads, see our walking pad deals page. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.',
     },
   ],
   faqs: [

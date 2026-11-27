@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-27',
   socialProof: '1.9k',
   h1: ['Best Treadmills', 'Under $200'],
   standfirst:
@@ -228,7 +228,7 @@ export default {
       category: 'Best Overall Treadmill Under $200',
       badge: 'Best Overall',
       amazonUrl: 'https://www.amazon.com/s?k=UREVO+Strol+2E&tag=sktiger-20',
-      priceRange: 'About $170 (Amazon, 6 Nov 2026)',
+      priceRange: '$161.99 at UREVO (27 Nov 2026)',
       specs: '15 x 40.1 in. track · 0.6–4 mph walking mode · 0.6–6.2 mph running mode · remote with one-key mute · UREVO app',
       pros: [
         'A 4 mph walking mode and a 6.2 mph jogging mode for about $170',
@@ -244,7 +244,7 @@ export default {
       bottomLine:
         'The most useful machine under $200: a good walking pad with a short jog in reserve, from a brand that publishes its figures.',
       description:
-        "The Strol 2E is our pick under $200 because it covers the most ground for the least money without relying on an unknown seller. UREVO's Amazon listing describes a 15 by 40.1-inch track with a five-layer anti-slip belt, eight silicone shock absorbers and two soft rubber pads, a walking mode of 0.6 to 4 mph with the handle folded and a running mode of 0.6 to 6.2 mph with it raised, an LED display for time, calories, steps, speed and distance, a remote with a one-key mute and a magnetic back, and the UREVO Sport app. It folds compactly for storage. A 4 mph walking cap is brisk enough for exercise walking, and the 40-inch track is a little longer than the flat pads at this price, which helps taller walkers. The 6.2 mph mode is for short, easy jogs rather than running. The listing helpfully tells you to lubricate the belt every 125 miles; what it does not give is a maximum user weight, so check with UREVO if you are over about 220 lb. Amazon showed it at $169.99 on 6 November 2026.",
+        "The Strol 2E is our pick under $200 because it covers the most ground for the least money without relying on an unknown seller. UREVO's Amazon listing described, when we checked on 6 November 2026, a 15 by 40.1-inch track with a five-layer anti-slip belt, eight silicone shock absorbers and two soft rubber pads, a walking mode of 0.6 to 4 mph with the handle folded and a running mode of 0.6 to 6.2 mph with it raised, an LED display for time, calories, steps, speed and distance, a remote with a one-key mute and a magnetic back, and the UREVO Sport app. It folds compactly for storage. A 4 mph walking cap is brisk enough for exercise walking, and the 40-inch track is a little longer than the flat pads at this price, which helps taller walkers. The 6.2 mph mode is for short, easy jogs rather than running. That listing told you to lubricate the belt every 125 miles; what it did not give was a maximum user weight, so check with UREVO if you are over about 220 lb. Amazon showed it at $169.99 on 6 November 2026. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.",
     },
     {
       id: 'urevo-smart-walking-pad',
