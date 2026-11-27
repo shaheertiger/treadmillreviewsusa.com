@@ -13,6 +13,8 @@ traffic-lane pages per engine, ranked by that engine's type index, with no page 
 Write all six to the full standard in §2; if time runs short, ship fewer complete pages rather than six thin ones,
 and say so in the PR.
 
+**Rules override picks (owner, 27 Nov 2026):** every pick, including the PERFORMANCE.md picks, must pass the STOP rules in §0a (T1-T5). If a pick breaks one, defer it and take the next eligible item for that engine. Google is ignored. Each run also makes up to 3 CTR fixes per §0a T3 before new pages.
+
 The run decides what to write from fresh data, not from this file's older analysis. Before picking topics:
 
 1. **Pull Vercel analytics for every search engine** with the Vercel MCP tool `aggregate_pageviews`
