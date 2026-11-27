@@ -230,7 +230,7 @@ const schema = {
               priceCurrency: "USD",
               lowPrice: product.priceBounds.low,
               highPrice: product.priceBounds.high,
-              url: product.amazonUrl,
+              ...(product.amazonUrl ? { url: product.amazonUrl } : {}),
             },
           }
         : {}),
@@ -455,14 +455,13 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
                     <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
                   </a> )}
                 <div class="ed-p-buy">
-                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
-                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
-                    <span>Amazon &rarr;</span>
-                  </a>
-                  <span class="ed-buy-note">
+                  {product.amazonUrl && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                      <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                      <span>Amazon &rarr;</span>
+                    </a> )} <span class="ed-buy-note">
                     {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
-                    Prices and availability change often; Amazon shows today's price.
-                  </span>
+                    Prices and availability change often, so check the seller's own page for today's price before you buy.
+                  </span> {!product.amazonUrl && ( <span class="ed-buy-note">No current Amazon listing matches this model, so there is no buy link; check the maker's own store.</span> )}
                 </div>
               </div>
               <div class="ed-proscons">
@@ -489,7 +488,8 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
                 </>
               )}
               <p class="ed-p-links">
-                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+                {product.amazonUrl && <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a>}
+                {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
               </p>
             </section>
           ))

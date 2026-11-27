@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-10-13',
-  modified: '2026-11-21',
+  modified: '2026-11-27',
   socialProof: '2.9k',
   h1: ['Best Treadmills', 'on Amazon'],
   standfirst:
@@ -402,10 +402,10 @@ export default {
     {
       id: 'urevo-strol-2e',
       name: 'UREVO Strol 2E',
-      category: 'Best 2-in-1 Walking Pad on Amazon',
+      category: '2-in-1 Walking Pad (Off Amazon for Now)',
       badge: 'Best Under $250',
       amazonUrl: 'https://www.amazon.com/s?k=UREVO+Strol+2E+Folding+Treadmill&tag=sktiger-20',
-      priceRange: '$170–$250',
+      priceRange: '$161.99 at UREVO (27 Nov 2026)',
       specs: '0.6–6.2 mph with bar raised · 40.2 x 15 in. belt · 265 lb capacity · fold-down handlebar · no incline',
       pros: [
         'Raising the front bar lifts the top speed from 4 mph to 6.2 mph, enough for a light jog',
@@ -421,7 +421,7 @@ export default {
       bottomLine:
         'A good first machine for under $250 if you mostly walk and want the option of a short, light jog with something to hold.',
       description:
-        'The Strol 2E is a walking pad with a fold-up front bar, and the bar changes what it can do. With the bar folded flat it is a 0.6 to 4 mph desk pad; raise it and the top speed rises to 6.2 mph, which is a light jog for most adults. UREVO’s product page and independent coverage agree on that speed range, on a 40.2 by 15-inch belt and on a 265 lb capacity. It folds to under 5 inches tall and comes with a remote and app support. UREVO’s own store had it at $169.99 when we checked, and Amazon listings sat between about $190 and $250. This is the pick where reading the listing carefully matters most: at least one Amazon listing titled “Strol 2E” describes a 12% incline and a 300 lb weight recommendation, which belong to the more expensive Strol 2E Pro. The Strol 2E is flat. The belt is narrow and short for real running, and the motor rating is a marketing figure, so treat the jogging mode as occasional.',
+        'The Strol 2E is a walking pad with a fold-up front bar, and the bar changes what it can do. With the bar folded flat it is a 0.6 to 4 mph desk pad; raise it and the top speed rises to 6.2 mph, which is a light jog for most adults. UREVO’s product page and independent coverage agree on that speed range, on a 40.2 by 15-inch belt and on a 265 lb capacity. It folds to under 5 inches tall and comes with a remote and app support. UREVO’s own store had it at $169.99 when we checked, and Amazon listings sat between about $190 and $250. This is the pick where reading the listing carefully matters most: at least one Amazon listing titled “Strol 2E” describes a 12% incline and a 300 lb weight recommendation, which belong to the more expensive Strol 2E Pro. The Strol 2E is flat. The belt is narrow and short for real running, and the motor rating is a marketing figure, so treat the jogging mode as occasional. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.',
     },
     {
       id: 'sunny-sf-t1407smart',

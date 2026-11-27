@@ -87,8 +87,8 @@ const PRODUCTS = [
     name: "UREVO Strol 2E",
     category: "Best 2-in-1 With Handrail",
     badge: "Best 2-in-1",
-    amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20",
-    priceRange: "$169.99 at UREVO (5 Nov 2026)",
+    amazonUrl: null,
+    priceRange: "$161.99 at UREVO (27 Nov 2026)",
     specs: "0.6–6.2 mph with handle up · 265 lb capacity · about 15 x 40 in. belt · no incline",
     pros: [
       "A fold-down handle and a 6.2 mph top speed with the handle raised",
@@ -104,7 +104,7 @@ const PRODUCTS = [
     bottomLine:
       "The right answer if the pad also has to serve as your only treadmill, and the wrong one if it must disappear between uses.",
     description:
-      "This slot used to hold the Sunny SF-T7971, which we could not find sold new on Amazon US, so the card now shows the 2-in-1 Amazon does sell whose figures we could check. The 2-in-1 format raises a handle that folds flat into the deck, which changes what the machine can do. UREVO gives 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it raised, a 265 lb maximum load, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty, and Live Science and T3, both of which reviewed it hands-on, give the same 265 lb and 6.2 mph. With the rail up it doubles as a light jogging machine in a way none of the flat pads can; with the rail down it slides under a desk like the rest. The belt is 40.2 inches long on UREVO’s page and 40.1 in other listings, and 15 inches wide, which is short for jogging if you are tall. It has no incline. UREVO’s US store listed it at $169.99, against $289.99, on 5 November 2026; Amazon prices move often.",
+      "This slot used to hold the Sunny SF-T7971, which we could not find sold new on Amazon US, so the card now shows a UREVO 2-in-1 whose figures we could check. The 2-in-1 format raises a handle that folds flat into the deck, which changes what the machine can do. UREVO gives 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it raised, a 265 lb maximum load, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty, and Live Science and T3, both of which reviewed it hands-on, give the same 265 lb and 6.2 mph. With the rail up it doubles as a light jogging machine in a way none of the flat pads can; with the rail down it slides under a desk like the rest. The belt is 40.2 inches long on UREVO’s page and 40.1 in other listings, and 15 inches wide, which is short for jogging if you are tall. It has no incline. UREVO’s US store listed it at $169.99, against $289.99, on 5 November 2026; Amazon prices move often. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.",
   },
   {
     id: "walkingpad-z1r",
@@ -210,7 +210,7 @@ const schema = {
       description: description,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-09-03",
-      dateModified: "2026-11-16",
+      dateModified: "2026-11-27",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
     ...PRODUCTS.map((product) => ({
@@ -230,7 +230,7 @@ const schema = {
   ogType="article"
   article={{
     publishedTime: "2026-09-03",
-    modifiedTime: "2026-11-16",
+    modifiedTime: "2026-11-27",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
@@ -496,9 +496,13 @@ const schema = {
                   </div>
                   <div class="border-t border-gray-100 pt-4">
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm inline-block">
-                      Check Price on Amazon &rarr;
-                    </a>
+                    {product.amazonUrl ? (
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm inline-block">
+                        Check Price on Amazon &rarr;
+                      </a>
+                    ) : (
+                      <p class="text-sm text-gray-500 mb-0">No current Amazon listing matches this model, so there is no buy link; check the maker’s own store.</p>
+                    )}
                   </div>
                 </div>
               </div>

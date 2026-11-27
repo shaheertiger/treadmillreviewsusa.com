@@ -13,26 +13,26 @@ const PRODUCTS = [
     brand: "UREVO",
     category: "Cheapest Pad That Can Jog",
     badge: "Under $200",
-    amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
+    amazonUrl: null,
     amazonLabel: "Check Price on Amazon",
-    image: {"url":"https://m.media-amazon.com/images/I/41ZS3Q+sfdL._SL500_.jpg","width":500,"height":500},
+    image: null,
     reviewUrl: null,
-    priceRange: "$170–$250",
-    priceBounds: {"low":170,"high":250},
+    priceRange: "$161.99 at UREVO (27 Nov 2026)",
+    priceBounds: {"low":161.99,"high":161.99},
     specs: "0.6–6.2 mph with bar raised · 40.2 x 15 in. belt · 265 lb capacity · fold-down handlebar · no incline",
     pros: [
       "Raising the front bar lifts the top speed from 4 to 6.2 mph, enough for a light jog",
       "A handlebar to steady yourself, which most pads at this price lack",
       "Folds flat to under 5 inches and arrives ready to use, so it suits a Cyber Monday parcel order",
-      "Sold by UREVO through its own store and Amazon storefront, with a 14-day free return on UREVO’s store",
+      "Sold by UREVO through its own store, with a 14-day free return listed there",
     ],
     cons: [
       "Already $169.99 on UREVO’s store in October, so a Cyber Monday price around that level is not a reduction",
       "No incline — an Amazon listing under this name claiming 12% is describing the Strol 2E Pro",
       "A 40-inch, 15-inch-wide belt is short and narrow for anything more than an occasional jog",
     ],
-    bottomLine: "Buy it at $170 or less from UREVO or Amazon if you want a cheap pad with a bar and an occasional jog. Do not pay a Cyber Monday premium for it.",
-    description: "The Strol 2E is a walking pad with a fold-up front bar: flat, it is a 0.6 to 4 mph desk pad; with the bar raised it reaches 6.2 mph. UREVO’s page, an independent walking pad tracker and published reviews agree on that range, a 40.2 by 15-inch belt and a 265 lb capacity, as recorded in our roundups. On 28 October 2026 UREVO’s own US store showed it at $169.99 against a $289.99 compare-at price, in stock, with a 30-day price guarantee and 14-day free return listed but not explained on the page. Amazon listings sat between about $190 and $250 when we checked them on 13 October. That makes the target easy: at or below $170, from UREVO or Amazon, is a fair price; anything above is not a deal, whatever the badge says. The $289.99 reference price is not what it normally sells for. It is a parcel, so a Cyber Monday order should arrive well before Christmas. The motor is advertised at 2.25 HP, but the continuous rating independent coverage derives is under 1 HP, so keep the jogging occasional.",
+    bottomLine: "Buy it at $170 or less from UREVO’s own store if you want a cheap pad with a bar and an occasional jog. Do not pay a Cyber Monday premium for it.",
+    description: "The Strol 2E is a walking pad with a fold-up front bar: flat, it is a 0.6 to 4 mph desk pad; with the bar raised it reaches 6.2 mph. UREVO’s page, an independent walking pad tracker and published reviews agree on that range, a 40.2 by 15-inch belt and a 265 lb capacity, as recorded in our roundups. On 28 October 2026 UREVO’s own US store showed it at $169.99 against a $289.99 compare-at price, in stock, with a 30-day price guarantee and 14-day free return listed but not explained on the page. Amazon listings sat between about $190 and $250 when we checked them on 13 October. That makes the target easy: at or below $170 is a fair price; anything above is not a deal, whatever the badge says. The $289.99 reference price is not what it normally sells for. It is a parcel, so a Cyber Monday order should arrive well before Christmas. The motor is advertised at 2.25 HP, but the continuous rating independent coverage derives is under 1 HP, so keep the jogging occasional. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.",
   },
   {
     id: "walkingpad-z1",
@@ -257,7 +257,7 @@ const schema = {
               priceCurrency: "USD",
               lowPrice: product.priceBounds.low,
               highPrice: product.priceBounds.high,
-              url: product.amazonUrl,
+              ...(product.amazonUrl ? { url: product.amazonUrl } : {}),
             },
           }
         : {}),
@@ -301,7 +301,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "Under $200: UREVO Strol 2E", link: PRODUCTS[0].amazonUrl }}
+  stickyCta={{ text: "Under $200: UREVO Strol 2E", link: "#urevo-strol-2e" }}
 >
   <article class="ed-article" data-template="editorial">
     <div class="ed-col">
@@ -331,11 +331,11 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 
       <figure class="ed-hero">
         <div class="ed-hero-collage">
-          <a href="#urevo-strol-2e"><img src="https://m.media-amazon.com/images/I/41ZS3Q+sfdL._SL500_.jpg" alt="UREVO Strol 2E" width="500" height="500" decoding="async" /></a>
           <a href="#walkingpad-z1"><img src="https://m.media-amazon.com/images/I/31oMu9TYTUL._SL500_.jpg" alt="WalkingPad Z1" width="448" height="500" decoding="async" /></a>
           <a href="#walkingpad-c2"><img src="https://m.media-amazon.com/images/I/31WUvcjXp-L._SL500_.jpg" alt="WalkingPad C2" width="500" height="500" decoding="async" /></a>
+          <a href="#merach-w50-trekpad"><img src="https://m.media-amazon.com/images/I/41N86eQUrbL._SL500_.jpg" alt="MERACH NovaWalk W50 TrekPad" width="500" height="500" decoding="async" /></a>
         </div>
-        <figcaption>UREVO Strol 2E · WalkingPad Z1 · WalkingPad C2</figcaption>
+        <figcaption>WalkingPad Z1 · WalkingPad C2 · MERACH NovaWalk W50 TrekPad</figcaption>
       </figure>
 
       <div class="ed-body prose prose-lg">
@@ -354,7 +354,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           <ul>
             <li>
               <span class="tp-label"><span class="tp-award">Under $200:</span> <a href="#urevo-strol-2e">UREVO Strol 2E</a></span>
-              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+              
             </li>
             <li>
               <span class="tp-label"><span class="tp-award">Best Value Pad:</span> <a href="#walkingpad-z1">WalkingPad Z1</a></span>
@@ -562,14 +562,13 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
                     <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
                   </a> )}
                 <div class="ed-p-buy">
-                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
-                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
-                    <span>Amazon &rarr;</span>
-                  </a>
-                  <span class="ed-buy-note">
+                  {product.amazonUrl && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                      <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                      <span>Amazon &rarr;</span>
+                    </a> )} <span class="ed-buy-note">
                     {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
-                    Prices and availability change often; Amazon shows today's price.
-                  </span>
+                    Prices and availability change often, so check the seller's own page for today's price before you buy.
+                  </span> {!product.amazonUrl && ( <span class="ed-buy-note">No current Amazon listing matches this model, so there is no buy link; check the maker's own store.</span> )}
                 </div>
               </div>
               <div class="ed-proscons">
@@ -596,7 +595,8 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
                 </>
               )}
               <p class="ed-p-links">
-                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+                {product.amazonUrl && <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a>}
+                {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
               </p>
             </section>
           ))

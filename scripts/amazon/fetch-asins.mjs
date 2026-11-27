@@ -13,7 +13,7 @@
  * the top rejected title, goes to scripts/amazon/asin-report.json for review.
  * The listing's primary image is stored with the ASIN; fetch-images.mjs refreshes it.
  */
-import { writeFileSync } from 'fs';
+import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { SearchItemsRequestContent } from 'amazon-creators-api';
 import { ASIN_PATH, allProducts, client, imageOf, loadAsins, matchScore } from './lib.mjs';
@@ -25,11 +25,16 @@ const products = await allProducts();
 const asins = loadAsins();
 const report = [];
 const today = new Date().toISOString().slice(0, 10);
+// Names whose old listing changed into another product (src/data/amazon-unlisted.json) are
+// never auto-matched again: a name search tends to land on a sibling model (2E -> 2E Pro).
+const UNLISTED_PATH = join(import.meta.dirname, '..', '..', 'src', 'data', 'amazon-unlisted.json');
+const unlisted = existsSync(UNLISTED_PATH) ? JSON.parse(readFileSync(UNLISTED_PATH, 'utf8')) : {};
 
 let i = 0;
 for (const [name, files] of products) {
   i++;
   if (!all && asins[name]) continue;
+  if (unlisted[name]) continue;
   try {
     const req = new SearchItemsRequestContent();
     req.partnerTag = process.env.AMAZON_CREATORS_PARTNER_TAG;

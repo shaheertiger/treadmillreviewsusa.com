@@ -119,12 +119,12 @@ const PRODUCTS = [
     brand: "UREVO",
     category: "Budget 2-in-1 Alternative",
     badge: "Cheapest Checked 2-in-1",
-    amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
+    amazonUrl: null,
     amazonLabel: "Check Price on Amazon",
-    image: {"url":"https://m.media-amazon.com/images/I/41ZS3Q+sfdL._SL500_.jpg","width":500,"height":500},
+    image: null,
     reviewUrl: null,
-    priceRange: "$169.99 at UREVO (5 Nov 2026)",
-    priceBounds: {"low":169.99,"high":169.99},
+    priceRange: "$161.99 at UREVO (27 Nov 2026)",
+    priceBounds: {"low":161.99,"high":161.99},
     specs: "0.6–6.2 mph with handle up · 265 lb capacity · about 15 x 40 in. belt · no incline",
     pros: [
       "UREVO and two hands-on reviews agree on the 265 lb rating and 6.2 mph",
@@ -137,7 +137,7 @@ const PRODUCTS = [
       "Narrow at 15 inches; walking speed is capped at 4 mph with the handle folded",
     ],
     bottomLine: "The cheaper, better-reviewed 2-in-1 to compare the U20F against if you do not need an incline.",
-    description: "The Strol 2E is UREVO’s budget 2-in-1 walking pad with a handle that folds flat. UREVO’s US store listed it in stock at $169.99, against $289.99, on 5 November 2026, with 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it raised, a 265 lb maximum load, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty. Live Science and T3, both of which reviewed it hands-on, give the same 265 lb and 6.2 mph, which is more independent confirmation than any UMAY pad has. The belt is 40.2 inches long on UREVO’s page and 40.1 in other listings, which is why the card rounds.",
+    description: "The Strol 2E is UREVO’s budget 2-in-1 walking pad with a handle that folds flat. UREVO’s US store listed it in stock at $169.99, against $289.99, on 5 November 2026, with 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it raised, a 265 lb maximum load, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty. Live Science and T3, both of which reviewed it hands-on, give the same 265 lb and 6.2 mph, which is more independent confirmation than any UMAY pad has. The belt is 40.2 inches long on UREVO’s page and 40.1 in other listings, which is why the card rounds. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.",
   },
 ];
 
@@ -227,7 +227,7 @@ const schema = {
               priceCurrency: "USD",
               lowPrice: product.priceBounds.low,
               highPrice: product.priceBounds.high,
-              url: product.amazonUrl,
+              ...(product.amazonUrl ? { url: product.amazonUrl } : {}),
             },
           }
         : {}),
@@ -340,7 +340,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             </li>
             <li>
               <span class="tp-label"><span class="tp-award">Cheapest Checked 2-in-1:</span> <a href="#urevo-strol-2e">UREVO Strol 2E</a></span>
-              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+              
             </li>
           </ul>
         </section>
@@ -448,14 +448,13 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
                     <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
                   </a> )}
                 <div class="ed-p-buy">
-                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
-                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
-                    <span>Amazon &rarr;</span>
-                  </a>
-                  <span class="ed-buy-note">
+                  {product.amazonUrl && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                      <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                      <span>Amazon &rarr;</span>
+                    </a> )} <span class="ed-buy-note">
                     {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
-                    Prices and availability change often; Amazon shows today's price.
-                  </span>
+                    Prices and availability change often, so check the seller's own page for today's price before you buy.
+                  </span> {!product.amazonUrl && ( <span class="ed-buy-note">No current Amazon listing matches this model, so there is no buy link; check the maker's own store.</span> )}
                 </div>
               </div>
               <div class="ed-proscons">
@@ -482,7 +481,8 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
                 </>
               )}
               <p class="ed-p-links">
-                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+                {product.amazonUrl && <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a>}
+                {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
               </p>
             </section>
           ))

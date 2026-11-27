@@ -120,12 +120,12 @@ const PRODUCTS = [
     brand: "UREVO",
     category: "Best Mini Treadmill With a Handle",
     badge: "Best With Handle",
-    amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
+    amazonUrl: null,
     amazonLabel: "Check Price on Amazon",
-    image: {"url":"https://m.media-amazon.com/images/I/41ZS3Q+sfdL._SL500_.jpg","width":500,"height":500},
+    image: null,
     reviewUrl: null,
-    priceRange: "$169.99 at UREVO (5 Nov 2026)",
-    priceBounds: {"low":169.99,"high":169.99},
+    priceRange: "$161.99 at UREVO (27 Nov 2026)",
+    priceBounds: {"low":161.99,"high":161.99},
     specs: "About 48 lb · 4.6 in. tall folded · 0.6–6.2 mph with handle up · 265 lb capacity · about 15 x 40 in. belt",
     pros: [
       "A handle that folds flat, so it stores as low as a flat pad",
@@ -138,7 +138,7 @@ const PRODUCTS = [
       "Walking speed is capped at 4 mph with the handle folded",
     ],
     bottomLine: "For a small-space buyer who wants something to hold and the option of a slow jog, at the lowest price on this page.",
-    description: "The Strol 2E is the smallest 2-in-1 we could check. UREVO’s US store listed it in stock at $169.99, against $289.99, on 5 November 2026, with a 265 lb maximum load, 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it up, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty. Live Science and T3, which both reviewed it hands-on, give the same 265 lb and 6.2 mph, and Live Science found it quiet but its belt short and narrow for taller users. UREVO gives a 40.2 by 15-inch running area and a 47.2 lb weight; other listings give 40.1 inches and T3 about 48 lb. UREVO’s page also lists the unfolded length as 48 inches and the folded length as 51.2, which cannot both be right, so plan around the larger figure. With the handle down it is 4.6 inches tall.",
+    description: "The Strol 2E is the smallest 2-in-1 we could check. UREVO’s US store listed it in stock at $169.99, against $289.99, on 5 November 2026, with a 265 lb maximum load, 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it up, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty. Live Science and T3, which both reviewed it hands-on, give the same 265 lb and 6.2 mph, and Live Science found it quiet but its belt short and narrow for taller users. UREVO gives a 40.2 by 15-inch running area and a 47.2 lb weight; other listings give 40.1 inches and T3 about 48 lb. UREVO’s page also lists the unfolded length as 48 inches and the folded length as 51.2, which cannot both be right, so plan around the larger figure. With the handle down it is 4.6 inches tall. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.",
   },
 ];
 
@@ -212,7 +212,7 @@ const schema = {
       description: description,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-11-05",
-      dateModified: "2026-11-15",
+      dateModified: "2026-11-27",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
     ...PRODUCTS.map((product) => ({
@@ -228,7 +228,7 @@ const schema = {
               priceCurrency: "USD",
               lowPrice: product.priceBounds.low,
               highPrice: product.priceBounds.high,
-              url: product.amazonUrl,
+              ...(product.amazonUrl ? { url: product.amazonUrl } : {}),
             },
           }
         : {}),
@@ -260,7 +260,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
   ogType="article"
   article={{
     publishedTime: "2026-11-05",
-    modifiedTime: "2026-11-15",
+    modifiedTime: "2026-11-27",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
@@ -294,7 +294,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
         <div class="ed-byline-text">
           By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
-          Updated November 15, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          Updated November 27, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
           <span class="ed-method">How we chose: makers’ published specifications and manuals, independent reviews and owner reports, cross-checked. Not tested hands-on.</span>
         </div>
         <a href="#top-picks" class="btn-ghost">View products</a>
@@ -345,7 +345,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             </li>
             <li>
               <span class="tp-label"><span class="tp-award">Best With Handle:</span> <a href="#urevo-strol-2e">UREVO Strol 2E</a></span>
-              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+              
             </li>
           </ul>
         </section>
@@ -420,14 +420,13 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
                     <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
                   </a> )}
                 <div class="ed-p-buy">
-                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
-                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
-                    <span>Amazon &rarr;</span>
-                  </a>
-                  <span class="ed-buy-note">
+                  {product.amazonUrl && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                      <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                      <span>Amazon &rarr;</span>
+                    </a> )} <span class="ed-buy-note">
                     {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
-                    Prices and availability change often; Amazon shows today's price.
-                  </span>
+                    Prices and availability change often, so check the seller's own page for today's price before you buy.
+                  </span> {!product.amazonUrl && ( <span class="ed-buy-note">No current Amazon listing matches this model, so there is no buy link; check the maker's own store.</span> )}
                 </div>
               </div>
               <div class="ed-proscons">
@@ -454,7 +453,8 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
                 </>
               )}
               <p class="ed-p-links">
-                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+                {product.amazonUrl && <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a>}
+                {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
               </p>
             </section>
           ))

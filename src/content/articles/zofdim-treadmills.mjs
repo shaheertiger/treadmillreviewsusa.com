@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-27',
   socialProof: '1.1k',
   h1: ['Zofdim Treadmill:', 'What We Could Confirm'],
   standfirst:
@@ -55,7 +55,7 @@ export default {
       category: 'Budget 2-in-1 Pad With Handle',
       badge: 'Budget With Handle',
       amazonUrl: 'https://www.amazon.com/s?k=UREVO+Strol+2E&tag=sktiger-20',
-      priceRange: '$169.99 at UREVO (5 Nov 2026)',
+      priceRange: '$161.99 at UREVO (27 Nov 2026)',
       specs: '0.6–6.2 mph with handle up · 265 lb capacity · about 15 x 40 in. belt · no incline',
       pros: [
         'A fold-down handle and a 6.2 mph top speed with the handle raised',
@@ -70,7 +70,7 @@ export default {
       bottomLine:
         'For a buyer who wants a 2-in-1 pad with something to hold and the option of a slow jog, at a budget price.',
       description:
-        'The Strol 2E is UREVO’s budget 2-in-1: a walking pad with a handle that folds flat. UREVO’s US store listed it in stock at $169.99, against $289.99, on 5 November 2026, with 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it raised, a 265 lb maximum load, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty. Live Science and T3, both of which reviewed it hands-on, give the same 265 lb and 6.2 mph. Belt length is 40.2 inches on UREVO’s page and 40.1 in other listings, and the unit weight is 47.2 lb on UREVO’s page and about 48 lb in T3’s review, which is why the card rounds. UREVO’s own folded and unfolded lengths also disagree with each other. Live Science found it quiet and noted the short, narrow belt.',
+        'The Strol 2E is UREVO’s budget 2-in-1: a walking pad with a handle that folds flat. UREVO’s US store listed it in stock at $169.99, against $289.99, on 5 November 2026, with 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it raised, a 265 lb maximum load, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty. Live Science and T3, both of which reviewed it hands-on, give the same 265 lb and 6.2 mph. Belt length is 40.2 inches on UREVO’s page and 40.1 in other listings, and the unit weight is 47.2 lb on UREVO’s page and about 48 lb in T3’s review, which is why the card rounds. UREVO’s own folded and unfolded lengths also disagree with each other. Live Science found it quiet and noted the short, narrow belt. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.',
     },
     {
       id: 'walkingpad-z1',

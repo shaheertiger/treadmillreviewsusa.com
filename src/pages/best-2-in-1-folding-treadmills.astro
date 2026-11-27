@@ -13,18 +13,18 @@ const PRODUCTS = [
     brand: "UREVO",
     category: "Best Overall 2-in-1 Folding Treadmill",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
+    amazonUrl: null,
     amazonLabel: "Check Price on Amazon",
-    image: {"url":"https://m.media-amazon.com/images/I/41ZS3Q+sfdL._SL500_.jpg","width":500,"height":500},
+    image: null,
     reviewUrl: null,
-    priceRange: "About $170 (Amazon, 6 Nov 2026)",
-    priceBounds: {"low":170,"high":170},
+    priceRange: "$161.99 at UREVO (27 Nov 2026)",
+    priceBounds: {"low":161.99,"high":161.99},
     specs: "15 x 40.1 in. track · 0.6–4 mph walking mode · 0.6–6.2 mph running mode · remote with one-key mute · UREVO app",
     pros: [
       "A known brand with its own storefront and app, at a price close to the anonymous listings",
-      "The listing states both speed ranges and the track size clearly",
+      "The Amazon listing stated both speed ranges and the track size clearly on 6 November",
       "The magnetic remote clips to the frame, so it is less likely to go missing under a desk",
-      "Eight silicone shock absorbers and two rubber pads under the deck, by the listing",
+      "Eight silicone shock absorbers and two rubber pads under the deck, by the 6 November listing",
     ],
     cons: [
       "The listing bullets did not state a weight limit on the day we checked",
@@ -32,7 +32,7 @@ const PRODUCTS = [
       "No incline; for that, the Strol 2E Pro costs about $30 to $50 more",
     ],
     bottomLine: "The 2-in-1 to buy if you mainly walk and want an occasional easy jog from a brand that publishes its figures. Check the weight limit with UREVO if you are over about 220 lb.",
-    description: "The Strol 2E is UREVO's entry-level 2-in-1 and our pick for most people because it does the basics well at a sensible price. Its Amazon listing describes a 15 by 40.1-inch track with a five-layer belt, eight silicone shock absorbers and two soft rubber pads, two speed modes — 0.6 to 4 mph with the handle folded and 0.6 to 6.2 mph with it raised — and an LED display showing time, calories, steps, speed and distance. Control is by a remote with a one-key mute and a magnetic back that sticks to the treadmill, or by the UREVO Sport app. The 4 mph walking cap is higher than the Goplus 2.25HP's 2.5 mph, which matters if you walk briskly at a desk. The 6.2 mph running ceiling suits an easy jog rather than real running, and the 40-inch track sets the same limit from the other direction. The listing asks you to lubricate the belt every 125 miles, which is a useful honest detail. What it does not give in the bullets is a maximum user weight or a unit weight, so if either matters to you, confirm it with UREVO before ordering. Amazon showed it at $169.99 on 6 November 2026.",
+    description: "The Strol 2E is UREVO's entry-level 2-in-1 and our pick for most people because it does the basics well at a sensible price. Its Amazon listing described, when we checked on 6 November 2026, a 15 by 40.1-inch track with a five-layer belt, eight silicone shock absorbers and two soft rubber pads, two speed modes — 0.6 to 4 mph with the handle folded and 0.6 to 6.2 mph with it raised — and an LED display showing time, calories, steps, speed and distance. Control is by a remote with a one-key mute and a magnetic back that sticks to the treadmill, or by the UREVO Sport app. The 4 mph walking cap is higher than the Goplus 2.25HP's 2.5 mph, which matters if you walk briskly at a desk. The 6.2 mph running ceiling suits an easy jog rather than real running, and the 40-inch track sets the same limit from the other direction. The listing asks you to lubricate the belt every 125 miles, which is a useful honest detail. What it does not give in the bullets is a maximum user weight or a unit weight, so if either matters to you, confirm it with UREVO before ordering. Amazon showed it at $169.99 on 6 November 2026. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.",
   },
   {
     id: "goplus-2-in-1-2-25hp",
@@ -241,7 +241,7 @@ const schema = {
       description: description,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-11-06",
-      dateModified: "2026-11-15",
+      dateModified: "2026-11-27",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
     ...PRODUCTS.map((product) => ({
@@ -257,7 +257,7 @@ const schema = {
               priceCurrency: "USD",
               lowPrice: product.priceBounds.low,
               highPrice: product.priceBounds.high,
-              url: product.amazonUrl,
+              ...(product.amazonUrl ? { url: product.amazonUrl } : {}),
             },
           }
         : {}),
@@ -289,7 +289,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
   ogType="article"
   article={{
     publishedTime: "2026-11-06",
-    modifiedTime: "2026-11-15",
+    modifiedTime: "2026-11-27",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
@@ -302,7 +302,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "Best Overall: UREVO Strol 2E", link: PRODUCTS[0].amazonUrl }}
+  stickyCta={{ text: "Best Overall: UREVO Strol 2E", link: "#urevo-strol-2e" }}
 >
   <article class="ed-article" data-template="editorial">
     <div class="ed-col">
@@ -322,7 +322,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
         <div class="ed-byline-text">
           By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
-          Updated November 15, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          Updated November 27, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
           <span class="ed-method">How we chose: makers’ published specifications and manuals, independent reviews and owner reports, cross-checked. Not tested hands-on.</span>
         </div>
         <a href="#top-picks" class="btn-ghost">View products</a>
@@ -333,11 +333,11 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 
       <figure class="ed-hero">
         <div class="ed-hero-collage">
-          <a href="#urevo-strol-2e"><img src="https://m.media-amazon.com/images/I/41ZS3Q+sfdL._SL500_.jpg" alt="UREVO Strol 2E" width="500" height="500" decoding="async" /></a>
           <a href="#goplus-2-in-1-2-25hp"><img src="https://m.media-amazon.com/images/I/41SEoBJ8pLS._SL500_.jpg" alt="Goplus 2 in 1 Folding Treadmill 2.25HP" width="500" height="500" decoding="async" /></a>
           <a href="#goplus-2-in-1-4-75hp"><img src="https://m.media-amazon.com/images/I/51KpI7zNC9L._SL500_.jpg" alt="Goplus 2 in 1 Folding Treadmill 4.75HP" width="500" height="500" decoding="async" /></a>
+          <a href="#urevo-strol-2e-pro"><img src="https://m.media-amazon.com/images/I/410e3-vj4nL._SL500_.jpg" alt="UREVO Strol 2E Pro" width="500" height="500" decoding="async" /></a>
         </div>
-        <figcaption>UREVO Strol 2E · Goplus 2 in 1 Folding Treadmill 2.25HP · Goplus 2 in 1 Folding Treadmill 4.75HP</figcaption>
+        <figcaption>Goplus 2 in 1 Folding Treadmill 2.25HP · Goplus 2 in 1 Folding Treadmill 4.75HP · UREVO Strol 2E Pro</figcaption>
       </figure>
 
       <div class="ed-body prose prose-lg">
@@ -356,7 +356,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           <ul>
             <li>
               <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#urevo-strol-2e">UREVO Strol 2E</a></span>
-              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+              
             </li>
             <li>
               <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#goplus-2-in-1-2-25hp">Goplus 2 in 1 Folding Treadmill 2.25HP</a></span>
@@ -461,14 +461,13 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
                     <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
                   </a> )}
                 <div class="ed-p-buy">
-                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
-                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
-                    <span>Amazon &rarr;</span>
-                  </a>
-                  <span class="ed-buy-note">
+                  {product.amazonUrl && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                      <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                      <span>Amazon &rarr;</span>
+                    </a> )} <span class="ed-buy-note">
                     {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
-                    Prices and availability change often; Amazon shows today's price.
-                  </span>
+                    Prices and availability change often, so check the seller's own page for today's price before you buy.
+                  </span> {!product.amazonUrl && ( <span class="ed-buy-note">No current Amazon listing matches this model, so there is no buy link; check the maker's own store.</span> )}
                 </div>
               </div>
               <div class="ed-proscons">
@@ -495,7 +494,8 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
                 </>
               )}
               <p class="ed-p-links">
-                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+                {product.amazonUrl && <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a>}
+                {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
               </p>
             </section>
           ))

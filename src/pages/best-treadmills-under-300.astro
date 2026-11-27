@@ -40,12 +40,12 @@ const PRODUCTS = [
     brand: "UREVO",
     category: "Best Under $300 for Light Jogging",
     badge: "Best 2-in-1",
-    amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
+    amazonUrl: null,
     amazonLabel: "Check Price on Amazon",
-    image: {"url":"https://m.media-amazon.com/images/I/41ZS3Q+sfdL._SL500_.jpg","width":500,"height":500},
+    image: null,
     reviewUrl: null,
-    priceRange: "$170–$250",
-    priceBounds: {"low":170,"high":250},
+    priceRange: "$161.99 at UREVO (27 Nov 2026)",
+    priceBounds: {"low":161.99,"high":161.99},
     specs: "0.6–6.2 mph with bar raised · 40.2 x 15 in. belt · 265 lb capacity · fold-down handlebar · no incline",
     pros: [
       "Raise the front bar and the top speed goes from 4 mph to 6.2 mph, enough for a gentle jog",
@@ -59,7 +59,7 @@ const PRODUCTS = [
       "The 2.25 HP figure is advertised; the derived continuous rating is under 1 HP, so jogging should stay occasional",
     ],
     bottomLine: "For walkers who want the option of a few minutes’ light jogging and a bar to hold, on the smallest budget that buys both.",
-    description: "The Strol 2E is the 2-in-1 to buy if you want more than a walk now and then. Folded flat, it is a 0.6 to 4 mph desk pad; with the front bar raised, its top speed rises to 6.2 mph, which is a light jog for most adults. UREVO’s page, an independent walking pad tracker and published reviews agree on that range, on a 40.2 by 15-inch belt and on a 265 lb capacity. It comes ready to use with a remote, dual LED displays and app support, and folds to under 5 inches tall. Be realistic about the jogging mode. The belt is short and narrow for a running stride, the motor’s continuous rating is far below the 2.25 HP on the box, and reviewers flag the belt width for taller users. It is a walking pad that can jog briefly, not a treadmill. Check the listing carefully: one Amazon listing using this name describes a 12% incline and 300 lb rating that belong to the Strol 2E Pro.",
+    description: "The Strol 2E is the 2-in-1 to buy if you want more than a walk now and then. Folded flat, it is a 0.6 to 4 mph desk pad; with the front bar raised, its top speed rises to 6.2 mph, which is a light jog for most adults. UREVO’s page, an independent walking pad tracker and published reviews agree on that range, on a 40.2 by 15-inch belt and on a 265 lb capacity. It comes ready to use with a remote, dual LED displays and app support, and folds to under 5 inches tall. Be realistic about the jogging mode. The belt is short and narrow for a running stride, the motor’s continuous rating is far below the 2.25 HP on the box, and reviewers flag the belt width for taller users. It is a walking pad that can jog briefly, not a treadmill. Check the listing carefully: one Amazon listing using this name describes a 12% incline and 300 lb rating that belong to the Strol 2E Pro. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.",
   },
   {
     id: "urevo-smart-walking-pad",
@@ -214,7 +214,7 @@ const schema = {
       description: description,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-10-13",
-      dateModified: "2026-11-26",
+      dateModified: "2026-11-27",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
     ...PRODUCTS.map((product) => ({
@@ -230,7 +230,7 @@ const schema = {
               priceCurrency: "USD",
               lowPrice: product.priceBounds.low,
               highPrice: product.priceBounds.high,
-              url: product.amazonUrl,
+              ...(product.amazonUrl ? { url: product.amazonUrl } : {}),
             },
           }
         : {}),
@@ -262,7 +262,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
   ogType="article"
   article={{
     publishedTime: "2026-10-13",
-    modifiedTime: "2026-11-26",
+    modifiedTime: "2026-11-27",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
@@ -296,7 +296,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
         <div class="ed-byline-text">
           By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
-          Updated November 26, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          Updated November 27, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
           <span class="ed-method">How we chose: makers’ published specifications and manuals, independent reviews and owner reports, cross-checked. Not tested hands-on.</span>
         </div>
         <a href="#top-picks" class="btn-ghost">View products</a>
@@ -308,10 +308,10 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
       <figure class="ed-hero">
         <div class="ed-hero-collage">
           <a href="#sunny-treadpad-compact"><img src="https://m.media-amazon.com/images/I/41sr8Qe5mmL._SL500_.jpg" alt="Sunny Health &amp; Fitness Treadpad Compact Treadmill" width="500" height="500" decoding="async" /></a>
-          <a href="#urevo-strol-2e"><img src="https://m.media-amazon.com/images/I/41ZS3Q+sfdL._SL500_.jpg" alt="UREVO Strol 2E" width="500" height="500" decoding="async" /></a>
           <a href="#urevo-smart-walking-pad"><img src="https://m.media-amazon.com/images/I/41bR35pRVJL._SL500_.jpg" alt="UREVO Smart Walking Pad" width="500" height="500" decoding="async" /></a>
+          <a href="#deerrun-z10"><img src="https://m.media-amazon.com/images/I/414t0YUkaFL._SL500_.jpg" alt="DeerRun Z10" width="400" height="500" decoding="async" /></a>
         </div>
-        <figcaption>Sunny Health &amp; Fitness Treadpad Compact Treadmill · UREVO Strol 2E · UREVO Smart Walking Pad</figcaption>
+        <figcaption>Sunny Health &amp; Fitness Treadpad Compact Treadmill · UREVO Smart Walking Pad · DeerRun Z10</figcaption>
       </figure>
 
       <div class="ed-body prose prose-lg">
@@ -334,7 +334,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             </li>
             <li>
               <span class="tp-label"><span class="tp-award">Best 2-in-1:</span> <a href="#urevo-strol-2e">UREVO Strol 2E</a></span>
-              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+              
             </li>
             <li>
               <span class="tp-label"><span class="tp-award">Lowest Price:</span> <a href="#urevo-smart-walking-pad">UREVO Smart Walking Pad</a></span>
@@ -427,14 +427,13 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
                     <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
                   </a> )}
                 <div class="ed-p-buy">
-                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
-                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
-                    <span>Amazon &rarr;</span>
-                  </a>
-                  <span class="ed-buy-note">
+                  {product.amazonUrl && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                      <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                      <span>Amazon &rarr;</span>
+                    </a> )} <span class="ed-buy-note">
                     {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
-                    Prices and availability change often; Amazon shows today's price.
-                  </span>
+                    Prices and availability change often, so check the seller's own page for today's price before you buy.
+                  </span> {!product.amazonUrl && ( <span class="ed-buy-note">No current Amazon listing matches this model, so there is no buy link; check the maker's own store.</span> )}
                 </div>
               </div>
               <div class="ed-proscons">
@@ -461,7 +460,8 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
                 </>
               )}
               <p class="ed-p-links">
-                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+                {product.amazonUrl && <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a>}
+                {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
               </p>
             </section>
           ))

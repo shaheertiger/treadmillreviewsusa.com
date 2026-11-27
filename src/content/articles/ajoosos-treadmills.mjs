@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 27, 2026',
   published: '2026-11-05',
-  modified: '2026-11-17',
+  modified: '2026-11-27',
   socialProof: '6.6k',
   h1: ['AJOOSOS 2-in-1 Under Desk Treadmill:', 'What We Could Confirm'],
   standfirst:
@@ -58,7 +58,7 @@ export default {
       category: 'Budget 2-in-1 Pad With Handle',
       badge: 'Cheapest Checked 2-in-1',
       amazonUrl: 'https://www.amazon.com/s?k=UREVO+Strol+2E&tag=sktiger-20',
-      priceRange: '$169.99 at UREVO (5 Nov 2026)',
+      priceRange: '$161.99 at UREVO (27 Nov 2026)',
       specs: '0.6–6.2 mph with handle up · 265 lb capacity · about 15 x 40 in. belt · no incline',
       pros: [
         'A fold-down handle and a 6.2 mph top speed with the handle raised',
@@ -73,7 +73,7 @@ export default {
       bottomLine:
         'The cheapest 2-in-1 pad we could check, and the one to compare any AJOOSOS price against.',
       description:
-        'The Strol 2E is UREVO’s budget 2-in-1: a walking pad with a handle that folds flat. UREVO’s US store listed it in stock at $169.99, against $289.99, on 5 November 2026. UREVO gives 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it raised, a 265 lb maximum load, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty, and Live Science and T3, both of which reviewed it hands-on, give the same 265 lb and 6.2 mph. The belt is 40.2 inches long on UREVO’s page and 40.1 in other listings, which is why the card rounds. It has no incline, so if the incline in the AJOOSOS title is what appealed to you, look at the UMAY card below.',
+        'The Strol 2E is UREVO’s budget 2-in-1: a walking pad with a handle that folds flat. UREVO’s US store listed it in stock at $169.99, against $289.99, on 5 November 2026. UREVO gives 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it raised, a 265 lb maximum load, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty, and Live Science and T3, both of which reviewed it hands-on, give the same 265 lb and 6.2 mph. The belt is 40.2 inches long on UREVO’s page and 40.1 in other listings, which is why the card rounds. It has no incline, so if the incline in the AJOOSOS title is what appealed to you, look at the UMAY card below. On 27 November 2026 the Amazon listing we had linked for the Strol 2E had changed to describe a different UREVO pad, with a 6% auto incline and a 5 mph top speed, and Amazon search showed only the Strol 2E Pro, so this card has no Amazon link for now; UREVO’s own US store listed the Strol 2E in stock at $161.99 that day.',
     },
     {
       id: "urevo-strol-2e-pro",

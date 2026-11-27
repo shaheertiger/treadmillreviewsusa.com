@@ -32,6 +32,12 @@ const ASINS = existsSync(ASIN_PATH) ? JSON.parse(readFileSync(ASIN_PATH, 'utf8')
 // says "Shop Similar" so the click is honest about where it goes.
 const FALLBACK_PATH = join(ROOT, 'src', 'data', 'amazon-fallbacks.json');
 const FALLBACKS = existsSync(FALLBACK_PATH) ? JSON.parse(readFileSync(FALLBACK_PATH, 'utf8')) : {};
+// Products whose former Amazon listing now describes a different machine and that have no
+// current listing under their own name. Their cards carry no buy link at all: a search or a
+// "similar" link would still send the reader to a product the card does not describe.
+const UNLISTED_PATH = join(ROOT, 'src', 'data', 'amazon-unlisted.json');
+const UNLISTED = existsSync(UNLISTED_PATH) ? JSON.parse(readFileSync(UNLISTED_PATH, 'utf8')) : {};
+const isUnlisted = (p) => !ASINS[p.name] && Boolean(UNLISTED[p.name]);
 const searchUrl = (q) => `https://www.amazon.com/s?k=${encodeURIComponent(q).replace(/%20/g, '+')}&tag=sktiger-20`;
 const isFallback = (p) => !ASINS[p.name] && Boolean(FALLBACKS[p.name]);
 // Every Amazon link carries the Associates tag, even if a spec's hand-written URL forgot it.
@@ -98,7 +104,7 @@ ${products
     brand: ${jsStr(brandOf(p))},
     category: ${jsStr(p.category)},
     badge: ${jsStr(p.badge)},
-    amazonUrl: ${jsStr(amazonUrl(p))},
+    amazonUrl: ${isUnlisted(p) ? 'null' : jsStr(amazonUrl(p))},
     amazonLabel: ${jsStr(isFallback(p) ? 'Shop Similar on Amazon' : 'Check Price on Amazon')},
     image: ${productImage(p) ? JSON.stringify(productImage(p)) : 'null'},
     reviewUrl: ${p.reviewUrl ? jsStr(p.reviewUrl) : 'null'},
@@ -157,7 +163,7 @@ function schemaBlock(spec) {
               priceCurrency: "USD",
               lowPrice: product.priceBounds.low,
               highPrice: product.priceBounds.high,
-              url: product.amazonUrl,
+              ...(product.amazonUrl ? { url: product.amazonUrl } : {}),
             },
           }
         : {}),
@@ -233,14 +239,19 @@ const PRODUCT_CARDS = `      <!-- Product blocks -->
                   </a>
                 )}
                 <div class="ed-p-buy">
-                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
-                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
-                    <span>Amazon &rarr;</span>
-                  </a>
+                  {product.amazonUrl && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                      <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                      <span>Amazon &rarr;</span>
+                    </a>
+                  )}
                   <span class="ed-buy-note">
                     {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
-                    Prices and availability change often; Amazon shows today's price.
+                    Prices and availability change often, so check the seller's own page for today's price before you buy.
                   </span>
+                  {!product.amazonUrl && (
+                    <span class="ed-buy-note">No current Amazon listing matches this model, so there is no buy link; check the maker's own store.</span>
+                  )}
                 </div>
               </div>
               <div class="ed-proscons">
@@ -267,7 +278,7 @@ const PRODUCT_CARDS = `      <!-- Product blocks -->
                 </>
               )}
               <p class="ed-p-links">
-                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a>
+                {product.amazonUrl && <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a>}
                 {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
               </p>
             </section>
@@ -329,7 +340,7 @@ function topPicksBox(spec) {
     .map(
       (p, i) => `            <li>
               <span class="tp-label"><span class="tp-award">${p.badge}:</span> <a href="#${p.id}">${p.name}</a></span>
-              <a href={PRODUCTS[${i}].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+              ${isUnlisted(p) ? '' : `<a href={PRODUCTS[${i}].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>`}
             </li>`
     )
     .join('\n');
@@ -491,7 +502,7 @@ ${s.html.trim()}
   const viewHref = spec.products?.length >= 3 ? '#top-picks' : hasProducts ? `#${spec.products[0].id}` : spec.ctas[0].href;
   const viewLabel = hasProducts ? 'View products' : spec.ctas[0].label;
   const sticky = hasProducts
-    ? `{ text: ${jsStr(`${spec.products[0].badge}: ${spec.products[0].name}`)}, link: PRODUCTS[0].amazonUrl }`
+    ? `{ text: ${jsStr(`${spec.products[0].badge}: ${spec.products[0].name}`)}, link: ${isUnlisted(spec.products[0]) ? jsStr(`#${spec.products[0].id}`) : 'PRODUCTS[0].amazonUrl'} }`
     : `{ text: ${jsStr(spec.stickyCta.text)}, link: ${jsStr(spec.stickyCta.link)} }`;
 
   return `---
