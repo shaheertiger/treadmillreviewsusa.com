@@ -42,6 +42,43 @@ The run decides what to write from fresh data, not from this file's older analys
 IndexNow now submits only the pages changed in each push (Bing warned against batch mode). Put `[skip indexnow]` in the
 message of any commit that only bulk-updates dates or templates.
 
+## 0a. Double down / stop rules (27 Nov 2026, Bing API + Vercel; Google ignored)
+
+Source: Bing Webmaster API (`apikey`) page and keyword stats to 20 Nov plus daily totals to 25 Nov; Vercel search
+landings 28 Oct to 27 Nov from DuckDuckGo, Bing, Yahoo, Ecosia, Brave. These rules sit on top of `PERFORMANCE.md`:
+when the report and this section disagree, the report's fresher type verdicts win, the STOP rules below still apply.
+
+**What brings the clicks (30 days, non-Google search visitors):**
+`/how-much-does-a-treadmill-cost/` 120 (Bing pos 2.2, 12.3% CTR on its query), `/treadmill-black-friday-deals/` 79,
+`/proform-treadmill-troubleshooting/` 59, `/best-incline-treadmills/` 52, `/treadmill-incline-percent-vs-degrees/` 46,
+`/best-walking-pads-with-incline/` 35, `/treadmill-reviews-2026/` 35, `/best-treadmills-without-subscriptions/` 34,
+`/best-walking-treadmills/` 30, `/lifesmart-treadmills/` 30, `/wellfit-tm037-treadmill/` 25, deals siblings
+(walking pad 22, under $1000 16), fixes (burning smell 20, belt adjust 19, static shock 18, safety key 10).
+
+**Double down:**
+1. **Cost pages:** "how much does a <brand> treadmill cost" for every brand with a brand page, plus walking pad cost,
+   treadmill repair cost, treadmill moving cost, cost to run a treadmill. The parent page is the site's #1 earner.
+2. **Deals while the season lasts:** Cyber Monday and brand deal pages until 2 Dec, then "best time to buy" and
+   January/after-Christmas sale pages. Retire or redirect season pages into the evergreen deals page after the sale.
+3. **Fixes by brand and symptom:** the ProForm troubleshooting format for NordicTrack, Sole, Horizon, Bowflex,
+   walking pads (error codes, belt slipping, not turning on, incline not working, speed surging).
+4. **Attribute roundups** ("best <type> treadmills with/without <feature>"): incline, decline, no subscription,
+   walking, seniors, cushioned work; add the next attribute only if it has a Bing query.
+5. **Budget brand pages** (LifeSmart, WellFit, Yesoul, Horizon T101): cheap Amazon/Walmart brands beat premium brands.
+
+**Stop (do not repeat):**
+- **T1. No new reviews of premium single models without a Bing query.** NordicTrack Commercial 1750 (32 impr),
+  X24 (27), Matrix T7xe (28), ProForm Power 995i (20), Gymproluxe (22) all have 0 clicks. Model reviews average
+  0.64 visitors per page against 0.90 site-wide. A model review needs the model's name in the Bing keyword report.
+- **T2. No workouts/training, home-gym accessory roundups or health/fitness questions** (5%, 3% and 0% hit rates).
+- **T3. CTR before volume.** Bing impressions tripled (week of 16 Nov: 8,204; 23-25 Nov alone: 8,419) but clicks
+  stayed ~30 a day, so CTR fell from ~3% to ~1.2%. Each run rewrites titles/descriptions of up to 3 pages with
+  200+ impressions and CTR under 2% before writing new pages: `/treadmill-pace-and-speed-chart/` (976 impr, 0.9%),
+  `/history-of-the-treadmill/` (453, 2.0%), `/horizon-t101-treadmill/` (267, 1.5%), `/treadmill-dimensions-space-requirements/` (215, 2.3%).
+  Lead the title with the exact query and put the answer with a number in the description.
+- **T4. A format is "proven" only after 14 days and 5+ live pages.** Do not clone a type off one or two clicks.
+- **T5. Ignore Google-only demand.** A topic needs a Bing query, a Vercel landing on a sibling, or a WORKS type.
+
 ## 1. What the data says
 
 Weekly totals (Bing, all engines it powers):
