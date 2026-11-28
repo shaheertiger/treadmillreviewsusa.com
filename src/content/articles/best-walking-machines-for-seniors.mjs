@@ -13,14 +13,14 @@ export default {
   slug: 'best-walking-machines-for-seniors',
   title: 'Best Walking Machines for Seniors (2026): 6 Picks by Balance',
   description:
-    'The Exerpeutic Senior Fitness Treadmill (about $399, full-length rails) is the best walking machine for most seniors; a seated stepper suits poor balance.',
+    'The Exerpeutic Senior Fitness Treadmill ($339 on Amazon, 28 Nov; 0.3 mph start, full-length rails) suits most seniors; a seated stepper suits poor balance.',
   crumbLabel: 'Best Walking Machines for Seniors',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-17',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   h1: ['Best Walking Machines', 'for Seniors'],
   standfirst:
     'The best walking machine for an older person depends less on the machine than on the walker: how steady they are, how high they can step and whether they need something to hold. Here are six machines across four types, from a full-rail treadmill to a seated stepper, and a simple table for choosing between them.',
@@ -137,6 +137,60 @@ export default {
             you — the starting speed, the step-up height, the weight rating or the seat — rather than
             for the badge, and check the listing again before you buy, because sellers change models
             and prices without changing the product photo.
+          </p>`,
+    },
+    {
+      id: 'black-friday-price-check',
+      heading: 'Black Friday / Cyber Monday Price Check: What These Machines Cost on 28 November',
+      navLabel: 'Black Friday prices',
+      html: `          <p>
+            Black Friday was 27 November this year and Cyber Monday is 30 November, so this is the
+            week when the price of a walking machine is most likely to move. We re-checked the Amazon
+            listing for each pick that is sold there on 28 November 2026, the day after Black Friday,
+            and set it against the price this page printed earlier. Each figure is a single reading
+            from the listing on that date. Prices can change several times a day during the sale, so
+            treat them as a yardstick for judging a deal rather than the price you will pay.
+          </p>
+          ${table(
+            ['Machine', 'Earlier price on this page', 'Amazon, 28 Nov 2026', 'What changed'],
+            [
+              ['Exerpeutic Senior Fitness Treadmill', '$399 (Amazon, 6 Nov 2026)', '$339.15', 'About $60 lower, roughly 15% off'],
+              ['Sunny Low Deck Treadmill with Extended Safety Handrails', '$679.96 (Amazon, 6 Nov 2026)', '$645.96', '$34 lower'],
+              ['Teeter FreeStep LT3 (with mat)', '$1,029.99 (Amazon, 9 Nov 2026)', '$1,029.99', 'No change'],
+              ['Sunny Treadpad 7% Auto Incline', '$487.26 (Amazon, 6 Nov 2026)', '$589.99', 'About $103 higher'],
+            ],
+          )}
+          <p>
+            <strong>The best overall pick is the one that has dropped most.</strong> The Exerpeutic was
+            $339.15 on 28 November, about $60 under the $399 it showed on 6 November. That puts
+            full-length rails, a 0.3 mph start and a 400 lb rating at well under $350. One thing to
+            check before you buy: the listing title now reads "Senior Fitness Treadmill" without the
+            brand name in front. The brand field on the listing says Exerpeutic, and the title and
+            bullets give the same 0.3 to 4 mph range, 400 lb capacity, 43.5 by 16-inch belt and
+            full-length rails as the card below, so it is the same machine; but other brands now sell
+            "senior treadmills" with very similar titles, so confirm the brand before you order.
+          </p>
+          <p>
+            <strong>The low-deck Sunny is a little cheaper; the Teeter has not moved.</strong> The
+            Sunny with the 4-inch step-up was $645.96, $34 under its 6 November price. The Teeter
+            FreeStep LT3 bundle with a floor mat was exactly the $1,029.99 we recorded on 9 November.
+            Teeter's own store had the LT3 from $899 in October, so it is worth checking there too.
+            Note that the LT3's Amazon title says "Up to 350lb" while its bullet point says 300 lb, the
+            figure Teeter and a dealer agree on; we use 300 lb.
+          </p>
+          <p>
+            <strong>The Treadpad has gone up, not down.</strong> The Sunny Treadpad listing we checked
+            showed $589.99 on 28 November, about $103 more than the $487.26 it showed on 6 November.
+            If you want the walking pad with a handlebar, this is not the week to pay full price for it
+            on Amazon unless it drops back; Sunny sells it on its own store as well.
+          </p>
+          <p>
+            The Sole F63's Amazon listing showed no price when we checked, so it is not in the table;
+            our senior treadmill guide lists it at $899 to $1,099, and Sole runs its own sale (see our
+            ${A('/sole-treadmill-black-friday-deals/', 'Sole Black Friday deals')} page). The NuStep T5 is
+            not sold new on Amazon. For more rail and budget treadmills with deals this week, see our
+            ${A('/black-friday-treadmill-deals-under-500/', 'Black Friday treadmill deals under $500')}
+            and ${A('/cyber-monday-treadmill-deals/', 'Cyber Monday treadmill deals')}.
           </p>`,
     },
     {
@@ -264,6 +318,150 @@ export default {
           </p>`,
     },
     {
+      id: 'start-speed-and-stopping',
+      heading: 'Lowest Starting Speed and How Each Machine Stops',
+      navLabel: 'Start speed and stopping',
+      html: `          <p>
+            The two questions families ask most about a walking machine for a parent are how slowly it
+            starts and how quickly it stops. They are really one question: how much can the machine do
+            to the walker before the walker can react? Here is what the listings and makers state for
+            each pick, using the Amazon listings as checked on 28 November 2026 and the figures already
+            on each card.
+          </p>
+          ${table(
+            ['Machine', 'Lowest speed', 'Top speed', 'How it stops'],
+            [
+              ['Exerpeutic Senior Fitness Treadmill', '0.3 mph, then 0.1 mph steps', '4 mph', 'Stop button on a four-button console; safety key'],
+              ['Sunny Treadpad 7% Auto Incline', '0.5 mph', '3.7 mph bar down, 6 mph bar up', 'Remote and console; safety key'],
+              ['Sunny Low Deck Treadmill', 'Not stated in the listing', '8.5 mph', 'Safety clip "for emergency stops" (listing)'],
+              ['Sole F63', 'Not stated in the listing', '12 mph', 'Console controls; safety key'],
+              ['Teeter FreeStep LT3', 'No belt: moves only when you push', '—', 'Stop pushing and the pedals stop'],
+              ['NuStep T5', 'No belt: moves only when you push', '—', 'Stop pushing and the pedals stop'],
+            ],
+          )}
+          <p>
+            <strong>Why 0.3 mph matters.</strong> A belt at 0.3 mph moves about 5 inches a second, slow
+            enough that a walker standing on it can find their footing before the belt has carried them
+            anywhere. At 1 mph, where many ordinary treadmills start, it is about 18 inches a second.
+            The Exerpeutic's 0.3 mph start, rising 0.1 mph at a time, is the gentlest we found on a home
+            treadmill, and it is the main reason it is our best overall pick. The Treadpad's 0.5 mph is
+            the next best. The Sunny low-deck and the Sole F63 listings do not state a starting speed,
+            so ask the seller if the very first seconds on the belt are your concern; both are built for
+            a wider range of users and top out far faster than an older walker needs.
+          </p>
+          <p>
+            <strong>The safety key is the real emergency stop.</strong> On every belt machine here, the
+            safety key, a clip on a cord attached to your clothing, cuts the belt if you drift back or
+            fall. A stop button only helps if you can reach it; the key works when you cannot. Clip it on
+            for every walk and test it once a month by pulling it while the belt runs slowly. If the
+            belt keeps running, or the machine will not start with the key in place, our guide to a
+            ${A('/treadmill-safety-key-not-working/', 'treadmill safety key that is not working')} covers
+            the fixes; do not walk on a machine whose key does not stop it.
+          </p>
+          <p>
+            <strong>Seated machines have no runaway risk.</strong> The Teeter and the NuStep have no
+            belt for the walker to keep up with. The pedals move only as fast as the user pushes them
+            against the resistance, and they stop when the user stops. That is the strongest argument
+            for a seated machine when balance or reaction time is in doubt, and it is why the balance
+            table sends anyone who has fallen in the past year to that row first.
+          </p>`,
+    },
+    {
+      id: 'step-up-rails-capacity',
+      heading: 'Step-Up Height, Rails and Weight Capacity Side by Side',
+      navLabel: 'Step-up, rails and capacity',
+      html: `          <p>
+            Once the starting speed is settled, the next three questions are physical: how high is the
+            step onto the machine, what is there to hold, and how much weight is it built for? Not every
+            maker publishes every figure, and where one does not, we say so rather than guess.
+          </p>
+          ${table(
+            ['Machine', 'Step-up (stated)', 'What you hold', 'Max user weight'],
+            [
+              ['Exerpeutic Senior Fitness Treadmill', '"Low step-up height", no figure', 'Full-length padded rails both sides, plus a front rail', '400 lb'],
+              ['Sunny Low Deck Treadmill', '4 in. (listing and Sunny)', 'Extended rails along the deck and across the front', '245 lb (Sunny)'],
+              ['Sunny Treadpad 7% Auto Incline', '4.1 in. flat, 5.7 in. at full incline (Sunny)', 'One fold-up front handlebar', '265 lb (Sunny)'],
+              ['Sole F63', 'Not published', 'Side rails down the deck', '325 lb'],
+              ['Teeter FreeStep LT3', 'No step: you sit', 'Linked arm handles, 4 positions', '300 lb; users 4 ft 11 in. to 6 ft 6 in. (listing)'],
+              ['NuStep T5', 'Low step-through frame', 'Arm handles, flip-up arm rests, grab ring', '500 lb; users 4 ft 6 in. to 6 ft 7 in.'],
+            ],
+          )}
+          <p>
+            <strong>Step-up height.</strong> Only the two Sunny machines give a number, and both are
+            about 4 inches, roughly the height of a kerb. The Exerpeutic's listing calls its step-up low
+            without saying how low, and Sole does not publish one for the F63, which as a full-size
+            folding treadmill will sit higher. If a stiff hip or knee makes a step the deciding factor,
+            ask the seller for the floor-to-belt height before ordering, or measure a display model. On
+            the Treadpad, lower the incline before stepping on or off: at 7% the front of the deck is
+            5.7 inches up.
+          </p>
+          <p>
+            <strong>Rail length.</strong> The Exerpeutic is the only pick whose listing says its rails
+            are full-length on both sides. The Sunny low-deck's rails extend along the deck, and the
+            Sole's run well down it, but neither maker gives a length. The Treadpad has one bar in front
+            of you, which steadies a start and a stop but leaves nothing at your side. A good test in a
+            store, or with the listing photos: stand in the middle of the belt with your arms hanging
+            down. A full-length rail should be within reach of your hand there, at about wrist height.
+            Our ${A('/best-treadmills-with-handrails/', 'treadmills with handrails')} guide compares
+            five rail designs.
+          </p>
+          <p>
+            <strong>Weight capacity.</strong> Choose a rating at least 50 lb above the heaviest person
+            who will use the machine. On that rule the Sunny low-deck, at 245 lb, suits users up to about
+            195 lb, and the Treadpad, at 265 lb, users up to about 215 lb. The Exerpeutic's 400 lb and
+            the NuStep's 500 lb leave room for almost anyone. A higher rating usually goes with a
+            stiffer frame that flexes less when a foot lands off-centre, which matters for a cautious
+            walker's confidence. Our ${A('/treadmill-weight-capacity-guide/', 'treadmill weight capacity guide')}
+            explains how makers set the figure and why the margin is worth having.
+          </p>`,
+    },
+    {
+      id: 'assembly-delivery',
+      heading: 'Delivery and Assembly: Who Builds It and How Heavy Is It?',
+      navLabel: 'Delivery and assembly',
+      html: `          <p>
+            Many walking machines for seniors are bought by a son, daughter or carer and delivered to
+            someone who will not be lifting a 100 lb box. Before you order, it helps to know how heavy
+            each machine is, how it arrives and how much building it needs. These are the figures the
+            makers and listings give; where a listing is silent, ask the seller before you order.
+          </p>
+          ${table(
+            ['Machine', 'Unit weight (stated)', 'Delivery (stated)', 'Set-up (stated)'],
+            [
+              ['Exerpeutic Senior Fitness Treadmill', 'Not stated in the listing', 'Not stated in the listing', 'Not stated in the listing'],
+              ['Sunny Treadpad 7% Auto Incline', '79.4 lb (Sunny)', 'Not stated in the listing', 'Folding pad with a fold-up handlebar'],
+              ['Sunny Low Deck Treadmill', '115.5 lb (Sunny)', 'Not stated in the listing', 'Not stated in the listing'],
+              ['Sole F63', 'Not stated in the listing', 'Freight, curbside only (Amazon listing)', 'Needs two people; add-on assembly services are not run by Sole (listing)'],
+              ['Teeter FreeStep LT3', 'About 110 lb (Teeter and a dealer)', 'Not stated; transport wheels for moving it', 'Guided by the BILT app (listing)'],
+              ['NuStep T5', '285 lb (NuStep)', 'Charged on top of the $7,295 price', 'Ask NuStep or the dealer'],
+            ],
+          )}
+          <p>
+            <strong>Curbside means the end of the drive.</strong> The Sole F63's Amazon listing says it
+            ships by freight with curbside service only, and that any assembly service you add is not
+            run by Sole. For an older buyer living alone, that means the box stops at the kerb or the
+            garage unless someone is there to carry it in. Arrange two people for the day it arrives, or
+            pay for an in-home delivery and assembly service and check what it includes.
+          </p>
+          <p>
+            <strong>Build it, then check it.</strong> Whoever builds the machine should leave it on a
+            level floor, test the safety key, and tighten every bolt again after the first two weeks of
+            use, when parts have settled. Rail bolts matter most on a senior treadmill, because the rail
+            is what the walker leans on. Our guide on ${A('/how-to-assemble-a-treadmill/', 'how to assemble a treadmill')}
+            covers time, tools and what a paid assembly usually costs, and the
+            ${A('/treadmill-delivery-guide/', 'treadmill delivery guide')} explains the delivery tiers.
+          </p>
+          <p>
+            <strong>Think about moving it later.</strong> A walking pad can be slid under a bed, but at
+            79.4 lb the Treadpad is still heavy for an older user to tip and roll. The Teeter has
+            transport wheels and the Sunny low-deck weighs over 115 lb. Put each machine where it will
+            stay, with a chair beside it, rather than planning to move it between rooms. If you are
+            still deciding whether a treadmill is the right idea at all, our page on whether
+            ${A('/is-a-treadmill-good-for-seniors/', 'a treadmill is good for seniors')} weighs the
+            benefits against the real risks.
+          </p>`,
+    },
+    {
       id: 'how-we-chose',
       heading: 'How We Chose These Machines',
       html: `          <p>
@@ -271,7 +469,8 @@ export default {
             our narrower guides — senior treadmills, treadmills with handrails, walking pads with a
             handrail or recumbent ellipticals — where its figures were checked against the maker's
             product page, retailer listings and, where they exist, independent reviews. The figures here
-            are the same as on those pages, and our
+            are the same as on those pages. On 28 November 2026, the day after Black Friday, we
+            re-checked each pick's Amazon listing for price, capacity and speed figures, and our
             ${A('/editorial-standards/', 'editorial standards')} explain the process.
           </p>
           <p>
@@ -532,16 +731,20 @@ export default {
       a: `Usually a seated or recumbent cross trainer: you sit in a chair-like seat and push two pedals forward in turn while linked handles move your arms. It copies the alternating leg action of walking without a moving belt or a step up. The Teeter FreeStep and NuStep T5 are the best-known examples.`,
     },
     {
-      q: 'What speed should a senior walk on a treadmill?',
-      a: `Start at whatever feels slow and comfortable, often 1 to 2 mph, and only increase when you can walk steadily while talking. Choose a machine that starts at 0.5 mph or below so the belt never jolts you. Your doctor or physiotherapist can advise on a target if you have a heart or joint condition.`,
+      q: 'What walking machine for seniors has the lowest starting speed?',
+      a: `Of the machines on this page, the Exerpeutic Senior Fitness Treadmill: it starts at 0.3 mph and rises 0.1 mph at a time to 4 mph, by its Amazon listing. The Sunny Treadpad starts at 0.5 mph. Seated cross trainers such as the Teeter FreeStep have no belt at all, so they move only as fast as you push.`,
+    },
+    {
+      q: 'What weight capacity should a treadmill for a senior have?',
+      a: `At least 50 lb more than the heaviest user. The picks here range from 245 lb on the Sunny low-deck treadmill to 400 lb on the Exerpeutic and 500 lb on the NuStep T5. A higher rating usually means a stiffer frame, which helps a cautious walker feel steady.`,
+    },
+    {
+      q: 'Is the Exerpeutic Senior Fitness Treadmill on sale for Black Friday?',
+      a: `It was $339.15 on Amazon on 28 November 2026, about $60 under the $399 it showed on 6 November. Check the brand on the listing before you buy, because its title no longer starts with Exerpeutic and similar senior treadmills from other brands use near-identical titles.`,
     },
     {
       q: 'Are walking machines safe for people with balance problems?',
       a: `A moving belt is a fall risk for anyone with poor balance, even with rails and a safety key. If you use a cane or walker, get dizzy on standing or have fallen in the past year, a seated cross trainer is the safer walking machine. Ask a physiotherapist before using any treadmill.`,
-    },
-    {
-      q: 'Is a manual treadmill safer for seniors?',
-      a: `Usually not. Most flat manual treadmills sit at a fixed incline and take a firm push to get the belt moving, which is hard for a frail walker. A motorised treadmill with rails, started at 0.3 to 0.5 mph, is gentler. Take advice before buying either if balance is a concern.`,
     },
   ],
   mistakesHeading: 'Common Mistakes Choosing a Walking Machine for a Senior',
