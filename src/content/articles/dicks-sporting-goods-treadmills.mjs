@@ -3,16 +3,16 @@ const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
 
 export default {
   slug: 'dicks-sporting-goods-treadmills',
-  title: "Dick's Sporting Goods Treadmills (2026): What's Worth Buying",
+  title: "Dick's Sporting Goods Treadmills (2026): 8 Brands, $600–$1,300",
   description:
-    "Dick's sells mainstream home treadmills: we have seen XTERRA, LifeSmart, Horizon, Sole, Schwinn and WalkingPad listed there. Delivery, returns, price match.",
+    "Dick's lists 8 treadmill brands we track, from XTERRA to Sole, mostly about $600 to $1,300. Amazon prices on 28 Nov, delivery, returns and price match.",
   crumbLabel: "Dick's Sporting Goods Treadmills",
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ["Dick's Sporting Goods", "Treadmills"],
   standfirst:
@@ -238,6 +238,126 @@ export default {
           </p>`,
     },
     {
+      id: 'cyber-monday-price-check',
+      navLabel: "Dick's vs Amazon Prices",
+      heading: "Dick's vs Amazon: Cyber Monday Treadmill Price Check",
+      html: `          <p>
+            <strong>On 28 November 2026, the day after Black Friday, Amazon had the XTERRA TR75 at
+            $999.98, the LifeSmart TM3000 at $999.00 and the Horizon T101 Connect at $777.23.</strong>
+            Those are the three machines on our shortlist above that Amazon sells under the same model
+            name, and each figure is a single reading of the Amazon listing on that date. Cyber Monday
+            is 30 November, and prices can change several times a day during the sale.
+          </p>
+          <p>
+            We could not read Dick's own prices reliably on the same day, so we do not quote a Dick's
+            sale price here. What we can do is set the Amazon figure against the dated prices this page
+            had already recorded for each machine, so you have a reference point when you check the
+            live price at Dick's.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[640px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Treadmill</th>
+                <th class="${th}">Earlier price on this page</th>
+                <th class="${th}">Amazon, 28 Nov 2026</th>
+                <th class="${th}">What it tells you</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">XTERRA TR75</td><td class="${td}">$1,099.99 to $1,299.99 across sellers in Dick's search results (5 Nov 2026)</td><td class="${td}">$999.98</td><td class="${td}">About $100 under the bottom of the 5 November range; a Dick's price above $1,000 is not a deal this week</td></tr>
+              <tr><td class="${td}">LifeSmart TM3000</td><td class="${td}">$999 on LifeSmart's own store (5 Nov 2026)</td><td class="${td}">$999.00</td><td class="${td}">No change from LifeSmart's price; the Amazon listing says it is dropped at the curb, with no in-home setup</td></tr>
+              <tr><td class="${td}">Horizon T101 Connect</td><td class="${td}">$599.99 advertised at Dick's (Aug 2025); $699 at Horizon, sold out (14 Oct 2026)</td><td class="${td}">$777.23</td><td class="${td}">Above both earlier figures, so Amazon is not the cheap source for this one right now</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Three practical points follow. <strong>For the XTERRA, Amazon set the bar.</strong> If
+            Dick's shows the TR75 at or under $999.98 delivered, the store has the edge, because you can
+            stand on one first. <strong>For the LifeSmart, price is not the deciding factor.</strong>
+            With Amazon and LifeSmart at the same $999, compare delivery instead: the Amazon listing
+            states curbside drop-off, and a self-folding machine of this size is a two-person job from
+            the curb. <strong>For the Horizon, Amazon is the most expensive figure we have.</strong>
+            Check Dick's and Horizon's own store before paying $777, and see our
+            <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101 review</a>
+            for the recall check on older stock.
+          </p>
+          <p>
+            For machines we track across every store this week, see our
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a>
+            page, which is updated through Cyber Monday.
+          </p>`,
+    },
+    {
+      id: 'black-friday-at-dicks',
+      navLabel: 'Judging a Sale Price',
+      heading: "Black Friday and Cyber Monday at Dick's: How to Judge a Treadmill Deal",
+      html: `          <p>
+            Sporting goods chains run promotions on fitness equipment around Black Friday and Cyber
+            Monday, but a red price tag tells you only that the price is lower than a figure the store
+            chose. The useful question is whether it is lower than what the same machine costs
+            elsewhere that week. Four checks answer it.
+          </p>
+          <ol>
+            <li><strong>Find the maker's own price.</strong> XTERRA, LifeSmart, Horizon and Sole all
+            sell direct. LifeSmart, for example, listed the TM3000 at $999 and the TM4000 at $1,199 on
+            5 November 2026. A Dick's "was" price above the maker's own price is not a saving.</li>
+            <li><strong>Check Amazon for the identical model number.</strong> The table above gives the
+            28 November figures for three machines. Compare like for like: a retailer-specific model
+            number may differ in deck, motor or warranty from the nearest mainstream model.</li>
+            <li><strong>Add delivery and assembly.</strong> A lower headline price that stops at the
+            curb can cost more in practice than a slightly higher one delivered to the room, as our
+            <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a>
+            explains.</li>
+            <li><strong>Do not count on a price match during a timed sale.</strong> Academy Sports +
+            Outdoors, which lists Dick's among the online retailers it will beat by 5%, excludes
+            clearance, timed events, coupons and membership prices, and Black Friday and Cyber Monday
+            prices are often exactly that kind of event. We have not confirmed Dick's own current
+            price-match terms, so read them before relying on one.</li>
+          </ol>
+          <p>
+            If a machine you want is not discounted this week, there is a second window. Our guide to the
+            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a>
+            sets out the January and late-spring sales, when retailers clear stock ahead of new models.
+          </p>`,
+    },
+    {
+      id: 'same-machine-anywhere',
+      navLabel: 'Warranty Wherever You Buy',
+      heading: "Buying the Same Treadmill at Dick's or Online: What Stays the Same",
+      html: `          <p>
+            The machine and its warranty usually stay the same wherever you buy, because the
+            manufacturer, not the store, handles warranty claims. What changes is the price, the
+            delivery and the return terms. Here is what the maker or the Amazon listing states for the
+            three shortlist machines, so you know which parts of the deal are fixed and which are worth
+            negotiating at the till.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[640px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="${th}">Treadmill</th>
+                <th class="${th}">Warranty (maker or listing)</th>
+                <th class="${th}">Delivery or set-up stated</th>
+                <th class="${th}">What to ask at Dick's</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="${td}">XTERRA TR75</td><td class="${td}">Lifetime frame and motor, 2 years parts, 1 year in-home labour (XTERRA)</td><td class="${td}">Not stated in the Amazon bullets we read</td><td class="${td}">Whether delivery reaches the room, and the return window for a 350 lb-rated folder</td></tr>
+              <tr><td class="${td}">LifeSmart TM3000</td><td class="${td}">One year (LifeSmart)</td><td class="${td}">Curbside drop-off, no in-home setup (Amazon listing, 28 Nov 2026)</td><td class="${td}">The return window, which matters more with a one-year warranty</td></tr>
+              <tr><td class="${td}">Horizon T101 Connect</td><td class="${td}">Lifetime frame and motor (Horizon and the Amazon listing)</td><td class="${td}">The Amazon listing says it assembles in 30 minutes or less (28 Nov 2026)</td><td class="${td}">The serial number on any open-box or older unit, against the 2022 recall</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The pattern is that warranty favours none of the stores, while delivery and returns can
+            favour any of them. A store purchase gives you a place to take a problem in person and,
+            often, a floor model to try first; an online order gives you a wider range and a price that
+            is easy to compare. Either way, register the machine with the maker and keep the receipt,
+            because the warranty claim goes to the manufacturer. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
+            explains how to read parts and labour terms, and the
+            <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">Amazon buying guide</a>
+            covers the checks to make before ordering there.
+          </p>`,
+    },
+    {
       id: 'delivery-assembly',
       navLabel: 'Delivery and Assembly',
       heading: "Does Dick's Deliver and Assemble Treadmills?",
@@ -441,6 +561,14 @@ export default {
     },
   ],
   faqs: [
+    {
+      q: "Is the XTERRA TR75 cheaper at Dick's or Amazon?",
+      a: `On 5 November 2026, Dick's search results showed the TR75 between $1,099.99 and $1,299.99 across sellers. On 28 November 2026 Amazon listed it at $999.98. We could not read Dick's price the same day, so check the live listing: if Dick's matches or beats $999.98 delivered, buying there lets you try one first.`,
+    },
+    {
+      q: "Is it better to buy a treadmill at Dick's or on Amazon?",
+      a: `For trying a machine first, Dick's; for range and easy price comparison, Amazon. The warranty is usually the manufacturer's either way, so compare the delivered price and the return terms. On 28 November 2026 Amazon had the LifeSmart TM3000 at $999.00, the same as LifeSmart's own price, but its listing says delivery is curbside with no in-home setup.`,
+    },
     {
       q: "Does Dick's Sporting Goods sell treadmills?",
       a: `Yes. Dick's sells mainstream home treadmills in stores and online, and across this site's guides we have seen XTERRA, LifeSmart, Horizon, Sole, Schwinn, WalkingPad and Sunny Health & Fitness models listed there, mostly folding machines. Selection varies by store and over the year, so call ahead if you want to try a specific machine.`,
