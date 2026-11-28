@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-23',
+  modified: '2026-11-28',
   h1: ['How Much Does a', 'Curved Treadmill Cost?'],
   standfirst:
     'A proper curved treadmill costs about $1,100 to $4,500, and most home buyers pay $1,900 to $3,500. On 23 November 2026 the Sole C80 was $2,099.99, the AssaultRunner Pro $3,499 and the TrueForm Trainer $3,495; the TrueForm Runner starts at $6,195. Below about $1,000 you are buying a curved walking pad, not a running trainer. Here is every tier, why curved costs more than motorised, and the five-year sums.',
@@ -58,7 +59,7 @@ export default {
             For what a curved treadmill does and does not do well, read our
             <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium">curved treadmill guide</a>; for the
             machines we would shortlist, see the
-            <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>.
+            <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>. One of the dearest, the motorless <a href="/centr-treadmills/" class="text-[#0F62FE] font-medium">Centr x HYROX Perform Tread</a> from Chris Hemsworth’s brand, is $6,999.
           </p>`,
     },
     {
@@ -167,7 +168,7 @@ export default {
             from $8,199. Technogym&rsquo;s Skillmill, at $15,250, is a club product. At this level you are paying for a
             particular curve, surface or finish, not for faster or harder training than a $3,500 machine allows. See our
             <a href="/trueform-treadmills/" class="text-[#0F62FE] font-medium">TrueForm guide</a> and
-            <a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium">Woodway guide</a> for those ranges.
+            <a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium">Woodway guide</a> for those ranges. Technogym’s home treadmills start lower, with the <a href="/technogym-treadmills/" class="text-[#0F62FE] font-medium">Technogym MyRun</a> at $5,390.
           </p>`,
     },
     {
@@ -233,7 +234,7 @@ export default {
             November 2026 listed a replacement Runner KRI belt at $2,295 and a Naboso barefoot belt at $2,675, alongside
             small parts such as a guide roller assembly at $9.89 and a one-way bearing at $154. That is why belt and parts
             warranties matter more on a curved trainer than the headline frame term. Compare Assault&rsquo;s three tiers: 2
-            years of parts on the Classic, 3 on the Pro and Elite, and belt cover from none to lifetime.
+            years of parts on the Classic, 3 on the Pro and Elite, and belt cover from none to lifetime. Rogue Fitness, which resells Woodway, TrueForm and STEPR trainers, listed eight treadmills from $3,495 to $11,395 on 5 November 2026, as our <a href="/rogue-treadmills/" class="text-[#0F62FE] font-medium">Rogue Fitness treadmill guide</a> shows.
           </p>`,
     },
     {

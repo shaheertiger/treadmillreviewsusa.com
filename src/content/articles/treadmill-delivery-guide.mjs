@@ -62,7 +62,7 @@ export default {
             the crate to the ground at the nearest point it can reach — your driveway, the street
             outside a house, or the loading area of an apartment building. The driver is generally
             not obliged to move it further, and often is not insured to. This is the default for a
-            great many online treadmill orders, including many that advertise free delivery.
+            great many online treadmill orders, including many that advertise free delivery. That is also how Home Depot’s online-only treadmills reach you: shipped to your home, or to a store for you to collect, as our <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium">Home Depot treadmill guide</a> found.
           </p>
           <p>
             <strong>Threshold.</strong> The crate comes to your front door, a garage, or just inside
@@ -110,7 +110,7 @@ export default {
             per-flight stair charges, long-carry charges where the truck cannot park close to the
             entrance, remote-area fees, and charges for a failed delivery if nobody is home or the
             building refuses access. A missed delivery can mean paying for the attempt and then
-            paying again for the rebooking.
+            paying again for the rebooking. Scheels, for example, can add a freight surcharge to a treadmill order, as our <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">Scheels treadmill page</a> notes.
           </p>
           <p>
             Promotional periods change the arithmetic. Retailers frequently include upgraded delivery
@@ -382,7 +382,7 @@ export default {
             crate takes longer than people expect, and some municipal collections limit the volume
             of cardboard per pickup. Keep it, folded flat, until the seller's return period has
             passed if you have anywhere to store it; a treadmill without its <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a> can
-            be much harder to return.
+            be much harder to return. Forgetting the delivery route, from doors to stair turns and bannisters, is one of the fifteen <a href="/treadmill-buying-mistakes/" class="text-[#0F62FE] font-medium">treadmill buying mistakes</a> we list.
           </p>
           <p>
             Finally, walk on it before you run on it. A few minutes at low speed is a sensible first

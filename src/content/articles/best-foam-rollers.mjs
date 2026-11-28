@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.5k',
   h1: ['Best Foam Roller', 'for Your Firmness, Texture and Space'],
   standfirst:
@@ -35,7 +35,7 @@ export default {
             Six rollers, chosen so that each common firmness, texture and use has a good example. The
             short version: most people should start with a firm, short, hollow-core roller like the
             GRID 1.0, or a medium-density roller if they are new to rolling, and only consider a
-            textured, extra-firm or vibrating roller once they know they want more.
+            textured, extra-firm or vibrating roller once they know they want more. A whole-body vibration plate is a different product again; our <a href="/lifepro-waver-vibration-plate-review/" class="text-[#0F62FE] font-medium">LifePro Waver review</a> checks one of the best sellers, a 99-speed plate rated to 330 lb.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -57,7 +57,7 @@ export default {
             <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">best recovery tools for weightlifters</a>
             puts it alongside massage balls, straps and powered tools, and the
             <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> links every guide
-            in this series.
+            in this series. For cold water rather than pressure, our <a href="/best-cold-plunges/" class="text-[#0F62FE] font-medium">best cold plunges</a> guide compares five tubs, from a $150 ice bath to a tub with a built-in chiller.
           </p>`,
     },
     {

@@ -174,7 +174,7 @@ export default {
             Search for a treadmill on Amazon and a large share of the results come from brands you
             may not recognise, often with very similar-looking machines at lower prices. Some are
             fine for light use. The difference that matters is not the name on the hood but what
-            happens after the sale.
+            happens after the sale. Our review of the <a href="/streamdale-folding-treadmill/" class="text-[#0F62FE] font-medium">Streamdale folding treadmill</a> shows the same pattern: a furniture seller, not a treadmill maker, offering unbranded machines with no independent review.
           </p>
           <p>
             <strong>Parts and service.</strong> A treadmill will eventually need a part — a belt, a
@@ -342,7 +342,7 @@ export default {
             weaknesses are listing accuracy, the variety of sellers and the practical difficulty of
             returning a heavy item. For the other big online marketplaces, see <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">buying a treadmill on Wayfair</a>
             and our guide to <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart treadmills</a>,
-            where the same seller checks apply.
+            where the same seller checks apply. Wayfair’s house labels need extra care: when we checked the <a href="/east-urban-home-treadmill/" class="text-[#0F62FE] font-medium">East Urban Home compact treadmill</a>, the same listing title ran under 7 other labels with spec sheets for non-treadmill products.
           </p>
           <p>
             <strong>Buying direct from the manufacturer</strong> gives you the clearest specification
@@ -352,7 +352,7 @@ export default {
             such as Costco carry a small, rotating range with a strong return reputation — see our
             <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">Costco guide</a>.
             The <strong>used market</strong> offers the most hardware for the money, with no
-            recourse.
+            recourse. Sam’s Club stocks mainly NordicTrack and ProForm, often at members-only prices; see our <a href="/sams-club-treadmills/" class="text-[#0F62FE] font-medium">Sam’s Club treadmills</a> page.
           </p>
           <p>
             A sensible approach for many buyers is to try machines in a store, settle on a

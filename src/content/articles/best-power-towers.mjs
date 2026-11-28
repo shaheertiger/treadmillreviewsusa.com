@@ -1,15 +1,14 @@
 export default {
   slug: 'best-power-towers',
-  title: 'Best Power Towers (2026): 5 Pull-Up and Dip Stations Checked',
-  description:
-    'Five power towers checked against maker and independent sources: what weight ratings mean, stability and tipping, bar height for tall users, and assembly.',
+  title: "Best Power Towers (2026): 5 Pull-Up and Dip Stations Checked",
+  description: "The Sportsroyals is the best budget power tower, with eight bar heights; the RELIFE suits low ceilings, from 58.5 to 89 in. Five towers, and stability checks.",
   crumbLabel: 'Best Power Towers',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Power Towers', 'and What Their Weight Ratings Leave Out'],
   standfirst:
@@ -387,14 +386,14 @@ export default {
             <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">weight bench</a>
             and
             <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>
-            pair well with a tower.
+            pair well with a tower. If heavy solo pressing and squatting is the goal, our <a href="/best-smith-machines/" class="text-[#0F62FE] font-medium">Smith machine guide</a> covers seven frames whose bar you can rack at any point.
           </p>
           <p>
             <strong>If you have a shoulder or elbow problem</strong>, pull-ups and dips are among the
             hardest exercises on those joints. Get advice before you buy, and consider starting with
             a cable machine, where the load can be set below your body weight; our
             <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">cable machine guide</a>
-            covers the options.
+            covers the options. A <a href="/best-smart-home-gyms/" class="text-[#0F62FE] font-medium">smart home gym</a> such as the Tonal 2 does the same with digital resistance that starts at 5 lb.
           </p>`,
     },
   ],

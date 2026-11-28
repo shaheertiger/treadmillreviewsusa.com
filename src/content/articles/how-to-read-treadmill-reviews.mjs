@@ -98,7 +98,7 @@ export default {
       html: `          <p>
             This is the single most common way treadmill reviews mislead, and it is not anyone
             cheating. Marketplaces group related products on one page so you can switch between them,
-            and on many such pages the star rating and the reviews are pooled across every variant. For an extreme case, see why the <a href="/east-urban-home-treadmill/" class="text-[#0F62FE] font-medium">East Urban Home treadmill</a> listings describe furniture.
+            and on many such pages the star rating and the reviews are pooled across every variant. For an extreme case, see why the <a href="/east-urban-home-treadmill/" class="text-[#0F62FE] font-medium">East Urban Home treadmill</a> listings describe furniture. For a brand with no independent review to read at all, see what we found on <a href="/zofdim-treadmills/" class="text-[#0F62FE] font-medium">Zofdim</a>.
           </p>
           <p>
             <strong>Several machines on one page.</strong> When we checked Amazon for our roundup, one
@@ -311,7 +311,7 @@ export default {
             involved disassembling a 200 lb machine are mostly about returning freight, which is hard
             everywhere. Our guide to
             <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
-            explains what to expect, and why it is worth choosing carefully enough not to need one.
+            explains what to expect, and why it is worth choosing carefully enough not to need one. Never standing on one and not knowing the return terms both make our list of <a href="/treadmill-buying-mistakes/" class="text-[#0F62FE] font-medium">treadmill buying mistakes to avoid</a> before you order.
           </p>`,
     },
     {
@@ -427,7 +427,7 @@ export default {
             has not told you enough, and the manufacturer's warranty and reputation have to carry more of
             the decision. Budget machines are where this matters most, and our guide to the
             <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">best treadmills under $300</a>
-            shows how often budget listings disagree with their own manuals.
+            shows how often budget listings disagree with their own manuals. Our <a href="/ancheer-treadmills/" class="text-[#0F62FE] font-medium">ANCHEER</a> page shows one listing that gives two different capacities, 320 and 350 lb.
           </p>`,
     },
     {

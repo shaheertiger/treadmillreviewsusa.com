@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Life Fitness Run CX Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Run CX Treadmill', 'Review: Life Fitness at Home'],
   standfirst:
@@ -96,7 +96,7 @@ export default {
             F3 folding treadmill and the T3 (both from $3,499), the Run CX ($4,899), the Atmos
             Treadmill Home Edition (from $5,299), the Club Series+ (from $7,599), the Hammer Strength
             HD Tread and the Symbio Runner Home Edition. The Run CX sits in the middle of that list,
-            above the T3 and below the club-derived machines.
+            above the T3 and below the club-derived machines. In the Black Friday sale on 27 November 2026 the Run CX cost $3,919 and the T3 $2,974, as our <a href="/how-much-does-a-life-fitness-treadmill-cost/" class="text-[#0F62FE] font-medium">Life Fitness cost breakdown</a> shows.
           </p>
           <p>
             Life Fitness describes the Run CX as a premium home treadmill, and its dealers carry the
@@ -105,7 +105,7 @@ export default {
             studio or an apartment-block gym: it is a residential product with a residential warranty.
             Its sibling for those settings is a different machine, and the jump in price is large. Our
             <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills guide</a>
-            covers what changes when a treadmill is built for many users a day.
+            covers what changes when a treadmill is built for many users a day. <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor</a>, now owned by Peloton, has gone further and sells only commercial treadmills, with no home model at all.
           </p>
           <p>
             The ownership is worth a sentence. Brunswick Corporation sold its fitness business,
@@ -196,7 +196,7 @@ export default {
             them as the manufacturer's description rather than cross-checked figures. A reversible deck
             matters for long-term ownership, because a worn deck can be flipped rather than replaced;
             our <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">deck replacement guide</a>
-            explains when that applies.
+            explains when that applies. <a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium">Woodway’s</a> slat-belt treadmills avoid the question altogether, with a running surface Woodway rates for about 150,000 miles.
           </p>`,
     },
     {

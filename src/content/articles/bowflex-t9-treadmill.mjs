@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Bowflex T9 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Bowflex T9', 'Treadmill Review'],
   standfirst:
@@ -67,14 +67,14 @@ export default {
             for runners and heavier users, with two practical irritations and one figure that needs reading
             carefully.</strong> Its strengths are the ones on the spec sheet: a 22 by 60-inch deck, motorised
             incline to 15%, a 350 lb rating, a lifetime warranty on the frame and motor, and a console that
-            works fully without any subscription.
+            works fully without any subscription. In Bowflex’s Black Friday sale it was $1,399 on 24 November 2026, with no code needed, as our <a href="/bowflex-treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Bowflex Black Friday deals</a> page shows.
           </p>
           <p>
             The irritations come from independent reviewers rather than from the listing. Both reviews we
             read report that the T9's Bluetooth cannot connect a heart-rate strap and an app at the same
             time, and both describe the cushioning as firmer than some users will want. The figure to read
             carefully is the 3.5 HP motor rating, which Bowflex footnotes as a test-setting figure that does
-            not reflect the motor's operational horsepower.
+            not reflect the motor's operational horsepower. Outside the sale it lists at $1,799 on Bowflex’s store, as our <a href="/how-much-does-a-bowflex-treadmill-cost/" class="text-[#0F62FE] font-medium">Bowflex treadmill cost guide</a> shows.
           </p>
           <p>
             Buy it at or near its sale price — $1,399 on bowflex.com when we checked, against $1,799 regular —

@@ -54,7 +54,7 @@ export default {
             rating and a console with four buttons, for about $399. If balance is poor enough that
             walking on a moving belt is a risk, choose a seated machine such as the Teeter FreeStep LT3
             instead. If space is the main limit and you are steady on your feet, a walking pad with a
-            handrail such as Sunny's Treadpad is the compact option.
+            handrail such as Sunny's Treadpad is the compact option. On Sunny’s own store a TreadPad cost $299.99 to $599.99 on 27 November 2026, per our <a href="/how-much-does-a-sunny-treadmill-cost/" class="text-[#0F62FE] font-medium">guide to Sunny treadmill prices</a>.
           </p>
           ${table(
             ['Pick', 'Type', 'Best for', 'Why'],
@@ -136,7 +136,7 @@ export default {
             We have not tested these machines hands-on. Read each card for the figure that matters to
             you — the starting speed, the step-up height, the weight rating or the seat — rather than
             for the badge, and check the listing again before you buy, because sellers change models
-            and prices without changing the product photo.
+            and prices without changing the product photo. If deck height is the figure that matters most, our <a href="/best-low-profile-treadmills/" class="text-[#0F62FE] font-medium">best low profile treadmills</a> compare five machines on it.
           </p>`,
     },
     {
@@ -493,7 +493,7 @@ export default {
             Large connected treadmills built around a touchscreen and a subscription, which add cost and
             complexity an older walker rarely wants. And clinical treadmills such as the Landice L7
             Rehabilitation, which are excellent but sold through dealers at clinic prices; if a therapist
-            recommends one, they will usually know a dealer.
+            recommends one, they will usually know a dealer. Landice’s home L7, by comparison, listed from $5,429 on Landice’s own store in November 2026, as our <a href="/how-much-does-a-landice-treadmill-cost/" class="text-[#0F62FE] font-medium">Landice pricing page</a> sets out.
           </p>`,
     },
     {

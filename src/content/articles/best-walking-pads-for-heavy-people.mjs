@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.3k',
   h1: ['Best Walking Pads', 'for Heavy People'],
   standfirst:
@@ -58,7 +58,7 @@ export default {
             <a href="#capacity-margin" class="text-[#0F62FE] font-medium">why capacity margin matters</a>.
             A pad rated exactly at your weight is a pad running at its limit every time you step on
             it, and on a machine this light that shows up quickly in the belt, the deck and the
-            motor.
+            motor. That is worth remembering with budget brands such as <a href="/akluer-treadmills/" class="text-[#0F62FE] font-medium">AKLUER</a>, which gives every current pad the same 330 lb rating whatever its size or price.
           </p>`,
     },
     {
@@ -81,7 +81,7 @@ export default {
             had. The picks were made from published specifications, manufacturer and retailer
             listings, warranty terms and independent coverage, checked on 13 October 2026. For each
             pad we confirmed that it is currently sold, on the brand's own store, on Amazon, at a
-            specialist retailer, or several of these.
+            specialist retailer, or several of these. Capacity is where budget listings vary most: <a href="/superun-treadmills/" class="text-[#0F62FE] font-medium">Superun</a>, for one, claims 300 to 400 lb across its pads and publishes no spec sheet to settle which is right.
           </p>
           <p>
             The starting filter was a stated capacity of roughly 300 lb or more. That alone removes
@@ -181,7 +181,7 @@ export default {
             a 0.7-inch phenolic deck — and independent coverage of the W50 describes a reinforced deck about 15 mm thick.
             A thicker, denser deck flexes less under load, which is better for the belt, the motor
             and your joints alike. A brand that publishes deck details is at least telling you it
-            has thought about them.
+            has thought about them. That build is reflected in the price: LifeSpan’s under-desk treadmills cost $1,199 to $1,699 on its store on 26 November 2026, as our <a href="/how-much-does-a-lifespan-treadmill-cost/" class="text-[#0F62FE] font-medium">LifeSpan treadmill prices</a> page shows.
           </p>
           <p>
             <strong>The frame and the machine's own weight.</strong> Heavier is generally better here.

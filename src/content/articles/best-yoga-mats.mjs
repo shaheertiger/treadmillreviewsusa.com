@@ -1,15 +1,14 @@
 export default {
   slug: 'best-yoga-mats',
-  title: 'Best Yoga Mats (2026): 7 Picks by Material and Grip',
-  description:
-    'Seven yoga and exercise mats sold on Amazon, checked against makers and independent sources: PVC, TPE, natural rubber and PU tops, thickness, grip and weight.',
+  title: "Best Yoga Mats (2026): 7 Picks by Material and Grip",
+  description: "A dense 5–6 mm PVC mat suits most home yoga; the Manduka PRO 6mm is our pick. Seven mats across PVC, TPE, natural rubber and PU, plus a thick exercise mat.",
   crumbLabel: 'Best Yoga Mats',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Best Yoga Mats', 'and the Best Exercise Mat for Floor Work'],
   standfirst:
@@ -351,7 +350,7 @@ export default {
             <a href="/best-balance-boards/" class="text-[#0F62FE] font-medium">balance boards</a>
             cover each one, and our
             <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools guide</a>
-            explains where stretching kit fits around lifting.
+            explains where stretching kit fits around lifting. If a vibration plate is on your list as well, our <a href="/lifepro-waver-vibration-plate-review/" class="text-[#0F62FE] font-medium">LifePro Waver review</a> sets out what one of the best-selling plates can and cannot be shown to do.
           </p>`,
     },
     {

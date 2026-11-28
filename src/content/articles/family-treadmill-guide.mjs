@@ -91,7 +91,7 @@ export default {
             regularly, with about 50 lb of headroom — more if that person runs. It is easy to get
             this wrong when the treadmill is bought by or for one person and then shared with a
             heavier partner, or a teenager who grows into it. The heaviest user is also the one whose
-            sessions load the motor most, which feeds into the next section.
+            sessions load the motor most, which feeds into the next section. Our <a href="/best-treadmills-for-two-people/" class="text-[#0F62FE] font-medium">treadmills for two people</a> list leads with a 350 lb-rated machine so that a shared treadmill keeps that headroom.
           </p>
           <p>
             Capacity is a reasonable proxy for overall build: a higher rating usually comes with a
@@ -163,7 +163,7 @@ export default {
             serious injuries to children, including friction burns and, in the worst cases, being
             pulled under the rear roller. The US Consumer Product Safety Commission has warned about
             exactly this. Most of those injuries happen when the machine is running for an adult and
-            a child approaches it, or when a child plays on a machine that can be started.
+            a child approaches it, or when a child plays on a machine that can be started. Our <a href="/kids-treadmill/" class="text-[#0F62FE] font-medium">guide to kids and treadmills</a> explains why the Sole and Horizon manuals set a minimum age of 13 and NordicTrack, ProForm and Peloton set 16.
           </p>
           <p>
             The practical rules from our
@@ -189,7 +189,7 @@ export default {
             disable or bypass a safety feature for convenience.
           </p>
           <p>
-            One family member we are asked about more than you might expect is the dog; our guide to <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">treadmills for dogs</a> explains why a <a href="/dog-treadmill-vs-human-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>human treadmill</a> is a compromise and the safety rules that are not negotiable.
+            One family member we are asked about more than you might expect is the dog; our guide to <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">treadmills for dogs</a> explains why a <a href="/dog-treadmill-vs-human-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>human treadmill</a> is a compromise and the safety rules that are not negotiable. If a dedicated machine makes more sense, our <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">best dog treadmills</a> sort six purpose-built models by size, from toy breeds to giants.
           </p>`,
     },
     {

@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-24',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Best Walking Pads With an App', 'What Each App Actually Does'],
   standfirst:
@@ -157,7 +157,7 @@ export default {
             The simplest job is starting, stopping and changing speed from your phone, which most of these
             listings mention. It is useful mainly when the remote goes missing. On the UREVO Strol 2E Pro,
             the listing goes further and says the app reads your rhythm and adjusts speed for you, and can
-            match your pace to the tempo of a playlist.
+            match your pace to the tempo of a playlist. UREVO’s pads cost $149.99 to $429.99 on its own store on 27 November 2026, as our <a href="/how-much-does-a-urevo-walking-pad-cost/" class="text-[#0F62FE] font-medium">UREVO price guide</a> records.
           </p>
           <h3>Tracking and health sync</h3>
           <p>
@@ -178,7 +178,7 @@ export default {
           <p>
             Zwift, Kinomap and FitShow are independent platforms that work with many brands of treadmill.
             SereneLife names all three; WELLFIT names Kinomap. If you already use one of them, a pad that
-            names it is worth more than any maker app.
+            names it is worth more than any maker app. <a href="/serenelife-treadmills/" class="text-[#0F62FE] font-medium">SereneLife</a> sells those pads from $167.29 on Amazon, alongside folding treadmills from $237.89.
           </p>`,
     },
     {

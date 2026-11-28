@@ -39,7 +39,7 @@ export default {
             cheapest powered one we could verify and the one to choose for steep incline walking;
             the two Life Fitness machines are the step up in build and warranty; and the Sole TT8 is the
             light-commercial option for heavy use, in place of Life Fitness's gym-grade Club Series+,
-            which is sold through dealers and Life Fitness direct rather than on Amazon.
+            which is sold through dealers and Life Fitness direct rather than on Amazon. <a href="/true-fitness-treadmills/" class="text-[#0F62FE] font-medium">TRUE’s Performance treadmills</a>, with a 60-inch deck and a 350 lb rating, are another dealer-sold option at $5,199 to $6,999.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -159,7 +159,7 @@ export default {
             treadmills. Life Fitness illustrates the point within its own range. On its own
             comparison table, the folding F3 and the non-folding T3 started at the same $3,499 on 15
             October, but the F3 had a 55 by 20-inch running surface, a 10 mph top speed and 12%
-            incline, while the T3 had 60 by 20 inches, 12 mph and 15%.
+            incline, while the T3 had 60 by 20 inches, 12 mph and 15%. By 27 November the Black Friday sale had cut them to $2,799 and $2,974, as our <a href="/how-much-does-a-life-fitness-treadmill-cost/" class="text-[#0F62FE] font-medium">Life Fitness price breakdown</a> shows.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Longer warranties</h3>
           <p>

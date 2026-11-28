@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Guide',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Curved Treadmill Workouts', 'Built Around a Belt You Drive'],
   standfirst:
@@ -63,7 +63,7 @@ export default {
             machine, our
             <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">treadmill sprint workout</a>
             page covers the mount at speed, incline sprints and the rest of what changes when a
-            motor sets the pace.
+            motor sets the pace. In many gyms the curved machine on the floor is a <a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium">Woodway Curve</a>, the self-powered treadmill most gym-goers know.
           </p>`,
     },
     {
@@ -288,7 +288,7 @@ export default {
             roundup, the SOLE C80 and the Sunny SF-X7110 have eight magnetic levels each, and the
             <a href="/tru-grit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Tru Grit</a> Runner has six levels with the top two set up for sled-push work. Machines
             without resistance — including the AssaultRunner Pro — cannot do a true sled push,
-            because the belt runs freely.
+            because the belt runs freely. Self-powered machines with magnetic levels, such as the <a href="/sb-fitness-ct700-curved-treadmill/" class="text-[#0F62FE] font-medium">SB Fitness CT700</a> with eight, are the kind listed for sled-push work.
           </p>
           <ul>
             <li><strong>Set-up:</strong> resistance at or near the top of its range. Hands on the
@@ -354,7 +354,7 @@ export default {
             our
             <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">manual treadmill roundup</a>
             covers the flat folding walkers, and a motorised incline machine does long walks far
-            better.
+            better. If you are still deciding which kind of machine suits you, our guide to the <a href="/types-of-treadmills/" class="text-[#0F62FE] font-medium">different types of treadmills</a> sets out who each one suits.
           </p>`,
     },
     {

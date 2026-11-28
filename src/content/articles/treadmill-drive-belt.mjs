@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Repair',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '1.5k',
   h1: ['Treadmill', 'Drive Belt'],
   standfirst:
@@ -72,7 +72,7 @@ export default {
             over-tightening the running belt to cure drive-belt slip only adds load to the motor and
             rollers. Our guide to
             <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">treadmill belt slipping</a>
-            covers the running belt in detail.
+            covers the running belt in detail. For a walking pad, see our <a href="/walking-pad-belt-slipping/" class="text-[#0F62FE] font-medium">walking pad belt slipping</a> guide, which starts with lubricant and then equal 1/4 turns on both rear bolts.
           </p>`,
     },
     {
@@ -128,7 +128,7 @@ export default {
           <p>
             <strong>3. Listen and smell.</strong> Noise and smell concentrated under the motor hood
             point to the drive belt. Slip you can feel under your feet with no noise from the front
-            points to the running belt.
+            points to the running belt. A click from under the hood with nobody on the belt is a related clue; our guide to <a href="/treadmill-clicking-noise/" class="text-[#0F62FE] font-medium">a treadmill clicking noise</a> puts it down to the motor or drive belt.
           </p>
           <p>
             <strong>4. Inspect with the hood off</strong>, unplugged, as below. If the running belt

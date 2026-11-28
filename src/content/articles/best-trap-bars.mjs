@@ -1,15 +1,14 @@
 export default {
   slug: 'best-trap-bars',
-  title: 'Best Trap Bar (2026): 5 Open and Closed Hex Bars Compared',
-  description:
-    'Five trap bars checked against maker specs and reviews: open vs closed hex bars, handle heights, sleeve length, bar weight, rack fit and the room they need.',
+  title: "Best Trap Bar (2026): 5 Open and Closed Hex Bars Compared",
+  description: "The REP Fitness Open Trap Bar is the best trap bar for most home gyms: 16.5 in sleeves, rackable, a choice of handle widths. Five open and closed bars compared.",
   crumbLabel: 'Best Trap Bars',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Trap Bar', 'for a Home Gym: Open and Closed Hex Bars'],
   standfirst:
@@ -24,7 +23,7 @@ export default {
           heights, but that is not the right answer for everyone. Open bars are longer, heavier and
           dearer than the classic closed hexagon, and the cheapest bars have sleeves so short that a
           strong lifter runs out of room for bumper plates long before the bar reaches its rating.
-          The five bars below cover open and closed designs from about $300 to about $465, and the
+          The five bars below cover open and closed designs from about $90 to about $465, and the
           guide after them explains the measurements that matter: handle height, sleeve length, the
           weight of the empty bar, whether it rests in your rack, and how much floor it needs.`,
   sections: [
@@ -170,7 +169,7 @@ export default {
             takes less room. If you want carries, lunges and split squats too, or you train alone and
             want the easiest possible loading, an open bar with a jack is worth the premium. If the
             bar has to live in a small room, check the length before anything else; it is the figure
-            that most often rules a bar out.
+            that most often rules a bar out. If you would rather have the path guided for heavy leg work, compare six <a href="/best-hack-squat-machines/" class="text-[#0F62FE] font-medium">home hack squat machines</a>, where the sled takes the balancing out of a deep squat.
           </p>`,
     },
     {

@@ -6,9 +6,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Timing',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['Treadmill', 'Black Friday Deals'],
   standfirst: `Black Friday is Friday 27 November this year and Cyber Monday is 30 November. Here are seven machines on Amazon worth watching, one or two in every tier, with what each sold for when we checked and the price at which we would call it a good deal.`,
@@ -195,7 +195,7 @@ export default {
             Black Friday price, and both are what these pads usually cost. A Black Friday price on a
             pad is only worth getting excited about if it is below the price it has been selling at
             for months, and our targets for both pads are set accordingly: roughly the current
-            price for the Strol 2E and about 13% under it for the Z1.
+            price for the Strol 2E and about 13% under it for the Z1. The Strol 2E is also the top pick in our <a href="/best-treadmills-under-200/" class="text-[#0F62FE] font-medium">best treadmills under $200</a>, at about $170.
           </p>
           <p>
             <strong>Budget folding treadmills.</strong> The <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack T Series</a> 5 shows the pattern
@@ -203,7 +203,7 @@ export default {
             checked on 13 October, a deal at $479 posted on 6 January 2026, and a low of $418.99
             recorded by a price tracker earlier in 2026. A genuine Black Friday price in the $420 to
             $480 range would be 19 to 29% under the price it was selling at in October — squarely in
-            the normal band. Anything advertised as half off is measured from something else.
+            the normal band. Anything advertised as half off is measured from something else. If you can stretch further, the ProForm Carbon TLS that heads our <a href="/best-treadmills-under-600/" class="text-[#0F62FE] font-medium">treadmills under $600</a> list was about $559 on Amazon.
           </p>
           <p>
             <strong>Mid-range and running treadmills.</strong> This is where the 15 to 30% band
@@ -336,7 +336,7 @@ export default {
             with a percentage badge between them. The "was" figure may be the manufacturer's
             suggested retail price, a "compare at" price, or simply a price the item was listed at
             briefly. If the machine has been selling well below it for months, the discount is
-            arithmetic against a number nobody paid.
+            arithmetic against a number nobody paid. Budget walking pad stores do this all year: <a href="/umay-treadmills/" class="text-[#0F62FE] font-medium">UMAY Fitness</a>, for one, usually prices its pads 40% below a “regular” price.
           </p>
           <p>
             Some warning signs are worth knowing:

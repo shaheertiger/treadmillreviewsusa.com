@@ -1,15 +1,15 @@
 export default {
   slug: 'black-friday-folding-treadmill-deals',
-  title: 'Black Friday Folding Treadmill Deals 2026: Six to Watch',
+  title: 'Black Friday Folding Treadmill Deals (2026): 6 Models to Watch',
   description:
-    'Six folding treadmills on Amazon to watch for Black Friday 2026, with dated prices, our target prices, folded sizes and the checks that matter in a small home.',
+    'Six folding treadmills to watch this Black Friday, from about $170 to $1,600, with dated prices, the price we would wait for (T101: $599) and folded sizes.',
   crumbLabel: 'Black Friday Folding Treadmill Deals',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-28',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['Black Friday', 'Folding Treadmill Deals 2026'],
   standfirst:
@@ -92,7 +92,7 @@ export default {
           <p>
             One deliberate omission: the NordicTrack T Series 5 is a popular cheap machine on Amazon,
             but listings disagree on whether it folds, and we could not settle it. On a page about
-            folding treadmills that is disqualifying, so it is not here.
+            folding treadmills that is disqualifying, so it is not here. Listings for <a href="/oma-treadmills/" class="text-[#0F62FE] font-medium">OMA folding treadmills</a> such as the 7200EB have a similar problem, disagreeing with the 7200EB’s own manual on the belt and the motor.
           </p>`,
     },
     {

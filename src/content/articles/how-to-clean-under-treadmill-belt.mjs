@@ -37,7 +37,7 @@ export default {
             offender in most homes and it is drawn in continuously by the motor's cooling fan. Belt
             backing sheds fine particles as it wears. Add hair, skin and general household dust and
             the result is a fibrous mat that holds grit against the deck and resists being pushed
-            aside by the belt.
+            aside by the belt. That grit is one reason a belt can grind only when someone walks on it, as our <a href="/treadmill-grinding-noise/" class="text-[#0F62FE] font-medium">treadmill grinding noise</a> guide explains.
           </p>
           <p>
             The consequence is the familiar chain: friction rises, the motor draws more current to

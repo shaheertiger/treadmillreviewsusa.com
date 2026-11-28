@@ -9,9 +9,9 @@ export default {
   crumbLabel: 'Treadmill Interval Workouts',
   kicker: 'Training Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '5.2k',
   h1: ['Interval Training', 'on a Treadmill'],
   standfirst:
@@ -268,7 +268,7 @@ export default {
             A week of three easy sessions and one interval session beats four interval sessions
             comfortably, and is far more likely to still be happening in three months. Our
             <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">training guide</a>
-            covers the full weekly structure.
+            covers the full weekly structure. For a week-by-week version, our <a href="/treadmill-workout-plan/" class="text-[#0F62FE] font-medium">12-week treadmill workout plan</a> sets out walker, beginner-runner and runner tracks with every speed and grade written down.
           </p>`,
     },
     {
@@ -345,7 +345,7 @@ export default {
             speed and vary the incline, since some machines change grade faster than they change
             speed — though many do not, so check yours. Alternatively lengthen both the effort and
             the recovery to 30 and 30, which loses the original protocol's specificity but is
-            executable on a belt.
+            executable on a belt. If quick changes matter to you, our <a href="/best-treadmills-for-hiit/" class="text-[#0F62FE] font-medium">treadmills for HIIT</a> guide compares five machines on their controls and usable top speed.
           </p>
           <p>
             The honest answer is that Tabata suits a bike or a rower, where resistance changes

@@ -43,7 +43,7 @@ export default {
             shipping fees and surcharges are not refundable. Second, some machines ship directly
             from the manufacturer, and the premium Landice models we saw were marked available in
             store only. Third, Scheels' help pages do not list treadmill assembly as a service, so
-            ask how the machine reaches the room and who builds it.
+            ask how the machine reaches the room and who builds it. Online, Landice’s own store listed its home models at $3,999 to $8,904 on 27 November 2026, as our <a href="/how-much-does-a-landice-treadmill-cost/" class="text-[#0F62FE] font-medium">Landice price guide</a> shows.
           </p>
           <p>
             If those answers work for you, the decision comes down to the machine itself. Our
@@ -61,7 +61,7 @@ export default {
             Dakota. It traces its history to a hardware and general store opened in Sabin, Minnesota,
             in 1902, and today runs large-format stores that sell everything from hunting and
             fishing gear to golf, team sports, footwear and fitness equipment. Its stores are large-format,
-            and the ones we looked at advertise an exercise and fitness department.
+            and the ones we looked at advertise an exercise and fitness department. Academy Sports + Outdoors is the nearest equivalent in the South and Southeast, with stores across both regions, as our <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium">Academy Sports guide</a> explains.
           </p>
           <p>
             Scheels' store directory, checked on 14 October 2026, listed 34 open stores in 16 states
@@ -312,7 +312,7 @@ export default {
             they could change speed or stop unexpectedly, and the remedy was a free software update.
             If you are offered an older or used T101, check its model and serial number against the
             CPSC notice. For any treadmill, registering with the manufacturer is how you hear about
-            a future recall.
+            a future recall. Horizon also lists a software update as the fix for interference-related speed problems on some T101s, as our <a href="/horizon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Horizon treadmill troubleshooting</a> guide notes.
           </p>`,
     },
     {

@@ -11,9 +11,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-23',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Walking Pad Belt Slipping or Off-Center?', 'How to Fix It'],
   standfirst:
@@ -147,7 +147,7 @@ export default {
             each end cap, there is a bolt on the left and one on the right. Turning both by the same amount moves the rear
             roller backwards or forwards, which tightens or loosens the belt. Turning one only steers it, which is the
             tracking adjustment covered next. Most pads come with a hex key that fits these bolts; if yours did not, the
-            manual will give the size.
+            manual will give the size. UREVO's own instructions work in turns of 1/4 to 1/2, which our <a href="/urevo-walking-pad-troubleshooting/" class="text-[#0F62FE] font-medium">UREVO troubleshooting guide</a> sets out model by model.
           </p>
           <ol>
             <li><strong>Unplug the pad</strong> and remove the safety key or magnet if it has one.</li>
@@ -241,7 +241,7 @@ export default {
             What is <em>not</em> normal on a new pad: needing re-tensioning every few days, a belt that keeps drifting no
             matter how it is adjusted on a level floor, visible damage to the belt edge, or a slip that stays after
             lubrication and a moderate tension change. Those point to a defective belt, roller or frame and are worth
-            raising with the seller while you are inside the return window, not just the warranty.
+            raising with the seller while you are inside the return window, not just the warranty. That is doubly true of pads such as <a href="/ancheer-treadmills/" class="text-[#0F62FE] font-medium">ANCHEER’s</a>, sold almost entirely through Amazon with no working treadmill website to fall back on.
           </p>`,
     },
     {
@@ -267,7 +267,7 @@ export default {
           <p>
             We do not list brand-by-brand procedures here because they are not published consistently and they change
             between models. The manual that came with your pad, or the brand&rsquo;s support page for your exact model
-            number, is the authority.
+            number, is the authority. With brands that sell several similar models, such as <a href="/umay-treadmills/" class="text-[#0F62FE] font-medium">UMAY’s SF20, U20F and L20</a>, confirm that number first.
           </p>`,
     },
     {

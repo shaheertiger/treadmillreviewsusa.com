@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.5k',
   h1: ['Horizon 7.4 AT', 'Treadmill Review'],
   standfirst:
@@ -134,7 +135,7 @@ export default {
             <strong>7.0 AT to 7.4 AT</strong> is the big step: wider deck, higher capacity, a chest strap and the
             longer warranty. <strong>7.4 AT to 7.8 AT</strong> is smaller: a thicker belt, a colour screen, aluminium
             side rails, media controls and 25 lb more capacity, for $200 more at Horizon. Most buyers who want the
-            warranty and the wide deck will be served by the 7.4.
+            warranty and the wide deck will be served by the 7.4. On Horizon’s store on 23 November 2026 the 7.4 AT listed at $1,799 and the 7.8 AT at $1,999, as our <a href="/how-much-does-a-horizon-treadmill-cost/" class="text-[#0F62FE] font-medium">Horizon treadmill prices</a> page records.
           </p>`,
     },
     {

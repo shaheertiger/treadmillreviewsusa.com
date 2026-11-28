@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Maintenance',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['How to Replace', 'a Treadmill Belt'],
   standfirst:
@@ -49,7 +49,7 @@ export default {
             and
             <a href="/treadmill-squeaking-noise/" class="text-[#0F62FE] font-medium">squeaking noises</a>
             cover them. The full checklist, and the typical lifespan, is in
-            <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium">how often a treadmill belt should be replaced</a>.
+            <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium">how often a treadmill belt should be replaced</a>. On a walking pad, our <a href="/walking-pad-belt-slipping/" class="text-[#0F62FE] font-medium">walking pad belt slipping</a> guide covers those fixes before you buy a new belt.
           </p>`,
     },
     {
@@ -72,7 +72,7 @@ export default {
             adds very little work. If the deck has already been flipped, or the manual says it is
             not reversible, a replacement deck may be worth ordering at the same time. Ask the
             parts supplier whether your deck is reversible when you order the belt; it is a short
-            question that can save a separate job later.
+            question that can save a separate job later. A deck that is cracked rather than worn is a different case: <a href="/treadmill-cracked-deck/" class="text-[#0F62FE] font-medium">a cracked treadmill deck</a> should be replaced, never flipped or glued.
           </p>
           <p>
             If the deck itself is the problem, many are reversible once and some can only be replaced; our guide to <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">treadmill deck replacement</a> covers how to tell, the flip procedure and what the job costs.
@@ -407,7 +407,7 @@ export default {
             manual does not cover; or you do not have a helper and the deck is heavy. Also call
             someone if anything you find while the machine is open looks wrong — scorched wiring,
             a damaged roller, a cracked frame — since a new belt will not fix those and running on
-            them is a risk.
+            them is a risk. If a grind prompted the job, check our <a href="/treadmill-grinding-noise/" class="text-[#0F62FE] font-medium">treadmill grinding noise</a> guide first: one that rises with speed with nobody on the belt points to a bearing, not the belt.
           </p>
           <p>
             Otherwise, this is a job most practical owners can do in an afternoon, and the parts

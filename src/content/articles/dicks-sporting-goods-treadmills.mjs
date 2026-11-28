@@ -135,7 +135,7 @@ export default {
             run from about $600, the Horizon T101 Connect's August 2025 advertised price, to about
             $1,300 for XTERRA's TR75. A self-powered curved trainer such as Sunny's SF-X7110 sits well
             above that band: Amazon and Sunny both showed it at $2,499.99 on 9 November 2026. Treat
-            every figure here as a dated snapshot and check the live price.
+            every figure here as a dated snapshot and check the live price. Sunny’s own store tops out at $2,999.99 for its commercial incline-decline machine, while most of its motorised folding models were $399.99 to $799.99 on 27 November 2026, as our <a href="/how-much-does-a-sunny-treadmill-cost/" class="text-[#0F62FE] font-medium">Sunny cost breakdown</a> shows.
           </p>
           <p>
             <strong>Call ahead.</strong> If you want to try a particular machine, ask the store
@@ -148,7 +148,7 @@ export default {
             but it means you should compare specifications line by line with the nearest mainstream
             model from the same manufacturer rather than assuming they are identical. Our
             <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">Costco guide</a>
-            explains how to judge a retailer-specific model number.
+            explains how to judge a retailer-specific model number. Sam’s Club is another case: its range is mostly NordicTrack and ProForm, and our <a href="/sams-club-treadmills/" class="text-[#0F62FE] font-medium">Sam’s Club guide</a> shows how to compare its models with the same machines elsewhere.
           </p>
           <p>
             <strong>Know what the range is unlikely to include.</strong> General sporting goods
@@ -203,7 +203,7 @@ export default {
             a 350 lb maximum user, on a folding frame with lift assist. The warranty is lifetime frame
             and motor, two years' parts and one year's in-home labour. A 60-inch deck is the length our
             belt size guide gives for taller runners. Our <a href="/xterra-treadmills/" class="text-[#0F62FE] font-medium">XTERRA treadmills guide</a> covers
-            the rest of the range and the figures XTERRA states two ways.
+            the rest of the range and the figures XTERRA states two ways. If an XTERRA you already own stops working, our <a href="/xterra-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">XTERRA treadmill troubleshooting</a> guide starts with the safety key, the front breaker and a 15-amp grounded outlet.
           </p>
           <p>
             <strong>For small rooms and easy storage: LifeSmart TM3000 or TM4000.</strong> These are

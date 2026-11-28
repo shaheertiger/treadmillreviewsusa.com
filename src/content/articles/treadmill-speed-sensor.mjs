@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Treadmill Speed Sensor', 'Not Working? Symptoms, Tests and Fixes'],
   standfirst:
@@ -213,7 +213,7 @@ export default {
             machine unplugged, try turning the front roller by hand and watch whether the motor
             pulley turns with it. Our
             <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium">drive belt guide</a>
-            explains how to check it properly.
+            explains how to check it properly. A click that is there with nobody on the belt also points to the motor area or drive belt, as our guide to <a href="/treadmill-clicking-noise/" class="text-[#0F62FE] font-medium">a clicking treadmill</a> explains.
           </p>
           <p>
             <strong>A dry deck making the controller work too hard.</strong> A deck that needs

@@ -9,8 +9,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['How Much Does a', 'NordicTrack Treadmill Cost?'],
   standfirst: `Most NordicTrack treadmills sell for $1,599 to $2,999 this Black Friday, against list prices of $1,999 to $4,299, and the touchscreen models add an iFIT Pro membership at $39 a month or $396 a year. Here is every current model, the real three- and five-year cost, and where each is cheapest.`,
@@ -134,7 +135,7 @@ export default {
             3.6 CHP and the 1750's at 4.25 CHP, against 3.0 CHP for the T Series 10. The warranty also
             differs. NordicTrack's T Series 10 page describes a 3.0 CHP motor "with a 2-year
             warranty", while the 1750, 2450, X16 and X24 pages advertise a lifetime motor warranty
-            (checked November 2026).
+            (checked November 2026). Once the cover ends, our <a href="/nordictrack-treadmill-repair/" class="text-[#0F62FE] font-medium">NordicTrack repair guide</a> puts a board or motor job with a technician at roughly $300 to $900.
           </p>
           <p>
             So the T Series is good value only when it is clearly cheaper than a Commercial 1250 on
@@ -223,7 +224,7 @@ export default {
             <a href="/freemotion-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Freemotion</a>. <strong>iFIT Train</strong> costs $15 a month for one user and is meant for
             phones, tablets and iFIT-ready machines without a built-in screen. Paid yearly, Pro is
             $396 and Train is $144; Best Buy sells the iFIT Pro yearly subscription at $396 as a
-            treadmill add-on.
+            treadmill add-on. Echelon’s Premier, by comparison, is $399.99 a year, as our <a href="/how-much-does-an-echelon-treadmill-cost/" class="text-[#0F62FE] font-medium">Echelon treadmill cost</a> page shows.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead>
@@ -389,7 +390,7 @@ export default {
             models and model numbers that are specific to the warehouse clubs, and Costco has an X16
             product page. Their pages blocked our price checks this month, so we are not quoting
             figures. Warehouse models can look like a NordicTrack range machine but differ in screen,
-            motor or warranty, so compare the specification, not just the name.
+            motor or warranty, so compare the specification, not just the name. Our <a href="/sams-club-treadmills/" class="text-[#0F62FE] font-medium">Sam’s Club treadmills guide</a> explains how to compare a club-listed NordicTrack with the same machine elsewhere.
           </p>
           <p>
             <strong>Amazon and Walmart.</strong> Both sell NordicTrack treadmills, but neither page

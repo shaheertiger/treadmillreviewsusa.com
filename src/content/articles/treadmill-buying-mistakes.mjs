@@ -2,14 +2,14 @@ export default {
   slug: 'treadmill-buying-mistakes',
   title: 'Treadmill Buying Mistakes: 15 to Avoid Before You Order',
   description:
-    'The fifteen mistakes that turn a treadmill into an expensive clothes rack: peak horsepower, short decks, low ceilings, delivery routes, subscriptions and more.',
+    'The costliest treadmill buying mistake is comparing peak, not continuous, horsepower. 15 mistakes to avoid, from short decks and low ceilings to subscriptions.',
   crumbLabel: 'Treadmill Buying Mistakes',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Treadmill Buying Mistakes', 'to Avoid'],
   standfirst:
@@ -237,7 +237,7 @@ export default {
             Most treadmills are now bought online, often without the buyer having stood on the
             model or anything like it. That is not unreasonable — few showrooms stock a wide range
             — but it means the deck feel, the noise at your pace, the reach to the controls and the
-            height of the step-up are all things you discover at home, after assembly.
+            height of the step-up are all things you discover at home, after assembly. Scheels is one retailer where some large stores let you try a premium treadmill before buying, as our <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">guide to Scheels treadmills</a> explains.
           </p>
           <p>
             Where you can, try something comparable: the same brand's adjacent model in a store,

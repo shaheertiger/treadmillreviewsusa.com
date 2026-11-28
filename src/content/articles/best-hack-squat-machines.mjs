@@ -1,15 +1,14 @@
 export default {
   slug: 'best-hack-squat-machines',
-  title: 'Best Hack Squat Machines for Home (2026): 6 Picks',
-  description:
-    'Six home hack squat machines and combos checked against maker pages and reviews: sled angle, shoulder pads, safety stops, plate storage and footprint.',
+  title: "Best Hack Squat Machines for Home (2026): 6 Picks Compared",
+  description: "Titan's 35° linear sled, about $975, is the best dedicated home hack squat; Body-Solid's GLPH1100B is the best combo. Six picks, with sled angle and stops.",
   crumbLabel: 'Best Hack Squat Machines',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Hack Squat Machines', 'for a Home Gym'],
   standfirst:
@@ -176,7 +175,7 @@ export default {
             <a href="/best-safety-squat-bars/" class="text-[#0F62FE] font-medium">safety squat bar</a>
             in a rack are other ways to squat with less stress on the shoulders and upper back. Our
             guide to <a href="/best-smith-machines/" class="text-[#0F62FE] font-medium">Smith machines</a>
-            compares bar paths if you want one machine for squats and presses.
+            compares bar paths if you want one machine for squats and presses. A trap bar is another way to load the legs with the weight beside you rather than on your back; our <a href="/best-trap-bars/" class="text-[#0F62FE] font-medium">trap bar guide</a> compares five open and closed bars.
           </p>`,
     },
     {

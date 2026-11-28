@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-24',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Best Treadmills With an AC Motor', 'Commercial-Grade Picks'],
   standfirst:
@@ -99,7 +99,7 @@ export default {
             Three of the five are Precor, because Precor is the commercial brand with the most AC treadmills
             listed on Amazon US and each of the three does something the others do not. Life Fitness and
             Spirit fill the other two places. All three brands build for gyms, hotels and apartment-block
-            fitness rooms first, and sell to homes second.
+            fitness rooms first, and sell to homes second. New from an authorized dealer, a Precor cost $5,885 to $16,230 on 27 November 2026, as our <a href="/how-much-does-a-precor-treadmill-cost/" class="text-[#0F62FE] font-medium">guide to Precor treadmill prices</a> records.
           </p>`,
     },
     {

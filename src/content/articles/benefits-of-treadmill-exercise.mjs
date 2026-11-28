@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['The Benefits of', 'Treadmill Exercise'],
   standfirst:
@@ -387,7 +387,7 @@ export default {
             <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">guide to using a treadmill</a>
             covers a safe first session, and our
             <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium">treadmill walking workouts</a>
-            offer structured sessions to build from.
+            offer structured sessions to build from. And if you are curious how a prison machine from 1818 became a fixture of home gyms, our <a href="/history-of-the-treadmill/" class="text-[#0F62FE] font-medium">history of the treadmill</a> tells the story.
           </p>`,
     },
     {
@@ -404,7 +404,7 @@ export default {
             Its limitations are real too: monotony, repetitive loading, no strength training, some
             safety risk, and the cost and space of the machine. Use it consistently, vary your
             sessions, add strength work, and it is one of the most useful pieces of exercise
-            equipment you can own.
+            equipment you can own. Whether those trade-offs suit you is the question our <a href="/should-i-buy-a-treadmill/" class="text-[#0F62FE] font-medium">should I buy a treadmill</a> self-test answers in eight questions.
           </p>`,
     },
   ],

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Treadmill Sprint Workouts', 'Without Being Thrown Off the Back'],
   standfirst:
@@ -37,7 +37,7 @@ export default {
             reach speed and to slow down, and most home treadmills cannot reach the speed a fit
             adult sprints at on the ground anyway. The result is that flat treadmill "sprints" are
             usually fast running at the top of the machine's range, started and finished by <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding
-            the rails</a> and stepping on and off a moving belt.
+            the rails</a> and stepping on and off a moving belt. Our <a href="/best-fast-treadmills/" class="text-[#0F62FE] font-medium">fast treadmills</a> guide lists the few home machines that reach 14 to 15.6 mph.
           </p>
           <p>
             For most people on most home machines, <strong>incline sprints are the better
@@ -425,7 +425,7 @@ export default {
             The mechanics are also closer to ground sprinting. You push the belt away rather than
             keeping up with it, so the hip extension and drive that a motorised belt shortens are
             back, and the effort for any given speed is higher than on a motorised machine — which
-            is why curved treadmills are common in team-sport gyms and sprint training facilities.
+            is why curved treadmills are common in team-sport gyms and sprint training facilities. Commercial lines such as the <a href="/tko-airraid-runner-treadmill/" class="text-[#0F62FE] font-medium">TKO AirRaid Runner</a> add magnetic resistance, four levels on that machine, for harder pushes.
           </p>
           <p>
             The trade-offs are real: curved manual treadmills are expensive, heavy, poor for easy

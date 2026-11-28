@@ -199,7 +199,7 @@ export default {
             aftermarket board that is “compatible” with a family of machines may not behave identically on
             yours. Makers also tie warranties to their own parts: Precor’s service manual tells technicians to
             use only Precor parts and warns that parts it has not approved can void its limited warranty, and
-            Precor gives parts bought from it or its dealers a one-year replacement warranty, without labour.
+            Precor gives parts bought from it or its dealers a one-year replacement warranty, without labour. If the repair bill is large, note that a remanufactured Precor cost $2,495 to $4,799 with a one-year warranty in late November 2026, as our <a href="/how-much-does-a-precor-treadmill-cost/" class="text-[#0F62FE] font-medium">Precor pricing page</a> shows.
           </p>
           <p>
             <strong>Aftermarket is often fine for belts and consumables.</strong> Walking belts, drive belts,
@@ -248,7 +248,7 @@ export default {
             part number, including many for older machines; FitnessRepairParts marks parts that are no longer
             available. Our pages on <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack</a>
             and <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm</a> cover the
-            brands’ warranties.
+            brands’ warranties. If one of those parts needs fitting under warranty, our <a href="/proform-treadmill-repair/" class="text-[#0F62FE] font-medium">ProForm repair guide</a> explains why iFIT must pre-authorise the claim.
           </p>
           <p>
             <strong>Sole.</strong> Sole’s support page routes replacement parts through its “Service &amp; parts
@@ -308,7 +308,7 @@ export default {
           <p>
             <strong>Register, or check your registration.</strong> iFIT shows warranty end dates in your account;
             Sole takes parts requests through a warranty form. Many warranties need proof of purchase, and some
-            apply only to the original owner, which matters if you bought the machine used.
+            apply only to the original owner, which matters if you bought the machine used. For a NordicTrack, our <a href="/nordictrack-treadmill-repair/" class="text-[#0F62FE] font-medium">NordicTrack treadmill repair</a> guide explains how to open a claim at my.iFIT.com with the model and serial number.
           </p>
           <p>
             <strong>Ask before opening the machine.</strong> Some makers want a technician’s diagnosis, or

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Treadmill Walking', 'Workouts'],
   standfirst:
@@ -53,7 +53,7 @@ export default {
           <p>
             Do three to five sessions a week, keep most of them steady or easy, and make no more
             than one or two of them genuinely hard. That is the shape almost every sensible
-            walking plan comes back to.
+            walking plan comes back to. If you have diabetes, our guide to <a href="/treadmill-walking-for-diabetes/" class="text-[#0F62FE] font-medium">treadmill walking for diabetes</a> suggests timing some of those walks for 10 to 15 minutes after meals.
           </p>`,
     },
     {
@@ -215,7 +215,7 @@ export default {
       html: `          <p>
             This session works the other side of the trade-off: pace rather than grade. It is
             useful for people training for a walking event, for anyone whose treadmill has little
-            or no incline, and for variety.
+            or no incline, and for variety. For a different kind of variety at low speed, our guide to <a href="/walking-backwards-on-a-treadmill/" class="text-[#0F62FE] font-medium">walking backwards on a treadmill</a> explains how to start near 1 mph for 2 to 5 minutes.
           </p>
           <ul>
             <li><strong>Warm-up, 5 minutes:</strong> easy pace, building to brisk.</li>

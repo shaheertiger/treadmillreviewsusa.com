@@ -7,9 +7,9 @@ export default {
   kicker: 'Comparison',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Incline Trainer vs', 'Treadmill'],
   standfirst:
@@ -41,7 +41,7 @@ export default {
             15% on most standard treadmills, and most also decline a few percent for downhill work. In
             exchange you pay a substantial price premium, accept a heavy machine that rarely folds,
             and need more ceiling height than a normal treadmill, because the front of the deck lifts
-            a long way at full grade.
+            a long way at full grade. The <a href="/nordictrack-x9i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack X9i</a> is the value example, with the same -6% to 40% range as the X22i and a smaller screen.
           </p>
           <p>
             Many incline trainers will also let you run, so it is not either-or for a runner who
@@ -81,7 +81,7 @@ export default {
             The appeal of a steep grade is that it decouples effort from speed. On a flat belt the only
             way to work harder is to go faster, which eventually means running, with all the impact
             that implies. On a steep grade you can reach a high heart rate at a slow walking pace,
-            because you are lifting your body weight with every step rather than carrying it forward.
+            because you are lifting your body weight with every step rather than carrying it forward. A rowing machine is another way to train hard without impact, and our <a href="/treadmill-vs-rowing-machine/" class="text-[#0F62FE] font-medium">treadmill vs rowing machine</a> comparison explains the technique it asks for in return.
           </p>
           <p>
             That has three practical consequences. First, it gives non-runners access to genuinely

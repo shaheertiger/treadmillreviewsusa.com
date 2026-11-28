@@ -2,14 +2,14 @@ export default {
   slug: 'best-treadmills-for-hiit',
   title: 'Best Treadmills for HIIT (2026): Fast Controls, Real Top Speed',
   description:
-    'Five treadmills for HIIT, sprinting and interval training, including one curved trainer, checked against maker listings and independent reviews: controls, top speed, motor, deck and safety.',
+    'The Horizon 7.4 AT (QuickDial controls, 22 x 60 in. deck, about $1,500–$1,800) is the best treadmill for HIIT; the NordicTrack Commercial 2450 reaches 14 mph.',
   crumbLabel: 'Best Treadmills for HIIT',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Best Treadmills', 'for HIIT and Sprinting'],
   standfirst:
@@ -183,7 +183,7 @@ export default {
             <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">treadmill interval workouts</a>
             are written with that lag in mind. If you would rather not touch the controls at all,
             a curved manual treadmill such as the Sole C80, or the RunFree mode on Wahoo's direct-sold
-            KICKR RUN, takes the button out of the loop.
+            KICKR RUN, takes the button out of the loop. Curved trainers such as <a href="/trueform-treadmills/" class="text-[#0F62FE] font-medium">TrueForm’s Runner and Trainer</a> do the same, with no motor at all.
           </p>`,
     },
     {

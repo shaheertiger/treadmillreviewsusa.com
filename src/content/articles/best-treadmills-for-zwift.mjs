@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Best Treadmills', 'for Zwift'],
   standfirst:
@@ -227,7 +227,7 @@ export default {
             <strong>Incline range.</strong> Zwift's controllable gradients run from -3% to +15%, and
             that is a sensible target for a manual machine too. The Horizon and Bowflex machines here
             reach 15%, and Spirit lists 15 incline levels on the XT485. Only the KICKR RUN offers decline, which some runners value for downhill sections and
-            which most home treadmills do not have.
+            which most home treadmills do not have. The Bowflex range cost $899 to $1,999 on sale at Bowflex on 24 November 2026, as our <a href="/how-much-does-a-bowflex-treadmill-cost/" class="text-[#0F62FE] font-medium">Bowflex price breakdown</a> shows.
           </p>
           <p>
             <strong>Motor.</strong> We have left motor horsepower off every card on this page,

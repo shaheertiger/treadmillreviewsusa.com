@@ -1,7 +1,8 @@
 export default {
   slug: 'rent-a-treadmill',
-  title: 'Treadmill Rental (2026): Renting vs Rent-to-Own vs Buying',
-  description: "Rent for needs under about six months; buy for longer. Rent-to-own often totals two to three times retail. Contract checks and the buy-used-then-resell route.",
+  title: 'Rent a Treadmill (2026): Rental vs Rent-to-Own vs Buying',
+  description:
+    'Rent a treadmill only for a short, defined need: an illustrated $90-a-month rental costs $420 for three months. Rent-to-own often totals 2 to 3 times retail.',
   crumbLabel: 'Treadmill Rental',
   kicker: 'Price Guide',
   breadcrumb: { name: 'By Price', url: '/price/' },
@@ -264,7 +265,7 @@ export default {
             For any need longer than a couple of months, buying a used treadmill and selling it
             afterwards is usually the cheapest route by a wide margin. Treadmills depreciate
             steeply in their first couple of years and then flatten, so a machine that is already
-            three or four years old loses relatively little more value in the months you own it.
+            three or four years old loses relatively little more value in the months you own it. Our <a href="/how-much-does-a-used-treadmill-cost/" class="text-[#0F62FE] font-medium">used treadmill price guide</a> has dated prices: maker scratch-and-dent units sold at about 87% of new in late November 2026.
           </p>
           <p>
             The work is real, and it is three tasks. <strong>Inspect it</strong> properly before

@@ -5,9 +5,9 @@ export default {
   crumbLabel: 'NordicTrack X24 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['NordicTrack X24', 'Treadmill Review'],
   standfirst:
@@ -231,7 +231,7 @@ export default {
             iFIT. With a membership, iFIT trainer-led and filmed-route workouts change the speed and
             grade automatically, and iFIT’s SmartAdjust and ActivePulse features adjust sessions to
             your performance and heart rate. Treadmill Review Guru also reports Spotify and Netflix
-            access through iFIT, with a subscription.
+            access through iFIT, with a subscription. Our <a href="/best-ifit-treadmills/" class="text-[#0F62FE] font-medium">best iFIT treadmills</a> compare six NordicTrack and ProForm machines, including cheaper ones that use your own tablet.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The membership</h3>
           <p>
@@ -285,7 +285,7 @@ export default {
             stays that way because it does not fold. Boxed it is 77 by 42 by 34 inches and 445 lb, so
             check every doorway, corner and stair on the route in before you order. Our
             <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space guide</a>
-            covers clearance behind the deck.
+            covers clearance behind the deck. If the route is too tight, our <a href="/how-to-take-apart-a-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">guide to taking apart a NordicTrack</a> explains how removing the console and uprights gets an X-series machine through a narrow doorway.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Ceiling height</h3>
           <p>

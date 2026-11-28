@@ -1,15 +1,14 @@
 export default {
   slug: 'lifepro-waver-vibration-plate-review',
-  title: 'LifePro Waver Vibration Plate Review (2026): Specs vs Claims',
-  description:
-    'The LifePro Waver and Waver Mini checked against LifePro, Amazon and manuals: verified specs, which health claims are only claims, and who should see a doctor.',
+  title: "LifePro Waver Vibration Plate Review (2026): Specs vs Claims",
+  description: "The LifePro Waver is a $200 oscillating plate with 99 speeds and a 330 lb limit; its health claims are unverified. Specs vs claims, and who should not use it.",
   crumbLabel: 'LifePro Waver Review',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Product Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-16',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['LifePro Waver Review:', 'The Vibration Plate, Read Carefully'],
   standfirst:
@@ -96,7 +95,7 @@ export default {
             health. Those are the seller's claims. The research on whole-body vibration is mixed and
             still debated, and LifePro's own manual says the health benefits suggested in its
             literature and on its website are not certified or endorsed by any regulatory authority
-            or medical institute.
+            or medical institute. Our <a href="/shock-exercise-equipment-reviews/" class="text-[#0F62FE] font-medium">shock exercise equipment reviews</a> set the Waver beside EMS ab belts and TENS units, which make similar promises with a different technology.
           </p>
           <p>
             So the honest verdict is conditional. If you are a healthy adult who enjoys the sensation,
@@ -389,7 +388,7 @@ export default {
             register any LifePro product you buy so the company can contact you, and to check the
             recall database again if you are buying a LifePro heated or electrical recovery product.
             A separate 2015 recall of "Lifepro" branded space heaters was issued by a different
-            company that has since closed.
+            company that has since closed. Lifepro is also among the brands our <a href="/best-cold-plunges/" class="text-[#0F62FE] font-medium">cold plunge guide</a> started from, though none of its tubs is in the final five.
           </p>`,
     },
     {

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Best Under Desk Ellipticals', 'and Under-Desk Bikes'],
   standfirst:
@@ -35,7 +35,7 @@ export default {
             Five machines: three seated ellipticals and two under-desk bikes. If you only read one line:
             <strong>the Cubii Move is the best under desk elliptical for most people, and the DeskCycle 2
             is the best under desk bike</strong>, because it pairs real resistance with one of the
-            lowest pedal heights on sale.
+            lowest pedal heights on sale. The Cubii Move is also the under-desk pick on our <a href="/black-friday-elliptical-deals/" class="text-[#0F62FE] font-medium">Black Friday elliptical deals</a> page, which puts a good price at about $150 or less.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -111,7 +111,7 @@ export default {
             different products: LifePro recalled <a href="/best-home-saunas/" class="text-[#0F62FE] font-medium" data-autolink>infrared sauna</a> blankets in October 2025, and e-bikes
             distributed by ANCHEER were recalled in October 2022. Neither recall concerns a pedaler,
             but we left both brands off this page because we could not load LifePro's store or find an
-            ANCHEER maker page to check a current model's figures against.
+            ANCHEER maker page to check a current model's figures against. ANCHEER’s walking pads have the same gap, as our <a href="/ancheer-treadmills/" class="text-[#0F62FE] font-medium">ANCHEER treadmill guide</a> explains: they are sold almost entirely through Amazon, with no working treadmill website behind them.
           </p>
           <p>
             We also passed over models we could confirm from only one side. Cubii's site lists the Cubii
@@ -292,7 +292,7 @@ export default {
             movement; it is not a substitute for exercise that raises your heart rate, and it will not
             move the scale much on its own. Our guide to
             <a href="/do-walking-pads-help-you-lose-weight/" class="text-[#0F62FE] font-medium">whether walking pads help you lose weight</a>
-            makes the same point about desk walking.
+            makes the same point about desk walking. If you do want to watch the number, our <a href="/best-smart-scales/" class="text-[#0F62FE] font-medium">best smart scales</a> guide covers five that log each weigh-in to your phone, from about $25.
           </p>`,
     },
     {

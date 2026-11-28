@@ -1,15 +1,15 @@
 export default {
   slug: 'is-running-on-a-treadmill-bad-for-you',
-  title: 'Is Running on a Treadmill Bad for You? Risks and Myths',
+  title: 'Is Running on a Treadmill Bad for You? 5 Real Risks and Myths',
   description:
-    'For most people treadmill running is a safe way to run. The real downsides are repetition, heat, falls, overuse and machine-set pace, not ruined form or knees.',
+    'No: for most people treadmill running is safe. The real risks are five practical ones: repetition, heat, falls, adding mileage too fast and a machine-set pace.',
   crumbLabel: 'Is Running on a Treadmill Bad for You',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Is Running on a Treadmill', 'Bad for You?'],
   standfirst:
@@ -374,7 +374,7 @@ export default {
             questioned, and there is no good reason to think a treadmill makes it worse. A
             treadmill deck typically has some give in it and sits on cushioning, which makes it a
             softer surface than concrete or asphalt. The surface is perfectly even, so there is no
-            camber pushing one knee inward and no hidden kerb to land on awkwardly.
+            camber pushing one knee inward and no hidden kerb to land on awkwardly. If a softer deck matters to you, our <a href="/best-cushioned-treadmills/" class="text-[#0F62FE] font-medium">cushioned treadmill picks</a> explain what the impact percentages makers quote are worth.
           </p>
           <p>
             Where knees do get sore on a treadmill, the usual causes are the same ones that cause

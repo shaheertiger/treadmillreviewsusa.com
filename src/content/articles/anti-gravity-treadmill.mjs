@@ -6,9 +6,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Explainer',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ["Anti-Gravity Treadmill:", "How the AlterG Works and What It Costs"],
   standfirst: "An anti-gravity treadmill such as the AlterG seals you into an air chamber from the waist down and raises the pressure to lift up to 80% of your body weight, so you walk or run with near-normal mechanics on less load. Sessions at US clinics run about $12.50 to $75. Here is how it works, who uses one, how to get a session and what a home user can do instead.",
@@ -144,7 +144,7 @@ export default {
             Anti-gravity treadmills are used mainly by people in physical rehabilitation after
             lower-limb injury or surgery, by people with neurological conditions that affect
             walking, by athletes returning from injury or managing training load, and by people
-            for whom full-weight walking is painful.
+            for whom full-weight walking is painful. Dogs have a water-based equivalent, and our <a href="/underwater-treadmill-for-dogs/" class="text-[#0F62FE] font-medium">underwater treadmill for dogs</a> guide covers canine hydrotherapy and sessions that typically cost about $50 to $125.
           </p>
           <ul>
             <li><strong>After lower-limb injury or surgery.</strong> Clinics use reduced body
@@ -240,7 +240,7 @@ export default {
             a specialist rehabilitation centre programme. Prices change and vary widely by city,
             so treat the band as a guide and call your local provider. In the UK, private
             providers commonly publish prices in the region of £20 to £45 per session, again
-            varying with packages.
+            varying with packages. For a standard treadmill during a rehab programme with a defined end, <a href="/rent-a-treadmill/" class="text-[#0F62FE] font-medium">renting one</a> can cost less than buying.
           </p>
           <p>
             <strong>Extra costs to ask about:</strong> an initial assessment or orientation, which
@@ -252,7 +252,7 @@ export default {
             <strong>Insurance.</strong> When an anti-gravity treadmill is used within a course of
             physical therapy, the session is generally billed as therapy, and whether it is covered
             depends on your plan. Cash-pay wellness sessions are usually not covered. Ask the clinic
-            how it bills before the first session.
+            how it bills before the first session. The same check pays off for other clinical treadmill tests: the 2026 Medicare rate for a basic stress test is $73.48, while MDsave cash prices ran $331 to $774, as our <a href="/how-much-does-a-treadmill-stress-test-cost/" class="text-[#0F62FE] font-medium">stress test cost guide</a> shows.
           </p>`,
     },
     {

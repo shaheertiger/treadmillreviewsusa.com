@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmills Under $800',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-17',
+  modified: '2026-11-28',
   socialProof: '5.4k',
   h1: ['Best Treadmills', 'Under $800'],
   standfirst:
@@ -156,7 +156,7 @@ export default {
       html: `          <p>
             This band moves more than any other, because it is where the volume is and where
             retailers compete hardest. A machine listing at $899 will sell at $649 several times a
-            year, and buying at the wrong moment costs more than choosing the wrong model.
+            year, and buying at the wrong moment costs more than choosing the wrong model. If $700 is the ceiling, our <a href="/best-treadmills-under-700/" class="text-[#0F62FE] font-medium">picks under $700</a> start with a Sunny model offering 12 mph and 12% incline for about $646.
           </p>
           <p>
             The reliable windows are January, when new-year demand meets aggressive competition;

@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Treaflow Walking Pad',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Treaflow Walking Pad', 'Review: The 3100W'],
   standfirst:
@@ -297,7 +297,7 @@ export default {
             how a claim is made, who pays shipping on a faulty unit, and whether parts or a
             replacement are supplied. Our
             <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            lists the questions.
+            lists the questions. Our guide to <a href="/how-to-make-a-cheap-treadmill-last-longer/" class="text-[#0F62FE] font-medium">making a cheap treadmill last longer</a> sets out nine habits that help a budget pad outlive a warranty this short.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Returns run through the marketplace</h3>
           <p>

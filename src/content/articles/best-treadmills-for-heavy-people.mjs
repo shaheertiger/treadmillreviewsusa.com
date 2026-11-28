@@ -48,7 +48,7 @@ export default {
             as though it were 50 to 75 lbs lower than printed. If you weigh 280 lbs, shop
             machines rated 350 lbs and above rather than machines rated 300. That single
             adjustment does more for your experience and the machine's lifespan than any other
-            decision on this page.
+            decision on this page. By that rule, a budget pad from <a href="/akluer-treadmills/" class="text-[#0F62FE] font-medium">AKLUER</a>, which rates every current model for 330 lb, suits users up to roughly 255 to 280 lb.
           </p>`,
     },
     {

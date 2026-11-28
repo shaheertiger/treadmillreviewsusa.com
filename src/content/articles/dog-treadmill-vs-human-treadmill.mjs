@@ -2,14 +2,14 @@ export default {
   slug: 'dog-treadmill-vs-human-treadmill',
   title: 'Dog Treadmill vs Human Treadmill: What Differs, What Matters',
   description:
-    'Dog treadmill vs human treadmill: belt length against stride, side panels, front clearance, speed range, noise and controls, and when a human machine is a poor fit.',
+    'A dog treadmill’s running area should be at least twice your dog’s length, with side panels and controls beside the belt; a human treadmill has neither.',
   crumbLabel: 'Dog Treadmill vs Human Treadmill',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-22',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Dog Treadmill vs Human Treadmill', 'The Differences That Matter'],
   standfirst:
@@ -46,7 +46,7 @@ export default {
             for small dogs, nervous dogs and dogs that need to run it is a poor fit. Our guide to
             <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">using a treadmill with a dog</a>
             covers that question, the dogs it is wrong for and how to introduce one, in full; this page
-            stays on the equipment differences.
+            stays on the equipment differences. For toy and small breeds, our <a href="/best-dog-treadmills-for-small-dogs/" class="text-[#0F62FE] font-medium">best dog treadmills for small dogs</a> compare four motorised machines sold on Amazon.
           </p>
           <p>
             The quick version of the comparison:
@@ -315,7 +315,7 @@ export default {
             pulls it out. A dog cannot pull a key, and a key must never be clipped to a dog. With a dog
             on a human treadmill, you stand beside the machine — not in front, which draws the dog
             forward into the hood — with a hand near the key or stop button for the whole session.
-            On many consoles that means reaching across or forward at an awkward angle.
+            On many consoles that means reaching across or forward at an awkward angle. If you use a lead while the dog learns, hold it in your hand, clipped to a harness that leaves the shoulders free; our <a href="/best-dog-treadmill-harnesses/" class="text-[#0F62FE] font-medium">dog treadmill harness picks</a> name five.
           </p>
           <p>
             <strong>Dog treadmills put the stop where the owner stands.</strong> Purpose-built machines

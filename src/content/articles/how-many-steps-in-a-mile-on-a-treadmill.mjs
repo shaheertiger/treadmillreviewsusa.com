@@ -209,7 +209,7 @@ export default {
             walking, or carry a phone in that hand, and it can miss a large share of your steps.
             Walking normally with a free arm swing gives far better counts; our answer to
             <a href="/does-a-fitness-tracker-count-steps-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether trackers count steps on a treadmill</a>
-            covers watches, phones and indoor modes.
+            covers watches, phones and indoor modes. For desk walking specifically, our guide to the <a href="/best-fitness-trackers-for-walking-pad/" class="text-[#0F62FE] font-medium">best fitness trackers for a walking pad</a> covers clip-on options that count from the waist.
           </p>
           <p>
             <strong>Indoor distance is estimated.</strong> Outdoors, a watch can use GPS for

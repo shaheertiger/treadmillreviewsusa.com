@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'AssaultRunner Pro',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['AssaultRunner Pro', 'Treadmill Review'],
   standfirst:
@@ -68,7 +68,7 @@ export default {
             want to run hard indoors — sprints, intervals, conditioning work — and it is a poor fit for
             walking, for steady easy miles, or for anyone who needs to fold a machine away.</strong> At
             about $3,499 it costs as much as a premium motorised treadmill with incline, so the question is
-            less "is it good?" than "is a curved trainer the right tool for you?"
+            less "is it good?" than "is a curved trainer the right tool for you?" Most home buyers pay $1,900 to $3,500 for a curved trainer, as our <a href="/how-much-does-a-curved-treadmill-cost/" class="text-[#0F62FE] font-medium">guide to curved treadmill prices</a> sets out.
           </p>
           <p>
             Its core figures are consistent wherever we looked: a 17 by 62-inch slat running surface, a
@@ -111,7 +111,7 @@ export default {
             trainers: maximal efforts are possible indoors, and the belt never pulls you along at a pace
             you set before you tired. The flip side is that you cannot dial in a pace and settle into it.
             Holding a steady 9:00 mile means holding your position on the curve by feel, which takes
-            attention, especially late in a run.
+            attention, especially late in a run. The same holds for the <a href="/centr-treadmills/" class="text-[#0F62FE] font-medium">Centr x HYROX Perform Tread</a>, the motorless curved treadmill made for HYROX racing.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">It is harder work than a motorised belt</h3>
           <p>
@@ -492,7 +492,7 @@ export default {
           </p>
           <p>
             <strong>Look at the SOLE C80 if you want resistance or a wider surface</strong>, and at the
-            TrueForm Trainer if a natural, shallow-curve stride matters more than sprint response.
+            TrueForm Trainer if a natural, shallow-curve stride matters more than sprint response. Rogue Fitness sells the TrueForm Trainer at the same $3,495 as its Rogue-branded Woodway Curve LTG, as our <a href="/rogue-treadmills/" class="text-[#0F62FE] font-medium">Rogue treadmills page</a> notes.
           </p>
           <p>
             <strong>Do not buy it to walk, or to run easy miles at a set pace.</strong> A motorised treadmill

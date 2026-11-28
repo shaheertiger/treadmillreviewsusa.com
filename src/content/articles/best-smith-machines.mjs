@@ -1,15 +1,14 @@
 export default {
   slug: 'best-smith-machines',
-  title: 'Best Smith Machines for Home (2026): 7 Picks by Type',
-  description:
-    'Seven home Smith machines and Smith/cable combos checked against maker pages and reviews: bar path, bar weight, counterbalance, footprint and ceiling.',
+  title: "Best Smith Machines for Home (2026): 7 Picks by Type",
+  description: "The Titan Smith Machine is the best standalone home Smith, counterbalanced like a gym's; the Mikolo M4-2.0 is the best all-in-one. Seven picks by type.",
   crumbLabel: 'Best Smith Machines',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Smith Machines', 'for a Home Gym'],
   standfirst:
@@ -66,7 +65,7 @@ export default {
             <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machine guide</a>
             covers those. And if free-weight barbell work is the priority, a
             <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack</a>
-            is still the simpler, more flexible buy.
+            is still the simpler, more flexible buy. For quad and hamstring isolation alongside it, our <a href="/best-leg-extension-machines/" class="text-[#0F62FE] font-medium">leg extension machine guide</a> compares six standalone machines and attachments.
           </p>`,
     },
     {
@@ -77,7 +76,7 @@ export default {
             Each card gives the figures we could confirm from two sources, the price range we saw on
             19 October 2026, and who the machine suits. Read the bar weight and the dimensions
             first: the bar weight tells you the lightest load you can lift, and the dimensions
-            tell you whether the frame will fit under your ceiling with room to load plates.
+            tell you whether the frame will fit under your ceiling with room to load plates. If pull-ups and dips are all you want from a frame, a <a href="/best-power-towers/" class="text-[#0F62FE] font-medium">power tower</a> covers them for less than a pair of good dumbbells.
           </p>
           <p>
             None of these prices includes weight plates or, apart from where a bundle is mentioned,

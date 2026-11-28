@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-25',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Treadmill Motor Replacement Cost:', 'Parts, Labor and Whether It Pays'],
   standfirst: `For most home treadmills the drive motor itself costs roughly $130 to $550, and a technician's visit adds about $185 to $270 on the published rates we found, so a fitted motor usually lands somewhere around $320 to $820. Before you pay anything, check the warranty: many brands cover the motor for life.`,
@@ -106,7 +106,7 @@ export default {
             aftermarket sellers make copies of them. <strong>Sole, Spirit, Horizon and Bowflex motors cost
             roughly twice as much</strong>, with fewer sellers and, in our searches, almost no low-cost copies.
             <strong>Commercial brands vary the most</strong>: a Precor motor ran from $293.99 to $719.99
-            depending on the model.
+            depending on the model. Most of those motors go into used club machines, since <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor</a> now sells treadmills only to commercial buyers. A whole remanufactured Precor, by comparison, ran $2,495 to $4,799 in late November, per our <a href="/how-much-does-a-precor-treadmill-cost/" class="text-[#0F62FE] font-medium">Precor treadmill prices</a>.
           </p>
           <p>
             Read the condition before you buy. Several of the Horizon, Precor and Life Fitness listings above
@@ -260,7 +260,7 @@ export default {
             Put together, an iFIT motor at about $200 fitted on a single $185 to $270 visit comes to roughly
             $385 to $470. A Sole motor at $323.99 with the same visit comes to roughly $510 to $595, and a
             $450 to $550 Bowflex or Spirit motor lands at roughly $640 to $820, before tax and shipping. A
-            diagnostic visit and a second visit to fit the part add another $125 to $230 on the rates above.
+            diagnostic visit and a second visit to fit the part add another $125 to $230 on the rates above. Set that against a new T6, which was $899 on Bowflex’s store in its 24 November 2026 sale, per our <a href="/how-much-does-a-bowflex-treadmill-cost/" class="text-[#0F62FE] font-medium">Bowflex treadmill prices</a> page.
           </p>`,
     },
     {

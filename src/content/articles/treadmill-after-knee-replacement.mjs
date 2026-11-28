@@ -6,13 +6,14 @@ export default {
   slug: 'treadmill-after-knee-replacement',
   title: 'Treadmill After Knee Replacement: When and How to Start',
   description:
-    'When treadmill walking usually fits into knee replacement recovery, how slow to start, incline and handrail rules, swelling checks and warning signs to report.',
+    'Most people start treadmill walking after a knee replacement once steady with a cane, often in month two: flat, slow, 5 to 10 minutes. Warning signs to report.',
   crumbLabel: 'Treadmill After Knee Replacement',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Recovery',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-17',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Treadmill After', 'Knee Replacement'],
   standfirst:

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Best Treadmills for', 'Low Ceilings'],
   standfirst:
@@ -55,7 +55,7 @@ export default {
           <p>
             Four of the five are Sunny Health &amp; Fitness machines. That is not a preference for the
             brand: Sunny is the only maker we found that publishes a deck-to-floor height for nearly every
-            treadmill it sells, and you cannot choose a treadmill for a low ceiling without that figure.
+            treadmill it sells, and you cannot choose a treadmill for a low ceiling without that figure. Its prices are easy to check as well: most in-stock motorised folding Sunny treadmills were $399.99 to $799.99 on its store on 27 November 2026, as our <a href="/how-much-does-a-sunny-treadmill-cost/" class="text-[#0F62FE] font-medium">Sunny treadmill price guide</a> sets out.
           </p>`,
     },
     {
@@ -101,7 +101,7 @@ export default {
             5 inches. In a basement with a 7-foot (84-inch) ceiling, the first is less than an inch short
             of the rule, close enough that a shorter user or a walk rather than a run fits, and the second
             is five inches short. That 4-inch difference in step-up height is the whole reason low-deck
-            treadmills exist.
+            treadmills exist. A low deck also makes the first step easier for a shorter user, and our <a href="/best-treadmills-for-short-people/" class="text-[#0F62FE] font-medium">treadmills for short people</a> roundup ranks machines on step-up height and console reach.
           </p>`,
     },
     {
@@ -244,7 +244,7 @@ export default {
             listing or on the maker's own store. That rule removed most candidates: many listings say
             "low profile" without a number, including a senior-focused Exerpeutic treadmill whose title
             promises a low step-up height but whose bullets give no figure. We then chose machines for
-            different jobs: running, extra support, a budget jogging option, walking only, and incline.
+            different jobs: running, extra support, a budget jogging option, walking only, and incline. Our <a href="/best-low-profile-treadmills/" class="text-[#0F62FE] font-medium">low profile treadmills</a> guide applies the same rule, giving heights only where a second source confirms them.
           </p>
           <p>
             We cross-checked each Sunny model against Sunny's own store, matching the running surface,

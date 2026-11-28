@@ -2,13 +2,13 @@ export default {
   slug: 'matrix-t5x-treadmill',
   title: 'Matrix T5x Treadmill Review (2026): Specs and Used Value',
   description:
-    'The Matrix T5x is a commercial gym treadmill most buyers now find remanufactured. Which specs the sources agree on, which conflict, what it costs, and what to check before buying.',
+    "The Matrix T5x is a commercial gym treadmill now sold mostly remanufactured, at about $4,000 to $4,400. Which specs agree, which conflict, and what to check.",
   crumbLabel: 'Matrix T5x Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Matrix T5x', 'Treadmill Review'],
   standfirst:
@@ -66,7 +66,7 @@ export default {
             and it is a sound buy at that price if it comes with a written warranty and your room
             has a dedicated 20-amp circuit.</strong> It is a club machine from Matrix, the commercial
             and premium-home brand of Johnson Health Tech, with a 5.0 HP AC drive, incline to 15% and
-            a 60-inch running length.
+            a 60-inch running length. A remanufactured club machine like this usually costs about $2,500 to $4,000, as our <a href="/how-much-does-a-commercial-treadmill-cost/" class="text-[#0F62FE] font-medium">guide to commercial treadmill prices</a> shows.
           </p>
           <p>
             Beyond those figures, care is needed. The T5x name has covered more than one generation —
@@ -107,7 +107,7 @@ export default {
             Matrix is owned by Johnson Health Tech, which also owns Horizon and, since April 2024,
             <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex</a>. Matrix supplies gyms and studios and sells a premium home range alongside. The
             T5x belongs to the commercial side, which explains both its specification and the way it
-            reaches home buyers: through the used and remanufactured trade rather than a home store.
+            reaches home buyers: through the used and remanufactured trade rather than a home store. Its sister brand <a href="/vision-fitness-treadmills/" class="text-[#0F62FE] font-medium">Vision Fitness</a> also sells mainly through specialty dealers and local Vision offices rather than an online store.
           </p>`,
     },
     {

@@ -50,7 +50,7 @@ export default {
             light-commercial or premium home treadmill is usually the better answer. What makes a
             gym machine different in the first place is covered in our guide to
             <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills</a>;
-            this page is about the practicalities of bringing one home.
+            this page is about the practicalities of bringing one home. <a href="/true-fitness-treadmills/" class="text-[#0F62FE] font-medium">TRUE Fitness</a> is one maker that sells both kinds: its Z500 home treadmill is $3,499, and its Performance models run to $6,999. Our guide to <a href="/types-of-treadmills/" class="text-[#0F62FE] font-medium">types of treadmills</a> shows where commercial machines sit against folding, non-folding and incline models.
           </p>`,
     },
     {
@@ -62,7 +62,7 @@ export default {
             motor, a heavy fixed frame, large rollers and a thick deck, all backed by warranties the
             manufacturer expects to honour across a gym floor. At home, that engineering is working
             far below its limits, which is why a well-maintained commercial machine can last a very
-            long time in a house.
+            long time in a house. A remanufactured ex-gym machine from the same brands usually costs about $2,500 to $4,000, against $9,000 to $14,000 new, as our <a href="/how-much-does-a-commercial-treadmill-cost/" class="text-[#0F62FE] font-medium">commercial treadmill price guide</a> sets out.
           </p>
           <p>
             It suits a fairly specific buyer: a household with several regular runners, or a single

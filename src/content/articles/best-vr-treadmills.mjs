@@ -2,14 +2,14 @@ export default {
   slug: 'best-vr-treadmills',
   title: 'Best VR Treadmill (2026): Home Options on Amazon Compared',
   description:
-    'The best VR treadmill for home use in 2026: KAT Walk C3 and C2 models on Amazon, compared with the Virtuix Omni One on price, headset support, space and limits, and why none is a fitness treadmill.',
+    'The KATVR Walk C3 Core ($899–$999 on Amazon) is the best VR treadmill for Meta Quest owners; Virtuix’s Omni One sells direct. None is a fitness treadmill.',
   crumbLabel: 'Best VR Treadmills',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.5k',
   h1: ['Best VR Treadmill', 'Home Options, Honestly Compared'],
   standfirst:

@@ -1,15 +1,15 @@
 export default {
   slug: 'freemotion-treadmills',
-  title: 'Freemotion Treadmills (2026): Reflex t10.9b, t8.9b and Incline',
+  title: "Freemotion Treadmill (2026): t8.9b, Reflex t10.9b and Incline",
   description:
-    'Freemotion is iFIT’s commercial brand. The t8.9b, the Reflex t10.9b and t22.9, the incline trainers, what they cost for home buyers, the 20-amp circuit and how they compare with NordicTrack.',
+    "Freemotion, iFIT’s commercial brand, sold the t8.9b from about $5,999 at dealers and the i22.9 incline trainer at $11,899. Costs, circuits, vs NordicTrack.",
   crumbLabel: 'Freemotion Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Freemotion Treadmills:', 'A Buyer’s Guide to the Reflex Range'],
   standfirst:
@@ -145,7 +145,7 @@ export default {
             incline trainer at $9,999 and the i22.9 at $11,899. Authorised dealers were selling the t8.9b
             for as little as $5,999. These are commercial machines: AC motors of 4.0 to 5.0 HP, 400 lb user
             ratings on the models where sources agree, frames that weigh hundreds of pounds and, on the
-            dealer listings we read, a 20-amp circuit.
+            dealer listings we read, a 20-amp circuit. <a href="/technogym-treadmills/" class="text-[#0F62FE] font-medium">Technogym’s</a> home treadmills sit in the same bracket, from $5,390 to $14,350 in the US.
           </p>
           <p>
             What sets Freemotion apart from other club brands is <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium" data-autolink>iFIT</a>. The touchscreen models run it, and
@@ -365,7 +365,7 @@ export default {
             Because Freemotion sells to gyms and studios, used and remanufactured units are common, and the
             savings are large: one reseller in search results listed a remanufactured t10.9b at $4,399, about
             half the new price, though we did not verify that listing. Studio refits release batches of
-            Reflex treadmills from time to time.
+            Reflex treadmills from time to time. Remanufactured Precor treadmills ran $2,495 to $4,799 at the US rebuilders our <a href="/how-much-does-a-precor-treadmill-cost/" class="text-[#0F62FE] font-medium">Precor price breakdown</a> checked on 27 November 2026.
           </p>
           <ul>
             <li><strong>Know the history.</strong> A treadmill from an Orangetheory or a busy gym may have run

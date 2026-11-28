@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['MaxKare Treadmill:', 'Models, Claims and Warranty'],
   standfirst:
@@ -35,7 +35,7 @@ export default {
             MaxKare’s own store; it can suit light walking and occasional jogging, but none of its
             figures has been independently confirmed, several listings contradict themselves, and the
             warranty terms are vague.</strong> Buy one only cheaply, from a seller whose return window
-            you have read, and with the warranty in writing.
+            you have read, and with the warranty in writing. If you shop for a budget treadmill on Wayfair, check that the listing names the manufacturer and a model number, as our <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">Wayfair buying guide</a> advises.
           </p>
           <p>
             The current range runs from a 20-inch-wide folding treadmill listed with a 3.5 HP motor,
@@ -51,7 +51,7 @@ export default {
             treadmill is the way you would judge any marketplace brand: read the listing as a set of
             claims, decide whether the price is fair if the claims turn out optimistic, and make sure
             you can send it back if it is not what you expected. The sections below do that reading
-            for you.
+            for you. <a href="/oma-treadmills/" class="text-[#0F62FE] font-medium">OMA treadmills</a> such as the 7200EB call for the same approach, since we found no US website for the brand at all.
           </p>`,
     },
     {
@@ -75,7 +75,7 @@ export default {
             available exclusively at Walmart, and MaxKare treadmills appear in Walmart’s incline and
             folding treadmill categories. Walmart.com includes third-party marketplace sellers as
             well as Walmart itself, so check who the seller is on the listing you are looking at,
-            because that decides who handles a return.
+            because that decides who handles a return. Our <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart treadmill guide</a> explains how Walmart, Marketplace sellers and the manufacturer split returns, warranty claims and complaints.
           </p>
           <p>
             <strong>MaxKare’s own store</strong> (maxkare.net) lists more than a dozen treadmills and

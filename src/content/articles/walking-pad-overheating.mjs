@@ -11,8 +11,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Walking Pad Overheating?', 'Why It Stops and How to Cool It'],
   standfirst:
@@ -126,7 +127,7 @@ export default {
             If your WalkingPad is a walking-only model, the safer reading is the FAQ&rsquo;s 1 hour. That is exactly why the manual
             for your specific model matters more than any rule of thumb, and why we do not quote a single &ldquo;safe&rdquo;
             number for all pads. Where a model has a limit built in, the pad will usually enforce it for you by stopping and,
-            on some models, showing a rest message.
+            on some models, showing a rest message. On a WalkingPad that message is Rest, and our <a href="/walkingpad-troubleshooting/" class="text-[#0F62FE] font-medium">WalkingPad troubleshooting</a> guide says to let the pad cool for about 30 minutes.
           </p>
           <p>
             Some listings go the other way and advertise very long continuous use. Treat those as claims about that model only,
@@ -184,7 +185,7 @@ export default {
             Every walking pad has a rated user weight and a maximum speed, and both are there partly because of heat. The motor
             and controller are sized for a certain load at a certain pace. Ask for more and the pad draws more current for the
             whole session, so it reaches its protective limit sooner. You do not need to be over the limit to feel this: a user
-            close to the maximum, walking briskly, works the motor far harder than a lighter user strolling.
+            close to the maximum, walking briskly, works the motor far harder than a lighter user strolling. That matters with brands such as <a href="/umay-treadmills/" class="text-[#0F62FE] font-medium">UMAY</a>, where one model’s weight limit changes from page to page, so plan around the lower figure.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead><tr><th class="${th}">Load factor</th><th class="${th}">Why it adds heat</th><th class="${th}">What helps</th></tr></thead>
@@ -208,7 +209,7 @@ export default {
             If you are buying, headroom is the cheapest overheating prevention there is. A pad whose rated capacity is well above
             your weight, and whose top speed is well above the pace you actually walk, spends its life working well inside its
             limits. Our <a href="/best-walking-pads-for-heavy-people/" class="${a}">best walking pads for heavy people</a> guide
-            covers higher-capacity models.
+            covers higher-capacity models. A pad such as the <a href="/cybergoing-walking-pad/" class="text-[#0F62FE] font-medium">Cybergoing T10</a>, rated for 300 lb, suits walkers well under that figure rather than near it.
           </p>`,
     },
     {

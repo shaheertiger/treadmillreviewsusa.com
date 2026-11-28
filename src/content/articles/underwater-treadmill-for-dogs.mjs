@@ -1,15 +1,15 @@
 export default {
   slug: 'underwater-treadmill-for-dogs',
-  title: 'Underwater Treadmill for Dogs (2026): Hydrotherapy, Costs, Access',
+  title: 'Underwater Treadmill for Dogs: Hydrotherapy, Costs and Access',
   description:
-    'What an underwater treadmill for dogs is, how canine hydrotherapy works, who provides it, typical session costs, why home units are rare, and human water treadmills.',
+    'An underwater treadmill for dogs is a warm-water tank with a belt, used in canine hydrotherapy; US sessions commonly ran $50 to $125 on the examples we checked.',
   crumbLabel: 'Underwater Treadmill for Dogs',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Explainer',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Underwater Treadmill for Dogs:', 'Canine Hydrotherapy Explained'],
   standfirst:

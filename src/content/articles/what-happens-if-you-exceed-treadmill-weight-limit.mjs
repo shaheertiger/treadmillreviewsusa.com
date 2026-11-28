@@ -170,7 +170,7 @@ export default {
       heading: 'Why It Matters More on a Walking Pad',
       html: `          <p>
             Everything above applies to every motorised treadmill, but a walking pad has less in reserve
-            at every point, so exceeding its limit costs more, sooner.
+            at every point, so exceeding its limit costs more, sooner. Our explainer on <a href="/what-is-a-walking-pad/" class="text-[#0F62FE] font-medium">what a walking pad is</a> shows why: a smaller motor, a belt in the region of 40 inches long and none of a treadmill&rsquo;s upright structure.
           </p>
           <p>
             <strong>Everything is smaller.</strong> A pad's rollers, bearings, deck and motor are sized to

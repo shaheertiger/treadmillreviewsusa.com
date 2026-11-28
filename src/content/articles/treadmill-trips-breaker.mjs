@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Treadmill Tripping', 'the Breaker?'],
   standfirst:
@@ -184,7 +184,7 @@ export default {
             Larger machines, and commercial-grade machines with <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium" data-autolink>AC motors</a>, are more likely to call
             for a dedicated 20-amp circuit, and some need a specific outlet type. Your rating plate
             and manual are the authority, not a general figure from the internet, including this
-            page.
+            page. Schwinn’s guides, for instance, call for a dedicated 15-amp circuit, as our <a href="/schwinn-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Schwinn troubleshooting guide</a> notes.
           </p>
           <p>
             In practice, most home treadmills run happily on a standard grounded 15-amp household
@@ -226,7 +226,7 @@ export default {
             replace GFCI protection where code requires it, and do not run the treadmill through
             an extension cord from a non-GFCI outlet to dodge it. Contact the manufacturer, who may
             have specific guidance on GFCI compatibility for your model, and ask an electrician
-            whether a dedicated circuit with appropriate protection is an option.
+            whether a dedicated circuit with appropriate protection is an option. Some makers are explicit about it: Weslo’s manuals say their treadmills cannot use a GFCI outlet, as our <a href="/weslo-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Weslo troubleshooting guide</a> notes.
           </p>
           <p>
             <strong>AFCI breakers</strong> look for the electrical signature of arcing — the kind
@@ -376,7 +376,7 @@ export default {
           <p>
             If a circuit genuinely cannot carry the treadmill, the correct answer is a properly
             installed circuit sized for the load, by a licensed electrician, to local code. That is
-            the only legitimate way to get more capacity.
+            the only legitimate way to get more capacity. Club machines bought for home use are a common case: a used <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor</a> treadmill, for example, can need its own 20-amp circuit.
           </p>`,
     },
     {

@@ -6,9 +6,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Spec Explainer',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Treadmill Calibration:', 'The Machine, the Watch and Which to Trust'],
   standfirst:
@@ -282,7 +282,7 @@ export default {
             the treadmill reads 3 percent fast, you have just taught the watch to read 3 percent
             fast too. Enter the <em>measured</em> distance if you have one. Second, arm swing is a
             poor proxy for leg speed. Holding the handrails, carrying a bottle or watching a screen
-            with your arm still will all produce an underestimate, calibration or not.
+            with your arm still will all produce an underestimate, calibration or not. At a walking desk that problem is constant, which is why our <a href="/best-fitness-trackers-for-walking-pad/" class="text-[#0F62FE] font-medium">walking pad fitness tracker picks</a> favour devices that count from the waist or the shoe.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Apple Watch: calibration by outdoor runs</h3>
           <p>

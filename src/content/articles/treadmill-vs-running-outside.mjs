@@ -162,7 +162,7 @@ export default {
             thin decks with little suspension; better ones have tuned elastomers or adjustable
             cushioning. If impact is a concern for you, the deck and suspension matter more than
             any other spec. Outdoors, the equivalent choice is surface — trails, grass and
-            cinder tracks are all softer than pavements.
+            cinder tracks are all softer than pavements. If you want to take impact out altogether, our <a href="/treadmill-vs-rowing-machine/" class="text-[#0F62FE] font-medium">treadmill vs rowing machine</a> comparison covers a no-impact alternative that works more of the body.
           </p>`,
     },
     {

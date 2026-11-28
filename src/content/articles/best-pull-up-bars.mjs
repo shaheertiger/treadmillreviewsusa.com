@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Pull Up Bar', 'for Doorways, Walls and Ceilings'],
   standfirst:
@@ -34,7 +34,7 @@ export default {
       html: `          <p>
             Five bars, chosen by mounting type, because the mount decides almost everything else. If
             you can drill into a wall, start with the first two; if your only option is a ceiling,
-            the third; if you cannot drill at all, the doorway bars — after checking your frame.
+            the third; if you cannot drill at all, the doorway bars — after checking your frame. The same mounting questions decide where a heavy bag can hang, and our <a href="/best-punching-bags/" class="text-[#0F62FE] font-medium">punching bag guide</a> covers mounting options as well as freestanding bags that need no drilling at all.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -135,7 +135,7 @@ export default {
             finish, which is why the Iron Gym bar has been a staple for years. The cost is fit and
             headroom: it needs trim of the right width and strength, puts load on the trim and the
             wall above it, and holds the bar close to the top of the door. It is for strict
-            pull-ups, chin-ups and hanging work, not for kipping.
+            pull-ups, chin-ups and hanging work, not for kipping. Inversion tables are the other way people hang at home, and our <a href="/best-inversion-tables/" class="text-[#0F62FE] font-medium">inversion table guide</a> sets out who the makers say must not invert.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Doorway pressure and screw-in bars</h3>
           <p>

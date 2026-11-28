@@ -1,15 +1,15 @@
 export default {
   slug: 'lifespan-treadmills',
-  title: 'LifeSpan Treadmill Guide (2026): Desk, Walking Pad and Folding',
+  title: "LifeSpan Treadmill Review (2026): Desk, Walking Pad, Folding",
   description:
-    'LifeSpan Fitness makes under-desk treadmills and treadmill desks, and used to sell folding treadmills. What it sells now, the confirmed figures, warranty, service record and what to buy.',
+    "LifeSpan sells under-desk treadmills with a full 20-inch belt, but its folding treadmills were all unavailable when we checked. What to buy instead.",
   crumbLabel: 'LifeSpan Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '1.5k',
   h1: ['LifeSpan Treadmills:', 'What the Brand Sells Now'],
   standfirst:

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-28',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['Black Friday', 'Walking Pad Deals 2026'],
   standfirst:
@@ -103,7 +103,7 @@ export default {
             price it showed on 18 and 20 October. WalkingPad showed the C2 at $429 against $599 and the
             R3 Hybrid+ at $799 against $999, again the same prices our roundups recorded in
             mid-October. If those pads appear at the same figures in late November with a Black
-            Friday badge, nothing will have changed except the badge.
+            Friday badge, nothing will have changed except the badge. On Black Friday itself, <a href="/cursor-fitness-treadmills/" class="text-[#0F62FE] font-medium">CURSOR FITNESS pads</a> were $94.99 to $199.99 on Amazon, almost all sold by one storefront, RUNHOME.
           </p>
           <p>
             The clearest evidence that a real reduction is possible comes from the MERACH NovaWalk
@@ -151,7 +151,7 @@ export default {
             on the product page. Some listings hide the price until the item is in the cart, some
             apply a discount only at checkout, and some carry a coupon you have to tick. On 20
             October, for example, UREVO's Strol 2E Pro showed $259.99 on its product page and $189.99
-            at checkout. The basket price is the one to write down.
+            at checkout. The basket price is the one to write down. The Strol 2E Pro also appears in our <a href="/best-treadmills-under-200/" class="text-[#0F62FE] font-medium">best treadmills under $200</a>, at $198 to $220 on Amazon in early November.
           </p>
           <p>
             <strong>Set your ceiling in advance.</strong> Decide what you would pay for each pad on
@@ -311,7 +311,7 @@ export default {
           <p>
             <strong>If it must disappear between uses,</strong> watch the WalkingPad Z1 or C2. Both
             fold in half and slide under a bed or sofa. The Z1 has the longer, better-documented
-            belt and a 242 lb limit; the C2 is the smaller, lighter option for walkers under 220 lb.
+            belt and a 242 lb limit; the C2 is the smaller, lighter option for walkers under 220 lb. The Z1 also tops our <a href="/best-mini-treadmills/" class="text-[#0F62FE] font-medium">best mini treadmills</a>, folding to 32 by 22 inches.
           </p>
           <p>
             <strong>If you want your walk to get harder over time,</strong> watch the UREVO CyberPad.

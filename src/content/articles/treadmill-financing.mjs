@@ -7,9 +7,9 @@ export default {
   kicker: 'Price Guide',
   breadcrumb: { name: 'By Price', url: '/price/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Treadmill Financing and', 'Payment Plans'],
   standfirst:
@@ -229,7 +229,7 @@ export default {
             <strong>Illustration:</strong> a plan of $60 a month for the machine over 36 months plus
             a $40 monthly membership is presented as $100 a month. Over three years, that is $2,160
             for the machine and $1,440 for the membership — $3,600 in total. And when the machine is
-            paid off, the $40 continues for as long as you want the features that depend on it.
+            paid off, the $40 continues for as long as you want the features that depend on it. Peloton’s All-Access Membership, for comparison, is $49.99 a month on top of a treadmill that lists at $2,195 to $6,695, as our <a href="/how-much-does-a-peloton-tread-cost/" class="text-[#0F62FE] font-medium">Peloton Tread cost guide</a> shows.
           </p>
           <p>
             Questions to ask about any bundle:

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Ownership',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '2.3k',
   h1: ['Can You Keep a Treadmill', 'in a Garage?'],
   standfirst:
@@ -149,7 +149,7 @@ export default {
             Motors and boards rely on air cooling, and hotter intake air means hotter components.
             Some machines have thermal protection that stops the motor if it overheats, which shows
             up as the treadmill stopping partway through a session. Prolonged heat is also hard on
-            the console screen, plastics, the belt and adhesives.
+            the console screen, plastics, the belt and adhesives. Walking pads are especially prone to this, and our <a href="/walking-pad-overheating/" class="text-[#0F62FE] font-medium">walking pad overheating</a> guide covers why one stops and how to cool it.
           </p>
           <p>
             Keep the machine out of direct sun from windows or an open door, ventilate the space
@@ -293,7 +293,7 @@ export default {
           <p>
             Garages are often accessible to children and less supervised than the house. Remove the
             safety key after every session and keep it somewhere children cannot reach, unplug the
-            machine, and if it folds, make sure the latch is fully engaged.
+            machine, and if it folds, make sure the latch is fully engaged. If a key does go missing, our <a href="/best-treadmill-safety-keys/" class="text-[#0F62FE] font-medium">best treadmill safety keys</a> lists five replacements, from brand-specific keys to universal magnetic ones.
           </p>`,
     },
     {

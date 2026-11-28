@@ -1,15 +1,14 @@
 export default {
   slug: 'black-friday-home-gym-deals',
-  title: 'Black Friday Home Gym Deals 2026: 7 Worth Watching',
-  description:
-    'Seven home gym buys on Amazon to watch this Black Friday, with the prices we saw in October 2026, our target prices, recalls to avoid and what to buy first.',
+  title: "Black Friday Home Gym Deals 2026: 7 Buys Worth Watching",
+  description: "Dumbbells and plates barely move; connected cardio moves most. Seven home gym buys with October prices and targets, like the Horizon T101 at $600 or less.",
   crumbLabel: 'Black Friday Home Gym Deals',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-28',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Black Friday Home Gym', 'Deals 2026'],
   standfirst:
@@ -62,7 +61,7 @@ export default {
             Two rows deserve a word straight away. The Schwinn IC4 was $100 cheaper on 16 October
             than on 19 October, so a "Black Friday" price of $899 would be no deal at all. And the
             Concept2 RowErg is on this list precisely because its price does not move much: if you
-            want one, buying it in November is no better than buying it today.
+            want one, buying it in November is no better than buying it today. The same check applies to the <a href="/schwinn-treadmills/" class="text-[#0F62FE] font-medium">Schwinn 810 treadmill</a>, which was $899 at Schwinn on 5 November 2026.
           </p>`,
     },
     {

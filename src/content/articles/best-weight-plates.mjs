@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Weight Plates', 'for a Home Gym: Iron, Rubber and Urethane'],
   standfirst:
@@ -57,7 +57,7 @@ export default {
             Olympic bars, and if you plan to drop the bar — in cleans, snatches or heavy deadlifts —
             our <a href="/best-bumper-plates/" class="text-[#0F62FE] font-medium">bumper plate guide</a>
             is the one to read instead. The <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a>
-            collects every guide in this series.
+            collects every guide in this series. A trap bar is the other common bar to load them on, and our <a href="/best-trap-bars/" class="text-[#0F62FE] font-medium">trap bar guide</a> explains why the short 10-inch sleeves on some cheap bars run out of room for plates.
           </p>`,
     },
     {
@@ -176,7 +176,7 @@ export default {
             better spent replacing the plates. Check, too, that any plate-loaded machine you own takes
             2-inch plates; most do, and our
             <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machine guide</a>
-            covers the plate-loaded options.
+            covers the plate-loaded options. Titan's standing hip thrust machine, in our <a href="/best-hip-thrust-machines/" class="text-[#0F62FE] font-medium">hip thrust machine guide</a>, is one plate-loaded example, with a 440 lb plate capacity.
           </p>`,
     },
     {

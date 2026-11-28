@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-22',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Aviron Treadmill:', 'Justice, Podium and Summit Reviewed'],
   standfirst:
@@ -135,7 +135,7 @@ export default {
             and drive motor and one year on everything else. Third, the membership costs less than
             Peloton's, iFIT's or Echelon's, and the treadmill does more without it than most
             subscription-led machines — but the games that are the reason to buy an Aviron are
-            behind it.
+            behind it. Echelon’s Premier, for comparison, costs $39.99 a month or $399.99 a year, per our <a href="/how-much-does-an-echelon-treadmill-cost/" class="text-[#0F62FE] font-medium">Echelon treadmill prices</a> page.
           </p>
           <p>
             If what you actually want is any treadmill with an entertaining screen, our
@@ -270,7 +270,7 @@ export default {
             The bottom row adds three years of the annual membership at $348 a year to the
             self-assembled price of the 16-inch model. Paid month to month at $34, three years comes
             to $1,224 rather than $1,044. Garage Gym Reviews confirms the $299 White Glove figure and
-            the $29 and $34 membership rates.
+            the $29 and $34 membership rates. On a Peloton treadmill the All-Access Membership is $49.99 a month, as our <a href="/how-much-does-a-peloton-tread-cost/" class="text-[#0F62FE] font-medium">Peloton treadmill cost guide</a> shows.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Other costs that turn up</h3>
           <ul>
@@ -314,7 +314,7 @@ export default {
             sync to Strava and Apple Health. That is considerably more than Peloton's Just Run mode,
             which our <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton Tread guide</a>
             describes, or Echelon's free tier, covered in our
-            <a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium">Echelon treadmill guide</a>.
+            <a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium">Echelon treadmill guide</a>. Aviron's Victory names the longest app list of any machine in our <a href="/best-treadmills-with-netflix/" class="text-[#0F62FE] font-medium">Netflix treadmill roundup</a>.
           </p>
           <p>
             The general caution applies all the same: what a connected treadmill does without a

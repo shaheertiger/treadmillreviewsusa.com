@@ -103,7 +103,7 @@ export default {
             are new and nervous — use them for as long as you need them. This is not a lesser way
             of exercising. It is the safe way for you, and the walking still counts. If your aim is
             eventually to walk hands-free, the section on how to stop holding on below explains how
-            to work towards it gradually, and a physical therapist can tailor that to you.
+            to work towards it gradually, and a physical therapist can tailor that to you. After a hip replacement, for instance, rails within reach are part of the usual advice for early sessions, as our guide to <a href="/treadmill-after-hip-replacement/" class="text-[#0F62FE] font-medium">treadmill walking after hip replacement</a> explains.
           </p>`,
     },
     {
@@ -298,7 +298,7 @@ export default {
             neurological conditions, recent joint replacements or lower-limb injuries, significant
             visual impairment, and people taking medication that can cause dizziness. It includes
             many older adults, particularly when they are starting out. And it includes anyone who is
-            simply nervous on a moving belt, which is a reasonable thing to be.
+            simply nervous on a moving belt, which is a reasonable thing to be. After a knee replacement, for example, holding on in the early weeks is not the bad habit general advice warns about, as our guide to <a href="/treadmill-after-knee-replacement/" class="text-[#0F62FE] font-medium">treadmill walking after knee replacement</a> explains.
           </p>
           <p>
             For these users, a few points help get the most from the session without giving up the

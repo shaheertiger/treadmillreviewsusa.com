@@ -11,9 +11,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-18',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Where to Buy Treadmills Cheap:', 'Ranked by What You Really Pay'],
   standfirst:
@@ -42,7 +42,7 @@ export default {
             full-size machine from an established brand, followed by model-year clearance and
             manufacturer-refurbished units. The cheapest new treadmills on Amazon and Walmart are
             cheap to buy but are mostly walking pads, and they are only the cheapest option if
-            walking is all you will ever do.</strong>
+            walking is all you will ever do.</strong> The <a href="/treaflow-walking-pad/" class="text-[#0F62FE] font-medium">Treaflow walking pad</a>, at $110 to $160, is a typical example: a light under-desk pad sold mainly through third-party Amazon sellers.
           </p>
           <p>
             That ranking assumes two things: that you can inspect a machine properly, and that you
@@ -231,7 +231,7 @@ ${row('8. Gym closeouts and surplus auctions (GovDeals, liquidators)', 'Can be v
             <strong>Best Buy open-box and other big-box returns.</strong> Open-box treadmills appear at
             big-box retailers, sometimes only at a particular store. Our
             <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium">Best Buy treadmill guide</a>
-            covers how that retailer's listings work.
+            covers how that retailer's listings work. Home Depot is the exception among big-box stores: its treadmills are sold online only, as our <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium">Home Depot guide</a> explains.
           </p>
           <p>
             <strong>Manufacturer-refurbished and outlet units.</strong> These are the safest of the
@@ -261,7 +261,7 @@ ${row('8. Gym closeouts and surplus auctions (GovDeals, liquidators)', 'Can be v
             specification line by line with the nearest mainstream model. If you are not already a
             member, add the membership fee to the price. Our guide to
             <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">buying a treadmill at Costco</a>
-            covers how to judge a club-exclusive model.
+            covers how to judge a club-exclusive model. At Sam’s Club, where many treadmill prices are shown only to members, most of the range is NordicTrack and ProForm, as our <a href="/sams-club-treadmills/" class="text-[#0F62FE] font-medium">Sam’s Club treadmill guide</a> explains.
           </p>
           <p>
             <strong>The cheapest new listings on Amazon and Walmart</strong> are where most searches for

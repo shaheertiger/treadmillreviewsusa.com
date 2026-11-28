@@ -2,13 +2,13 @@ export default {
   slug: 'best-treadmills-for-sprinting',
   title: 'Best Treadmills for Sprinting (2026): Motorised and Curved Picks',
   description:
-    'Five sprint treadmills sold on Amazon, compared on what sprinting needs: top speed, how fast the belt changes pace, motor rating, deck length, and curved manual trainers with no speed limit.',
+    'The NordicTrack Commercial 2450 (0–14 mph, 22 x 60 in. belt) is the fastest motorised sprint pick; curved trainers such as the SOLE C80 have no speed limit.',
   crumbLabel: 'Best Treadmills for Sprinting',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.5k',
   h1: ['Best Treadmills', 'for Sprinting'],
   standfirst:
@@ -35,7 +35,7 @@ export default {
       html: `          <p>
             If you want one machine for sprints and for ordinary running, choose a motorised treadmill.
             If sprinting and conditioning are the main reason you are buying, choose a curved trainer. The
-            table sums up the trade.
+            table sums up the trade. Rogue Fitness, for one, resells curved trainers from Woodway, TrueForm and STEPR from $3,495, as our <a href="/rogue-treadmills/" class="text-[#0F62FE] font-medium">guide to what Rogue sells</a> shows.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -58,7 +58,7 @@ export default {
       products: true,
       html: `          <p>
             Two motorised treadmills come first, then three curved manual trainers. The motorised machines
-            are better all-rounders; the curved ones are better sprint tools. Each card says what limits it.
+            are better all-rounders; the curved ones are better sprint tools. Each card says what limits it. The official HYROX race machine, the <a href="/centr-treadmills/" class="text-[#0F62FE] font-medium">Centr x HYROX Perform Tread</a>, is a motorless curved trainer of the same kind, at $6,999. On 23 November 2026 the Sole C80 was $2,099.99 and the AssaultRunner Pro $3,499, as our <a href="/how-much-does-a-curved-treadmill-cost/" class="text-[#0F62FE] font-medium">curved treadmill prices</a> page records.
           </p>`,
     },
     {

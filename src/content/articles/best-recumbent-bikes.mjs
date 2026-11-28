@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Best Recumbent Bikes', 'for Home'],
   standfirst:
@@ -36,7 +36,7 @@ export default {
             magnetic resistance, a 330 lb rating, a ventilated seat with lumbar support and Bluetooth
             that connects to a wide range of apps. The Horizon 5.0R is the alternative with the most
             resistance range and a lifetime frame warranty, and the Marcy ME-709 does the basics for
-            about $250.
+            about $250. On our <a href="/black-friday-exercise-bike-deals/" class="text-[#0F62FE] font-medium">Black Friday exercise bike deals</a> page the 5.0R was $649 at Horizon on 19 October against a $999 list price, and we would wait for under $600.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -77,7 +77,7 @@ export default {
           <p>
             Two are Schwinn models. That reflects the market rather than a preference: Schwinn's
             recumbents are among the few in this price range with consistent figures across the
-            maker's page and several independent reviews.
+            maker's page and several independent reviews. The brand’s <a href="/schwinn-treadmills/" class="text-[#0F62FE] font-medium">folding treadmills</a> show the same consistency: independent reviews agree with Schwinn on the 810’s belt, speed, incline and capacity.
           </p>`,
     },
     {
@@ -168,7 +168,7 @@ export default {
             efforts feel different and many experienced cyclists find a recumbent less engaging. The
             reclined position takes more floor space: recumbents are typically 52 to 67 inches long
             against roughly 40 to 55 inches for an upright indoor bike. And because you sit back
-            against the seat, your core and upper body do little.
+            against the seat, your core and upper body do little. If floor space decides it, the X-frame bikes in our <a href="/best-folding-exercise-bikes/" class="text-[#0F62FE] font-medium">folding exercise bike guide</a> stand on end when you are done, taking roughly the floor of a kitchen chair.
           </p>
           <p>
             <strong>Who should consider an upright instead.</strong> If you want spin-style classes,

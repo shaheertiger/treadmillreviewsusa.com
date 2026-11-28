@@ -2,13 +2,13 @@ export default {
   slug: 'tko-airraid-runner-treadmill',
   title: 'TKO AirRaid Runner (8CTM) Review (2026): Specs and Price',
   description:
-    'The TKO AirRaid Runner 8CTM is a curved manual treadmill with four magnetic resistance levels, now listed by TKO as the AirRaid Force. Specs, conflicts, warranty and who it suits.',
+    "The TKO AirRaid Runner 8CTM is a commercial curved manual treadmill with 4 magnetic resistance levels, now sold as the AirRaid Force. Specs and who it suits.",
   crumbLabel: 'TKO AirRaid Runner 8CTM',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['TKO AirRaid Runner 8CTM', 'Manual Treadmill Review'],
   standfirst:
@@ -72,7 +72,7 @@ export default {
             Zwift-compatible Bluetooth, sold for about $5,000 to $5,500 — and TKO itself now lists it as
             the AirRaid Force.</strong> It is a reasonable buy for a facility or committed athlete who
             wants resistance and connectivity on a curved belt. For most home buyers, it costs a lot more
-            than curved treadmills that do similar things.
+            than curved treadmills that do similar things. Most home buyers pay $1,900 to $3,500 for one, as our <a href="/how-much-does-a-curved-treadmill-cost/" class="text-[#0F62FE] font-medium">page on what a curved treadmill costs</a> shows.
           </p>
           <p>
             Three things to know before you buy. First, check the model number: TKO's current "AirRaid
@@ -145,7 +145,7 @@ export default {
           </ul>
           <p>
             We found no Amazon listing for it. Because TKO sells mainly through commercial dealers, it is
-            worth asking two or three for a quote, especially if you are equipping a facility.
+            worth asking two or three for a quote, especially if you are equipping a facility. <a href="/trueform-treadmills/" class="text-[#0F62FE] font-medium">TrueForm</a> sells the same way, direct and through gym dealers rather than on Amazon.
           </p>`,
     },
     {
@@ -206,7 +206,7 @@ export default {
             setting, and the belt stops when you do. TKO's manual describes the four resistance levels
             this way: level 1 is free running without resistance, level 2 adds slight resistance to
             simulate weighted jogging, and levels 3 and 4 add enough to simulate pushing a sled. TKO's sell
-            sheet adds that the handrails are placed for casual walking or for push-sled work.
+            sheet adds that the handrails are placed for casual walking or for push-sled work. The <a href="/tru-grit-treadmills/" class="text-[#0F62FE] font-medium">Tru Grit Grit Runner</a> is a cheaper curved trainer with resistance settings for the same sled-style pushes.
           </p>
           <p>
             That range is the 8CTM's main reason to exist. A free-running curve suits maximal sprints;

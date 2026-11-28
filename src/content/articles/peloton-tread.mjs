@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Peloton Treadmill Review:', 'Tread Flex, Tread Vision and Tread+ Vision'],
   standfirst:
@@ -122,7 +122,7 @@ export default {
             machine that works fully without a subscription costs the same in its fifth year as
             in its first. Our
             <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton comparison</a>
-            explains how the two big platforms differ in what a session feels like.
+            explains how the two big platforms differ in what a session feels like. The closest connected rival is <a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium">Echelon’s Stride range</a>, known for an auto-fold that lays the machine flat.
           </p>
           <p>
             Three things are worth knowing before you go further. Peloton's lineup changed on
@@ -131,7 +131,7 @@ export default {
             recent years, and the current model's safety arrangements are worth confirming in
             writing. And Peloton's own pages disagree with each other on several practical details
             — the warranty, the assembly fee and the ceiling height — which we set out below rather
-            than pick one.
+            than pick one. Peloton’s treadmill prices, $2,195 to $6,695 at list and $1,995 to $5,395 in the Black Friday sale, are set out in our <a href="/how-much-does-a-peloton-tread-cost/" class="text-[#0F62FE] font-medium">Peloton Tread cost guide</a>.
           </p>`,
     },
     {
@@ -490,7 +490,7 @@ export default {
             Commercial Series treadmill and curated Peloton running and walking classes for Precor
             machines. The CPSC recall database lists a 1998 recall that included some <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Precor
             treadmill</a> models and a 2025 recall of a Precor cable machine, but no recent Precor
-            treadmill recall.
+            treadmill recall. Precor publishes no prices and sells no home treadmill; our <a href="/how-much-does-a-precor-treadmill-cost/" class="text-[#0F62FE] font-medium">Precor cost breakdown</a> lists what an authorized dealer charged, $5,885 to $16,230 new on 27 November 2026.
           </p>
           <p>
             The Peloton Treads themselves are consumer machines, and John Lewis's listing gives the

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Spec Explainer',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['How Much Does', 'a Treadmill Weigh?'],
   standfirst:
@@ -33,7 +33,7 @@ export default {
             75 lb, a <strong>folding home treadmill</strong> roughly 150 to 250 lb, a
             <strong>non-folding home treadmill</strong> roughly 250 to 350 lb, and a
             <strong>commercial treadmill</strong> roughly 350 to 500 lb or more. Shipping weights
-            are higher than all of these, because of the packaging.
+            are higher than all of these, because of the packaging. That gap follows from what a walking pad leaves out, as our explainer on <a href="/what-is-a-walking-pad/" class="text-[#0F62FE] font-medium">what a walking pad is</a> shows: no upright frame, no console arm and usually no handrail.
           </p>
           <p>
             The weight is concentrated at the front. The motor, the flywheel, the incline
@@ -165,7 +165,7 @@ export default {
             because the frame, deck and motor that make them heavy are also what let them carry
             more load. But the rating is the manufacturer's stated limit, not something you can
             derive from the machine's weight, and the ratings themselves are not tested to one
-            common standard across brands.
+            common standard across brands. For the lightest machines, our <a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">best portable treadmills</a> list five under 70 lb.
           </p>
           <p>
             Running loads the deck well beyond your standing body weight, because each footstrike

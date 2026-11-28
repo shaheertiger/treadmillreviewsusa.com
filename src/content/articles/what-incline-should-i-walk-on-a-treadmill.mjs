@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['What Incline Should I Walk', 'On a Treadmill?'],
   standfirst:
@@ -208,7 +208,7 @@ export default {
             the legs and hips, but it does not burn fat from the legs and hips specifically. Fat
             loss happens across the whole body, as our page on
             <a href="/does-treadmill-burn-belly-fat/" class="text-[#0F62FE] font-medium">whether a treadmill burns belly fat</a>
-            explains.
+            explains. For a full set of numbers, our page on <a href="/best-treadmill-settings-for-fat-loss/" class="text-[#0F62FE] font-medium">treadmill settings for fat loss</a> suggests 30 to 45 minutes at 4 to 10%, three to five times a week.
           </p>`,
     },
     {
@@ -268,7 +268,7 @@ export default {
           <p>
             Your treadmill also has to be able to do it. Check the maximum incline before you buy
             if this is the plan; not every compact or folding machine reaches 12%, and walking pads
-            usually have no incline at all.
+            usually have no incline at all. The exceptions are budget pads such as <a href="/lontek-walking-pad/" class="text-[#0F62FE] font-medium">LONTEK’s</a>, whose 15% and 32% figures are manual leg settings on two different machines.
           </p>`,
     },
     {
@@ -338,7 +338,7 @@ export default {
       heading: 'What Your Treadmill Can Do',
       html: `          <p>
             The incline you can use depends on the machine, and ranges vary more than people
-            expect.
+            expect. Even within one budget brand, <a href="/cursor-fitness-treadmills/" class="text-[#0F62FE] font-medium">CURSOR FITNESS</a> sells pads with a three-level manual incline alongside auto-incline treadmills at $254.99 to $289.99.
           </p>
           <ul>
             <li><strong>Walking pads and many under-desk treadmills</strong> have no incline, or a

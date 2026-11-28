@@ -7,9 +7,9 @@ export default {
   kicker: 'Buyer\'s Guide',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Wooden Walking Pad', 'Buyer’s Guide'],
   standfirst:
@@ -321,7 +321,7 @@ export default {
             Walkolution's product pages now say the Walkolution 2 is "owned and distributed worldwide by Woodway
             USA, Inc.", while the 2022 announcements from both companies, and independent coverage since, describe
             a distribution and patent partnership rather than an acquisition. We found no announcement of a sale.
-            For a buyer, the practical point is the same: US warranty claims go through Woodway.
+            For a buyer, the practical point is the same: US warranty claims go through Woodway. Woodway machines are also resold by Rogue Fitness, including a Curve LTG in Rogue branding, as our <a href="/rogue-treadmills/" class="text-[#0F62FE] font-medium">Rogue treadmill line-up</a> explains.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">NOHrD</h3>
           <p>

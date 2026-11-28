@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-18',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['How to Start a', 'Horizon Treadmill'],
   standfirst:
@@ -65,7 +65,7 @@ export default {
             lights at all, start with the outlet and the switch, in the order set out
             <a href="#wont-start" class="text-[#0F62FE] font-medium">further down this page</a>.
             The general version of this sequence for every brand is in our guide to
-            <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium">how to turn on a treadmill</a>.
+            <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium">how to turn on a treadmill</a>. If the key is lost, our <a href="/best-treadmill-safety-keys/" class="text-[#0F62FE] font-medium">safety key guide</a> notes that TreadLife replacements fit Horizon machines.
           </p>`,
     },
     {
@@ -292,7 +292,7 @@ export default {
             <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101 review</a>
             covers its console, and our
             <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium">Horizon 7.0 AT review</a>
-            covers the 7.0 AT’s.
+            covers the 7.0 AT’s. For faults beyond start-up, our <a href="/horizon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Horizon treadmill troubleshooting</a> guide covers belt tension, LUBE messages and the console.
           </p>`,
     },
     {

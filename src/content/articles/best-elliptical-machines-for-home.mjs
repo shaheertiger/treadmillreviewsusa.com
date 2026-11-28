@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-16',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Best Elliptical Machines', 'for Home'],
   standfirst:
@@ -36,7 +36,7 @@ export default {
             constraints: a small room, a <a href="/best-treadmills-for-low-ceilings/" class="text-[#0F62FE] font-medium" data-autolink>low ceiling</a>, a tall user, a household of different
             heights, and someone who wants guided workouts on a screen. The short version: the SOLE
             E35 for most people, the Horizon EX-59 if the budget stops under $1,000, and the
-            Schwinn 411 if floor space is the problem.
+            Schwinn 411 if floor space is the problem. If you are timing the purchase around the holiday sales, our <a href="/black-friday-elliptical-deals/" class="text-[#0F62FE] font-medium">Black Friday elliptical deals</a> page records the E35 at $1,699.99 on October 28 and the price we would wait for.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -256,7 +256,7 @@ export default {
             The best elliptical for a small space is usually a short one, not a folding one. Full-size
             home ellipticals are typically somewhere around 70 to 85 inches long once assembled; the
             compact models on this page cut that to under 60. That difference is often what decides whether a machine fits a
-            spare bedroom at all.
+            spare bedroom at all. Our <a href="/best-compact-ellipticals/" class="text-[#0F62FE] font-medium">compact elliptical guide</a> compares five machines from 37 to 58 inches long and shows the ceiling arithmetic for tall users.
           </p>
           <ul>
             <li><strong>Schwinn 411:</strong> 53.8 inches long and 24 inches wide, by Schwinn's

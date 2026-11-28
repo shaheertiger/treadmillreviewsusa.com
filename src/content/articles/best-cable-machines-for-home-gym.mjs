@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-16',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Cable Machines', 'for a Home Gym'],
   standfirst:
@@ -242,7 +242,7 @@ export default {
             just shorter than the ceiling may not tip up into place. Several makers, including Bells
             of Steel, state an assembly clearance that is higher than the machine itself; check it
             on the product page. If you also want pull-ups on the built-in bar, you need clearance
-            for your head above the bar, too.
+            for your head above the bar, too. The same head-room check applies to a freestanding <a href="/best-power-towers/" class="text-[#0F62FE] font-medium">power tower</a>; the RELIFE in our guide sets its bar anywhere from about 58.5 to 89 inches.
           </p>
           <p>
             <strong>Working space, not footprint.</strong> The base dimensions tell you what the
@@ -394,7 +394,7 @@ export default {
             door anchor cover many cable movements for a fraction of the cost, and adjustable
             dumbbells cover most of the rest. Our guide to
             <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>
-            is the better starting point.
+            is the better starting point. Portable bar-and-band kits are another cheap route; our <a href="/gymproluxe-review/" class="text-[#0F62FE] font-medium">GymProLuxe review</a> covers what one suits (mainly upper-body work) and which of its terms need reading closely.
           </p>
           <p>
             <strong>If you need a commercial-duty machine</strong> for a studio or a shared

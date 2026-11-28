@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-16',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Squat Racks', 'for a Home Gym'],
   standfirst:
@@ -37,7 +37,7 @@ export default {
             covered. Most people setting up a garage or basement gym will be best served by one
             of the first three. The <a href="/best-folding-squat-racks/" class="text-[#0F62FE] font-medium" data-autolink>folding rack</a> is for rooms that have to do another job, the
             squat stand for low budgets or low ceilings, and the budget power rack for anyone who
-            wants a full cage for under $400 and accepts its limits.
+            wants a full cage for under $400 and accepts its limits. That budget cage, REP's PR-1100, is on our <a href="/black-friday-home-gym-deals/" class="text-[#0F62FE] font-medium">Black Friday home gym deals</a> list at $379.99 in October, with about $340 or free extras as the deal worth waiting for.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -99,7 +99,7 @@ export default {
             each we wanted at least one option on sale now under that name on its maker's own
             store, with upright size, steel gauge, hole spacing, footprint, safety system and
             bolting requirement that an independent review confirms. We also wanted a spread of
-            prices, from a budget rack under $400 to configurable 3x3 racks well above $1,000.
+            prices, from a budget rack under $400 to configurable 3x3 racks well above $1,000. If you want to load the legs without a bar on your back, our <a href="/best-hack-squat-machines/" class="text-[#0F62FE] font-medium">home hack squat machine guide</a> covers sleds, combos and pendulums, including Titan's 35-degree linear sled at about $975.
           </p>
           <p>
             Where the sources disagreed we left the figure out. That happened more often than we

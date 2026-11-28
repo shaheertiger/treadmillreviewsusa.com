@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-16',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Best Lifting Platforms', 'for a Home Gym'],
   standfirst:
@@ -72,7 +72,7 @@ export default {
             the price range we saw and who the option suits. Two of the five are not a finished
             platform out of the box: the Titan deadlift platform is a frame that you fill with
             tiles, mats or wood, and the rubber tiles are a building block. The cards say what you
-            need to add.
+            need to add. Trap bar deadlifts need the same protection, and our <a href="/best-trap-bars/" class="text-[#0F62FE] font-medium">best trap bars</a> guide covers how much floor an open or closed bar takes.
           </p>`,
     },
     {
@@ -143,7 +143,7 @@ export default {
             impact travelling through the building structure as a thud. Rubber reduces both, and
             dense, thick layers do more than thin ones. Drop pads go further by catching the
             plates in foam. None of these make heavy lifting silent, and on a lightweight upper
-            floor the thud can still carry.
+            floor the thud can still carry. A freestanding punching bag raises the same problem, and our <a href="/best-punching-bags/" class="text-[#0F62FE] font-medium">punching bag guide</a> notes that its water- or sand-filled base thuds on hard hits.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">It gives you a level, firm surface</h3>
           <p>

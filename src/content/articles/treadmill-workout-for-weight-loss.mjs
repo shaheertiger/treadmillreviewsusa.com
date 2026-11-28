@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Treadmill Workouts for Weight Loss',
   kicker: 'Training Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '7.9k',
   h1: ['Treadmill Workouts', 'for Weight Loss'],
   standfirst:
@@ -51,7 +51,7 @@ export default {
           <p>
             It is also worth stating plainly that the health benefits of regular walking or
             running — cardiovascular fitness, blood pressure, sleep, mood, insulin sensitivity —
-            arrive whether or not your weight changes. They are not consolation prizes.
+            arrive whether or not your weight changes. They are not consolation prizes. For people with diabetes, our guide to <a href="/treadmill-walking-for-diabetes/" class="text-[#0F62FE] font-medium">treadmill walking for diabetes</a> covers when to walk, how fast and how to avoid lows on insulin.
           </p>`,
     },
     {

@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.0k',
   h1: ['Weslo Treadmill Troubleshooting:', 'Won’t Start, Belt and Speed Problems'],
   standfirst: `Most Weslo faults are the safety key, a tripped power switch on the frame beside the cord, an outlet Weslo’s manuals say the treadmill cannot use (GFCI), or a walking belt that needs a quarter-turn of tension or a half-turn of centring. Here is the order to check them in, taken from Weslo’s own owner’s manuals, and what to have ready if you need parts for a machine that is no longer made.`,
@@ -82,7 +83,7 @@ export default {
             Weslo was a sister brand of ProForm and NordicTrack, and their manuals follow the same pattern;
             our ${A('/proform-treadmill-troubleshooting/', 'ProForm treadmill troubleshooting')} guide covers
             the same reset switch, key and belt steps on a current machine, and is worth reading alongside
-            this one.
+            this one. The same family resemblance applies to <a href="/golds-gym-treadmill/" class="text-[#0F62FE] font-medium">Gold’s Gym treadmills</a>, which ICON also made under licence until 2019.
           </p>`,
     },
     {
@@ -279,7 +280,7 @@ export default {
             Weslo’s warranties were short. The CrossWalk 5.2T’s limited warranty from ICON covered parts and
             labour for 90 days from purchase, for the original purchaser, and was voided if the instructions in
             the manual were not followed. Almost every Weslo still in use is therefore out of warranty, and the
-            question is whether parts are still available.
+            question is whether parts are still available. The same question applies to older ICON-built <a href="/reebok-treadmills/" class="text-[#0F62FE] font-medium">Reebok treadmills</a>, still in use in the US although the brand now sells mainly abroad.
           </p>
           <p>
             <strong>What to have ready.</strong> The manual lists what ICON needs to supply a part: the model

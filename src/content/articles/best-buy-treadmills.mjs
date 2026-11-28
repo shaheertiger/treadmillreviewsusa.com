@@ -1,7 +1,8 @@
 export default {
   slug: 'best-buy-treadmills',
   title: 'Best Buy Treadmills (2026): Is Best Buy a Good Place to Buy One?',
-  description: "Best Buy suits a connected treadmill or a real open-box deal. Judge the motor and deck, not the screen, and check the return window and any restocking fee.",
+  description:
+    'Best Buy is a good place to buy a treadmill in two cases: a connected machine with a large screen, or an open-box unit at a genuine discount. Judge the deck.',
   crumbLabel: 'Best Buy Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
@@ -52,7 +53,7 @@ export default {
       heading: 'What an Electronics Retailer Is Good and Bad At',
       html: `          <p>
             A treadmill is half appliance and half piece of sports equipment, and an electronics
-            retailer is naturally stronger on one half.
+            retailer is naturally stronger on one half. Home Depot is a starker case: it sells treadmills only online, and none of the listings we sampled came from a mainstream treadmill brand, as our <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium">Home Depot treadmills</a> page explains.
           </p>
           <p>
             <strong>Typically good at:</strong>
@@ -234,7 +235,7 @@ export default {
             carefully, including what happens if the balance is not cleared within any promotional
             period. Our guide to
             <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>
-            can help you set a budget before financing comes into it.
+            can help you set a budget before financing comes into it. If you only need a machine for a few months, <a href="/rent-a-treadmill/" class="text-[#0F62FE] font-medium">renting a treadmill</a> may cost less: an illustrated $90-a-month rental comes to $420 for three months, delivery and collection included.
           </p>`,
     },
     {

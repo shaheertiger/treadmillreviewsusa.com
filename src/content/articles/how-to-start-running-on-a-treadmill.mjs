@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-18',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['How to Start Running', 'on a Treadmill'],
   standfirst:
@@ -392,7 +392,7 @@ export default {
             Running shoes that fit you. That is most of the answer. You do not need the most
             cushioned, the most expensive or a "treadmill-specific" model, but you do need a shoe
             designed for running rather than a court shoe, a fashion sneaker or a worn-out pair you
-            walk the dog in.
+            walk the dog in. For women, our guide to <a href="/best-womens-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium">women&rsquo;s treadmill running shoes</a> explains why a women&rsquo;s shoe is usually built on a different last, with its own width range.
           </p>
           <ul>
             <li><strong>Fit first.</strong> A thumb's width of room in front of the longest toe, a
@@ -417,7 +417,7 @@ export default {
             explains how belt cushioning and shoe cushioning interact and lists current models
             across the range, and our guide to
             <a href="/how-often-to-replace-running-shoes/" class="text-[#0F62FE] font-medium">how often to replace running shoes</a>
-            covers the signs a pair is done.
+            covers the signs a pair is done. Men who want a shortlist can start with our <a href="/best-mens-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium">best men&rsquo;s treadmill running shoes</a>, which include wide fits and a low-drop gym-and-treadmill shoe.
           </p>`,
     },
     {

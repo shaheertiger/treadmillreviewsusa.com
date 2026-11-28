@@ -11,8 +11,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.0k',
   h1: ['WalkingPad', 'Troubleshooting'],
   standfirst:
@@ -45,7 +46,7 @@ export default {
       html: `          <p>
             <strong>Check the outlet, power switch and red safety key, then unplug the WalkingPad for about 10 minutes and
             restart it; WalkingPad says this clears most E codes, especially after the pad has been moved.</strong> If a
-            code returns after that reset, contact WalkingPad support with the code.
+            code returns after that reset, contact WalkingPad support with the code. If you are buying rather than fixing, the <a href="/walkingpad-a1-pro-review/" class="text-[#0F62FE] font-medium">WalkingPad A1 Pro</a> is still sold at $499 and folds to 32.5 inches long.
           </p>
           <ul>
             <li><strong>SAFE:</strong> the safety key is not in. Insert it fully, or remove and reinsert it and restart.</li>

@@ -9,7 +9,7 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Maintenance',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
   socialProof: '2.4k',
   h1: ['How to Tighten', 'a Treadmill Belt'],
@@ -41,7 +41,7 @@ export default {
             clockwise with the hex key supplied with the machine — exactly the same amount each
             side. Plug in, run it at about 3 mph, and plant your weight on the belt. If it still
             hesitates, repeat another quarter turn each side. Stop as soon as the slipping stops,
-            then check you can still lift the belt two to three inches off the deck at the centre.
+            then check you can still lift the belt two to three inches off the deck at the centre. Weslo’s manuals use the same quarter-turn steps for tension and a half turn for centring, as our <a href="/weslo-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Weslo treadmill troubleshooting</a> page quotes.
           </p>
           <p>
             To straighten a belt that runs to one side, run it empty at about 3 mph, turn the rear
@@ -72,7 +72,7 @@ export default {
             while the roller stays square to the frame. Tension is what lets the front roller —
             the one driven by the motor — grip the belt and drag it across the deck under your
             weight. Too little and the belt slips; too much and it loads the bearings, stretches
-            the belt and adds drag the motor fights every session.
+            the belt and adds drag the motor fights every session. On a walking pad, where the deck is often dry before the belt is loose, our <a href="/walking-pad-belt-slipping/" class="text-[#0F62FE] font-medium">walking pad belt slipping</a> guide works through lubrication before tension.
           </p>
           <p>
             <strong>Tracking</strong> is where the belt runs side to side. Move only one end of
@@ -442,7 +442,7 @@ export default {
           <p>
             <strong>Permanent belt stretch.</strong> A belt held under excess tension deforms and
             does not recover. That produces the machine that needs tightening every few weeks, a
-            loop that ends with a <a href="/best-treadmill-replacement-belts/" class="text-[#0F62FE] font-medium" data-autolink>replacement belt</a>.
+            loop that ends with a <a href="/best-treadmill-replacement-belts/" class="text-[#0F62FE] font-medium" data-autolink>replacement belt</a>. Our guide to <a href="/treadmill-belt-replacement-cost/" class="text-[#0F62FE] font-medium">treadmill belt replacement cost</a> sets out what that replacement typically costs, with and without a technician.
           </p>
           <p>
             <strong>Motor and board heat.</strong> More tension presses the belt harder onto the
@@ -659,5 +659,5 @@ export default {
             <a href="/how-to-center-treadmill-belt/" class="text-[#5AA9FF] font-bold no-underline">Our centring guide</a>
             covers what to do if it will not stay put.`,
   ],
-  modified: '2026-11-24',
+  modified: '2026-11-28',
 };

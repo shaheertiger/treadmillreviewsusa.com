@@ -7,9 +7,9 @@ export default {
   kicker: 'Training',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   updated: 'November 2026',
-  updatedLong: 'November 19, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-19',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Are Treadmills Bad', 'for Your Knees?'],
   standfirst:
@@ -173,7 +173,7 @@ export default {
             hard the thigh muscles work, and some people — particularly those with pain at the
             front of the knee, around the kneecap — find steep gradients aggravating. If
             incline walking hurts, a lower gradient is usually the answer rather than pushing
-            through.
+            through. Some people try <a href="/walking-backwards-on-a-treadmill/" class="text-[#0F62FE] font-medium">walking backwards on a treadmill</a> instead, which shifts work onto the quadriceps and calves and appears in some knee rehabilitation programmes.
           </p>
           <p>
             <strong>Walking or running downhill</strong>, which some treadmills offer as a decline
@@ -213,7 +213,7 @@ export default {
             <strong>Change shoes gradually.</strong> Switching abruptly to a very different
             shoe — much lower, much more minimal, or with a very different drop — changes how
             load is distributed through the lower leg and knee. If you change style, ease into
-            it.
+            it. Our picks of the <a href="/best-mens-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium">best men&rsquo;s running shoes for treadmill</a> running list each shoe&rsquo;s drop, from 4 mm on the INOV8 F-Fly to 8 mm on the Saucony Ride 19.
           </p>
           <p>
             If you have persistent knee or foot problems, a physical therapist or podiatrist

@@ -11,9 +11,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-18',
-  modified: '2026-11-22',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['What Treadmills', 'Do Gyms Use?'],
   standfirst:
@@ -98,7 +98,7 @@ ${row('Landice', 'Family-run, New Jersey', 'L-Series club and rehabilitation mod
             a dedicated 120-volt, 20-amp circuit. Our
             <a href="/life-fitness/" class="text-[#0F62FE] font-medium">Life Fitness brand guide</a>
             and <a href="/life-fitness-integrity-series-treadmill/" class="text-[#0F62FE] font-medium">Integrity Series review</a>
-            cover the range.
+            cover the range. If you want a similar 4 HP AC drive at home, our <a href="/best-treadmills-with-ac-motor/" class="text-[#0F62FE] font-medium">AC-motor treadmill guide</a> picks the Precor TRM 835 at about $2,778.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Precor</h3>
           <p>
@@ -230,7 +230,7 @@ ${row('Landice', 'Family-run, New Jersey', 'L-Series club and rehabilitation mod
             use DC motors, which are quieter, more efficient on household power and cheaper to build.
             Both Life Fitness and Precor list 4 HP AC motors on their mainstream club models. Our
             <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium">AC vs DC motor guide</a>
-            explains why each suits its setting.
+            explains why each suits its setting. New, a Precor club model is not cheap: our <a href="/how-much-does-a-precor-treadmill-cost/" class="text-[#0F62FE] font-medium">Precor price guide</a> found $5,885 to $16,230 at an authorized dealer on 27 November 2026.
           </p>
           <p>
             <strong>Duty ratings.</strong> Commercial machines are designed and warrantied by use
@@ -243,7 +243,7 @@ ${row('Landice', 'Family-run, New Jersey', 'L-Series club and rehabilitation mod
             <strong>Frames and weight.</strong> Club treadmills are heavy, non-folding steel structures.
             Life Fitness lists its Integrity at 425 to 434 pounds, against roughly 200 to 300 pounds for a
             typical full-size home machine. The mass is much of why a gym treadmill does not shift or
-            flex under a hard runner.
+            flex under a hard runner. The maker’s home treadmills cost far less than its club machines: $2,799 to $8,799 on Life Fitness’s store on 27 November 2026, per our <a href="/how-much-does-a-life-fitness-treadmill-cost/" class="text-[#0F62FE] font-medium">Life Fitness cost guide</a>.
           </p>
           <p>
             <strong>Decks and rollers.</strong> A running surface of 22 by 60 inches is the club

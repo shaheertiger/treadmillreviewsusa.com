@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['Treadmill Calories Burned:', 'Realistic Estimates and Honest Caveats'],
   standfirst:
@@ -363,7 +363,7 @@ export default {
             proportion from fat falls while the total rises, and the absolute amount of fat used
             is often similar or higher. More importantly, what you use during the session is not
             what determines fat loss over weeks; that comes from the overall balance between
-            energy in and energy out, across all hours of the day, over time.
+            energy in and energy out, across all hours of the day, over time. If you want concrete numbers to set, our page on <a href="/best-treadmill-settings-for-fat-loss/" class="text-[#0F62FE] font-medium">treadmill settings for fat loss</a> gives speed, incline and time for four fitness levels.
           </p>
           <p>
             The practical implication is that there is no need to slow down to "stay in the fat

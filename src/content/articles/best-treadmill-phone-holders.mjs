@@ -2,14 +2,14 @@ export default {
   slug: 'best-treadmill-phone-holders',
   title: 'Best Treadmill Phone Holders (2026): Clamp, Strap and Magnetic',
   description:
-    'Five treadmill phone holders with their bar and phone size ranges taken from the listings, and where to mount one so it stays steady and clear of the safety key.',
+    'The iOttie Easy One Touch 4 is the best treadmill phone holder for round bars 20 to 34 mm. Five clamp, strap and magnetic picks, and where to mount one safely.',
   crumbLabel: 'Best Treadmill Phone Holders',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Best Treadmill Phone Holders', 'and Mounts'],
   standfirst:
@@ -63,7 +63,7 @@ export default {
           <p>
             Before ordering, read the section on where to mount a phone. A good holder in the wrong
             spot either shakes too much to read, or sits where your hand lands when you steady
-            yourself, or covers the safety key.
+            yourself, or covers the safety key. The same placement logic applies to a drink, and our <a href="/best-treadmill-cup-holders/" class="text-[#0F62FE] font-medium">treadmill cup holder picks</a> explain how to place one so a spill lands somewhere harmless.
           </p>`,
     },
     {

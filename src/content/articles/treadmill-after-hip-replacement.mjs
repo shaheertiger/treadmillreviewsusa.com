@@ -6,13 +6,14 @@ export default {
   slug: 'treadmill-after-hip-replacement',
   title: 'Treadmill After Hip Replacement: Timeline and Safe Walking',
   description:
-    'When walking on a treadmill fits into hip replacement recovery, how hip precautions apply on the belt, starting speeds, gait tips and warning signs to report.',
+    'Start treadmill walking after a hip replacement once you walk steadily with a cane: flat deck, about 1 to 1.5 mph, 5 to 10 minutes. Precautions, warning signs.',
   crumbLabel: 'Treadmill After Hip Replacement',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Recovery',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-17',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Treadmill After', 'Hip Replacement'],
   standfirst:

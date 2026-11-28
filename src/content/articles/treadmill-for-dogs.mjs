@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Can a Dog Use a Human Treadmill?', 'An Honest Answer From the Equipment Side'],
   standfirst:
@@ -38,7 +38,7 @@ export default {
             front that a nose can hit, a gap at the rear roller where a paw or tail can be drawn
             in, a minimum speed that may be too fast for a small dog, and no side panels to keep
             the dog centred. It also has a safety key designed to be pulled by a falling human,
-            which a dog cannot use.
+            which a dog cannot use. Our <a href="/best-dog-treadmills-for-small-dogs/" class="text-[#0F62FE] font-medium">dog treadmills for small dogs</a> favour slower, finer speed control, led by the GoPet PetRun PR700 at 0.6 to 8 mph.
           </p>
           <p>
             None of that makes it impossible. Medium and larger dogs that are healthy, adult,
@@ -47,7 +47,7 @@ export default {
             weather or during a period of restricted outdoor exercise. The rules that make that
             acceptable are not negotiable: the dog is never tethered to the machine or to anything
             else, never left for a moment, always able to step off, always started at the lowest
-            speed, and always stopped at the first sign of stress. The full list is below.
+            speed, and always stopped at the first sign of stress. The full list is below. If you guide your dog with a lead while it learns, our <a href="/best-dog-treadmill-harnesses/" class="text-[#0F62FE] font-medium">best dog treadmill harnesses</a> covers five that leave the shoulders free and cannot slip off.
           </p>
           <p>
             Before any of it, a vet should confirm the dog is a suitable candidate. Puppies with

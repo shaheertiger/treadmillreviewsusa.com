@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Bowflex Treadmill Troubleshooting:', 'Power, Belt, Lube and JRNY Problems'],
   standfirst: `Most Bowflex treadmill faults come down to a safety key that is not seated, an outlet the manual does not allow (GFCI, power strip or extension cord), a belt that needs a quarter-turn of tension or a centring tweak, a deck that is due for silicone, or a phone that has lost its JRNY connection. Here is the order to check them in, using Bowflex&rsquo;s own manuals and support guides.`,
@@ -98,7 +98,7 @@ export default {
       html: `          <p>
             Before following any procedure, know which machine you are working on, because Bowflex
             has changed designs, consoles and even owners in the last few years, and the manuals
-            differ on details that matter.
+            differ on details that matter. If you are weighing a repair against a new machine, a T6 cost $899 on sale at Bowflex on 24 November 2026, per our <a href="/how-much-does-a-bowflex-treadmill-cost/" class="text-[#0F62FE] font-medium">Bowflex price guide</a>.
           </p>
           <p>
             <strong>The current range.</strong> In November 2026 bowflex.com lists three treadmills:
@@ -109,7 +109,7 @@ export default {
             <a href="/bowflex-t9-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T9</a> and
             <a href="/bowflex-t16-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T16</a>
             cover each in detail. The T6 owner&rsquo;s manual is the most recent full manual we
-            could read, and most of the steps on this page are quoted from it.
+            could read, and most of the steps on this page are quoted from it. Owners of the discontinued <a href="/bowflex-treadmill-10/" class="text-[#0F62FE] font-medium">Bowflex Treadmill 10</a>, with its -5% decline and 400 lb rating, will find the same JRNY-era consoles behave in much the same way.
           </p>
           <p>
             <strong>Older machines.</strong> Before 2024, Bowflex treadmills were made by Nautilus,

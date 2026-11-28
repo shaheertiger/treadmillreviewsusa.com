@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 19, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-19',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Does a Treadmill', 'Burn Belly Fat?'],
   standfirst:
@@ -316,7 +316,7 @@ export default {
             <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">best walking treadmills</a>
             and
             <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a>
-            roundups cover the two most relevant categories.
+            roundups cover the two most relevant categories. Our guide to the <a href="/best-treadmill-for-weight-loss/" class="text-[#0F62FE] font-medium">best treadmill for weight loss</a> sets out the features that matter, from an incline of at least 10 percent to about 50 lb of capacity headroom.
           </p>`,
     },
     {

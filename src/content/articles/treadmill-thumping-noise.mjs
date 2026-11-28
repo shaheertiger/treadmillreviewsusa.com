@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Treadmill Thumping,', 'Knocking or Clunking?'],
   standfirst:
@@ -41,7 +41,7 @@ export default {
             hardened cushion, a frame rocking onto a short foot, an incline motor taking up slack in
             its mounting. Impacts are periodic. They happen once per revolution of whatever is
             causing them, or once per footstrike, or once per incline change, and that periodicity
-            is what makes them easier to locate than a squeak, not harder.
+            is what makes them easier to locate than a squeak, not harder. Clicks can be timed the same way, as our guide to <a href="/treadmill-clicking-noise/" class="text-[#0F62FE] font-medium">a treadmill clicking noise</a> shows: once per belt lap points to the belt or a roller, once per step to a loose bolt or the deck.
           </p>
           <p>
             The working vocabulary in this guide is loose but useful. A <strong>thump</strong> is
@@ -117,7 +117,7 @@ export default {
             <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium">when a treadmill belt is due</a>
             covers the other signs, and
             <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium">how to replace a treadmill belt</a>
-            covers the job itself.
+            covers the job itself. What the job costs, from a generic belt to OEM parts and labour, is in our <a href="/treadmill-belt-replacement-cost/" class="text-[#0F62FE] font-medium">treadmill belt replacement cost</a> guide.
           </p>
           <p>
             One complication worth knowing: a seam noise that appeared shortly after someone
@@ -204,7 +204,7 @@ export default {
             dull, solid thump. Unplug the machine, find the deck bolts — often under the side rails
             or visible from the side — and check each is snug. Do not force them; many thread into
             nuts held in the frame or into inserts in the deck board, and over-tightening can crush
-            the board or strip the insert.
+            the board or strip the insert. If you find a split in the board itself, see our guide to <a href="/treadmill-cracked-deck/" class="text-[#0F62FE] font-medium">a cracked treadmill deck</a> before running on it again.
           </p>
           <p>
             <strong>Cushions and isolators.</strong> Most home treadmills sit the deck on rubber or

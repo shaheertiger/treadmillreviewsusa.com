@@ -6,9 +6,9 @@ export default {
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: [
     'Curved Treadmills:',
@@ -51,7 +51,7 @@ export default {
             with no electrical supply and little to go wrong, and people who actively want no
             electronics. On those terms it is arguably the best treadmill there is. If that sounds
             like you, our <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">curved treadmill reviews</a>
-            compare the specific machines worth shortlisting.
+            compare the specific machines worth shortlisting. One of the best known, the <a href="/centr-treadmills/" class="text-[#0F62FE] font-medium">Centr x HYROX Perform Tread</a>, is the official HYROX race treadmill.
           </p>
           <p>
             It is <strong>not worth it</strong> for walkers who want incline, beginners who want a
@@ -61,7 +61,7 @@ export default {
             and holding a steady easy pace on one takes more concentration than it does on a
             motorised belt. Our
             <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual vs motorised treadmill comparison</a>
-            sets out the broader trade-off; this page is about the curved design specifically.
+            sets out the broader trade-off; this page is about the curved design specifically. The solid-wood NOHrD Sprintbok, from about $8,199, is covered with other wooden machines in our <a href="/wooden-walking-pad/" class="text-[#0F62FE] font-medium">wooden walking pad</a> guide.
           </p>`,
     },
     {
@@ -221,7 +221,7 @@ export default {
             <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">treadmill sprint workout guide</a>
             and
             <a href="/treadmill-hiit-workout/" class="text-[#0F62FE] font-medium">treadmill HIIT workout guide</a>
-            both work on a curved machine, and arguably work better there.
+            both work on a curved machine, and arguably work better there. Our <a href="/best-treadmills-for-sprinting/" class="text-[#0F62FE] font-medium">best treadmills for sprinting</a> weigh curved trainers against motorised machines on top speed and how fast the belt changes pace.
           </p>
           <p>
             <strong>Athletes and coaches.</strong> Team-sport athletes, track sprinters doing

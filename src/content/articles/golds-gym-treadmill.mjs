@@ -1,15 +1,15 @@
 export default {
   slug: 'golds-gym-treadmill',
-  title: "Gold's Gym Treadmill Guide (2026): Makers, Models and Parts",
+  title: "Gold's Gym Treadmill (2026): Who Makes It, Models and Parts",
   description:
-    'Gold’s Gym treadmills were made under licence by ICON, now iFIT, until the exclusive deal ended in 2019. What is still sold, the Trainer 430i and 720, iFIT, parts and what to buy instead.',
+    "Gold’s Gym treadmills were built by ICON, now iFIT, under a licence that ended in 2019. What is still sold, the Trainer 430i and 720, iFIT and parts.",
   crumbLabel: 'Gold’s Gym Treadmill',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Gold’s Gym Treadmill:', 'Who Made Them and What to Buy Now'],
   standfirst:
@@ -114,7 +114,7 @@ export default {
             report names Wal-Mart among its important customers. Walmart’s site blocked our checks, so
             we cannot tell you what it lists today. Search results show Walmart selling replacement
             parts for the Trainer 720 and 430i, such as walking belts, drive belts and safety keys,
-            which is consistent with a discontinued line that owners still maintain.
+            which is consistent with a discontinued line that owners still maintain. Buying a new treadmill there is a different matter, because many of Walmart.com’s treadmill listings come from Marketplace sellers, as our <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">guide to Walmart treadmills</a> explains.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Two traps in search results</h3>
           <ul class="list-disc pl-6 space-y-2">
@@ -205,7 +205,7 @@ export default {
             and
             <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using an iFIT treadmill without a membership</a>
             explain what the subscription does and does not add. We do not quote iFIT’s prices,
-            because they change.
+            because they change. Owners of ICON’s other discontinued budget badge can use our <a href="/weslo-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Weslo treadmill troubleshooting</a> guide, built from Weslo’s own owner’s manuals.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Apps other than iFIT</h3>
           <p>

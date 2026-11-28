@@ -228,7 +228,7 @@ export default {
             Simple multiplication at the prices above, with no price rises, sales tax, delivery or extended warranty
             included. A three-year iFIT Pro plan at $899 followed by two yearly renewals at $396 brings five years down to
             $1,691. Even so, an X16 with iFIT costs around $5,400 to $6,000 over five years, about five times a Sole F65 that
-            climbs to 15% with no subscription. That is the number to have in mind when you decide whether you need 40%.
+            climbs to 15% with no subscription. That is the number to have in mind when you decide whether you need 40%. A newer middle option is the <a href="/yesoul-treadmills/" class="text-[#0F62FE] font-medium">Yesoul T5 series</a>, which reaches 30% on a 60-inch deck from $1,399.99.
           </p>
           <p>
             The FreeMotion and Sunny totals assume you use their built-in programs; the i11.9&rsquo;s iFit Live programming
@@ -350,7 +350,7 @@ export default {
             <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a>
             roundup compares the 15% to 20% machines, and
             <a href="/treadmills-with-the-highest-incline/" class="text-[#0F62FE] font-medium">treadmills with the highest incline</a>
-            ranks machines by how much grade each price buys.
+            ranks machines by how much grade each price buys. That 20% machine is THERUN’s flagship, and our <a href="/therun-treadmills/" class="text-[#0F62FE] font-medium">THERUN review</a> lists it with the brand’s five cheaper models.
           </p>`,
     },
     {

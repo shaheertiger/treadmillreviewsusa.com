@@ -140,7 +140,7 @@ export default {
             Tread or Tread+. They show the new Peloton treadmills you can order on Amazon to price a
             used one against: the previous-generation Cross Training Tread, the current Tread Vision,
             and the Tread Flex that sets the benchmark. Everything this guide says about checking a
-            used Peloton applies to the private and marketplace listings, not to these cards.
+            used Peloton applies to the private and marketplace listings, not to these cards. New, Peloton’s Black Friday price for the Tread Flex was $1,995 on 24 November 2026, as our <a href="/peloton-tread-black-friday-deals/" class="text-[#0F62FE] font-medium">Peloton Tread Black Friday deals</a> page shows.
           </p>`,
     },
     {
@@ -150,7 +150,7 @@ export default {
             Peloton has sold two kinds of treadmill: a slat-belt machine (the Tread+) and a
             conventional belt-deck machine (the Tread). Listings use the names loosely, and the names
             changed in 2020, so identify the machine by its model number. The CPSC says the model number
-            is printed on a black sticker on the end cap at the front of the deck.
+            is printed on a black sticker on the end cap at the front of the deck. New, a Peloton treadmill costs $2,195 to $6,695 at list prices, as our <a href="/how-much-does-a-peloton-tread-cost/" class="text-[#0F62FE] font-medium">guide to what a Peloton Tread costs</a> shows.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>

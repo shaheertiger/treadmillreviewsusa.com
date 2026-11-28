@@ -5,14 +5,14 @@ export default {
   slug: 'life-fitness-95t-treadmill',
   title: 'Life Fitness 95T and 95Ti Treadmill (2026): Buying Remanufactured',
   description:
-    'The Life Fitness 95T Elevation Series (Inspire, Engage, Discover SE/SI/SE3) and older 95Ti are discontinued and sold remanufactured from about $2,600 to $5,000. Figures, consoles and checks.',
+    "The Life Fitness 95T and older 95Ti are discontinued and sold remanufactured for about $2,600 to $5,000. Which console you get, the figures, and what to check.",
   crumbLabel: 'Life Fitness 95T Treadmill',
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-22',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Life Fitness 95T and 95Ti:', 'Buying a Remanufactured Club Treadmill'],
   standfirst:
@@ -126,7 +126,7 @@ export default {
             heading "Product Discontinued" and pointed to the Integrity+ treadmill as its replacement. Oddly, Life
             Fitness's separate Facility Shop for business customers still listed an Elevation Series treadmill
             with the Discover SE3 HD console at $16,999, available only with a business account. For a home buyer,
-            the 95T is a remanufactured purchase.
+            the 95T is a remanufactured purchase. New home models were a different bill: $2,799 to $8,799 on the consumer store on 27 November 2026, as our <a href="/how-much-does-a-life-fitness-treadmill-cost/" class="text-[#0F62FE] font-medium">guide to Life Fitness treadmill prices</a> sets out.
           </p>
           <p>
             That is not a bad thing. These were among the most common club treadmills in the US, so there are

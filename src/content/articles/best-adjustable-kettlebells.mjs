@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Best Adjustable Kettlebell', 'Picks for a Home Gym'],
   standfirst:
@@ -386,7 +386,7 @@ export default {
             <strong>If space and budget are tight</strong>, resistance bands cover a surprising amount of
             pulling, pressing and hinge work for very little money; our
             <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">resistance band guide</a>
-            explains the types.
+            explains the types. Band-and-bar kits take the idea further, and our <a href="/gymproluxe-review/" class="text-[#0F62FE] font-medium">GymProLuxe review</a> finds that brand to be a real UK business whose return terms contradict each other.
           </p>
           <p>
             <strong>If you have back or shoulder trouble</strong>, ballistic kettlebell work is not where
@@ -394,7 +394,7 @@ export default {
           </p>
           <p>
             <strong>If you already own a barbell and plates</strong>, a plate-loaded kettlebell handle is
-            the cheap way to heavy swings, though it will not do cleans or snatches well.
+            the cheap way to heavy swings, though it will not do cleans or snatches well. A <a href="/best-trap-bars/" class="text-[#0F62FE] font-medium">trap bar</a> is the other inexpensive barbell add-on, and it opens up carries, shrugs and an easier-to-learn deadlift.
           </p>`,
     },
   ],

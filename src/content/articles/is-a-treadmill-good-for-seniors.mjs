@@ -5,14 +5,14 @@ export default {
   slug: 'is-a-treadmill-good-for-seniors',
   title: 'Is a Treadmill Good for Seniors? Benefits and Real Risks',
   description:
-    'For many older adults a treadmill is a good way to walk more, but a moving belt carries a real fall risk. Benefits, injury data and who should not use one.',
+    'Yes, for most older adults who walk steadily without an aid: a treadmill sets the pace in 0.1 mph steps on a flat surface. Benefits, fall risks, who should not.',
   crumbLabel: 'Is a Treadmill Good for Seniors?',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-17',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Is a Treadmill Good', 'for Seniors?'],
   standfirst:
@@ -38,7 +38,7 @@ export default {
             walking aid, have no uncontrolled heart condition, and will use the safety key and
             handrails every time.</strong> It removes weather, uneven pavements, kerbs and
             darkness from the equation, and it lets you walk a little most days, which is what
-            makes the difference to health.
+            makes the difference to health. If your doctor wants an exercise test before you start, the 2026 Medicare rate for a basic treadmill stress test in a doctor&rsquo;s office is $73.48, as our guide to <a href="/how-much-does-a-treadmill-stress-test-cost/" class="text-[#0F62FE] font-medium">treadmill stress test costs</a> explains.
           </p>
           <p>
             <strong>It is a poor choice, or one to make only with a physical therapist's advice,

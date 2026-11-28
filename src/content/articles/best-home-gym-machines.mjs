@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Home Gym Machines', 'and What Their Resistance Really Means'],
   standfirst:
@@ -62,7 +62,7 @@ export default {
             <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks for a home gym</a>
             instead. If you are still deciding what belongs in the room at all, our
             <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
-            put all-in-one machines alongside racks, dumbbells and cardio machines.
+            put all-in-one machines alongside racks, dumbbells and cardio machines. For a plate-loaded leg machine on its own, see the <a href="/best-hack-squat-machines/" class="text-[#0F62FE] font-medium">best hack squat machines for home</a>, where several of the six picks double as a leg press.
           </p>`,
     },
     {
@@ -74,7 +74,7 @@ export default {
             19 October 2026, and who the machine suits. Read the resistance line with the section on
             <a href="#real-resistance" class="text-[#0F62FE] font-medium">real versus advertised resistance</a>
             in mind: a 150 lb stack, 210 lb of rods and a 500 lb user limit are three different kinds
-            of number, and none of them is the load you will feel on every exercise.
+            of number, and none of them is the load you will feel on every exercise. If you are equipping a whole room in November, our <a href="/black-friday-home-gym-deals/" class="text-[#0F62FE] font-medium">Black Friday home gym deals</a> page picks one product to watch in each of seven categories, with its October price and the figure we would wait for.
           </p>
           <p>
             Where a maker and an independent source disagreed on a figure — most often length,

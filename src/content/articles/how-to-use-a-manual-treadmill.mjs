@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['How to Use a Manual Treadmill', 'Without Fighting the Belt'],
   standfirst:
@@ -85,13 +85,13 @@ export default {
             weighs well over 150 pounds and usually 250 or more, costs thousands, and is a running
             machine. The belt rolls freely: land on the rising front of the curve and gravity plus
             your push-off drive it backwards. Some curved trainers add magnetic resistance; others,
-            such as the <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>AssaultRunner Pro</a>, have none.
+            such as the <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>AssaultRunner Pro</a>, have none. The <a href="/sb-fitness-ct550-curved-treadmill/" class="text-[#0F62FE] font-medium">SB Fitness CT550</a> is one with resistance, listing 8 magnetic levels on a 20-inch surface.
           </p>
           <p>
             If you are not sure which you have, look at the deck from the side. A straight, tilted
             deck is a flat manual; a curved one is, unsurprisingly, a curved trainer. Machines sold
             for a few hundred dollars as "curved" are usually flat belts with a slight bow and
-            behave like flat manuals, so use the flat technique on them.
+            behave like flat manuals, so use the flat technique on them. A proper curved trainer costs about $1,100 to $4,500, as our <a href="/how-much-does-a-curved-treadmill-cost/" class="text-[#0F62FE] font-medium">curved treadmill cost guide</a> shows.
           </p>`,
     },
     {
@@ -486,7 +486,7 @@ export default {
             <strong>For running and sprinting,</strong> a curved trainer is the manual treadmill that
             makes sense, and the choice comes down to whether you want resistance for pushes and
             resisted sprints, how much deck width you want, and where a machine of 250 pounds or more
-            can live. Between the two kinds, there is very little worth buying.
+            can live. Between the two kinds, there is very little worth buying. Our <a href="/best-treadmills-for-sprinting/" class="text-[#0F62FE] font-medium">sprint treadmill picks</a> compare curved trainers with a 14 mph motorised machine on what sprinting needs.
           </p>
           <p>
             Our roundup of the

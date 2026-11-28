@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Walking Pad vs', 'Folding Treadmill'],
   standfirst:
@@ -43,7 +43,7 @@ export default {
             can use. The folding treadmill wins on almost everything to do with exercise: a longer
             deck, higher speeds, a powered incline on most models, a console you can reach and side
             rails you can hold. It also takes up far more room when folded than most buyers expect
-            — it stands like a bookcase rather than hiding like a rug.
+            — it stands like a bookcase rather than hiding like a rug. Our <a href="/black-friday-folding-treadmill-deals/" class="text-[#0F62FE] font-medium">folding treadmill deals for Black Friday</a> give the folded measurements of six models, so you can check the standing footprint before you buy.
           </p>
           <p>
             Between the two sits the 2-in-1 walking pad: a pad with a rail that folds up, which on
@@ -116,7 +116,7 @@ export default {
             you were not using anyway. Getting it out is a matter of tipping it onto its front
             wheels and rolling it into place. Some pads <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>fold the deck</a> in half and stand upright in
             a corner instead; that takes a small square of floor rather than a gap under
-            furniture. Either way, the pad is gone from the room in the sense that matters.
+            furniture. Either way, the pad is gone from the room in the sense that matters. Our <a href="/best-low-profile-treadmills/" class="text-[#0F62FE] font-medium">best low profile treadmills</a> list machines slim enough to slide under a bed or sofa.
           </p>
           <p>
             <strong>A folding treadmill stores upright.</strong> The deck pivots up towards the
@@ -312,7 +312,7 @@ export default {
             As simple arithmetic: a $400 pad that lasts three years costs about $133 a year; a $900
             folding treadmill that lasts nine years costs $100 a year. The pad is still cheaper to
             try and easier to walk away from, but once lifespan is included it is not the
-            dramatically cheaper option it first appears.
+            dramatically cheaper option it first appears. At $340 to $380, the six <a href="/best-treadmills-under-400/" class="text-[#0F62FE] font-medium">folding treadmills under $400</a> we list add handrails, a console and, on five of them, powered incline.
           </p>
           <p>
             That arithmetic only holds if the treadmill is used, of course. A folding treadmill

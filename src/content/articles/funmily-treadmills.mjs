@@ -1,15 +1,15 @@
 export default {
   slug: 'funmily-treadmills',
-  title: 'FUNMILY Treadmill (2026): Walking Pads, Desk Model and Manuals',
+  title: "FUNMILY Treadmill Review (2026): Walking Pads and Desk Model",
   description:
-    'Is a FUNMILY treadmill or walking pad worth buying? FUNMILY’s range checked on 5 November 2026, where its figures conflict, how to find the manual, and checked alternatives.',
+    "FUNMILY treadmills sell almost only on Amazon, and one pad is listed at 300, 350 or 400 lb and 2.5 or 3.5 HP. What holds up, manuals and what to check.",
   crumbLabel: 'FUNMILY Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '820',
   h1: ['FUNMILY Treadmills:', 'What We Could Confirm'],
   standfirst:
@@ -195,7 +195,7 @@ export default {
             guide to <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
             explains what to look for in the buy box, and our
             <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart treadmills</a> guide
-            covers marketplace sellers there.
+            covers marketplace sellers there. <a href="/famistar-treadmill/" class="text-[#0F62FE] font-medium">Famistar</a> is a similar case on Walmart, with listings that contradict themselves on motors, weight limits and even the warranty.
           </p>`,
     },
     {
@@ -213,7 +213,7 @@ export default {
             For desk walking with a handle and an incline, the FUNMILY handle-bar pad, with its figures
             treated cautiously. For an all-in-one walking desk, the FUNMILY <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium" data-autolink>treadmill desk</a>; the website’s Desk Workstation was not matched to an Amazon listing, so the card shows the desk-equipped FUNMILY listing Amazon sells, on its listing’s claims. For a slight,
             permanent incline in a small pad, the 5% pad. And if you want figures you can rely on, the UREVO
-            Strol 2E and MERACH W50 TrekPad are the comparison.
+            Strol 2E and MERACH W50 TrekPad are the comparison. The Strol 2E was $161.99 on UREVO’s own store on 27 November 2026, as our <a href="/how-much-does-a-urevo-walking-pad-cost/" class="text-[#0F62FE] font-medium">UREVO walking pad prices</a> page records.
           </p>`,
     },
     {

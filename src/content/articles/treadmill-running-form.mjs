@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Treadmill Running Form:', 'How to Run Properly on a Belt'],
   standfirst:
@@ -295,7 +295,7 @@ export default {
             page covers all three in detail. The practical upshot for form: run on the belt the way
             you would run outdoors, and do not shuffle on the assumption that the machine will move
             your legs for you. If you find yourself "lifting and placing" rather than pushing off,
-            your stride is being shaped by the belt rather than your running.
+            your stride is being shaped by the belt rather than your running. If you are wondering whether the belt&rsquo;s identical stride is a risk in itself, our page on <a href="/is-running-on-a-treadmill-bad-for-you/" class="text-[#0F62FE] font-medium">whether running on a treadmill is bad for you</a> separates the real downsides from the myths.
           </p>`,
     },
     {
@@ -361,7 +361,7 @@ export default {
             <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">treadmill cushioning</a>
             explains what deck suspension does and does not do, and if knees are your concern, our
             page on <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills and knees</a>
-            covers that question directly.
+            covers that question directly. Our <a href="/best-cushioned-treadmills/" class="text-[#0F62FE] font-medium">low-impact treadmill picks</a> compare six named cushioning systems.
           </p>`,
     },
     {

@@ -2,13 +2,13 @@ export default {
   slug: 'sb-fitness-ct700-curved-treadmill',
   title: 'SB Fitness CT700 Curved Treadmill Review (2026): vs CT550',
   description:
-    'The SB Fitness CT700 is a self-generated curved treadmill with 8 magnetic levels and steel bearings, sold direct for $2,595. Its listed specs, the conflicts, CT700 vs CT550, and who it suits.',
+    "The SB Fitness CT700 is a self-generated curved treadmill with 8 magnetic levels, sold direct for $2,595. Its listed specs, the conflicts, and CT700 vs CT550.",
   crumbLabel: 'SB Fitness CT700',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['SB Fitness CT700', 'Self-Generated Curved Treadmill'],
   standfirst:
@@ -69,7 +69,7 @@ export default {
             treadmill with eight magnetic resistance levels, stainless steel bearings and a long 19-inch
             deck, priced at $2,595 direct, and almost everything known about it comes from the company that
             sells it.</strong> On its listing it is a strong value for sprinting, intervals and sled-push work:
-            it does much of what $3,500 to $5,500 curved treadmills do for considerably less.
+            it does much of what $3,500 to $5,500 curved treadmills do for considerably less. At Rogue Fitness, for example, the Rogue | Woodway Curve LTG and the TrueForm Trainer were both $3,495 on 5 November 2026, per our <a href="/rogue-treadmills/" class="text-[#0F62FE] font-medium">Rogue treadmill guide</a>.
           </p>
           <p>
             The caveats are specific. The seller's own documents give three different maximum user weights —
@@ -210,7 +210,7 @@ export default {
             and built for high-speed and sustained sprint work, and the seller recommends speeds up to 18 mph.
             Nylon adds a little natural drag, which is fine for HIIT and moderate intervals; steel runs
             freer at the top end. If repeated maximal sprints are central to your training, that is the reason
-            to pay more.
+            to pay more. Above both sits <a href="/trueform-treadmills/" class="text-[#0F62FE] font-medium">TrueForm</a>, whose Trainer was $3,495 and Runner $6,595 at Rogue Fitness.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The rest of the trade</h3>
           <p>
@@ -221,7 +221,7 @@ export default {
             same return terms. The independent catalogue we checked makes a point worth repeating: the CT700's
             upgrades do little for walking, so if you mainly walk or jog at moderate pace, the extra $600
             buys you little. Choose the CT700 for sprinting, sled pushes, heavier users or a studio; choose the
-            CT550 for HIIT and running in a home where space and access are tight.
+            CT550 for HIIT and running in a home where space and access are tight. The <a href="/tru-grit-treadmills/" class="text-[#0F62FE] font-medium">Tru Grit Runner Elite</a>, at $3,495, is another sled-push curved trainer at a similar level.
           </p>`,
     },
     {

@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Repair',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['NordicTrack Treadmill Repair:', 'Warranty Service, Parts and What It Costs'],
   standfirst:
@@ -49,7 +50,7 @@ export default {
             then, if the machine is under warranty, open a service request with iFIT at my.iFIT.com, and if
             it is not, get the part from iFIT by model number and decide whether to fit it yourself or pay a
             technician.</strong> A large share of &ldquo;broken&rdquo; <a href="/nordictrack/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack treadmills</a> are a safety key,
-            a tripped reset breaker, a dry deck or an iFIT workout changing the speed on purpose.
+            a tripped reset breaker, a dry deck or an iFIT workout changing the speed on purpose. If the console stays dark, the start-up order NordicTrack’s manuals give is short: plug in, set the switch by the cord to reset (I), then insert the key, as our guide to <a href="/how-to-turn-on-a-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">turning on a NordicTrack treadmill</a> shows.
           </p>
           <ul>
             <li><strong>Under warranty:</strong> go to my.iFIT.com with the model and serial number from the
@@ -111,7 +112,7 @@ export default {
             from a technician you booked yourself is not a warranty claim. Third, even under warranty the
             customer may pay <strong>a minimal handling charge</strong> when parts are shipped, and <strong>may
             be responsible for a minimal trip charge</strong> for in-home service. The manual does not put a
-            figure on either, so ask when you book.
+            figure on either, so ask when you book. ProForm, iFIT's other treadmill brand, works the same way, as our <a href="/proform-treadmill-repair/" class="text-[#0F62FE] font-medium">ProForm treadmill repair</a> guide sets out.
           </p>
           <p>
             Not every model has the lifetime motor. Our guide to
@@ -140,7 +141,7 @@ export default {
             &ldquo;Please do not contact the store&rdquo;, and the warranty section says the same for
             warranty service (checked November 2026). NordicTrack&rsquo;s own site lists the iFIT Help Center at
             my.ifit.com as its support portal for orders, equipment and membership. A treadmill bought at a
-            warehouse club or a big-box retailer is still serviced through iFIT.
+            warehouse club or a big-box retailer is still serviced through iFIT. That includes the NordicTrack and ProForm machines sold at Sam’s Club, which our <a href="/sams-club-treadmills/" class="text-[#0F62FE] font-medium">Sam’s Club treadmill guide</a> covers.
           </p>
           <ol>
             <li><strong>Find the model and serial number.</strong> iFIT&rsquo;s terms describe the serial number

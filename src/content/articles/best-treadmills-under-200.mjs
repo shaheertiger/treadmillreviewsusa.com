@@ -1,15 +1,15 @@
 export default {
   slug: 'best-treadmills-under-200',
-  title: 'Best Treadmills Under $200 (2026): 5 Honest Picks',
+  title: 'Best Treadmills Under $200 (2026): 5 Picks From Known Brands',
   description:
-    'Five treadmills under $200 on Amazon, all walking pads, 2-in-1s or manual machines, plus what $100 and $200 really buy and why almost nothing at this price is built for running.',
+    'The best treadmill under $200 is the UREVO Strol 2E at about $170, with a 6.2 mph jog mode. Five picks from known brands; none is built for running.',
   crumbLabel: 'Best Treadmills Under $200',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Treadmills', 'Under $200'],
   standfirst:
@@ -66,7 +66,7 @@ export default {
       html: `          <p>
             Three of the five are <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> machines. That reflects what is available from an established
             brand at this price, not a preference: below $200, most other listings come from sellers
-            with no track record, and their figures are harder to trust.
+            with no track record, and their figures are harder to trust. If one of them shows an error code, our <a href="/urevo-walking-pad-troubleshooting/" class="text-[#0F62FE] font-medium">UREVO walking pad troubleshooting</a> guide lists what each means and UREVO's own fix.
           </p>`,
     },
     {
@@ -116,14 +116,14 @@ export default {
             <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium" data-autolink>treadmills on Amazon</a> US were walking pads from sellers we did not recognise, at about $90 to
             $110, with long keyword titles and few verifiable figures. Some may be fine. But at that
             price there is very little margin for a reliable motor, a decent belt or after-sales
-            support, and if one fails after the return window there may be no one to call.
+            support, and if one fails after the return window there may be no one to call. If a pad does stop, our <a href="/walking-pad-not-working/" class="text-[#0F62FE] font-medium">walking pad not working</a> guide covers what you can fix at home and when it is a warranty call.
           </p>
           <p>
             The closest an established brand came was the Goplus 2.25HP 2-in-1, which one colour
             listed at $113.99 — not under $100, but near enough that it is worth watching for a sale.
             UREVO's flat <a href="/best-walking-pads-with-app/" class="text-[#0F62FE] font-medium" data-autolink>Smart Walking Pad</a> was $134.99. Both have dropped and risen by tens of dollars in
             the past, so setting a price alert is a better strategy than buying an unknown brand to save
-            $25.
+            $25. The <a href="/ajoosos-treadmills/" class="text-[#0F62FE] font-medium">AJOOSOS 2-in-1</a> is a case in point: a listing we could not open, from a brand whose own store sells no treadmills.
           </p>
           <p>
             If $100 is a hard limit, three alternatives give more exercise for the money than an

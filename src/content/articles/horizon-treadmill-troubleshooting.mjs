@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Horizon Treadmill Troubleshooting:', 'Won’t Start, Belt and Console Problems'],
   standfirst: `Most Horizon faults come down to the safety key, a power supply Horizon does not allow (a GFCI outlet, a power strip or a shared circuit), a running belt that needs a quarter-turn of tension or centring, or a LUBE message that stops the belt until it is cleared. Here is the order to check them in, using Horizon’s own help-centre procedures, and what to have ready when you call Horizon support.`,
@@ -216,7 +216,7 @@ export default {
             stuck-key error codes only appear on consoles at a minimum software version, and Horizon’s
             fix for interference-related speed problems on some T101s is a software update. Horizon also
             publishes a master reset document for owners who cannot clear a LUBE message after updating;
-            follow that document for your model rather than a sequence found for another machine.
+            follow that document for your model rather than a sequence found for another machine. If the console is beeping rather than just showing the message, our guide to <a href="/treadmill-keeps-beeping/" class="text-[#0F62FE] font-medium">why a treadmill keeps beeping</a> sorts reminder tones from key and error alerts.
           </p>`,
     },
     {

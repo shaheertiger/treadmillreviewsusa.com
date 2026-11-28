@@ -303,7 +303,7 @@ export default {
             designed to stay under a desk, with two front wheels to roll it out when you need the
             floor. If you want incline, look at the MERACH pad in the cards above or our
             <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>
-            roundup. If you want something to hold, a pad with a handrail is a different product.
+            roundup. If you want something to hold, a pad with a handrail is a different product. Our <a href="/merach-treadmills/" class="text-[#0F62FE] font-medium">Merach treadmills guide</a> compares that pad with Merach’s other walking pads and its four T12 treadmills.
           </p>`,
     },
     {
@@ -330,7 +330,7 @@ export default {
             Footprint is the next check. LifeSpan gives 60 by 28 inches. A standing desk needs enough
             clearance between its legs for a 28-inch-wide frame, and the treadmill needs space behind
             it so that you are not stepping off the back into a wall or chair. Allow at least a couple
-            of feet behind the deck.
+            of feet behind the deck. Sliding a walking pad under a desk you already own costs about $150 to $350, against $2,048 to $3,840 for an integrated set, as our <a href="/how-much-does-a-treadmill-desk-cost/" class="text-[#0F62FE] font-medium">treadmill desk cost</a> page shows.
           </p>
           <p>
             Power matters more than buyers expect. LifeSpan specifies a dedicated 115 V circuit with a

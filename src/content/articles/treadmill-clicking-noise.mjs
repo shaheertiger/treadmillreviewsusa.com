@@ -5,14 +5,14 @@ export default {
   slug: 'treadmill-clicking-noise',
   title: 'Treadmill Clicking Noise: Find It by When It Clicks',
   description:
-    'A treadmill click once per belt lap points to the belt or a roller; once per step, a loose bolt or deck; with no one on it, the motor or drive belt. 6 causes and fixes.',
+    "A treadmill click once per belt lap is the belt or a roller; once per step, a loose bolt or the deck; with no one on it, the motor or drive belt. 6 causes.",
   crumbLabel: 'Treadmill Clicking Noise',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-22',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Treadmill Clicking Noise:', 'Find It by When It Clicks'],
   standfirst:
@@ -226,7 +226,7 @@ export default {
             side rails, the belt edge can tick against the frame if it drifts even slightly, so check centring first. Pads
             stored on end or slid under furniture can have a slightly twisted frame, which shows up as a tick with each
             step; laying the pad flat on a hard floor often cures it. And because the motor and rollers are small and close
-            together, a dry deck is heard sooner.
+            together, a dry deck is heard sooner. Our <a href="/walking-pad-making-noise/" class="text-[#0F62FE] font-medium">walking pad making noise</a> guide goes through the pad-specific causes in order.
           </p>
           <p>
             Our <a href="/walking-pad-not-working/" class="text-[#0F62FE] font-medium">walking pad not working</a>

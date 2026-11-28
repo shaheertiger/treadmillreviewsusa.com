@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['How to Lubricate', 'a Walking Pad'],
   standfirst:
@@ -83,7 +83,7 @@ export default {
             Whatever the group, the deck still wears. Even a maintenance-free deck can dry out
             eventually, and the signs listed further down this page apply to every pad. If a pad
             described as maintenance-free starts showing them, contact the seller before
-            lubricating it yourself, particularly while it is under warranty.
+            lubricating it yourself, particularly while it is under warranty. <a href="/ypoo-treadmills/" class="text-[#0F62FE] font-medium">YPOO</a> makes that easier than most budget brands, with a US phone line behind its Amazon listings.
           </p>`,
     },
     {
@@ -111,7 +111,7 @@ export default {
             If the lubricant that came with the pad has run out, check the label of any replacement
             for two things: that it says 100% silicone, and that it is intended for treadmills. A
             bottle lasts a long time at walking pad quantities, so there is no need to buy a large
-            one.
+            one. For UREVO pads, the maker gives 5 to 10 ml per application, as our <a href="/urevo-walking-pad-troubleshooting/" class="text-[#0F62FE] font-medium">UREVO walking pad troubleshooting</a> guide notes.
           </p>`,
     },
     {
@@ -325,7 +325,7 @@ export default {
           <p>
             A <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium" data-autolink>burning smell</a> is different. Stop, unplug, let the pad cool and investigate before
             using it again; lubrication may be part of the fix, but a hot smell is a reason to stop
-            rather than to carry on and hope.
+            rather than to carry on and hope. A pad that simply stops after a long session is a different problem, usually a run-time or heat limit, covered in our <a href="/walking-pad-overheating/" class="text-[#0F62FE] font-medium">walking pad overheating</a> guide.
           </p>`,
     },
     {

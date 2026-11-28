@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '2.7k',
   h1: ['Best Walking Pads', 'With Incline'],
   standfirst:
@@ -124,7 +124,7 @@ export default {
             The UREVO Strol 2E Pro and the DeerRun Z10 were both lower on 26 November than at any
             point this page recorded before, which puts a 12% manual incline and a powered incline
             each under $190. If either reaches your price on Black Friday itself, there is little
-            reason to wait for Cyber Monday.
+            reason to wait for Cyber Monday. For a flat pad or a manual walker at the same money, see the <a href="/best-treadmills-under-200/" class="text-[#0F62FE] font-medium">best treadmills under $200</a>, which include a Sunny manual treadmill with 14% incline at about $200.
           </p>
           <p>
             <strong>The MERACH needs a careful look at the listing.</strong> The W50 TrekPad is sold
@@ -568,7 +568,7 @@ export default {
             Amazon with a 14% auto incline and a 2.5 HP motor, at $349.25 on 26 November 2026. It
             is not a pick because we have not confirmed its figures against a second source, but
             it shows where the category's top end sits: a few percent above the 12% that the best
-            pads here reach, and still below a full incline treadmill.
+            pads here reach, and still below a full incline treadmill. If you want a full deck with powered incline instead, the MERACH that leads our <a href="/best-treadmills-under-400/" class="text-[#0F62FE] font-medium">best treadmills under $400</a> reaches 18% for about $380.
           </p>`,
     },
     {
@@ -585,7 +585,7 @@ export default {
             the W50 TrekPad. DeerRun lists one year for the Z10. Egofit lists one year. We did not
             confirm the terms for the UREVO Strol 2E Pro or DeerRun A6 Plus, so ask the seller. Register on the day the pad arrives,
             keep the receipt and the order number, and screenshot the warranty wording as it
-            stands when you buy, because terms change under the same product name.
+            stands when you buy, because terms change under the same product name. If a UREVO pad later shows an error code, our <a href="/urevo-walking-pad-troubleshooting/" class="text-[#0F62FE] font-medium">guide to UREVO faults</a> lists what UREVO says to try before you make a claim.
           </p>
           <p>
             Two other checks matter more for pads than for full treadmills. First, whether the

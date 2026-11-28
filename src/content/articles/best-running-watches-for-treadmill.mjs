@@ -245,7 +245,7 @@ export default {
             information, and that compatible machines carry a "Connects to Apple Watch" label. In
             practice that label appears mostly on commercial gym treadmills, not home machines. If
             you run at a gym with GymKit treadmills, an Apple Watch gets the treadmill's distance
-            with no calibration at all.
+            with no calibration at all. Our step-by-step guide to <a href="/how-to-connect-apple-watch-to-planet-fitness-treadmill/" class="text-[#0F62FE] font-medium">pairing an Apple Watch with a Planet Fitness treadmill</a> covers what to do when a machine has no logo.
           </p>
           <p>
             <strong>Bluetooth FTMS.</strong> FTMS is the open fitness-machine standard many
@@ -362,7 +362,7 @@ export default {
             <strong>If you mostly walk on a treadmill or walking pad,</strong> a running watch is
             more than you need. Step counts and walking distance indoors are covered in our guide to
             <a href="/does-a-fitness-tracker-count-steps-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether a fitness tracker counts steps on a treadmill</a>,
-            and a <a href="/best-fitness-trackers/" class="text-[#0F62FE] font-medium" data-autolink>fitness tracker</a> is usually the better buy.
+            and a <a href="/best-fitness-trackers/" class="text-[#0F62FE] font-medium" data-autolink>fitness tracker</a> is usually the better buy. Our roundup of <a href="/best-fitness-trackers-for-walking-pad/" class="text-[#0F62FE] font-medium">fitness trackers for a walking pad</a> narrows that down, from the Fitbit Inspire 3 with its clip to a clip-on pedometer at around $25.
           </p>
           <p>
             <strong>If you already own a recent running watch,</strong> do not replace it for

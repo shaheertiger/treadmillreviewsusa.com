@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-28',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['NordicTrack', 'Black Friday Deals 2026'],
   standfirst:
@@ -146,7 +146,7 @@ export default {
             Its standing "best price guarantee", which matches a lower price from a qualifying
             authorised retailer, was live on the product pages, with the same exclusions for
             doorbuster and lightning deals — which are exactly the kind of offer Black Friday
-            produces.
+            produces. Academy Sports goes further, with a price match that beats a qualifying competitor’s price by 5%, as our <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium">Academy Sports treadmill guide</a> notes.
           </p>`,
     },
     {

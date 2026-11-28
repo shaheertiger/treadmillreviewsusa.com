@@ -1,15 +1,14 @@
 export default {
   slug: 'best-bumper-plates',
-  title: 'Best Bumper Plates (2026): 6 Sets by Bounce, Width and Price',
-  description:
-    'Six bumper plate sets checked against makers and reviews: bounce and durometer, thickness and bar space, tolerance, smell, and competition vs training.',
+  title: "Best Bumper Plates (2026): 6 Sets by Bounce, Width and Price",
+  description: "Virgin-rubber training bumpers with ±1% tolerance, about $2 to $2.50 a pound, suit most home gyms; REP's Black Bumpers are our pick. Six sets compared.",
   crumbLabel: 'Best Bumper Plates',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Bumper Plates', 'for a Home Gym, by Bounce and Bar Space'],
   standfirst:

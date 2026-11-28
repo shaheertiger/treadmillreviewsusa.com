@@ -2,14 +2,14 @@ export default {
   slug: 'best-cushioned-treadmills',
   title: 'Best Cushioned Treadmills (2026): Low-Impact, Shock-Absorbing',
   description:
-    'The best cushioned treadmills for low-impact walking and running, each with a named, manufacturer-confirmed deck cushioning system — plus what cushioning can and cannot do for your joints.',
+    'The Horizon 7.4 AT is the best cushioned treadmill for most: zoned deck cushioning on a 22 x 60 in. deck, 15% incline and no subscription. Six picks compared.',
   crumbLabel: 'Best Cushioned Treadmills',
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.3k',
   h1: ['Best Cushioned Treadmills', 'For Low-Impact Walking and Running'],
   standfirst:
@@ -427,7 +427,7 @@ export default {
             <strong>Longevity above all.</strong> The Life Fitness Run CX costs far more, does not fold
             and has a firm deck, but it is the only machine here with lifetime cover listed on its
             shock absorbers, a 10-year motor warranty and a 6-inch step-up. For a heavy daily user who
-            wants to buy once, that is what the extra money buys.
+            wants to buy once, that is what the extra money buys. On 27 November 2026 the Run CX cost $3,919 on Life Fitness’s store after a Black Friday cut, as our <a href="/how-much-does-a-life-fitness-treadmill-cost/" class="text-[#0F62FE] font-medium">Life Fitness pricing page</a> records.
           </p>`,
     },
     {

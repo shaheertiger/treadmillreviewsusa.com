@@ -269,7 +269,7 @@ export default {
             <strong>Unplug it and take the safety key out.</strong> A covered treadmill is not being
             watched. Unplugging protects it from surges while nobody is around and removes any
             chance of the belt starting. Keep the safety key somewhere separate, out of children's
-            reach, not on the console under the cover.
+            reach, not on the console under the cover. Our <a href="/kids-treadmill/" class="text-[#0F62FE] font-medium">guide to kids and treadmills</a> explains why the home treadmill manuals we read set a minimum age of 13 or 16.
           </p>
           <p>
             <strong>Keep the power cord clear.</strong> Do not tuck the cord under the cover's hem,
@@ -351,7 +351,7 @@ export default {
       html: `          <p>
             <strong>If the treadmill is used daily in a clean indoor room</strong>, a cover adds a
             chore for little benefit. A quick wipe after each session and a weekly vacuum around
-            the machine do more for it.
+            the machine do more for it. Our list of <a href="/best-treadmill-cleaning-products/" class="text-[#0F62FE] font-medium">treadmill cleaning products</a> covers the cloth and the cordless vacuum for that routine.
           </p>
           <p>
             <strong>If the machine is going into long-term storage</strong>, a cover is part of the

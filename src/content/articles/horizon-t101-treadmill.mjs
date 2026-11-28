@@ -5,9 +5,9 @@ export default {
   crumbLabel: 'Horizon T101 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-15',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '2.7k',
   h1: ['Horizon T101', 'Treadmill Review'],
   standfirst:
@@ -72,7 +72,7 @@ export default {
             not built for regular running.</strong> At around $700 it is one of the simplest ways to buy a
             full-size folding treadmill that asks nothing of you after delivery. The catch is stock: on
             14 October 2026 Horizon’s US store showed it sold out at $699, so check availability before you
-            plan around it.
+            plan around it. If it is still out of stock, our <a href="/best-treadmills-under-700/" class="text-[#0F62FE] font-medium">best treadmills under $700</a> include machines with 12 mph and up to 20% incline at that price.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <tbody>
@@ -88,7 +88,7 @@ export default {
             walking and gentle jogging, and becomes cramped at a running stride. A 10 mph ceiling and
             10% incline are ordinary. The warranty is generous on the frame and motor and short
             everywhere else. And Horizon has stopped publishing a horsepower figure, so anyone quoting
-            one for the current model is quoting something other than Horizon.
+            one for the current model is quoting something other than Horizon. Its $699 list price is the lowest in Horizon’s range, as our <a href="/how-much-does-a-horizon-treadmill-cost/" class="text-[#0F62FE] font-medium">Horizon price guide</a> shows, though it was sold out on 23 November 2026.
           </p>
           <p>
             If you already own a T101, the two sections most likely to help are
@@ -204,7 +204,7 @@ export default {
             run. On a 55-inch belt the walking case has comfortable margin, the jogging case has some,
             and the running case has very little — which is when people start shortening their stride
             to stay clear of the rear roller without noticing they are doing it. That shortened gait is
-            where treadmill running earns its reputation for feeling unnatural.
+            where treadmill running earns its reputation for feeling unnatural. A shorter runner has more margin on the same belt, which is one reason the T101 Connect, with its 7 1/8-inch step-on height, leads our <a href="/best-treadmills-for-short-people/" class="text-[#0F62FE] font-medium">best treadmills for short people</a>.
           </p>
           <p>
             Both independent reviews we read describe the T101 as suited to walking and light jogging

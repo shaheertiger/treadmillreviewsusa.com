@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmill Desks',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Treadmill Desks', 'Sets and Desks for a Pad'],
   standfirst:
@@ -71,7 +71,7 @@ export default {
             <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
             and
             <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>
-            cover that half of the set-up.
+            cover that half of the set-up. If you would rather have the desk built in, our <a href="/funmily-treadmills/" class="text-[#0F62FE] font-medium">FUNMILY treadmill guide</a> looks at a budget Amazon walking treadmill sold with its own desk and handle bar. If floor space is tight, our <a href="/best-mini-treadmills/" class="text-[#0F62FE] font-medium">best mini treadmills</a> list the smallest pads, from about $135.
           </p>`,
     },
     {
@@ -88,7 +88,7 @@ export default {
             discontinued its ThermoTread GT treadmill and now sells the Unsit in its place,
             LifeSpan's full-set treadmill desks were all marked sold out on its US site, and Rebel
             Desk had no reachable current listing. We only list a set that we could see offered,
-            with prices, on the maker's own site.
+            with prices, on the maker's own site. For a desk walker built from wood, our <a href="/wooden-walking-pad/" class="text-[#0F62FE] font-medium">wooden walking pad</a> guide covers Walkolution's manual treadmill desks, sold through Woodway USA from $2,995.
           </p>
           <p>
             For the standing desks, we screened on the specification a walking pad imposes. The

@@ -2,14 +2,14 @@ export default {
   slug: 'treadmill-belt-replacement-cost',
   title: 'Treadmill Belt Replacement Cost (2026): Parts, Labour and Extras',
   description:
-    'Treadmill belt replacement cost: generic versus OEM belt prices, technician labour, hidden extras, how to tell a belt is worn, and the repair-or-replace maths.',
+    'A treadmill belt costs about $60 to $150 generic or $100 to $250+ OEM; a technician’s belt swap commonly totals $200 to $400. Labour, extras, when to replace.',
   crumbLabel: 'Treadmill Belt Replacement Cost',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Maintenance',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Treadmill Belt Replacement Cost:', 'What You Will Actually Pay'],
   standfirst:
@@ -226,7 +226,7 @@ export default {
             has started to grumble or a roller whose rubber or crowned surface has worn can cause
             the new belt to track badly or wear fast. Rollers are not usually expensive parts on
             home machines, but they add labour, and a seized bearing is a reason to look at the
-            whole machine's value before proceeding.
+            whole machine's value before proceeding. A grind with nobody on the belt that rises with speed is the usual sign of a roller or motor bearing, as our <a href="/treadmill-grinding-noise/" class="text-[#0F62FE] font-medium">treadmill grinding noise</a> guide explains.
           </p>
           <p>
             <strong>The drive belt.</strong> Not the walking belt but the short ribbed belt between

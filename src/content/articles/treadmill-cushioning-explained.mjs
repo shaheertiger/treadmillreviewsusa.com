@@ -212,7 +212,7 @@ export default {
             more than the difference between two reasonably cushioned treadmills. It also means
             that worn-out shoes on a well-cushioned machine can feel worse than good shoes on a
             firmer one. If your legs feel beaten up after treadmill sessions, look at your shoes
-            and your training load before you blame the deck.
+            and your training load before you blame the deck. Some makers build a whole machine around a named system; the <a href="/reebok-fr20z-floatride-treadmill/" class="text-[#0F62FE] font-medium">Reebok FR20z Floatride</a> pairs its Floatride cushioning with a fixed, non-folding 140 by 46 cm deck.
           </p>
           <p>
             The two do interact. A very soft deck plus a very soft shoe can stack into a surface

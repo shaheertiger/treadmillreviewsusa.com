@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-24',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Best Treadmills for Walking and Running', 'One Machine for Both'],
   standfirst:
@@ -97,7 +97,7 @@ export default {
             Health Tech; Schwinn, part of the same group; and NordicTrack, part of iFIT). Sunny Health &amp;
             Fitness is a California brand that sells through its own store as well as Amazon, and WELLFIT sells
             mainly online. We avoided repeating the picks on our dedicated walking and running pages where we
-            could, so this list shows the machines that sit in the middle.
+            could, so this list shows the machines that sit in the middle. On Sunny’s store most motorised folding models were $399.99 to $799.99 on 27 November 2026, as our <a href="/how-much-does-a-sunny-treadmill-cost/" class="text-[#0F62FE] font-medium">Sunny cost guide</a> shows.
           </p>`,
     },
     {

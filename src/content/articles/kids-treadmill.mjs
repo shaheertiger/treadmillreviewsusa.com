@@ -1,15 +1,15 @@
 export default {
   slug: 'kids-treadmill',
-  title: 'Kids Treadmill Guide: Safe Ages, Injury Data and Kid-Sized Models',
+  title: 'Kids Treadmill: Safe Ages, AAP Advice and Kid-Sized Models',
   description:
-    'Should children use a treadmill? What NordicTrack, ProForm, Sole, Horizon and Peloton manuals say, CDC and AAP activity advice, injury data, toy treadmills and a home checklist.',
+    'Most home treadmill manuals set a minimum age of 13 (Sole, Horizon) or 16 (NordicTrack, ProForm, Peloton). AAP activity advice, injury data and toy treadmills.',
   crumbLabel: 'Kids Treadmill Guide',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Kids and Treadmills:', 'Safe Ages, Real Risks, Better Options'],
   standfirst:
@@ -283,7 +283,7 @@ export default {
             The case that brought treadmill dangers to children into the headlines was the Peloton
             Tread+, a premium treadmill with a slatted belt and a raised deck. In March 2021 Peloton
             disclosed that a child had died in an accident involving the machine. The CPSC record
-            since then is worth knowing, because it shows how the hazard works.
+            since then is worth knowing, because it shows how the hazard works. Peloton’s Tread now uses Tread Lock, a passcode that our <a href="/peloton-tread-troubleshooting/" class="text-[#0F62FE] font-medium">Peloton Tread troubleshooting</a> guide advises never disabling in a house with children or pets.
           </p>
           <ul>
             <li><strong>April 2021, CPSC warning.</strong> The CPSC urged owners with small children or

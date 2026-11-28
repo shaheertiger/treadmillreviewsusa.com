@@ -66,7 +66,7 @@ export default {
           <p>
             <strong>Wear proper shoes.</strong> Running or <a href="/best-walking-shoes-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>walking shoes</a> with a secure fit. Not
             socks, not bare feet, not slides. A loose shoelace caught in the gap between the belt
-            and the side rail is a genuine hazard, so tie them properly.
+            and the side rail is a genuine hazard, so tie them properly. If you are buying a pair, our <a href="/best-womens-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium">best women&rsquo;s running shoes for treadmill</a> running include the New Balance 880 v15 in four women&rsquo;s widths, from 2A to 2E.
           </p>
           <p>
             <strong>Find the controls while the belt is stopped.</strong> Locate the start
@@ -131,7 +131,7 @@ export default {
           <p>
             <strong>3. Start the belt at its lowest speed.</strong> Press start. Most machines
             begin at a crawl, often well under 1 mph. If your machine has a countdown, wait for
-            the belt to begin moving.
+            the belt to begin moving. Horizon&rsquo;s manuals add that you stand on the side rails and clip the safety key to your clothing before pressing Start, as our guide to <a href="/how-to-start-a-horizon-treadmill/" class="text-[#0F62FE] font-medium">starting a Horizon treadmill</a> shows.
           </p>
           <p>
             <strong>4. Step on.</strong> Watching the belt, place one foot on it and let it move

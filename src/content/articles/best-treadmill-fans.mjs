@@ -2,14 +2,14 @@ export default {
   slug: 'best-treadmill-fans',
   title: 'Best Treadmill Fans (2026): 5 Picks for Treadmills and Home Gyms',
   description:
-    'Five fans for a treadmill or home gym, checked against maker and retailer listings: a smart training fan, two Vornado circulators and two Lasko garage fans.',
+    'The Vornado 660 is the best treadmill fan for indoor rooms: four speeds, a tilting head and a five-year warranty. Five picks, from a smart fan to garage fans.',
   crumbLabel: 'Best Treadmill Fans',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Best Fans', 'for Treadmill Running'],
   standfirst:
@@ -271,7 +271,7 @@ export default {
             circuits: plug the fan into a different outlet from the treadmill, and never share a
             power strip, extension cord or <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium" data-autolink>surge protector</a> between them. Many treadmill manuals ask
             for a dedicated outlet and prohibit extension cords for the treadmill, and the fan
-            should never be the reason one appears.
+            should never be the reason one appears. For the treadmill itself, our <a href="/best-surge-protectors-for-treadmills/" class="text-[#0F62FE] font-medium">treadmill surge protector picks</a> start with a direct plug-in Tripp Lite unit rated 15 A and 1,410 joules.
           </p>
           <p>
             If your treadmill does trip the breaker, look first at the bigger loads that commonly

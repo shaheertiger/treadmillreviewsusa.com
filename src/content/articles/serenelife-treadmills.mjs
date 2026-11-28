@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-25',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   h1: ['SereneLife Treadmills:', 'Models, Specs and What to Check'],
   standfirst:
     'SereneLife is a real brand, owned by Sound Around, Inc. of Brooklyn, the company behind Pyle, and its treadmills are cheap compact walkers rather than running machines. On Amazon on 25 November 2026 its folding treadmills ran from $237.89 to $314.91 and its walking pads from $167.29, nearly all rated to about 265 lb, with a one-year warranty in the listing details. This guide sets out every current model, which listing figures disagree, and what to check before you order.',
@@ -211,7 +211,7 @@ export default {
             brands", with headquarters in Brooklyn, New York. Its support address is 1600 63rd Street, Brooklyn, its phone
             number (888) 318-7953 and its support email service@pyleusa.com, the same company that sells Pyle audio
             equipment. The contact form lists the places SereneLife expects you to have bought from: Amazon, Walmart,
-            Target, <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Home Depot</a>, Wayfair, Chewy, eBay, Groupon and its sister stores, among others.
+            Target, <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Home Depot</a>, Wayfair, Chewy, eBay, Groupon and its sister stores, among others. On Wayfair in particular, check that the listing names a manufacturer you can identify, as our <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">Wayfair treadmill buying guide</a> advises.
           </p>
           <p>
             Treadmills are a small part of what SereneLife sells. Its store covers home, outdoor, wellness and fitness

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Resistance Bands', 'for Every Kind of Home Workout'],
   standfirst:
@@ -66,7 +66,7 @@ export default {
       html: `          <p>
             Each card gives the figures we could confirm from two sources, the price range we found, and who
             the band suits. Read the band type first. A tube set and a power loop are not substitutes for each
-            other, and a mini band will not help you do a pull-up however good it is.
+            other, and a mini band will not help you do a pull-up however good it is. For the pull-up itself, a freestanding <a href="/best-power-towers/" class="text-[#0F62FE] font-medium">power tower</a> gives you a bar, dip handles and knee raises in one frame if you have nowhere to mount a bar.
           </p>
           <p>
             The pound figures on the cards are the makers' own, and they are not comparable between brands.
@@ -201,7 +201,7 @@ export default {
             Short latex loops, around 9 to 12 inches, worn around the thighs, knees or ankles. They are the
             cheapest band you can buy and the standard tool for lateral walks, clamshells, glute bridges and
             shoulder warm-ups. The common complaints are that they roll up, pinch skin and snap sooner than
-            heavier bands. <strong>Best for</strong> warm-ups and lower-body activation on a budget.
+            heavier bands. <strong>Best for</strong> warm-ups and lower-body activation on a budget. For heavier banded glute work, the BootySprout in our <a href="/best-hip-thrust-machines/" class="text-[#0F62FE] font-medium">hip thrust machine guide</a> ships assembled with 135 lb of bands and folds for storage.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Fabric hip bands</h3>
           <p>

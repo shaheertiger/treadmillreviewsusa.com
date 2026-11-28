@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Running Shoes for Treadmill',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.8k',
   h1: ['Best Running Shoes for Treadmill', 'Seven Current Models'],
   standfirst:
@@ -155,7 +155,7 @@ export default {
             the machine. Second, the two do interact. A very soft deck under a very soft, high-stack
             shoe can feel vague, and some runners prefer a moderately cushioned shoe on a softer
             deck for that reason. If you run on a firm, older machine, a more cushioned shoe such as
-            the 1080 v15 or the Bondi 9 makes more sense than it would on a soft modern deck.
+            the 1080 v15 or the Bondi 9 makes more sense than it would on a soft modern deck. If the deck is the problem, our <a href="/best-cushioned-treadmills/" class="text-[#0F62FE] font-medium">best cushioned treadmills</a> compare six machines whose makers document their cushioning.
           </p>
           <p>
             <strong>How much cushioning?</strong> More is not automatically better. The highest-stack

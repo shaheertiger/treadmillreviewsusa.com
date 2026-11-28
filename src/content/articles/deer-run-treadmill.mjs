@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Deer Run Treadmill Reviews:', 'Is DeerRun Legit?'],
   standfirst:
@@ -131,7 +131,7 @@ export default {
           <p>
             <strong>DeerRun’s own store</strong> is the main channel. It carries the whole range, most of
             it marked down from a “was” price, plus accessories, rentals and paid add-ons. The brand
-            also runs stores for Canada, the UK and Germany.
+            also runs stores for Canada, the UK and Germany. Before paying for a rental, our <a href="/rent-a-treadmill/" class="text-[#0F62FE] font-medium">treadmill rental guide</a> works through the sums: an illustrated $90-a-month rental comes to $690 over six months.
           </p>
           <p>
             <strong>Target.com</strong> carries at least some DeerRun machines as a marketplace listing,
@@ -260,7 +260,7 @@ export default {
             either flat or tilted, with nothing in between, which an owner quoted by the independent site
             described in exactly those terms. An earlier Amazon listing for the same pad gave 6% rather
             than 7%. If you want to vary incline during a walk, you need one of the auto-incline models,
-            and even then the incline is in numbered steps that DeerRun describes as percent.
+            and even then the incline is in numbered steps that DeerRun describes as percent. Treaflow’s 3100W is simpler still, with an 8% angle set on pegs before you walk, as our <a href="/treaflow-walking-pad/" class="text-[#0F62FE] font-medium">Treaflow walking pad review</a> explains.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Big numbers on small machines</h3>
           <p>
@@ -407,7 +407,7 @@ export default {
             treadmills immediately, citing 201 reports of uncontrolled speed changes, abrupt stops and
             stability failures, with at least 66 falls or injuries, and 573 reports of overheating, fire
             and other thermal incidents. The importer refused to agree to an acceptable recall. Those
-            machines were sold on Amazon, Walmart.com, Newegg and eBay.
+            machines were sold on Amazon, Walmart.com, Newegg and eBay. On Walmart.com, check whether a listing is sold by Walmart or by a Marketplace seller, because that decides who handles your return, as our <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">guide to Walmart treadmills</a> sets out.
           </p>
           <p>
             Sperax is a different company, and nothing in the CPSC’s warning concerns DeerRun. The one

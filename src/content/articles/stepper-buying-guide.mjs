@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Stepper Buying Guide:', 'Which Type to Buy'],
   standfirst:
@@ -127,7 +127,7 @@ export default {
             elliptical sit between categories: compact steppers with moving arms, closer to an elliptical. A vertical climber is a
             different machine again, with a tall mast and a full arm pull; our guide to the
             <a href="/best-vertical-climbers/" class="text-[#0F62FE] font-medium">best vertical climbers</a>
-            covers those.
+            covers those. The SF-E3919 is also carded in our <a href="/best-compact-ellipticals/" class="text-[#0F62FE] font-medium">compact elliptical guide</a>, where at 44 inches long it has the shortest footprint of the machines sold on Amazon.
           </p>`,
     },
     {
@@ -380,7 +380,7 @@ export default {
             Sunny Health &amp; Fitness, Sportsroyals, Niceday, Bells of Steel, MaxiClimber, Cubii,
             Xiser, Nordic Lifting, Merach, Fitvids, Yosuda, STEPR or CLMBR. BowFlex and its former
             owner Nautilus have recalls on other products, including SelectTech dumbbells in 2025 and
-            treadmills in 2022, but none for a Max Trainer.
+            treadmills in 2022, but none for a Max Trainer. Those 2022 treadmill recalls covered the <a href="/nautilus-treadmills/" class="text-[#0F62FE] font-medium">Nautilus T616 and T618</a>, which can start on their own.
           </p>
           <p>
             The recalls that matter in this category involve <strong>commercial stair machines</strong>,

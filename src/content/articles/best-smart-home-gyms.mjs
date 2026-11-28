@@ -1,15 +1,14 @@
 export default {
   slug: 'best-smart-home-gyms',
-  title: 'Best Smart Home Gym (2026): 5 Picks and Their Real Costs',
-  description:
-    'Five smart home gyms sold on Amazon, checked against makers and reviews: Tonal, Speediance and SQUATZ. Digital resistance, wall vs freestanding, memberships.',
+  title: "Best Smart Home Gym (2026): 5 Picks and Their Real Costs",
+  description: "The Tonal 2 is the best smart home gym for most: 5 to 250 lb of digital resistance, wall-mounted. Five systems, what each needs, and 3-year membership costs.",
   crumbLabel: 'Best Smart Home Gyms',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Smart Home Gym', 'Picks, Wall Needs and Membership Costs'],
   standfirst:
@@ -37,7 +36,7 @@ export default {
             really choosing between a wall and a patch of floor; the other three exist because a tighter
             budget, an existing power rack or a very small space changes the answer. Every pick links to
             an Amazon listing; where a maker-only machine was the better-known choice, we say so on the
-            card that replaced it.
+            card that replaced it. At the other end of the price scale, our <a href="/gymproluxe-review/" class="text-[#0F62FE] font-medium">GymProLuxe review</a> looks at a $133 band-and-bar kit sold for travel and small spaces.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>

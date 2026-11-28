@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.6k',
   h1: ['The Best Treadmill Brands', 'and How to Judge Them'],
   standfirst:
@@ -154,7 +154,7 @@ export default {
             which also owns ProForm. Its treadmill range is built around the iFIT platform:
             touchscreen consoles, trainer-led workouts and automatic incline and speed control are the
             brand's defining features, and much of its lineup is designed to be used with a
-            membership.
+            membership. Our <a href="/best-ifit-treadmills/" class="text-[#0F62FE] font-medium">best iFIT treadmills</a> pick six from the two brands, starting from a $600 machine that uses your own tablet.
           </p>
           <p>
             <strong>Strengths:</strong> the broadest range of interactive machines from a single
@@ -194,7 +194,7 @@ export default {
             <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm brand guide</a>
             covers the range, and
             <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack versus ProForm</a>
-            compares the two directly.
+            compares the two directly. At the budget end, the <a href="/proform-505-cst-treadmill/" class="text-[#0F62FE] font-medium">ProForm 505 CST</a> pairs a 2.5 CHP motor and a 20 by 55-inch deck with a 325 lb capacity.
           </p>`,
     },
     {
@@ -281,7 +281,7 @@ export default {
             subscription; our <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6 review</a> covers the entry
             model. It is still best known in cardio for the Max Trainer, a low-impact
             elliptical-stepper hybrid with a JRNY coaching app that some shoppers consider as an
-            alternative to a treadmill.
+            alternative to a treadmill. The entry model, the <a href="/bowflex-max-trainer-m5/" class="text-[#0F62FE] font-medium">Max Trainer M5</a>, uses 8 resistance levels against the M7’s 14 and has no running belt at all.
           </p>
           <p>
             Whether a Max Trainer is a sensible alternative depends on the goal. For lower-impact

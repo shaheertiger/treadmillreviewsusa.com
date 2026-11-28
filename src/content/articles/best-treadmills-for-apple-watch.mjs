@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Treadmills', 'for Apple Watch'],
   standfirst:
@@ -149,7 +149,7 @@ export default {
             other way, onto the console. Horizon says its connection syncs calories, speed, distance,
             pace and time; the 2024 launch announcement for the 7.0 AT and Bowflex T9 listed heart
             rate, active and total calories, speed, distance, pace and incline. The finished workout
-            lands in the Fitness app like any other.
+            lands in the Fitness app like any other. The T9 was $1,399 on sale at Bowflex on 24 November 2026, as our <a href="/how-much-does-a-bowflex-treadmill-cost/" class="text-[#0F62FE] font-medium">Bowflex treadmill pricing</a> page records.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">2. Bluetooth FTMS: the treadmill talks to an app, not to the watch</h3>
           <p>

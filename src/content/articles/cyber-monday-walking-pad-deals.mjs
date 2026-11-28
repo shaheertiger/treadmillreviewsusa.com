@@ -11,8 +11,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Cyber Monday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Cyber Monday', 'Walking Pad Deals 2026'],
   standfirst:
@@ -93,7 +94,7 @@ export default {
             We dropped the flat Strol 2E from the cards this time. Its store price was only $8 below October’s, and the
             Amazon listing we had tracked under that name now describes a different pad, with a 6% incline and 5 mph
             running mode, so we could not give an honest Amazon price for it. Its sibling, the Strol 2E Pro, adds a 12%
-            manual incline for about $10 more on UREVO’s store and takes its place.
+            manual incline for about $10 more on UREVO’s store and takes its place. If you were hoping for a RHYTHM FUN AP01 or AP02 deal, both pads are discontinued; our <a href="/rhythm-fun-treadmill/" class="text-[#0F62FE] font-medium">RHYTHM FUN treadmill guide</a> covers the current range.
           </p>`,
     },
     {
@@ -103,7 +104,7 @@ export default {
       html: `          <p>
             Each card gives the Amazon price on 27 November 2026, the figures from the maker and listing, and the price we
             would want to see on Cyber Monday. We did not test these pads; picks are based on listings, maker
-            specifications and the price history above.
+            specifications and the price history above. Cheaper brands outside this list, such as <a href="/akluer-treadmills/" class="text-[#0F62FE] font-medium">AKLUER</a>, sell pads from about $70, every model rated for 330 lb.
           </p>`,
     },
     {

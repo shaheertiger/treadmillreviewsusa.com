@@ -230,7 +230,7 @@ export default {
             to tick over a tenth of a mile — and multiply up. Our guide to
             <a href="/how-many-steps-in-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how many steps are in a mile on a treadmill</a>
             explains why the answer changes with speed and height, and why a typical stride figure
-            from a chart may not fit you.
+            from a chart may not fit you. For a per-session benchmark, our page on <a href="/how-many-steps-on-a-treadmill-in-30-minutes/" class="text-[#0F62FE] font-medium">steps in 30 minutes on a treadmill</a> puts a 30-minute walk at 2 mph at about 2,900 steps.
           </p>
           <p>
             The weakness of the pad's figure is that it lives in the pad. Unless its app syncs to
@@ -330,7 +330,7 @@ export default {
             displays and apps than others, and a pad whose figures sync to your phone may make a
             separate tracker unnecessary. Our guide to
             <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
-            covers what to look for in the machine itself.
+            covers what to look for in the machine itself. If you are not yet sure a pad is the right machine, our explainer on <a href="/what-is-a-walking-pad/" class="text-[#0F62FE] font-medium">what a walking pad is</a> sets out how it differs from a treadmill.
           </p>
           <p>
             <strong>If heart rate is the point.</strong> A clipped tracker or a pedometer will not

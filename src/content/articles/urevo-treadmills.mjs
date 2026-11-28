@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['UREVO Treadmills:', 'A Buyer’s Guide to the Range'],
   standfirst:
@@ -241,7 +241,7 @@ export default {
             should be most careful: several UREVO pads advertise 350 or 400 lb limits that their own manuals
             or Amazon listings put at 242 to 300 lb. Our
             <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a>
-            roundup shows how three of these pads compare with WalkingPad and MERACH.
+            roundup shows how three of these pads compare with WalkingPad and MERACH. <a href="/funmily-treadmills/" class="text-[#0F62FE] font-medium">FUNMILY</a> has the same habit, with one pad listed at 300, 350 or 400 lb depending on the page.
           </p>`,
     },
     {
@@ -501,7 +501,7 @@ export default {
             for iPhone and Android. UREVO describes workout modes that change speed and incline automatically,
             including music-paced “AI-Rhythm” walks, goal-based sessions, virtual routes on real-world maps,
             HIIT, marathon-course simulations and online challenges with a global leaderboard, plus syncing
-            with Apple Health and Google Fit.
+            with Apple Health and Google Fit. Our <a href="/best-walking-pads-with-app/" class="text-[#0F62FE] font-medium">best walking pads with an app</a> compare six pads, with UREVO's $133 Smart Walking Pad as the budget pick.
           </p>
           <p>
             <strong>The app is free to download, but it is not entirely free.</strong> Its App Store listing on

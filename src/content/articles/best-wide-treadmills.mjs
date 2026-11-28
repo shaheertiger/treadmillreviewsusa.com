@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Wide Treadmills:', 'Six 22-Inch Belts'],
   standfirst:
@@ -37,7 +37,7 @@ export default {
             want the cheapest 22-inch belt we could verify, and the Horizon 7.8 AT if you are a
             heavier runner who wants a higher weight rating without paying for a commercial machine.
             The T9 and 7.8 AT are sold by their makers and other retailers, not on Amazon US, so their
-            cards show the Sole F83 and Bowflex T16, the closest wide-belt machines Amazon sells.
+            cards show the Sole F83 and Bowflex T16, the closest wide-belt machines Amazon sells. If a Bowflex you already own has a fault, our <a href="/bowflex-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Bowflex treadmill troubleshooting</a> guide lists the checks from its manuals.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -121,7 +121,7 @@ export default {
             with model numbers T616 and T618 in 2022; and Johnson Health Tech's Matrix and Vision
             treadmills for a power-cord fire hazard, expanded in January 2026. <a href="/life-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness</a>'s only
             treadmill recall we found dates from 2003 and covered other models. If you are buying
-            secondhand, check the model and serial number on cpsc.gov yourself.
+            secondhand, check the model and serial number on cpsc.gov yourself. For the <a href="/nautilus-treadmills/" class="text-[#0F62FE] font-medium">Nautilus T616 and T618</a>, that check matters more than usual, because the company that issued the recall no longer exists and no remedy is left.
           </p>`,
     },
     {

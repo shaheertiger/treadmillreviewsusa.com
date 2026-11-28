@@ -55,7 +55,7 @@ export default {
             machines is competitive, its return policy for items it sells itself is long, and it has
             stores almost everywhere for small returns. It is a less sensible place to browse,
             because the listing quality varies so widely that a good machine and a poor one can sit
-            side by side at similar prices.
+            side by side at similar prices. Academy Sports is a narrower alternative in the South and Southeast, with a smaller range but no third-party marketplace sellers, as our <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium">Academy Sports treadmill page</a> notes.
           </p>`,
     },
     {
@@ -72,7 +72,7 @@ export default {
             Walmart is the retailer. Walmart's standard return policy applies, which on 18 October
             2026 gave most items 90 days. Walmart handles the order, the delivery and the return, and
             the manufacturer handles the warranty. This is the simplest arrangement and the one most
-            buyers assume they are getting.
+            buyers assume they are getting. Scheels also gives 90 days to return a treadmill, but check its freight surcharge and the return logistics for a boxed machine, as our <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">Scheels treadmill guide</a> explains.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">2. Sold by a seller, fulfilled by Walmart</h3>
           <p>
@@ -147,7 +147,7 @@ export default {
             explains. Weslo, another ICON budget brand, was also a familiar mass-retail name. We
             could not confirm that Walmart lists new Weslo treadmills today, so treat an old review
             of a Weslo or Gold's Gym model as history rather than a current option, and check that
-            any listing under those names is new stock with a working warranty.
+            any listing under those names is new stock with a working warranty. If you already own an older Weslo, our <a href="/weslo-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Weslo treadmill troubleshooting</a> guide covers the start-up, belt and speed fixes from its manuals.
           </p>`,
     },
     {

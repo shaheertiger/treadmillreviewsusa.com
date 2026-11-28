@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Life Fitness Club Series+', 'Treadmill: SE4 and SL Guide'],
   standfirst:
@@ -106,7 +106,7 @@ export default {
             day. Those prices buy the same running surface, speed range, incline, user rating and
             frame warranty as Life Fitness's own <a href="/life-fitness-run-cx-treadmill/" class="text-[#0F62FE] font-medium">Run CX</a>,
             which was $3,919 in the same sale. The difference is a larger continuous-duty AC motor, a
-            heavier club-derived frame, lifetime motor cover and, with the SE4, a large touchscreen.
+            heavier club-derived frame, lifetime motor cover and, with the SE4, a large touchscreen. <a href="/technogym-treadmills/" class="text-[#0F62FE] font-medium">Technogym’s</a> top home treadmill, the Run, costs more again at $14,350.
           </p>
           <p>
             That makes the Club Series+ a good buy for a narrow group: households that run often and
@@ -131,7 +131,7 @@ export default {
             Life Fitness has used the "Club Series" name on several generations of home treadmill, and
             search results, used listings and older reviews mix them freely. It is worth sorting them out
             before you compare prices, because a used "Club Series" for $3,000 may be a very different
-            machine from a new Club Series+.
+            machine from a new Club Series+. New, the Club Series+ cost $6,079 on Life Fitness’s store on 27 November 2026, as our <a href="/how-much-does-a-life-fitness-treadmill-cost/" class="text-[#0F62FE] font-medium">Life Fitness price guide</a> records.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Club Series and Platinum Club Series</h3>
           <p>

@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   h1: ['How Much Does', 'a Walking Pad Cost?'],
   standfirst: `Most walking pads cost between about $130 and $450, and pads with incline, a handrail or a fold-up running mode stretch the range to roughly $800. Here is what each type costs today, what the extra money buys, and what you will spend after checkout.`,
   ctas: [
@@ -116,7 +116,7 @@ export default {
             $499 compare-at, the H1 2-in-1 $299 against $499, and the Strol 2E $161.99 against
             $289.99. A walking pad that sits well below its compare-at price for weeks is simply
             selling at the lower price, so judge any deal against what the pad has actually sold for
-            recently, not against the crossed-out figure.
+            recently, not against the crossed-out figure. If your ceiling is $200, our <a href="/best-treadmills-under-200/" class="text-[#0F62FE] font-medium">picks under $200</a> start with the UREVO Strol 2E at about $170.
           </p>`,
     },
     {
@@ -165,7 +165,7 @@ export default {
             $449, is rated for 300 lb, while its $359 Z1R is rated for 242 lb, and Goplus sells a
             walking pad titled with a 340 lb capacity for $179.99 on its own store (checked November
             2026). A higher rating is worth paying for if you are near the limit of a cheaper pad, but
-            a high number on a cheap pad deserves a close look at the motor and frame behind it.
+            a high number on a cheap pad deserves a close look at the motor and frame behind it. If you need more than a pad, the folding machines in our <a href="/best-treadmills-under-400/" class="text-[#0F62FE] font-medium">under-$400 roundup</a> carry 250 to 400 lb ratings.
           </p>
           <p>
             <strong>The motor.</strong> Almost every walking pad advertises horsepower, and almost
@@ -323,7 +323,7 @@ export default {
             schedule, keeping the belt tensioned and centred, staying well under the weight limit and
             not running on a walking-only pad all push a pad toward the long end of its range. Neglect
             pushes it toward the short end at every price. Since most walking pads carry a one-year
-            warranty, the years after that are paid for by your maintenance, not the manufacturer.
+            warranty, the years after that are paid for by your maintenance, not the manufacturer. Budget brands follow the same pattern; the $150 to $200 <a href="/redliro-under-desk-treadmill/" class="text-[#0F62FE] font-medium">Redliro under-desk treadmill</a> also lists a one-year warranty.
           </p>`,
     },
     {

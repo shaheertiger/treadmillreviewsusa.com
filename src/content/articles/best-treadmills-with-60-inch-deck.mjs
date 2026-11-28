@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-22',
-  modified: '2026-11-22',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Best Treadmills With', 'a 60-Inch Deck'],
   standfirst:
@@ -125,7 +125,7 @@ export default {
             A 60-inch deck means a long machine: Horizon gives 76 inches of length for its 7.0 and 7.4 AT, and the T202
             listing gives 76 by 34 by 57 inches assembled. Add clearance behind the belt for safety and room beside it to
             step off. All seven picks fold, which helps with floor space but not height: Horizon gives folded heights of
-            68 inches for the 7.0 AT and 71 for the 7.4.
+            68 inches for the 7.0 AT and 71 for the 7.4. On Horizon’s store the 7.0 AT was $1,099 and the 7.4 AT $1,799 on 23 November 2026, as our <a href="/how-much-does-a-horizon-treadmill-cost/" class="text-[#0F62FE] font-medium">Horizon pricing page</a> shows.
           </p>
           <p>
             Measure the room, the doorway and the ceiling before you buy. Our

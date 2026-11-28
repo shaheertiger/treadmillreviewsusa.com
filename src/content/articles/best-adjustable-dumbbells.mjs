@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-16',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Adjustable Dumbbells', 'and Their Honest Pros and Cons'],
   standfirst:
@@ -269,7 +269,7 @@ export default {
             pair at its maximum. On the prices we saw on 16 October, the CAP spin-lock set works out
             at roughly $1.25 per pound, the Core set at about $3.80, the Ironmaster 75 lb set and the
             60 lb QuickDraw at under $5, the NÜOBELL at a little over $5, the PowerBlock Pro 100 EXP
-            at about $6 and the Nike pair at nearly $7.
+            at about $6 and the Nike pair at nearly $7. The QuickDraw is also on our <a href="/black-friday-home-gym-deals/" class="text-[#0F62FE] font-medium">Black Friday home gym shortlist</a>, where 10% off your pair size is the discount we would wait for.
           </p>
           <p>
             That looks expensive until you count what a fixed set has to contain. Covering 10 to 65 lb
@@ -466,7 +466,7 @@ export default {
             bands. A tube set with handles and a door anchor covers most upper-body work for a fraction of
             the price and fits in a drawer; our guide to the
             <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">best resistance bands</a>
-            explains which type to buy and how they compare with dumbbells.
+            explains which type to buy and how they compare with dumbbells. If you have seen adverts for a band-and-bar kit, our <a href="/gymproluxe-review/" class="text-[#0F62FE] font-medium">GymProLuxe review</a> looks at one of the best known: a padded belt, a two-piece steel bar and six clip-on tubes for about $133.
           </p>
           <p>
             <strong>If you drop weights at the end of hard sets</strong> and are not going to change

@@ -2,13 +2,13 @@ export default {
   slug: 'best-dog-treadmill-harnesses',
   title: 'Best Dog Treadmill Harnesses (2026): 5 Picks and Safety Rules',
   description:
-    'Five dog harnesses that suit treadmill training, chosen for free shoulder movement, a secure fit and nothing that can catch in a belt, with the rule that matters most: never tie a dog to a treadmill.',
+    'The Blue-9 Balance Harness is the best dog treadmill harness for fit and movement; the rabbitgoo is under $20. Five picks; never tie a dog to a treadmill.',
   crumbLabel: 'Best Dog Treadmill Harnesses',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Best Dog Harnesses', 'for Treadmill Training'],
   standfirst:
@@ -134,7 +134,7 @@ export default {
       heading: 'Measuring and Fitting a Harness',
       html: `          <p>
             Most harness sizing is by chest girth, the widest part of the ribcage just behind the front legs.
-            Some makers also give a neck measurement. Measure with a soft tape, with your dog standing.
+            Some makers also give a neck measurement. Measure with a soft tape, with your dog standing. For big breeds the belt needs sizing as carefully as the harness, and our <a href="/best-dog-treadmills-for-large-dogs/" class="text-[#0F62FE] font-medium">treadmills for large dogs</a> guide asks for a running surface at least twice the dog's length.
           </p>
           <p>
             <strong>1. Measure the girth</strong> about two inches behind the front legs, snug but not tight.
@@ -192,7 +192,7 @@ export default {
             A harness does not change the machine. Dog treadmills are built for a dog's gait: longer belts for
             their body length, side panels so they cannot step off sideways by accident, low decks, and speed
             ranges suited to dogs. A human treadmill has none of these, and its exposed sides and rear roller are a
-            greater hazard to paws and fur.
+            greater hazard to paws and fur. For toy and small breeds, our <a href="/best-dog-treadmills-for-small-dogs/" class="text-[#0F62FE] font-medium">small dog treadmill picks</a> start with the GoPet PetRun PR700, rated for dogs up to 44 lb.
           </p>
           <p>
             Some owners do use a human treadmill for a calm, medium-sized dog at walking pace, under constant

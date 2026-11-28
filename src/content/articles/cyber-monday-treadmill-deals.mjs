@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-28',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Cyber Monday', 'Treadmill Deals 2026'],
   standfirst:
@@ -89,7 +89,7 @@ export default {
             height — are answered on paper. It is a bigger loss on a running treadmill, where deck
             feel and stability vary more than the specification suggests. If you were hoping to
             try a machine before buying, do it in the week before Thanksgiving and keep Monday for
-            ordering.
+            ordering. If an Academy Sports store is nearby, our <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium">Academy Sports treadmill guide</a> covers how its delivery, price match and 60-day returns work.
           </p>
           <p>
             <strong>It favours parcel-sized machines.</strong> A walking pad weighing 50 to 70 lb
@@ -155,7 +155,7 @@ export default {
             on Friday without price protection, a lower price on Monday is simply lost. Some buyers
             in that position cancel before dispatch or return and re-order, which costs time and,
             on a freight item, may not be possible without charges. Read the terms before you rely
-            on it.
+            on it. On Wayfair, check each listing’s return window and any non-returnable flag, as our <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">guide to buying a treadmill at Wayfair</a> explains.
           </p>
           <p>
             A sensible default: <strong>for a full-size freight treadmill, lean towards buying when

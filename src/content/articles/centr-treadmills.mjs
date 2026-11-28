@@ -3,16 +3,16 @@ const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
 
 export default {
   slug: 'centr-treadmills',
-  title: 'Centr Treadmills (2026): Runr, Runr-S and the HYROX Perform Tread',
+  title: "Centr Treadmill (2026): Runr, Runr-S and HYROX Perform Tread",
   description:
-    'Centr, Chris Hemsworth’s brand, sells the Runr ($1,299), Runr-S ($1,699) and the motorless Centr x HYROX Perform Tread ($6,999). Figures, conflicts, Costco and who each suits.',
+    "Centr sells the folding Runr ($1,299) and Runr-S ($1,699) and the motorless HYROX Perform Tread ($6,999). Figures, Costco and who each one suits.",
   crumbLabel: 'Centr Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Centr Treadmills:', 'Runr, Runr-S and the HYROX Perform Tread'],
   standfirst:

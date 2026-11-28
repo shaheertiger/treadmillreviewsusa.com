@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Best Curved Treadmills', 'Seven Self-Powered Trainers'],
   standfirst:
@@ -44,7 +44,7 @@ export default {
             you are still deciding whether you want a curved treadmill at all, our
             <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium">curved treadmill guide</a>
             explains how the design works and who it suits; this page assumes you have decided. For what to do once it arrives, see our
-            <a href="/curved-treadmill-workouts/" class="text-[#0F62FE] font-medium">curved treadmill workouts</a>.
+            <a href="/curved-treadmill-workouts/" class="text-[#0F62FE] font-medium">curved treadmill workouts</a>. If it is the wood you are after, our <a href="/wooden-walking-pad/" class="text-[#0F62FE] font-medium">wooden walking pad</a> guide compares the solid-wood Sprintbok, from about $8,199, with cheaper wood-look pads.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -73,7 +73,7 @@ export default {
             usual sense, and is a running and conditioning tool first. If you came here looking for
             a cheap manual treadmill to walk on, our
             <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">best manual treadmills</a>
-            page covers the $200 to $300 flat folding walkers instead.
+            page covers the $200 to $300 flat folding walkers instead. At the other extreme, the official HYROX race treadmill, the <a href="/centr-treadmills/" class="text-[#0F62FE] font-medium">Centr x HYROX Perform Tread</a>, costs $6,999.
           </p>`,
     },
     {
@@ -92,7 +92,7 @@ export default {
             checked, Assault Fitness showed all three AssaultRunner models sold out on its own
             store, and Woodway's shop showed the Curve LTG sold out, while specialist dealers still
             listed both. We include the Woodway because it is a current product rather than a
-            discontinued one, and say on its card that availability needs checking.
+            discontinued one, and say on its card that availability needs checking. Rogue Fitness also sells it in Rogue colours as the Rogue | Woodway Curve LTG, at $3,495 on sale on 5 November 2026, as our <a href="/rogue-treadmills/" class="text-[#0F62FE] font-medium">guide to Rogue treadmills</a> shows.
           </p>
           <p>
             Second, we looked for budget curved models and did not find one under four figures we

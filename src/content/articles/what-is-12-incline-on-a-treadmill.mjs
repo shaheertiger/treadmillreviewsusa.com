@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['What Is 12 Incline', 'on a Treadmill?'],
   standfirst:
@@ -409,7 +410,7 @@ export default {
       html: `          <p>
             Whether you can do any of this depends on your machine. Incline range is one of the
             clearest dividing lines between <a href="/types-of-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>treadmill types</a>, and it is worth checking the spec sheet
-            for the exact maximum before you buy with 12% workouts in mind.
+            for the exact maximum before you buy with 12% workouts in mind. Some budget pads go further on paper: <a href="/lontek-walking-pad/" class="text-[#0F62FE] font-medium">LONTEK</a> sells walking pads with 15% and 32% manual incline settings for about $95 to $190.
           </p>
           <ul>
             <li><strong>Walking pads:</strong> most have no incline, and those that do usually have

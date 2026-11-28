@@ -89,9 +89,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-18',
-  modified: '2026-11-22',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['What Treadmill', 'Should I Buy?'],
   standfirst:
@@ -242,7 +242,7 @@ ${DECISION_TABLE}
             Our ${link('/under-desk-treadmills/', 'under-desk treadmills')} page compares pads for
             desk use, and the ${link('/walking-pad-buying-guide/', 'walking pad buying guide')} goes
             through each specification in order of importance. If you want to walk as a workout
-            away from the desk as well, read the next section: a pad does that less well.
+            away from the desk as well, read the next section: a pad does that less well. Whether one earns its place is the question in our guide to <a href="/are-walking-pads-worth-it/" class="text-[#0F62FE] font-medium">whether walking pads are worth it</a>: used most weekdays for a few years, a mid-priced pad costs well under $1 a session.
           </p>`,
     },
     {
@@ -361,7 +361,7 @@ ${DECISION_TABLE}
             When space is the binding constraint, the first question is still whether you walk or
             run. If you only walk, a walking pad is the space-saving answer: it slides under a sofa
             or bed and needs no permanent footprint. If you jog or run, you need a folding treadmill,
-            and the fold becomes a specification in its own right.
+            and the fold becomes a specification in its own right. Our explainer on <a href="/what-is-a-walking-pad/" class="text-[#0F62FE] font-medium">what a walking pad is</a> sets out what one leaves out compared with a treadmill.
           </p>
           <p>
             <strong>What to check.</strong> The folded footprint and the folded height — a folded

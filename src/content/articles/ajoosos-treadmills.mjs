@@ -1,15 +1,15 @@
 export default {
   slug: 'ajoosos-treadmills',
-  title: 'AJOOSOS 2-in-1 Under Desk Treadmill (2026): What We Could Confirm',
+  title: "AJOOSOS 2-in-1 Under Desk Treadmill (2026): What We Found",
   description:
-    'Is the AJOOSOS 2-in-1 under desk treadmill worth buying? What we could and could not confirm about the brand on 5 November 2026, how to check the listing, and checked 2-in-1 alternatives.',
+    "The AJOOSOS 2-in-1 under desk treadmill comes from an e-scooter brand whose store sells no treadmills; its listing claims 2.0 HP. What to check first.",
   crumbLabel: 'AJOOSOS Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '6.6k',
   h1: ['AJOOSOS 2-in-1 Under Desk Treadmill:', 'What We Could Confirm'],
   standfirst:
@@ -179,7 +179,7 @@ export default {
             registration has added walking pads, sourced from a factory that sells the same machine to
             other labels, to its range on the marketplace, without adding them to its own web store.
             That is common, and it is not in itself a warning sign. But it means there is no brand page
-            to check the listing against, and that the AJOOSOS name may cover more than one machine.
+            to check the listing against, and that the AJOOSOS name may cover more than one machine. Wayfair house-label treadmills raise the same problem, because the listing may give no maker or model number, as our <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">Wayfair treadmill guide</a> explains.
           </p>
           <p>
             So the useful question is not whether AJOOSOS is a good brand. It is whether the specific

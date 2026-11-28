@@ -1,15 +1,15 @@
 export default {
   slug: 'star-trac-treadmills',
-  title: 'Star Trac Treadmills (2026): Models, Used Value, What to Check',
+  title: "Star Trac Treadmills (2026): Models, Used Prices, What to Check",
   description:
-    'Star Trac builds gym treadmills, not home ones. The current FreeRunner, 8TRx, 6TR and 4TR, why most home buyers meet a used or remanufactured unit, and what one is worth.',
+    "Star Trac builds gym treadmills, so most home buyers meet a used one: a refurbished 8TR was listed at $3,895. The current 4TR to FreeRunner range.",
   crumbLabel: 'Star Trac Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Star Trac Treadmill:', 'Club Machines, Used Value and Home Use'],
   standfirst:
@@ -46,7 +46,7 @@ export default {
             fitness centres, through the 6TR and the new 8TRx to the FreeRunner 10TRx, whose
             cushioned deck, 20% incline and 15 mph top speed make it the flagship. You can buy one
             new for a home through a commercial dealer, but expect a quote, freight delivery and
-            commercial warranty terms rather than a consumer checkout.
+            commercial warranty terms rather than a consumer checkout. As a guide, a new full-commercial treadmill from a gym brand typically costs about $9,000 to $14,000 before delivery and tax, according to our <a href="/how-much-does-a-commercial-treadmill-cost/" class="text-[#0F62FE] font-medium">commercial treadmill cost guide</a>.
           </p>
           <p>
             Used, Star Trac treadmills are common, because gyms replace them on a cycle; our guide to
@@ -68,7 +68,7 @@ export default {
             Schwinn, Nautilus, Star Trac, Throwdown and Wexer among its brands; the Schwinn and
             Nautilus names there are the commercial lines, separate from the home products sold under
             those names elsewhere. Core sells to commercial facilities, multi-unit housing and
-            developers.
+            developers. The home <a href="/nautilus-treadmills/" class="text-[#0F62FE] font-medium">Nautilus treadmills</a> people remember, the T614, T616 and T618, have not been sold new for years. If you own a home Schwinn treadmill instead, our <a href="/schwinn-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Schwinn troubleshooting guide</a> covers its 810 error codes, belt tension and lube.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A short history</h3>
           <p>

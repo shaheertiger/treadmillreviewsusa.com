@@ -156,7 +156,7 @@ export default {
             Indoor cycling bikes like the Schwinn IC4 suit structured classes; recumbent bikes suit
             anyone who wants back support. <strong>Space:</strong> modest — the IC4 is about 55 by
             31 inches. <strong>Cost band:</strong> roughly $300 to $1,000 for a bike with magnetic
-            resistance, more for one with a built-in screen.
+            resistance, more for one with a built-in screen. Our <a href="/black-friday-home-gym-deals/" class="text-[#0F62FE] font-medium">Black Friday home gym deals</a> page tracks the IC4 as a price already on the move, from $799 on 16 October to $899 three days later.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Rowing machine</h3>
           <p>
@@ -268,7 +268,7 @@ export default {
       html: `          <p>
             No single source is enough. The approach that works is to triangulate: read what the
             maker claims, see whether an independent source agrees, and check what owners say after
-            a year rather than a week.
+            a year rather than a week. Our <a href="/shock-exercise-equipment-reviews/" class="text-[#0F62FE] font-medium">shock exercise equipment reviews</a> apply that method to EMS ab belts, where the box promises run well ahead of what any regulator has backed.
           </p>
           <ol>
             <li><strong>The maker's own product page and manual.</strong> Not for opinions, but for

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Can You Use a NordicTrack', 'Without iFIT?'],
   standfirst:
@@ -36,7 +36,7 @@ export default {
             membership, where you start the belt and set speed and incline yourself.</strong> What
             goes without a paid membership is the trainer-led workout library, the automatic speed
             and incline control that follows those workouts, and the streaming and entertainment
-            features on the screen.
+            features on the screen. Paid yearly, iFIT Pro adds $396 to a treadmill that costs $1,999 to $4,299 at NordicTrack’s list prices, as our <a href="/how-much-does-a-nordictrack-treadmill-cost/" class="text-[#0F62FE] font-medium">guide to NordicTrack treadmill prices</a> shows.
           </p>
           <p>
             NordicTrack's own iFIT FAQ puts it plainly: you can always use the treadmill in manual
@@ -56,7 +56,7 @@ export default {
             choosing a connected treadmill and want to know how each platform behaves when the
             membership stops, our
             <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">smart treadmill roundup</a>
-            covers iFIT alongside Peloton, Echelon, JRNY and open-app machines, model by model.
+            covers iFIT alongside Peloton, Echelon, JRNY and open-app machines, model by model. Echelon, for example, says every Stride runs in manual mode without its membership, as our <a href="/how-much-does-an-echelon-treadmill-cost/" class="text-[#0F62FE] font-medium">Echelon cost guide</a> notes.
           </p>`,
     },
     {
@@ -154,7 +154,7 @@ export default {
             mandatory to purchase and that manual mode is always available. It also explains why
             iFIT asks for a card number before you use iFIT: you are not charged at that point, and
             the card is kept for renewal. That is the iFIT sign-up, not the treadmill; the FAQ does
-            not say a card is needed to run the belt in manual mode.
+            not say a card is needed to run the belt in manual mode. If you do want iFIT, our <a href="/best-ifit-treadmills/" class="text-[#0F62FE] font-medium">best iFIT treadmills</a> rank six NordicTrack and ProForm machines, from a $600 tablet-based model to a 24-inch flagship.
           </p>
           <p>
             <strong>What the sister brand says.</strong> ProForm's current product pages state

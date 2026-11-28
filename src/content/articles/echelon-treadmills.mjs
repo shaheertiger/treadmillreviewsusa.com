@@ -1,15 +1,15 @@
 export default {
   slug: 'echelon-treadmills',
-  title: 'Echelon Treadmill (2026): Stride-6, 6s and 8s Compared',
+  title: "Echelon Treadmill Review (2026): Stride-6, 6s and 8s Compared",
   description:
-    'Echelon’s Stride treadmills fold flat and lean on a paid membership. The current range, what works without Premier, why the warranty depends on it, and Echelon vs Peloton.',
+    "Echelon’s Stride treadmills fold flat at a button press, and the warranty depends on a paid membership. The Stride-6, 6s and 8s, and Echelon vs Peloton.",
   crumbLabel: 'Echelon Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Echelon Treadmills:', 'A Buyer’s Guide to the Stride Range'],
   standfirst:
@@ -144,7 +144,7 @@ export default {
             companies announced in November 2022 that all pending litigation would be dismissed,
             with Echelon agreeing to stop using Peloton's patented leaderboard technology in its
             on-demand classes. That does not affect a treadmill you buy today, but it explains why
-            Echelon classes look the way they do.
+            Echelon classes look the way they do. For comparison, a new Peloton treadmill costs $2,195 to $6,695 at list, plus $49.99 a month for All-Access, as our <a href="/how-much-does-a-peloton-tread-cost/" class="text-[#0F62FE] font-medium">Peloton treadmill cost</a> page shows.
           </p>
           <p>
             In April 2026 Echelon agreed to pay at least $2.1 million to settle False Claims Act

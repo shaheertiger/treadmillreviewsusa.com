@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-22',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['How Much Does a', 'Sole Treadmill Cost?'],
   standfirst:
@@ -98,7 +98,7 @@ export default {
           <p>
             If screens do not matter to you, the F63 or F65 gives you the running deck and motor for hundreds less than
             the touchscreen models. Our <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">best Sole treadmills</a>
-            ranking compares them in more depth.
+            ranking compares them in more depth. If you do want a big screen for less, <a href="/yesoul-treadmills/" class="text-[#0F62FE] font-medium">Yesoul’s T3S Plus</a> has a 21.5-inch one for $799.99, on a folding machine aimed at walkers.
           </p>`,
     },
     {
@@ -256,7 +256,7 @@ export default {
           </p>
           <p>
             Before buying, ask Sole for the parts and labour terms in writing, since the product pages we checked state only
-            the lifetime frame and motor cover. Those terms decide most repair bills.
+            the lifetime frame and motor cover. Those terms decide most repair bills. Many faults cost nothing to fix; our <a href="/sole-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Sole treadmill troubleshooting</a> guide starts with the safety key and the breaker on the front of the frame.
           </p>`,
     },
     {

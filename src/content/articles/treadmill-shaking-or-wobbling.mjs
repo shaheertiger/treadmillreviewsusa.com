@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['Treadmill Shaking,', 'Wobbling or Vibrating?'],
   standfirst:
@@ -192,7 +192,7 @@ export default {
           <p>
             <strong>Missing hardware.</strong> If you find a washer or bolt on the floor, find where
             it came from. A missing fastener is a loose joint somewhere, and the shake is often
-            that joint.
+            that joint. If the loose joint clicks once per footstep rather than shaking, our <a href="/treadmill-clicking-noise/" class="text-[#0F62FE] font-medium">treadmill clicking noise</a> guide covers it.
           </p>`,
     },
     {

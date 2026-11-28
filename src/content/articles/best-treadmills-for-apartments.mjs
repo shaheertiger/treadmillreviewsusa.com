@@ -131,7 +131,7 @@ export default {
             all. A <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> — a low, deck-only machine with no upright or handrails — solves
             the apartment problem almost completely: it arrives in a box one person can carry up
             stairs, it slides under a bed or sofa, it weighs 60 to 90 lbs rather than 250, and it
-            puts far less energy into the floor.
+            puts far less energy into the floor. Our <a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">best portable treadmills</a> sort six machines by checked weight, led by the 51 lb WalkingPad Z1.
           </p>
           <p>
             The trade is real and worth stating plainly. Walking pads top out around 4 mph, have

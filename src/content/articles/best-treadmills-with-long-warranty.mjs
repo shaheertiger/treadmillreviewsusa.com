@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
-  modified: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Best Treadmills With', 'the Longest Warranty'],
   standfirst:
@@ -87,7 +87,7 @@ export default {
             Two brands that sell long warranties mostly through dealers are not here, because they are hard to
             buy on Amazon: <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Landice</a> and Life Fitness. Our
             <a href="/life-fitness-f3-treadmill/" class="text-[#0F62FE] font-medium">Life Fitness F3 review</a>
-            sets out that brand&rsquo;s terms (lifetime frame, ten years on the motor, five on parts, one on labour).
+            sets out that brand&rsquo;s terms (lifetime frame, ten years on the motor, five on parts, one on labour). For what a Landice costs once delivery is added, see our <a href="/how-much-does-a-landice-treadmill-cost/" class="text-[#0F62FE] font-medium">Landice cost guide</a>: an L7 was $4,829 in the Black Friday sale, plus $399 for delivery and installation.
           </p>`,
     },
     {
@@ -150,7 +150,7 @@ export default {
             is now the default for frames and motors, so it no longer separates brands; parts and labour do. For
             each brand&rsquo;s range, see our
             <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium">best treadmill brands</a>
-            guide.
+            guide. At the other extreme, <a href="/technogym-treadmills/" class="text-[#0F62FE] font-medium">Technogym</a> gives a two-year warranty even on treadmills costing up to $14,350.
           </p>`,
     },
     {
@@ -238,7 +238,7 @@ export default {
             The T101-to-7.0 step stands out: for about $158 more on Amazon you gain two years of parts cover
             and a running deck. The step to a Spirit buys the longest parts cover available at home but gives
             back a year of labour against the Horizon 7.4 AT. For heavy daily use, or a household with several
-            users, the Spirit terms are the safest; for most households, the Horizon 7.4 AT is the balance.
+            users, the Spirit terms are the safest; for most households, the Horizon 7.4 AT is the balance. <a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium">Woodway</a> takes a different line with its slat-belt machines, rating the running surface for about 150,000 miles.
           </p>
           <p>
             <strong>Buying used changes the sum.</strong> Many home treadmill warranties cover only the original

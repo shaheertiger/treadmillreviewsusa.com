@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Treadmill Heart Rate Zones',
   kicker: 'Training Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '3.8k',
   h1: ['Treadmill', 'Heart Rate Zones'],
   standfirst:
@@ -50,7 +50,7 @@ export default {
       html: `          <p>
             The familiar formula — maximum heart rate equals 220 minus your age — is a population
             average derived from fitting a line through a wide scatter of individuals. It was never
-            intended as an individual prescription.
+            intended as an individual prescription. Age shows up on a clinical treadmill test too: in one large study of adults over 75 on the Bruce protocol, median time was 7 minutes 22 seconds for men aged 76 to 80, as our page on <a href="/average-time-on-treadmill-stress-test-by-age/" class="text-[#0F62FE] font-medium">stress test times by age</a> sets out.
           </p>
           <p>
             The scatter is substantial. Individual maximum heart rates commonly sit ten to twelve
@@ -307,7 +307,7 @@ export default {
           </p>
           <p>
             <strong>And if you take medication affecting heart rate or have a cardiac condition,
-            none of the arithmetic here applies to you.</strong> Ask your doctor for target ranges.
+            none of the arithmetic here applies to you.</strong> Ask your doctor for target ranges. If those ranges come from a supervised exercise ECG, our page on <a href="/how-much-does-a-treadmill-stress-test-cost/" class="text-[#0F62FE] font-medium">how much a treadmill stress test costs</a> shows what the basic test and the stress echo and nuclear versions are priced at.
           </p>`,
     },
   ],

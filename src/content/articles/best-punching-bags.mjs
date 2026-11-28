@@ -1,15 +1,14 @@
 export default {
   slug: 'best-punching-bags',
-  title: 'Best Punching Bag (2026): Heavy Bags and Freestanding Picks',
-  description:
-    'Six punching bags checked against makers and reviewers: heavy bags from Outslayer, Ringside and Hayabusa, and freestanding Century and Everlast bags.',
+  title: "Best Punching Bag (2026): Heavy Bags and Freestanding Picks",
+  description: "The Outslayer 100 lb is the best heavy bag if you have a sound beam; the Century Wavemaster is the best freestanding bag. Six bags, mounting, bases and noise.",
   crumbLabel: 'Best Punching Bags',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Punching Bag', 'for a Home Gym'],
   standfirst:

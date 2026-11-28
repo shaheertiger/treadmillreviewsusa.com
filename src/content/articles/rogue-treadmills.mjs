@@ -5,14 +5,14 @@ export default {
   slug: 'rogue-treadmills',
   title: 'Rogue Treadmills (2026): Every Treadmill Rogue Fitness Sells',
   description:
-    'Rogue Fitness sells eight treadmills from Woodway, TrueForm and STEPR, from $3,495 to $11,395. The Rogue | Woodway Curve LTG, TrueForm, STEPR models and what to check.',
+    'Rogue Fitness sells eight treadmills from Woodway, TrueForm and STEPR at $3,495 to $11,395; the Rogue | Woodway Curve LTG and TrueForm Trainer are $3,495.',
   crumbLabel: 'Rogue Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Rogue Treadmills:', 'What Rogue Fitness Actually Sells'],
   standfirst:

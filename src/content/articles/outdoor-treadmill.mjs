@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Treadmill Outdoors:', 'Can You Keep One Outside?'],
   standfirst:
@@ -98,7 +98,7 @@ export default {
             A covered porch, patio or deck is better than open ground, but it is not indoors, and at
             least one manufacturer's manual names covered patios as unsuitable. A roof stops vertical
             rain. It does not stop wind-driven rain, blowing snow, dew, fog, humidity, airborne dust
-            and pollen, insects, or the daily swing between a cool night and a warm afternoon.
+            and pollen, insects, or the daily swing between a cool night and a warm afternoon. If the machine has to live there anyway, our guide to <a href="/best-treadmill-covers/" class="text-[#0F62FE] font-medium">treadmill covers</a> recommends a heavier fabric and, ideally, vents for carports and patios.
           </p>
           <p>
             <strong>Screened porches</strong> keep out insects and some debris but let in the same
@@ -154,7 +154,7 @@ export default {
             temperatures its manual allows, and a hot motor compartment makes overheating faults
             more likely. Our guide to
             <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill overheating</a>
-            covers the symptoms.
+            covers the symptoms. For a walking pad on a sunny deck, our <a href="/walking-pad-overheating/" class="text-[#0F62FE] font-medium">walking pad overheating</a> guide explains why it stops and why it needs a rest.
           </p>
           <p>
             <strong>Cold.</strong> Cold thickens deck lubricant, stiffens the belt and makes plastics
@@ -287,7 +287,7 @@ export default {
             are still electrical equipment with their own manuals; check yours rather than assuming
             it is built for outdoor conditions. Our guide to
             <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">treadmills for dogs</a>
-            covers safe use.
+            covers safe use. If you are still choosing one, our <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">dog treadmill roundup</a> sorts six models by dog size.
           </p>
           <p>
             For a wider view of how each type is built, see our explainer on the

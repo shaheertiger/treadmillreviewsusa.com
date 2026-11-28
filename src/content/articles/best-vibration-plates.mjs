@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Best Vibration Plates', 'Read as Hardware, Not Promises'],
   standfirst:
@@ -156,7 +156,7 @@ export default {
             movement, sometimes with a separate pulsing mode. There is no common definition, so two
             "4D" plates can behave quite differently. If a listing uses one of these terms, look
             for what it actually says about the motors and modes, and treat the label itself as
-            branding.
+            branding. Plates are often sold beside electrical muscle stimulators under the same "shock" marketing; our <a href="/shock-exercise-equipment-reviews/" class="text-[#0F62FE] font-medium">shock exercise equipment reviews</a> separate the two and say who should not use either.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Which type suits whom</h3>
           <p>
@@ -423,7 +423,7 @@ export default {
             <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for lifters</a>,
             and our <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium">massage gun</a>
             and <a href="/best-foam-rollers/" class="text-[#0F62FE] font-medium">foam roller</a>
-            roundups, cover tools aimed at specific muscles rather than the whole body.
+            roundups, cover tools aimed at specific muscles rather than the whole body. For cold-water recovery, our <a href="/best-cold-plunges/" class="text-[#0F62FE] font-medium">cold plunge guide</a> covers five tubs, with and without chillers, and the GFCI power a chiller needs.
           </p>
           <p>
             <strong>If you are buying for a health condition</strong>, talk to your doctor first.

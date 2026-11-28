@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['Where to Buy', 'a Used Treadmill'],
   standfirst:
@@ -152,7 +152,7 @@ export default {
             old and around a third at three to five years, then holds close to that for years
             afterwards because the remaining value is essentially the frame. Our
             <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a>
-            works through what that buys at each budget.
+            works through what that buys at each budget. Old club machines such as the <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium">Cybex 770T</a> are common in this market, since Cybex no longer sells a new treadmill.
           </p>
           <p>
             <strong>Adjust for condition and hours.</strong> A lightly used, well-maintained machine
@@ -281,7 +281,7 @@ export default {
             When you are standing in front of the machine, run the full inspection from our
             <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a>.
             It covers the run test, the belt and deck checks, the hour meter and the walk-away
-            signs, and it is the single most important step in buying used.
+            signs, and it is the single most important step in buying used. Club machines such as <a href="/star-trac-treadmills/" class="text-[#0F62FE] font-medium">Star Trac’s</a> are common here, because gyms replace them on a cycle.
           </p>
           <p>
             Beyond the inspection, confirm a few practical points. Ask for the manual, the safety

@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Horizon 7.8 AT Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Horizon Fitness 7.8 AT', 'Treadmill Review'],
   standfirst:
@@ -116,7 +116,7 @@ export default {
             with no subscription, and it is the right Horizon for heavy users, shared machines and
             high weekly mileage.</strong> A 22 by 60-inch deck, 12 mph, 15% incline, a 375 lb rating,
             a 2.2 mm belt and five years of parts cover on top of a lifetime frame and motor
-            warranty is a strong set of published figures at its $1,999 sale price.
+            warranty is a strong set of published figures at its $1,999 sale price. Most buyers spend less, about $800 to $1,100 on a T202 or 7.0 AT, as our <a href="/how-much-does-a-horizon-treadmill-cost/" class="text-[#0F62FE] font-medium">guide to Horizon treadmill costs</a> shows.
           </p>
           <p>
             For everyone else, the honest answer is that the 7.4 AT does the same job. The two share

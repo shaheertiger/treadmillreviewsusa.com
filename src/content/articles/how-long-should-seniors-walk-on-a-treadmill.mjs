@@ -3,16 +3,16 @@ const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
 
 export default {
   slug: 'how-long-should-seniors-walk-on-a-treadmill',
-  title: 'How Long Should Seniors Walk on a Treadmill?',
+  title: 'How Long Should Seniors Walk on a Treadmill? Minutes by Fitness',
   description:
-    'Most seniors should build toward 30 minutes of moderate treadmill walking five days a week, starting with 5 to 10 minutes. CDC guidance, splitting sessions and step counts.',
+    'Most seniors should build toward 30 minutes of moderate treadmill walking five days a week, starting with 5 to 10 minutes. CDC guidance and step counts.',
   crumbLabel: 'How Long Should Seniors Walk?',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 19, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-17',
-  modified: '2026-11-19',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['How Long Should Seniors Walk', 'on a Treadmill?'],
   standfirst:
@@ -129,7 +129,7 @@ export default {
             These are our suggestions, built from the guidelines above and the usual advice to
             increase exercise gradually; they are not a medical prescription. Your doctor or
             physical therapist may advise something different, particularly after surgery or a
-            cardiac event, and their advice takes priority.
+            cardiac event, and their advice takes priority. After a hip replacement, for example, the AAOS suggests walking for 5 to 10 minutes, 3 to 4 times a day, in the beginning, as our guide to <a href="/treadmill-after-hip-replacement/" class="text-[#0F62FE] font-medium">the treadmill after hip replacement</a> describes.
           </p>
           <p>
             <strong>Whatever the starting point, the first few sessions are partly about the
@@ -289,7 +289,7 @@ export default {
             8,000 range. Our explainer on
             <a href="/how-many-steps-in-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how many steps are in a mile</a>
             covers stride length and cadence, and whether a wrist tracker counts treadmill steps
-            accurately when you are <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a> (often it does not).
+            accurately when you are <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a> (often it does not). For the figure at your own speed, our page on <a href="/how-many-steps-on-a-treadmill-in-30-minutes/" class="text-[#0F62FE] font-medium">how many steps 30 minutes on a treadmill comes to</a> gives about 2,900 at 2 mph and 3,400 at 3 mph.
           </p>`,
     },
     {

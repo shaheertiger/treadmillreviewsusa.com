@@ -2,7 +2,7 @@ export default {
   slug: 'best-incline-trainers',
   title: 'Best Incline Trainers (2026): 30–45% Incline Treadmills Compared',
   description:
-    'True incline trainers climb to 30% or more and most add a decline. Five Amazon picks from a $200 manual model to a 45% climber, plus where the commercial trainers and the NordicTrack X-series fit.',
+    'The Sunny Versatile (45% incline, -3% decline, about $2,200) is the best incline trainer on Amazon; true trainers climb to 30% or more. Five picks from $200.',
   crumbLabel: 'Best Incline Trainers',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
@@ -47,7 +47,7 @@ export default {
             15% incline. The FreeMotion i11.9 is an older 30% incline trainer still listed on Amazon. And the
             CURSOR 32% Incline Treadmill reaches 32% for $199.99, but you set the incline by hand and
             the belt is walking-pad sized, so treat it as a cheap way to try steep walking rather than a
-            real incline trainer.
+            real incline trainer. A step up from that, <a href="/therun-treadmills/" class="text-[#0F62FE] font-medium">THERUN’s flagship</a> reaches a powered 20% incline for $799.99 on Amazon.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
             <thead>
@@ -107,7 +107,7 @@ export default {
             trainer, as opposed to an incline treadmill, with one exception: where the commercial
             machine we would have listed is not sold on Amazon, we show the nearest Amazon alternative
             and say how far short of 30% it falls. Every pick had to be sold on Amazon US, with a
-            price, on 6 November 2026.
+            price, on 6 November 2026. The <a href="/yesoul-treadmills/" class="text-[#0F62FE] font-medium">Yesoul T5 series</a>, from $1,399.99 with a 30% incline on a 60-inch deck, is a newer machine that reaches the same line.
           </p>
           <p>
             We weighed incline range first, then whether the incline is powered, then the speed the

@@ -2,7 +2,7 @@ export default {
   slug: 'best-treadmills-for-hiking',
   title: 'Best Treadmills for Hiking (2026): 6 Incline and Decline Picks',
   description:
-    'The Aviron Summit (-6% to 42%) is the best treadmill for hiking training; Sunny’s Versatile climbs to 45% for about $2,200 and the CURSOR reaches 32% for $199.99.',
+    'The Aviron Summit (-6% to 42%) is the best treadmill for hiking; Sunny’s Versatile climbs to 45% for about $2,200 and the CURSOR reaches 32% for $199.99.',
   crumbLabel: 'Best Treadmills for Hiking',
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
@@ -420,7 +420,7 @@ export default {
       html: `          <p>
             Stair climbers and steppers are the other common way to train for hills indoors, and
             they are cheaper and smaller than any incline trainer. They train something slightly
-            different, though, and it is worth knowing what before you choose.
+            different, though, and it is worth knowing what before you choose. For scale, a home incline trainer costs about $2,875 to $4,299, as our <a href="/how-much-does-an-incline-trainer-cost/" class="text-[#0F62FE] font-medium">incline trainer cost breakdown</a> shows.
           </p>
           <p>
             <strong>What a stepper or stair machine does well.</strong> Stepping lifts your whole

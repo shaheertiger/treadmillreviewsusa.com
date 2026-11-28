@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-24',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   h1: ['How Much Does a', 'Treadmill Desk Cost?'],
   standfirst:
     'A treadmill desk costs about $150 to $350 if you slide a walking pad under a standing desk you already own, about $215 to $1,000 if you buy a pad and a new desk together, and $2,048 to $3,840 for an integrated office treadmill desk from LifeSpan, InMovement or iMovR. Every price below is from Amazon or the maker on 24 November 2026, with the totals for each setup, what the extra money buys and what it costs to run.',
@@ -57,7 +57,7 @@ export default {
           <p>
             For the desks and sets we would shortlist, see our
             <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a>; for the pad on
-            its own, our <a href="/how-much-does-a-walking-pad-cost/" class="text-[#0F62FE] font-medium">walking pad price guide</a>.
+            its own, our <a href="/how-much-does-a-walking-pad-cost/" class="text-[#0F62FE] font-medium">walking pad price guide</a>. One of the cheaper under-desk pads, the <a href="/cybergoing-walking-pad/" class="text-[#0F62FE] font-medium">Cybergoing T10</a>, was about $142 on Amazon.
           </p>`,
     },
     {
@@ -66,7 +66,7 @@ export default {
       html: `          <p>
             This table adds up complete setups from real listings, cheapest first. Each line is a pairing that works,
             not a recommendation for everyone: check the desk height column against your own height in the section on
-            desks below before you buy.
+            desks below before you buy. The cheapest all-in-one route is a pad with the desk attached, such as the <a href="/funmily-treadmills/" class="text-[#0F62FE] font-medium">FUNMILY treadmill desk</a>, though its listing figures are the seller’s claims.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[680px] w-full text-sm border-collapse">
             <thead>

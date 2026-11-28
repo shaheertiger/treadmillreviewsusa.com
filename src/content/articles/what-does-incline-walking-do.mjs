@@ -247,7 +247,7 @@ export default {
             It burns energy, some of which comes from fat, and it can contribute to fat loss over
             time — but how much fat you lose depends mainly on your overall energy balance, which
             is driven more by diet than by any one form of exercise. Incline walking is a good
-            tool for adding activity; it is not a fat-loss shortcut.
+            tool for adding activity; it is not a fat-loss shortcut. If you want to use it that way, our page on <a href="/best-treadmill-settings-for-fat-loss/" class="text-[#0F62FE] font-medium">treadmill settings for fat loss</a> sets out speeds, grades and session times by fitness level.
           </p>
           <p>
             Three points are worth separating out.

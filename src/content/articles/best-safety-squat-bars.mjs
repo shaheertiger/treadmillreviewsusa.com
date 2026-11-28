@@ -1,15 +1,14 @@
 export default {
   slug: 'best-safety-squat-bars',
-  title: 'Best Safety Squat Bar (2026): 5 SSBs by Camber and Rack Fit',
-  description:
-    'Five safety squat bars checked against maker specs and reviews: camber drop, pads, handles, bar weight and whether the bar actually rests in your rack.',
+  title: "Best Safety Squat Bar (2026): 5 SSBs by Camber and Rack Fit",
+  description: "Titan's TITAN Series SSB is the best safety squat bar on Amazon: made in USA, 49 in. rackable length, 1,500 lb rating. Five bars by camber, pads and rack fit.",
   crumbLabel: 'Best Safety Squat Bars',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Safety Squat Bar', 'for a Home Gym'],
   standfirst:
@@ -24,7 +23,7 @@ export default {
           removable handles and a width that rests squarely in standard J-cups. Those details matter
           more than with almost any other bar, because an SSB is a frame you wear rather than a bar
           you hold: a camber that pitches you too far forward, a pad that is too thin or a bar that
-          is a little too narrow for your rack spoils it. The five bars below run from about $275 to
+          is a little too narrow for your rack spoils it. The five bars below run from about $216 to
           about $875, and the guide after them covers camber, pads, handles, weight and the rack
           measurement most people forget to check.`,
   sections: [
@@ -303,7 +302,7 @@ export default {
             15.75 inches and Bells of Steel 11.8 inches. Garage Gym Reviews flagged the earlier SS3's
             shorter sleeves as its main weakness, because most safety squat bars offer about 16
             inches. With <a href="/best-weight-plates/" class="text-[#0F62FE] font-medium" data-autolink>iron plates</a>, 12 inches is plenty for most lifters; with bumpers it is a real
-            limit.
+            limit. Our <a href="/best-bumper-plates/" class="text-[#0F62FE] font-medium">bumper plate guide</a> gives the widths: a 45 lb Fringe Sport black bumper is 2.9 inches thick.
           </p>
           <p>
             Sleeve diameter matters for collars. Older SSBs often used axle-sized sleeves that need
@@ -367,7 +366,7 @@ export default {
             <a href="/best-hack-squat-machines/" class="text-[#0F62FE] font-medium">hack squat machines</a>,
             <a href="/best-leg-press-machines/" class="text-[#0F62FE] font-medium">leg press machines</a> and
             <a href="/best-smith-machines/" class="text-[#0F62FE] font-medium">Smith machines</a>
-            compare them.
+            compare them. For the quads on their own, our <a href="/best-leg-extension-machines/" class="text-[#0F62FE] font-medium">leg extension machine guide</a> covers machines that add a hamstring curl from the same frame.
           </p>
           <p>
             <strong>If you are still putting a home gym together</strong>, our

@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'How Often Should a Treadmill Belt Be Replaced?',
   kicker: 'Ownership',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '3.5k',
   h1: ['How Often Should a', 'Treadmill Belt Be Replaced?'],
   standfirst:
@@ -154,7 +154,7 @@ export default {
             A worn belt with an abraded backing has been working against the deck for months,
             polishing away its low-friction laminate. <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>Fitting a new belt</a> onto a worn deck puts a
             fresh, correctly-textured backing against a surface that no longer slides well — so the
-            new belt wears prematurely and you buy another sooner than you should.
+            new belt wears prematurely and you buy another sooner than you should. Our <a href="/treadmill-belt-replacement-cost/" class="text-[#0F62FE] font-medium">treadmill belt replacement cost</a> guide covers that hidden extra and the repair-or-replace maths.
           </p>
           <p>
             The good news is that <strong>many decks are reversible</strong>. The underside is an

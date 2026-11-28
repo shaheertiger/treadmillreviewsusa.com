@@ -364,7 +364,7 @@ export default {
             ASPCA’s guidance on spotting cruelty names "treadmills, especially wooden slat treadmills"
             among dogfighting paraphernalia. Slatmills and carpet mills are used openly and legitimately
             by working-dog, sled-dog and dog-sport owners, but a homemade wooden slatmill, particularly
-            with a tether chain or harness post, is exactly what investigators are trained to look for.
+            with a tether chain or harness post, is exactly what investigators are trained to look for. On any treadmill a harness is for guiding a dog by hand, never for fixing it to the machine, as our <a href="/best-dog-treadmill-harnesses/" class="text-[#0F62FE] font-medium">dog treadmill harness guide</a> explains.
           </p>
           <p>
             Preventive Vet notes that slatmills may be restricted in some areas. We have not reviewed

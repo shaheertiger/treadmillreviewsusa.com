@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['The Best Treadmills', 'With Handrails'],
   standfirst:
@@ -200,7 +200,7 @@ export default {
             <strong>A low step-up height.</strong> A lower deck is easier to step onto. The Exerpeutic's
             listing describes a low step-up height but gives no figure, and we could not find one from a
             second source, so measure or ask if this matters to you. The Sunny low-deck treadmill is the
-            exception: both its Amazon listing and Sunny's store give a 4-inch floor-to-deck height.
+            exception: both its Amazon listing and Sunny's store give a 4-inch floor-to-deck height. If you are shorter and weighing step height and reach together, our <a href="/best-treadmills-for-short-people/" class="text-[#0F62FE] font-medium">short people treadmill picks</a> compare five machines on both.
           </p>
           <p>
             <strong>A simple, readable console.</strong> Large numbers and a few clear buttons — start,
@@ -228,7 +228,7 @@ export default {
             is enough. Taller walkers, and anyone who walks briskly, will be more comfortable on the
             Redliro's 47.6 inches or the Sunny's 47.2 by 18.9 inches. A clinical treadmill such as
             <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Landice</a>'s
-            L7 Rehabilitation model, with a 58-inch surface, is in a different class.
+            L7 Rehabilitation model, with a 58-inch surface, is in a different class. Even Landice’s home models are a different budget: they listed at $3,999 to $8,904 on its store on 27 November 2026, per our <a href="/how-much-does-a-landice-treadmill-cost/" class="text-[#0F62FE] font-medium">Landice cost page</a>.
           </p>
           <p>
             Weight ratings run from 245 lb on the Sunny low-deck treadmill and 300 lb on the Yesoul to

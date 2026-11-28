@@ -7,9 +7,9 @@ export default {
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Best Horizon Treadmills', 'Which Model to Buy in 2026'],
   standfirst:
@@ -157,7 +157,7 @@ export default {
             every model shares the same software approach and the same lifetime frame and motor
             warranty. The table gives each one a line; the cards below carry the confirmed figures
             and the caveats. For the brand question, including its recall history, see
-            <a href="/is-horizon-a-good-treadmill-brand/" class="text-[#0F62FE] font-medium">whether Horizon is a good treadmill brand</a>.
+            <a href="/is-horizon-a-good-treadmill-brand/" class="text-[#0F62FE] font-medium">whether Horizon is a good treadmill brand</a>. Owners with a machine that will not start or a slipping belt can use our <a href="/horizon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Horizon treadmill troubleshooting</a> guide.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -196,7 +196,7 @@ export default {
       html: `          <p>
             We have not tested these treadmills. The ranking is built from Horizon's published
             specifications and warranty terms, a listing from Horizon's parent company's own retail
-            chain, and independent review coverage, all checked on 13 October 2026.
+            chain, and independent review coverage, all checked on 13 October 2026. For prices, our <a href="/how-much-does-a-horizon-treadmill-cost/" class="text-[#0F62FE] font-medium">Horizon cost breakdown</a> lists every model, from $699 for the T101 to $1,999 for the 7.8 AT on Horizon’s store on 23 November 2026.
           </p>
           <p>
             We started by confirming what Horizon actually sells. Its US treadmill page listed five
@@ -238,7 +238,7 @@ export default {
             and the automatic speed and incline control are worth much less once you stop paying.
             Horizon does not have a platform. Its consoles are data displays with built-in
             programs, and the connected part of the machine is a Bluetooth radio that sends your
-            speed, incline and distance to whichever app you choose.
+            speed, incline and distance to whichever app you choose. Connected brands such as <a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium">Echelon</a> go the other way, to the point that the Stride’s warranty depends on its membership.
           </p>
           <p>
             That radio uses Bluetooth FTMS, the open fitness machine standard, and every current

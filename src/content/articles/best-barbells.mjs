@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Barbell', 'for a Home Gym: 7 Olympic Bars Compared'],
   standfirst:
@@ -62,7 +62,7 @@ export default {
             <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
             put the bar alongside racks, benches, plates and flooring, and the
             <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every
-            guide in this series.
+            guide in this series. If the bar will mostly be used for hip thrusts, our <a href="/best-hip-thrust-machines/" class="text-[#0F62FE] font-medium">best hip thrust machines</a> guide explains when a platform, a bench or a full machine makes that lift easier to set up.
           </p>`,
     },
     {
@@ -172,7 +172,7 @@ export default {
             with bumpers, buy 165,000 PSI or more, and preferably around 190,000. If the bar will only
             ever carry a few hundred pounds for presses, rows and moderate squats, a lower figure will
             do, but the saving between a 110,000 PSI bar and a 165,000 PSI bar on this page is only
-            about $20 to $75 at the prices we saw.
+            about $20 to $75 at the prices we saw. If pressing is the main job and you train alone, our <a href="/best-converging-chest-press-machines/" class="text-[#0F62FE] font-medium">converging chest press guide</a> covers machines whose arms bring your hands together as you push, from a $190 folding press upward.
           </p>`,
     },
     {

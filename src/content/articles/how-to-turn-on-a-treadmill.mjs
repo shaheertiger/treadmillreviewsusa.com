@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['How Do You Turn On', 'a Treadmill?'],
   standfirst:
@@ -76,7 +76,7 @@ export default {
             adds resistance and heat. At best the machine behaves erratically; at worst the strip
             overheats or trips. Many manufacturers' manuals say plainly not to use an extension
             cord, and some specify a dedicated circuit. Check what yours says, and whether it
-            recommends or prohibits a <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium" data-autolink>surge protector</a>, which manuals differ on.
+            recommends or prohibits a <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium" data-autolink>surge protector</a>, which manuals differ on. If yours allows one, our list of the <a href="/best-surge-protectors-for-treadmills/" class="text-[#0F62FE] font-medium">best surge protectors for treadmills</a> matches each pick to a kind of plug and a kind of manual.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Checks worth doing at the outlet</h3>
           <ul>
@@ -265,7 +265,7 @@ export default {
             also have a reset or circuit breaker button near the power switch. Touchscreen models
             in these ranges are connected consoles that need time to boot, and may start on a
             profile or home screen; look for a manual workout option if you want to start without
-            a class.
+            a class. NordicTrack owners have a model-specific version in <a href="/how-to-turn-on-a-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">how to turn on a NordicTrack treadmill</a>, which puts the reset (I) switch by the cord before the key.
           </p>
           <p>
             Beyond that, layouts vary by model and year, so find the model number (usually on a
@@ -284,7 +284,7 @@ export default {
             models, so use Peloton's own setup guidance and manual for your model rather than
             general instructions. Peloton treadmills have been the subject of safety recalls in
             the past; if you own one, it is worth checking the manufacturer's current safety
-            information for your model and following any instructions it gives.
+            information for your model and following any instructions it gives. For start-up problems on a Tread, Peloton names a disconnected power cord, an installation that misses its power requirements and a disconnected safety key as the main causes; see our <a href="/peloton-tread-troubleshooting/" class="text-[#0F62FE] font-medium">Peloton Tread troubleshooting</a> guide.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Other brands and walking pads</h3>
           <p>

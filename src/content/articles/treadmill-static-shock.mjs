@@ -2,14 +2,14 @@ export default {
   slug: 'treadmill-static-shock',
   title: 'Treadmill Static Shock: Why It Happens and How to Stop It',
   description:
-    'Why does my treadmill shock me? Usually static from belt friction, dry air and carpet. How to stop it, why grounding matters, and when a shock is not static at all.',
+    "Treadmill static shock comes from belt friction, made worse by 3 things: dry air, carpet and poor grounding. How to stop it, and when it is not static.",
   crumbLabel: 'Treadmill Static Shock',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Treadmill', 'Static Shock?'],
   standfirst:

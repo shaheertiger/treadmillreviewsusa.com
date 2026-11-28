@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['How Do You Disassemble', 'a Treadmill?'],
   standfirst:
@@ -110,7 +110,7 @@ export default {
             the manual for that model: its assembly section, read in reverse, is the most reliable
             disassembly guide you will find. Our guide on
             <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">resetting a NordicTrack treadmill</a>
-            includes notes on taking one apart for a move and the checks afterwards.
+            includes notes on taking one apart for a move and the checks afterwards. For a NordicTrack specifically, our <a href="/how-to-take-apart-a-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">guide to taking apart a NordicTrack</a> covers unclipping the upright wire before the console and uprights come off.
           </p>`,
     },
     {
@@ -319,7 +319,7 @@ export default {
             <strong>Moving it flat.</strong> With the console and uprights off, many treadmill
             bases are easier to carry flat than folded, because the weight stays low and the shape
             is predictable. The deck and base are one long, heavy object; carry it with one person
-            at each end and the motor end leading on stairs if the manual or a mover advises it.
+            at each end and the motor end leading on stairs if the manual or a mover advises it. If you move house often, our <a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">best portable treadmills</a> sort machines light enough to carry or roll.
           </p>
           <p>
             <strong>Separating the deck from the base.</strong> On some machines the deck can be

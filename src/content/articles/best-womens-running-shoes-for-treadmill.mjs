@@ -1,14 +1,14 @@
 export default {
   slug: 'best-womens-running-shoes-for-treadmill',
-  title: "Best Women's Running Shoes for Treadmill (2026): Six Picks",
+  title: 'Best Women\'s Running Shoes for Treadmill (2026): Six Picks',
   description:
-    "The best women's running shoes for treadmill running: six current women's models, from a light daily trainer to a stability shoe in four widths, with the fit points that differ for women.",
+    'The Saucony Ride 19 is the best women\'s treadmill running shoe for most runs; the New Balance 880 v15 comes in four widths, 2A to 2E. Six picks and fit notes.',
   crumbLabel: "Best Women's Running Shoes for Treadmill",
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ["Best Women's Running Shoes for Treadmill", 'Six Current Picks'],
   standfirst:

@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-25',
+  modified: '2026-11-28',
   h1: ['Cybergoing Walking Pad Review:', 'The Bosch-Motor T10'],
   standfirst:
     'Cybergoing is a real but very new walking pad brand, and its T10, at about $142 on Amazon, is a fair buy for slow under-desk walking if you are well under 300 lb and want a built-in incline. The Bosch motor is a listing claim with no power figure behind it, and the warranty is 12 months.',
@@ -366,7 +367,7 @@ export default {
             of the deck, which would usually mean you can leave it down and walk flat. "Fixed" could equally mean the deck is
             always at 7%. If walking flat some days matters to you, ask the seller before ordering. A deck built permanently
             at a slope is not a bad thing for many desk walkers, but standing at a gradient for hours is a different
-            experience from a short incline workout.
+            experience from a short incline workout. Treaflow’s 3100W takes a different route, with an 8% incline set by hand on pegs, as our <a href="/treaflow-walking-pad/" class="text-[#0F62FE] font-medium">Treaflow walking pad review</a> explains.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Is 7% a lot?</h3>
           <p>

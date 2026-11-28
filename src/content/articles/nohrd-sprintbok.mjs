@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'NOHrD Sprintbok',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['NOHrD Sprintbok', 'Treadmill Review'],
   standfirst:
@@ -75,7 +75,7 @@ export default {
             which lists the same 350 lb-class rating. It has no resistance setting, so it cannot do the
             sled-push work that machines such as the SB Fitness CT700 or TKO AirRaid offer. And NOHrD's US
             warranty is one year, or two if you register, against multi-year frame cover on most rivals.
-            We found no independent hands-on review to set against NOHrD's description.
+            We found no independent hands-on review to set against NOHrD's description. For price context, most curved home trainers cost $1,900 to $3,500, per our <a href="/how-much-does-a-curved-treadmill-cost/" class="text-[#0F62FE] font-medium">curved treadmill price tiers</a>.
           </p>
           <p>
             If you want the best curved treadmill for the money, our
@@ -94,7 +94,7 @@ export default {
             The company is closely tied to WaterRower, the wooden <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium" data-autolink>rowing machine</a> maker, and NOHrD's US
             office and showroom shares WaterRower's base in Warren, Rhode Island. NOHrD's range includes a
             bike, a second treadmill called the Citius, strength equipment and wall bars, nearly all
-            built around solid wood. NOHrD says the Sprintbok is handcrafted in its Nordhorn factory.
+            built around solid wood. NOHrD says the Sprintbok is handcrafted in its Nordhorn factory. Our <a href="/wooden-walking-pad/" class="text-[#0F62FE] font-medium">wooden walking pad</a> guide sets the Sprintbok against wood-look motorised pads and Walkolution's beech-and-steel treadmill desks.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Where to buy it</h3>
           <p>
@@ -118,7 +118,7 @@ export default {
           </p>
           <p>
             Buy from NOHrD or an authorised dealer. A machine at this price is worth buying from someone who
-            can handle a warranty claim and freight damage without argument.
+            can handle a warranty claim and freight damage without argument. <a href="/trueform-treadmills/" class="text-[#0F62FE] font-medium">TrueForm</a>, sold direct and through gym dealers rather than on Amazon, is the usual comparison at this level.
           </p>`,
     },
     {

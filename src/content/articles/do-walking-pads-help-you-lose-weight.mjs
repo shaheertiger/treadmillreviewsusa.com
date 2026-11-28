@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Do Walking Pads Help', 'You Lose Weight?'],
   standfirst:
@@ -55,7 +55,7 @@ export default {
             Third, whether the walking replaces sitting or replaces other activity — if the pad
             becomes the reason you skip your evening walk, the net gain shrinks. Get those right
             and a walking pad is a sensible, low-effort contributor. Expect it to do the job of a
-            diet and it will disappoint.
+            diet and it will disappoint. A basic flat pad costs about $130 to $250, per our <a href="/how-much-does-a-walking-pad-cost/" class="text-[#0F62FE] font-medium">guide to walking pad prices</a>.
           </p>`,
     },
     {
@@ -141,7 +141,7 @@ export default {
             somewhere in the region of 8,000 to 10,000 steps — slow walking takes shorter steps,
             so the count per mile runs higher than at a brisk pace. That is a lot of movement
             added to a day that would otherwise have had very little, and it is the strongest
-            argument for the device.
+            argument for the device. In session terms, 30 minutes at 2 mph works out to about 2,900 steps for most adults, according to our page on <a href="/how-many-steps-on-a-treadmill-in-30-minutes/" class="text-[#0F62FE] font-medium">treadmill steps in 30 minutes</a>.
           </p>
           <p>
             <strong>The 3,500-calorie rule, and why it overpromises.</strong> An old rule of thumb
@@ -197,7 +197,7 @@ export default {
             people add activity. The defence is simply to keep the rest of your movement where
             it was and treat the walking pad as an addition, not a substitute. If a step tracker
             shows your total daily steps rising, the pad is adding. If the total is flat, it is
-            just moving steps from one part of the day to another.
+            just moving steps from one part of the day to another. Wrist trackers miss steps while you type, so our guide to the <a href="/best-fitness-trackers-for-walking-pad/" class="text-[#0F62FE] font-medium">best fitness trackers for a walking pad</a> favours ones that count from the waist, such as the Fitbit Inspire 3 on its clip.
           </p>`,
     },
     {

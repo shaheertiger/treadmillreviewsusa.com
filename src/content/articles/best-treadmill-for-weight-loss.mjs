@@ -2,14 +2,14 @@ export default {
   slug: 'best-treadmill-for-weight-loss',
   title: 'Best Treadmill for Weight Loss (2026): What to Look For, Honestly',
   description:
-    'What makes a treadmill good for a weight-loss routine: incline range, a comfortable deck for long walks, motor rating, capacity headroom and quiet. No hype.',
+    'The best treadmill for weight loss has at least a 10% incline, a deck around 55 x 20 in. and about 50 lb of capacity headroom for long daily walks.',
   crumbLabel: 'Best Treadmill for Weight Loss',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['The Best Treadmill', 'for Weight Loss'],
   standfirst:
@@ -284,7 +284,7 @@ export default {
             You do not need an expensive treadmill to walk on it every day, but you do need one
             built to be used every day, and those are not the same thing. The cheapest folding
             machines are typically designed around lighter users and shorter, less frequent
-            sessions. Used daily for an hour by a heavier person, they tend to wear quickly.
+            sessions. Used daily for an hour by a heavier person, they tend to wear quickly. Whether your body can take daily sessions is a separate question, answered in our page on <a href="/can-you-use-a-treadmill-every-day/" class="text-[#0F62FE] font-medium">whether you can use a treadmill every day</a>: yes for walking, where five 30-minute walks meet the 150-minute weekly guideline.
           </p>
           <p>
             For most people buying for a daily walking routine, the sensible zone is the mid-range,

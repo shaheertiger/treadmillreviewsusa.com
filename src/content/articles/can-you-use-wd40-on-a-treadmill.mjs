@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Can You Use WD-40 on a Treadmill?',
   kicker: 'Maintenance',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '7.3k',
   h1: ['Can You Use WD-40', 'on a Treadmill?'],
   standfirst:
@@ -257,7 +257,7 @@ export default {
             The immediate improvement is the solvent dissolving whatever deposit was causing the
             noise, plus a temporary oil film. Both are short-lived: the carrier evaporates and the
             oil either migrates away or picks up dust. What is left is a surface that is dirtier
-            and more abrasive than before, which is why the second round of noise is worse.
+            and more abrasive than before, which is why the second round of noise is worse. If that noise has turned into a grind, our guide to <a href="/treadmill-grinding-noise/" class="text-[#0F62FE] font-medium">a treadmill grinding noise</a> explains how to tell grit or a dry deck from a failing bearing.
           </p>
           <p>
             It is also worth saying that a squeak is often not a lubrication problem at all. Noise

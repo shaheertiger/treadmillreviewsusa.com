@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-16',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Cardio Machines', 'for Home'],
   standfirst:
@@ -36,7 +36,7 @@ export default {
             most work from the least floor space once it is stored. Still choosing between types?
             Our
             <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a>
-            works through goals, joints, space, noise and budget, and we have not repeated it here.
+            works through goals, joints, space, noise and budget, and we have not repeated it here. Schwinn sells treadmills as well: four folding models from $699 to $1,099, set out in our <a href="/schwinn-treadmills/" class="text-[#0F62FE] font-medium">Schwinn treadmills guide</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -269,7 +269,7 @@ export default {
             Cardio machines are priced very differently by type, and the cheapest machine of one
             type can cost more than a good machine of another. These are the prices we saw on
             makers' own stores on 16 October 2026, for the picks and for the models either side of
-            them in the same ranges. They move constantly, so treat them as a snapshot.
+            them in the same ranges. They move constantly, so treat them as a snapshot. For ellipticals in particular, our <a href="/black-friday-elliptical-deals/" class="text-[#0F62FE] font-medium">Black Friday elliptical deals</a> page sets a target price for six machines, from the SOLE E35 to the Cubii Move.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>

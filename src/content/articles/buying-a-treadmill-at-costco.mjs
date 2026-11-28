@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Buying a Treadmill', 'at Costco'],
   standfirst:
@@ -42,7 +42,7 @@ export default {
             treadmills sold there carry model numbers you will not find at other retailers. Decide
             what you need first — motor, deck length, user weight, folding or not — and then see
             whether Costco has a machine that fits it, rather than letting the pallet in the aisle
-            make the decision.
+            make the decision. Home Depot is the opposite case: its treadmills are online-only and come from little-known budget brands, as our <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium">guide to Home Depot treadmills</a> shows.
           </p>
           <p>
             Two checks matter more than anything else on this page. First, compare the Costco model's
@@ -58,7 +58,7 @@ export default {
       html: `          <p>
             Costco's treadmill range is narrow by design. At any given time there may be only a
             handful of models, sometimes fewer, and what is available in one warehouse may not be in
-            the next, or on the website.
+            the next, or on the website. One recent example is <a href="/centr-treadmills/" class="text-[#0F62FE] font-medium">Centr’s folding Runr and Runr-S</a>, which are sold by Centr and Costco rather than on Amazon.
           </p>
           <p>
             <strong>Selection rotates.</strong> Fitness equipment tends to be stocked more heavily

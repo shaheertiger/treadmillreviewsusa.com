@@ -3,15 +3,16 @@ const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
 
 export default {
   slug: 'treadmill-workout-for-seniors',
-  title: 'Treadmill Workout for Seniors: A 6-Week Walking Plan',
+  title: 'Treadmill Workout for Seniors: A Gentle 6-Week Walking Plan',
   description:
-    'A gentle six-week treadmill walking plan for older adults: minutes, speed, incline and effort by week, three sample sessions and safe balance add-ons.',
+    'A treadmill workout for seniors: 10 to 30 minutes of walking at talking pace, 3 to 5 days a week, starting at 1.0 to 2.0 mph. A six-week plan with sessions.',
   crumbLabel: 'Treadmill Workout for Seniors',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-17',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Treadmill Workout', 'for Seniors'],
   standfirst:
@@ -288,7 +289,7 @@ export default {
             A small grade makes each step more work without speeding you up, which many older
             walkers find steadier than walking faster. Keep the grade low: 1 to 3% is plenty in
             this plan. If you have knee or hip arthritis, or a recent joint replacement, check with
-            your physical therapist before adding incline at all.
+            your physical therapist before adding incline at all. Our guide to <a href="/treadmill-after-hip-replacement/" class="text-[#0F62FE] font-medium">treadmill walking after a hip replacement</a> explains how hip precautions apply on the belt.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead>

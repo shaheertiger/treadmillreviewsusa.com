@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['Incline Walking vs Running:', 'Which Is Better on a Treadmill?'],
   standfirst:
@@ -239,7 +239,7 @@ export default {
             glutes the way squats do, and running will not build quads the way lunges do. What they
             do is condition the muscles to repeat a sub-maximal effort for a long time, which is a
             different and valuable thing, and the glute emphasis of incline walking is a genuine
-            point in its favour for people whose flat walking has stopped doing anything.
+            point in its favour for people whose flat walking has stopped doing anything. Our page on whether <a href="/does-incline-walking-build-glutes/" class="text-[#0F62FE] font-medium">incline walking builds glutes</a> explains why it builds endurance rather than size, and how to pair it with strength work.
           </p>
           <p>
             One muscle group to watch with incline walking is the lower back, specifically in

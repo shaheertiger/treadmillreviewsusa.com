@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Couch to 5K on a Treadmill',
   kicker: 'Training Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '6.4k',
   h1: ['Couch to 5K', 'on a Treadmill'],
   standfirst:
@@ -219,7 +219,7 @@ export default {
             <strong>Shin soreness.</strong> Extremely common in the first three weeks, usually
             from doing too much too soon or from running the intervals too fast. Slow the running
             pace, ensure rest days are genuinely rest, and check that your shoes are not several
-            years old — a midsole with 600 miles on it is a much harder surface than it was.
+            years old — a midsole with 600 miles on it is a much harder surface than it was. If you are due a new pair, our <a href="/best-womens-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium">best women&rsquo;s running shoes for treadmill</a> running start with the Saucony Ride 19, a light daily trainer with a roomy toe box.
           </p>
           <p>
             <strong>Breathlessness that arrives immediately.</strong> Almost always pace. Beginners
@@ -275,7 +275,7 @@ export default {
       html: `          <p>
             Thirty continuous minutes at 5 mph is about 2.5 miles, so most people finish the plan
             able to run for the duration of a 5K without quite covering the distance. Closing that
-            gap takes two or three more weeks of simply extending the run.
+            gap takes two or three more weeks of simply extending the run. For what comes after the plan, our guide to <a href="/how-long-should-i-run-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to run on a treadmill</a> sets session lengths by goal, with most sessions between 20 and 60 minutes.
           </p>
           <p>
             <strong>The first priority is maintaining the habit</strong>, not improving. Three

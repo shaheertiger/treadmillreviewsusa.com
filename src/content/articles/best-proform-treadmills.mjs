@@ -1,15 +1,15 @@
 export default {
   slug: 'best-proform-treadmills',
-  title: 'Best ProForm Treadmills (2026): The Current Range, Ranked',
+  title: "Best ProForm Treadmills (2026): The Current Range, Ranked",
   description:
-    "All four treadmills ProForm sells today — Carbon Pro 2000 and 9000, Carbon TLX and TLS — ranked from ProForm's own specs, warranty terms and independent coverage, plus the old models to skip.",
+    "ProForm sells four treadmills now, the Carbon Pro 2000 and 9000 and the Carbon TLX and TLS, ranked by deck, screen, user rating and iFIT reliance.",
   crumbLabel: 'Best ProForm Treadmills',
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best ProForm Treadmills', 'Which Model to Buy in 2026'],
   standfirst:
@@ -171,7 +171,7 @@ export default {
       html: `          <p>
             We have not tested these treadmills. The ranking is built from ProForm's published
             specifications and warranty terms, independent review coverage and, where one existed,
-            a US retailer listing, all checked on 13 October 2026.
+            a US retailer listing, all checked on 13 October 2026. For this week’s prices, our <a href="/proform-black-friday-deals/" class="text-[#0F62FE] font-medium">ProForm Black Friday deals</a> page lists every model on Amazon, from $479 for the Carbon TL.
           </p>
           <p>
             We started by confirming what ProForm actually sells. Its US treadmill category listed
@@ -179,7 +179,7 @@ export default {
             table we could read directly, alongside the individual product pages. We then compared
             every figure with independent reviews of the same model. Where ProForm and an
             independent source agreed, the figure went into the spec line. Where they did not, or
-            where ProForm's own pages disagreed with each other, it stayed out.
+            where ProForm's own pages disagreed with each other, it stayed out. Prices are a separate question: on Amazon on 22 November 2026 the range ran from $479 to about $1,665, as our <a href="/how-much-does-a-proform-treadmill-cost/" class="text-[#0F62FE] font-medium">ProForm price guide</a> shows.
           </p>
           <p>
             That second case came up more than we expected. The Carbon Series product pages carry a
@@ -212,7 +212,7 @@ export default {
             lists an in-box weight of about 249 lb for both. The difference is the screen and the
             motor: a 10-inch HD touchscreen on the 2000 and a 16-inch one on the 9000, with
             ProForm rating the 9000's motor at 3.6 CHP. Both carry ten years on the frame, two years
-            on the motor and parts, and one year on the tablet and labour.
+            on the motor and parts, and one year on the tablet and labour. If a part fails inside those terms, our <a href="/proform-treadmill-repair/" class="text-[#0F62FE] font-medium">ProForm treadmill repair</a> guide explains how the claim goes through iFIT.
           </p>
           <p>
             <strong>Carbon Series: the bring-your-own-device tier.</strong> The Carbon TLX and

@@ -92,7 +92,7 @@ export default {
             made the machine, and therefore who stands behind the motor, the controller and the
             spare parts. A treadmill is a powered machine that people stand on at speed. The name on
             the listing should lead you to a manufacturer with a manual, a parts supply and a
-            warranty process. A house label does not.
+            warranty process. A house label does not. Even a marketplace brand such as <a href="/oma-treadmills/" class="text-[#0F62FE] font-medium">OMA</a> at least gives model numbers, such as 7200EB and 1012EB, that you can search for.
           </p>
           <p>
             You can see the arrangement in East Urban Home’s own range. On 14 October 2026 Wayfair
@@ -281,7 +281,7 @@ export default {
             Ask Wayfair customer service, in writing, who manufactures the item and what its model
             number is. If they can tell you, search that model number elsewhere and see whether the
             figures agree. If nobody can tell you, you will not be able to find a manual, buy a
-            <a href="/best-treadmill-replacement-belts/" class="text-[#0F62FE] font-medium" data-autolink>replacement belt</a> or motor controller, or check for a recall.
+            <a href="/best-treadmill-replacement-belts/" class="text-[#0F62FE] font-medium" data-autolink>replacement belt</a> or motor controller, or check for a recall. Brands with a named maker are easier; our <a href="/funmily-treadmills/" class="text-[#0F62FE] font-medium">FUNMILY treadmill guide</a>, for example, explains where that brand’s manuals can be found.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">4. Look for reviews of this exact listing</h3>
           <p>

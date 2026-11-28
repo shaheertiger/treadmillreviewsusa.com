@@ -6,9 +6,9 @@ export default {
   kicker: 'How-To',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '2.3k',
   h1: ['How to Connect Apple Watch', 'to a Treadmill'],
   standfirst:
@@ -33,7 +33,7 @@ export default {
             your watch's Workout settings, then hold the watch display close to the contactless
             reader on the console until you feel a tap and hear a confirmation tone. Press start on
             the treadmill. The watch and machine then share data for the session, and the workout is
-            saved to your watch with the treadmill's distance and speed.
+            saved to your watch with the treadmill's distance and speed. At a gym such as Planet Fitness, support varies from one row of treadmills to the next, so our guide to <a href="/how-to-connect-apple-watch-to-planet-fitness-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a Planet Fitness treadmill</a> starts with finding the &ldquo;Connects to Apple Watch&rdquo; logo.
           </p>
           <p>
             <strong>If the treadmill does not support GymKit</strong>, which describes most home
@@ -78,7 +78,7 @@ export default {
           <p>
             If it does not connect, the usual culprits are a watch on low-power settings, detection
             switched off, or a machine that was already mid-workout. Your treadmill's manual, or the
-            gym staff, will know the specifics for that equipment.
+            gym staff, will know the specifics for that equipment. For Horizon machines, our guide to <a href="/how-to-start-a-horizon-treadmill/" class="text-[#0F62FE] font-medium">starting a Horizon treadmill</a> covers the app and watch start alongside the console buttons.
           </p>`,
     },
     {
@@ -232,7 +232,7 @@ export default {
       heading: 'Zwift-Style Apps, Footpods and Smart Treadmills',
       html: `          <p>
             Virtual running apps such as Zwift put you in an on-screen world that moves at your speed.
-            To do that they need a live speed signal, which comes from one of two places.
+            To do that they need a live speed signal, which comes from one of two places. A VR treadmill goes further and lets you walk and turn inside the world with a headset on, as our <a href="/best-vr-treadmills/" class="text-[#0F62FE] font-medium">VR treadmill guide</a> explains.
           </p>
           <p>
             <strong>A footpod.</strong> A small sensor clipped to your shoe measures your stride and

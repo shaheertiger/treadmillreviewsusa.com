@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Cost Guide',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
-  modified: '2026-11-22',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['How Much Does a Treadmill', 'Stress Test Cost?'],
   standfirst: `A plain exercise ECG stress test was listed at $331 to $774 as a prepaid cash price on MDsave, against a Medicare rate of $73.48 in a doctor's office in 2026. Add imaging and the price climbs: stress echo and nuclear tests cost several times more. Here is what each version costs, what insurance and Medicare leave you to pay, and how to get a real number before you book.`,
@@ -66,7 +66,7 @@ export default {
             you need, and your insurer what you will owe for it. If you want to know what happens
             during the test itself, our guide to
             <a href="/treadmill-stress-test/" class="text-[#0F62FE] font-medium">what a treadmill stress test shows</a>
-            covers the session, the stages and how long it takes.
+            covers the session, the stages and how long it takes. Most of that session is the exercise itself: on the standard Bruce protocol, clinics aim for roughly 6 to 12 minutes on the belt, and our guide to <a href="/average-time-on-treadmill-stress-test-by-age/" class="text-[#0F62FE] font-medium">average stress test times by age</a> shows how that target shifts as you get older.
           </p>`,
     },
     {

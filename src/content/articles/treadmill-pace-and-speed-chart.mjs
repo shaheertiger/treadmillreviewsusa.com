@@ -383,7 +383,7 @@ export default {
             <strong>Steps per mile</strong> average roughly 2,000 for an adult walking, though it
             varies considerably with height — a shorter walker may take 2,300 and a taller one
             1,800. At 3 mph you are covering a mile every 20 minutes, so a 30-minute walk is about
-            1.5 miles and roughly 3,000 steps. A 45-minute walk at that pace lands near 4,500.
+            1.5 miles and roughly 3,000 steps. A 45-minute walk at that pace lands near 4,500. Our guide to <a href="/how-many-steps-in-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how many steps are in a mile on a treadmill</a> explains how to count your own figure on the belt in about two minutes.
           </p>
           <p>
             <strong>Reaching 10,000 steps</strong> on a treadmill alone would take around 100
@@ -408,7 +408,7 @@ export default {
             The chart runs from 2 to 12 mph, but almost nobody uses the whole range. Walkers live
             in the bottom third of it and most recreational runners in the middle, and knowing
             which band you belong in matters when you are choosing a machine as much as when you
-            are setting a session.
+            are setting a session. If you need the very top of the range or beyond it, our <a href="/best-fast-treadmills/" class="text-[#0F62FE] font-medium">best fast treadmills</a> reach 12 to 15.6 mph, a 5:00 to 3:51 mile.
           </p>
           <div class="overflow-x-auto my-8 not-prose">
             <table class="min-w-[520px] w-full text-sm border-collapse">
@@ -548,7 +548,7 @@ export default {
             and
             <a href="/treadmill-marathon-training/" class="text-[#0F62FE] font-medium">treadmill marathon training guide</a>
             show how goal pace fits into a full week. If you are racing outdoors, many runners add
-            the 1% grade covered above to these settings.
+            the 1% grade covered above to these settings. For the machine itself, our <a href="/best-treadmills-for-marathon-training/" class="text-[#0F62FE] font-medium">best treadmills for marathon training</a> start with the NordicTrack Commercial 1750's 22 by 60-inch belt.
           </p>`,
     },
     {

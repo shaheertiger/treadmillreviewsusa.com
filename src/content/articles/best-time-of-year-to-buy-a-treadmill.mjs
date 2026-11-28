@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Time of Year to Buy a Treadmill',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '3.3k',
   h1: ['Best Time of Year to', 'Buy a Treadmill'],
   standfirst:
@@ -99,7 +99,7 @@ export default {
             For treadmills specifically, late November is reliably the strongest window of the
             year, and the reason is structural rather than promotional. Retailers know the January
             surge is coming and would rather sell inventory at a reduced margin in November than
-            hold it, insure it and store it for six more weeks.
+            hold it, insure it and store it for six more weeks. Academy Sports is one retailer worth checking then, because its price match beats a qualifying competitor’s price by 5%, as our <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium">Academy treadmills</a> guide notes.
           </p>
           <p>
             Two practical notes. First, the treadmill reductions frequently begin a week or more
@@ -285,7 +285,7 @@ export default {
             buy, so you can recognise a real reduction. Set alerts through a price-tracking
             extension or the retailer's own notification if offered, and check manufacturer outlet
             pages for refurbished and open-box stock, which appears unpredictably and is frequently
-            the best value available at any time of year.
+            the best value available at any time of year. Best Buy is one retailer where open-box treadmills appear, sometimes at a genuine discount, as our <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium">Best Buy treadmill guide</a> explains.
           </p>
           <p>
             Then set a decision rule in advance: a specific price at which you buy, and a date at

@@ -1,15 +1,14 @@
 export default {
   slug: 'best-exercise-bikes-for-seniors',
-  title: 'Best Exercise Bikes for Seniors (2026): 7 Easy-Access Picks',
-  description:
-    'Seven exercise bikes for older riders, checked against makers and independent sources: step-through frames, back support, readable consoles and low resistance.',
+  title: "Best Exercise Bikes for Seniors (2026): 7 Easy-Access Picks",
+  description: "A step-through recumbent such as the Schwinn 290, with a backrest and a 330 lb rating, suits most seniors. Seven bikes, including an upright and a pedaler.",
   crumbLabel: 'Best Exercise Bikes for Seniors',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Best Exercise Bikes', 'for Seniors'],
   standfirst:
@@ -97,7 +96,7 @@ export default {
             the pedal exerciser a clear reason to go without; a console that is either simple or easy to
             read; resistance that starts low and changes in small steps; a weight rating agreed between
             sources; and a maker that offers delivery, assembly or both. Every bike also had to be on
-            sale from its maker or a major retailer on 19 October 2026.
+            sale from its maker or a major retailer on 19 October 2026. If you are buying around the holidays, our <a href="/black-friday-exercise-bike-deals/" class="text-[#0F62FE] font-medium">Black Friday bike shortlist</a> explains how list prices nobody pays and memberships counted as money off make an ordinary price look like a sale.
           </p>
           <p>
             <strong>Consistency with our other guides.</strong> Four of these bikes also appear in our

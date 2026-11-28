@@ -53,7 +53,7 @@ export default {
             used-treadmill price, see it running first, and read our
             <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>.
             And if you are looking for a new machine in the same spirit, the closest thing is
-            Johnson's own Horizon range, which we cover at the end.
+            Johnson's own Horizon range, which we cover at the end. Our <a href="/how-much-does-a-used-treadmill-cost/" class="text-[#0F62FE] font-medium">used treadmill cost guide</a> shows what used machines sold for in November 2026, when maker scratch-and-dent units went for about 87% of the new price.
           </p>`,
     },
     {
@@ -94,7 +94,7 @@ export default {
             catalogued. It does not mean Johnson's current brands will service a LIVESTRONG treadmill
             under warranty. Our
             <a href="/bowflex/" class="text-[#0F62FE] font-medium">Bowflex brand page</a>
-            covers that 2024 acquisition.
+            covers that 2024 acquisition. Schwinn came to Johnson in the same deal, and its treadmills have their own fixes in our <a href="/schwinn-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Schwinn treadmill troubleshooting</a> guide.
           </p>
           <p>
             One more thing to separate out: LIVESTRONG.COM, the health and fitness website, is not a
@@ -354,7 +354,7 @@ export default {
             a longer deck than the LS10.0T was reported to have, at the same confirmed user weight.
             Our page asking
             <a href="/is-horizon-a-good-treadmill-brand/" class="text-[#0F62FE] font-medium">whether Horizon is a good brand</a>
-            covers its warranties and its 2022 recall of the T101-05, which was remedied.
+            covers its warranties and its 2022 recall of the T101-05, which was remedied. If a Horizon you own develops a fault, our <a href="/horizon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Horizon treadmill troubleshooting</a> guide works through it using Horizon’s own help-centre procedures.
           </p>
           <p>
             If you want to look beyond Johnson, our

@@ -1,15 +1,14 @@
 export default {
   slug: 'best-folding-exercise-bikes',
-  title: 'Best Folding Exercise Bikes (2026): 5 X-Frame Bikes Checked',
-  description:
-    'Five folding X-frame exercise bikes checked against makers and independent reviews: folded size, weight-limit claims, seat comfort, resistance and stability.',
+  title: "Best Folding Exercise Bikes (2026): 5 X-Frame Bikes Checked",
+  description: "The Marcy NS-652 is the best folding exercise bike for most: 8 magnetic levels, a 250 lb rating, $169.99. Five X-frame bikes, folded size and weight limits.",
   crumbLabel: 'Best Folding Exercise Bikes',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Best Folding Exercise Bikes', 'for Small Spaces'],
   standfirst:
@@ -38,7 +37,7 @@ export default {
             independent reviews agree on, a frame that testers found unusually steady for a folding bike,
             and a $169.99 price on Marcy's store. If you weigh more than 250 lb, the Exerpeutic Folding
             Magnetic Upright Bike is rated to 300 lb; if you want a backrest and the option to sit back,
-            Marcy's NS-653 and the LEIKE X Bike are the ones to compare.
+            Marcy's NS-653 and the LEIKE X Bike are the ones to compare. The NS-652 is also the folding pick on our <a href="/black-friday-exercise-bike-deals/" class="text-[#0F62FE] font-medium">Black Friday exercise bike watch list</a>, where $140 or less is the price we would wait for.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>

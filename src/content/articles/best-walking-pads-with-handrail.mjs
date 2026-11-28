@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-17',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Walking Pads', 'With Handrail'],
   standfirst:
@@ -92,7 +92,7 @@ export default {
             allows. The second was <strong>agreement on the basics</strong> — belt size, speed range
             and, where possible, weight capacity — between the manufacturer and at least one source
             that does not sell the product. The third was <strong>a reachable seller with written
-            warranty terms</strong>.
+            warranty terms</strong>. That third test is why a heavily searched 2-in-1 such as the <a href="/ajoosos-treadmills/" class="text-[#0F62FE] font-medium">AJOOSOS under desk treadmill</a> has no card: on 5 November 2026 its Amazon listing would not open, and AJOOSOS’s own store sold no treadmills.
           </p>
           <p>
             We also searched the US Consumer Product Safety Commission's notices for every brand on
@@ -202,7 +202,7 @@ export default {
             <strong>The machine's own weight.</strong> A heavier pad gives the rail a more solid
             base. The Sunny weighs 79.4 lb by Sunny's figure and the MX8 about 74 lb;
             lighter 2-in-1 pads, such as the 44 lb UREVO Strol 2E Pro, can move slightly when you pull on the rail. That is another reason
-            not to lean on it.
+            not to lean on it. UREVO’s own store listed its walking pads at $149.99 to $429.99 on 27 November 2026, per our <a href="/how-much-does-a-urevo-walking-pad-cost/" class="text-[#0F62FE] font-medium">guide to UREVO walking pad prices</a>.
           </p>
           <p>
             When the pad arrives, test the rail before you walk: lock it, then push and pull it

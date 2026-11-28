@@ -3,16 +3,16 @@ const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
 
 export default {
   slug: 'tru-grit-treadmills',
-  title: 'Tru Grit Treadmill (2026): Grit Runner and Runner Elite',
+  title: "Tru Grit Treadmill Review (2026): Grit Runner and Runner Elite",
   description:
-    'Tru Grit sells two curved manual treadmills: the Grit Runner ($1,996-$2,699 at dealers) and the Runner Elite ($3,495). Figures, conflicts, warranty, dealers and better-documented alternatives.',
+    "Tru Grit’s curved Grit Runner costs $1,996 to $2,699 at dealers and the Runner Elite $3,495, both with resistance for sled pushes. What is confirmed.",
   crumbLabel: 'Tru Grit Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.0k',
   h1: ['Tru Grit Treadmills:', 'The Grit Runner and Runner Elite'],
   standfirst:
@@ -172,7 +172,7 @@ export default {
             Tru Grit's treadmill range is two curved manual treadmills, both self-powered, both with a resistance
             system for pushing. That is their appeal: most curved treadmills under $3,000 either have no
             adjustable resistance or have magnetic levels that are not set up for sled work. The Grit Runner's six
-            levels are explicitly split into running, walking and sled-push settings.
+            levels are explicitly split into running, walking and sled-push settings. By comparison, the <a href="/tko-airraid-runner-treadmill/" class="text-[#0F62FE] font-medium">TKO AirRaid Runner 8CTM</a> has four magnetic resistance levels and Zwift-compatible Bluetooth.
           </p>
           <p>
             The drawbacks are about information and support rather than the idea. Dealers' listings give few
@@ -322,7 +322,7 @@ export default {
             paying for, those are the safer purchases. If magnetic resistance and an app are what you want and you
             would rather buy on Amazon, the Sunny SF-X7110 card above offers eight magnetic levels, Bluetooth and a
             published 330 lb rating for about $2,500. The standard Runner, by contrast, has no close rival at its
-            price with sled settings, which is why it is the Tru Grit we would consider.
+            price with sled settings, which is why it is the Tru Grit we would consider. At Rogue Fitness, the TrueForm Trainer and the Rogue | Woodway Curve LTG were both $3,495 on 5 November 2026, per our <a href="/rogue-treadmills/" class="text-[#0F62FE] font-medium">Rogue Fitness treadmills</a> page.
           </p>`,
     },
     {

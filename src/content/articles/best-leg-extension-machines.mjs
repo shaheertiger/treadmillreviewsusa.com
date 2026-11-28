@@ -1,15 +1,14 @@
 export default {
   slug: 'best-leg-extension-machines',
-  title: 'Best Leg Extension Machines (2026): 6 Home Picks Compared',
-  description:
-    'Six leg extension and curl machines and attachments checked against makers and independent sources: plate-loaded, selectorized, rack and bench options, and knee fit.',
+  title: "Best Leg Extension Machines (2026): 6 Home Picks Compared",
+  description: "A cable leg extension and curl machine is the best value for most homes; the XMark Rotary adjusts most. Six machines and attachments, and how to fit your knees.",
   crumbLabel: 'Best Leg Extension Machines',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Best Leg Extension Machines', 'for a Home Gym'],
   standfirst:
@@ -75,7 +74,7 @@ export default {
             The cards give the figures the maker and an independent source agreed on, the price we
             saw and who each machine suits. Weight capacity on these machines is quoted in different
             ways — maximum user weight, loaded plate capacity, or both combined — so read the label
-            on each number before comparing.
+            on each number before comparing. If you want a machine that loads the whole leg rather than isolating the quads, our <a href="/best-hack-squat-machines/" class="text-[#0F62FE] font-medium">hack squat machine guide</a> compares six, from a dedicated sled to a pendulum.
           </p>
           <p>
             Every pick except the rack attachment also does a hamstring curl. Some use a seated curl
@@ -141,7 +140,7 @@ export default {
             Series attachment is rated to 275 lb of plates and a 265 lb user. If you are choosing a
             rack, our guide to
             <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks for a home gym</a>
-            explains upright sizes.
+            explains upright sizes. Rack fit matters for specialty bars too, and our <a href="/best-safety-squat-bars/" class="text-[#0F62FE] font-medium">safety squat bar guide</a> explains the width measurement most people forget to check.
           </p>
           <p>
             <strong>Bench attachments</strong>, often called leg developers, bolt or pin onto the end

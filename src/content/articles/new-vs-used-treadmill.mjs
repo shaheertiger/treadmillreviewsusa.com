@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'New vs. Used Treadmill',
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   socialProof: '3.9k',
   h1: ['New vs. Used', 'Treadmill'],
   standfirst:
@@ -64,12 +64,12 @@ export default {
           </p>
           <p>
             At <strong>$800</strong>: new buys a 55-inch deck and about 190 lbs. Used buys what
-            cost $1,800 to $2,500 new — a 60-inch deck, 3.0 to 3.5 CHP and 250 lbs.
+            cost $1,800 to $2,500 new — a 60-inch deck, 3.0 to 3.5 CHP and 250 lbs. Spend a little more and a remanufactured club machine such as a <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium">Cybex 770T</a> sells for about $3,000.
           </p>
           <p>
             At <strong>$1,500</strong>: new buys a good mid-range machine with a full warranty.
             Used buys commercial-grade hardware. This is the point where the decision genuinely
-            balances, because new at this price is already sufficient for most people.
+            balances, because new at this price is already sufficient for most people. Above that, a remanufactured club machine such as a <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor TRM 885</a> was listed at $4,099 to $4,899 with a one-year warranty.
           </p>
           <p>
             Above <strong>$2,000</strong>, new increasingly wins. You are buying warranty coverage

@@ -33,7 +33,7 @@ export default {
             <strong>Keep a budget treadmill well inside its weight and speed ratings, give its small
             motor shorter sessions with rests, and keep friction low with regular lubrication and
             correct belt tension.</strong> Those three habits address heat, which is what ends most
-            budget motors and controller boards.
+            budget motors and controller boards. Heat is expensive: a replacement drive motor costs about $130 to $550 for the part alone, per our <a href="/treadmill-motor-replacement-cost/" class="text-[#0F62FE] font-medium">treadmill motor replacement cost</a> guide.
           </p>
           <p>
             The rest are supporting habits: plug it directly into a grounded wall outlet rather than a
@@ -76,7 +76,7 @@ export default {
             <strong>Everything mechanical is small.</strong> Short belts, thin decks, small rollers and
             light frames keep the machine cheap and easy to slide under a sofa. Small rollers turn faster
             and flex the belt more sharply; a thin deck flexes more under each step; a light frame is
-            more sensitive to an uneven floor.
+            more sensitive to an uneven floor. Our <a href="/best-mini-treadmills/" class="text-[#0F62FE] font-medium">best mini treadmills</a> rank the smallest of these machines on footprint and weight, from about $135.
           </p>
           <p>
             <strong>The warranty is short.</strong> At this price a year is typical, sometimes with an
@@ -160,7 +160,7 @@ export default {
             point ages the motor and board faster. Treat the first cut-out as a signal to check the deck,
             belt tension and dust before the next session; our guide to
             <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill overheating</a>
-            sets out the causes in order.
+            sets out the causes in order. On a walking pad that cut-out is often a maker-set run time, which WalkingPad's FAQ puts at one hour, as our <a href="/walking-pad-overheating/" class="text-[#0F62FE] font-medium">walking pad overheating</a> guide explains.
           </p>
           <p>
             <strong>Feel and smell are your gauges.</strong> A motor area that is warm after a long session

@@ -155,7 +155,7 @@ export default {
             therapist whether it suits you and at what speed — not to self-prescribe it from a
             review site. If knees are a long-term concern, our guide to
             <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">treadmills for bad knees</a>
-            covers the deck and cushioning features that help.
+            covers the deck and cushioning features that help. After a knee replacement the order is different again, with a stationary or recumbent bike usually coming before the treadmill, as our guide to <a href="/treadmill-after-knee-replacement/" class="text-[#0F62FE] font-medium">the treadmill after knee replacement</a> explains.
           </p>`,
     },
     {
@@ -335,7 +335,7 @@ export default {
             For older users in particular, the precautions and equipment matter. Our
             <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a>
             guide covers features such as long, sturdy handrails, a low step-up height and a very
-            low starting speed — all of which matter even more for backward walking.
+            low starting speed — all of which matter even more for backward walking. Whether a treadmill suits you at all is weighed in our page on <a href="/is-a-treadmill-good-for-seniors/" class="text-[#0F62FE] font-medium">whether a treadmill is good for seniors</a>, including who should not use one.
           </p>`,
     },
     {

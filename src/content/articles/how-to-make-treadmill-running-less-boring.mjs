@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['How to Make Treadmill', 'Running Less Boring'],
   standfirst:
@@ -180,7 +180,7 @@ export default {
             <strong>Position the screen sensibly.</strong> A screen at roughly eye level directly in
             front of the treadmill keeps your head up and your posture natural. A screen off to
             one side encourages you to turn your head and drift across the belt, which is a
-            genuine trip hazard at running speed.
+            genuine trip hazard at running speed. Our guide to <a href="/best-treadmill-tv-stands/" class="text-[#0F62FE] font-medium">treadmill TV stands and mounts</a> includes a Mounting Dream wall mount for 32 to 70 in. TVs at about $38.
           </p>
           <p>
             <strong>Captions help.</strong> Treadmills make noise and a fan makes more. Turning on
@@ -190,7 +190,7 @@ export default {
             Many treadmills now have built-in screens or tablet holders; our guide to
             <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
             covers machines that let you use your own tablet and apps rather than paying for a
-            proprietary service.
+            proprietary service. For a phone rather than a tablet, our guide to <a href="/best-treadmill-phone-holders/" class="text-[#0F62FE] font-medium">treadmill phone holders</a> covers clamp, strap and magnetic mounts and where to fit one clear of the safety key.
           </p>`,
     },
     {

@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-24',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Best Treadmills for Heavy Runners', '350 lb+ Capacity at 12 mph'],
   standfirst:
@@ -102,7 +102,7 @@ export default {
             whether the maker will still be shipping parts in eight years, matters more for this buyer
             than for any other. The sixth, ATEEDGE, is here because it is the only listing under $600 that
             states both 400 lb and 12 mph, and the card explains why that is not the same as being a
-            running treadmill.
+            running treadmill. At the premium end, <a href="/true-fitness-treadmills/" class="text-[#0F62FE] font-medium">TRUE’s Performance treadmills</a> pair a 60-inch deck with a 350 lb rating.
           </p>`,
     },
     {
@@ -185,7 +185,7 @@ export default {
             runners hold that for long. The reason to want it is headroom. A treadmill that tops out at 12
             mph will usually hold 7 or 8 mph under a heavy runner without straining, and lets you do strides
             and intervals at 9 or 10. A treadmill that tops out at 8.7 or 10 mph is often already near its
-            limit at your steady running pace.
+            limit at your steady running pace. For runners who need more than 12 mph, our <a href="/best-fast-treadmills/" class="text-[#0F62FE] font-medium">fast treadmills</a> guide covers machines that reach 14 to 15.6 mph.
           </p>
           <p>
             Deck length matters for a different reason: your stride lengthens as you speed up, and a heavy
@@ -306,7 +306,7 @@ export default {
             Not one that clears every bar. Under $1,000 on Amazon you can find listings that state 400 lb, and
             listings that state 12 mph, and a few that state both, but they pair those figures with 47 to 55-inch
             belts, 18 to 20-inch widths, peak-only motor ratings and warranties that the bullets do not state.
-            The ATEEDGE on this page is the best example: 400 lb and 12 mph for about $570, on a 47-inch belt.
+            The ATEEDGE on this page is the best example: 400 lb and 12 mph for about $570, on a 47-inch belt. For a wider deck at that price, the BORGUSI in our <a href="/best-treadmills-under-600/" class="text-[#0F62FE] font-medium">under-$600 guide</a> has a 20-inch-wide belt and a 400 lb limit for about $570.
           </p>
           <p>
             That does not make those machines useless. A heavy user who walks most days and jogs in short

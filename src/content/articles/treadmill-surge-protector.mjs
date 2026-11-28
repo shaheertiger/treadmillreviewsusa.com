@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Treadmill Surge Protector',
   kicker: 'Setup',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Do You Need a Surge', 'Protector for a Treadmill?'],
   standfirst:
@@ -60,14 +60,14 @@ export default {
             There is no single industry position, and it is worth being honest about that rather
             than pretending there is. Manuals differ, sometimes between models from the same
             company, and the only guidance that applies to your machine is in your machine's
-            manual.
+            manual. Bowflex’s manuals, for example, rule out surge protectors altogether, along with GFCI outlets, power strips and extension cords, as our <a href="/bowflex-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Bowflex treadmill troubleshooting</a> guide notes.
           </p>
           <p>
             That said, some instructions turn up again and again. Most manuals tell you to plug
             the treadmill directly into a properly grounded outlet of the correct type. Many
             recommend or require a dedicated circuit — one that serves the treadmill and nothing
             else — often specifying 15 or 20 amps depending on the machine. Most warn against
-            extension cords, and many against adapters that defeat the grounding pin.
+            extension cords, and many against adapters that defeat the grounding pin. That grounding path also matters for static, since a frame that is not grounded cannot drain charge to earth; see our guide to <a href="/treadmill-static-shock/" class="text-[#0F62FE] font-medium">treadmill static shock</a>.
           </p>
           <p>
             On surge protection specifically, the guidance genuinely splits. Some manufacturers

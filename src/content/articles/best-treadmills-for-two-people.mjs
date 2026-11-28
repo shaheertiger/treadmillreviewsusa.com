@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-24',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Best Treadmills for Two People', 'Couples, Different Heights and Paces'],
   standfirst:
@@ -266,7 +266,7 @@ export default {
       html: `          <p>
             Two people running 30 minutes a day each put a treadmill through an hour a day, seven hours a week and
             about 365 hours a year. That is the workload of a keen single runner, not a casual walker, and the motor
-            and warranty should be chosen for it.
+            and warranty should be chosen for it. If one of you walks and the other runs, our <a href="/best-treadmills-for-walking-and-running/" class="text-[#0F62FE] font-medium">treadmills for walking and running</a> guide is built around exactly that household, led by the Horizon 7.0 AT.
           </p>
           <p>
             <strong>Motor.</strong> A continuous-duty rating (CHP) describes what a motor can sustain, and it is the

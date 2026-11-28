@@ -16,9 +16,9 @@ export default {
   crumbLabel: 'Sole F85 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['Sole Treadmill F85', 'Review for 2026'],
   standfirst:
@@ -73,7 +73,7 @@ export default {
             The 2026 Sole F85 is a well-built folding treadmill whose case rests on two things: a 22
             by 60-inch deck and a 15.6-inch touchscreen that needs no subscription. Both are confirmed
             by Sole and by independent coverage of the current model, as are the 350 lb user rating,
-            incline to 15%, a 12 mph top speed and Sole's lifetime frame and motor warranty.
+            incline to 15%, a 12 mph top speed and Sole's lifetime frame and motor warranty. On Sole’s store it cost $1,999.99 on 22 November 2026, as our <a href="/how-much-does-a-sole-treadmill-cost/" class="text-[#0F62FE] font-medium">Sole price guide</a> records.
           </p>
           <p>
             What it is not, any more, is the F85 that most roundups describe. Sole's 2026 listing gives

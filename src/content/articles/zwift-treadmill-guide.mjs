@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 13, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-13',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Using Zwift With a Treadmill:', 'What You Need and What to Expect'],
   standfirst:
@@ -35,7 +35,7 @@ export default {
             treadmill, a device tells Zwift your speed, and your avatar moves through a virtual
             world at that pace alongside other runners and riders. You can follow a structured
             workout, join a group run or an event, or simply run a route. The treadmill itself is
-            not required to do anything new.
+            not required to do anything new. If you want to walk and turn inside the world rather than watch it on a screen, our <a href="/best-vr-treadmills/" class="text-[#0F62FE] font-medium">VR treadmill</a> guide compares KAT Walk and Virtuix Omni One models, none of which is a fitness treadmill.
           </p>
           <p>
             The speed signal is the whole question. It comes from one of three places: a

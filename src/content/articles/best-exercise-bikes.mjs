@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.0k',
   h1: ['Best Exercise Bikes', 'and Stationary Bikes for Home'],
   standfirst:
@@ -36,7 +36,7 @@ export default {
             resistance, a 330 lb rating, and Bluetooth that works with apps you choose rather than one
             you are locked into. If you want a bike that will outlast the house, the Keiser M3i is the
             studio standard; if you want to spend as little as possible, the YOSUDA friction bike does
-            the basics for about $200.
+            the basics for about $200. Prices on these bikes move a lot in November; our <a href="/black-friday-exercise-bike-deals/" class="text-[#0F62FE] font-medium">Black Friday exercise bike deals</a> page gives the Keiser, the Schwinn IC4 and four others with dated prices and the figure we would wait for.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -74,7 +74,7 @@ export default {
             Each card gives only the figures that the maker and an independent source agreed on, the
             price range we saw, and who the bike suits. The Schwinn IC4 is the same bike as the one we
             picked on our cardio machines page; we have not changed our view of it, only checked it
-            again on a later date. The descriptions say where a figure was left off and why.
+            again on a later date. The descriptions say where a figure was left off and why. Schwinn also sells four folding treadmills, and our <a href="/schwinn-treadmills/" class="text-[#0F62FE] font-medium">Schwinn treadmill guide</a> covers the 810, 815, SFT4.1 and SFT4.3.
           </p>
           <p>
             Two of the five use friction resistance and three use magnetic. That split is deliberate:

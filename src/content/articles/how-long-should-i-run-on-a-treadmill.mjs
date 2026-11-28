@@ -234,7 +234,7 @@ export default {
             minutes; for a half marathon it typically builds towards about two hours; for a
             marathon, longer. A common convention is to keep the long run to no more than about a
             third of your weekly running — a rule of thumb, but a sensible one, because a long run
-            that makes up most of your week is a large single dose of load.
+            that makes up most of your week is a large single dose of load. Runs that long are what our <a href="/best-treadmills-for-marathon-training/" class="text-[#0F62FE] font-medium">treadmills for marathon training</a> are chosen for, led by the 4.25 CHP NordicTrack Commercial 1750.
           </p>
           <p>
             The long run should be easy. That is the point of it: time on your feet at a pace you

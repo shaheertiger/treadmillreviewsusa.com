@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Best Foot Pods', 'for Treadmill Running'],
   standfirst:
@@ -37,7 +37,7 @@ export default {
             COROS POD 2 if you own a COROS watch; and if you are a Garmin runner who would rather
             not clip anything to a shoe, the HRM 600 chest strap does the same job for compatible
             Garmin watches. New to pods? Start with our
-            <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">treadmill foot pod guide</a>.
+            <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">treadmill foot pod guide</a>. For walking rather than running, our page on <a href="/best-fitness-trackers-for-walking-pad/" class="text-[#0F62FE] font-medium">fitness trackers for walking pads</a> explains why the COROS POD 2 is built for running, not desk walking.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>

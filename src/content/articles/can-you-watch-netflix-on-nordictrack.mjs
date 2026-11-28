@@ -1,15 +1,14 @@
 export default {
   slug: 'can-you-watch-netflix-on-nordictrack',
-  title: 'Can You Watch Netflix on a NordicTrack? (2026): What iFIT Allows',
-  description:
-    'Yes, on touchscreen NordicTrack models with a paid iFIT Pro membership. Which apps iFIT offers, which consoles get them, how to turn them on, and what still does not work.',
+  title: "Can You Watch Netflix on a NordicTrack? Yes, With iFIT Pro",
+  description: "Yes, on most touchscreen NordicTrack models with a paid iFIT Pro plan and your own Netflix account. Which apps iFIT allows, how to turn them on, and what fails.",
   crumbLabel: 'Can You Watch Netflix on a NordicTrack?',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Can You Watch Netflix', 'on a NordicTrack?'],
   standfirst:
@@ -37,7 +36,7 @@ export default {
             if you pay for an iFIT Pro membership and have your own Netflix account.</strong>
             Netflix runs inside iFIT, alongside Prime Video, Spotify and, since April 2026 in the
             US, YouTube TV and iHeartRadio. Without a paid iFIT Pro membership the apps are not
-            available, and you cannot add apps of your own choosing.
+            available, and you cannot add apps of your own choosing. That membership adds $396 a year to the cost of a NordicTrack, as our <a href="/how-much-does-a-nordictrack-treadmill-cost/" class="text-[#0F62FE] font-medium">NordicTrack cost breakdown</a> sets out.
           </p>
           <p>
             Three official sources line up on this. iFIT's equipment-membership page says its Pro
@@ -116,7 +115,7 @@ export default {
             beta and a full release was planned for early 2025. iFIT's release notes for that
             update list "access to popular streaming services" among the new features. That is
             why a review or forum thread from before 2025 can say, correctly at the time, that a
-            NordicTrack could not show Netflix.
+            NordicTrack could not show Netflix. If you would rather not depend on iFIT, our <a href="/best-treadmills-with-netflix/" class="text-[#0F62FE] font-medium">treadmills with Netflix</a> guide names the Bowflex T16, whose console streams Netflix without a JRNY membership.
           </p>`,
     },
     {
@@ -356,7 +355,7 @@ export default {
             iFIT apply that clause to a software change, and a warranty claim depends on the facts,
             but a buyer who unlocks a console is giving iFIT a straightforward reason to refuse
             one. On a machine whose motor or frame carries a long warranty, that is a costly risk
-            to take for a streaming app.
+            to take for a streaming app. Our <a href="/nordictrack-treadmill-repair/" class="text-[#0F62FE] font-medium">NordicTrack treadmill repair</a> page sets out how warranty claims go through iFIT.
           </p>
           <p>
             <strong>Safety.</strong> Privileged mode was built for servicing motorized equipment.

@@ -9,9 +9,9 @@ export default {
   crumbLabel: 'Best Treadmills Without Subscriptions',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '4.8k',
   h1: ['Best Treadmills', 'Without Subscriptions'],
   standfirst:
@@ -37,7 +37,7 @@ export default {
             <strong>No subscription at all.</strong> The machine has a console with buttons, it
             runs when you press start, and nothing about it changes over time. Sole and most of
             the commercial brands work this way. There is no account, no app requirement and no
-            possibility of a price rise, because there is no ongoing relationship.
+            possibility of a price rise, because there is no ongoing relationship. Sole’s treadmills, for example, cost $899.99 to $2,899.99 on its store in November 2026 with no monthly subscription, as our <a href="/how-much-does-a-sole-treadmill-cost/" class="text-[#0F62FE] font-medium">Sole cost page</a> shows.
           </p>
           <p>
             <strong>Optional subscription, full manual mode.</strong> The machine offers guided
@@ -344,7 +344,7 @@ export default {
       heading: 'Subscription Status and Resale Value',
       html: `          <p>
             A point that rarely comes up until you sell: subscription-free machines are
-            noticeably easier to sell second-hand, and they hold their price better.
+            noticeably easier to sell second-hand, and they hold their price better. For what used machines actually sell for, our <a href="/how-much-does-a-used-treadmill-cost/" class="text-[#0F62FE] font-medium">used treadmill cost page</a> lists dated used and new prices by brand.
           </p>
           <p>
             The reason is simple. A buyer looking at a subscription-dependent machine is being
@@ -441,7 +441,7 @@ export default {
             ones to watch for: Sole listed the F63 at $1,099.99 on its own site in November 2026,
             down from $1,199.99, and holiday promotions sometimes take it lower. Our
             <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">best treadmills under $1,000</a>
-            guide sorts that band by belt length, motor and warranty.
+            guide sorts that band by belt length, motor and warranty. If you want to run and stay under $800, our <a href="/best-budget-treadmills-for-running/" class="text-[#0F62FE] font-medium">budget treadmills for running</a> rank six machines, led by the Horizon T101 Connect.
           </p>
           <p>
             <strong>Under $500.</strong> Almost nothing here has a subscription, and almost

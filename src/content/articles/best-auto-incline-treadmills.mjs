@@ -41,7 +41,7 @@ export default {
             want the treadmill to change the incline for you during guided workouts. The THERUN reaches
             20% for under $800. The Sunny Health &amp; Fitness Auto Incline Treadmill arrives fully
             assembled and folds. And the UREVO CyberPad is a walking pad with a 14% powered incline for
-            under-desk use.
+            under-desk use. THERUN is a legitimate Amazon brand rather than a scam, and our <a href="/therun-treadmills/" class="text-[#0F62FE] font-medium">THERUN review</a> compares the 20% model with the brand’s cheaper pads.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
             <thead>
@@ -66,7 +66,7 @@ export default {
             <a href="/best-incline-trainers/" class="text-[#0F62FE] font-medium">incline trainers</a>,
             which climb to 30% or more. If you want incline mainly on a walking pad, the
             <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>
-            roundup compares powered and fixed designs in more depth.
+            roundup compares powered and fixed designs in more depth. The <a href="/yesoul-treadmills/" class="text-[#0F62FE] font-medium">Yesoul T5 series</a> is another route to 30%, with a 60-inch deck from $1,399.99.
           </p>`,
     },
     {

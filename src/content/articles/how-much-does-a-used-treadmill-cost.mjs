@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-25',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   h1: ['How Much Does a', 'Used Treadmill Cost?'],
   standfirst:
     'It depends far more on who is selling than on the brand. On 25 November 2026 maker scratch-and-dent units were selling at about 87% of the new price, remanufactured gym treadmills cost $3,799 to $10,599 at one specialist dealer, and one resale marketplace put a typical used Peloton Tread sale at about $1,800. With Black Friday cutting new prices this week, a used home treadmill is only a bargain once moving, wear parts and the missing warranty are counted. Here are the dated pairs, the hidden costs and the sums.',
@@ -99,7 +99,7 @@ export default {
             a new commercial price, but that is still more than almost any new home treadmill. Third, the Peloton
             figures compare old machines against the dearer models that replaced them on 1 October 2026; against the
             Black Friday <a href="/peloton-tread/" class="text-[#0F62FE] font-medium" data-autolink>Tread Vision</a> price of $2,795 (Peloton, 24 Nov 2026) the same $1,800 is 64%, which is why the
-            sale matters so much.
+            sale matters so much. Before paying for a used Tread, run through the common faults in our <a href="/peloton-tread-troubleshooting/" class="text-[#0F62FE] font-medium">Peloton Tread troubleshooting</a> guide, from the safety key to belt tension and tracking.
           </p>
           <p>
             We could not read used or refurbished prices from NordicTrack, ProForm, Sole, Horizon, Bowflex, Johnson
@@ -147,7 +147,7 @@ export default {
             at $1,999 on Amazon on the same day: a rebuilt club treadmill is a different class of machine, heavier and
             built for far more hours, but it is not the cheap option. Our
             <a href="/how-much-does-a-commercial-treadmill-cost/" class="text-[#0F62FE] font-medium">commercial treadmill cost guide</a>
-            covers new club prices.
+            covers new club prices. Our <a href="/matrix-t5x-treadmill/" class="text-[#0F62FE] font-medium">Matrix T5x review</a> looks at one of the club machines most home buyers now find remanufactured.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Peloton Repowered and resale marketplaces</h3>
           <p>
@@ -226,7 +226,7 @@ export default {
           <p>
             The practical reading: a three-year-old walking pad or budget folder may have used most of its life, so it
             is worth little whatever its owner paid. A three-year-old premium or commercial machine can have most of its
-            life ahead of it, which is why rebuilt club treadmills hold their prices so well.
+            life ahead of it, which is why rebuilt club treadmills hold their prices so well. A remanufactured <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium">Cybex 770T or R Series</a>, for example, runs about $3,000.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Hours and distance</h3>
           <p>

@@ -318,7 +318,7 @@ export default {
           <p>
             Check accessory compatibility, too. Hole size and upright size decide which safeties fit.
             The PRx and Rogue 3x3 racks use 5/8-inch holes, Titan's T-3 11/16-inch holes, and Bells of
-            Steel's 2.3-inch uprights take only its own 60 mm attachments.
+            Steel's 2.3-inch uprights take only its own 60 mm attachments. Leg curl and extension attachments follow the same rule, which is why the rack-mounted pick in our <a href="/best-leg-extension-machines/" class="text-[#0F62FE] font-medium">leg extension machine guide</a> is sold for Titan's T-3 and X-3 series.
           </p>`,
     },
     {
@@ -346,7 +346,7 @@ export default {
             <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">weight benches</a>,
             <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring</a> and
             <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories</a>
-            cover the rest of a fold-away setup.
+            cover the rest of a fold-away setup. If you want a box as well, the stackable soft foam boxes in our <a href="/best-plyo-boxes/" class="text-[#0F62FE] font-medium">plyo box guide</a> can be stacked in a corner between sessions.
           </p>`,
     },
     {

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.3k',
   h1: ['Sole vs', 'NordicTrack'],
   standfirst:
@@ -68,7 +68,7 @@ export default {
             with dial-style controls on the F50 and F63; you bring your own device for video. On
             the F80, F83 and F85 a 10.1-inch or 15.6-inch touchscreen adds streaming apps and
             Sole's free app. Nothing on Sole's listings suggests any speed, incline or programme
-            feature is locked behind a membership, because there is none.
+            feature is locked behind a membership, because there is none. On Sole’s own store on 22 November 2026 the F80 was $1,499.99 and the F85 $1,999.99, as our <a href="/how-much-does-a-sole-treadmill-cost/" class="text-[#0F62FE] font-medium">Sole treadmill cost guide</a> shows.
           </p>
           <p>
             <strong>NordicTrack's bet is the platform.</strong> Every one of its seven current
@@ -76,7 +76,7 @@ export default {
             and outdoor-route workouts and can change speed and incline for you during them. That
             is a genuine training aid — it removes the decisions that make sessions easy to cut
             short — and it is an ongoing cost. Without a paid membership, a NordicTrack runs in
-            manual mode with a few template workouts, and most of the screen's value goes.
+            manual mode with a few template workouts, and most of the screen's value goes. That includes streaming: our guide to <a href="/can-you-watch-netflix-on-nordictrack/" class="text-[#0F62FE] font-medium">watching Netflix on a NordicTrack</a> explains that it runs inside iFIT and needs the top iFIT Pro plan.
           </p>
           <p>
             Neither approach is wrong. A buyer who trains best when someone else is setting the
@@ -183,7 +183,7 @@ export default {
           <p>
             <strong>Steep incline: NordicTrack.</strong> The X16 and X24 incline trainers reach 40%,
             a range nothing Sole sells comes close to. They do not fold and need serious headroom,
-            but for hiking training they are in a class of their own.
+            but for hiking training they are in a class of their own. They cost $3,699 and $4,299 on NordicTrack’s checkout, plus $39 a month for iFIT Pro if you want the classes, as our <a href="/how-much-does-an-incline-trainer-cost/" class="text-[#0F62FE] font-medium">incline trainer pricing</a> page details.
           </p>
           <p>
             <strong>Decline: NordicTrack.</strong> The Commercial series declines to -3% and the X

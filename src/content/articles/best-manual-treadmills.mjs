@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Best Manual Treadmills', 'Flat Walkers and Curved Runners'],
   standfirst:
@@ -104,7 +104,7 @@ export default {
             Finally, we limited the list to machines sold on Amazon US. That removed the
             AssaultRunner Pro, which is sold direct and through dealers, and Stamina's flat manuals,
             and it is why curved trainers outnumber flat walkers here. Curved trainers also have their
-            own roundup and their own explainer.
+            own roundup and their own explainer. <a href="/trueform-treadmills/" class="text-[#0F62FE] font-medium">TrueForm</a>, maker of the shallowest curve in the category, has a guide of its own as well. Wooden manual machines, such as Walkolution's treadmill desks and NOHrD's Sprintbok, are also sold outside Amazon and covered in our <a href="/wooden-walking-pad/" class="text-[#0F62FE] font-medium">wooden walking pad</a> guide.
           </p>`,
     },
     {
@@ -219,7 +219,7 @@ export default {
             all. Weighted flywheels on the front roller smooth the
             belt's motion, and the only way to change the effort is to change the slope or walk
             faster. That is fine for steady walking and means there is nothing to wear out or
-            misadjust.
+            misadjust. Sunny’s manual SF-T1407SMART, for one, cost $199.99 on Sunny’s store on 27 November 2026, as our <a href="/how-much-does-a-sunny-treadmill-cost/" class="text-[#0F62FE] font-medium">Sunny price guide</a> records.
           </p>
           <p>
             Magnetic resistance, found on some flat manuals such as Stamina's Avari (not sold on

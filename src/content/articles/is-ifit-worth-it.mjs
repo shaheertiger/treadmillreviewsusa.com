@@ -7,9 +7,9 @@ export default {
   kicker: 'Ownership Cost',
   breadcrumb: { name: 'By Price', url: '/price/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '3.2k',
   h1: ['Is iFIT', 'Worth It?'],
   standfirst:
@@ -31,7 +31,7 @@ export default {
             <strong>iFIT is worth it if</strong> you are motivated by instructors, you will use
             classes or guided workouts several times a week, you like the machine changing speed
             and incline for you, and you have priced the membership into what the treadmill
-            really costs. For that person it does something a plain console cannot.
+            really costs. For that person it does something a plain console cannot. It can also catch owners out: our <a href="/nordictrack-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">NordicTrack treadmill troubleshooting</a> guide explains when a speed or incline change is a workout rather than a fault.
           </p>
           <p>
             <strong>iFIT is probably not worth it if</strong> you mostly set a speed and run, you

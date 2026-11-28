@@ -66,7 +66,7 @@ export default {
             <strong>Pedal steppers</strong> have two foot plates that move up and down on resistance.
             The movement is shorter and less like real stairs, they are much smaller and cheaper, and
             compact versions are sold for home use. They are a lighter workout than a revolving
-            climber for most people.
+            climber for most people. Between the two sits Bowflex’s elliptical-stepper, the <a href="/bowflex-max-trainer-m7/" class="text-[#0F62FE] font-medium">Max Trainer M7</a>, which uses 14 resistance levels and a 300 lb rating in a compact frame.
           </p>
           <p>
             <strong>Mini steppers</strong> are small, often under-desk or floor units with a short
@@ -81,7 +81,7 @@ export default {
             <strong>Stair climber:</strong> every step lifts your whole body weight upward from a
             bent knee and hip, which loads the glutes and quadriceps heavily, with substantial work
             for the calves and hamstrings. This is the main reason people who want stronger, more
-            developed glutes favour it. The effort is concentrated and you feel it quickly.
+            developed glutes favour it. The effort is concentrated and you feel it quickly. If the glutes are the main goal, the hip thrust is one of the most effective ways to load them, and our <a href="/best-hip-thrust-machines/" class="text-[#0F62FE] font-medium">hip thrust machine guide</a> covers five ways to set it up at home.
           </p>
           <p>
             <strong>Treadmill:</strong> walking and running on the flat use the whole leg in a more
@@ -126,7 +126,7 @@ export default {
             another's tells you little. Our explainer on whether
             <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">treadmill calorie counts are accurate</a>
             covers the estimate itself, and we go into what it means for weight in our guide to
-            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workouts for weight loss</a>.
+            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workouts for weight loss</a>. To follow the result over weeks rather than sessions, our <a href="/best-smart-scales/" class="text-[#0F62FE] font-medium">smart scale guide</a> compares five scales from about $25 to about $500.
           </p>
           <p>
             The practical point is that the machine you will use consistently, at a meaningful

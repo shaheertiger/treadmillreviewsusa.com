@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Goplus 2-in-1 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Goplus 2-in-1 Treadmill', 'Review: The SuperFit'],
   standfirst:
@@ -106,7 +106,7 @@ export default {
             close sibling, sold by a reseller. In a few cases it is not: at least one shop using a
             near-identical title describes a 2.0 HP machine rated for 250 lb, which is a different
             product. And a reseller is not Costway, so its warranty and returns are whatever that
-            reseller offers.
+            reseller offers. The <a href="/ajoosos-treadmills/" class="text-[#0F62FE] font-medium">AJOOSOS 2-in-1 under desk treadmill</a> raises the same question with even less to go on, since AJOOSOS’s own store sells electric scooters and no treadmills.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The versions you will see</h3>
           <ul>
@@ -218,7 +218,7 @@ export default {
             three-button remote. Three of the four independent reviews we read raised the same
             consequence: lose the remote, or let its battery die, and the treadmill cannot be used;
             the fourth found relying on it clumsy. That reviewer also found the remote uses an infrared signal that needs a line of sight, which is
-            awkward with the pad under a desk. Keep a spare battery, and keep the remote in one place.
+            awkward with the pad under a desk. Keep a spare battery, and keep the remote in one place. Our <a href="/best-walking-pads-with-remote/" class="text-[#0F62FE] font-medium">walking pads with a remote</a> roundup favours pads with a backup, such as the WELLFIT 12% incline pad and its three alternatives to the remote.
           </p>
           <p>
             <strong>The safety key.</strong> A magnetic safety key clips under the rail and must be in
@@ -238,7 +238,7 @@ export default {
             <strong>The speaker and app.</strong> A built-in Bluetooth speaker plays audio from your
             phone; reviewers described it as fine for the price and no more. Newer versions pair with
             the Gymax app for workout records and speed control. Neither the speaker nor the app
-            is needed to use the machine, and there is no subscription.
+            is needed to use the machine, and there is no subscription. The 2-in-1 is also the cheapest pick in our <a href="/best-treadmills-with-bluetooth-speakers/" class="text-[#0F62FE] font-medium">best treadmills with Bluetooth speakers</a>, at about $114.
           </p>`,
     },
     {

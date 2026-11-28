@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['NordicTrack T Series', 'vs Commercial'],
   standfirst:
@@ -35,7 +35,7 @@ export default {
             <strong>Choose the T Series if you mostly walk, incline-walk or run lightly a few times
             a week and want the lowest price into a 60-inch NordicTrack. Choose the Commercial
             series if you run regularly, want decline, or want NordicTrack's lifetime motor
-            warranty — which means the 1750 or 2450, not the 1250.</strong>
+            warranty — which means the 1750 or 2450, not the 1250.</strong> If you are pricing a used compact model such as the <a href="/nordictrack-exp-7i-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack EXP 7i</a> against these, note that its 55-inch belt is shorter than either series.
           </p>
           <p>
             The <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>T Series 10</a> and 16 share a 20 by 60-inch belt, incline from 0 to 12% with no
@@ -107,7 +107,7 @@ export default {
       html: `          <p>
             NordicTrack's three series are three different machines, not three sizes of the same
             one. Reading the two folding series as intended uses makes the choice clearer than
-            reading them as good, better and best.
+            reading them as good, better and best. At list prices the range runs from $1,999 to $4,299, and at Black Friday 2026 prices from $1,599 to $2,999, as our <a href="/how-much-does-a-nordictrack-treadmill-cost/" class="text-[#0F62FE] font-medium">NordicTrack price breakdown</a> records.
           </p>
           <p>
             <strong>The T Series is a walking and light-running treadmill.</strong> Everything
@@ -157,7 +157,7 @@ export default {
             retailers and model years. A warranty term is a commitment: NordicTrack pays if the
             motor fails within it. Lifetime cover on the 1750 and 2450 is the clearest signal the
             company gives about which machines it expects to hold up under regular running, and
-            it is the main reason the 1750 ranks above the cheaper models in our range guide.
+            it is the main reason the 1750 ranks above the cheaper models in our range guide. Out of warranty, a motor or board job with a technician commonly lands between $300 and $900, as our <a href="/nordictrack-treadmill-repair/" class="text-[#0F62FE] font-medium">NordicTrack treadmill repair</a> guide explains.
           </p>
           <p>
             <strong>What it does not cover.</strong> A lifetime motor warranty is not a lifetime

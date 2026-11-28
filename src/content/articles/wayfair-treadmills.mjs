@@ -94,7 +94,7 @@ export default {
             2025. For most buyers, then, a Wayfair treadmill is bought from the listing alone, without
             a chance to stand on it first. If trying a machine matters to you, our guide to
             <a href="/where-to-buy-a-treadmill-near-me/" class="text-[#0F62FE] font-medium">where to buy a treadmill near you</a>
-            covers the in-person options.
+            covers the in-person options. Scheels is one retailer where some stores let you stand on a premium treadmill first, as our <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">Scheels treadmill guide</a> explains.
           </p>`,
     },
     {
