@@ -2,13 +2,13 @@ export default {
   slug: 'matrix-t5x-treadmill',
   title: 'Matrix T5x Treadmill Review (2026): Specs and Used Value',
   description:
-    'The Matrix T5x is a commercial gym treadmill most buyers now find remanufactured. Which specs the sources agree on, which conflict, what it costs, and what to check before buying.',
+    "The Matrix T5x is a commercial gym treadmill now sold mostly remanufactured, at about $4,000 to $4,400. Which specs agree, which conflict, and what to check.",
   crumbLabel: 'Matrix T5x Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Matrix T5x', 'Treadmill Review'],
   standfirst:

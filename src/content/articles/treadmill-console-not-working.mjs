@@ -2,14 +2,14 @@ export default {
   slug: 'treadmill-console-not-working',
   title: 'Treadmill Console Not Working? Blank Display and Dead Buttons',
   description:
-    'A blank treadmill display or unresponsive buttons is usually the safety key, a cable at the upright or the keypad ribbon before it is a board. Here is the order to check.',
+    "A blank treadmill display or dead buttons is usually 1 of 5 things: the safety key, lost power, a loose cable at the upright, the keypad ribbon or software.",
   crumbLabel: 'Treadmill Console Not Working',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Treadmill Console', 'Not Working?'],
   standfirst:

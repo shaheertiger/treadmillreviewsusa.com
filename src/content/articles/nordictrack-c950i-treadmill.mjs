@@ -15,13 +15,13 @@ export default {
   slug: 'nordictrack-c950i-treadmill',
   title: 'NordicTrack C950i Treadmill (2026): Specs, iFIT, Buying Used',
   description:
-    'The NordicTrack C950i is discontinued. What its published figures were, which ones only one source gives, what iFIT’s 2023 cut-off means for it, where parts come from, how to check a used one, and the current NordicTrack models that replaced it.',
+    "The NordicTrack C950i is discontinued. Its published specs, what iFIT's 30 April 2023 cut-off means for it, where parts come from, and how to check a used one.",
   crumbLabel: 'NordicTrack C950i Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-22',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['NordicTrack C950i', 'Treadmill: Buying One Now'],
   standfirst:

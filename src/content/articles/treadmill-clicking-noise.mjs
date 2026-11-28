@@ -5,14 +5,14 @@ export default {
   slug: 'treadmill-clicking-noise',
   title: 'Treadmill Clicking Noise: Find It by When It Clicks',
   description:
-    'A treadmill click once per belt lap points to the belt or a roller; once per step, a loose bolt or deck; with no one on it, the motor or drive belt. 6 causes and fixes.',
+    "A treadmill click once per belt lap is the belt or a roller; once per step, a loose bolt or the deck; with no one on it, the motor or drive belt. 6 causes.",
   crumbLabel: 'Treadmill Clicking Noise',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-22',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Treadmill Clicking Noise:', 'Find It by When It Clicks'],
   standfirst:

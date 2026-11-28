@@ -5,14 +5,14 @@ export default {
   slug: 'nordictrack-treadmill-troubleshooting',
   title: 'NordicTrack Treadmill Troubleshooting: Reset, Belt and iFIT Fixes',
   description:
-    'NordicTrack treadmill not working? Check the safety key and reset breaker first. Fixes for speed or incline changing by itself, a frozen iFIT screen, belt and decline faults.',
+    "Most NordicTrack faults are 1 of 5 things: the safety key or reset breaker, a frozen iFIT screen, a workout changing speed on purpose, the belt, or the incline.",
   crumbLabel: 'NordicTrack Treadmill Troubleshooting',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-20',
-  modified: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['NordicTrack Treadmill Troubleshooting:', 'Reset, Belt, Incline and iFIT Problems'],
   standfirst:
