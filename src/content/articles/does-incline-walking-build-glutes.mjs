@@ -1,15 +1,14 @@
 export default {
   slug: 'does-incline-walking-build-glutes',
   title: 'Does Incline Walking Build Glutes? What It Can and Cannot Do',
-  description:
-    'Incline walking works the glutes harder than flat walking, but it is endurance work, not a replacement for strength training. Grades, form cues and how to pair the two.',
+  description: "Partly: incline walking at 8–12% works the glutes harder than flat walking, but it builds endurance, not size. Grades, form cues and how to add strength work.",
   crumbLabel: 'Does Incline Walking Build Glutes',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.3k',
   h1: ['Does Incline Walking', 'Build Glutes?'],
   standfirst:

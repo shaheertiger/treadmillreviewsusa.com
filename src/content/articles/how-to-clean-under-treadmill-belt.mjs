@@ -1,14 +1,13 @@
 export default {
   slug: 'how-to-clean-under-treadmill-belt',
-  title: 'How to Clean Under a Treadmill Belt: The Full Method',
-  description:
-    'Debris under the belt is abrasive and raises friction directly. Here is how to slacken the belt, clear and clean the deck properly, and get the tension back right afterwards.',
+  title: "How to Clean Under a Treadmill Belt: The 20-Minute Method",
+  description: "Loosen both rear bolts one full turn, vacuum under the belt, wipe the deck with isopropyl alcohol, let it dry 15–30 minutes, then lube with 100% silicone.",
   crumbLabel: 'How to Clean Under a Treadmill Belt',
   kicker: 'Maintenance',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '3.8k',
   h1: ['How to Clean Under', 'a Treadmill Belt'],
   standfirst:

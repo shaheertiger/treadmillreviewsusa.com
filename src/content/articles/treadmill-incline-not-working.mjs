@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-incline-not-working',
   title: 'Treadmill Incline Not Working: Stuck or Stopping at One Level',
-  description:
-    'An incline that sticks, moves one way only or stops at one level is usually calibration, power or a sensor before it is the motor. How to work through it in order, and what the manual decides.',
+  description: "Most stuck inclines are not the motor: unplug for a full minute, test in manual mode, clear under the base, then recalibrate. A service call is often $80–$150.",
   crumbLabel: 'Treadmill Incline Not Working',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Treadmill Incline', 'Not Working?'],
   standfirst:

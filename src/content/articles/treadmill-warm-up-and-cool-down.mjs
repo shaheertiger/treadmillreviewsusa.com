@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-warm-up-and-cool-down',
   title: 'Treadmill Warm Up and Cool Down: How Long and What to Do',
-  description:
-    'How to warm up and cool down on a treadmill: how long each should take, how to build speed and incline, drills to do off the belt, and what to do if you feel dizzy after running.',
+  description: "Warm up for 5 to 10 minutes, from an easy walk up to session pace in small steps. Cool down for 5 to 10 minutes: incline to flat first, then slow to a walk.",
   crumbLabel: 'Treadmill Warm Up and Cool Down',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Treadmill Warm Up', 'and Cool Down'],
   standfirst:

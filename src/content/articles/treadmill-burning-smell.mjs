@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-burning-smell',
   title: 'Treadmill Burning Smell? What It Means and When to Stop',
-  description:
-    'Burning rubber, hot plastic, dust or new-machine smell? What each treadmill smell usually means, which ones mean unplug it now, and what to check once it has cooled.',
+  description: "A burning rubber smell is usually friction from a dry deck or rubbing belt. Hot plastic, fishy or ozone smells are electrical: unplug and don't restart it.",
   crumbLabel: 'Treadmill Burning Smell',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['Treadmill', 'Burning Smell?'],
   standfirst:

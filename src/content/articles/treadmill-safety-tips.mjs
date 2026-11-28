@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-safety-tips',
   title: 'Treadmill Safety Tips: Keys, Kids, Pets and Clearance',
-  description:
-    'Treadmill safety at home: the safety key, keeping children and pets away, clearance behind the belt, folding-deck and cord hazards, footwear and staying aware while you run.',
+  description: "Clip the safety key on every session, keep about 6 ft clear behind the belt and 2 ft each side, never step onto a moving belt: 8 home treadmill safety rules.",
   crumbLabel: 'Treadmill Safety Tips',
   kicker: 'Safety',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['Treadmill Safety Tips', 'for Kids, Pets and You'],
   standfirst:
