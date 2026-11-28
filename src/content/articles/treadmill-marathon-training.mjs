@@ -490,7 +490,7 @@ export default {
       kicker: 'Buying Guide',
       title: "Best Treadmills for Long Distance Running",
       blurb: "Five treadmills for long distance running and triathlon training, judged on what high weekly mileage asks…",
-      url: '/best-treadmills-for-long-distance-running/',
+      url: '/best-treadmills-for-marathon-training/',
     },
   ],
   bottomLine: [

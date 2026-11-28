@@ -447,7 +447,7 @@ export default {
           </ul>
           <p>
             Our <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium">guide for tall runners</a>
-            covers the case for a 22-inch deck in more detail, including machines outside the
+            covers the case for a <a href="/best-wide-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>22-inch deck</a> in more detail, including machines outside the
             Bowflex range.
           </p>`,
     },

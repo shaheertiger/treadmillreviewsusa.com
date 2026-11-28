@@ -229,8 +229,8 @@ export default {
           </p>
           <p>
             We searched the US Consumer Product Safety Commission's recall and warning databases for
-            each brand. None of these five products is under an open recall or warning. Sperax walking
-            pads and treadmills are under a CPSC stop-use warning issued on 16 April 2026 after reports
+            each brand. None of these five products is under an open recall or warning. <a href="/sperax-walking-pad-recall/" class="text-[#0F62FE] font-medium" data-autolink>Sperax walking
+            pads</a> and treadmills are under a CPSC stop-use warning issued on 16 April 2026 after reports
             of uncontrolled speed, falls and fires, and are not listed here or anywhere on this site.
           </p>`,
     },
@@ -255,7 +255,7 @@ export default {
             win easily: 4.3 to 6.5 inches on the machines here. A full-size treadmill that folds flat,
             such as the Echelon Stride-6s, sits around 8.5 to 12 inches depending on where you measure.
             Most full-size folders fold upright instead, saving floor space but standing five to six
-            feet tall; the Life Fitness F3 folds to about 75 inches high.
+            feet tall; the <a href="/life-fitness-f3-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness F3</a> folds to about 75 inches high.
           </p>
           <p>
             <strong>Light weight.</strong> How easily one person can move it. The walking pads here

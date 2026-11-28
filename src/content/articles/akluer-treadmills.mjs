@@ -347,7 +347,7 @@ export default {
             comparison site's record from February 2026; 63.5 lb in the bullets and 55 lb in Amazon's data. Either the
             listing has been updated for a revised machine or a figure is wrong. Ask the seller before relying on it.</li>
             <li><strong>Noise and motor type:</strong> most listings say "less than 45dB". One older 480L listing says
-            "less than 30 DB" and "brushless motor", while the comparison site describes the 480L-A as brushed. Treat
+            "less than 30 DB" and "<a href="/best-treadmills-with-brushless-motor/" class="text-[#0F62FE] font-medium" data-autolink>brushless motor</a>", while the comparison site describes the 480L-A as brushed. Treat
             the quieter, brushless claim as unconfirmed.</li>
             <li><strong>Z1 incline:</strong> "4%-9% adjustable incline" in the Amazon title, "9% Auto Incline" on
             AKLUER's store. The Amazon bullets do not describe a motor-driven incline.</li>

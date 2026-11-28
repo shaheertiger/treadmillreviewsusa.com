@@ -314,7 +314,7 @@ export default {
           <p>
             <strong>iFIT app on another treadmill.</strong> The content library is available,
             including the outdoor-filmed routes, but the defining feature — the machine following
-            the trail — needs a compatible iFIT treadmill. On another machine you watch the route
+            the trail — needs a compatible <a href="/best-ifit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>iFIT treadmill</a>. On another machine you watch the route
             and adjust by hand, which turns iFIT into something closer to scenery with prompts. It
             is still pleasant; it is not the same product. The iFIT app is strongest on a non-iFIT
             treadmill for its structured programmes and off-machine content rather than for the

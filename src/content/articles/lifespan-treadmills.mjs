@@ -306,7 +306,7 @@ export default {
           </p>
           <p>
             On 14 October 2026 LifeSpan’s own store listed its silicone belt lubricant as available,
-            while several replacement safety keys and a power cord were out of stock. Older folding
+            while several <a href="/best-treadmill-safety-keys/" class="text-[#0F62FE] font-medium" data-autolink>replacement safety keys</a> and a power cord were out of stock. Older folding
             models may be harder to support than the desk range. Check the manual for your model
             before lubricating: some LifeSpan belts are described as self-lubricating. Our guide to
             <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">lubricating a walking pad</a>

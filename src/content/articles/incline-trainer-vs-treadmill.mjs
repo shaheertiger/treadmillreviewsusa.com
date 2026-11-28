@@ -295,7 +295,7 @@ export default {
             deck. Our
             <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">walking treadmill</a>
             and
-            <a href="/best-treadmills/" class="text-[#0F62FE] font-medium">best treadmills</a>
+            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">best treadmills</a>
             roundups are the place to start.
           </p>
           <p>

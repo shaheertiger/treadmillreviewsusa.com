@@ -524,7 +524,7 @@ export default {
           </p>
           <ul>
             <li>Get the serial number and ask Woodway what model, year and options it was built with.</li>
-            <li>Inspect the slats for cracks, missing rubber and damaged aluminium profiles, and listen for bearing noise at walking and running speeds.</li>
+            <li>Inspect the slats for cracks, missing rubber and damaged aluminium profiles, and listen for <a href="/treadmill-grinding-noise/" class="text-[#0F62FE] font-medium" data-autolink>bearing noise</a> at walking and running speeds.</li>
             <li>Ask for maintenance records, and whether the axle bearings have been greased annually.</li>
             <li>Check the electrical supply on the nameplate against your house; a 208/230-volt unit needs a different circuit.</li>
             <li>Price delivery separately. Moving a 400-plus-pound treadmill costs real money.</li>

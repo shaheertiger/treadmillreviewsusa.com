@@ -189,7 +189,7 @@ export default {
             disable or bypass a safety feature for convenience.
           </p>
           <p>
-            One family member we are asked about more than you might expect is the dog; our guide to <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">treadmills for dogs</a> explains why a human treadmill is a compromise and the safety rules that are not negotiable.
+            One family member we are asked about more than you might expect is the dog; our guide to <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">treadmills for dogs</a> explains why a <a href="/dog-treadmill-vs-human-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>human treadmill</a> is a compromise and the safety rules that are not negotiable.
           </p>`,
     },
     {
@@ -295,8 +295,8 @@ export default {
           </p>
           <p>
             <strong>Two runners.</strong> The demanding case. Combined running hours push the motor
-            requirement up, and both stride and weight matter. This is where a sturdier non-folding
-            machine usually earns its extra cost; our
+            requirement up, and both stride and weight matter. This is where a sturdier <a href="/best-non-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>non-folding
+            machine</a> usually earns its extra cost; our
             <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">best treadmills for running</a>
             covers machines suited to that use.
           </p>`,

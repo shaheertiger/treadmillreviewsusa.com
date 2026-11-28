@@ -35,7 +35,7 @@ export default {
             Five machines, all of them walking pads, a 2-in-1 pad with a fold-up bar and one
             low-speed walker with side rails, because that is what this budget buys. The short version: the Sunny Treadpad Compact for most people,
             the UREVO Strol 2E if you want to jog occasionally with a bar to hold, and the UREVO
-            Smart Walking Pad if you want the cheapest pad we could verify. Whichever you buy, read our guide to
+            <a href="/best-walking-pads-with-app/" class="text-[#0F62FE] font-medium" data-autolink>Smart Walking Pad</a> if you want the cheapest pad we could verify. Whichever you buy, read our guide to
             <a href="/how-to-make-a-cheap-treadmill-last-longer/" class="text-[#0F62FE] font-medium">making a cheap treadmill last longer</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">

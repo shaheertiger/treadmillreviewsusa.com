@@ -336,7 +336,7 @@ export default {
             <strong>Running costs.</strong> Wear parts are the main recurring cost on a heavily used
             commercial treadmill. Belts and decks wear with mileage, and a full-commercial machine in a
             busy gym covers far more distance in a year than any home treadmill. Ask the dealer what a
-            replacement belt and deck cost for the model you are quoting, since those prices vary a great
+            <a href="/best-treadmill-replacement-belts/" class="text-[#0F62FE] font-medium" data-autolink>replacement belt</a> and deck cost for the model you are quoting, since those prices vary a great
             deal by brand and you will likely pay them at least once over the machine's life.
           </p>`,
     },

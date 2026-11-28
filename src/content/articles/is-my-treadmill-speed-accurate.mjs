@@ -169,7 +169,7 @@ export default {
           <p>
             <strong>1. Find the belt's full loop length.</strong> This is the length of the whole
             belt as a loop, not the length of the running surface you see. The manual or the
-            manufacturer's parts listing often gives the replacement belt size, which is the
+            manufacturer's parts listing often gives the <a href="/best-treadmill-replacement-belts/" class="text-[#0F62FE] font-medium" data-autolink>replacement belt</a> size, which is the
             easiest source. To measure it, unplug the treadmill, make a chalk mark across the edge
             of the belt near the rear roller, and measure forward along the top surface a convenient
             distance — say 36 inches — and make a second mark. Pull the belt by hand so the second

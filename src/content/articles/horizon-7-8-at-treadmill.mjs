@@ -486,7 +486,7 @@ export default {
             <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101 review</a>
             and in <a href="/is-horizon-a-good-treadmill-brand/" class="text-[#0F62FE] font-medium">our Horizon brand assessment</a>,
             which also covers how the parent company, Johnson Health Tech, handles service. Our
-            <a href="/horizon-fitness/" class="text-[#0F62FE] font-medium">Horizon Fitness guide</a>
+            <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">Horizon Fitness guide</a>
             sets out the whole range and the company behind it.
           </p>`,
     },

@@ -83,8 +83,8 @@ export default {
           </ul>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What should make you careful</h3>
           <ul>
-            <li><strong>Specifications that do not survive checking.</strong> DeerRun advertises brushless
-            motors, and the one independent teardown of a Q2 Urban we found reported a brushed motor. The
+            <li><strong>Specifications that do not survive checking.</strong> DeerRun advertises <a href="/best-treadmills-with-brushless-motor/" class="text-[#0F62FE] font-medium" data-autolink>brushless
+            motors</a>, and the one independent teardown of a Q2 Urban we found reported a brushed motor. The
             Z10 page gives two noise figures 20 dB apart. The details are in the section on DeerRun’s
             figures below.</li>
             <li><strong>Terms narrower than the headlines.</strong> The “60-day risk-free trial” sits on

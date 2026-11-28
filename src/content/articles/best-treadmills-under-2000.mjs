@@ -281,7 +281,7 @@ export default {
       heading: 'Final Recommendations',
       html: `          <p>
             The <strong>NordicTrack Commercial 1750</strong> is the best running machine in this
-            band and the one we recommend most often: a 60 by 22-inch deck, roughly 340 lbs of
+            band and the one we recommend most often: a 60 by <a href="/best-wide-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>22-inch deck</a>, roughly 340 lbs of
             frame to keep it planted at 10 mph, and decline to -3%. Buy it
             knowing the console will keep asking about a subscription.
           </p>

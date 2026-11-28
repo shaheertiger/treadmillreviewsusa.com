@@ -156,7 +156,7 @@ export default {
             lost much of its strength. Corrugated cardboard that has absorbed moisture can lose a
             large part of its stacking strength, and a treadmill box needs that strength because
             freight is often stacked. If the box is soft, torn at the corners or missing its
-            inserts, treat it as a dust cover and add your own protection inside and out.
+            inserts, treat it as a <a href="/best-treadmill-covers/" class="text-[#0F62FE] font-medium" data-autolink>dust cover</a> and add your own protection inside and out.
           </p>
           <p>
             <strong>Repacking it the way it came.</strong> Machines are usually packed partly
@@ -193,7 +193,7 @@ export default {
             lets go. Our guide on
             <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">how to fold a treadmill</a>
             explains the different latch types. If the latch is worn or will not hold, do not pack
-            it folded; lower the deck and pack it as a non-folding machine.
+            it folded; lower the deck and pack it as a <a href="/best-non-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>non-folding machine</a>.
           </p>
           <p>
             <strong>Non-folding treadmills.</strong> The deck stays flat. Protect the belt surface

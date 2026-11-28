@@ -194,7 +194,7 @@ export default {
           <p>
             When we checked on 5 November 2026, we found no full independent hands-on review of the T3S Plus or
             any T5 model from a major outlet. Consumer Reports lists the T3S Plus in its treadmill ratings, but its
-            scores are for subscribers and we have not seen them. Search results for the Walmart marketplace
+            scores are for subscribers and we have not seen them. Search results for the <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Walmart marketplace</a>
             listing showed only a handful of mixed reviews, and one of Best Buy’s listings showed none. Yesoul’s
             own page shows a large review count, but Yesoul collects and displays those reviews itself, so we do
             not treat them as independent. The T5 series has only been on sale in the US since June 2026. We do

@@ -155,13 +155,13 @@ export default {
             box that stores in roughly half the floor space. It is the best general-purpose design
             for most homes, and the reason our top pick is one. The trade-offs are a hinge in the
             middle of the deck, a little more weight than a flat pad, and, for anyone with
-            neighbours below, less mass to soak up footsteps than a heavier non-folding machine.
+            neighbours below, less mass to soak up footsteps than a heavier <a href="/best-non-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>non-folding machine</a>.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">An incline pad</h3>
           <p>
             A pad that tilts, usually on a small motor under the front of the deck. Because walking
             pads top out around 4 mph, incline is the only real way to make one harder as you get
-            fitter. UREVO's CyberPad and the MERACH W50 TrekPad both have it. Incline pads are
+            fitter. UREVO's CyberPad and the <a href="/merach-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>MERACH W50</a> TrekPad both have it. Incline pads are
             heavier and taller than flat ones, which matters under a desk, and the incline figures on
             listings need reading carefully: levels are not the same as percent, percent is not the
             same as degrees, and one maker's description of our heavy-duty pick uses both. Our roundup of

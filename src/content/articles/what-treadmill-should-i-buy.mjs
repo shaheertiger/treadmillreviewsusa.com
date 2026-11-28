@@ -62,7 +62,7 @@ const TABLE_ROWS = [
     '<strong>Not sure yet</strong> which group you are in',
     'Start with the overall picks, then come back to the row that fits',
     'Read the deck, motor and capacity rows for walking and jogging first',
-    link('/best-treadmills/', 'Best treadmills of 2026'),
+    link('/treadmill-reviews-2026/', 'Best treadmills of 2026'),
   ],
 ];
 
@@ -532,7 +532,7 @@ ${DECISION_TABLE}
     `Size everything for the tallest, heaviest and fastest regular user, compare continuous
             horsepower only, and measure the room before you shop. Then go to the roundup for your
             row — starting with our
-            <a href="/best-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best treadmills of 2026</a>
+            <a href="/treadmill-reviews-2026/" class="text-[#5AA9FF] font-bold no-underline">best treadmills of 2026</a>
             if you are still between rows.`,
   ],
 };

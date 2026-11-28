@@ -69,7 +69,7 @@ export default {
             The short version is that a walking pad trades capability for size. The table below
             sets out the typical differences across the categories. Treat every figure as a typical
             range rather than a rule: some pads are longer, some treadmills are shorter, and the
-            2-in-1 models blur the line on purpose.
+            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium" data-autolink>2-in-1 models</a> blur the line on purpose.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -339,7 +339,7 @@ export default {
       heading: 'Are Walking Pads Loud?',
       html: `          <p>
             At walking pace they are generally quieter than a full treadmill, but not silent. The
-            sound comes from two places: a motor hum and belt noise that rise with speed, and the
+            sound comes from two places: a <a href="/treadmill-humming-noise/" class="text-[#0F62FE] font-medium" data-autolink>motor hum</a> and belt noise that rise with speed, and the
             thud of footsteps, which is mostly a function of how heavily you walk and what the pad
             is sitting on.
           </p>

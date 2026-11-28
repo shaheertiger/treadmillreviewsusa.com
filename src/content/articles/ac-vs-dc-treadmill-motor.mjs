@@ -211,7 +211,7 @@ export default {
             motor, which is partly true and partly not the point.
           </p>
           <p>
-            A brushless motor does away with the brushes and commutator. Instead, the controller
+            A <a href="/best-treadmills-with-brushless-motor/" class="text-[#0F62FE] font-medium" data-autolink>brushless motor</a> does away with the brushes and commutator. Instead, the controller
             switches current between the windings electronically, using sensors or feedback to know
             where the rotor is. The result keeps the DC motor's advantages — fine speed control,
             compact size, quiet running — while removing the main wear part. Brushless motors also

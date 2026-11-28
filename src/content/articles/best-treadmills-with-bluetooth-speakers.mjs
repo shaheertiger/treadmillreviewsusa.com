@@ -154,7 +154,7 @@ export default {
             colour such as purple or red, mostly leads to one machine family: the Goplus 3HP Electric
             Folding Treadmill, sold under at least three ASINs that share the same title and description
             at $299.99. Its bullets describe a 3.0 HP motor, speeds from 0.6 to 8 mph with two preset
-            buttons for 3 and 5 mph, an HD touch screen, the Gymax app, a retractable phone holder, a
+            buttons for 3 and 5 mph, an HD touch screen, the Gymax app, a retractable <a href="/best-treadmill-phone-holders/" class="text-[#0F62FE] font-medium" data-autolink>phone holder</a>, a
             Bluetooth speaker, a knob-operated fold that stands up on its own without leaning on a wall,
             and transport wheels. It arrives without assembly.
           </p>
@@ -223,7 +223,7 @@ export default {
           </p>
           <p>
             If you want the speaker on a walking pad rather than a treadmill, the Goplus 2.25HP 2-in-1
-            here is one; our <a href="/best-2-in-1-folding-treadmills/" class="text-[#0F62FE] font-medium">best 2-in-1 folding treadmills</a>
+            here is one; our <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">best 2-in-1 folding treadmills</a>
             guide compares it with UREVO and Sunny alternatives that do not have speakers.
           </p>`,
     },

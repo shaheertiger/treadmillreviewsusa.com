@@ -236,7 +236,7 @@ export default {
             <li><strong>A continuous (CHP) figure stated by the brand.</strong> Treat it with some
             caution, but a brand that publishes one is easier to hold to account than one that
             publishes only peak horsepower.</li>
-            <li><strong>A brushless motor,</strong> where independently confirmed. Brushless motors
+            <li><strong>A brushless motor,</strong> where independently confirmed. <a href="/best-treadmills-with-brushless-motor/" class="text-[#0F62FE] font-medium" data-autolink>Brushless motors</a>
             run cooler and have no brushes to wear, which suits long daily sessions. Several budget
             brands claim brushless motors that teardowns have found to be brushed, so a claim on its
             own is not proof.</li>

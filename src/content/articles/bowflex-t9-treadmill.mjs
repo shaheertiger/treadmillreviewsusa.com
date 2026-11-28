@@ -554,7 +554,7 @@ export default {
       id: 'who-should-buy',
       heading: 'Who Should Buy the Bowflex T9',
       html: `          <p>
-            <strong>Buy it if you run and want room on the belt.</strong> The 22-inch deck is the T9's defining
+            <strong>Buy it if you run and want room on the belt.</strong> The <a href="/best-wide-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>22-inch deck</a> is the T9's defining
             feature, and for tall or broad runners it is the right reason to choose it over the T6 or a typical
             20-inch folding treadmill.
           </p>

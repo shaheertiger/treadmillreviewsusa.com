@@ -513,8 +513,8 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">TRUE vs Landice</h3>
           <p>
-            Landice is the other family-owned, dealer-sold American maker, and the price is similar. The
-            L7 offers lifetime parts cover against TRUE's five to ten years, but a shorter 58-inch running
+            Landice is the other family-owned, dealer-sold American maker, and the price is similar. <a href="/landice-l7-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>The
+            L7</a> offers lifetime parts cover against TRUE's five to ten years, but a shorter 58-inch running
             length, and Landice ties its labour cover to installation by a nearby dealer, much as TRUE
             ties its warranty to authorised first assembly. Choose on deck length, console and which
             brand has the better dealer near you; our

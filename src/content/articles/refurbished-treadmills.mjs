@@ -337,7 +337,7 @@ export default {
             work done.
           </p>
           <p>
-            <strong>"Refurbished" from a private seller is used.</strong> Pay used prices, inspect
+            <strong>"Refurbished" from a private seller is used.</strong> Pay <a href="/how-much-does-a-used-treadmill-cost/" class="text-[#0F62FE] font-medium" data-autolink>used prices</a>, inspect
             it as a used machine, and assume no warranty.
           </p>
           <p>

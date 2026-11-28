@@ -246,7 +246,7 @@ export default {
           </p>
           <p>
             If you find one in stock on Walmart, the same reading applies as for the treadmills. The
-            2-in-1 models list a walking mode limited to about 4 mph with the rail down and a running
+            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium" data-autolink>2-in-1 models</a> list a walking mode limited to about 4 mph with the rail down and a running
             mode to 9 mph with it up, a split that is common on this kind of machine and sensible for
             safety. One of them gives two different weight limits. None gives a running-surface length
             for the 2-in-1 models in the text we read, which is the figure that decides whether the

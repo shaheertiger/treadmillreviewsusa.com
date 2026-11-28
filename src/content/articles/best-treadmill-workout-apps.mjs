@@ -105,7 +105,7 @@ export default {
           <ul>
             <li><strong>On a treadmill:</strong> trainer-led workouts, filmed routes and programmes, with the machine following along on iFIT-enabled equipment. On other treadmills you can follow the workouts and adjust the console yourself.</li>
             <li><strong>Controls speed or incline:</strong> yes, on iFIT-enabled equipment from NordicTrack, ProForm and Freemotion. iFIT's own pages describe the machine automatically following the trainer's incline and speed, and the App Store listing says the same.</li>
-            <li><strong>Runs on:</strong> phones and tablets, and the built-in touchscreens on iFIT treadmills. iFIT sells one membership for phone or tablet use with Bluetooth iFIT-ready machines that have no screen, and another for machines with built-in touchscreens that covers more users.</li>
+            <li><strong>Runs on:</strong> phones and tablets, and the built-in touchscreens on <a href="/best-ifit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>iFIT treadmills</a>. iFIT sells one membership for phone or tablet use with Bluetooth iFIT-ready machines that have no screen, and another for machines with built-in touchscreens that covers more users.</li>
             <li><strong>Free tier:</strong> no. iFIT says a paid membership is required to access its content and features; a free iFIT account is needed just to operate the equipment.</li>
             <li><strong>Price:</strong> check the current price on iFIT's site.</li>
           </ul>
@@ -151,7 +151,7 @@ export default {
           </p>
           <ul>
             <li><strong>On a treadmill:</strong> running or walking through Zwift's virtual worlds, with your avatar moving at the speed your treadmill or sensor reports.</li>
-            <li><strong>Controls speed or incline:</strong> almost never. Zwift's own support documentation names one treadmill whose incline it can control, the Wahoo KICKR RUN. On every other compatible treadmill, the hills in the virtual world are yours to match by hand.</li>
+            <li><strong>Controls speed or incline:</strong> almost never. Zwift's own support documentation names one treadmill whose incline it can control, the <a href="/wahoo-kickr-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Wahoo KICKR RUN</a>. On every other compatible treadmill, the hills in the virtual world are yours to match by hand.</li>
             <li><strong>Runs on:</strong> Zwift says most newer PCs, Apple devices and Android; its App Store listing names smartphones, tablets and Apple TV. To run, it needs a speed signal from a treadmill that connects directly or from a foot pod, smart shoe or supported smartwatch.</li>
             <li><strong>Free tier:</strong> we could not confirm one. Zwift and its App Store listing both offer a free trial for first-time users.</li>
             <li><strong>Price:</strong> check the current price on Zwift's site.</li>

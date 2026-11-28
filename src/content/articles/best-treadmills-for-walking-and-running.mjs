@@ -247,7 +247,7 @@ export default {
       html: `          <p>
             Small features decide whether a shared treadmill is pleasant or a source of friction. Weight limit
             comes first: buy for the heavier user and leave a margin, because the heavier person running at
-            speed is the hardest load the machine sees. A 325 lb limit, as on the Horizon 7.0 AT, Schwinn 815 and
+            speed is the hardest load the machine sees. A 325 lb limit, as on the Horizon 7.0 AT, <a href="/schwinn-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Schwinn 815</a> and
             NordicTrack T Series 10, suits users up to about 275 lb with a sensible margin.
           </p>
           <p>

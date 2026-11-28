@@ -54,7 +54,7 @@ export default {
       products: true,
       heading: 'Why It Sold in Those Numbers',
       html: `          <p>
-            The Cadence G 5.9 is discontinued and not sold new on Amazon US, so the product card on this page shows the closest new treadmill Amazon does sell, XTERRA’s TRX1000; the review itself is about the Weslo.
+            The Cadence G 5.9 is discontinued and not sold new on Amazon US, so the product card on this page shows the closest new treadmill Amazon does sell, <a href="/xterra-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>XTERRA</a>’s TRX1000; the review itself is about the Weslo.
           </p>
           <p>
             The Cadence G 5.9 was never the best treadmill at anything. It was the cheapest one

@@ -148,7 +148,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Deck stability at speed</h3>
           <p>
             A deck that is part of a fixed frame tends to feel more planted when you run hard, land
-            heavily or change pace abruptly. That matters most to heavier runners, sprint and
+            heavily or change pace abruptly. That matters most to <a href="/best-treadmills-for-heavy-runners/" class="text-[#0F62FE] font-medium" data-autolink>heavier runners</a>, sprint and
             interval sessions, and anyone who runs most days.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Larger decks</h3>
@@ -373,8 +373,8 @@ export default {
             version of the same machine — Spirit's XT485 and XT685, Life Fitness's F3 and T3 — under
             similar names. Make sure the listing you are reading is the one you mean to buy.</li>
             <li><strong>Ask in writing if the page is silent.</strong> If the maker's own page does
-            not say, ask the seller to confirm before you order. That is how we treated the Landice
-            L7, and it is how you should treat any machine whose page leaves it out.</li>
+            not say, ask the seller to confirm before you order. That is how we treated the <a href="/landice-l7-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Landice
+            L7</a>, and it is how you should treat any machine whose page leaves it out.</li>
           </ol>
           <p>
             While you are on the specification table, read three other lines that matter more on a

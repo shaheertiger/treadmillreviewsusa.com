@@ -87,7 +87,7 @@ export default {
             <strong>Spirit treadmills are solid mid-to-upper-range machines, sold mainly through
             dealers, with long parts warranties and no subscription needed to use them.</strong>
             Spirit Fitness is based in Jonesboro, Arkansas, and has been owned since 2008 by Dyaco,
-            a Taiwanese fitness manufacturer that also makes and distributes Sole and XTERRA. The
+            a Taiwanese fitness manufacturer that also makes and distributes Sole and <a href="/xterra-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>XTERRA</a>. The
             current home range runs from the folding XT185 to the non-folding XT685, at about $2,200
             to $3,200 on Spirit's own site when we checked.
           </p>

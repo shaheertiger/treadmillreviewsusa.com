@@ -118,7 +118,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Supplier brands selling under their own names</h3>
           <p>
             Most treadmill listings we saw on 14 October 2026 carried names such as MERACH, FED
-            Fitness, UMAY, Homdox, Himimi, FutureGlide, Yagud, Soozier, Alvantor and ViaMotion —
+            Fitness, <a href="/umay-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UMAY</a>, Homdox, Himimi, FutureGlide, Yagud, Soozier, Alvantor and ViaMotion —
             brands that also sell on Amazon and elsewhere, mostly walking pads and budget folding
             treadmills. These are the most useful Wayfair listings for comparison shopping, because
             you can search the same name and model on other sites and on the brand’s own website.

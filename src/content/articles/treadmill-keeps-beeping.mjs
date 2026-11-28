@@ -185,7 +185,7 @@ export default {
             so you are not caught off balance. The manuals we read describe several:
           </p>
           <ul>
-            <li><strong>A start countdown.</strong> The Schwinn 810 / 510T manual says the belt will only move after a
+            <li><strong>A start countdown.</strong> The <a href="/schwinn-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Schwinn 810</a> / 510T manual says the belt will only move after a
             3-second audible beep countdown.</li>
             <li><strong>Segment changes.</strong> The same Schwinn manual says the console makes an audible beep when the
             next segment of a profile programme starts, and to be ready for changes in incline and speed. A NordicTrack

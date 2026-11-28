@@ -90,7 +90,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Where iFIT’s brands stand</h3>
           <p>
             iFIT’s 2021 registration statement lists its principal brands as iFIT, NordicTrack,
-            ProForm, Freemotion, Weider, Weslo, 29029 and Sweat. Gold’s Gym is not among them, which
+            ProForm, <a href="/freemotion-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Freemotion</a>, Weider, Weslo, 29029 and Sweat. Gold’s Gym is not among them, which
             fits the end of the exclusive licence in 2019. It does not tell us whether iFIT sold off
             remaining Gold’s Gym stock afterwards, and retailers did continue to list the models for a
             time.

@@ -356,7 +356,7 @@ export default {
             <strong>DIY or technician.</strong> The flip is a reasonable DIY job for an owner who
             is comfortable with hand tools, has a helper for the lifting, and will take the time to
             re-track the belt afterwards. A replacement is the same job with more at stake in the
-            ordering. The arguments for a technician are a heavy non-folding machine, a machine
+            ordering. The arguments for a technician are a heavy <a href="/best-non-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>non-folding machine</a>, a machine
             still under a labour warranty, uncertainty about whether the deck is really the fault,
             and the simple value of having someone look at the rollers, drive belt and motor while
             it is all apart. Our <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>

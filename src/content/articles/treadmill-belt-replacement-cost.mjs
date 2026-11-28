@@ -303,7 +303,7 @@ export default {
           <p>
             The gap between the DIY row and the technician row is the price of your own afternoon
             and the risk of getting it wrong. For many owners that trade is worth making; for
-            others, particularly with a heavy non-folding machine, it is not. The section on DIY
+            others, particularly with a heavy <a href="/best-non-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>non-folding machine</a>, it is not. The section on DIY
             versus professional below is meant to help you decide honestly.
           </p>`,
     },

@@ -48,7 +48,7 @@ export default {
             8 mph is a 7:30 mile and caps easy-pace running only.</li>
             <li><strong>Motor:</strong> continuous-duty (CHP) ratings are rarely printed at this price,
             so lean on the warranty and the maker’s track record instead.</li>
-            <li><strong>Capacity:</strong> 300 lb is standard here; heavier runners should look at the
+            <li><strong>Capacity:</strong> 300 lb is standard here; <a href="/best-treadmills-for-heavy-runners/" class="text-[#0F62FE] font-medium" data-autolink>heavier runners</a> should look at the
             400 lb BORGUSI.</li>
             <li><strong>Budget reality:</strong> under $500 you are buying a jogging machine, not a
             running one, and a 60-inch deck starts at roughly $900.</li>
@@ -252,7 +252,7 @@ export default {
           </p>
           <p>
             Of the six listings on this page, none says whether its figure is continuous or peak. THERUN lists
-            3.5 HP, BORGUSI 4.0 HP, ATEEDGE 3.0 HP and Sunny 2.5 HP for a brushless motor. On their face the
+            3.5 HP, BORGUSI 4.0 HP, ATEEDGE 3.0 HP and Sunny 2.5 HP for a <a href="/best-treadmills-with-brushless-motor/" class="text-[#0F62FE] font-medium" data-autolink>brushless motor</a>. On their face the
             Amazon-first brands look more powerful than Horizon and NordicTrack, which do not print a horsepower
             figure on the listings we checked at all. Horizon’s own product page describes a “Johnson Drive System”
             and gives no horsepower (checked November 2026). Some third-party retailers quote figures for both

@@ -108,7 +108,7 @@ export default {
             Third, figures had to agree. Where the manufacturer and an independent source gave the
             same running surface, capacity or weight, it appears on the card. Where they did not —
             the Woodway's exact weight, the Tru Grit's dimensions — we left it out, and where a
-            seller's own figures conflict, as on the CT700's weight rating, the card says so. A blank
+            seller's own figures conflict, as on the <a href="/sb-fitness-ct700-curved-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>CT700</a>'s weight rating, the card says so. A blank
             in the comparison table below is deliberate.
           </p>
           <p>
@@ -124,8 +124,8 @@ export default {
       heading: 'What Curved Treadmills Cost, and Why',
       html: `          <p>
             The prices on this page are high, and it is worth being clear about that up front.
-            The cheapest machine here is about $1,600; most cost $2,100 to $2,600; the Pro 6
-            Arcadia is about $4,500, and outside this list the built-to-order TrueForm Runner runs from
+            The cheapest machine here is about $1,600; most cost $2,100 to $2,600; the <a href="/pro-6-arcadia-air-runner/" class="text-[#0F62FE] font-medium" data-autolink>Pro 6
+            Arcadia</a> is about $4,500, and outside this list the built-to-order TrueForm Runner runs from
             about $6,200 to over $10,000 depending on how it is configured. For comparison, a capable motorised running treadmill with incline can be
             had for $1,500 to $2,000. A curved treadmill is not the economical choice.
           </p>

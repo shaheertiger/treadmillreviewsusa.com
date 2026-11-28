@@ -289,7 +289,7 @@ export default {
       id: 'take-apart',
       heading: 'How to Take Apart a NordicTrack Treadmill',
       html: `          <p>
-            Most people asking how to take apart a NordicTrack treadmill are moving it, and the
+            Most people asking how to <a href="/how-to-take-apart-a-nordictrack-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>take apart a NordicTrack</a> treadmill are moving it, and the
             honest answer is that you usually need to take apart much less than you think.
           </p>
           <p>

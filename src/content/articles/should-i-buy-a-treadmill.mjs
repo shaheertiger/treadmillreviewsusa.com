@@ -304,7 +304,7 @@ export default {
           </p>
           <p>
             <strong>A walking pad.</strong> If you only walk, and especially if you want to walk
-            while you work, a walking pad costs roughly $200 to $600 and slides under a sofa or bed.
+            while you work, a <a href="/how-much-does-a-walking-pad-cost/" class="text-[#0F62FE] font-medium" data-autolink>walking pad costs</a> roughly $200 to $600 and slides under a sofa or bed.
             It is a smaller bet than a full treadmill and a good fit for desk workers. Our guide to
             <a href="/are-walking-pads-worth-it/" class="text-[#0F62FE] font-medium">whether walking pads are worth it</a>
             covers who gains and who regrets one.

@@ -135,7 +135,7 @@ export default {
             The Sunny Health &amp; Fitness SF-T7603, a common under-$500 folding treadmill, was shown
             as sold out at $449.99 on Sunny's own store. The NordicTrack T Series 5, which has sold in
             the $420 to $600 range, is not listed on NordicTrack's US site, and we could not confirm a
-            current price on a retailer page we could read on the day. And Sperax walking pads, which
+            current price on a retailer page we could read on the day. And <a href="/sperax-walking-pad-recall/" class="text-[#0F62FE] font-medium" data-autolink>Sperax walking pads</a>, which
             still turn up at budget prices on marketplaces, are under a CPSC warning telling owners to
             stop using them. We found no recall or warning covering the MERACH, Goplus, NordicTrack or SOLE models on this page.
           </p>`,
@@ -412,7 +412,7 @@ export default {
           </p>
           <p>
             <strong>Spend more if you are near a weight limit.</strong> Every full-size machine on this
-            page is rated to 325 lb and the Goplus compact folder to 265 lb; the MERACH walking pad is
+            page is rated to 325 lb and the Goplus compact folder to 265 lb; the <a href="/merach-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>MERACH walking pad</a> is
             rated to 400 lb, but it is a walking machine only. If you are within about 50 lb of
             those figures, look at the
             <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity guide</a>

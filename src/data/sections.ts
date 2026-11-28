@@ -68,12 +68,6 @@ export const SECTIONS: Section[] = [
         name: 'Home & everyday running',
         pages: [
           {
-            title: 'Best Treadmills of 2026',
-            description: 'Our top pick from every budget and category in one ranked roundup.',
-            badge: 'Start here',
-            url: '/best-treadmills/',
-          },
-          {
             title: 'Best Treadmills for Home',
             description:
               'Seven home treadmills ranked on motor, deck, incline and warranty, and which type of home buyer you are.',
@@ -161,12 +155,6 @@ export const SECTIONS: Section[] = [
               'Long decks, motors and cooling for two- and three-hour runs, plus decline for hilly courses.',
             badge: 'Marathon',
             url: '/best-treadmills-for-marathon-training/',
-          },
-          {
-            title: "Best Treadmills for Long Distance Running",
-            description: "Five high-mileage treadmills for distance runners and triathletes: motors, decks, cooling, warranty.",
-            badge: "Distance",
-            url: '/best-treadmills-for-long-distance-running/',
           },
           {
             title: 'Best Wide Treadmills',
@@ -328,12 +316,6 @@ export const SECTIONS: Section[] = [
             url: '/best-walking-pads/',
           },
           {
-            title: "Best 2-in-1 Folding Treadmills",
-            description: "Walking pads with a lift-up handrail and jogging mode: Goplus, UREVO, Sunny and DeerRun compared.",
-            badge: "2-in-1",
-            url: '/best-2-in-1-folding-treadmills/',
-          },
-          {
             title: 'Best Walking Pads With Incline',
             description:
               'Walking pads that add a powered or fixed incline, and how much grade a pad can realistically give you.',
@@ -492,12 +474,6 @@ export const SECTIONS: Section[] = [
               "Six treadmills rated 375-425 lb that also run to 12 mph, with the running margin each one leaves you.",
             badge: "Running, 350 lb+",
             url: '/best-treadmills-for-heavy-runners/',
-          },
-          {
-            title: "Best Heavy Duty Treadmills",
-            description: "Five treadmills judged on frame, continuous motor rating, deck and warranty, not the label.",
-            badge: "Durability",
-            url: '/best-heavy-duty-treadmills/',
           },
           {
             title: 'Best Walking Pads for Heavy People',

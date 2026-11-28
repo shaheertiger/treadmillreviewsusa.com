@@ -480,7 +480,7 @@ export default {
           <p>
             Watch tap-to-connect for <a href="/best-treadmills-for-apple-watch/" class="text-[#0F62FE] font-medium" data-autolink>Apple Watch</a> and Galaxy Watch is listed for the 7.0 AT, and its steps
             are in our start guide linked above. If you are still weighing up the range, our
-            <a href="/horizon-fitness/" class="text-[#0F62FE] font-medium">Horizon Fitness brand guide</a>
+            <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">Horizon Fitness brand guide</a>
             sets out which models have which connectivity.
           </p>`,
     },

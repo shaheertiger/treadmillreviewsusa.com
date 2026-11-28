@@ -270,7 +270,7 @@ export default {
           <p>
             The Foldi Mini was UREVO’s compact folding treadmill, with a successor, the Foldi Mini 2.
             On 5 November 2026 both of their product addresses on UREVO’s US store opened UREVO’s Foldi
-            3S instead, an 87.5 lb folding treadmill with incline that is not a mini treadmill by any
+            3S instead, an 87.5 lb <a href="/best-folding-treadmills-with-incline/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmill with incline</a> that is not a mini treadmill by any
             measure. The Foldi Mini did not appear in UREVO’s US product list that day. Listings for the
             Foldi Mini and Foldi Mini 2 are still indexed at several large US retailers, but their pages
             returned errors or bot checks when we tried to read them, so we could not confirm that either
