@@ -101,7 +101,7 @@ At the same publish age, top pages have about twice the inbound links of pages t
 (early Oct cohort: 32 vs 20; mid Oct: 17 vs 9). The site-wide interlink pass of 24 Oct gave the biggest
 week-on-week click gain on record (+61%, §1).
 - **Rule L1:** every article needs **11+ inbound links** from other articles; cost, fix, brand and
-  top-roundup pages aim for **21+**. Check with `node scripts/inbound-links.mjs` (lists pages under the line).
+  top-roundup pages aim for **21+**. Check with `node scripts/inbound-links.mjs` after `npm run build` (lists pages under the line). The "More in this section" box now gives every page in a hub group links from its neighbours (28 Nov: pages with 0-5 inbound links went from 86 to 18).
 - **Rule L2:** every new page gets, before merge: a hub entry in `src/data/sections.ts`, 3-5 anchor phrases in
   `scripts/interlink-anchors.json` then `node scripts/interlink.mjs --write`, one contextual link from its
   cluster pillar, and Related cards on 2-3 siblings pointing back.
