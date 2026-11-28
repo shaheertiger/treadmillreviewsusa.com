@@ -2,14 +2,14 @@ export default {
   slug: 'best-cushioned-treadmills',
   title: 'Best Cushioned Treadmills (2026): Low-Impact, Shock-Absorbing',
   description:
-    'The best cushioned treadmills for low-impact walking and running, each with a named, manufacturer-confirmed deck cushioning system — plus what cushioning can and cannot do for your joints.',
+    'The Horizon 7.4 AT is the best cushioned treadmill for most: zoned deck cushioning on a 22 x 60 in. deck, 15% incline and no subscription. Six picks compared.',
   crumbLabel: 'Best Cushioned Treadmills',
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.3k',
   h1: ['Best Cushioned Treadmills', 'For Low-Impact Walking and Running'],
   standfirst:

@@ -2,14 +2,14 @@ export default {
   slug: 'best-low-profile-treadmills',
   title: 'Best Low Profile Treadmills (2026): Slimline and Fold-Flat',
   description:
-    'The best low profile treadmills by the measurement that matters to you: low step-up height, a slimline fold-flat profile for under a bed or sofa, or a light weight you can move alone.',
+    'The Echelon Stride-6s is the best low profile treadmill: a 60-inch deck that folds flat, a 7-inch step-up and about 182 lb. Five picks by height or weight.',
   crumbLabel: 'Best Low Profile Treadmills',
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Best Low Profile Treadmills', 'Slimline, Fold-Flat and Lightweight'],
   standfirst:

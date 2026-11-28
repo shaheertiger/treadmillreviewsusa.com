@@ -2,13 +2,13 @@ export default {
   slug: 'best-dog-treadmill-harnesses',
   title: 'Best Dog Treadmill Harnesses (2026): 5 Picks and Safety Rules',
   description:
-    'Five dog harnesses that suit treadmill training, chosen for free shoulder movement, a secure fit and nothing that can catch in a belt, with the rule that matters most: never tie a dog to a treadmill.',
+    'The Blue-9 Balance Harness is the best dog treadmill harness for fit and movement; the rabbitgoo is under $20. Five picks; never tie a dog to a treadmill.',
   crumbLabel: 'Best Dog Treadmill Harnesses',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Best Dog Harnesses', 'for Treadmill Training'],
   standfirst:

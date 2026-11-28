@@ -2,14 +2,14 @@ export default {
   slug: 'best-dog-treadmills-for-large-dogs',
   title: 'Best Dog Treadmills for Large Dogs (2026): Sized for Big Breeds',
   description:
-    'Five dog treadmills for large and giant breeds that were on sale on 14 October 2026, chosen from published specs: running length against your dog, width, capacity, slatmills and safety.',
+    'A large dog needs a running surface at least twice its length. Five dog treadmills for large and giant breeds, motorised and slatmill, on sale in October 2026.',
   crumbLabel: 'Dog Treadmills for Large Dogs',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Best Dog Treadmills for Large Dogs', 'Long Enough for Big Breeds'],
   standfirst:

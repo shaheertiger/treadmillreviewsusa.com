@@ -2,7 +2,7 @@ export default {
   slug: 'best-treadmills-for-hiking',
   title: 'Best Treadmills for Hiking (2026): 6 Incline and Decline Picks',
   description:
-    'The Aviron Summit (-6% to 42%) is the best treadmill for hiking training; Sunny’s Versatile climbs to 45% for about $2,200 and the CURSOR reaches 32% for $199.99.',
+    'The Aviron Summit (-6% to 42%) is the best treadmill for hiking; Sunny’s Versatile climbs to 45% for about $2,200 and the CURSOR reaches 32% for $199.99.',
   crumbLabel: 'Best Treadmills for Hiking',
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },

@@ -2,14 +2,14 @@ export default {
   slug: 'best-ifit-treadmills',
   title: 'Best iFIT Treadmills (2026): 6 NordicTrack and ProForm Picks',
   description:
-    'Six treadmills with iFIT from NordicTrack and ProForm, checked against Amazon listings on 6 November 2026: which need a tablet, which have a screen, and what the membership costs.',
+    'The NordicTrack Commercial 1750 (22 in. belt, -3% to 12% incline, 400 lb) is the best iFIT treadmill; the T Series 5 runs iFIT from your tablet for about $600.',
   crumbLabel: 'Best iFIT Treadmills',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['The Best Treadmills', 'With iFIT'],
   standfirst:

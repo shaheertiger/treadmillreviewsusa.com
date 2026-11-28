@@ -2,14 +2,14 @@ export default {
   slug: 'treadmill-belt-replacement-cost',
   title: 'Treadmill Belt Replacement Cost (2026): Parts, Labour and Extras',
   description:
-    'Treadmill belt replacement cost: generic versus OEM belt prices, technician labour, hidden extras, how to tell a belt is worn, and the repair-or-replace maths.',
+    'A treadmill belt costs about $60 to $150 generic or $100 to $250+ OEM; a technician’s belt swap commonly totals $200 to $400. Labour, extras, when to replace.',
   crumbLabel: 'Treadmill Belt Replacement Cost',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Maintenance',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Treadmill Belt Replacement Cost:', 'What You Will Actually Pay'],
   standfirst:

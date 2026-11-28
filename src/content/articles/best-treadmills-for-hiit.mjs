@@ -2,14 +2,14 @@ export default {
   slug: 'best-treadmills-for-hiit',
   title: 'Best Treadmills for HIIT (2026): Fast Controls, Real Top Speed',
   description:
-    'Five treadmills for HIIT, sprinting and interval training, including one curved trainer, checked against maker listings and independent reviews: controls, top speed, motor, deck and safety.',
+    'The Horizon 7.4 AT (QuickDial controls, 22 x 60 in. deck, about $1,500–$1,800) is the best treadmill for HIIT; the NordicTrack Commercial 2450 reaches 14 mph.',
   crumbLabel: 'Best Treadmills for HIIT',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Best Treadmills', 'for HIIT and Sprinting'],
   standfirst:

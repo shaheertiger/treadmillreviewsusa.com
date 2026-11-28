@@ -2,14 +2,14 @@ export default {
   slug: 'dog-treadmill-vs-human-treadmill',
   title: 'Dog Treadmill vs Human Treadmill: What Differs, What Matters',
   description:
-    'Dog treadmill vs human treadmill: belt length against stride, side panels, front clearance, speed range, noise and controls, and when a human machine is a poor fit.',
+    'A dog treadmill’s running area should be at least twice your dog’s length, with side panels and controls beside the belt; a human treadmill has neither.',
   crumbLabel: 'Dog Treadmill vs Human Treadmill',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-22',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Dog Treadmill vs Human Treadmill', 'The Differences That Matter'],
   standfirst:

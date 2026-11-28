@@ -2,14 +2,14 @@ export default {
   slug: 'best-dog-treadmills',
   title: 'Best Dog Treadmills (2026): Picks by Dog Size, Toy to Giant',
   description:
-    'Six purpose-built dog treadmills sorted by dog size, chosen from published specs and independent coverage: belt length against your dog, side rails, speed, capacity and safety.',
+    'The best dog treadmill has a belt long enough for your dog: six picks by size, from the $180 GYMAX 2HP for toy breeds up to picks for giant breeds.',
   crumbLabel: 'Best Dog Treadmills',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-17',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Best Dog Treadmills', 'Sized for Your Dog'],
   standfirst:

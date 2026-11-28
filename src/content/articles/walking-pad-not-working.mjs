@@ -5,14 +5,14 @@ export default {
   slug: 'walking-pad-not-working',
   title: 'Walking Pad Not Working? Belt, Remote and Power Fixes',
   description:
-    'Most walking pad faults are one of 5 things: the safety key or magnet, the remote, a dry or loose belt, overheating, or power. Fixes in order, and when to call support.',
+    'Most walking pad faults are one of 5 things: the safety key or magnet, the remote, a dry or loose belt, overheating or power. Fixes in order, and when to call.',
   crumbLabel: 'Walking Pad Not Working',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-22',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Walking Pad Not Working?', 'Belt, Remote and Power Fixes'],
   standfirst:

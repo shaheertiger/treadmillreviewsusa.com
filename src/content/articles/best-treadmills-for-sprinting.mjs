@@ -2,13 +2,13 @@ export default {
   slug: 'best-treadmills-for-sprinting',
   title: 'Best Treadmills for Sprinting (2026): Motorised and Curved Picks',
   description:
-    'Five sprint treadmills sold on Amazon, compared on what sprinting needs: top speed, how fast the belt changes pace, motor rating, deck length, and curved manual trainers with no speed limit.',
+    'The NordicTrack Commercial 2450 (0–14 mph, 22 x 60 in. belt) is the fastest motorised sprint pick; curved trainers such as the SOLE C80 have no speed limit.',
   crumbLabel: 'Best Treadmills for Sprinting',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.5k',
   h1: ['Best Treadmills', 'for Sprinting'],
   standfirst:
