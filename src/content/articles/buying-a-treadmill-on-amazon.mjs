@@ -1,15 +1,14 @@
 export default {
   slug: 'buying-a-treadmill-on-amazon',
-  title: 'Amazon Treadmills (2026): How to Buy a Treadmill on Amazon Safely',
-  description:
-    'Buying a treadmill on Amazon: check who the seller is, read listings and reviews critically, and know how freight delivery, oversized returns and warranty work.',
+  title: "Buying a Treadmill on Amazon: Sellers, Reviews and Returns",
+  description: "Yes, if you treat the listing as a lead: check who the seller is, the continuous motor rating and the return policy before a 200 lb box has to go back.",
   crumbLabel: 'Buying a Treadmill on Amazon',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['Buying a Treadmill', 'on Amazon'],
   standfirst:

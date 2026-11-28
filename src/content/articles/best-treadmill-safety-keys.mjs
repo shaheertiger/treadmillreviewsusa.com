@@ -1,15 +1,14 @@
 export default {
   slug: 'best-treadmill-safety-keys',
   title: 'Best Treadmill Safety Keys (2026): Magnetic, Pin, Brand-Specific',
-  description:
-    'Five replacement treadmill safety keys, how magnetic and pin-style keys differ, how to match one to your brand, and how to test that it stops the belt.',
+  description: "Match your part number first: TreadLife keys fit NordicTrack, Horizon and Sole; a 1 in. universal magnetic key is the fallback. Five keys, plus a stop test.",
   crumbLabel: 'Best Treadmill Safety Keys',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Best Treadmill Safety Keys', 'and How to Match One'],
   standfirst:

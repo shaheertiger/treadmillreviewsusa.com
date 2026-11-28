@@ -235,8 +235,8 @@ ${DECISION_TABLE}
             <strong>What to skip.</strong> Fold-up handrails, which make a pad thicker and do not
             work under a desk; high top speeds you will never use at a desk; and very cheap pads from
             sellers with no support behind them. Check cpsc.gov for the brand before you buy — in
-            April 2026 the Consumer Product Safety Commission told owners to stop using Sperax
-            walking pads after reports of uncontrolled speed changes, falls and fires.
+            April 2026 the Consumer Product Safety Commission told owners to stop using <a href="/sperax-walking-pad-recall/" class="text-[#0F62FE] font-medium" data-autolink>Sperax
+            walking pads</a> after reports of uncontrolled speed changes, falls and fires.
           </p>
           <p>
             Our ${link('/under-desk-treadmills/', 'under-desk treadmills')} page compares pads for

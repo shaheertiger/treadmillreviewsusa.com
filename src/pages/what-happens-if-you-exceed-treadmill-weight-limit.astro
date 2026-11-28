@@ -4,7 +4,7 @@ import { SECTIONS } from "../data/sections";
 
 const title = "What Happens If You Exceed a Treadmill Weight Limit?";
 const description =
-  "Going over a treadmill or walking pad weight limit rarely breaks it at once. What wears first, the warning signs, what it means for your warranty and safety, and how much margin to buy.";
+  "Exceeding a treadmill weight limit rarely breaks it at once: the motor and board run hot, the belt and deck wear fast, and it may void the warranty. Buy +50 lb.";
 
 const schema = {
   "@context": "https://schema.org",
@@ -76,7 +76,7 @@ const schema = {
       description: description,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-10-13",
-      dateModified: "2026-11-16",
+      dateModified: "2026-11-28",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
   ],
@@ -86,7 +86,11 @@ const schema = {
 const HERE = "/what-happens-if-you-exceed-treadmill-weight-limit/";
 const HUB = SECTIONS.find((s) => s.slug === "guides");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -95,7 +99,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
   ogType="article"
   article={{
     publishedTime: "2026-10-13",
-    modifiedTime: "2026-11-16",
+    modifiedTime: "2026-11-28",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
@@ -126,7 +130,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
         <div class="ed-byline-text">
           By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
-          Updated November 16, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          Updated November 28, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
           <span class="ed-method">Based on manufacturer specifications and manuals, and independent sources.</span>
         </div>
         <a href="#what-fails-first" class="btn-ghost">What Fails First</a>

@@ -86,7 +86,11 @@ const schema = {
 const HERE = "/curved-treadmill-workouts/";
 const HUB = SECTIONS.find((s) => s.slug === "training");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -482,7 +486,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 <p>
             The plan below takes a reasonably fit runner who is new to a curved treadmill from the
             first sessions to a full week of curved work. It is an illustration, not a prescription:
-            if you already run regularly on one, start further in; if you are new to running, spend
+            if you already run regularly on one, start further in; if you are <a href="/how-to-start-running-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>new to running</a>, spend
             longer on the early weeks. Each week has two or three curved sessions, and the days in
             between are rest, easy running elsewhere, or strength work that does not hammer the
             calves.

@@ -1,15 +1,14 @@
 export default {
   slug: 'best-treadmill-settings-for-fat-loss',
   title: 'Best Treadmill Settings for Fat Loss: Speed, Incline and Time',
-  description:
-    'The best treadmill settings for fat loss by fitness level: speed, incline and time as starting points, the built-in program to pick, calorie arithmetic and why diet matters more.',
+  description: "Walk at 3.0–3.5 mph on a 4–10% incline for 30–45 minutes, three to five times a week. Settings by fitness level, the program to pick and the calorie math.",
   crumbLabel: 'Best Treadmill Settings for Fat Loss',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Best Treadmill Settings', 'for Fat Loss'],
   standfirst:

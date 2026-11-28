@@ -1,15 +1,14 @@
 export default {
   slug: 'used-peloton-tread',
   title: 'Used Peloton Treadmill (2026): Recalls, Fees and Fair Prices',
-  description:
-    'How to buy a used Peloton Tread or Tread+ safely: the 2021 recalls and how to confirm the fix, the $95 activation fee, the membership, what to check in person, fair prices against a new Tread Flex, and where to look.',
+  description: "A used Peloton Tread is worth it only if the recall fix is confirmed and the price, the $95 activation fee and moving stay under a new $2,195 Tread Flex.",
   crumbLabel: 'Used Peloton Treadmill',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Used',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Buying a Used', 'Peloton Treadmill'],
   standfirst:

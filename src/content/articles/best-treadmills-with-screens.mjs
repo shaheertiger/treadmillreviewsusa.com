@@ -1,15 +1,14 @@
 export default {
   slug: 'best-treadmills-with-screens',
   title: 'Best Treadmills With Screens (2026): 10 to 23.8 in. Touchscreens',
-  description:
-    'Six treadmills with built-in touchscreens, from 10 to 23.8 inches, compared on screen size, what needs a subscription and what still works without one. Prices checked November 2026.',
+  description: "The Sole F80 ($1,599.99) is the best treadmill with a screen and no subscription: a 10.1 in. touchscreen. Six picks, from 10 to 23.8 in. screens.",
   crumbLabel: 'Best Treadmills With Screens',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Best Treadmills', 'With Screens'],
   standfirst:

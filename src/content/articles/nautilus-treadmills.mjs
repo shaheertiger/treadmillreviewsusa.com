@@ -1,15 +1,14 @@
 export default {
   slug: 'nautilus-treadmills',
   title: 'Nautilus Treadmills (2026): T614, T616, T618 and Replacements',
-  description:
-    'Nautilus no longer sells treadmills. The T614, T616 and T618 figures, the 2022 T616/T618 recall with no remedy left, who owns the Nautilus name now, and the Bowflex and Schwinn machines to buy instead.',
+  description: "Nautilus no longer sells treadmills. The T614, T616 and T618 figures, the 2022 T616/T618 recall, and replacements from the $899 Schwinn 810 to the Bowflex T16.",
   crumbLabel: 'Nautilus Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Nautilus Treadmills:', 'What Happened, and What to Buy Instead'],
   standfirst:

@@ -1,14 +1,13 @@
 export default {
   slug: 'treadmill-weight-capacity-guide',
-  title: 'Treadmill Weight Capacity Guide: What Limit Do You Need?',
-  description:
-    'What a treadmill weight limit actually measures, why running loads the deck far beyond your body weight, and how much capacity to buy for your weight and training.',
+  title: "Treadmill Weight Limit Guide: Buy 50–100 lb Over Your Weight",
+  description: "Treadmills are typically rated 250–400 lb. Buy 50 lb over your weight to walk, 75–100 lb over to run: running strides load the deck at 2–3x body weight.",
   crumbLabel: 'Treadmill Weight Capacity Guide',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['Treadmill Weight Capacity:', 'What Limit Do You Need?'],
   standfirst:

@@ -1,15 +1,14 @@
 export default {
   slug: 'are-walking-pads-worth-it',
-  title: 'Are Walking Pads Worth It? (2026): Who Gains, Who Regrets',
-  description:
-    'Are walking pads worth it? For desk workers who will use one most days, usually yes. Who regrets them, cost per use worked out, budget-brand lifespan and alternatives.',
+  title: "Are Walking Pads Worth It? Who Gains and Who Regrets One",
+  description: "Yes, if you walk on it most days: a mid-priced pad used for a few years costs well under $1 a session. Quit after six weeks and it is about $10 a walk.",
   crumbLabel: 'Are Walking Pads Worth It?',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Are Walking Pads', 'Worth It?'],
   standfirst:

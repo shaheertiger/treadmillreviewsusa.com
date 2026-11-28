@@ -73,7 +73,7 @@ export default {
           <p>
             DC motors are good at the pattern home training actually consists of: short sessions,
             frequent speed changes, intervals, and long rests between uses. Their weakness is
-            sustained high load. Under a heavy runner at speed for a long time, a DC motor and its
+            sustained high load. Under a <a href="/best-treadmills-for-heavy-runners/" class="text-[#0F62FE] font-medium" data-autolink>heavy runner</a> at speed for a long time, a DC motor and its
             controller both build heat, and heat is what eventually degrades winding insulation and
             electronic components. That is why the continuous rating, and the margin between it and
             the job you are asking of it, matters so much.

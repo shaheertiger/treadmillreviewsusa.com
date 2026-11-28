@@ -9,7 +9,7 @@ const description =
 const PRODUCTS = [
   {
     id: "cursor-40-incline-treadmill",
-    name: "CURSOR 40% Incline Treadmill",
+    name: "CURSOR 32% Incline Treadmill",
     brand: "CURSOR",
     category: "Closest on Amazon to the SF20: Handrails and a Steep Manual Incline",
     badge: "Closest on Amazon",
@@ -17,22 +17,22 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     image: {"url":"https://m.media-amazon.com/images/I/41C5ysa6PUL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
-    priceRange: "About $200 (Amazon, 6 Nov 2026)",
-    priceBounds: {"low":200,"high":200},
-    specs: "0–40% manual incline in five steps · 38.6 x 15.4 in. belt · 0.6–6.2 mph · 350 lb capacity · 51 in. handrails · folds",
+    priceRange: "$199.99 (Amazon, 28 Nov 2026)",
+    priceBounds: {"low":199.99,"high":199.99},
+    specs: "0–32% manual incline in five steps · 38.6 x 15.4 in. belt · 0.6–6.2 mph · 350 lb capacity · 51 in. handrails · folds",
     pros: [
-      "Reaches 40% for about a tenth of the price of a powered incline trainer",
+      "Reaches 32% for about a tenth of the price of a powered incline trainer",
       "Long 51-inch handrails, per the listing, which help on steep grades",
       "A 350 lb rating and a fold-down frame with wheels",
       "Light enough to move and store, unlike a full incline trainer",
     ],
     cons: [
-      "The incline is set by hand in 10% steps, not powered, so you stop to change it",
+      "The incline is set by hand in 8% steps, not powered, so you stop to change it",
       "A 38.6 by 15.4-inch belt is walking-pad sized and short for a long stride on a slope",
       "No decline, and the brand has little track record we could check",
     ],
     bottomLine: "The handrailed, steep-incline folding walker to buy on Amazon in place of an SF20; set the incline before you start and keep to walking speeds.",
-    description: "The SF20 is sold on UMAY's own store, but we could not find it on Amazon US under that name, so this card shows the closest machine Amazon does list: a folding walker with long handrails and a steep manual incline, at a lower price. The CURSOR's Amazon listing gives five manual incline settings — 0, 10, 20, 30 and 40% — with the deck reaching 15 inches high at the top setting, a 38.6 by 15.4-inch belt, a speed range of 0.6 to 6.2 mph, a 3.0 HP brushless motor, a 350 lb maximum user weight, 51-inch dual handrails described as suited to users 5 ft 11 in. and taller, and a fold-down frame with transport wheels. Against the SF20 it has a similar belt (the SF20's is 37.5 by 15 inches), a steeper top incline, a lower top speed and a 50 lb lower capacity. As on the SF20, the incline is manual: you change it by hand, between sessions or by stopping, so there are no hill programs that change it mid-walk. The belt is short for a long stride on a slope, so keep the speed modest at the steep settings. The brand has little track record we could check, and UMAY's own store with a US phone line and 30-day returns is the reason to buy the SF20 there instead. Amazon listed it at $199.99 on 6 November 2026, as checked for our incline trainer guide.",
+    description: "The SF20 is sold on UMAY's own store, but we could not find it on Amazon US under that name, so this card shows the closest machine Amazon does list: a folding walker with long handrails and a steep manual incline, at a lower price. The CURSOR's Amazon listing gives five manual incline settings — 0, 8, 16, 24 and 32% — with the deck reaching 15 inches high at the top setting, a 38.6 by 15.4-inch belt, a speed range of 0.6 to 6.2 mph, a 3.0 HP brushless motor, a 350 lb maximum user weight, 51-inch dual handrails described as suited to users 5 ft 11 in. and taller, and a fold-down frame with transport wheels. Against the SF20 it has a similar belt (the SF20's is 37.5 by 15 inches), a steeper top incline (32% against the SF20's 15 to 16%), a lower top speed and a 50 lb lower capacity. As on the SF20, the incline is manual: you change it by hand, between sessions or by stopping, so there are no hill programs that change it mid-walk. The belt is short for a long stride on a slope, so keep the speed modest at the steep settings. The brand has little track record we could check, and UMAY's own store with a US phone line and 30-day returns is the reason to buy the SF20 there instead. Its 32% figure is the listing's own: the same listing said 40% when we first checked it on 6 November 2026, and was corrected to 32% by 28 November. Amazon listed it at $199.99 on 28 November 2026.",
   },
   {
     id: "urevo-strol-2e-pro",
@@ -211,7 +211,7 @@ const schema = {
       description: description,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-11-05",
-      dateModified: "2026-11-27",
+      dateModified: "2026-11-28",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
     ...PRODUCTS.map((product) => ({
@@ -250,7 +250,11 @@ const schema = {
 const HERE = "/umay-treadmills/";
 const HUB = SECTIONS.find((s) => s.slug === "brands");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -259,7 +263,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
   ogType="article"
   article={{
     publishedTime: "2026-11-05",
-    modifiedTime: "2026-11-27",
+    modifiedTime: "2026-11-28",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
@@ -271,7 +275,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "Closest on Amazon: CURSOR 40% Incline Treadmill", link: PRODUCTS[0].amazonUrl }}
+  stickyCta={{ text: "Closest on Amazon: CURSOR 32% Incline Treadmill", link: PRODUCTS[0].amazonUrl }}
 >
   <article class="ed-article" data-template="editorial">
     <div class="ed-col">
@@ -290,7 +294,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
         <div class="ed-byline-text">
           By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
-          Updated November 27, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          Updated November 28, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
           <span class="ed-method">Based on the brand’s published specifications and warranty terms, retailer listings and owner reports.</span>
         </div>
         <a href="#top-picks" class="btn-ghost">View products</a>
@@ -301,11 +305,11 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 
       <figure class="ed-hero">
         <div class="ed-hero-collage">
-          <a href="#cursor-40-incline-treadmill"><img src="https://m.media-amazon.com/images/I/41C5ysa6PUL._SL500_.jpg" alt="CURSOR 40% Incline Treadmill" width="500" height="500" decoding="async" /></a>
+          <a href="#cursor-40-incline-treadmill"><img src="https://m.media-amazon.com/images/I/41C5ysa6PUL._SL500_.jpg" alt="CURSOR 32% Incline Treadmill" width="500" height="500" decoding="async" /></a>
           <a href="#urevo-strol-2e-pro"><img src="https://m.media-amazon.com/images/I/410e3-vj4nL._SL500_.jpg" alt="UREVO Strol 2E Pro" width="500" height="500" decoding="async" /></a>
           <a href="#umay-l20"><img src="https://m.media-amazon.com/images/I/41EtzjmXBlL._SL500_.jpg" alt="UMAY L20 Foldable Treadmill" width="400" height="500" decoding="async" /></a>
         </div>
-        <figcaption>CURSOR 40% Incline Treadmill · UREVO Strol 2E Pro · UMAY L20 Foldable Treadmill</figcaption>
+        <figcaption>CURSOR 32% Incline Treadmill · UREVO Strol 2E Pro · UMAY L20 Foldable Treadmill</figcaption>
       </figure>
 
       <div class="ed-body prose prose-lg">
@@ -323,7 +327,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           <h2>Our top picks:</h2>
           <ul>
             <li>
-              <span class="tp-label"><span class="tp-award">Closest on Amazon:</span> <a href="#cursor-40-incline-treadmill">CURSOR 40% Incline Treadmill</a></span>
+              <span class="tp-label"><span class="tp-award">Closest on Amazon:</span> <a href="#cursor-40-incline-treadmill">CURSOR 32% Incline Treadmill</a></span>
               <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
             </li>
             <li>
@@ -417,7 +421,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             These are the three UMAY machines whose main figures we could check against a second source
             on 5 November 2026, plus two checked alternatives from other brands. We could not find the SF20 or
             U20F on Amazon US under those names, so their cards show the closest machines Amazon does list, the
-            CURSOR <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>40% Incline</a> Treadmill and UREVO Strol 2E Pro; the SF20 and U20F themselves are covered in the
+            CURSOR 32% Incline Treadmill and UREVO Strol 2E Pro; the SF20 and U20F themselves are covered in the
             sections below and sold on UMAY's store. Prices are UMAY’s sale
             prices on its own store on the day; UMAY shows every product at roughly 40% off a higher
             “regular” price, so treat the sale price as the real one. Where UMAY’s figures disagree with
@@ -498,8 +502,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             $289.99 on 5 November 2026, which it presents as 40% off $479.99.
           </p>
           <p>
-            Three figures hold up. UMAY’s page and its manuals agree on a 400 lb capacity, a 3.0 HP
-            brushless motor rating and a 37.5 by 15-inch running area. The incline does not quite:
+            Three figures hold up. UMAY’s page and its manuals agree on a 400 lb capacity, a 3.0 HP <a href="/best-treadmills-with-brushless-motor/" class="text-[#0F62FE] font-medium" data-autolink>brushless motor</a> rating and a 37.5 by 15-inch running area. The incline does not quite:
             UMAY’s page gives three positions of 0, 7 and 15%, one indexed manual gives 15% and another
             16%, which may reflect an earlier version, since UMAY labels the current one a “New
             Upgrade”. We could not confirm the 7.2 mph top speed in the manuals, which describe jogging

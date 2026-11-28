@@ -2,9 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import { SECTIONS } from "../data/sections";
 
-const title = "Are Walking Pads Worth It? (2026): Who Gains, Who Regrets";
+const title = "Are Walking Pads Worth It? Who Gains and Who Regrets One";
 const description =
-  "Are walking pads worth it? For desk workers who will use one most days, usually yes. Who regrets them, cost per use worked out, budget-brand lifespan and alternatives.";
+  "Yes, if you walk on it most days: a mid-priced pad used for a few years costs well under $1 a session. Quit after six weeks and it is about $10 a walk.";
 
 const schema = {
   "@context": "https://schema.org",
@@ -76,7 +76,7 @@ const schema = {
       description: description,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-10-09",
-      dateModified: "2026-11-15",
+      dateModified: "2026-11-28",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
   ],
@@ -86,7 +86,11 @@ const schema = {
 const HERE = "/are-walking-pads-worth-it/";
 const HUB = SECTIONS.find((s) => s.slug === "guides");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -95,7 +99,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
   ogType="article"
   article={{
     publishedTime: "2026-10-09",
-    modifiedTime: "2026-11-15",
+    modifiedTime: "2026-11-28",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
@@ -126,7 +130,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
         <div class="ed-byline-text">
           By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
-          Updated November 15, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          Updated November 28, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
           <span class="ed-method">Based on manufacturer specifications and manuals, and independent sources.</span>
         </div>
         <a href="#cost-per-use" class="btn-ghost">Cost per Use, Worked Out</a>

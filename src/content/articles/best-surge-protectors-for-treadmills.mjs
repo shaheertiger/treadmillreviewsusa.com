@@ -1,15 +1,14 @@
 export default {
   slug: 'best-surge-protectors-for-treadmills',
   title: 'Best Surge Protectors for Treadmills (2026): What Manuals Allow',
-  description:
-    'Three treadmill surge protectors checked against maker and retailer listings: a single-outlet unit, a 15 A and a 20 A plug-in, and why a power strip is wrong.',
+  description: "The Tripp Lite Isobar 2-outlet (15 A, 1,410 joules, about $44) is the best treadmill surge protector. Plus a 20 A Panamax pick, and why power strips are wrong.",
   crumbLabel: 'Best Treadmill Surge Protectors',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Best Surge Protectors', 'for Treadmills'],
   standfirst:

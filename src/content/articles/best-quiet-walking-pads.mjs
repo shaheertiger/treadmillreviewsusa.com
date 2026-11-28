@@ -1,15 +1,14 @@
 export default {
   slug: 'best-quiet-walking-pads',
   title: 'Best Quiet Walking Pads (2026): Five Picks for Apartments',
-  description:
-    'Five walking pads and under-desk treadmills for flats, checked against makers and independent sources, and why decibel claims say little about noise downstairs.',
+  description: "The LifeSpan TX6 is the quietest pick for apartments: non-folding, 400 lb, about 6 in. tall. The $299 WalkingPad Z1 is the budget pad. Why dB claims mislead.",
   crumbLabel: 'Best Quiet Walking Pads',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['Best Quiet Walking Pads', 'for Apartments'],
   standfirst:

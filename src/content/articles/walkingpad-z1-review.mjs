@@ -5,14 +5,13 @@ const row = (cells) => `<tr>${cells.map((c) => `<td class="${TD}">${c}</td>`).jo
 export default {
   slug: 'walkingpad-z1-review',
   title: 'WalkingPad Z1 Review (2026): The Fold-in-Half Under Desk Pad',
-  description:
-    'The WalkingPad Z1 folding under desk treadmill, checked against WalkingPad, Amazon and an independent review: price, folded size, the 242 lb limit and the disputed figures.',
+  description: "The WalkingPad Z1 is a $299 fold-in-half under desk pad: 47.6 in. walking area, 1–4 mph, 242 lb limit, folds to 5.4 in. tall. Who it suits, disputed figures.",
   crumbLabel: 'WalkingPad Z1',
   kicker: 'Product Review',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['WalkingPad Z1', 'Review: Folds in Half, Walks Only'],
   standfirst:

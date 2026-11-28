@@ -1,15 +1,14 @@
 export default {
   slug: 'best-treadmills-for-garage',
   title: 'Best Treadmills for a Garage (2026): What the Manuals Allow',
-  description:
-    'We read the manuals: two big brands void the warranty in a garage. Five treadmills whose terms suit a garage gym, plus advice on cold, rust, dust and GFCI.',
+  description: "The Spirit XT485 is the best garage treadmill on Amazon: 22 x 60 in. folding deck, lifetime frame and motor, garage-friendly terms. Two big brands void theirs.",
   crumbLabel: 'Best Treadmills for Garage',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['Best Treadmills', 'for a Garage'],
   standfirst:

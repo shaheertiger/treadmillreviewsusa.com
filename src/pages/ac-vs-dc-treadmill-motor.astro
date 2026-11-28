@@ -86,7 +86,11 @@ const schema = {
 const HERE = "/ac-vs-dc-treadmill-motor/";
 const HUB = SECTIONS.find((s) => s.slug === "guides");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -205,7 +209,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           <p>
             DC motors are good at the pattern home training actually consists of: short sessions,
             frequent speed changes, intervals, and long rests between uses. Their weakness is
-            sustained high load. Under a heavy runner at speed for a long time, a DC motor and its
+            sustained high load. Under a <a href="/best-treadmills-for-heavy-runners/" class="text-[#0F62FE] font-medium" data-autolink>heavy runner</a> at speed for a long time, a DC motor and its
             controller both build heat, and heat is what eventually degrades winding insulation and
             electronic components. That is why the continuous rating, and the margin between it and
             the job you are asking of it, matters so much.

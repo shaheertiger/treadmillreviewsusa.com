@@ -1,14 +1,13 @@
 export default {
   slug: 'sb-fitness-ct550-curved-treadmill',
   title: 'SB Fitness CT550 Self-Generated Curved Treadmill Review (2026)',
-  description:
-    'The SB Fitness CT550 is a motorless curved treadmill sold mainly by SB Fitness Equipment. Its listed specs, where they conflict, the warranty and returns, and who it suits.',
+  description: "The SB Fitness CT550 is a $1,995 motorless curved treadmill: 62 x 20 in. surface, 8 magnetic resistance levels, 350 lb. Where listings conflict, who it suits.",
   crumbLabel: 'SB Fitness CT550',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['SB Fitness CT550', 'Self-Generated Curved Treadmill'],
   standfirst:

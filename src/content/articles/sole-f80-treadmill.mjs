@@ -11,14 +11,13 @@ const table = (head, rows) => `<div class="not-prose overflow-x-auto my-8"><tabl
 export default {
   slug: 'sole-f80-treadmill',
   title: 'Sole F80 Treadmill Reviews (2026): The New Model, Checked',
-  description:
-    'Sole F80 treadmill reviews quote three different machines. The 2026 F80 has a 3.25 HP brushless motor, a 20 x 60 in. deck and a 10.1 in. touchscreen. What changed, what conflicts and who it suits.',
+  description: "The 2026 Sole F80 has a 3.25 HP brushless motor, 20 x 60 in. deck, 350 lb rating and 10.1 in. touchscreen for about $1,500. What changed from the 22 in. F80.",
   crumbLabel: 'Sole F80 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.9k',
   h1: ['Sole F80 Treadmill', 'Review for 2026'],
   standfirst:

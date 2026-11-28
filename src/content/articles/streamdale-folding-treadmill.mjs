@@ -1,14 +1,13 @@
 export default {
   slug: 'streamdale-folding-treadmill',
   title: 'Streamdale Folding Treadmill Review (2026): What to Check',
-  description:
-    'Streamdale folding treadmill explained: who Streamdale Furniture is, what its treadmill listings claim, returns, shipping and warranty terms, and what to check before buying.',
+  description: "Streamdale Furniture is a seller, not a treadmill maker: its unbranded folding treadmills cost $360 to over $1,100 with no independent review. What to check.",
   crumbLabel: 'Streamdale Folding Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Streamdale Folding Treadmill:', 'Who Sells It and What to Check'],
   standfirst:

@@ -145,7 +145,11 @@ const schema = {
 const HERE = "/nohrd-sprintbok/";
 const HUB = SECTIONS.find((s) => s.slug === "reviews");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -431,7 +435,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             give grip and a quiet, vibration-free run, and design coverage of the Sprintbok makes the same
             point about noise, suggesting it suits an apartment. We cannot confirm a noise level — no source
             publishes one — but a self-powered belt has no motor whine, which removes the loudest sound a
-            treadmill makes. Footfall and bearing noise remain, so if you live above someone, put it on a
+            treadmill makes. Footfall and <a href="/treadmill-grinding-noise/" class="text-[#0F62FE] font-medium" data-autolink>bearing noise</a> remain, so if you live above someone, put it on a
             proper mat and read our <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a>.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What it does not do</h3>

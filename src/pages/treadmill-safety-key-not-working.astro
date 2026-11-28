@@ -86,7 +86,11 @@ const schema = {
 const HERE = "/treadmill-safety-key-not-working/";
 const HUB = SECTIONS.find((s) => s.slug === "problems");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -392,7 +396,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             and it is still the right answer.
           </p>
           <p>
-            <strong>A listed compatible replacement.</strong> Parts suppliers sell keys described as
+            <strong>A listed compatible replacement.</strong> <a href="/treadmill-parts/" class="text-[#0F62FE] font-medium" data-autolink>Parts suppliers</a> sell keys described as
             compatible with specific models or brand families. These can be fine, provided the
             listing names your model and the key looks the same as the one in your manual's parts
             diagram. Buy from a supplier who will take it back if it does not work.

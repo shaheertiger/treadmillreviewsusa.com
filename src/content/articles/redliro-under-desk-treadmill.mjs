@@ -1,14 +1,13 @@
 export default {
   slug: 'redliro-under-desk-treadmill',
   title: 'Redliro Under Desk Treadmill Review (2026): The Listing Claims',
-  description:
-    'The Redliro under desk treadmill is a budget walking pad sold mainly through marketplaces. What its listings claim, where the figures conflict, the 1-year warranty, and who it suits.',
+  description: "Redliro under desk treadmills are $150–$200 walking pads: 4 mph, a 265 lb claim and a 1-year warranty, sold via Walmart, Best Buy and Target. What to check.",
   crumbLabel: 'Redliro Under Desk Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Redliro Under Desk Treadmill', 'Review: Read the Listing'],
   standfirst:

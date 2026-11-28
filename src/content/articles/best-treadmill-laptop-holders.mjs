@@ -1,15 +1,14 @@
 export default {
   slug: 'best-treadmill-laptop-holders',
   title: 'Best Treadmill Laptop Holders (2026): Trays, Desks & Phone Mounts',
-  description:
-    'Six treadmill laptop holders, desk attachments and phone mounts that were on sale on 5 November 2026, with the handrail measurements to check first and when a standing desk is the better answer.',
+  description: "The VIVO 31 in. tray ($67.19) is the best treadmill laptop holder: fits handrails 26.8–31.5 in. apart and holds 22 lb. Six holders and mounts, from $44.",
   crumbLabel: 'Treadmill Laptop Holders',
   breadcrumb: { name: 'Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Best Treadmill Laptop Holders', 'Trays, Desks and Phone Mounts'],
   standfirst:
@@ -151,7 +150,7 @@ export default {
           <p>
             <strong>3. The rail diameter.</strong> Straps wrap around a rail; clamps grip it. VIVO gives a
             maximum handlebar diameter for its pole-mounted desk, and Arkon gives an 18 to 35 mm clamp range
-            for the RV131 phone mount. Measure the thickest part of the rail or upright you plan to use.
+            for the RV131 <a href="/best-treadmill-phone-holders/" class="text-[#0F62FE] font-medium" data-autolink>phone mount</a>. Measure the thickest part of the rail or upright you plan to use.
           </p>
           <p>
             <strong>4. What the board will cover.</strong> Sit the tape across the rails and look at what is

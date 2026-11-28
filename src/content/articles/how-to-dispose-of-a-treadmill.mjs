@@ -261,7 +261,7 @@ export default {
       html: `          <p>
             Junk removal companies will collect a treadmill from wherever it stands and carry it
             out, and for many people that is worth paying for — particularly for a heavy
-            non-folding machine in a basement or an upstairs room.
+            <a href="/best-non-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>non-folding machine</a> in a basement or an upstairs room.
           </p>
           <p>
             Pricing is usually based on the volume the item takes up in the truck, with a minimum

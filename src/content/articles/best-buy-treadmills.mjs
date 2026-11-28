@@ -1,15 +1,14 @@
 export default {
   slug: 'best-buy-treadmills',
   title: 'Best Buy Treadmills (2026): Is Best Buy a Good Place to Buy One?',
-  description:
-    'Buying a treadmill at Best Buy: what an electronics retailer does well and badly, open-box listings, delivery, return windows, restocking fees and how to compare.',
+  description: "Best Buy suits a connected treadmill or a real open-box deal. Judge the motor and deck, not the screen, and check the return window and any restocking fee.",
   crumbLabel: 'Best Buy Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Buying a Treadmill', 'at Best Buy'],
   standfirst:

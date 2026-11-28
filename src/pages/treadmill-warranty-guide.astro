@@ -4,7 +4,7 @@ import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Warranty Explained: What It Covers and What Voids It";
 const description =
-  "Treadmill warranties explained: frame, motor, parts and labor tiers, what \"lifetime\" means, in-home service, what voids cover, whether extended warranties pay off, and how to claim.";
+  "A treadmill warranty is four terms: frame (often 10 years to lifetime), motor, parts (1–5 years) and labour (often 1 year). What voids it, and how to claim.";
 
 const schema = {
   "@context": "https://schema.org",
@@ -76,7 +76,7 @@ const schema = {
       description: description,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-10-06",
-      dateModified: "2026-11-21",
+      dateModified: "2026-11-28",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
   ],
@@ -86,7 +86,11 @@ const schema = {
 const HERE = "/treadmill-warranty-guide/";
 const HUB = SECTIONS.find((s) => s.slug === "guides");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -95,7 +99,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
   ogType="article"
   article={{
     publishedTime: "2026-10-06",
-    modifiedTime: "2026-11-21",
+    modifiedTime: "2026-11-28",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
@@ -126,7 +130,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
         <div class="ed-byline-text">
           By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
-          Updated November 21, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          Updated November 28, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
           <span class="ed-method">Based on manufacturer specifications and manuals, and independent sources.</span>
         </div>
         <a href="#what-voids" class="btn-ghost">What Voids a Warranty</a>
@@ -233,7 +237,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           </ul>
           <p>
             None of that makes a lifetime term worthless. A lifetime motor warranty on a well-made
-            machine is genuinely useful, because motor replacement is an expensive repair. But it
+            machine is genuinely useful, because <a href="/treadmill-motor-replacement-cost/" class="text-[#0F62FE] font-medium" data-autolink>motor replacement</a> is an expensive repair. But it
             is a parts warranty for one component, and it sits alongside a labour term that has
             usually expired long before the motor fails. Our guide to <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a> covers what drives motor life, and it is mostly maintenance.
           </p>

@@ -86,7 +86,11 @@ const schema = {
 const HERE = "/treadmill-marathon-training/";
 const HUB = SECTIONS.find((s) => s.slug === "training");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -418,8 +422,8 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           <p>
             <strong>Continuous horsepower, not peak.</strong> The rating that matters is continuous
             horsepower (CHP) — what the motor can sustain without overheating — not the larger peak
-            figure some boxes print. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> suggests roughly 3.5 to 4.0 CHP for daily running, with more headroom for heavier
-            runners. A machine that is adequate for three 30-minute jogs a week can be working at
+            figure some boxes print. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> suggests roughly 3.5 to 4.0 CHP for daily running, with more headroom for <a href="/best-treadmills-for-heavy-runners/" class="text-[#0F62FE] font-medium" data-autolink>heavier
+            runners</a>. A machine that is adequate for three 30-minute jogs a week can be working at
             the edge of its rating for two hours straight.
           </p>
           <p>

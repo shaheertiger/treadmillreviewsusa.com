@@ -86,7 +86,11 @@ const schema = {
 const HERE = "/what-treadmill-should-i-buy/";
 const HUB = SECTIONS.find((s) => s.slug === "guides");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -301,8 +305,8 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             <strong>What to skip.</strong> Fold-up handrails, which make a pad thicker and do not
             work under a desk; high top speeds you will never use at a desk; and very cheap pads from
             sellers with no support behind them. Check cpsc.gov for the brand before you buy — in
-            April 2026 the Consumer Product Safety Commission told owners to stop using Sperax
-            walking pads after reports of uncontrolled speed changes, falls and fires.
+            April 2026 the Consumer Product Safety Commission told owners to stop using <a href="/sperax-walking-pad-recall/" class="text-[#0F62FE] font-medium" data-autolink>Sperax
+            walking pads</a> after reports of uncontrolled speed changes, falls and fires.
           </p>
           <p>
             Our <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a> page compares pads for

@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-warranty-guide',
   title: 'Treadmill Warranty Explained: What It Covers and What Voids It',
-  description:
-    'Treadmill warranties explained: frame, motor, parts and labor tiers, what "lifetime" means, in-home service, what voids cover, whether extended warranties pay off, and how to claim.',
+  description: "A treadmill warranty is four terms: frame (often 10 years to lifetime), motor, parts (1–5 years) and labour (often 1 year). What voids it, and how to claim.",
   crumbLabel: 'Treadmill Warranty Guide',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '2.6k',
   h1: ['Treadmill Warranties', 'Explained'],
   standfirst:
@@ -100,7 +99,7 @@ export default {
           </ul>
           <p>
             None of that makes a lifetime term worthless. A lifetime motor warranty on a well-made
-            machine is genuinely useful, because motor replacement is an expensive repair. But it
+            machine is genuinely useful, because <a href="/treadmill-motor-replacement-cost/" class="text-[#0F62FE] font-medium" data-autolink>motor replacement</a> is an expensive repair. But it
             is a parts warranty for one component, and it sits alongside a labour term that has
             usually expired long before the motor fails. Our guide to
             <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a>

@@ -1,15 +1,14 @@
 export default {
   slug: 'what-is-treadmill-decline-good-for',
   title: 'What Is Treadmill Decline Good For? Uses, Risks, How Much',
-  description:
-    'Treadmill decline trains the descent: downhill race and hiking prep and eccentric quad strength. How much to use, how to introduce it, and who should skip it.',
+  description: "Treadmill decline trains the descent: eccentric quad strength for downhill races and hikes. For most road races -3% is enough; build to 15 to 20-minute blocks.",
   crumbLabel: 'What Is Treadmill Decline Good For',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['What Is Treadmill Decline', 'Actually Good For?'],
   standfirst:

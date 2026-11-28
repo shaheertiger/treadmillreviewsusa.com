@@ -1,15 +1,14 @@
 export default {
   slug: 'cybex-treadmills',
   title: 'Cybex Treadmills (2026): The 770T, R Series and Buying Used',
-  description:
-    'Cybex no longer sells new treadmills: Life Fitness bought it in 2016 and the R Series is discontinued. The 770T and R Series figures, recalls, parts and how to buy a remanufactured Cybex.',
+  description: "Cybex no longer sells new treadmills; Life Fitness bought it in 2016. A remanufactured 770T or R Series runs about $3,000. Specs, recalls and what to check.",
   crumbLabel: 'Cybex Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Cybex Treadmills:', 'What to Know Before Buying One Used'],
   standfirst:

@@ -4,15 +4,14 @@ const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
 export default {
   slug: 'academy-sports-treadmills',
   title: 'Academy Sports Treadmills (2026): Brands, Prices and Delivery',
-  description:
-    'Buying a treadmill at Academy Sports + Outdoors: the brands and price range on academy.com, bulk delivery tiers, assembly, the 60-day return policy, its beat-by-5% price match and the store card, checked October 2026.',
+  description: "Academy Sports lists treadmills from $199.99 to $4,999.99, NordicTrack to WalkingPad. Its price match beats rivals by 5%; returns: 60 days, unused, boxed.",
   crumbLabel: 'Academy Sports Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Academy Sports Treadmills:', 'What to Know Before You Buy'],
   standfirst:

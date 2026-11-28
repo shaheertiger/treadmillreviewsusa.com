@@ -1,14 +1,13 @@
 export default {
   slug: 'best-treadmills-for-long-distance-running',
   title: 'Best Treadmills for Long Distance Running (2026): Five Picks',
-  description:
-    'Five treadmills for long distance running and triathlon training, judged on what high weekly mileage asks of a machine: continuous-duty motors, 60 in. decks, cushioning, cooling and warranty.',
+  description: "The Sole TT8 is the best treadmill for long distance running: 4.0 HP, 22 x 60 in. deck, -6% to 15% incline, about $2,500. Five picks for 40-mile weeks.",
   crumbLabel: 'Best Treadmills for Long Distance Running',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Best Treadmills for', 'Long Distance Running'],
   standfirst:

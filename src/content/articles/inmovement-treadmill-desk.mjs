@@ -1,15 +1,14 @@
 export default {
   slug: 'inmovement-treadmill-desk',
   title: 'InMovement Treadmill Desk Guide (2026): Unsit, Bundle and Desk',
-  description:
-    'InMovement makes the Unsit under desk treadmill and sells it direct with its own standing desk. What it costs, buying direct vs from iMovR, conflicting specs, delivery, returns and InMovement vs LifeSpan.',
+  description: "InMovement sells its 30 in.-wide Unsit under desk treadmill direct at $2,595, or $3,215 with its standing desk. The 2 mph cap, direct vs iMovR, vs LifeSpan.",
   crumbLabel: 'InMovement Treadmill Desk',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-17',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['InMovement Treadmill Desk:', 'A Buyer’s Guide to the Unsit'],
   standfirst:

@@ -1,15 +1,14 @@
 export default {
   slug: 'what-happens-if-you-exceed-treadmill-weight-limit',
   title: 'What Happens If You Exceed a Treadmill Weight Limit?',
-  description:
-    'Going over a treadmill or walking pad weight limit rarely breaks it at once. What wears first, the warning signs, what it means for your warranty and safety, and how much margin to buy.',
+  description: "Exceeding a treadmill weight limit rarely breaks it at once: the motor and board run hot, the belt and deck wear fast, and it may void the warranty. Buy +50 lb.",
   crumbLabel: 'Exceeding a Treadmill Weight Limit',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['What Happens If You Exceed', 'a Treadmill Weight Limit?'],
   standfirst:

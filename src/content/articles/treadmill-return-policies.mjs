@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-return-policies',
   title: 'Treadmill Return Policy (2026): Restocking Fees and Trials',
-  description:
-    'Can you return a treadmill? How trial periods, restocking fees, freight pickup charges and packaging rules typically work, and what to check before you buy.',
+  description: "Usually yes, within a 14–30 day window, but a 10–25% restocking fee plus $100–$300 freight pickup can cost a quarter to a third of what you paid.",
   crumbLabel: 'Treadmill Return Policies',
   kicker: 'Where to Buy',
   breadcrumb: { name: 'By Price', url: '/price/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Treadmill Return Policies', 'and Restocking Fees'],
   standfirst:

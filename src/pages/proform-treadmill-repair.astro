@@ -94,7 +94,11 @@ const schema = {
 const HERE = "/proform-treadmill-repair/";
 const HUB = SECTIONS.find((s) => s.slug === "maintenance");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -187,7 +191,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             <li><strong>Owner jobs out of warranty:</strong> belt tension and centring, a safety key, a
             drive belt or <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium" data-autolink>motor brushes</a> usually cost tens of dollars in parts.</li>
             <li><strong>Technician jobs out of warranty:</strong> a call-out fee commonly in the region of
-            $75 to $150, and a motor control board or drive motor replacement commonly landing somewhere
+            $75 to $150, and a motor control board or drive <a href="/treadmill-motor-replacement-cost/" class="text-[#0F62FE] font-medium" data-autolink>motor replacement</a> commonly landing somewhere
             around $350 to $700 all in, consistent with our general repair guide.</li>
             <li><strong>Repair or replace:</strong> if the all-in quote is more than about half of what a
             comparable used ProForm sells for, and the belt, deck and console are also tired, replacing

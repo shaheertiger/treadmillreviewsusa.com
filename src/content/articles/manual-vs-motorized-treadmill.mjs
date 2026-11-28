@@ -1,15 +1,14 @@
 export default {
   slug: 'manual-vs-motorized-treadmill',
   title: 'Manual vs. Motorized Treadmill: Are Manual Treadmills Any Good?',
-  description:
-    'A $200 flat manual treadmill and a curved self-powered trainer are both called manual, and they have almost nothing in common. Here is how each compares with a motorized machine.',
+  description: "Most home buyers should buy motorized. A $100–$300 flat manual treadmill suits light walking only; curved manual trainers are good but cost several thousand.",
   crumbLabel: 'Manual vs. Motorized Treadmill',
   kicker: 'Comparison',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Manual vs. Motorized', 'Treadmill'],
   standfirst:

@@ -442,7 +442,7 @@ export default {
           <p>
             <strong>Permanent belt stretch.</strong> A belt held under excess tension deforms and
             does not recover. That produces the machine that needs tightening every few weeks, a
-            loop that ends with a replacement belt.
+            loop that ends with a <a href="/best-treadmill-replacement-belts/" class="text-[#0F62FE] font-medium" data-autolink>replacement belt</a>.
           </p>
           <p>
             <strong>Motor and board heat.</strong> More tension presses the belt harder onto the

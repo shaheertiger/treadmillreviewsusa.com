@@ -1,15 +1,14 @@
 export default {
   slug: 'walking-backwards-on-a-treadmill',
   title: 'Walking Backwards on a Treadmill: Benefits and Safety',
-  description:
-    'Backward walking shifts work to the quads and calves, is gentler on the front of the knee for many people and costs more energy per mph. Here is how to try it safely.',
+  description: "Walking backwards on a treadmill works the quads and calves harder: 2 mph backwards can feel like 3.5 mph forwards. Start near 1 mph for 2 to 5 minutes.",
   crumbLabel: 'Walking Backwards on a Treadmill',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-17',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Walking Backwards', 'on a Treadmill'],
   standfirst:

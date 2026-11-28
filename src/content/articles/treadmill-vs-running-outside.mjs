@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-vs-running-outside',
   title: 'Treadmill vs. Running Outside: Is Treadmill Running Easier?',
-  description:
-    'Treadmill running is usually slightly easier at the same pace, mainly because there is no air to push through. Here is what actually differs, what the 1% rule means, and how to blend the two.',
+  description: "Yes, treadmill running is slightly easier at the same pace, mainly because there is no air resistance. Why a 1% incline evens it out, and how to mix both.",
   crumbLabel: 'Treadmill vs. Running Outside',
   kicker: 'Comparison',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.6k',
   h1: ['Treadmill vs.', 'Running Outside'],
   standfirst:

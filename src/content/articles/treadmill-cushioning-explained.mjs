@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-cushioning-explained',
   title: 'Treadmill Cushioning Explained: What Actually Matters',
-  description:
-    'How treadmill deck suspension works, why "% less impact" claims are unverifiable, when a softer deck is worse, and how to judge cushioning yourself in a store.',
+  description: "Treadmill cushioning comes from the deck mounts, which give a fraction of an inch. Why 15–40% \"less impact\" claims can't be compared, and how to test a deck.",
   crumbLabel: 'Treadmill Cushioning Explained',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Spec Explainer',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Treadmill Cushioning', 'Explained'],
   standfirst:

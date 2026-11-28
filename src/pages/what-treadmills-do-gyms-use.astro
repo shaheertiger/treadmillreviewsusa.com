@@ -86,7 +86,11 @@ const schema = {
 const HERE = "/what-treadmills-do-gyms-use/";
 const HUB = SECTIONS.find((s) => s.slug === "brands");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -231,7 +235,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             2026 it announced a Peloton Commercial Series of gym bike and treadmill, with shipments due
             to begin in late 2026. Precor's own treadmills continue: its brochure for the TRM 885 gives
             a 4 HP AC motor and a 120-volt, 20-amp individual branch circuit for the US, and retailer
-            listings agree on the motor. Our <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor treadmill guide</a> covers the current TRM lines and used prices. Listings disagree on the TRM 885's running-surface width and
+            listings agree on the motor. Our <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor treadmill guide</a> covers the current TRM lines and <a href="/how-much-does-a-used-treadmill-cost/" class="text-[#0F62FE] font-medium" data-autolink>used prices</a>. Listings disagree on the TRM 885's running-surface width and
             maximum user weight, so we leave those out.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Matrix</h3>

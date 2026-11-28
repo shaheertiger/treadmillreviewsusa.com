@@ -1,15 +1,14 @@
 export default {
   slug: 'is-walking-on-a-treadmill-the-same-as-walking-outside',
-  title: 'Is Treadmill Walking the Same as Walking Outside? Differences',
-  description:
-    'Close, but not identical. How the belt, the flat surface, stride, balance, step tracking and the mental side differ, and whether treadmill walking is good for you.',
+  title: "Is Walking on a Treadmill the Same as Walking Outside?",
+  description: "Close: at 3 to 4 mph, a treadmill walk is very similar work to a flat outdoor walk. Many walkers set a 1% to 3% incline for terrain. The real differences.",
   crumbLabel: 'Is Walking on a Treadmill the Same as Walking Outside',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Is Walking on a Treadmill the Same', 'as Walking Outside?'],
   standfirst:
@@ -239,7 +238,7 @@ export default {
             hold the rails.
           </p>
           <ul>
-            <li><strong>Steps.</strong> A wrist tracker counts steps from arm swing. Walk with
+            <li><strong>Steps.</strong> A <a href="/best-fitness-trackers/" class="text-[#0F62FE] font-medium" data-autolink>wrist tracker</a> counts steps from arm swing. Walk with
             your arms free and it usually does a reasonable job. Hold the rails, rest your hands
             on the console, or carry a phone in one hand, and the count can drop sharply because
             the wrist barely moves. A tracker clipped to the waist or a phone in a pocket is less

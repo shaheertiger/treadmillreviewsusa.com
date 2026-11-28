@@ -86,7 +86,11 @@ const schema = {
 const HERE = "/treadmill-workout-for-seniors/";
 const HUB = SECTIONS.find((s) => s.slug === "training");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -203,7 +207,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             pain on exertion, high blood pressure that is not well controlled, lung disease,
             diabetes (especially with numb feet), dizziness or fainting spells, a fall in the past
             year, Parkinson's disease or another condition that affects balance, osteoporosis, or
-            a hip or knee replacement in the past few months. Ask two specific questions: is
+            a hip or <a href="/treadmill-after-knee-replacement/" class="text-[#0F62FE] font-medium" data-autolink>knee replacement</a> in the past few months. Ask two specific questions: is
             moderate walking safe for me, and is there anything I should avoid, such as incline or
             certain heart-rate levels? If you take a beta-blocker, your heart rate will not rise
             normally with effort, which is one reason this plan uses the talk test rather than

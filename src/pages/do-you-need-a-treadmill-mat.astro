@@ -86,7 +86,11 @@ const schema = {
 const HERE = "/do-you-need-a-treadmill-mat/";
 const HUB = SECTIONS.find((s) => s.slug === "guides");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -439,7 +443,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           </p>
           <p>
             A mat on carpet can also help with static. Synthetic carpet and dry winter air both
-            encourage static build-up, and separating the machine from the carpet can reduce the
+            encourage <a href="/treadmill-static-shock/" class="text-[#0F62FE] font-medium" data-autolink>static build-up</a>, and separating the machine from the carpet can reduce the
             shocks some users get from the console or rails. It is not a complete fix — belt
             friction and humidity are the bigger factors, and a properly grounded outlet matters —
             but it is a side benefit worth knowing about.

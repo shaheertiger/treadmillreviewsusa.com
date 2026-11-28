@@ -1,15 +1,14 @@
 export default {
   slug: 'what-does-incline-walking-do',
   title: 'What Does Incline Walking Do? Heart, Calories, Muscle, Fat',
-  description:
-    'Incline walking raises heart rate and calorie cost without running impact. Calorie estimates by grade, muscles worked, fat-loss honesty, risks and how to start.',
+  description: "Incline walking raises heart rate and calorie burn without running impact: 3 mph at a 10% grade costs a little over twice the energy of walking on the flat.",
   crumbLabel: 'What Does Incline Walking Do',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['What Does Incline', 'Walking Do?'],
   standfirst:

@@ -1,14 +1,13 @@
 export default {
   slug: 'best-treadmills-for-apartments',
   title: 'Best Treadmills for Apartments (2026): Noise and Footprint',
-  description:
-    'An apartment treadmill has to clear four hurdles: the neighbour below, the floor space, the stairwell it arrives through, and the lease. We ranked six machines on all four.',
+  description: "The Sole F63 is the best treadmill for apartments: hydraulic fold, heavy frame, no subscription, $899–$1,099. Six picks ranked on noise, footprint and stairs.",
   crumbLabel: 'Best Treadmills for Apartments',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-17',
+  modified: '2026-11-28',
   socialProof: '3.6k',
   h1: ['Best Treadmills for', 'Apartments'],
   standfirst:

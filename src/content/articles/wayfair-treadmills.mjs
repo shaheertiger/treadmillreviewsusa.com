@@ -1,15 +1,14 @@
 export default {
   slug: 'wayfair-treadmills',
   title: 'Wayfair Treadmill Buying Guide (2026): Brands and Returns',
-  description:
-    'Buying a Wayfair treadmill: who actually makes and ships it, house brands vs named brands, how to read a listing, delivery, the 30-day return window, warranty and protection plans.',
+  description: "A Wayfair treadmill is fine if the listing names a maker you can check; skip unnamed house-label models. Most items have a 30-day return. How to read a listing.",
   crumbLabel: 'Wayfair Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Buying a Wayfair Treadmill:', 'What You Are Actually Buying'],
   standfirst:

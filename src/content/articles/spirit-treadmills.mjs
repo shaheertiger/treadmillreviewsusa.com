@@ -1,15 +1,15 @@
 export default {
   slug: 'spirit-treadmills',
-  title: 'Spirit Treadmill Guide (2026): XT185 to XT685, Warranty and Zwift',
+  title: 'Spirit Treadmills (2026): XT485 and XT685, Prices and Warranty',
   description:
-    'Spirit Fitness treadmills are sold through dealers with long parts warranties and no required subscription. The current XT range, the XT485 and XT685, and who owns Spirit.',
+    'Spirit treadmills are dealer-sold with lifetime frame, motor and deck cover. The folding XT485 (22 x 60 in., 4.0 HP) lists at $2,949.99; the XT range compared.',
   crumbLabel: 'Spirit Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Spirit Treadmills:', 'The XT Range, Warranty and Apps'],
   standfirst:

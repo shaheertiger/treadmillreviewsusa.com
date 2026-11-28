@@ -1,16 +1,15 @@
 export default {
   slug: 'best-treadmills-for-heavy-people',
   title: 'Best Treadmills for Heavy People (2026): Beyond Weight Capacity',
-  description:
-    'Weight capacity is a warranty term, not an engineering limit. We compared six treadmills on roller diameter, motor type, frame mass and deck width instead.',
+  description: "The Life Fitness T3 is the best treadmill for heavy people: 400 lb capacity, AC motor, 22 x 60 in. deck, 3 in. rollers. Six picks from the $1,199 Sole F65.",
   crumbLabel: 'Best Treadmills for Heavy People',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-17',
+  modified: '2026-11-28',
   socialProof: '3.4k',
-  h1: ['Best Treadmills for', 'Heavy Users'],
+  h1: ['Best Treadmills for', 'Heavy People'],
   standfirst:
     'The stated weight capacity tells you where the warranty stops, not where the machine struggles. We ranked on roller diameter, motor type, frame mass and deck width — the specifications that decide how a machine copes with load.',
   ctas: [

@@ -124,7 +124,7 @@ export default {
             where most of the useful cooling happens. A fan standing on the floor in front of the
             treadmill blows at your shins and the motor hood. Put it on a stand, shelf, table or
             wall bracket so the airflow reaches your chest, or use a fan with a tilting head and
-            aim it up. A tall pedestal fan works if its head reaches high enough.
+            aim it up. A tall <a href="/best-treadmill-fans/" class="text-[#0F62FE] font-medium" data-autolink>pedestal fan</a> works if its head reaches high enough.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Position: in front, and slightly to one side</h3>
           <p>

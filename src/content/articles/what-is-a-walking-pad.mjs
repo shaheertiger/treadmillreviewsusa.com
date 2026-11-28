@@ -1,15 +1,14 @@
 export default {
   slug: 'what-is-a-walking-pad',
   title: 'What Is a Walking Pad? How It Differs From a Treadmill',
-  description:
-    'A walking pad is a compact, low, motorised walking belt with no console arm and usually no handrail. How it differs from a treadmill, speeds, incline, who it suits.',
+  description: "A walking pad is a low, compact motorised belt for walking at about 0.5 to 4 mph, with no console arm and usually no handrail. How it differs from a treadmill.",
   crumbLabel: 'What Is a Walking Pad?',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['What Is a', 'Walking Pad?'],
   standfirst:

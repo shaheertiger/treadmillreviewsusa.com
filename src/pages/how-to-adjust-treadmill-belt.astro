@@ -94,7 +94,11 @@ const schema = {
 const HERE = "/how-to-adjust-treadmill-belt/";
 const HUB = SECTIONS.find((s) => s.slug === "maintenance");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -561,7 +565,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           <p>
             <strong>Permanent belt stretch.</strong> A belt held under excess tension deforms and
             does not recover. That produces the machine that needs tightening every few weeks, a
-            loop that ends with a replacement belt.
+            loop that ends with a <a href="/best-treadmill-replacement-belts/" class="text-[#0F62FE] font-medium" data-autolink>replacement belt</a>.
           </p>
           <p>
             <strong>Motor and board heat.</strong> More tension presses the belt harder onto the

@@ -1,15 +1,14 @@
 export default {
   slug: 'rent-a-treadmill',
   title: 'Treadmill Rental (2026): Renting vs Rent-to-Own vs Buying',
-  description:
-    'When renting a treadmill makes sense, why rent-to-own often costs two to three times retail, what to check in a rental contract, and the buy-used-then-resell alternative.',
+  description: "Rent for needs under about six months; buy for longer. Rent-to-own often totals two to three times retail. Contract checks and the buy-used-then-resell route.",
   crumbLabel: 'Treadmill Rental',
   kicker: 'Price Guide',
   breadcrumb: { name: 'By Price', url: '/price/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Treadmill Rental and', 'Rent-to-Own'],
   standfirst:

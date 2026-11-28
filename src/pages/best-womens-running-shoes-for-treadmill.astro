@@ -279,7 +279,11 @@ const schema = {
 const HERE = "/best-womens-running-shoes-for-treadmill/";
 const HUB = SECTIONS.find((s) => s.slug === "guides");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -647,7 +651,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             once, is a common cause of sore calves. Change one thing at a time; our guide to <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form</a> explains why.
           </p>
           <p>
-            <strong>Starting out.</strong> If you are new to running, you do not need the most
+            <strong>Starting out.</strong> If you are <a href="/how-to-start-running-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>new to running</a>, you do not need the most
             expensive shoe here. A well-fitting daily trainer such as the Ride 19, and a sensible
             plan like our <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">treadmill Couch to 5K</a>,
             matter far more than foam technology.

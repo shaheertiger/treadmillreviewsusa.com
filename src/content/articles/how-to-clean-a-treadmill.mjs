@@ -1,15 +1,14 @@
 export default {
   slug: 'how-to-clean-a-treadmill',
   title: 'How to Clean a Treadmill: Belt, Console and Disinfecting',
-  description:
-    'How to clean a treadmill without damaging it: the belt top surface, console and screens, handrails, frame and the floor beneath, what to disinfect with, and what to avoid.',
+  description: "Wipe it after every session; every 1 to 2 weeks, unplug and clean the belt top with mild soapy water and the console with a damp cloth. Never use bleach.",
   crumbLabel: 'How to Clean a Treadmill',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Maintenance',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['How to Clean', 'a Treadmill'],
   standfirst:

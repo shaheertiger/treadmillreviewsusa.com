@@ -1,15 +1,14 @@
 export default {
   slug: 'best-peloton-alternatives',
   title: 'Best Peloton Alternative (2026): 6 Bikes and the App Math',
-  description:
-    'Six bikes that replace a Peloton, checked against makers and reviews: Schwinn IC4 and IC3, NordicTrack X24, Keiser, Wahoo. Peloton App+ vs All-Access costs.',
+  description: "The Schwinn IC4 ($899) is the best Peloton alternative: 100 magnetic levels, 330 lb and the Peloton App. Six bikes, and App+ vs All-Access costs.",
   crumbLabel: 'Best Peloton Alternatives',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Peloton Alternative', 'Bikes, Apps and Three-Year Costs'],
   standfirst:

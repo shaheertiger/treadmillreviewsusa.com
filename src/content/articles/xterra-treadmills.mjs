@@ -1,15 +1,14 @@
 export default {
   slug: 'xterra-treadmills',
   title: 'XTERRA Treadmills (2026): TRX1200, TR95H Hiker, TR150 and Range',
-  description:
-    'XTERRA Fitness’s current treadmills, from the $500 TRX1000 and TRX1200 to the TR95H Hiker desk treadmill: sale prices, the figures XTERRA states two ways, warranties, the TR150 and who XTERRA suits.',
+  description: "XTERRA sells 10 treadmills, from the $499.99 TRX1000 to the $2,199.99 TR95H Hiker desk treadmill; the TRX1200 is $549.99. Warranties and the TR150.",
   crumbLabel: 'XTERRA Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.5k',
   h1: ['XTERRA Treadmills:', 'A Buyer’s Guide to the Current Range'],
   standfirst:

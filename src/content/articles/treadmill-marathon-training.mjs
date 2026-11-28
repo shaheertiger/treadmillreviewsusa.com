@@ -296,8 +296,8 @@ export default {
             horsepower (CHP) — what the motor can sustain without overheating — not the larger peak
             figure some boxes print. Our
             <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            suggests roughly 3.5 to 4.0 CHP for daily running, with more headroom for heavier
-            runners. A machine that is adequate for three 30-minute jogs a week can be working at
+            suggests roughly 3.5 to 4.0 CHP for daily running, with more headroom for <a href="/best-treadmills-for-heavy-runners/" class="text-[#0F62FE] font-medium" data-autolink>heavier
+            runners</a>. A machine that is adequate for three 30-minute jogs a week can be working at
             the edge of its rating for two hours straight.
           </p>
           <p>

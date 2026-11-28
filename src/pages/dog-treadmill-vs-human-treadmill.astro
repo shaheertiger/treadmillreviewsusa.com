@@ -86,7 +86,11 @@ const schema = {
 const HERE = "/dog-treadmill-vs-human-treadmill/";
 const HUB = SECTIONS.find((s) => s.slug === "best");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -514,8 +518,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           </p>
           <p>
             <strong>What a dog treadmill costs.</strong> Prices on our roundup, as listed on the day
-            it was checked, ran from about $500 to $600 for a full-length machine for medium and
-            large dogs, around $590 for a toy-breed machine, and from roughly $2,400 to $3,900 for the
+            it was checked, ran from about $500 to $600 for a full-length machine for medium and <a href="/best-dog-treadmills-for-large-dogs/" class="text-[#0F62FE] font-medium" data-autolink>large dogs</a>, around $590 for a toy-breed machine, and from roughly $2,400 to $3,900 for the
             heavy-duty motorised and slatmill options. Those are snapshots rather than current prices,
             and freight delivery and no-returns terms are common in this category, so read the terms
             before ordering.

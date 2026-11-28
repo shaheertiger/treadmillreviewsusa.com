@@ -1,15 +1,14 @@
 export default {
   slug: 'best-folding-squat-racks',
   title: 'Best Folding Squat Rack (2026): 6 Wall-Mount Racks Compared',
-  description:
-    'Six folding squat racks sold on Amazon, checked against maker specs and reviews: studs and stringers, folded depth, ceiling height, safeties and pull-up bars.',
+  description: "The PRx Profile PRO is the best folding squat rack: 3x3 in. uprights, folds to 4 in. from the wall, $1,050. Five more from $299.99, and what your studs need.",
   crumbLabel: 'Best Folding Squat Racks',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Folding Squat Rack', 'for a Garage or Spare Room'],
   standfirst:

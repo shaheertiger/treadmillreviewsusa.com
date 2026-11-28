@@ -1,14 +1,13 @@
 export default {
   slug: 'best-treadmills-for-beginners',
   title: 'Best Treadmills for Beginners (2026): Buy Less Than You Think',
-  description:
-    'Most first treadmills are bought too expensive and abandoned in ten weeks. We ranked six machines on assembly, console simplicity, safety and how little you need to spend.',
+  description: "The Sole F63 ($899–$1,099, no subscription) is the best treadmill for beginners; the NordicTrack T Series 5 at about $600 is the budget pick. Six ranked.",
   crumbLabel: 'Best Treadmills for Beginners',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-17',
+  modified: '2026-11-28',
   socialProof: '5.1k',
   h1: ['Best Treadmills for', 'Beginners'],
   standfirst:

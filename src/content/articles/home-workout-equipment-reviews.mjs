@@ -1,15 +1,15 @@
 export default {
   slug: 'home-workout-equipment-reviews',
-  title: 'Home Workout Equipment Reviews (2026): Best Pick in Each Category',
+  title: 'Home Workout Equipment Reviews (2026): 7 Best Picks by Category',
   description:
-    'Seven home gym picks, one per category, each checked against its maker and an independent source, plus how to read equipment reviews and spot the red flags.',
+    'Our home workout equipment reviews pick one winner per category: the Sole F63 treadmill ($1,099), Schwinn IC4 bike ($799), Concept2 RowErg and four more.',
   crumbLabel: 'Home Workout Equipment Reviews',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-16',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['Home Workout Equipment Reviews:', 'The Best in Each Category'],
   standfirst:

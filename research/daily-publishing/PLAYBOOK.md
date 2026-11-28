@@ -81,6 +81,55 @@ when the report and this section disagree, the report's fresher type verdicts wi
 - **T4. A format is "proven" only after 14 days and 5+ live pages.** Do not clone a type off one or two clicks.
 - **T5. Ignore Google-only demand.** A topic needs a Bing query, a Vercel landing on a sibling, or a WORKS type.
 
+## 0b. Proven ranking rules: every article, old and new (owner, 28 Nov 2026)
+
+Source: all 604 article pages measured against Bing's 28 Nov page report (231 pages with impressions) and
+Vercel search visitors 22-28 Nov. "Top" = 5+ Bing clicks or 15+ search visitors (41 pages). Only rules the
+data proves are here. Apply them to every new page before merge and to old pages whenever they are touched.
+
+**Proven 1: links into the page decide whether Bing shows it at all.** Pages published before 1 Nov, by the
+number of other pages linking in:
+
+| Inbound links | Pages | Seen by Bing or visitors | Became top pages |
+|---|---:|---:|---:|
+| 0-5 | 97 | 41% | 3% |
+| 6-10 | 92 | 51% | 3% |
+| 11-20 | 102 | 73% | 8% |
+| 21+ | 150 | 73% | 16% |
+
+At the same publish age, top pages have about twice the inbound links of pages that are seen but not clicked
+(early Oct cohort: 32 vs 20; mid Oct: 17 vs 9). The site-wide interlink pass of 24 Oct gave the biggest
+week-on-week click gain on record (+61%, §1).
+- **Rule L1:** every article needs **11+ inbound links** from other articles; cost, fix, brand and
+  top-roundup pages aim for **21+**. Check with `node scripts/inbound-links.mjs` after `npm run build` (lists pages under the line). The "More in this section" box now gives every page in a hub group links from its neighbours (28 Nov: pages with 0-5 inbound links went from 86 to 18).
+- **Rule L2:** every new page gets, before merge: a hub entry in `src/data/sections.ts`, 3-5 anchor phrases in
+  `scripts/interlink-anchors.json` then `node scripts/interlink.mjs --write`, one contextual link from its
+  cluster pillar, and Related cards on 2-3 siblings pointing back.
+- **Rule L3:** when a page is under the line, add anchor phrases people actually write (the way other pages
+  mention it, not its title) and rerun the interlink pass; link to it from a *top* page in the same cluster.
+
+**Proven 2: the snippet decides the click.** After the 13-16 Nov rewrites (query-first titles, answer-first
+copy) clicks went from 16.3/day at 2.5% CTR to 32.5/day at 3.9% (§1).
+- **Rule S1:** title starts with the searched phrase word for word, 50-65 characters; year only on
+  roundups, reviews, prices and deals. When Bing's per-page query data (`GetPageQueryStats`) shows a different
+  wording, lead with that wording.
+- **Rule S2:** meta description 110-160 characters (Bing cuts the rest), answers in the first clause, with a
+  number from the page.
+- **Rule S3:** a page with 40+ Bing impressions and under 1.5% CTR gets S1/S2 rechecked first, before any new page.
+
+**Proven 3: page type.** Pre-Nov pages seen by Bing: fixes 94% (24% top), cost 100% (25% top), questions 74%,
+brand/guide pages 73%, comparisons 52%, roundups 35%. Keep §0a's double-down and stop lists.
+
+**Supported, not yet proven (T4: needs 14 days and 5+ pages):** expanding a page that already ranks 4-8
+(dated Amazon price table, 3-4 new sections, 2-3 FAQs, a table). /best-walking-pads-with-incline/ went ~4x
+in visitors within two days of its 26 Nov expansion; six more pages were expanded on 28 Nov. Re-measure on 12 Dec.
+Within the same publish cohort, top pages are also longer (median 3,870 vs 3,335 words) and carry more tables
+(1.6 vs 0.5).
+
+**Not a differentiator (do not spend time on it):** H2/H3 count (about 18 H2 on top, stuck and invisible pages
+alike), FAQ count (6), word count above 2,500, the Short Answer block, or title length. The §2 template already
+keeps these uniform. Keep them, because the template requires them, but they do not explain rankings.
+
 ## 1. What the data says
 
 Weekly totals (Bing, all engines it powers):

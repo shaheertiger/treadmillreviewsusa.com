@@ -1,14 +1,13 @@
 export default {
   slug: 'best-treadmill-covers',
   title: 'Best Treadmill Covers (2026): Garage, Indoor and Outdoor Picks',
-  description:
-    'Four treadmill covers checked against their listings, for folding, non-folding and garage use, plus how to measure your machine and avoid trapping condensation.',
+  description: "Measure first: a standard non-folding cover is 79 x 38 x 60 in., ClawsCover's folding one 46 x 38 x 66 in. Four treadmill covers from $28, indoor to garage.",
   crumbLabel: 'Best Treadmill Covers',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Best Treadmill Covers', 'for Garage and Home'],
   standfirst:

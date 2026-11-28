@@ -1,14 +1,13 @@
 export default {
   slug: 'best-treadmill-cleaning-products',
   title: 'Best Treadmill Cleaning Products (2026): A Short, Safe Kit',
-  description:
-    'The few products a treadmill needs: mild soap, microfibre cloths, a screen cleaner, a crevice-tool vacuum and gym wipes, plus what never to put on the belt.',
+  description: "Mild dish soap, 12.5 in. microfibre cloths (about $20) and an alcohol-free screen cleaner do most of it. Five treadmill cleaning products, and what to avoid.",
   crumbLabel: 'Best Treadmill Cleaning Products',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Treadmill Cleaning Products', 'and What to Avoid'],
   standfirst:

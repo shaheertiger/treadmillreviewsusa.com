@@ -1,15 +1,14 @@
 export default {
   slug: 'zofdim-treadmills',
   title: 'Zofdim Treadmill (2026): What We Could Find, and What to Check',
-  description:
-    'Is a Zofdim treadmill or walking pad worth buying? What we could and could not confirm about the brand on 5 November 2026, how to check a marketplace listing, and checked alternatives.',
+  description: "We found no maker's site, review or readable listing for Zofdim treadmills on 5 November 2026. How to vet a marketplace pad, and four checked pads from $170.",
   crumbLabel: 'Zofdim Treadmill',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Zofdim Treadmill:', 'What We Could Confirm'],
   standfirst:
@@ -218,7 +217,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Why the safety record matters</h3>
           <p>
             The clearest recent example of the risk is Sperax. In April 2026 the CPSC told consumers to
-            stop using Sperax walking pads and treadmills immediately after reports of uncontrolled
+            stop using <a href="/sperax-walking-pad-recall/" class="text-[#0F62FE] font-medium" data-autolink>Sperax walking pads</a> and treadmills immediately after reports of uncontrolled
             speed, falls and fires, and the seller did not agree to a recall. Sperax was a well-known
             marketplace brand with a large following. A brand that leaves no trace at all gives you even
             less to go on if something goes wrong, which is why the checks below put the seller’s

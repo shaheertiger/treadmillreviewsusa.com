@@ -1,14 +1,13 @@
 export default {
   slug: 'east-urban-home-treadmill',
-  title: 'East Urban Home Foldable Treadmill (2026): A Listing Check',
-  description:
-    'Is there an East Urban Home compact foldable electric treadmill? Who makes Wayfair house-brand products, what the listings show, returns, warranty and what to check.',
+  title: "East Urban Home Compact Foldable Electric Treadmill: Checked",
+  description: "We could not confirm it exists: East Urban Home is a Wayfair label, and the same listing title runs under 7 other labels with non-treadmill spec sheets.",
   crumbLabel: 'East Urban Home Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['East Urban Home Compact Foldable', 'Electric Treadmill, Checked'],
   standfirst:
@@ -282,7 +281,7 @@ export default {
             Ask Wayfair customer service, in writing, who manufactures the item and what its model
             number is. If they can tell you, search that model number elsewhere and see whether the
             figures agree. If nobody can tell you, you will not be able to find a manual, buy a
-            replacement belt or motor controller, or check for a recall.
+            <a href="/best-treadmill-replacement-belts/" class="text-[#0F62FE] font-medium" data-autolink>replacement belt</a> or motor controller, or check for a recall.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">4. Look for reviews of this exact listing</h3>
           <p>

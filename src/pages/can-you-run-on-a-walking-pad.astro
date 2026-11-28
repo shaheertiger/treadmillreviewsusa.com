@@ -86,7 +86,11 @@ const schema = {
 const HERE = "/can-you-run-on-a-walking-pad/";
 const HUB = SECTIONS.find((s) => s.slug === "guides");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -244,7 +248,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           <h2>Can You Jog on a 2-in-1 Walking Pad?</h2>
 <p>
             On some, yes — briefly and easily, with the rail raised and within the limits the manual
-            sets (the <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">best walking pads with handrail</a> compares current 2-in-1 models). A 2-in-1 pad is a walking pad with a handrail that folds up from the front of the
+            sets (the <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">best walking pads with handrail</a> compares current <a href="/best-2-in-1-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>2-in-1 models</a>). A 2-in-1 pad is a walking pad with a handrail that folds up from the front of the
             deck. With the rail down, it behaves like a flat pad and is usually limited to walking
             speeds; with the rail up, many unlock a higher top speed, commonly about 6 mph.
           </p>

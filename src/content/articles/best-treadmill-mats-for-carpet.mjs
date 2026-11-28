@@ -1,14 +1,13 @@
 export default {
   slug: 'best-treadmill-mats-for-carpet',
   title: 'Best Treadmill Mats for Carpet (2026): Five Picks by Pile',
-  description:
-    'Five treadmill mats for carpet checked against their Amazon listings: dense rubber and solid vinyl that stay flat on pile, a long mat for big machines, budget picks, and when you need a board.',
+  description: "The Rubber-Cal 48 x 90 in. rubber mat (about $63) is the best treadmill mat for most carpet. Five picks by pile and machine size, and when you need a board.",
   crumbLabel: 'Best Treadmill Mats for Carpet',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Best Treadmill Mats', 'for Carpet'],
   standfirst:

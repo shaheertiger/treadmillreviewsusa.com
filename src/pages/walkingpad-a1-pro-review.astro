@@ -4,7 +4,7 @@ import { SECTIONS } from "../data/sections";
 
 const title = "WalkingPad A1 Pro Review (2026): Specs, Price, Is It Still Sold?";
 const description =
-  "The WalkingPad A1 Pro foldable under-desk treadmill checked on 5 November 2026: still sold by WalkingPad at $499, its 47 x 16.5 in. deck, the 230 vs 300 lb versions, a three-way motor conflict, and the newer pads to compare.";
+  "The WalkingPad A1 Pro is still sold at $499 and folds to 32.5 in. long. Check whether it is the 230 or 300 lb version, and compare the $299 Z1 and $399 C2.";
 
 const PRODUCTS = [
   {
@@ -158,7 +158,7 @@ const schema = {
       description: description,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-11-05",
-      dateModified: "2026-11-15",
+      dateModified: "2026-11-28",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
     ...PRODUCTS.map((product) => ({
@@ -197,7 +197,11 @@ const schema = {
 const HERE = "/walkingpad-a1-pro-review/";
 const HUB = SECTIONS.find((s) => s.slug === "reviews");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -206,7 +210,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
   ogType="article"
   article={{
     publishedTime: "2026-11-05",
-    modifiedTime: "2026-11-15",
+    modifiedTime: "2026-11-28",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
@@ -237,7 +241,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
         <div class="ed-byline-text">
           By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
-          Updated November 15, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          Updated November 28, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
           <span class="ed-method">Based on the maker’s specification sheet and manual, retailer listings and owner reports. Not tested hands-on.</span>
         </div>
         <a href="#top-picks" class="btn-ghost">View products</a>
@@ -441,8 +445,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             </tbody>
           </table></div>
           <p>
-            The motor conflict is the one to notice. WalkingPad’s current A1 Pro page calls it a 3.75 HP
-            brushless motor, Best Buy lists 1.25 HP, and the tracker reports 2 HP on Amazon, which it reads as a
+            The motor conflict is the one to notice. WalkingPad’s current A1 Pro page calls it a 3.75 HP <a href="/best-treadmills-with-brushless-motor/" class="text-[#0F62FE] font-medium" data-autolink>brushless motor</a>, Best Buy lists 1.25 HP, and the tracker reports 2 HP on Amazon, which it reads as a
             peak figure. Walking-pad motor ratings are rarely stated on a common basis, and a pad limited
             to 3.75 mph does not need much power at walking pace. We would not choose between pads on any
             of these numbers; our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains why peak and continuous figures are not comparable.

@@ -1,15 +1,14 @@
 export default {
   slug: 'walmart-treadmills',
   title: 'Walmart Treadmills (2026): Does Walmart Sell Treadmills?',
-  description:
-    'Yes, mostly online. How to tell a treadmill sold by Walmart from a Marketplace seller’s, which brands it lists, and its return policy for heavy items.',
+  description: "Yes, mostly on Walmart.com. Items sold by Walmart get 90 days to return; Marketplace items usually 30, with restocking fees up to 20%. Check who sells it.",
   crumbLabel: 'Walmart Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-18',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Does Walmart Sell Treadmills?', 'What to Check First'],
   standfirst:

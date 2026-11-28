@@ -360,7 +360,7 @@ export default {
             <strong>Joints.</strong> Cycling moves the knees and hips through a controlled, repeated
             range with no impact, which many people with sore knees find comfortable. Fit matters: a
             seat too close forces a deep knee and hip bend under load, which is the most common cause of
-            knee discomfort on any bike. If you have had a hip or knee replacement, ask your surgeon or
+            knee discomfort on any bike. If you have had a hip or <a href="/treadmill-after-knee-replacement/" class="text-[#0F62FE] font-medium" data-autolink>knee replacement</a>, ask your surgeon or
             physiotherapist when you can start and how far forward the seat may go, because some
             post-operative precautions limit how far the hip should bend.
           </p>

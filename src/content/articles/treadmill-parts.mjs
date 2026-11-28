@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-parts',
   title: 'Treadmill Parts (2026): Where to Buy, OEM vs Aftermarket, Cost',
-  description:
-    'Which treadmill parts fail, how to find your model and serial number, OEM against aftermarket, where to buy NordicTrack, ProForm, Sole, Life Fitness and Precor parts, and when a part costs more than the machine is worth.',
+  description: "A treadmill safety key costs $6.97–$19.55 and a motor control board $191–$470 on one NordicTrack. Find your model number, OEM vs aftermarket, where to buy.",
   crumbLabel: 'Treadmill Parts',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Treadmill Parts:', 'Where to Buy the Right One'],
   standfirst:

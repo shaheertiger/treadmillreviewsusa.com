@@ -1,15 +1,14 @@
 export default {
   slug: 'folding-vs-non-folding-treadmill',
   title: 'Folding vs Non-Folding Treadmill: What You Trade for Storage',
-  description:
-    'Folding treadmills save floor space when stored; non-folding ones usually give more stability, deck and motor per dollar. Here is the trade, honestly weighed.',
+  description: "Buy non-folding if it can stay set up: more frame, deck and motor per dollar. Fold only if you will fold it weekly; runners still need a 60 in. deck.",
   crumbLabel: 'Folding vs Non-Folding Treadmill',
   kicker: 'Comparison',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Folding vs', 'Non-Folding Treadmill'],
   standfirst:
@@ -83,7 +82,7 @@ export default {
             flex in a lighter frame, shows up as movement under your feet.
           </p>
           <p>
-            At walking pace you may never notice. At running pace, and particularly for heavier runners
+            At walking pace you may never notice. At running pace, and particularly for <a href="/best-treadmills-for-heavy-runners/" class="text-[#0F62FE] font-medium" data-autolink>heavier runners</a>
             or anyone with a long, forceful stride, a lighter folding frame can bounce, shift sideways
             or creep across the floor. That is not dangerous on a well-built machine, but it is less
             pleasant, it tends to be noisier, and it puts more cyclic stress through the hinge and its

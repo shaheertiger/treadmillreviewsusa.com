@@ -1,15 +1,14 @@
 export default {
   slug: 'best-treadmills-for-marathon-training',
   title: 'Best Treadmills for Marathon Training (2026): Built for Long Runs',
-  description:
-    'Six treadmills for marathon training and long runs, checked against maker listings and independent reviews: 60-inch decks, motors for hours, decline, cooling.',
+  description: "The NordicTrack Commercial 1750 is the best treadmill for marathon training: 22 x 60 in. belt, 4.25 CHP, -3% decline, about $2,000. Six picks up to $7,000.",
   crumbLabel: 'Best Treadmills for Marathon Training',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Treadmills for', 'Marathon Training'],
   standfirst:

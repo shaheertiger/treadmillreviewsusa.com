@@ -5,14 +5,15 @@ export default {
   crumbLabel: 'Treadmill Pace & Speed Chart',
   kicker: 'Reference',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '4.5k',
   h1: ["Treadmill Speed Chart:", "mph to Pace and km/h"],
   standfirst: "Pace per mile is 60 ÷ mph: 6 mph is a 10:00 mile, 7.5 mph is 8:00 and 10 mph is 6:00. The chart below converts every treadmill speed from 2 to 12 mph to minutes per mile and km/h, with what each speed and incline grade actually demands.",
   ctas: [
     { label: 'The Conversion Chart', href: '#the-chart' },
+    { label: 'Race Goal Speeds', href: '#race-goal-paces' },
     { label: 'What Incline Is Worth', href: '#incline-equivalents' },
   ],
   tags: [
@@ -101,6 +102,63 @@ export default {
           </p>`,
     },
     {
+      id: 'mph-to-min-per-km',
+      heading: 'mph to Minutes per Kilometre, With 5K and 10K Times',
+      html: `          <p>
+            Most running apps, watches set to metric and nearly every race outside the US work in
+            minutes per kilometre, while a US treadmill shows mph. <strong>Minutes per km = 60 ÷
+            (mph × 1.609).</strong> At 6 mph that is 9.7 km/h and a 6:13 kilometre; at 7.5 mph it
+            is 12.1 km/h and just under 5:00 per kilometre.
+          </p>
+          <p>
+            The two right-hand columns show how long a 5K and a 10K take if you hold that speed
+            the whole way, which answers the question most people are really asking when they
+            look up a speed: how long will this take me?
+          </p>
+          <div class="overflow-x-auto my-8 not-prose">
+            <table class="min-w-[520px] w-full text-sm border-collapse">
+              <thead>
+                <tr class="bg-gray-900 text-white text-left">
+                  <th class="px-4 py-3 font-black">mph</th>
+                  <th class="px-4 py-3 font-black">km/h</th>
+                  <th class="px-4 py-3 font-black">Min / km</th>
+                  <th class="px-4 py-3 font-black">5K time</th>
+                  <th class="px-4 py-3 font-black">10K time</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">3.0</td><td class="px-4 py-2">4.8</td><td class="px-4 py-2">12:26</td><td class="px-4 py-2">1:02:08</td><td class="px-4 py-2">2:04:16</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">3.5</td><td class="px-4 py-2">5.6</td><td class="px-4 py-2">10:39</td><td class="px-4 py-2">53:16</td><td class="px-4 py-2">1:46:31</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">4.0</td><td class="px-4 py-2">6.4</td><td class="px-4 py-2">9:19</td><td class="px-4 py-2">46:36</td><td class="px-4 py-2">1:33:12</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">4.5</td><td class="px-4 py-2">7.2</td><td class="px-4 py-2">8:17</td><td class="px-4 py-2">41:25</td><td class="px-4 py-2">1:22:51</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">5.0</td><td class="px-4 py-2">8.0</td><td class="px-4 py-2">7:27</td><td class="px-4 py-2">37:17</td><td class="px-4 py-2">1:14:34</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">5.5</td><td class="px-4 py-2">8.9</td><td class="px-4 py-2">6:47</td><td class="px-4 py-2">33:54</td><td class="px-4 py-2">1:07:47</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">6.0</td><td class="px-4 py-2">9.7</td><td class="px-4 py-2">6:13</td><td class="px-4 py-2">31:04</td><td class="px-4 py-2">1:02:08</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">6.2</td><td class="px-4 py-2">10.0</td><td class="px-4 py-2">6:01</td><td class="px-4 py-2">30:04</td><td class="px-4 py-2">1:00:08</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">6.5</td><td class="px-4 py-2">10.5</td><td class="px-4 py-2">5:44</td><td class="px-4 py-2">28:41</td><td class="px-4 py-2">57:21</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">7.0</td><td class="px-4 py-2">11.3</td><td class="px-4 py-2">5:20</td><td class="px-4 py-2">26:38</td><td class="px-4 py-2">53:16</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">7.5</td><td class="px-4 py-2">12.1</td><td class="px-4 py-2">4:58</td><td class="px-4 py-2">24:51</td><td class="px-4 py-2">49:43</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">8.0</td><td class="px-4 py-2">12.9</td><td class="px-4 py-2">4:40</td><td class="px-4 py-2">23:18</td><td class="px-4 py-2">46:36</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">8.5</td><td class="px-4 py-2">13.7</td><td class="px-4 py-2">4:23</td><td class="px-4 py-2">21:56</td><td class="px-4 py-2">43:52</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">9.0</td><td class="px-4 py-2">14.5</td><td class="px-4 py-2">4:09</td><td class="px-4 py-2">20:43</td><td class="px-4 py-2">41:25</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">9.5</td><td class="px-4 py-2">15.3</td><td class="px-4 py-2">3:55</td><td class="px-4 py-2">19:37</td><td class="px-4 py-2">39:15</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">10.0</td><td class="px-4 py-2">16.1</td><td class="px-4 py-2">3:44</td><td class="px-4 py-2">18:38</td><td class="px-4 py-2">37:17</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">11.0</td><td class="px-4 py-2">17.7</td><td class="px-4 py-2">3:23</td><td class="px-4 py-2">16:57</td><td class="px-4 py-2">33:54</td></tr>
+                <tr class="bg-gray-50"><td class="px-4 py-2 font-bold">12.0</td><td class="px-4 py-2">19.3</td><td class="px-4 py-2">3:06</td><td class="px-4 py-2">15:32</td><td class="px-4 py-2">31:04</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            Times are rounded to the nearest second and assume a steady speed from the first
+            metre, so a real run with a warm-up and a slower first kilometre will come in a little
+            longer. Two rows are worth remembering: <strong>6.2 mph is almost exactly 10 km/h and a
+            6-minute kilometre</strong>, a 30-minute 5K and an hour-long 10K; and <strong>7.5 mph is
+            a sub-5:00 kilometre</strong>, a 25-minute 5K. If your machine can switch its display to
+            km/h, it is usually under a units setting in the maintenance or settings menu, but the
+            belt and motor do not change; only the numbers on the screen do.
+          </p>`,
+    },
+    {
       id: 'what-it-feels-like',
       heading: 'The Only Calibration That Travels',
       html: `          <p>
@@ -153,8 +211,8 @@ export default {
                 <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">2%</td><td class="px-4 py-2">1.1&deg;</td><td class="px-4 py-2">A slightly brisker walk</td></tr>
                 <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">5%</td><td class="px-4 py-2">2.9&deg;</td><td class="px-4 py-2">A fast 4 mph walk</td></tr>
                 <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">8%</td><td class="px-4 py-2">4.6&deg;</td><td class="px-4 py-2">A gentle jog</td></tr>
-                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">10%</td><td class="px-4 py-2">5.7&deg;</td><td class="px-4 py-2">Around a 5 mph jog</td></tr>
-                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">12%</td><td class="px-4 py-2">6.8&deg;</td><td class="px-4 py-2">A steady run, without the impact</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">10%</td><td class="px-4 py-2">5.7&deg;</td><td class="px-4 py-2">Just short of a 5 mph jog</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">12%</td><td class="px-4 py-2">6.8&deg;</td><td class="px-4 py-2">Close to a 5 mph jog, without the impact</td></tr>
                 <tr><td class="px-4 py-2 font-bold">15%</td><td class="px-4 py-2">8.5&deg;</td><td class="px-4 py-2">Genuinely demanding for most people</td></tr>
               </tbody>
             </table>
@@ -171,6 +229,61 @@ export default {
             covers that in full, and one caveat applies throughout: these figures assume you are
             not <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the handrails</a>. Leaning transfers work to your arms and the numbers stop
             meaning anything.
+          </p>`,
+    },
+    {
+      id: 'speed-and-incline',
+      heading: 'Speed and Incline Together: How Hard Each Combination Is',
+      html: `          <p>
+            The incline table above is a rule of thumb. For a number, the standard tool is the
+            pair of metabolic equations published by the American College of Sports Medicine in
+            its <em>Guidelines for Exercise Testing and Prescription</em>, which estimate oxygen
+            cost from treadmill speed and grade. Converted to METs (multiples of resting energy
+            use), they give the figures below.
+          </p>
+          <div class="overflow-x-auto my-8 not-prose">
+            <table class="min-w-[520px] w-full text-sm border-collapse">
+              <thead>
+                <tr class="bg-gray-900 text-white text-left">
+                  <th class="px-4 py-3 font-black">Speed</th>
+                  <th class="px-4 py-3 font-black">0%</th>
+                  <th class="px-4 py-3 font-black">5%</th>
+                  <th class="px-4 py-3 font-black">10%</th>
+                  <th class="px-4 py-3 font-black">15%</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">2.0 mph walk</td><td class="px-4 py-2">2.5</td><td class="px-4 py-2">3.9</td><td class="px-4 py-2">5.3</td><td class="px-4 py-2">6.7</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">3.0 mph walk</td><td class="px-4 py-2">3.3</td><td class="px-4 py-2">5.4</td><td class="px-4 py-2">7.4</td><td class="px-4 py-2">9.5</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">3.5 mph walk</td><td class="px-4 py-2">3.7</td><td class="px-4 py-2">6.1</td><td class="px-4 py-2">8.5</td><td class="px-4 py-2">10.9</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">5.0 mph run</td><td class="px-4 py-2">8.7</td><td class="px-4 py-2">10.4</td><td class="px-4 py-2">12.1</td><td class="px-4 py-2">13.8</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">6.0 mph run</td><td class="px-4 py-2">10.2</td><td class="px-4 py-2">12.3</td><td class="px-4 py-2">14.3</td><td class="px-4 py-2">16.4</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">7.0 mph run</td><td class="px-4 py-2">11.7</td><td class="px-4 py-2">14.1</td><td class="px-4 py-2">16.6</td><td class="px-4 py-2">19.0</td></tr>
+                <tr><td class="px-4 py-2 font-bold">8.0 mph run</td><td class="px-4 py-2">13.3</td><td class="px-4 py-2">16.0</td><td class="px-4 py-2">18.8</td><td class="px-4 py-2">21.5</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            Read across a row to see what grade does at a fixed speed, and down a column to see
+            what speed does at a fixed grade. Three things stand out. First, a 3 mph walk at 10%
+            (about 7.4 METs) sits close to a 5 mph jog on the flat (about 8.7), and at 15% it
+            passes it, which is the arithmetic behind incline walking as a low-impact substitute
+            for running. Second, grade costs a walker far more than a runner: the ACSM walking
+            equation counts grade at twice the weight of the running equation, so 5% adds about 2
+            METs to a 3 mph walk and about 1.7 to a 5 mph run despite the run being much faster.
+            Third, everything here clears the 3-MET line that is conventionally used for moderate
+            intensity except a 2 mph flat stroll.
+          </p>
+          <p>
+            Two cautions. The walking equation is intended for roughly 1.9 to 3.7 mph and the
+            running equation for 5 mph and up, so the 4 to 5 mph band, where people switch
+            between walking and jogging, is not covered well by either. And the equations
+            estimate an average person who is not holding the rails; your own cost will differ
+            with body weight, stride and fitness. Our guide to
+            <a href="/what-are-mets-on-a-treadmill/" class="text-[#0F62FE] font-medium">METs on a treadmill</a>
+            explains the unit, and
+            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a>
+            covers where to start on grade.
           </p>`,
     },
     {
@@ -223,7 +336,9 @@ export default {
             drift with <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>belt wear</a> and tension. If your treadmill pace and your GPS watch disagree
             consistently, the machine may need attention — our
             <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">belt tension guide</a>
-            covers the most common cause.
+            covers the most common cause, and
+            <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">is my treadmill speed accurate?</a>
+            shows how to check the belt against a stopwatch.
           </p>
           <p>
             The practical takeaway: treat treadmill pace as its own scale. Compare treadmill
@@ -287,6 +402,53 @@ export default {
           </p>`,
     },
     {
+      id: 'walkers-vs-runners',
+      heading: 'What Treadmill Speeds Walkers and Runners Actually Use',
+      html: `          <p>
+            The chart runs from 2 to 12 mph, but almost nobody uses the whole range. Walkers live
+            in the bottom third of it and most recreational runners in the middle, and knowing
+            which band you belong in matters when you are choosing a machine as much as when you
+            are setting a session.
+          </p>
+          <div class="overflow-x-auto my-8 not-prose">
+            <table class="min-w-[520px] w-full text-sm border-collapse">
+              <thead>
+                <tr class="bg-gray-900 text-white text-left">
+                  <th class="px-4 py-3 font-black">Speed band</th>
+                  <th class="px-4 py-3 font-black">Pace / mile</th>
+                  <th class="px-4 py-3 font-black">Who typically uses it</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">1.0&ndash;2.0 mph</td><td class="px-4 py-2">60:00&ndash;30:00</td><td class="px-4 py-2">First sessions, rehab, walking at a standing desk</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">2.0&ndash;3.0 mph</td><td class="px-4 py-2">30:00&ndash;20:00</td><td class="px-4 py-2">Everyday walking, many older walkers, walking pads</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">3.0&ndash;4.0 mph</td><td class="px-4 py-2">20:00&ndash;15:00</td><td class="px-4 py-2">Brisk fitness walking, incline walking</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">4.0&ndash;5.0 mph</td><td class="px-4 py-2">15:00&ndash;12:00</td><td class="px-4 py-2">Power walking or a slow jog: the walk-run switch</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">5.0&ndash;6.5 mph</td><td class="px-4 py-2">12:00&ndash;9:14</td><td class="px-4 py-2">Easy running for most recreational runners</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">6.5&ndash;8.5 mph</td><td class="px-4 py-2">9:14&ndash;7:04</td><td class="px-4 py-2">Steady and tempo running for regular runners</td></tr>
+                <tr><td class="px-4 py-2 font-bold">8.5&ndash;12.0 mph</td><td class="px-4 py-2">7:04&ndash;5:00</td><td class="px-4 py-2">Intervals, strides and sprints</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            <strong>The walk-run switch.</strong> Somewhere around 4 to 5 mph, usually near 4.5,
+            walking starts to feel more awkward than jogging and most adults break into a run on
+            their own. Taller people with longer strides tend to switch later, shorter people
+            earlier. Fast walking just below that point is surprisingly hard work, which is why
+            power walkers at 4.3 mph often find a 4.6 mph jog feels easier.
+          </p>
+          <p>
+            <strong>What this means for the machine.</strong> If everything you do sits under
+            4 mph, a walking treadmill or a walking pad covers it, and its top speed is not a
+            limitation. If you jog even occasionally, look at the running bands: easy running
+            needs 5 to 6.5 mph, and intervals need 8 mph and up with a belt long enough to stride
+            out. Whether a pad can stretch that far is covered in
+            <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">can you run on a walking pad</a>,
+            and the walking end of the chart is broken down by goal, fitness level and age in
+            <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what speed to walk on a treadmill</a>.
+          </p>`,
+    },
+    {
       id: 'pace-by-goal',
       heading: 'Target Paces by Goal',
       html: `          <p>
@@ -331,6 +493,65 @@ export default {
           </p>`,
     },
     {
+      id: 'race-goal-paces',
+      heading: 'Treadmill Speed for a 5K, 10K, Half or Marathon Goal Time',
+      html: `          <p>
+            Working backwards from a finish time is the most common reason runners look up this
+            chart. Divide the goal time by the race distance in miles to get the pace, then 60 by
+            the pace to get mph. The table does that for the goal times people search for most.
+          </p>
+          <div class="overflow-x-auto my-8 not-prose">
+            <table class="min-w-[560px] w-full text-sm border-collapse">
+              <thead>
+                <tr class="bg-gray-900 text-white text-left">
+                  <th class="px-4 py-3 font-black">Race</th>
+                  <th class="px-4 py-3 font-black">Goal time</th>
+                  <th class="px-4 py-3 font-black">Pace / mile</th>
+                  <th class="px-4 py-3 font-black">Pace / km</th>
+                  <th class="px-4 py-3 font-black">Exact mph</th>
+                  <th class="px-4 py-3 font-black">Set the belt to</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">5K</td><td class="px-4 py-2">35:00</td><td class="px-4 py-2">11:16</td><td class="px-4 py-2">7:00</td><td class="px-4 py-2">5.33</td><td class="px-4 py-2">5.4</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">5K</td><td class="px-4 py-2">30:00</td><td class="px-4 py-2">9:39</td><td class="px-4 py-2">6:00</td><td class="px-4 py-2">6.21</td><td class="px-4 py-2">6.3</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">5K</td><td class="px-4 py-2">25:00</td><td class="px-4 py-2">8:03</td><td class="px-4 py-2">5:00</td><td class="px-4 py-2">7.46</td><td class="px-4 py-2">7.5</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">5K</td><td class="px-4 py-2">20:00</td><td class="px-4 py-2">6:26</td><td class="px-4 py-2">4:00</td><td class="px-4 py-2">9.32</td><td class="px-4 py-2">9.4</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">10K</td><td class="px-4 py-2">1:10:00</td><td class="px-4 py-2">11:16</td><td class="px-4 py-2">7:00</td><td class="px-4 py-2">5.33</td><td class="px-4 py-2">5.4</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">10K</td><td class="px-4 py-2">1:00:00</td><td class="px-4 py-2">9:39</td><td class="px-4 py-2">6:00</td><td class="px-4 py-2">6.21</td><td class="px-4 py-2">6.3</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">10K</td><td class="px-4 py-2">50:00</td><td class="px-4 py-2">8:03</td><td class="px-4 py-2">5:00</td><td class="px-4 py-2">7.46</td><td class="px-4 py-2">7.5</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">10K</td><td class="px-4 py-2">45:00</td><td class="px-4 py-2">7:15</td><td class="px-4 py-2">4:30</td><td class="px-4 py-2">8.28</td><td class="px-4 py-2">8.3</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">Half marathon</td><td class="px-4 py-2">2:30:00</td><td class="px-4 py-2">11:27</td><td class="px-4 py-2">7:07</td><td class="px-4 py-2">5.24</td><td class="px-4 py-2">5.3</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">Half marathon</td><td class="px-4 py-2">2:00:00</td><td class="px-4 py-2">9:09</td><td class="px-4 py-2">5:41</td><td class="px-4 py-2">6.55</td><td class="px-4 py-2">6.6</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">Half marathon</td><td class="px-4 py-2">1:45:00</td><td class="px-4 py-2">8:01</td><td class="px-4 py-2">4:59</td><td class="px-4 py-2">7.49</td><td class="px-4 py-2">7.5</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">Marathon</td><td class="px-4 py-2">5:00:00</td><td class="px-4 py-2">11:27</td><td class="px-4 py-2">7:07</td><td class="px-4 py-2">5.24</td><td class="px-4 py-2">5.3</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-2 font-bold">Marathon</td><td class="px-4 py-2">4:30:00</td><td class="px-4 py-2">10:18</td><td class="px-4 py-2">6:24</td><td class="px-4 py-2">5.83</td><td class="px-4 py-2">5.9</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-bold">Marathon</td><td class="px-4 py-2">4:00:00</td><td class="px-4 py-2">9:09</td><td class="px-4 py-2">5:41</td><td class="px-4 py-2">6.55</td><td class="px-4 py-2">6.6</td></tr>
+                <tr><td class="px-4 py-2 font-bold">Marathon</td><td class="px-4 py-2">3:30:00</td><td class="px-4 py-2">8:01</td><td class="px-4 py-2">4:59</td><td class="px-4 py-2">7.49</td><td class="px-4 py-2">7.5</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            <strong>Why the last column rounds up.</strong> Treadmills move in 0.1 mph steps, and
+            the exact speed for most goals falls between two of them. A 30-minute 5K needs 6.21
+            mph; at 6.2 you finish in about 30:04, so the belt has to go to 6.3 (about 29:35) to get
+            under. For a goal race, set the next step up. For everyday training at a pace, the
+            earlier advice still holds: round down.
+          </p>
+          <p>
+            <strong>Do not train at these speeds every day.</strong> Goal pace is for a portion
+            of one or two sessions a week; most running should sit slower, in the easy band for
+            your level. A half-marathon or marathon goal is also less about whether you can hold
+            the speed for ten minutes than whether you can hold it for two to five hours, which
+            is built by long runs well below it. Our
+            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">couch to 5K treadmill plan</a>
+            and
+            <a href="/treadmill-marathon-training/" class="text-[#0F62FE] font-medium">treadmill marathon training guide</a>
+            show how goal pace fits into a full week. If you are racing outdoors, many runners add
+            the 1% grade covered above to these settings.
+          </p>`,
+    },
+    {
       id: 'metric-plans',
       heading: 'If Your Plan Is in Kilometres',
       html: `          <p>
@@ -339,7 +560,7 @@ export default {
           </p>
           <p>
             <strong>Minutes per kilometre = 60 ÷ km/h</strong>, and km/h is mph × 1.6. So 6 mph is
-            9.7 km/h, which is a touch over 6:11 per kilometre. A useful anchor:
+            9.7 km/h, which is about 6:13 per kilometre. A useful anchor:
             <strong>10 km/h — about 6.2 mph — is a 6-minute kilometre</strong>, which is the
             metric equivalent of the <a href="/what-speed-is-a-10-minute-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>10-minute mile</a> as a mental reference point.
           </p>
@@ -386,7 +607,7 @@ export default {
     },
     {
       q: 'What incline equals running on a treadmill?',
-      a: `Roughly, walking at 3 mph on a 10% grade is comparable in cardiovascular effort to jogging at about 5 mph on the flat, at a fraction of the impact per footfall. These are approximations that vary with body weight and fitness, and they assume you are not holding the handrails.`,
+      a: `Roughly, walking at 3 mph on a 10 to 12% grade is comparable in energy cost to jogging at about 5 mph on the flat (around 7.4 to 8.3 METs against 8.7 by the ACSM equations), at a fraction of the impact per footfall. These are approximations that vary with body weight and fitness, and they assume you are not holding the handrails.`,
     },
     {
       q: 'Should I set the treadmill to 1% incline?',
@@ -397,8 +618,12 @@ export default {
       a: `Several reasons unrelated to fitness: no air resistance to push through, no camber or terrain variation, and poorer heat dissipation indoors, which makes a given pace feel harder. Console calibration can also drift with belt wear. Treat treadmill pace as its own scale rather than expecting the two to match.`,
     },
     {
-      q: 'Is treadmill speed accurate?',
-      a: `Generally yes — the machine controls belt speed directly, so it is among the more reliable numbers on the console. It can drift with belt wear and incorrect tension. If your treadmill consistently disagrees with a GPS watch, check belt tension before assuming either device is wrong.`,
+      q: 'What treadmill speed do I need for a 30-minute 5K?',
+      a: `A 30-minute 5K is a 9:39 mile, which is 6.21 mph or a 6:00 kilometre. Treadmills step in 0.1 mph, and 6.2 mph finishes in about 30:04, so set 6.3 mph to get under 30 minutes. A 25-minute 5K needs 7.5 mph and a 20-minute 5K needs 9.4 mph.`,
+    },
+    {
+      q: 'What is a good treadmill speed for walking and for running?',
+      a: `Most people walk at 2.5 to 4 mph, with 3 to 3.5 mph a typical brisk pace (a 20:00 to 17:09 mile). Running usually starts around 4.5 to 5 mph, and most recreational runners do their easy miles between 5 and 6.5 mph. Faster than about 8.5 mph is interval and sprint territory for most people.`,
     },
   ],
   mistakesHeading: 'Common Mistakes Reading Treadmill Speeds',
@@ -440,6 +665,18 @@ export default {
       title: 'Incline: Percentage vs. Degrees',
       blurb: 'Why 15% is only 8.5 degrees, and what each grade demands.',
       url: '/treadmill-incline-percent-vs-degrees/',
+    },
+    {
+      kicker: 'Walking',
+      title: 'What Speed Should I Walk on a Treadmill?',
+      blurb: 'Average walking speed, the talk test, and speeds for weight loss and older walkers.',
+      url: '/what-speed-should-i-walk-on-a-treadmill/',
+    },
+    {
+      kicker: 'Plan',
+      title: 'Couch to 5K on a Treadmill',
+      blurb: 'A nine-week walk-to-run plan with the treadmill speeds to set.',
+      url: '/couch-to-5k-treadmill/',
     },
   ],
   bottomLine: [

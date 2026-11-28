@@ -1,15 +1,14 @@
 export default {
   slug: 'best-non-folding-treadmills',
   title: 'Best Non-Folding Treadmills (2026): Five Fixed-Deck Machines',
-  description:
-    'Five non-folding treadmills from about $2,500 to $7,600, each confirmed by its maker not to fold, plus why a fixed deck suits some buyers and who should not.',
+  description: "The Spirit XT685 is the best non-folding treadmill for the money; the NordicTrack X16 suits steep incline. Five fixed-deck picks from about $2,500 to $7,600.",
   crumbLabel: 'Best Non-Folding Treadmills',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Best Non-Folding Treadmills', 'for a Permanent Spot at Home'],
   standfirst:

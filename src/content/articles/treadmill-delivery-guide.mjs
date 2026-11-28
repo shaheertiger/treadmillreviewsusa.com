@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-delivery-guide',
   title: 'Treadmill Delivery (2026): Curbside vs White Glove and Costs',
-  description:
-    'Curbside, threshold, room-of-choice and white-glove treadmill delivery explained: typical costs, stairs and apartment buildings, and how to inspect on arrival.',
+  description: "Curbside treadmill delivery is often included. Threshold adds about $50–$150, room of choice $100–$200, and white glove with assembly $150–$400 over curbside.",
   crumbLabel: 'Treadmill Delivery Guide',
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Treadmill Delivery:', 'Curbside to White Glove'],
   standfirst:

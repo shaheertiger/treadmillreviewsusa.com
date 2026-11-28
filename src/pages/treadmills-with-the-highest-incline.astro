@@ -4,7 +4,7 @@ import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill With the Highest Incline (2026): 40% to 15%, Ranked";
 const description =
-  "The treadmill with the highest incline you can buy for home use, ranked by maximum grade: 40% NordicTrack incline trainers, a 30% commercial machine and 15% picks, with percent vs degrees explained.";
+  "The highest incline we could confirm on a home treadmill is 40% (21.8°), on the NordicTrack X16 and X24. Next: a 30% incline trainer, then 15%. Six ranked.";
 
 const PRODUCTS = [
   {
@@ -36,30 +36,30 @@ const PRODUCTS = [
   },
   {
     id: "cursor-40-incline-treadmill",
-    name: "CURSOR 40% Incline Treadmill",
+    name: "CURSOR 32% Incline Treadmill",
     brand: "CURSOR",
-    category: "Cheapest way to walk at 40%",
-    badge: "Budget 40%",
+    category: "Cheapest way to walk at 32%",
+    badge: "Budget 32%",
     amazonUrl: "https://www.amazon.com/dp/B0HH368PZJ?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
     image: {"url":"https://m.media-amazon.com/images/I/41C5ysa6PUL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
-    priceRange: "About $200 (Amazon, 6 Nov 2026)",
-    priceBounds: {"low":200,"high":200},
-    specs: "0–40% manual incline in five steps · 38.6 x 15.4 in. belt · 0.6–6.2 mph · 350 lb capacity · 51 in. handrails · folds",
+    priceRange: "$199.99 (Amazon, 28 Nov 2026)",
+    priceBounds: {"low":199.99,"high":199.99},
+    specs: "0–32% manual incline in five steps · 38.6 x 15.4 in. belt · 0.6–6.2 mph · 350 lb capacity · 51 in. handrails · folds",
     pros: [
-      "Reaches 40% for about a tenth of the price of a powered incline trainer",
+      "Reaches 32%, above a 30% incline trainer, for about a tenth of the price of a powered one",
       "Long 51-inch handrails, per the listing, which help on steep grades",
       "A 350 lb rating and a fold-down frame with wheels",
       "Light enough to move and store, unlike a full incline trainer",
     ],
     cons: [
-      "The incline is set by hand in 10% steps, not powered, so you stop to change it",
+      "The incline is set by hand in 8% steps, not powered, so you stop to change it",
       "A 38.6 by 15.4-inch belt is walking-pad sized and short for a long stride on a slope",
       "No decline, and the brand has little track record we could check",
     ],
-    bottomLine: "A cheap way to find out whether 40% walking suits you before paying for an X Series, not a substitute for a powered incline trainer.",
-    description: "The CURSOR reaches the same 40% as the NordicTrack X Series for about a tenth of the price, and it is a very different machine. The Amazon listing gives five manual incline settings — 0, 10, 20, 30 and 40% — with the deck reaching 15 inches high at the top setting, a 38.6 by 15.4-inch belt, a speed range of 0.6 to 6.2 mph, a 3.0 HP brushless motor, a 350 lb maximum user weight, 51-inch dual handrails described as suited to users 5 ft 11 in. and taller, and a fold-down frame with transport wheels. The word that matters is manual: you change the incline by hand, between sessions or by stopping, so there are no hill programs and no changes mid-walk, where the X Series raises and lowers the deck for you. The belt is also far shorter and narrower than a full incline trainer's, which matters more on a slope, where your stride lengthens and you drift backwards as you tire. It has no decline. Treat it as a low-cost way to find out whether steep walking suits you before spending thousands, and keep the speed modest at the steep settings. Its 40% figure is the listing's own, so it sits outside the manufacturer-confirmed ranking. Amazon listed it at $199.99 on 6 November 2026, as checked for our incline trainer guide.",
+    bottomLine: "A cheap way to find out whether steep walking suits you before paying for an X Series, not a substitute for a powered incline trainer.",
+    description: "The CURSOR reaches 32%, short of the NordicTrack X Series' 40% but above the 30% of a commercial incline trainer, for about a tenth of the X Series' price, and it is a very different machine. The Amazon listing gives five manual incline settings — 0, 8, 16, 24 and 32% — with the deck reaching 15 inches high at the top setting, a 38.6 by 15.4-inch belt, a speed range of 0.6 to 6.2 mph, a 3.0 HP brushless motor, a 350 lb maximum user weight, 51-inch dual handrails described as suited to users 5 ft 11 in. and taller, and a fold-down frame with transport wheels. The word that matters is manual: you change the incline by hand, between sessions or by stopping, so there are no hill programs and no changes mid-walk, where the X Series raises and lowers the deck for you. The belt is also far shorter and narrower than a full incline trainer's, which matters more on a slope, where your stride lengthens and you drift backwards as you tire. It has no decline. Treat it as a low-cost way to find out whether steep walking suits you before spending thousands, and keep the speed modest at the steep settings. Its 32% figure is the listing's own (the same listing said 40% when we first checked it on 6 November 2026, and was corrected to 32% by 28 November), so it sits outside the manufacturer-confirmed ranking. Amazon listed it at $199.99 on 28 November 2026.",
   },
   {
     id: "freemotion-i11-9-incline-trainer",
@@ -240,7 +240,7 @@ const schema = {
       description: description,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-10-14",
-      dateModified: "2026-11-15",
+      dateModified: "2026-11-28",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
     ...PRODUCTS.map((product) => ({
@@ -279,7 +279,11 @@ const schema = {
 const HERE = "/treadmills-with-the-highest-incline/";
 const HUB = SECTIONS.find((s) => s.slug === "best");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -288,7 +292,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
   ogType="article"
   article={{
     publishedTime: "2026-10-14",
-    modifiedTime: "2026-11-15",
+    modifiedTime: "2026-11-28",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
@@ -320,7 +324,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
         <div class="ed-byline-text">
           By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
-          Updated November 15, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          Updated November 28, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
           <span class="ed-method">How we chose: makers’ published specifications and manuals, independent reviews and owner reports, cross-checked. Not tested hands-on.</span>
         </div>
         <a href="#top-picks" class="btn-ghost">View products</a>
@@ -332,10 +336,10 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
       <figure class="ed-hero">
         <div class="ed-hero-collage">
           <a href="#sunny-versatile-treadmill"><img src="https://m.media-amazon.com/images/I/41DuYz0yB9L._SL500_.jpg" alt="Sunny Health &amp; Fitness Versatile Treadmill" width="500" height="500" decoding="async" /></a>
-          <a href="#cursor-40-incline-treadmill"><img src="https://m.media-amazon.com/images/I/41C5ysa6PUL._SL500_.jpg" alt="CURSOR 40% Incline Treadmill" width="500" height="500" decoding="async" /></a>
+          <a href="#cursor-40-incline-treadmill"><img src="https://m.media-amazon.com/images/I/41C5ysa6PUL._SL500_.jpg" alt="CURSOR 32% Incline Treadmill" width="500" height="500" decoding="async" /></a>
           <a href="#freemotion-i11-9-incline-trainer"><img src="https://m.media-amazon.com/images/I/41GYJ4BRm-L._SL500_.jpg" alt="FreeMotion i11.9 Incline Trainer" width="500" height="500" decoding="async" /></a>
         </div>
-        <figcaption>Sunny Health &amp; Fitness Versatile Treadmill · CURSOR 40% Incline Treadmill · FreeMotion i11.9 Incline Trainer</figcaption>
+        <figcaption>Sunny Health &amp; Fitness Versatile Treadmill · CURSOR 32% Incline Treadmill · FreeMotion i11.9 Incline Trainer</figcaption>
       </figure>
 
       <div class="ed-body prose prose-lg">
@@ -360,7 +364,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
               <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
             </li>
             <li>
-              <span class="tp-label"><span class="tp-award">Budget 40%:</span> <a href="#cursor-40-incline-treadmill">CURSOR 40% Incline Treadmill</a></span>
+              <span class="tp-label"><span class="tp-award">Budget 32%:</span> <a href="#cursor-40-incline-treadmill">CURSOR 32% Incline Treadmill</a></span>
               <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
             </li>
             <li>
@@ -438,7 +442,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             </tr></thead>
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Health &amp; Fitness Versatile Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">45% (24.2°), listing figure</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steep walking from Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Closest Amazon alternative to the X Series; 5 mph top speed</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CURSOR 40% Incline Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">40% (21.8°), manual</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Trying steep walking cheaply</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">40% for about $200; incline set by hand</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CURSOR 32% Incline Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">32% (17.7°), manual</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Trying steep walking cheaply</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">32% for $199.99; incline set by hand</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FreeMotion i11.9 Incline Trainer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30% (16.7°)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 30% machine from Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30% with decline for under $3,000; older model</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.4 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% (8.5°)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running and incline walking</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22-inch deck, no subscription</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.0 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% (8.5°)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Value</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% and lifetime motor near $1,000</td></tr>

@@ -57,7 +57,7 @@ const schema = {
           name: "What is the cheapest incline trainer?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The cheapest machines reaching 40% are manual walking treadmills such as the LONTEK ($195.49) and CURSOR ($249.99) on Amazon on 23 November 2026, but you set their incline by hand. The cheapest powered 30% trainer we found was the FreeMotion i11.9 at $2,875.",
+            text: "The cheapest machine we found reaching 40% is a manual walking treadmill, the LONTEK, at $195.49 on Amazon on 23 November 2026; the similar CURSOR now lists 32% and was $199.99 on Amazon on 28 November 2026. You set the incline on both by hand. The cheapest powered 30% trainer we found was the FreeMotion i11.9 at $2,875.",
           },
         },
         {
@@ -76,7 +76,7 @@ const schema = {
       description: description,
       author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-11-23",
-      dateModified: "2026-11-23",
+      dateModified: "2026-11-28",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
   ],
@@ -86,7 +86,11 @@ const schema = {
 const HERE = "/how-much-does-an-incline-trainer-cost/";
 const HUB = SECTIONS.find((s) => s.slug === "price");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -95,7 +99,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
   ogType="article"
   article={{
     publishedTime: "2026-11-23",
-    modifiedTime: "2026-11-23",
+    modifiedTime: "2026-11-28",
     author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
@@ -129,7 +133,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
         <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
         <div class="ed-byline-text">
           By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
-          Updated November 23, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          Updated November 28, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
           <span class="ed-method">Based on retailer and maker listings, with prices checked on the dates shown.</span>
         </div>
         <a href="#price-table" class="btn-ghost">Prices by Model</a>
@@ -176,10 +180,10 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 <p>
             <strong>A home incline trainer with a powered 30% to 45% incline costs about $2,875 to $4,299 in November
             2026. NordicTrack&rsquo;s X16 is $3,699 and the X24 $4,299 on NordicTrack&rsquo;s checkout (5 November 2026), and
-            both need iFIT Pro at $39 a month for the classes. Commercial incline trainers cost $10,000 or more.</strong> A manual 40% walking treadmill can be had for about $200, but it is not the same machine.
+            both need iFIT Pro at $39 a month for the classes. Commercial incline trainers cost $10,000 or more.</strong> A manual walking treadmill that tilts to 32% or 40% can be had for about $200, but it is not the same machine.
           </p>
           <ul>
-            <li><strong>Manual 40% walking treadmills:</strong> about $195 to $250 on Amazon (23 November 2026); incline set by
+            <li><strong>Manual 32% to 40% walking treadmills:</strong> about $195 to $200 on Amazon ($195.49 for the 40% LONTEK on 23 November 2026, $199.99 for the 32% CURSOR on 28 November 2026); incline set by
             hand in five steps, 6.2 mph top speed.</li>
             <li><strong>Powered 30% to 45% for home:</strong> $2,875 (<a href="/freemotion-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>FreeMotion</a> i11.9) and $2,999.99 (Sunny Versatile) on
             Amazon, 23 November 2026.</li>
@@ -214,7 +218,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             </thead>
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LONTEK 40% Incline Treadmill (manual)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$195.49</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon, 23 Nov 2026</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–40% in 5 manual steps</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–6.2 mph</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CURSOR 40% Incline Treadmill (manual)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$249.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon, 23 Nov 2026</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–40% in 5 manual steps</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–6.2 mph</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CURSOR 32% Incline Treadmill (manual)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$199.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon, 28 Nov 2026</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–32% in 5 manual steps</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–6.2 mph</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FreeMotion i11.9 Incline Trainer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,875</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon, 23 Nov 2026</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30% incline and decline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not stated</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Health &amp; Fitness Versatile Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,999.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon, 23 Nov 2026</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">45% in the title (bullets say 50%) with decline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.3–5 mph</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack X16</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,699</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack checkout, 5 Nov 2026</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-6% to 40%, powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–12 mph</td></tr>
@@ -241,9 +245,10 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             groups, and knowing which one you are shopping in saves a lot of confusion.
           </p>
           <ul>
-            <li><strong>About $200: manual 40% walking treadmills.</strong> The CURSOR and LONTEK listings describe a
-            walking-pad-style machine with tall handrails and a deck you prop up to 0, 10, 20, 30 or 40% by hand, reaching
-            about 15 inches at the front. Top speed is 6.2 mph, the belts are 38.6 by 15.4 inches and both are rated to 350 lb.
+            <li><strong>About $200: manual 32% to 40% walking treadmills.</strong> The CURSOR and LONTEK listings describe a
+            walking-pad-style machine with tall handrails and a deck you prop up by hand in five steps, reaching
+            about 15 inches at the front: 0, 10, 20, 30 or 40% on the LONTEK, and 0, 8, 16, 24 or 32% on the CURSOR, whose
+            listing said 40% when we first checked it on 6 November 2026 and 32% by 28 November. Top speed is 6.2 mph, the belts are 38.6 by 15.4 inches and both are rated to 350 lb.
             You cannot change the grade mid-walk, and the belt is far shorter and narrower than an incline trainer&rsquo;s.
             They are a cheap way to find out whether steep walking suits you, not a substitute for a powered trainer.</li>
             <li><strong>About $2,900 to $3,000: powered steep-grade machines on Amazon.</strong> The FreeMotion i11.9 is an
@@ -337,7 +342,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
             <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Setup</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Machine</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Membership over 5 years</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">5-year total</th></tr></thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CURSOR 40% manual, no subscription</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$249.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$249.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CURSOR 32% manual, no subscription</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$199.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$199.99</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FreeMotion i11.9, built-in programs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,875</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,875</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Versatile, built-in programs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,999.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,999.99</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack X16 + iFIT Pro yearly</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,699</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,980</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,679</td></tr>
@@ -574,7 +579,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           <details>
             <summary><h3>What is the cheapest incline trainer?</h3></summary>
             <p class="faq-a">
-              The cheapest machines reaching 40% are manual walking treadmills such as the LONTEK ($195.49) and CURSOR ($249.99) on Amazon on 23 November 2026, but you set their incline by hand. The cheapest powered 30% trainer we found was the FreeMotion i11.9 at $2,875.
+              The cheapest machine we found reaching 40% is a manual walking treadmill, the LONTEK, at $195.49 on Amazon on 23 November 2026; the similar CURSOR now lists 32% and was $199.99 on Amazon on 28 November 2026. You set the incline on both by hand. The cheapest powered 30% trainer we found was the FreeMotion i11.9 at $2,875.
             </p>
           </details>
           <details>

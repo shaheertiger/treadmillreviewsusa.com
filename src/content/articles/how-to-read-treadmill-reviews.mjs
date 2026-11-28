@@ -1,15 +1,14 @@
 export default {
   slug: 'how-to-read-treadmill-reviews',
   title: 'How to Read Treadmill Reviews: Spot Patterns, Not Stars',
-  description:
-    'How to read treadmill reviews on Amazon and review sites: merged listings, incentivised and early reviews, failure patterns in 1-3 star reviews, and tested vs spec-sheet claims.',
+  description: "Ignore the star average: read the 1- to 3-star reviews for a fault several owners report months in, and check each review is for your model. Five checks.",
   crumbLabel: 'How to Read Treadmill Reviews',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['How to Read', 'Treadmill Reviews'],
   standfirst:

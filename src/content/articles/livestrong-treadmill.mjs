@@ -1,15 +1,15 @@
 export default {
   slug: 'livestrong-treadmill',
-  title: 'LIVESTRONG Treadmill Guide (2026): LS10.0T, Parts and Used Value',
+  title: 'LIVESTRONG LS10.0T Treadmill (2026): Specs, Parts and Used Value',
   description:
-    'LIVESTRONG treadmills were made under licence by Johnson Health Tech and are no longer sold in the US. The LS10.0T explained: confirmed figures, parts, manuals, used value and replacements.',
+    'The LIVESTRONG LS10.0T is discontinued: 20 x 55 in. deck, 12 mph, 12% incline, 325 lb. Parts from a $125 belt to a $534 motor, used value and replacements.',
   crumbLabel: 'LIVESTRONG Treadmill',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['LIVESTRONG Treadmill:', 'The LS10.0T, Parts and Used Value'],
   standfirst:
