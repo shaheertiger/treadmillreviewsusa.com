@@ -253,7 +253,11 @@ const schema = {
 const HERE = "/best-treadmills-for-apple-watch/";
 const HUB = SECTIONS.find((s) => s.slug === "best");
 const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
-const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
