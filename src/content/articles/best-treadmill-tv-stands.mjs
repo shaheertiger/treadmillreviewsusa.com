@@ -2,14 +2,14 @@ export default {
   slug: 'best-treadmill-tv-stands',
   title: 'Best Treadmill TV Stands and Mounts (2026): Height and VESA',
   description:
-    'Five TV floor stands, rolling carts and wall mounts for watching from a treadmill, with the eye-height and viewing-distance maths to place the screen properly.',
+    'The VIVO STAND-TV18 is the best treadmill TV stand, holding a screen 54.5 to 70.5 in. above the floor. Five stands and mounts, plus the eye-height maths.',
   crumbLabel: 'Best Treadmill TV Stands',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Best Treadmill TV Stands', 'and Wall Mounts'],
   standfirst:

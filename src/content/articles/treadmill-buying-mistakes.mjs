@@ -2,14 +2,14 @@ export default {
   slug: 'treadmill-buying-mistakes',
   title: 'Treadmill Buying Mistakes: 15 to Avoid Before You Order',
   description:
-    'The fifteen mistakes that turn a treadmill into an expensive clothes rack: peak horsepower, short decks, low ceilings, delivery routes, subscriptions and more.',
+    'The costliest treadmill buying mistake is comparing peak, not continuous, horsepower. 15 mistakes to avoid, from short decks and low ceilings to subscriptions.',
   crumbLabel: 'Treadmill Buying Mistakes',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Treadmill Buying Mistakes', 'to Avoid'],
   standfirst:

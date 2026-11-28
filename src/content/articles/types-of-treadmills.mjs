@@ -1,15 +1,15 @@
 export default {
   slug: 'types-of-treadmills',
-  title: 'Types of Treadmills: Every Kind Explained, and Who It Suits',
+  title: 'Types of Treadmills: 11 Kinds Explained and Who Each Suits',
   description:
-    'The different types of treadmills explained: folding and non-folding motorized, manual, curved, walking pads, under-desk, incline trainers, commercial, smart, dog and VR machines.',
+    'There are 11 main types of treadmills, from walking pads at about $200-$600 to commercial machines at $4,000 and up. What sets each apart and who it suits.',
   crumbLabel: 'Types of Treadmills',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Explainer',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Types of Treadmills,', 'Explained'],
   standfirst:

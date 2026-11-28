@@ -5,14 +5,14 @@ export default {
   slug: 'is-a-treadmill-good-for-seniors',
   title: 'Is a Treadmill Good for Seniors? Benefits and Real Risks',
   description:
-    'For many older adults a treadmill is a good way to walk more, but a moving belt carries a real fall risk. Benefits, injury data and who should not use one.',
+    'Yes, for most older adults who walk steadily without an aid: a treadmill sets the pace in 0.1 mph steps on a flat surface. Benefits, fall risks, who should not.',
   crumbLabel: 'Is a Treadmill Good for Seniors?',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-17',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Is a Treadmill Good', 'for Seniors?'],
   standfirst:

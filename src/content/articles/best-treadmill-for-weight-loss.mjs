@@ -2,14 +2,14 @@ export default {
   slug: 'best-treadmill-for-weight-loss',
   title: 'Best Treadmill for Weight Loss (2026): What to Look For, Honestly',
   description:
-    'What makes a treadmill good for a weight-loss routine: incline range, a comfortable deck for long walks, motor rating, capacity headroom and quiet. No hype.',
+    'The best treadmill for weight loss has at least a 10% incline, a deck around 55 x 20 in. and about 50 lb of capacity headroom for long daily walks.',
   crumbLabel: 'Best Treadmill for Weight Loss',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['The Best Treadmill', 'for Weight Loss'],
   standfirst:

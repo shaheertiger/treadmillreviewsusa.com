@@ -1,14 +1,14 @@
 export default {
   slug: 'best-mens-running-shoes-for-treadmill',
-  title: "Best Men's Running Shoes for Treadmill (2026): Six Picks",
+  title: 'Best Men\'s Running Shoes for Treadmill (2026): Six Picks by Fit',
   description:
-    "The best men's running shoes for treadmill running: six current men's models, from the Inov-8 F-Fly gym-and-treadmill shoe to a stability trainer in 2E and 4E, with men's figures and fit notes.",
+    'The Saucony Ride 19 (about 8.9 oz, 8 mm drop) is the best men\'s treadmill running shoe for most runs. Five more picks, including 2E and 4E widths.',
   crumbLabel: "Best Men's Running Shoes for Treadmill",
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ["Best Men's Running Shoes for Treadmill", 'Six Current Picks'],
   standfirst:
