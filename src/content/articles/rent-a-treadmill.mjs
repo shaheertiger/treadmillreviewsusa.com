@@ -1,7 +1,8 @@
 export default {
   slug: 'rent-a-treadmill',
-  title: 'Treadmill Rental (2026): Renting vs Rent-to-Own vs Buying',
-  description: "Rent for needs under about six months; buy for longer. Rent-to-own often totals two to three times retail. Contract checks and the buy-used-then-resell route.",
+  title: 'Rent a Treadmill (2026): Rental vs Rent-to-Own vs Buying',
+  description:
+    'Rent a treadmill only for a short, defined need: an illustrated $90-a-month rental costs $420 for three months. Rent-to-own often totals 2 to 3 times retail.',
   crumbLabel: 'Treadmill Rental',
   kicker: 'Price Guide',
   breadcrumb: { name: 'By Price', url: '/price/' },

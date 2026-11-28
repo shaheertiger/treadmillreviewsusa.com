@@ -6,13 +6,14 @@ export default {
   slug: 'how-much-does-a-urevo-walking-pad-cost',
   title: 'How Much Does a UREVO Walking Pad Cost? (2026): Every Model',
   description:
-    'UREVO walking pads cost $149.99 to $429.99 on UREVO’s store on 27 Nov 2026; the Strol 2E was $161.99 and the CyberPad from $369.99. Amazon, warranty and returns.',
+    'UREVO walking pads cost $149.99 to $429.99 on UREVO’s store on 27 Nov 2026; the Strol 2E was $161.99 and the CyberPad from $369.99. Amazon, warranty, returns.',
   crumbLabel: 'How Much Does a UREVO Walking Pad Cost?',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.0k',
   h1: ['How Much Does a', 'UREVO Walking Pad Cost?'],
   standfirst:

@@ -6,13 +6,14 @@ export default {
   slug: 'how-much-does-a-sunny-treadmill-cost',
   title: 'How Much Does a Sunny Treadmill Cost? (2026): Every Type Priced',
   description:
-    'Sunny Health & Fitness treadmills cost $199.99 to $2,999.99 on its store on 27 Nov 2026; most folding models are $399.99 to $799.99, and Amazon was often cheaper.',
+    'Sunny Health & Fitness treadmills cost $199.99 to $2,999.99 on its store on 27 Nov 2026; most folding models are $399.99 to $799.99, often less on Amazon.',
   crumbLabel: 'How Much Does a Sunny Treadmill Cost?',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.0k',
   h1: ['How Much Does a', 'Sunny Treadmill Cost?'],
   standfirst:

@@ -1,7 +1,8 @@
 export default {
   slug: 'best-buy-treadmills',
   title: 'Best Buy Treadmills (2026): Is Best Buy a Good Place to Buy One?',
-  description: "Best Buy suits a connected treadmill or a real open-box deal. Judge the motor and deck, not the screen, and check the return window and any restocking fee.",
+  description:
+    'Best Buy is a good place to buy a treadmill in two cases: a connected machine with a large screen, or an open-box unit at a genuine discount. Judge the deck.',
   crumbLabel: 'Best Buy Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',

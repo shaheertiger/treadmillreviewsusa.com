@@ -1,15 +1,15 @@
 export default {
   slug: 'best-treadmills-under-200',
-  title: 'Best Treadmills Under $200 (2026): 5 Honest Picks',
+  title: 'Best Treadmills Under $200 (2026): 5 Picks From Known Brands',
   description:
-    'Five treadmills under $200 on Amazon, all walking pads, 2-in-1s or manual machines, plus what $100 and $200 really buy and why almost nothing at this price is built for running.',
+    'The best treadmill under $200 is the UREVO Strol 2E at about $170, with a 6.2 mph jog mode. Five picks from known brands; none is built for running.',
   crumbLabel: 'Best Treadmills Under $200',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Treadmills', 'Under $200'],
   standfirst:

@@ -5,14 +5,14 @@ export default {
   slug: 'how-much-does-a-proform-treadmill-cost',
   title: 'How Much Does a ProForm Treadmill Cost? (2026): Every Model',
   description:
-    'ProForm treadmills cost $479 (Carbon TL) to about $1,665 (Pro 9000) on Amazon in November 2026, plus iFIT at $15 to $39 a month. Every model and the 5-year cost.',
+    'ProForm treadmills cost $479 (Carbon TL) to about $1,665 (Pro 9000) on Amazon in November 2026, plus iFIT at $15 to $39 a month. Every model, 5-year cost.',
   crumbLabel: 'How Much Does a ProForm Treadmill Cost?',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-22',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['How Much Does a', 'ProForm Treadmill Cost?'],
   standfirst:
