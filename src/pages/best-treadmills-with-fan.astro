@@ -1,0 +1,965 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SECTIONS } from "../data/sections";
+
+const title = "Best Treadmills With a Built-In Fan (2026): 7 Picks Checked";
+const description =
+  "The Sole F65 ($1,200) is the best treadmill with a built-in fan; the THERUN 15% folder (about $387) is the cheapest. 7 picks whose listings name the fan.";
+
+const PRODUCTS = [
+  {
+    id: "sole-f65",
+    name: "Sole F65",
+    brand: "Sole",
+    category: "Best Treadmill With a Built-In Fan for Most People",
+    badge: "Best Overall",
+    amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31qNRVPVU1L._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $1,200 (Amazon, 28 Nov 2026)",
+    priceBounds: {"low":1200,"high":1200},
+    specs: "3.25 HP brushless · 0.5–12 mph · 0–15% incline · 20 x 60 in. deck · crossflow cooling fan · dual Bluetooth speakers · USB-C · kick-release fold (per the Amazon listing); 350 lb (per SOLE)",
+    pros: [
+      "A crossflow cooling fan named on the Amazon listing and on SOLE’s own spec",
+      "A full 20 by 60-inch deck and 12 mph, so it suits running",
+      "0–15% powered incline with quick-dial roller controls",
+      "Same $1,199.99 price on Amazon as on SOLE’s store on 28 Nov 2026",
+    ],
+    cons: [
+      "Amazon listing leaves out the weight capacity; SOLE gives 350 lb",
+      "Ships by freight, curbside only, per the listing",
+      "No warranty term on the Amazon listing",
+    ],
+    bottomLine: "The treadmill with a fan to buy if you want a proper running deck from a brand with a long record.",
+    description: "The SOLE F65 is our best overall pick because it is the most complete treadmill here with a fan that is stated twice: once in the Amazon listing, which names a crossflow cooling fan alongside dual Bluetooth speakers and USB-C charging, and again in SOLE’s own product data, which lists a crossflow fan. The Amazon listing gives a 3.25 HP brushless motor, 0.5 to 12 mph on roller controls, a 0–15% power incline with Hill, Interval and Strength programs, a 20 by 60-inch cushioned deck and a white LED display, with SOLE+ app integration and smartwatch syncing. It folds with a kick-release, hydraulic-assisted frame. SOLE’s site adds the 350 lb capacity and says the SOLE+ app needs no subscription. The listing does not give a warranty term, and it ships by freight with curbside delivery. Amazon showed it at $1,199.99 on 28 November 2026, the same as SOLE’s store.",
+  },
+  {
+    id: "therun-15-auto-incline",
+    name: "THERUN 15% Auto Incline Treadmill",
+    brand: "THERUN",
+    category: "Cheapest Treadmill With a Built-In Fan",
+    badge: "Best Budget",
+    amazonUrl: "https://www.amazon.com/s?k=THERUN%2015%25%20Auto%20Incline%20Treadmill+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "About $387 (Amazon, 28 Nov 2026)",
+    priceBounds: {"low":387,"high":387},
+    specs: "0.6–10 mph · 0–15% auto incline · 47.2 x 17 in. belt · 300 lb · 15 programs · built-in cooling fan · FitShow, Kinomap, Zwift · hydraulic folding (per the Amazon listing)",
+    pros: [
+      "The fan is in the title and the first bullet, the clearest statement of any budget pick",
+      "Powered incline to 15% for under $400",
+      "Names FitShow, Kinomap and Zwift over Bluetooth",
+      "A 17-inch belt and four shock absorbers, per the listing",
+    ],
+    cons: [
+      "Motor power is unclear: the title says 3.0 HP, a bullet says 3.5 HP",
+      "A 47.2-inch deck is short for running at full stride",
+      "No warranty term stated, and the listing calls it a walking pad in places",
+    ],
+    bottomLine: "The cheapest way to a treadmill with a fan and real incline, best for walking and light jogging.",
+    description: "The THERUN 15% Auto Incline Treadmill is our budget pick because it is the least expensive treadmill we found whose listing makes the fan a headline: the title says Cooling Fan and with Fan, and the first bullet describes the built-in fan bringing a breeze as you work up a sweat. The listing gives speeds from 0.6 to 10 mph, a 0–15% automatic incline, 15 preset programs and a 300 lb rating on an alloy steel frame. The running surface is 47.2 inches long and 17 inches wide, with a five-layer belt and four shock absorbers. It pairs over Bluetooth with FitShow, Kinomap and Zwift, has heart-rate sensing and a cup holder, and folds with hydraulic help. The motor figure is the weak point: the title says 3.0 HP and a bullet says 3.5 HP, so we have left it off. No warranty term is given. Amazon showed it at $387.39 on 28 November 2026.",
+  },
+  {
+    id: "therun-20-auto-incline",
+    name: "THERUN Foldable Treadmill With 20% Auto Incline",
+    brand: "THERUN",
+    category: "Treadmill With a Fan for Running Under $1,000",
+    badge: "Best for Running Under $1,000",
+    amazonUrl: "https://www.amazon.com/s?k=THERUN%20Foldable%20Treadmill%20With%2020%25%20Auto%20Incline+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "About $720 (Amazon, 28 Nov 2026)",
+    priceBounds: {"low":720,"high":720},
+    specs: "3.5 HP peak · up to 12 mph · up to 20% auto incline · 55 x 20 in. belt · 300 lb · built-in cooling fan · Bluetooth speakers · wireless charging · Zwift, FitShow, Kinomap (per the Amazon listing)",
+    pros: [
+      "A 55 by 20-inch belt and 12 mph, enough for most runners",
+      "Up to 20% powered incline, steeper than the SOLE and Horizon picks",
+      "Fan, speakers, wireless charging pad and cup holders on one console",
+      "Pace-coloured LED side lights, which the listing says add visibility",
+    ],
+    cons: [
+      "The 3.5 HP figure is a peak rating, not continuous",
+      "No warranty term on the listing",
+      "Zwift, FitShow and Kinomap are named, but not what each can control",
+    ],
+    bottomLine: "The treadmill with a fan to buy if you run and want to stay well under $1,000.",
+    description: "The THERUN Foldable Treadmill with 20% Auto Incline is the pick for runners on a budget because it pairs a built-in fan with a deck long enough to run on. Its title names a built-in fan, and its console bullet lists a clear LCD display, built-in cooling fan, Bluetooth speakers, a wireless charging pad and cup holders. The listing gives a 3.5 HP peak motor, speeds up to 12 mph, an automatic incline to 20% and a 55 by 20-inch belt with dual-layer shock absorption, and says it supports users up to 300 lb and up to 6 foot 3. It syncs with Zwift, FitShow or Kinomap, and LED side lights change colour with your pace. THERUN also sells a near-identical listing at $799.99; this one was about $80 less. No warranty term is stated. Amazon showed it at $719.99 on 28 November 2026.",
+  },
+  {
+    id: "sole-f50",
+    name: "Sole F50",
+    brand: "Sole",
+    category: "Brand-Name Compact Treadmill With a Fan",
+    badge: "Best Compact Brand Name",
+    amazonUrl: "https://www.amazon.com/dp/B0HFSNMP16?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31jT2QJvdZL._SL500_.jpg","width":500,"height":333},
+    reviewUrl: null,
+    priceRange: "About $900 (Amazon, 28 Nov 2026)",
+    priceBounds: {"low":900,"high":900},
+    specs: "Brushless motor · 0.5–10 mph · 12 power incline levels · 20 x 55 in. deck · 300 lb · cooling fan · Bluetooth speakers · USB-C · kick-release fold (per the Amazon listing); 2.0 HP and lifetime frame and motor warranty (per SOLE)",
+    pros: [
+      "A cooling fan named on the listing and on SOLE’s own spec",
+      "SOLE states a lifetime frame and motor warranty",
+      "Quiet brushless motor with dial controls and 3, 6 and 9 quick keys",
+      "A 20-inch-wide deck in a compact folding frame",
+    ],
+    cons: [
+      "Tops out at 10 mph on a 55-inch deck: a walking and jogging machine",
+      "Incline is given as 12 levels, not a percentage",
+      "Ships by freight, curbside only",
+    ],
+    bottomLine: "The fan treadmill to buy if you walk or jog and want a brand-name warranty in a small footprint.",
+    description: "The SOLE F50 is our compact pick because it brings a stated fan and SOLE’s warranty to a smaller, cheaper frame. The Amazon listing names a cooling fan in the same bullet as Bluetooth speakers, SOLE+ app pairing, 12 programs and USB-C charging, and SOLE’s product data describes a built-in cooling fan. The listing gives a quiet brushless motor running 0.5 to 10 mph, 12 levels of power incline with dial controls and one-touch keys at 3, 6 and 9, a 20 by 55-inch running surface on an 18 mm cushioned deck and a 300 lb capacity. It folds with a kick-release, gas-shock-assisted frame and has transport wheels. SOLE’s site gives the motor as 2.0 HP and says the F50 is backed by a lifetime frame and motor warranty. Amazon showed it at $899.99 on 28 November 2026, the same as SOLE’s store.",
+  },
+  {
+    id: "horizon-7-4-at",
+    name: "Horizon 7.4 AT",
+    brand: "Horizon",
+    category: "Wide-Deck Treadmill With a Fan",
+    badge: "Best Wide Deck",
+    amazonUrl: "https://www.amazon.com/dp/B08JQQHR7R?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41wMaZFsNwL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $1,500 (Amazon, 28 Nov 2026)",
+    priceBounds: {"low":1500,"high":1500},
+    specs: "3.5 CHP RapidSync · 0.5–12 mph · 0–15% incline · 22 x 60 in. deck · 350 lb · fan · Bluetooth speakers · FeatherLight hydraulic fold (per the Amazon listing)",
+    pros: [
+      "A 22 by 60-inch deck, the widest here",
+      "A continuous-duty 3.5 CHP motor and fast speed and incline changes",
+      "QuickDial controls and one-touch speed and incline keys",
+      "About $300 below Horizon’s own store price on the day",
+    ],
+    cons: [
+      "The fan is named only in the Amazon bullet, not in Horizon’s own summary",
+      "The most expensive pick here",
+      "No warranty term on the Amazon listing",
+    ],
+    bottomLine: "The treadmill with a fan to buy if you want room to move and a motor built for intervals.",
+    description: "The Horizon 7.4 AT is the pick for anyone who wants extra width, because its 22 by 60-inch deck is two inches wider than any other treadmill here. The Amazon listing names a fan in its final bullet, alongside integrated Bluetooth speakers, an audio jack, a water bottle holder and an energy saver mode. It gives a RapidSync 3.5 CHP continuous-duty motor and a 500 lb thrust incline motor, speeds from 0.5 to 12 mph, a 0–15% incline, 3-Zone Variable Response Cushioning and a 350 lb maximum user weight, with QuickDial controls and programs including 5K, Fat Burn and Hill Climb. It folds with Horizon’s FeatherLight hydraulic system. Horizon’s own product summary lists the deck, motor, LED and 8.25-inch LCD display but not the fan, so confirm it if the fan is essential. Amazon showed it at $1,499.99 on 28 November 2026, against $1,799 on Horizon’s store.",
+  },
+  {
+    id: "ancheer-heavy-duty-auto-incline",
+    name: "ANCHEER Foldable Heavy Duty Treadmill With 25% Auto Incline",
+    brand: "ANCHEER",
+    category: "Heavy-Duty Treadmill With a Fan Under $500",
+    badge: "Best for Heavier Users",
+    amazonUrl: "https://www.amazon.com/s?k=ANCHEER%20Foldable%20Heavy%20Duty%20Treadmill%20With%2025%25%20Auto%20Incline+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "About $500 (Amazon, 28 Nov 2026)",
+    priceBounds: {"low":500,"high":500},
+    specs: "4.5 HP · up to 9.1 mph · 0–25% auto incline, 25 levels · 450 lb · 7-layer belt, 12-point shock absorption · cooling fan · speakers · hydraulic fold · 1-year warranty (per the Amazon listing)",
+    pros: [
+      "A 450 lb rating for about $500",
+      "Powered incline to 25%, for steep incline walking",
+      "Cooling fan, speakers, bottle holder and child lock",
+      "A stated 1-year warranty",
+    ],
+    cons: [
+      "No belt size on the listing",
+      "9.1 mph top speed: built for walking and jogging, not fast running",
+      "No app named",
+    ],
+    bottomLine: "The treadmill with a fan to buy if you need a high weight rating and steep incline on a budget.",
+    description: "The ANCHEER Foldable Heavy Duty Treadmill is the pick for heavier walkers on a budget because it combines a 450 lb rating with a stated cooling fan for about $500. Its title names a fan, and the folding bullet says a cooling fan provides refreshing airflow, speakers bring audio to your sessions and a water bottle holder keeps hydration within reach. The listing gives a 4.5 HP motor, speeds up to 9.1 mph, 25 incline levels across 0 to 25%, an alloy steel frame, a seven-layer belt with 12-point honeycomb and spring shock absorption, an LED display with built-in training modes and a child lock. It folds with hydraulic help and has transport wheels, and the listing states a 1-year warranty. What it does not give is a belt size, so measure your stride needs before relying on it. For more frames built for weight, see our best treadmills for heavy people. Amazon showed it at $499.99 on 28 November 2026.",
+  },
+  {
+    id: "funmily-25-incline-tv-screen",
+    name: "FUNMILY Treadmill With 25% Auto Incline and TV Screen",
+    brand: "FUNMILY",
+    category: "Treadmill With a Fan and a Streaming Screen",
+    badge: "Best With a Screen",
+    amazonUrl: "https://www.amazon.com/s?k=FUNMILY%20Treadmill%20With%2025%25%20Auto%20Incline%20and%20TV%20Screen+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "About $800 (Amazon, 28 Nov 2026)",
+    priceBounds: {"low":800,"high":800},
+    specs: "4.5 HP · up to 9.1 mph · up to 25% auto incline · 10.1 in. colour display with WiFi · 450 lb · built-in mini fan · speakers · hydraulic fold · 1-year warranty (per the Amazon listing)",
+    pros: [
+      "A 10.1-inch WiFi colour display for streaming shows and videos",
+      "The fan is in the title: Built-In Mini Fan",
+      "450 lb capacity and incline to 25%",
+      "Child lock and a stated 1-year warranty",
+    ],
+    cons: [
+      "No belt size on the listing",
+      "A mini aroma fan is the smallest kind of console fan",
+      "ANCHEER sells a near-twin with a touchscreen for about $30 less",
+    ],
+    bottomLine: "The treadmill with a fan to buy if you want to stream on the console while you walk.",
+    description: "The FUNMILY Treadmill with 25% Auto Incline is our screen pick because it puts a streaming display and a stated fan on the same console. Its title says Built-In Mini Fan and Speakers, and a bullet describes an aroma fan that brings fresh airflow during sweaty workouts. The listing gives a 4.5 HP motor, speeds up to 9.1 mph, an automatic incline to 25%, a 10.1-inch colour display with WiFi to stream shows and videos, a rotating dashboard for time, speed, distance and calories, and hand-grip heart-rate sensors. The frame is rated for 450 lb, with honeycomb and spring shock absorption, hydraulic folding, transport wheels, a bottle holder and a child lock, and the listing states a 1-year warranty. No belt size is given. ANCHEER lists a very similar 25% treadmill with a 10-inch touchscreen at $769.99. Amazon showed the FUNMILY at $799.99 on 28 November 2026.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Best Treadmills", item: "https://www.treadmillreviewsusa.com/best/" },
+        { "@type": "ListItem", position: 3, name: "Best Treadmills With a Fan", item: "https://www.treadmillreviewsusa.com/best-treadmills-with-fan/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Do treadmills come with a built-in fan?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Many do, but not all, and the listing does not always say. Of the treadmills we read on 28 November 2026, the SOLE F50, F65 and F80, the Horizon 7.4 AT and several THERUN, ANCHEER and FUNMILY models named a built-in fan; the ProForm Carbon and NordicTrack T Series listings we read did not. Check the title, bullets and maker spec sheet.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the best treadmill with a fan?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For most people, the SOLE F65: a 20 by 60-inch deck, 0.5 to 12 mph, 0&ndash;15% incline, 350 lb capacity and a crossflow cooling fan, at $1,199.99 on Amazon on 28 November 2026. The cheapest we found was the THERUN 15% Auto Incline Treadmill at about $387.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a treadmill console fan enough to keep you cool?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually only on easy walks in a cool room. A console fan is small and aimed at your face and chest from close range, so it cools little of your body and only moves the room&rsquo;s own air. For jogging, running or long incline walks, add a floor or pedestal fan in front of the treadmill.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does the ProForm Carbon TLX have a fan?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Its Amazon listing, which we read on 28 November 2026, does not mention a fan in the title or bullets, and proform.com blocked our requests that day, so we could not confirm one. If a fan matters, ask ProForm or the seller before you buy, or choose a model whose listing names one.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is a crossflow fan on a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It is the drum-shaped type of fan used in many tower fans, blowing out of a wide slot rather than a round grille. SOLE names a crossflow fan on the F65 and F80, which spreads air across your upper body more evenly than a small round fan. SOLE does not publish an airflow figure.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I add a fan to a treadmill that does not have one?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. A clip-on or magnetic fan attaches to the console or handrail, and a floor or pedestal fan in front of the treadmill moves far more air than any built-in fan. Keep cords away from the deck and the treadmill&rsquo;s plug. Our best treadmill fans guide compares the options.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-28",
+      dateModified: "2026-11-28",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
+      ...(product.image ? { image: product.image.url } : {}),
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              ...(product.amazonUrl ? { url: product.amazonUrl } : {}),
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 7,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/best-treadmills-with-fan/#${product.id}`,
+      })),
+    },
+  ],
+};
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmills-with-fan/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-28",
+    modifiedTime: "2026-11-28",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill with fan",
+      "treadmill with built in fan",
+      "treadmill with cooling fan",
+      "best treadmill with fan",
+      "treadmill console fan",
+      "folding treadmill with fan",
+      "sole treadmill fan",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Best Overall: Sole F65", link: PRODUCTS[0].amazonUrl }}
+>
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Treadmills With a Built-In Fan</h1>
+      <p class="ed-dek">
+        A console fan is one of the most searched treadmill extras and one of the least explained. We kept only the seven treadmills whose Amazon listing or maker spec actually names a built-in fan, from a $387 auto-incline folder to a 22-inch-wide Horizon, and we are honest about what that small fan can and cannot do.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 28, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          <span class="ed-method">How we chose: makers’ published specifications and manuals, independent reviews and owner reports, cross-checked. Not tested hands-on.</span>
+        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
+      </div>
+      <p class="ed-disclosure">
+        We may earn a commission when you buy through the links below. It costs you nothing and never decides a ranking. <a href="/editorial-standards/">How we review.</a>
+      </p>
+
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#sole-f65"><img src="https://m.media-amazon.com/images/I/31qNRVPVU1L._SL500_.jpg" alt="Sole F65" width="500" height="500" decoding="async" /></a>
+          <a href="#sole-f50"><img src="https://m.media-amazon.com/images/I/31jT2QJvdZL._SL500_.jpg" alt="Sole F50" width="500" height="333" decoding="async" /></a>
+          <a href="#horizon-7-4-at"><img src="https://m.media-amazon.com/images/I/41wMaZFsNwL._SL500_.jpg" alt="Horizon 7.4 AT" width="500" height="500" decoding="async" /></a>
+        </div>
+        <figcaption>Sole F65 · Sole F50 · Horizon 7.4 AT</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Plenty of treadmills have a small fan in the console, but many listings never say so, and a
+          few that shout &ldquo;fan included&rdquo; in the title mean a clip-on fan in the box. We searched
+          Amazon for treadmills with a fan on 28 November 2026, read the title and bullet points of every
+          candidate, checked SOLE&rsquo;s and Horizon&rsquo;s own product data where we could, and kept only
+          the seven where a built-in fan is stated in writing. The SOLE F65 is the pick for most people at
+          $1,199.99; the THERUN 15% auto-incline folder is the cheapest at about $387. We have not tested
+          these treadmills hands-on. Every figure on this page comes from the Amazon listing or the maker&rsquo;s
+          site, and each card says where the fan is named and what the listing leaves out.
+        </p>
+
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#sole-f65">Sole F65</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#therun-15-auto-incline">THERUN 15% Auto Incline Treadmill</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Running Under $1,000:</span> <a href="#therun-20-auto-incline">THERUN Foldable Treadmill With 20% Auto Incline</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Compact Brand Name:</span> <a href="#sole-f50">Sole F50</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Wide Deck:</span> <a href="#horizon-7-4-at">Horizon 7.4 AT</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Heavier Users:</span> <a href="#ancheer-heavy-duty-auto-incline">ANCHEER Foldable Heavy Duty Treadmill With 25% Auto Incline</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best With a Screen:</span> <a href="#funmily-25-incline-tv-screen">FUNMILY Treadmill With 25% Auto Incline and TV Screen</a></span>
+              <a href={PRODUCTS[6].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <nav class="ed-toc not-prose" aria-label="In this roundup">
+          <h2>In this roundup</h2>
+          <ol>
+            <li><a href="#short-answer">The short answer</a></li>
+            <li><a href="#quick-picks">The 7 Treadmills With a Fan at a Glance</a></li>
+            <li><a href="#picks">The 7 picks</a></li>
+            <li><a href="#what-a-console-fan-does">What a console fan does</a></li>
+            <li><a href="#fan-types">Crossflow Fan, Mini Fan or Clip-On Fan: What the Listings Mean</a></li>
+            <li><a href="#where-fan-named">How We Checked Each Fan</a></li>
+            <li><a href="#left-out">Treadmills We Left Out, and Why</a></li>
+            <li><a href="#how-to-choose">How to Choose a Treadmill With a Fan</a></li>
+            <li><a href="#room-setup">Getting the Most From a Console Fan</a></li>
+            <li><a href="#console-extras">Fans, Speakers and Screens: The Rest of the Console</a></li>
+            <li><a href="#deals">Black Friday and Cyber Monday Prices on These Picks</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2>The Short Answer</h2>
+<p>
+            <strong>The best treadmill with a built-in fan for most people is the SOLE F65: a 20 by 60-inch
+            deck, 0.5 to 12 mph, 0&ndash;15% powered incline, a 350 lb rating and a crossflow cooling fan
+            named on both the Amazon listing and SOLE&rsquo;s own spec, for $1,199.99 on Amazon on
+            28 November 2026.</strong>
+          </p>
+          <ul>
+            <li><strong>Best overall:</strong> SOLE F65, $1,199.99, with a crossflow fan, dual Bluetooth speakers and kick-release folding.</li>
+            <li><strong>Best budget:</strong> THERUN 15% Auto Incline Treadmill, about $387, which names the fan in its title and its first bullet.</li>
+            <li><strong>Best for running under $1,000:</strong> THERUN Foldable Treadmill with 20% Auto Incline, about $720, with 12 mph, a 55 by 20-inch belt and a built-in cooling fan.</li>
+            <li><strong>Best brand-name compact:</strong> SOLE F50, $899.99, with a cooling fan, a 20 by 55-inch deck and, per SOLE, a lifetime frame and motor warranty.</li>
+            <li><strong>Best wide deck:</strong> Horizon 7.4 AT, about $1,500, with a 22 by 60-inch deck and a fan named in its listing; heavier users on a budget should look at the 450 lb ANCHEER (about $500), and the FUNMILY (about $800) adds a 10.1-inch WiFi screen.</li>
+          </ul>
+          <p>
+            A console fan is a small fan aimed at your face and chest from close range. It helps on a walk
+            or an easy jog, but it does not replace a proper fan in front of the treadmill. If you run hard
+            or train in a warm room, budget for one from our <a href="/best-treadmill-fans/" class="text-[#0F62FE] font-medium">best treadmill fans</a> guide as well.
+          </p>
+        </div>
+
+        <div id="quick-picks" class="scroll-mt-24">
+          <h2>The 7 Treadmills With a Fan at a Glance</h2>
+<p>
+            Seven machines, chosen so that no two answer the same need: two budget folders, two runners&rsquo;
+            decks, a heavy-duty pick, one with a streaming screen and two brand-name treadmills with long
+            warranties. The last column matters most on this page: where the fan is written down, because a
+            photo of a vent on the console is not the same as a stated feature.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[720px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Treadmill</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price seen</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Speed</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Incline</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Deck</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Capacity</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Fan named in</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE F65</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.5–12 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–15% powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 60 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb (SOLE)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon bullet and SOLE spec (&ldquo;crossflow fan&rdquo;)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">THERUN 15% Auto Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $387</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–10 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–15% powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">47.2 x 17 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon title and first bullet</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">THERUN 20% Auto Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $720</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Up to 12 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Up to 20% powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">55 x 20 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon title and console bullet</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE F50</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$899.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.5–10 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">12 powered levels</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 55 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon bullet and SOLE spec</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.4 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $1,500</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.5–12 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–15% powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon bullet only</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ANCHEER Heavy Duty Auto Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $500</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Up to 9.1 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–25% powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not on listing</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">450 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon title and folding bullet</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FUNMILY 25% Incline With TV Screen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $800</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Up to 9.1 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Up to 25% powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not on listing</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">450 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon title (&ldquo;Built-In Mini Fan&rdquo;) and bullet</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Every Amazon figure was read on 28 November 2026, the Saturday after Black Friday, and
+            &ldquo;not on listing&rdquo; means the listing did not state it. The SOLE capacity for the F65
+            comes from SOLE&rsquo;s own product data on the same day, because the Amazon listing leaves it out.
+            Prices move a lot between now and Cyber Monday on 30 November, so check the live price before you
+            buy. We do not print <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">star ratings</a>,
+            which change constantly and are often pooled across versions of a machine.
+          </p>
+        </div>
+
+        <div id="picks" class="scroll-mt-24">
+          <h2>The 7 Best Treadmills With a Built-In Fan</h2>
+<p>
+            Each card links to the Amazon listing we matched by its ASIN, Amazon&rsquo;s product code, on
+            28 November 2026. The rule for a place on this page was strict: the listing&rsquo;s title or
+            bullet points, or the maker&rsquo;s own spec page, had to state that the treadmill has a fan built
+            into it. A fan in the product photos did not count, and neither did a loose clip-on fan packed in
+            the box. Specifications on each card come only from the listing or the maker, and where a figure
+            is missing the card says so.
+          </p>
+          <p>
+            Several popular treadmills that returned for &ldquo;treadmill with fan&rdquo; did not make it. The
+            ProForm Carbon TLX
+            (about $849) and <a href="/proform-carbon-tls-treadmill/" class="text-[#0F62FE] font-medium">Carbon TLS</a> (about $559) appeared high in the results, but neither Amazon listing
+            mentions a fan in its title or bullets, and proform.com refused our requests on the day, so we
+            could not confirm one from the maker. The same was true of the NordicTrack T Series listings we
+            read and of nordictrack.com. The section on <a href="#left-out" class="text-[#0F62FE] font-medium">what we left out</a> lists the rest.
+          </p>
+        </div>
+      <!-- Product blocks -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
+                </div>
+              </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  {product.amazonUrl && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                      <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                      <span>Amazon &rarr;</span>
+                    </a> )} <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often, so check the seller's own page for today's price before you buy.
+                  </span> {!product.amazonUrl && ( <span class="ed-buy-note">No current Amazon listing matches this model, so there is no buy link; check the maker's own store.</span> )}
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                {product.amazonUrl && <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a>}
+                {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
+          ))
+        }
+      </div>
+
+        <div id="what-a-console-fan-does" class="scroll-mt-24">
+          <h2>What a Built-In Treadmill Fan Does, and Doesn’t Do</h2>
+<p>
+            <strong>A built-in treadmill fan is a small fan mounted in the console, blowing back toward your
+            face, neck and upper chest from roughly arm&rsquo;s length.</strong> It is there for comfort. It
+            moves a modest amount of air across the part of your body nearest the console, which helps sweat
+            evaporate there and makes a walk or steady jog feel fresher. Most have one or two speeds on a
+            console button, and some, like the FUNMILY and ANCHEER here, add a slot for an aroma tablet in the
+            airflow.
+          </p>
+          <p>
+            What it does not do is cool the room or cool your whole body. Your legs, back and torso shed a lot
+            of heat during exercise, and a fan the size of a coffee cup lid, pointed at a fixed angle, barely
+            reaches them. The air it moves is the room&rsquo;s own air, so in a warm spare room with the door
+            shut it is blowing warm air at you. And because the outlet sits at console height, a tall runner
+            may get it on the chest while a shorter walker gets it full in the face. None of the seven listings
+            gives an airflow figure, so there is no way to compare one console fan with another on paper.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Situation</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Is the console fan enough?</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What to add</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Easy walk, cool room, under 30 minutes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Usually, yes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Nothing</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under-desk or long walking sessions</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Helps, but your face dries out before your body cools</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A small desk or pedestal fan to one side</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steady jog or incline walk, 30–60 minutes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not on its own</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A floor or pedestal fan in front, at chest height</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hard runs, intervals, long runs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A high-velocity fan in front, plus a cooler, ventilated room</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Garage or loft in summer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Room cooling first, then a large fan</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            So treat a built-in fan as a pleasant extra, not the reason to choose one treadmill over another
+            on its own. If two machines are otherwise close, the one with a fan is the nicer daily companion.
+            If you are choosing between a better deck and a fan, take the better deck and buy a standalone fan:
+            our <a href="/best-treadmill-fans/" class="text-[#0F62FE] font-medium">best treadmill fans</a> guide covers floor, pedestal and clip-on fans that move far more air, and <a href="/how-to-stay-cool-on-a-treadmill/" class="text-[#0F62FE] font-medium">how to stay cool on a treadmill</a> explains where to put one.
+          </p>
+        </div>
+
+        <div id="fan-types" class="scroll-mt-24">
+          <h2>Crossflow Fan, Mini Fan or Clip-On Fan: What the Listings Mean</h2>
+<p>
+            <strong>The words on a listing tell you which kind of fan you are getting, and that matters more
+            than whether the word &ldquo;fan&rdquo; appears at all.</strong> Across the listings we read on
+            28 November 2026, four different things were being sold as a treadmill fan:
+          </p>
+          <ul>
+            <li><strong>Crossflow fan.</strong> SOLE names a &ldquo;crossflow cooling fan&rdquo; on the F65 and F80 and a &ldquo;turbo crossflow&rdquo; fan on the F80&rsquo;s own page. A crossflow (or tangential) fan is the long, drum-shaped type used in many tower fans; in a console it blows out of a wide horizontal slot rather than a round grille, which spreads the air across your upper body. SOLE does not publish an airflow figure.</li>
+            <li><strong>Small console fan.</strong> Most budget listings, including both THERUNs and the ANCHEER, say &ldquo;built-in cooling fan&rdquo; or &ldquo;cooling fan&rdquo; without naming the type. Expect a small round fan behind a grille in the middle of the console.</li>
+            <li><strong>Mini or aroma fan.</strong> The FUNMILY&rsquo;s title says &ldquo;Built-In Mini Fan&rdquo; and its bullet calls it an aroma fan; the ANCHEER touchscreen twins call theirs an aromatherapy fan. The name tells you it is small and partly there to carry a scent.</li>
+            <li><strong>Clip-on fan in the box.</strong> Some listings put &ldquo;Fan Included&rdquo; in the title for a loose USB fan that clips to the console. We read one FUNMILY heavy-duty listing whose bullet describes a Type-C port that runs a USB clip fan. That is useful, and it can be aimed, but it is an accessory rather than a built-in fan, so it is not on this list.</li>
+          </ul>
+          <p>
+            A clip-on fan is not worse by definition. Because it can be angled and moved, it may reach your
+            face better than a fixed vent. But it also falls off, needs its cable or battery, and is easy to
+            replace for a few dollars, so it should not be what tips you toward a $500 treadmill. If a listing
+            says &ldquo;fan included&rdquo;, read the bullets to see which kind you are getting.
+          </p>
+        </div>
+
+        <div id="where-fan-named" class="scroll-mt-24">
+          <h2>How We Checked Each Fan</h2>
+<p>
+            <strong>For each pick we recorded exactly where the fan is written down, so you can check it
+            yourself before you buy.</strong> Here is the wording, quoted from the source on 28 November 2026.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[640px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Treadmill</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Source</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What it says</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE F65</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon bullet; SOLE product data</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">&ldquo;a crossflow cooling fan&rdquo;; SOLE: &ldquo;crossflow fan&rdquo;</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">THERUN 15% Auto Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon title and bullet</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">&ldquo;Cooling Fan&rdquo;, &ldquo;with Fan&rdquo;; bullet: &ldquo;The built-in fan &hellip;&rdquo;</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">THERUN 20% Auto Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon title and bullet</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">&ldquo;Built-in Fan&rdquo;; &ldquo;built-in cooling fan&rdquo; on the console</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE F50</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon bullet; SOLE product data</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">&ldquo;a cooling fan&rdquo;; SOLE: &ldquo;a built-in cooling fan&rdquo;</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.4 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon bullet</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">&ldquo;water bottle holder, fan, and energy saver mode&rdquo;</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ANCHEER Heavy Duty</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon title and bullet</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">&ldquo;Fan&rdquo; in title; &ldquo;A cooling fan provides refreshing airflow&rdquo;</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FUNMILY 25% With TV Screen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon title and bullet</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">&ldquo;Built-In Mini Fan&rdquo;; &ldquo;an aroma fan brings fresh airflow&rdquo;</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Horizon&rsquo;s own product summary for the 7.4 AT, which we read on horizonfitness.com&rsquo;s
+            product data the same day, lists the deck, motor, display and 350 lb capacity but does not mention
+            the fan, so for that one the Amazon bullet is the only written source. It is a Horizon-branded
+            listing, but if the fan matters to you, confirm it with Horizon or the seller before ordering.
+          </p>
+        </div>
+
+        <div id="left-out" class="scroll-mt-24">
+          <h2>Treadmills We Left Out, and Why</h2>
+<p>
+            <strong>Searching for a treadmill with a fan returns a lot of machines that do not state one.</strong> These came up in our searches on 28 November 2026 and did not qualify, or were dropped to keep the
+            list varied:
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[600px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Treadmill</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price seen</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why it is not a pick</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ProForm Carbon TLX</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $849</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No fan in the Amazon title or bullets; proform.com blocked our requests</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ProForm Carbon TLS</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $559</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Same: no fan stated, maker site not readable</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack T Series 5, 6.5 S, 7 and 16</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $446–$1,039</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No fan in the listings we read; nordictrack.com blocked our requests</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.0 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $935</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The listing names speakers and a USB port but no fan; Horizon&rsquo;s summary does not either</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FUNMILY Heavy Duty, 25% incline, 14.5 speed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $500</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">&ldquo;Fan Included&rdquo; is a USB clip-on fan powered from the console, not a built-in fan</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Unbranded 20% incline, 400 lb, 5.0 HP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $490</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sold as &ldquo;Generic&rdquo;; its fan is a free detachable accessory</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE F80</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,499.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Qualifies (crossflow fan in its bullet), but the F65 has the same deck and fan for $300 less</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">THERUN twin listings</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $440 and $800</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Near-identical to our two THERUN picks at higher prices</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ANCHEER 25% with 10-inch touchscreen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $770</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Qualifies and is close to the FUNMILY; we picked one of the pair</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Leaving a treadmill off this page does not mean it has no fan. The maker may list one on a spec
+            sheet we could not read, or the console may have one the listing never mentions. It means we could
+            not read a written statement on the day, and we would rather show you seven confirmed fans than ten guesses.
+            If a fan is the deciding feature on a model not listed here, look for the word in the
+            manufacturer&rsquo;s spec sheet or ask the seller directly before you order.
+          </p>
+        </div>
+
+        <div id="how-to-choose" class="scroll-mt-24">
+          <h2>How to Choose a Treadmill With a Fan</h2>
+<p>
+            <strong>Choose the treadmill first, and use the fan to break a tie.</strong> The fan is the
+            cheapest part of the machine; the deck, motor and frame are what you live with for years. In
+            order of importance:
+          </p>
+          <ol>
+            <li><strong>Deck length for how you move.</strong> A 60-inch deck, like the SOLE F65 and Horizon 7.4 AT, suits running at full stride. The 55-inch THERUN 20% and SOLE F50 suit jogging and most runners; the 47.2-inch THERUN 15% is a walking and light-jogging deck. Our <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a> guide explains why incline walkers can live with a shorter deck.</li>
+            <li><strong>Capacity with headroom.</strong> Pick a rating at least 50 lb above your weight where you can. The ANCHEER and FUNMILY are rated at 450 lb; see our <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">best treadmills for heavy people</a> for frames built for it.</li>
+            <li><strong>Incline type.</strong> Every pick here has powered incline, from 12 levels on the SOLE F50 to 25% on the ANCHEER and FUNMILY. Steep incline makes a walk much harder at the same speed, which is also when you will want the fan most.</li>
+            <li><strong>Warranty and brand.</strong> SOLE states a lifetime frame and motor warranty for the F50 on its own site; the ANCHEER and FUNMILY listings state one year. The THERUN listings do not give a term.</li>
+            <li><strong>Then the fan.</strong> If you walk for long stretches, a wide crossflow outlet, like SOLE&rsquo;s, spreads air better than a small round grille. If you mostly run, assume you need a floor fan either way.</li>
+          </ol>
+          <p>
+            Every treadmill here folds, so there is no non-folding pick. That is not a choice we made: among
+            the listings that named a built-in fan, all were folding designs. If you want a fixed-deck machine,
+            the SOLE and Horizon folders here are built on heavier frames than most budget folders, with
+            upright masts on the Horizon.
+          </p>
+        </div>
+
+        <div id="room-setup" class="scroll-mt-24">
+          <h2>Getting the Most From a Console Fan</h2>
+<p>
+            <strong>A console fan works best as one part of a cool setup, not the whole of it.</strong> A few
+            things make a real difference, and none of them cost much:
+          </p>
+          <ul>
+            <li><strong>Start with the room.</strong> Open a door or window, or run the room&rsquo;s air conditioning before you start. A console fan only moves the air that is already there.</li>
+            <li><strong>Add one fan in front, at chest height.</strong> A pedestal or high-velocity floor fan a few feet in front of the treadmill cools far more of your body than a console fan can. Keep its cord well clear of the deck and the treadmill&rsquo;s own plug. Our <a href="/best-treadmill-fans/" class="text-[#0F62FE] font-medium">treadmill fan picks</a> are sorted by how much air they throw.</li>
+            <li><strong>Use the console fan for your face.</strong> With a floor fan doing the heavy lifting, the console fan is good at what it does: keeping sweat off your face and eyes on a long walk.</li>
+            <li><strong>Keep it clean.</strong> A console fan sits right in the path of sweat and dust. Unplug the treadmill and wipe the grille now and then, following the manual; a clogged grille moves even less air.</li>
+            <li><strong>Drink, and dress for it.</strong> Light, sweat-wicking clothes and water within reach matter more than any fan.</li>
+          </ul>
+          <p>
+            Don&rsquo;t confuse the console fan with the motor&rsquo;s own cooling. Treadmill motors have their
+            own airflow under the motor cover, and a motor that runs hot or smells hot is a separate problem
+            with its own causes. If that is what you are dealing with, see our guide to <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">a treadmill that overheats</a>.
+          </p>
+        </div>
+
+        <div id="console-extras" class="scroll-mt-24">
+          <h2>Fans, Speakers and Screens: The Rest of the Console</h2>
+<p>
+            <strong>A fan rarely comes alone.</strong> Every one of the seven picks pairs it with speakers or a
+            screen, and on budget treadmills the fan, speakers and lighting tend to arrive as a package:
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[600px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Treadmill</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Speakers</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Screen or display</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Apps named</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE F65</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Dual Bluetooth</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">White LED</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE+ (no subscription, per SOLE)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">THERUN 15%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not stated</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LCD</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FitShow, Kinomap, Zwift</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">THERUN 20%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bluetooth</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LCD, plus pace-coloured LED strip</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Zwift, FitShow, Kinomap</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE F50</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bluetooth</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">White LED</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE+</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.4 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bluetooth</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LED and 8.25 in. LCD (Horizon)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bluetooth apps; no subscription required</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ANCHEER Heavy Duty</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LED</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None stated</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FUNMILY With TV Screen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10.1 in. colour display with WiFi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Streaming; no app named</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            If audio is what you are really after, our <a href="/best-treadmills-with-bluetooth-speakers/" class="text-[#0F62FE] font-medium">best treadmills with Bluetooth speakers</a> compares them on that, and <a href="/best-treadmills-with-screens/" class="text-[#0F62FE] font-medium">best treadmills with screens</a> covers built-in touchscreens, which suit anyone who wants to stream on the deck rather than prop
+            up a tablet.
+          </p>
+        </div>
+
+        <div id="deals" class="scroll-mt-24">
+          <h2>Black Friday and Cyber Monday Prices on These Picks</h2>
+<p>
+            <strong>We read every price on 28 November 2026, between Black Friday and Cyber Monday, and the
+            data we pull from Amazon gives the current price but not the deal badge.</strong> So we have not
+            labelled any card as a Black Friday or Cyber Monday deal. What we can say:
+          </p>
+          <ul>
+            <li>The SOLE F50 and F65 were the same price on Amazon as on SOLE&rsquo;s own store that day ($899.99 and $1,199.99), against SOLE compare-at prices of $999.99 and $1,399.99.</li>
+            <li>The Horizon 7.4 AT was $1,499.99 on Amazon, below the $1,799 on Horizon&rsquo;s own store the same day.</li>
+            <li>The budget picks, THERUN, ANCHEER and FUNMILY, change price often and sometimes daily; the THERUN 15% was at an odd $387.39, which usually means a coupon or promotion is running.</li>
+          </ul>
+          <p>
+            For the wider picture, our <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">treadmill Black Friday deals</a> page tracks the main sales, and <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium">Cyber Monday treadmill deals</a> picks up from 30 November. Check the live price on any listing before you buy.
+          </p>
+        </div>
+
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Before You Buy a Treadmill With a Fan: 4 Mistakes to Avoid</h2>
+          <p>Most of these come from treating a small console fan as more than it is.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Taking “fan included” to mean a built-in fan</h3>
+              <p>Some listings put “Fan Included” in the title for a loose USB clip-on fan. If you want one built into the console, read the bullets for “built-in fan” or “cooling fan” on the console, or check the maker’s spec sheet.</p>
+            </li>
+            <li>
+              <h3>Choosing a weaker treadmill because it has a fan</h3>
+              <p>A console fan is the cheapest part of the machine. If one treadmill has the better deck, motor or warranty and the other has a fan, buy the better treadmill and add a standalone fan, many of which cost under $100.</p>
+            </li>
+            <li>
+              <h3>Expecting the console fan to cool a hot room</h3>
+              <p>A built-in fan moves a little of the room’s own air at your face. In a warm garage or closed spare room it will not keep you cool. Ventilate or cool the room first, then put a proper fan in front of the deck.</p>
+            </li>
+            <li>
+              <h3>Assuming a model has a fan because an older version did</h3>
+              <p>Consoles change between model years, and listings are often reused. Confirm the fan on the current listing or maker page for the exact model you are buying, and check it when the treadmill arrives, inside the return window.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">The SOLE F65 is the best treadmill with a built-in fan for most
+            people</strong>: a crossflow fan stated by both Amazon and SOLE, a 20 by 60-inch deck, 12 mph,
+            15% incline and a 350 lb rating for $1,199.99. On a tight budget, the THERUN 15% Auto Incline
+            folder gets you a stated fan and powered incline for about $387; runners under $1,000 should buy
+            the THERUN 20%; the SOLE F50 is the compact brand-name option; the Horizon 7.4 AT has the widest
+            deck; and the ANCHEER and FUNMILY cover 450 lb users and streaming.
+          </p>
+          <p>
+            Buy the treadmill for its deck, motor and warranty, and treat the fan as a welcome extra. A console
+            fan keeps your face fresh on a walk; it does not cool your body on a hard run or cool a warm room.
+            Check that the listing or maker names a built-in fan, test it in the return window, and if you run,
+            put a real fan in front of the deck. Our <a href="/best-treadmill-fans/" class="text-[#5AA9FF] font-bold no-underline">best treadmill fans</a> guide covers those, and <a href="/treadmill-black-friday-deals/" class="text-[#5AA9FF] font-bold no-underline">treadmill Black Friday deals</a> tracks this week&rsquo;s prices.
+          </p>
+        </div>
+
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmill-fans/">Best Treadmill Fans</a></li>
+            <li><a href="/how-to-stay-cool-on-a-treadmill/">How to Stay Cool on a Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Do treadmills come with a built-in fan?</h3></summary>
+            <p class="faq-a">
+              Many do, but not all, and the listing does not always say. Of the treadmills we read on 28 November 2026, the SOLE F50, F65 and F80, the Horizon 7.4 AT and several THERUN, ANCHEER and FUNMILY models named a built-in fan; the ProForm Carbon and NordicTrack T Series listings we read did not. Check the title, bullets and maker spec sheet.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the best treadmill with a fan?</h3></summary>
+            <p class="faq-a">
+              For most people, the SOLE F65: a 20 by 60-inch deck, 0.5 to 12 mph, 0&ndash;15% incline, 350 lb capacity and a crossflow cooling fan, at $1,199.99 on Amazon on 28 November 2026. The cheapest we found was the THERUN 15% Auto Incline Treadmill at about $387.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a treadmill console fan enough to keep you cool?</h3></summary>
+            <p class="faq-a">
+              Usually only on easy walks in a cool room. A console fan is small and aimed at your face and chest from close range, so it cools little of your body and only moves the room&rsquo;s own air. For jogging, running or long incline walks, add a floor or pedestal fan in front of the treadmill.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does the ProForm Carbon TLX have a fan?</h3></summary>
+            <p class="faq-a">
+              Its Amazon listing, which we read on 28 November 2026, does not mention a fan in the title or bullets, and proform.com blocked our requests that day, so we could not confirm one. If a fan matters, ask ProForm or the seller before you buy, or choose a model whose listing names one.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is a crossflow fan on a treadmill?</h3></summary>
+            <p class="faq-a">
+              It is the drum-shaped type of fan used in many tower fans, blowing out of a wide slot rather than a round grille. SOLE names a crossflow fan on the F65 and F80, which spreads air across your upper body more evenly than a small round fan. SOLE does not publish an airflow figure.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I add a fan to a treadmill that does not have one?</h3></summary>
+            <p class="faq-a">
+              Yes. A clip-on or magnetic fan attaches to the console or handrail, and a floor or pedestal fan in front of the treadmill moves far more air than any built-in fan. Keep cords away from the deck and the treadmill&rsquo;s plug. Our best treadmill fans guide compares the options.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Treadmill Feature Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmill-fans/" class="card">
+            <div class="c-kicker">Cooling</div>
+            <div class="c-title">Best Treadmill Fans</div>
+            <p class="c-blurb">Standalone floor, pedestal and clip-on fans that move far more air than a console fan.</p>
+          </a>
+          <a href="/how-to-stay-cool-on-a-treadmill/" class="card">
+            <div class="c-kicker">Cooling</div>
+            <div class="c-title">How to Stay Cool on a Treadmill</div>
+            <p class="c-blurb">Room, fan placement and clothing fixes for indoor runs that feel too hot.</p>
+          </a>
+          <a href="/best-treadmills-with-bluetooth-speakers/" class="card">
+            <div class="c-kicker">Features</div>
+            <div class="c-title">Best Treadmills With Bluetooth Speakers</div>
+            <p class="c-blurb">Treadmills compared on built-in audio, and what the speakers can play.</p>
+          </a>
+          <a href="/best-treadmills-with-screens/" class="card">
+            <div class="c-kicker">Features</div>
+            <div class="c-title">Best Treadmills With Screens</div>
+            <p class="c-blurb">Built-in touchscreens for streaming and classes, and what each needs.</p>
+          </a>
+          <a href="/treadmill-black-friday-deals/" class="card">
+            <div class="c-kicker">Deals</div>
+            <div class="c-title">Treadmill Black Friday Deals</div>
+            <p class="c-blurb">The main treadmill sales this week, with dated prices.</p>
+          </a>
+          <a href="/best-sole-treadmills/" class="card">
+            <div class="c-kicker">Brands</div>
+            <div class="c-title">Best Sole Treadmills</div>
+            <p class="c-blurb">Every current SOLE treadmill compared, from the F50 to the F89.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>
