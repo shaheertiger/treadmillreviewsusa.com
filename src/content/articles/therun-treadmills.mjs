@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
+  modified: '2026-11-28',
   h1: ['THERUN Treadmill Reviews:', 'Is THERUN Legit?'],
   standfirst:
     'THERUN is a real Amazon brand, not a scam: on 21 November 2026 its treadmills and walking pads ran from about $80 to $800, most were sold and shipped by Amazon.com itself, and every listing we checked gave a one-year warranty. The catch is the listings, which sometimes contradict themselves on capacity, belt size and motor power. This guide sets out every current model and which figures to trust.',
@@ -196,7 +197,7 @@ export default {
             only THERUN worth considering for running, and at $800 it has stronger competition. If you are weighing a
             similar budget brand, our review of the
             <a href="/wellfit-tm037-treadmill/" class="text-[#0F62FE] font-medium">Wellfit TM037</a> works through the same
-            questions for another <a href="/best-walking-pads-on-amazon/" class="text-[#0F62FE] font-medium" data-autolink>Amazon walking pad</a>.
+            questions for another <a href="/best-walking-pads-on-amazon/" class="text-[#0F62FE] font-medium" data-autolink>Amazon walking pad</a>. Our page on the <a href="/ajoosos-treadmills/" class="text-[#0F62FE] font-medium">AJOOSOS 2-in-1 under desk treadmill</a> covers a harder case, a listing with no maker’s page behind it.
           </p>`,
     },
     {

@@ -1,8 +1,8 @@
 export default {
   slug: 'reebok-treadmills',
-  title: 'Reebok Treadmill Guide (2026): Who Makes Them and Models',
+  title: "Reebok Treadmill Guide (2026): Who Makes Them, Where to Buy",
   description:
-    'Reebok treadmills are made under licence and sold mainly outside the US. Who makes them, the current range by country, the i-Run and Floatride models, older ICON-built Reebok treadmills and what US buyers should do.',
+    "Reebok treadmills are made under licence by a UK company and sold mainly outside the US; ICON, renamed iFIT in 2021, built older US models. What to do.",
   crumbLabel: 'Reebok Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',

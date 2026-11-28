@@ -1,8 +1,8 @@
 export default {
   slug: 'umay-treadmills',
-  title: 'UMAY Treadmill Review (2026): SF20, U20F, L20 and What to Check',
+  title: "UMAY Treadmill Review (2026): SF20, U20F and L20 Checked",
   description:
-    'Are UMAY Fitness treadmills and walking pads any good? The SF20, U20F and L20 checked against UMAY’s store and independent sources on 5 November 2026, with prices, conflicting figures and warranty.',
+    "UMAY Fitness sells budget walking pads and folding treadmills at sale prices about 40% below its “regular” price. What the SF20, U20F and L20 confirm.",
   crumbLabel: 'UMAY Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',

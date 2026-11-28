@@ -1,8 +1,8 @@
 export default {
   slug: 'best-proform-treadmills',
-  title: 'Best ProForm Treadmills (2026): The Current Range, Ranked',
+  title: "Best ProForm Treadmills (2026): The Current Range, Ranked",
   description:
-    "All four treadmills ProForm sells today — Carbon Pro 2000 and 9000, Carbon TLX and TLS — ranked from ProForm's own specs, warranty terms and independent coverage, plus the old models to skip.",
+    "ProForm sells four treadmills now, the Carbon Pro 2000 and 9000 and the Carbon TLX and TLS, ranked by deck, screen, user rating and iFIT reliance.",
   crumbLabel: 'Best ProForm Treadmills',
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Brands', url: '/brands/' },

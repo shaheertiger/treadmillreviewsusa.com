@@ -285,7 +285,7 @@ export default {
             every pick here has some kind of assisted fold: a hydraulic or gas strut that lowers the
             deck slowly (THERUN, MERACH) or a soft-drop or foot-bar release (Schwinn, NordicTrack,
             the THERUN manual model). Do not buy a folding incline treadmill without one. A heavy deck
-            that drops freely is a hazard to feet, children and pets.
+            that drops freely is a hazard to feet, children and pets. Our <a href="/therun-treadmills/" class="text-[#0F62FE] font-medium">THERUN treadmill guide</a> covers both THERUN models alongside the rest of the brand’s range, each listed with a one-year warranty.
           </p>`,
     },
     {

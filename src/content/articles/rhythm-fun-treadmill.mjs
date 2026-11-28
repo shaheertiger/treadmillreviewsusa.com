@@ -1,15 +1,15 @@
 export default {
   slug: 'rhythm-fun-treadmill',
-  title: 'RHYTHM FUN Treadmill (2026): Incline Walking Pads Checked',
+  title: "RHYTHM FUN Treadmill Review (2026): 13% Incline Walking Pads",
   description:
-    'Is a RHYTHM FUN treadmill or incline walking pad worth buying? RHYTHM FUN’s range and prices checked on 5 November 2026, the discontinued AP01 and AP02, conflicting figures and alternatives.',
+    "RHYTHM FUN’s current walking pads are built around a 13% manual incline, and the AP01 and AP02 are discontinued. What its store and trackers confirm.",
   crumbLabel: 'RHYTHM FUN Treadmill',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '710',
   h1: ['RHYTHM FUN Treadmill:', 'What We Could Confirm'],
   standfirst:

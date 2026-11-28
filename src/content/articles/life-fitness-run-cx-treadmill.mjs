@@ -105,7 +105,7 @@ export default {
             studio or an apartment-block gym: it is a residential product with a residential warranty.
             Its sibling for those settings is a different machine, and the jump in price is large. Our
             <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills guide</a>
-            covers what changes when a treadmill is built for many users a day.
+            covers what changes when a treadmill is built for many users a day. <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor</a>, now owned by Peloton, has gone further and sells only commercial treadmills, with no home model at all.
           </p>
           <p>
             The ownership is worth a sentence. Brunswick Corporation sold its fitness business,
@@ -196,7 +196,7 @@ export default {
             them as the manufacturer's description rather than cross-checked figures. A reversible deck
             matters for long-term ownership, because a worn deck can be flipped rather than replaced;
             our <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">deck replacement guide</a>
-            explains when that applies.
+            explains when that applies. <a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium">Woodway’s</a> slat-belt treadmills avoid the question altogether, with a running surface Woodway rates for about 150,000 miles.
           </p>`,
     },
     {

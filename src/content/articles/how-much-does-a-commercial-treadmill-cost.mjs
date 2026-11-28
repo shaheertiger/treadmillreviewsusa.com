@@ -164,7 +164,7 @@ export default {
             but it is not usually built or warranted for the same number of hours. If you are buying for
             a hotel or apartment gym, read the warranty for the words that define "commercial use" and
             "light commercial use"; some makers cover the same machine for different periods depending on
-            where it is installed.
+            where it is installed. <a href="/true-fitness-treadmills/" class="text-[#0F62FE] font-medium">TRUE</a>, a maker better known in gyms than in living rooms, sells four home treadmills from $3,499 to $6,999.
           </p>
           <p>
             For a home, this distinction matters less than it seems. A household with two or three

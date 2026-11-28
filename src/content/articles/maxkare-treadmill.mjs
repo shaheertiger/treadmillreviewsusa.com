@@ -51,7 +51,7 @@ export default {
             treadmill is the way you would judge any marketplace brand: read the listing as a set of
             claims, decide whether the price is fair if the claims turn out optimistic, and make sure
             you can send it back if it is not what you expected. The sections below do that reading
-            for you.
+            for you. <a href="/oma-treadmills/" class="text-[#0F62FE] font-medium">OMA treadmills</a> such as the 7200EB call for the same approach, since we found no US website for the brand at all.
           </p>`,
     },
     {

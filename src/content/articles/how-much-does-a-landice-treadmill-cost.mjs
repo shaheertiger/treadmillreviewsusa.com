@@ -11,8 +11,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.0k',
   h1: ['How Much Does a', 'Landice Treadmill Cost?'],
   standfirst:
@@ -60,7 +61,7 @@ export default {
           </ul>
           <p>
             For the brand, models and how they compare, see our ${A('/landice-treadmills/', 'Landice treadmill guide')};
-            for prices across every brand, ${A('/how-much-does-a-treadmill-cost/', 'how much a treadmill costs')}.
+            for prices across every brand, ${A('/how-much-does-a-treadmill-cost/', 'how much a treadmill costs')}. For a close rival at similar money, <a href="/true-fitness-treadmills/" class="text-[#0F62FE] font-medium">TRUE’s Performance 1000, 3000 and 8000</a> cost $5,199 to $6,999.
           </p>`,
     },
     {

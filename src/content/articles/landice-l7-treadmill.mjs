@@ -19,9 +19,9 @@ export default {
   crumbLabel: 'Landice L7 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '0.9k',
   h1: ['Landice L7', 'Treadmill Review'],
   standfirst:
@@ -138,7 +138,7 @@ export default {
             Buy an L7 if you value durability above features, are heavy or share the machine, or want a
             rehabilitation treadmill at home. If you mostly want a good running treadmill, our
             <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium">Landice brand guide</a>
-            and the alternatives below explain where your money goes further. We have not tested the L7.
+            and the alternatives below explain where your money goes further. We have not tested the L7. <a href="/true-fitness-treadmills/" class="text-[#0F62FE] font-medium">TRUE Fitness</a>, a family-owned Missouri maker, is the obvious rival, with three Performance models at $5,199 to $6,999.
           </p>
           <p>
             Landice sells its treadmills direct and through dealers, not on Amazon, so the cards below show

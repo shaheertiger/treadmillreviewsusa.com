@@ -98,7 +98,7 @@ export default {
           <p>
             If screens do not matter to you, the F63 or F65 gives you the running deck and motor for hundreds less than
             the touchscreen models. Our <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">best Sole treadmills</a>
-            ranking compares them in more depth.
+            ranking compares them in more depth. If you do want a big screen for less, <a href="/yesoul-treadmills/" class="text-[#0F62FE] font-medium">Yesoul’s T3S Plus</a> has a 21.5-inch one for $799.99, on a folding machine aimed at walkers.
           </p>`,
     },
     {

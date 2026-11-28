@@ -164,7 +164,7 @@ export default {
             listings state more figures than Goplus does, but they come from sellers with a shorter
             track record, and we have not included them. If you are comparing one, look for the same
             essentials as for any treadmill: a stated belt length of at least 50 inches if you plan to
-            run, a stated weight limit with a margin, and a warranty you can read before you pay.
+            run, a stated weight limit with a margin, and a warranty you can read before you pay. <a href="/serenelife-treadmills/" class="text-[#0F62FE] font-medium">SereneLife</a>, a sister brand of Pyle audio, is one example to read that way: its listings give a one-year warranty and most are rated to about 265 lb.
           </p>
           <p>
             The colour in the search phrase is only the finish. Prices for different colours of the same

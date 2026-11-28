@@ -111,7 +111,7 @@ export default {
             different products: LifePro recalled <a href="/best-home-saunas/" class="text-[#0F62FE] font-medium" data-autolink>infrared sauna</a> blankets in October 2025, and e-bikes
             distributed by ANCHEER were recalled in October 2022. Neither recall concerns a pedaler,
             but we left both brands off this page because we could not load LifePro's store or find an
-            ANCHEER maker page to check a current model's figures against.
+            ANCHEER maker page to check a current model's figures against. ANCHEER’s walking pads have the same gap, as our <a href="/ancheer-treadmills/" class="text-[#0F62FE] font-medium">ANCHEER treadmill guide</a> explains: they are sold almost entirely through Amazon, with no working treadmill website behind them.
           </p>
           <p>
             We also passed over models we could confirm from only one side. Cubii's site lists the Cubii

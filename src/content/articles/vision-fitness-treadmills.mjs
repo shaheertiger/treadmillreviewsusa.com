@@ -161,7 +161,7 @@ export default {
       html: `          <p>
             Vision Fitness is a brand of Johnson Health Tech, the Taiwanese group that also owns Horizon, Matrix,
             <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex</a> and Schwinn Fitness. Vision's site is built on Johnson Health Tech's asset servers, and the January
-            2026 recall names Johnson Health Tech North America as the firm responsible for Vision treadmills. For the group’s best-known home brand, our <a href="/horizon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Horizon treadmill troubleshooting</a> guide covers the safety key, belt and LUBE fixes.
+            2026 recall names Johnson Health Tech North America as the firm responsible for Vision treadmills. The same group built <a href="/livestrong-treadmill/" class="text-[#0F62FE] font-medium">LIVESTRONG treadmills</a> such as the LS10.0T under a licence that began in 2009. For the group’s best-known home brand, our <a href="/horizon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Horizon treadmill troubleshooting</a> guide covers the safety key, belt and LUBE fixes.
           </p>
           <p>
             Historically, the brands had distinct jobs. Horizon sold to general retail, Matrix covered commercial clubs

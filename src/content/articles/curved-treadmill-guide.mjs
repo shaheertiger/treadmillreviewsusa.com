@@ -51,7 +51,7 @@ export default {
             with no electrical supply and little to go wrong, and people who actively want no
             electronics. On those terms it is arguably the best treadmill there is. If that sounds
             like you, our <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">curved treadmill reviews</a>
-            compare the specific machines worth shortlisting.
+            compare the specific machines worth shortlisting. One of the best known, the <a href="/centr-treadmills/" class="text-[#0F62FE] font-medium">Centr x HYROX Perform Tread</a>, is the official HYROX race treadmill.
           </p>
           <p>
             It is <strong>not worth it</strong> for walkers who want incline, beginners who want a

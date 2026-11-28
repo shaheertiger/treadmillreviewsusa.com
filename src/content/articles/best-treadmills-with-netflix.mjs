@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-24',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Best Treadmills With Netflix', 'Which Screens Actually Stream'],
   standfirst:
@@ -133,7 +133,7 @@ export default {
             This page differs from our
             <a href="/best-treadmills-with-screens/" class="text-[#0F62FE] font-medium">best treadmills with screens</a>
             guide, which ranks touchscreen treadmills on the machine and the class platform. Here the
-            only question is what the screen will play.
+            only question is what the screen will play. For a cheaper big screen, the <a href="/yesoul-treadmills/" class="text-[#0F62FE] font-medium">Yesoul T3S Plus</a> pairs a 21.5-inch display with a $799.99 price, though it mirrors a connected phone rather than running apps itself.
           </p>`,
     },
     {

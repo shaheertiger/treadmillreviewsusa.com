@@ -111,7 +111,7 @@ export default {
             trainers: maximal efforts are possible indoors, and the belt never pulls you along at a pace
             you set before you tired. The flip side is that you cannot dial in a pace and settle into it.
             Holding a steady 9:00 mile means holding your position on the curve by feel, which takes
-            attention, especially late in a run.
+            attention, especially late in a run. The same holds for the <a href="/centr-treadmills/" class="text-[#0F62FE] font-medium">Centr x HYROX Perform Tread</a>, the motorless curved treadmill made for HYROX racing.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">It is harder work than a motorised belt</h3>
           <p>

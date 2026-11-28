@@ -43,7 +43,7 @@ export default {
           </p>
           <p>
             If you read only three things, read the labour term, whether service is in-home, and the
-            exclusions. Those decide what a failure in year three actually costs you.
+            exclusions. Those decide what a failure in year three actually costs you. <a href="/serenelife-treadmills/" class="text-[#0F62FE] font-medium">SereneLife’s treadmills</a>, for example, list a one-year warranty, which has long ended by year three.
           </p>`,
     },
     {
@@ -137,7 +137,7 @@ export default {
             Some manufacturers require you to register the treadmill to receive the full warranty,
             or within a set window after purchase; others cover you from the purchase date with
             only proof of purchase. Either way, registering takes a few minutes, and it puts your
-            serial number and purchase date on record before you need them.
+            serial number and purchase date on record before you need them. Budget pads can add a twist: <a href="/cybergoing-walking-pad/" class="text-[#0F62FE] font-medium">Cybergoing’s</a> warranty text says valid claims are processed “through Hiboy”, which is a different brand’s name.
           </p>
           <p>
             Do it the week the machine arrives, and keep three things together: the receipt or order

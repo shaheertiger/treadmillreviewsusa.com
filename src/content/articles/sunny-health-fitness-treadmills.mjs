@@ -4,16 +4,16 @@ const row = (cells) => `<tr>${cells.map((c) => `<td class="${TD}">${c}</td>`).jo
 
 export default {
   slug: 'sunny-health-fitness-treadmills',
-  title: 'Sunny Health & Fitness Treadmills (2026): T4400 and Warranty',
+  title: "Sunny Health & Fitness Treadmills (2026): Range and Warranty",
   description:
-    'Sunny Health & Fitness sells about 30 treadmills, walking pads and manual walkers. The current range and prices, the SF-T4400 vs SF-T4400SMART, conflicting figures, warranty and returns.',
+    "Sunny Health & Fitness sells about 30 treadmills, walking pads and manual walkers, from a $200 walker to a $4,000 curved trainer. Prices and warranty.",
   crumbLabel: 'Sunny Health & Fitness Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Sunny Health & Fitness Treadmills:', 'A Buyer’s Guide to the Range'],
   standfirst:
@@ -429,7 +429,7 @@ export default {
             We searched the US Consumer Product Safety Commission’s recall database on 5 November 2026 for Sunny
             Health &amp; Fitness and for treadmill recalls generally, and found no recall of any Sunny treadmill,
             walking pad or other Sunny product. The treadmill recalls since 2015 concern other brands, including
-            Peloton, Nautilus, Horizon and Matrix.
+            Peloton, Nautilus, Horizon and Matrix. One of them, the 2022 recall of <a href="/nautilus-treadmills/" class="text-[#0F62FE] font-medium">Nautilus T616 and T618 treadmills</a>, now has no remedy left.
           </p>
           <p>
             No recall is not the same as no risk. Every motorised Sunny treadmill comes with a safety key on a

@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-26',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Why Does My Treadmill', 'Keep Beeping?'],
   standfirst:
@@ -120,7 +120,7 @@ export default {
             installed, and the Schwinn 810 / 510T manual says the console displays &ldquo;+ SAFETY KEY&rdquo; for a
             safety key fault and that the treadmill will not start a workout, or will end and clear an active workout,
             when the key is removed. On some consoles the key reminder comes with a beep. LifeSpan&rsquo;s settings page
-            for its treadmill desks calls it the &ldquo;safety beep&rdquo; and lists a setting that turns it off.
+            for its treadmill desks calls it the &ldquo;safety beep&rdquo; and lists a setting that turns it off. Our <a href="/lifespan-treadmills/" class="text-[#0F62FE] font-medium">LifeSpan treadmill guide</a> covers the brand’s current under-desk range.
           </p>
           <p>
             Check these in order:

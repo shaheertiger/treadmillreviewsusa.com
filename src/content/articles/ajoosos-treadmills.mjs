@@ -1,8 +1,8 @@
 export default {
   slug: 'ajoosos-treadmills',
-  title: 'AJOOSOS 2-in-1 Under Desk Treadmill (2026): What We Could Confirm',
+  title: "AJOOSOS 2-in-1 Under Desk Treadmill (2026): What We Found",
   description:
-    'Is the AJOOSOS 2-in-1 under desk treadmill worth buying? What we could and could not confirm about the brand on 5 November 2026, how to check the listing, and checked 2-in-1 alternatives.',
+    "The AJOOSOS 2-in-1 under desk treadmill comes from an e-scooter brand whose store sells no treadmills; its listing claims 2.0 HP. What to check first.",
   crumbLabel: 'AJOOSOS Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',

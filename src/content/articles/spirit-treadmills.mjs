@@ -98,7 +98,7 @@ export default {
             Both carry lifetime cover on the frame, motor and deck and ten years on parts for home
             use. Both connect over Bluetooth to Zwift, which is why Spirit appears among the
             manufacturers on Zwift's compatibility list and in our
-            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">Zwift treadmill roundup</a>.
+            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">Zwift treadmill roundup</a>. Our <a href="/true-fitness-treadmills/" class="text-[#0F62FE] font-medium">TRUE Fitness guide</a> sets these Spirits against TRUE’s four home treadmills, which start at $3,499.
           </p>
           <p>
             The caveats are familiar from this price band: one year of labour, a motor figure that

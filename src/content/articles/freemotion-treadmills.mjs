@@ -1,8 +1,8 @@
 export default {
   slug: 'freemotion-treadmills',
-  title: 'Freemotion Treadmills (2026): Reflex t10.9b, t8.9b and Incline',
+  title: "Freemotion Treadmill (2026): t8.9b, Reflex t10.9b and Incline",
   description:
-    'Freemotion is iFIT’s commercial brand. The t8.9b, the Reflex t10.9b and t22.9, the incline trainers, what they cost for home buyers, the 20-amp circuit and how they compare with NordicTrack.',
+    "Freemotion, iFIT’s commercial brand, sold the t8.9b from about $5,999 at dealers and the i22.9 incline trainer at $11,899. Costs, circuits, vs NordicTrack.",
   crumbLabel: 'Freemotion Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
@@ -145,7 +145,7 @@ export default {
             incline trainer at $9,999 and the i22.9 at $11,899. Authorised dealers were selling the t8.9b
             for as little as $5,999. These are commercial machines: AC motors of 4.0 to 5.0 HP, 400 lb user
             ratings on the models where sources agree, frames that weigh hundreds of pounds and, on the
-            dealer listings we read, a 20-amp circuit.
+            dealer listings we read, a 20-amp circuit. <a href="/technogym-treadmills/" class="text-[#0F62FE] font-medium">Technogym’s</a> home treadmills sit in the same bracket, from $5,390 to $14,350 in the US.
           </p>
           <p>
             What sets Freemotion apart from other club brands is <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium" data-autolink>iFIT</a>. The touchscreen models run it, and

@@ -103,7 +103,7 @@ export default {
             price it showed on 18 and 20 October. WalkingPad showed the C2 at $429 against $599 and the
             R3 Hybrid+ at $799 against $999, again the same prices our roundups recorded in
             mid-October. If those pads appear at the same figures in late November with a Black
-            Friday badge, nothing will have changed except the badge.
+            Friday badge, nothing will have changed except the badge. On Black Friday itself, <a href="/cursor-fitness-treadmills/" class="text-[#0F62FE] font-medium">CURSOR FITNESS pads</a> were $94.99 to $199.99 on Amazon, almost all sold by one storefront, RUNHOME.
           </p>
           <p>
             The clearest evidence that a real reduction is possible comes from the MERACH NovaWalk

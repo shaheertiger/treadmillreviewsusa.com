@@ -122,7 +122,7 @@ export default {
             machine that works fully without a subscription costs the same in its fifth year as
             in its first. Our
             <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton comparison</a>
-            explains how the two big platforms differ in what a session feels like.
+            explains how the two big platforms differ in what a session feels like. The closest connected rival is <a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium">Echelon’s Stride range</a>, known for an auto-fold that lays the machine flat.
           </p>
           <p>
             Three things are worth knowing before you go further. Peloton's lineup changed on

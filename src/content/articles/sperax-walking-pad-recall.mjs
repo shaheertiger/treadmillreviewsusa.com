@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Safety Warning',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-25',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Sperax Walking Pad Recall?', 'The CPSC Warning, Explained'],
   standfirst:
@@ -248,7 +248,7 @@ export default {
             The CPSC&rsquo;s warning asks people to report incidents involving Sperax walking pads or treadmills, or any
             product-related injury, at <strong>SaferProducts.gov</strong>. That site is run by the CPSC and describes itself
             as the place &ldquo;where the public can file and read complaints&rdquo; about consumer products. You can also
-            search it for existing reports before you buy anything.
+            search it for existing reports before you buy anything. It is worth doing for little-known names such as <a href="/zofdim-treadmills/" class="text-[#0F62FE] font-medium">Zofdim</a>, which has no maker’s website we could find.
           </p>
           <p>
             A useful report includes:

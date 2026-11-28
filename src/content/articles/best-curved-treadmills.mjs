@@ -73,7 +73,7 @@ export default {
             usual sense, and is a running and conditioning tool first. If you came here looking for
             a cheap manual treadmill to walk on, our
             <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">best manual treadmills</a>
-            page covers the $200 to $300 flat folding walkers instead.
+            page covers the $200 to $300 flat folding walkers instead. At the other extreme, the official HYROX race treadmill, the <a href="/centr-treadmills/" class="text-[#0F62FE] font-medium">Centr x HYROX Perform Tread</a>, costs $6,999.
           </p>`,
     },
     {

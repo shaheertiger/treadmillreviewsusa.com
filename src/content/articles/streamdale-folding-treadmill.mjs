@@ -48,14 +48,14 @@ export default {
             belt of roughly 39 to 43 inches, a top speed between 7.5 and 10 mph — at prices from
             about $360 to over $1,100. What it does mean is that you would be buying on the seller’s
             word alone, from a shop that lists no street address or phone number, under a return
-            policy that excludes sale items and makes you pay to send a remorse return back.
+            policy that excludes sale items and makes you pay to send a remorse return back. <a href="/zofdim-treadmills/" class="text-[#0F62FE] font-medium">Zofdim</a>, another name people search for, goes further still, with no maker’s website, review or readable listing that we could find.
           </p>
           <p>
             Our view is that at these prices you can buy a folding treadmill from a maker you can
             name, whose figures agree across sources and whose warranty is written down. If you are
             still drawn to a Streamdale listing, the checks in the
             <a href="#what-to-check" class="text-[#0F62FE] font-medium">what to check</a>
-            section will tell you whether that particular one is worth the risk.
+            section will tell you whether that particular one is worth the risk. <a href="/oma-treadmills/" class="text-[#0F62FE] font-medium">OMA’s folding treadmills</a> raise a similar question, with warranty terms that vary from listing to listing.
           </p>`,
     },
     {

@@ -242,7 +242,7 @@ export default {
           <p>
             Both categories include connected models with screens and subscriptions. Check what a machine
             does without a membership before buying, because the ongoing fee can overtake the price
-            difference between the machines within a few years. If you are buying in late November, our <a href="/black-friday-exercise-bike-deals/" class="text-[#0F62FE] font-medium">Black Friday exercise bike deals</a> page lists six bikes with dated prices and the figure we would wait for on each.
+            difference between the machines within a few years. <a href="/yesoul-treadmills/" class="text-[#0F62FE] font-medium">Yesoul</a>, a brand known for screen-equipped exercise bikes, now sells treadmills too, including the $799.99 T3S Plus with a 21.5-inch screen. If you are buying in late November, our <a href="/black-friday-exercise-bike-deals/" class="text-[#0F62FE] font-medium">Black Friday exercise bike deals</a> page lists six bikes with dated prices and the figure we would wait for on each.
           </p>`,
     },
     {

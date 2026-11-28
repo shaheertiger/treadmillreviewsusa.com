@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Trimline Treadmill:', 'Parts, Manuals and Used Value'],
   standfirst:
@@ -81,7 +81,7 @@ export default {
             the Trimline name is owned by Nautilus but that Trimline treadmills are no longer
             produced. We cannot verify the corporate chain from primary records, and the two
             accounts are not obviously compatible, so we give both and rely on neither for anything
-            that matters to an owner.
+            that matters to an owner. The Nautilus name itself was sold in 2023, as our <a href="/nautilus-treadmills/" class="text-[#0F62FE] font-medium">Nautilus treadmills guide</a> sets out.
           </p>
           <p>
             What does matter is this: Nautilus, Inc. later became BowFlex Inc., which filed for

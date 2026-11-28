@@ -147,7 +147,7 @@ export default {
             If you are not a member, add the $60 or $120 membership fee to the price before comparing, and
             remember Sam’s offers a fee refund under its membership guarantee. Our
             <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a>
-            sets out what each kind of retailer usually includes, which is how the comparison should be made.
+            sets out what each kind of retailer usually includes, which is how the comparison should be made. We found no LifeSmart treadmill there; Costco and Dick’s are where <a href="/lifesmart-treadmills/" class="text-[#0F62FE] font-medium">LifeSmart’s self-folding PowerTouch treadmills</a> sell.
           </p>`,
     },
     {

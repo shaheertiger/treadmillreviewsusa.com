@@ -19,9 +19,9 @@ export default {
   crumbLabel: 'Horizon T202 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Horizon T202', 'Treadmill Review'],
   standfirst:
@@ -177,7 +177,7 @@ export default {
             changed in any way that matters. And search results for "T202 treadmill" also turn up versions
             sold in the UK, Australia, Malaysia and the UAE — the T202-05, T202-26, a <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium" data-autolink>Costco</a> UK "AtZone" and a
             "Special Edition" — with different consoles and figures. Those are regional machines; check the
-            model number if you are reading a listing from outside the US.
+            model number if you are reading a listing from outside the US. <a href="/reebok-treadmills/" class="text-[#0F62FE] font-medium">Reebok treadmills</a> are the extreme case: easy to buy in Britain or Australia, and hard to buy in the US.
           </p>`,
     },
     {

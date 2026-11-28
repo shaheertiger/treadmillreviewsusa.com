@@ -145,7 +145,7 @@ export default {
           </ul>
           <p>
             We found no Amazon listing for it. Because TKO sells mainly through commercial dealers, it is
-            worth asking two or three for a quote, especially if you are equipping a facility.
+            worth asking two or three for a quote, especially if you are equipping a facility. <a href="/trueform-treadmills/" class="text-[#0F62FE] font-medium">TrueForm</a> sells the same way, direct and through gym dealers rather than on Amazon.
           </p>`,
     },
     {
@@ -206,7 +206,7 @@ export default {
             setting, and the belt stops when you do. TKO's manual describes the four resistance levels
             this way: level 1 is free running without resistance, level 2 adds slight resistance to
             simulate weighted jogging, and levels 3 and 4 add enough to simulate pushing a sled. TKO's sell
-            sheet adds that the handrails are placed for casual walking or for push-sled work.
+            sheet adds that the handrails are placed for casual walking or for push-sled work. The <a href="/tru-grit-treadmills/" class="text-[#0F62FE] font-medium">Tru Grit Grit Runner</a> is a cheaper curved trainer with resistance settings for the same sled-style pushes.
           </p>
           <p>
             That range is the 8CTM's main reason to exist. A free-running curve suits maximal sprints;

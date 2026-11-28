@@ -1,8 +1,8 @@
 export default {
   slug: 'trueform-treadmills',
-  title: 'TrueForm Treadmills (2026): Runner vs Trainer Curved Manual',
+  title: "TrueForm Treadmill Review (2026): Runner vs Trainer Compared",
   description:
-    'TrueForm’s Runner and Trainer curved manual treadmills compared: November 2026 prices, which figures the sources agree on, the warranty, lead times and the cheaper rivals.',
+    "TrueForm’s curved Trainer was $3,495 and the Runner $6,595 at Rogue Fitness in November 2026. Which figures agree, the warranty and cheaper rivals.",
   crumbLabel: 'TrueForm Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',

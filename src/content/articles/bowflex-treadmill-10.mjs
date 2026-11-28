@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Bowflex Treadmill 10',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Bowflex Treadmill 10', 'Review'],
   standfirst:
@@ -327,7 +327,7 @@ export default {
           <p>
             BowFlex Inc., the former Nautilus, Inc., filed for Chapter 11 in March 2024, and Johnson Health Tech,
             which also owns Horizon and Matrix, bought the BowFlex, Schwinn and JRNY brands in a sale that
-            closed in April 2024. Two things follow for Treadmill 10 owners.
+            closed in April 2024. Two things follow for Treadmill 10 owners. The same group sells <a href="/vision-fitness-treadmills/" class="text-[#0F62FE] font-medium">Vision Fitness treadmills</a>, whose US range is now a single light-commercial model, the T600.
           </p>
           <ul>
             <li><strong>The current range carries different terms.</strong> Bowflex’s T6, T9 and T16 come with a lifetime warranty on the frame and motor, 3 years on parts and 1 year of labour. Against the Treadmill 10’s terms, that is longer cover on the frame and motor, but two years less on parts and a year less of labour.</li>

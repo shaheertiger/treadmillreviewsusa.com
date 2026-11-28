@@ -1,8 +1,8 @@
 export default {
   slug: 'funmily-treadmills',
-  title: 'FUNMILY Treadmill (2026): Walking Pads, Desk Model and Manuals',
+  title: "FUNMILY Treadmill Review (2026): Walking Pads and Desk Model",
   description:
-    'Is a FUNMILY treadmill or walking pad worth buying? FUNMILY’s range checked on 5 November 2026, where its figures conflict, how to find the manual, and checked alternatives.',
+    "FUNMILY treadmills sell almost only on Amazon, and one pad is listed at 300, 350 or 400 lb and 2.5 or 3.5 HP. What holds up, manuals and what to check.",
   crumbLabel: 'FUNMILY Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
@@ -195,7 +195,7 @@ export default {
             guide to <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
             explains what to look for in the buy box, and our
             <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart treadmills</a> guide
-            covers marketplace sellers there.
+            covers marketplace sellers there. <a href="/famistar-treadmill/" class="text-[#0F62FE] font-medium">Famistar</a> is a similar case on Walmart, with listings that contradict themselves on motors, weight limits and even the warranty.
           </p>`,
     },
     {

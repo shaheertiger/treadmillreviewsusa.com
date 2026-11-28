@@ -63,7 +63,7 @@ export default {
             machine, our
             <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">treadmill sprint workout</a>
             page covers the mount at speed, incline sprints and the rest of what changes when a
-            motor sets the pace.
+            motor sets the pace. In many gyms the curved machine on the floor is a <a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium">Woodway Curve</a>, the self-powered treadmill most gym-goers know.
           </p>`,
     },
     {

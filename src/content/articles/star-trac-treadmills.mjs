@@ -1,8 +1,8 @@
 export default {
   slug: 'star-trac-treadmills',
-  title: 'Star Trac Treadmills (2026): Models, Used Value, What to Check',
+  title: "Star Trac Treadmills (2026): Models, Used Prices, What to Check",
   description:
-    'Star Trac builds gym treadmills, not home ones. The current FreeRunner, 8TRx, 6TR and 4TR, why most home buyers meet a used or remanufactured unit, and what one is worth.',
+    "Star Trac builds gym treadmills, so most home buyers meet a used one: a refurbished 8TR was listed at $3,895. The current 4TR to FreeRunner range.",
   crumbLabel: 'Star Trac Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
@@ -68,7 +68,7 @@ export default {
             Schwinn, Nautilus, Star Trac, Throwdown and Wexer among its brands; the Schwinn and
             Nautilus names there are the commercial lines, separate from the home products sold under
             those names elsewhere. Core sells to commercial facilities, multi-unit housing and
-            developers. If you own a home Schwinn treadmill instead, our <a href="/schwinn-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Schwinn troubleshooting guide</a> covers its 810 error codes, belt tension and lube.
+            developers. The home <a href="/nautilus-treadmills/" class="text-[#0F62FE] font-medium">Nautilus treadmills</a> people remember, the T614, T616 and T618, have not been sold new for years. If you own a home Schwinn treadmill instead, our <a href="/schwinn-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Schwinn troubleshooting guide</a> covers its 810 error codes, belt tension and lube.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A short history</h3>
           <p>

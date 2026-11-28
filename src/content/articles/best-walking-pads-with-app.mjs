@@ -178,7 +178,7 @@ export default {
           <p>
             Zwift, Kinomap and FitShow are independent platforms that work with many brands of treadmill.
             SereneLife names all three; WELLFIT names Kinomap. If you already use one of them, a pad that
-            names it is worth more than any maker app.
+            names it is worth more than any maker app. <a href="/serenelife-treadmills/" class="text-[#0F62FE] font-medium">SereneLife</a> sells those pads from $167.29 on Amazon, alongside folding treadmills from $237.89.
           </p>`,
     },
     {

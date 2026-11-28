@@ -61,7 +61,7 @@ export default {
             Two rows deserve a word straight away. The Schwinn IC4 was $100 cheaper on 16 October
             than on 19 October, so a "Black Friday" price of $899 would be no deal at all. And the
             Concept2 RowErg is on this list precisely because its price does not move much: if you
-            want one, buying it in November is no better than buying it today.
+            want one, buying it in November is no better than buying it today. The same check applies to the <a href="/schwinn-treadmills/" class="text-[#0F62FE] font-medium">Schwinn 810 treadmill</a>, which was $899 at Schwinn on 5 November 2026.
           </p>`,
     },
     {

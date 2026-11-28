@@ -47,7 +47,7 @@ export default {
           </ul>
           <p>
             For every brand&rsquo;s prices, see <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a treadmill costs</a>;
-            for the brand, our <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm treadmills guide</a>.
+            for the brand, our <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm treadmills guide</a>. Whether the brand is worth the money at all, given its short motor warranties, is covered in <a href="/is-proform-a-good-brand/" class="text-[#0F62FE] font-medium">is ProForm a good brand</a>.
           </p>`,
     },
     {

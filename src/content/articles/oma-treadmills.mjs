@@ -1,15 +1,15 @@
 export default {
   slug: 'oma-treadmills',
-  title: 'OMA Treadmills (2026): The 7200EB, Who Sells OMA & What to Check',
+  title: "OMA Treadmill 7200EB (2026): Who Sells It and What to Check",
   description:
-    'OMA treadmills such as the 7200EB are sold to US buyers mainly through Amazon, with no US website we could find. What the 7200EB’s published figures say, where they conflict, and checked alternatives.',
+    "OMA treadmills such as the 7200EB sell mainly on Amazon with no US website, and the manual and listings disagree on belt and motor. What to check.",
   crumbLabel: 'OMA Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['OMA Treadmills:', 'What You Are Buying'],
   standfirst:

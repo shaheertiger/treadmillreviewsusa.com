@@ -52,7 +52,7 @@ export default {
             weekdays and do the odd short, easy jog. It is not a substitute for a treadmill if you
             want to run several times a week, run for longer than a short session, or run at any
             real pace. For that, a folding running treadmill is the right machine, and the
-            section on what to buy instead, further down, sets out what to look for.
+            section on what to buy instead, further down, sets out what to look for. One cheap middle ground is <a href="/ypoo-treadmills/" class="text-[#0F62FE] font-medium">YPOO’s folding treadmill</a>, which reaches 8 mph for $199.99 on Amazon.
           </p>
           <p>
             If you are still deciding between the two kinds of machine, our

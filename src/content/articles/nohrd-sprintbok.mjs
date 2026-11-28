@@ -118,7 +118,7 @@ export default {
           </p>
           <p>
             Buy from NOHrD or an authorised dealer. A machine at this price is worth buying from someone who
-            can handle a warranty claim and freight damage without argument.
+            can handle a warranty claim and freight damage without argument. <a href="/trueform-treadmills/" class="text-[#0F62FE] font-medium">TrueForm</a>, sold direct and through gym dealers rather than on Amazon, is the usual comparison at this level.
           </p>`,
     },
     {

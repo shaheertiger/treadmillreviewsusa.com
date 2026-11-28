@@ -44,7 +44,7 @@ export default {
             unfolded footprint, because that is the footprint you will live with. A machine with an
             assisted fold can honestly be judged on its folded one. That single distinction
             reorders the whole category, and it is why fold mechanism counts for more than folded
-            size in the ranking below.
+            size in the ranking below. <a href="/lifesmart-treadmills/" class="text-[#0F62FE] font-medium">LifeSmart’s PowerTouch treadmills</a>, which fold themselves, are one answer, though their warranty is only one year.
           </p>`,
     },
     {
@@ -134,7 +134,7 @@ export default {
       products: true,
       html: `          <p>
             Fold types come from the manufacturers' specifications. Check the folded dimensions for
-            the exact unit at the widest and deepest points before you order.
+            the exact unit at the widest and deepest points before you order. <a href="/serenelife-treadmills/" class="text-[#0F62FE] font-medium">SereneLife’s compact folding walkers</a>, from $237.89 on Amazon, are one budget option, though most are rated to only about 265 lb.
           </p>`,
     },
     {

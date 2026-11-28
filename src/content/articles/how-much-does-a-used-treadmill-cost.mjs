@@ -226,7 +226,7 @@ export default {
           <p>
             The practical reading: a three-year-old walking pad or budget folder may have used most of its life, so it
             is worth little whatever its owner paid. A three-year-old premium or commercial machine can have most of its
-            life ahead of it, which is why rebuilt club treadmills hold their prices so well.
+            life ahead of it, which is why rebuilt club treadmills hold their prices so well. A remanufactured <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium">Cybex 770T or R Series</a>, for example, runs about $3,000.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Hours and distance</h3>
           <p>

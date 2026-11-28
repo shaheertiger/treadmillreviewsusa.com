@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-28',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Black Friday Treadmill Deals', 'Under $500'],
   standfirst:
@@ -159,7 +159,7 @@ export default {
             Amazon on 1 September. WalkingPad's Z1 was $299 against $329. None of those reference
             prices describe what anyone has recently paid. Measured against them, a Black Friday
             price of $160 on the Strol 2E would be "45% off"; measured against what it actually
-            sells for, it is about 6%.
+            sells for, it is about 6%. <a href="/umay-treadmills/" class="text-[#0F62FE] font-medium">UMAY’s store</a> works the same way, with sale prices that usually sit 40% below its “regular” figure.
           </p>
           <p>
             That is the arithmetic to do with every deal in this tier: compare the sale price with
@@ -177,7 +177,7 @@ export default {
             well below its usual price. <strong>Cart-only prices</strong> appear on some full-size
             listings, including NordicTrack's, where the price is shown only once the item is in
             your cart. And <strong>prices move between Amazon and the brand's own store</strong>,
-            sometimes by $20 to $50 in either direction, so check both before you buy.
+            sometimes by $20 to $50 in either direction, so check both before you buy. <a href="/cursor-fitness-treadmills/" class="text-[#0F62FE] font-medium">CURSOR FITNESS’s auto-incline treadmills</a>, for example, were $254.99 to $289.99 on Amazon on 27 November 2026.
           </p>`,
     },
     {

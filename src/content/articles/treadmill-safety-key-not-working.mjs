@@ -183,7 +183,7 @@ export default {
           <p>
             The best test is a known-good key for the same model. If that works and yours does not,
             you have your answer, and a replacement key is inexpensive and usually available for
-            mainstream models for years after they are discontinued.
+            mainstream models for years after they are discontinued. Even a long-discontinued model such as the <a href="/livestrong-treadmill/" class="text-[#0F62FE] font-medium">LIVESTRONG LS10.0T</a> still has parts listed, from a $125 walking belt to a $534 motor.
           </p>`,
     },
     {

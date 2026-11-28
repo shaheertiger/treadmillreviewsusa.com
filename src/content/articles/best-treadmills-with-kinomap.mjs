@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-20',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Best Treadmills', 'With Kinomap'],
   standfirst:
@@ -159,7 +159,7 @@ export default {
             the seller whether the treadmill uses the Bluetooth FTMS (fitness machine) standard, which
             most modern training apps read. Among our picks, the <a href="/lifesmart-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>LifeSmart</a>, Ksports 16.5-inch, Aeriflo and
             WELLFIT have powered incline, so they are the ones where automatic incline is possible; the
-            Ksports Rehab and SereneLife have manual incline, so the app can only follow your pace.
+            Ksports Rehab and SereneLife have manual incline, so the app can only follow your pace. <a href="/serenelife-treadmills/" class="text-[#0F62FE] font-medium">SereneLife’s treadmills</a> are compact walkers rather than running machines, and most are rated to about 265 lb.
           </p>
           <p>
             A connection that drops during a workout is usually a phone or tablet problem rather than a

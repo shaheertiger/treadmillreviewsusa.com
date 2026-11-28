@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-26',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Best Treadmills', 'Under $400'],
   standfirst:
@@ -97,7 +97,7 @@ export default {
             own product page, both read on 26 November 2026. Where a listing leaves a figure out,
             the card says so rather than filling the gap. Motor horsepower is quoted as the listing
             states it and nothing more; none of these listings gives a continuous-duty rating, so
-            the figures are not comparable with each other or with premium treadmills.
+            the figures are not comparable with each other or with premium treadmills. The same applies to cheaper pads such as <a href="/akluer-treadmills/" class="text-[#0F62FE] font-medium">AKLUER’s</a>, which run from about $70 to $360 and give every motor only as “2.5 HP”.
           </p>`,
     },
     {
@@ -135,7 +135,7 @@ export default {
             incline. The two highest weight ratings, on the WELLFIT and the MERACH, come with belts
             of 43 and 47 inches, which suit walking and jogging better than running. Nothing here
             combines a 55-inch belt, a powered incline and a published rating above 300 lb at this
-            price, and a listing that claims all three under $400 deserves a careful second read.
+            price, and a listing that claims all three under $400 deserves a careful second read. At the other end of the trade, <a href="/serenelife-treadmills/" class="text-[#0F62FE] font-medium">SereneLife’s folding treadmills</a> cost $237.89 to $314.91 and claim little, with most rated to about 265 lb.
           </p>`,
     },
     {

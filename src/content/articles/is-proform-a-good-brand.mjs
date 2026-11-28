@@ -1,8 +1,8 @@
 export default {
   slug: 'is-proform-a-good-brand',
-  title: 'Is ProForm a Good Brand? (2026): An Honest Assessment',
+  title: "Is ProForm a Good Brand? An Honest Look at Warranty and iFIT",
   description:
-    'Is ProForm a good treadmill brand? Who owns it, what it does well and badly, its warranty pattern, how much it depends on iFIT, and who should — and should not — buy one.',
+    "Yes, for value: ProForm puts 20 by 60-inch decks and iFIT below NordicTrack prices, but its motors carry two years of cover at most and incline stops at 12%.",
   crumbLabel: 'Is ProForm a Good Brand?',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Question Answered',

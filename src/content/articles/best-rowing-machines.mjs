@@ -36,7 +36,7 @@ export default {
             Six rowers, one for each common way of making resistance and each common budget. If you
             only read one line: <strong>the Concept2 RowErg is the best rowing machine for most
             homes</strong>, the WaterRower is the best water rower, and the Sunny Health &amp; Fitness
-            dual-rail model is the magnetic rower to buy if you want quiet for well under $500. If you were hoping to catch it in a sale, our <a href="/black-friday-home-gym-deals/" class="text-[#0F62FE] font-medium">Black Friday home gym deals</a> page explains why we would not wait on the RowErg: at $990, that is simply its price.
+            dual-rail model is the magnetic rower to buy if you want quiet for well under $500. Sunny’s treadmill range is just as broad, at about 30 machines, as our <a href="/sunny-health-fitness-treadmills/" class="text-[#0F62FE] font-medium">Sunny treadmill guide</a> sets out. If you were hoping to catch it in a sale, our <a href="/black-friday-home-gym-deals/" class="text-[#0F62FE] font-medium">Black Friday home gym deals</a> page explains why we would not wait on the RowErg: at $990, that is simply its price.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>

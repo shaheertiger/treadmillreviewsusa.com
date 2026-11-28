@@ -39,7 +39,7 @@ export default {
             cheapest powered one we could verify and the one to choose for steep incline walking;
             the two Life Fitness machines are the step up in build and warranty; and the Sole TT8 is the
             light-commercial option for heavy use, in place of Life Fitness's gym-grade Club Series+,
-            which is sold through dealers and Life Fitness direct rather than on Amazon.
+            which is sold through dealers and Life Fitness direct rather than on Amazon. <a href="/true-fitness-treadmills/" class="text-[#0F62FE] font-medium">TRUE’s Performance treadmills</a>, with a 60-inch deck and a 350 lb rating, are another dealer-sold option at $5,199 to $6,999.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>

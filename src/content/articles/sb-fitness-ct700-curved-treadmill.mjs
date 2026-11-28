@@ -210,7 +210,7 @@ export default {
             and built for high-speed and sustained sprint work, and the seller recommends speeds up to 18 mph.
             Nylon adds a little natural drag, which is fine for HIIT and moderate intervals; steel runs
             freer at the top end. If repeated maximal sprints are central to your training, that is the reason
-            to pay more.
+            to pay more. Above both sits <a href="/trueform-treadmills/" class="text-[#0F62FE] font-medium">TrueForm</a>, whose Trainer was $3,495 and Runner $6,595 at Rogue Fitness.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The rest of the trade</h3>
           <p>
@@ -221,7 +221,7 @@ export default {
             same return terms. The independent catalogue we checked makes a point worth repeating: the CT700's
             upgrades do little for walking, so if you mainly walk or jog at moderate pace, the extra $600
             buys you little. Choose the CT700 for sprinting, sled pushes, heavier users or a studio; choose the
-            CT550 for HIIT and running in a home where space and access are tight.
+            CT550 for HIIT and running in a home where space and access are tight. The <a href="/tru-grit-treadmills/" class="text-[#0F62FE] font-medium">Tru Grit Runner Elite</a>, at $3,495, is another sled-push curved trainer at a similar level.
           </p>`,
     },
     {

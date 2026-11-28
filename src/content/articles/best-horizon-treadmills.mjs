@@ -238,7 +238,7 @@ export default {
             and the automatic speed and incline control are worth much less once you stop paying.
             Horizon does not have a platform. Its consoles are data displays with built-in
             programs, and the connected part of the machine is a Bluetooth radio that sends your
-            speed, incline and distance to whichever app you choose.
+            speed, incline and distance to whichever app you choose. Connected brands such as <a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium">Echelon</a> go the other way, to the point that the Stride’s warranty depends on its membership.
           </p>
           <p>
             That radio uses Bluetooth FTMS, the open fitness machine standard, and every current

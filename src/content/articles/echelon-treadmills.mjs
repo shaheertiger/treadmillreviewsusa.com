@@ -1,8 +1,8 @@
 export default {
   slug: 'echelon-treadmills',
-  title: 'Echelon Treadmill (2026): Stride-6, 6s and 8s Compared',
+  title: "Echelon Treadmill Review (2026): Stride-6, 6s and 8s Compared",
   description:
-    'Echelon’s Stride treadmills fold flat and lean on a paid membership. The current range, what works without Premier, why the warranty depends on it, and Echelon vs Peloton.',
+    "Echelon’s Stride treadmills fold flat at a button press, and the warranty depends on a paid membership. The Stride-6, 6s and 8s, and Echelon vs Peloton.",
   crumbLabel: 'Echelon Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',

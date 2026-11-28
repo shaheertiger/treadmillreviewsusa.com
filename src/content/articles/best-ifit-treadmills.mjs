@@ -42,7 +42,7 @@ export default {
             The other three each do one thing better. The ProForm Carbon TLX is the ProForm to buy if
             you are happy to use a tablet. The <a href="/proform-pro-2000-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>ProForm Pro 2000</a> adds a decline and a touchscreen for
             a little over $1,250. And the NordicTrack Commercial 2450 is the flagship: a 24-inch
-            screen and a 14 mph top speed for runners who will use both.
+            screen and a 14 mph top speed for runners who will use both. ProForm sells just four treadmills in two series, and our <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">best ProForm treadmills</a> ranking compares all of them.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
             <thead>

@@ -107,7 +107,7 @@ export default {
             Matrix is owned by Johnson Health Tech, which also owns Horizon and, since April 2024,
             <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex</a>. Matrix supplies gyms and studios and sells a premium home range alongside. The
             T5x belongs to the commercial side, which explains both its specification and the way it
-            reaches home buyers: through the used and remanufactured trade rather than a home store.
+            reaches home buyers: through the used and remanufactured trade rather than a home store. Its sister brand <a href="/vision-fitness-treadmills/" class="text-[#0F62FE] font-medium">Vision Fitness</a> also sells mainly through specialty dealers and local Vision offices rather than an online store.
           </p>`,
     },
     {

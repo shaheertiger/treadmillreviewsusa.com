@@ -58,7 +58,7 @@ export default {
       html: `          <p>
             Costco's treadmill range is narrow by design. At any given time there may be only a
             handful of models, sometimes fewer, and what is available in one warehouse may not be in
-            the next, or on the website.
+            the next, or on the website. One recent example is <a href="/centr-treadmills/" class="text-[#0F62FE] font-medium">Centr’s folding Runr and Runr-S</a>, which are sold by Centr and Costco rather than on Amazon.
           </p>
           <p>
             <strong>Selection rotates.</strong> Fitness equipment tends to be stocked more heavily

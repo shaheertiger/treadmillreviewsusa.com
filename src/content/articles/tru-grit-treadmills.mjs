@@ -3,9 +3,9 @@ const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
 
 export default {
   slug: 'tru-grit-treadmills',
-  title: 'Tru Grit Treadmill (2026): Grit Runner and Runner Elite',
+  title: "Tru Grit Treadmill Review (2026): Grit Runner and Runner Elite",
   description:
-    'Tru Grit sells two curved manual treadmills: the Grit Runner ($1,996-$2,699 at dealers) and the Runner Elite ($3,495). Figures, conflicts, warranty, dealers and better-documented alternatives.',
+    "Tru Grit’s curved Grit Runner costs $1,996 to $2,699 at dealers and the Runner Elite $3,495, both with resistance for sled pushes. What is confirmed.",
   crumbLabel: 'Tru Grit Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',

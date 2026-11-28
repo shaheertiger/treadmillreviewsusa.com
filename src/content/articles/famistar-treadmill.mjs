@@ -1,8 +1,8 @@
 export default {
   slug: 'famistar-treadmill',
-  title: 'Famistar Treadmill Guide (2026): Models, Claims and Warranty',
+  title: "Famistar Treadmill Review (2026): Models, Claims and Warranty",
   description:
-    'Famistar sells budget folding treadmills and walking pads through its own store and Walmart. The current range, the contradictory listing claims, three warranty lengths and who should buy.',
+    "Famistar sells budget folding treadmills and a walking pad on Walmart and its own store, with three different warranty lengths quoted. What to trust.",
   crumbLabel: 'Famistar Treadmill',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',

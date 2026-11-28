@@ -106,7 +106,7 @@ export default {
             aftermarket sellers make copies of them. <strong>Sole, Spirit, Horizon and Bowflex motors cost
             roughly twice as much</strong>, with fewer sellers and, in our searches, almost no low-cost copies.
             <strong>Commercial brands vary the most</strong>: a Precor motor ran from $293.99 to $719.99
-            depending on the model. A whole remanufactured Precor, by comparison, ran $2,495 to $4,799 in late November, per our <a href="/how-much-does-a-precor-treadmill-cost/" class="text-[#0F62FE] font-medium">Precor treadmill prices</a>.
+            depending on the model. Most of those motors go into used club machines, since <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor</a> now sells treadmills only to commercial buyers. A whole remanufactured Precor, by comparison, ran $2,495 to $4,799 in late November, per our <a href="/how-much-does-a-precor-treadmill-cost/" class="text-[#0F62FE] font-medium">Precor treadmill prices</a>.
           </p>
           <p>
             Read the condition before you buy. Several of the Horizon, Precor and Life Fitness listings above

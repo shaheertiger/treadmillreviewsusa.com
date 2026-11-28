@@ -72,7 +72,7 @@ export default {
             own Unsit page states three different user weight limits, two motor ratings and three
             different warranty statements, and its Lander pages give different height ranges. None of
             that means the product is bad. It means you should get the weight limit, the warranty and
-            the desk height for your exact configuration in writing before you order.
+            the desk height for your exact configuration in writing before you order. Budget brands show the same pattern: one <a href="/funmily-treadmills/" class="text-[#0F62FE] font-medium">FUNMILY walking pad</a> carries a 300, 350 or 400 lb limit depending on where you read it.
           </p>
           <p>
             Buy the set if you work standing for long stretches and want the treadmill to disappear

@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-27',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Best FitShow', 'Treadmills'],
   standfirst:
@@ -112,7 +112,7 @@ export default {
             even though some of them advertise an app. Two more listings that do name FitShow were left
             out to keep the list varied: the manual-incline Ksports 16-inch treadmill (about $265, 6.2 mph
             top speed) and the SereneLife Foldable Treadmill with Handrail (about $297), which we cover in
-            our <a href="/best-walking-pads-with-app/" class="text-[#0F62FE] font-medium">best walking pads with an app</a>.
+            our <a href="/best-walking-pads-with-app/" class="text-[#0F62FE] font-medium">best walking pads with an app</a>. <a href="/serenelife-treadmills/" class="text-[#0F62FE] font-medium">SereneLife</a> itself is a brand of Sound Around, Inc. of Brooklyn, the company behind Pyle.
           </p>`,
     },
     {

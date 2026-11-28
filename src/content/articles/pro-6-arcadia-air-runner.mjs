@@ -211,7 +211,7 @@ export default {
             moderate pace; added resistance steadies the belt, lets you make a session harder without
             running faster, and allows the "push the sled" efforts that field-sport and functional-fitness
             coaches like. The listing does not say what kind of resistance the machine uses or how it is
-            adjusted, which is worth asking about if you plan to change it often mid-session.
+            adjusted, which is worth asking about if you plan to change it often mid-session. For comparison, the <a href="/tru-grit-treadmills/" class="text-[#0F62FE] font-medium">Tru Grit Grit Runner</a>, from about $1,996, is one of the cheapest curved trainers with resistance settings.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The trade-offs of the format</h3>
           <p>

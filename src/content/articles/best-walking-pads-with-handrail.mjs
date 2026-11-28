@@ -92,7 +92,7 @@ export default {
             allows. The second was <strong>agreement on the basics</strong> — belt size, speed range
             and, where possible, weight capacity — between the manufacturer and at least one source
             that does not sell the product. The third was <strong>a reachable seller with written
-            warranty terms</strong>.
+            warranty terms</strong>. That third test is why a heavily searched 2-in-1 such as the <a href="/ajoosos-treadmills/" class="text-[#0F62FE] font-medium">AJOOSOS under desk treadmill</a> has no card: on 5 November 2026 its Amazon listing would not open, and AJOOSOS’s own store sold no treadmills.
           </p>
           <p>
             We also searched the US Consumer Product Safety Commission's notices for every brand on

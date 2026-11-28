@@ -87,7 +87,7 @@ export default {
             We have not tested these pads hands-on. Where a figure is missing from the card, it is
             because the sources we checked did not agree or did not give one, and the description says
             so. Check the exact listing before you buy: several of these pads are sold alongside
-            near-identical models with lower ratings or no rail.
+            near-identical models with lower ratings or no rail. Marketplace brands such as <a href="/ancheer-treadmills/" class="text-[#0F62FE] font-medium">ANCHEER</a> show the risk, with one listing giving both a 320 lb and a 350 lb limit.
           </p>`,
     },
     {

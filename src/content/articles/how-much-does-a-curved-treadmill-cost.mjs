@@ -59,7 +59,7 @@ export default {
             For what a curved treadmill does and does not do well, read our
             <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium">curved treadmill guide</a>; for the
             machines we would shortlist, see the
-            <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>.
+            <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>. One of the dearest, the motorless <a href="/centr-treadmills/" class="text-[#0F62FE] font-medium">Centr x HYROX Perform Tread</a> from Chris Hemsworth’s brand, is $6,999.
           </p>`,
     },
     {
@@ -168,7 +168,7 @@ export default {
             from $8,199. Technogym&rsquo;s Skillmill, at $15,250, is a club product. At this level you are paying for a
             particular curve, surface or finish, not for faster or harder training than a $3,500 machine allows. See our
             <a href="/trueform-treadmills/" class="text-[#0F62FE] font-medium">TrueForm guide</a> and
-            <a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium">Woodway guide</a> for those ranges.
+            <a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium">Woodway guide</a> for those ranges. Technogym’s home treadmills start lower, with the <a href="/technogym-treadmills/" class="text-[#0F62FE] font-medium">Technogym MyRun</a> at $5,390.
           </p>`,
     },
     {

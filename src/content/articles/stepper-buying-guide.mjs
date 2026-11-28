@@ -380,7 +380,7 @@ export default {
             Sunny Health &amp; Fitness, Sportsroyals, Niceday, Bells of Steel, MaxiClimber, Cubii,
             Xiser, Nordic Lifting, Merach, Fitvids, Yosuda, STEPR or CLMBR. BowFlex and its former
             owner Nautilus have recalls on other products, including SelectTech dumbbells in 2025 and
-            treadmills in 2022, but none for a Max Trainer.
+            treadmills in 2022, but none for a Max Trainer. Those 2022 treadmill recalls covered the <a href="/nautilus-treadmills/" class="text-[#0F62FE] font-medium">Nautilus T616 and T618</a>, which can start on their own.
           </p>
           <p>
             The recalls that matter in this category involve <strong>commercial stair machines</strong>,

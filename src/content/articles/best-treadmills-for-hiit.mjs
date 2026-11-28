@@ -183,7 +183,7 @@ export default {
             <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">treadmill interval workouts</a>
             are written with that lag in mind. If you would rather not touch the controls at all,
             a curved manual treadmill such as the Sole C80, or the RunFree mode on Wahoo's direct-sold
-            KICKR RUN, takes the button out of the loop.
+            KICKR RUN, takes the button out of the loop. Curved trainers such as <a href="/trueform-treadmills/" class="text-[#0F62FE] font-medium">TrueForm’s Runner and Trainer</a> do the same, with no motor at all.
           </p>`,
     },
     {

@@ -50,7 +50,7 @@ export default {
             light-commercial or premium home treadmill is usually the better answer. What makes a
             gym machine different in the first place is covered in our guide to
             <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills</a>;
-            this page is about the practicalities of bringing one home. Our guide to <a href="/types-of-treadmills/" class="text-[#0F62FE] font-medium">types of treadmills</a> shows where commercial machines sit against folding, non-folding and incline models.
+            this page is about the practicalities of bringing one home. <a href="/true-fitness-treadmills/" class="text-[#0F62FE] font-medium">TRUE Fitness</a> is one maker that sells both kinds: its Z500 home treadmill is $3,499, and its Performance models run to $6,999. Our guide to <a href="/types-of-treadmills/" class="text-[#0F62FE] font-medium">types of treadmills</a> shows where commercial machines sit against folding, non-folding and incline models.
           </p>`,
     },
     {

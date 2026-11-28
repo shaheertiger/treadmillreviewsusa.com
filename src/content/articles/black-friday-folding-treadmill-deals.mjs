@@ -92,7 +92,7 @@ export default {
           <p>
             One deliberate omission: the NordicTrack T Series 5 is a popular cheap machine on Amazon,
             but listings disagree on whether it folds, and we could not settle it. On a page about
-            folding treadmills that is disqualifying, so it is not here.
+            folding treadmills that is disqualifying, so it is not here. Listings for <a href="/oma-treadmills/" class="text-[#0F62FE] font-medium">OMA folding treadmills</a> such as the 7200EB have a similar problem, disagreeing with the 7200EB’s own manual on the belt and the motor.
           </p>`,
     },
     {

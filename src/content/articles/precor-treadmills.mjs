@@ -5,9 +5,9 @@ const row = (...cells) => `              <tr>${cells.map(td).join('')}</tr>`;
 
 export default {
   slug: 'precor-treadmills',
-  title: 'Precor Treadmill (2026): Models, Used Value and Warranty',
+  title: "Precor Treadmill (2026): Models, Used Prices and Warranty",
   description:
-    'Precor treadmills are now commercial-only and owned by Peloton. The current TRM 800 to 500 lines, what happened to the home models, used prices, the 20-amp circuit and the home warranty.',
+    "Precor, owned by Peloton, now sells only commercial treadmills; a remanufactured TRM 885 was $4,099 to $4,899. Used value, 20-amp circuits, warranty.",
   crumbLabel: 'Precor Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer\'s Guide',

@@ -6,9 +6,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Product Review',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-16',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ["GymProLuxe Review:", "Is It Legit, and Is It Any Good?"],
   standfirst:
@@ -243,7 +243,7 @@ export default {
             could not trace the original source of that claim. Our guide to
             <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">how to read reviews</a>
             explains how to tell a hands-on review from repackaged marketing; the same tests apply to
-            any fitness product.
+            any fitness product. Our page on <a href="/zofdim-treadmills/" class="text-[#0F62FE] font-medium">Zofdim treadmills</a> applies the same checks to a brand with no maker’s website at all.
           </p>`,
     },
     {

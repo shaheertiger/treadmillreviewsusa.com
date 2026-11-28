@@ -1,8 +1,8 @@
 export default {
   slug: 'golds-gym-treadmill',
-  title: "Gold's Gym Treadmill Guide (2026): Makers, Models and Parts",
+  title: "Gold's Gym Treadmill (2026): Who Makes It, Models and Parts",
   description:
-    'Gold’s Gym treadmills were made under licence by ICON, now iFIT, until the exclusive deal ended in 2019. What is still sold, the Trainer 430i and 720, iFIT, parts and what to buy instead.',
+    "Gold’s Gym treadmills were built by ICON, now iFIT, under a licence that ended in 2019. What is still sold, the Trainer 430i and 720, iFIT and parts.",
   crumbLabel: 'Gold’s Gym Treadmill',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',

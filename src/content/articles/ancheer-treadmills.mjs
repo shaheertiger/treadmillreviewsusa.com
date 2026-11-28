@@ -261,7 +261,7 @@ export default {
           <p>
             ANCHEER’s "12%" and "15%" incline pads mostly use a manual incline: you stop, lift the front and set
             a stand in one of two positions. That is a fixed slope for the whole session, not a hill you can
-            adjust mid-walk.
+            adjust mid-walk. <a href="/rhythm-fun-treadmill/" class="text-[#0F62FE] font-medium">RHYTHM FUN’s incline walking pads</a> work the same way, with a 13% manual incline across the current range.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Price</h3>
           <p>

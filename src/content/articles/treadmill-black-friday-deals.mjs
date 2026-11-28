@@ -336,7 +336,7 @@ export default {
             with a percentage badge between them. The "was" figure may be the manufacturer's
             suggested retail price, a "compare at" price, or simply a price the item was listed at
             briefly. If the machine has been selling well below it for months, the discount is
-            arithmetic against a number nobody paid.
+            arithmetic against a number nobody paid. Budget walking pad stores do this all year: <a href="/umay-treadmills/" class="text-[#0F62FE] font-medium">UMAY Fitness</a>, for one, usually prices its pads 40% below a “regular” price.
           </p>
           <p>
             Some warning signs are worth knowing:

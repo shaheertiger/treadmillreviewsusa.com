@@ -185,7 +185,7 @@ export default {
             Every walking pad has a rated user weight and a maximum speed, and both are there partly because of heat. The motor
             and controller are sized for a certain load at a certain pace. Ask for more and the pad draws more current for the
             whole session, so it reaches its protective limit sooner. You do not need to be over the limit to feel this: a user
-            close to the maximum, walking briskly, works the motor far harder than a lighter user strolling.
+            close to the maximum, walking briskly, works the motor far harder than a lighter user strolling. That matters with brands such as <a href="/umay-treadmills/" class="text-[#0F62FE] font-medium">UMAY</a>, where one model’s weight limit changes from page to page, so plan around the lower figure.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead><tr><th class="${th}">Load factor</th><th class="${th}">Why it adds heat</th><th class="${th}">What helps</th></tr></thead>
@@ -209,7 +209,7 @@ export default {
             If you are buying, headroom is the cheapest overheating prevention there is. A pad whose rated capacity is well above
             your weight, and whose top speed is well above the pace you actually walk, spends its life working well inside its
             limits. Our <a href="/best-walking-pads-for-heavy-people/" class="${a}">best walking pads for heavy people</a> guide
-            covers higher-capacity models.
+            covers higher-capacity models. A pad such as the <a href="/cybergoing-walking-pad/" class="text-[#0F62FE] font-medium">Cybergoing T10</a>, rated for 300 lb, suits walkers well under that figure rather than near it.
           </p>`,
     },
     {

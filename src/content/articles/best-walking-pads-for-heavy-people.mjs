@@ -58,7 +58,7 @@ export default {
             <a href="#capacity-margin" class="text-[#0F62FE] font-medium">why capacity margin matters</a>.
             A pad rated exactly at your weight is a pad running at its limit every time you step on
             it, and on a machine this light that shows up quickly in the belt, the deck and the
-            motor.
+            motor. That is worth remembering with budget brands such as <a href="/akluer-treadmills/" class="text-[#0F62FE] font-medium">AKLUER</a>, which gives every current pad the same 330 lb rating whatever its size or price.
           </p>`,
     },
     {
@@ -81,7 +81,7 @@ export default {
             had. The picks were made from published specifications, manufacturer and retailer
             listings, warranty terms and independent coverage, checked on 13 October 2026. For each
             pad we confirmed that it is currently sold, on the brand's own store, on Amazon, at a
-            specialist retailer, or several of these.
+            specialist retailer, or several of these. Capacity is where budget listings vary most: <a href="/superun-treadmills/" class="text-[#0F62FE] font-medium">Superun</a>, for one, claims 300 to 400 lb across its pads and publishes no spec sheet to settle which is right.
           </p>
           <p>
             The starting filter was a stated capacity of roughly 300 lb or more. That alone removes

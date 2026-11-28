@@ -99,7 +99,7 @@ export default {
             and a short standard warranty supplemented by paid service plans — looks more like
             buying commercial equipment than buying a NordicTrack online. Our guide to
             <a href="/what-treadmills-do-gyms-use/" class="text-[#0F62FE] font-medium">what treadmills gyms use</a>
-            places Technogym among the other club brands.
+            places Technogym among the other club brands. One of them, <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium">Cybex</a>, no longer sells a new treadmill at all, though its 770T is common on the used market.
           </p>`,
     },
     {

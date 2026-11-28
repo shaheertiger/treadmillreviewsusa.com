@@ -241,7 +241,7 @@ export default {
             should be most careful: several UREVO pads advertise 350 or 400 lb limits that their own manuals
             or Amazon listings put at 242 to 300 lb. Our
             <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a>
-            roundup shows how three of these pads compare with WalkingPad and MERACH.
+            roundup shows how three of these pads compare with WalkingPad and MERACH. <a href="/funmily-treadmills/" class="text-[#0F62FE] font-medium">FUNMILY</a> has the same habit, with one pad listed at 300, 350 or 400 lb depending on the page.
           </p>`,
     },
     {

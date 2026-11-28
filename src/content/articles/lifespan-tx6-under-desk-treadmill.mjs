@@ -303,7 +303,7 @@ export default {
             designed to stay under a desk, with two front wheels to roll it out when you need the
             floor. If you want incline, look at the MERACH pad in the cards above or our
             <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>
-            roundup. If you want something to hold, a pad with a handrail is a different product.
+            roundup. If you want something to hold, a pad with a handrail is a different product. Our <a href="/merach-treadmills/" class="text-[#0F62FE] font-medium">Merach treadmills guide</a> compares that pad with Merach’s other walking pads and its four T12 treadmills.
           </p>`,
     },
     {

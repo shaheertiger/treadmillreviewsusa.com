@@ -106,7 +106,7 @@ export default {
             close sibling, sold by a reseller. In a few cases it is not: at least one shop using a
             near-identical title describes a 2.0 HP machine rated for 250 lb, which is a different
             product. And a reseller is not Costway, so its warranty and returns are whatever that
-            reseller offers.
+            reseller offers. The <a href="/ajoosos-treadmills/" class="text-[#0F62FE] font-medium">AJOOSOS 2-in-1 under desk treadmill</a> raises the same question with even less to go on, since AJOOSOS’s own store sells electric scooters and no treadmills.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The versions you will see</h3>
           <ul>

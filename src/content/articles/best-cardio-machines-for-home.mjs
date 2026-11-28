@@ -36,7 +36,7 @@ export default {
             most work from the least floor space once it is stored. Still choosing between types?
             Our
             <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a>
-            works through goals, joints, space, noise and budget, and we have not repeated it here.
+            works through goals, joints, space, noise and budget, and we have not repeated it here. Schwinn sells treadmills as well: four folding models from $699 to $1,099, set out in our <a href="/schwinn-treadmills/" class="text-[#0F62FE] font-medium">Schwinn treadmills guide</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>

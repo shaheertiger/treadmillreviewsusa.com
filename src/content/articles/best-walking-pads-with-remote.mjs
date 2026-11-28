@@ -93,7 +93,7 @@ export default {
             Each card links to the Amazon listing we matched by its ASIN, Amazon’s product code, on
             24 November 2026. The specification line carries only what the listing title or its feature
             bullets state. Where a listing leaves a figure out, such as Goplus’s weight limit, the card says
-            so rather than borrowing a number from another seller.
+            so rather than borrowing a number from another seller. That matters with brands such as <a href="/superun-treadmills/" class="text-[#0F62FE] font-medium">Superun</a>, whose Amazon 2-in-1 listings claim 400 lb and 3.5 HP where other sources give 300 lb and 3.0 HP.
           </p>
           <p>
             The six are deliberately different. Two are budget flat pads (<a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> and Goplus), one is a premium

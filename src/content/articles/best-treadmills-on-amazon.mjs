@@ -72,7 +72,7 @@ export default {
             carries only figures that the brand's own listing and at least one other source agree
             on. Where a figure is missing — motor horsepower is missing from all six — it is
             because the sources disagreed or the brand does not publish it, and the description
-            says which.
+            says which. <a href="/oma-treadmills/" class="text-[#0F62FE] font-medium">OMA folding treadmills</a> show why: the 7200EB’s own manual and its Amazon listings disagree on the belt and the motor.
           </p>`,
     },
     {

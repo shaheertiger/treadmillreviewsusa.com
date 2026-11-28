@@ -242,7 +242,7 @@ export default {
           </p>
           <p>
             None of these generalisations replaces reading the terms for the specific machine on
-            the specific day you buy.
+            the specific day you buy. That matters most with marketplace names such as <a href="/zofdim-treadmills/" class="text-[#0F62FE] font-medium">Zofdim</a>, where we found no maker’s website at all.
           </p>`,
     },
     {

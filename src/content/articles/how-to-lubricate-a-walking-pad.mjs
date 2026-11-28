@@ -83,7 +83,7 @@ export default {
             Whatever the group, the deck still wears. Even a maintenance-free deck can dry out
             eventually, and the signs listed further down this page apply to every pad. If a pad
             described as maintenance-free starts showing them, contact the seller before
-            lubricating it yourself, particularly while it is under warranty.
+            lubricating it yourself, particularly while it is under warranty. <a href="/ypoo-treadmills/" class="text-[#0F62FE] font-medium">YPOO</a> makes that easier than most budget brands, with a US phone line behind its Amazon listings.
           </p>`,
     },
     {

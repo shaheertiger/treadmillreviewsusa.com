@@ -192,7 +192,7 @@ export default {
             Schwinn Fitness's site does not name its parent, but its careers link points to Johnson Health Tech. That
             puts Schwinn treadmills alongside Horizon, Matrix, Vision and Bowflex in one group. Commercial Schwinn indoor-cycling
             bikes have long been made under licence by a different company, Core Health &amp; Fitness, which is why
-            gym Schwinn equipment and home Schwinn treadmills come from different places.
+            gym Schwinn equipment and home Schwinn treadmills come from different places. Older Vision home treadmills such as the T9200 and TF20 are worth checking against the January 2026 power-cord recall, which our <a href="/vision-fitness-treadmills/" class="text-[#0F62FE] font-medium">Vision Fitness treadmill guide</a> covers.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Why it matters to a buyer</h3>
           <p>

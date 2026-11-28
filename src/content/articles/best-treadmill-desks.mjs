@@ -71,7 +71,7 @@ export default {
             <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
             and
             <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>
-            cover that half of the set-up. If floor space is tight, our <a href="/best-mini-treadmills/" class="text-[#0F62FE] font-medium">best mini treadmills</a> list the smallest pads, from about $135.
+            cover that half of the set-up. If you would rather have the desk built in, our <a href="/funmily-treadmills/" class="text-[#0F62FE] font-medium">FUNMILY treadmill guide</a> looks at a budget Amazon walking treadmill sold with its own desk and handle bar. If floor space is tight, our <a href="/best-mini-treadmills/" class="text-[#0F62FE] font-medium">best mini treadmills</a> list the smallest pads, from about $135.
           </p>`,
     },
     {

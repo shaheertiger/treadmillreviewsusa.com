@@ -11,9 +11,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Yesoul Treadmill Review:', 'The T3S Plus and T5 Series'],
   standfirst:
@@ -421,7 +421,7 @@ export default {
       html: `          <p>
             We searched the US Consumer Product Safety Commission’s recall database for Yesoul on 5 November 2026
             and found no recall of any Yesoul treadmill or other product. The treadmill recalls since 2015 concern
-            other brands, including Peloton, Nautilus, Horizon and Matrix.
+            other brands, including Peloton, Nautilus, Horizon and Matrix. The Nautilus recall is the awkward one for used buyers: as our <a href="/nautilus-treadmills/" class="text-[#0F62FE] font-medium">Nautilus treadmill guide</a> explains, the 2022 T616 and T618 recall has no remedy left.
           </p>
           <p>
             A 30% incline and a -3% decline change the hazards of a treadmill. At steep grades the belt pulls

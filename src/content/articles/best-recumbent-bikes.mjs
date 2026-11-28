@@ -77,7 +77,7 @@ export default {
           <p>
             Two are Schwinn models. That reflects the market rather than a preference: Schwinn's
             recumbents are among the few in this price range with consistent figures across the
-            maker's page and several independent reviews.
+            maker's page and several independent reviews. The brand’s <a href="/schwinn-treadmills/" class="text-[#0F62FE] font-medium">folding treadmills</a> show the same consistency: independent reviews agree with Schwinn on the 810’s belt, speed, incline and capacity.
           </p>`,
     },
     {

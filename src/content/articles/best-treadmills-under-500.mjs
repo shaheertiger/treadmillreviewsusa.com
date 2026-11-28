@@ -278,7 +278,7 @@ export default {
             <strong>UREVO Strol 2E Pro</strong> is the best compromise we found: a fold-down handle
             and a 12% manual incline on a pad that still folds away. If you need full rails and a
             powered incline, the <strong>Goplus 3.75HP</strong> is the conventional folding treadmill
-            to look at.
+            to look at. <a href="/rhythm-fun-treadmill/" class="text-[#0F62FE] font-medium">RHYTHM FUN</a> sells incline walking pads on the same idea, built around a 13% manual incline, on Amazon and through its own small US store.
           </p>
           <p>
             And if you might jog, or weigh more than about 220 lbs and want a sturdier machine than
