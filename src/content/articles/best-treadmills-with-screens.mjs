@@ -481,6 +481,12 @@ export default {
       blurb: "Five TV floor stands, rolling carts and wall mounts for watching from a treadmill, with the eye-height…",
       url: '/best-treadmill-tv-stands/',
     },
+    {
+      kicker: 'Features',
+      title: 'Best Treadmills With a Built-In Fan',
+      blurb: 'Picks whose listings name a console fan.',
+      url: '/best-treadmills-with-fan/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">The best treadmill with a screen is the one whose screen you will use

@@ -469,6 +469,12 @@ export default {
       blurb: 'Power, belt, console and error codes.',
       url: '/xterra-treadmill-troubleshooting/',
     },
+    {
+      kicker: 'Price',
+      title: 'How Much Does an XTERRA Treadmill Cost?',
+      blurb: 'Every XTERRA model, sale vs regular.',
+      url: '/how-much-does-an-xterra-treadmill-cost/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">XTERRA makes inexpensive treadmills with a real manufacturer behind

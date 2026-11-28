@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Do You Need a Treadmill Mat?',
   kicker: 'Setup',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.8k',
   h1: ['Do You Need a', 'Treadmill Mat?'],
   standfirst:
@@ -43,7 +43,7 @@ export default {
           </p>
           <p>
             <strong>It keeps dust and fibre away from the motor.</strong> The motor compartment
-            sits under the front of the deck, and its cooling fan draws in air from around and
+            sits under the front of the deck, and its <a href="/best-treadmills-with-fan/" class="text-[#0F62FE] font-medium" data-autolink>cooling fan</a> draws in air from around and
             beneath the machine. On carpet especially, that air carries fibre. A mat is a barrier
             that reduces how much reaches the motor and controller board, which is the most
             practically valuable thing it does.

@@ -549,6 +549,12 @@ export default {
       blurb: 'The CPSC warning on four Sperax models, explained.',
       url: '/sperax-walking-pad-recall/',
     },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a MERACH Treadmill Cost?',
+      blurb: 'Every MERACH pad and treadmill, priced.',
+      url: '/how-much-does-a-merach-treadmill-cost/',
+    },
   ],
   bottomLine: [
     `Walking pads are discounted so often that a Black Friday badge tells you very little. The

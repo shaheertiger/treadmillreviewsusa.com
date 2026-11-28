@@ -550,6 +550,12 @@ export default {
       blurb: 'Under-desk treadmills and desk sets, priced.',
       url: '/how-much-does-a-lifespan-treadmill-cost/',
     },
+    {
+      kicker: 'Fixes',
+      title: 'LifeSpan Treadmill Troubleshooting',
+      blurb: 'Desk treadmill stops and error codes.',
+      url: '/lifespan-treadmill-troubleshooting/',
+    },
   ],
   bottomLine: [
     `If you want the whole thing in one order, UPLIFT's Treadmill Desk set, sold by UPLIFT, is

@@ -515,6 +515,12 @@ export default {
       blurb: 'What the number is worth, and why heat pushes it up indoors.',
       url: '/treadmill-heart-rate-zones/',
     },
+    {
+      kicker: 'Features',
+      title: 'Best Treadmills With a Built-In Fan',
+      blurb: 'Picks whose listings name a console fan.',
+      url: '/best-treadmills-with-fan/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Staying cool on a treadmill is mostly about air: move it, cool it

@@ -97,7 +97,7 @@ export default {
           <p>
             We also searched the US Consumer Product Safety Commission's notices for every brand on
             the shortlist. Sperax, which sells 2-in-1 pads with fold-up rails, is excluded: in April
-            2026 the CPSC warned consumers to stop using Sperax walking pads and treadmills, citing
+            2026 the CPSC warned consumers to stop using <a href="/sperax-walking-pad-recall/" class="text-[#0F62FE] font-medium" data-autolink>Sperax walking pads</a> and treadmills, citing
             reports of uncontrolled speed changes, abrupt stops, falls and overheating, after the
             importer declined to agree to a recall. A rail does not make a pad with that record
             safe.
@@ -271,7 +271,8 @@ export default {
             Our guide to the
             <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">best treadmills for seniors</a>
             covers those machines, and its advice applies to anyone who needs to rely on a rail
-            rather than touch it occasionally.
+            rather than touch it occasionally. Our guide to <a href="/ksports-treadmills/" class="text-[#0F62FE] font-medium">Ksports treadmills</a> covers a budget
+            rehab walking treadmill with handrail grips along the top, middle and sides.
           </p>
           <p>
             <strong>If you want to run regularly,</strong> the higher speed with the rail up is not

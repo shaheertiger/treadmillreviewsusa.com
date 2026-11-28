@@ -668,6 +668,12 @@ export default {
       blurb: 'Budget folding treadmills and pads on Amazon.',
       url: '/serenelife-treadmills/',
     },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a MERACH Treadmill Cost?',
+      blurb: 'Every MERACH pad and treadmill, priced.',
+      url: '/how-much-does-a-merach-treadmill-cost/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Merach makes good-value walking machines, not running treadmills.</strong> The

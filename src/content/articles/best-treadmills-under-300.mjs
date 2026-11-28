@@ -133,7 +133,8 @@ export default {
             Yesoul below. That is not a failure of shopping; it is
             where the money goes. A pad puts nearly all of it into the belt and motor, which is why
             a $250 pad is often a better walking machine than a $300 "folding treadmill" that has
-            spent the same money on an upright and a frame.
+            spent the same money on an upright and a frame. If you need long handrails rather than a pad, our guide to
+            <a href="/ksports-treadmills/" class="text-[#0F62FE] font-medium">Ksports treadmills</a> covers a budget rehab walking treadmill.
           </p>
           <p>
             <strong>You are not buying a running deck.</strong> The belts here run from about 35 to

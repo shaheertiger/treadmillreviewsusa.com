@@ -538,6 +538,12 @@ export default {
       blurb: 'Why it stops and how to cool it.',
       url: '/walking-pad-overheating/',
     },
+    {
+      kicker: 'Features',
+      title: 'Best Treadmills With a Built-In Fan',
+      blurb: 'Picks whose listings name a console fan.',
+      url: '/best-treadmills-with-fan/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Overheating is nearly always friction, and friction is nearly

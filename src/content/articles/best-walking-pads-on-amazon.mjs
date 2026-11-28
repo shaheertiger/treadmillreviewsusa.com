@@ -157,7 +157,8 @@ export default {
             then sets much of the return process. For walking pads the second is the most common, and
             it is usually fine when the seller is the brand. When we checked, Amazon’s Z1 was sold and
             shipped by KingSmith, WalkingPad’s maker, and a W50 offer we traced was sold by MERACH’s
-            own storefront. UREVO pads appear from Amazon itself and from third-party sellers.
+            own storefront. UREVO pads appear from Amazon itself and from third-party sellers. Every listing in our
+            guide to <a href="/ksports-treadmills/" class="text-[#0F62FE] font-medium">Ksports treadmills</a> was sold by one storefront, Spreetail, rather than Amazon.com.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The warranty comes from the brand, not Amazon</h3>
           <p>

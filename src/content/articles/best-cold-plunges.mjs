@@ -266,7 +266,7 @@ export default {
             <strong>What the sellers say.</strong> Amazon listings for the products here promise faster
             recovery, less soreness and inflammation, better sleep and mood, stronger immunity and, in Ice
             Barrel's 500 listing, weight loss and relief from depression and anxiety. Those are the sellers'
-            claims. Vibration plates are sold the same way; our <a href="/lifepro-waver-vibration-plate-review/" class="text-[#0F62FE] font-medium">LifePro Waver review</a> notes that the maker's own manual says the health benefits it suggests are not certified by any regulator.
+            claims. <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium" data-autolink>Vibration plates</a> are sold the same way; our <a href="/lifepro-waver-vibration-plate-review/" class="text-[#0F62FE] font-medium">LifePro Waver review</a> notes that the maker's own manual says the health benefits it suggests are not certified by any regulator.
           </p>
           <p>
             <strong>What the research says.</strong> A 2012 Cochrane review of cold-water immersion after

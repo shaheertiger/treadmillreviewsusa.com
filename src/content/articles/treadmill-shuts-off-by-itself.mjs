@@ -511,6 +511,12 @@ export default {
       blurb: 'Friction, tension and motor causes of a belt that hesitates under load.',
       url: '/treadmill-belt-slows-down-when-i-step-on-it/',
     },
+    {
+      kicker: 'Fixes',
+      title: 'Echelon Treadmill Troubleshooting',
+      blurb: 'Error codes, stopping, belt and app.',
+      url: '/echelon-treadmill-troubleshooting/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Diagnose by timing.</strong> Stops within seconds point at the

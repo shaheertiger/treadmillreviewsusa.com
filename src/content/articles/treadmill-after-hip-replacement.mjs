@@ -408,7 +408,8 @@ export default {
             <a href="/best-walking-machines-for-seniors/" class="${a}">best walking machines for seniors</a>
             prioritise low speeds, low decks and full-length rails, and our roundup of
             <a href="/best-treadmills-with-handrails/" class="${a}">treadmills with long handrails</a>
-            lists models with rails along both sides. Most walking pads have no rails and a remote control
+            lists models with rails along both sides; our guide to <a href="/ksports-treadmills/" class="text-[#0F62FE] font-medium">Ksports treadmills</a> covers a budget
+            rehab walking treadmill with removable long rails. Most walking pads have no rails and a remote control
             that is easy to drop; our guide to
             <a href="/best-walking-pads-for-seniors/" class="${a}">walking pads for seniors</a>
             covers the few with a support bar, which are better suited to later in recovery.

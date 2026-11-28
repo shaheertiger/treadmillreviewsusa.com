@@ -851,6 +851,18 @@ export default {
       blurb: 'Dated used and refurbished prices against new.',
       url: '/how-much-does-a-used-treadmill-cost/',
     },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a MERACH Treadmill Cost?',
+      blurb: 'Every MERACH pad and treadmill, priced.',
+      url: '/how-much-does-a-merach-treadmill-cost/',
+    },
+    {
+      kicker: 'Price',
+      title: 'How Much Does an XTERRA Treadmill Cost?',
+      blurb: 'Every XTERRA model, sale vs regular.',
+      url: '/how-much-does-an-xterra-treadmill-cost/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Typical US ranges:</strong> walking pads about $200-$600, budget

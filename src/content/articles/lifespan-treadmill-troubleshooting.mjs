@@ -51,7 +51,7 @@ export default {
             <strong>If a LifeSpan desk treadmill stops on its own, it is usually Intelli-Guard, which stops the belt when
             it does not count steps (after 60 seconds on current bases, 20 seconds on older desk consoles). If it will not start, push the
             safety key fully home, check the 9-pin console cable and plug the base straight into a grounded wall outlet
-            that is not GFI-protected, with no extension cord.</strong> Then switch off at the base&rsquo;s own power switch,
+            that is not GFI-protected, with no extension cord.</strong> Then switch off at the base&rsquo;s own <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a>,
             wait, and start again. That clears most LifeSpan problems. If it does not, match your symptom below.
           </p>
           <ul>
@@ -81,7 +81,7 @@ export default {
             </tbody>
           </table></div>
           <p>
-            If you smell burning from the motor area, the belt will not move at all, or the belt keeps moving when the key
+            If you smell burning from the motor area, the <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium" data-autolink>belt will not move</a> at all, or the belt keeps moving when the key
             is out, stop using the treadmill, switch it off and unplug it, and contact LifeSpan. For the same checks on any
             brand, see our
             <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a>.
@@ -142,7 +142,7 @@ export default {
             <strong>Intelli-Guard is LifeSpan&rsquo;s walk detection, and on current bases it stops the belt if it detects no
             steps for more than 60 seconds.</strong> The TX6, TR1200B Pro and TR5000B Pro manuals all describe it that way:
             step away for more than sixty seconds and the belt &ldquo;will automatically glide to a smooth stop.&rdquo; On the
-            older desks, LifeSpan&rsquo;s &ldquo;Treadmill Desk and Bike Desk Personal Settings&rdquo; post says Intelli-Guard
+            older desks, LifeSpan&rsquo;s &ldquo;<a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium" data-autolink>Treadmill Desk</a> and Bike Desk Personal Settings&rdquo; post says Intelli-Guard
             stops the walking belt if you do not walk on it for 20 seconds. That post covers the 2016 and later TR800-DT5,
             TR1200-DT5, TR1200-DT7, TR5000-DT5 and TR5000-DT7 and the 2018 and later DT3 models.
           </p>
@@ -346,7 +346,7 @@ export default {
           </table></div>
           <p>
             LifeSpan&rsquo;s help desk has its own short answers for some of these on older bases. For DC4 it blames too much
-            friction, usually too little silicone, and says to lubricate with one ounce, then replace the belt if that does not
+            friction, usually too little silicone, and says to lubricate with one ounce, then <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>replace the belt</a> if that does not
             help. For DC6 and DC7 it says the motor control board and running belt need replacing. Those answers go further
             than the Pro manuals&rsquo; first steps, so try the manual&rsquo;s steps first and contact LifeSpan if the code returns.
           </p>

@@ -11,8 +11,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '1.0k',
   h1: ['How Much Does a', 'LifeSpan Treadmill Cost?'],
   standfirst:
@@ -533,6 +534,12 @@ export default {
       title: 'How Much Does a Horizon Treadmill Cost?',
       blurb: 'Every Horizon priced, for buyers who want a running treadmill.',
       url: '/how-much-does-a-horizon-treadmill-cost/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'LifeSpan Treadmill Troubleshooting',
+      blurb: 'Desk treadmill stops and error codes.',
+      url: '/lifespan-treadmill-troubleshooting/',
     },
   ],
   bottomLine: [

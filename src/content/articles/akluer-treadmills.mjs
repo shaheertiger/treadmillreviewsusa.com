@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   h1: ['AKLUER Treadmill Reviews:', 'Models and What to Check'],
   standfirst:
     'AKLUER is a real brand selling budget walking pads on Amazon, not a scam, and its pads are a reasonable buy for slow desk walking. Every current model is rated for 330 lb, most stop at 4 mph, the motor is given only as "2.5 HP", and the one-year warranty has to be activated on AKLUER’s own site. This guide lists each model on Amazon, who sells it, and what to check before you order.',
@@ -219,7 +219,8 @@ export default {
             <li><strong>Warranty:</strong> one year on frame, motor and parts, for the original buyer, after you submit
             your order details on akluer.com (checked November 2026).</li>
             <li><strong>Sellers:</strong> mostly third-party sellers named YGZX OFFICE and FEICHISPORT, not AKLUER
-            itself, so read the seller line on the listing.</li>
+            itself, so read the seller line on the listing. The same check applies to
+            <a href="/ksports-treadmills/" class="text-[#0F62FE] font-medium">Ksports treadmills</a>, all sold by one storefront, Spreetail.</li>
           </ul>
           <p>
             That puts AKLUER in the same group as the other cheap <a href="/best-walking-pads-on-amazon/" class="text-[#0F62FE] font-medium" data-autolink>Amazon walking pad</a> brands, and the same advice applies
@@ -449,7 +450,7 @@ export default {
           <p>
             For walking at 1 to 3 mph, that rarely matters: a light walker on a flat pad asks little of any motor.
             It matters more as the load rises, with a heavier user, a long session, or powered incline, because that is
-            where a small motor runs hot. The TW140X's listing mentions an external cooling fan, which is a sensible
+            where a small motor runs hot. The TW140X's listing mentions an external <a href="/best-treadmills-with-fan/" class="text-[#0F62FE] font-medium" data-autolink>cooling fan</a>, which is a sensible
             addition for an incline pad. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill
             horsepower guide</a> explains the difference between peak and continuous ratings, and why a 330 lb rating
             on a light pad is a ceiling, not a target.

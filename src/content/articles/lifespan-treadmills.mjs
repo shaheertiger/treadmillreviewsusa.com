@@ -471,6 +471,12 @@ export default {
       blurb: 'Under-desk treadmills and desk sets, priced.',
       url: '/how-much-does-a-lifespan-treadmill-cost/',
     },
+    {
+      kicker: 'Fixes',
+      title: 'LifeSpan Treadmill Troubleshooting',
+      blurb: 'Desk treadmill stops and error codes.',
+      url: '/lifespan-treadmill-troubleshooting/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">LifeSpan’s under-desk treadmills remain among the best-specified

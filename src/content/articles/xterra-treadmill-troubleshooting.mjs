@@ -585,6 +585,12 @@ export default {
       blurb: 'Error codes, belt and power, from Schwinn manuals.',
       url: '/schwinn-treadmill-troubleshooting/',
     },
+    {
+      kicker: 'Price',
+      title: 'How Much Does an XTERRA Treadmill Cost?',
+      blurb: 'Every XTERRA model, sale vs regular.',
+      url: '/how-much-does-an-xterra-treadmill-cost/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Seat the safety key, check the front breaker and give the treadmill its

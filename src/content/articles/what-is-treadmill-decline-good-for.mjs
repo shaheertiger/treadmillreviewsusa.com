@@ -34,7 +34,7 @@ export default {
             <strong>Decline is good for training the descent: it prepares the thigh muscles for the
             braking work of downhill running and walking, which flat and uphill training do not.</strong>
             That makes it useful for downhill or hilly races, for hiking and mountain trips, and for
-            reducing the severe muscle soreness that a first long descent tends to cause. Our <a href="/best-treadmills-for-hiking/" class="text-[#0F62FE] font-medium">best treadmills for hiking</a> include the Sole TT8 as the descent specialist.
+            reducing the severe muscle soreness that a first long descent tends to cause. Our <a href="/best-treadmills-for-hiking/" class="text-[#0F62FE] font-medium">best treadmills for hiking</a> include the <a href="/sole-tt8-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Sole TT8</a> as the descent specialist.
           </p>
           <p>
             On the flat, and even more going uphill, your leg muscles mostly shorten as they work. Going

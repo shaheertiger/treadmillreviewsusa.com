@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['How to Pack a Treadmill:', 'For a Move, Storage or a Return'],
   standfirst:

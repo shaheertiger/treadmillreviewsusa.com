@@ -482,6 +482,12 @@ export default {
       blurb: 'Every common fault, in the order worth checking.',
       url: '/treadmill-troubleshooting/',
     },
+    {
+      kicker: 'Fixes',
+      title: 'LifeSpan Treadmill Troubleshooting',
+      blurb: 'Desk treadmill stops and error codes.',
+      url: '/lifespan-treadmill-troubleshooting/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Read the display while it beeps.</strong> A key message, LUBE or an error code tells you

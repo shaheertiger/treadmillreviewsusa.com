@@ -470,6 +470,8 @@ export default {
             warranty terms.</li>
             <li><strong>DeerRun</strong> sells similar pads with the same PitPat app, and appears to be related to
             Superun.</li>
+            <li><strong>Ksports</strong> is another thinly documented Amazon brand, with walking pads and a rehab
+            treadmill sold by one storefront and a one-year warranty. Our guide to <a href="/ksports-treadmills/" class="text-[#0F62FE] font-medium">Ksports treadmills</a> covers the range.</li>
           </ul>
           <p>
             If you are not set on a brand, our roundup of the

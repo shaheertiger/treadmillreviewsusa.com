@@ -172,7 +172,7 @@ export default {
             If you itemise deductions, a donation to a qualifying charity may be tax deductible at
             its fair market value — which for a used treadmill is a secondhand price, not the
             original one. Get a receipt describing the item. The rules have conditions, so check
-            with a tax adviser rather than assuming. Our <a href="/how-much-does-a-used-treadmill-cost/" class="text-[#0F62FE] font-medium">guide to used treadmill prices</a> gives dated examples, such as a typical used Peloton Tread selling for about $1,800.
+            with a tax adviser rather than assuming. Our <a href="/how-much-does-a-used-treadmill-cost/" class="text-[#0F62FE] font-medium">guide to used treadmill prices</a> gives dated examples, such as a typical <a href="/used-peloton-tread/" class="text-[#0F62FE] font-medium" data-autolink>used Peloton Tread</a> selling for about $1,800.
           </p>`,
     },
     {

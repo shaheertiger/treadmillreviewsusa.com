@@ -605,6 +605,12 @@ export default {
       blurb: 'How long and wide a belt you need for walking, jogging and running.',
       url: '/treadmill-belt-size-guide/',
     },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a MERACH Treadmill Cost?',
+      blurb: 'Every MERACH pad and treadmill, priced.',
+      url: '/how-much-does-a-merach-treadmill-cost/',
+    },
   ],
   bottomLine: [
     `For most people with up to $400 to spend, the <strong class="text-white">MERACH 18% Auto Incline

@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Bowflex T6 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Bowflex T6', 'Treadmill Review'],
   standfirst:

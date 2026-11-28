@@ -12,8 +12,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.0k',
   h1: ['How Much Does a', 'Precor Treadmill Cost?'],
   standfirst:

@@ -11,8 +11,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.0k',
   h1: ['How Much Does a', 'Horizon Treadmill Cost?'],
   standfirst:

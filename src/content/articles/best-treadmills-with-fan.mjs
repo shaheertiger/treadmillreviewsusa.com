@@ -44,10 +44,10 @@ export default {
           </p>
           <ul>
             <li><strong>Best overall:</strong> SOLE F65, $1,199.99, with a crossflow fan, dual Bluetooth speakers and kick-release folding.</li>
-            <li><strong>Best budget:</strong> THERUN 15% Auto Incline Treadmill, about $387, which names the fan in its title and its first bullet.</li>
+            <li><strong>Best budget:</strong> THERUN 15% <a href="/best-auto-incline-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Auto Incline Treadmill</a>, about $387, which names the fan in its title and its first bullet.</li>
             <li><strong>Best for running under $1,000:</strong> THERUN Foldable Treadmill with 20% Auto Incline, about $720, with 12 mph, a 55 by 20-inch belt and a built-in cooling fan.</li>
             <li><strong>Best brand-name compact:</strong> SOLE F50, $899.99, with a cooling fan, a 20 by 55-inch deck and, per SOLE, a lifetime frame and motor warranty.</li>
-            <li><strong>Best wide deck:</strong> Horizon 7.4 AT, about $1,500, with a 22 by 60-inch deck and a fan named in its listing; heavier users on a budget should look at the 450 lb ANCHEER (about $500), and the FUNMILY (about $800) adds a 10.1-inch WiFi screen.</li>
+            <li><strong>Best wide deck:</strong> Horizon 7.4 AT, about $1,500, with a 22 by 60-inch deck and a fan named in its listing; heavier users on a budget should look at the 450 lb ANCHEER (about $500), and the <a href="/funmily-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>FUNMILY</a> (about $800) adds a 10.1-inch WiFi screen.</li>
           </ul>
           <p>
             A console fan is a small fan aimed at your face and chest from close range. It helps on a walk
@@ -130,7 +130,7 @@ export default {
             face, neck and upper chest from roughly arm&rsquo;s length.</strong> It is there for comfort. It
             moves a modest amount of air across the part of your body nearest the console, which helps sweat
             evaporate there and makes a walk or steady jog feel fresher. Most have one or two speeds on a
-            console button, and some, like the FUNMILY and ANCHEER here, add a slot for an aroma tablet in the
+            console button, and some, like the FUNMILY and <a href="/ancheer-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>ANCHEER</a> here, add a slot for an aroma tablet in the
             airflow.
           </p>
           <p>
@@ -214,7 +214,7 @@ export default {
             </tbody>
           </table></div>
           <p>
-            Horizon&rsquo;s own product summary for the 7.4 AT, which we read on horizonfitness.com&rsquo;s
+            Horizon&rsquo;s own product summary for the <a href="/horizon-7-4-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>7.4 AT</a>, which we read on horizonfitness.com&rsquo;s
             product data the same day, lists the deck, motor, display and 350 lb capacity but does not mention
             the fan, so for that one the Amazon bullet is the only written source. It is a Horizon-branded
             listing, but if the fan matters to you, confirm it with Horizon or the seller before ordering.

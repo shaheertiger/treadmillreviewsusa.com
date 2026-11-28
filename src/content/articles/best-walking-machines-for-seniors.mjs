@@ -71,7 +71,8 @@ export default {
             If you already know you want a treadmill, our
             ${A('/best-treadmills-for-seniors/', 'best treadmills for seniors')} guide goes deeper on
             full-size machines, and our ${A('/best-treadmills-with-handrails/', 'treadmills with handrails')}
-            roundup covers five rail treadmills sold on Amazon. This page sits above both: it is for the
+            roundup covers five rail treadmills sold on Amazon. Our guide to <a href="/ksports-treadmills/" class="text-[#0F62FE] font-medium">Ksports treadmills</a> covers a
+            budget Amazon brand built around a rehab walking treadmill with long handrails. This page sits above both: it is for the
             reader who has not yet decided what kind of machine to buy.
           </p>`,
     },
@@ -493,7 +494,7 @@ export default {
             Large connected treadmills built around a touchscreen and a subscription, which add cost and
             complexity an older walker rarely wants. And clinical treadmills such as the Landice L7
             Rehabilitation, which are excellent but sold through dealers at clinic prices; if a therapist
-            recommends one, they will usually know a dealer. Landice’s home L7, by comparison, listed from $5,429 on Landice’s own store in November 2026, as our <a href="/how-much-does-a-landice-treadmill-cost/" class="text-[#0F62FE] font-medium">Landice pricing page</a> sets out.
+            recommends one, they will usually know a dealer. <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Landice</a>’s home L7, by comparison, listed from $5,429 on Landice’s own store in November 2026, as our <a href="/how-much-does-a-landice-treadmill-cost/" class="text-[#0F62FE] font-medium">Landice pricing page</a> sets out.
           </p>`,
     },
     {

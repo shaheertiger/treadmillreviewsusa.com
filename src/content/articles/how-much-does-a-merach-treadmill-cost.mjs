@@ -68,7 +68,7 @@ export default {
       id: 'price-table',
       heading: 'MERACH Treadmill Prices by Model',
       html: `          <p>
-            The tables below give every MERACH-branded treadmill and walking pad listing we found on Amazon on 28 November
+            The tables below give every MERACH-branded treadmill and <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> listing we found on Amazon on 28 November
             2026, grouped by type, with the price Amazon showed, the higher reference price beside it and the label it
             carried. Amazon labels its reference price either “List Price” or “Typical price”; we give whichever the
             listing used. Every “Cyber Monday Deal” below was open to all shoppers, not only Prime members. Specifications
@@ -250,7 +250,7 @@ export default {
             MERACH’s own store ran a site-wide “Black Friday Sale | Buy More Save More” banner with the line “Lowest Price of
             the Year”. Its treadmill pages added the extra $10 code offer on the T12, the $30 launch offer on the T12 Pro,
             a “BF Coupon Eligible” badge on the W60 Plus and a “Clearance” badge on the W50 TrekPad. The store’s three-month
-            price guarantee on the same banner was attached to its Smith machine, not to the treadmills.
+            price guarantee on the same banner was attached to its <a href="/best-smith-machines/" class="text-[#0F62FE] font-medium" data-autolink>Smith machine</a>, not to the treadmills.
           </p>
           <p>
             Is it a good time to buy? For the W50 TrekPad on Amazon and the T12 Pro on MERACH’s store, the 28 November
@@ -324,7 +324,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Returns and delivery on MERACH’s store</h3>
           <p>
             MERACH offers a 30-day home trial on its own store: the machine must be undamaged, resellable, complete and in
-            its original packaging. If you return it for your own reasons, you pay the return shipping, and MERACH says it
+            its <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a>. If you return it for your own reasons, you pay the return shipping, and MERACH says it
             may charge restocking fees if the item comes back damaged or incomplete. Report a defect or damage within 24
             hours with photos or video. Orders can be cancelled within two days if they have not shipped.
           </p>
