@@ -1,0 +1,763 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SECTIONS } from "../data/sections";
+
+const title = "How Much Does an XTERRA Treadmill Cost? (2026): Every Model";
+const description =
+  "XTERRA treadmills cost $399.99 (WS200) to $2,199.99 (TR95H) at XTERRA on 28 Nov 2026; the TRX1200 is $499.99 and the TR75 $1,299.99. No subscription.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "By Price", item: "https://www.treadmillreviewsusa.com/price/" },
+        { "@type": "ListItem", position: 3, name: "How Much Does an XTERRA Treadmill Cost?", item: "https://www.treadmillreviewsusa.com/how-much-does-an-xterra-treadmill-cost/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How much does an XTERRA treadmill cost?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On XTERRA’s US store on 28 November 2026, from $399.99 (WS200 WalkSlim) to $2,199.99 (TR95H Hiker). The Compact folders were $449.99 to $549.99, the Sport runners $999.99 to $1,599.99 and the Hikers $1,099.99 to $2,199.99. There is no subscription.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much is the XTERRA TRX1200 treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "$499.99 on XTERRA’s store on 28 November 2026, against a $699.99 regular price, and $636.17 on Amazon the same day. We recorded $549.99 at XTERRA on 5 November, so buy it direct.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much is the XTERRA TR75 treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "$1,299.99 at XTERRA and $999.98 on Amazon on 28 November 2026. XTERRA had it at $1,199.99 on 5 November. It has a 20 by 60-inch deck, a 3.25 HP motor, 12 mph and a 350 lb limit, per XTERRA.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much is the XTERRA TR95H Hiker?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "$2,199.99 on XTERRA’s store on 28 November 2026, unchanged since 5 November and not discounted for Black Friday. We found no Amazon listing for it. It has a built-in standing desktop, a climbing mode to incline level 40 and a 300 lb limit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is there an XTERRA Black Friday sale?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. XTERRA’s Promotions page on 28 November 2026 advertised Black Friday and Cyber Monday deals of up to 40% off select machines. The treadmills on it were cut by 25% to 33%: the WS200, WS300, TRX1000, TRX1200, TRX1400 and TR75H. The Sport runners, TR85H and TR95H were not discounted.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does XTERRA charge for shipping?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "XTERRA did not publish a shipping price on 28 November 2026; its FAQ says charges depend on the destination and appear at checkout. The Sport and Hiker models ship by freight, curbside, with no assembly provided.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is an XTERRA treadmill worth the money?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Under $600, often yes: Horizon and Sole had nothing current there, and the TRX1200 adds powered incline for $499.99. But parts and labour are covered for only 90 days on those models. Above $1,300, Sole and Horizon give similar or better specifications and warranties for the same money.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-28",
+      dateModified: "2026-11-28",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-much-does-an-xterra-treadmill-cost/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const GROUP_PAGES = GROUP?.pages ?? [];
+const HERE_AT = GROUP_PAGES.findIndex((p) => p.url === HERE);
+// The group's first 2 pages (its leads), then the pages after this one, wrapping round, so every page in a long
+// hub group gets sibling links and the leads keep theirs (PLAYBOOK §0b L1).
+const MORE = [...new Set([...GROUP_PAGES.slice(0, 2), ...GROUP_PAGES.slice(HERE_AT + 1), ...GROUP_PAGES.slice(0, Math.max(HERE_AT, 0))])].filter((p) => p.url !== HERE).slice(0, 6);
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-28",
+    modifiedTime: "2026-11-28",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "how much does an xterra treadmill cost",
+      "xterra treadmill price",
+      "xterra trx1200 price",
+      "xterra tr75 price",
+      "xterra tr95h price",
+      "xterra treadmill black friday",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See XTERRA Prices by Model", link: "#price-table" }}
+>
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Price Guide</span>
+      </nav>
+      <h1 class="ed-title">How Much Does an XTERRA Treadmill Cost?</h1>
+      <p class="ed-dek">
+        An XTERRA treadmill costs $399.99 to $2,199.99 on XTERRA’s own US store on 28 November 2026: $399.99 to $549.99 for the WalkSlim and Compact folders, $999.99 to $1,599.99 for the Sport runners and $1,099.99 to $2,199.99 for the Hiker incline trainers. There is no membership to pay. Amazon was cheaper on some models and dearer on others the same day. Here is every model’s price, what each step up buys, the warranty and delivery terms XTERRA states, and the real five-year cost.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 28, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS<br />
+          <span class="ed-method">Based on retailer and maker listings, with prices checked on the dates shown.</span>
+        </div>
+        <a href="#price-table" class="btn-ghost">Prices by Model</a>
+      </div>
+      <p class="ed-disclosure">
+        Nothing on this page is a paid placement, and it carries no affiliate links. <a href="/editorial-standards/">How we review.</a>
+      </p>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          XTERRA Fitness is the budget treadmill brand of Dyaco, the Taiwanese maker that also owns Spirit
+          Fitness. On 28 November 2026, the day after Black Friday, XTERRA’s US site listed thirteen
+          treadmills in four series: WalkSlim walking treadmills that arrive assembled, Compact folders,
+          Sport-series running treadmills and Hiker incline trainers, plus two new TF folders that were
+          sold out. We read every XTERRA treadmill page, its Promotions page and its shipping, returns and
+          warranty pages that day, and checked every XTERRA listing we could find on Amazon. Earlier prices
+          come from our own XTERRA pages, with the dates they were seen.
+        </p>
+
+        <nav class="ed-toc not-prose" aria-label="On this page">
+          <h2>On this page</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#price-table">XTERRA Treadmill Prices by Model</a></li>
+            <li><a href="#price-history">What XTERRA Treadmills Have Sold For</a></li>
+            <li><a href="#black-friday">The XTERRA Black Friday and Cyber Monday Sale</a></li>
+            <li><a href="#step-up">What Each Step Up Buys</a></li>
+            <li><a href="#amazon">XTERRA Direct or Amazon: Which Is Cheaper?</a></li>
+            <li><a href="#delivery">Delivery and Assembly Costs</a></li>
+            <li><a href="#warranty">Warranty: What XTERRA Covers, Model by Model</a></li>
+            <li><a href="#returns">What a Return Costs</a></li>
+            <li><a href="#vs-rivals">XTERRA vs Horizon, Sole and NordicTrack at the Same Money</a></li>
+            <li><a href="#five-year-cost">The Five-Year Cost of an XTERRA</a></li>
+            <li><a href="#when-cheapest">When XTERRA Treadmills Are Cheapest</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2>The Short Answer</h2>
+<p>
+            <strong>An XTERRA treadmill costs $399.99 to $2,199.99 on XTERRA’s US store on 28 November 2026,
+            and most buyers will pay between $449.99 for a Compact folder and $1,299.99 for the TR75
+            runner.</strong> There is no subscription; XTERRA’s XF Connect app is free with the treadmill’s
+            serial number.
+          </p>
+          <ul>
+            <li><strong>WalkSlim (walking only, no assembly):</strong> WS200 $399.99, WS300 $499.99.</li>
+            <li><strong>Compact folders:</strong> TRX1000 $449.99, TRX1200 $499.99, TRX1400 $549.99; the new
+            TF100 ($699.99) and TF300 ($799.99) were sold out.</li>
+            <li><strong>Sport runners:</strong> TR65 $999.99, TR75 $1,299.99, TR85 $1,599.99. Amazon had the
+            TR75 at $999.98.</li>
+            <li><strong>Hiker incline trainers:</strong> TR75H $1,099.99, TR85H $1,299.99, TR95H with a standing
+            desk $2,199.99.</li>
+            <li><strong>On top:</strong> no membership; freight delivery on the bigger models is curbside with
+            no assembly, and a change-of-mind return of an assembled machine costs you the return freight and
+            a 10% restocking fee.</li>
+          </ul>
+          <p>
+            For the range itself, see our <a href="/xterra-treadmills/" class="text-[#0F62FE] font-medium">XTERRA treadmill guide</a>; for every
+            brand’s prices, <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a treadmill costs</a>.
+          </p>
+        </div>
+
+        <div id="price-table" class="scroll-mt-24">
+          <h2>XTERRA Treadmill Prices by Model</h2>
+<p>
+            XTERRA shows most of its cheaper treadmills with a sale price and a higher “regular price” beside it;
+            its Sport-series runners and two of its Hikers carried a single price with no regular figure on
+            28 November. The table gives both, the Amazon price where we could find a listing, the headline
+            specifications from XTERRA’s own product pages, and whether you could order the machine that day.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[760px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">XTERRA price (28 Nov)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Regular price</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Amazon (28 Nov)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Key specs (XTERRA)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WS200 WalkSlim</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$399.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$599.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No listing found</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 HP, 0.6–8 mph, no incline, 16 x 50 in., 265 lb, arrives assembled</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">In stock</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WS300 WalkSlim</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$499.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$699.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$454.00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 HP, 0.6–8 mph, 10 incline levels, 16 x 50 in., 265 lb, arrives assembled</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">In stock</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$449.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$599.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$370.17</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.25 HP, 0.5–10 mph, 3 manual incline levels, 16 x 50 in., 250 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">In stock</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1200</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$499.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$699.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$636.17</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.25 HP, 0.5–10 mph, 10 electronic incline levels, 16 x 50 in., 250 lb, Bluetooth FTMS</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">In stock</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1400</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$549.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$799.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$569.97</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.25 HP, 0.5–10 mph, 10 incline levels, 18 x 50 in., 265 lb, Bluetooth FTMS</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">In stock</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TF100 (new)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$699.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">—</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No listing found</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.0 HP brushless, 0.6–10 mph, 18 incline levels, 18 x 47 in., 265 lb, no assembly</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sold out</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TF300 (new)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$799.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">—</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No listing found</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 HP brushless, 0.6–12 mph, 15 incline levels, 20 x 51 in., 265 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sold out</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR65</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$932.58</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 HP, 0.5–10 mph, 10 incline levels, 20 x 55 in., 300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">In stock</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR75</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,299.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">—</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999.98</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.25 HP, 0.5–12 mph, 12 incline levels, 20 x 60 in., 350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">In stock</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR85</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,599.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">—</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No listing found</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 HP, 0.5–12 mph, 15 incline levels, 20 x 60 in., 350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">In stock</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR75H Hiker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,099.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,499.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,299.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 HP, 0.5–7.5 mph running, 0.5–3.7 mph climbing to level 40, 20 x 48 in., 265 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">In stock</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR85H Hiker (new)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,299.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">—</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No listing found</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.25 HP brushless, 0.6–11 mph, 6 decline to 48 incline levels, 20 x 57 in., 287 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">In stock</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR95H Hiker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,199.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">—</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No listing found</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0 HP, 0.5–7.5 mph running, 0.5–3.7 mph climbing to level 40, 20 x 52 in., 300 lb, standing desktop</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">In stock</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            XTERRA prices, regular prices, stock status and specifications are from XTERRA’s US product pages and
+            treadmill collection page on 28 November 2026; stock status is as each page’s product data gave it.
+            Amazon prices are from Amazon’s listings the same day. Amazon also sold an XTERRA TR260 folding
+            treadmill at $596.38, a model that does not appear on XTERRA’s own site; its listing gives a 16 by
+            50-inch surface, 0 to 10 mph and ten levels of power incline. We found no Amazon listing for the
+            WS200, TR85, TR85H, TR95H, TF100 or TF300, only accessories made to fit some of them.
+          </p>
+          <p>
+            Two notes on the figures. XTERRA states incline in levels, not percent, so ten or fifteen “levels”
+            tells you the number of steps rather than how steep the top one is. And the TR95H’s figures have
+            changed since we first covered it: on 5 November XTERRA’s collection page gave it a 3.5 HP motor and a
+            20 by 60-inch deck while its product page said 3.0 HP and 20 by 52 inches. On 28 November the
+            product page still gave 3.0 HP and 20 by 52 inches, which are the figures used here.
+          </p>
+        </div>
+
+        <div id="price-history" class="scroll-mt-24">
+          <h2>What XTERRA Treadmills Have Sold For</h2>
+<p>
+            XTERRA’s prices have moved in both directions this month. Between our first check on 5 November and
+            28 November, every Compact and WalkSlim model and the TR75H came down by $50 to $300, while the three
+            Sport-series runners went up by $100. The prices recorded on our XTERRA pages are a better guide to a
+            fair price than XTERRA’s regular-price figures.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[600px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Earlier prices we recorded</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">28 Nov 2026</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$499.99 (XTERRA, 5 Nov); $445.99 (Amazon, 9 Nov); $449.99 with $599.99 regular (XTERRA, 26 Nov); $370.17 (Amazon, 26 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$449.99 XTERRA; $370.17 Amazon</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1200</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$549.99 against $879.99 compare-at (XTERRA, 5 Nov); $499.99 (XTERRA, 26 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$499.99 XTERRA; $636.17 Amazon</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1400</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$599.99 (XTERRA, 5 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$549.99 XTERRA; $569.97 Amazon</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WS200 / WS300</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$499.99 / $599.99 (XTERRA, 5 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$399.99 / $499.99 XTERRA</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR65</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$899.99 (XTERRA, 5 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999.99 XTERRA; $932.58 Amazon</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR75</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199.99 against $1,899.99 compare-at (XTERRA, 5 Nov); $1,099.99 and $1,299.99 at other retailers in search results (5 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,299.99 XTERRA; $999.98 Amazon</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR85</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,499.99 (XTERRA, 5 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,599.99 XTERRA</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR75H Hiker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,399.99 (XTERRA, 5 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,099.99 XTERRA; $1,299.99 Amazon</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR95H Hiker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,199.99 (XTERRA, 5 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,199.99 XTERRA</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            <strong>The pattern:</strong> the regular prices themselves have been rewritten. On 5 November XTERRA
+            showed the TRX1200 against an $879.99 compare-at price and the TR75 against $1,899.99; on 28 November
+            the TRX1200’s regular price was $699.99 and the TR75 showed no regular price at all. A “save” figure
+            that moves that much is not a guide to value. What does hold is the sale price: the lowest figures on
+            our pages are $370.17 for the TRX1000 (Amazon, 26 and 28 November), $499.99 for the TRX1200 (XTERRA,
+            26 and 28 November), $999.98 for the TR75 (Amazon, 28 November) and $1,099.99 for the TR75H (XTERRA,
+            28 November). Our <a href="/best-treadmills-under-400/" class="text-[#0F62FE] font-medium">best treadmills under $400</a> page recorded
+            the TRX1000 gap between XTERRA and Amazon two days earlier, and it had not closed.
+          </p>
+        </div>
+
+        <div id="black-friday" class="scroll-mt-24">
+          <h2>The XTERRA Black Friday and Cyber Monday Sale</h2>
+<p>
+            XTERRA’s Promotions page on 28 November 2026 was headed “Black Friday &amp; Cyber Monday Promotions –
+            Up to 40% off Select Machines”, with 0% APR financing still offered. It listed fifteen products, six of
+            them treadmills. No treadmill reached 40% off against XTERRA’s own regular price; the largest cut was
+            a third.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Treadmill on the Promotions page</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Sale price</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Regular price</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Saving</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WS200 WalkSlim</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$399.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$599.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$200 (33%)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1400</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$549.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$799.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$250 (31%)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1200</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$499.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$699.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$200 (29%)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WS300 WalkSlim</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$499.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$699.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$200 (29%)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR75H Hiker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,099.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,499.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$400 (27%)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$449.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$599.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$150 (25%)</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The TR65 was also marked down on its own product page, to $999.99 from $1,199.99, but it was not on the
+            Promotions list. The TR75, TR85, TR85H and TR95H had no sale at all, and the TR75 and TR85 cost $100
+            more than they did on 5 November. So the XTERRA Black Friday sale is real for walkers and Compact
+            buyers, and for the TR75H, which was $300 below its early-November price. For runners it is not a
+            sale; it is Amazon, where the TR75 was $300 below XTERRA’s price, that had the deal. Our <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a> page covers other brands’
+            offers this week, and our <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium">Cyber Monday treadmill deals</a> page tracks what changes on 30 November.
+          </p>
+        </div>
+
+        <div id="step-up" class="scroll-mt-24">
+          <h2>What Each Step Up Buys</h2>
+<p>
+            XTERRA’s range climbs in small steps, often only $50 apart, and each step changes something
+            specific. The table sets out the steps a buyer is most likely to weigh, using XTERRA’s own figures and
+            its 28 November prices.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[600px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Step</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Extra cost (28 Nov)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What you get, per XTERRA</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1000 → TRX1200</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$50</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 levels of electronic incline instead of 3 manual, Bluetooth FTMS for Zwift and Kinomap, a backlit display; same deck, motor, speed and 250 lb limit</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1200 → TRX1400</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$50</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">An 18-inch belt instead of 16, 265 lb instead of 250, 24 programs instead of 12, handlebar speed and incline controls; but XTERRA lists no motor term for it</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WS200 → WS300</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$100</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 levels of incline; otherwise the same 2.5 HP, 8 mph, 16 by 50-inch walking treadmill</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1400 → TR65</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$450</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 20 by 55-inch deck, 2.5 HP, 300 lb, lifetime motor cover and a year of parts and in-home labour; but 201 lb and freight delivery</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR65 → TR75</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$300 (or −$0.01 on Amazon)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 20 by 60-inch running deck, 3.25 HP, 12 mph, 12 incline levels, 350 lb, two years on parts and built-in speakers</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR75 → TR85</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$300</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 HP, 15 incline levels and a 7.5-inch display; same deck, weight rating and warranty</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR75H → TR85H</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$200</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 20 by 57-inch deck instead of 20 by 48, 11 mph instead of 7.5, six levels of decline, 287 lb, two years of labour instead of one</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR85H → TR95H</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$900</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A built-in standing desktop, a 3.0 HP motor and 300 lb; but a 20 by 52-inch deck and 7.5 mph</td></tr>
+            </tbody>
+          </table></div>
+          <ul>
+            <li><strong>TRX1000 to TRX1200 (+$50).</strong> The step most Compact buyers should take. Changing
+            incline on the TRX1000 means stopping and moving the rear support by hand; the TRX1200 does it from
+            the console while you walk, and it pairs with apps. The catch: Amazon had the TRX1000 at $370.17 and
+            the TRX1200 at $636.17, so if you buy on Amazon the gap is $266, not $50. Buy the TRX1200 from
+            XTERRA.</li>
+            <li><strong>TRX1400 (+$50 more).</strong> Worth it for the wider belt if you are broad-shouldered or
+            heavier, up to its 265 lb limit. XTERRA’s warranty page gives it lifetime frame and 90 days on parts
+            and labour, with no separate motor line, where the TRX1000 and TRX1200 list a year on the motor. Ask
+            XTERRA before you rely on motor cover.</li>
+            <li><strong>Into the Sport series.</strong> The jump from $549.99 to $999.99 is the biggest in the
+            range, and it is where an XTERRA becomes a running treadmill. If you run, skip the TR65 and buy the
+            TR75: its 60-inch deck is the length most runners need, and on Amazon it cost a cent less than the
+            TR65 at XTERRA. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> explains why deck length
+            matters at speed.</li>
+            <li><strong>Hikers.</strong> The new TR85H is the value among them: a longer deck, decline and an
+            11 mph top speed for $200 over the TR75H. XTERRA caps its speed at steep settings, though: 0.6 to
+            2 mph between incline levels 31 and 48. The TR95H costs $900 more mainly for its desk. Our <a href="/how-much-does-an-incline-trainer-cost/" class="text-[#0F62FE] font-medium">incline trainer cost guide</a> sets it against
+            dedicated incline trainers.</li>
+          </ul>
+        </div>
+
+        <div id="amazon" class="scroll-mt-24">
+          <h2>XTERRA Direct or Amazon: Which Is Cheaper?</h2>
+<p>
+            It depends on the model, and the gaps are large in both directions. On 28 November 2026 Amazon was
+            cheaper on four XTERRA treadmills and dearer on three:
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">XTERRA (28 Nov)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Amazon (28 Nov)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Cheaper at</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR75</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,299.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999.98</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon, by $300.01</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$449.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$370.17</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon, by $79.82</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR65</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$932.58</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon, by $67.41</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WS300</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$499.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$454.00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon, by $45.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1400</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$549.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$569.97</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">XTERRA, by $19.98</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1200</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$499.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$636.17</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">XTERRA, by $136.18</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR75H Hiker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,099.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,299.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">XTERRA, by $200</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The price is not the only difference. XTERRA’s return policy says plainly that it covers only equipment
+            bought directly from XTERRA; a machine bought through a dealer or retailer follows that seller’s
+            policy. So an Amazon TR75 at $999.98 comes with Amazon’s and the seller’s return terms, not XTERRA’s
+            60-day window. The product warranty is still XTERRA’s, but registration asks where you bought the
+            machine, so keep the order confirmation. Check who ships and sells the listing before you buy;
+            Amazon’s TR75 listing gave only one feature bullet, so read XTERRA’s own page for the specifications.
+          </p>
+          <p>
+            One Amazon trap: listings for XTERRA models that XTERRA itself no longer sells, such as the TR260 at
+            $596.38, sit beside current ones. A TR260 costs more than a TRX1200 bought direct and gives similar
+            headline figures. Our <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium">best treadmills on Amazon</a> guide covers
+            how to read a listing’s seller and return terms.
+          </p>
+        </div>
+
+        <div id="delivery" class="scroll-mt-24">
+          <h2>Delivery and Assembly Costs</h2>
+<p>
+            XTERRA did not state a delivery price on its shipping page, its FAQ or its product pages on
+            28 November 2026. Its FAQ says that delivery availability and charges depend on the destination and
+            that you see the options when you enter your address at checkout. Our 5 November check found free
+            shipping offered on XTERRA’s product pages; on 28 November we found no free-shipping statement, so
+            check the shipping line before you pay.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What XTERRA states</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Detail (28 Nov 2026)</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Dispatch</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most orders ship within 2–3 business days, with tracking</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Freight models</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR65, TR75, TR75H, TR85, TR85H and TR95H ship by LTL freight</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Freight delivery</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Curbside; not carried over any stair; no assembly provided; a 4- or 8-hour weekday window; an adult must sign</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Expected arrival</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1–2 weeks, per XTERRA’s FAQ, which marks the figure as still to be confirmed</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Assembly</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About an hour for most machines with the included tools, per the FAQ; WalkSlim, TF100 and TF300 arrive assembled</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Alaska and Hawaii</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Availability and charges shown at checkout</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The hidden cost is getting the box inside. Curbside freight means the carrier leaves a TR75 or TR85
+            box, 240.3 lb by XTERRA’s shipping weight, at the kerb, and the TR95H’s is 239.2 lb. XTERRA lists
+            no paid in-home or assembly service, so plan on two people, or pay a local mover or handyman. The
+            Compact models are far easier: the TRX1000 ships at 112.4 lb and the TRX1200 at 126 lb. They are not
+            on XTERRA’s freight list, though its FAQ says treadmills in general ship by freight, so check the
+            delivery method at checkout. The WalkSlim and TF models need no assembly at all, which is part of
+            what their price buys.
+          </p>
+          <p>
+            Every XTERRA runs on a standard 110-volt outlet, per its specifications. Our <a href="/xterra-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">XTERRA troubleshooting guide</a> explains why it should be
+            a grounded outlet on a circuit of its own, and what to check if the machine will not start once it
+            is set up.
+          </p>
+        </div>
+
+        <div id="warranty" class="scroll-mt-24">
+          <h2>Warranty: What XTERRA Covers, Model by Model</h2>
+<p>
+            XTERRA’s warranty is included in the price, and it varies more by model than most brands’ do. Every
+            XTERRA treadmill has a lifetime frame warranty; what changes is the motor, parts and labour. These are
+            the terms on XTERRA’s warranty page and product pages on 28 November 2026.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Models</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Frame</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Motor</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Parts</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Labour</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1000, TRX1200</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">90 days (deck 90 days)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">90 days in-home</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TF100, TF300</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">90 days</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">90 days</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1400, WS200, WS300</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not listed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">90 days</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">90 days</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR65</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year in-home</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR75, TR85</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year in-home</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR75H, TR95H</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not listed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR85H</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not listed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2 years</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Read that table as two warranties. Below $1,000, XTERRA covers the frame for life and almost everything
+            that actually fails for 90 days, so a console, belt or controller fault in month four is your bill. From
+            the TR65 up, the motor is covered for life and parts for one or two years, which is closer to what
+            Horizon and Sole give. Where XTERRA lists no motor term, as on the TRX1400, WalkSlim and Hiker models,
+            treat the motor as a part and ask XTERRA in writing. XTERRA’s own warranty page describes its list as
+            taken from the product pages and still to be confirmed, and its FAQ says the same of the TR65 example,
+            so register the machine and keep the warranty card that comes in the box.
+          </p>
+          <p>
+            We did not find an extended-warranty plan on XTERRA’s store. XTERRA’s process for a claim is to find
+            the 16-character serial number on the frame near the power cord, call its US support line, and have a
+            part shipped or a technician sent. What a part costs after cover ends is covered in our guides to <a href="/treadmill-motor-replacement-cost/" class="text-[#0F62FE] font-medium">treadmill motor replacement costs</a> and <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranties</a>.
+          </p>
+        </div>
+
+        <div id="returns" class="scroll-mt-24">
+          <h2>What a Return Costs</h2>
+<p>
+            XTERRA’s return policy for orders bought directly from it is one of the more generous at this price, as
+            long as you have not built the machine. These are the terms on its return policy page on 28 November
+            2026:
+          </p>
+          <ul>
+            <li><strong>Changed your mind, still boxed and unused:</strong> 60 days from delivery. You pay the
+            return freight; no restocking fee.</li>
+            <li><strong>Changed your mind after assembling and trying it:</strong> 30 days from delivery. You pay
+            the return freight and a 10% restocking fee.</li>
+            <li><strong>Arrived damaged, defective or wrong:</strong> 14 days from delivery; XTERRA pays freight
+            both ways and replaces it.</li>
+            <li><strong>Demo, floor-model or refurbished units:</strong> 14 days, exchange only.</li>
+          </ul>
+          <p>
+            The restocking fee on an assembled machine is $45 on a TRX1000 at $449.99, $50 on a TRX1200, $130 on a
+            TR75 and $220 on a TR95H. XTERRA does not publish what return freight costs, and for a 216 lb Sport
+            treadmill it can be the larger bill, so ask before you send one back. XTERRA’s FAQ describes the
+            window more tightly, as a Return Authorization requested within 30 days of delivery and the machine
+            returned in its original packaging within 10 days of it, and says that policy is still to be
+            confirmed; keep the box until you are sure. Our <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a> guide compares other brands.
+          </p>
+        </div>
+
+        <div id="vs-rivals" class="scroll-mt-24">
+          <h2>XTERRA vs Horizon, Sole and NordicTrack at the Same Money</h2>
+<p>
+            XTERRA’s pitch is price, so the fair test is what the same money buys from the bigger brands. The
+            table uses prices already on this site and the Amazon prices we saw on 28 November, each dated.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[720px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Budget</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">XTERRA (28 Nov)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Horizon</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Sole</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">NordicTrack</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $450–$550</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1000 $449.99; TRX1200 $499.99; TRX1400 $549.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Nothing current (T101 $699, sold out, Horizon, 23 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Nothing (F50 $899.99, Sole, 22 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T Series 5, $445.75 (Amazon, 28 Nov)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $900–$1,000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR65 $999.99; TR75 $999.98 on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T202 $899 (Horizon, 23 Nov); 7.0 AT $934.98 (Amazon, 28 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F50 $899.99 (Sole, 22 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T Series 10, $949.05 (Amazon, 24 Nov)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $1,100–$1,300</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR75H $1,099.99; TR75 and TR85H $1,299.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.0 AT $1,099 (Horizon, 23 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F63 $1,099.99; F65 $1,199.99 (Sole, 22 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">—</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $1,500–$1,600</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR85 $1,599.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.4 AT $1,499.99 (Amazon, 28 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F80 $1,499.99 (Sole, 22 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T Series 10 or Commercial 1250, about $1,599 (Black Friday price, Nov 2026)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $2,000–$2,200</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR95H Hiker $2,199.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.8 AT $1,999 (Horizon, 23 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F85 $1,999.99 (Sole, 22 Nov)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial 1750, about $1,999 (Black Friday price, Nov 2026)</td></tr>
+            </tbody>
+          </table></div>
+          <ul>
+            <li><strong>Under $600, XTERRA has the field nearly to itself</strong> among established brands.
+            Horizon and Sole had nothing current there; NordicTrack’s T Series 5 was the only rival, at $445.75 on
+            Amazon. This is where XTERRA makes the most sense.</li>
+            <li><strong>Around $1,000, the Amazon TR75 is the standout.</strong> At $999.98 it has a 20 by 60-inch
+            deck, 3.25 HP, 12 mph and a 350 lb limit. Horizon’s 7.0 AT at $934.98 has a 20 by 60-inch deck, 0 to
+            15% incline and a 325 lb limit, with lifetime frame and motor, three years of parts and a year of
+            labour; it gives more parts cover, the TR75 more capacity.</li>
+            <li><strong>At $1,300 direct, the TR75 loses its edge.</strong> Sole’s F65 at $1,199.99 lists the same
+            3.25 HP, 0.5 to 12 mph, 20 by 60 inches and 350 lb for $100 less, with lifetime frame and motor cover.
+            Buy the TR75 from Amazon or not at all.</li>
+            <li><strong>At $1,600 and up, XTERRA is not the value buy.</strong> The TR85 costs $100 more than a
+            Horizon 7.4 AT on Amazon, which has a wider 22 by 60-inch deck and five years on parts. The TR95H at
+            $2,199.99 is a niche machine for desk walking and steep climbs; a Horizon 7.8 AT or Sole F85 costs about
+            $200 less for a full running treadmill.</li>
+          </ul>
+          <p>
+            NordicTrack adds a membership that XTERRA, Horizon and Sole do not: iFIT Pro at $39 a month or $396 a
+            year, which is $1,980 over five years. For the other side of each row, see <a href="/how-much-does-a-horizon-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a Horizon costs</a>, <a href="/how-much-does-a-sole-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a Sole costs</a> and <a href="/how-much-does-a-nordictrack-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a NordicTrack costs</a>.
+          </p>
+        </div>
+
+        <div id="five-year-cost" class="scroll-mt-24">
+          <h2>The Five-Year Cost of an XTERRA</h2>
+<p>
+            XTERRA does not charge a membership. Its product pages say the XF Connect app is “free for life with
+            your serial number”, and its FAQ says the app is not required: every machine works from its console.
+            Bluetooth models pair with third-party apps such as Zwift and Kinomap, whose subscriptions are not
+            included, per XTERRA. So the five-year cost is close to the purchase price. The table uses 28 November
+            prices, assumes no paid app, no shipping charge and no repairs, and divides over five years.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead><tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Treadmill (28 Nov)</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Membership</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Five-year total</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Per year</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Per week</th></tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WS200, $399.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$399.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $80</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $1.54</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRX1200, $499.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$499.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $100</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $1.92</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR75 on Amazon, $999.98</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999.98</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $200</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $3.85</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR75 at XTERRA, $1,299.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,299.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $260</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $5.00</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR95H, $2,199.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,199.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $440</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $8.46</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack Commercial 1750 + iFIT Pro (for comparison)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,980</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $3,979</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $796</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $15.30</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The running costs on top are small. XTERRA sells its treadmill lubricant at $11.99 and its FAQ gives
+            the interval as every three months or 180 hours of use; it does not say how many applications a bottle
+            covers. A floor mat is $59.99, though it was sold out on 28 November. Follow the <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">lubrication interval</a> in your manual, because a dry deck
+            is one of the commonest XTERRA faults.
+          </p>
+          <p>
+            The real wildcard is repairs on the cheaper models. With 90 days of parts and labour on the Compact and
+            WalkSlim machines, any fault after month three is paid for by you, and a motor controller or console
+            can cost a meaningful share of a $500 treadmill. That is the strongest argument for the TR65 or TR75,
+            whose lifetime motor and one to two years of parts cover shift that risk back to XTERRA. Our <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">treadmill maintenance cost</a> guide puts figures on typical
+            repairs.
+          </p>
+        </div>
+
+        <div id="when-cheapest" class="scroll-mt-24">
+          <h2>When XTERRA Treadmills Are Cheapest</h2>
+<p>
+            Right now, for most of the range. On 28 November 2026 the Compact and WalkSlim models were $50 to $100
+            below their early-November XTERRA prices, the TR75H was $300 below, and the TR75 was at its lowest
+            price on our pages, $999.98 on Amazon. The exceptions are the TR65, TR75 and TR85 bought direct, which
+            cost $100 more than on 5 November.
+          </p>
+          <ul>
+            <li><strong>Cheapest XTERRA you can order:</strong> the WS200 WalkSlim at $399.99 from XTERRA, for
+            walking only; or the TRX1000 at $370.17 on Amazon, if you want a folder that can jog.</li>
+            <li><strong>Cheapest with powered incline:</strong> the TRX1200 at $499.99 from XTERRA.</li>
+            <li><strong>Cheapest running deck:</strong> the TR75 at $999.98 on Amazon, with a 20 by 60-inch deck.</li>
+            <li><strong>Cheapest incline trainer:</strong> the TR75H at $1,099.99 from XTERRA, $200 less than on
+            Amazon.</li>
+          </ul>
+          <p>
+            XTERRA’s sale wording names Cyber Monday, 30 November, as well as Black Friday, so the prices above may
+            hold until then. Prices that moved $100 to $300 in three weeks can move again afterwards, in either
+            direction. If you are waiting, use the lowest figures above as your target; our <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time to buy a treadmill</a> guide covers the other
+            sale windows in the year, and our <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">best treadmills under $500</a> sets the Compact models against their rivals.
+          </p>
+        </div>
+
+
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Where People Go Wrong When Pricing an XTERRA Treadmill</h2>
+          <p>XTERRA’s prices are low. The mistakes come from where you buy and what the warranty leaves out.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Assuming Amazon is always cheaper</h3>
+              <p>On 28 November Amazon was $300 cheaper on the TR75 but $136 dearer on the TRX1200 and $200 dearer on the TR75H. Check both prices for the exact model on the same day.</p>
+            </li>
+            <li>
+              <h3>Trusting the regular price</h3>
+              <p>XTERRA showed the TRX1200 against $879.99 on 5 November and $699.99 on 28 November. Compare the sale price with the history on this page, not with the “save” figure.</p>
+            </li>
+            <li>
+              <h3>Ignoring the 90-day parts cover</h3>
+              <p>The Compact, WalkSlim and TF models cover parts and labour for 90 days. If you will use the treadmill daily, the TR65 or TR75, with lifetime motor cover and one or two years on parts, may be the cheaper machine over five years.</p>
+            </li>
+            <li>
+              <h3>Not planning for curbside freight</h3>
+              <p>The Sport and Hiker models arrive at the kerb by freight in a box of up to 240 lb, with no stairs and no assembly. Line up help before the delivery window, or pay someone local.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">An XTERRA treadmill costs $399.99 to $2,199.99, and most buyers pay $449.99 to $1,299.99.</strong> On 28 November 2026 XTERRA had the TRX1200 at $499.99, the TR75 at $1,299.99 and the TR95H Hiker at
+            $2,199.99, with a Black Friday and Cyber Monday sale on its walking and Compact models and the TR75H.
+            There is no membership, and Amazon had the TR75 at $999.98.
+          </p>
+          <p>
+            <strong class="text-white">Buy by where the money goes.</strong> For walking and light jogging, the
+            TRX1200 from XTERRA is the price to beat, as long as 90 days of parts cover does not worry you. For
+            running, the TR75 at $999.98 on Amazon is the XTERRA worth buying; at $1,299.99 a Sole F65 is the better
+            deal. See our <a href="/xterra-treadmills/" class="text-[#5AA9FF] font-bold no-underline">XTERRA treadmill guide</a> before you order.
+          </p>
+        </div>
+
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/xterra-treadmills/">XTERRA Treadmills</a></li>
+            <li><a href="/xterra-treadmill-troubleshooting/">XTERRA Treadmill Troubleshooting</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How much does an XTERRA treadmill cost?</h3></summary>
+            <p class="faq-a">
+              On XTERRA’s US store on 28 November 2026, from $399.99 (WS200 WalkSlim) to $2,199.99 (TR95H Hiker). The Compact folders were $449.99 to $549.99, the Sport runners $999.99 to $1,599.99 and the Hikers $1,099.99 to $2,199.99. There is no subscription.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much is the XTERRA TRX1200 treadmill?</h3></summary>
+            <p class="faq-a">
+              $499.99 on XTERRA’s store on 28 November 2026, against a $699.99 regular price, and $636.17 on Amazon the same day. We recorded $549.99 at XTERRA on 5 November, so buy it direct.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much is the XTERRA TR75 treadmill?</h3></summary>
+            <p class="faq-a">
+              $1,299.99 at XTERRA and $999.98 on Amazon on 28 November 2026. XTERRA had it at $1,199.99 on 5 November. It has a 20 by 60-inch deck, a 3.25 HP motor, 12 mph and a 350 lb limit, per XTERRA.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much is the XTERRA TR95H Hiker?</h3></summary>
+            <p class="faq-a">
+              $2,199.99 on XTERRA’s store on 28 November 2026, unchanged since 5 November and not discounted for Black Friday. We found no Amazon listing for it. It has a built-in standing desktop, a climbing mode to incline level 40 and a 300 lb limit.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is there an XTERRA Black Friday sale?</h3></summary>
+            <p class="faq-a">
+              Yes. XTERRA’s Promotions page on 28 November 2026 advertised Black Friday and Cyber Monday deals of up to 40% off select machines. The treadmills on it were cut by 25% to 33%: the WS200, WS300, TRX1000, TRX1200, TRX1400 and TR75H. The Sport runners, TR85H and TR95H were not discounted.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does XTERRA charge for shipping?</h3></summary>
+            <p class="faq-a">
+              XTERRA did not publish a shipping price on 28 November 2026; its FAQ says charges depend on the destination and appear at checkout. The Sport and Hiker models ship by freight, curbside, with no assembly provided.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is an XTERRA treadmill worth the money?</h3></summary>
+            <p class="faq-a">
+              Under $600, often yes: Horizon and Sole had nothing current there, and the TRX1200 adds powered incline for $499.99. But parts and labour are covered for only 90 days on those models. Above $1,300, Sole and Horizon give similar or better specifications and warranties for the same money.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related XTERRA and Treadmill Price Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/xterra-treadmills/" class="card">
+            <div class="c-kicker">Brand</div>
+            <div class="c-title">XTERRA Treadmills</div>
+            <p class="c-blurb">The full XTERRA range, who makes it and which model suits whom.</p>
+          </a>
+          <a href="/xterra-treadmill-troubleshooting/" class="card">
+            <div class="c-kicker">Fixes</div>
+            <div class="c-title">XTERRA Treadmill Troubleshooting</div>
+            <p class="c-blurb">Power, belt, console and error codes, in the order to check them.</p>
+          </a>
+          <a href="/best-treadmills-under-500/" class="card">
+            <div class="c-kicker">Best</div>
+            <div class="c-title">Best Treadmills Under $500</div>
+            <p class="c-blurb">The XTERRA Compact models against the other cheap folders.</p>
+          </a>
+          <a href="/best-treadmills-under-400/" class="card">
+            <div class="c-kicker">Best</div>
+            <div class="c-title">Best Treadmills Under $400</div>
+            <p class="c-blurb">Where the TRX1000 sits among the cheapest folding treadmills.</p>
+          </a>
+          <a href="/how-much-does-a-sole-treadmill-cost/" class="card">
+            <div class="c-kicker">Price</div>
+            <div class="c-title">How Much Does a Sole Treadmill Cost?</div>
+            <p class="c-blurb">Every Sole priced, including the F65 that rivals the TR75.</p>
+          </a>
+          <a href="/how-much-does-a-horizon-treadmill-cost/" class="card">
+            <div class="c-kicker">Price</div>
+            <div class="c-title">How Much Does a Horizon Treadmill Cost?</div>
+            <p class="c-blurb">Horizon’s range and warranties at the same money.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>
