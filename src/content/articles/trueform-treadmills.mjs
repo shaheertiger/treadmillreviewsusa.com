@@ -239,7 +239,7 @@ export default {
             difference to weigh.
           </p>
           <p>
-            Replacement belts are expensive, which is worth knowing before you choose a tread: TrueForm's
+            <a href="/best-treadmill-replacement-belts/" class="text-[#0F62FE] font-medium" data-autolink>Replacement belts</a> are expensive, which is worth knowing before you choose a tread: TrueForm's
             parts store listed a Runner Kraiburg belt at $2,295, turf and track belts at $2,549 and a
             Naboso belt at $2,675. These are long-life parts and most home owners will never replace one,
             but a facility with heavy use should budget for it.

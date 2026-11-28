@@ -131,7 +131,7 @@ ${row('TRM 500 (581, 531)', 'Not published', '0.5–12 mph', '0% to 15%', '350 l
             </tbody>
           </table></div>
           <p>
-            All four lines share a 60 by 22-inch running surface, and every model weighs between
+            All four lines share a 60 by <a href="/best-wide-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>22-inch running surface</a>, and every model weighs between
             about 385 and 430 lb. The 800 line is the only one with a decline. The figures come from
             Precor's 2025 North American brochures and its product pages; for the TRM 885 a US
             remanufacturer's listing gives the same motor, speed, incline, user weight, running surface
@@ -360,7 +360,7 @@ ${row('Labour', '1 year', '3 years (from 30 March 2026)')}
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Parts and recalls</h3>
           <p>
-            Because so many Precor treadmills run in gyms, third-party parts suppliers and
+            Because so many Precor treadmills run in gyms, third-party <a href="/treadmill-parts/" class="text-[#0F62FE] font-medium" data-autolink>parts suppliers</a> and
             independent technicians stock and service them widely, and the dealer guide above says
             belts, brushes, lift motors, cushioning struts and console boards are available for the
             C-series onward, with older machines harder. Precor's own post-warranty support for
@@ -424,7 +424,7 @@ ${row('Star Trac', 'Core Health &amp; Fitness', 'No home range', 'Check the mode
           </p>
           <p>
             <strong>Buy an as-is used Precor if</strong> the price reflects no warranty, you have seen
-            it run at your speed and through the full incline range, a local technician has said parts
+            it run at your speed and through the full incline range, a <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium" data-autolink>local technician</a> has said parts
             are available, and you can move a 400 lb machine safely. Budget for a technician visit in
             the first year.
           </p>

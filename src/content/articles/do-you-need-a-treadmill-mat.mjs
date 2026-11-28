@@ -311,7 +311,7 @@ export default {
           </p>
           <p>
             A mat on carpet can also help with static. Synthetic carpet and dry winter air both
-            encourage static build-up, and separating the machine from the carpet can reduce the
+            encourage <a href="/treadmill-static-shock/" class="text-[#0F62FE] font-medium" data-autolink>static build-up</a>, and separating the machine from the carpet can reduce the
             shocks some users get from the console or rails. It is not a complete fix — belt
             friction and humidity are the bigger factors, and a properly grounded outlet matters —
             but it is a side benefit worth knowing about.

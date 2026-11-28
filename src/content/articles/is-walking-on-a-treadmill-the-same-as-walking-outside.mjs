@@ -238,7 +238,7 @@ export default {
             hold the rails.
           </p>
           <ul>
-            <li><strong>Steps.</strong> A wrist tracker counts steps from arm swing. Walk with
+            <li><strong>Steps.</strong> A <a href="/best-fitness-trackers/" class="text-[#0F62FE] font-medium" data-autolink>wrist tracker</a> counts steps from arm swing. Walk with
             your arms free and it usually does a reasonable job. Hold the rails, rest your hands
             on the console, or carry a phone in one hand, and the count can drop sharply because
             the wrist barely moves. A tracker clipped to the waist or a phone in a pocket is less

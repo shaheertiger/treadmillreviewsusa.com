@@ -54,7 +54,7 @@ export default {
             <li><strong>Owner jobs out of warranty:</strong> belt tension and centring, a safety key, a
             drive belt or <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium" data-autolink>motor brushes</a> usually cost tens of dollars in parts.</li>
             <li><strong>Technician jobs out of warranty:</strong> a call-out fee commonly in the region of
-            $75 to $150, and a motor control board or drive motor replacement commonly landing somewhere
+            $75 to $150, and a motor control board or drive <a href="/treadmill-motor-replacement-cost/" class="text-[#0F62FE] font-medium" data-autolink>motor replacement</a> commonly landing somewhere
             around $350 to $700 all in, consistent with our general repair guide.</li>
             <li><strong>Repair or replace:</strong> if the all-in quote is more than about half of what a
             comparable used ProForm sells for, and the belt, deck and console are also tired, replacing

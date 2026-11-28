@@ -513,7 +513,7 @@ export default {
           </p>
           <p>
             <strong>Buy a used, as-is Precor if</strong> the price reflects 30 days of cover or none, you have seen it
-            run through the full incline range at your speed, and a local technician confirms parts. Global Fitness’s
+            run through the full incline range at your speed, and a <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium" data-autolink>local technician</a> confirms parts. Global Fitness’s
             used TRM 731 at $1,645 shows how low a sold-in-working-order Precor can go; budget a technician visit in
             year one.
           </p>

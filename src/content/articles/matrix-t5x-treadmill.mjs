@@ -233,7 +233,7 @@ export default {
           </p>
           <p>
             Search Amazon by all means, but the T5x is a dealer and remanufacturer product, and an
-            Amazon search is as likely to show parts and replacement belts as the machine.
+            Amazon search is as likely to show parts and <a href="/best-treadmill-replacement-belts/" class="text-[#0F62FE] font-medium" data-autolink>replacement belts</a> as the machine.
           </p>`,
     },
     {

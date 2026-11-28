@@ -144,7 +144,7 @@ export default {
       heading: 'Black Friday / Cyber Monday Price Check: What These Machines Cost on 28 November',
       navLabel: 'Black Friday prices',
       html: `          <p>
-            Black Friday was 27 November this year and Cyber Monday is 30 November, so this is the
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium" data-autolink>Black Friday</a> was 27 November this year and Cyber Monday is 30 November, so this is the
             week when the price of a walking machine is most likely to move. We re-checked the Amazon
             listing for each pick that is sold there on 28 November 2026, the day after Black Friday,
             and set it against the price this page printed earlier. Each figure is a single reading

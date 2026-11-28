@@ -435,8 +435,8 @@ export default {
           </p>
           <p>
             <strong>A motor that does not bog.</strong> A belt that slows visibly as your foot lands
-            at speed, then surges, is unpleasant at an easy pace and unsafe at a hard one. Heavier
-            runners feel this most. Motor ratings are a poor guide on their own, but a machine
+            at speed, then surges, is unpleasant at an easy pace and unsafe at a hard one. <a href="/best-treadmills-for-heavy-runners/" class="text-[#0F62FE] font-medium" data-autolink>Heavier
+            runners</a> feel this most. Motor ratings are a poor guide on their own, but a machine
             that owners describe as holding speed under a heavy footstrike is what you want; our
             <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
             explains why the number on the box tells you less than it should.
@@ -507,7 +507,7 @@ export default {
           <p>
             Warm up for ten minutes, cool down for five to ten, clip the key on, keep your hands
             off the rails at speed, and stop the session the moment a rep ends badly. If you are
-            new to running, build a 20-minute easy run first. The machine matters less than the
+            <a href="/how-to-start-running-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>new to running</a>, build a 20-minute easy run first. The machine matters less than the
             method, but one that accelerates quickly and holds its speed makes everything easier.
           </p>`,
     },

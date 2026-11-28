@@ -214,7 +214,7 @@ export default {
             give grip and a quiet, vibration-free run, and design coverage of the Sprintbok makes the same
             point about noise, suggesting it suits an apartment. We cannot confirm a noise level — no source
             publishes one — but a self-powered belt has no motor whine, which removes the loudest sound a
-            treadmill makes. Footfall and bearing noise remain, so if you live above someone, put it on a
+            treadmill makes. Footfall and <a href="/treadmill-grinding-noise/" class="text-[#0F62FE] font-medium" data-autolink>bearing noise</a> remain, so if you live above someone, put it on a
             proper mat and read our
             <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a>.
           </p>

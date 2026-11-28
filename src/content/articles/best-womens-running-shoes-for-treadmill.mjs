@@ -231,7 +231,7 @@ export default {
             explains why.
           </p>
           <p>
-            <strong>Starting out.</strong> If you are new to running, you do not need the most
+            <strong>Starting out.</strong> If you are <a href="/how-to-start-running-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>new to running</a>, you do not need the most
             expensive shoe here. A well-fitting daily trainer such as the Ride 19, and a sensible
             plan like our
             <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">treadmill Couch to 5K</a>,

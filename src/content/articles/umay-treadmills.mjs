@@ -228,7 +228,7 @@ export default {
           </p>
           <p>
             Three figures hold up. UMAY’s page and its manuals agree on a 400 lb capacity, a 3.0 HP
-            brushless motor rating and a 37.5 by 15-inch running area. The incline does not quite:
+            <a href="/best-treadmills-with-brushless-motor/" class="text-[#0F62FE] font-medium" data-autolink>brushless motor</a> rating and a 37.5 by 15-inch running area. The incline does not quite:
             UMAY’s page gives three positions of 0, 7 and 15%, one indexed manual gives 15% and another
             16%, which may reflect an earlier version, since UMAY labels the current one a “New
             Upgrade”. We could not confirm the 7.2 mph top speed in the manuals, which describe jogging

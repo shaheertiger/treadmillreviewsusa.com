@@ -217,7 +217,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Why the safety record matters</h3>
           <p>
             The clearest recent example of the risk is Sperax. In April 2026 the CPSC told consumers to
-            stop using Sperax walking pads and treadmills immediately after reports of uncontrolled
+            stop using <a href="/sperax-walking-pad-recall/" class="text-[#0F62FE] font-medium" data-autolink>Sperax walking pads</a> and treadmills immediately after reports of uncontrolled
             speed, falls and fires, and the seller did not agree to a recall. Sperax was a well-known
             marketplace brand with a large following. A brand that leaves no trace at all gives you even
             less to go on if something goes wrong, which is why the checks below put the seller’s

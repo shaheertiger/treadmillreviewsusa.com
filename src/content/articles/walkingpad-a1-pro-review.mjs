@@ -198,7 +198,7 @@ export default {
           ])}
           <p>
             The motor conflict is the one to notice. WalkingPad’s current A1 Pro page calls it a 3.75 HP
-            brushless motor, Best Buy lists 1.25 HP, and the tracker reports 2 HP on Amazon, which it reads as a
+            <a href="/best-treadmills-with-brushless-motor/" class="text-[#0F62FE] font-medium" data-autolink>brushless motor</a>, Best Buy lists 1.25 HP, and the tracker reports 2 HP on Amazon, which it reads as a
             peak figure. Walking-pad motor ratings are rarely stated on a common basis, and a pad limited
             to 3.75 mph does not need much power at walking pace. We would not choose between pads on any
             of these numbers; our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>

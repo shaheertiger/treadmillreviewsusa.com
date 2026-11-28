@@ -74,7 +74,7 @@ export default {
             pain on exertion, high blood pressure that is not well controlled, lung disease,
             diabetes (especially with numb feet), dizziness or fainting spells, a fall in the past
             year, Parkinson's disease or another condition that affects balance, osteoporosis, or
-            a hip or knee replacement in the past few months. Ask two specific questions: is
+            a hip or <a href="/treadmill-after-knee-replacement/" class="text-[#0F62FE] font-medium" data-autolink>knee replacement</a> in the past few months. Ask two specific questions: is
             moderate walking safe for me, and is there anything I should avoid, such as incline or
             certain heart-rate levels? If you take a beta-blocker, your heart rate will not rise
             normally with effort, which is one reason this plan uses the talk test rather than

@@ -108,7 +108,7 @@ ${row('Landice', 'Family-run, New Jersey', 'L-Series club and rehabilitation mod
             2026 it announced a Peloton Commercial Series of gym bike and treadmill, with shipments due
             to begin in late 2026. Precor's own treadmills continue: its brochure for the TRM 885 gives
             a 4 HP AC motor and a 120-volt, 20-amp individual branch circuit for the US, and retailer
-            listings agree on the motor. Our <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor treadmill guide</a> covers the current TRM lines and used prices. Listings disagree on the TRM 885's running-surface width and
+            listings agree on the motor. Our <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor treadmill guide</a> covers the current TRM lines and <a href="/how-much-does-a-used-treadmill-cost/" class="text-[#0F62FE] font-medium" data-autolink>used prices</a>. Listings disagree on the TRM 885's running-surface width and
             maximum user weight, so we leave those out.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Matrix</h3>

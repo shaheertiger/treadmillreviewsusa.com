@@ -281,7 +281,7 @@ export default {
             Ask Wayfair customer service, in writing, who manufactures the item and what its model
             number is. If they can tell you, search that model number elsewhere and see whether the
             figures agree. If nobody can tell you, you will not be able to find a manual, buy a
-            replacement belt or motor controller, or check for a recall.
+            <a href="/best-treadmill-replacement-belts/" class="text-[#0F62FE] font-medium" data-autolink>replacement belt</a> or motor controller, or check for a recall.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">4. Look for reviews of this exact listing</h3>
           <p>

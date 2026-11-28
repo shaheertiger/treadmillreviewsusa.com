@@ -51,7 +51,7 @@ export default {
             Two warnings before you use any of it. First, the console figure on most home
             treadmills runs optimistic, often by a large margin, for reasons covered in our guide to
             <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calories are accurate</a>.
-            Second, no estimate — ours, the console's or a wrist tracker's — is precise enough to
+            Second, no estimate — ours, the console's or a <a href="/best-fitness-trackers/" class="text-[#0F62FE] font-medium" data-autolink>wrist tracker</a>'s — is precise enough to
             plan a diet around to the calorie. Use the numbers to compare sessions with each other
             and to keep expectations realistic, not as a ledger.
           </p>`,

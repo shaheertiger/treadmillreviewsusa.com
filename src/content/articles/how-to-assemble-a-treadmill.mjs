@@ -30,8 +30,8 @@ export default {
       heading: 'Treadmill Assembly: The Short Answer',
       html: `          <p>
             Assembling a typical folding home treadmill takes roughly one to three hours for two
-            people following the manual, and longer the first time or for a large non-folding
-            machine. You need a helper for the lifting, the tools supplied in the box (better ones
+            people following the manual, and longer the first time or for a large <a href="/best-non-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>non-folding
+            machine</a>. You need a helper for the lifting, the tools supplied in the box (better ones
             of your own help), and a clear floor in the room where the treadmill will live.
           </p>
           <p>

@@ -99,7 +99,7 @@ export default {
           </ul>
           <p>
             None of that makes a lifetime term worthless. A lifetime motor warranty on a well-made
-            machine is genuinely useful, because motor replacement is an expensive repair. But it
+            machine is genuinely useful, because <a href="/treadmill-motor-replacement-cost/" class="text-[#0F62FE] font-medium" data-autolink>motor replacement</a> is an expensive repair. But it
             is a parts warranty for one component, and it sits alongside a labour term that has
             usually expired long before the motor fails. Our guide to
             <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a>

@@ -82,7 +82,7 @@ export default {
             flex in a lighter frame, shows up as movement under your feet.
           </p>
           <p>
-            At walking pace you may never notice. At running pace, and particularly for heavier runners
+            At walking pace you may never notice. At running pace, and particularly for <a href="/best-treadmills-for-heavy-runners/" class="text-[#0F62FE] font-medium" data-autolink>heavier runners</a>
             or anyone with a long, forceful stride, a lighter folding frame can bounce, shift sideways
             or creep across the floor. That is not dangerous on a well-built machine, but it is less
             pleasant, it tends to be noisier, and it puts more cyclic stress through the hinge and its

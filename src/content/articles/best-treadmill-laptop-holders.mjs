@@ -150,7 +150,7 @@ export default {
           <p>
             <strong>3. The rail diameter.</strong> Straps wrap around a rail; clamps grip it. VIVO gives a
             maximum handlebar diameter for its pole-mounted desk, and Arkon gives an 18 to 35 mm clamp range
-            for the RV131 phone mount. Measure the thickest part of the rail or upright you plan to use.
+            for the RV131 <a href="/best-treadmill-phone-holders/" class="text-[#0F62FE] font-medium" data-autolink>phone mount</a>. Measure the thickest part of the rail or upright you plan to use.
           </p>
           <p>
             <strong>4. What the board will cover.</strong> Sit the tape across the rails and look at what is

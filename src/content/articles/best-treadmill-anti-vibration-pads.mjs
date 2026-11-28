@@ -248,7 +248,7 @@ export default {
           </p>
           <p>
             <strong>Pads</strong> concentrate their effect where the machine touches the floor. They
-            are small, cheap, easy to hide and good at stopping rattles and reducing motor hum. They
+            are small, cheap, easy to hide and good at stopping rattles and reducing <a href="/treadmill-humming-noise/" class="text-[#0F62FE] font-medium" data-autolink>motor hum</a>. They
             do nothing to protect the floor from sweat, belt dust or dropped water bottles, and on
             carpet they can sink unevenly into the pile.
           </p>

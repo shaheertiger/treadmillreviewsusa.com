@@ -363,7 +363,7 @@ export default {
       html: `          <p>
             The plan below takes a reasonably fit runner who is new to a curved treadmill from the
             first sessions to a full week of curved work. It is an illustration, not a prescription:
-            if you already run regularly on one, start further in; if you are new to running, spend
+            if you already run regularly on one, start further in; if you are <a href="/how-to-start-running-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>new to running</a>, spend
             longer on the early weeks. Each week has two or three curved sessions, and the days in
             between are rest, easy running elsewhere, or strength work that does not hammer the
             calves.

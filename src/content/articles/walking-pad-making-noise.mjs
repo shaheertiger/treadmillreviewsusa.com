@@ -241,7 +241,7 @@ export default {
             WalkingPad&rsquo;s FAQ answer on abnormal noise (read 27 November 2026) describes the whistle as &ldquo;very sharp
             metal whistling sound&rdquo; and says that if it, or an abnormal sound from the front or rear drum, &ldquo;continues
             for a couple of days&rdquo;, you should contact support. Note that the same FAQ also says many WalkingPad models
-            use brushless motors, so whether brushes are relevant depends on your exact model: check the manual rather than
+            use <a href="/best-treadmills-with-brushless-motor/" class="text-[#0F62FE] font-medium" data-autolink>brushless motors</a>, so whether brushes are relevant depends on your exact model: check the manual rather than
             assuming.
           </p>
           <p>
