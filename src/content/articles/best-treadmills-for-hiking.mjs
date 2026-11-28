@@ -2,17 +2,18 @@ export default {
   slug: 'best-treadmills-for-hiking',
   title: 'Best Treadmills for Hiking (2026): 6 Incline and Decline Picks',
   description:
-    'The Aviron Summit (-6% to 42%) is the best treadmill for hiking training; Sunny’s Versatile climbs to 45% for about $2,200 and the CURSOR reaches 40% for $200.',
+    'The Aviron Summit (-6% to 42%) is the best treadmill for hiking training; Sunny’s Versatile climbs to 45% for about $2,200 and the CURSOR reaches 32% for $199.99.',
   crumbLabel: 'Best Treadmills for Hiking',
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Best Treadmills for Hiking', 'Incline and Decline for Trail Prep'],
   standfirst:
-    'The best treadmill for hiking training is the Aviron Summit: it climbs to 42% and descends to -6%, with handles built for steep walking. Sunny’s Versatile Treadmill climbs to 45% for less, the Sole TT8 is the descent specialist, and the CURSOR lets you try 40% walking for about $200.',
+    'The best treadmill for hiking training is the Aviron Summit: it climbs to 42% and descends to -6%, with handles built for steep walking. Sunny’s Versatile Treadmill climbs to 45% for less, the Sole TT8 is the descent specialist, and the CURSOR lets you try 32% walking for $199.99.',
   ctas: [
     { label: 'See the Picks', href: '#picks' },
     { label: 'Pack Workout', href: '#pack-workout' },
@@ -25,7 +26,7 @@ export default {
           the deck goes, whether it goes below level at all, and what there is to hold on a steep
           grade. Top speed hardly matters, because nobody walks uphill at 10 mph. The six machines
           below are the ones on this site with the steepest climbs, the deepest descents, or both,
-          from a $200 manual 40% walker to a $2,800 incline-and-decline trainer, with the
+          from a $200 manual 32% walker to a $2,800 incline-and-decline trainer, with the
           specifications each maker or listing confirms and the training that makes them worth
           buying.`,
   products: [
@@ -150,26 +151,26 @@ export default {
     },
     {
       id: 'cursor-40-incline-treadmill',
-      name: 'CURSOR 40% Incline Treadmill',
+      name: 'CURSOR 32% Incline Treadmill',
       category: 'Budget way to try steep walking',
       badge: 'Best Budget',
-      amazonUrl: 'https://www.amazon.com/s?k=CURSOR+40%25+Incline+Treadmill&tag=sktiger-20',
-      priceRange: 'About $200 (Amazon, 6 Nov 2026)',
-      specs: '0–40% manual incline in five steps · 38.6 x 15.4 in. belt · 0.6–6.2 mph · 350 lb capacity · 51 in. handrails · folds',
+      amazonUrl: 'https://www.amazon.com/dp/B0HH368PZJ?tag=sktiger-20&linkCode=ll1',
+      priceRange: '$199.99 (Amazon, 28 Nov 2026)',
+      specs: '0–32% manual incline in five steps · 38.6 x 15.4 in. belt · 0.6–6.2 mph · 350 lb capacity · 51 in. handrails · folds',
       pros: [
-        'Reaches 40% for about a tenth of the price of a powered incline trainer',
+        'Reaches 32% for about a tenth of the price of a powered incline trainer',
         'Long 51-inch handrails, per the listing',
         'A 350 lb rating and a folding frame with wheels',
       ],
       cons: [
-        'Incline is set by hand in 10% steps, so no climb-and-descend programs',
+        'Incline is set by hand in 8% steps, so no climb-and-descend programs',
         'A 38.6 by 15.4-inch belt is walking-pad sized and short on a slope',
         'No decline, and a brand with little track record we could check',
       ],
       bottomLine:
         'A cheap way to find out whether steep walking suits you before spending thousands; not a substitute for a powered trainer.',
       description:
-        "The CURSOR is the cheapest way we found to walk at 40%, and it is a very different machine from the others here. The Amazon listing gives five manual incline settings, 0, 10, 20, 30 and 40%, with the deck reaching 15 inches high at the top setting, a 38.6 by 15.4-inch belt, a speed range of 0.6 to 6.2 mph, a 3.0 HP brushless motor, a 350 lb maximum user weight, 51-inch dual handrails and a folding frame with transport wheels. The word that matters is manual: you set the grade by hand, between sessions or by stopping, so a hike-style session that varies the grade is out, and so is decline. The short, narrow belt matters more on a slope than on the flat, because your stride lengthens uphill and you drift backwards as you tire, and with a pack on that drift is harder to correct. Treat it as a low-cost trial: if a month of steep walking at 20% to 30% turns into a habit, that is the evidence to spend more on a powered machine. Keep the speed modest at the steep settings. Amazon listed it at $199.99 on 6 November 2026.",
+        "The CURSOR is the cheapest way we found to walk at 32%, and it is a very different machine from the others here. The Amazon listing gives five manual incline settings, 0, 8, 16, 24 and 32%, with the deck reaching 15 inches high at the top setting, a 38.6 by 15.4-inch belt, a speed range of 0.6 to 6.2 mph, a 3.0 HP brushless motor, a 350 lb maximum user weight, 51-inch dual handrails and a folding frame with transport wheels. The word that matters is manual: you set the grade by hand, between sessions or by stopping, so a hike-style session that varies the grade is out, and so is decline. The short, narrow belt matters more on a slope than on the flat, because your stride lengthens uphill and you drift backwards as you tire, and with a pack on that drift is harder to correct. Treat it as a low-cost trial: if a month of steep walking at 16% to 24% turns into a habit, that is the evidence to spend more on a powered machine. Keep the speed modest at the steep settings. Its 32% figure is the listing's own: the same listing said 40% when we first checked it on 6 November 2026, and was corrected to 32% by 28 November. Amazon listed it at $199.99 on 28 November 2026.",
     },
   ],
   sections: [
@@ -179,8 +180,8 @@ export default {
       html: `          <p>
             <strong>The best treadmill for hiking training is the Aviron Summit, because it climbs to 42%,
             descends to -6% and has handles built for steep walking; if you only need the climb, Sunny’s
-            Versatile Treadmill reaches 45% for about $2,200, and the CURSOR reaches 40% by hand for
-            about $200.</strong> What to look for, in order:
+            Versatile Treadmill reaches 45% for about $2,200, and the CURSOR reaches 32% by hand for
+            $199.99.</strong> What to look for, in order:
           </p>
           <ul>
             <li><strong>Incline:</strong> 15% at the very least; 30% to 45% if your trails are steep.</li>
@@ -218,7 +219,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole TT8</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Long descents, heavy packs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-6% to 15%, 400 lb capacity</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack Commercial 1750</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hikers who also run, small rooms</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-3% to 12%, folds, iFIT trail routes</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LifeSmart TM3000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered decline on a budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-3% to 10%, about $999, auto-fold</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CURSOR 40% Incline Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Trying steep walking cheaply</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0 to 40% by hand, about $200</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CURSOR 32% Incline Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Trying steep walking cheaply</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0 to 32% by hand, $199.99 (Amazon, 28 Nov 2026)</td></tr>
             </tbody>
           </table></div>`,
     },
@@ -344,7 +345,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole TT8</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-6% to 15%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.5–12 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $2,500</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack Commercial 1750</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-3% to 12%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–12 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sources differ</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sources differ</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Around $1,900–$2,300</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LifeSmart TM3000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-3% to 10%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–12.5 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 55 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes, powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CURSOR 40% Incline Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0 to 40% (manual)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–6.2 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">38.6 x 15.4 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $200</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CURSOR 32% Incline Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0 to 32% (manual)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.6–6.2 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">38.6 x 15.4 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$199.99</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -584,7 +585,7 @@ export default {
             TT8</strong> is the pick for long descents and heavy packs.`,
     `If you need a machine that folds or also runs, the NordicTrack Commercial 1750 gives -3% to
             12%; on a budget, the LifeSmart TM3000 adds powered decline for about $999 and the CURSOR
-            lets you try 40% walking for about $200. Whichever you choose, build grade, pack weight
+            lets you try 32% walking for $199.99. Whichever you choose, build grade, pack weight
             and decline gradually, and keep your hands light on the rails.`,
   ],
 };

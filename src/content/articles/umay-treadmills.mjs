@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.5k',
   h1: ['UMAY Treadmills:', 'What the Figures Really Say'],
   standfirst:
@@ -30,24 +30,24 @@ export default {
   products: [
     {
       id: "cursor-40-incline-treadmill",
-      name: "CURSOR 40% Incline Treadmill",
+      name: "CURSOR 32% Incline Treadmill",
       category: "Closest on Amazon to the SF20: Handrails and a Steep Manual Incline",
       badge: "Closest on Amazon",
-      priceRange: "About $200 (Amazon, 6 Nov 2026)",
-      specs: "0–40% manual incline in five steps · 38.6 x 15.4 in. belt · 0.6–6.2 mph · 350 lb capacity · 51 in. handrails · folds",
+      priceRange: "$199.99 (Amazon, 28 Nov 2026)",
+      specs: "0–32% manual incline in five steps · 38.6 x 15.4 in. belt · 0.6–6.2 mph · 350 lb capacity · 51 in. handrails · folds",
       pros: [
-        "Reaches 40% for about a tenth of the price of a powered incline trainer",
+        "Reaches 32% for about a tenth of the price of a powered incline trainer",
         "Long 51-inch handrails, per the listing, which help on steep grades",
         "A 350 lb rating and a fold-down frame with wheels",
         "Light enough to move and store, unlike a full incline trainer",
       ],
       cons: [
-        "The incline is set by hand in 10% steps, not powered, so you stop to change it",
+        "The incline is set by hand in 8% steps, not powered, so you stop to change it",
         "A 38.6 by 15.4-inch belt is walking-pad sized and short for a long stride on a slope",
         "No decline, and the brand has little track record we could check",
       ],
       bottomLine: "The handrailed, steep-incline folding walker to buy on Amazon in place of an SF20; set the incline before you start and keep to walking speeds.",
-      description: "The SF20 is sold on UMAY's own store, but we could not find it on Amazon US under that name, so this card shows the closest machine Amazon does list: a folding walker with long handrails and a steep manual incline, at a lower price. The CURSOR's Amazon listing gives five manual incline settings — 0, 10, 20, 30 and 40% — with the deck reaching 15 inches high at the top setting, a 38.6 by 15.4-inch belt, a speed range of 0.6 to 6.2 mph, a 3.0 HP brushless motor, a 350 lb maximum user weight, 51-inch dual handrails described as suited to users 5 ft 11 in. and taller, and a fold-down frame with transport wheels. Against the SF20 it has a similar belt (the SF20's is 37.5 by 15 inches), a steeper top incline, a lower top speed and a 50 lb lower capacity. As on the SF20, the incline is manual: you change it by hand, between sessions or by stopping, so there are no hill programs that change it mid-walk. The belt is short for a long stride on a slope, so keep the speed modest at the steep settings. The brand has little track record we could check, and UMAY's own store with a US phone line and 30-day returns is the reason to buy the SF20 there instead. Amazon listed it at $199.99 on 6 November 2026, as checked for our incline trainer guide.",
+      description: "The SF20 is sold on UMAY's own store, but we could not find it on Amazon US under that name, so this card shows the closest machine Amazon does list: a folding walker with long handrails and a steep manual incline, at a lower price. The CURSOR's Amazon listing gives five manual incline settings — 0, 8, 16, 24 and 32% — with the deck reaching 15 inches high at the top setting, a 38.6 by 15.4-inch belt, a speed range of 0.6 to 6.2 mph, a 3.0 HP brushless motor, a 350 lb maximum user weight, 51-inch dual handrails described as suited to users 5 ft 11 in. and taller, and a fold-down frame with transport wheels. Against the SF20 it has a similar belt (the SF20's is 37.5 by 15 inches), a steeper top incline (32% against the SF20's 15 to 16%), a lower top speed and a 50 lb lower capacity. As on the SF20, the incline is manual: you change it by hand, between sessions or by stopping, so there are no hill programs that change it mid-walk. The belt is short for a long stride on a slope, so keep the speed modest at the steep settings. The brand has little track record we could check, and UMAY's own store with a US phone line and 30-day returns is the reason to buy the SF20 there instead. Its 32% figure is the listing's own: the same listing said 40% when we first checked it on 6 November 2026, and was corrected to 32% by 28 November. Amazon listed it at $199.99 on 28 November 2026.",
     },
     {
       id: "urevo-strol-2e-pro",
@@ -204,7 +204,7 @@ export default {
             These are the three UMAY machines whose main figures we could check against a second source
             on 5 November 2026, plus two checked alternatives from other brands. We could not find the SF20 or
             U20F on Amazon US under those names, so their cards show the closest machines Amazon does list, the
-            CURSOR <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>40% Incline</a> Treadmill and UREVO Strol 2E Pro; the SF20 and U20F themselves are covered in the
+            CURSOR 32% Incline Treadmill and UREVO Strol 2E Pro; the SF20 and U20F themselves are covered in the
             sections below and sold on UMAY's store. Prices are UMAY’s sale
             prices on its own store on the day; UMAY shows every product at roughly 40% off a higher
             “regular” price, so treat the sale price as the real one. Where UMAY’s figures disagree with

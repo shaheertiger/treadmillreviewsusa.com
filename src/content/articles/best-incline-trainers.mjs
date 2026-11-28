@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['The Best', 'Incline Trainers'],
   standfirst:
@@ -45,7 +45,7 @@ export default {
             Amazon alternatives: the THERUN 20% Auto Incline Treadmill climbs to 20% and runs at 12 mph
             for about $800, and the Sole TT8 gives a light-commercial frame with a -6% decline but only
             15% incline. The FreeMotion i11.9 is an older 30% incline trainer still listed on Amazon. And the
-            CURSOR 40% Incline Treadmill reaches 40% for about $200, but you set the incline by hand and
+            CURSOR 32% Incline Treadmill reaches 32% for $199.99, but you set the incline by hand and
             the belt is walking-pad sized, so treat it as a cheap way to try steep walking rather than a
             real incline trainer.
           </p>
@@ -63,7 +63,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">THERUN 20% Auto Incline Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–20%, powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Climbing and running on a budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $800 (Amazon)</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole TT8</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-6% to 15%, powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial-style build</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $2,500 (Amazon)</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FreeMotion i11.9 Incline Trainer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30% incline and decline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 30% machine on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $2,875 (Amazon)</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CURSOR 40% Incline Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–40% in five manual steps</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Trying steep walking cheaply</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $200 (Amazon)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CURSOR 32% Incline Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–32% in five manual steps</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Trying steep walking cheaply</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$199.99 (Amazon, 28 Nov 2026)</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -418,27 +418,27 @@ export default {
     },
     {
       id: 'cursor-40-incline-treadmill',
-      name: 'CURSOR 40% Incline Treadmill',
+      name: 'CURSOR 32% Incline Treadmill',
       category: 'Budget Way to Try Steep Walking',
       badge: 'Best Budget',
-      amazonUrl: 'https://www.amazon.com/s?k=CURSOR+40%25+Incline+Treadmill&tag=sktiger-20',
-      priceRange: 'About $200 (Amazon, 6 Nov 2026)',
-      specs: '0–40% manual incline in five steps · 38.6 x 15.4 in. belt · 0.6–6.2 mph · 350 lb capacity · 51 in. handrails · folds',
+      amazonUrl: 'https://www.amazon.com/dp/B0HH368PZJ?tag=sktiger-20&linkCode=ll1',
+      priceRange: '$199.99 (Amazon, 28 Nov 2026)',
+      specs: '0–32% manual incline in five steps · 38.6 x 15.4 in. belt · 0.6–6.2 mph · 350 lb capacity · 51 in. handrails · folds',
       pros: [
-        'Reaches 40% for about a tenth of the price of a powered incline trainer',
+        'Reaches 32%, above a 30% incline trainer, for about a tenth of the price of a powered one',
         'Long 51-inch handrails, per the listing, which help on steep grades',
         'A 350 lb rating and a fold-down frame with wheels',
         'Light enough to move and store, unlike a full incline trainer',
       ],
       cons: [
-        'The incline is set by hand in 10% steps, not powered, so you stop to change it',
+        'The incline is set by hand in 8% steps, not powered, so you stop to change it',
         'A 38.6 by 15.4-inch belt is walking-pad sized and short for a long stride on a slope',
         'No decline, and the brand has little track record we could check',
       ],
       bottomLine:
         'A cheap way to find out whether steep walking suits you, not a substitute for a powered incline trainer.',
       description:
-        "The CURSOR is the cheapest way we found to walk at 40%, and it is a very different machine from the others here. The Amazon listing gives five manual incline settings — 0, 10, 20, 30 and 40% — with the deck reaching 15 inches high at the top setting, a 38.6 by 15.4-inch belt, a speed range of 0.6 to 6.2 mph, a 3.0 HP brushless motor, a 350 lb maximum user weight, 51-inch dual handrails described as suited to users 5 ft 11 in. and taller, and a fold-down frame with transport wheels. The word that matters is manual: you change the incline by hand, between sessions or by stopping, so there are no hill programs and no changes mid-walk. The belt is also far shorter and narrower than a full incline trainer's, which matters more on a slope, where your stride lengthens and you drift backwards as you tire. Treat it as a low-cost way to find out whether steep walking suits you before spending thousands, and keep the speed modest at the steep settings. It has no decline. Amazon listed it at $199.99 on 6 November 2026.",
+        "The CURSOR is the cheapest way we found to walk at 32%, a little steeper than a 30% incline trainer, and it is a very different machine from the others here. The Amazon listing gives five manual incline settings — 0, 8, 16, 24 and 32% — with the deck reaching 15 inches high at the top setting, a 38.6 by 15.4-inch belt, a speed range of 0.6 to 6.2 mph, a 3.0 HP brushless motor, a 350 lb maximum user weight, 51-inch dual handrails described as suited to users 5 ft 11 in. and taller, and a fold-down frame with transport wheels. The word that matters is manual: you change the incline by hand, between sessions or by stopping, so there are no hill programs and no changes mid-walk. The belt is also far shorter and narrower than a full incline trainer's, which matters more on a slope, where your stride lengthens and you drift backwards as you tire. Treat it as a low-cost way to find out whether steep walking suits you before spending thousands, and keep the speed modest at the steep settings. It has no decline. Its 32% figure is the listing's own: the same listing said 40% when we first checked it on 6 November 2026, and was corrected to 32% by 28 November. Amazon listed it at $199.99 on 28 November 2026.",
     },
   ],
   faqs: [
