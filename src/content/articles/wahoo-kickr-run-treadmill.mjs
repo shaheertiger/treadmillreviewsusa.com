@@ -1,15 +1,14 @@
 export default {
   slug: 'wahoo-kickr-run-treadmill',
   title: 'Wahoo Treadmill Review (2026): KICKR RUN Price, Specs and Zwift',
-  description:
-    'The Wahoo KICKR RUN smart treadmill: its November 2026 price, the figures Wahoo and reviewers agree on, RunFree mode, Zwift incline control, power needs and cheaper rivals.',
+  description: "The Wahoo KICKR RUN is $6,999.99 (Wahoo, 5 Nov 2026), up from $4,999 at launch: a 60 x 22 in. belt, RunFree pacing, decline and Zwift incline control.",
   crumbLabel: 'Wahoo KICKR RUN Treadmill',
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Wahoo KICKR RUN', 'Treadmill Review'],
   standfirst:

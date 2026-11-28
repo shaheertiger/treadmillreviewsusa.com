@@ -1,15 +1,14 @@
 export default {
   slug: 'should-i-buy-a-treadmill',
   title: 'Should I Buy a Treadmill? An Honest Yes-or-No Test',
-  description:
-    'Who a home treadmill pays off for, who regrets one, cost per use, the space and power checklist, cheaper alternatives and an eight-question self-test.',
+  description: "Yes, if you already exercise twice a week and weather or your schedule stops you: then each session costs $1 to $2 within a few years. An 8-question self-test.",
   crumbLabel: 'Should I Buy a Treadmill',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-18',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Should I Buy', 'a Treadmill?'],
   standfirst:

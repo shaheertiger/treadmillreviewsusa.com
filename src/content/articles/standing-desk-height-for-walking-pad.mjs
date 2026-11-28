@@ -1,15 +1,14 @@
 export default {
   slug: 'standing-desk-height-for-walking-pad',
   title: 'Standing Desk Height for a Walking Pad: Chart and Formula',
-  description:
-    'How high your standing desk must go over a walking pad: elbow height plus deck height plus shoes, a chart by user height, monitor height, keyboard trays, and why many desks fall short.',
+  description: "Desk height = standing elbow height + shoe + deck, so 44 to 54 inches for most adults on a walking pad. A chart by height, and why many desks fall short.",
   crumbLabel: 'Standing Desk Height for a Walking Pad',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Standing Desk Height', 'for a Walking Pad'],
   standfirst:

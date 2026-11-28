@@ -1,15 +1,14 @@
 export default {
   slug: 'is-walking-on-a-treadmill-the-same-as-walking-outside',
-  title: 'Is Treadmill Walking the Same as Walking Outside? Differences',
-  description:
-    'Close, but not identical. How the belt, the flat surface, stride, balance, step tracking and the mental side differ, and whether treadmill walking is good for you.',
+  title: "Is Walking on a Treadmill the Same as Walking Outside?",
+  description: "Close: at 3 to 4 mph, a treadmill walk is very similar work to a flat outdoor walk. Many walkers set a 1% to 3% incline for terrain. The real differences.",
   crumbLabel: 'Is Walking on a Treadmill the Same as Walking Outside',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Is Walking on a Treadmill the Same', 'as Walking Outside?'],
   standfirst:

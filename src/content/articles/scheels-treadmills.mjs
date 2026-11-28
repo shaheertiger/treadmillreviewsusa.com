@@ -1,15 +1,14 @@
 export default {
   slug: 'scheels-treadmills',
   title: 'Scheels Treadmills (2026): Brands, Delivery, Returns, Price Match',
-  description:
-    'Buying a treadmill at Scheels: which brands it sells, in-store vs online, freight delivery and surcharges, assembly, the 90-day return policy and price matching, checked October 2026.',
+  description: "Scheels sells NordicTrack, ProForm, Horizon and Landice treadmills from about $600 to over $5,000, with 90-day returns and price match. Surcharges don’t refund.",
   crumbLabel: 'Scheels Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Scheels Treadmills:', 'What to Know Before You Buy'],
   standfirst:

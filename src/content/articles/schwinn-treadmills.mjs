@@ -1,15 +1,14 @@
 export default {
   slug: 'schwinn-treadmills',
   title: 'Schwinn Treadmills (2026): 810, 815, SFT4.1, SFT4.3 and 830',
-  description:
-    'Schwinn still sells four treadmills in the US, from $699 to $1,099. The 810, 815, SFT4.1 and SFT4.3 compared, what happened to the 830, the motor figures Schwinn does not publish, and the one-year parts warranty.',
+  description: "Schwinn sells four treadmills from $699 to $1,099: the SFT4.1, 810, SFT4.3 and 815. The $899 SFT4.3 gives a 60 in. deck and 12 mph. What happened to the 830.",
   crumbLabel: 'Schwinn Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   socialProof: '1.5k',
   h1: ['Schwinn Treadmills:', 'The Current Range and the Models You Will See Used'],
   standfirst:

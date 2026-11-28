@@ -1,15 +1,14 @@
 export default {
   slug: 'how-long-should-i-run-on-a-treadmill',
   title: 'How Long Should I Run on a Treadmill? By Goal and Level',
-  description:
-    'Beginners: 20 to 30 minutes with walk breaks. After that it depends on your goal. Session lengths by goal, the US guidelines, building up, long runs and intervals.',
+  description: "Beginners: 20 to 30 minutes with walk breaks, three times a week. After that it depends on your goal. Times by goal, the 150-minute guideline and long runs.",
   crumbLabel: 'How Long Should I Run on a Treadmill',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['How Long Should I Run', 'on a Treadmill?'],
   standfirst:

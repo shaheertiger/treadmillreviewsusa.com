@@ -1,15 +1,14 @@
 export default {
   slug: 'can-you-use-a-treadmill-every-day',
   title: 'Can You Use a Treadmill Every Day? Walking, Running, Wear',
-  description:
-    'Daily walking is fine for most people. Daily running depends on easy-hard balance and rest. Warning signs of overuse, plus what daily use means for the machine.',
+  description: "Yes for walking: five 30-minute walks meet the 150-minute weekly US guideline. Daily running needs easy days and one rest or walk day a week. Signs of overuse.",
   crumbLabel: 'Can You Use a Treadmill Every Day',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Can You Use a Treadmill', 'Every Day?'],
   standfirst:

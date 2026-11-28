@@ -1,15 +1,14 @@
 export default {
   slug: 'best-running-watches-for-treadmill',
   title: 'Best Running Watches for Treadmill Running (2026): 6 Picks',
-  description:
-    'Six current running watches checked for treadmill use: indoor run modes, post-run distance calibration, foot pod pairing, and GymKit or treadmill connections.',
+  description: "The COROS PACE 4 ($249) is the best running watch for the treadmill: post-run distance correction and foot pod support. Six picks, Garmin and Apple too.",
   crumbLabel: 'Best Running Watches for Treadmill',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['Best Running Watches', 'for the Treadmill'],
   standfirst:

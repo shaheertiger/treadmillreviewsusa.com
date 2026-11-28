@@ -1,15 +1,14 @@
 export default {
   slug: 'best-fitness-trackers-for-walking-pad',
   title: 'Best Fitness Trackers for a Walking Pad (2026): Count Desk Steps',
-  description:
-    'Wrist trackers can miss steps when your hands are on a keyboard. Five trackers and pedometers that count from the waist, foot or finger, and what each fixes.',
+  description: "Wrist trackers miss steps while you type. The Fitbit Inspire 3 on its clip counts from the waist; a $25 clip-on pedometer is the simple option. Five picks.",
   crumbLabel: 'Best Fitness Trackers for a Walking Pad',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Fitness Trackers', 'for a Walking Pad'],
   standfirst:

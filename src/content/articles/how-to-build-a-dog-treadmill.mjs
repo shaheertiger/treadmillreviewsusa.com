@@ -1,15 +1,14 @@
 export default {
   slug: 'how-to-build-a-dog-treadmill',
   title: 'How to Build a Dog Treadmill: DIY Slatmills, Honestly',
-  description:
-    'DIY dog treadmills are dog-powered slatmills and carpet mills. Design principles, costs, skills and failure modes, and why not to build a motorized one.',
+  description: "Build a dog-powered slatmill or carpet mill, never a motorized one. A carpet mill costs $200 to $300 in parts, a large slatmill $800 to $900. Designs and risks.",
   crumbLabel: 'How to Build a Dog Treadmill',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-18',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['How to Build a', 'Dog Treadmill'],
   standfirst:

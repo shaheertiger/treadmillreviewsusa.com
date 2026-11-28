@@ -1,14 +1,13 @@
 export default {
   slug: 'nordictrack-exp-7i-treadmill',
   title: 'NordicTrack EXP 7i Review (2026): Specs and What Replaces It',
-  description:
-    'The NordicTrack EXP 7i: 7 in. touchscreen, 20 x 55 in. belt, 2.6 CHP, 10 mph, 300 lb. It is no longer in NordicTrack’s lineup — what a used one is worth checking, and the current equivalents.',
+  description: "The NordicTrack EXP 7i: 20 x 55 in. belt, 2.6 CHP, 10 mph, 12% incline, 300 lb, 7 in. touchscreen. No longer listed; what to check used and what replaces it.",
   crumbLabel: 'NordicTrack EXP 7i',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['NordicTrack EXP 7i', 'Treadmill Review'],
   standfirst:

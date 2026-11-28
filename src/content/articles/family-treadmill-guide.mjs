@@ -1,15 +1,14 @@
 export default {
   slug: 'family-treadmill-guide',
-  title: 'Family Treadmill Guide: Buying One Machine for Several Users',
-  description:
-    'How to choose a treadmill for a family or couple: size it for the tallest runner and heaviest user, rate the motor for combined hours, and plan for kids and noise.',
+  title: "Treadmill for a Family: How to Choose One for Several Users",
+  description: "Size a family treadmill for the tallest runner (a 60 in. deck) and the heaviest user plus 50 lb, rate the motor for combined hours, and plan for kids.",
   crumbLabel: 'Family Treadmill Guide',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Buying a Treadmill', 'for the Whole Family'],
   standfirst:

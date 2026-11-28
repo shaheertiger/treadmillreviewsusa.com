@@ -1,15 +1,14 @@
 export default {
   slug: 'folding-vs-non-folding-treadmill',
   title: 'Folding vs Non-Folding Treadmill: What You Trade for Storage',
-  description:
-    'Folding treadmills save floor space when stored; non-folding ones usually give more stability, deck and motor per dollar. Here is the trade, honestly weighed.',
+  description: "Buy non-folding if it can stay set up: more frame, deck and motor per dollar. Fold only if you will fold it weekly; runners still need a 60 in. deck.",
   crumbLabel: 'Folding vs Non-Folding Treadmill',
   kicker: 'Comparison',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Folding vs', 'Non-Folding Treadmill'],
   standfirst:

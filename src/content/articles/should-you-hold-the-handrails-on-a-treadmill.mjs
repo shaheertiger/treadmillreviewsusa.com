@@ -1,15 +1,14 @@
 export default {
   slug: 'should-you-hold-the-handrails-on-a-treadmill',
   title: 'Should You Hold the Handrails on a Treadmill? When and Why',
-  description:
-    'Hold the rails to get on and off, change speed, or if you need support. Habitual gripping cuts the work, bends your posture and inflates console calories. How to stop.',
+  description: "Hold the rails to get on and off, change speed, or if you need support. Habitual gripping cuts the work, bends your posture and inflates console calories.",
   crumbLabel: 'Should You Hold the Handrails on a Treadmill',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Should You Hold the Handrails', 'on a Treadmill?'],
   standfirst:

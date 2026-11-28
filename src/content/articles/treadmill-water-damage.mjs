@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-water-damage',
   title: 'Can a Treadmill Be Fixed After Water Damage? Costs and Risks',
-  description:
-    'Often yes, if it was not powered while wet and is dried properly. What to do first, what water damages, flood vs spill vs sweat, estimated repair costs, insurance and warranty.',
+  description: "Often yes, if it was not powered while wet and is fully dried. Do not switch it on to test it. Repairs run from nothing to $300–$700 for a new control board.",
   crumbLabel: 'Treadmill Water Damage',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Can a Treadmill Be Fixed', 'After Water Damage?'],
   standfirst:

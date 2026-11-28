@@ -1,15 +1,14 @@
 export default {
   slug: 'best-dog-treadmills-for-small-dogs',
   title: 'Best Dog Treadmills for Small Dogs (2026): Toy & Small Breeds',
-  description:
-    'Four dog treadmills for toy and small breeds sold on Amazon, checked in November 2026: running length against your dog, speed, side panels, what was actually in stock, and the safety rules that matter most.',
+  description: "The GoPet PetRun PR700 is the best small-dog treadmill: 28 x 16 in. belt, 0.6–8 mph, dogs up to 44 lb, about $590. The budget GYMAX pick is about $180.",
   crumbLabel: 'Dog Treadmills for Small Dogs',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.5k',
   h1: ['Best Dog Treadmills for Small Dogs', 'Sized for Toy and Small Breeds'],
   standfirst:

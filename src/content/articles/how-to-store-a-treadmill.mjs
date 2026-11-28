@@ -1,15 +1,14 @@
 export default {
   slug: 'how-to-store-a-treadmill',
   title: 'How to Store a Treadmill: Short-Term and Long-Term Storage',
-  description:
-    'How to store a treadmill for weeks or months: where to keep it, unplugging, cleaning, belt tension, covers, humidity and pests, and a checklist for restarting it safely.',
+  description: "Store a treadmill indoors, dry and unplugged with the key out, cleaned, lubricated (every 40 to 50 hours) and under a breathable cover. Restart checklist.",
   crumbLabel: 'How to Store a Treadmill',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Ownership',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['How to Store', 'a Treadmill'],
   standfirst:

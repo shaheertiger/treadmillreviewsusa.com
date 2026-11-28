@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-vs-rowing-machine',
   title: 'Treadmill vs Rowing Machine (2026): Which Should You Buy?',
-  description:
-    'Rower vs treadmill: full-body versus lower-body work, impact, technique, back considerations, space, noise and cost compared — with a clear verdict on which to buy.',
+  description: "Rower: low-impact, full-body work, often stores upright, but a stroke to learn. Treadmill: no skill needed, loads your bones, needs 6 ft clear behind.",
   crumbLabel: 'Treadmill vs Rowing Machine',
   kicker: 'Comparison',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.5k',
   h1: ['Treadmill vs', 'Rowing Machine'],
   standfirst:

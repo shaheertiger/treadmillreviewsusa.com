@@ -1,15 +1,14 @@
 export default {
   slug: 'sams-club-treadmills',
   title: 'Sam’s Club Treadmills (2026): NordicTrack, Returns and Membership',
-  description:
-    'Treadmills at Sam’s Club: the NordicTrack and ProForm models it lists, the Commercial LE, members-only pricing, the return policy for a treadmill, delivery and assembly, and Sam’s vs Costco.',
+  description: "Sam’s Club sells mostly NordicTrack and ProForm treadmills, some at members-only prices; basic membership is $60. Match the model, read returns, vs Costco.",
   crumbLabel: 'Sam’s Club Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Treadmills at Sam’s Club:', 'What It Sells and How to Buy'],
   standfirst:

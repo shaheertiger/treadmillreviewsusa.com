@@ -1,15 +1,14 @@
 export default {
   slug: 'zofdim-treadmills',
   title: 'Zofdim Treadmill (2026): What We Could Find, and What to Check',
-  description:
-    'Is a Zofdim treadmill or walking pad worth buying? What we could and could not confirm about the brand on 5 November 2026, how to check a marketplace listing, and checked alternatives.',
+  description: "We found no maker's site, review or readable listing for Zofdim treadmills on 5 November 2026. How to vet a marketplace pad, and four checked pads from $170.",
   crumbLabel: 'Zofdim Treadmill',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Zofdim Treadmill:', 'What We Could Confirm'],
   standfirst:

@@ -1,15 +1,14 @@
 export default {
   slug: 'best-treadmill-cup-holders',
   title: 'Best Treadmill Cup Holders and Trays (2026): Clip-On and Strap',
-  description:
-    'Five treadmill cup holders, bottle cages and trays with their bar and cup sizes from the listings, and where to put a drink so spills miss the console and motor.',
+  description: "The Hila Optics holder is the best treadmill cup holder for big tumblers: open-sided, it clamps bars 0.5 to 1.75 in. Five picks, including a 34.1 in. tray.",
   crumbLabel: 'Best Treadmill Cup Holders',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.0k',
   h1: ['Best Treadmill Cup Holders', 'and Trays'],
   standfirst:

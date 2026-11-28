@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-repair-near-me',
   title: 'Treadmill Repair Near Me: Finding a Qualified Technician',
-  description:
-    'How to find treadmill repair near you: manufacturer service routes for NordicTrack, Sole and Horizon, independent fitness technicians, typical call-out costs, questions to ask and red flags.',
+  description: "Under warranty, call the maker; otherwise an independent fitness technician. Call-outs run about $75 to $150, common repairs $120 to $300. Questions to ask.",
   crumbLabel: 'Treadmill Repair Near Me',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Treadmill Repair Near Me:', 'How to Find a Technician Worth Booking'],
   standfirst:

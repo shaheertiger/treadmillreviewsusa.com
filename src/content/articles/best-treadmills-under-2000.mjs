@@ -1,14 +1,13 @@
 export default {
   slug: 'best-treadmills-under-2000',
   title: 'Best Treadmills Under $2,000 (2026): The Running Tier',
-  description:
-    'Under $2,000 is where 60-inch decks meet frames heavy enough to run on. We compared six machines at this price on deck length, frame mass, motor and warranty.',
+  description: "The NordicTrack Commercial 1750 is the best treadmill under $2,000: 22 x 60 in. deck, 3.5 CHP, -3% to 12% incline. The $1,199 Sole F65 skips the subscription.",
   crumbLabel: 'Best Treadmills Under $2,000',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '4.6k',
   h1: ['Best Treadmills', 'Under $2,000'],
   standfirst:

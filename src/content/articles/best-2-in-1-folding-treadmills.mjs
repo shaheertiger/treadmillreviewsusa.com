@@ -1,15 +1,14 @@
 export default {
   slug: 'best-2-in-1-folding-treadmills',
   title: 'Best 2-in-1 Folding Treadmills (2026): 6 Walk-and-Jog Picks',
-  description:
-    'Six 2-in-1 folding treadmills on Amazon, including the Goplus 2.25HP and 4.75HP listings, with what the running mode really allows and which figures the listings confirm.',
+  description: "The UREVO Strol 2E is the best 2-in-1 folding treadmill for most: a 40 in. track, 6.2 mph with the handle up, $161.99. Five more, from the $114 Goplus.",
   crumbLabel: 'Best 2-in-1 Folding Treadmills',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '2.0k',
   h1: ['Best 2-in-1', 'Folding Treadmills'],
   standfirst:

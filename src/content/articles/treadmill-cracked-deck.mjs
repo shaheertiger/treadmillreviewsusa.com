@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-cracked-deck',
-  title: 'Treadmill Cracked Deck (2026): Symptoms, Causes and Repair Cost',
-  description:
-    'A treadmill cracked or broken deck: how to recognise it, what causes it, why it should not be flipped or glued, what replacement typically costs, and when to stop using the machine.',
+  title: "Treadmill Cracked Deck: Symptoms, Causes and Repair Cost",
+  description: "Replace a cracked treadmill deck; never flip or glue it. The part is typically $100–$300, a deck and belt fitted $300–$600. Signs, causes, warranty.",
   crumbLabel: 'Treadmill Cracked Deck',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.5k',
   h1: ['Treadmill Cracked Deck:', 'What It Means and What to Do Next'],
   standfirst:

@@ -1,15 +1,14 @@
 export default {
   slug: 'how-to-make-a-cheap-treadmill-last-longer',
   title: 'How to Make a Cheap Treadmill Last Longer: 9 Habits',
-  description:
-    'Budget treadmills and walking pads wear out from heat, friction and overload. Stay inside the ratings, rest the motor, lubricate, set the belt, and protect power and placement.',
+  description: "Stay well inside the weight and speed ratings, rest the motor, lubricate, set belt tension and use a wall outlet: 9 habits that keep a $250 walking pad going.",
   crumbLabel: 'How to Make a Cheap Treadmill Last Longer',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['How to Make a Cheap Treadmill', 'Last Longer'],
   standfirst:

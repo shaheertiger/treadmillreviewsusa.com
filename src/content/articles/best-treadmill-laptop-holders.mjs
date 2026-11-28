@@ -1,15 +1,14 @@
 export default {
   slug: 'best-treadmill-laptop-holders',
   title: 'Best Treadmill Laptop Holders (2026): Trays, Desks & Phone Mounts',
-  description:
-    'Six treadmill laptop holders, desk attachments and phone mounts that were on sale on 5 November 2026, with the handrail measurements to check first and when a standing desk is the better answer.',
+  description: "The VIVO 31 in. tray ($67.19) is the best treadmill laptop holder: fits handrails 26.8–31.5 in. apart and holds 22 lb. Six holders and mounts, from $44.",
   crumbLabel: 'Treadmill Laptop Holders',
   breadcrumb: { name: 'Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Best Treadmill Laptop Holders', 'Trays, Desks and Phone Mounts'],
   standfirst:

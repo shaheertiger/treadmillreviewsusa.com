@@ -1,15 +1,14 @@
 export default {
   slug: 'smart-treadmill-vs-regular',
-  title: 'Smart vs Regular Treadmill (2026): Are Smart Treadmills Worth It?',
-  description:
-    'Touchscreens, auto-adjusting classes and subscriptions against a plain console and your own tablet. What a smart treadmill adds, what it costs over time and what can break.',
+  title: "Smart vs Regular Treadmill: Are Smart Treadmills Worth It?",
+  description: "A smart treadmill is worth it only if you will use classes several times a week for years and keep paying. If not, spend it on the motor, deck and cushioning.",
   crumbLabel: 'Smart Treadmill vs Regular',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Smart Treadmill vs', 'Regular Treadmill'],
   standfirst:

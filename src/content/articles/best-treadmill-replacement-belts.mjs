@@ -1,15 +1,14 @@
 export default {
   slug: 'best-treadmill-replacement-belts',
   title: 'Best Treadmill Replacement Belts (2026): How to Measure and Match',
-  description:
-    'Six treadmill replacement belts matched by model, part number or stated size, and how to measure your old belt so the new one actually fits.',
+  description: "Match a replacement belt by model or part number, then length, width and seam (a Landice L7 takes 20 x 114 in.). Six belts from $55 to $149, and how to measure.",
   crumbLabel: 'Best Treadmill Replacement Belts',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Best Treadmill Replacement Belts', 'and How to Match One'],
   standfirst:

@@ -1,15 +1,14 @@
 export default {
   slug: 'how-to-use-a-treadmill',
   title: 'How to Use a Treadmill: A Safe First Session, Step by Step',
-  description:
-    'How to use a treadmill safely: clip the safety key, straddle the belt, start slow, let go of the rails, step off properly, and a sensible first-week plan.',
+  description: "Clip the safety key, straddle the belt, start well under 1 mph and let go of the rails. Plus a first-week plan, from 10 to 15 minutes on day 1 to 25 by day 7.",
   crumbLabel: 'How to Use a Treadmill',
   kicker: 'Beginner Guide',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['How to Use', 'a Treadmill'],
   standfirst:

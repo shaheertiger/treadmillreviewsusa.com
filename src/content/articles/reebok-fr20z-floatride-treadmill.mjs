@@ -1,14 +1,13 @@
 export default {
   slug: 'reebok-fr20z-floatride-treadmill',
   title: 'Reebok FR20z Floatride Treadmill Review (2026): Specs and Price',
-  description:
-    'The Reebok FR20z Floatride is a non-folding home treadmill sold mainly in the UK and Australia. Its agreed specs, the conflicts, and why US stock is hard to find.',
+  description: "The Reebok FR20z Floatride is a non-folding treadmill: 140 x 46 cm deck, 2.25 HP peak, 11.2 mph, 264 lb limit. Sold mainly in the UK and Australia.",
   crumbLabel: 'Reebok FR20z Floatride',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Reebok FR20z Floatride', 'Treadmill Review'],
   standfirst:

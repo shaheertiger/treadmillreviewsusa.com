@@ -1,15 +1,14 @@
 export default {
   slug: 'best-mini-treadmills',
   title: 'Best Mini Treadmills (2026): The Smallest and Lightest Picks',
-  description:
-    'Five mini treadmills ranked by footprint and weight, from a 37 lb flat pad to pads that fold in half. Checked sizes, what fits under a desk, and what we found on the Aibi and UREVO Foldi Mini.',
+  description: "The WalkingPad Z1 is the best mini treadmill for most: it folds to 32 x 22 in. for $299. Five picks ranked by footprint and weight, from about $135.",
   crumbLabel: 'Best Mini Treadmills',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Best Mini Treadmills', 'for Small Homes and Desks'],
   standfirst:

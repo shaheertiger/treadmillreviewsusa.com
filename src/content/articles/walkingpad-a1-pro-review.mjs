@@ -14,14 +14,13 @@ const table = (head, rows) => `<div class="not-prose overflow-x-auto my-8"><tabl
 export default {
   slug: 'walkingpad-a1-pro-review',
   title: 'WalkingPad A1 Pro Review (2026): Specs, Price, Is It Still Sold?',
-  description:
-    'The WalkingPad A1 Pro foldable under-desk treadmill checked on 5 November 2026: still sold by WalkingPad at $499, its 47 x 16.5 in. deck, the 230 vs 300 lb versions, a three-way motor conflict, and the newer pads to compare.',
+  description: "The WalkingPad A1 Pro is still sold at $499 and folds to 32.5 in. long. Check whether it is the 230 or 300 lb version, and compare the $299 Z1 and $399 C2.",
   crumbLabel: 'WalkingPad A1 Pro Review',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['WalkingPad A1 Pro', 'Under-Desk Treadmill Review'],
   standfirst:

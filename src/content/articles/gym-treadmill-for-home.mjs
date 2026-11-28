@@ -1,15 +1,14 @@
 export default {
   slug: 'gym-treadmill-for-home',
   title: 'Gym Treadmill for Home: What It Takes to Run One at Home',
-  description:
-    'Putting a commercial gym treadmill in your home: weight and floors, stairs and delivery, dedicated circuits, ceiling height, warranty terms and buying ex-gym.',
+  description: "Yes, but a commercial gym treadmill weighs 350 to 500 lb, often needs a dedicated 20-amp circuit and sits 10 to 14 in. off the floor. Six checks first.",
   crumbLabel: 'Gym Treadmill for Home',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['A Gym Treadmill', 'for Your Home'],
   standfirst:

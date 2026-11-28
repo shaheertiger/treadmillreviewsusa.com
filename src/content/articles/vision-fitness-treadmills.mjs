@@ -1,15 +1,14 @@
 export default {
   slug: 'vision-fitness-treadmills',
   title: 'Vision Fitness Treadmills (2026): T600, T9200 and the Recall',
-  description:
-    'Vision Fitness now lists one treadmill, the light-commercial T600/T600E, sold through dealers. Its figures and price, what happened to the T9200, T40, T80 and TF20 home models, and the January 2026 power-cord recall.',
+  description: "Vision Fitness now lists one treadmill, the dealer-sold T600/T600E. What happened to the T9200, T40, T80 and TF20, and the January 2026 power-cord recall.",
   crumbLabel: 'Vision Fitness Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Vision Fitness Treadmills:', 'The T600 Today, and the Home Models Before It'],
   standfirst:

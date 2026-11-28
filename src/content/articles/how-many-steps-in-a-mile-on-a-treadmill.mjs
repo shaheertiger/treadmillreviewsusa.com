@@ -1,15 +1,14 @@
 export default {
   slug: 'how-many-steps-in-a-mile-on-a-treadmill',
   title: 'How Many Steps in a Mile on a Treadmill? Walking vs Running',
-  description:
-    'Walking a mile typically takes about 2,000 to 2,500 steps; running takes fewer. Here is the stride arithmetic, the effect of height and speed, and how to count your own.',
+  description: "Walking a mile on a treadmill takes about 2,000 to 2,500 steps; running takes fewer. Steps = 63,360 ÷ your step length in inches. How to count your own.",
   crumbLabel: 'How Many Steps in a Mile?',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['How Many Steps in a Mile', 'on a Treadmill?'],
   standfirst:

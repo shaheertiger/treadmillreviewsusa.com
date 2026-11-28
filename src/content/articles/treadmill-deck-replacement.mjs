@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-deck-replacement',
   title: 'Treadmill Deck Replacement (2026): Worn Decks, Flipping and Cost',
-  description:
-    'What a treadmill deck is, how it wears, the symptoms of a worn deck, whether yours can be flipped, how a flip or replacement is done, and typical costs.',
+  description: "A worn deck makes the belt drag and run hot. Many home decks can be flipped once; a new deck costs about $100 to $300, or $300 to $600 fitted with a belt.",
   crumbLabel: 'Treadmill Deck Replacement',
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Maintenance',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Treadmill Deck Replacement:', 'Worn Decks, Flipping and What It Costs'],
   standfirst:

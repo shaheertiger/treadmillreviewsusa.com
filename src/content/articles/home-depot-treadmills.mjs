@@ -1,15 +1,14 @@
 export default {
   slug: 'home-depot-treadmills',
   title: 'Home Depot Treadmills (2026): Does Home Depot Sell Treadmills?',
-  description:
-    'Yes, but online only, and from little-known budget brands. What homedepot.com lists, who stands behind it, returns for heavy items and better options.',
+  description: "Yes, but online only: homedepot.com listed 69 treadmill products from budget brands like LIVACA and Flynama, most with 1 to 3 month warranties. Better options.",
   crumbLabel: 'Home Depot Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-18',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '0.9k',
   h1: ['Does Home Depot Sell Treadmills?', 'Online Only, and Read the Listing'],
   standfirst:

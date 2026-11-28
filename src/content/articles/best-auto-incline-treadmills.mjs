@@ -1,15 +1,14 @@
 export default {
   slug: 'best-auto-incline-treadmills',
   title: 'Best Auto Incline Treadmills (2026): 6 Picks With Powered Incline',
-  description:
-    'Six treadmills with automatic incline, from a $430 walking pad to a 15% folding runner, checked against Amazon listings on 6 November 2026, with what the incline figures really mean.',
+  description: "The Sole F65 is the best auto incline treadmill for most: 0–15% powered incline, 20 x 60 in. deck, about $1,400. Six picks, up to a 20% incline.",
   crumbLabel: 'Best Auto Incline Treadmills',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['The Best', 'Auto Incline Treadmills'],
   standfirst:

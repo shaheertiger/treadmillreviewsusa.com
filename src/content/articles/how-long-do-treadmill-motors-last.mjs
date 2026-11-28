@@ -1,14 +1,13 @@
 export default {
   slug: 'how-long-do-treadmill-motors-last',
   title: 'How Long Do Treadmill Motors Last? 7-12 Years, Usually',
-  description:
-    'Treadmill motors rarely die of old age — they die of heat caused by friction. Expected lifespans by motor type, the warning signs, and what actually determines the number.',
+  description: "A mid-range DC treadmill motor lasts 7 to 12 years, a budget one 3 to 7 and commercial AC 15 to 25. Heat from belt friction decides it; how to stretch it.",
   crumbLabel: 'How Long Do Treadmill Motors Last?',
   kicker: 'Ownership',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   socialProof: '3.0k',
   h1: ['How Long Do', 'Treadmill Motors Last?'],
   standfirst:

@@ -1,15 +1,14 @@
 export default {
   slug: 'refurbished-treadmills',
   title: 'Refurbished Treadmills (2026): Are They Worth It, and Which Kind?',
-  description:
-    'Manufacturer-certified, reseller-refurbished and plain used treadmills compared: what gets replaced, how warranties differ, typical discounts and the red flags.',
+  description: "Yes, if the maker or a dealer refurbished it with a written warranty. Open-box runs 10–25% under new, ex-commercial 40–70%. What gets replaced; red flags.",
   crumbLabel: 'Refurbished Treadmills',
   kicker: 'Price Guide',
   breadcrumb: { name: 'By Price', url: '/price/' },
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Refurbished Treadmills:', 'Are They Worth It?'],
   standfirst:

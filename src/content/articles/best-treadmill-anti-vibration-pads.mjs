@@ -1,15 +1,14 @@
 export default {
   slug: 'best-treadmill-anti-vibration-pads',
   title: 'Best Treadmill Anti-Vibration Pads (2026): Five Picks, Honestly',
-  description:
-    'Five anti-vibration options sold on Amazon, checked against maker and retailer listings: Sorbothane pads, rubber-cork pads and two rubber floor options, and what pads cannot fix.',
+  description: "Sorbothane 4 x 4 in. pads ($15–$29 a 2-pack) are the best treadmill anti-vibration pads. Five picks, from $17 rubber-cork to 3/4 in. tiles, and their limits.",
   crumbLabel: 'Best Treadmill Anti-Vibration Pads',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Best Treadmill Anti-Vibration Pads', 'and What They Can Really Do'],
   standfirst:

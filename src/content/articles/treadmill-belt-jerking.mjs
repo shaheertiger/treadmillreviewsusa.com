@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-belt-jerking',
   title: 'Treadmill Belt Jerking or Surging? Diagnose It by the Rhythm',
-  description:
-    'A treadmill belt that jerks, stutters or surges is telling you where to look by when it happens: once per revolution, with each step, or on its own. Here is how to tell.',
+  description: "A jerk once per belt revolution means the belt or a roller; a stutter with each step, a dry deck or slack belt; a surge on its own is electrical. Stop using it.",
   crumbLabel: 'Treadmill Belt Jerking',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Treadmill Belt Jerking,', 'Stuttering or Surging?'],
   standfirst:

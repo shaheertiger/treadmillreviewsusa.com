@@ -1,15 +1,14 @@
 export default {
   slug: 'lifespan-tx6-under-desk-treadmill',
   title: 'LifeSpan TX6-GlowUp Under Desk Treadmill Review (2026)',
-  description:
-    'The LifeSpan TX6-GlowUp under desk treadmill checked against LifeSpan and independent sources: 20 in. belt, 0.4-6 mph, 400 lb, 7 hours a day, and the weight, motor and step-up figures that conflict.',
+  description: "The LifeSpan TX6-GlowUp is worth $1,399 if you walk at a desk for hours: 20 in. belt, 400 lb, 7 hours a day, 10-year frame. Where its specs conflict.",
   crumbLabel: 'LifeSpan TX6-GlowUp Under Desk Treadmill',
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['LifeSpan TX6-GlowUp', 'Under Desk Treadmill Review'],
   standfirst:

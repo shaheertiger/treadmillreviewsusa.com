@@ -1,15 +1,14 @@
 export default {
   slug: 'home-treadmill-vs-gym-membership',
-  title: 'Home Treadmill vs Gym Membership (2026): Is Buying Worth It?',
-  description:
-    'Break-even arithmetic for a home treadmill against a gym membership, with labelled example figures, the hidden costs on both sides, resale value and a clear verdict.',
+  title: "Home Treadmill vs Gym Membership: Is Buying a Treadmill Worth It?",
+  description: "A mid-range treadmill used twice a week usually breaks even with a gym membership in 18 months to 3 years. Not if your gym costs under $25 a month.",
   crumbLabel: 'Home Treadmill vs Gym Membership',
   kicker: 'Comparison',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Home Treadmill vs', 'Gym Membership'],
   standfirst:

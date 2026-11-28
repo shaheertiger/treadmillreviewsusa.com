@@ -1,14 +1,13 @@
 export default {
   slug: 'bowflex-t16-treadmill',
   title: 'Bowflex T16 Treadmill Review (2026): Specs, T9 and T6 Compared',
-  description:
-    'The Bowflex T16 treadmill checked against Bowflex’s listing and two independent reviews: 22 x 60 in. deck, 15% incline, 375 lb rating and a 16 in. touchscreen with no required subscription. What reviewers flag, and when the T9 or T6 is enough.',
+  description: "The Bowflex T16 is a $1,899–$2,299 folding treadmill with a 16 in. touchscreen and no required subscription: 22 x 60 in. deck, 15% incline, 375 lb. T9 vs T6.",
   crumbLabel: 'Bowflex T16 Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Bowflex T16', 'Treadmill Review'],
   standfirst:

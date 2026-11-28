@@ -1,15 +1,14 @@
 export default {
   slug: 'true-fitness-treadmills',
-  title: 'TRUE Treadmill Buyer’s Guide (2026): Models, Warranty, Dealers',
-  description:
-    'TRUE Fitness sells its home treadmills through dealers and its own store. The Z500 and Performance 1000, 3000 and 8000, the warranty fine print, and how TRUE compares.',
+  title: "TRUE Fitness Treadmills (2026): Z500 to Performance 8000, Prices",
+  description: "TRUE sells four home treadmills: the $3,499 Z500 and the Performance 1000, 3000 and 8000 (60 in. deck, 350 lb) at $5,199–$6,999. Warranty and dealers.",
   crumbLabel: 'TRUE Fitness Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer\'s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['TRUE Fitness Treadmills:', 'What to Buy, and What to Check First'],
   standfirst:

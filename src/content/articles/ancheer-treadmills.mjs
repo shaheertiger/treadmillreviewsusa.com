@@ -1,15 +1,14 @@
 export default {
   slug: 'ancheer-treadmills',
   title: 'ANCHEER Treadmill (2026): Folding Models, Manuals and Support',
-  description:
-    'ANCHEER sells walking pads and folding treadmills on Amazon with no working treadmill website. What it sells, conflicting listing figures, finding a manual, warranty, and safer alternatives.',
+  description: "ANCHEER sells mostly walking pads via Amazon, with no working website and listings that conflict. Keep one to slow walking, or pay $198 for a 12% incline UREVO.",
   crumbLabel: 'ANCHEER Treadmills',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['ANCHEER Treadmills:', 'What You Are Buying, and From Whom'],
   standfirst:

@@ -1,15 +1,14 @@
 export default {
   slug: 'treadmill-shuts-off-by-itself',
   title: 'Treadmill Shuts Off by Itself? Diagnose It by When It Stops',
-  description:
-    'A treadmill that keeps stopping is usually telling you when and why. Sort the fault by timing — at start, after minutes, under load, at speed — and check the cheap causes first.',
+  description: "Console goes dark too? It is power: safety key, reset switch, outlet or breaker. Belt stops but console stays lit? The controller. A dry deck can trip at 8 mph.",
   crumbLabel: 'Treadmill Shuts Off by Itself',
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['Treadmill Shuts Off', 'by Itself?'],
   standfirst:
