@@ -76,10 +76,10 @@ for it), "how to tighten a treadmill belt" (720; /how-to-adjust-treadmill-belt/)
 - [x] 2026-11-27 · `how-much-does-a-landice-treadmill-cost` — How Much Does a Landice Treadmill Cost? (2026) — /price/ — pillar /landice-treadmills/
 - [x] 2026-11-27 · `walking-pad-overheating` — Walking Pad Overheating: Why It Stops and How to Cool It — /problems/ — sibling /treadmill-overheating/
 - [x] 2026-11-27 · `how-much-does-a-precor-treadmill-cost` — How Much Does a Precor Treadmill Cost? (2026): Home and Gym — /price/ — pillar /precor-treadmills/
-- [ ] `echelon-treadmill-troubleshooting` — Echelon Treadmill Troubleshooting: Power, Belt and App — /problems/ — pillar /echelon-treadmills/ (maker sources only)
+- [x] 2026-11-28 · `echelon-treadmill-troubleshooting` — Echelon Treadmill Troubleshooting: Power, Belt and App — /problems/ — pillar /echelon-treadmills/ (maker sources only)
 - [x] 2026-11-27 · `how-much-does-a-life-fitness-treadmill-cost` — How Much Does a Life Fitness Treadmill Cost? (2026) — /price/ — pillar /life-fitness/
-- [ ] `lifespan-treadmill-troubleshooting` — LifeSpan Treadmill Troubleshooting: Desk Treadmill Fixes — /problems/ — pillar /lifespan-treadmills/
-- [ ] `how-much-does-a-woodway-treadmill-cost` — How Much Does a Woodway Treadmill Cost? (2026) — /price/ — pillar /woodway-treadmills/ (check overlap with curved cost page)
+- [x] 2026-11-28 · `lifespan-treadmill-troubleshooting` — LifeSpan Treadmill Troubleshooting: Desk Treadmill Fixes — /problems/ — pillar /lifespan-treadmills/
+- [~] skipped 2026-11-28: covered by /woodway-treadmills/ (cost H2 + FAQ) · `how-much-does-a-woodway-treadmill-cost` — How Much Does a Woodway Treadmill Cost? (2026) — /price/ — pillar /woodway-treadmills/ (check overlap with curved cost page)
 - [x] 2026-11-27 · `urevo-walking-pad-troubleshooting` — UREVO Walking Pad Troubleshooting: Remote, Belt and App — /problems/ — pillar /urevo-treadmills/ (maker manuals only)
 - [x] 2026-11-27 · `walkingpad-troubleshooting` — WalkingPad Troubleshooting: Error Codes, SAFE, Rest and Remote — /problems/ — added and written same day (WalkingPad help article, FAQ, belt and lube guides; sibling of the UREVO page)
 - [~] skipped 2026-11-25: duplicate of /treadmill-motor-replacement-cost/ · `how-much-does-a-treadmill-motor-cost` — How Much Does a Treadmill Motor Cost? Replacement Prices — /price/ — link /how-long-do-treadmill-motors-last/, /ac-vs-dc-treadmill-motor/
@@ -89,11 +89,11 @@ for it), "how to tighten a treadmill belt" (720; /how-to-adjust-treadmill-belt/)
 
 - [x] 2026-11-27 · `how-much-does-a-sunny-treadmill-cost` — How Much Does a Sunny Health & Fitness Treadmill Cost? (2026) — /price/ — pillar /sunny-health-fitness-treadmills/ (Amazon + sunnyhealthfitness.com)
 - [ ] `treadmill-bluetooth-not-connecting` — Treadmill Bluetooth Not Connecting: App, Watch and HR Fixes — /problems/ — Sole guide has a brand-specific section; this is the cross-brand page
-- [ ] `how-much-does-a-merach-treadmill-cost` — How Much Does a MERACH Treadmill Cost? (2026): Every Model — /price/ — pillar /merach-treadmills/
+- [x] 2026-11-28 · `how-much-does-a-merach-treadmill-cost` — How Much Does a MERACH Treadmill Cost? (2026): Every Model — /price/ — pillar /merach-treadmills/
 - [ ] `treadmill-fan-not-working` — Treadmill Fan Not Working: Console Fan Checks and Fixes — /problems/ — maker manuals only
 - [x] 2026-11-27 · `how-much-does-a-urevo-walking-pad-cost` — How Much Does a UREVO Walking Pad Cost? (2026): Every Model — /price/ — pillar /urevo-treadmills/
 - [ ] `merach-treadmill-troubleshooting` — MERACH Treadmill Troubleshooting: Remote, App and Belt — /problems/ — pillar /merach-treadmills/ (maker manuals only)
-- [ ] `how-much-does-an-xterra-treadmill-cost` — How Much Does an XTERRA Treadmill Cost? (2026): Every Model — /price/ — pillar /xterra-treadmills/ (xterrafitness.com readable)
+- [x] 2026-11-28 · `how-much-does-an-xterra-treadmill-cost` — How Much Does an XTERRA Treadmill Cost? (2026): Every Model — /price/ — pillar /xterra-treadmills/ (xterrafitness.com readable)
 - [ ] `treadmill-speakers-not-working` — Treadmill Speakers Not Working: Bluetooth Audio Fixes — /problems/ — link /best-treadmills-with-bluetooth-speakers/
 - [ ] `how-much-does-a-schwinn-treadmill-cost` — How Much Does a Schwinn Treadmill Cost? (2026): 810, 815 and More — /price/ — pillar /schwinn-treadmills/
 - [ ] `sunny-treadmill-troubleshooting` — Sunny Health & Fitness Treadmill Troubleshooting — /problems/ — pillar /sunny-health-fitness-treadmills/

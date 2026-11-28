@@ -6,7 +6,7 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Maintenance',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
   socialProof: '2.2k',
   h1: ['Treadmill Repair Guide:', 'What to Fix Yourself, What to Pay For'],
@@ -188,7 +188,8 @@ export default {
             the cheap checks come first. Our
             <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a>
             works through each symptom in more detail, and the brand-specific guides on the site
-            cover console behaviour that differs by manufacturer.
+            cover console behaviour that differs by manufacturer. Our <a href="/echelon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Echelon troubleshooting guide</a>,
+            for example, sets out what each Stride error code from E00 to E09 means.
           </p>`,
     },
     {
@@ -600,5 +601,5 @@ export default {
             <a href="/treadmill-warranty-guide/" class="text-[#5AA9FF] font-bold no-underline">warranty guide</a>
             explains what is usually covered.`,
   ],
-  modified: '2026-11-25',
+  modified: '2026-11-28',
 };

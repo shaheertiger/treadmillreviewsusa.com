@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Treadmill Extension Cords:', 'What the Manual Says and Why'],
   standfirst:
@@ -62,7 +62,9 @@ export default {
       heading: 'Why Manufacturers Say No Extension Cord',
       html: `          <p>
             The instruction appears in almost every treadmill manual, usually alongside a warning
-            against adapters and power strips. Four things are behind it.
+            against adapters and power strips. Echelon&rsquo;s manuals, for example, warn against GFCI and AFCI
+            outlets, surge protectors and extension cords, as our <a href="/echelon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Echelon treadmill troubleshooting</a> guide
+            notes. Four things are behind it.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Voltage drop under load</h3>
           <p>

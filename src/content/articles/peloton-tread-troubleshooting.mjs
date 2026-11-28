@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-24',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Peloton Tread Troubleshooting:', 'Power, Safety Key, Screen, Knobs and Belt'],
   standfirst:
@@ -86,7 +86,8 @@ export default {
             <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a>
             covers every common symptom for any make, and our
             <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton Tread review</a>
-            explains how the current models differ.
+            explains how the current models differ. If you are weighing the closest connected rival, our
+            <a href="/echelon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Echelon troubleshooting guide</a> covers the Stride&rsquo;s common faults.
           </p>`,
     },
     {

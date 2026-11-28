@@ -256,7 +256,8 @@ export default {
             options, but the Horizon T101 is the one to compare on warranty before you buy. Our
             ${A('/how-much-does-a-urevo-walking-pad-cost/', 'UREVO walking pad cost')},
             ${A('/how-much-does-a-walking-pad-cost/', 'walking pad cost')} and
-            ${A('/how-much-does-a-horizon-treadmill-cost/', 'Horizon cost')} guides have the details.
+            ${A('/how-much-does-a-horizon-treadmill-cost/', 'Horizon cost')} guides have the details, and our guide
+            to <a href="/how-much-does-an-xterra-treadmill-cost/" class="text-[#0F62FE] font-medium">XTERRA treadmill prices</a> covers XTERRA’s Compact folders and Sport runners.
           </p>`,
     },
     {

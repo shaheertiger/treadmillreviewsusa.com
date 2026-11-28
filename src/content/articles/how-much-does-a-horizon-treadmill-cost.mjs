@@ -205,7 +205,8 @@ export default {
           </ul>
           <p>
             For the Sole side of that comparison, model by model, see
-            ${A('/how-much-does-a-sole-treadmill-cost/', 'how much a Sole treadmill costs')}.
+            ${A('/how-much-does-a-sole-treadmill-cost/', 'how much a Sole treadmill costs')}; for a lower-priced
+            brand, see our guide to <a href="/how-much-does-an-xterra-treadmill-cost/" class="text-[#0F62FE] font-medium">XTERRA treadmill prices</a>.
           </p>`,
     },
     {

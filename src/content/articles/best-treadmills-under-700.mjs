@@ -102,7 +102,8 @@ export default {
             support and published warranty terms. Aeriflo, WELLFIT and ORASANT sell mainly online and give you
             more incline, more speed or more capacity for the money. Neither group is simply better: the online
             brands win on headline figures, and the established brands win on how easy it will be to get a part
-            in four years’ time. Sunny is one of the established names here, and most of its in-stock motorised folding treadmills cost $399.99 to $799.99 on its own store on 27 November 2026, as our <a href="/how-much-does-a-sunny-treadmill-cost/" class="text-[#0F62FE] font-medium">Sunny treadmill cost guide</a> shows.
+            in four years’ time. XTERRA is another established name, and our guide to
+            <a href="/how-much-does-an-xterra-treadmill-cost/" class="text-[#0F62FE] font-medium">XTERRA treadmill prices</a> lists its range model by model. Sunny is one of the established names here, and most of its in-stock motorised folding treadmills cost $399.99 to $799.99 on its own store on 27 November 2026, as our <a href="/how-much-does-a-sunny-treadmill-cost/" class="text-[#0F62FE] font-medium">Sunny treadmill cost guide</a> shows.
           </p>`,
     },
     {

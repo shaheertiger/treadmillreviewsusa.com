@@ -100,6 +100,7 @@ export default {
             retailer listings, warranty terms and independent coverage, first checked on 15 October
             2026. The MERACH price was re-checked on MERACH's own store on 5 November 2026, and the
             Goplus and NordicTrack machines were checked on their Amazon listings on 6 November 2026.
+            Our guide to <a href="/how-much-does-a-merach-treadmill-cost/" class="text-[#0F62FE] font-medium">MERACH treadmill prices</a> has MERACH's prices as of 28 November.
             Two of the machines have their own pages on this site — our reviews of the
             Horizon 7.0 AT and the SOLE F63 — and those are readings of the specifications and owner
             reports, not hands-on tests either.
@@ -133,7 +134,8 @@ export default {
           </p>
           <p>
             The Sunny Health &amp; Fitness SF-T7603, a common under-$500 folding treadmill, was shown
-            as sold out at $449.99 on Sunny's own store. The NordicTrack T Series 5, which has sold in
+            as sold out at $449.99 on Sunny's own store. XTERRA's own store listed its Compact folders from
+            $449.99 on 28 November, per our guide to <a href="/how-much-does-an-xterra-treadmill-cost/" class="text-[#0F62FE] font-medium">XTERRA treadmill prices</a>. The NordicTrack T Series 5, which has sold in
             the $420 to $600 range, is not listed on NordicTrack's US site, and we could not confirm a
             current price on a retailer page we could read on the day. And <a href="/sperax-walking-pad-recall/" class="text-[#0F62FE] font-medium" data-autolink>Sperax walking pads</a>, which
             still turn up at budget prices on marketplaces, are under a CPSC warning telling owners to

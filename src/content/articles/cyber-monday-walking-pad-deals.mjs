@@ -52,7 +52,7 @@ export default {
             <li><strong>WalkingPad Z1:</strong> $265.04 on Amazon against our $269 target; $279 to $299 on WalkingPad’s store.</li>
             <li><strong>WalkingPad C2:</strong> $362.57 on Amazon and $379 on WalkingPad’s store, against our $379 target.</li>
             <li><strong>UREVO CyberPad for Office:</strong> $349.25 on Amazon, down from $431.99 on 6 November.</li>
-            <li><strong>MERACH W50:</strong> $256.49 on Amazon; our target was $249.</li>
+            <li><strong>MERACH W50:</strong> $256.49 on Amazon; our target was $249. Our guide to <a href="/how-much-does-a-merach-treadmill-cost/" class="text-[#0F62FE] font-medium">MERACH treadmill prices</a> lists the rest of the range.</li>
             <li><strong>WalkingPad R3 Hybrid+:</strong> $721.65 on Amazon; our target was $699.</li>
           </ul>
           <p>

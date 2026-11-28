@@ -156,7 +156,8 @@ export default {
             the normal selling price, not a promotion. On Amazon, the Strol 2E Pro was listed at
             $197.98 and $219.99 on 6 November. MERACH showed the W50 TrekPad at $299.99
             against $479.99 on 18 October, and an independent tracker had seen it at $296.99 on
-            Amazon on 1 September. WalkingPad's Z1 was $299 against $329. None of those reference
+            Amazon on 1 September; our guide to <a href="/how-much-does-a-merach-treadmill-cost/" class="text-[#0F62FE] font-medium">what MERACH treadmills cost</a> had it at $256.49 on Amazon
+            on 28 November. WalkingPad's Z1 was $299 against $329. None of those reference
             prices describe what anyone has recently paid. Measured against them, a Black Friday
             price of $160 on the Strol 2E would be "45% off"; measured against what it actually
             sells for, it is about 6%. <a href="/umay-treadmills/" class="text-[#0F62FE] font-medium">UMAY’s store</a> works the same way, with sale prices that usually sit 40% below its “regular” figure.
@@ -177,7 +178,7 @@ export default {
             well below its usual price. <strong>Cart-only prices</strong> appear on some full-size
             listings, including NordicTrack's, where the price is shown only once the item is in
             your cart. And <strong>prices move between Amazon and the brand's own store</strong>,
-            sometimes by $20 to $50 in either direction, so check both before you buy. <a href="/cursor-fitness-treadmills/" class="text-[#0F62FE] font-medium">CURSOR FITNESS’s auto-incline treadmills</a>, for example, were $254.99 to $289.99 on Amazon on 27 November 2026.
+            sometimes by $20 to $50 in either direction, so check both before you buy. <a href="/cursor-fitness-treadmills/" class="text-[#0F62FE] font-medium">CURSOR FITNESS’s auto-incline treadmills</a>, for example, were $254.99 to $289.99 on Amazon on 27 November 2026. XTERRA is another example: our guide to <a href="/how-much-does-an-xterra-treadmill-cost/" class="text-[#0F62FE] font-medium">XTERRA treadmill prices</a> found Amazon selling the TR75 for less than XTERRA's own store.
           </p>`,
     },
     {

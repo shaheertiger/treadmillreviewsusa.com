@@ -183,7 +183,7 @@ export default {
           <ul>
             <li><strong>Want decline too?</strong> The NordicTrack <a href="/sams-club-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Commercial LE</a> folds and runs from -3% to 12%, for about $1,299.</li>
             <li><strong>Want a steep climb for under $500?</strong> The THERUN 16% model folds upright and lists its folded size, for about $450.</li>
-            <li><strong>Want the steepest grade?</strong> The MERACH listing describes 18% auto incline on a 350 lb frame, for about $380.</li>
+            <li><strong>Want the steepest grade?</strong> The MERACH listing describes 18% auto incline on a 350 lb frame, for about $380. Our guide to <a href="/how-much-does-a-merach-treadmill-cost/" class="text-[#0F62FE] font-medium">MERACH treadmill prices</a> covers MERACH's other auto-incline models.</li>
             <li><strong>Tightest budget?</strong> THERUN’s manual-incline treadmill gives 0-6% in three steps for about $220.</li>
             <li><strong>For a small space</strong>, measure the folded height and the floor space in front of the fold, not just the running footprint.</li>
           </ul>

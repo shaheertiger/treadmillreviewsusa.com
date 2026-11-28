@@ -463,7 +463,7 @@ export default {
             <li><strong>Merach</strong> costs more, with its incline pads at $299.99 on its own store in November 2026,
             but publishes continuous motor ratings, a 400 lb figure on its W50 TrekPad and a warranty that extends to two
             years if you register. Our <a href="/merach-treadmills/" class="text-[#0F62FE] font-medium">Merach guide</a>
-            compares its models.</li>
+            compares its models, and our guide to <a href="/how-much-does-a-merach-treadmill-cost/" class="text-[#0F62FE] font-medium">MERACH treadmill prices</a> lists what each costs.</li>
             <li><strong>UREVO</strong> is one of the best-known Amazon walking pad brands, with flat pads, incline pads and
             2-in-1s at similar budget prices. Our
             <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium">UREVO guide</a> covers its range and its

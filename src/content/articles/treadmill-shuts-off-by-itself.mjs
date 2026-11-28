@@ -160,7 +160,7 @@ export default {
           <p>
             <strong>Idle and sleep timers.</strong> Many machines power the console down or end the
             session after a period of inactivity. If you paused to stretch or answer the door and
-            came back to a <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium" data-autolink>dead console</a>, that is a timer, not a fault.
+            came back to a <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium" data-autolink>dead console</a>, that is a timer, not a fault. LifeSpan desk treadmills go further: Intelli-Guard stops the belt when it does not count steps, as our <a href="/lifespan-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">LifeSpan treadmill troubleshooting</a> guide explains.
           </p>
           <p>
             <strong>Heart-rate programs.</strong> On machines with heart-rate-controlled workouts,

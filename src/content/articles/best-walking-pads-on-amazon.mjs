@@ -94,6 +94,7 @@ export default {
             and names Amazon.com as an official seller in its warranty policy. The others come from
             WalkingPad (KingSmith), MERACH, Sunny Health &amp; Fitness and LifeSpan, all of which publish
             their own specifications and warranty terms, which is what lets a listing be checked at all.
+            Our guide to <a href="/how-much-does-a-merach-treadmill-cost/" class="text-[#0F62FE] font-medium">MERACH treadmill prices</a> sets MERACH's Amazon prices against its own store's.
             For the full ranking of pads wherever they are sold, see our
             <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> roundup. For a WalkingPad that has stopped working, our <a href="/walkingpad-troubleshooting/" class="text-[#0F62FE] font-medium">WalkingPad troubleshooting</a> page explains the SAFE, Press and Rest messages.
           </p>`,

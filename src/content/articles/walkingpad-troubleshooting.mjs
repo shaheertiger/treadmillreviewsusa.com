@@ -58,7 +58,8 @@ export default {
           </ul>
           <p>
             For a full-size treadmill, our <a href="/proform-treadmill-troubleshooting/" class="${a}">ProForm treadmill
-            troubleshooting</a> guide follows the same order of checks.
+            troubleshooting</a> guide follows the same order of checks, and for an office desk treadmill our
+            <a href="/lifespan-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">LifeSpan desk treadmill fixes</a> guide covers Intelli-Guard and console cable faults.
           </p>`,
     },
     {

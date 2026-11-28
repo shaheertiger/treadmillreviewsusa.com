@@ -86,7 +86,8 @@ export default {
             <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm treadmill troubleshooting</a>
             guide follows the same symptom-first order, and our
             <a href="/nordictrack-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">NordicTrack treadmill troubleshooting</a>
-            guide covers the sister brand. The procedures below are Bowflex&rsquo;s own, and they do
+            guide covers the sister brand, and our <a href="/echelon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Echelon treadmill troubleshooting</a> guide covers the
+            app-first Stride. The procedures below are Bowflex&rsquo;s own, and they do
             not carry across: the bolt you turn to centre a T6 belt is not the one a NordicTrack
             manual names. For the range itself and how the current models compare, see our
             <a href="/bowflex/" class="text-[#0F62FE] font-medium">Bowflex treadmill guide</a>.

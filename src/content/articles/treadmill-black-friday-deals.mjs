@@ -350,7 +350,8 @@ export default {
           <p>
             None of this means the machine is a bad buy at the sale price. It means the percentage is
             not information. Judge the delivered price against your baseline and against what the
-            machine is worth for your use. Our guide to
+            machine is worth for your use. XTERRA is a case in point: it rewrote its own regular prices during
+            November, as our guide to <a href="/how-much-does-an-xterra-treadmill-cost/" class="text-[#0F62FE] font-medium">XTERRA treadmill prices</a> shows. Our guide to
             <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">what a treadmill costs</a>
             gives typical prices by tier, which is a useful sense check.
           </p>`,

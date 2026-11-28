@@ -83,7 +83,7 @@ export default {
             Whatever the group, the deck still wears. Even a maintenance-free deck can dry out
             eventually, and the signs listed further down this page apply to every pad. If a pad
             described as maintenance-free starts showing them, contact the seller before
-            lubricating it yourself, particularly while it is under warranty. <a href="/ypoo-treadmills/" class="text-[#0F62FE] font-medium">YPOO</a> makes that easier than most budget brands, with a US phone line behind its Amazon listings.
+            lubricating it yourself, particularly while it is under warranty. <a href="/ypoo-treadmills/" class="text-[#0F62FE] font-medium">YPOO</a> makes that easier than most budget brands, with a US phone line behind its Amazon listings. On LifeSpan desk treadmills that take lubricant, an E1 or DC-4 code can mean the belt needs 100% silicone, as our <a href="/lifespan-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">LifeSpan troubleshooting guide</a> notes.
           </p>`,
     },
     {

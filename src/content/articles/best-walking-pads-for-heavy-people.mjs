@@ -224,7 +224,8 @@ export default {
           <p>
             Two pads on this page make the point neatly, because they come from the same brand.
             MERACH publishes both figures for its W50 TrekPad — 3.5 HP peak and 1.25 HP continuous
-            — and for the W50 Lite — 3.0 HP peak and 0.75 HP continuous. The Lite's capacity is
+            — and for the W50 Lite — 3.0 HP peak and 0.75 HP continuous. Our guide to
+            <a href="/how-much-does-a-merach-treadmill-cost/" class="text-[#0F62FE] font-medium">how much MERACH treadmills cost</a> lists both pads on price. The Lite's capacity is
             50 lb lower, but its continuous rating is 40% lower. If you are near the top of the
             Lite's range and plan long sessions, the TrekPad's larger continuous rating is the more
             important difference, even though the peak figures on the box look similar.

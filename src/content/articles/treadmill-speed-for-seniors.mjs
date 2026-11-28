@@ -185,7 +185,9 @@ export default {
             treadmill — and step on once it is moving steadily. Some manuals prefer that you step
             onto a stationary belt and then start it; follow yours. Our step-by-step guide on
             <a href="/how-to-get-on-and-off-a-treadmill-safely/" class="text-[#0F62FE] font-medium">how to get on and off a treadmill safely</a>
-            goes through both methods.
+            goes through both methods. If you are shopping for a slow, rail-assisted machine, our guide to
+            <a href="/ksports-treadmills/" class="text-[#0F62FE] font-medium">Ksports treadmills</a> covers the
+            brand&rsquo;s rehab walking treadmill with long handrails.
           </p>
           <p>
             <strong>Sessions one to three: 1 to 1.5 mph for 5 to 10 minutes.</strong> Hold the

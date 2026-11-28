@@ -73,7 +73,8 @@ export default {
             <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">how to reset a NordicTrack treadmill</a>.
             NordicTrack&rsquo;s sister brand has its own guide too:
             <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm treadmill troubleshooting</a>
-            covers many of the same consoles.
+            covers many of the same consoles. If you own an Echelon Stride instead, our
+            <a href="/echelon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Echelon troubleshooting guide</a> covers its app, belt and power faults.
           </p>`,
     },
     {

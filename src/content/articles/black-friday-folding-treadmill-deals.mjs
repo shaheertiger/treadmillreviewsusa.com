@@ -224,7 +224,8 @@ export default {
             at $1,599.99 on NordicTrack's store and $1,299 at P.C. Richard. A $300 spread between two
             authorised sellers on the same day is larger than many Black Friday discounts. That is
             why our targets are set against the lowest price we could source, not the maker's own
-            store.
+            store. Our guide to <a href="/how-much-does-an-xterra-treadmill-cost/" class="text-[#0F62FE] font-medium">what XTERRA treadmills cost</a> shows the same check for XTERRA's
+            Compact folders, store against Amazon.
           </p>
           <p>
             <strong>Genuine reductions are usually modest.</strong> Our

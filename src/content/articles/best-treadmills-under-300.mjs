@@ -109,7 +109,7 @@ export default {
             but it was selling for about $330 when we checked, with sub-$300 prices only through
             time-limited codes; it is covered in our
             <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>
-            guide. The cheapest folding treadmills with side rails and a jogging speed that we could verify — the Sunny
+            guide, and our <a href="/how-much-does-a-merach-treadmill-cost/" class="text-[#0F62FE] font-medium">MERACH price guide</a> tracks it against MERACH's other pads. The cheapest folding treadmills with side rails and a jogging speed that we could verify — the Sunny
             Health &amp; Fitness SF-T7603 at $449.99 on Sunny's own store, for instance — were all
             above this budget. A pad sold only on its brand's website, with no independent
             verification of its ratings, did not qualify. And Sperax pads, which still turn up at

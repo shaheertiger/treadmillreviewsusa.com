@@ -86,7 +86,9 @@ export default {
             <a href="/nordictrack-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">NordicTrack treadmill troubleshooting</a>
             guides cover the iFIT machines. Several of the instructions differ in ways that matter:
             current ProForm manuals tell owners not to lubricate the belt at all, while Sole's
-            manuals make regular lubrication part of the warranty. Do not carry advice from one
+            manuals make regular lubrication part of the warranty, and our
+            <a href="/echelon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Echelon treadmill troubleshooting</a> guide notes that the original Echelon Stride&rsquo;s manual
+            does not call for lubrication. Do not carry advice from one
             brand to the other without checking your own manual.
           </p>`,
     },
