@@ -41,7 +41,7 @@ export default {
             sole + deck height</strong>. The elbow height is measured with your upper arms hanging
             and your elbows bent to about 90 degrees. The deck height is how far the belt surface
             sits above the floor, which on most <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a> is roughly 4 to 7 inches. The shoe
-            adds about an inch.
+            adds about an inch. That low deck is part of the definition: a walking pad is a compact motorised belt with no console arm, built for walking at roughly 0.5 to 4 mph, as our explainer on <a href="/what-is-a-walking-pad/" class="text-[#0F62FE] font-medium">what a walking pad is</a> sets out.
           </p>
           <p>
             The arithmetic matters because it decides which desks are usable at all. A desk that
@@ -50,7 +50,7 @@ export default {
             inches leave room for most adults. Our
             <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">treadmill desk roundup</a>
             screened its picks on exactly this, and only lists desks that reach about 50 inches
-            or more.
+            or more. If you walk on a treadmill with level handrails instead, a strap-on board is the cheaper route, and our <a href="/best-treadmill-laptop-holders/" class="text-[#0F62FE] font-medium">treadmill laptop holder</a> roundup starts with a VIVO 31 in. tray at $67.19.
           </p>
           <p>
             The rest of this page is the working: where each number comes from, a chart for
@@ -209,7 +209,7 @@ export default {
             tubes. Two-stage legs have two sections and a shorter total travel; three-stage legs
             have three and reach higher from a similar low point. Many lower-priced desks use two
             stages and top out at around 47 or 48 inches, which is why our desk roundup did not
-            include a desk under $500 — the cheaper desks it checked stopped in that range.
+            include a desk under $500 — the cheaper desks it checked stopped in that range. Our <a href="/how-much-does-a-treadmill-desk-cost/" class="text-[#0F62FE] font-medium">treadmill desk cost guide</a> puts a walking pad plus a new desk at about $215 to $1,000 in total.
           </p>
           <p>
             <strong>The quoted range is not always what you get.</strong> Some specifications

@@ -98,7 +98,7 @@ export default {
             the controller board from power surges, a common reason a <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium" data-autolink>treadmill will not turn on</a>.
             If unplugging every time is impractical, a switched outlet or a suitable
             <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">surge protector</a>
-            with an off switch does the same job.
+            with an off switch does the same job. Our roundup of <a href="/best-surge-protectors-for-treadmills/" class="text-[#0F62FE] font-medium">surge protectors for treadmills</a> lists units rated for the job, including a 20 A Panamax with three diagnostic lights.
           </p>`,
     },
     {
@@ -166,7 +166,7 @@ export default {
           <p>
             Exercising a <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium" data-autolink>dog on a treadmill</a> is a separate subject with its own equipment and
             training considerations. If you are thinking about it, ask your vet first; a human
-            treadmill is not designed for it, and it should never be done unsupervised.
+            treadmill is not designed for it, and it should never be done unsupervised. Our <a href="/dog-treadmill-vs-human-treadmill/" class="text-[#0F62FE] font-medium">dog treadmill vs human treadmill</a> comparison sets out why, from belt length to where the controls sit.
           </p>`,
     },
     {
@@ -311,7 +311,7 @@ export default {
           <p>
             <strong>Screens.</strong> Turning your head to watch a television to the side makes
             most people drift toward that side and backward. Position screens in front of the
-            machine, at eye level.
+            machine, at eye level. Our guide to <a href="/best-treadmill-tv-stands/" class="text-[#0F62FE] font-medium">treadmill TV stands</a> shows how to work out that height from the belt rather than from the sofa.
           </p>
           <p>
             <strong>Phones.</strong> Looking down to type while moving is a reliable way to drift

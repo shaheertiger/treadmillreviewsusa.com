@@ -133,7 +133,7 @@ export default {
             its own standing desk for $3,215; it is the widest under desk treadmill we cover and is
             worth its price only if you will walk very slowly at a desk for most of the day.</strong>
             The 30-inch walking surface is the reason to buy it. The 2 mph ceiling, the 162 lb frame and
-            the price are the reasons most people should not.
+            the price are the reasons most people should not. Integrated office treadmill desks like this cost $2,048 to $3,840, as our <a href="/how-much-does-a-treadmill-desk-cost/" class="text-[#0F62FE] font-medium">treadmill desk cost breakdown</a> shows.
           </p>
           <p>
             Buying from InMovement rather than iMovR gets you the same treadmill at the same price on
@@ -362,7 +362,7 @@ export default {
       heading: 'InMovement vs LifeSpan Treadmill Desk',
       html: `          <p>
             LifeSpan is the brand most often set against InMovement, because both build desk treadmills
-            for long working days rather than exercise. They take different approaches.
+            for long working days rather than exercise. They take different approaches. LifeSpan’s under-desk treadmills cost $1,199 to $1,699 on its own store on 26 November 2026, as our <a href="/how-much-does-a-lifespan-treadmill-cost/" class="text-[#0F62FE] font-medium">LifeSpan price guide</a> shows.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
             <thead>

@@ -175,7 +175,7 @@ export default {
             <a href="/best-safety-squat-bars/" class="text-[#0F62FE] font-medium">safety squat bar</a>
             in a rack are other ways to squat with less stress on the shoulders and upper back. Our
             guide to <a href="/best-smith-machines/" class="text-[#0F62FE] font-medium">Smith machines</a>
-            compares bar paths if you want one machine for squats and presses.
+            compares bar paths if you want one machine for squats and presses. A trap bar is another way to load the legs with the weight beside you rather than on your back; our <a href="/best-trap-bars/" class="text-[#0F62FE] font-medium">trap bar guide</a> compares five open and closed bars.
           </p>`,
     },
     {

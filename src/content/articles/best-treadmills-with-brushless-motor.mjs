@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-24',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.0k',
   h1: ['Best Treadmills With Brushless Motors', 'What the Label Buys, and the Picks Worth It'],
   standfirst:
@@ -99,7 +99,7 @@ export default {
             Every machine here says “brushless” on its Amazon listing. We cannot open a motor housing to confirm it,
             and this site has seen at least one walking pad whose brushless claim was disputed by an independent
             teardown, so read the label as the maker’s claim. That is one reason we picked mainly from brands with a
-            storefront and support beyond Amazon.
+            storefront and support beyond Amazon. Whatever the type, a replacement drive motor costs about $130 to $550 for the part, as our <a href="/treadmill-motor-replacement-cost/" class="text-[#0F62FE] font-medium">guide to motor replacement costs</a> shows.
           </p>`,
     },
     {
@@ -275,7 +275,7 @@ export default {
             If you want to jog, hold a handrail or walk steep grades, you need a treadmill, and that is where brushless
             options are fewer. The Sunny Auto Incline is a useful middle ground: it has a fixed handlebar rather than full
             uprights, folds flat for storage under a bed and still offers a 20 by 53-inch belt, 10 mph and 15% incline.
-            Above it, the UREVO CyberMega and Sole F85 are real running treadmills.
+            Above it, the UREVO CyberMega and Sole F85 are real running treadmills. The CyberMega was $899.99 on UREVO’s own store on 27 November 2026, as our <a href="/how-much-does-a-urevo-walking-pad-cost/" class="text-[#0F62FE] font-medium">UREVO cost guide</a> records.
           </p>
           <p>
             If incline is what you are really after, do not let the motor type narrow your search too far. Several of the

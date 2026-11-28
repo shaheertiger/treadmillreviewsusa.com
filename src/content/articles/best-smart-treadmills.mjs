@@ -7,9 +7,9 @@ export default {
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.7k',
   h1: ['Best Smart Treadmills', 'Screens, Apps and the Ongoing Cost'],
   standfirst:
@@ -212,7 +212,7 @@ export default {
             We have not tested these machines. The picks were made from published specifications,
             manufacturer listings, warranty terms and independent coverage, checked on 13 October
             2026. The Echelon, Bowflex and Horizon cards show the models Amazon US sells, with figures
-            checked for our Echelon, screens and Horizon guides between 13 October and 5 November.
+            checked for our Echelon, screens and Horizon guides between 13 October and 5 November. Echelon’s own store priced its treadmills at $1,399.99 to $2,195.99 on 26 November 2026, as our <a href="/how-much-does-an-echelon-treadmill-cost/" class="text-[#0F62FE] font-medium">Echelon treadmill cost guide</a> shows.
           </p>
           <p>
             We started from the ecosystems rather than the machines, because on a smart treadmill
@@ -220,7 +220,7 @@ export default {
             gave five routes to cover: iFIT on NordicTrack and ProForm, Peloton, Bowflex's JRNY,
             Echelon's own platform, and open apps over Bluetooth. Within each we picked the
             machine that is currently sold, sensibly specified for the money and backed by
-            warranty terms we could find in writing.
+            warranty terms we could find in writing. On a Bowflex treadmill JRNY is optional, from $99 a year, as our <a href="/how-much-does-a-bowflex-treadmill-cost/" class="text-[#0F62FE] font-medium">Bowflex cost guide</a> explains.
           </p>
           <p>
             Then we applied the same rule our model reviews use: a figure only appears in a spec

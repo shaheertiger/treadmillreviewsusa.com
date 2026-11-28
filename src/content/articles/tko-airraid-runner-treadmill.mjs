@@ -72,7 +72,7 @@ export default {
             Zwift-compatible Bluetooth, sold for about $5,000 to $5,500 — and TKO itself now lists it as
             the AirRaid Force.</strong> It is a reasonable buy for a facility or committed athlete who
             wants resistance and connectivity on a curved belt. For most home buyers, it costs a lot more
-            than curved treadmills that do similar things.
+            than curved treadmills that do similar things. Most home buyers pay $1,900 to $3,500 for one, as our <a href="/how-much-does-a-curved-treadmill-cost/" class="text-[#0F62FE] font-medium">page on what a curved treadmill costs</a> shows.
           </p>
           <p>
             Three things to know before you buy. First, check the model number: TKO's current "AirRaid

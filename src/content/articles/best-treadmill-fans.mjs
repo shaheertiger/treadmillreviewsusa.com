@@ -271,7 +271,7 @@ export default {
             circuits: plug the fan into a different outlet from the treadmill, and never share a
             power strip, extension cord or <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium" data-autolink>surge protector</a> between them. Many treadmill manuals ask
             for a dedicated outlet and prohibit extension cords for the treadmill, and the fan
-            should never be the reason one appears.
+            should never be the reason one appears. For the treadmill itself, our <a href="/best-surge-protectors-for-treadmills/" class="text-[#0F62FE] font-medium">treadmill surge protector picks</a> start with a direct plug-in Tripp Lite unit rated 15 A and 1,410 joules.
           </p>
           <p>
             If your treadmill does trip the breaker, look first at the bigger loads that commonly

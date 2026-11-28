@@ -11,9 +11,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-23',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Walking Pad Belt Slipping or Off-Center?', 'How to Fix It'],
   standfirst:
@@ -147,7 +147,7 @@ export default {
             each end cap, there is a bolt on the left and one on the right. Turning both by the same amount moves the rear
             roller backwards or forwards, which tightens or loosens the belt. Turning one only steers it, which is the
             tracking adjustment covered next. Most pads come with a hex key that fits these bolts; if yours did not, the
-            manual will give the size.
+            manual will give the size. UREVO's own instructions work in turns of 1/4 to 1/2, which our <a href="/urevo-walking-pad-troubleshooting/" class="text-[#0F62FE] font-medium">UREVO troubleshooting guide</a> sets out model by model.
           </p>
           <ol>
             <li><strong>Unplug the pad</strong> and remove the safety key or magnet if it has one.</li>

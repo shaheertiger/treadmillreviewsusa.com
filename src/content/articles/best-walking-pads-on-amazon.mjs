@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-16',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Best Walking Pads', 'on Amazon'],
   standfirst:
@@ -95,7 +95,7 @@ export default {
             WalkingPad (KingSmith), MERACH, Sunny Health &amp; Fitness and LifeSpan, all of which publish
             their own specifications and warranty terms, which is what lets a listing be checked at all.
             For the full ranking of pads wherever they are sold, see our
-            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> roundup.
+            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> roundup. For a WalkingPad that has stopped working, our <a href="/walkingpad-troubleshooting/" class="text-[#0F62FE] font-medium">WalkingPad troubleshooting</a> page explains the SAFE, Press and Rest messages.
           </p>`,
     },
     {
@@ -273,7 +273,7 @@ export default {
             <strong>For under $200, the UREVO Strol 2E; with incline as well, Sunny’s Treadpad with 7%
             auto incline.</strong> Both are 2-in-1 pads: with the handlebar folded down they are walking
             pads that slide under a desk, and with it raised a higher top speed unlocks, 6.2 mph on the
-            Strol 2E and 6 mph on the Treadpad.
+            Strol 2E and 6 mph on the Treadpad. The Strol 2E is also the first pick in our <a href="/best-treadmills-under-200/" class="text-[#0F62FE] font-medium">best treadmills under $200</a>, at about $170.
           </p>
           <p>
             A handle does two jobs. It gives you something to steady yourself on, which matters to
@@ -354,7 +354,7 @@ export default {
             publishes a continuous motor figure, 1.25 HP, which few pad makers do. If you will be on the
             belt for hours every working day, the <a href="/lifespan-tx6-under-desk-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>LifeSpan TX6</a> also carries 400 lb on a 20-inch belt and
             is rated by LifeSpan for seven hours’ use a day, but at about $1,399 it costs over four times
-            as much.
+            as much. On LifeSpan’s own store its under-desk models were $1,199 to $1,699 on 26 November 2026, as our <a href="/how-much-does-a-lifespan-treadmill-cost/" class="text-[#0F62FE] font-medium">LifeSpan treadmill cost guide</a> shows.
           </p>
           <p>
             Weight limits are where Amazon walking pad listings are least reliable. The same pad is often

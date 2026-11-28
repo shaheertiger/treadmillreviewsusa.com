@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '820',
   h1: ['FUNMILY Treadmills:', 'What We Could Confirm'],
   standfirst:
@@ -213,7 +213,7 @@ export default {
             For desk walking with a handle and an incline, the FUNMILY handle-bar pad, with its figures
             treated cautiously. For an all-in-one walking desk, the FUNMILY <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium" data-autolink>treadmill desk</a>; the website’s Desk Workstation was not matched to an Amazon listing, so the card shows the desk-equipped FUNMILY listing Amazon sells, on its listing’s claims. For a slight,
             permanent incline in a small pad, the 5% pad. And if you want figures you can rely on, the UREVO
-            Strol 2E and MERACH W50 TrekPad are the comparison.
+            Strol 2E and MERACH W50 TrekPad are the comparison. The Strol 2E was $161.99 on UREVO’s own store on 27 November 2026, as our <a href="/how-much-does-a-urevo-walking-pad-cost/" class="text-[#0F62FE] font-medium">UREVO walking pad prices</a> page records.
           </p>`,
     },
     {

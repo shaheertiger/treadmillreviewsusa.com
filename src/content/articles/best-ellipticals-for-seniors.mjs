@@ -99,7 +99,7 @@ export default {
             checked on 16 October, and their figures here are the same; on 19 October Horizon and Schwinn
             still listed them at the same prices. The two seated machines are covered in more depth in our
             <a href="/best-recumbent-ellipticals/" class="text-[#0F62FE] font-medium">best recumbent ellipticals</a>
-            guide.
+            guide. The SOLE E25 and the Teeter FreeStep LT1 are also on our <a href="/black-friday-elliptical-deals/" class="text-[#0F62FE] font-medium">Black Friday elliptical shortlist</a>, which gives the price we would wait for on each.
           </p>
           <p>
             <strong>Recalls.</strong> We searched the CPSC recall database for SOLE, Horizon and its
@@ -204,7 +204,7 @@ export default {
           <p>
             <strong>Consoles.</strong> Schwinn describes the 411's console as a high-contrast LCD, and the
             SOLE E25 uses a white LED display with handlebar controls. The SOLE E35's touchscreen is the
-            most capable here but the least simple. None needs a subscription to start a workout.
+            most capable here but the least simple. None needs a subscription to start a workout. Whatever a console says about calories, treat it as an estimate; our <a href="/elliptical-vs-treadmill-calories/" class="text-[#0F62FE] font-medium">elliptical vs treadmill calories</a> page explains why elliptical consoles often read higher than the published energy costs.
           </p>`,
     },
     {

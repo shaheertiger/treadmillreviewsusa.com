@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['How to Take Apart a', 'NordicTrack Treadmill'],
   standfirst:
@@ -370,7 +371,7 @@ export default {
             If you were planning to open the hood only to vacuum out dust while the machine is apart,
             check your warranty position first and read the cautions on our
             <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack reset guide</a>,
-            which also covers the reset breaker you may need after the move.
+            which also covers the reset breaker you may need after the move. If anything misbehaves once it is back together, our <a href="/nordictrack-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">NordicTrack treadmill troubleshooting</a> guide sets out the order of checks.
           </p>`,
     },
     {

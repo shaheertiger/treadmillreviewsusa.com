@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'NordicTrack T 6.5 S',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-15',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['NordicTrack T 6.5 S', 'Treadmill Review'],
   standfirst:
@@ -161,7 +161,7 @@ export default {
             <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">is iFit worth it</a>
             guide sets out that arithmetic. Not buying into iFit? Buy something else, and our
             <a href="/best-treadmills-under-800/" class="text-[#0F62FE] font-medium">under-$800 guide</a>
-            covers the field.
+            covers the field. If you are buying into it, our <a href="/best-ifit-treadmills/" class="text-[#0F62FE] font-medium">best iFIT treadmills</a> compare six current NordicTrack and ProForm machines.
           </p>`,
     },
     {

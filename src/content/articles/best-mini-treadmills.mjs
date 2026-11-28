@@ -151,7 +151,7 @@ export default {
       html: `          <p>
             Five machines, each the smallest or lightest of its kind that we could check. The short
             version: the <a href="/walkingpad-z1-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad Z1</a> for most people, the UREVO Smart Walking Pad if price comes
-            first (the lighter SpaceWalk E1L is sold on UREVO's store rather than on Amazon), and the UREVO Strol 2E if you want a handle.
+            first (the lighter SpaceWalk E1L is sold on UREVO's store rather than on Amazon), and the UREVO Strol 2E if you want a handle. On UREVO’s store on 27 November 2026 its pads ran from $149.99 to $429.99, per our <a href="/how-much-does-a-urevo-walking-pad-cost/" class="text-[#0F62FE] font-medium">UREVO price breakdown</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>

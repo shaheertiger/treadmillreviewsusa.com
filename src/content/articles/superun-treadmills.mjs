@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   h1: ['Superun Treadmill Reviews:', 'Walking Pads, Specs, Warranty'],
   standfirst:
     'Superun is a real, low-cost walking pad brand, not a scam, and its 6% incline pad at about $94 on Amazon is a fair buy for slow desk walking. Expect a 12-month warranty, listings that contradict each other on incline and capacity, and a brand that is cheap rather than well documented.',
@@ -420,7 +420,7 @@ export default {
             The habits that make any budget pad last apply here: break very long sessions up, <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium" data-autolink>lubricate the belt</a> on the
             schedule in the manual, correct belt drift early at the rear roller bolts, and unplug the pad before any
             adjustment. One independent site's rule of thumb is that budget pads last about a year at heavy daily use, so
-            the twelve months of warranty and the habits above are worth taking seriously.
+            the twelve months of warranty and the habits above are worth taking seriously. The <a href="/treaflow-walking-pad/" class="text-[#0F62FE] font-medium">Treaflow walking pad</a>, another $110 to $160 Amazon pad, also asks you to plan around a one-year warranty.
           </p>`,
     },
     {

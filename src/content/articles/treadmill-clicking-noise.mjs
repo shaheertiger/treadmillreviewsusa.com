@@ -226,7 +226,7 @@ export default {
             side rails, the belt edge can tick against the frame if it drifts even slightly, so check centring first. Pads
             stored on end or slid under furniture can have a slightly twisted frame, which shows up as a tick with each
             step; laying the pad flat on a hard floor often cures it. And because the motor and rollers are small and close
-            together, a dry deck is heard sooner.
+            together, a dry deck is heard sooner. Our <a href="/walking-pad-making-noise/" class="text-[#0F62FE] font-medium">walking pad making noise</a> guide goes through the pad-specific causes in order.
           </p>
           <p>
             Our <a href="/walking-pad-not-working/" class="text-[#0F62FE] font-medium">walking pad not working</a>

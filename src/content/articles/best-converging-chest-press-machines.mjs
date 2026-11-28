@@ -62,7 +62,7 @@ export default {
             A converging press is a specialist machine. If you are still weighing it against a
             cable station, our guide to
             <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">the best cable machines for a home gym</a>
-            covers the more versatile alternative.
+            covers the more versatile alternative. A <a href="/best-smith-machines/" class="text-[#0F62FE] font-medium">Smith machine</a> is the other way to press heavy alone, because you can rack the bar at any point by turning your wrists.
           </p>`,
     },
     {
@@ -354,7 +354,7 @@ export default {
             does, and pressing heavy dumbbells alone means getting them into position safely, but
             for most people they are the better value. Our guide to
             <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">the best adjustable dumbbells</a>
-            is the place to start.
+            is the place to start. If you would rather have every weight ready at once, our <a href="/best-dumbbell-sets/" class="text-[#0F62FE] font-medium">fixed dumbbell set guide</a> compares five sets with racks by price per pound.
           </p>
           <p>
             <strong>A cable machine.</strong> Standing or seated cable presses and crossovers let

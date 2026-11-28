@@ -86,7 +86,7 @@ export default {
       heading: 'The Typical Return Policy Structures',
       html: `          <p>
             Treadmill return policies tend to fall into a handful of shapes. A given seller may use
-            more than one, depending on the product and the promotion.
+            more than one, depending on the product and the promotion. At Walmart, who sells the listing decides the terms: most Marketplace items are returnable within 30 days, and sellers may charge restocking fees of up to 20%, as our <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart treadmills guide</a> explains.
           </p>
           <p>
             <strong>In-home trial period.</strong> Some sellers, more often manufacturer-direct
@@ -226,7 +226,7 @@ export default {
             clause. Read the exception, not the headline. Warehouse clubs are a well-known example of
             a channel with a generous reputation; our guide to
             <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">buying a treadmill at Costco</a>
-            covers why even there the practicalities deserve a look.
+            covers why even there the practicalities deserve a look. Sam’s Club’s return policy is also broad, and our <a href="/sams-club-treadmills/" class="text-[#0F62FE] font-medium">guide to buying a treadmill at Sam’s Club</a> sets out what it does and does not say about treadmills.
           </p>
           <p>
             <strong>Manufacturer-direct brands</strong> sell their own machines online, and some use

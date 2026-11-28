@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Best Recumbent Ellipticals', 'and Seated Cross Trainers'],
   standfirst:
@@ -35,7 +35,7 @@ export default {
             smooth seated stepping motion with linked arm handles, a 300 lb rating and an adjustable,
             reclining seat for under $1,000. The NuStep T5 is the clinic-grade machine with a swivel seat
             and a 500 lb rating, at about eight times the price, and the HCI PhysioStep LXT offers a
-            swivel seat for roughly half of that.
+            swivel seat for roughly half of that. The Amazon-sold FreeStep LT1 is one of six machines on our <a href="/black-friday-elliptical-deals/" class="text-[#0F62FE] font-medium">Black Friday elliptical deals</a> list, where $649 or less is the price we would treat as a good buy.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead><tr>
@@ -128,7 +128,7 @@ export default {
             pedals in front of you and hands on two handles. Pushing the pedals forward moves the handles,
             and usually the handles are linked to the opposite leg, so arms and legs work together, as they
             do when you walk. You can push with legs only, pull with arms only, or both. Because you are
-            seated with your back supported, nothing is weight-bearing and there is nothing to balance on.
+            seated with your back supported, nothing is weight-bearing and there is nothing to balance on. A <a href="/best-vertical-climbers/" class="text-[#0F62FE] font-medium">vertical climber</a> links arms and legs too, standing up, and is one of the hardest cardio sessions you can do at home.
           </p>
           <p>
             <strong>How that differs from a recumbent bike.</strong> A recumbent bike moves your legs in a

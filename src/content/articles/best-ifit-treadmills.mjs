@@ -79,7 +79,7 @@ export default {
             on 6 November 2026 and who the machine suits. Four are NordicTrack and two are ProForm.
             Both brands belong to the same company, iFIT Health &amp; Fitness, and both run the same
             iFIT software, so the split reflects which frames and screens fill the price bands best,
-            not a difference in the workouts.
+            not a difference in the workouts. On the ProForm side, the Carbon models need iFIT Train at $15 a month and the touchscreen models iFIT Pro at $39, as our <a href="/how-much-does-a-proform-treadmill-cost/" class="text-[#0F62FE] font-medium">ProForm cost page</a> explains.
           </p>
           <p>
             Three of the six have a touchscreen built in and three rely on your own phone or tablet

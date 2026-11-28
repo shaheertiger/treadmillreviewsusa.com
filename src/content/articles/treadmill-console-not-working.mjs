@@ -36,7 +36,7 @@ export default {
             reset breaker), <strong>a loose cable</strong> where the console wiring runs down the
             upright, <strong>a failed keypad or its ribbon cable</strong> if the display works but
             the buttons do not, or a <strong>software fault</strong> on a touchscreen console. The
-            controller board is a real possibility but a later one.
+            controller board is a real possibility but a later one. On a Peloton Tread, a passcode screen is not a fault at all but Tread Lock, as our <a href="/peloton-tread-troubleshooting/" class="text-[#0F62FE] font-medium">Peloton Tread troubleshooting</a> guide explains.
           </p>
           <p>
             Start by working out whether anything else on the machine has power. If the whole

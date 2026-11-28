@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['What Are METs', 'on a Treadmill?'],
   standfirst:
@@ -43,7 +43,7 @@ export default {
             As rough landmarks, the standard equations put a 3 mph walk on the flat at about 3.3
             METs, a 3.5 mph walk at a 5% incline at about 6 METs, and a 6 mph run on the flat at
             about 10 METs. The full table is below. Activities between about 3 and 6 METs are
-            conventionally classed as moderate intensity, and 6 METs and above as vigorous.
+            conventionally classed as moderate intensity, and 6 METs and above as vigorous. Clinical exercise tests report capacity in the same units, and our page on <a href="/average-time-on-treadmill-stress-test-by-age/" class="text-[#0F62FE] font-medium">average treadmill stress test time by age</a> gives the published expectation for men referred for testing of about 18.0 minus 0.15 times age in METs.
           </p>
           <p>
             Because a MET is defined per kilogram of body weight, the figure on the display is the

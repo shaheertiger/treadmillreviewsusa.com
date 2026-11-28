@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-28',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Black Friday', 'Elliptical Deals 2026'],
   standfirst:
@@ -119,7 +119,7 @@ export default {
             for example, sells an 18-inch version of a machine that is otherwise 15.5 inches, so the
             model number on the listing matters. Seated machines are different — the Teeter and the
             Cubii here use a stepping or pedalling motion rather than a standing stride — so for
-            those, check the seat adjustment and user height range instead.
+            those, check the seat adjustment and user height range instead. For older buyers, our <a href="/best-ellipticals-for-seniors/" class="text-[#0F62FE] font-medium">ellipticals for seniors</a> guide explains when a seated machine such as the Teeter is the better choice.
           </p>
           <p>
             <strong>Then check the ceiling.</strong> Stride's companion figure is pedal height. At the

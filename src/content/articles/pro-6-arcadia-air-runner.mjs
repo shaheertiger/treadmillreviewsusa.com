@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Pro 6 Arcadia Air Runner',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Pro 6 Arcadia Air Runner', 'Non-Motorized Treadmill Review'],
   standfirst:
@@ -71,7 +71,7 @@ export default {
             treadmill with six resistance levels, priced at about $4,500 to $4,600, and its public record
             is too thin for us to recommend it over better-documented curved machines for most home
             buyers.</strong> It may suit a facility or athlete who wants resistance on a curved belt and
-            can confirm the missing figures with the seller first.
+            can confirm the missing figures with the seller first. Better-documented rivals are not cheap either: the Sole C80 was $2,099.99 and the AssaultRunner Pro $3,499 on 23 November 2026, as our <a href="/how-much-does-a-curved-treadmill-cost/" class="text-[#0F62FE] font-medium">curved treadmill price guide</a> records.
           </p>
           <p>
             What is listed is consistent. Pro 6 Fitness and three US dealers give the same 69 by 17-inch

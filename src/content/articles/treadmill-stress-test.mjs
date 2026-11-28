@@ -7,9 +7,9 @@ export default {
   kicker: 'Explainer',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['What Does a Treadmill', 'Stress Test Show?'],
   standfirst:
@@ -51,7 +51,7 @@ export default {
             You will see it called several names — exercise stress test, exercise ECG, exercise
             tolerance test, treadmill test or simply "stress test". In everyday use they usually
             mean the same basic procedure, though "stress test" is also used for the imaging
-            versions covered further down.
+            versions covered further down. The basic exercise ECG version was listed at $331 to $774 as a prepaid cash price on MDsave, and our breakdown of <a href="/how-much-does-a-treadmill-stress-test-cost/" class="text-[#0F62FE] font-medium">what a treadmill stress test costs</a> covers insurance, Medicare and the imaging versions.
           </p>
           <div class="not-prose my-6 bg-amber-50 border border-amber-200 rounded-2xl p-5 text-sm text-gray-700 leading-relaxed">
             <strong class="text-gray-900">Not medical advice.</strong> This page explains how the

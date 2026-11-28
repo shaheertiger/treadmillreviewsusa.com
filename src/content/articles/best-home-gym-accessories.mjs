@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-16',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['Best Home Gym Accessories', 'Worth Buying, and What to Skip'],
   standfirst:
@@ -66,7 +66,7 @@ export default {
             Each card gives the figures we could confirm from two sources, the price range we saw,
             and who the item suits. None of these is exciting, and that is the point: they are the
             things people who have trained at home for years tend to say they should have bought
-            first.
+            first. Our <a href="/black-friday-home-gym-deals/" class="text-[#0F62FE] font-medium">Black Friday home gym deals</a> page makes a similar point about timing: dumbbells and plates barely move in November, while connected cardio machines move a lot.
           </p>
           <p>
             Where a maker and an independent source disagreed on a figure, the card says so rather
@@ -331,7 +331,7 @@ export default {
             or another non-abrasive surface to protect the cable. Beginners often find a slightly
             heavier, thicker rope easier to time. Size a cut-to-length rope carefully; most people cut
             too short. Jumping on a hard floor upstairs is noisy for people below, and a rubber mat
-            under the jumping spot helps both the rope and the neighbours.
+            under the jumping spot helps both the rope and the neighbours. If box jumps come next, our <a href="/best-plyo-boxes/" class="text-[#0F62FE] font-medium">plyo box guide</a> explains why a soft box forgives the missed jump that a wood box does not.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Timers</h3>
           <p>

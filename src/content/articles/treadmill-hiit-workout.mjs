@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Treadmill HIIT Workouts', 'That Actually Are HIIT'],
   standfirst:
@@ -311,7 +311,7 @@ export default {
             it tires the nervous system, loads tendons at speeds they do not otherwise see, and
             leaves a recovery debt that moderate sessions do not. Two sessions a week is a ceiling
             for experienced runners with the rest of the week easy; three is a pattern that tends to
-            end in stale legs and a niggle.
+            end in stale legs and a niggle. Our <a href="/treadmill-workout-plan/" class="text-[#0F62FE] font-medium">treadmill workout plan</a> shows how harder sessions fit into a 12-week progression with deloads and strength days.
           </p>
           <p>
             The marketing of HIIT as a time-efficient replacement for all other training is the
@@ -424,7 +424,7 @@ export default {
             belt reaching speed is the whole game. Machines vary from a few seconds to well over
             ten, and the slow ones make short efforts impossible to do cleanly. The speed of
             deceleration matters just as much for recovery. Specifications rarely state this; it is
-            something to test in person if you can, or to look for in owner reports.
+            something to test in person if you can, or to look for in owner reports. Our <a href="/best-treadmills-for-hiit/" class="text-[#0F62FE] font-medium">best treadmills for HIIT</a> weigh controls and top speed alongside the motor, and include one curved trainer that does away with the buttons altogether.
           </p>
           <p>
             <strong>Quick-set speed buttons.</strong> Direct buttons for fixed speeds, or at least

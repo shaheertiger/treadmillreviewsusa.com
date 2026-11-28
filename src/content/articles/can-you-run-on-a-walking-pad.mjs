@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Can You Run on', 'a Walking Pad?'],
   standfirst:
@@ -115,7 +115,7 @@ export default {
             sets (the <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">best walking pads with handrail</a>
             compares current <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium" data-autolink>2-in-1 models</a>). A 2-in-1 pad is a walking pad with a handrail that folds up from the front of the
             deck. With the rail down, it behaves like a flat pad and is usually limited to walking
-            speeds; with the rail up, many unlock a higher top speed, commonly about 6 mph.
+            speeds; with the rail up, many unlock a higher top speed, commonly about 6 mph. Our explainer on <a href="/what-is-a-walking-pad/" class="text-[#0F62FE] font-medium">what a walking pad is</a> covers how that design differs from a flat pad and from a full treadmill.
           </p>
           <p>
             That makes a light jog possible, and for someone who walks on weekdays and wants a
@@ -199,7 +199,7 @@ export default {
             hesitate or shut themselves off mid-session. Our guide to
             <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill overheating</a>
             explains what is happening when a motor protects itself, and why the right response is
-            to stop rather than to restart and carry on.
+            to stop rather than to restart and carry on. If a pad keeps stopping, our <a href="/walking-pad-not-working/" class="text-[#0F62FE] font-medium">walking pad not working</a> guide covers heat alongside the other usual causes.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The belt and deck</h3>
           <p>

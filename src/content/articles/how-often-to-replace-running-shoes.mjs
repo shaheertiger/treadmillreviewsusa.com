@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.3k',
   h1: ['How Often to Replace', 'Running Shoes'],
   standfirst:
@@ -183,7 +183,7 @@ export default {
             differ widely — brands describe theirs in their own terms, and reviewers disagree about
             how soft a given shoe feels — but all of them eventually lose some of their rebound.
             A shoe whose foam has gone feels flatter, firmer or more "slappy" than it did, and the
-            change is gradual enough that many runners do not notice until they try a new pair.
+            change is gradual enough that many runners do not notice until they try a new pair. If yours have reached that point, our picks of the <a href="/best-mens-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium">best men&rsquo;s running shoes for the treadmill</a> start with the Saucony Ride 19, about 8.9 oz in a men&rsquo;s 9 with an 8 mm drop.
           </p>
           <p>
             <strong>The outsole</strong> is the rubber that meets the ground. Outdoors it wears

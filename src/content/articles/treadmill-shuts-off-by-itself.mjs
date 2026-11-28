@@ -126,7 +126,7 @@ export default {
             or a window air conditioner — common company in basements and garages — try a
             different circuit, or run the treadmill when the other appliance is off. Our guide to
             <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity use</a>
-            covers the circuit side in more detail.
+            covers the circuit side in more detail. Some makers rule a shared circuit out entirely; Horizon is one, as our <a href="/horizon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Horizon treadmill troubleshooting</a> guide notes.
           </p>
           <p>
             Check the outlet itself, too. An outlet that grips a plug loosely, feels warm after a
@@ -155,7 +155,7 @@ export default {
             distance is up, and the belt slows to a stop. Some consoles also cap a single manual
             session at a maximum duration, after which the belt stops and the session summary
             appears. If your stops happen at a suspiciously round number of minutes, check the
-            program settings and the manual before anything else.
+            program settings and the manual before anything else. The tones that come with a countdown or the end of a program are normal too, as our guide to <a href="/treadmill-keeps-beeping/" class="text-[#0F62FE] font-medium">treadmill beeping</a> explains.
           </p>
           <p>
             <strong>Idle and sleep timers.</strong> Many machines power the console down or end the
@@ -440,7 +440,7 @@ export default {
           <p>
             That list turns a vague "it keeps stopping" into a diagnosis a technician can act on,
             and it is also the evidence a warranty claim needs. It costs five minutes and saves
-            paying for a call-out to rediscover what you already knew.
+            paying for a call-out to rediscover what you already knew. To find someone to act on it, our <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium">treadmill repair near me</a> guide explains who to call, with call-outs typically about $75 to $150.
           </p>`,
     },
   ],

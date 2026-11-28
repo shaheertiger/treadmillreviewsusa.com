@@ -283,7 +283,7 @@ export default {
             The case that brought treadmill dangers to children into the headlines was the Peloton
             Tread+, a premium treadmill with a slatted belt and a raised deck. In March 2021 Peloton
             disclosed that a child had died in an accident involving the machine. The CPSC record
-            since then is worth knowing, because it shows how the hazard works.
+            since then is worth knowing, because it shows how the hazard works. Peloton’s Tread now uses Tread Lock, a passcode that our <a href="/peloton-tread-troubleshooting/" class="text-[#0F62FE] font-medium">Peloton Tread troubleshooting</a> guide advises never disabling in a house with children or pets.
           </p>
           <ul>
             <li><strong>April 2021, CPSC warning.</strong> The CPSC urged owners with small children or

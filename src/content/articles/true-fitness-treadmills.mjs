@@ -470,7 +470,7 @@ export default {
       heading: 'TRUE vs Sole, Spirit and Landice',
       html: `          <p>
             TRUE shares specialist showrooms with Spirit and Landice, and buyers often arrive having
-            priced a Sole online. The four take different approaches to the same buyer.
+            priced a Sole online. The four take different approaches to the same buyer. For comparison, a new Landice home treadmill listed at $3,999 to $8,904 on 27 November 2026, as our <a href="/how-much-does-a-landice-treadmill-cost/" class="text-[#0F62FE] font-medium">Landice treadmill prices</a> page shows.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead>

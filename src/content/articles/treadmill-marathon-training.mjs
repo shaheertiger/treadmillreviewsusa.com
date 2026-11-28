@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Marathon Training', 'on a Treadmill'],
   standfirst:
@@ -149,7 +149,7 @@ export default {
             <strong>Set everything up before you start.</strong> Bottles in the console holders,
             gels on the console tray or a small table beside the machine within easy reach, towel
             over a rail. You should never need to turn around, bend down or step off to reach
-            anything.
+            anything. If the console holders are too small for your bottles, our guide to <a href="/best-treadmill-cup-holders/" class="text-[#0F62FE] font-medium">treadmill cup holders and trays</a> includes a 34.1 x 11 in. VIVO tray with a cup holder and phone slot.
           </p>
           <p>
             <strong>Slow down to drink and eat.</strong> Drop to an easy jog or walk for the few
@@ -190,7 +190,7 @@ export default {
           <p>
             <strong>Use a real fan.</strong> Built-in console fans are generally weak and aimed
             awkwardly. A standalone fan at chest height, pointed at you, makes a large difference.
-            Two fans are not excessive for long runs.
+            Two fans are not excessive for long runs. Our roundup of the <a href="/best-treadmill-fans/" class="text-[#0F62FE] font-medium">best treadmill fans</a> includes a Vornado 683 on an adjustable stand, so the air starts closer to chest height.
           </p>
           <p>
             <strong>Cool the room.</strong> Open a window, run early, or put the treadmill in the

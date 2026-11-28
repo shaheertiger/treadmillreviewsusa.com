@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Weight Bench', 'for a Home Gym'],
   standfirst:
@@ -35,7 +35,7 @@ export default {
             Five benches, one per job. If you are buying one bench for dumbbells and a barbell, the
             first is the default answer. The flat bench is the better buy if you only press flat and
             want the steadiest possible base; the other three exist because a small room, a tight
-            budget or a need to put the bench away every night changes the answer.
+            budget or a need to put the bench away every night changes the answer. If the bench is mainly for barbell hip thrusts, our <a href="/best-hip-thrust-machines/" class="text-[#0F62FE] font-medium">hip thrust machine guide</a> includes a purpose-built glute bench from Bells of Steel that stops the set-up sliding away.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -271,7 +271,7 @@ export default {
             adjustable bench first. Decline is the least-used setting; the rollers that make it
             possible also add length. Check the number and spacing of back-pad angles, whether the
             seat adjusts too (it stops you sliding down on steep inclines), and how the back
-            adjusts — a ladder is quickest; a pop-pin is common on budget benches.
+            adjusts — a ladder is quickest; a pop-pin is common on budget benches. Some benches also take a leg developer, and our <a href="/best-leg-extension-machines/" class="text-[#0F62FE] font-medium">leg extension machine guide</a> includes Body-Solid's GLDA3 bench attachment.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Folding and stowable</h3>
           <p>

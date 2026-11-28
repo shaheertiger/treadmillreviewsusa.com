@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Treadmills by Budget', url: '/price/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
-  modified: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Best Treadmills Under $600', 'Real Treadmills, Not Walking Pads'],
   standfirst:
@@ -310,7 +310,7 @@ export default {
       html: `          <p>
             More than at any other price. Below $400 almost everything is an online-only brand; above $800
             almost everything is an established one. The $400 to $600 band is where the two meet, and they
-            offer different bargains.
+            offer different bargains. Home Depot’s treadmill range is a clear example, made up of online-only listings from little-known budget brands, as our <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium">Home Depot treadmills</a> page found.
           </p>
           <p>
             <strong>Established brands</strong> (ProForm and Schwinn here) publish their warranty terms on
@@ -333,7 +333,7 @@ export default {
             Amazon or by the brand’s own storefront, register the warranty on the day it arrives, and keep the
             receipt. Our guide to
             <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium">the best budget treadmills</a>
-            ranks cheap treadmills at each price point with the same brand logic.
+            ranks cheap treadmills at each price point with the same brand logic. If you plan to run rather than walk, our <a href="/best-budget-treadmills-for-running/" class="text-[#0F62FE] font-medium">budget treadmills for running</a> explain why Sunny's $598 pick is one of the few under $800 that can take it.
           </p>`,
     },
     {
@@ -344,7 +344,7 @@ export default {
             Prices in this band move constantly. The machines here are discounted by coupons, lightning deals
             and on-page promotions, and the same listing can vary by $50 to $100 in a week. At least one was
             already below its maker’s own price on 21 November 2026: Schwinn listed the SFT4.1 at $699 on
-            its own store the same day Amazon showed about $590.
+            its own store the same day Amazon showed about $590. One step up, the Aeriflo X-T510A in our <a href="/best-treadmills-under-700/" class="text-[#0F62FE] font-medium">treadmills under $700</a> adds 20% incline at 12 mph for about $627.
           </p>
           <p>
             Late November, around Black Friday and <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium" data-autolink>Cyber Monday</a>, and January, when demand for home fitness

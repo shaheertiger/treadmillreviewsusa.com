@@ -231,7 +231,7 @@ export default {
             That gives you control over pace and duration, which is why they suit general exercise,
             weight management and any programme a vet has set out in specific speeds and times.
             The hazard is the same as on any motorised belt: it keeps moving whether or not the dog
-            does, which is why supervision and an instant stop are non-negotiable.
+            does, which is why supervision and an instant stop are non-negotiable. For rehabilitation after surgery, vets more often refer a dog to an <a href="/underwater-treadmill-for-dogs/" class="text-[#0F62FE] font-medium">underwater treadmill</a>, where warm water takes some of its weight.
           </p>
           <p>
             <strong>Slatmills</strong> — the Dog Trotter USA Classic and the PawPaw's carded here — have no motor. The belt

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-18',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['What Burns More Calories:', 'Elliptical or Treadmill?'],
   standfirst:
@@ -305,7 +305,7 @@ export default {
             a treadmill — running — is also the one that adds impact. Each running stride lands with a
             peak vertical force commonly measured at around two to three times body weight, against
             roughly one to one and a half times body weight for walking. An elliptical removes the
-            landing almost entirely.
+            landing almost entirely. Hybrid machines such as the <a href="/bowflex-max-trainer-m7/" class="text-[#0F62FE] font-medium">Bowflex Max Trainer M7</a>, an elliptical-stepper with 14 resistance levels and no running belt, work the same low-impact way.
           </p>
           <p>
             That has three practical consequences for anyone comparing the two on calories.
@@ -345,7 +345,7 @@ export default {
             the calories burned would predict, partly because appetite tends to rise and partly
             because people tend to move a little less for the rest of the day after a hard session.
             Diet has the larger effect on the scales; exercise matters a great deal for fitness,
-            health, mood and keeping weight off once it is lost.
+            health, mood and keeping weight off once it is lost. If you track progress at home, our <a href="/best-smart-scales/" class="text-[#0F62FE] font-medium">smart scale guide</a> explains why the trend across many weigh-ins matters more than one morning's number, and why body-fat readings shift with hydration.
           </p>
           <p>
             For weight loss, that suggests a few honest priorities:
@@ -397,7 +397,7 @@ export default {
             <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical</a>
             comparison. If you have decided on an elliptical, our roundup of the
             <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best elliptical machines for home</a>
-            covers stride length, ceiling height and current models across the price range.
+            covers stride length, ceiling height and current models across the price range. If you are timing that purchase, our <a href="/black-friday-elliptical-deals/" class="text-[#0F62FE] font-medium">Black Friday elliptical deals</a> page lists six of those machines with the prices we saw on October 28.
           </p>`,
     },
   ],

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['Best Treadmill Workout Apps', 'and What Each One Controls'],
   standfirst:
@@ -124,7 +124,7 @@ export default {
       html: `          <p>
             The Peloton App brings Peloton's instructor-led classes to equipment that is not made
             by Peloton, or to no equipment at all. For treadmill users, that means instructor-led
-            running classes in which you follow the instructor's cues.
+            running classes in which you follow the instructor's cues. On a Peloton treadmill itself, the All-Access Membership costs $49.99 a month, as our <a href="/how-much-does-a-peloton-tread-cost/" class="text-[#0F62FE] font-medium">Peloton Tread cost guide</a> explains.
           </p>
           <ul>
             <li><strong>On a treadmill:</strong> instructor-led running and treadmill classes, plus strength, yoga and other classes off the treadmill.</li>
@@ -147,7 +147,7 @@ export default {
       html: `          <p>
             Zwift is a virtual world you run through as an avatar, alongside other Zwift users
             around the world. What it needs from your treadmill is your speed, and that is what
-            makes it so widely usable.
+            makes it so widely usable. If you want to walk and turn inside a virtual world with a headset on, that takes a different machine, and our <a href="/best-vr-treadmills/" class="text-[#0F62FE] font-medium">best VR treadmills</a> compares the KAT Walk and Virtuix Omni One models.
           </p>
           <ul>
             <li><strong>On a treadmill:</strong> running or walking through Zwift's virtual worlds, with your avatar moving at the speed your treadmill or sensor reports.</li>

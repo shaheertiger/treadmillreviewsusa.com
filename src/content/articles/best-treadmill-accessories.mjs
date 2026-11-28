@@ -154,7 +154,7 @@ export default {
             a surge protector, buy one that meets its stated requirements, plug it directly into
             the wall, and plug only the treadmill into it — no fan, no phone charger, no second
             device. Never use an ordinary power strip or an <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium" data-autolink>extension cord</a>, and never use an
-            adapter to fit a 20-amp plug into a 15-amp device.
+            adapter to fit a 20-amp plug into a 15-amp device. Our page on the <a href="/best-surge-protectors-for-treadmills/" class="text-[#0F62FE] font-medium">best surge protectors for treadmills</a> names three plug-in units that fit those rules, including a single-outlet Tripp Lite SPIKECUBE for under $20.
           </p>
           <p>
             Our pick, the Tripp Lite SPIKECUBE, has a single outlet, which matches manuals that
@@ -294,7 +294,7 @@ export default {
             <strong>Clip-on desks and heavy console add-ons.</strong> Anything that hangs weight off
             the console or handrails can stress parts that were not designed to carry it, so check
             the manual before attaching anything. If you want to work while walking, an under-desk <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>
-            at a proper desk is a better arrangement.
+            at a proper desk is a better arrangement. If you still want a tray, our guide to <a href="/best-treadmill-laptop-holders/" class="text-[#0F62FE] font-medium">treadmill laptop holders</a> explains the two measurements that decide whether one will sit level on your rails.
           </p>`,
     },
     {

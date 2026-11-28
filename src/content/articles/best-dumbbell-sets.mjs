@@ -334,14 +334,14 @@ export default {
           <p>
             <strong>If you are on a tight budget or rent an upstairs flat</strong>, start with
             <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">resistance bands</a>
-            and one or two dumbbell pairs, and add weight as you learn what you use.
+            and one or two dumbbell pairs, and add weight as you learn what you use. If an advert for a band-and-bar kit has caught your eye instead, our <a href="/gymproluxe-review/" class="text-[#0F62FE] font-medium">GymProLuxe review</a> sets out what we could and could not confirm about it.
           </p>
           <p>
             <strong>If you want a complete beginner setup</strong>, our
             <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
             put dumbbells alongside benches, bands and cardio machines, and the
             <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a>
-            covers the small kit worth buying with them.
+            covers the small kit worth buying with them. A sturdy box is another inexpensive addition for step-ups and Bulgarian split squats, and our <a href="/best-plyo-boxes/" class="text-[#0F62FE] font-medium">plyo box guide</a> covers five.
           </p>`,
     },
   ],

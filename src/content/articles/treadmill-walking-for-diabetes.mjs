@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 19, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-19',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Treadmill Walking', 'for Diabetes'],
   standfirst:
@@ -59,7 +60,7 @@ export default {
             that can cause lows, have diabetic eye disease, nerve damage in your feet, a foot ulcer, or
             any heart symptoms. If you are new to walking for exercise, our guide to
             <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what speed to walk on a treadmill</a>
-            explains how to find your own moderate pace.
+            explains how to find your own moderate pace. If your doctor asks for an exercise test before you build up, our guide to <a href="/how-much-does-a-treadmill-stress-test-cost/" class="text-[#0F62FE] font-medium">treadmill stress test costs</a> explains what the basic version and the imaging versions are likely to cost.
           </p>`,
     },
     {

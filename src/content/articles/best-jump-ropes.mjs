@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Jump Rope', 'for Your Height, Floor and Goals'],
   standfirst:
@@ -283,7 +283,7 @@ export default {
             <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether machine calorie counts are accurate</a>
             explains why every device's estimate drifts, and a heart-rate based
             <a href="/best-fitness-trackers/" class="text-[#0F62FE] font-medium">fitness tracker</a> gives a
-            somewhat more personal estimate.
+            somewhat more personal estimate. For the longer view, a <a href="/best-smart-scales/" class="text-[#0F62FE] font-medium">smart scale</a> that logs your weight every morning shows whether the sessions are adding up.
           </p>
           <p>
             What the arithmetic does show is that skipping is an intense activity per minute — at 11 METs it is
@@ -318,7 +318,7 @@ export default {
             translate directly to a rope: swap the sprint for a round of skipping and keep the rest intervals.
             And if you want to build strength alongside the rope work, our guide to
             <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">resistance bands</a> covers the
-            other small, cheap piece of kit that earns a place in a home gym.
+            other small, cheap piece of kit that earns a place in a home gym. For something more structured than loose bands, our <a href="/gymproluxe-review/" class="text-[#0F62FE] font-medium">GymProLuxe review</a> looks at a travel-friendly kit built around a steel bar.
           </p>`,
     },
     {

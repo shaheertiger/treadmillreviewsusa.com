@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Best Gym Flooring', 'for a Home Gym, by What You Do on It'],
   standfirst:
@@ -77,7 +77,7 @@ export default {
             widest current range on Amazon US, from tiles to sheets to rolls. Several better-known
             flooring makers sell mainly from their own sites; the
             <a href="#how-we-chose" class="text-[#0F62FE] font-medium">how we chose</a> section
-            names them.
+            names them. The Eco-Sport 3/4-inch tiles are also the flooring pick on our <a href="/black-friday-home-gym-deals/" class="text-[#0F62FE] font-medium">Black Friday home gym deals</a> page: $149.63 for five tiles on 19 October, and worth buying below about $120 when Rubber-Cal is the seller.
           </p>`,
     },
     {
@@ -174,7 +174,7 @@ export default {
             rubber, about 1.5 inches in all, which is the build Wilkes describes for his own. Our
             <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platforms guide</a>
             compares bought and DIY platforms, and covers why a platform on a suspended floor upstairs does
-            not make dropping safe.
+            not make dropping safe. If the main lift will be a trap bar deadlift, check the bar's length against the platform; our <a href="/best-trap-bars/" class="text-[#0F62FE] font-medium">trap bar guide</a> notes that open bars are longer than the classic closed hexagon.
           </p>`,
     },
     {

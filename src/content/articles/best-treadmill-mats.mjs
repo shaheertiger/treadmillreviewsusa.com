@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmill Mats',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-22',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Best Treadmill Mats', 'for Every Floor'],
   standfirst:
@@ -283,7 +283,7 @@ export default {
             floor underneath. On a rubber mat, avoid solvent cleaners, which can soften the
             surface. Our guide to
             <a href="/how-to-clean-a-treadmill/" class="text-[#0F62FE] font-medium">cleaning a treadmill</a>
-            covers the machine itself.
+            covers the machine itself. Our list of the <a href="/best-treadmill-cleaning-products/" class="text-[#0F62FE] font-medium">best treadmill cleaning products</a> includes a cordless BLACK+DECKER dustbuster with a crevice tool for the deck edges and under the belt.
           </p>
           <p>
             <strong>Know when to replace it.</strong> A mat that has split, curled at a corner you

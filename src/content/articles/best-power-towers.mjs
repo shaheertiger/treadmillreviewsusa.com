@@ -386,14 +386,14 @@ export default {
             <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">weight bench</a>
             and
             <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>
-            pair well with a tower.
+            pair well with a tower. If heavy solo pressing and squatting is the goal, our <a href="/best-smith-machines/" class="text-[#0F62FE] font-medium">Smith machine guide</a> covers seven frames whose bar you can rack at any point.
           </p>
           <p>
             <strong>If you have a shoulder or elbow problem</strong>, pull-ups and dips are among the
             hardest exercises on those joints. Get advice before you buy, and consider starting with
             a cable machine, where the load can be set below your body weight; our
             <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">cable machine guide</a>
-            covers the options.
+            covers the options. A <a href="/best-smart-home-gyms/" class="text-[#0F62FE] font-medium">smart home gym</a> such as the Tonal 2 does the same with digital resistance that starts at 5 lb.
           </p>`,
     },
   ],

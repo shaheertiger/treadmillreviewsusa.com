@@ -275,7 +275,7 @@ export default {
           <p>
             For most buyers the realistic Sunny budget is $250 to $650 at Amazon prices: a TreadPad for desk walking or an
             SF-T7718 or 20-inch auto-incline model for jogging. Spend more only for decline or a steep incline, and spend less
-            only if you want a manual walker.
+            only if you want a manual walker. The SF-T723016, which leads our <a href="/best-treadmills-under-700/" class="text-[#0F62FE] font-medium">best treadmills under $700</a>, pairs 12 mph with 12% auto incline for about $646 on Amazon.
           </p>`,
     },
   ],

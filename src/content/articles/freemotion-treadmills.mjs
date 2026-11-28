@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Freemotion Treadmills:', 'A Buyer’s Guide to the Reflex Range'],
   standfirst:
@@ -365,7 +365,7 @@ export default {
             Because Freemotion sells to gyms and studios, used and remanufactured units are common, and the
             savings are large: one reseller in search results listed a remanufactured t10.9b at $4,399, about
             half the new price, though we did not verify that listing. Studio refits release batches of
-            Reflex treadmills from time to time.
+            Reflex treadmills from time to time. Remanufactured Precor treadmills ran $2,495 to $4,799 at the US rebuilders our <a href="/how-much-does-a-precor-treadmill-cost/" class="text-[#0F62FE] font-medium">Precor price breakdown</a> checked on 27 November 2026.
           </p>
           <ul>
             <li><strong>Know the history.</strong> A treadmill from an Orangetheory or a busy gym may have run

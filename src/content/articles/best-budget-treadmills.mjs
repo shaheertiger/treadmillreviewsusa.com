@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-17',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['Best Affordable Treadmills:', 'Budget Picks Under $300, $500 and $1,000'],
   standfirst:
@@ -42,7 +42,7 @@ export default {
             belt is the most you can verify; under $1,000, buy a full-size treadmill with a 60-inch
             deck; and if you can stretch to about $1,100, buy a machine with a 15% incline and a longer
             parts warranty. A full-size folding treadmill with a 55-inch or longer deck for under $500
-            is what we could not verify, and the reasons are set out below.
+            is what we could not verify, and the reasons are set out below. Between $300 and $400, though, our <a href="/best-treadmills-under-400/" class="text-[#0F62FE] font-medium">best treadmills under $400</a> list six folding machines with up to 18% auto incline for $340 to $380.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[640px] w-full text-sm border-collapse">
             <thead>
@@ -119,7 +119,7 @@ export default {
             to match between the maker and at least one source that does not make the machine.
             <strong>A real warranty:</strong> written terms from a brand with its own store and support
             route. <strong>No safety action:</strong> we checked the US Consumer Product Safety
-            Commission's recall database and warnings for every brand.
+            Commission's recall database and warnings for every brand. It is a test worth applying at Home Depot, where none of the online treadmill listings we sampled came from a mainstream brand, as our <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium">Home Depot treadmill page</a> shows.
           </p>
           <p>
             Several machines are missing on purpose. The <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101</a>,
@@ -173,7 +173,7 @@ export default {
             sensible floor. See the guides to the
             <a href="/best-treadmills-under-800/" class="text-[#0F62FE] font-medium">best treadmills under $800</a>
             and the
-            <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">best treadmills under $1,000</a>.
+            <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">best treadmills under $1,000</a>. For runners specifically, our <a href="/best-budget-treadmills-for-running/" class="text-[#0F62FE] font-medium">budget running treadmill picks</a> start with the Horizon T101 Connect's 20 by 55-inch belt at about $777.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Around $1,000 to $1,500: a running treadmill</h3>
           <p>

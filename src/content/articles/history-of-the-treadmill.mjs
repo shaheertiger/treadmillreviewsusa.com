@@ -6,9 +6,9 @@ export default {
   kicker: 'History',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ["Who Invented the Treadmill,", "and When?"],
   standfirst: "The treadmill the word was coined for dates to 1818, when engineer William Cubitt introduced it to British prisons. But there is no single inventor: it was reinvented several times for different jobs, from lifting stone and punishing prisoners to testing hearts and, last of all, getting fit at home.",
@@ -72,7 +72,7 @@ export default {
             drive farm machinery, and such devices were still being sold to farmers into the
             nineteenth century. The inclined animal treadmill — a sloping moving floor that the
             animal walks up while staying in place — is mechanically very close to the modern
-            machine.
+            machine. Dog-powered slatmills work on the same principle today, and our <a href="/how-to-build-a-dog-treadmill/" class="text-[#0F62FE] font-medium">guide to building a dog treadmill</a> puts a large one at about $800 to $900 in parts.
           </p>
           <p>
             None of this was exercise. The walker was the motor, and the point was the work done at
@@ -148,7 +148,7 @@ export default {
             in 1963, uses three-minute stages in which both speed and grade rise, and it became the
             standard way to conduct a treadmill exercise test — it is still widely used today, as our
             <a href="/treadmill-stress-test/" class="text-[#0F62FE] font-medium">treadmill stress test explainer</a>
-            describes.
+            describes. Each of those Bruce stages still lasts 3 minutes, and our page on <a href="/average-time-on-treadmill-stress-test-by-age/" class="text-[#0F62FE] font-medium">average time on a treadmill stress test by age</a> explains what finishing stage 2, 3 or 4 means for someone your age.
           </p>
           <p>
             Quinton went on to found a company making medical treadmills and related equipment. In
@@ -254,7 +254,7 @@ export default {
             designed for under-desk use, and curved, self-powered <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>commercial treadmills</a> popular with
             sprint and athletic training. Attention to safety grew as well, including after a
             high-profile 2021 recall of a connected treadmill, with features such as rear guards and
-            lockouts that stop the belt being started by children getting more scrutiny.
+            lockouts that stop the belt being started by children getting more scrutiny. Omnidirectional VR treadmills, such as the KAT Walk and the Virtuix Omni One, are a more recent branch, covered in our <a href="/best-vr-treadmills/" class="text-[#0F62FE] font-medium">best VR treadmills</a>.
           </p>
           <p>
             Not everyone wants the subscription model, and plenty of good machines work perfectly well

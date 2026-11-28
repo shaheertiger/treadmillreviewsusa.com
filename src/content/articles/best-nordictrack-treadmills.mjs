@@ -7,9 +7,9 @@ export default {
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['Best NordicTrack Treadmills', 'Which Model to Buy in 2026'],
   standfirst:
@@ -248,7 +248,7 @@ export default {
       html: `          <p>
             We have not tested these treadmills. The ranking is built from NordicTrack's published
             specifications and warranty terms, a major US retailer's listings, and independent
-            review coverage, all checked on 13 October 2026.
+            review coverage, all checked on 13 October 2026. For what each model costs, our <a href="/how-much-does-a-nordictrack-treadmill-cost/" class="text-[#0F62FE] font-medium">NordicTrack treadmill cost guide</a> gives list and Black Friday prices, from $1,599 to $2,999 on sale.
           </p>
           <p>
             We started by confirming what NordicTrack actually sells. Its treadmill category listed
@@ -306,7 +306,7 @@ export default {
             full incline. They are mechanically identical, so the choice between them is purely
             the screen. If you are unsure whether you need 40% incline at all, our
             <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline trainer vs treadmill guide</a>
-            is the place to settle it.
+            is the place to settle it. For incline trainers sold on Amazon, our <a href="/best-incline-trainers/" class="text-[#0F62FE] font-medium">best incline trainers</a> run from a $200 manual model to a 45% climber.
           </p>
           <p>
             A rough rule: walk mostly, choose the T Series; run regularly, choose the Commercial
@@ -405,7 +405,7 @@ export default {
           <p>
             <strong>The X24, for most people.</strong> It shares everything mechanical with the
             X16. Unless the larger screen is genuinely the point, the X16 is the same machine for
-            less.
+            less. Over five years, an X16 with iFIT comes to around $5,400 to $6,000, as our <a href="/how-much-does-an-incline-trainer-cost/" class="text-[#0F62FE] font-medium">incline trainer cost guide</a> works out.
           </p>
           <p>
             <strong>The T Series 16, if you run often.</strong> On sale it is often close enough to

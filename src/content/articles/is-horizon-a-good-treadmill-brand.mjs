@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Is Horizon a Good', 'Treadmill Brand?'],
   standfirst:
@@ -66,7 +66,7 @@ export default {
             price points: Matrix is its commercial and premium line, the kind of equipment you see in
             hotel and club gyms; Vision sits in specialty fitness stores; and Bowflex joined the group
             when Johnson Health Tech acquired it in 2024. Johnson Fitness &amp; Wellness, the group's own
-            chain of stores, sells several of these brands side by side.
+            chain of stores, sells several of these brands side by side. On Horizon’s own store its treadmills cost $699 to $1,999 on 23 November 2026, with no subscription, as our <a href="/how-much-does-a-horizon-treadmill-cost/" class="text-[#0F62FE] font-medium">Horizon treadmill cost guide</a> shows.
           </p>
           <p>
             Why does that matter to someone buying a $900 treadmill? For three practical reasons.
@@ -354,7 +354,7 @@ export default {
             <strong>Against Bowflex.</strong> Since 2024 Bowflex has been a sister brand, and the <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex
             T6</a> is a close match for the Horizon 7.0 AT on the core figures. Compare them on price, console
             and the exact warranty terms rather than on the assumption that one is fundamentally better
-            built.
+            built. One practical difference: Bowflex’s manuals insist on a dedicated 15-amp outlet with no GFCI, as our <a href="/bowflex-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Bowflex treadmill troubleshooting</a> guide notes.
           </p>
           <p>
             <strong>Against marketplace brands.</strong> Below about $700, Horizon's competition is

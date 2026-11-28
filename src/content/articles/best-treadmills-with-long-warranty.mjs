@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
-  modified: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Best Treadmills With', 'the Longest Warranty'],
   standfirst:
@@ -87,7 +87,7 @@ export default {
             Two brands that sell long warranties mostly through dealers are not here, because they are hard to
             buy on Amazon: <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Landice</a> and Life Fitness. Our
             <a href="/life-fitness-f3-treadmill/" class="text-[#0F62FE] font-medium">Life Fitness F3 review</a>
-            sets out that brand&rsquo;s terms (lifetime frame, ten years on the motor, five on parts, one on labour).
+            sets out that brand&rsquo;s terms (lifetime frame, ten years on the motor, five on parts, one on labour). For what a Landice costs once delivery is added, see our <a href="/how-much-does-a-landice-treadmill-cost/" class="text-[#0F62FE] font-medium">Landice cost guide</a>: an L7 was $4,829 in the Black Friday sale, plus $399 for delivery and installation.
           </p>`,
     },
     {

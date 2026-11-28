@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   h1: ['Sole Treadmill Troubleshooting:', 'Console, Belt, Speed and Error Codes'],
   standfirst: `Most Sole faults come down to five things: a safety key that is not in, a tripped breaker on the front of the frame, a deck that is due its 90-hour lube, a belt that needs a quarter-turn of tension or tracking, or a circuit shared with something else. Here is the order to check them in, what Sole's own manuals say to do, and what to have ready before you call Sole on 866-780-7653.`,
   ctas: [
@@ -111,7 +111,7 @@ export default {
             coast, depending on speed. On touchscreen consoles a message saying the safety key has
             been removed and the machine stopped appears, and putting the key back lets you carry
             on. On the simpler LED consoles, Sole's 2026 <a href="/sole-f63-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F63</a> manual notes that removing the key is
-            similar to entering sleep mode, so a missing key can look exactly like a dead machine.
+            similar to entering sleep mode, so a missing key can look exactly like a dead machine. Replacement keys that fit Sole machines are covered in our <a href="/best-treadmill-safety-keys/" class="text-[#0F62FE] font-medium">best treadmill safety keys</a>, along with a two-minute test that the key really stops the belt.
           </p>
           <p>
             Check the key is in, push it fully home, and make sure it is the key that came with the

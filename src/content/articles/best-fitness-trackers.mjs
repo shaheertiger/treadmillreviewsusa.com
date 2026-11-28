@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Fitness Trackers', 'and What They Really Cost'],
   standfirst:
@@ -224,7 +224,7 @@ export default {
             built from heart rate, heart rate variability, movement and skin temperature. They are
             not comparable between brands, and a score of 70 on one app does not mean what 70 means
             on another. They are most useful as a personal baseline: a run of low scores after poor
-            sleep or hard training is worth noticing; a single low score is not.
+            sleep or hard training is worth noticing; a single low score is not. If those low scores follow hard leg days, our <a href="/best-compression-boots/" class="text-[#0F62FE] font-medium">compression boot guide</a> sets out what pneumatic boots can and cannot be shown to do for recovery.
           </p>`,
     },
     {
@@ -361,7 +361,7 @@ export default {
           <p>
             <strong>If you only want a step count at a walking desk,</strong> a $25 clip-on
             pedometer will do it better than anything on this page, for the reasons in our
-            <a href="/best-fitness-trackers-for-walking-pad/" class="text-[#0F62FE] font-medium">walking pad tracker guide</a>.
+            <a href="/best-fitness-trackers-for-walking-pad/" class="text-[#0F62FE] font-medium">walking pad tracker guide</a>. And if the aim is simply to move more while you work, a rocker <a href="/best-balance-boards/" class="text-[#0F62FE] font-medium">balance board</a> is easy enough to stand on while you answer email.
           </p>
           <p>
             <strong>If you already own a recent phone and want to see whether tracking helps,</strong>

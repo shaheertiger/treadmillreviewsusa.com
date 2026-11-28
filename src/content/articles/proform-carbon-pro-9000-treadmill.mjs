@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'ProForm Carbon Pro 9000',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['ProForm Carbon Pro 9000', 'Treadmill Review'],
   standfirst:
@@ -76,7 +76,7 @@ export default {
             higher than NordicTrack's T Series, which makes it a reasonable choice for heavier walkers. The
             incline stops at 0%: there is no decline, so iFIT's downhill route sections run flat. And the motor
             is covered for two years, which is short for a flagship; NordicTrack's Commercial 1750, at a higher
-            price, covers its motor for life.
+            price, covers its motor for life. ProForm’s touchscreen Pro models cost $1,199 to about $1,665 on Amazon on 22 November 2026, plus $39 a month for iFIT Pro, as our <a href="/how-much-does-a-proform-treadmill-cost/" class="text-[#0F62FE] font-medium">ProForm cost guide</a> shows.
           </p>
           <p>
             Read every figure with the model number in mind. Reviews of the older Pro 9000 are still widely read,

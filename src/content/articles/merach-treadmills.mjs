@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   h1: ['Merach Treadmills:', 'Are They Any Good?'],
   standfirst:
     'Merach treadmills are decent value for walking, not for serious running. Its US store sells two incline walking pads at $299.99 and four compact T12 treadmills from $369.99 to $599.99, all topping out at 7.5 mph or below, with a one-year warranty that becomes two years if you register. This guide sets out every current model, which published figures disagree, and which Merach, if any, to buy.',
@@ -266,7 +266,7 @@ export default {
       html: `          <p>
             This is everything Merach's US store listed under walking pads and treadmills on 21 November 2026, plus the
             W50 Lite, which is sold on Amazon. Prices are Merach's own on the day, with the "was" price it showed. Merach
-            runs near-permanent discounts, so treat the higher figure as a list price rather than a guide to value.
+            runs near-permanent discounts, so treat the higher figure as a list price rather than a guide to value. Across brands, a basic flat walking pad costs about $130 to $250, as our <a href="/how-much-does-a-walking-pad-cost/" class="text-[#0F62FE] font-medium">walking pad cost breakdown</a> shows.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead>
@@ -542,7 +542,7 @@ export default {
             Against those, Merach's case is the W50 TrekPad's 400 lb rating and continuous motor figure, and the T12's
             15% incline at under $600. If you do not need incline, a flat walking pad from any established brand will
             cost less, and if you do need to run, a Merach is the wrong machine at any price: look for a 55 to 60-inch
-            belt and 10 mph or more.
+            belt and 10 mph or more. A MERACH incline model is also the uphill-walking pick among our <a href="/best-treadmills-under-600/" class="text-[#0F62FE] font-medium">best treadmills under $600</a>.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Cheaper than a Merach</h3>
           <p>

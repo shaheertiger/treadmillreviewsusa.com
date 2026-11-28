@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.3k',
   h1: ['Best Walking Pads', 'for Heavy People'],
   standfirst:
@@ -181,7 +181,7 @@ export default {
             a 0.7-inch phenolic deck — and independent coverage of the W50 describes a reinforced deck about 15 mm thick.
             A thicker, denser deck flexes less under load, which is better for the belt, the motor
             and your joints alike. A brand that publishes deck details is at least telling you it
-            has thought about them.
+            has thought about them. That build is reflected in the price: LifeSpan’s under-desk treadmills cost $1,199 to $1,699 on its store on 26 November 2026, as our <a href="/how-much-does-a-lifespan-treadmill-cost/" class="text-[#0F62FE] font-medium">LifeSpan treadmill prices</a> page shows.
           </p>
           <p>
             <strong>The frame and the machine's own weight.</strong> Heavier is generally better here.

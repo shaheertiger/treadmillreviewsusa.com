@@ -302,7 +302,7 @@ export default {
             15.75 inches and Bells of Steel 11.8 inches. Garage Gym Reviews flagged the earlier SS3's
             shorter sleeves as its main weakness, because most safety squat bars offer about 16
             inches. With <a href="/best-weight-plates/" class="text-[#0F62FE] font-medium" data-autolink>iron plates</a>, 12 inches is plenty for most lifters; with bumpers it is a real
-            limit.
+            limit. Our <a href="/best-bumper-plates/" class="text-[#0F62FE] font-medium">bumper plate guide</a> gives the widths: a 45 lb Fringe Sport black bumper is 2.9 inches thick.
           </p>
           <p>
             Sleeve diameter matters for collars. Older SSBs often used axle-sized sleeves that need
@@ -366,7 +366,7 @@ export default {
             <a href="/best-hack-squat-machines/" class="text-[#0F62FE] font-medium">hack squat machines</a>,
             <a href="/best-leg-press-machines/" class="text-[#0F62FE] font-medium">leg press machines</a> and
             <a href="/best-smith-machines/" class="text-[#0F62FE] font-medium">Smith machines</a>
-            compare them.
+            compare them. For the quads on their own, our <a href="/best-leg-extension-machines/" class="text-[#0F62FE] font-medium">leg extension machine guide</a> covers machines that add a hamstring curl from the same frame.
           </p>
           <p>
             <strong>If you are still putting a home gym together</strong>, our

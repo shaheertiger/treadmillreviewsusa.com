@@ -347,7 +347,7 @@ export default {
             Keep the remote somewhere fixed: on a pad with no handrail, it is how you stop the belt.
             Unplug the pad before any adjustment or cleaning. Stop using it and contact the seller if you
             notice a <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium" data-autolink>burning smell</a>, if it trips a breaker, if the speed changes on its own, or if the
-            belt does not stop when told to. Keep children and pets away from it while it is plugged in.
+            belt does not stop when told to. Keep children and pets away from it while it is plugged in. For a pad that will not start or stops on its own, our <a href="/walking-pad-not-working/" class="text-[#0F62FE] font-medium">guide to a walking pad that is not working</a> sets out what to check first.
           </p>`,
     },
     {

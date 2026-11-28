@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Best Headphones', 'for Treadmill Running'],
   standfirst:
@@ -337,7 +337,7 @@ export default {
             can also pair with Bluetooth headphones directly to play their own audio; check your
             manual, because console Bluetooth audio varies a lot between machines. If you also
             watch video on a tablet, multipoint pairing — supported on the OpenRun Pro 2 — lets
-            the headphones stay connected to two devices at once.
+            the headphones stay connected to two devices at once. If you would rather skip headphones, our <a href="/best-treadmills-with-bluetooth-speakers/" class="text-[#0F62FE] font-medium">treadmills with Bluetooth speakers</a> guide explains how much a built-in speaker can do over a running belt.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Heart rate from the earbuds</h3>
           <p>
@@ -362,7 +362,7 @@ export default {
             or class app, check whether the console supports Bluetooth audio and how it handles
             lip-sync before buying headphones for it. Our guide to
             <a href="/best-treadmill-workout-apps/" class="text-[#0F62FE] font-medium">treadmill workout apps</a>
-            covers the apps themselves.
+            covers the apps themselves. If that screen is your phone, our <a href="/best-treadmill-phone-holders/" class="text-[#0F62FE] font-medium">treadmill phone holder</a> picks list the bar and phone size ranges taken from each listing.
           </p>
           <p>
             <strong>If you swim as well.</strong> None of these pairs is sold for swimming. The IP67

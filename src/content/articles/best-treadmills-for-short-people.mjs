@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-24',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Best Treadmills for Short People', 'Low Step-Up, Easy Reach'],
   standfirst:
@@ -125,7 +125,7 @@ export default {
             We kept away from the picks on our low profile page. The Sunny Health &amp; Fitness Low Deck
             treadmill, with a 4-inch step-up and extended handrails, is a sound choice for shorter walkers
             and is covered there in detail, as are the <a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Echelon Stride</a> and the walking pads with fold-down
-            handles. This page shows you the alternatives, including machines for running.
+            handles. This page shows you the alternatives, including machines for running. The Stride-6 cost $1,399.99 on Echelon’s store on 26 November 2026, as our <a href="/how-much-does-an-echelon-treadmill-cost/" class="text-[#0F62FE] font-medium">guide to Echelon treadmill costs</a> shows.
           </p>`,
     },
     {

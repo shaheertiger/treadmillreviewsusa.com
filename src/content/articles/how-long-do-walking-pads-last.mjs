@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['How Long Do', 'Walking Pads Last?'],
   standfirst:
@@ -191,7 +191,7 @@ export default {
             machine at all and rely on a small remote or a phone app. A dead remote with no spare
             available can retire an otherwise healthy pad, and app support can disappear if a
             brand changes its software. Neither is a mechanical failure, but both end the
-            machine's useful life just as surely.
+            machine's useful life just as surely. That is why our <a href="/best-walking-pads-with-remote/" class="text-[#0F62FE] font-medium">walking pads with a remote</a> guide favours pads with more than one way to control them.
           </p>
           <p>
             <strong>4. Rollers and bearings.</strong> Usually long-lived, unless the belt has been
@@ -220,7 +220,7 @@ export default {
             list one year for <a href="/deer-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>DeerRun</a> and Egofit, two years for MERACH's W60 Plus (with an
             independent tracker reporting that the second year depends on registration), and one
             year plus a 180-day extension for UREVO's SpaceWalk 3S, which an independent tracker
-            says requires registering the pad in UREVO's app.
+            says requires registering the pad in UREVO's app. Our <a href="/how-much-does-a-urevo-walking-pad-cost/" class="text-[#0F62FE] font-medium">UREVO walking pad price guide</a> covers what UREVO’s warranty, returns and spare parts add to a pad costing $149.99 to $429.99.
           </p>
           <p>
             That short cover is an honest signal rather than a scandal. A maker that expected its
@@ -368,7 +368,7 @@ export default {
             tracking, tightening loose fixings, cleaning dust from around the motor, replacing a
             remote if the seller sells one, and working through a reset or an error code with the
             seller. These cost little or nothing and fix a large share of "my pad is broken"
-            complaints.
+            complaints. Our <a href="/walking-pad-not-working/" class="text-[#0F62FE] font-medium">walking pad not working</a> guide puts those checks in order, starting with the safety key and the remote.
           </p>
           <p>
             <strong>Sometimes worth doing:</strong> a <a href="/best-treadmill-replacement-belts/" class="text-[#0F62FE] font-medium" data-autolink>replacement belt</a>, if the seller sells one at a

@@ -96,7 +96,7 @@ export default {
             the pedal exerciser a clear reason to go without; a console that is either simple or easy to
             read; resistance that starts low and changes in small steps; a weight rating agreed between
             sources; and a maker that offers delivery, assembly or both. Every bike also had to be on
-            sale from its maker or a major retailer on 19 October 2026.
+            sale from its maker or a major retailer on 19 October 2026. If you are buying around the holidays, our <a href="/black-friday-exercise-bike-deals/" class="text-[#0F62FE] font-medium">Black Friday bike shortlist</a> explains how list prices nobody pays and memberships counted as money off make an ordinary price look like a sale.
           </p>
           <p>
             <strong>Consistency with our other guides.</strong> Four of these bikes also appear in our

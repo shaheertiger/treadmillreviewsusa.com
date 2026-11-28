@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Best Massage Gun', 'and How to Read the Spec Sheet'],
   standfirst:
@@ -38,7 +38,7 @@ export default {
             If you want one sentence: most people who train regularly will be well served by a
             full-size gun in the $250 to $330 range, and most people who mainly want something for
             stiff shoulders and calves at the end of the day will be just as happy with a compact or
-            gentler model that costs less.
+            gentler model that costs less. The Theragun Prime is the recovery pick on our <a href="/black-friday-home-gym-deals/" class="text-[#0F62FE] font-medium">Black Friday home gym watch list</a>, at about $330 on 19 October with $280 or less as the price we would wait for.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -75,7 +75,7 @@ export default {
           </p>
           <p>
             None of these descriptions claims that a gun will make you recover faster. They describe
-            what the gun is, how it is built and what owners and reviewers commonly report.
+            what the gun is, how it is built and what owners and reviewers commonly report. The same caution applies to electrical muscle stimulators, and our <a href="/shock-exercise-equipment-reviews/" class="text-[#0F62FE] font-medium">shock exercise equipment reviews</a> cover TENS and EMS units such as the four-channel Compex Performance 3.0.
           </p>`,
     },
     {

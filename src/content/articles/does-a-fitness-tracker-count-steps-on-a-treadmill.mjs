@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['Does a Fitness Tracker Count Steps', 'on a Treadmill?'],
   standfirst:
@@ -66,7 +66,7 @@ export default {
       html: `          <p>
             A wrist tracker counts treadmill steps the same way it counts any steps: an accelerometer
             senses the repeating pattern of your arm swinging and the small jolt of each foot strike
-            travelling up your body, and software turns that rhythm into a step count.
+            travelling up your body, and software turns that rhythm into a step count. If you want a figure to check yours against, most adults take about 3,400 steps in 30 minutes at 3 mph, according to our guide to <a href="/how-many-steps-on-a-treadmill-in-30-minutes/" class="text-[#0F62FE] font-medium">treadmill steps in 30 minutes</a>.
           </p>
           <p>
             An accelerometer is a tiny motion sensor that measures acceleration in three directions.

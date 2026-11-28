@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Where to Buy',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.9k',
   h1: ['Treadmills Near Me:', 'Where to Go and What to Test'],
   standfirst:
@@ -35,7 +35,7 @@ export default {
             followed by a sporting goods chain.</strong> Specialty stores usually have the widest
             range to try, the most knowledgeable staff and their own delivery, assembly and service.
             Sporting goods chains have more locations and typically carry mainstream home
-            treadmills with some on the floor.
+            treadmills with some on the floor. Scheels is one such chain, and in some of its stores you can stand on a premium treadmill you would otherwise only see online, as our <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">Scheels treadmills</a> page explains.
           </p>
           <p>
             <strong>Warehouse clubs and big-box stores</strong> are worth checking for price, but
@@ -120,7 +120,7 @@ export default {
             warehouse club. <strong>Older users or those with joint concerns</strong> benefit from
             trying cushioning, step-up height and handrails in person; our guide to the
             <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">best treadmills for seniors</a>
-            covers the features to look for.
+            covers the features to look for. If your nearest warehouse club is a Sam’s Club, our <a href="/sams-club-treadmills/" class="text-[#0F62FE] font-medium">guide to Sam’s Club treadmills</a> covers its NordicTrack and ProForm range and how it compares with Costco.
           </p>`,
     },
     {

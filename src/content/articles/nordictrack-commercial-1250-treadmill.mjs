@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'NordicTrack Commercial 1250',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['NordicTrack Commercial 1250', 'Treadmill Review'],
   standfirst:
@@ -480,7 +480,7 @@ export default {
             NordicTrack's list price for the 1250 was $1,999.99 on 14 October 2026, and its selling price
             was $1,599.99. P.C. Richard and Nebraska Furniture Mart were both at $1,599. NordicTrack runs
             promotions for most of the year, so the list price is rarely what anyone pays, and the gap to
-            the 1750 moves with whichever machine is being promoted that week.
+            the 1750 moves with whichever machine is being promoted that week. Sam’s Club’s indexed product page has also shown the 1250 at $1,599, though we could not confirm it on 5 November 2026; our <a href="/sams-club-treadmills/" class="text-[#0F62FE] font-medium">Sam’s Club treadmill guide</a> explains what to check on that listing.
           </p>
           <p>
             Sale events such as Black Friday tend to bring the deepest cuts across the Commercial series,

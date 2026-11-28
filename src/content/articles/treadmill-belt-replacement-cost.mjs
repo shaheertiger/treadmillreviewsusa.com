@@ -226,7 +226,7 @@ export default {
             has started to grumble or a roller whose rubber or crowned surface has worn can cause
             the new belt to track badly or wear fast. Rollers are not usually expensive parts on
             home machines, but they add labour, and a seized bearing is a reason to look at the
-            whole machine's value before proceeding.
+            whole machine's value before proceeding. A grind with nobody on the belt that rises with speed is the usual sign of a roller or motor bearing, as our <a href="/treadmill-grinding-noise/" class="text-[#0F62FE] font-medium">treadmill grinding noise</a> guide explains.
           </p>
           <p>
             <strong>The drive belt.</strong> Not the walking belt but the short ribbed belt between

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-18',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['What Is the Best', 'Walking Pad?'],
   standfirst:
@@ -146,7 +146,7 @@ export default {
             Walking Pad is one. A flat pad suits slow walking at a desk and short walks around the
             house, and it is the right first pad for someone who is not sure how much they will use
             it. Its weaknesses are a shorter belt, commonly in the mid-30-inch range at the budget
-            end, and nothing to make the walk harder once 4 mph feels easy.
+            end, and nothing to make the walk harder once 4 mph feels easy. Adding one under a standing desk you already own costs about $150 to $350 in total, as our <a href="/how-much-does-a-treadmill-desk-cost/" class="text-[#0F62FE] font-medium">treadmill desk pricing</a> page shows.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A folding pad</h3>
           <p>
@@ -318,7 +318,7 @@ export default {
             <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">quiet walking pads</a>
             roundup includes it for small rooms. Here, the Z1 does the same job with a longer walking
             area and a higher weight limit for less money on WalkingPad's own store, so the C2 lost
-            its place.
+            its place. If a WalkingPad you already own stops with a code, our <a href="/walkingpad-troubleshooting/" class="text-[#0F62FE] font-medium">guide to WalkingPad error codes</a> covers E01 to E11.
           </p>
           <p>
             <strong>Office treadmills</strong> such as the LifeSpan TR1200Pro Glow-Up and the
@@ -326,7 +326,7 @@ export default {
             are heavier, non-folding machines built for hours a day under a desk. They cost several
             times as much as a pad and do a different job; our
             <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
-            comparison and the quiet-pad roundup cover them.
+            comparison and the quiet-pad roundup cover them. A LifeSpan under-desk treadmill, for instance, cost $1,199 to $1,699 on LifeSpan’s store on 26 November 2026, according to our <a href="/how-much-does-a-lifespan-treadmill-cost/" class="text-[#0F62FE] font-medium">LifeSpan pricing page</a>.
           </p>
           <p>
             <strong>Very cheap pads</strong> we have reviewed individually — the

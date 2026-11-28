@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmill Lubricant',
   kicker: 'Maintenance',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '5.7k',
   h1: ['Best Treadmill', 'Lubricant'],
   standfirst:
@@ -34,7 +34,7 @@ export default {
             <strong>Standard decks</strong> are the overwhelming majority of home treadmills. A
             board with a low-friction laminate, needing periodic silicone application. If your
             manual mentions lubricating the belt, or came with a small bottle of clear liquid, you
-            have one of these.
+            have one of these. Sole, for one, asks owners to lube the deck every 90 hours, as our <a href="/sole-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Sole treadmill troubleshooting</a> guide notes.
           </p>
           <p>
             <strong>Pre-waxed decks</strong> arrive with a wax impregnated into the deck surface
@@ -51,7 +51,7 @@ export default {
             If you cannot find the manual, search the model number plus "lubrication" on the
             manufacturer's site, or call their support line and ask directly. Do not guess, and do
             not assume from the price or the brand — the same manufacturer often uses different
-            deck types across its range.
+            deck types across its range. Some consoles also prompt you: XTERRA machines show a LUBE reminder that needs clearing once the deck is done, as our <a href="/xterra-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">XTERRA treadmill troubleshooting</a> guide explains.
           </p>`,
     },
     {

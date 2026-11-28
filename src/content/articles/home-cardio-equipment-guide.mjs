@@ -7,9 +7,9 @@ export default {
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Home Exercise Equipment:', 'Which Cardio Machine?'],
   standfirst:
@@ -70,12 +70,12 @@ export default {
           <p>
             <strong>Exercise bike.</strong> Upright, recumbent or indoor-cycling style. No impact,
             small footprint, quiet, simple to maintain. Trains cycling rather than walking, and
-            carries less bone-loading benefit than weight-bearing exercise.
+            carries less bone-loading benefit than weight-bearing exercise. The smallest version is a <a href="/best-folding-exercise-bikes/" class="text-[#0F62FE] font-medium">folding exercise bike</a>, a light X-frame that folds upright and starts at about $130.
           </p>
           <p>
             <strong>Elliptical.</strong> Feet stay on pedals that move in an oval, often with moving
             handles. No impact, a running-like effort, and very little footfall noise. Needs ceiling
-            height and rarely folds.
+            height and rarely folds. A compact variation is the elliptical-stepper hybrid, such as the <a href="/bowflex-max-trainer-m7/" class="text-[#0F62FE] font-medium">Bowflex Max Trainer M7</a>, built for short intervals across 14 resistance levels.
           </p>
           <p>
             <strong>Rowing machine.</strong> A sliding seat and a handle on a chain or strap, with
@@ -246,7 +246,7 @@ export default {
             machines in every category may carry a subscription; check what the machine does
             without one, because the fee can overtake the purchase price over a few years. Our guide
             to <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
-            covers that question for treadmills.
+            covers that question for treadmills. If you are buying an elliptical in November, our <a href="/black-friday-elliptical-deals/" class="text-[#0F62FE] font-medium">Black Friday elliptical shortlist</a> explains why a short stride or a costly freight delivery can outweigh any percentage off.
           </p>`,
     },
     {

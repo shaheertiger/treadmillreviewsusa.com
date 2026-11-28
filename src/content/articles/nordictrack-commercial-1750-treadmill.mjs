@@ -5,7 +5,7 @@ export default {
   crumbLabel: 'NordicTrack Commercial 1750',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
   socialProof: '1.9k',
   h1: ['NordicTrack Commercial 1750', 'Treadmill Review'],
@@ -376,7 +376,7 @@ export default {
             of it. We do not quote the membership price because it changes; check it on iFIT's own site
             and multiply it by the years you expect to keep the machine. Our assessment of
             <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
-            sets out that arithmetic.
+            sets out that arithmetic. Our <a href="/best-ifit-treadmills/" class="text-[#0F62FE] font-medium">best iFIT treadmills</a> rank the 1750 against five other NordicTrack and ProForm machines.
           </p>
           <p>
             What the machine does without a membership is the question most buyers do not ask until
@@ -637,7 +637,7 @@ export default {
           </p>
           <p>
             <strong>Look elsewhere if steep incline is the plan.</strong> Twelve percent is plenty for
-            most, but an incline trainer goes much further, and the 1750 is not built for it.
+            most, but an incline trainer goes much further, and the 1750 is not built for it. A true incline trainer costs about $2,875 to $4,299 for home use, as our <a href="/how-much-does-an-incline-trainer-cost/" class="text-[#0F62FE] font-medium">page on what an incline trainer costs</a> shows.
           </p>
           <p>
             <strong>Whatever you decide, buy on discount and by model number.</strong> NordicTrack's list
@@ -733,5 +733,5 @@ export default {
             does the same work on the belt for less. Whichever you choose, buy by model number, not by
             name — the figures that circulate for the 1750 describe more than one machine.`,
   ],
-  modified: '2026-11-27',
+  modified: '2026-11-28',
 };

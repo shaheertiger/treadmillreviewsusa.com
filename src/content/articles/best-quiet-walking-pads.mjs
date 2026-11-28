@@ -77,7 +77,7 @@ export default {
             Three of the five are WalkingPad models. That is not a preference for the brand: its
             product pages, a long-running independent reviewer and a second retailer agreed with each
             other more often than most <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> brands did, and it sells pads at each of the price
-            points that matter here.
+            points that matter here. If one of them starts showing a code instead of a speed, our <a href="/walkingpad-troubleshooting/" class="text-[#0F62FE] font-medium">WalkingPad error code guide</a> notes that most clear after about 10 minutes unplugged.
           </p>`,
     },
     {
@@ -242,14 +242,14 @@ export default {
             choice when the pad cannot stay out, when you walk for an hour or so at a time, and when
             there is nobody below you or the floor is a concrete slab. Its weaknesses for a quiet
             flat are the same features that make it convenient: little mass, a thin deck and a hinge
-            in the middle.
+            in the middle. If a pad that was quiet starts to squeak or click, our <a href="/walking-pad-making-noise/" class="text-[#0F62FE] font-medium">guide to walking pad noise</a> covers the usual causes.
           </p>
           <p>
             <strong>An office treadmill</strong> — the two LifeSpans here — is heavier, does
             not fold, and is designed to sit under a standing desk for hours a day. It costs several
             times as much. In return it has more mass and a stiffer deck to absorb each step, a belt
             built for long daily use, and a longer frame warranty. If you live above someone and
-            plan to walk through much of the working day, it is the better neighbour.
+            plan to walk through much of the working day, it is the better neighbour. On LifeSpan’s store an under-desk model cost $1,199 to $1,699 on 26 November 2026, and our <a href="/how-much-does-a-lifespan-treadmill-cost/" class="text-[#0F62FE] font-medium">LifeSpan price breakdown</a> covers each one.
           </p>
           <p>
             A middle path is a folding pad that, in practice, never moves: left in place on a dense

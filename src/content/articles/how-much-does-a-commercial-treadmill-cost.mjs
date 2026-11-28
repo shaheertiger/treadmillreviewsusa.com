@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['How Much Does a', 'Commercial Treadmill Cost?'],
   standfirst: `A new full-commercial gym treadmill listed at roughly $9,000 to $14,000 at US dealers in November 2026, and a remanufactured one from about $2,500 to $4,000. Here is what each brand charges, where the light-commercial and used prices fall, and what delivery, service and leasing add.`,
@@ -371,7 +371,7 @@ export default {
             remanufactured one usually with a year. For a gym, the comparison also has to include how
             long the machine will stay on the floor before it is replaced; for a home, where use is light
             by commercial standards, a remanufactured machine with a year of cover and a good reseller
-            behind it is often the better value.
+            behind it is often the better value. The <a href="/life-fitness-95t-treadmill/" class="text-[#0F62FE] font-medium">Life Fitness 95T</a> is a common example: discontinued, and sold remanufactured from about $2,600 to $5,000 depending on the console.
           </p>
           <p>
             The ranges are wide on purpose. Each runs from the cheapest option the reseller listed,

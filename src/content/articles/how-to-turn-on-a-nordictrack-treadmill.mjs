@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'How-To',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['How to Turn On a', 'NordicTrack Treadmill'],
   standfirst:
@@ -288,7 +289,7 @@ export default {
       html: `          <p>
             You do not need an iFIT membership, a Wi-Fi connection or a signed-in account to make a
             NordicTrack belt move. Every manual checked includes a manual mode, and NordicTrack's
-            own iFIT FAQ says you can always use the machine in manual mode (checked November 2026).
+            own iFIT FAQ says you can always use the machine in manual mode (checked November 2026). That matters most on older models such as the <a href="/nordictrack-c950i-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack C950i</a>, whose generation lost iFIT support on 30 April 2023 but still runs in manual mode.
           </p>
           <p>
             <strong>On a touchscreen:</strong> switch on, insert the key, let the home screen load,

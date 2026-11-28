@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Is My Treadmill', 'Speed Accurate?'],
   standfirst:
@@ -75,7 +75,7 @@ export default {
             surface is moving under your feet. If the belt slips on the roller, or the drive belt
             slips on its pulleys, the sensor does not see it. And on many machines the console
             shows the speed you selected rather than a live reading, so a motor struggling to hold
-            pace may not show up on the display at all.
+            pace may not show up on the display at all. If you suspect slip on a walking pad, our <a href="/walking-pad-belt-slipping/" class="text-[#0F62FE] font-medium">walking pad belt slipping</a> guide shows how to tell a slipping belt from one that is drifting.
           </p>
           <p>
             Distance is simply that calculated speed added up over time. Calories are then

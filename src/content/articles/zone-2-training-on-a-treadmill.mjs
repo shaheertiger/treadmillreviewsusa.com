@@ -6,9 +6,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ["How to Get to Zone 2", "on a Treadmill"],
   standfirst: "For most people, zone 2 on a treadmill is a brisk walk at 3 to 3.8 mph on a 3 to 10% incline: easy enough to talk in full sentences, held for 30 to 60 minutes. Here is how to find your own settings, how long to stay there and how to tell it is working.",
@@ -147,7 +147,7 @@ export default {
             want to know your true maximum heart rate for medical reasons, that is a conversation
             for a doctor, and our page on the
             <a href="/treadmill-stress-test/" class="text-[#0F62FE] font-medium">treadmill stress test</a>
-            explains what the clinical version involves.
+            explains what the clinical version involves. On the standard Bruce protocol, the guideline aim is roughly 6 to 12 minutes of exercise, and our page on <a href="/average-time-on-treadmill-stress-test-by-age/" class="text-[#0F62FE] font-medium">average stress test time by age</a> shows what is typical at different ages.
           </p>
           <p>
             <strong>On equipment:</strong> a chest strap is the most reliable consumer heart-rate
@@ -367,7 +367,7 @@ export default {
             which is real; it does not follow that it burns more fat overall or causes more weight
             loss. Our
             <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill weight loss guide</a>
-            explains why the "fat-burning zone" is widely misunderstood.
+            explains why the "fat-burning zone" is widely misunderstood. For practical numbers, our page on the <a href="/best-treadmill-settings-for-fat-loss/" class="text-[#0F62FE] font-medium">best treadmill settings for fat loss</a> suggests a brisk 3.0 to 3.5 mph walk at a 4 to 10% incline, at an effort where you can still talk in sentences.
           </p>
           <p>
             <strong>The fair conclusion:</strong> zone 2 is an excellent default for most of your

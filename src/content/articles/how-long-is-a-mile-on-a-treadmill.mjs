@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['How Long Is a Mile', 'on a Treadmill?'],
   standfirst:
@@ -213,7 +213,7 @@ export default {
           <p>
             <strong>10,000 steps in miles.</strong> At 2,000 steps a mile, 10,000 steps is 5 miles.
             At 2,200 steps a mile, about 4.5 miles. At 2,500 steps a mile, 4 miles. So for a
-            walker, 10,000 steps is typically in the region of four to five miles of belt.
+            walker, 10,000 steps is typically in the region of four to five miles of belt. Counted by time instead, 30 minutes at 3 mph is about 3,400 steps, as our breakdown of <a href="/how-many-steps-on-a-treadmill-in-30-minutes/" class="text-[#0F62FE] font-medium">treadmill steps in 30 minutes</a> by speed shows.
           </p>
           <p>
             <strong>10,000 steps in minutes.</strong> Combining those distances with the walking

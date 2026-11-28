@@ -10,9 +10,9 @@ export default {
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Best Folding Treadmills With Incline', 'Real Treadmills That Climb, Then Fold Away'],
   standfirst:
@@ -278,7 +278,7 @@ export default {
             and a 47-inch deck that is really for walking. Or a non-folding incline trainer if the
             steepest grade matters more than floor space. For most walkers, 12% to 16% is plenty: our
             explainer on <a href="/what-is-12-incline-on-a-treadmill/" class="text-[#0F62FE] font-medium">what 12% incline on a treadmill means</a>
-            shows how steep that feels and what it does to effort.
+            shows how steep that feels and what it does to effort. If you are weighing a dedicated incline trainer instead, the <a href="/how-much-does-an-incline-trainer-cost/" class="text-[#0F62FE] font-medium">price of a home incline trainer</a> runs from about $2,875 to $4,299.
           </p>
           <p>
             The second tension is weight. A heavier deck is harder to lift and lower, which is why

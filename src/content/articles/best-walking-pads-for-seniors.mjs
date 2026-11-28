@@ -18,9 +18,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-17',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   h1: ['Best Walking Pads', 'for Seniors'],
   standfirst:
     'A walking pad sits only a few inches off the floor, which makes it easier to step onto than any full-size treadmill. For an older walker that is a real advantage, but only on a pad with something to hold. Here are five pads with a handrail, what to check before you buy, and when a pad is the wrong machine.',
@@ -286,7 +286,7 @@ export default {
             walker on one. The UREVO Strol 2E Pro, which has a handle and a 0.6 mph start, because
             neither listing we checked gave its belt size or weight limit. And large under-desk treadmills
             such as LifeSpan's, which are excellent desk machines but heavy, expensive and not built
-            around support.
+            around support. LifeSpan’s under-desk models cost $1,199 to $1,699 on its own store on 26 November 2026, as our <a href="/how-much-does-a-lifespan-treadmill-cost/" class="text-[#0F62FE] font-medium">LifeSpan cost page</a> shows.
           </p>
           <p>
             <strong>Where a figure is uncertain.</strong> Several pad makers list different capacities

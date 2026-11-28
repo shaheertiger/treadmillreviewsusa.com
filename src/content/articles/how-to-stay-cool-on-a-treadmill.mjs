@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['How to Stay Cool', 'on a Treadmill'],
   standfirst:
@@ -272,7 +272,7 @@ export default {
           <p>
             Keep spills off the treadmill. Water on the belt is slippery, and water in the console
             or the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a> is a fault waiting to happen. If a bottle does go over the
-            console, unplug the machine and let it dry before using it again.
+            console, unplug the machine and let it dry before using it again. If more than a splash got in, our guide to <a href="/treadmill-water-damage/" class="text-[#0F62FE] font-medium">treadmill water damage</a> explains why you should not switch it on to test it.
           </p>`,
     },
     {
@@ -415,7 +415,7 @@ export default {
             separate in your mind. A runner overheating and a treadmill overheating have different
             causes and different fixes; the machine's version is about lubrication, <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>,
             dust in the motor compartment and electrical supply, and it is covered in our
-            overheating guide linked at the top of this page.
+            overheating guide linked at the top of this page. On a walking pad the usual reason for a mid-walk stop is a built-in run-time limit, which our <a href="/walking-pad-overheating/" class="text-[#0F62FE] font-medium">walking pad overheating</a> guide explains.
           </p>`,
     },
     {

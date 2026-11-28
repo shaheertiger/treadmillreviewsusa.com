@@ -407,7 +407,7 @@ export default {
             to follow, done with the inconvenience of getting to it, tells you more about whether a
             treadmill will pay for itself than any spreadsheet. If the habit survives that, buy a
             mid-range machine without a mandatory subscription, maintain it, and enjoy what is
-            effectively free cardio from year three onward.
+            effectively free cardio from year three onward. If a rower is also on your list, our <a href="/treadmill-vs-rowing-machine/" class="text-[#0F62FE] font-medium">treadmill vs rowing machine</a> comparison sets out which kind of user each machine suits.
           </p>`,
     },
   ],

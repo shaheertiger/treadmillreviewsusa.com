@@ -115,7 +115,7 @@ export default {
             4.0 HP motor, a 22 by 60-inch deck, a 400 lb rating and decline, and it is the Sole to buy
             if you want a heavy machine that will not move under you.</strong> On paper it is one of
             the most solidly specified home treadmills under $3,000, and it is the only current Sole
-            that goes downhill.
+            that goes downhill. On Sole’s store it was listed at $2,899.99 on 22 November 2026, the top of the range in our <a href="/how-much-does-a-sole-treadmill-cost/" class="text-[#0F62FE] font-medium">guide to Sole treadmill prices</a>.
           </p>
           <p>
             The catch is availability. On 5 November 2026 Sole’s US store listed the TT8 at $2,899.99

@@ -250,7 +250,7 @@ export default {
             automatic mode on a deck this size, which matches what owners of other foot-sensing pads
             report; most people who walk at a desk use manual mode. That review also reports that the top
             speed is only available after pairing with the app. Keep the remote somewhere safe: if it is
-            lost, you are relying on the app until you buy a replacement.
+            lost, you are relying on the app until you buy a replacement. If a remote that was paired stops working, our <a href="/walkingpad-troubleshooting/" class="text-[#0F62FE] font-medium">guide to WalkingPad faults</a> walks through pairing it again.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">At a desk</h3>
           <p>

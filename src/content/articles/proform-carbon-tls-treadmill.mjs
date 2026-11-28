@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'ProForm Carbon TLS Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['ProForm Carbon TLS', 'Treadmill Review'],
   standfirst:
@@ -72,7 +72,7 @@ export default {
             incline, built to run iFIT from your own phone or tablet, and it makes sense for walkers who
             want iFIT’s automatic speed and incline changes at the lowest price ProForm offers.</strong>
             It is not a running treadmill: an 18 by 55-inch belt and a 10 mph ceiling are walking and
-            light-jogging figures.
+            light-jogging figures. On Amazon it was $559.30 on 23 November 2026, one of three ProForm prices our <a href="/proform-black-friday-deals/" class="text-[#0F62FE] font-medium">ProForm Black Friday deals</a> page rates as well below October’s.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <tbody>
@@ -88,7 +88,7 @@ export default {
             step-up height and the same 12% maximum incline as its far more expensive models. Its
             weaknesses are the narrow, shorter belt, a dependence on iFIT for anything beyond a basic
             manual workout, and warranty terms that ProForm publishes inconsistently, so you should get the
-            terms for your unit in writing.
+            terms for your unit in writing. On the Carbon models that dependence costs $15 a month for iFIT Train, as our <a href="/how-much-does-a-proform-treadmill-cost/" class="text-[#0F62FE] font-medium">ProForm treadmill cost guide</a> shows.
           </p>
           <p>
             Price varies more than usual. ProForm listed it at $1,099.99 on 13 October 2026, and <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Scheels</a>,
@@ -129,7 +129,7 @@ export default {
             <a href="/is-proform-a-good-brand/" class="text-[#0F62FE] font-medium">is ProForm a good brand</a>
             explains why a review of a retired model tells you little about the current one. If the price is
             close to a new TLS, buy the TLS: it comes with ProForm’s current warranty, the 30-day trial and
-            current iFIT support.
+            current iFIT support. Our <a href="/proform-treadmill-repair/" class="text-[#0F62FE] font-medium">ProForm repair guide</a> explains how warranty claims are pre-authorised through iFIT.
           </p>`,
     },
     {

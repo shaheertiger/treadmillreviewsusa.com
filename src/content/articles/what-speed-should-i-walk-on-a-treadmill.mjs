@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['What Speed Should I Walk', 'On a Treadmill?'],
   standfirst:
@@ -84,7 +84,7 @@ export default {
       heading: 'Walking Speeds as Minutes per Mile',
       html: `          <p>
             Treadmills display miles per hour, but many walkers think in minutes per mile. The
-            conversion is simple: <strong>minutes per mile = 60 ÷ mph.</strong>
+            conversion is simple: <strong>minutes per mile = 60 ÷ mph.</strong> Our page on <a href="/how-long-is-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long a mile takes on a treadmill</a> works that out from 2 to 10 mph: 20 minutes at 3 mph and 15 at 4 mph.
           </p>
           <ul>
             <li><strong>2.0 mph</strong> — 30 minutes per mile</li>

@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Wellfit TM037',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Wellfit Treadmill Reviews:', 'The TM037 Walking Pad'],
   standfirst:
@@ -64,7 +64,7 @@ export default {
             It is cheap, light, folds flat and is listed with a handrail that lets you use it either
             under a desk or as a small standalone walker. For someone who wants to walk slowly for an
             hour or two a day while working, in a small flat, on a budget of a couple of hundred
-            dollars, it does roughly what that buyer needs.
+            dollars, it does roughly what that buyer needs. Paired with a standing desk you already own, a setup like this costs about $150 to $350, per our <a href="/how-much-does-a-treadmill-desk-cost/" class="text-[#0F62FE] font-medium">treadmill desk cost breakdown</a>.
           </p>
           <p>
             The caveats are specific. The motor is advertised as 3.0 HP peak and brushless, and one
@@ -355,7 +355,7 @@ export default {
             remote, an app and voice control. For under-desk use the remote is the one most owners
             will actually rely on, because the handrail is folded down and the deck is under the
             desk, out of reach. Keep the remote somewhere fixed; a walking pad with a lost remote and
-            the handrail down is awkward to stop quickly.
+            the handrail down is awkward to stop quickly. Our <a href="/best-walking-pads-with-remote/" class="text-[#0F62FE] font-medium">best walking pads with a remote</a> compares six pads on how they are controlled, from about $133.
           </p>
           <p>
             Four app integrations are listed: the Wellfit app, Kinomap, Zwift and Apple Health. The

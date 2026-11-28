@@ -7,9 +7,9 @@ export default {
   kicker: 'Training',
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['How to Use a', 'Treadmill Desk'],
   standfirst:
@@ -48,7 +48,7 @@ export default {
             If you have not chosen a machine yet, our
             <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill picks</a>
             cover which walking pads held up under a desk. This page is about using one once you
-            have it.
+            have it. If you want a desk walker that is genuinely built from wood, our <a href="/wooden-walking-pad/" class="text-[#0F62FE] font-medium">guide to wooden walking pads</a> covers Walkolution's beech-and-steel desks.
           </p>`,
     },
     {
@@ -237,7 +237,7 @@ export default {
             <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">treadmill mat</a>
             protects the floor, keeps carpet fibre out of the motor and reduces the footfall noise
             that travels into rooms below. It also stops a light walking pad creeping across a
-            hard floor.
+            hard floor. If the pad itself starts to squeak or click, our <a href="/walking-pad-making-noise/" class="text-[#0F62FE] font-medium">walking pad noise guide</a> explains how to time the sound to find the cause.
           </p>`,
     },
     {
@@ -329,7 +329,7 @@ export default {
           </p>
           <p>
             <strong>Track time or steps, not speed.</strong> Totals reward consistency, which is
-            what matters. Pushing speed rewards the wrong thing and costs typing accuracy.
+            what matters. Pushing speed rewards the wrong thing and costs typing accuracy. If you track steps, our guide to the <a href="/best-fitness-trackers-for-walking-pad/" class="text-[#0F62FE] font-medium">best fitness trackers for a walking pad</a> explains why a wrist tracker undercounts while your hands are on the keyboard.
           </p>
           <p>
             <strong>Maintain the machine.</strong> Walking pads run for many hours at low speed,

@@ -350,7 +350,7 @@ export default {
             <a href="/best-balance-boards/" class="text-[#0F62FE] font-medium">balance boards</a>
             cover each one, and our
             <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools guide</a>
-            explains where stretching kit fits around lifting.
+            explains where stretching kit fits around lifting. If a vibration plate is on your list as well, our <a href="/lifepro-waver-vibration-plate-review/" class="text-[#0F62FE] font-medium">LifePro Waver review</a> sets out what one of the best-selling plates can and cannot be shown to do.
           </p>`,
     },
     {

@@ -10,8 +10,9 @@ export default {
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Best Fast Treadmills', '12 mph and Up for Sprinters'],
   standfirst:
@@ -254,7 +255,7 @@ export default {
             the maker or an authorised retailer, we did, and where the two disagreed we left the figure
             off the card and said so in the description. The STEPR is the main example: Amazon and Rogue
             Fitness agree on 15.5 mph and a 63-inch deck but give different motor, width, incline and
-            capacity figures.
+            capacity figures. Rogue lists two motorized STEPR machines among the eight treadmills it sells, as our <a href="/rogue-treadmills/" class="text-[#0F62FE] font-medium">Rogue treadmill guide</a> sets out.
           </p>
           <p>
             <strong>The ranking.</strong> Top speed earns a place, but it does not decide the order. We

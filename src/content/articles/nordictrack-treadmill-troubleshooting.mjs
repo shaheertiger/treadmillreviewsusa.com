@@ -183,7 +183,7 @@ export default {
             Many owners want Netflix or other apps on the screen. What a NordicTrack console allows depends
             on the model and the iFIT software version; our guide to
             <a href="/can-you-watch-netflix-on-nordictrack/" class="text-[#0F62FE] font-medium">watching Netflix on a NordicTrack</a>
-            covers what is allowed and the risks of workarounds, which can affect support.
+            covers what is allowed and the risks of workarounds, which can affect support. Our <a href="/best-treadmills-with-netflix/" class="text-[#0F62FE] font-medium">treadmills with Netflix</a> roundup compares machines that stream it officially, from about $949.
           </p>`,
     },
     {

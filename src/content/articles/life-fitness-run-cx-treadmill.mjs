@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Life Fitness Run CX Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Run CX Treadmill', 'Review: Life Fitness at Home'],
   standfirst:
@@ -96,7 +96,7 @@ export default {
             F3 folding treadmill and the T3 (both from $3,499), the Run CX ($4,899), the Atmos
             Treadmill Home Edition (from $5,299), the Club Series+ (from $7,599), the Hammer Strength
             HD Tread and the Symbio Runner Home Edition. The Run CX sits in the middle of that list,
-            above the T3 and below the club-derived machines.
+            above the T3 and below the club-derived machines. In the Black Friday sale on 27 November 2026 the Run CX cost $3,919 and the T3 $2,974, as our <a href="/how-much-does-a-life-fitness-treadmill-cost/" class="text-[#0F62FE] font-medium">Life Fitness cost breakdown</a> shows.
           </p>
           <p>
             Life Fitness describes the Run CX as a premium home treadmill, and its dealers carry the

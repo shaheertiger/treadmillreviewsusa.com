@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Treadmill Overheating:', 'Why the Motor Runs Hot and What to Do'],
   standfirst:
@@ -150,14 +150,14 @@ export default {
             have a belt that is far tighter than the machine was designed for. A tight belt presses
             harder on the deck, which increases friction in exactly the same way a dry deck does,
             and it loads the roller bearings, which adds friction of their own and can wear them
-            out early. The motor then works harder, and runs hotter, at every speed.
+            out early. The motor then works harder, and runs hotter, at every speed. A worn roller bearing often makes itself heard first, as a grind with nobody on the belt; see our <a href="/treadmill-grinding-noise/" class="text-[#0F62FE] font-medium">treadmill grinding noise</a> guide.
           </p>
           <p>
             The pattern that suggests this cause: the machine started running hot after a
             tensioning adjustment, or after a slipping belt was "fixed" by tightening rather than
             by lubricating. Belt slip on a home treadmill is more often caused by a dry deck than
             by a loose belt, so tightening it treats the symptom and makes the underlying problem
-            worse.
+            worse. On a walking pad, our <a href="/walking-pad-belt-slipping/" class="text-[#0F62FE] font-medium">walking pad belt slipping</a> guide explains why lubricant comes before tension.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How to check</h3>
           <p>

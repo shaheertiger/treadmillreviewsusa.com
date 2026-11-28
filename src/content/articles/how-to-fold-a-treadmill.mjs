@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Ownership',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['How to Fold', 'a Treadmill'],
   standfirst:
@@ -35,7 +35,7 @@ export default {
             where your manual shows, and lift with your legs until the deck is fully upright. Keep
             lifting until you hear or feel the latch click into place, then engage any secondary
             locking pin or knob. Finish with a gentle pull on the deck to confirm it holds before you
-            let go.
+            let go. If you are still choosing, our <a href="/best-folding-treadmills-with-incline/" class="text-[#0F62FE] font-medium">folding treadmills with incline</a> start with the Schwinn 810, which has a soft-drop fold.
           </p>
           <p>
             That is the whole job for most folding home treadmills. The details that matter are the

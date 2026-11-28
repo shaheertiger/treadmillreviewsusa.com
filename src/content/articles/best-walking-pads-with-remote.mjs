@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-24',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Best Walking Pads With a Remote', 'and What to Do If It Goes Missing'],
   standfirst:
@@ -213,7 +213,7 @@ export default {
             WalkingPad’s C2 adds “Smart FootSense Control” in its listing title. On WalkingPad’s pads this is
             generally an automatic mode in which the pad speeds up as you walk towards the front and slows as you
             drift back. The C2 listing does not explain it, so treat it as a convenience rather than a backup you
-            can rely on until you have read the manual.
+            can rely on until you have read the manual. If a WalkingPad remote stops responding, our <a href="/walkingpad-troubleshooting/" class="text-[#0F62FE] font-medium">WalkingPad troubleshooting</a> guide explains how to pair it again.
           </p>`,
     },
     {
@@ -340,7 +340,7 @@ export default {
             other budget brands, such as DeerRun and Superun, use the third-party PitPat app. Some people find that kind of motivation useful. Others never open the app after the first
             week, and that is fine, as long as the remote is in good order. Check whether any app you rely on needs
             a paid subscription for the features you want; the core speed control on these pads is described as
-            part of the app, not as an extra.
+            part of the app, not as an extra. For a UREVO remote that has stopped working, see our <a href="/urevo-walking-pad-troubleshooting/" class="text-[#0F62FE] font-medium">UREVO troubleshooting page</a>.
           </p>
           <p>
             If you want both a remote and a hill, the incline pads here (FOUSAE, Cybergoing and WELLFIT) are a

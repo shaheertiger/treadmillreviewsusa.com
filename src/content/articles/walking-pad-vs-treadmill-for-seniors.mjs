@@ -11,8 +11,9 @@ export default {
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Walking Pad vs Treadmill', 'for Seniors: Which Is Safer?'],
   standfirst:
@@ -65,7 +66,7 @@ export default {
             If you have not yet decided between these and the other types of machine, such as seated
             steppers, our guide to the
             ${A('/best-walking-machines-for-seniors/', 'best walking machines for seniors')} matches each
-            type to how steady the walker is and names six machines across four types.
+            type to how steady the walker is and names six machines across four types. For a seated option with a backrest, our <a href="/best-exercise-bikes-for-seniors/" class="text-[#0F62FE] font-medium">exercise bikes for seniors</a> guide covers step-through recumbents such as the Schwinn 290, rated to 330 lb.
           </p>`,
     },
     {
@@ -122,7 +123,7 @@ export default {
             Senior Fitness Treadmill's listing describes full-length rails and a low step-up height, and
             the Sunny Low Deck model has extended rails along a 4-inch-high deck. Ordinary <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding
             treadmills</a> have shorter side rails that reach only part way back, which is still more than
-            most pads offer.
+            most pads offer. For more machines with a low deck, our <a href="/best-low-profile-treadmills/" class="text-[#0F62FE] font-medium">low profile treadmill picks</a> give step-up heights where they could be confirmed.
           </p>
           <p>
             <strong>What walking pads offer.</strong> Most walking pads have nothing to hold. The ones
@@ -162,7 +163,7 @@ export default {
             walking pad's belt is also narrower and shorter than most treadmills', so a step that drifts
             to one side has less room to spare. Step height makes a machine easier to use; rails are what
             make it safer for someone whose balance is not reliable. If step height is the main problem,
-            a low-deck treadmill with rails solves it without the trade-off.
+            a low-deck treadmill with rails solves it without the trade-off. If walking on a moving belt is the worry, an elliptical keeps your feet on the pedals; our <a href="/best-ellipticals-for-seniors/" class="text-[#0F62FE] font-medium">ellipticals for seniors</a> guide gives step-on heights, including the 10 inches Horizon publishes for the EX-59.
           </p>
           <p>
             <strong>Incline raises the step.</strong> On any machine with incline, return it to zero

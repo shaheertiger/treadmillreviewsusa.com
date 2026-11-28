@@ -63,7 +63,7 @@ export default {
           <p>
             Before ordering, read the section on where to mount a phone. A good holder in the wrong
             spot either shakes too much to read, or sits where your hand lands when you steady
-            yourself, or covers the safety key.
+            yourself, or covers the safety key. The same placement logic applies to a drink, and our <a href="/best-treadmill-cup-holders/" class="text-[#0F62FE] font-medium">treadmill cup holder picks</a> explain how to place one so a spill lands somewhere harmless.
           </p>`,
     },
     {

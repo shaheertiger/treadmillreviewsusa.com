@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Best Rebounders', 'for Home Cardio, Checked Against the Recalls'],
   standfirst:
@@ -334,7 +334,7 @@ export default {
             trampoline results in increased bone and muscle density and weight loss.
             <strong>These are the sellers' claims.</strong> We could not find the source of the 70%
             figure on Leaps & Rebounds' page, and lymphatic and bone-density effects are medical
-            questions we are not in a position to assess.
+            questions we are not in a position to assess. Electric ab belts and vibration plates are sold with similar promises, and our <a href="/shock-exercise-equipment-reviews/" class="text-[#0F62FE] font-medium">shock exercise equipment reviews</a> set what each product does against what its box claims.
           </p>
           <p>
             Many sellers cite a 1980 study funded by NASA that compared jumping on a trampoline with
@@ -354,7 +354,7 @@ export default {
             guidance, not medical advice. If joint comfort is the main reason you are looking, our
             guide to whether
             <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills are bad for your knees</a>
-            covers the impact question in general terms.
+            covers the impact question in general terms. Vibration plates are often sold to the same buyers, and our <a href="/lifepro-waver-vibration-plate-review/" class="text-[#0F62FE] font-medium">LifePro Waver review</a> separates that plate's verified hardware from its health claims.
           </p>`,
     },
     {

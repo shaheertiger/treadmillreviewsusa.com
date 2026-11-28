@@ -66,7 +66,7 @@ export default {
       html: `          <p>
             Three of the five are <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> machines. That reflects what is available from an established
             brand at this price, not a preference: below $200, most other listings come from sellers
-            with no track record, and their figures are harder to trust.
+            with no track record, and their figures are harder to trust. If one of them shows an error code, our <a href="/urevo-walking-pad-troubleshooting/" class="text-[#0F62FE] font-medium">UREVO walking pad troubleshooting</a> guide lists what each means and UREVO's own fix.
           </p>`,
     },
     {
@@ -116,7 +116,7 @@ export default {
             <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium" data-autolink>treadmills on Amazon</a> US were walking pads from sellers we did not recognise, at about $90 to
             $110, with long keyword titles and few verifiable figures. Some may be fine. But at that
             price there is very little margin for a reliable motor, a decent belt or after-sales
-            support, and if one fails after the return window there may be no one to call.
+            support, and if one fails after the return window there may be no one to call. If a pad does stop, our <a href="/walking-pad-not-working/" class="text-[#0F62FE] font-medium">walking pad not working</a> guide covers what you can fix at home and when it is a warranty call.
           </p>
           <p>
             The closest an established brand came was the Goplus 2.25HP 2-in-1, which one colour

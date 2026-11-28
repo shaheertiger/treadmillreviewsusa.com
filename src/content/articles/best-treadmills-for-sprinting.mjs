@@ -35,7 +35,7 @@ export default {
       html: `          <p>
             If you want one machine for sprints and for ordinary running, choose a motorised treadmill.
             If sprinting and conditioning are the main reason you are buying, choose a curved trainer. The
-            table sums up the trade.
+            table sums up the trade. Rogue Fitness, for one, resells curved trainers from Woodway, TrueForm and STEPR from $3,495, as our <a href="/rogue-treadmills/" class="text-[#0F62FE] font-medium">guide to what Rogue sells</a> shows.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -58,7 +58,7 @@ export default {
       products: true,
       html: `          <p>
             Two motorised treadmills come first, then three curved manual trainers. The motorised machines
-            are better all-rounders; the curved ones are better sprint tools. Each card says what limits it.
+            are better all-rounders; the curved ones are better sprint tools. Each card says what limits it. On 23 November 2026 the Sole C80 was $2,099.99 and the AssaultRunner Pro $3,499, as our <a href="/how-much-does-a-curved-treadmill-cost/" class="text-[#0F62FE] font-medium">curved treadmill prices</a> page records.
           </p>`,
     },
     {

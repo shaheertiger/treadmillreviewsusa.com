@@ -67,7 +67,7 @@ export default {
             time the tape reaches the same point — usually as it passes over the front or rear
             roller — the fault travels with the belt. Move the tape until it sits on the jerk and
             you have found the section to inspect. At walking speeds a full belt revolution takes a
-            few seconds on a typical home machine, so this rhythm is slow and easy to count.
+            few seconds on a typical home machine, so this rhythm is slow and easy to count. The same once-per-lap timing helps with noises too, as our guide to <a href="/treadmill-clicking-noise/" class="text-[#0F62FE] font-medium">treadmill clicking</a> shows.
           </p>
           <p>
             <strong>If the empty belt runs smoothly</strong>, step on and walk at 2 to 3 mph. A
@@ -178,7 +178,7 @@ export default {
             started to bind, makes the roller turn unevenly. It tends to come with a rumble or grind
             from that end of the machine. Consumer rollers usually have sealed bearings pressed in,
             so the fix is generally a replacement roller. The commonest avoidable cause is a belt
-            tensioned far past correct, which loads the bearings continuously.
+            tensioned far past correct, which loads the bearings continuously. A failing bearing often grinds before it jerks, and our <a href="/treadmill-grinding-noise/" class="text-[#0F62FE] font-medium">treadmill grinding noise</a> guide covers how to tell.
           </p>
           <p>
             <strong>A loose front pulley.</strong> The front roller carries the pulley the motor's

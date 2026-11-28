@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 19, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-19',
-  modified: '2026-11-19',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Best Knee Braces', 'for Walking'],
   standfirst:
@@ -175,7 +175,7 @@ export default {
             <a href="/treadmill-walking-with-arthritis/" class="text-[#0F62FE] font-medium">treadmill walking with arthritis</a>
             covers pain rules, speed and incline for sore knees, and
             <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">whether treadmills are bad for your knees</a>
-            answers the question most knee-pain walkers ask first.
+            answers the question most knee-pain walkers ask first. Some walkers also try a TENS unit for knee pain; our <a href="/shock-exercise-equipment-reviews/" class="text-[#0F62FE] font-medium">TENS and EMS reviews</a> explain what those devices do and who should not use them at all.
           </p>`,
     },
     {

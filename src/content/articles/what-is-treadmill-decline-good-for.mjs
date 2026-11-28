@@ -34,7 +34,7 @@ export default {
             <strong>Decline is good for training the descent: it prepares the thigh muscles for the
             braking work of downhill running and walking, which flat and uphill training do not.</strong>
             That makes it useful for downhill or hilly races, for hiking and mountain trips, and for
-            reducing the severe muscle soreness that a first long descent tends to cause.
+            reducing the severe muscle soreness that a first long descent tends to cause. Our <a href="/best-treadmills-for-hiking/" class="text-[#0F62FE] font-medium">best treadmills for hiking</a> include the Sole TT8 as the descent specialist.
           </p>
           <p>
             On the flat, and even more going uphill, your leg muscles mostly shorten as they work. Going
@@ -144,7 +144,7 @@ export default {
             a widely used pattern rather than a rule, and fit them to your own plan; our guide to
             <a href="/treadmill-marathon-training/" class="text-[#0F62FE] font-medium">treadmill marathon training</a>
             covers the same downhill gap for long races, and how to blend treadmill and outdoor
-            running around it.
+            running around it. Used machines can be a cheap route to decline: the discontinued <a href="/bowflex-treadmill-10/" class="text-[#0F62FE] font-medium">Bowflex Treadmill 10</a> went down to -5%, though its warranty does not pass to a second owner.
           </p>
           <p>
             <strong>What it will not do.</strong> A treadmill decline is smooth, straight and constant.
@@ -351,7 +351,7 @@ export default {
             And if your reason for wanting a treadmill is to be kind to your knees, decline is the
             feature to care least about. Our roundup of the
             <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">best treadmills for bad knees</a>
-            focuses on cushioning and low-impact use instead.
+            focuses on cushioning and low-impact use instead. Our <a href="/best-cushioned-treadmills/" class="text-[#0F62FE] font-medium">best cushioned treadmills</a> also explain what cushioning can and cannot do for your joints.
           </p>`,
     },
     {

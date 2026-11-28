@@ -237,7 +237,7 @@ export default {
             Most treadmills are now bought online, often without the buyer having stood on the
             model or anything like it. That is not unreasonable — few showrooms stock a wide range
             — but it means the deck feel, the noise at your pace, the reach to the controls and the
-            height of the step-up are all things you discover at home, after assembly.
+            height of the step-up are all things you discover at home, after assembly. Scheels is one retailer where some large stores let you try a premium treadmill before buying, as our <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">guide to Scheels treadmills</a> explains.
           </p>
           <p>
             Where you can, try something comparable: the same brand's adjacent model in a store,

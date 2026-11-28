@@ -129,7 +129,7 @@ export default {
           <p>
             <strong>Intermittent cutting out</strong>, especially after ten or twenty minutes. This
             is often thermal protection doing its job — the motor is overheating and shutting down
-            to protect itself. Treat it as a warning rather than a nuisance.
+            to protect itself. Treat it as a warning rather than a nuisance. On a walking pad, our <a href="/walking-pad-overheating/" class="text-[#0F62FE] font-medium">walking pad overheating</a> guide explains how to tell a maker-set run-time limit from a heat cut-out.
           </p>
           <p>
             <strong>Speed fluctuating on its own</strong> at a constant setting.

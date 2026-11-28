@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Horizon 7.0 AT Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Horizon Fitness 7.0 AT', 'Treadmill Review'],
   standfirst:
@@ -71,7 +71,7 @@ export default {
             with no subscription, and at its usual sale price of around $1,000 it is the Horizon most
             buyers should start from.</strong> A 60-inch deck, 12 mph, 15% incline, a 325 lb rating and
             three years of parts cover on top of a lifetime frame and motor warranty is a strong set of
-            published figures at that price.
+            published figures at that price. Horizon’s Black Friday code put it at $934 on 23 November 2026, as our <a href="/horizon-treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Horizon Black Friday deals</a> page shows.
           </p>
           <p>
             Independent reviewers agree on what it does well: speed and incline change quickly, the motor
@@ -163,7 +163,7 @@ export default {
             What the published figures imply is a machine built for running at moderate paces, incline
             walking and intervals, for one runner of average build. One reviewer suggests it suits
             roughly 3 to 7 miles of running a day and points heavier, higher-mileage users to the 7.4 AT
-            and 7.8 AT, whose capacity ratings and parts warranties are higher.
+            and 7.8 AT, whose capacity ratings and parts warranties are higher. That range is why it heads our <a href="/best-treadmills-for-walking-and-running/" class="text-[#0F62FE] font-medium">best treadmills for walking and running</a>, for a home where one person walks and another runs.
           </p>`,
     },
     {

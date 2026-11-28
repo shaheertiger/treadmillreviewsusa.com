@@ -11,8 +11,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Walking Pad Making Noise?', 'Squeak, Click and Hum Fixes'],
   standfirst:
@@ -242,7 +243,7 @@ export default {
             metal whistling sound&rdquo; and says that if it, or an abnormal sound from the front or rear drum, &ldquo;continues
             for a couple of days&rdquo;, you should contact support. Note that the same FAQ also says many WalkingPad models
             use <a href="/best-treadmills-with-brushless-motor/" class="text-[#0F62FE] font-medium" data-autolink>brushless motors</a>, so whether brushes are relevant depends on your exact model: check the manual rather than
-            assuming.
+            assuming. If the pad is also showing a code, our <a href="/walkingpad-troubleshooting/" class="text-[#0F62FE] font-medium">WalkingPad troubleshooting</a> guide lists E01 to E11 and what each one means.
           </p>
           <p>
             Do not open the motor cover to investigate a motor noise on a pad that is still under warranty without asking

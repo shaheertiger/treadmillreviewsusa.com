@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-17',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['What Speed Should a Senior', 'Walk on a Treadmill?'],
   standfirst:
@@ -104,7 +105,7 @@ export default {
             for decades may comfortably walk faster than the 60s figure; someone the same age
             recovering from an illness may be well under the 80s figure. Neither is doing anything
             wrong. Use the table to get a feel for what is typical, not as a target you have to
-            hit.
+            hit. The same wide spread shows up on clinical exercise tests: among adults over 75 on the Bruce protocol, median time was 7 minutes 22 seconds for men aged 76 to 80 and 6 minutes for women, as our guide to <a href="/average-time-on-treadmill-stress-test-by-age/" class="text-[#0F62FE] font-medium">stress test times by age</a> explains.
           </p>
           <p>
             <strong>Why a treadmill pace is often slower.</strong> Many people, at any age, find
@@ -281,7 +282,7 @@ export default {
             incline is often well tolerated, but steep grades are best introduced only after
             talking to your physical therapist; our guide to
             <a href="/treadmill-walking-with-arthritis/" class="text-[#0F62FE] font-medium">treadmill walking with arthritis</a>
-            covers this in more detail.
+            covers this in more detail. After a hip replacement, the starting point is a flat deck and a slow belt, as our guide to <a href="/treadmill-after-hip-replacement/" class="text-[#0F62FE] font-medium">treadmill use after hip replacement</a> sets out.
           </p>
           <p>
             <strong>A practical routine</strong> is to keep your speed at the moderate pace you found

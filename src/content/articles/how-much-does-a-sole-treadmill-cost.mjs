@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-22',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['How Much Does a', 'Sole Treadmill Cost?'],
   standfirst:
@@ -256,7 +256,7 @@ export default {
           </p>
           <p>
             Before buying, ask Sole for the parts and labour terms in writing, since the product pages we checked state only
-            the lifetime frame and motor cover. Those terms decide most repair bills.
+            the lifetime frame and motor cover. Those terms decide most repair bills. Many faults cost nothing to fix; our <a href="/sole-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Sole treadmill troubleshooting</a> guide starts with the safety key and the breaker on the front of the frame.
           </p>`,
     },
     {

@@ -11,8 +11,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Walking Pad Overheating?', 'Why It Stops and How to Cool It'],
   standfirst:
@@ -126,7 +127,7 @@ export default {
             If your WalkingPad is a walking-only model, the safer reading is the FAQ&rsquo;s 1 hour. That is exactly why the manual
             for your specific model matters more than any rule of thumb, and why we do not quote a single &ldquo;safe&rdquo;
             number for all pads. Where a model has a limit built in, the pad will usually enforce it for you by stopping and,
-            on some models, showing a rest message.
+            on some models, showing a rest message. On a WalkingPad that message is Rest, and our <a href="/walkingpad-troubleshooting/" class="text-[#0F62FE] font-medium">WalkingPad troubleshooting</a> guide says to let the pad cool for about 30 minutes.
           </p>
           <p>
             Some listings go the other way and advertise very long continuous use. Treat those as claims about that model only,

@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmills Under $500',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '6.2k',
   h1: ['Best Treadmills', 'Under $500'],
   standfirst:
@@ -163,7 +163,7 @@ export default {
             The step from $500 to $800 buys more than the step from $800 to $1,100 does. Around
             $700 to $800 you reach 2.5 CHP motors, 55-inch decks, assembled weights near 200 lbs,
             and warranties measured in years rather than months. That is the point at which a
-            machine stops being a walking-only appliance and becomes a treadmill you could jog on.
+            machine stops being a walking-only appliance and becomes a treadmill you could jog on. For the sales, our <a href="/black-friday-treadmill-deals-under-500/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals under $500</a> track six machines on Amazon and the price at which each becomes a genuine deal.
           </p>
           <p>
             So the honest advice splits. If you will walk, buy at this price with confidence —

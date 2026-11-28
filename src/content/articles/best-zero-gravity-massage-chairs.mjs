@@ -78,7 +78,7 @@ export default {
             doorway figures in the
             <a href="#space" class="text-[#0F62FE] font-medium">space section</a> before you fall for
             a chair: a chair that will not fit through the door or recline in your room is a very
-            expensive return.
+            expensive return. Cold plunges raise a similar floor question: the Ice Barrel 300 in our <a href="/best-cold-plunges/" class="text-[#0F62FE] font-medium">cold plunge guide</a> weighs about 700 lb once it is filled.
           </p>`,
     },
     {
@@ -406,7 +406,7 @@ export default {
             <a href="/best-compression-boots/" class="text-[#0F62FE] font-medium">compression boots</a>
             and
             <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium">vibration plates</a>
-            carry their own makers' contraindication lists.
+            carry their own makers' contraindication lists. Our <a href="/lifepro-waver-vibration-plate-review/" class="text-[#0F62FE] font-medium">LifePro Waver review</a> goes through one of them: the plate's own manual lists a long set of people who should not use it.
           </p>`,
     },
     {

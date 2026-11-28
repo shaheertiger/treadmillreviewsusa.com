@@ -6,7 +6,7 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-18',
   socialProof: '2.2k',
   h1: ['Best Portable Treadmills', 'Sorted by How They Move'],
@@ -89,7 +89,7 @@ export default {
             Read the reviews in the order that fits your problem. If the machine has to go under a bed
             every evening, start with the two pads. If you want to jog or run, go straight to the two
             double-fold WalkingPads and the Echelon. If you have no outlet where you want to walk, the
-            Sunny manual walker is the only machine here that needs none.
+            Sunny manual walker is the only machine here that needs none. Sunny’s cheapest in-stock treadmill on 27 November 2026 was a $199.99 manual model, according to our <a href="/how-much-does-a-sunny-treadmill-cost/" class="text-[#0F62FE] font-medium">Sunny pricing page</a>.
           </p>`,
     },
     {
@@ -748,5 +748,5 @@ export default {
             will travel, not by the word on the listing. Before the first move, read our guide to
             <a href="/how-to-move-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">moving a treadmill</a>.`,
   ],
-  modified: '2026-11-25',
+  modified: '2026-11-28',
 };

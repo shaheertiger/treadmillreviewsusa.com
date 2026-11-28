@@ -427,7 +427,7 @@ export default {
             <strong>Longevity above all.</strong> The Life Fitness Run CX costs far more, does not fold
             and has a firm deck, but it is the only machine here with lifetime cover listed on its
             shock absorbers, a 10-year motor warranty and a 6-inch step-up. For a heavy daily user who
-            wants to buy once, that is what the extra money buys.
+            wants to buy once, that is what the extra money buys. On 27 November 2026 the Run CX cost $3,919 on Life Fitness’s store after a Black Friday cut, as our <a href="/how-much-does-a-life-fitness-treadmill-cost/" class="text-[#0F62FE] font-medium">Life Fitness pricing page</a> records.
           </p>`,
     },
     {

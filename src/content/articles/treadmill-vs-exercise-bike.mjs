@@ -7,9 +7,9 @@ export default {
   kicker: 'Comparison',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Treadmill vs', 'Exercise Bike'],
   standfirst:
@@ -33,7 +33,7 @@ export default {
             difference in calories is modest, and the machine you use most consistently wins.</strong>
             A treadmill tends to burn somewhat more at the same perceived effort because you carry your
             whole body weight, but a bike makes it easier to do more total work without joint
-            complaints.
+            complaints. Whichever you choose, a <a href="/best-smart-scales/" class="text-[#0F62FE] font-medium">smart scale</a> that logs every reading to your phone shows the weight trend better than a single weigh-in.
           </p>
           <p>
             <strong>For sore knees, an exercise bike is usually the gentler option</strong>, because it
@@ -242,7 +242,7 @@ export default {
           <p>
             Both categories include connected models with screens and subscriptions. Check what a machine
             does without a membership before buying, because the ongoing fee can overtake the price
-            difference between the machines within a few years.
+            difference between the machines within a few years. If you are buying in late November, our <a href="/black-friday-exercise-bike-deals/" class="text-[#0F62FE] font-medium">Black Friday exercise bike deals</a> page lists six bikes with dated prices and the figure we would wait for on each.
           </p>`,
     },
     {

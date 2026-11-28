@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['How Much Is a', 'Peloton Treadmill?'],
   standfirst: `A Peloton treadmill costs $1,995 to $5,395 in Peloton's Black Friday sale, against list prices of $2,195 for the Tread Flex, $3,495 for the Tread Vision and $6,695 for the Tread+ Vision, and the All-Access Membership adds $49.99 a month on top. Here is every current Tread, the real three- and five-year cost, what each weighs, and whether it is worth it.`,
@@ -193,7 +193,7 @@ export default {
             five years on monthly billing, is part of what you pay for running Peloton's classes on
             Peloton's own screen. If you would rather pay for App+ and use an ordinary treadmill, our
             <a href="/best-treadmills-for-peloton-app/" class="text-[#0F62FE] font-medium">best treadmills for the Peloton App</a>
-            covers six that keep up with the classes.
+            covers six that keep up with the classes. If you already own one that is misbehaving, our <a href="/peloton-tread-troubleshooting/" class="text-[#0F62FE] font-medium">Peloton Tread troubleshooting</a> guide starts with the safety key, the outlet and a full restart.
           </p>
           <p>
             Two smaller points. Peloton's Black Friday offer includes a code for one free month of

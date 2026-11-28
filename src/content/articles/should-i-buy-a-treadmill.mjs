@@ -55,7 +55,7 @@ export default {
             sure. For them the right move is not a yes or a no but a cheaper, reversible version of
             yes — a rental, a used machine they can resell, a walking pad, or a new machine bought
             from a retailer with a return window they have actually read. The rest of this page
-            helps you work out which group you are in.
+            helps you work out which group you are in. Academy Sports is a case in point: its 60-day return policy expects the machine back unused and in its original packaging, as our <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium">Academy Sports treadmill guide</a> explains.
           </p>`,
     },
     {
@@ -88,7 +88,7 @@ export default {
             bedtime. The safety side matters here: children and pets should be kept away from a
             moving belt, and the safety key should be removed and stored out of reach whenever the
             machine is not in use. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a>
-            set out the household rules.
+            set out the household rules. If you are wondering when a child can use the machine, our page on <a href="/kids-treadmill/" class="text-[#0F62FE] font-medium">kids and treadmills</a> covers the minimum ages the manuals set.
           </p>
           <p>
             <strong>People for whom outdoor walking does not feel safe.</strong> Roads without
@@ -207,7 +207,7 @@ export default {
             about $30 of running costs, each of those sessions cost about $30. If the owner sells it
             promptly for around $425, the net cost is about $365 — still roughly $14 a session. If it
             sits unused for two more years before being sold, the resale value falls and the cost per
-            session rises further.
+            session rises further. On the buying side, a used home treadmill is only a bargain once moving, wear parts and the missing warranty are counted, as our <a href="/how-much-does-a-used-treadmill-cost/" class="text-[#0F62FE] font-medium">used treadmill cost guide</a> works through.
           </p>
           <p>
             <strong>Example 3: the desk walker.</strong> A $350 walking pad used five days a week for

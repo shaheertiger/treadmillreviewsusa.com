@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-23',
+  modified: '2026-11-28',
   h1: ['How Much Does a', 'Curved Treadmill Cost?'],
   standfirst:
     'A proper curved treadmill costs about $1,100 to $4,500, and most home buyers pay $1,900 to $3,500. On 23 November 2026 the Sole C80 was $2,099.99, the AssaultRunner Pro $3,499 and the TrueForm Trainer $3,495; the TrueForm Runner starts at $6,195. Below about $1,000 you are buying a curved walking pad, not a running trainer. Here is every tier, why curved costs more than motorised, and the five-year sums.',
@@ -233,7 +234,7 @@ export default {
             November 2026 listed a replacement Runner KRI belt at $2,295 and a Naboso barefoot belt at $2,675, alongside
             small parts such as a guide roller assembly at $9.89 and a one-way bearing at $154. That is why belt and parts
             warranties matter more on a curved trainer than the headline frame term. Compare Assault&rsquo;s three tiers: 2
-            years of parts on the Classic, 3 on the Pro and Elite, and belt cover from none to lifetime.
+            years of parts on the Classic, 3 on the Pro and Elite, and belt cover from none to lifetime. Rogue Fitness, which resells Woodway, TrueForm and STEPR trainers, listed eight treadmills from $3,495 to $11,395 on 5 November 2026, as our <a href="/rogue-treadmills/" class="text-[#0F62FE] font-medium">Rogue Fitness treadmill guide</a> shows.
           </p>`,
     },
     {

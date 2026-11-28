@@ -58,7 +58,7 @@ export default {
             <a href="/best-outdoor-saunas/" class="text-[#0F62FE] font-medium">outdoor saunas</a>
             cover the other half of a contrast routine, and the
             <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every
-            guide in this series.
+            guide in this series. For the gentler end of recovery, our <a href="/best-zero-gravity-massage-chairs/" class="text-[#0F62FE] font-medium">zero gravity massage chair guide</a> compares five chairs from about $1,500 to $4,000.
           </p>`,
     },
     {
@@ -266,7 +266,7 @@ export default {
             <strong>What the sellers say.</strong> Amazon listings for the products here promise faster
             recovery, less soreness and inflammation, better sleep and mood, stronger immunity and, in Ice
             Barrel's 500 listing, weight loss and relief from depression and anxiety. Those are the sellers'
-            claims.
+            claims. Vibration plates are sold the same way; our <a href="/lifepro-waver-vibration-plate-review/" class="text-[#0F62FE] font-medium">LifePro Waver review</a> notes that the maker's own manual says the health benefits it suggests are not certified by any regulator.
           </p>
           <p>
             <strong>What the research says.</strong> A 2012 Cochrane review of cold-water immersion after

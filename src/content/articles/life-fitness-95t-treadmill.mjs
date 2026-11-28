@@ -126,7 +126,7 @@ export default {
             heading "Product Discontinued" and pointed to the Integrity+ treadmill as its replacement. Oddly, Life
             Fitness's separate Facility Shop for business customers still listed an Elevation Series treadmill
             with the Discover SE3 HD console at $16,999, available only with a business account. For a home buyer,
-            the 95T is a remanufactured purchase.
+            the 95T is a remanufactured purchase. New home models were a different bill: $2,799 to $8,799 on the consumer store on 27 November 2026, as our <a href="/how-much-does-a-life-fitness-treadmill-cost/" class="text-[#0F62FE] font-medium">guide to Life Fitness treadmill prices</a> sets out.
           </p>
           <p>
             That is not a bad thing. These were among the most common club treadmills in the US, so there are

@@ -12,9 +12,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer\'s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Precor Treadmill:', 'A Buyer’s Guide for Home Use'],
   standfirst:
@@ -50,7 +50,7 @@ export default {
             in 2026 it is a used or remanufactured one; it can be good value if you have a dedicated
             20-amp circuit, a ground-level room you can get a 400 lb machine into, and a seller who
             gives you a written warranty.</strong> Precor does not sell a new home treadmill at the
-            moment, and Precor's own home warranty does not pass to a second owner.
+            moment, and Precor's own home warranty does not pass to a second owner. For scale, a remanufactured ex-gym treadmill from the big club brands usually costs about $2,500 to $4,000, as our <a href="/how-much-does-a-commercial-treadmill-cost/" class="text-[#0F62FE] font-medium">commercial treadmill pricing</a> page shows.
           </p>
           <p>
             New, the range is four commercial lines — the TRM 800, 700, 600 and 500 — plus a slat-belt

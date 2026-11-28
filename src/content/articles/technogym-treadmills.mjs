@@ -11,9 +11,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Technogym Treadmills:', 'A US Buyer’s Guide'],
   standfirst:
@@ -378,7 +378,7 @@ ${row('Technogym Unlimited', '$29 a month', 'Plus content on every connected dev
             the frame and motor — Landice, for example, gives lifetime parts on its residential L7 and
             L8, as our <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium">Landice guide</a>
             sets out. Technogym’s answer is service: its own technicians, and a paid plan that
-            includes labour. Whether that is better depends on how long you plan to keep the machine.
+            includes labour. Whether that is better depends on how long you plan to keep the machine. Landice’s list prices, from $3,999 for the folding M2 Genesis to $8,904 for a top L8, are in our <a href="/how-much-does-a-landice-treadmill-cost/" class="text-[#0F62FE] font-medium">guide to what a Landice costs</a>.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Returns</h3>
           <p>

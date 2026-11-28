@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   h1: ['LONTEK Walking Pad Review:', '15% and 32% Incline Checked'],
   standfirst:
     'A LONTEK walking pad is a cheap, credible choice for incline walking at home if you buy the right listing: the 15% and 32% figures belong to two different machines, both set by hand with fold-out legs rather than a motor, and the listing warranty is one year. This page reads every current LONTEK listing on Amazon and says which figures hold together and which do not.',
@@ -205,7 +205,7 @@ export default {
             evidence of the listing in front of you, read colour by colour, rather than on a brand reputation. A repair
             company's blog has criticised walking pads "like Lontek" as built to be replaced rather than repaired, but
             it named no LONTEK model and gave no LONTEK-specific evidence, so we treat it as a general warning about
-            cheap walking pads rather than a finding about this brand.
+            cheap walking pads rather than a finding about this brand. If you would rather pay a similar price for an established brand, every machine in our <a href="/best-treadmills-under-200/" class="text-[#0F62FE] font-medium">treadmills under $200</a> guide comes from one.
           </p>`,
     },
     {
@@ -384,7 +384,7 @@ export default {
           </ul>
           <p>
             One year of cover is normal for walking pads at this price. It is the main reason a LONTEK belongs in the
-            budget bracket: you are paying less partly because you are getting less support.
+            budget bracket: you are paying less partly because you are getting less support. If a pad does stop working, our <a href="/walking-pad-not-working/" class="text-[#0F62FE] font-medium">walking pad not working</a> guide covers the five usual causes before you make a warranty claim.
           </p>`,
     },
     {

@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmills for Running',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-22',
+  modified: '2026-11-28',
   socialProof: '4.2k',
   h1: ['Best Treadmills for', 'Running'],
   standfirst:
@@ -68,7 +68,7 @@ export default {
             Fifty-five-inch decks are fine for walking and jogging and become a constraint the
             moment you extend. Our
             <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            works through the stride arithmetic properly.
+            works through the stride arithmetic properly. The faster you go, the more a long belt matters, which is why our <a href="/best-fast-treadmills/" class="text-[#0F62FE] font-medium">fast treadmill picks</a> start with the 22 by 60-inch Sole F83.
           </p>
           <p>
             <strong>Deck width.</strong> Twenty inches is standard and adequate. Twenty-two

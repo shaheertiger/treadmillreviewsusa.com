@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['ProForm Treadmill Troubleshooting:', 'Reset, Belt, Incline and iFIT Problems'],
   standfirst: `Most ProForm faults are one of a short list: a safety key not seated, a console that needs a proper reset, an iFIT screen stuck on something, a belt that slips or will not move, or an incline that has lost its place. Here is the order to check them in, what to do yourself, and what to have ready before you call support.`,
@@ -45,7 +45,7 @@ export default {
             console is actually awake rather than asleep; a <strong>proper power cycle</strong> —
             unplugged for a few minutes with the key out — has been tried; and, for an iFIT
             touchscreen console, the screen is not simply waiting on an update or a Wi-Fi
-            connection.
+            connection. If the key itself is lost or cracked, our <a href="/best-treadmill-safety-keys/" class="text-[#0F62FE] font-medium">best treadmill safety keys</a> explains how to match a replacement to your part number.
           </p>
           <p>
             That sequence resolves the large majority of "ProForm won't start" and "ProForm
@@ -339,7 +339,7 @@ export default {
             Bluetooth connections to smart devices through the iFIT app and to compatible heart rate
             monitors, and that other Bluetooth connections are not supported. On a console like
             that, headphones or a speaker that will not pair are not a fault. Other consoles,
-            particularly touchscreens, may differ, so check the manual for your model number.
+            particularly touchscreens, may differ, so check the manual for your model number. If built-in audio matters to you, our <a href="/best-treadmills-with-bluetooth-speakers/" class="text-[#0F62FE] font-medium">treadmills with Bluetooth speakers</a> lists five folding machines that have it, from about $114.
           </p>
           <p>
             For a phone or tablet, pair from inside the iFIT app with Bluetooth switched on in the
@@ -678,7 +678,7 @@ export default {
             call before you open it. Buying second-hand means you almost certainly have no warranty.
             Our
             <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains how frame, motor, parts and labour cover compare across brands.
+            explains how frame, motor, parts and labour cover compare across brands. That missing warranty is one of the costs our <a href="/how-much-does-a-used-treadmill-cost/" class="text-[#0F62FE] font-medium">used treadmill price breakdown</a> adds up before calling a used machine a bargain.
           </p>`,
     },
     {

@@ -224,7 +224,7 @@ export default {
             and the remote could not reach it. The remote does stop the belt immediately, which is
             what matters for safety. One Amazon reviewer also notes that the pad cannot be run without
             the remote, so keep it charged and somewhere you can find it — or keep the app ready on
-            your phone.
+            your phone. If a lost remote worries you, our <a href="/best-walking-pads-with-remote/" class="text-[#0F62FE] font-medium">walking pads with a remote</a> guide leads with a WELLFIT pad whose listing names four ways to control it.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The app is where the detail is</h3>
           <p>
@@ -293,7 +293,7 @@ export default {
             <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a>
             explains how sound travels from a treadmill, and our
             <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">quiet walking pads roundup</a>
-            compares the pads with the best independent noise reports.
+            compares the pads with the best independent noise reports. If a pad starts squeaking or clicking, our <a href="/walking-pad-making-noise/" class="text-[#0F62FE] font-medium">walking pad making noise</a> guide traces it to a dry deck, a loose screw, a rubbing belt edge or the floor.
           </p>`,
     },
     {

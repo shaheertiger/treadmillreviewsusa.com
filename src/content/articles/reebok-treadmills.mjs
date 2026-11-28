@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Reebok Treadmills:', 'Who Makes Them and Where to Buy'],
   standfirst:
@@ -39,7 +39,7 @@ export default {
             Fitness equipment as now available in the US on 14 October 2026, but listed no
             treadmills, and Amazon’s US catalogue showed no Reebok treadmill. US retailers such as
             Walmart and Academy have carried the FR30z and other models, but we could not confirm
-            their stock.
+            their stock. At Walmart, check who the seller is, because many treadmill listings there come from third-party Marketplace sellers, as our <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart treadmill guide</a> explains.
           </p>
           <p>
             The current range centres on the FR20z and FR30z Floatride treadmills, the GT40z and Jet
@@ -85,7 +85,7 @@ export default {
             Reebok-branded inversion benches was issued by ICON. ICON renamed itself iFIT in 2021. That
             earlier licence is why parts suppliers keep two separate Reebok catalogues, one for
             ICON-built machines and one for later ones, and why an old Reebok in an American basement
-            is often an ICON machine underneath.
+            is often an ICON machine underneath. The same is true of Weslo, ICON’s former budget brand, whose fixes are collected in our <a href="/weslo-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Weslo troubleshooting guide</a>.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Why it matters to you</h3>
           <p>

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Spec Explainer',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['AC vs DC', 'Treadmill Motor'],
   standfirst:
@@ -123,7 +123,7 @@ export default {
             <strong>They are quieter at home speeds.</strong> At walking and jogging speeds a DC
             motor is a low hum under the hood. On most home machines the footfall and belt noise
             are louder than the motor itself, which is not something you can say of many
-            commercial AC machines.
+            commercial AC machines. A steady hum that follows belt speed is normal on either type; our guide to <a href="/treadmill-humming-noise/" class="text-[#0F62FE] font-medium">treadmill humming noise</a> lists the five hums that are warnings.
           </p>
           <p>
             <strong>They are cheaper and lighter.</strong> The motor and its control board cost
@@ -182,7 +182,7 @@ export default {
             machines are more likely to call for a dedicated 20-amp circuit, and some ship with a
             20-amp plug, recognisable by one blade turned sideways, which will not fit a standard
             15-amp receptacle. Some commercial equipment has other electrical requirements
-            entirely. Never modify a plug or use an adapter to make it fit.
+            entirely. Never modify a plug or use an adapter to make it fit. Every machine in our <a href="/best-treadmills-with-ac-motor/" class="text-[#0F62FE] font-medium">best treadmills with an AC motor</a> expects a 20-amp circuit, so check your wiring before you order one.
           </p>
           <p>
             If a machine you are considering lists a dedicated circuit, budget for an electrician

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '2.6k',
   h1: ['Treadmill Safety Key', 'Not Working or Lost?'],
   standfirst:
@@ -178,7 +178,7 @@ export default {
             with a second-hand machine, it is worth confirming the key actually belongs to this
             model. Keys from different manufacturers, and sometimes from different models of the
             same brand, vary in magnet strength, magnet position and shape. A key that fits the
-            recess is not necessarily a key that works.
+            recess is not necessarily a key that works. Newer Schwinn manuals also note that a magnetic key must still be magnetised, as our <a href="/schwinn-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Schwinn treadmill troubleshooting</a> guide points out.
           </p>
           <p>
             The best test is a known-good key for the same model. If that works and yours does not,

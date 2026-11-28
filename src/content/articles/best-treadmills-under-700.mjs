@@ -10,9 +10,9 @@ export default {
   breadcrumb: { name: 'Treadmills by Budget', url: '/price/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-24',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Best Treadmills Under $700', '12% Incline or More, and 12 mph'],
   standfirst:
@@ -102,7 +102,7 @@ export default {
             support and published warranty terms. Aeriflo, WELLFIT and ORASANT sell mainly online and give you
             more incline, more speed or more capacity for the money. Neither group is simply better: the online
             brands win on headline figures, and the established brands win on how easy it will be to get a part
-            in four years’ time.
+            in four years’ time. Sunny is one of the established names here, and most of its in-stock motorised folding treadmills cost $399.99 to $799.99 on its own store on 27 November 2026, as our <a href="/how-much-does-a-sunny-treadmill-cost/" class="text-[#0F62FE] font-medium">Sunny treadmill cost guide</a> shows.
           </p>`,
     },
     {

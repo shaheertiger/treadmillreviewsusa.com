@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['iFIT vs Peloton:', 'Two Ecosystems, Two Kinds of Treadmill Buyer'],
   standfirst:
@@ -64,7 +64,7 @@ export default {
             iFIT is the fitness platform behind NordicTrack, ProForm and several other brands owned
             by iFIT Health &amp; Fitness. It is not a treadmill; it is the software, the content
             library and the control system that those treadmills are built around. Buy a current
-            connected NordicTrack or ProForm treadmill and iFIT is what the touchscreen runs.
+            connected NordicTrack or ProForm treadmill and iFIT is what the touchscreen runs. Older consoles are another matter: iFIT ended support for older-generation machines such as the <a href="/nordictrack-c950i-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack C950i</a> on 30 April 2023.
           </p>
           <p>
             The content comes in two main flavours. <strong>Outdoor-filmed sessions</strong> are
@@ -99,7 +99,7 @@ export default {
             same formula to running and walking: a machine with a large touchscreen, built for
             Peloton's own class library. The classes are the product. Instructors lead live and
             on-demand sessions filmed in Peloton's studios, from short walks to long runs, with
-            strength, stretching and off-machine content alongside.
+            strength, stretching and off-machine content alongside. Those classes need the All-Access Membership, at $49.99 a month on a Peloton treadmill, as our <a href="/how-much-does-a-peloton-tread-cost/" class="text-[#0F62FE] font-medium">Peloton Tread price guide</a> sets out.
           </p>
           <p>
             What defines the Peloton experience is the studio energy and the community wrapped
@@ -331,7 +331,7 @@ export default {
             And if the content you actually want is neither, a running platform that works with
             any treadmill and a <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium" data-autolink>foot pod</a> is a third route; our
             <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
-            explains how that works.
+            explains how that works. Cyclists can do the same with their own bike on a <a href="/best-smart-bike-trainers/" class="text-[#0F62FE] font-medium">smart trainer</a>, which sets its own resistance for apps such as Zwift.
           </p>`,
     },
     {

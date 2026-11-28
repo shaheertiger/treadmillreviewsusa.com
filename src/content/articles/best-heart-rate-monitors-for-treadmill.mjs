@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-22',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['Best Heart Rate Monitors', 'for Treadmill Training'],
   standfirst:
@@ -319,7 +319,7 @@ export default {
             useful one, but the thresholds you work to should come from your doctor or a cardiac
             rehabilitation team, not from an age-based formula or a product's app. And any
             symptom — chest pain, unusual breathlessness, dizziness, palpitations — is a reason to
-            stop the belt and seek advice, whatever the number on the screen says.
+            stop the belt and seek advice, whatever the number on the screen says. Those thresholds often come from a supervised exercise test, and our page on <a href="/how-much-does-a-treadmill-stress-test-cost/" class="text-[#0F62FE] font-medium">what a treadmill stress test costs</a> lists cash prices of $331 to $774 for the basic version on MDsave.
           </p>`,
     },
   ],

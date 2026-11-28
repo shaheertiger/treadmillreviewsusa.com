@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Comparison',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Chest Strap vs Wrist', 'Heart Rate Monitors'],
   standfirst:
@@ -63,7 +63,7 @@ export default {
             muscle. That impulse produces a tiny voltage that can be detected on the skin — the
             same signal a hospital ECG records, though a consumer strap uses it far more simply. A
             chest strap has two electrodes, one on each side of the sternum, and a small
-            transmitter that detects the sharp spike in that signal with each beat.
+            transmitter that detects the sharp spike in that signal with each beat. That hospital version is what a treadmill stress test records while you walk, and our guide to <a href="/how-much-does-a-treadmill-stress-test-cost/" class="text-[#0F62FE] font-medium">how much a treadmill stress test costs</a> puts the MDsave national average for the basic test at $491.
           </p>
           <p>
             Because it times each beat directly, a strap knows the interval between one beat and

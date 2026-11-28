@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer’s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-05',
-  modified: '2026-11-17',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['TrueForm Treadmills:', 'Runner vs Trainer, Explained'],
   standfirst:
@@ -175,7 +175,7 @@ export default {
             steel, a heavier belt, US assembly, more tread choices and a longer warranty on labour and
             electronics. The second is that both surfaces are 17 inches wide. That is normal for curved
             trainers — the AssaultRunner Pro is also 17 inches — but narrow next to a 22-inch motorized
-            deck, and broad-shouldered runners notice it.
+            deck, and broad-shouldered runners notice it. On 23 November 2026 the TrueForm Trainer was $3,495 and the Runner started at $6,195, as our <a href="/how-much-does-a-curved-treadmill-cost/" class="text-[#0F62FE] font-medium">curved treadmill cost guide</a> shows.
           </p>
           <p>
             The Trainer was redesigned recently. TrueForm calls the current one "all new" and lists

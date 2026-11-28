@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'iMovR Unsit Treadmill Desk',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Unsit Treadmill Desk', 'Bundle Review'],
   standfirst:
@@ -84,7 +84,7 @@ export default {
           <p>
             iMovR sells the Unsit and the Lander only through its own store, not on Amazon, so the card
             below is the nearest Amazon alternative rather than the Unsit itself: LifeSpan's TR5000B Pro+
-            GlowUp, a heavier office base with a narrower belt, for less money and without a desk.
+            GlowUp, a heavier office base with a narrower belt, for less money and without a desk. A complete LifeSpan treadmill desk set ran $2,048 to $2,748 on LifeSpan’s store on 26 November 2026, per our <a href="/how-much-does-a-lifespan-treadmill-cost/" class="text-[#0F62FE] font-medium">LifeSpan cost breakdown</a>.
           </p>`,
     },
     {
@@ -201,7 +201,7 @@ export default {
       html: `          <p>
             The Unsit is wider than almost any other under-desk treadmill, and that changes which desks
             work. iMovR is unusually specific about it, and that specificity is one of the better
-            reasons to buy the treadmill and desk from the same seller.
+            reasons to buy the treadmill and desk from the same seller. Bought as a set, an integrated treadmill desk ran $2,048 to $3,840 on 24 November 2026, as our <a href="/how-much-does-a-treadmill-desk-cost/" class="text-[#0F62FE] font-medium">treadmill desk price guide</a> records.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Width between the columns</h3>
           <p>

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Spec Explainer',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['How Fast Do', 'Treadmills Go?'],
   standfirst:
@@ -100,7 +100,7 @@ export default {
             few budget machines start a little higher. If very slow walking is your main use, check
             the minimum speed specifically rather than assuming. Our guide to the
             <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">best treadmills for seniors</a>
-            looks at low start speeds alongside handrails and step-up height.
+            looks at low start speeds alongside handrails and step-up height. Our explainer on <a href="/what-is-a-walking-pad/" class="text-[#0F62FE] font-medium">what a walking pad is</a> covers how these compact belts differ from a treadmill beyond their speed range.
           </p>`,
     },
     {

@@ -69,7 +69,7 @@ export default {
             treadmill with eight magnetic resistance levels, stainless steel bearings and a long 19-inch
             deck, priced at $2,595 direct, and almost everything known about it comes from the company that
             sells it.</strong> On its listing it is a strong value for sprinting, intervals and sled-push work:
-            it does much of what $3,500 to $5,500 curved treadmills do for considerably less.
+            it does much of what $3,500 to $5,500 curved treadmills do for considerably less. At Rogue Fitness, for example, the Rogue | Woodway Curve LTG and the TrueForm Trainer were both $3,495 on 5 November 2026, per our <a href="/rogue-treadmills/" class="text-[#0F62FE] font-medium">Rogue treadmill guide</a>.
           </p>
           <p>
             The caveats are specific. The seller's own documents give three different maximum user weights —

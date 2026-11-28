@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-09',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Can You Walk Barefoot', 'on a Treadmill?'],
   standfirst:
@@ -192,7 +192,7 @@ export default {
             infections spread on warm, damp, shared surfaces, which is exactly what a busy treadmill
             belt is. Our guide to
             <a href="/how-to-clean-a-treadmill/" class="text-[#0F62FE] font-medium">cleaning a treadmill</a>
-            covers safe products for the belt.
+            covers safe products for the belt. For shared machines, our <a href="/best-treadmill-cleaning-products/" class="text-[#0F62FE] font-medium">treadmill cleaning product picks</a> include 2XL GymWipes, a low-residue wipe made for fitness equipment.
           </p>
           <p>
             <strong>Static.</strong> Treadmill static is caused by the belt rubbing against what is
@@ -306,7 +306,7 @@ export default {
           <p>
             <strong>Anyone running.</strong> Barefoot running on a belt combines higher speed, harder
             foot strikes and less control. The friction-burn consequences of a misstep scale with
-            belt speed. If you run on a treadmill, wear running shoes.
+            belt speed. If you run on a treadmill, wear running shoes. For men choosing a pair, our <a href="/best-mens-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium">men&rsquo;s treadmill running shoe picks</a> start with the Saucony Ride 19, about 8.9 oz in a men&rsquo;s 9.
           </p>`,
     },
     {

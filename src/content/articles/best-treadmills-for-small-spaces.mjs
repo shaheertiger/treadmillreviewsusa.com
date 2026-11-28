@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmills for Small Spaces',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '4.4k',
   h1: ['Best Treadmills for', 'Small Spaces'],
   standfirst:
@@ -30,7 +30,7 @@ export default {
       html: `          <p>
             This is the point that matters most on this page, and it is not a dimension. It is how
             much effort the fold takes with one person, because that decides whether the machine
-            is still being folded a few weeks in.
+            is still being folded a few weeks in. Our <a href="/black-friday-folding-treadmill-deals/" class="text-[#0F62FE] font-medium">folding treadmill Black Friday page</a> pairs the sale prices of six models with their folded footprints.
           </p>
           <p>
             A hydraulic or gas-strut assist — where you lift the deck a few inches and the

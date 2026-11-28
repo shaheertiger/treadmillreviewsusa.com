@@ -311,7 +311,7 @@ export default {
             involved disassembling a 200 lb machine are mostly about returning freight, which is hard
             everywhere. Our guide to
             <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
-            explains what to expect, and why it is worth choosing carefully enough not to need one.
+            explains what to expect, and why it is worth choosing carefully enough not to need one. Never standing on one and not knowing the return terms both make our list of <a href="/treadmill-buying-mistakes/" class="text-[#0F62FE] font-medium">treadmill buying mistakes to avoid</a> before you order.
           </p>`,
     },
     {

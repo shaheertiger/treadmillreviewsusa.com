@@ -38,7 +38,7 @@ export default {
             walking aid, have no uncontrolled heart condition, and will use the safety key and
             handrails every time.</strong> It removes weather, uneven pavements, kerbs and
             darkness from the equation, and it lets you walk a little most days, which is what
-            makes the difference to health.
+            makes the difference to health. If your doctor wants an exercise test before you start, the 2026 Medicare rate for a basic treadmill stress test in a doctor&rsquo;s office is $73.48, as our guide to <a href="/how-much-does-a-treadmill-stress-test-cost/" class="text-[#0F62FE] font-medium">treadmill stress test costs</a> explains.
           </p>
           <p>
             <strong>It is a poor choice, or one to make only with a physical therapist's advice,

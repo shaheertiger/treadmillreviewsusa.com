@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.0k',
   h1: ['Best Exercise Bikes', 'and Stationary Bikes for Home'],
   standfirst:
@@ -36,7 +36,7 @@ export default {
             resistance, a 330 lb rating, and Bluetooth that works with apps you choose rather than one
             you are locked into. If you want a bike that will outlast the house, the Keiser M3i is the
             studio standard; if you want to spend as little as possible, the YOSUDA friction bike does
-            the basics for about $200.
+            the basics for about $200. Prices on these bikes move a lot in November; our <a href="/black-friday-exercise-bike-deals/" class="text-[#0F62FE] font-medium">Black Friday exercise bike deals</a> page gives the Keiser, the Schwinn IC4 and four others with dated prices and the figure we would wait for.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>

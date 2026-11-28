@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Famistar Treadmill:', 'Models, Claims and Warranty'],
   standfirst:
@@ -36,7 +36,7 @@ export default {
             and Walmart.com, that may suit light walking and jogging at a low price; but no current
             model has been independently reviewed, the listings contradict themselves on weight limits
             and motors, and the brand states three different warranty lengths.</strong> Buy one only
-            at a low price, with the return terms read and the warranty confirmed in writing.
+            at a low price, with the return terms read and the warranty confirmed in writing. On Wayfair the same caution applies, and a listing under a house label with no maker or model number is a poor buy, as our <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">guide to Wayfair treadmills</a> explains.
           </p>
           <p>
             The range runs from a 2.5 HP walking pad at about $166 to auto-incline <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a>
@@ -83,7 +83,7 @@ export default {
           <p>
             <strong>Walmart.com</strong> carries a Famistar store with folding treadmills and the
             <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>. Walmart’s marketplace includes third-party sellers, so check whether a
-            listing is sold by Walmart or by Famistar, because that decides who handles a return.
+            listing is sold by Walmart or by Famistar, because that decides who handles a return. Under Walmart’s own policy a Marketplace seller handles shipping, returns and customer service, including return shipping costs, as our <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart treadmills</a> page explains.
           </p>
           <p>
             <strong>Amazon</strong> did not have a Famistar treadmill in its US product data when we
@@ -326,7 +326,7 @@ export default {
             on a Famistar listing requires a paid subscription, which keeps running costs at zero; our
             guide to
             <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
-            explains why that matters.
+            explains why that matters. Our <a href="/best-treadmills-with-fitshow/" class="text-[#0F62FE] font-medium">best FitShow treadmills</a> list seven machines whose listings name the app, from about $212.
           </p>
           <p>
             <strong>What it does less well.</strong> Everything that lets you check the claims. There

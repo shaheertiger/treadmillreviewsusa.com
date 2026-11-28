@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Training',
   updated: 'November 2026',
-  updatedLong: 'November 19, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-17',
-  modified: '2026-11-19',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Treadmill Walking', 'With Arthritis'],
   standfirst:
@@ -74,7 +74,7 @@ export default {
             guideline does not rank one form above another: walking, strengthening, neuromuscular
             training and water-based exercise are all listed as options for knee and hip
             osteoarthritis, and it notes that outcomes tend to be better when exercise is
-            supervised, at least at first.
+            supervised, at least at first. For people whose joints make full-weight walking painful, some clinics offer sessions on an <a href="/anti-gravity-treadmill/" class="text-[#0F62FE] font-medium">anti-gravity treadmill</a>, which can lift up to 80% of body weight, at about $12.50 to $75 a session in the US.
           </p>
           <p>
             <strong>OARSI.</strong> The 2019 OARSI guidelines for the non-surgical management of

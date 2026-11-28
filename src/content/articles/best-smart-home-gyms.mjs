@@ -36,7 +36,7 @@ export default {
             really choosing between a wall and a patch of floor; the other three exist because a tighter
             budget, an existing power rack or a very small space changes the answer. Every pick links to
             an Amazon listing; where a maker-only machine was the better-known choice, we say so on the
-            card that replaced it.
+            card that replaced it. At the other end of the price scale, our <a href="/gymproluxe-review/" class="text-[#0F62FE] font-medium">GymProLuxe review</a> looks at a $133 band-and-bar kit sold for travel and small spaces.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>

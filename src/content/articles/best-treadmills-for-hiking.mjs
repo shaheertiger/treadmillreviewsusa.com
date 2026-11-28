@@ -420,7 +420,7 @@ export default {
       html: `          <p>
             Stair climbers and steppers are the other common way to train for hills indoors, and
             they are cheaper and smaller than any incline trainer. They train something slightly
-            different, though, and it is worth knowing what before you choose.
+            different, though, and it is worth knowing what before you choose. For scale, a home incline trainer costs about $2,875 to $4,299, as our <a href="/how-much-does-an-incline-trainer-cost/" class="text-[#0F62FE] font-medium">incline trainer cost breakdown</a> shows.
           </p>
           <p>
             <strong>What a stepper or stair machine does well.</strong> Stepping lifts your whole

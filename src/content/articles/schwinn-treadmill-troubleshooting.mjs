@@ -11,9 +11,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-25',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Schwinn Treadmill Troubleshooting:', 'Power, Error Codes, Belt and Console'],
   standfirst:
@@ -158,7 +158,7 @@ export default {
             start, or will end, a workout without it. The newer manuals list &ldquo;SAFETY KEY OFF&rdquo; or a
             display of dashes, and add that a magnetic key must still be magnetised. Pull the key out, push it
             fully back in, and if that fails, see our guide to a
-            <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">treadmill safety key that is not working</a>.
+            <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">treadmill safety key that is not working</a>. If the key is lost or its magnet has weakened, our <a href="/best-treadmill-safety-keys/" class="text-[#0F62FE] font-medium">best treadmill safety keys</a> lists five replacements and a two-minute stop test.
           </p>
           <h3 class="${h3}">4. A console that is asleep, or in demo mode</h3>
           <p>
@@ -290,7 +290,7 @@ export default {
             it. Turn the treadmill off, then turn both rear roller bolts a quarter turn clockwise with the
             supplied Allen wrench, switch on and check for slipping. Repeat if needed, but the manual says never
             to turn the bolts more than a quarter turn at a time. The belt is tensioned when the slipping
-            sensation is gone. The manuals call a stretched belt &ldquo;normal and common.&rdquo;
+            sensation is gone. The manuals call a stretched belt &ldquo;normal and common.&rdquo; Weslo’s manuals give the same quarter-turn limit for belt tension, covered in our <a href="/weslo-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Weslo treadmill troubleshooting</a> guide.
           </p>
           <p>
             Johnson Health Tech&rsquo;s Deck and Belt Guide for 2024-and-later Bowflex and Schwinn models adds a
@@ -381,7 +381,7 @@ export default {
             rather than dry: white dust or nylon fabric at the rear, under the deck or around the rollers (<a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>replace
             the belt</a>); a dark brownish underside from friction heat (replace the belt); or a deck worn through to
             bare wood (replace the deck and belt). It also says never to apply more than 30 ml of silicone at
-            once.
+            once. Our <a href="/treadmill-belt-replacement-cost/" class="text-[#0F62FE] font-medium">belt replacement cost</a> guide covers what those parts and the labour typically cost.
           </p>`,
     },
     {

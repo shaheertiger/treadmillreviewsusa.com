@@ -289,7 +289,7 @@ export default {
             A small grade makes each step more work without speeding you up, which many older
             walkers find steadier than walking faster. Keep the grade low: 1 to 3% is plenty in
             this plan. If you have knee or hip arthritis, or a recent joint replacement, check with
-            your physical therapist before adding incline at all.
+            your physical therapist before adding incline at all. Our guide to <a href="/treadmill-after-hip-replacement/" class="text-[#0F62FE] font-medium">treadmill walking after a hip replacement</a> explains how hip precautions apply on the belt.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead>

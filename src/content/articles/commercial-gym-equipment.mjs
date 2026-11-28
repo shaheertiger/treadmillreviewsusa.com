@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-16',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Commercial Gym Equipment', 'Worth Buying'],
   standfirst:
@@ -139,7 +139,7 @@ export default {
           <p>
             Recalls on commercial equipment are often handled by contacting known facility owners
             directly, which means a machine bought second-hand may never have been fixed. Check the
-            serial number of any used piece against the CPSC database and the maker before you pay.
+            serial number of any used piece against the CPSC database and the maker before you pay. For treadmills, a remanufactured ex-gym machine usually costs about $2,500 to $4,000, as our <a href="/how-much-does-a-commercial-treadmill-cost/" class="text-[#0F62FE] font-medium">commercial treadmill cost breakdown</a> shows.
           </p>`,
     },
     {
@@ -168,7 +168,7 @@ export default {
             technicians are trained on the models, and the frames are designed so that a belt,
             bearing or cable can be swapped on site. Before you buy, ask who services the equipment
             in your area, how quickly, and for how many years parts will be available. A commercial
-            machine with no local service is a heavy, expensive home machine.
+            machine with no local service is a heavy, expensive home machine. Our <a href="/best-hack-squat-machines/" class="text-[#0F62FE] font-medium">hack squat machine guide</a> includes one machine in that class, Body-Solid's leverage squat/calf machine, alongside lighter home sleds.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Documentation</h3>
           <p>
@@ -183,7 +183,7 @@ export default {
             warning sign; the quote is where you negotiate the warranty, the installation and the
             service terms. Some makers also sell the same or similar equipment through home stores at
             published prices, as Life Fitness does — useful for comparison, but read which warranty
-            applies.
+            applies. Its home treadmills, for example, were $2,799 to $8,799 after Black Friday discounts on 27 November 2026, as our <a href="/how-much-does-a-life-fitness-treadmill-cost/" class="text-[#0F62FE] font-medium">Life Fitness treadmill cost</a> page shows.
           </p>`,
     },
     {

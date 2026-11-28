@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Smart Trainer', 'and Indoor Bike Trainer for Your Own Bike'],
   standfirst:
@@ -54,7 +54,7 @@ export default {
             <a href="/best-peloton-alternatives/" class="text-[#0F62FE] font-medium">Peloton alternatives guide</a>
             cover complete bikes, including a Wahoo smart bike. The
             <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects the rest of this
-            series.
+            series. If you are shopping for a complete bike this month, our <a href="/black-friday-exercise-bike-deals/" class="text-[#0F62FE] font-medium">Black Friday exercise bike deals</a> page names six worth watching, from a $169.99 folding Marcy to the Keiser M3i.
           </p>`,
     },
     {

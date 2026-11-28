@@ -175,7 +175,7 @@ export default {
             it moving; staying near the front speeds it up, drifting back slows it down. There is
             no speed button. That makes curved machines superb for sprints and intervals, because
             the pace changes as fast as you do, and they are popular in performance gyms and
-            athletic training.
+            athletic training. Home-priced versions exist too, such as the <a href="/sb-fitness-ct550-curved-treadmill/" class="text-[#0F62FE] font-medium">SB Fitness CT550</a>, a motorless curved machine listed with a 350 lb rating.
           </p>
           <p>
             They are also expensive, long, heavy and generally do not fold, and walking slowly on
@@ -322,7 +322,7 @@ export default {
             and stop it stepping off, a longer belt relative to the machine's footprint for larger
             breeds, and controls placed out of the dog's reach. Most are motorized; <a href="/how-to-build-a-dog-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>slatmills</a>, used
             for high-drive working and sporting dogs, are non-motorized and let the dog set the
-            pace, rather like a curved manual treadmill for people.
+            pace, rather like a curved manual treadmill for people. Our <a href="/best-dog-treadmills-for-large-dogs/" class="text-[#0F62FE] font-medium">dog treadmills for large dogs</a> guide sets the first test as a running surface at least twice your dog's length.
           </p>
           <p>
             A human treadmill can sometimes be used for a calm dog under close supervision, but the
@@ -333,7 +333,7 @@ export default {
             <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">treadmills for dogs</a>
             covers safe introduction, and the
             <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">best dog treadmills</a>
-            roundup compares current models by size.
+            roundup compares current models by size. For steadying a dog by hand while it learns, see our <a href="/best-dog-treadmill-harnesses/" class="text-[#0F62FE] font-medium">dog treadmill harness picks</a>.
           </p>`,
     },
     {

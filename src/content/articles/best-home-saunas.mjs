@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Best Home Saunas', 'for Indoors, and What to Check First'],
   standfirst:
@@ -90,7 +90,7 @@ export default {
             cabins run on 120 volts. "Far infrared" saunas use carbon or ceramic panels;
             <strong>full-spectrum</strong> models add near-infrared elements, often halogen-style
             lamps, and sellers claim that the mix of wavelengths adds benefits. That is a marketing
-            claim rather than an established finding, and we treat it as one.
+            claim rather than an established finding, and we treat it as one. Massage chairs are sold the same way, and our <a href="/best-zero-gravity-massage-chairs/" class="text-[#0F62FE] font-medium">zero gravity massage chair guide</a> explains what 2D, 3D and 4D roller labels actually mean.
           </p>
           <p>
             <strong>Which should you buy?</strong> If you want the classic hot, steamy sauna, buy a
@@ -306,7 +306,7 @@ export default {
             Maxxus Amazon listing mentions weight loss and skin conditions such as eczema and psoriasis.
             Those are the sellers' claims. The same manual adds that its benefits "are presented for
             reference purposes only" and that no cure or treatment "is implied nor should it be
-            inferred." Weight lost in a sauna is mostly water, and it returns when you rehydrate.
+            inferred." Weight lost in a sauna is mostly water, and it returns when you rehydrate. It is also why a <a href="/best-smart-scales/" class="text-[#0F62FE] font-medium">body fat scale</a> reads differently after a sauna: its estimate depends heavily on how much water you are carrying.
           </p>
           <p>
             <strong>What the research says.</strong> The best-known evidence comes from a Finnish

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Workouts & Training', url: '/training/' },
   kicker: 'Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Treadmill Foot Pod Guide:', 'How They Work'],
   standfirst:
@@ -44,7 +44,7 @@ export default {
             that have Bluetooth for their maker's own app but do not speak the open fitness-machine
             standard that apps like Zwift use. You do not need one if your treadmill already
             broadcasts speed over Bluetooth FTMS to the app you use, or if you only walk and are
-            happy reading the console.
+            happy reading the console. For desk walking, our roundup of <a href="/best-fitness-trackers-for-walking-pad/" class="text-[#0F62FE] font-medium">fitness trackers for a walking pad</a> covers clip-on trackers and pedometers that count from the waist instead.
           </p>
           <p>
             The catch is calibration. A pod's pace is an estimate built on a model of how a human

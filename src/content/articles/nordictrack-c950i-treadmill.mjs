@@ -246,7 +246,7 @@ export default {
             large share of what a used C950i is worth, and a replacement board is only worthwhile if the motor
             and deck are sound. Our guide to <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a>
             helps judge that, and <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">resetting a NordicTrack</a>
-            is worth trying before you buy any electronics.
+            is worth trying before you buy any electronics. Our <a href="/nordictrack-treadmill-repair/" class="text-[#0F62FE] font-medium">NordicTrack repair guide</a> puts a board or motor job with a technician at about $300 to $900, which is worth weighing against the price of the machine.
           </p>`,
     },
     {

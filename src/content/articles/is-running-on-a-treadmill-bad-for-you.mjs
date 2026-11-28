@@ -374,7 +374,7 @@ export default {
             questioned, and there is no good reason to think a treadmill makes it worse. A
             treadmill deck typically has some give in it and sits on cushioning, which makes it a
             softer surface than concrete or asphalt. The surface is perfectly even, so there is no
-            camber pushing one knee inward and no hidden kerb to land on awkwardly.
+            camber pushing one knee inward and no hidden kerb to land on awkwardly. If a softer deck matters to you, our <a href="/best-cushioned-treadmills/" class="text-[#0F62FE] font-medium">cushioned treadmill picks</a> explain what the impact percentages makers quote are worth.
           </p>
           <p>
             Where knees do get sore on a treadmill, the usual causes are the same ones that cause

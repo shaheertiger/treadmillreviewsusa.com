@@ -59,7 +59,7 @@ export default {
             Every pick here sells for $100 or more. If you are still deciding whether a dedicated
             machine is worth it at all, the section on
             <a href="#do-you-need-one" class="text-[#0F62FE] font-medium">barbell and bench alternatives</a>
-            explains what a good bench, a pad and a set of bands can do for far less.
+            explains what a good bench, a pad and a set of bands can do for far less. For the quads rather than the glutes, our guide to the <a href="/best-hack-squat-machines/" class="text-[#0F62FE] font-medium">best hack squat machines</a> runs through sled angle, shoulder pads, safety stops and footprint for six machines.
           </p>`,
     },
     {
@@ -159,7 +159,7 @@ export default {
           <p>
             In practice: if you mainly want higher-rep glute work in a small space, bands are
             enough for a long time. If you lift heavy elsewhere and want the hip thrust to keep
-            pace with your squat and deadlift, choose plates.
+            pace with your squat and deadlift, choose plates. If cranky shoulders are what hold your squat back, our <a href="/best-safety-squat-bars/" class="text-[#0F62FE] font-medium">safety squat bar guide</a> covers a bar that lets you squat heavy with your hands in front of you.
           </p>`,
     },
     {

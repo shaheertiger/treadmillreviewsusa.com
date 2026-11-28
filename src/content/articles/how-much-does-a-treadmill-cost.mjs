@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['How Much Does', 'a Treadmill Cost?'],
   standfirst: `Anywhere from about $200 to well over $10,000, which is not a useful answer until you know what the money buys at each step. Here are the tiers, what changes between them, and the costs that arrive after checkout.`,
@@ -50,7 +50,7 @@ export default {
             spending somewhere between $1,000 and $2,000. That is not because cheaper machines are
             useless — many are fine for walking — but because that is the band where motors rated
             for continuous duty, decks long enough to run on, and warranties measured in years
-            rather than months start to appear together.
+            rather than months start to appear together. Spend closer to $2,000 and a 60-inch deck becomes standard, as our <a href="/best-treadmills-under-2000/" class="text-[#0F62FE] font-medium">best treadmills under $2,000</a> show.
           </p>
           <p>
             Whether someone asks how much a treadmill is, how much a running machine costs or how
@@ -288,7 +288,7 @@ export default {
             heavier frames, AC drive motors, commercial-grade belts and decks, and come with
             service arrangements a home buyer rarely needs. Light-commercial models, aimed at
             small facilities and serious home users, tend to start around $4,000; full gym units
-            with premium consoles commonly cost $8,000 to $10,000 or more.
+            with premium consoles commonly cost $8,000 to $10,000 or more. A few commercial AC-motor treadmills sell on Amazon for less, and our <a href="/best-treadmills-with-ac-motor/" class="text-[#0F62FE] font-medium">AC motor treadmill picks</a> start at about $2,084 for the Spirit CT850.
           </p>
           <p>
             For a home, a commercial machine is usually more than you need. The exceptions are
@@ -317,7 +317,7 @@ export default {
             launch, through permanent price changes, bundles and frequent promotions, and any
             number printed here would be wrong for some of the people reading it. Check Peloton's
             own site for the current price, and look at whether delivery and setup are included,
-            since that has varied too.
+            since that has varied too. During its Black Friday sale on 24 November 2026, the Tread Vision was $2,795 at Peloton and on Amazon, as our <a href="/peloton-tread-black-friday-deals/" class="text-[#0F62FE] font-medium">Peloton Black Friday Tread prices</a> show.
           </p>
           <p>
             The sticker price is only part of the cost. Most of the Tread's classes and programmes

@@ -265,7 +265,7 @@ export default {
             For any need longer than a couple of months, buying a used treadmill and selling it
             afterwards is usually the cheapest route by a wide margin. Treadmills depreciate
             steeply in their first couple of years and then flatten, so a machine that is already
-            three or four years old loses relatively little more value in the months you own it.
+            three or four years old loses relatively little more value in the months you own it. Our <a href="/how-much-does-a-used-treadmill-cost/" class="text-[#0F62FE] font-medium">used treadmill price guide</a> has dated prices: maker scratch-and-dent units sold at about 87% of new in late November 2026.
           </p>
           <p>
             The work is real, and it is three tasks. <strong>Inspect it</strong> properly before

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-08',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Where to Put a Treadmill', 'in Your House'],
   standfirst:
@@ -114,7 +114,7 @@ export default {
             deck sits on the frame, the frame sits on its feet, and the walking surface is some
             inches above the floor. The figure varies between machines and is in the manual or the
             spec sheet, usually as step-up height or deck height; we are not quoting any model's
-            figure here. Measure it on a machine in a shop if you can.
+            figure here. Measure it on a machine in a shop if you can. If a low deck matters, our <a href="/best-low-profile-treadmills/" class="text-[#0F62FE] font-medium">best low profile treadmills</a> rank five machines by step-up height, fold-flat profile or weight.
           </p>
           <p>
             <strong>Add the rise at maximum incline.</strong> When the deck tilts, the front lifts
@@ -294,7 +294,7 @@ export default {
             <strong>Dust.</strong> Garage floors generate grit, and the motor fan draws it into
             the compartment where it coats the electronics and finds its way under the belt as an
             abrasive. A mat, a cover between sessions and regular vacuuming of the motor
-            compartment are essential rather than optional.
+            compartment are essential rather than optional. Our guide to <a href="/best-treadmill-covers/" class="text-[#0F62FE] font-medium">treadmill covers</a> gives the sizes to measure against, such as 46 x 38 x 66 in. for ClawsCover&rsquo;s folding cover.
           </p>
           <p>
             <strong>Power.</strong> Garage outlets are commonly GFCI-protected and commonly shared
@@ -402,7 +402,7 @@ export default {
             may be GFCI-protected, which many machines nuisance-trip. Our guide to
             <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords and dedicated circuits</a>
             covers all of that; the short version is to choose the wall with the right outlet
-            rather than run a cord to the wrong one.
+            rather than run a cord to the wrong one. A properly grounded outlet also lets the frame bleed static charge away, as our <a href="/treadmill-static-shock/" class="text-[#0F62FE] font-medium">treadmill static shock</a> guide explains.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Ventilation and a fan</h3>
           <p>

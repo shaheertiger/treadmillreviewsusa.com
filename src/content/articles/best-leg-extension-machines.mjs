@@ -74,7 +74,7 @@ export default {
             The cards give the figures the maker and an independent source agreed on, the price we
             saw and who each machine suits. Weight capacity on these machines is quoted in different
             ways — maximum user weight, loaded plate capacity, or both combined — so read the label
-            on each number before comparing.
+            on each number before comparing. If you want a machine that loads the whole leg rather than isolating the quads, our <a href="/best-hack-squat-machines/" class="text-[#0F62FE] font-medium">hack squat machine guide</a> compares six, from a dedicated sled to a pendulum.
           </p>
           <p>
             Every pick except the rack attachment also does a hamstring curl. Some use a seated curl
@@ -140,7 +140,7 @@ export default {
             Series attachment is rated to 275 lb of plates and a 265 lb user. If you are choosing a
             rack, our guide to
             <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks for a home gym</a>
-            explains upright sizes.
+            explains upright sizes. Rack fit matters for specialty bars too, and our <a href="/best-safety-squat-bars/" class="text-[#0F62FE] font-medium">safety squat bar guide</a> explains the width measurement most people forget to check.
           </p>
           <p>
             <strong>Bench attachments</strong>, often called leg developers, bolt or pin onto the end

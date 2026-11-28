@@ -105,7 +105,7 @@ export default {
             on that list applies to you, or you are not sure, the answer is to ask your doctor first
             and to take that conversation seriously. If you have back pain severe enough to make you
             shop for a table, it is also worth having it assessed before you hang upside down to treat
-            it yourself.
+            it yourself. Massage chairs raise similar questions, and our <a href="/best-zero-gravity-massage-chairs/" class="text-[#0F62FE] font-medium">zero gravity massage chair guide</a> lists the medical conditions the makers themselves say rule one out.
           </p>`,
     },
     {
@@ -388,7 +388,7 @@ export default {
             either upright or fully inverted — so they suit experienced users only, after the same
             medical check. Our
             <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium">pull-up bar guide</a>
-            covers which bars are rated for hanging.
+            covers which bars are rated for hanging. A freestanding <a href="/best-power-towers/" class="text-[#0F62FE] font-medium">power tower</a> is the other common place to hang from, though its listed weight rating says little about how steady it will feel.
           </p>
           <p>
             <strong>If you weigh more than 300 lb or are taller than 6 ft 6 in.</strong>, none of these

@@ -284,7 +284,7 @@ export default {
             You do not need an expensive treadmill to walk on it every day, but you do need one
             built to be used every day, and those are not the same thing. The cheapest folding
             machines are typically designed around lighter users and shorter, less frequent
-            sessions. Used daily for an hour by a heavier person, they tend to wear quickly.
+            sessions. Used daily for an hour by a heavier person, they tend to wear quickly. Whether your body can take daily sessions is a separate question, answered in our page on <a href="/can-you-use-a-treadmill-every-day/" class="text-[#0F62FE] font-medium">whether you can use a treadmill every day</a>: yes for walking, where five 30-minute walks meet the 150-minute weekly guideline.
           </p>
           <p>
             For most people buying for a daily walking routine, the sensible zone is the mid-range,

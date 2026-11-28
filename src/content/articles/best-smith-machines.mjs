@@ -65,7 +65,7 @@ export default {
             <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machine guide</a>
             covers those. And if free-weight barbell work is the priority, a
             <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack</a>
-            is still the simpler, more flexible buy.
+            is still the simpler, more flexible buy. For quad and hamstring isolation alongside it, our <a href="/best-leg-extension-machines/" class="text-[#0F62FE] font-medium">leg extension machine guide</a> compares six standalone machines and attachments.
           </p>`,
     },
     {
@@ -76,7 +76,7 @@ export default {
             Each card gives the figures we could confirm from two sources, the price range we saw on
             19 October 2026, and who the machine suits. Read the bar weight and the dimensions
             first: the bar weight tells you the lightest load you can lift, and the dimensions
-            tell you whether the frame will fit under your ceiling with room to load plates.
+            tell you whether the frame will fit under your ceiling with room to load plates. If pull-ups and dips are all you want from a frame, a <a href="/best-power-towers/" class="text-[#0F62FE] font-medium">power tower</a> covers them for less than a pair of good dumbbells.
           </p>
           <p>
             None of these prices includes weight plates or, apart from where a bundle is mentioned,

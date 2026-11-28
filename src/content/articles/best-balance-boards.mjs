@@ -180,7 +180,7 @@ export default {
             wakeboarders use roller boards to practise stance and weight shifts off the water or
             snow, and other athletes use wobble boards in warm-ups. Owners commonly describe them as
             fun and as hard work for the legs and core. This is where the Indo Board and Revbalance
-            belong.
+            belong. For the jumping side of that training, our <a href="/best-plyo-boxes/" class="text-[#0F62FE] font-medium">plyo box guide</a> compares soft, wood and adjustable steel boxes.
           </p>
           <p>
             <strong>Alongside rehabilitation.</strong> Wobble and rocker boards are standard

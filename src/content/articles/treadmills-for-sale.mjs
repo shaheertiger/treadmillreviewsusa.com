@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Treadmills for Sale',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-15',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '3.1k',
   h1: ['Treadmills for Sale:', 'Where to Buy and What to Pay'],
   standfirst:
@@ -149,14 +149,14 @@ export default {
             promotions, and the most forgiving returns — which matters more than it sounds, because
             a treadmill is the hardest consumer product to send back. Delivery is usually
             kerbside unless you pay more, and floor staff are not a reliable source of
-            specification detail.
+            specification detail. At Home Depot you will not find a treadmill in the aisle at all: every listing we sampled was online-only, as our <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium">Home Depot treadmill guide</a> found.
           </p>
           <p>
             <strong>Amazon and large marketplaces.</strong> Broad selection and honest reviews at
             volume, but the listing is the weak point: model names repeat across model years, and
             the specification block is frequently the previous generation's. Confirm the deck
             dimensions, motor rating and warranty against the manufacturer's own page before
-            ordering, not after.
+            ordering, not after. On Wayfair this matters doubly, because many treadmills sit under house labels that name no maker, as our <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">Wayfair treadmills</a> page explains.
           </p>
           <p>
             <strong>Specialty fitness dealers.</strong> The channel people forget. Prices are close

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Best Walking Pad for Tall People', 'Six Long-Belt Picks'],
   standfirst:
@@ -67,7 +67,7 @@ export default {
             pads</a>, and it is why four of the six come from one brand: WalkingPad makes more long-belt
             pads than anyone else we could verify. For the wider context, our
             <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
-            covers everything other than length.
+            covers everything other than length. If one of these pads later throws an error, our <a href="/walkingpad-troubleshooting/" class="text-[#0F62FE] font-medium">WalkingPad troubleshooting guide</a> starts with the maker's own 10-minute power reset.
           </p>`,
     },
     {
@@ -90,7 +90,7 @@ export default {
             We then looked at what else a tall walker needs: belt width, motor and speed range,
             weight capacity (tall people are often heavier, and capacity figures on walking pads are
             often inconsistent), whether the pad folds or has handles, and whether the brand is
-            established enough to support the machine. We checked cpsc.gov for each brand.
+            established enough to support the machine. We checked cpsc.gov for each brand. For budgeting, a longer, better-built pad typically costs about $250 to $450, as our <a href="/how-much-does-a-walking-pad-cost/" class="text-[#0F62FE] font-medium">walking pad price guide</a> sets out.
           </p>
           <p>
             Two pads we looked at and left out. The <a href="/imovr-unsit-treadmill-desk/" class="text-[#0F62FE] font-medium" data-autolink>iMovR</a> ThermoTread GT had a 50-inch belt, but its
@@ -185,7 +185,7 @@ export default {
             <strong>Width matters too.</strong> Taller people tend to have longer feet and, at a
             brisk pace, a little more side-to-side wander. The WalkingPad pads here are 15.7 to 17.3
             inches wide; the two LifeSpan pads are 20 inches, the same as many full treadmills. If you
-            walk while typing or reading, extra width is a margin worth having.
+            walk while typing or reading, extra width is a margin worth having. That width is not cheap: LifeSpan’s under-desk treadmills cost $1,199 to $1,699 on its store in late November, as our <a href="/how-much-does-a-lifespan-treadmill-cost/" class="text-[#0F62FE] font-medium">guide to LifeSpan prices</a> sets out.
           </p>`,
     },
     {

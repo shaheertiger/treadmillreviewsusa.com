@@ -55,7 +55,7 @@ export default {
             an arm exercise. The drive starts with the legs pushing the seat back, continues as the hips
             open and the torso swings back, and finishes with the arms drawing the handle in. Coaches
             commonly describe the power as coming mostly from the legs — often summarised as roughly 60%
-            legs, with the trunk and arms contributing the rest.
+            legs, with the trunk and arms contributing the rest. A <a href="/best-vertical-climbers/" class="text-[#0F62FE] font-medium">vertical climber</a> is the other common machine that works the arms and legs at the same time, in a small footprint.
           </p>
           <p>
             So rowing is best understood as a leg-dominant exercise that also works the posterior chain,
@@ -160,7 +160,7 @@ export default {
             intervals but also makes it easy to row gently without realising. A <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>heart rate monitor</a> is a
             better guide than either console; our article on
             <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calories are accurate</a>
-            explains why console figures drift.
+            explains why console figures drift. Our <a href="/elliptical-vs-treadmill-calories/" class="text-[#0F62FE] font-medium">elliptical vs treadmill calories</a> page works the same arithmetic from 2024 Compendium MET values for three body weights.
           </p>
           <p>
             For weight management, the familiar caveats apply: diet is the bigger lever, and consistency

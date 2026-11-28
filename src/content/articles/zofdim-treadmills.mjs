@@ -137,7 +137,7 @@ export default {
             getting, and the listing figures are rarely checked by anyone. We have written up similar
             brands, such as <a href="/maxkare-treadmill/" class="text-[#0F62FE] font-medium">MaxKare</a>
             and <a href="/famistar-treadmill/" class="text-[#0F62FE] font-medium">Famistar</a>, where
-            we could at least read the listings and compare them.
+            we could at least read the listings and compare them. Wayfair house labels can hide the maker in the same way, as our <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">Wayfair treadmill guide</a> sets out.
           </p>
           <p>
             If you would rather not take the risk, the cards further down are four budget walking pads,

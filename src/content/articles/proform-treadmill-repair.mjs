@@ -9,8 +9,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Repair and Service',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['ProForm Treadmill Repair:', 'Warranty Service, Technicians, Parts and Cost'],
   standfirst: `A ProForm still inside its warranty is repaired through iFIT, ProForm's parent company, after a pre-authorised claim, usually for no more than a small handling or trip charge. Out of warranty, you pay for parts and labour: tens of dollars for the jobs an owner can do, and commonly $350 to $700 when a technician replaces a motor control board or drive motor.`,
@@ -74,7 +75,7 @@ export default {
             honest answer is that it depends on the model, the year you bought it and the cover you chose
             at checkout. ProForm has changed its terms over the years, and two machines in the same house
             can carry very different cover. The document that came with your treadmill, or the warranty
-            page of its manual, is the one that counts.
+            page of its manual, is the one that counts. If a repair looks expensive, a new Carbon TL cost $479 on Amazon on 22 November 2026, per our <a href="/how-much-does-a-proform-treadmill-cost/" class="text-[#0F62FE] font-medium">ProForm treadmill cost</a> page.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead>

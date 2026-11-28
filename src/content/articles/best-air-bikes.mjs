@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Air Bikes', 'and Assault Bikes for Home'],
   standfirst:
@@ -89,7 +89,7 @@ export default {
           <p>
             The Schwinn AirDyne AD7 is the same bike we picked on our cardio machines page. We have not
             changed our view of it, only checked it again on a later date: Schwinn's price has moved from
-            $999 to $1,099 since then, and the descriptions say where a figure was left off and why.
+            $999 to $1,099 since then, and the descriptions say where a figure was left off and why. That $1,099 price is also tracked on our <a href="/black-friday-exercise-bike-deals/" class="text-[#0F62FE] font-medium">Black Friday exercise bike deals</a> page, where we put a good price for the AD7 at $999 or less.
           </p>`,
     },
     {
@@ -178,7 +178,7 @@ export default {
             The moving handles mean you can drive the fan with your arms, your legs or both, and most of
             the picks have foot pegs so you can rest your feet and work only the upper body. Using both
             at once spreads the work across more muscle, which is part of why the effort climbs so fast.
-            The BikeErg has no moving handles, so it is a legs-only machine with a cycling position.
+            The BikeErg has no moving handles, so it is a legs-only machine with a cycling position. A rower is the other full-body option, and our <a href="/treadmill-vs-rowing-machine/" class="text-[#0F62FE] font-medium">treadmill vs rowing machine</a> comparison explains why its whole-body claim is largely true, with qualifications.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Fan size and the "feel" of the bike</h3>
           <p>

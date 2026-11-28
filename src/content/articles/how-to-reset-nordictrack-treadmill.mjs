@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['How to Reset a', 'NordicTrack Treadmill'],
   standfirst:
@@ -36,7 +36,7 @@ export default {
             and insert the safety key. That power cycle clears most frozen consoles and odd
             behaviour. If the machine is completely dead, look beside the power switch for a
             <strong>reset button or circuit breaker</strong> — many NordicTrack models have one —
-            and press it firmly in.
+            and press it firmly in. If the key has gone missing, our <a href="/best-treadmill-safety-keys/" class="text-[#0F62FE] font-medium">replacement safety key guide</a> notes that TreadLife keys fit NordicTrack machines.
           </p>
           <p>
             A <strong>factory reset</strong> of the touchscreen console is a different, bigger step:
@@ -177,7 +177,7 @@ export default {
             what NordicTrack support or a technician will ask for. Do not keep power cycling a
             machine that is tripping, smelling hot or behaving erratically under load; our guide to
             a <a href="/treadmill-shuts-off-by-itself/" class="text-[#0F62FE] font-medium">treadmill that shuts off by itself</a>
-            covers that pattern.
+            covers that pattern. If the fault survives a reset, our <a href="/nordictrack-treadmill-repair/" class="text-[#0F62FE] font-medium">NordicTrack treadmill repair</a> guide covers booking a technician through iFIT and typical out-of-warranty costs.
           </p>`,
     },
     {
@@ -245,7 +245,7 @@ export default {
             a workout actually been started, or is the console waiting for you to choose one or sign
             in? Is the speed set above zero? Is something jammed under the belt? Some consoles also
             have a display or demonstration mode in which the screen runs but the belt will not
-            start; if yours is behaving like a shop display, the manual explains how to leave it.
+            start; if yours is behaving like a shop display, the manual explains how to leave it. If the display is blank rather than stuck in a demo, our guide to <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">a treadmill console that is not working</a> starts with the safety key and the cable at the upright.
           </p>
           <p>
             <strong>Is there an error message or code?</strong> Write it down exactly. Error codes

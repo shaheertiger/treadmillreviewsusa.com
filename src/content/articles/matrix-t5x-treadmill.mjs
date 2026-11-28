@@ -66,7 +66,7 @@ export default {
             and it is a sound buy at that price if it comes with a written warranty and your room
             has a dedicated 20-amp circuit.</strong> It is a club machine from Matrix, the commercial
             and premium-home brand of Johnson Health Tech, with a 5.0 HP AC drive, incline to 15% and
-            a 60-inch running length.
+            a 60-inch running length. A remanufactured club machine like this usually costs about $2,500 to $4,000, as our <a href="/how-much-does-a-commercial-treadmill-cost/" class="text-[#0F62FE] font-medium">guide to commercial treadmill prices</a> shows.
           </p>
           <p>
             Beyond those figures, care is needed. The T5x name has covered more than one generation —

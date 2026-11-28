@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Life Fitness Integrity Series Treadmill',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Life Fitness Integrity Series', 'Treadmill Review'],
   standfirst:
@@ -355,7 +355,7 @@ export default {
             friends or clients (check the warranty terms for that use), or someone who simply wants the
             exact machine they train on. Our guide to a
             <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmill for home</a>
-            works through that decision in more detail.
+            works through that decision in more detail. For a two-person household on a home budget, our <a href="/best-treadmills-for-two-people/" class="text-[#0F62FE] font-medium">picks for couples</a> lead with the Horizon 7.4 AT at about $1,500.
           </p>`,
     },
     {

@@ -7,9 +7,9 @@ export default {
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Brands', url: '/brands/' },
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '2.4k',
   h1: ['Best Sole Treadmills', 'Which Model to Buy in 2026'],
   standfirst:
@@ -203,7 +203,7 @@ export default {
             specification table on each product page. We then compared every figure with
             independent reviews and roundups of the same model. Where Sole's current listing and an
             independent source agreed, the figure went into the spec line. Where they did not, it
-            stayed out, and the card says which figure is in dispute and what each side says.
+            stayed out, and the card says which figure is in dispute and what each side says. For prices, our <a href="/how-much-does-a-sole-treadmill-cost/" class="text-[#0F62FE] font-medium">Sole cost guide</a> lists every current model, from $899.99 for the F50 to $2,899.99 for the TT8.
           </p>
           <p>
             On Sole that rule removes more than it does on most brands, for a specific reason: most

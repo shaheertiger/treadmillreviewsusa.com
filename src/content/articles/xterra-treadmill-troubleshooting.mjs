@@ -11,9 +11,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-24',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['XTERRA Treadmill Troubleshooting:', 'Power, Belt, Error Codes and Console'],
   standfirst:
@@ -99,7 +99,7 @@ export default {
             by the cord looks like a dead machine. Press it firmly onto the round metal pad on the console.
             If it still is not recognised, our guide to a
             <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">treadmill safety key that is not working</a>
-            covers the switch behind it.
+            covers the switch behind it. If yours is lost, our <a href="/best-treadmill-safety-keys/" class="text-[#0F62FE] font-medium">safety key replacement guide</a> treats a 1-inch universal magnetic key as the fallback when you cannot match the part number.
           </p>
           <h3 class="${h3}">2. The power switch and front breaker</h3>
           <p>
@@ -361,7 +361,7 @@ export default {
             session, but it returns each time you start the treadmill until you clear it. On the TRX1000,
             TRX1200 and TR65, the manuals say to hold the PROGRAM key for 3 seconds in standby mode to reset
             the message. The TR75 manual instead puts the lube-message reset in its Engineering Mode menu.
-            The message is a reminder, not a fault: check the deck, lubricate if it is dry, then clear it.
+            The message is a reminder, not a fault: check the deck, lubricate if it is dry, then clear it. A LUBE reminder is one of six usual reasons a console beeps, all listed in our guide to <a href="/treadmill-keeps-beeping/" class="text-[#0F62FE] font-medium">a treadmill that keeps beeping</a>.
           </p>`,
     },
     {

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Buyer\'s Guide',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-22',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Woodway Treadmills:', 'Slat Belts, Prices and Who Should Buy One'],
   standfirst:
@@ -92,7 +92,7 @@ export default {
             day we checked, and a fully optioned one was $19,995. The only new Woodway we found below
             $10,000 was the <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>non-motorised</a> Curve LTG, at $3,495 on sale. Most other models, including
             the full commercial Curve and the compact Mercury, carry no published price at all;
-            Woodway sells them by quote.
+            Woodway sells them by quote. Despite the name, Woodway is not a wooden treadmill brand; our <a href="/wooden-walking-pad/" class="text-[#0F62FE] font-medium">wooden walking pad</a> guide covers the machines that really are built from wood, including Walkolution desks sold through Woodway USA from $2,995.
           </p>
           <p>
             What the money buys is a running surface made of rubber-topped aluminium slats riding on
@@ -397,7 +397,7 @@ export default {
             core L7, for instance, was listed from $5,429 when our Landice guide checked it on 14
             October. A 4Front
             costs two to four times as much. The case for paying that rests on lifespan, capacity and
-            ride, not on features.
+            ride, not on features. By 27 November Landice’s Black Friday cart price had brought an L7 down to $4,829, as our <a href="/how-much-does-a-landice-treadmill-cost/" class="text-[#0F62FE] font-medium">Landice cost breakdown</a> records.
           </p>`,
     },
     {

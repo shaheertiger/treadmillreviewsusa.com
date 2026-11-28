@@ -159,7 +159,7 @@ export default {
             treadmills. Life Fitness illustrates the point within its own range. On its own
             comparison table, the folding F3 and the non-folding T3 started at the same $3,499 on 15
             October, but the F3 had a 55 by 20-inch running surface, a 10 mph top speed and 12%
-            incline, while the T3 had 60 by 20 inches, 12 mph and 15%.
+            incline, while the T3 had 60 by 20 inches, 12 mph and 15%. By 27 November the Black Friday sale had cut them to $2,799 and $2,974, as our <a href="/how-much-does-a-life-fitness-treadmill-cost/" class="text-[#0F62FE] font-medium">Life Fitness price breakdown</a> shows.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Longer warranties</h3>
           <p>

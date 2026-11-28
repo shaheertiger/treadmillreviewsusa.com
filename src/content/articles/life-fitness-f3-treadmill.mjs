@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Life Fitness F3', 'Folding Treadmill Review'],
   standfirst:
@@ -39,7 +40,7 @@ export default {
             last, and value a long warranty over speed and screens.</strong> It is the wrong choice if you
             run faster than about 8 to 9 mph, are tall and run, or want built-in classes. Runners should
             look at the non-folding Life Fitness T3 or a 60-inch-deck folding machine, and app users
-            should know that only the more expensive Track Connect 2.0 console has Bluetooth at all.
+            should know that only the more expensive Track Connect 2.0 console has Bluetooth at all. On 27 November 2026 the F3 was $2,799 after a Black Friday cut, the cheapest home treadmill in our <a href="/how-much-does-a-life-fitness-treadmill-cost/" class="text-[#0F62FE] font-medium">Life Fitness price list</a>.
           </p>
           <ul>
             <li><strong>Price:</strong> $2,799 (Go Console) or $3,295 (Track Connect 2.0) on Life

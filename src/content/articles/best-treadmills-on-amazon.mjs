@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '2.9k',
   h1: ['Best Treadmills', 'on Amazon'],
   standfirst:
@@ -59,7 +59,7 @@ export default {
             <a href="#sold-by" class="text-[#0F62FE] font-medium">who is actually selling it</a>.
             The same machine can appear on Amazon from Amazon itself, from the brand's own store and
             from a reseller with no link to the brand, and which one you buy from decides who you
-            deal with if something goes wrong.
+            deal with if something goes wrong. Walmart.com works the same way, with many treadmill listings sold by Marketplace sellers rather than Walmart itself, as our <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart treadmill page</a> shows.
           </p>`,
     },
     {
@@ -125,7 +125,7 @@ export default {
             Amazon.com as the shipper and seller. That is the simplest arrangement: Amazon's own
             return terms apply, and Horizon's warranty applies because Amazon is buying stock from
             the manufacturer. The <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack T Series</a> 5 listing also showed "Ships from
-            Amazon.com". When you see this, you are on solid ground.
+            Amazon.com". When you see this, you are on solid ground. Wayfair is different again, since many treadmills there sit under house labels with no named maker, as our <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">Wayfair treadmill page</a> explains.
           </p>
           <p>
             <strong>Sold by the brand, often fulfilled by Amazon.</strong> Walking pad brands such as

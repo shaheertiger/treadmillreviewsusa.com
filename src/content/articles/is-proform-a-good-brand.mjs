@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Is ProForm', 'a Good Brand?'],
   standfirst:
@@ -42,7 +42,7 @@ export default {
             is four folding treadmills, three of them with a full 20 by 60-inch belt, all running
             iFIT, and all regularly discounted. Its frames carry ten years of cover. Its motors
             carry two years at most, which is short against both Sole and NordicTrack's better
-            machines, and nothing it currently sells goes beyond 12% incline or below 0%.
+            machines, and nothing it currently sells goes beyond 12% incline or below 0%. On Amazon its treadmills cost $479 to about $1,665 on 22 November 2026, as our <a href="/how-much-does-a-proform-treadmill-cost/" class="text-[#0F62FE] font-medium">ProForm cost breakdown</a> sets out.
           </p>
           <p>
             That is a coherent product: a sensibly sized treadmill with a capable software
@@ -77,7 +77,7 @@ export default {
             decisions about software support. When iFIT ended support for older-generation
             machines that used an external iFIT Wi-Fi module in April 2023, its announcement said
             owners would keep manual mode and any preloaded workouts but lose updates and iFIT
-            workouts. That applied across the group, not to one badge.
+            workouts. That applied across the group, not to one badge. Weslo, the group’s discontinued budget badge, has no current models at all, which is why our <a href="/weslo-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Weslo treadmill troubleshooting</a> page focuses on fixes owners can do at home.
           </p>
           <p>
             One thing ownership does not tell you is how a particular ProForm model is built. The
@@ -208,7 +208,7 @@ export default {
             We do not have access to service data for ProForm or any other brand, and owner
             reviews of customer service are too self-selecting to turn into a rating. What we can
             describe is how ProForm structures the purchase and the cover, which shapes the
-            experience whatever the individual service call is like.
+            experience whatever the individual service call is like. Our <a href="/proform-treadmill-repair/" class="text-[#0F62FE] font-medium">ProForm treadmill repair</a> guide sets out how a warranty claim works through iFIT and what out-of-warranty repairs usually cost.
           </p>
           <p>
             <strong>Delivery.</strong> On ProForm's own site, standard shipping is curbside, with

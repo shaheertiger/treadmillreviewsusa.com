@@ -38,7 +38,7 @@ export default {
             and want a harder workout, Sunny's SF-E3919 stepping elliptical is 44 inches long and about
             $450 on Amazon, and the <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>BowFlex Max Trainer</a> M6, sold on BowFlex's own store, is about 46; if you want a
             full 20-inch stride and incline in under five feet, the Schwinn 490 is the one, provided your
-            ceiling is high enough.
+            ceiling is high enough. Both Schwinns are also on our <a href="/black-friday-elliptical-deals/" class="text-[#0F62FE] font-medium">Black Friday elliptical watch list</a>: the 411 was $699 on October 28, and we would wait for $599 or less.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -67,7 +67,7 @@ export default {
             <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical</a>
             comparison and
             <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">treadmills for small spaces</a>
-            guide set out the alternatives.
+            guide set out the alternatives. If a bike would do, the <a href="/best-folding-exercise-bikes/" class="text-[#0F62FE] font-medium">folding exercise bikes</a> we compare fold away to roughly the floor of a kitchen chair.
           </p>`,
     },
     {

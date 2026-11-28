@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Best Treadmills for Tall Runners',
   kicker: "Buyer's Guide",
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-22',
+  modified: '2026-11-28',
   socialProof: '2.9k',
   h1: ['Best Treadmills for', 'Tall Runners'],
   standfirst:
@@ -115,7 +115,7 @@ export default {
             Machines with adjustable-tilt screens solve it entirely; machines with fixed screens
             are worth checking in person if you can. Handrail height is rarely adjustable and
             rarely a problem for a runner, who is not holding them, but it matters if you use
-            them during warm-up or cool-down.
+            them during warm-up or cool-down. Scheels, a sporting goods chain concentrated in the Midwest, the Plains and the Mountain West, is one place where some stores let you stand on a premium treadmill first, per our <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">Scheels treadmills</a> page.
           </p>`,
     },
     {
@@ -160,7 +160,7 @@ export default {
             Tall runners are often faster runners, and the temptation is to shop on top speed.
             Almost every machine here reaches 12 mph, which is a 5-minute mile — a pace very few
             home runners sustain for any length of time, and one that most home treadmills are
-            uncomfortable to run at regardless of what the display permits.
+            uncomfortable to run at regardless of what the display permits. If you genuinely need more, our <a href="/best-fast-treadmills/" class="text-[#0F62FE] font-medium">best fast treadmills</a> go to 15.6 mph, and the Sole F83 pairs 12 mph with a 22 by 60-inch deck.
           </p>
           <p>
             What matters far more is whether the machine is stable and quiet at 9 to 10 mph, which

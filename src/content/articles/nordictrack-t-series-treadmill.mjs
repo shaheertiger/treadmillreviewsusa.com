@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'NordicTrack T Series',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 25, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-25',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['NordicTrack T Series', 'Treadmill Review'],
   standfirst:
@@ -116,7 +116,7 @@ export default {
             325 lb rating, with a two-year motor warranty. Buy the T Series 10 or 16 if you mostly walk
             and want iFIT on a built-in touchscreen; look at the retail-only T Series 8 if you are happy
             to use your own tablet and want to spend less.</strong> If you will run several times a week,
-            the Commercial series is the better fit.
+            the Commercial series is the better fit. A new NordicTrack treadmill costs about $1,599 to $2,999 at Black Friday 2026 prices, plus $396 a year for iFIT Pro, as our <a href="/how-much-does-a-nordictrack-treadmill-cost/" class="text-[#0F62FE] font-medium">NordicTrack cost guide</a> shows.
           </p>
           <p>
             Three facts carry most of the decision. The T Series 10 and 16 share the same deck, frame,
@@ -164,7 +164,7 @@ export default {
             T Series 10 and 16, the Commercial 1250, 1750 and 2450, and the X16 and X24 incline trainers.
             The T Series 8 and T Series 5 were not among them. Both carry NordicTrack branding and model
             numbers, and NordicTrack publishes product sheets for them to retailers, but you buy them from
-            the retailer, on the retailer's delivery and return terms rather than NordicTrack's.
+            the retailer, on the retailer's delivery and return terms rather than NordicTrack's. Do not expect to find them at Home Depot: site searches there for NordicTrack treadmills returned none in October 2026, as our <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium">Home Depot treadmill guide</a> found.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Is there a T Series 8 on NordicTrack's site?</h3>
           <p>
@@ -488,7 +488,7 @@ export default {
             parts and 12 of labour; its listing for the T Series 16 gives 24 months of labour, which does not
             match NordicTrack's one year, so ask the seller which applies before relying on it. Our
             <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains how to read each line.
+            explains how to read each line. If something does fail, our <a href="/nordictrack-treadmill-repair/" class="text-[#0F62FE] font-medium">NordicTrack treadmill repair</a> guide explains how to open a request at my.iFIT.com with your model and serial number.
           </p>
           <p>
             Bought from NordicTrack, the T Series 10 and 16 come with free curbside shipping in the continental

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-16',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Best Recovery Tools', 'for Weightlifters'],
   standfirst:
@@ -69,7 +69,7 @@ export default {
             and who the tool suits. Where a figure is missing, it is because the sources disagreed,
             and the card says so. None of these descriptions claim that a tool will make you
             recover faster or lift more; they describe what the tool is, how it is used, and what
-            owners and reviewers commonly report.
+            owners and reviewers commonly report. Electrical muscle stimulators are not on this list; our <a href="/shock-exercise-equipment-reviews/" class="text-[#0F62FE] font-medium">shock exercise equipment reviews</a> cover EMS and TENS units on their own terms.
           </p>`,
     },
     {
@@ -133,7 +133,7 @@ export default {
       heading: 'What Recovery Tools Can and Cannot Do',
       html: `          <p>
             It is worth being clear about this before spending money, because recovery equipment is
-            marketed harder than almost anything else in fitness.
+            marketed harder than almost anything else in fitness. Cold plunges are a good example, and our <a href="/best-cold-plunges/" class="text-[#0F62FE] font-medium">cold plunge guide</a> sets out the real costs, from a $150 ice bath to chillers that add roughly $350 to $4,000, before the cold-shock warnings.
           </p>
           <p>
             <strong>What they are.</strong> Every tool on this page is a way of applying pressure,

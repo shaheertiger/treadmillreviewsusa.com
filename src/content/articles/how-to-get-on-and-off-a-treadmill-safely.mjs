@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Safety',
   updated: 'November 2026',
-  updatedLong: 'November 17, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-17',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['How to Get On and Off', 'a Treadmill Safely'],
   standfirst:
@@ -397,7 +398,7 @@ export default {
       html: `          <p>
             Children and pets are a getting-on-and-off issue as well as a general one. The moment
             you step off is the moment you are least likely to notice a toddler or dog behind the
-            deck, and a machine left with the key in place can be started by anyone.
+            deck, and a machine left with the key in place can be started by anyone. If you are thinking of putting the dog itself on a belt, our <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">dog treadmill picks</a> cover machines built for it, with side rails and a belt sized to the dog.
           </p>
           <ul>
             <li>Check behind and beside the treadmill before you start the belt, every time.</li>

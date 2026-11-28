@@ -7,9 +7,9 @@ export default {
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Walking Pad Buying Guide:', 'What to Look For'],
   standfirst:
@@ -155,7 +155,7 @@ export default {
       html: `          <p>
             Walking pads commonly list maximum user weights somewhere around 220 to 265 lb, lower
             than most full treadmills. A few heavier-duty pads are rated higher, and some budget
-            pads lower.
+            pads lower. The budget <a href="/redliro-under-desk-treadmill/" class="text-[#0F62FE] font-medium">Redliro under-desk treadmill</a> sits at the top of that band with a 265 lb claim, which is worth checking against the exact listing.
           </p>
           <p>
             The rated figure is a maximum, not a comfortable working load. The usual rule of thumb is
@@ -167,7 +167,7 @@ export default {
           <p>
             Weight capacity is also a reasonable proxy for build. A higher-rated pad usually has a
             sturdier frame, a stronger motor and heavier rollers. It also usually weighs more, which
-            matters if you will be lifting it in and out from under a sofa every day.
+            matters if you will be lifting it in and out from under a sofa every day. Our <a href="/best-mini-treadmills/" class="text-[#0F62FE] font-medium">mini treadmill guide</a> ranks five pads on exactly that trade-off of footprint against weight.
           </p>
           <p>
             If you are near or above the typical pad range, a full treadmill rated well above your
@@ -220,7 +220,7 @@ export default {
             <strong>The remote.</strong> Check it is included, how it is powered, and whether
             replacements are available. A pad that can only be started or adjusted from its remote
             is unusable if the remote is lost or fails. Pads that also have basic controls on the
-            deck or the handrail are more robust.
+            deck or the handrail are more robust. Our <a href="/best-walking-pads-with-remote/" class="text-[#0F62FE] font-medium">best walking pads with a remote</a> rank six pads with that in mind, starting at about $133.
           </p>
           <p>
             <strong>The app.</strong> Apps can add step counts, session history and remote control

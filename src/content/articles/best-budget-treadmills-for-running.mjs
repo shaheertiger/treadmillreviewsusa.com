@@ -10,8 +10,9 @@ export default {
   kicker: 'Buying Guide',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   updated: 'November 2026',
-  updatedLong: 'November 21, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-21',
+  modified: '2026-11-28',
   h1: ['Best Budget Treadmills', 'for Running'],
   standfirst:
     'The best low-cost treadmill for running is the Horizon T101 Connect: a 20 by 55-inch running area, 10 mph and a lifetime motor warranty for about $777 on Amazon. Under $800 there are only a handful of machines you can genuinely run on; here are six, and why most cheap treadmills are walking machines.',
@@ -313,13 +314,13 @@ export default {
             show plenty of machines at that price that list 10 mph, 3.0 HP or more and a big capacity figure. What
             they do not list together is a belt both 20 inches wide and 50 or more inches long. The cheapest machine
             on this page that clears both is the BORGUSI at about $570, and the cheapest from an established
-            treadmill brand is the NordicTrack T 6.5 S at about $616.
+            treadmill brand is the NordicTrack T 6.5 S at about $616. The BORGUSI is also the heavy-user pick in our <a href="/best-treadmills-under-600/" class="text-[#0F62FE] font-medium">best treadmills under $600</a>, rated for 400 lb.
           </p>
           <p>
             What $500 does buy is a capable jogging machine for a shorter runner. The ATEEDGE at about $370 lists 10
             mph, 20% incline and an 18.5 by 45.5-inch belt; that is fine for intervals of walking and jogging and for
             incline walking, and cramped for real running. Many other sub-$500 listings are walking pads with a
-            handle that unlocks 6 to 7.5 mph, which suits a light jog at most.
+            handle that unlocks 6 to 7.5 mph, which suits a light jog at most. For walking and incline work, our <a href="/best-treadmills-under-400/" class="text-[#0F62FE] font-medium">best treadmills under $400</a> are six folding machines with up to 18% auto incline for $340 to $380.
           </p>
           <p>
             If $500 is a hard ceiling, three approaches stretch it furthest. Wait for a sale: the mid-tier machines on

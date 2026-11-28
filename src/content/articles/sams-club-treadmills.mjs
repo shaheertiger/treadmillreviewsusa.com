@@ -133,7 +133,7 @@ export default {
             <strong>Sam’s Club is worth checking if you are already a member and want a NordicTrack or
             ProForm treadmill, because its member prices on those machines can undercut other retailers and its
             return policy is broad.</strong> It is not the place to browse, because the range is short, made up
-            almost entirely of one manufacturer’s machines, and partly hidden behind a sign-in.
+            almost entirely of one manufacturer’s machines, and partly hidden behind a sign-in. If you want to stand on a machine before buying, Scheels is one chain where some stores have premium treadmills on the floor, as our <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">Scheels guide</a> explains.
           </p>
           <p>
             Two checks matter more than anything else. First, match the Sam’s listing to the current
@@ -242,7 +242,7 @@ export default {
             <strong>If you are a member,</strong> sign in before comparing. Several treadmill listings show
             their price only to signed-in members, and the price a non-member sees, if any, may not be the one
             you would pay. Then compare the delivered price, with any assembly, against the same model at
-            NordicTrack, Costco, Best Buy and Amazon.
+            NordicTrack, Costco, Best Buy and Amazon. Academy Sports also carries NordicTrack, with a price match that beats a qualifying competitor’s price by 5%, as our <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium">guide to Academy Sports treadmills</a> explains.
           </p>`,
     },
     {

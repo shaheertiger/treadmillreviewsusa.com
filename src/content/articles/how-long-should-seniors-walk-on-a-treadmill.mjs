@@ -129,7 +129,7 @@ export default {
             These are our suggestions, built from the guidelines above and the usual advice to
             increase exercise gradually; they are not a medical prescription. Your doctor or
             physical therapist may advise something different, particularly after surgery or a
-            cardiac event, and their advice takes priority.
+            cardiac event, and their advice takes priority. After a hip replacement, for example, the AAOS suggests walking for 5 to 10 minutes, 3 to 4 times a day, in the beginning, as our guide to <a href="/treadmill-after-hip-replacement/" class="text-[#0F62FE] font-medium">the treadmill after hip replacement</a> describes.
           </p>
           <p>
             <strong>Whatever the starting point, the first few sessions are partly about the
@@ -289,7 +289,7 @@ export default {
             8,000 range. Our explainer on
             <a href="/how-many-steps-in-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how many steps are in a mile</a>
             covers stride length and cadence, and whether a wrist tracker counts treadmill steps
-            accurately when you are <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a> (often it does not).
+            accurately when you are <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a> (often it does not). For the figure at your own speed, our page on <a href="/how-many-steps-on-a-treadmill-in-30-minutes/" class="text-[#0F62FE] font-medium">how many steps 30 minutes on a treadmill comes to</a> gives about 2,900 at 2 mph and 3,400 at 3 mph.
           </p>`,
     },
     {

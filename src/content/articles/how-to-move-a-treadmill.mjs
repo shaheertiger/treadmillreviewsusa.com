@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
   kicker: 'Ownership',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['How to Move', 'a Treadmill'],
   standfirst:
@@ -34,7 +34,7 @@ export default {
             Heavier than people expect, and the number on the box is usually the one that matters
             least, because the weight is not evenly distributed. The motor, the front roller, the
             incline mechanism and the console are all at the front, which means the front end of
-            a treadmill can carry well over half of its total weight.
+            a treadmill can carry well over half of its total weight. If you need a machine you can move on your own, our <a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">best portable treadmills</a> sort six by weight, from a 43 lb pad up.
           </p>
           <p>
             As typical ranges rather than figures for any particular machine:
@@ -153,7 +153,7 @@ export default {
             and uprights off a non-folding treadmill reduces it to a deck-and-motor base that is
             lower, narrower and noticeably lighter, and that base is far easier to get round a
             stair turn or through a doorway. The full sequence is in our guide to
-            <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium">disassembling a treadmill</a>.
+            <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium">disassembling a treadmill</a>. For a NordicTrack, our <a href="/how-to-take-apart-a-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">guide to taking apart a NordicTrack treadmill</a> adds the model-specific steps, starting with setting the incline to zero.
           </p>
           <p>
             It is worth doing if the route measurements say the assembled machine will not fit, if

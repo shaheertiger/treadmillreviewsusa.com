@@ -9,9 +9,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 24, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-28',
-  modified: '2026-11-24',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Black Friday Treadmill Deals', 'Under $1,000'],
   standfirst:
@@ -162,7 +162,7 @@ export default {
             ten mph a six-minute mile. Few home users run at either, but the ceiling still matters,
             because a machine designed for 12 mph is usually built for running throughout, and
             interval sessions at 8 to 10 mph sit comfortably inside its range rather than at the top
-            of it. The same four machines reach 12 mph; the two walking machines stop at 10.
+            of it. The same four machines reach 12 mph; the two walking machines stop at 10. If you need more than 12 mph, our <a href="/best-fast-treadmills/" class="text-[#0F62FE] font-medium">best fast treadmills</a> go up to 15.6 mph, a 3:51 mile.
           </p>
           <p>
             <strong>Width and capacity are the next checks.</strong> Five of the six have 20-inch
@@ -204,7 +204,7 @@ export default {
             titled "2024 Model". Horizon has sold the 7.0 AT under the same name across several
             years, and the current US product page identifies it as SKU HTM1457-01. If a listing
             names a model year or a different SKU, compare the console, warranty and specification
-            with Horizon’s page before treating it as the same machine.
+            with Horizon’s page before treating it as the same machine. On Horizon’s own store the range ran from $699 to $1,999 on 23 November 2026, with no subscription, as our <a href="/how-much-does-a-horizon-treadmill-cost/" class="text-[#0F62FE] font-medium">Horizon treadmill cost</a> page shows.
           </p>
           <p>
             <strong>Horizon T101.</strong> Amazon search results for the T101 have shown the current

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-13',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '3.1k',
   h1: ['Best Treadmills', 'Under $300'],
   standfirst:
@@ -102,7 +102,7 @@ export default {
             Two UREVO machines made the list, which deserves an explanation. It is not a
             preference for the brand; it is that UREVO's own product pages, its Amazon listings and
             independent coverage agreed with each other more often than most budget brands', and
-            it sells a pad at each of the price points that matter here.
+            it sells a pad at each of the price points that matter here. On UREVO’s store on 27 November 2026 a flat or manual-incline pad such as the Strol 2E cost about $150 to $180, and a 9% auto-incline model $240 to $330, as our <a href="/how-much-does-a-urevo-walking-pad-cost/" class="text-[#0F62FE] font-medium">UREVO walking pad cost guide</a> shows.
           </p>
           <p>
             Several machines are missing on purpose. The MERACH W60 Plus is an excellent incline pad,
@@ -171,14 +171,14 @@ export default {
             Briefly, and lightly, on the right one. Two of the five machines here go faster than
             walking pace: the UREVO Strol 2E reaches 6.2 mph with its bar raised, and the Sunny
             Treadpad Compact lists 6 mph. That is a gentle jog for most adults — a 10-minute mile
-            is 6 mph.
+            is 6 mph. Sunny’s own store priced its TreadPad walking pads at $299.99 to $599.99 on 27 November 2026, though our <a href="/how-much-does-a-sunny-treadmill-cost/" class="text-[#0F62FE] font-medium">Sunny treadmill prices</a> page found Amazon cheaper on several models.
           </p>
           <p>
             Three things limit it. The belt is around 36 to 40 inches long, so a jogging stride
             uses most of it and a tall runner will clip the motor cover. The motor is rated far below
             its headline figure, so a heavier runner at the top speed is asking it to work near its
             limit, and it will run hot. And neither machine has side rails or a full console, so
-            the emergency stop is a magnetic key or a remote rather than a big red button.
+            the emergency stop is a magnetic key or a remote rather than a big red button. On UREVO pads a loose or missing magnetic key is also behind codes E0, E7 and E10, as our <a href="/urevo-walking-pad-troubleshooting/" class="text-[#0F62FE] font-medium">UREVO walking pad troubleshooting</a> guide explains.
           </p>
           <p>
             So treat jogging on a 2-in-1 pad as a few minutes at the end of a walk, not as a

@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-15',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Best Treadmill Tablet Holders', 'and Phone Mounts'],
   standfirst:
@@ -57,7 +57,7 @@ export default {
           <p>
             Before you buy any of them, read the section on where to mount a holder, below. The
             right holder on the wrong bar is how a tablet ends up covering the stop button, or
-            shaking so much at running pace that you stop looking at it.
+            shaking so much at running pace that you stop looking at it. If you also want a drink in reach, our <a href="/best-treadmill-cup-holders/" class="text-[#0F62FE] font-medium">best treadmill cup holders</a> start with a Hila Optics holder that clamps bars about 0.5 to 1.75 in. across.
           </p>`,
     },
     {
