@@ -193,8 +193,8 @@ export default {
             before any code. Expect to see the code’s effect only at checkout.
           </p>
           <p>
-            <strong>The pattern:</strong> Amazon was cheaper on four of the six, by $18 to $90, and MERACH was cheaper only
-            on the T12 Aura. Buying direct has two advantages that may be worth a little: MERACH’s 30-day home trial
+            <strong>The pattern:</strong> Amazon was cheaper on four of the six, by $18 to $90, and on the T12 Pro too unless
+            MERACH’s $30 code applies. MERACH was cheaper only on the T12 Aura. Buying direct has two advantages that may be worth a little: MERACH’s 30-day home trial
             covers its own store, and you deal with MERACH alone if something goes wrong. Buying from Amazon.com as the
             seller puts the return under Amazon’s rules instead. Our guide to
             ${A('/treadmill-return-policies/', 'treadmill return policies')} explains the difference.
@@ -242,8 +242,8 @@ export default {
           </p>
           <p>
             The labelled savings ranged from 15% to 33% off the reference price. The largest were on the W50 Lite ($100 off
-            $299.99) and the cheapest T12 ($100 off a $329.99 typical price), and the smallest on the base T12, the T12 for
-            seniors and the 18-level model, all about 15%. The reference prices themselves are worth little: the W50’s
+            $299.99) and the cheapest T12 ($100 off a $329.99 typical price), and the smallest, about 15%, on the 15% T12, the
+            320 lb T12, the T12 for seniors and the 18-level model. The reference prices themselves are worth little: the W50’s
             Amazon list price is $329.99, yet we have not seen it charged above $299.99 since September.
           </p>
           <p>
@@ -341,7 +341,7 @@ export default {
       heading: 'Does the MERACH App Cost Extra?',
       html: `          <p>
             Every MERACH treadmill and walking pad works with the MERACH app for iOS and Android, according to MERACH’s
-            product pages, and every one can be run without it, from a remote, a console or both. The W50’s Amazon listing
+            product pages, and each also has a remote, a console or both of its own. The W50’s Amazon listing
             calls it the “FREE MERACH APP”, and the T12 listings describe scenic routes, multiplayer games, coach-led
             classes and workout tracking.
           </p>
@@ -350,11 +350,11 @@ export default {
             Included”, but it does not say what, if anything, the app costs once the trial ends, and none of the product
             pages or listings we read gives a subscription price. We have left any membership cost out of the sums below.
             If the app matters to you, check the price in the app store before the trial ends. Amazon’s W60 listings also
-            say the app syncs with Apple Health and Google Fit, which you can use without a MERACH plan.
+            say the app syncs with Apple Health and Google Fit.
           </p>
           <p>
             Set against the brands that do charge, the difference is real. NordicTrack’s iFIT Pro costs $396 a year, as our
-            ${A('/how-much-does-a-treadmill-cost/', 'treadmill cost guide')} notes, more than a T12 costs outright.
+            ${A('/how-much-does-a-nordictrack-treadmill-cost/', 'NordicTrack price guide')} notes, more than a T12 costs outright.
           </p>`,
     },
     {
@@ -385,7 +385,7 @@ export default {
             incline, a 300 lb rating and a lifetime frame and motor warranty, per our
             ${A('/horizon-t101-treadmill/', 'Horizon T101 review')}, against MERACH’s two years once you register. It was
             sold out on Horizon’s store when we checked, and $779.67 on Amazon. If you will run several times a week, that
-            warranty gap is worth more than the $150 to $230 you save on a 55-inch MERACH. On warranty, UREVO gives one
+            warranty gap is worth more than the $145 to $230 you save on a 55-inch MERACH. On warranty, UREVO gives one
             year plus 180 days on registration for Amazon purchases, a little less than MERACH’s two.
           </p>`,
     },
@@ -417,7 +417,7 @@ export default {
           <p>
             The small running costs are the usual ones: a belt lubricant if your manual calls for it, and a mat. MERACH
             describes the W50’s belt as self-lubricating, so check the manual before adding anything. Against Horizon’s
-            T101 at $699, which also has no subscription, the five-year sum is simple: you pay about $150 to $460 less for
+            T101 at $699, which also has no subscription, the five-year sum is simple: you pay about $145 to $500 less for
             a MERACH and accept two years of cover instead of a lifetime frame and motor warranty.
           </p>`,
     },
