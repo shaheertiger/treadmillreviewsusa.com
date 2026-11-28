@@ -105,7 +105,7 @@ export default {
             for decades may comfortably walk faster than the 60s figure; someone the same age
             recovering from an illness may be well under the 80s figure. Neither is doing anything
             wrong. Use the table to get a feel for what is typical, not as a target you have to
-            hit. The same wide spread shows up on clinical exercise tests: among adults over 75 on the Bruce protocol, median time was 7 minutes 22 seconds for men aged 76 to 80 and 6 minutes for women, as our guide to <a href="/average-time-on-treadmill-stress-test-by-age/" class="text-[#0F62FE] font-medium">stress test times by age</a> explains.
+            hit. The same wide spread shows up on clinical exercise tests: among adults over 75 on the <a href="/treadmill-stress-test/" class="text-[#0F62FE] font-medium" data-autolink>Bruce protocol</a>, median time was 7 minutes 22 seconds for men aged 76 to 80 and 6 minutes for women, as our guide to <a href="/average-time-on-treadmill-stress-test-by-age/" class="text-[#0F62FE] font-medium">stress test times by age</a> explains.
           </p>
           <p>
             <strong>Why a treadmill pace is often slower.</strong> Many people, at any age, find
@@ -185,7 +185,9 @@ export default {
             treadmill — and step on once it is moving steadily. Some manuals prefer that you step
             onto a stationary belt and then start it; follow yours. Our step-by-step guide on
             <a href="/how-to-get-on-and-off-a-treadmill-safely/" class="text-[#0F62FE] font-medium">how to get on and off a treadmill safely</a>
-            goes through both methods.
+            goes through both methods. If you are shopping for a slow, rail-assisted machine, our guide to
+            <a href="/ksports-treadmills/" class="text-[#0F62FE] font-medium">Ksports treadmills</a> covers the
+            brand&rsquo;s rehab walking treadmill with long handrails.
           </p>
           <p>
             <strong>Sessions one to three: 1 to 1.5 mph for 5 to 10 minutes.</strong> Hold the

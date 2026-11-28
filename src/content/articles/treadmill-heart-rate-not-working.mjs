@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Treadmill Heart Rate', 'Not Working?'],
   standfirst:
@@ -464,6 +464,12 @@ export default {
       title: 'Treadmill Console Not Working',
       blurb: 'Blank displays, dead buttons and frozen touchscreens.',
       url: '/treadmill-console-not-working/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'Echelon Treadmill Troubleshooting',
+      blurb: 'Error codes, stopping, belt and app.',
+      url: '/echelon-treadmill-troubleshooting/',
     },
   ],
   bottomLine: [

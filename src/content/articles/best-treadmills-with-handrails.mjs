@@ -456,6 +456,12 @@ export default {
       blurb: 'When holding on helps, when it does not, and how to rely on it less.',
       url: '/should-you-hold-the-handrails-on-a-treadmill/',
     },
+    {
+      kicker: 'Brand',
+      title: 'Ksports Treadmill Reviews',
+      blurb: 'Rehab and folding models on Amazon.',
+      url: '/ksports-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">For most walkers the best treadmill with handrails is the Exerpeutic Senior Fitness Treadmill</strong>:

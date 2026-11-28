@@ -94,7 +94,8 @@ export default {
             Two other designed stops are often mistaken for heat. Many pads stop if they sense nobody on the belt for a while,
             and many apps and remotes run timed sessions that end on their own. Neither has anything to do with temperature.
             If the pad stops at a round number of minutes, or right after you step off to answer the door, check the session
-            and auto-stop settings before you look for a fault.
+            and auto-stop settings before you look for a fault. LifeSpan&rsquo;s Intelli-Guard, which stops the belt when it
+            does not count steps, is one example; our <a href="/lifespan-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">LifeSpan troubleshooting guide</a> explains it.
           </p>
           <p>
             Warmth on its own is not overheating. A motor turns some of its power into heat even when it is working perfectly,

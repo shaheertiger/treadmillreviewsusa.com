@@ -418,6 +418,12 @@ export default {
       blurb: 'Folding treadmills ranked by deck, motor and how easily they store.',
       url: '/best-folding-treadmills/',
     },
+    {
+      kicker: 'Features',
+      title: 'Best Treadmills With a Built-In Fan',
+      blurb: 'Picks whose listings name a console fan.',
+      url: '/best-treadmills-with-fan/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">For most people the best treadmill with Bluetooth speakers is the Horizon T101 Connect</strong>:

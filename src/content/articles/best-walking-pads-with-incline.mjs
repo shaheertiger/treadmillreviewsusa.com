@@ -862,6 +862,12 @@ export default {
       blurb: 'Walking pads and incline treadmills on Amazon.',
       url: '/cursor-fitness-treadmills/',
     },
+    {
+      kicker: 'Price',
+      title: 'How Much Does a MERACH Treadmill Cost?',
+      blurb: 'Every MERACH pad and treadmill, priced.',
+      url: '/how-much-does-a-merach-treadmill-cost/',
+    },
   ],
   bottomLine: [
     `For most people the <strong class="text-white">MERACH NovaWalk W50 TrekPad</strong> is the incline

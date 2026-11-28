@@ -87,7 +87,8 @@ export default {
             and
             <a href="/nordictrack-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">NordicTrack treadmill troubleshooting</a>
             guides, but note that Horizon’s rules differ on one important point: ProForm and NordicTrack
-            ask for a surge suppressor, while Horizon says not to use one.
+            ask for a surge suppressor, while Horizon says not to use one. Echelon Stride owners have
+            their own <a href="/echelon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Echelon troubleshooting guide</a>, with the error codes from Echelon&rsquo;s manuals.
           </p>`,
     },
     {

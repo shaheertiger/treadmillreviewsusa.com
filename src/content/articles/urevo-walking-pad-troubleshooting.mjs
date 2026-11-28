@@ -11,8 +11,9 @@ export default {
   breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
   kicker: 'Troubleshooting',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.0k',
   h1: ['UREVO Walking Pad', 'Troubleshooting'],
   standfirst:
@@ -58,7 +59,8 @@ export default {
           </ul>
           <p>
             Our <a href="/proform-treadmill-troubleshooting/" class="${a}">ProForm treadmill troubleshooting</a> guide uses the
-            same order of checks for a full-size treadmill.
+            same order of checks for a full-size treadmill, and our <a href="/lifespan-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">LifeSpan treadmill troubleshooting</a> guide
+            covers office desk treadmills.
           </p>`,
     },
     {

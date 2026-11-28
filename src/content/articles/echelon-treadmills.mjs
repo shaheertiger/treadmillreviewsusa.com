@@ -556,6 +556,12 @@ export default {
       blurb: 'Stride prices plus the Premier membership.',
       url: '/how-much-does-an-echelon-treadmill-cost/',
     },
+    {
+      kicker: 'Fixes',
+      title: 'Echelon Treadmill Troubleshooting',
+      blurb: 'Error codes, stopping, belt and app.',
+      url: '/echelon-treadmill-troubleshooting/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">An Echelon treadmill is the right buy for a small space and a

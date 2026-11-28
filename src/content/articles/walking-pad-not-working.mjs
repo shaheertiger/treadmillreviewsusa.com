@@ -156,7 +156,8 @@ export default {
       heading: 'Walking Pad Stops by Itself',
       html: `          <ul>
             <li><strong>An auto-stop or session timer.</strong> Many pads stop after a set time or distance, or if they sense
-            no one on the belt. Check the manual for the default and whether it can be changed.</li>
+            no one on the belt. Check the manual for the default and whether it can be changed. On a LifeSpan desk
+            treadmill this is Intelli-Guard, as our <a href="/lifespan-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">LifeSpan treadmill troubleshooting</a> guide explains.</li>
             <li><strong>Heat.</strong> Walking pads are built for walking pace and long desk sessions, but a small motor
             working against a dry belt or a heavy user can overheat and cut out. Let it cool, lubricate, and check you are
             under the weight limit. Our

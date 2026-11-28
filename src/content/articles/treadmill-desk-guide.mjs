@@ -284,7 +284,8 @@ export default {
             clear of the treadmill’s footprint, and the desk must be wide enough for the machine to
             sit centred beneath you.</li>
             <li><strong>Cable management.</strong> Power cables, chargers and the treadmill’s own
-            cord must be routed away from the belt and from your feet.</li>
+            cord must be routed away from the belt and from your feet. On a LifeSpan treadmill desk the
+            console cable matters too: our <a href="/lifespan-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">LifeSpan desk treadmill fixes</a> guide says to reseat it when a UART error appears.</li>
           </ul>
           <p>
             A sit-stand desk has a further advantage: you can lower it and sit when you are not

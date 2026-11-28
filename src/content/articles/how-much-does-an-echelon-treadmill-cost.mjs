@@ -11,8 +11,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Price Guide',
   updated: 'November 2026',
-  updatedLong: 'November 26, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-26',
+  modified: '2026-11-28',
   socialProof: '1.0k',
   h1: ['How Much Does an', 'Echelon Treadmill Cost?'],
   standfirst:
@@ -561,6 +562,12 @@ export default {
       title: 'Treadmill Black Friday Deals',
       blurb: 'This week’s treadmill prices across every brand.',
       url: '/treadmill-black-friday-deals/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'Echelon Treadmill Troubleshooting',
+      blurb: 'Error codes, stopping, belt and app.',
+      url: '/echelon-treadmill-troubleshooting/',
     },
   ],
   bottomLine: [

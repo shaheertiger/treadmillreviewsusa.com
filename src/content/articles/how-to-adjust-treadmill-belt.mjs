@@ -41,7 +41,7 @@ export default {
             clockwise with the hex key supplied with the machine — exactly the same amount each
             side. Plug in, run it at about 3 mph, and plant your weight on the belt. If it still
             hesitates, repeat another quarter turn each side. Stop as soon as the slipping stops,
-            then check you can still lift the belt two to three inches off the deck at the centre. Weslo’s manuals use the same quarter-turn steps for tension and a half turn for centring, as our <a href="/weslo-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Weslo treadmill troubleshooting</a> page quotes.
+            then check you can still lift the belt two to three inches off the deck at the centre. Weslo’s manuals use the same quarter-turn steps for tension and a half turn for centring, as our <a href="/weslo-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Weslo treadmill troubleshooting</a> page quotes. For an Echelon Stride, our <a href="/echelon-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">Echelon treadmill troubleshooting</a> guide gives the same quarter turns on the rear bolts at 3 to 4 mph.
           </p>
           <p>
             To straighten a belt that runs to one side, run it empty at about 3 mph, turn the rear

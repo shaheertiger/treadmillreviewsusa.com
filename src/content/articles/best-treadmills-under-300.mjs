@@ -109,7 +109,7 @@ export default {
             but it was selling for about $330 when we checked, with sub-$300 prices only through
             time-limited codes; it is covered in our
             <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>
-            guide. The cheapest folding treadmills with side rails and a jogging speed that we could verify — the Sunny
+            guide, and our <a href="/how-much-does-a-merach-treadmill-cost/" class="text-[#0F62FE] font-medium">MERACH price guide</a> tracks it against MERACH's other pads. The cheapest folding treadmills with side rails and a jogging speed that we could verify — the Sunny
             Health &amp; Fitness SF-T7603 at $449.99 on Sunny's own store, for instance — were all
             above this budget. A pad sold only on its brand's website, with no independent
             verification of its ratings, did not qualify. And Sperax pads, which still turn up at
@@ -133,7 +133,8 @@ export default {
             Yesoul below. That is not a failure of shopping; it is
             where the money goes. A pad puts nearly all of it into the belt and motor, which is why
             a $250 pad is often a better walking machine than a $300 "folding treadmill" that has
-            spent the same money on an upright and a frame.
+            spent the same money on an upright and a frame. If you need long handrails rather than a pad, our guide to
+            <a href="/ksports-treadmills/" class="text-[#0F62FE] font-medium">Ksports treadmills</a> covers a budget rehab walking treadmill.
           </p>
           <p>
             <strong>You are not buying a running deck.</strong> The belts here run from about 35 to

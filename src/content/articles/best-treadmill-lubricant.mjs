@@ -51,7 +51,7 @@ export default {
             If you cannot find the manual, search the model number plus "lubrication" on the
             manufacturer's site, or call their support line and ask directly. Do not guess, and do
             not assume from the price or the brand — the same manufacturer often uses different
-            deck types across its range. Some consoles also prompt you: XTERRA machines show a LUBE reminder that needs clearing once the deck is done, as our <a href="/xterra-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">XTERRA treadmill troubleshooting</a> guide explains.
+            deck types across its range. Some consoles also prompt you: <a href="/xterra-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>XTERRA</a> machines show a LUBE reminder that needs clearing once the deck is done, as our <a href="/xterra-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">XTERRA treadmill troubleshooting</a> guide explains.
           </p>`,
     },
     {

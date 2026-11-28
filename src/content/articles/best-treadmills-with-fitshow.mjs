@@ -610,6 +610,12 @@ export default {
       blurb: 'Long handrails, slow starts and low step-up heights for safer walking.',
       url: '/best-treadmills-for-seniors/',
     },
+    {
+      kicker: 'Brand',
+      title: 'Ksports Treadmill Reviews',
+      blurb: 'Rehab and folding models on Amazon.',
+      url: '/ksports-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">The JAGJOG Foldable Treadmill with 15% Auto Incline is the best FitShow

@@ -597,7 +597,7 @@ export default {
             manuals or Amazon listings for most models; the FoldiMix 5L is the only one where UREVO itself
             explains the lower figure. If you weigh over about 250 lb, plan on the lowest published figure
             and compare with pads whose high ratings agree across sources, such as the MERACH NovaWalk W50
-            TrekPad on our best walking pads list.
+            TrekPad on our best walking pads list; our guide to <a href="/how-much-does-a-merach-treadmill-cost/" class="text-[#0F62FE] font-medium">how much MERACH treadmills cost</a> gives its price.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Running</h3>
           <p>

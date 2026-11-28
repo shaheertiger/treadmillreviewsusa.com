@@ -10,8 +10,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-27',
+  modified: '2026-11-28',
   h1: ['CURSOR FITNESS Treadmills:', 'Walking Pads, Specs and Warranty'],
   standfirst:
     'CURSOR FITNESS is an Amazon-first budget brand: fourteen walking pads and folding treadmills listed under its name, almost all sold by one storefront, RUNHOME, with a one-year warranty. On Black Friday, 27 November 2026, its pads cost $94.99 to $199.99 and its auto-incline treadmills $254.99 to $289.99. They are reasonable incline walkers with handles, but several listings contradict themselves, so this guide sets out which figures hold and what to check before you order.',
@@ -632,6 +633,12 @@ export default {
       title: 'Walking Pad Buying Guide',
       blurb: 'Belt length, motor, incline and storage: what matters at each price.',
       url: '/walking-pad-buying-guide/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'Ksports Treadmill Reviews',
+      blurb: 'Rehab and folding models on Amazon.',
+      url: '/ksports-treadmills/',
     },
   ],
   bottomLine: [

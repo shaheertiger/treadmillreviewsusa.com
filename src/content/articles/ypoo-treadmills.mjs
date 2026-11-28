@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-11-26',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   h1: ['YPOO Treadmills:', 'Is YPOO a Good Brand?'],
   standfirst:
     'YPOO is a real Chinese fitness brand with a US store, a US phone line and a spare-parts shop, and its treadmills are cheap incline walking pads with side handlebars rather than running machines. On Amazon on 26 November 2026 its pads ran from $116.84 to $203.99 and its one folding treadmill was $199.99, rated 300 to 350 lb, with a one-year warranty in every listing. Several listings contradict themselves, so this guide sets out which figures hold, which do not, and what to check before you order.',
@@ -630,6 +630,12 @@ export default {
       title: 'CURSOR FITNESS Treadmill Reviews',
       blurb: 'Walking pads and incline treadmills on Amazon.',
       url: '/cursor-fitness-treadmills/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'Ksports Treadmill Reviews',
+      blurb: 'Rehab and folding models on Amazon.',
+      url: '/ksports-treadmills/',
     },
   ],
   bottomLine: [

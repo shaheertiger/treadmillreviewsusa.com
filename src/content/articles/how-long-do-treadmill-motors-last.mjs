@@ -129,7 +129,7 @@ export default {
           <p>
             <strong>Intermittent cutting out</strong>, especially after ten or twenty minutes. This
             is often thermal protection doing its job — the motor is overheating and shutting down
-            to protect itself. Treat it as a warning rather than a nuisance. On a walking pad, our <a href="/walking-pad-overheating/" class="text-[#0F62FE] font-medium">walking pad overheating</a> guide explains how to tell a maker-set run-time limit from a heat cut-out.
+            to protect itself. Treat it as a warning rather than a nuisance. On a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>, our <a href="/walking-pad-overheating/" class="text-[#0F62FE] font-medium">walking pad overheating</a> guide explains how to tell a maker-set run-time limit from a heat cut-out.
           </p>
           <p>
             <strong>Speed fluctuating on its own</strong> at a constant setting.
@@ -247,7 +247,7 @@ export default {
           </p>
           <p>
             <strong>Vacuum the motor compartment annually</strong>, six-monthly on carpet. Dust
-            insulates the housing and blocks the cooling fan, so the same load runs hotter. Our
+            insulates the housing and blocks the <a href="/best-treadmills-with-fan/" class="text-[#0F62FE] font-medium" data-autolink>cooling fan</a>, so the same load runs hotter. Our
             <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">guide to doing it safely</a>
             covers the method and the things not to touch.
           </p>

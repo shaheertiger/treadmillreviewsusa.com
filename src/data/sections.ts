@@ -535,6 +535,13 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-with-fitshow/',
           },
           {
+            title: 'Best Treadmills With a Built-In Fan',
+            description:
+              'Seven treadmills whose listing or maker names a console fan, from about $387 to the Sole F65.',
+            badge: 'Fan',
+            url: '/best-treadmills-with-fan/',
+          },
+          {
             title: 'Best Treadmills for the Peloton App',
             description:
               'Six treadmills for Peloton classes without a Tread, from a $627 12 mph machine to the 15% incline Sole F65.',
@@ -871,6 +878,20 @@ export const SECTIONS: Section[] = [
               'L7 and L8 by console and belt, the Black Friday cart price, $399 delivery and Landice warranty terms.',
             badge: 'Landice',
             url: '/how-much-does-a-landice-treadmill-cost/',
+          },
+          {
+            title: 'How Much Does a MERACH Treadmill Cost?',
+            description:
+              'Walking pads $199.99 to $282.12 and folding treadmills to $552.49, store vs Amazon, warranty.',
+            badge: 'MERACH',
+            url: '/how-much-does-a-merach-treadmill-cost/',
+          },
+          {
+            title: 'How Much Does an XTERRA Treadmill Cost?',
+            description:
+              'Every XTERRA from the $399.99 WS200 to the $2,199.99 TR95H, sale vs regular, warranty.',
+            badge: 'XTERRA',
+            url: '/how-much-does-an-xterra-treadmill-cost/',
           },
           {
             title: 'How Much Does a Precor Treadmill Cost?',
@@ -1655,6 +1676,13 @@ export const SECTIONS: Section[] = [
               'Walking pads and high-incline treadmills on Amazon, sellers, warranty and listing conflicts.',
             badge: 'Walking pad brand',
             url: '/cursor-fitness-treadmills/',
+          },
+          {
+            title: 'Ksports Treadmill Reviews',
+            description:
+              'Rehab and folding treadmills and walking pads on Amazon, sold by Spreetail, 1-year warranty.',
+            badge: 'Budget brand',
+            url: '/ksports-treadmills/',
           },
           {
             title: 'Centr Treadmills',
@@ -3013,6 +3041,20 @@ export const SECTIONS: Section[] = [
               "810 error codes E0-E8, breaker, safety key, belt tension and lube, from Schwinn's own manuals.",
             badge: 'Schwinn',
             url: '/schwinn-treadmill-troubleshooting/',
+          },
+          {
+            title: 'Echelon Treadmill Troubleshooting',
+            description:
+              'E00-E09 codes, keeps-stopping checklist, belt and app pairing, from Echelon manuals and support.',
+            badge: 'Echelon',
+            url: '/echelon-treadmill-troubleshooting/',
+          },
+          {
+            title: 'LifeSpan Treadmill Troubleshooting',
+            description:
+              'Intelli-Guard stops, Omni Hub UART errors, DC codes, belt and lube, from LifeSpan manuals.',
+            badge: 'LifeSpan',
+            url: '/lifespan-treadmill-troubleshooting/',
           },
           {
             title: 'NordicTrack Treadmill Troubleshooting',

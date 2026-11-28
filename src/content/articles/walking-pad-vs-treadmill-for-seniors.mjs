@@ -270,7 +270,8 @@ export default {
             Price does not favour the pad as much as people expect. On 23 November 2026, Amazon showed the
             Exerpeutic Senior Fitness Treadmill at $339.15, the Sunny Treadpad 7% Auto Incline at $504.11
             and the Sunny Low Deck Treadmill with Extended Safety Handrails at $645.96. Flat walking pads
-            with no rail start far lower, but they are the ones least suited to an older walker.
+            with no rail start far lower, but they are the ones least suited to an older walker. Our guide to
+            <a href="/ksports-treadmills/" class="text-[#0F62FE] font-medium">Ksports treadmills</a> covers a lower-cost rehab walking treadmill with long handrails.
           </p>
           <ul>
             <li><strong>Walking pads with a handlebar:</strong> roughly $200 to $1,000 depending on brand,

@@ -266,7 +266,7 @@ export default {
             are the short return window and the shifting warranty wording. If belt length matters more than incline, the
             WalkingPad Z1 gives a longer deck for about $90 more. Our ${A('/cybergoing-walking-pad/', 'Cybergoing')},
             ${A('/merach-treadmills/', 'MERACH')} and ${A('/how-much-does-a-sunny-treadmill-cost/', 'Sunny price')} pages
-            have the details.
+            have the details, and our guide to <a href="/how-much-does-a-merach-treadmill-cost/" class="text-[#0F62FE] font-medium">MERACH treadmill prices</a> lists MERACH's pads model by model.
           </p>`,
     },
   ],

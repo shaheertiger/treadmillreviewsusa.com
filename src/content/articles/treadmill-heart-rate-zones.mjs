@@ -50,7 +50,7 @@ export default {
       html: `          <p>
             The familiar formula — maximum heart rate equals 220 minus your age — is a population
             average derived from fitting a line through a wide scatter of individuals. It was never
-            intended as an individual prescription. Age shows up on a clinical treadmill test too: in one large study of adults over 75 on the Bruce protocol, median time was 7 minutes 22 seconds for men aged 76 to 80, as our page on <a href="/average-time-on-treadmill-stress-test-by-age/" class="text-[#0F62FE] font-medium">stress test times by age</a> sets out.
+            intended as an individual prescription. Age shows up on a clinical treadmill test too: in one large study of adults over 75 on the <a href="/treadmill-stress-test/" class="text-[#0F62FE] font-medium" data-autolink>Bruce protocol</a>, median time was 7 minutes 22 seconds for men aged 76 to 80, as our page on <a href="/average-time-on-treadmill-stress-test-by-age/" class="text-[#0F62FE] font-medium">stress test times by age</a> sets out.
           </p>
           <p>
             The scatter is substantial. Individual maximum heart rates commonly sit ten to twelve

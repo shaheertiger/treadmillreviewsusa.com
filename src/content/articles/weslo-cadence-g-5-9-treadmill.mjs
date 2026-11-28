@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'Weslo Cadence G 5.9',
   kicker: 'Model Review',
   updated: 'November 2026',
-  updatedLong: 'November 23, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-15',
-  modified: '2026-11-23',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Weslo Cadence G 5.9', 'Treadmill Review'],
   standfirst:

@@ -549,6 +549,12 @@ export default {
       blurb: 'Dust and garage covers, measuring folded versus unfolded, and why breathable matters.',
       url: '/best-treadmill-covers/',
     },
+    {
+      kicker: 'Features',
+      title: 'Best Treadmills With a Built-In Fan',
+      blurb: 'Picks whose listings name a console fan.',
+      url: '/best-treadmills-with-fan/',
+    },
   ],
   bottomLine: [
     `For a treadmill in an indoor room, buy the

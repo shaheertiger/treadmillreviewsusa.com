@@ -158,6 +158,7 @@ export default {
             Two pricing details are specific to Academy. Some listings show a manufacturer's suggested
             price struck through next to Academy's price — several XTERRA models were $200 to $700 below
             the MSRP shown — and one Sunny machine was marked as a Hot Deal at $399.99, down from $499.99.
+            Our guide to <a href="/how-much-does-an-xterra-treadmill-cost/" class="text-[#0F62FE] font-medium">XTERRA treadmill prices</a> lists what XTERRA's own store charges for each model.
             And two Bowflex models showed a price ($2,299.00 for the Bowflex 10 and $2,999.00 for the 22)
             marked "Our Price In Cart", with a note that the manufacturer had asked Academy not to share
             the price until the item is in your cart. That is a normal minimum-advertised-price

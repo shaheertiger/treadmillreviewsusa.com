@@ -276,8 +276,9 @@ export default {
             its display sleeps after 30 minutes with no key presses. The Schwinn 810 manual says the console shuts off if
             it gets no input for about 5 minutes.</li>
             <li><strong>Walk detection.</strong> LifeSpan&rsquo;s settings page describes Intelli-Guard on its <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium" data-autolink>treadmill
-            desks</a>, which stops the walking belt if you do not walk on it for 20 seconds, and can be switched on or
-            off.</li>
+            desks</a>, which stops the walking belt if you do not walk on it for 20 seconds on the older desks that post
+            covers, and can be switched on or off; LifeSpan&rsquo;s current manuals for the TX6 and Pro bases give more
+            than 60 seconds. See our <a href="/lifespan-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">LifeSpan troubleshooting</a> guide.</li>
           </ul>
           <p>
             If your treadmill stops, beeps or goes dark during a long phone call or when you step off to grab water, a
@@ -480,6 +481,12 @@ export default {
       title: 'Treadmill Troubleshooting',
       blurb: 'Every common fault, in the order worth checking.',
       url: '/treadmill-troubleshooting/',
+    },
+    {
+      kicker: 'Fixes',
+      title: 'LifeSpan Treadmill Troubleshooting',
+      blurb: 'Desk treadmill stops and error codes.',
+      url: '/lifespan-treadmill-troubleshooting/',
     },
   ],
   bottomLine: [

@@ -647,6 +647,12 @@ export default {
       blurb: 'Another Johnson Health Tech brand, with similar belt and power checks.',
       url: '/horizon-treadmill-troubleshooting/',
     },
+    {
+      kicker: 'Fixes',
+      title: 'Echelon Treadmill Troubleshooting',
+      blurb: 'Error codes, stopping, belt and app.',
+      url: '/echelon-treadmill-troubleshooting/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Seat the safety key, reset the breaker by the power switch and give the

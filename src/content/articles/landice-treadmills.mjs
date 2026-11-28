@@ -7,9 +7,9 @@ export default {
   breadcrumb: { name: 'Brands', url: '/brands/' },
   kicker: 'Brand Guide',
   updated: 'November 2026',
-  updatedLong: 'November 27, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-14',
-  modified: '2026-11-27',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Landice Treadmills:', 'Models, Warranty and Where to Buy'],
   standfirst:

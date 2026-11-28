@@ -53,7 +53,8 @@ export default {
             handlebar, a 0.5 mph starting speed, a 45.7-inch walking surface and a 265 lb rating, for
             about $487. If you would rather steady yourself with a hand at each side, the WalkingPad MX8
             has a removable handle on both sides and the highest rating here, 330 lb. On a tight budget,
-            the <a href="/goplus-2-in-1-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Goplus SuperFit</a> 2-in-1 has a rail for $100 to $200.
+            the <a href="/goplus-2-in-1-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Goplus SuperFit</a> 2-in-1 has a rail for $100 to $200. If a pad feels too small, our guide to
+            <a href="/ksports-treadmills/" class="text-[#0F62FE] font-medium">Ksports treadmills</a> covers a budget rehab walking treadmill with handrail grips along the top, middle and sides.
           </p>
           ${table(
             ['Pick', 'Best for', 'Handrail', 'Speed range', 'Capacity'],

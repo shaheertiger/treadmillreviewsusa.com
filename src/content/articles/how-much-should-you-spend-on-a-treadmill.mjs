@@ -6,9 +6,9 @@ export default {
   crumbLabel: 'How Much Should You Spend?',
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 22, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-09-08',
-  modified: '2026-11-22',
+  modified: '2026-11-28',
   socialProof: '4.9k',
   h1: ['How Much Should You', 'Spend on a Treadmill?'],
   standfirst:
@@ -234,7 +234,8 @@ export default {
             and the right comparison is against a gym membership. But it belongs in the budget from
             the start rather than appearing in month two. Our
             <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">subscription guide</a>
-            covers what each console does unpaid.
+            covers what each console does unpaid, and our guide to <a href="/how-much-does-an-xterra-treadmill-cost/" class="text-[#0F62FE] font-medium">what XTERRA treadmills cost</a> covers
+            one brand with no membership at all.
           </p>`,
     },
     {

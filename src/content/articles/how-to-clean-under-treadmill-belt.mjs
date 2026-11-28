@@ -34,7 +34,7 @@ export default {
           </p>
           <p>
             The material that accumulates is worse than ordinary dust. Carpet fibre is the main
-            offender in most homes and it is drawn in continuously by the motor's cooling fan. Belt
+            offender in most homes and it is drawn in continuously by the motor's <a href="/best-treadmills-with-fan/" class="text-[#0F62FE] font-medium" data-autolink>cooling fan</a>. Belt
             backing sheds fine particles as it wears. Add hair, skin and general household dust and
             the result is a fibrous mat that holds grit against the deck and resists being pushed
             aside by the belt. That grit is one reason a belt can grind only when someone walks on it, as our <a href="/treadmill-grinding-noise/" class="text-[#0F62FE] font-medium">treadmill grinding noise</a> guide explains.

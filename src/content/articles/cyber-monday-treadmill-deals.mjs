@@ -284,7 +284,8 @@ export default {
             Cyber Monday rarely ends on Monday. Retailers increasingly run "Cyber Week" promotions
             through the following days, and some brands' own stores keep a sale running into early
             December. On Amazon, some deals carry on after Monday while others end at the stated
-            time. Three things are worth knowing.
+            time. XTERRA&rsquo;s own store, for example, ran a combined Black Friday and Cyber Monday promotion,
+            as our guide to <a href="/how-much-does-an-xterra-treadmill-cost/" class="text-[#0F62FE] font-medium">XTERRA treadmill prices</a> records. Three things are worth knowing.
           </p>
           <p>
             <strong>An extended deal is not automatically a worse deal.</strong> If the price is

@@ -506,6 +506,12 @@ export default {
       blurb: 'Folding treadmills with incline, $340 to $380.',
       url: '/best-treadmills-under-400/',
     },
+    {
+      kicker: 'Price',
+      title: 'How Much Does an XTERRA Treadmill Cost?',
+      blurb: 'Every XTERRA model, sale vs regular.',
+      url: '/how-much-does-an-xterra-treadmill-cost/',
+    },
   ],
   bottomLine: [
     `Under $500 you are buying a walking machine, and a

@@ -1,8 +1,8 @@
 export default {
   slug: 'can-you-run-on-a-walking-pad',
-  title: 'Can You Run on a Walking Pad? Speeds, Limits and What Breaks',
+  title: 'Can You Run on a Walking Pad? Mostly No: Speeds and Limits',
   description:
-    'Mostly no. Flat walking pads top out around 3.5 to 4 mph; some 2-in-1 models reach about 6 mph for a light jog. Why pads are not built to run on, and what to buy instead.',
+    'Mostly no: flat walking pads top out around 3.5 to 4 mph, and some 2-in-1 models reach about 6 mph for a light jog. What breaks if you run, and what to buy.',
   crumbLabel: 'Can You Run on a Walking Pad?',
   breadcrumb: { name: 'Buying Guides', url: '/guides/' },
   kicker: 'Question Answered',

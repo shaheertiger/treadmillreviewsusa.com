@@ -248,7 +248,7 @@ export default {
             Larger home treadmills, and especially commercial-style machines, often ask for a
             dedicated 20-amp circuit, and some ship with a 20-amp plug. Look at the plug: if one of
             its two flat blades is turned sideways, it is a 20-amp plug and it needs a 20-amp
-            outlet, which has a T-shaped slot to accept it. That applies to every machine in our <a href="/best-treadmills-with-ac-motor/" class="text-[#0F62FE] font-medium">AC motor treadmill roundup</a>, from the Spirit CT850 to the 4 HP Precor TRM 835.
+            outlet, which has a T-shaped slot to accept it. That applies to every machine in our <a href="/best-treadmills-with-ac-motor/" class="text-[#0F62FE] font-medium">AC motor treadmill roundup</a>, from the Spirit CT850 to the 4 HP <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Precor TRM</a> 835.
           </p>
           <p>
             Most plug-in surge protectors, including the Tripp Lite ULTRABLOK and SPIKECUBE,

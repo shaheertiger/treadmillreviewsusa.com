@@ -256,7 +256,8 @@ export default {
             for this stage. Machines with long side rails running back along the deck make it much
             easier to keep a hand on something without twisting or reaching forward. Our roundup of
             <a href="/best-treadmills-with-handrails/" class="${a}">treadmills with full-length handrails</a>
-            lists models built that way.
+            lists models built that way, and our guide to <a href="/ksports-treadmills/" class="text-[#0F62FE] font-medium">Ksports treadmills</a> covers a budget rehab
+            walking treadmill with multi-grip rails along the top, middle and sides.
           </p>`,
     },
     {
