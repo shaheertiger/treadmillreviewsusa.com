@@ -1,15 +1,15 @@
 export default {
   slug: 'nordictrack-vs-proform',
-  title: 'NordicTrack vs ProForm (2026): Same Parent Company, Which to Buy?',
+  title: 'NordicTrack vs ProForm (2026): Same Owner, Which One to Buy?',
   description:
-    'NordicTrack and ProForm share an owner and the iFIT platform. Here is where the brands really differ, where they overlap, and how to compare two specific models.',
+    'Both are owned by iFIT Health & Fitness and run the same iFIT app. NordicTrack is the heavier, pricier line; compare CHP, deck and warranty, not the badge.',
   crumbLabel: 'NordicTrack vs ProForm',
   kicker: 'Comparison',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-06',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['NordicTrack vs', 'ProForm'],
   standfirst:
