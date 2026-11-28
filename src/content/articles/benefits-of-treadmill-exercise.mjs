@@ -73,7 +73,7 @@ export default {
           </p>
           <p>
             Regular aerobic activity is also consistently associated in large studies with a lower
-            risk of heart disease, stroke, type 2 diabetes and high blood pressure, and with better
+            risk of heart disease, stroke, <a href="/treadmill-walking-for-diabetes/" class="text-[#0F62FE] font-medium" data-autolink>type 2 diabetes</a> and high blood pressure, and with better
             long-term health generally. Those associations are among the most robust findings in
             public health, which is why activity guidelines exist at all. A treadmill is not
             special here; it is simply one of the most reliable ways to do the activity.

@@ -552,7 +552,7 @@ export default {
       kicker: 'Heavy users',
       title: 'Best Heavy-Duty Treadmills',
       blurb: 'High weight limits and sturdy frames without a commercial price.',
-      url: '/best-heavy-duty-treadmills/',
+      url: '/best-treadmills-for-heavy-people/',
     },
     {
       kicker: 'Motors',

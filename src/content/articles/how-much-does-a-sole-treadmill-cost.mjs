@@ -195,7 +195,7 @@ export default {
             have a 20 by 60-inch deck, 12 mph and a 325 lb rating. The Horizon is cheaper and adds Apple Watch support; the
             Sole states a 3.0 HP motor and no subscription either way.</li>
             <li><strong>Around $1,500:</strong> the Horizon 7.4 AT at about $1,500 against the Sole F80 at $1,499.99. The
-            Horizon has the wider 22-inch deck and an included chest strap; the Sole has a 10.1-inch touchscreen.</li>
+            Horizon has the wider <a href="/best-wide-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>22-inch deck</a> and an included chest strap; the Sole has a 10.1-inch touchscreen.</li>
             <li><strong>Around $2,000:</strong> the NordicTrack Commercial 1750 at $1,999 against the Sole F85 at $1,999.99.
             Both are 22 by 60 inches. The NordicTrack adds decline and iFIT classes at $39 a month; the Sole has no
             subscription.</li>

@@ -131,7 +131,7 @@ export default {
           </p>
           <p>
             Prices on this page come from the dated checks in our other guides, and they are a
-            snapshot. Walking pad prices on Amazon move with coupons, lightning deals and on-page promo
+            snapshot. <a href="/how-much-does-a-walking-pad-cost/" class="text-[#0F62FE] font-medium" data-autolink>Walking pad prices</a> on Amazon move with coupons, lightning deals and on-page promo
             codes, so a price here is a guide to the usual level rather than a promise. Our
             <a href="/black-friday-walking-pad-deals/" class="text-[#0F62FE] font-medium">walking pad deals guide</a>
             tracks the sale prices worth waiting for.
@@ -177,8 +177,8 @@ export default {
           <p>
             Search the US Consumer Product Safety Commission’s recalls and warnings for the brand before
             you buy, because a marketplace listing will not tell you. The case that matters most for
-            Amazon shoppers is Sperax: on 16 April 2026 the CPSC warned consumers to stop using Sperax
-            walking pads and treadmills immediately, citing reports of sudden speed changes, falls,
+            Amazon shoppers is Sperax: on 16 April 2026 the CPSC warned consumers to stop using <a href="/sperax-walking-pad-recall/" class="text-[#0F62FE] font-medium" data-autolink>Sperax
+            walking pads</a> and treadmills immediately, citing reports of sudden speed changes, falls,
             overheating and fires, and said the importer had refused to agree to a recall. No Sperax
             pad is on this page. When we searched the CPSC database for KingSmith and WalkingPad on
             20 October 2026, we found no recalls or warnings for either name.
@@ -290,7 +290,7 @@ export default {
             bar, or for a longer deck, our roundups of
             <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with a handrail</a>
             and
-            <a href="/best-2-in-1-folding-treadmills/" class="text-[#0F62FE] font-medium">2-in-1 folding treadmills</a>
+            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">2-in-1 folding treadmills</a>
             compare the options.
           </p>`,
     },

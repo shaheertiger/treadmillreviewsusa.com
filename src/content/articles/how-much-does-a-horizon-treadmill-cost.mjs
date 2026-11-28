@@ -57,7 +57,7 @@ export default {
             all year.</li>
           </ul>
           <p>
-            For the brand as a whole, see our ${A('/horizon-fitness/', 'Horizon Fitness guide')}; for prices
+            For the brand as a whole, see our ${A('/best-horizon-treadmills/', 'Horizon Fitness guide')}; for prices
             across every brand, ${A('/how-much-does-a-treadmill-cost/', 'how much a treadmill costs')}.
           </p>`,
     },
@@ -378,7 +378,7 @@ export default {
       kicker: 'Brand',
       title: 'Horizon Fitness Treadmills',
       blurb: 'The range, the warranty and who Horizon suits.',
-      url: '/horizon-fitness/',
+      url: '/best-horizon-treadmills/',
     },
     {
       kicker: 'Review',

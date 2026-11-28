@@ -255,7 +255,7 @@ export default {
             looks similar. New brushes need to bed in against the commutator, so run the machine
             at a slow speed with nobody on it for a while afterwards before loading it. If the
             commutator is scored or burnt, new brushes will wear quickly and the heat will return;
-            that is the point at which a motor overhaul or a motor replacement becomes the
+            that is the point at which a motor overhaul or a <a href="/treadmill-motor-replacement-cost/" class="text-[#0F62FE] font-medium" data-autolink>motor replacement</a> becomes the
             question, and the age and value of the machine decide it.
           </p>`,
     },

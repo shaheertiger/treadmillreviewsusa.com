@@ -244,7 +244,7 @@ export default {
       id: 'noise',
       heading: 'Noise on Calls and in Shared Spaces',
       html: `          <p>
-            Two kinds of noise matter. Motor hum and belt noise reach your microphone; footfall
+            Two kinds of noise matter. <a href="/treadmill-humming-noise/" class="text-[#0F62FE] font-medium" data-autolink>Motor hum</a> and belt noise reach your microphone; footfall
             reaches the floor and anyone below.
           </p>
           <p>

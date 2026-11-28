@@ -239,7 +239,7 @@ export default {
           </p>
           <p>
             <strong>Noise.</strong> This one is less clear-cut than people expect. A flat manual
-            treadmill has no motor hum, but it is not silent: the flywheel, the rollers and the
+            treadmill has no <a href="/treadmill-humming-noise/" class="text-[#0F62FE] font-medium" data-autolink>motor hum</a>, but it is not silent: the flywheel, the rollers and the
             belt slapping as it surges all make noise, and cheap frames rattle. A curved trainer
             has no motor either, but running on it at speed is a heavy, rhythmic sound, and the
             footfall is what neighbours below you hear on any machine. A good motorized treadmill

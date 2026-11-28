@@ -126,7 +126,7 @@ export default {
       id: 'price-history',
       heading: 'How to Check a Walking Pad’s Price History',
       html: `          <p>
-            Because walking pad prices move so often, price history matters more here than for any
+            Because <a href="/how-much-does-a-walking-pad-cost/" class="text-[#0F62FE] font-medium" data-autolink>walking pad prices</a> move so often, price history matters more here than for any
             other kind of treadmill. You need a baseline, and the time to record it is now, before
             the Black Friday week begins.
           </p>

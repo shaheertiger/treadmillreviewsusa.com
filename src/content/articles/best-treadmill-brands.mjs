@@ -344,7 +344,7 @@ export default {
           </p>
           <p>
             Our <a href="/brands/" class="text-[#0F62FE] font-medium">brands hub</a> lists every brand
-            guide we publish, our <a href="/best-treadmills/" class="text-[#0F62FE] font-medium">best treadmills</a>
+            guide we publish, our <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">best treadmills</a>
             roundup compares machines across brands, and
             <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>
             explains why build and support matter more over a decade than any single feature.

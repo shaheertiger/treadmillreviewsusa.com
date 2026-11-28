@@ -309,7 +309,7 @@ export default {
       heading: 'Checked Alternatives at a Similar Price',
       products: true,
       html: `          <p>
-            If what drew you to a Zofdim listing was a low price, these four walking pads cost between
+            If what drew you to a Zofdim listing was a low price, these four <a href="/how-much-does-a-walking-pad-cost/" class="text-[#0F62FE] font-medium" data-autolink>walking pads cost</a> between
             about $135 and $300 in early November 2026, come from brands with US stores and published warranties,
             and have main figures we could check against at least one independent source. Where those
             sources disagree, the figure is left off the card and the description says so. None is

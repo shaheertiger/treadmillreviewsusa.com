@@ -134,7 +134,7 @@ export default {
             <strong>Does ANCHEER still sell treadmills in the US?</strong> Probably, but we could not confirm it
             on the day. Independent trackers recorded several ANCHEER walking pads on Amazon through 2026: a new
             model, the TR6056, first listed in February, and price changes on other listings in June and July.
-            A Walmart marketplace listing with ANCHEER as the seller carried a review from March 2026. Amazon would
+            A <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Walmart marketplace</a> listing with ANCHEER as the seller carried a review from March 2026. Amazon would
             not load for us on 5 November 2026, so treat any specific listing as unconfirmed until you see it.
           </p>
           <p>

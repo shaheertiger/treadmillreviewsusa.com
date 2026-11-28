@@ -295,7 +295,7 @@ export default {
           <p>
             Safety record: we searched the US Consumer Product Safety Commission’s recall listings on
             14 October 2026 and found no recall of the T16 or Bowflex’s current T-series treadmills. The
-            2022 recall of Nautilus T616 and T618 treadmills concerned machines sold under the Nautilus
+            2022 recall of <a href="/nautilus-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Nautilus T616</a> and T618 treadmills concerned machines sold under the Nautilus
             name by the brand’s former owner; the CPSC now tells owners to discard them, because the firm
             is no longer in business and the remedy is no longer available. It does not affect the T16.
           </p>`,

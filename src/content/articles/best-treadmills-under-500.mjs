@@ -250,7 +250,7 @@ export default {
           <p>
             So use the window deliberately rather than gently. Run the machine at several speeds
             for a genuine session in the first few days, not a cautious two minutes. Listen for
-            bearing noise, watch whether the belt drifts toward one rail, check that the deck does
+            <a href="/treadmill-grinding-noise/" class="text-[#0F62FE] font-medium" data-autolink>bearing noise</a>, watch whether the belt drifts toward one rail, check that the deck does
             not flex visibly under you, and confirm the console speed roughly matches reality by
             timing a known distance. A fault found in week one is a refund; the same fault found
             in week six is a warranty claim against a manufacturer who may want the machine

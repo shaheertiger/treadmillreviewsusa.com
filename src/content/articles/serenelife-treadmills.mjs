@@ -376,8 +376,8 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The rest of the range</h3>
           <p>
-            The SLFTRD20 and the 1 HP, 12-mode electric folding treadmill both cost $289.90 and use the FitShow
-            app; given the SLFTRD20's 220 lb rating on Amazon, the SLFTRD26BT is the better buy for less. The 2.0 HP
+            The SLFTRD20 and the 1 HP, 12-mode electric folding treadmill both cost $289.90 and use the <a href="/best-treadmills-with-fitshow/" class="text-[#0F62FE] font-medium" data-autolink>FitShow
+            app</a>; given the SLFTRD20's 220 lb rating on Amazon, the SLFTRD26BT is the better buy for less. The 2.0 HP
             portable model, at 0.8 to 8 mph with a 264 lb rating and built-in speakers, is the fastest SereneLife on paper,
             but its listing gives no belt size. The 2.5 HP smart foldable adds Kinomap and Zwift at 7.5 mph with only two
             incline levels. For how these compare with other brands' folding machines, see our guide to the

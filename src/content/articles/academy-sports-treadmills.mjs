@@ -122,7 +122,7 @@ export default {
             up about a quarter of the listings, and Sunny Health &amp; Fitness, which had the most models
             of any single brand. Academy's own category text names ProForm, NordicTrack, Reebok and Sunny
             Health &amp; Fitness as its headline brands. What is missing is just as telling: there was no
-            Sole, Horizon, Landice or commercial club brand, so if your shortlist runs to those you will
+            Sole, Horizon, <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Landice</a> or commercial club brand, so if your shortlist runs to those you will
             be buying elsewhere.
           </p>
           <p>
@@ -148,7 +148,7 @@ export default {
             couple of manual or magnetic treadmills, and entry folding machines such as the ProForm
             Cadence 4.0. These suit walking far more than running.</li>
             <li><strong>$500 to $1,000:</strong> the busiest tier — entry NordicTrack T Series and
-            ProForm Carbon models, most XTERRA and Sunny folding machines, adidas, Reebok and Schwinn.</li>
+            ProForm Carbon models, most <a href="/xterra-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>XTERRA</a> and Sunny folding machines, adidas, Reebok and Schwinn.</li>
             <li><strong>$1,000 to $2,000:</strong> mid-range NordicTrack and ProForm, Bowflex, the larger
             Echelon models, CENTR and WalkingPad's larger machines.</li>
             <li><strong>Over $2,000:</strong> NordicTrack's Elite X16i, X22i and Ultra 3, the AssaultRunner

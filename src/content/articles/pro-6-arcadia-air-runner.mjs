@@ -164,7 +164,7 @@ export default {
           <p>
             The absence of a maximum user weight is the single biggest gap. Every other curved treadmill
             on our roundups publishes one — 330 lb for the SOLE C80, 350 lb for the AssaultRunner Pro,
-            400 lb for the TrueForm Trainer — because it is the figure that tells you what the frame,
+            400 lb for the <a href="/trueform-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>TrueForm Trainer</a> — because it is the figure that tells you what the frame,
             slats and bearings are built to carry. A 325 lb machine is heavy enough that a generous
             rating is plausible, but plausible is not the same as stated. If you are a heavier runner,
             or buying for a facility where you cannot control who uses it, get a written figure from

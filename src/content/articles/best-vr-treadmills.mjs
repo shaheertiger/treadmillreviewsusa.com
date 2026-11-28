@@ -281,7 +281,7 @@ export default {
             <strong>If you want to get fit,</strong> buy a treadmill. A conventional machine gives you
             pace, incline, distance and heart-rate training for a fraction of the price, and our
             guide to the
-            <a href="/best-treadmills/" class="text-[#0F62FE] font-medium">best treadmills</a>
+            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">best treadmills</a>
             is the place to start. If boredom is the problem, our guide to
             <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a>
             covers scenic and game-based apps that work on ordinary machines.

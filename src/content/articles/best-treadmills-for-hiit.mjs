@@ -58,7 +58,7 @@ export default {
           <p>
             The Sole C80 is a curved manual treadmill rather than a motorised one; read
             <a href="#curved-manual" class="text-[#0F62FE] font-medium">the section on curved treadmills</a>
-            before choosing it. Wahoo's KICKR RUN, a motorised treadmill with a mode that follows your
+            before choosing it. Wahoo's <a href="/wahoo-kickr-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>KICKR RUN</a>, a motorised treadmill with a mode that follows your
             pace, is sold direct by Wahoo rather than on Amazon, so it is not carded here.
           </p>`,
     },
@@ -216,7 +216,7 @@ export default {
           <p>
             The paces are simple arithmetic, and our
             <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
-            has the full conversion. The honest conclusion is that a 12 mph treadmill is enough for
+            has the full conversion. The honest conclusion is that a <a href="/best-fast-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>12 mph treadmill</a> is enough for
             the large majority of people doing HIIT. A 30-second effort at 10 or 11 mph is a hard
             sprint for most adults, and if you want more intensity without more speed, incline
             does the job: a sprint at 8 mph on a 6% grade is a brutal interval with a shorter, less

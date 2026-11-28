@@ -105,7 +105,7 @@ export default {
           </p>
           <p>
             <strong>NordicTrack S22i and S27i.</strong> These studio bikes were NordicTrack's long-running
-            Peloton rivals, but on 19 October NordicTrack's US site listed only the X24, the S24 Studio Bike
+            Peloton rivals, but on 19 October NordicTrack's US site listed only <a href="/nordictrack-x24-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>the X24</a>, the S24 Studio Bike
             and a recumbent. The S24 ($1,299.99 on sale, with a 24-inch screen and 24 resistance levels)
             is a cheaper flat-road option; we carded the X24 because we could cross-check its figures with
             an independent review and could not do the same for the S24. If you find an S22i or S27i new,

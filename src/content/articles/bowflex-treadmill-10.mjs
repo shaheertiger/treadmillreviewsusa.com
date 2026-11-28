@@ -344,7 +344,7 @@ export default {
           <p>
             We searched the CPSC recall database for Bowflex and Nautilus on 20 October 2026 and found no recall
             of the Treadmill 10 or the Treadmill 22. Bowflex’s own recalls page lists only the 552 and 1090
-            adjustable dumbbells. The one Nautilus treadmill recall, in June 2022, covered Nautilus-branded T616
+            adjustable dumbbells. The one <a href="/nautilus-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Nautilus treadmill</a> recall, in June 2022, covered Nautilus-branded T616
             and T618 treadmills in specific serial ranges, which could start on their own; it does not include
             the Treadmill 10. Johnson Health Tech’s 2024 and 2026 treadmill recalls cover Matrix and Vision
             machines, not Bowflex. Check cpsc.gov again before buying, since recalls can be issued at any time.

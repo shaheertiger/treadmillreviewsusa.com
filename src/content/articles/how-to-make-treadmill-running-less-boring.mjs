@@ -335,7 +335,7 @@ export default {
           <p>
             <strong>Get a fan.</strong> This is the most effective single purchase for treadmill
             comfort. Air moving over your skin replaces the breeze you would have outdoors, keeps
-            you cooler and makes the same pace feel noticeably easier. A floor fan pointed at you
+            you cooler and makes the same pace feel noticeably easier. A <a href="/best-treadmill-fans/" class="text-[#0F62FE] font-medium" data-autolink>floor fan</a> pointed at you
             from the front works well.
           </p>
           <p>

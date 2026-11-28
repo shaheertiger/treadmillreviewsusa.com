@@ -207,7 +207,7 @@ export default {
           </p>
           <p>
             In practice, the people and designs carried on. Johnson Health Tech also owns
-            <a href="/horizon-fitness/" class="text-[#0F62FE] font-medium">Horizon</a>,
+            <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">Horizon</a>,
             <a href="/matrix-fitness/" class="text-[#0F62FE] font-medium">Matrix</a> and Vision, and coverage of the
             current Bowflex T9 notes that it uses Horizon-style drive technology. Our
             <a href="/bowflex/" class="text-[#0F62FE] font-medium">Bowflex brand guide</a> covers what changed for
@@ -495,7 +495,7 @@ export default {
       kicker: 'Sibling brand',
       title: 'Horizon Fitness Treadmills',
       blurb: 'Johnson Health Tech’s main home treadmill brand.',
-      url: '/horizon-fitness/',
+      url: '/best-horizon-treadmills/',
     },
     {
       kicker: "Brand Guide",

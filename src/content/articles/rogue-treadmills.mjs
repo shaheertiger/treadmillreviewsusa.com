@@ -236,7 +236,7 @@ export default {
             TrueForms, the STEPR sled treadmill and the STEPR motorized TREAD PRO, all covered in the sections
             on this page. None of them is sold on Amazon: Rogue’s treadmills are sold through Rogue, their
             makers and their makers’ dealers. So the cards below show the nearest alternative to each that
-            Amazon does sell, in the same order — the SOLE C80 for the Curve LTG, the SB Fitness CT700 for the
+            Amazon does sell, in the same order — the SOLE C80 for the Curve LTG, the <a href="/sb-fitness-ct700-curved-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>SB Fitness CT700</a> for the
             TrueForm Trainer, the Pro 6 Arcadia Air Runner for the TrueForm Runner, the Tru Grit Runner for the
             TREADSLED and the SOLE TT8 for the TREAD PRO — with the figures checked for our other treadmill
             guides.
@@ -306,7 +306,7 @@ export default {
             HIIT, CrossFit and HYROX work, garages without a spare circuit, and athletes who already run
             outdoors.</li>
             <li><strong>Pick a motorized treadmill</strong> (STEPR TREAD PRO or XL) for long steady runs,
-            marathon training, incline walking and anyone new to running, who will find a manual belt tiring
+            marathon training, incline walking and anyone <a href="/how-to-start-running-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>new to running</a>, who will find a manual belt tiring
             within minutes.</li>
           </ul>
           <p>

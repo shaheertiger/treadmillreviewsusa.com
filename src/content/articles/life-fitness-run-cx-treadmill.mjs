@@ -109,7 +109,7 @@ export default {
           </p>
           <p>
             The ownership is worth a sentence. Brunswick Corporation sold its fitness business,
-            including Life Fitness, Hammer Strength and Cybex, to the investment firm KPS Capital
+            including Life Fitness, Hammer Strength and <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Cybex</a>, to the investment firm KPS Capital
             Partners in 2019. For a buyer, the practical point is that the Run CX warranty is offered by
             a large, established equipment maker with its own service network; it is not a white-label
             product from a marketplace seller. Our

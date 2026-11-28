@@ -264,8 +264,8 @@ export default {
             manual sets out the steps:
           </p>
           <ol>
-            <li><strong>Apple Watch:</strong> in the watch’s Settings, open Workout and turn on "Detect
-            Gym Equipment." <strong>Galaxy Watch:</strong> in Settings, open Connections, then NFC, and
+            <li><strong>Apple Watch:</strong> in the watch’s Settings, open Workout and turn on "<a href="/how-to-connect-apple-watch-to-planet-fitness-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Detect
+            Gym Equipment</a>." <strong>Galaxy Watch:</strong> in Settings, open Connections, then NFC, and
             turn NFC on.</li>
             <li>Hold the watch, face toward the console, on the watch icon for about 5 seconds, until
             the treadmill beeps and the Bluetooth CONNECTED light comes on.</li>
@@ -490,7 +490,7 @@ export default {
             If you are still choosing a machine, our
             <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">best Horizon treadmills</a>
             compares the current range, and our
-            <a href="/horizon-fitness/" class="text-[#0F62FE] font-medium">Horizon Fitness brand guide</a>
+            <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">Horizon Fitness brand guide</a>
             sets out what to check before buying any of them.
           </p>`,
     },

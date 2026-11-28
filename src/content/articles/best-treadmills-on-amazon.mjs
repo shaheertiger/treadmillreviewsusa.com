@@ -140,7 +140,7 @@ export default {
             list a brand's machine on the brand's own product page, at a different price, and you
             may not notice unless you read the seller line. Some manufacturers limit warranty
             cover to purchases from authorised sellers, and a reseller's machine may be older stock
-            or a different revision. The XTERRA TR150 listing we found, with reseller offers well
+            or a different revision. The <a href="/xterra-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>XTERRA</a> TR150 listing we found, with reseller offers well
             above the machine's usual price, is the pattern to recognise. If the seller is not
             Amazon or the brand, check the brand's website for a list of authorised retailers, or
             ask the brand directly before you order. Our

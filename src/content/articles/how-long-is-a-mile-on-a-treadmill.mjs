@@ -404,7 +404,7 @@ export default {
             <strong>For runners,</strong> an easy mile should feel easy — you can speak in short
             sentences — which for many recreational runners is somewhere between 5 and 6.5 mph.
             A mile at a pace you can only hold for a mile is a different session with a different
-            purpose, and running it every day is how people get hurt. If you are new to running,
+            purpose, and running it every day is how people get hurt. If you are <a href="/how-to-start-running-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>new to running</a>,
             start with run-walk intervals and let the mile time fall as a by-product rather than
             chasing it.
           </p>

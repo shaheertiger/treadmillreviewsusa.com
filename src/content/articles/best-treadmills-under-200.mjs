@@ -89,7 +89,7 @@ export default {
             The same pad with a handle that folds up and unlocks a faster mode, usually 6 to 7.5 mph.
             It adds an easy jog to the walking, not a run. The UREVO Strol 2E and Strol 2E Pro and the
             Goplus 2.25HP are 2-in-1s; our
-            <a href="/best-2-in-1-folding-treadmills/" class="text-[#0F62FE] font-medium">best 2-in-1 folding treadmills</a> guide covers
+            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">best 2-in-1 folding treadmills</a> guide covers
             the type in more depth, including models above $200.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A manual treadmill</h3>
@@ -121,7 +121,7 @@ export default {
           <p>
             The closest an established brand came was the Goplus 2.25HP 2-in-1, which one colour
             listed at $113.99 — not under $100, but near enough that it is worth watching for a sale.
-            UREVO's flat Smart Walking Pad was $134.99. Both have dropped and risen by tens of dollars in
+            UREVO's flat <a href="/best-walking-pads-with-app/" class="text-[#0F62FE] font-medium" data-autolink>Smart Walking Pad</a> was $134.99. Both have dropped and risen by tens of dollars in
             the past, so setting a price alert is a better strategy than buying an unknown brand to save
             $25.
           </p>

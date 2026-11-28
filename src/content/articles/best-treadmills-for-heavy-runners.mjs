@@ -126,7 +126,7 @@ export default {
             We also kept away from the picks on our two neighbouring pages where we could. The Sole F65,
             NordicTrack Commercial 1750 and 2450, Life Fitness T3 and <a href="/matrix-fitness-t7xe-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Matrix T7xe</a> are covered on our heavy
             people page, and the Spirit XT485, Horizon 7.4 AT, ECHANFIT and WELLFIT machines on the
-            <a href="/best-heavy-duty-treadmills/" class="text-[#0F62FE] font-medium">best heavy-duty treadmills</a>
+            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">best heavy-duty treadmills</a>
             page. Several of them are good choices for a heavy runner too; this page is more useful if it
             shows you the alternatives. We gave the most weight to capacity margin, deck length and the
             motor and frame warranty, and none to star ratings or the decibel claims some listings make.
@@ -546,12 +546,6 @@ export default {
       title: 'Best Treadmills for Heavy People',
       blurb: 'Machines chosen for heavier walkers and joggers, beyond the weight-capacity number.',
       url: '/best-treadmills-for-heavy-people/',
-    },
-    {
-      kicker: 'Build quality',
-      title: 'Best Heavy Duty Treadmills',
-      blurb: 'Treadmills built to last rather than labelled heavy duty, from $400 to commercial.',
-      url: '/best-heavy-duty-treadmills/',
     },
     {
       kicker: 'Capacity',

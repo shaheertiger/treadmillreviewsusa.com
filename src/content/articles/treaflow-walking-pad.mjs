@@ -242,7 +242,7 @@ export default {
             for work calls; another quotes an owner who measured about 60 dB at 2.2 mph with a phone
             app. A phone app is not a calibrated meter, and the brand’s figure does not say how it was
             measured, so neither number settles it. On a walking pad, footfall carried through the
-            floor is usually more noticeable than motor hum, especially upstairs. A dense mat helps;
+            floor is usually more noticeable than <a href="/treadmill-humming-noise/" class="text-[#0F62FE] font-medium" data-autolink>motor hum</a>, especially upstairs. A dense mat helps;
             our
             <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a>
             explains why.

@@ -144,7 +144,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A foot pod on any treadmill</h3>
           <p>
             A foot pod clips to your shoe and measures your stride. Zwift lists the Zwift RunPod,
-            Stryd footpods, the Polar Stride Sensor and Garmin's foot pod (ANT+ only) as
+            <a href="/best-foot-pods-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Stryd</a> footpods, the Polar Stride Sensor and Garmin's foot pod (ANT+ only) as
             compatible. Because a pod measures you rather than the machine, it works on any
             treadmill — including brands that do not appear on Zwift's manufacturer list, such as
             NordicTrack, ProForm and Peloton, whose machines are built around their own platforms.

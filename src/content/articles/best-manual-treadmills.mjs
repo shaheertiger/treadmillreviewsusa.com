@@ -279,7 +279,7 @@ export default {
             page. Our
             <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>
             explains why a margin matters more on a light frame. The SOLE C80, Sunny SF-X7110 and
-            Tru Grit Runner are rated at 330 lb; the CT400's Amazon listing gives no figure.
+            <a href="/tru-grit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Tru Grit</a> Runner are rated at 330 lb; the CT400's Amazon listing gives no figure.
           </p>
           <p>
             <strong>Footprint and storage.</strong> This is where flat manuals win outright. They

@@ -178,7 +178,7 @@ export default {
             contact a local Vision office rather than buy online. It does not mention home use. Johnson Health Tech's
             premium home treadmills now carry the
             <a href="/matrix-fitness/" class="text-[#0F62FE] font-medium">Matrix</a> name, and its mid-range home
-            treadmills the <a href="/horizon-fitness/" class="text-[#0F62FE] font-medium">Horizon</a> name.
+            treadmills the <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">Horizon</a> name.
           </p>`,
     },
     {
@@ -391,7 +391,7 @@ export default {
       kicker: 'Sister brand',
       title: 'Horizon Fitness Treadmills',
       blurb: 'Johnson Health Tech’s mid-range home treadmill brand.',
-      url: '/horizon-fitness/',
+      url: '/best-horizon-treadmills/',
     },
     {
       kicker: 'Sister brand',

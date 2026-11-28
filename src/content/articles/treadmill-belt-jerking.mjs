@@ -422,7 +422,7 @@ export default {
           <p>
             If the repair quote lands on a motor or a board and the machine is getting on, it is
             worth reading our guide to the
-            <a href="/best-treadmills/" class="text-[#0F62FE] font-medium">best treadmills</a>
+            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">best treadmills</a>
             before paying it — a replacement with more motor headroom often avoids the conditions
             that wore out the last one.
           </p>`,

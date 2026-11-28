@@ -407,7 +407,7 @@ export default {
           <p>
             <strong>Continuous versus peak horsepower.</strong> A continuous rating (often written CHP) is
             what the motor can sustain; a peak figure is a brief maximum and usually higher. For regular
-            running, a continuous rating of about 3 HP or more is the common guide, and heavier runners and
+            running, a continuous rating of about 3 HP or more is the common guide, and <a href="/best-treadmills-for-heavy-runners/" class="text-[#0F62FE] font-medium" data-autolink>heavier runners</a> and
             fast running push that figure up. Our
             <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a>
             explains how to read the ratings. On this list, the Sunny states a peak 4 HP; the GYMOST's 6.0 HP

@@ -484,7 +484,7 @@ export default {
       heading: 'Who Should Buy a Landice, and Who Should Not',
       html: `          <p>
             <strong>Buy a Landice if you want one treadmill for the long term.</strong> If you walk
-            or run most days, want a heavy non-folding machine, value a plain console that will not
+            or run most days, want a heavy <a href="/best-non-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>non-folding machine</a>, value a plain console that will not
             date, and will keep the treadmill for a decade or more, the L7 or L8 makes a strong case,
             especially with a dealer nearby for installation and service.
           </p>

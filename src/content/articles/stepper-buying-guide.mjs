@@ -208,7 +208,7 @@ export default {
             mechanism. On hydraulic steppers, owners' complaints that BarBend summarises centre on
             squeaking, and you will also hear the pedals reach the end of their travel and the
             linking cable run over its pulley. A rubber mat underneath helps with both noise and
-            creep. Magnetic steppers are the quietest. Stepmills add motor hum and the clatter of
+            creep. Magnetic steppers are the quietest. Stepmills add <a href="/treadmill-humming-noise/" class="text-[#0F62FE] font-medium" data-autolink>motor hum</a> and the clatter of
             steps, and are the hardest to live with in a flat with neighbours below.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Footprint and ceiling</h3>

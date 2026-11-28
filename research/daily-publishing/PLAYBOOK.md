@@ -105,6 +105,14 @@ week-on-week click gain on record (+61%, §1).
 - **Rule L2:** every new page gets, before merge: a hub entry in `src/data/sections.ts`, 3-5 anchor phrases in
   `scripts/interlink-anchors.json` then `node scripts/interlink.mjs --write`, one contextual link from its
   cluster pillar, and Related cards on 2-3 siblings pointing back.
+- **Rule L4 (each run):** after `npm run build`, `node scripts/inbound-links.mjs --json > /tmp/under.json` then
+  `node scripts/interlink.mjs --priority /tmp/under.json --write`: under-line pages sort first and get 2 extra slots
+  per linking page, until each reaches its line (28 Nov: 135 links, all to under-line pages).
+- **Rule L5:** two pages that answer the same search, where one has no Bing impressions and no visitors, are merged:
+  301 the weaker into the stronger in `vercel.json` (with and without slash, plus `.md`), remove its hub entry, move
+  its anchors, repoint links. Merged 28 Nov: /best-treadmills/ → /treadmill-reviews-2026/, long-distance running →
+  marathon training, 2-in-1 folding → walking pads with handrail, /horizon-fitness/ → /best-horizon-treadmills/,
+  heavy-duty → heavy people.
 - **Rule L3:** when a page is under the line, add anchor phrases people actually write (the way other pages
   mention it, not its title) and rerun the interlink pass; link to it from a *top* page in the same cluster.
 

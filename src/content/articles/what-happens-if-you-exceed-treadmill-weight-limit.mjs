@@ -131,7 +131,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The incline system</h3>
           <p>
             On machines with powered incline, the lift motor and its mechanism raise the deck with you on
-            it. A heavier load slows the incline, strains its motor and wears its drive. Incline problems
+            it. A heavier load slows the incline, strains its motor and wears its drive. <a href="/treadmill-incline-not-working/" class="text-[#0F62FE] font-medium" data-autolink>Incline problems</a>
             are a common early symptom on an overloaded machine that sees a lot of hill work.
           </p>`,
     },

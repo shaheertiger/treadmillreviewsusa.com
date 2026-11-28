@@ -224,7 +224,7 @@ export default {
             is sold through dealers, not on Amazon, and so are the AssaultRunner Pro and TrueForm Trainer we would
             set against it, so the other cards show the closest curved treadmills on Amazon: a Sunny curved
             treadmill with magnetic resistance and an app in place of the Elite, the SOLE C80 near the standard
-            Runner's price, the SB Fitness CT400 for sprinting and the SB Fitness CT700 for heavier runners. The
+            Runner's price, the SB Fitness CT400 for sprinting and the <a href="/sb-fitness-ct700-curved-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>SB Fitness CT700</a> for heavier runners. The
             Elite, AssaultRunner and TrueForm are compared in the text below. Figures on the Sunny card are those
             the Amazon listing and at least one other retailer or Sunny agree on; the SOLE and SB Fitness figures
             are those checked for our curved treadmill guides.

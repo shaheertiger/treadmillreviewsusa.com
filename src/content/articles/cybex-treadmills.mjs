@@ -190,7 +190,7 @@ export default {
             discontinuation of Cybex treadmill lower-controller repair. The articles themselves would not
             load for us, so check them directly for exact dates and models. The practical point is that the
             older the Cybex, the more likely a failed electronic board must be sourced from a third-party
-            parts supplier rather than Life Fitness.
+            <a href="/treadmill-parts/" class="text-[#0F62FE] font-medium" data-autolink>parts supplier</a> rather than Life Fitness.
           </p>`,
     },
     {

@@ -548,7 +548,7 @@ export default {
       kicker: 'Horizon',
       title: 'Horizon Fitness Treadmills',
       blurb: 'The range, the warranty and who Horizon suits.',
-      url: '/horizon-fitness/',
+      url: '/best-horizon-treadmills/',
     },
     {
       kicker: 'Review',
@@ -566,7 +566,7 @@ export default {
             most buyers that is the 7.0 AT; for width and a higher weight rating, the 7.4 AT. Compare delivered
             prices, and see our
             <a href="/how-much-does-a-horizon-treadmill-cost/" class="text-[#5AA9FF] font-bold no-underline">Horizon price guide</a>
-            and <a href="/horizon-fitness/" class="text-[#5AA9FF] font-bold no-underline">Horizon Fitness guide</a>
+            and <a href="/best-horizon-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Horizon Fitness guide</a>
             for the range outside sale weeks.`,
   ],
 };

@@ -170,7 +170,7 @@ export default {
           <p>
             Two patterns stand out. First, a 60-inch deck no longer means a premium price: three of the seven were under
             $1,100 when we checked. Second, the jump to a 22-inch width comes with a higher capacity on every machine here,
-            so heavier runners get both together from the Horizon 7.4 AT upward.
+            so <a href="/best-treadmills-for-heavy-runners/" class="text-[#0F62FE] font-medium" data-autolink>heavier runners</a> get both together from the Horizon 7.4 AT upward.
           </p>`,
     },
     {

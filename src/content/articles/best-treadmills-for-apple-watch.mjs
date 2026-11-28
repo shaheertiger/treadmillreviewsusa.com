@@ -136,7 +136,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">1. Apple GymKit: the watch and the treadmill share one workout</h3>
           <p>
             GymKit is Apple's system for pairing an Apple Watch directly with compatible cardio
-            equipment. Apple's guide says to turn on Detect Gym Equipment in the watch's Workout
+            equipment. Apple's guide says to turn on <a href="/how-to-connect-apple-watch-to-planet-fitness-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Detect Gym Equipment</a> in the watch's Workout
             settings, hold the watch within a few centimetres of the machine's contactless reader with
             the display facing it, wait for a gentle tap and a beep, then start the workout on the
             treadmill. Stopping the treadmill ends the workout. Bowflex's manuals describe the same
@@ -341,7 +341,7 @@ export default {
           </p>
           <p>
             <strong>Life Fitness Run CX.</strong> This is a different class of purchase: a heavy,
-            non-folding machine from a gym-equipment maker, with a continuous-duty motor rating and a
+            <a href="/best-non-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>non-folding machine</a> from a gym-equipment maker, with a continuous-duty motor rating and a
             10-year motor warranty. It earns its price over many years of frequent use. If you would not
             consider a treadmill around $5,000 without GymKit, do not consider this one because of it.
           </p>

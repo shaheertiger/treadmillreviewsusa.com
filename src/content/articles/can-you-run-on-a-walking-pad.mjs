@@ -113,7 +113,7 @@ export default {
       html: `          <p>
             On some, yes — briefly and easily, with the rail raised and within the limits the manual
             sets (the <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">best walking pads with handrail</a>
-            compares current <a href="/best-2-in-1-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>2-in-1 models</a>). A 2-in-1 pad is a walking pad with a handrail that folds up from the front of the
+            compares current <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium" data-autolink>2-in-1 models</a>). A 2-in-1 pad is a walking pad with a handrail that folds up from the front of the
             deck. With the rail down, it behaves like a flat pad and is usually limited to walking
             speeds; with the rail up, many unlock a higher top speed, commonly about 6 mph.
           </p>

@@ -52,6 +52,22 @@ function capFor(existingLinks) {
   return 2;
 }
 
+// --priority <file.json>: slugs under the inbound-link line (PLAYBOOK §0b L1), e.g. from
+// `node scripts/inbound-links.mjs --json`. Those targets sort first and get PRIORITY_BONUS extra
+// slots per page that no other target may use.
+const PRIORITY_BONUS = 2;
+const priorityArg = process.argv.indexOf('--priority');
+// Each entry may carry `inbound` and `need` (as inbound-links.mjs --json prints); a target stays a
+// priority only until it has gained need - inbound links in this run.
+const PRIORITY_LEFT = new Map(
+  priorityArg === -1
+    ? []
+    : JSON.parse(readFileSync(process.argv[priorityArg + 1], 'utf-8')).map((r) =>
+        typeof r === 'string' ? [r, Infinity] : [r.slug, Math.max((r.need ?? Infinity) - (r.inbound ?? 0), 0)],
+      ),
+);
+const PRIORITY = { has: (slug) => (PRIORITY_LEFT.get(slug) ?? 0) > 0 };
+
 // ---------------------------------------------------------------------------
 // Pages
 
@@ -246,6 +262,7 @@ for (const page of pages) {
   const hub = hubOf.get(page.slug);
   candidates.sort(
     (a, b) =>
+      PRIORITY.has(b.target) - PRIORITY.has(a.target) ||
       inbound.get(a.target) - inbound.get(b.target) ||
       (hubOf.get(b.target) === hub) - (hubOf.get(a.target) === hub) ||
       a.at - b.at
@@ -256,7 +273,7 @@ for (const page of pages) {
   const usedTargets = new Set();
   const usedBlocks = new Set();
   for (const c of candidates) {
-    if (chosen.length >= cap) break;
+    if (chosen.length >= cap + (PRIORITY.has(c.target) ? PRIORITY_BONUS : 0)) continue;
     if (usedTargets.has(c.target) || usedBlocks.has(c.block)) continue;
     // First mention of this target on the page, not merely the first in this block.
     const first = candidates
@@ -266,6 +283,7 @@ for (const page of pages) {
     usedTargets.add(first.target);
     usedBlocks.add(first.block);
     inbound.set(first.target, inbound.get(first.target) + 1);
+    if (PRIORITY_LEFT.has(first.target)) PRIORITY_LEFT.set(first.target, PRIORITY_LEFT.get(first.target) - 1);
   }
 
   if (chosen.length) plans.push({ page, source, chosen });

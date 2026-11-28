@@ -123,7 +123,7 @@ export default {
             71 inches long and its weight as 212 lb, which is full-size by any measure. If you have
             room for 71 inches, our main
             <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">elliptical guide</a>
-            covers SOLE's range.
+            covers <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>SOLE's range</a>.
           </p>
           <p>
             <strong>Schwinn 430 and ProForm Carbon EL.</strong> The 430 showed as out of stock on Schwinn's

@@ -267,7 +267,7 @@ export default {
       navLabel: 'Treadmill or walking pad',
       html: `          <p>
             Brushless motors are now normal on walking pads, which is why the cheapest picks here are pads. If you will
-            only walk, mostly at a desk, a brushless walking pad such as the MERACH W50 gives you a quiet, low-maintenance
+            only walk, mostly at a desk, a brushless walking pad such as the <a href="/merach-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>MERACH W50</a> gives you a quiet, low-maintenance
             motor in a machine that slides under a sofa. It also limits you to about 4 mph and a belt around 16.5 inches
             wide, with no handrails.
           </p>

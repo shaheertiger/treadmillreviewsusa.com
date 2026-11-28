@@ -70,7 +70,7 @@ export default {
             Three NordicTracks, two Horizons and one Sole, each with a clear reason to choose it
             for long-distance work. Every card lists only figures the manufacturer and at least one
             independent source agree on. One gap is deliberate: Horizon does not publish motor
-            horsepower, so neither Horizon card carries one. The Wahoo KICKR RUN, the premium
+            horsepower, so neither Horizon card carries one. The <a href="/wahoo-kickr-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Wahoo KICKR RUN</a>, the premium
             course-simulation treadmill we discuss below, is sold by Wahoo and not on Amazon, so the
             premium card is the closest machine Amazon sells for heavy mileage, the Sole TT8.
           </p>
@@ -184,7 +184,7 @@ export default {
           </p>
           <p>
             Width matters more on long runs than most people expect. On a 20-inch belt, such as the
-            Horizon 7.0 AT's, you need to hold a straighter line than on a 22-inch belt, and over two
+            Horizon 7.0 AT's, you need to hold a straighter line than on a <a href="/best-wide-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>22-inch belt</a>, and over two
             or three hours that is a small but constant demand on concentration. If you can afford
             the wider deck, it is worth it for distance work.
           </p>
@@ -597,12 +597,6 @@ export default {
       title: 'Best Treadmills for Running',
       blurb: 'The wider list for everyday runners, from mid-range to commercial.',
       url: '/best-treadmills-for-running/',
-    },
-    {
-      kicker: 'Buying Guide',
-      title: "Best Treadmills for Long Distance Running",
-      blurb: "Five treadmills for long distance running and triathlon training, judged on what high weekly mileage asks…",
-      url: '/best-treadmills-for-long-distance-running/',
     },
   ],
   bottomLine: [
