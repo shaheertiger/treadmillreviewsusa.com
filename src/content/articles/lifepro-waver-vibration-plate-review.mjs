@@ -1,15 +1,14 @@
 export default {
   slug: 'lifepro-waver-vibration-plate-review',
-  title: 'LifePro Waver Vibration Plate Review (2026): Specs vs Claims',
-  description:
-    'The LifePro Waver and Waver Mini checked against LifePro, Amazon and manuals: verified specs, which health claims are only claims, and who should see a doctor.',
+  title: "LifePro Waver Vibration Plate Review (2026): Specs vs Claims",
+  description: "The LifePro Waver is a $200 oscillating plate with 99 speeds and a 330 lb limit; its health claims are unverified. Specs vs claims, and who should not use it.",
   crumbLabel: 'LifePro Waver Review',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Product Review',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-16',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '2.2k',
   h1: ['LifePro Waver Review:', 'The Vibration Plate, Read Carefully'],
   standfirst:

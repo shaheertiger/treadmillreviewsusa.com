@@ -1,15 +1,14 @@
 export default {
   slug: 'best-hack-squat-machines',
-  title: 'Best Hack Squat Machines for Home (2026): 6 Picks',
-  description:
-    'Six home hack squat machines and combos checked against maker pages and reviews: sled angle, shoulder pads, safety stops, plate storage and footprint.',
+  title: "Best Hack Squat Machines for Home (2026): 6 Picks Compared",
+  description: "Titan's 35° linear sled, about $975, is the best dedicated home hack squat; Body-Solid's GLPH1100B is the best combo. Six picks, with sled angle and stops.",
   crumbLabel: 'Best Hack Squat Machines',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Hack Squat Machines', 'for a Home Gym'],
   standfirst:

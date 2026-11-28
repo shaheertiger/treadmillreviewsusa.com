@@ -1,15 +1,14 @@
 export default {
   slug: 'best-zero-gravity-massage-chairs',
-  title: 'Best Zero Gravity Massage Chair (2026): 5 Chairs Compared',
-  description:
-    'Five zero gravity massage chairs checked against makers and reviewers: track type, user height and weight, wall clearance, delivery and warranty.',
+  title: "Best Zero Gravity Massage Chair (2026): 5 Chairs Compared",
+  description: "The Bob and Brad iMaster Pro is the best zero gravity massage chair for most: 4D rollers, SL track, users to 6 ft 3 in. Five chairs from $1,500 to $4,000.",
   crumbLabel: 'Best Zero Gravity Massage Chairs',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Best Zero Gravity Massage Chair', 'for Home Recovery'],
   standfirst:

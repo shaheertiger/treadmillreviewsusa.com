@@ -1,15 +1,14 @@
 export default {
   slug: 'best-plyo-boxes',
-  title: 'Best Plyo Boxes (2026): Soft, Wood and Steel Plyometric Boxes',
-  description:
-    'Five plyo boxes checked against makers, Amazon and reviews: soft, wood, adjustable steel and stackable foam. Heights, stability, shin safety and foam vs wood.',
+  title: "Best Plyo Boxes (2026): Soft, Wood and Steel Plyometric Boxes",
+  description: "The REP Fitness 3-in-1 Soft Plyo Box is the best for most home gyms: three heights, 400 lb capacity. Five soft, wood and steel boxes, and shin safety.",
   crumbLabel: 'Best Plyo Boxes',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '0.9k',
   h1: ['Best Plyo Box', 'Picks: Soft, Wood and Steel'],
   standfirst:

@@ -1,15 +1,14 @@
 export default {
   slug: 'best-balance-boards',
-  title: 'Best Balance Boards (2026): Wobble, Rocker, Roller and Desk',
-  description:
-    'Five balance boards sold on Amazon, checked against makers and independent sources: wobble, rocker, roller and standing-desk boards, weight limits and safety.',
+  title: "Best Balance Boards (2026): Wobble, Rocker, Roller and Desk",
+  description: "A rocker board suits a standing desk; a roller board is the hardest. Five balance boards from about $20, across wobble, rocker, roller and desk designs.",
   crumbLabel: 'Best Balance Boards',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Best Balance Boards', 'for Home, Sport and the Standing Desk'],
   standfirst:

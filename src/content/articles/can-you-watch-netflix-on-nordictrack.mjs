@@ -1,15 +1,14 @@
 export default {
   slug: 'can-you-watch-netflix-on-nordictrack',
-  title: 'Can You Watch Netflix on a NordicTrack? (2026): What iFIT Allows',
-  description:
-    'Yes, on touchscreen NordicTrack models with a paid iFIT Pro membership. Which apps iFIT offers, which consoles get them, how to turn them on, and what still does not work.',
+  title: "Can You Watch Netflix on a NordicTrack? Yes, With iFIT Pro",
+  description: "Yes, on most touchscreen NordicTrack models with a paid iFIT Pro plan and your own Netflix account. Which apps iFIT allows, how to turn them on, and what fails.",
   crumbLabel: 'Can You Watch Netflix on a NordicTrack?',
   breadcrumb: { name: 'Comparisons', url: '/compare/' },
   kicker: 'Question Answered',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-20',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Can You Watch Netflix', 'on a NordicTrack?'],
   standfirst:

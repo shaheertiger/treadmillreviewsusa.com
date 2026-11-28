@@ -1,15 +1,14 @@
 export default {
   slug: 'best-ellipticals-for-seniors',
-  title: 'Best Ellipticals for Seniors (2026): 6 Low-Step, Stable Picks',
-  description:
-    'Six ellipticals for older users, standing and seated, checked against makers and independent sources: step-up height, handles, stride length and capacity.',
+  title: "Best Ellipticals for Seniors (2026): 6 Low-Step, Stable Picks",
+  description: "The SOLE E25 is the best elliptical for most seniors: 20 in. stride, 350 lb rating, simple controls, about $1,200. Six picks, including two seated machines.",
   crumbLabel: 'Best Ellipticals for Seniors',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Best Ellipticals', 'for Seniors'],
   standfirst:

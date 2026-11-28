@@ -1,15 +1,14 @@
 export default {
   slug: 'best-boxing-equipment-for-home',
-  title: 'Best Boxing Equipment for Home (2026): Bags, Gloves and More',
-  description:
-    'Seven pieces of home boxing equipment checked against makers and independent sources: free-standing and hanging bags, gloves, wraps, a double-end bag and rope.',
+  title: "Best Boxing Equipment for Home (2026): Bags, Gloves and More",
+  description: "Most homes need four things: hand wraps, gloves, one bag and a rope. Seven pieces of home boxing kit, from $15 Everlast wraps to a Century Wavemaster bag.",
   crumbLabel: 'Best Boxing Equipment for Home',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-16',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Boxing Equipment', 'for Home'],
   standfirst:

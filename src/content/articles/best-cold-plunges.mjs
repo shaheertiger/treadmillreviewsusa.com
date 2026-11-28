@@ -1,15 +1,14 @@
 export default {
   slug: 'best-cold-plunges',
-  title: 'Best Cold Plunges (2026): 5 Tubs, With and Without Chillers',
-  description:
-    'Five cold plunge tubs and ice baths on Amazon, checked against makers, manuals and the CPSC: chillers, sanitation, GFCI power, floor loads and safety.',
+  title: "Best Cold Plunges (2026): 5 Tubs, With and Without Chillers",
+  description: "The Ice Barrel 300 is the best cold plunge for most: 77 gallons, about 700 lb full, $1,150. Five tubs from a $150 ice bath to built-in chillers, and safety.",
   crumbLabel: 'Best Cold Plunges',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.3k',
   h1: ['Best Cold Plunges', 'and How to Use One Safely'],
   standfirst:

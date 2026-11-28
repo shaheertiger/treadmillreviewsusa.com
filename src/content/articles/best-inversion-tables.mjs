@@ -1,15 +1,14 @@
 export default {
   slug: 'best-inversion-tables',
-  title: 'Best Inversion Tables (2026): 5 Picks and Who Should Not Invert',
-  description:
-    'Five inversion tables sold on Amazon, checked against maker manuals, retailers and the CPSC: limits, ankle locks, angle stops, and who should not use one.',
+  title: "Best Inversion Tables (2026): 5 Picks and Who Should Not Invert",
+  description: "The Teeter FitSpine X3 is the best inversion table for most: 300 lb limit, a backup ankle catch, 20/40/60° angle strap. Five tables, and who must not invert.",
   crumbLabel: 'Best Inversion Tables',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Best Inversion Tables', 'and Who Should Not Use One'],
   standfirst:

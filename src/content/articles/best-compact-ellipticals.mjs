@@ -1,15 +1,14 @@
 export default {
   slug: 'best-compact-ellipticals',
-  title: 'Best Compact Ellipticals (2026): 5 Picks for Small Spaces',
-  description:
-    'Five compact ellipticals checked against makers and independent reviews: the length vs stride trade-off, ceiling height for tall users and capacity claims.',
+  title: "Best Compact Ellipticals (2026): 5 Picks for Small Spaces",
+  description: "The Schwinn 411 is the best compact elliptical: 53.8 in. long, 18 in. stride, 300 lb capacity, $699. Five machines from 37 to 58 inches, and the ceiling check.",
   crumbLabel: 'Best Compact Ellipticals',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.7k',
   h1: ['Best Compact Ellipticals', 'for Small Spaces'],
   standfirst:

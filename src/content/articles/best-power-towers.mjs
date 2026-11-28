@@ -1,15 +1,14 @@
 export default {
   slug: 'best-power-towers',
-  title: 'Best Power Towers (2026): 5 Pull-Up and Dip Stations Checked',
-  description:
-    'Five power towers checked against maker and independent sources: what weight ratings mean, stability and tipping, bar height for tall users, and assembly.',
+  title: "Best Power Towers (2026): 5 Pull-Up and Dip Stations Checked",
+  description: "The Sportsroyals is the best budget power tower, with eight bar heights; the RELIFE suits low ceilings, from 58.5 to 89 in. Five towers, and stability checks.",
   crumbLabel: 'Best Power Towers',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Power Towers', 'and What Their Weight Ratings Leave Out'],
   standfirst:

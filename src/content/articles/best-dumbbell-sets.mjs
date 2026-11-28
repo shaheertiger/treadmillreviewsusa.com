@@ -1,15 +1,14 @@
 export default {
   slug: 'best-dumbbell-sets',
-  title: 'Best Dumbbell Sets With Racks (2026): 5 Fixed Sets Compared',
-  description:
-    'Five fixed dumbbell sets with racks, checked against makers and Amazon: rubber hex and urethane round, price per pound, smell, rack footprint and floor loading.',
+  title: "Best Dumbbell Sets With Racks (2026): 5 Fixed Sets Compared",
+  description: "REP's 5–50 lb rubber hex set is the best fixed dumbbell set with a rack; CAP's 550 lb set costs about $1.27 to $1.45 a pound. Five sets, smell and floor load.",
   crumbLabel: 'Best Dumbbell Sets',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Best Dumbbell Set', 'With a Rack, for a Home Gym'],
   standfirst:

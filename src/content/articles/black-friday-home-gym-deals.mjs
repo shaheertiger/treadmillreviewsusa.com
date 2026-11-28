@@ -1,15 +1,14 @@
 export default {
   slug: 'black-friday-home-gym-deals',
-  title: 'Black Friday Home Gym Deals 2026: 7 Worth Watching',
-  description:
-    'Seven home gym buys on Amazon to watch this Black Friday, with the prices we saw in October 2026, our target prices, recalls to avoid and what to buy first.',
+  title: "Black Friday Home Gym Deals 2026: 7 Buys Worth Watching",
+  description: "Dumbbells and plates barely move; connected cardio moves most. Seven home gym buys with October prices and targets, like the Horizon T101 at $600 or less.",
   crumbLabel: 'Black Friday Home Gym Deals',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-28',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '2.1k',
   h1: ['Black Friday Home Gym', 'Deals 2026'],
   standfirst:

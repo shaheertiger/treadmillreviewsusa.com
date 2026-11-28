@@ -3,16 +3,15 @@ const TH = 'class="text-left font-black text-gray-900 border-b border-gray-200 p
 
 export default {
   slug: 'shock-exercise-equipment-reviews',
-  title: 'Shock Exercise Equipment Reviews (2026): EMS, TENS, Vibration',
-  description:
-    'Electric "shock" exercise equipment reviewed: EMS ab belts, TENS/EMS stimulators and vibration plates, what each does, what the claims leave out, and who should skip them.',
+  title: "Shock Exercise Equipment Reviews (2026): EMS, TENS, Vibration",
+  description: "Shock exercise equipment means EMS ab belts, TENS/EMS units and vibration plates. Five reviewed, what the FDA has cleared, and who should skip them.",
   crumbLabel: 'Shock Exercise Equipment Reviews',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-30',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.2k',
   h1: ['Shocking Exercise Equipment Reviews:', 'EMS, TENS and Vibration'],
   standfirst:

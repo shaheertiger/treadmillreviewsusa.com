@@ -1,15 +1,14 @@
 export default {
   slug: 'best-smith-machines',
-  title: 'Best Smith Machines for Home (2026): 7 Picks by Type',
-  description:
-    'Seven home Smith machines and Smith/cable combos checked against maker pages and reviews: bar path, bar weight, counterbalance, footprint and ceiling.',
+  title: "Best Smith Machines for Home (2026): 7 Picks by Type",
+  description: "The Titan Smith Machine is the best standalone home Smith, counterbalanced like a gym's; the Mikolo M4-2.0 is the best all-in-one. Seven picks by type.",
   crumbLabel: 'Best Smith Machines',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.9k',
   h1: ['Best Smith Machines', 'for a Home Gym'],
   standfirst:

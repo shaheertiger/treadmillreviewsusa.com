@@ -1,15 +1,14 @@
 export default {
   slug: 'best-vertical-climbers',
-  title: 'Best Vertical Climbers (2026): 5 Picks and Ceiling Checks',
-  description:
-    'Five vertical climbers from $170 to over $6,000, checked against makers and independent reviews, with ceiling height, user height, weight limits and resistance explained.',
+  title: "Best Vertical Climbers (2026): 5 Picks and Ceiling Checks",
+  description: "The MaxiClimber XL-2000 suits beginners; the Bells of Steel Blitz adds magnetic resistance. Five climbers from $170 to over $6,000, and the ceiling check.",
   crumbLabel: 'Best Vertical Climbers',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.4k',
   h1: ['Best Vertical Climbers', 'for Home Cardio'],
   standfirst:

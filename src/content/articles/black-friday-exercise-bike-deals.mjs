@@ -1,15 +1,14 @@
 export default {
   slug: 'black-friday-exercise-bike-deals',
-  title: 'Black Friday Exercise Bike Deals 2026: 6 Worth Watching',
-  description:
-    'Six exercise bikes on Amazon to watch for Black Friday 2026, with dated prices, our target prices, and how bike deals inflate list prices and memberships.',
+  title: "Black Friday Exercise Bike Deals 2026: 6 Worth Watching",
+  description: "Wait for $749 or less on the Schwinn IC4 and under $600 on the Horizon 5.0R. Six exercise bikes on Amazon with dated prices and the target we would buy at.",
   crumbLabel: 'Black Friday Exercise Bike Deals',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Black Friday 2026',
   updated: 'November 2026',
-  updatedLong: 'November 16, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-28',
-  modified: '2026-11-16',
+  modified: '2026-11-28',
   socialProof: '1.8k',
   h1: ['Black Friday', 'Exercise Bike Deals 2026'],
   standfirst:

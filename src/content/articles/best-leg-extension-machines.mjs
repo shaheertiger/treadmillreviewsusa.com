@@ -1,15 +1,14 @@
 export default {
   slug: 'best-leg-extension-machines',
-  title: 'Best Leg Extension Machines (2026): 6 Home Picks Compared',
-  description:
-    'Six leg extension and curl machines and attachments checked against makers and independent sources: plate-loaded, selectorized, rack and bench options, and knee fit.',
+  title: "Best Leg Extension Machines (2026): 6 Home Picks Compared",
+  description: "A cable leg extension and curl machine is the best value for most homes; the XMark Rotary adjusts most. Six machines and attachments, and how to fit your knees.",
   crumbLabel: 'Best Leg Extension Machines',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.1k',
   h1: ['Best Leg Extension Machines', 'for a Home Gym'],
   standfirst:

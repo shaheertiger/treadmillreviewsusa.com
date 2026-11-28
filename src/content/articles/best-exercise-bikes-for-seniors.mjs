@@ -1,15 +1,14 @@
 export default {
   slug: 'best-exercise-bikes-for-seniors',
-  title: 'Best Exercise Bikes for Seniors (2026): 7 Easy-Access Picks',
-  description:
-    'Seven exercise bikes for older riders, checked against makers and independent sources: step-through frames, back support, readable consoles and low resistance.',
+  title: "Best Exercise Bikes for Seniors (2026): 7 Easy-Access Picks",
+  description: "A step-through recumbent such as the Schwinn 290, with a backrest and a 330 lb rating, suits most seniors. Seven bikes, including an upright and a pedaler.",
   crumbLabel: 'Best Exercise Bikes for Seniors',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
   updated: 'November 2026',
-  updatedLong: 'November 15, 2026',
+  updatedLong: 'November 28, 2026',
   published: '2026-10-19',
-  modified: '2026-11-15',
+  modified: '2026-11-28',
   socialProof: '1.6k',
   h1: ['Best Exercise Bikes', 'for Seniors'],
   standfirst:
